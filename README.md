@@ -1,8 +1,10 @@
-# F1 Stats
+# F1 Oggi
 
 Sito statico dedicato alla Formula 1 — database piloti, gare, confronti e statistiche.
 
 **⚠️ Non ufficiale, non affiliato a Formula 1 o FIA.** Vedi [chi-siamo.html](docs/chi-siamo.html) per il disclaimer completo.
+
+Parallelo a **[MMA Oggi](https://mmaoggi.it/)** — stessa struttura e stack, contenuti diversi.
 
 ## Stack
 

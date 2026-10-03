@@ -61,7 +61,7 @@ export async function renderHeader(paginaAttuale) {
   header.innerHTML = `
     <nav class="nav container">
       <div class="brand">
-        <a href="index.html">🏁 F1 <span class="accent">Stats</span></a>
+        <a href="index.html">🏁 F1 <span class="accent">Oggi</span></a>
       </div>
       <div class="nav-links">
         <a href="index.html" class="${paginaAttuale === 'home' ? 'active' : ''}">Piloti</a>
@@ -102,7 +102,7 @@ export async function renderFooter() {
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© ${anno} F1 Stats — Non ufficiale, non affiliato a Formula 1 o FIA.<br>
+      <p>© ${anno} F1 Oggi — Non ufficiale, non affiliato a Formula 1 o FIA.<br>
       <small>Sito non ufficiale realizzato con dati pubblici OpenF1. Formula 1 è un marchio registrato di Formula 1 World Championship Limited.</small></p>
     </div>
   `;

@@ -1,42 +1,945 @@
 [
-  {
-    "id": 1234,
-    "nome": "Gran Premio di Monza",
-    "circuito": "Monza",
-    "paese": "Italia",
-    "data": "2024-09-01T14:00:00Z",
-    "stato": "Passato"
-  },
-  {
-    "id": 1235,
-    "nome": "Gran Premio di Singapore",
-    "circuito": "Marina Bay",
-    "paese": "Singapore",
-    "data": "2024-10-20T17:00:00Z",
-    "stato": "Programmato"
-  },
-  {
-    "id": 1236,
-    "nome": "Gran Premio d'Austin",
-    "circuito": "Circuit of The Americas",
-    "paese": "Stati Uniti",
-    "data": "2024-10-20T20:00:00Z",
-    "stato": "Programmato"
-  },
-  {
-    "id": 1237,
-    "nome": "Gran Premio del Messico",
-    "circuito": "Hermanos Rodríguez",
-    "paese": "Messico",
-    "data": "2024-11-03T20:00:00Z",
-    "stato": "Programmato"
-  },
-  {
-    "id": 1238,
-    "nome": "Gran Premio di Abu Dhabi",
-    "circuito": "Yas Marina",
-    "paese": "Emirati Arabi Uniti",
-    "data": "2024-12-08T13:00:00Z",
-    "stato": "Programmato"
-  }
+ {
+  "id": 1279,
+  "nome": "Australian Grand Prix",
+  "circuito": "Melbourne",
+  "localita": "Melbourne",
+  "paese": "Australia",
+  "inizio": "2026-03-06T01:30:00+00:00",
+  "fine": "2026-03-08T06:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-03-06T01:30:00+00:00",
+    "fine": "2026-03-06T02:30:00+00:00"
+   },
+   {
+    "nome": "Prove libere 2",
+    "tipo": "Practice 2",
+    "inizio": "2026-03-06T05:00:00+00:00",
+    "fine": "2026-03-06T06:00:00+00:00"
+   },
+   {
+    "nome": "Prove libere 3",
+    "tipo": "Practice 3",
+    "inizio": "2026-03-07T01:30:00+00:00",
+    "fine": "2026-03-07T02:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-03-07T05:00:00+00:00",
+    "fine": "2026-03-07T06:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-03-08T04:00:00+00:00",
+    "fine": "2026-03-08T06:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1280,
+  "nome": "Chinese Grand Prix",
+  "circuito": "Shanghai",
+  "localita": "Shanghai",
+  "paese": "Cina",
+  "inizio": "2026-03-13T03:30:00+00:00",
+  "fine": "2026-03-15T09:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-03-13T03:30:00+00:00",
+    "fine": "2026-03-13T04:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche sprint",
+    "tipo": "Sprint Qualifying",
+    "inizio": "2026-03-13T07:30:00+00:00",
+    "fine": "2026-03-13T08:14:00+00:00"
+   },
+   {
+    "nome": "Sprint",
+    "tipo": "Sprint",
+    "inizio": "2026-03-14T03:00:00+00:00",
+    "fine": "2026-03-14T04:00:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-03-14T07:00:00+00:00",
+    "fine": "2026-03-14T08:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-03-15T07:00:00+00:00",
+    "fine": "2026-03-15T09:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1281,
+  "nome": "Japanese Grand Prix",
+  "circuito": "Suzuka",
+  "localita": "Suzuka",
+  "paese": "Giappone",
+  "inizio": "2026-03-27T02:30:00+00:00",
+  "fine": "2026-03-29T07:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-03-27T02:30:00+00:00",
+    "fine": "2026-03-27T03:30:00+00:00"
+   },
+   {
+    "nome": "Prove libere 2",
+    "tipo": "Practice 2",
+    "inizio": "2026-03-27T06:00:00+00:00",
+    "fine": "2026-03-27T07:00:00+00:00"
+   },
+   {
+    "nome": "Prove libere 3",
+    "tipo": "Practice 3",
+    "inizio": "2026-03-28T02:30:00+00:00",
+    "fine": "2026-03-28T03:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-03-28T06:00:00+00:00",
+    "fine": "2026-03-28T07:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-03-29T05:00:00+00:00",
+    "fine": "2026-03-29T07:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1284,
+  "nome": "Miami Grand Prix",
+  "circuito": "Miami",
+  "localita": "Miami Gardens",
+  "paese": "Stati Uniti",
+  "inizio": "2026-05-01T16:00:00+00:00",
+  "fine": "2026-05-03T19:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-05-01T16:00:00+00:00",
+    "fine": "2026-05-01T17:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche sprint",
+    "tipo": "Sprint Qualifying",
+    "inizio": "2026-05-01T20:30:00+00:00",
+    "fine": "2026-05-01T21:14:00+00:00"
+   },
+   {
+    "nome": "Sprint",
+    "tipo": "Sprint",
+    "inizio": "2026-05-02T16:00:00+00:00",
+    "fine": "2026-05-02T17:00:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-05-02T20:00:00+00:00",
+    "fine": "2026-05-02T21:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-05-03T17:00:00+00:00",
+    "fine": "2026-05-03T19:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1285,
+  "nome": "Canadian Grand Prix",
+  "circuito": "Montreal",
+  "localita": "Montréal",
+  "paese": "Canada",
+  "inizio": "2026-05-22T16:30:00+00:00",
+  "fine": "2026-05-24T22:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-05-22T16:30:00+00:00",
+    "fine": "2026-05-22T17:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche sprint",
+    "tipo": "Sprint Qualifying",
+    "inizio": "2026-05-22T20:30:00+00:00",
+    "fine": "2026-05-22T21:14:00+00:00"
+   },
+   {
+    "nome": "Sprint",
+    "tipo": "Sprint",
+    "inizio": "2026-05-23T16:00:00+00:00",
+    "fine": "2026-05-23T17:00:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-05-23T20:00:00+00:00",
+    "fine": "2026-05-23T21:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-05-24T20:00:00+00:00",
+    "fine": "2026-05-24T22:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1286,
+  "nome": "Monaco Grand Prix",
+  "circuito": "Monte Carlo",
+  "localita": "Monte Carlo",
+  "paese": "Monaco",
+  "inizio": "2026-06-05T11:30:00+00:00",
+  "fine": "2026-06-07T15:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-06-05T11:30:00+00:00",
+    "fine": "2026-06-05T12:30:00+00:00"
+   },
+   {
+    "nome": "Prove libere 2",
+    "tipo": "Practice 2",
+    "inizio": "2026-06-05T15:00:00+00:00",
+    "fine": "2026-06-05T16:00:00+00:00"
+   },
+   {
+    "nome": "Prove libere 3",
+    "tipo": "Practice 3",
+    "inizio": "2026-06-06T10:30:00+00:00",
+    "fine": "2026-06-06T11:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-06-06T14:00:00+00:00",
+    "fine": "2026-06-06T15:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-06-07T13:00:00+00:00",
+    "fine": "2026-06-07T15:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1287,
+  "nome": "Barcelona Grand Prix",
+  "circuito": "Catalunya",
+  "localita": "Barcelona",
+  "paese": "Spagna",
+  "inizio": "2026-06-12T11:30:00+00:00",
+  "fine": "2026-06-14T15:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-06-12T11:30:00+00:00",
+    "fine": "2026-06-12T12:30:00+00:00"
+   },
+   {
+    "nome": "Prove libere 2",
+    "tipo": "Practice 2",
+    "inizio": "2026-06-12T15:00:00+00:00",
+    "fine": "2026-06-12T16:00:00+00:00"
+   },
+   {
+    "nome": "Prove libere 3",
+    "tipo": "Practice 3",
+    "inizio": "2026-06-13T10:30:00+00:00",
+    "fine": "2026-06-13T11:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-06-13T14:00:00+00:00",
+    "fine": "2026-06-13T15:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-06-14T13:00:00+00:00",
+    "fine": "2026-06-14T15:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1288,
+  "nome": "Austrian Grand Prix",
+  "circuito": "Spielberg",
+  "localita": "Spielberg",
+  "paese": "Austria",
+  "inizio": "2026-06-26T11:30:00+00:00",
+  "fine": "2026-06-28T15:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-06-26T11:30:00+00:00",
+    "fine": "2026-06-26T12:30:00+00:00"
+   },
+   {
+    "nome": "Prove libere 2",
+    "tipo": "Practice 2",
+    "inizio": "2026-06-26T15:00:00+00:00",
+    "fine": "2026-06-26T16:00:00+00:00"
+   },
+   {
+    "nome": "Prove libere 3",
+    "tipo": "Practice 3",
+    "inizio": "2026-06-27T10:30:00+00:00",
+    "fine": "2026-06-27T11:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-06-27T14:00:00+00:00",
+    "fine": "2026-06-27T15:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-06-28T13:00:00+00:00",
+    "fine": "2026-06-28T15:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1289,
+  "nome": "British Grand Prix",
+  "circuito": "Silverstone",
+  "localita": "Silverstone",
+  "paese": "Regno Unito",
+  "inizio": "2026-07-03T11:30:00+00:00",
+  "fine": "2026-07-05T16:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-07-03T11:30:00+00:00",
+    "fine": "2026-07-03T12:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche sprint",
+    "tipo": "Sprint Qualifying",
+    "inizio": "2026-07-03T15:30:00+00:00",
+    "fine": "2026-07-03T16:14:00+00:00"
+   },
+   {
+    "nome": "Sprint",
+    "tipo": "Sprint",
+    "inizio": "2026-07-04T11:00:00+00:00",
+    "fine": "2026-07-04T12:00:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-07-04T15:00:00+00:00",
+    "fine": "2026-07-04T16:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-07-05T14:00:00+00:00",
+    "fine": "2026-07-05T16:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1290,
+  "nome": "Belgian Grand Prix",
+  "circuito": "Spa-Francorchamps",
+  "localita": "Spa-Francorchamps",
+  "paese": "Belgio",
+  "inizio": "2026-07-17T11:30:00+00:00",
+  "fine": "2026-07-19T15:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-07-17T11:30:00+00:00",
+    "fine": "2026-07-17T12:30:00+00:00"
+   },
+   {
+    "nome": "Prove libere 2",
+    "tipo": "Practice 2",
+    "inizio": "2026-07-17T15:00:00+00:00",
+    "fine": "2026-07-17T16:00:00+00:00"
+   },
+   {
+    "nome": "Prove libere 3",
+    "tipo": "Practice 3",
+    "inizio": "2026-07-18T10:30:00+00:00",
+    "fine": "2026-07-18T11:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-07-18T14:00:00+00:00",
+    "fine": "2026-07-18T15:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-07-19T13:00:00+00:00",
+    "fine": "2026-07-19T15:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1291,
+  "nome": "Hungarian Grand Prix",
+  "circuito": "Hungaroring",
+  "localita": "Budapest",
+  "paese": "Ungheria",
+  "inizio": "2026-07-24T11:30:00+00:00",
+  "fine": "2026-07-26T15:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-07-24T11:30:00+00:00",
+    "fine": "2026-07-24T12:30:00+00:00"
+   },
+   {
+    "nome": "Prove libere 2",
+    "tipo": "Practice 2",
+    "inizio": "2026-07-24T15:00:00+00:00",
+    "fine": "2026-07-24T16:00:00+00:00"
+   },
+   {
+    "nome": "Prove libere 3",
+    "tipo": "Practice 3",
+    "inizio": "2026-07-25T10:30:00+00:00",
+    "fine": "2026-07-25T11:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-07-25T14:00:00+00:00",
+    "fine": "2026-07-25T15:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-07-26T13:00:00+00:00",
+    "fine": "2026-07-26T15:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1292,
+  "nome": "Dutch Grand Prix",
+  "circuito": "Zandvoort",
+  "localita": "Zandvoort",
+  "paese": "Paesi Bassi",
+  "inizio": "2026-08-21T10:30:00+00:00",
+  "fine": "2026-08-23T15:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-08-21T10:30:00+00:00",
+    "fine": "2026-08-21T11:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche sprint",
+    "tipo": "Sprint Qualifying",
+    "inizio": "2026-08-21T14:30:00+00:00",
+    "fine": "2026-08-21T15:14:00+00:00"
+   },
+   {
+    "nome": "Sprint",
+    "tipo": "Sprint",
+    "inizio": "2026-08-22T10:00:00+00:00",
+    "fine": "2026-08-22T11:00:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-08-22T14:00:00+00:00",
+    "fine": "2026-08-22T15:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-08-23T13:00:00+00:00",
+    "fine": "2026-08-23T15:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1293,
+  "nome": "Italian Grand Prix",
+  "circuito": "Monza",
+  "localita": "Monza",
+  "paese": "Italia",
+  "inizio": "2026-09-04T10:30:00+00:00",
+  "fine": "2026-09-06T15:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-09-04T10:30:00+00:00",
+    "fine": "2026-09-04T11:30:00+00:00"
+   },
+   {
+    "nome": "Prove libere 2",
+    "tipo": "Practice 2",
+    "inizio": "2026-09-04T14:00:00+00:00",
+    "fine": "2026-09-04T15:00:00+00:00"
+   },
+   {
+    "nome": "Prove libere 3",
+    "tipo": "Practice 3",
+    "inizio": "2026-09-05T10:30:00+00:00",
+    "fine": "2026-09-05T11:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-09-05T14:00:00+00:00",
+    "fine": "2026-09-05T15:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-09-06T13:00:00+00:00",
+    "fine": "2026-09-06T15:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1294,
+  "nome": "Spanish Grand Prix",
+  "circuito": "Madring",
+  "localita": "Madrid",
+  "paese": "Spagna",
+  "inizio": "2026-09-11T11:30:00+00:00",
+  "fine": "2026-09-13T15:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-09-11T11:30:00+00:00",
+    "fine": "2026-09-11T12:30:00+00:00"
+   },
+   {
+    "nome": "Prove libere 2",
+    "tipo": "Practice 2",
+    "inizio": "2026-09-11T15:00:00+00:00",
+    "fine": "2026-09-11T16:00:00+00:00"
+   },
+   {
+    "nome": "Prove libere 3",
+    "tipo": "Practice 3",
+    "inizio": "2026-09-12T10:30:00+00:00",
+    "fine": "2026-09-12T11:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-09-12T14:00:00+00:00",
+    "fine": "2026-09-12T15:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-09-13T13:00:00+00:00",
+    "fine": "2026-09-13T15:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1295,
+  "nome": "Azerbaijan Grand Prix",
+  "circuito": "Baku",
+  "localita": "Baku",
+  "paese": "Azerbaigian",
+  "inizio": "2026-09-24T08:30:00+00:00",
+  "fine": "2026-09-26T13:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-09-24T08:30:00+00:00",
+    "fine": "2026-09-24T09:30:00+00:00"
+   },
+   {
+    "nome": "Prove libere 2",
+    "tipo": "Practice 2",
+    "inizio": "2026-09-24T12:00:00+00:00",
+    "fine": "2026-09-24T13:00:00+00:00"
+   },
+   {
+    "nome": "Prove libere 3",
+    "tipo": "Practice 3",
+    "inizio": "2026-09-25T08:30:00+00:00",
+    "fine": "2026-09-25T09:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-09-25T12:00:00+00:00",
+    "fine": "2026-09-25T13:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-09-26T11:00:00+00:00",
+    "fine": "2026-09-26T13:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1308,
+  "nome": "Bahrain Grand Prix",
+  "circuito": "Kuala Lumpur",
+  "localita": "Kuala Lumpur",
+  "paese": "Bahrain",
+  "inizio": "2026-10-02T04:30:00+00:00",
+  "fine": "2026-10-04T09:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-10-02T04:30:00+00:00",
+    "fine": "2026-10-02T05:30:00+00:00"
+   },
+   {
+    "nome": "Prove libere 2",
+    "tipo": "Practice 2",
+    "inizio": "2026-10-02T08:00:00+00:00",
+    "fine": "2026-10-02T09:00:00+00:00"
+   },
+   {
+    "nome": "Prove libere 3",
+    "tipo": "Practice 3",
+    "inizio": "2026-10-03T04:30:00+00:00",
+    "fine": "2026-10-03T05:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-10-03T08:00:00+00:00",
+    "fine": "2026-10-03T09:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-10-04T07:00:00+00:00",
+    "fine": "2026-10-04T09:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1296,
+  "nome": "Singapore Grand Prix",
+  "circuito": "Singapore",
+  "localita": "Marina Bay",
+  "paese": "Singapore",
+  "inizio": "2026-10-09T08:30:00+00:00",
+  "fine": "2026-10-11T14:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-10-09T08:30:00+00:00",
+    "fine": "2026-10-09T09:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche sprint",
+    "tipo": "Sprint Qualifying",
+    "inizio": "2026-10-09T12:30:00+00:00",
+    "fine": "2026-10-09T13:14:00+00:00"
+   },
+   {
+    "nome": "Sprint",
+    "tipo": "Sprint",
+    "inizio": "2026-10-10T09:00:00+00:00",
+    "fine": "2026-10-10T10:00:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-10-10T13:00:00+00:00",
+    "fine": "2026-10-10T14:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-10-11T12:00:00+00:00",
+    "fine": "2026-10-11T14:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1297,
+  "nome": "United States Grand Prix",
+  "circuito": "Austin",
+  "localita": "Austin",
+  "paese": "Stati Uniti",
+  "inizio": "2026-10-23T17:30:00+00:00",
+  "fine": "2026-10-25T22:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-10-23T17:30:00+00:00",
+    "fine": "2026-10-23T18:30:00+00:00"
+   },
+   {
+    "nome": "Prove libere 2",
+    "tipo": "Practice 2",
+    "inizio": "2026-10-23T21:00:00+00:00",
+    "fine": "2026-10-23T22:00:00+00:00"
+   },
+   {
+    "nome": "Prove libere 3",
+    "tipo": "Practice 3",
+    "inizio": "2026-10-24T17:30:00+00:00",
+    "fine": "2026-10-24T18:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-10-24T21:00:00+00:00",
+    "fine": "2026-10-24T22:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-10-25T20:00:00+00:00",
+    "fine": "2026-10-25T22:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1298,
+  "nome": "Mexico City Grand Prix",
+  "circuito": "Mexico City",
+  "localita": "Mexico City",
+  "paese": "Messico",
+  "inizio": "2026-10-30T18:30:00+00:00",
+  "fine": "2026-11-01T22:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-10-30T18:30:00+00:00",
+    "fine": "2026-10-30T19:30:00+00:00"
+   },
+   {
+    "nome": "Prove libere 2",
+    "tipo": "Practice 2",
+    "inizio": "2026-10-30T22:00:00+00:00",
+    "fine": "2026-10-30T23:00:00+00:00"
+   },
+   {
+    "nome": "Prove libere 3",
+    "tipo": "Practice 3",
+    "inizio": "2026-10-31T17:30:00+00:00",
+    "fine": "2026-10-31T18:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-10-31T21:00:00+00:00",
+    "fine": "2026-10-31T22:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-11-01T20:00:00+00:00",
+    "fine": "2026-11-01T22:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1299,
+  "nome": "São Paulo Grand Prix",
+  "circuito": "Interlagos",
+  "localita": "São Paulo",
+  "paese": "Brasile",
+  "inizio": "2026-11-06T15:30:00+00:00",
+  "fine": "2026-11-08T19:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-11-06T15:30:00+00:00",
+    "fine": "2026-11-06T16:30:00+00:00"
+   },
+   {
+    "nome": "Prove libere 2",
+    "tipo": "Practice 2",
+    "inizio": "2026-11-06T19:00:00+00:00",
+    "fine": "2026-11-06T20:00:00+00:00"
+   },
+   {
+    "nome": "Prove libere 3",
+    "tipo": "Practice 3",
+    "inizio": "2026-11-07T14:30:00+00:00",
+    "fine": "2026-11-07T15:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-11-07T18:00:00+00:00",
+    "fine": "2026-11-07T19:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-11-08T17:00:00+00:00",
+    "fine": "2026-11-08T19:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1300,
+  "nome": "Las Vegas Grand Prix",
+  "circuito": "Las Vegas",
+  "localita": "Las Vegas",
+  "paese": "Stati Uniti",
+  "inizio": "2026-11-20T00:30:00+00:00",
+  "fine": "2026-11-22T06:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-11-20T00:30:00+00:00",
+    "fine": "2026-11-20T01:30:00+00:00"
+   },
+   {
+    "nome": "Prove libere 2",
+    "tipo": "Practice 2",
+    "inizio": "2026-11-20T04:00:00+00:00",
+    "fine": "2026-11-20T05:00:00+00:00"
+   },
+   {
+    "nome": "Prove libere 3",
+    "tipo": "Practice 3",
+    "inizio": "2026-11-21T00:30:00+00:00",
+    "fine": "2026-11-21T01:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-11-21T04:00:00+00:00",
+    "fine": "2026-11-21T05:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-11-22T04:00:00+00:00",
+    "fine": "2026-11-22T06:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1301,
+  "nome": "Qatar Grand Prix",
+  "circuito": "Lusail",
+  "localita": "Lusail",
+  "paese": "Qatar",
+  "inizio": "2026-11-27T13:30:00+00:00",
+  "fine": "2026-11-29T18:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-11-27T13:30:00+00:00",
+    "fine": "2026-11-27T14:30:00+00:00"
+   },
+   {
+    "nome": "Prove libere 2",
+    "tipo": "Practice 2",
+    "inizio": "2026-11-27T17:00:00+00:00",
+    "fine": "2026-11-27T18:00:00+00:00"
+   },
+   {
+    "nome": "Prove libere 3",
+    "tipo": "Practice 3",
+    "inizio": "2026-11-28T14:30:00+00:00",
+    "fine": "2026-11-28T15:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-11-28T18:00:00+00:00",
+    "fine": "2026-11-28T19:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-11-29T16:00:00+00:00",
+    "fine": "2026-11-29T18:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": 1302,
+  "nome": "Abu Dhabi Grand Prix",
+  "circuito": "Yas Marina Circuit",
+  "localita": "Yas Marina",
+  "paese": "Emirati Arabi Uniti",
+  "inizio": "2026-12-04T09:30:00+00:00",
+  "fine": "2026-12-06T15:00:00+00:00",
+  "sessioni": [
+   {
+    "nome": "Prove libere 1",
+    "tipo": "Practice 1",
+    "inizio": "2026-12-04T09:30:00+00:00",
+    "fine": "2026-12-04T10:30:00+00:00"
+   },
+   {
+    "nome": "Prove libere 2",
+    "tipo": "Practice 2",
+    "inizio": "2026-12-04T13:00:00+00:00",
+    "fine": "2026-12-04T14:00:00+00:00"
+   },
+   {
+    "nome": "Prove libere 3",
+    "tipo": "Practice 3",
+    "inizio": "2026-12-05T10:30:00+00:00",
+    "fine": "2026-12-05T11:30:00+00:00"
+   },
+   {
+    "nome": "Qualifiche",
+    "tipo": "Qualifying",
+    "inizio": "2026-12-05T14:00:00+00:00",
+    "fine": "2026-12-05T15:00:00+00:00"
+   },
+   {
+    "nome": "Gara",
+    "tipo": "Race",
+    "inizio": "2026-12-06T13:00:00+00:00",
+    "fine": "2026-12-06T15:00:00+00:00"
+   }
+  ]
+ }
 ]

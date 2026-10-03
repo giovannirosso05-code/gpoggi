@@ -1,86 +1,26 @@
-import { renderHeader, renderFooter, fetchJSON, traccia, formattaData } from './common.js';
+import { renderHeader, renderFooter, fetchJSON, esc, intervalloWeekend, erroreCaricamento } from "./common.js";
 
-let tutteGare = [];
-let gareVisibili = [];
+renderHeader("gare");
+renderFooter();
 
-export async function inizializza() {
-  await renderHeader('gare');
-  await renderFooter();
-
-  try {
-    tutteGare = await fetchJSON('data/events.json');
-    // Ordina per data, più prossime per prime
-    tutteGare.sort((a, b) => {
-      const dataA = new Date(a.data);
-      const dataB = new Date(b.data);
-      return dataA - dataB;
-    });
-    gareVisibili = [...tutteGare];
-  } catch (e) {
-    console.error('Errore caricando gare:', e);
-    document.getElementById('gare-list').innerHTML = `
-      <p style="text-align: center; color: var(--text-secondary);">
-        Errore caricando le gare. Riprova più tardi.
-      </p>
-    `;
-    return;
-  }
-
-  renderGare();
-  traccia('pagina_gare', { totale: tutteGare.length });
+function card(g, passata) {
+  return `<a class="event-card" href="gara.html?id=${g.id}" style="display:block">
+    <div class="event-date">${intervalloWeekend(g)}</div>
+    <div class="event-name">${esc(g.nome)}</div>
+    <div class="event-location">${esc(g.circuito)}, ${esc(g.paese)}</div>
+    <span class="event-status ${passata ? "passato" : ""}">${passata ? "Disputata" : g.sessioni.some((s) => s.tipo === "Sprint") ? "Con sprint" : "In programma"}</span>
+  </a>`;
 }
 
-function renderGare() {
-  const list = document.getElementById('gare-list');
-
-  if (gareVisibili.length === 0) {
-    list.innerHTML = `<p style="text-align: center; color: var(--text-secondary);">Nessuna gara trovata.</p>`;
-    return;
-  }
-
-  // Raggruppa per stato
-  const oggi = new Date();
-  const programmate = gareVisibili.filter(g => new Date(g.data) > oggi);
-  const passate = gareVisibili.filter(g => new Date(g.data) <= oggi);
-
-  let html = '';
-
-  if (programmate.length > 0) {
-    html += '<div class="gare-section"><h3 style="margin-bottom: 12px; color: var(--accent);">📅 Prossime</h3>';
-    html += programmate.map(g => renderGaraCard(g, 'Programmato')).join('');
-    html += '</div>';
-  }
-
-  if (passate.length > 0) {
-    html += '<div class="gare-section"><h3 style="margin-bottom: 12px; margin-top: 28px;">✓ Passate</h3>';
-    html += passate.map(g => renderGaraCard(g, 'Passato')).join('');
-    html += '</div>';
-  }
-
-  list.innerHTML = html;
-
-  document.querySelectorAll('.event-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const id = card.dataset.id;
-      traccia('gara_cliccata', { gara: id });
-      // TODO: apri scheda gara
-    });
-  });
+const lista = document.getElementById("gare-list");
+try {
+  const eventi = await fetchJSON("data/events.json");
+  const ora = new Date();
+  const prossime = eventi.filter((g) => new Date(g.fine) > ora);
+  const passate = eventi.filter((g) => new Date(g.fine) <= ora).reverse();
+  lista.innerHTML =
+    (prossime.length ? `<div class="gare-section"><h3 class="accent">Prossime</h3>${prossime.map((g) => card(g, false)).join("")}</div>` : "") +
+    (passate.length ? `<div class="gare-section"><h3>Disputate</h3>${passate.map((g) => card(g, true)).join("")}</div>` : "");
+} catch (e) {
+  erroreCaricamento(lista);
 }
-
-function renderGaraCard(gara, stato) {
-  const data = new Date(gara.data);
-  const giorni = Math.ceil((data - new Date()) / (1000 * 60 * 60 * 24));
-  const distanzaLabel = giorni > 0 ? `in ${giorni} giorni` : 'Completata';
-
-  return `
-    <div class="event-card" data-id="${gara.id}">
-      <div class="event-date">${formattaData(gara.data)}</div>
-      <div class="event-name">${gara.nome}</div>
-      <div class="event-location">🏁 ${gara.circuito}, ${gara.paese}</div>
-      <span class="event-status ${stato === 'Passato' ? 'passato' : ''}">${distanzaLabel}</span>
-    </div>
-  `;
-}
-
-document.addEventListener('DOMContentLoaded', inizializza);

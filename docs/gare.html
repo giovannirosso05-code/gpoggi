@@ -3,46 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='90'>🏁</text></svg>">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='90'%3E%F0%9F%8F%81%3C/text%3E%3C/svg%3E">
+<link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0a0a0d">
-<title>Gare F1 — Calendario 2024-2025</title>
-<meta name="description" content="Calendario Formula 1 completo 2024-2025. Tutte le gare, date, circuiti e risultati.">
+<title>Calendario F1 — Weekend di gara | F1 Oggi</title>
+<meta name="description" content="Calendario dei weekend di Formula 1 con prove libere, qualifiche, sprint e gara.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="F1 Oggi">
+<meta property="og:title" content="Calendario F1 — Weekend di gara | F1 Oggi">
+<meta property="og:description" content="Calendario dei weekend di Formula 1 con prove libere, qualifiche, sprint e gara.">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=202610031">
-<script defer data-domain="f1oggi.it" src="https://plausible.io/js/script.js"></script>
+<link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 
 <header id="site-header" class="site-header"></header>
 
 <div class="container">
-  <section class="hero" style="text-align: center; padding: 32px 0;">
-    <h1>Calendario <span class="accent">F1</span></h1>
-    <p style="color: var(--text-secondary); margin: 8px 0 0;">Tutte le gare della stagione</p>
-  </section>
-
-  <div style="max-width: 700px; margin: 0 auto;">
-    <div id="gare-list"></div>
-  </div>
+  <section class="hero" style="padding:32px 0"><h1>Calendario <span class="accent">F1</span></h1><p class="muted">Ogni weekend con le sue sessioni</p></section>
+  <div style="max-width:700px;margin:0 auto"><div id="gare-list"></div></div>
 </div>
 
 <footer id="site-footer" class="site-footer"></footer>
 
-<style>
-  .gare-section {
-    margin-bottom: 32px;
-  }
-
-  .gare-section h3 {
-    font-family: var(--font-display);
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-  }
-</style>
-
-<script type="module" src="js/gare.js?v=202610031"></script>
+<script type="module" src="js/gare.js?v=2"></script>
 </body>
 </html>

@@ -1,144 +1,71 @@
-import { renderHeader, renderFooter, fetchJSON, traccia } from './common.js';
+import { renderHeader, renderFooter, fetchJSON, esc, punti, ND, erroreCaricamento } from "./common.js";
 
-let tuttiPiloti = [];
+renderHeader("confronto");
+renderFooter();
 
-export async function inizializza() {
-  await renderHeader('confronto');
-  await renderFooter();
+const box = document.getElementById("confronto-box");
+const params = new URLSearchParams(location.search);
 
-  try {
-    tuttiPiloti = await fetchJSON('data/roster.json');
-  } catch (e) {
-    console.error('Errore caricando piloti:', e);
-    document.getElementById('confronto-container').innerHTML = `
-      <p style="text-align: center; color: var(--text-secondary);">
-        Errore caricando i dati. Riprova più tardi.
-      </p>
-    `;
-    return;
-  }
+try {
+  const [roster, eventi] = await Promise.all([fetchJSON("data/roster.json"), fetchJSON("data/events.json")]);
+  const gare = await Promise.all(eventi.filter((g) => new Date(g.inizio) < new Date()).map((g) => fetchJSON(`data/gare/${g.id}.json`)));
 
-  impostaAutocomplete('pilota-1', (p) => selezionaPilota(1, p));
-  impostaAutocomplete('pilota-2', (p) => selezionaPilota(2, p));
-  traccia('pagina_confronto');
-}
+  const selA = document.getElementById("sel-a");
+  const selB = document.getElementById("sel-b");
+  const opz = roster.map((p) => `<option value="${p.numero}">${esc(p.nome || "Pilota #" + p.numero)} (#${p.numero})</option>`).join("");
+  selA.innerHTML = `<option value="">Primo pilota…</option>${opz}`;
+  selB.innerHTML = `<option value="">Secondo pilota…</option>${opz}`;
+  selA.value = params.get("a") || "";
+  selB.value = params.get("b") || "";
 
-function impostaAutocomplete(inputId, onSelect) {
-  const input = document.getElementById(inputId);
-  const suggestionsId = inputId + '-suggestions';
-  let suggestionsDiv = document.getElementById(suggestionsId);
-
-  if (!suggestionsDiv) {
-    suggestionsDiv = document.createElement('div');
-    suggestionsDiv.id = suggestionsId;
-    suggestionsDiv.className = 'autocomplete-suggestions';
-    suggestionsDiv.style.cssText = `
-      position: absolute;
-      background: var(--bg-elevated);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      max-height: 200px;
-      overflow-y: auto;
-      z-index: 100;
-      width: 100%;
-      display: none;
-      margin-top: 4px;
-    `;
-    input.parentNode.style.position = 'relative';
-    input.parentNode.appendChild(suggestionsDiv);
-  }
-
-  input.addEventListener('input', (e) => {
-    const query = e.target.value.toLowerCase();
-
-    if (query.length < 2) {
-      suggestionsDiv.style.display = 'none';
-      return;
-    }
-
-    const filtered = tuttiPiloti.filter(p => p.nome.toLowerCase().includes(query)).slice(0, 8);
-
-    if (filtered.length === 0) {
-      suggestionsDiv.style.display = 'none';
-      return;
-    }
-
-    suggestionsDiv.innerHTML = filtered.map(p => `
-      <div class="autocomplete-item" style="
-        padding: 8px 12px;
-        cursor: pointer;
-        border-bottom: 1px solid var(--border-soft);
-      " data-id="${p.id}">
-        <strong>${p.nome}</strong> <span style="color: var(--text-secondary);">#${p.numero}</span>
-      </div>
-    `).join('');
-
-    suggestionsDiv.style.display = 'block';
-
-    suggestionsDiv.querySelectorAll('.autocomplete-item').forEach(item => {
-      item.addEventListener('click', () => {
-        const pilotaId = item.dataset.id;
-        const pilota = tuttiPiloti.find(p => p.id === pilotaId);
-        if (pilota) {
-          onSelect(pilota);
-          input.value = pilota.nome;
-          suggestionsDiv.style.display = 'none';
-        }
-      });
+  function risultatiGara(num) {
+    return gare.map((g) => {
+      const gara = g.sessioni.find((s) => s.tipo === "Race" && s.risultati);
+      const r = gara && gara.risultati.find((x) => x.numero === num);
+      return r ? { id: g.id, pos: r.pos, stato: r.stato } : null;
     });
-  });
+  }
 
-  document.addEventListener('click', (e) => {
-    if (!input.parentNode.contains(e.target)) {
-      suggestionsDiv.style.display = 'none';
-    }
-  });
+  function colonna(p, mio, altro) {
+    if (!p) return `<div class="compare-col"><p class="muted">Seleziona un pilota.</p></div>`;
+    const tutte = risultatiGara(p.numero);
+    const valide = tutte.filter((r) => r && r.pos != null && !r.stato);
+    const vittorie = valide.filter((r) => r.pos === 1).length;
+    const podi = valide.filter((r) => r.pos <= 3).length;
+    const punta = (r) => r && r.pos != null ? r.pos : null;
+    const riga = (label, val) => `<div class="compare-stat"><div class="compare-stat-label">${label}</div><div></div><div class="compare-stat-value">${val}</div></div>`;
+    return `<div class="compare-col" style="border-top:3px solid #${esc(p.colore || "2a2a33")}">
+      <h2>${esc(p.nome || "Pilota #" + p.numero)}</h2>
+      ${riga("Team", esc(p.team || "n.d."))}
+      ${riga("Numero", "#" + p.numero)}
+      ${riga("Posizione", p.posizione ? p.posizione + "°" : ND)}
+      ${riga("Punti", punti(p.punti))}
+      ${riga("Vittorie in gara", vittorie)}
+      ${riga("Podi in gara", podi)}
+      ${riga("Gare con risultato", valide.length)}
+    </div>`;
+  }
+
+  function testaATesta(a, b) {
+    const ra = risultatiGara(a.numero), rb = risultatiGara(b.numero);
+    let ahead = 0, behind = 0;
+    ra.forEach((x, i) => {
+      const y = rb[i];
+      if (x && y && x.pos != null && y.pos != null && !x.stato && !y.stato) x.pos < y.pos ? ahead++ : behind++;
+    });
+    const tot = ahead + behind;
+    return tot ? `<p class="center muted" style="margin-top:20px">Nelle gare in cui hanno entrambi concluso (${tot}): ${esc(a.nome)} davanti ${ahead} volte, ${esc(b.nome)} davanti ${behind}.</p>` : `<p class="center muted" style="margin-top:20px">Nessuna gara conclusa da entrambi.</p>`;
+  }
+
+  function aggiorna() {
+    const a = roster.find((p) => String(p.numero) === selA.value);
+    const b = roster.find((p) => String(p.numero) === selB.value);
+    document.getElementById("confronto-out").innerHTML =
+      `<div class="compare-layout">${colonna(a)}${colonna(b)}</div>${a && b ? testaATesta(a, b) : ""}`;
+  }
+  selA.addEventListener("change", aggiorna);
+  selB.addEventListener("change", aggiorna);
+  aggiorna();
+} catch (e) {
+  erroreCaricamento(box);
 }
-
-function selezionaPilota(numero, pilota) {
-  const container = document.getElementById(`pilota-${numero}`);
-
-  container.innerHTML = `
-    <div class="compare-col" style="grid-column: ${numero === 1 ? 1 : 2};">
-      <h2>${pilota.nome}</h2>
-
-      <div class="compare-stat">
-        <div class="compare-stat-label">Team</div>
-        <div></div>
-        <div class="compare-stat-value">${pilota.team}</div>
-      </div>
-
-      <div class="compare-stat">
-        <div class="compare-stat-label">Numero</div>
-        <div></div>
-        <div class="compare-stat-value">#${pilota.numero}</div>
-      </div>
-
-      <div class="compare-stat">
-        <div class="compare-stat-label">Nazionalità</div>
-        <div></div>
-        <div class="compare-stat-value">${pilota.nazionalita || '-'}</div>
-      </div>
-
-      ${pilota.foto ? `
-        <div style="margin-top: 16px;">
-          <img src="${pilota.foto}" alt="${pilota.nome}" style="
-            width: 100%;
-            border-radius: var(--radius);
-            max-height: 300px;
-            object-fit: cover;
-          " onerror="this.style.display='none'">
-        </div>
-      ` : ''}
-    </div>
-  `;
-
-  traccia('pilota_confrontato', { pilota: pilota.id });
-}
-
-function pulisciCampo(inputId) {
-  document.getElementById(inputId).value = '';
-  document.getElementById(`pilota-${inputId.slice(-1)}`).innerHTML = '';
-}
-
-document.addEventListener('DOMContentLoaded', inizializza);

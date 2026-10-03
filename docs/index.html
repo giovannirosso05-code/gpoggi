@@ -3,28 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='90'>🏁</text></svg>">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='90'%3E%F0%9F%8F%81%3C/text%3E%3C/svg%3E">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0a0a0d">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>F1 Oggi — Database Piloti Formula 1</title>
-<meta name="description" content="Statistiche Formula 1 aggiornate in tempo reale. Database piloti, team, gare e confronti. Il riferimento per gli appassionati F1 in Italia.">
+<title>F1 Oggi — Piloti, classifiche e gare di Formula 1</title>
+<meta name="description" content="Piloti, classifiche, calendario e risultati per sessione della stagione di Formula 1 in corso, in italiano. Sito non ufficiale.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="F1 Oggi">
-<meta property="og:title" content="F1 Oggi — Database Piloti Formula 1">
-<meta property="og:description" content="Statistiche Formula 1 aggiornate. Database piloti, gare, confronti. Dati da OpenF1.">
-<meta property="og:url" content="https://gr-build.github.io/f1oggi/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="F1 Oggi — Database Piloti Formula 1">
-<meta name="twitter:description" content="Statistiche Formula 1 aggiornate in tempo reale. Database piloti, team, gare.">
-<link rel="canonical" href="https://gr-build.github.io/f1oggi/">
+<meta property="og:title" content="F1 Oggi — Piloti, classifiche e gare di Formula 1">
+<meta property="og:description" content="Piloti, classifiche, calendario e risultati per sessione della stagione di Formula 1 in corso, in italiano. Sito non ufficiale.">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=202610031">
-<script defer data-domain="f1oggi.it" src="https://plausible.io/js/script.js"></script>
+<link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 
@@ -33,45 +25,34 @@
 <div class="container">
   <div class="home-layout">
     <section class="hero home-hero">
-      <h1>Il database <span class="accent">F1</span> più aggiornato in Italia</h1>
-      <p class="hero-sub-desktop">Statistiche, piloti e gare Formula 1 — dati verificabili, aggiornati in tempo reale da OpenF1.</p>
-      <p class="hero-tagline-mobile">🏁 Piloti, team, gare e confronti. Un posto solo.</p>
-      <div class="stat-strip" id="stat-strip">
-        <div class="stat">
-          <div class="stat-number" id="stat-piloti">-</div>
-          <div class="stat-label">Piloti</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number" id="stat-gare">-</div>
-          <div class="stat-label">Gare</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number" id="stat-team">-</div>
-          <div class="stat-label">Team</div>
-        </div>
+      <h1>La stagione <span class="accent">F1</span> in un posto solo</h1>
+      <p class="hero-sub-desktop">Piloti, classifiche, calendario e risultati per sessione — dati da OpenF1, aggiornati più volte al giorno.</p>
+      <p class="hero-tagline-mobile">🏁 Piloti, classifiche e gare. Tutti i numeri.</p>
+      <div class="stat-strip">
+        <div class="stat"><div class="stat-number" id="stat-piloti">–</div><div class="stat-label">Piloti</div></div>
+        <div class="stat"><div class="stat-number" id="stat-team">–</div><div class="stat-label">Team</div></div>
+        <div class="stat"><div class="stat-number" id="stat-gare">–</div><div class="stat-label">Weekend di gara</div></div>
       </div>
     </section>
 
     <aside class="home-aside">
       <div class="evento-widget">
-        <div class="evento-widget-titolo">📅 Prossime Gare</div>
+        <div class="evento-widget-titolo">📅 Prossimi weekend</div>
         <div id="prossimi-mini"></div>
-        <a class="evento-widget-tutti" href="gare.html">Guarda tutte le gare →</a>
+        <a class="evento-widget-tutti" href="gare.html">Tutto il calendario →</a>
       </div>
     </aside>
 
-    <div class="home-lottatori">
-      <div class="section-title" style="margin-top:0;">Piloti</div>
-
+    <div class="home-piloti">
+      <div class="section-title" style="margin-top:0;">Piloti <span class="count" id="result-count"></span></div>
+      <p id="riassunto-nota" style="font-size:12px; color:var(--text-muted); margin:-6px 0 12px;"></p>
       <div class="filter-bar">
         <div class="search-input">
           <span id="search-icon"></span>
-          <input id="search" type="text" placeholder="Cerca un pilota...">
+          <input id="search" type="text" placeholder="Cerca un pilota, un team o un numero...">
         </div>
-        <div id="category-pills" style="display:flex; flex-wrap:wrap; gap:8px;"></div>
+        <div id="category-pills" class="category-pills"></div>
       </div>
-
-      <div class="section-title">Roster <span class="count" id="result-count"></span></div>
       <div class="driver-grid" id="piloti-grid"></div>
     </div>
   </div>
@@ -79,45 +60,6 @@
 
 <footer id="site-footer" class="site-footer"></footer>
 
-<script type="module">
-import { renderHeader, renderFooter, fetchJSON } from './js/common.js';
-
-(async function() {
-  await renderHeader('home');
-  await renderFooter();
-
-  try {
-    const [piloti, gare] = await Promise.all([
-      fetchJSON('data/roster.json'),
-      fetchJSON('data/events.json')
-    ]);
-
-    // Stats
-    const teamUnici = new Set(piloti.map(p => p.team).filter(Boolean)).size;
-    document.getElementById('stat-piloti').textContent = piloti.length;
-    document.getElementById('stat-gare').textContent = gare.length;
-    document.getElementById('stat-team').textContent = teamUnici;
-
-    // Prossime gare
-    const oggi = new Date();
-    const prossime = gare
-      .filter(g => new Date(g.data) > oggi)
-      .sort((a, b) => new Date(a.data) - new Date(b.data))
-      .slice(0, 3);
-
-    const miniHtml = prossime.map(g => `
-      <div class="evento-widget-mini">
-        <div class="evento-widget-mini-nome">${g.nome}</div>
-        <div class="evento-widget-mini-data">${g.circuito} — ${new Date(g.data).toLocaleDateString('it-IT')}</div>
-      </div>
-    `).join('');
-
-    document.getElementById('prossimi-mini').innerHTML = miniHtml || '<p style="color: var(--text-muted); font-size: 12px;">Nessuna gara in programma</p>';
-  } catch (e) {
-    console.error('Errore:', e);
-  }
-})();
-</script>
-<script type="module" src="js/piloti.js?v=202610031"></script>
+<script type="module" src="js/piloti.js?v=2"></script>
 </body>
 </html>

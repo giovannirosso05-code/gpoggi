@@ -1,0 +1,280 @@
+{
+ "dopo": "Azerbaijan Grand Prix",
+ "piloti": [
+  {
+   "numero": 12,
+   "acronimo": "ANT",
+   "nome": "Kimi Antonelli",
+   "team": "Mercedes",
+   "colore": "00D7B6",
+   "posizione": 1,
+   "punti": 302.0
+  },
+  {
+   "numero": 63,
+   "acronimo": "RUS",
+   "nome": "George Russell",
+   "team": "Mercedes",
+   "colore": "00D7B6",
+   "posizione": 2,
+   "punti": 236.0
+  },
+  {
+   "numero": 44,
+   "acronimo": "HAM",
+   "nome": "Lewis Hamilton",
+   "team": "Ferrari",
+   "colore": "ED1131",
+   "posizione": 3,
+   "punti": 199.0
+  },
+  {
+   "numero": 1,
+   "acronimo": "NOR",
+   "nome": "Lando Norris",
+   "team": "McLaren",
+   "colore": "F47600",
+   "posizione": 4,
+   "punti": 186.0
+  },
+  {
+   "numero": 16,
+   "acronimo": "LEC",
+   "nome": "Charles Leclerc",
+   "team": "Ferrari",
+   "colore": "ED1131",
+   "posizione": 5,
+   "punti": 179.0
+  },
+  {
+   "numero": 3,
+   "acronimo": "VER",
+   "nome": "Max Verstappen",
+   "team": "Red Bull Racing",
+   "colore": "4781D7",
+   "posizione": 6,
+   "punti": 163.0
+  },
+  {
+   "numero": 81,
+   "acronimo": "PIA",
+   "nome": "Oscar Piastri",
+   "team": "McLaren",
+   "colore": "F47600",
+   "posizione": 7,
+   "punti": 120.0
+  },
+  {
+   "numero": 6,
+   "acronimo": "HAD",
+   "nome": "Isack Hadjar",
+   "team": "Red Bull Racing",
+   "colore": "4781D7",
+   "posizione": 8,
+   "punti": 86.0
+  },
+  {
+   "numero": 30,
+   "acronimo": "LAW",
+   "nome": "Liam Lawson",
+   "team": "Racing Bulls",
+   "colore": "6C98FF",
+   "posizione": 9,
+   "punti": 59.0
+  },
+  {
+   "numero": 10,
+   "acronimo": "GAS",
+   "nome": "Pierre Gasly",
+   "team": "Alpine",
+   "colore": "00A1E8",
+   "posizione": 10,
+   "punti": 41.0
+  },
+  {
+   "numero": 41,
+   "acronimo": "LIN",
+   "nome": "Arvid Lindblad",
+   "team": "Racing Bulls",
+   "colore": "6C98FF",
+   "posizione": 11,
+   "punti": 37.0
+  },
+  {
+   "numero": 43,
+   "acronimo": "COL",
+   "nome": "Franco Colapinto",
+   "team": "Alpine",
+   "colore": "00A1E8",
+   "posizione": 12,
+   "punti": 27.0
+  },
+  {
+   "numero": 87,
+   "acronimo": "BEA",
+   "nome": "Oliver Bearman",
+   "team": "Haas F1 Team",
+   "colore": "9C9FA2",
+   "posizione": 13,
+   "punti": 20.0
+  },
+  {
+   "numero": 5,
+   "acronimo": "BOR",
+   "nome": "Gabriel Bortoleto",
+   "team": "Audi",
+   "colore": "F50537",
+   "posizione": 14,
+   "punti": 10.0
+  },
+  {
+   "numero": 27,
+   "acronimo": "HUL",
+   "nome": "Nico Hulkenberg",
+   "team": "Audi",
+   "colore": "F50537",
+   "posizione": 15,
+   "punti": 7.0
+  },
+  {
+   "numero": 31,
+   "acronimo": "OCO",
+   "nome": "Esteban Ocon",
+   "team": "Haas F1 Team",
+   "colore": "9C9FA2",
+   "posizione": 16,
+   "punti": 7.0
+  },
+  {
+   "numero": 55,
+   "acronimo": "SAI",
+   "nome": "Carlos Sainz",
+   "team": "Williams",
+   "colore": "1868DB",
+   "posizione": 17,
+   "punti": 7.0
+  },
+  {
+   "numero": 23,
+   "acronimo": "ALB",
+   "nome": "Alexander Albon",
+   "team": "Williams",
+   "colore": "1868DB",
+   "posizione": 18,
+   "punti": 5.0
+  },
+  {
+   "numero": 14,
+   "acronimo": "ALO",
+   "nome": "Fernando Alonso",
+   "team": "Aston Martin",
+   "colore": "229971",
+   "posizione": 19,
+   "punti": 3.0
+  },
+  {
+   "numero": 22,
+   "acronimo": "TSU",
+   "nome": "Yuki Tsunoda",
+   "team": "Racing Bulls",
+   "colore": "6C98FF",
+   "posizione": 20,
+   "punti": 1.0
+  },
+  {
+   "numero": 18,
+   "acronimo": "STR",
+   "nome": "Lance Stroll",
+   "team": "Aston Martin",
+   "colore": "229971",
+   "posizione": 21,
+   "punti": 0.0
+  },
+  {
+   "numero": 77,
+   "acronimo": "BOT",
+   "nome": "Valtteri Bottas",
+   "team": "Cadillac",
+   "colore": "909090",
+   "posizione": 22,
+   "punti": 0.0
+  },
+  {
+   "numero": 11,
+   "acronimo": "PER",
+   "nome": "Sergio Perez",
+   "team": "Cadillac",
+   "colore": "909090",
+   "posizione": 23,
+   "punti": 0.0
+  }
+ ],
+ "costruttori": [
+  {
+   "posizione": 1,
+   "team": "Mercedes",
+   "colore": "00D7B6",
+   "punti": 538.0
+  },
+  {
+   "posizione": 2,
+   "team": "Ferrari",
+   "colore": "ED1131",
+   "punti": 378.0
+  },
+  {
+   "posizione": 3,
+   "team": "McLaren",
+   "colore": "F47600",
+   "punti": 306.0
+  },
+  {
+   "posizione": 4,
+   "team": "Red Bull Racing",
+   "colore": "4781D7",
+   "punti": 263.0
+  },
+  {
+   "posizione": 5,
+   "team": "Racing Bulls",
+   "colore": "6C98FF",
+   "punti": 83.0
+  },
+  {
+   "posizione": 6,
+   "team": "Alpine",
+   "colore": "00A1E8",
+   "punti": 68.0
+  },
+  {
+   "posizione": 7,
+   "team": "Haas F1 Team",
+   "colore": "9C9FA2",
+   "punti": 27.0
+  },
+  {
+   "posizione": 8,
+   "team": "Audi",
+   "colore": "F50537",
+   "punti": 17.0
+  },
+  {
+   "posizione": 9,
+   "team": "Williams",
+   "colore": "1868DB",
+   "punti": 12.0
+  },
+  {
+   "posizione": 10,
+   "team": "Aston Martin",
+   "colore": "229971",
+   "punti": 3.0
+  },
+  {
+   "posizione": 11,
+   "team": "Cadillac",
+   "colore": "909090",
+   "punti": 0.0
+  }
+ ]
+}

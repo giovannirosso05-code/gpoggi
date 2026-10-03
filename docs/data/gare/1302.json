@@ -1,0 +1,51 @@
+{
+ "id": 1302,
+ "nome": "Abu Dhabi Grand Prix",
+ "circuito": "Yas Marina Circuit",
+ "localita": "Yas Marina",
+ "paese": "Emirati Arabi Uniti",
+ "inizio": "2026-12-04T09:30:00+00:00",
+ "fine": "2026-12-06T15:00:00+00:00",
+ "sessioni": [
+  {
+   "key": 11429,
+   "nome": "Prove libere 1",
+   "tipo": "Practice 1",
+   "inizio": "2026-12-04T09:30:00+00:00",
+   "fine": "2026-12-04T10:30:00+00:00",
+   "risultati": null
+  },
+  {
+   "key": 11430,
+   "nome": "Prove libere 2",
+   "tipo": "Practice 2",
+   "inizio": "2026-12-04T13:00:00+00:00",
+   "fine": "2026-12-04T14:00:00+00:00",
+   "risultati": null
+  },
+  {
+   "key": 11431,
+   "nome": "Prove libere 3",
+   "tipo": "Practice 3",
+   "inizio": "2026-12-05T10:30:00+00:00",
+   "fine": "2026-12-05T11:30:00+00:00",
+   "risultati": null
+  },
+  {
+   "key": 11432,
+   "nome": "Qualifiche",
+   "tipo": "Qualifying",
+   "inizio": "2026-12-05T14:00:00+00:00",
+   "fine": "2026-12-05T15:00:00+00:00",
+   "risultati": null
+  },
+  {
+   "key": 11436,
+   "nome": "Gara",
+   "tipo": "Race",
+   "inizio": "2026-12-06T13:00:00+00:00",
+   "fine": "2026-12-06T15:00:00+00:00",
+   "risultati": null
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "id": 1298,
+ "nome": "Mexico City Grand Prix",
+ "circuito": "Mexico City",
+ "localita": "Mexico City",
+ "paese": "Messico",
+ "inizio": "2026-10-30T18:30:00+00:00",
+ "fine": "2026-11-01T22:00:00+00:00",
+ "sessioni": [
+  {
+   "key": 11397,
+   "nome": "Prove libere 1",
+   "tipo": "Practice 1",
+   "inizio": "2026-10-30T18:30:00+00:00",
+   "fine": "2026-10-30T19:30:00+00:00",
+   "risultati": null
+  },
+  {
+   "key": 11398,
+   "nome": "Prove libere 2",
+   "tipo": "Practice 2",
+   "inizio": "2026-10-30T22:00:00+00:00",
+   "fine": "2026-10-30T23:00:00+00:00",
+   "risultati": null
+  },
+  {
+   "key": 11399,
+   "nome": "Prove libere 3",
+   "tipo": "Practice 3",
+   "inizio": "2026-10-31T17:30:00+00:00",
+   "fine": "2026-10-31T18:30:00+00:00",
+   "risultati": null
+  },
+  {
+   "key": 11400,
+   "nome": "Qualifiche",
+   "tipo": "Qualifying",
+   "inizio": "2026-10-31T21:00:00+00:00",
+   "fine": "2026-10-31T22:00:00+00:00",
+   "risultati": null
+  },
+  {
+   "key": 11404,
+   "nome": "Gara",
+   "tipo": "Race",
+   "inizio": "2026-11-01T20:00:00+00:00",
+   "fine": "2026-11-01T22:00:00+00:00",
+   "risultati": null
+  }
+ ]
+}

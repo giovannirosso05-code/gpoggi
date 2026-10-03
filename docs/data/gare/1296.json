@@ -1,0 +1,51 @@
+{
+ "id": 1296,
+ "nome": "Singapore Grand Prix",
+ "circuito": "Singapore",
+ "localita": "Marina Bay",
+ "paese": "Singapore",
+ "inizio": "2026-10-09T08:30:00+00:00",
+ "fine": "2026-10-11T14:00:00+00:00",
+ "sessioni": [
+  {
+   "key": 11378,
+   "nome": "Prove libere 1",
+   "tipo": "Practice 1",
+   "inizio": "2026-10-09T08:30:00+00:00",
+   "fine": "2026-10-09T09:30:00+00:00",
+   "risultati": null
+  },
+  {
+   "key": 11379,
+   "nome": "Qualifiche sprint",
+   "tipo": "Sprint Qualifying",
+   "inizio": "2026-10-09T12:30:00+00:00",
+   "fine": "2026-10-09T13:14:00+00:00",
+   "risultati": null
+  },
+  {
+   "key": 11383,
+   "nome": "Sprint",
+   "tipo": "Sprint",
+   "inizio": "2026-10-10T09:00:00+00:00",
+   "fine": "2026-10-10T10:00:00+00:00",
+   "risultati": null
+  },
+  {
+   "key": 11384,
+   "nome": "Qualifiche",
+   "tipo": "Qualifying",
+   "inizio": "2026-10-10T13:00:00+00:00",
+   "fine": "2026-10-10T14:00:00+00:00",
+   "risultati": null
+  },
+  {
+   "key": 11388,
+   "nome": "Gara",
+   "tipo": "Race",
+   "inizio": "2026-10-11T12:00:00+00:00",
+   "fine": "2026-10-11T14:00:00+00:00",
+   "risultati": null
+  }
+ ]
+}

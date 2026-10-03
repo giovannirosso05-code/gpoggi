@@ -1,191 +1,240 @@
+"""Scarica i dati F1 da OpenF1 (https://openf1.org) e scrive i JSON statici in docs/data/.
+
+Produce:
+  roster.json           piloti della stagione con team e punti
+  standings.json        classifica piloti e costruttori dopo l'ultima gara disputata
+  events.json           calendario dei weekend di gara con le sessioni
+  gare/<meeting>.json   risultati per sessione di un weekend
+
+Niente foto: quelle di OpenF1 puntano a media.formula1.com (materiale protetto).
+Uso: python scraper_f1.py [anno]
 """
-Scraper F1 da OpenF1 API (https://openf1.org/).
 
-OpenF1 fornisce dati F1 real-time: piloti, team, sessioni (FP1/2/3, qualifiche, gara),
-risultati e posizioni. API pubblica, nessuna chiave richiesta, rate limit: 10 req/sec.
-
-Uso:
-  python scraper_f1.py                 # genera cache locale + docs/data/
-  python scraper_f1.py 2024            # solo il campionato 2024
-"""
-
+import hashlib
 import json
-import os
+import sys
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import Optional
 
 import requests
 
 ROOT = Path(__file__).parent
 CACHE = ROOT / "cache"
-DOCS_DATA = ROOT / "docs" / "data"
-CACHE.mkdir(exist_ok=True)
+DATA = ROOT / "docs" / "data"
+BASE = "https://api.openf1.org/v1"
+PAUSA = 0.4
+GIORNI_CACHE = 2  # i dati di sessioni chiuse da piu' di N giorni non cambiano piu'
 
-# OpenF1 API endpoints
-BASE_URL = "https://api.openf1.org/v1"
-TIMEOUT = 10
+SESSIONI_IT = {
+    "Practice 1": "Prove libere 1",
+    "Practice 2": "Prove libere 2",
+    "Practice 3": "Prove libere 3",
+    "Sprint Qualifying": "Qualifiche sprint",
+    "Sprint Shootout": "Qualifiche sprint",
+    "Sprint": "Sprint",
+    "Qualifying": "Qualifiche",
+    "Race": "Gara",
+}
+ORDINE = list(SESSIONI_IT)
 
-# Le sessioni F1 in ordine di una gara weekend
-TIPI_SESSIONE = {
-    "Practice 1": "FP1",
-    "Practice 2": "FP2",
-    "Practice 3": "FP3",
-    "Qualifying": "Q",
-    "Sprint": "S",
-    "Race": "R"
+PAESI_IT = {
+    "Australia": "Australia", "China": "Cina", "Japan": "Giappone", "Bahrain": "Bahrain",
+    "Saudi Arabia": "Arabia Saudita", "United States": "Stati Uniti", "Italy": "Italia",
+    "Monaco": "Monaco", "Spain": "Spagna", "Canada": "Canada", "Austria": "Austria",
+    "United Kingdom": "Regno Unito", "Belgium": "Belgio", "Hungary": "Ungheria",
+    "Netherlands": "Paesi Bassi", "Azerbaijan": "Azerbaigian", "Singapore": "Singapore",
+    "Mexico": "Messico", "Brazil": "Brasile", "Qatar": "Qatar", "United Arab Emirates": "Emirati Arabi Uniti",
+    "Portugal": "Portogallo", "Turkey": "Turchia", "Germany": "Germania", "France": "Francia",
+    "Russia": "Russia", "South Korea": "Corea del Sud", "Malaysia": "Malesia",
 }
 
-
-def fetch_json(endpoint: str, params: dict = None) -> Optional[dict | list]:
-    """Fetch JSON da OpenF1 con retry."""
-    url = f"{BASE_URL}{endpoint}"
-    for attempt in range(3):
-        try:
-            resp = requests.get(url, params=params, timeout=TIMEOUT)
-            if resp.status_code == 200:
-                return resp.json()
-            elif resp.status_code == 429:  # Rate limit
-                time.sleep(2 ** attempt)
-                continue
-            else:
-                print(f"⚠️  {endpoint}: {resp.status_code}")
-                return None
-        except Exception as e:
-            print(f"❌ Errore fetching {endpoint}: {e}")
-            time.sleep(1)
-    return None
+ORA = datetime.now(timezone.utc)
 
 
-def get_anni_disponibili() -> list:
-    """Scarica la lista degli anni con dati disponibili."""
-    data = fetch_json("/seasons")
-    if data and isinstance(data, list):
-        return sorted(set(s.get("year") for s in data if s.get("year")))
-    return []
+def parse_data(s):
+    return datetime.fromisoformat(s)
 
 
-def scarica_campionato(anno: int):
-    """Scarica piloti, team e gare per un campionato."""
-    print(f"\n📥 Scaricando campionato {anno}...")
-
-    # Piloti
-    piloti = fetch_json("/drivers", {"season_year": anno})
-    if piloti:
-        cache_piloti = CACHE / f"drivers_{anno}.json"
-        with open(cache_piloti, "w") as f:
-            json.dump(piloti, f)
-        print(f"  ✓ {len(piloti)} piloti")
-
-    # Team
-    team = fetch_json("/teams", {"season_year": anno})
-    if team:
-        cache_team = CACHE / f"teams_{anno}.json"
-        with open(cache_team, "w") as f:
-            json.dump(team, f)
-        print(f"  ✓ {len(team)} team")
-
-    # Gare (raceMeetings)
-    gare = fetch_json("/meetings", {"season_year": anno})
-    if gare:
-        cache_gare = CACHE / f"meetings_{anno}.json"
-        with open(cache_gare, "w") as f:
-            json.dump(gare, f)
-        print(f"  ✓ {len(gare)} gare")
-
-        # Per ogni gara, scarica sessioni e risultati
-        for gara in gare:
-            gara_id = gara.get("meeting_key")
-            if gara_id:
-                sessioni = fetch_json("/sessions", {"meeting_key": gara_id})
-                if sessioni:
-                    cache_sessioni = CACHE / f"sessions_{gara_id}.json"
-                    with open(cache_sessioni, "w") as f:
-                        json.dump(sessioni, f)
-                time.sleep(0.11)  # Rispetta rate limit
-
-    return piloti, team, gare
+def get(path, params=None, definitivo=False):
+    """GET su OpenF1 con retry su 429. 'No results found' (404) = lista vuota."""
+    chiave = hashlib.md5(f"{path}{sorted((params or {}).items())}".encode()).hexdigest()
+    file_cache = CACHE / f"{chiave}.json"
+    if definitivo and file_cache.exists():
+        return json.loads(file_cache.read_text())
+    for tentativo in range(6):
+        time.sleep(PAUSA)
+        r = requests.get(f"{BASE}/{path}", params=params, timeout=30)
+        if r.status_code == 200:
+            dati = r.json()
+            if definitivo:
+                CACHE.mkdir(exist_ok=True)
+                file_cache.write_text(json.dumps(dati))
+            return dati
+        if r.status_code == 404:
+            return []
+        if r.status_code == 429:
+            time.sleep(2 * (tentativo + 1))
+            continue
+        r.raise_for_status()
+    raise RuntimeError(f"OpenF1 non risponde su {path} {params}")
 
 
-def build_piloti_json(anno: int, piloti: list, team: list):
-    """Costruisce roster.json (lista piloti con foto, team, numero, nazionalità)."""
-    if not piloti:
-        return
-
-    # Mappa team_id -> nome team
-    team_map = {t.get("team_id"): t.get("team_name") for t in (team or [])}
-
-    roster = []
-    for p in piloti:
-        entry = {
-            "id": p.get("driver_id"),
-            "nome": p.get("full_name", ""),
-            "numero": p.get("driver_number"),
-            "nazionalita": p.get("country_code", ""),
-            "team": team_map.get(p.get("team_id"), ""),
-            "foto": f"https://media.formula1.com/image/upload/f_auto/q_auto/v1406375847/f1_website_v2/drivers/{p.get('driver_id'):03d}.jpg"
-            if p.get("driver_id") else ""
-        }
-        roster.append(entry)
-
-    out = DOCS_DATA / "roster.json"
-    with open(out, "w") as f:
-        json.dump(sorted(roster, key=lambda x: (x.get("team", ""), x.get("numero", 0))), f)
-    print(f"✓ roster.json ({len(roster)} piloti)")
+def scrivi(percorso, dati):
+    percorso.parent.mkdir(parents=True, exist_ok=True)
+    percorso.write_text(json.dumps(dati, ensure_ascii=False, indent=1))
 
 
-def build_gare_json(anno: int, gare: list):
-    """Costruisce events.json (lista gare con date, sessioni)."""
-    if not gare:
-        return
+def fmt_tempo(sec):
+    if sec is None:
+        return None
+    if isinstance(sec, str):
+        return sec
+    ore, resto = divmod(sec, 3600)
+    minuti, s = divmod(resto, 60)
+    if ore:
+        return f"{int(ore)}:{int(minuti):02d}:{s:06.3f}"
+    if minuti:
+        return f"{int(minuti)}:{s:06.3f}"
+    return f"{s:.3f}"
+
+
+def ultimo_valore(v):
+    if isinstance(v, list):
+        validi = [x for x in v if x is not None]
+        return validi[-1] if validi else None
+    return v
+
+
+def fmt_distacco(v):
+    v = ultimo_valore(v)
+    if v is None or v == 0:
+        return None
+    if isinstance(v, str):
+        return v
+    return f"+{v:.3f}"
+
+
+def risultati_sessione(sessione, piloti):
+    righe = get("session_result", {"session_key": sessione["session_key"]}, definitivo=True)
+    out = []
+    for r in sorted(righe, key=lambda x: (x.get("position") is None, x.get("position") or 0)):
+        p = piloti.get(r["driver_number"], {})
+        stato = "RIT" if r.get("dnf") else "NP" if r.get("dns") else "SQ" if r.get("dsq") else None
+        durata = ultimo_valore(r.get("duration"))
+        out.append({
+            "pos": r.get("position"),
+            "numero": r["driver_number"],
+            "acronimo": p.get("acronimo"),
+            "nome": p.get("nome"),
+            "team": p.get("team"),
+            "giri": r.get("number_of_laps"),
+            "stato": stato,
+            "tempo": fmt_tempo(durata),
+            "distacco": fmt_distacco(r.get("gap_to_leader")),
+        })
+    return out
+
+
+def main():
+    anno = int(sys.argv[1]) if len(sys.argv) > 1 else ORA.year
+    print(f"OpenF1 — stagione {anno}")
+
+    sessioni = get("sessions", {"year": anno})
+    meetings = {m["meeting_key"]: m for m in get("meetings", {"year": anno})}
+    if not sessioni or not meetings:
+        sys.exit(f"Nessun dato OpenF1 per il {anno}")
+
+    per_meeting = {}
+    for s in sessioni:
+        if s["session_name"] in SESSIONI_IT and not s.get("is_cancelled"):
+            per_meeting.setdefault(s["meeting_key"], []).append(s)
 
     eventi = []
-    for gara in gare:
-        try:
-            data_gara = datetime.fromisoformat(gara.get("date_start", "").replace("Z", "+00:00"))
-            stato = "Programmato"
-            if datetime.fromisoformat(datetime.now(data_gara.tzinfo).isoformat()) > data_gara:
-                stato = "Passato"
+    visti = {}
+    for key, sess in sorted(per_meeting.items(), key=lambda kv: min(s["date_start"] for s in kv[1])):
+        m = meetings.get(key)
+        if not m or "testing" in m["meeting_name"].lower():
+            continue
+        sess.sort(key=lambda s: s["date_start"])
+        finiti = [s for s in sess if parse_data(s["date_end"]) < ORA]
+        recente = bool(finiti) and (ORA - parse_data(finiti[-1]["date_end"])).days < GIORNI_CACHE
 
-            entry = {
-                "id": gara.get("meeting_key"),
-                "nome": gara.get("meeting_name", ""),
-                "circuito": gara.get("circuit_short_name", ""),
-                "paese": gara.get("country_name", ""),
-                "data": data_gara.isoformat(),
-                "stato": stato
-            }
-            eventi.append(entry)
-        except Exception as e:
-            print(f"⚠️  Errore parsing gara {gara.get('meeting_name')}: {e}")
+        piloti = {}
+        if finiti:
+            for d in get("drivers", {"meeting_key": key}, definitivo=not recente):
+                piloti[d["driver_number"]] = {
+                    "nome": d["full_name"].title() if d.get("full_name") else None,
+                    "acronimo": d.get("name_acronym"),
+                    "team": d.get("team_name"),
+                    "colore": d.get("team_colour"),
+                }
+                visti[d["driver_number"]] = piloti[d["driver_number"]]
 
-    out = DOCS_DATA / "events.json"
-    with open(out, "w") as f:
-        json.dump(sorted(eventi, key=lambda x: x.get("data", "")), f)
-    print(f"✓ events.json ({len(eventi)} gare)")
+        lista = []
+        for s in sorted(sess, key=lambda s: s["date_start"]):
+            finita = parse_data(s["date_end"]) < ORA
+            lista.append({
+                "key": s["session_key"],
+                "nome": SESSIONI_IT[s["session_name"]],
+                "tipo": s["session_name"],
+                "inizio": s["date_start"],
+                "fine": s["date_end"],
+                "risultati": risultati_sessione(s, piloti) if finita else None,
+            })
+        paese = m["country_name"]
+        scheda = {
+            "id": key,
+            "nome": m["meeting_name"],
+            "circuito": m["circuit_short_name"],
+            "localita": m["location"],
+            "paese": PAESI_IT.get(paese, paese),
+            "inizio": min(s["date_start"] for s in sess),
+            "fine": max(s["date_end"] for s in sess),
+            "sessioni": lista,
+        }
+        scrivi(DATA / "gare" / f"{key}.json", scheda)
+        eventi.append({k: scheda[k] for k in ("id", "nome", "circuito", "localita", "paese", "inizio", "fine")}
+                      | {"sessioni": [{k: s[k] for k in ("nome", "tipo", "inizio", "fine")} for s in lista]})
+        print(f"  {m['meeting_name']}: {len(finiti)}/{len(sess)} sessioni disputate")
+
+    scrivi(DATA / "events.json", eventi)
+
+    gare_fatte = [s for s in sessioni if s["session_name"] == "Race" and parse_data(s["date_end"]) < ORA and not s.get("is_cancelled")]
+    roster, standings = [], {"dopo": None, "piloti": [], "costruttori": []}
+    if gare_fatte:
+        ultima = max(gare_fatte, key=lambda s: s["date_start"])
+        standings["dopo"] = meetings[ultima["meeting_key"]]["meeting_name"]
+        drivers = {d["driver_number"]: d for d in get("drivers", {"session_key": ultima["session_key"]})}
+        punti = {c["driver_number"]: c for c in get("championship_drivers", {"session_key": ultima["session_key"]})}
+        for num, d in drivers.items():
+            c = punti.get(num, {})
+            roster.append({
+                "numero": num,
+                "acronimo": d.get("name_acronym"),
+                "nome": d["full_name"].title(),
+                "team": d.get("team_name"),
+                "colore": d.get("team_colour"),
+                "posizione": c.get("position_current"),
+                "punti": c.get("points_current"),
+            })
+        for num, c in punti.items():
+            if num not in drivers:
+                v = visti.get(num, {})
+                roster.append({"numero": num, "acronimo": v.get("acronimo"), "nome": v.get("nome"), "team": v.get("team"),
+                               "colore": v.get("colore"), "posizione": c.get("position_current"), "punti": c.get("points_current")})
+        roster.sort(key=lambda p: (p["posizione"] is None, p["posizione"] or 0, p["numero"]))
+        standings["piloti"] = [p for p in roster if p["posizione"] is not None]
+        colori = {d.get("team_name"): d.get("team_colour") for d in drivers.values()}
+        for c in sorted(get("championship_teams", {"session_key": ultima["session_key"]}), key=lambda x: x["position_current"]):
+            standings["costruttori"].append({"posizione": c["position_current"], "team": c["team_name"],
+                                             "colore": colori.get(c["team_name"]), "punti": c["points_current"]})
+
+    scrivi(DATA / "roster.json", roster)
+    scrivi(DATA / "standings.json", standings)
+    scrivi(DATA / "meta.json", {"anno": anno, "aggiornato": ORA.isoformat(timespec="seconds"), "fonte": "OpenF1"})
+    print(f"Fatto: {len(eventi)} weekend, {len(roster)} piloti, aggiornato {ORA:%Y-%m-%d %H:%M} UTC")
 
 
 if __name__ == "__main__":
-    import sys
-
-    # Determina anni da scaricare
-    if len(sys.argv) > 1:
-        anni = [int(sys.argv[1])]
-    else:
-        anni = get_anni_disponibili()
-        if not anni:
-            print("❌ Nessun anno disponibile su OpenF1")
-            sys.exit(1)
-        anni = [max(anni)]  # Scarica solo l'anno più recente per default
-
-    print(f"📊 OpenF1 scraper — Scaricando anni: {anni}")
-
-    for anno in anni:
-        piloti, team, gare = scarica_campionato(anno)
-
-        if piloti and gare:
-            build_piloti_json(anno, piloti, team)
-            build_gare_json(anno, gare)
-
-    print("\n✅ Fatto!")
+    main()

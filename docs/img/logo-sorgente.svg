@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <circle cx="256" cy="268" r="222" fill="none" stroke="#f4f4f6" stroke-width="13" stroke-dasharray="22 14"/>
+  <circle cx="256" cy="268" r="196" fill="none" stroke="#f4f4f6" stroke-width="30"/>
+  <text x="256" y="378" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="300" fill="#f4f4f6" transform="skewX(-10) translate(66 0)" letter-spacing="-6">F1</text>
+  <rect x="146" y="22" width="220" height="104" fill="#e8352f"/>
+  <text x="256" y="106" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="88" fill="#ffffff">OGGI</text>
+</svg>

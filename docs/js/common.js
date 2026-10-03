@@ -25,7 +25,7 @@ export function renderHeader(paginaAttuale) {
   ];
   document.getElementById("site-header").innerHTML = `
     <nav class="nav container">
-      <div class="brand"><a href="index.html">🏁 F1 <span class="accent">Oggi</span></a></div>
+      <a href="index.html" class="brand" aria-label="F1 Oggi, home"><img src="img/logo-128.png" alt="" class="brand-logo" width="56" height="56"><span>F1<span class="dot">•</span>Oggi</span></a>
       <div class="nav-links">
         ${voci.map(([id, href, label]) => `<a href="${href}" class="${id === paginaAttuale ? "active" : ""}">${label}</a>`).join("")}
       </div>

@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, img, credito, ND, formattaDataOra, intervalloWeekend, erroreCaricamento } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, img, credito, stemma, ND, formattaDataOra, intervalloWeekend, erroreCaricamento } from "./common.js";
 
 renderHeader("gare");
 renderFooter();
@@ -6,14 +6,14 @@ renderFooter();
 const box = document.getElementById("gara-box");
 const id = new URLSearchParams(location.search).get("id");
 
-function tabella(risultati, foto) {
+function tabella(risultati, foto, colori) {
   if (!risultati || !risultati.length) return `<p class="muted">Risultati non disponibili.</p>`;
   return `<div class="table-wrap"><table class="results">
     <thead><tr><th>Pos</th><th>Pilota</th><th>Team</th><th>Giri</th><th>Tempo</th><th>Distacco</th></tr></thead>
     <tbody>${risultati.map((r) => `<tr class="${r.pos && r.pos <= 3 ? "podio" : ""}">
       <td>${r.pos ?? esc(r.stato || "–")}</td>
       <td><a class="cella-pilota" href="pilota.html?n=${r.numero}">${foto[r.numero] ? img(foto[r.numero], r.nome || "", "foto-mini") : '<span class="foto-mini"></span>'}<strong>${esc(r.nome || "Pilota #" + r.numero)}</strong></a></td>
-      <td>${esc(r.team || "")}</td>
+      <td><span class="cella-team">${stemma(r.team, colori[r.team])}${esc(r.team || "")}</span></td>
       <td>${r.giri ?? ND}</td>
       <td>${r.tempo ? esc(r.tempo) : ND}${r.stato && r.pos ? ` <span class="muted">${esc(r.stato)}</span>` : ""}</td>
       <td>${r.distacco ? esc(r.distacco) : "–"}</td>
@@ -22,7 +22,8 @@ function tabella(risultati, foto) {
 
 try {
   if (!/^\d+$/.test(id || "")) throw new Error("id non valido");
-  const [g, roster] = await Promise.all([fetchJSON(`data/gare/${id}.json`), fetchJSON("data/roster.json")]);
+  const [g, roster, st] = await Promise.all([fetchJSON(`data/gare/${id}.json`), fetchJSON("data/roster.json"), fetchJSON("data/standings.json")]);
+  const colori = Object.fromEntries(st.costruttori.map((c) => [c.team, c.colore]));
   const foto = Object.fromEntries(roster.filter((p) => p.foto).map((p) => [p.numero, p.foto]));
   document.title = `${g.nome} — F1 Oggi`;
   const ora = new Date();
@@ -47,7 +48,7 @@ try {
     const s = sessioni.find((x) => String(x.key) === String(key));
     document.getElementById("sessione").innerHTML = `
       <h3 class="section-title" style="margin-top:20px">${esc(s.nome)} <span class="count">· ${formattaDataOra(s.inizio)}</span></h3>
-      ${new Date(s.fine) > ora && !s.risultati ? `<p class="muted">Sessione non ancora disputata.</p>` : tabella(s.risultati, foto)}`;
+      ${new Date(s.fine) > ora && !s.risultati ? `<p class="muted">Sessione non ancora disputata.</p>` : tabella(s.risultati, foto, colori)}`;
   };
   document.getElementById("tabs").addEventListener("click", (e) => {
     const b = e.target.closest(".pill");

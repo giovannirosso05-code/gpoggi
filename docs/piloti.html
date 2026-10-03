@@ -8,12 +8,12 @@
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#f5f4f0">
-<title>Weekend di gara | F1 Oggi</title>
-<meta name="description" content="Risultati per sessione del weekend di Formula 1: prove libere, qualifiche, sprint e gara.">
+<title>Piloti — F1 Oggi</title>
+<meta name="description" content="Tutti i piloti della stagione di Formula 1: foto, team, punti in classifica e schede con i risultati. Sito non ufficiale.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="F1 Oggi">
-<meta property="og:title" content="Weekend di gara | F1 Oggi">
-<meta property="og:description" content="Risultati per sessione del weekend di Formula 1: prove libere, qualifiche, sprint e gara.">
+<meta property="og:title" content="Piloti — F1 Oggi">
+<meta property="og:description" content="Piloti, classifiche, calendario e risultati per sessione della stagione di Formula 1 in corso, in italiano. Sito non ufficiale.">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,11 +25,19 @@
 <header id="site-header" class="site-header"></header>
 
 <div class="container">
-  <div id="gara-box"></div>
+  <div class="section-title" style="margin-top:32px">Piloti <span class="count" id="result-count"></span></div>
+  <div class="filter-bar">
+    <div class="search-input">
+      <span id="search-icon"></span>
+      <input id="search" type="text" placeholder="Cerca un pilota, un team o un numero...">
+    </div>
+    <div id="category-pills" class="category-pills"></div>
+  </div>
+  <div class="driver-grid" id="piloti-grid"></div>
 </div>
 
 <footer id="site-footer" class="site-footer"></footer>
 
-<script type="module" src="js/gara.js?v=5"></script>
+<script type="module" src="js/piloti.js?v=6"></script>
 </body>
 </html>

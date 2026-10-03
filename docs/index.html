@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{var t=localStorage.getItem("tema");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="icon" type="image/png" href="img/favicon-64.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#f5f4f0">
 <title>F1 Oggi — Piloti, classifiche e gare di Formula 1</title>
 <meta name="description" content="Piloti, classifiche, calendario e risultati per sessione della stagione di Formula 1 in corso, in italiano. Sito non ufficiale.">
 <meta property="og:type" content="website">
@@ -17,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=5">
+<link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
 
@@ -35,23 +36,20 @@
   </section>
 
   <div class="home-layout">
-    <div class="home-piloti">
-      <div class="section-title">Piloti <span class="count" id="result-count"></span></div>
-      <div class="filter-bar">
-        <div class="search-input">
-          <span id="search-icon"></span>
-          <input id="search" type="text" placeholder="Cerca un pilota, un team o un numero...">
-        </div>
-        <div id="category-pills" class="category-pills"></div>
-      </div>
-      <div class="driver-grid" id="piloti-grid"></div>
+    <div class="home-sezioni">
+      <section id="ultima-gara"></section>
+      <section>
+        <div class="section-title" style="margin-top:0">Classifica piloti</div>
+        <p id="riassunto-nota" class="muted" style="font-size:13px;margin:-6px 0 12px"></p>
+        <div id="top-classifica"></div>
+      </section>
+      <a class="vai-piloti" href="piloti.html"><div>Tutti i piloti<br><span>Foto, team, punti e scheda con i risultati di ognuno</span></div><b>Vedi i piloti →</b></a>
     </div>
 
     <aside class="home-aside">
       <div class="evento-widget">
-        <div class="evento-widget-titolo">Classifica piloti</div>
-        <p id="riassunto-nota" class="muted" style="font-size:12px;margin:0 0 4px"></p>
-        <ol class="mini-classifica" id="mini-classifica"></ol>
+        <div class="evento-widget-titolo">Costruttori</div>
+        <ol class="mini-classifica" id="mini-costruttori"></ol>
         <a class="evento-widget-tutti" href="classifiche.html">Classifiche complete →</a>
       </div>
       <div class="evento-widget">
@@ -65,6 +63,6 @@
 
 <footer id="site-footer" class="site-footer"></footer>
 
-<script type="module" src="js/piloti.js?v=5"></script>
+<script type="module" src="js/home.js?v=6"></script>
 </body>
 </html>

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1234,
+    "nome": "Gran Premio di Monza",
+    "circuito": "Monza",
+    "paese": "Italia",
+    "data": "2024-09-01T14:00:00Z",
+    "stato": "Passato"
+  },
+  {
+    "id": 1235,
+    "nome": "Gran Premio di Singapore",
+    "circuito": "Marina Bay",
+    "paese": "Singapore",
+    "data": "2024-10-20T17:00:00Z",
+    "stato": "Programmato"
+  },
+  {
+    "id": 1236,
+    "nome": "Gran Premio d'Austin",
+    "circuito": "Circuit of The Americas",
+    "paese": "Stati Uniti",
+    "data": "2024-10-20T20:00:00Z",
+    "stato": "Programmato"
+  },
+  {
+    "id": 1237,
+    "nome": "Gran Premio del Messico",
+    "circuito": "Hermanos Rodríguez",
+    "paese": "Messico",
+    "data": "2024-11-03T20:00:00Z",
+    "stato": "Programmato"
+  },
+  {
+    "id": 1238,
+    "nome": "Gran Premio di Abu Dhabi",
+    "circuito": "Yas Marina",
+    "paese": "Emirati Arabi Uniti",
+    "data": "2024-12-08T13:00:00Z",
+    "stato": "Programmato"
+  }
+]

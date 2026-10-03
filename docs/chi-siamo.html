@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='90'>🏁</text></svg>">
+<meta name="theme-color" content="#0a0a0d">
+<title>Chi Siamo — F1 Stats</title>
+<meta name="description" content="Chi siamo. F1 Stats è un sito informativo non ufficiale su Formula 1.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=202610031">
+<script defer data-domain="f1stats.local" src="https://plausible.io/js/script.js"></script>
+</head>
+<body>
+
+<header id="site-header" class="site-header"></header>
+
+<div class="container">
+  <article style="max-width: 700px; margin: 32px auto; line-height: 1.7;">
+    <h1 style="margin-bottom: 28px; font-size: 32px;">Chi Siamo</h1>
+
+    <section style="margin-bottom: 28px;">
+      <h2 style="font-size: 18px; margin-bottom: 12px;">Cos'è F1 Stats?</h2>
+      <p>F1 Stats è un sito informativo <strong>non ufficiale</strong> dedicato alla Formula 1.
+      Aggreghiamo e organizziamo i dati pubblici di Formula 1 da fonti aperte (OpenF1)
+      per offrire un'esperienza di ricerca e confronto rapida agli appassionati italiani.</p>
+    </section>
+
+    <section style="margin-bottom: 28px;">
+      <h2 style="font-size: 18px; margin-bottom: 12px;">Disclaimer Legale</h2>
+      <p><strong>Questo sito non è affiliato, non è autorizzato e non è associato a:</strong></p>
+      <ul style="margin: 12px 0; padding-left: 20px;">
+        <li>Formula 1 World Championship Limited</li>
+        <li>FIA (Federazione Internazionale dell'Automobilismo)</li>
+        <li>Liberty Media Corporation</li>
+        <li>Alcun team o pilota ufficiale di Formula 1</li>
+      </ul>
+      <p>Formula 1®, F1®, e tutti i loghi e marchi associati sono proprietà intellettuale
+      di Formula 1 World Championship Limited. Utilizziamo questi termini solo per
+      scopi descrittivi e informativi.</p>
+    </section>
+
+    <section style="margin-bottom: 28px;">
+      <h2 style="font-size: 18px; margin-bottom: 12px;">Fonte dei Dati</h2>
+      <p>Tutti i dati sono ottenuti da <a href="https://openf1.org/" target="_blank" style="color: var(--accent); text-decoration: underline;">OpenF1</a>,
+      un'API pubblica e gratuita che fornisce statistiche e risultati ufficiali di Formula 1.
+      OpenF1 è un progetto community-driven non affiliato a FIA o Liberty Media.</p>
+      <p style="font-size: 14px; color: var(--text-secondary);">I dati sono aggiornati in tempo reale quando disponibili.</p>
+    </section>
+
+    <section style="margin-bottom: 28px;">
+      <h2 style="font-size: 18px; margin-bottom: 12px;">Utilizzo Limitato</h2>
+      <p>Questo sito è realizzato per:</p>
+      <ul style="margin: 12px 0; padding-left: 20px;">
+        <li>Scopi informativi e educativi</li>
+        <li>Ricerca e analisi di dati pubblici</li>
+        <li>Supporto ai fan di Formula 1</li>
+      </ul>
+      <p><strong>Non è utilizzato per:</strong></p>
+      <ul style="margin: 12px 0; padding-left: 20px;">
+        <li>Scopi commerciali o di profitto</li>
+        <li>Violazione di marchi o proprietà intellettuale</li>
+        <li>Trasmissione di gare o contenuti protetti</li>
+      </ul>
+    </section>
+
+    <section style="margin-bottom: 28px;">
+      <h2 style="font-size: 18px; margin-bottom: 12px;">Contatti</h2>
+      <p>Se hai domande su questo sito o se desideri segnalare violazioni di copyright,
+      contattaci tramite questo sito.</p>
+    </section>
+
+    <section style="margin-bottom: 28px; padding: 16px; background: var(--accent-soft); border-radius: var(--radius); border-left: 4px solid var(--accent);">
+      <p style="margin: 0; font-size: 13px;">
+        <strong>Nota:</strong> Formula 1 è un marchio registrato di <em>Formula 1 World Championship Limited</em>.
+        Questo sito è un progetto fan non ufficiale e non ha alcun rapporto ufficiale con FIA,
+        Liberty Media o qualsiasi team di Formula 1.
+      </p>
+    </section>
+
+    <hr style="border: none; border-top: 1px solid var(--border); margin: 32px 0;">
+
+    <p style="text-align: center; font-size: 12px; color: var(--text-muted);">
+      © 2024 F1 Stats — Sito non ufficiale
+    </p>
+  </article>
+</div>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script type="module">
+  import { renderHeader, renderFooter } from './js/common.js';
+  (async () => {
+    await renderHeader('chi-siamo');
+    await renderFooter();
+  })();
+</script>
+</body>
+</html>

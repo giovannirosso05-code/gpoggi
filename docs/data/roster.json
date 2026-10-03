@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "nome": "Max Verstappen",
+    "numero": 1,
+    "nazionalita": "NED",
+    "team": "Red Bull Racing",
+    "foto": ""
+  },
+  {
+    "id": 2,
+    "nome": "Sergio Pérez",
+    "numero": 11,
+    "nazionalita": "MEX",
+    "team": "Red Bull Racing",
+    "foto": ""
+  },
+  {
+    "id": 3,
+    "nome": "Lewis Hamilton",
+    "numero": 44,
+    "nazionalita": "GBR",
+    "team": "Mercedes",
+    "foto": ""
+  },
+  {
+    "id": 4,
+    "nome": "George Russell",
+    "numero": 63,
+    "nazionalita": "GBR",
+    "team": "Mercedes",
+    "foto": ""
+  },
+  {
+    "id": 5,
+    "nome": "Lando Norris",
+    "numero": 4,
+    "nazionalita": "GBR",
+    "team": "McLaren",
+    "foto": ""
+  },
+  {
+    "id": 6,
+    "nome": "Oscar Piastri",
+    "numero": 81,
+    "nazionalita": "AUS",
+    "team": "McLaren",
+    "foto": ""
+  },
+  {
+    "id": 7,
+    "nome": "Charles Leclerc",
+    "numero": 16,
+    "nazionalita": "MON",
+    "team": "Ferrari",
+    "foto": ""
+  },
+  {
+    "id": 8,
+    "nome": "Carlos Sainz",
+    "numero": 55,
+    "nazionalita": "ESP",
+    "team": "Ferrari",
+    "foto": ""
+  },
+  {
+    "id": 9,
+    "nome": "Fernando Alonso",
+    "numero": 14,
+    "nazionalita": "ESP",
+    "team": "Aston Martin",
+    "foto": ""
+  },
+  {
+    "id": 10,
+    "nome": "Lance Stroll",
+    "numero": 18,
+    "nazionalita": "CAN",
+    "team": "Aston Martin",
+    "foto": ""
+  }
+]

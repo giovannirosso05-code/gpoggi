@@ -1,0 +1,42 @@
+name: Update F1 Data
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # ogni 6 ore
+  workflow_dispatch:       # manuale da GitHub
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Download F1 data
+      run: |
+        python scraper_f1.py
+
+    - name: Build data
+      run: |
+        python build_data.py
+
+    - name: Commit and push if changed
+      run: |
+        git config user.name "F1 Data Bot"
+        git config user.email "bot@f1stats.local"
+        git add docs/data/
+        if ! git diff-index --quiet HEAD; then
+          git commit -m "chore: update F1 data from OpenF1"
+          git push
+        else
+          echo "No changes to commit"
+        fi

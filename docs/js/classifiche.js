@@ -15,7 +15,7 @@ try {
       <div class="two-col">
         <div><h3 class="section-title" style="margin-top:0">Piloti</h3><div class="table-wrap"><table class="results">
           <thead><tr><th>Pos</th><th>Pilota</th><th>Team</th><th>Punti</th></tr></thead>
-          <tbody>${s.piloti.map((p) => `<tr><td>${p.posizione}</td><td>${dot(p.colore)}<strong>${esc(p.nome || "Pilota #" + p.numero)}</strong></td><td>${esc(p.team || "")}</td><td>${punti(p.punti)}</td></tr>`).join("")}</tbody>
+          <tbody>${s.piloti.map((p) => `<tr><td>${p.posizione}</td><td>${dot(p.colore)}<a href="pilota.html?n=${p.numero}"><strong>${esc(p.nome || "Pilota #" + p.numero)}</strong></a></td><td>${esc(p.team || "")}</td><td>${punti(p.punti)}</td></tr>`).join("")}</tbody>
         </table></div></div>
         <div><h3 class="section-title" style="margin-top:0">Costruttori</h3><div class="table-wrap"><table class="results">
           <thead><tr><th>Pos</th><th>Team</th><th>Punti</th></tr></thead>

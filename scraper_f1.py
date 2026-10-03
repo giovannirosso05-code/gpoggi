@@ -38,6 +38,24 @@ SESSIONI_IT = {
 }
 ORDINE = list(SESSIONI_IT)
 
+GP_IT = {
+    "Australian": "d'Australia", "Chinese": "di Cina", "Japanese": "del Giappone", "Bahrain": "del Bahrain",
+    "Saudi Arabian": "d'Arabia Saudita", "Miami": "di Miami", "Canadian": "del Canada", "Monaco": "di Monaco",
+    "Barcelona": "di Barcellona", "Spanish": "di Spagna", "Austrian": "d'Austria", "British": "di Gran Bretagna",
+    "Belgian": "del Belgio", "Hungarian": "d'Ungheria", "Dutch": "d'Olanda", "Italian": "d'Italia",
+    "Azerbaijan": "dell'Azerbaigian", "Singapore": "di Singapore", "United States": "degli Stati Uniti",
+    "Mexico City": "di Città del Messico", "São Paulo": "di San Paolo", "Las Vegas": "di Las Vegas",
+    "Qatar": "del Qatar", "Abu Dhabi": "di Abu Dhabi", "Emilia Romagna": "dell'Emilia-Romagna",
+}
+
+
+def nome_gp(nome):
+    """'Italian Grand Prix' -> 'Gran Premio d'Italia'; se non e' in elenco resta il nome della fonte."""
+    if nome.endswith(" Grand Prix") and nome[:-11] in GP_IT:
+        return f"Gran Premio {GP_IT[nome[:-11]]}"
+    return nome
+
+
 PAESI_IT = {
     "Australia": "Australia", "China": "Cina", "Japan": "Giappone", "Bahrain": "Bahrain",
     "Saudi Arabia": "Arabia Saudita", "United States": "Stati Uniti", "Italy": "Italia",
@@ -136,6 +154,37 @@ def risultati_sessione(sessione, piloti):
     return out
 
 
+def scrivi_schede_piloti(roster, schede):
+    """Un file per pilota con il suo risultato in ogni weekend gia' iniziato."""
+    def esito(sessione, numero):
+        if not sessione or not sessione["risultati"]:
+            return None
+        r = next((x for x in sessione["risultati"] if x["numero"] == numero), None)
+        return {"pos": r["pos"], "stato": r["stato"]} if r else None
+
+    for p in roster:
+        righe = []
+        for g in schede:
+            per_tipo = {s["tipo"]: s for s in g["sessioni"]}
+            riga = {
+                "id": g["id"], "nome": g["nome"], "inizio": g["inizio"],
+                "qualifiche": esito(per_tipo.get("Qualifying"), p["numero"]),
+                "sprint": esito(per_tipo.get("Sprint"), p["numero"]),
+                "gara": esito(per_tipo.get("Race"), p["numero"]),
+            }
+            if riga["qualifiche"] or riga["sprint"] or riga["gara"]:
+                righe.append(riga)
+        arrivi = [r["gara"]["pos"] for r in righe if r["gara"] and r["gara"]["pos"] and not r["gara"]["stato"]]
+        scrivi(DATA / "piloti" / f"{p['numero']}.json", p | {
+            "weekend": righe,
+            "vittorie": arrivi.count(1),
+            "podi": sum(1 for x in arrivi if x <= 3),
+            "pole": sum(1 for r in righe if r["qualifiche"] and r["qualifiche"]["pos"] == 1),
+            "miglior_arrivo": min(arrivi) if arrivi else None,
+            "ritiri": sum(1 for r in righe if r["gara"] and r["gara"]["stato"] == "RIT"),
+        })
+
+
 def main():
     anno = int(sys.argv[1]) if len(sys.argv) > 1 else ORA.year
     print(f"OpenF1 — stagione {anno}")
@@ -151,6 +200,7 @@ def main():
             per_meeting.setdefault(s["meeting_key"], []).append(s)
 
     eventi = []
+    schede = []
     visti = {}
     for key, sess in sorted(per_meeting.items(), key=lambda kv: min(s["date_start"] for s in kv[1])):
         m = meetings.get(key)
@@ -185,7 +235,7 @@ def main():
         paese = m["country_name"]
         scheda = {
             "id": key,
-            "nome": m["meeting_name"],
+            "nome": nome_gp(m["meeting_name"]),
             "circuito": m["circuit_short_name"],
             "localita": m["location"],
             "paese": PAESI_IT.get(paese, paese),
@@ -194,6 +244,7 @@ def main():
             "sessioni": lista,
         }
         scrivi(DATA / "gare" / f"{key}.json", scheda)
+        schede.append(scheda)
         eventi.append({k: scheda[k] for k in ("id", "nome", "circuito", "localita", "paese", "inizio", "fine")}
                       | {"sessioni": [{k: s[k] for k in ("nome", "tipo", "inizio", "fine")} for s in lista]})
         print(f"  {m['meeting_name']}: {len(finiti)}/{len(sess)} sessioni disputate")
@@ -204,7 +255,7 @@ def main():
     roster, standings = [], {"dopo": None, "piloti": [], "costruttori": []}
     if gare_fatte:
         ultima = max(gare_fatte, key=lambda s: s["date_start"])
-        standings["dopo"] = meetings[ultima["meeting_key"]]["meeting_name"]
+        standings["dopo"] = nome_gp(meetings[ultima["meeting_key"]]["meeting_name"])
         drivers = {d["driver_number"]: d for d in get("drivers", {"session_key": ultima["session_key"]})}
         punti = {c["driver_number"]: c for c in get("championship_drivers", {"session_key": ultima["session_key"]})}
         for num, d in drivers.items():
@@ -231,6 +282,7 @@ def main():
                                              "colore": colori.get(c["team_name"]), "punti": c["points_current"]})
 
     scrivi(DATA / "roster.json", roster)
+    scrivi_schede_piloti(roster, schede)
     scrivi(DATA / "standings.json", standings)
     scrivi(DATA / "meta.json", {"anno": anno, "aggiornato": ORA.isoformat(timespec="seconds"), "fonte": "OpenF1"})
     print(f"Fatto: {len(eventi)} weekend, {len(roster)} piloti, aggiornato {ORA:%Y-%m-%d %H:%M} UTC")

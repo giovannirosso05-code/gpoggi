@@ -12,7 +12,7 @@ function tabella(risultati) {
     <thead><tr><th>Pos</th><th>Pilota</th><th>Team</th><th>Giri</th><th>Tempo</th><th>Distacco</th></tr></thead>
     <tbody>${risultati.map((r) => `<tr>
       <td>${r.pos ?? esc(r.stato || "–")}</td>
-      <td><strong>${esc(r.nome || "Pilota #" + r.numero)}</strong> <span class="muted">${esc(r.acronimo || "")}</span></td>
+      <td><a href="pilota.html?n=${r.numero}"><strong>${esc(r.nome || "Pilota #" + r.numero)}</strong></a> <span class="muted">${esc(r.acronimo || "")}</span></td>
       <td>${esc(r.team || "")}</td>
       <td>${r.giri ?? ND}</td>
       <td>${r.tempo ? esc(r.tempo) : ND}${r.stato && r.pos ? ` <span class="muted">${esc(r.stato)}</span>` : ""}</td>

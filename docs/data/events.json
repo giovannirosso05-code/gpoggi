@@ -1,7 +1,7 @@
 [
  {
   "id": 1279,
-  "nome": "Australian Grand Prix",
+  "nome": "Gran Premio d'Australia",
   "circuito": "Melbourne",
   "localita": "Melbourne",
   "paese": "Australia",
@@ -42,7 +42,7 @@
  },
  {
   "id": 1280,
-  "nome": "Chinese Grand Prix",
+  "nome": "Gran Premio di Cina",
   "circuito": "Shanghai",
   "localita": "Shanghai",
   "paese": "Cina",
@@ -83,7 +83,7 @@
  },
  {
   "id": 1281,
-  "nome": "Japanese Grand Prix",
+  "nome": "Gran Premio del Giappone",
   "circuito": "Suzuka",
   "localita": "Suzuka",
   "paese": "Giappone",
@@ -124,7 +124,7 @@
  },
  {
   "id": 1284,
-  "nome": "Miami Grand Prix",
+  "nome": "Gran Premio di Miami",
   "circuito": "Miami",
   "localita": "Miami Gardens",
   "paese": "Stati Uniti",
@@ -165,7 +165,7 @@
  },
  {
   "id": 1285,
-  "nome": "Canadian Grand Prix",
+  "nome": "Gran Premio del Canada",
   "circuito": "Montreal",
   "localita": "Montréal",
   "paese": "Canada",
@@ -206,7 +206,7 @@
  },
  {
   "id": 1286,
-  "nome": "Monaco Grand Prix",
+  "nome": "Gran Premio di Monaco",
   "circuito": "Monte Carlo",
   "localita": "Monte Carlo",
   "paese": "Monaco",
@@ -247,7 +247,7 @@
  },
  {
   "id": 1287,
-  "nome": "Barcelona Grand Prix",
+  "nome": "Gran Premio di Barcellona",
   "circuito": "Catalunya",
   "localita": "Barcelona",
   "paese": "Spagna",
@@ -288,7 +288,7 @@
  },
  {
   "id": 1288,
-  "nome": "Austrian Grand Prix",
+  "nome": "Gran Premio d'Austria",
   "circuito": "Spielberg",
   "localita": "Spielberg",
   "paese": "Austria",
@@ -329,7 +329,7 @@
  },
  {
   "id": 1289,
-  "nome": "British Grand Prix",
+  "nome": "Gran Premio di Gran Bretagna",
   "circuito": "Silverstone",
   "localita": "Silverstone",
   "paese": "Regno Unito",
@@ -370,7 +370,7 @@
  },
  {
   "id": 1290,
-  "nome": "Belgian Grand Prix",
+  "nome": "Gran Premio del Belgio",
   "circuito": "Spa-Francorchamps",
   "localita": "Spa-Francorchamps",
   "paese": "Belgio",
@@ -411,7 +411,7 @@
  },
  {
   "id": 1291,
-  "nome": "Hungarian Grand Prix",
+  "nome": "Gran Premio d'Ungheria",
   "circuito": "Hungaroring",
   "localita": "Budapest",
   "paese": "Ungheria",
@@ -452,7 +452,7 @@
  },
  {
   "id": 1292,
-  "nome": "Dutch Grand Prix",
+  "nome": "Gran Premio d'Olanda",
   "circuito": "Zandvoort",
   "localita": "Zandvoort",
   "paese": "Paesi Bassi",
@@ -493,7 +493,7 @@
  },
  {
   "id": 1293,
-  "nome": "Italian Grand Prix",
+  "nome": "Gran Premio d'Italia",
   "circuito": "Monza",
   "localita": "Monza",
   "paese": "Italia",
@@ -534,7 +534,7 @@
  },
  {
   "id": 1294,
-  "nome": "Spanish Grand Prix",
+  "nome": "Gran Premio di Spagna",
   "circuito": "Madring",
   "localita": "Madrid",
   "paese": "Spagna",
@@ -575,7 +575,7 @@
  },
  {
   "id": 1295,
-  "nome": "Azerbaijan Grand Prix",
+  "nome": "Gran Premio dell'Azerbaigian",
   "circuito": "Baku",
   "localita": "Baku",
   "paese": "Azerbaigian",
@@ -616,7 +616,7 @@
  },
  {
   "id": 1308,
-  "nome": "Bahrain Grand Prix",
+  "nome": "Gran Premio del Bahrain",
   "circuito": "Kuala Lumpur",
   "localita": "Kuala Lumpur",
   "paese": "Bahrain",
@@ -657,7 +657,7 @@
  },
  {
   "id": 1296,
-  "nome": "Singapore Grand Prix",
+  "nome": "Gran Premio di Singapore",
   "circuito": "Singapore",
   "localita": "Marina Bay",
   "paese": "Singapore",
@@ -698,7 +698,7 @@
  },
  {
   "id": 1297,
-  "nome": "United States Grand Prix",
+  "nome": "Gran Premio degli Stati Uniti",
   "circuito": "Austin",
   "localita": "Austin",
   "paese": "Stati Uniti",
@@ -739,7 +739,7 @@
  },
  {
   "id": 1298,
-  "nome": "Mexico City Grand Prix",
+  "nome": "Gran Premio di Città del Messico",
   "circuito": "Mexico City",
   "localita": "Mexico City",
   "paese": "Messico",
@@ -780,7 +780,7 @@
  },
  {
   "id": 1299,
-  "nome": "São Paulo Grand Prix",
+  "nome": "Gran Premio di San Paolo",
   "circuito": "Interlagos",
   "localita": "São Paulo",
   "paese": "Brasile",
@@ -821,7 +821,7 @@
  },
  {
   "id": 1300,
-  "nome": "Las Vegas Grand Prix",
+  "nome": "Gran Premio di Las Vegas",
   "circuito": "Las Vegas",
   "localita": "Las Vegas",
   "paese": "Stati Uniti",
@@ -862,7 +862,7 @@
  },
  {
   "id": 1301,
-  "nome": "Qatar Grand Prix",
+  "nome": "Gran Premio del Qatar",
   "circuito": "Lusail",
   "localita": "Lusail",
   "paese": "Qatar",
@@ -903,7 +903,7 @@
  },
  {
   "id": 1302,
-  "nome": "Abu Dhabi Grand Prix",
+  "nome": "Gran Premio di Abu Dhabi",
   "circuito": "Yas Marina Circuit",
   "localita": "Yas Marina",
   "paese": "Emirati Arabi Uniti",

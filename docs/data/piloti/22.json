@@ -1,0 +1,61 @@
+{
+ "numero": 22,
+ "acronimo": "TSU",
+ "nome": "Yuki Tsunoda",
+ "team": "Racing Bulls",
+ "colore": "6C98FF",
+ "posizione": 20,
+ "punti": 1.0,
+ "weekend": [
+  {
+   "id": 1292,
+   "nome": "Gran Premio d'Olanda",
+   "inizio": "2026-08-21T10:30:00+00:00",
+   "qualifiche": {
+    "pos": 12,
+    "stato": null
+   },
+   "sprint": {
+    "pos": 13,
+    "stato": null
+   },
+   "gara": {
+    "pos": 11,
+    "stato": null
+   }
+  },
+  {
+   "id": 1293,
+   "nome": "Gran Premio d'Italia",
+   "inizio": "2026-09-04T10:30:00+00:00",
+   "qualifiche": {
+    "pos": 17,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": {
+    "pos": 10,
+    "stato": null
+   }
+  },
+  {
+   "id": 1294,
+   "nome": "Gran Premio di Spagna",
+   "inizio": "2026-09-11T11:30:00+00:00",
+   "qualifiche": {
+    "pos": 15,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": {
+    "pos": 14,
+    "stato": null
+   }
+  }
+ ],
+ "vittorie": 0,
+ "podi": 0,
+ "pole": 0,
+ "miglior_arrivo": 10,
+ "ritiri": 0
+}

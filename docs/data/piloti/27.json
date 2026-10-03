@@ -1,0 +1,252 @@
+{
+ "numero": 27,
+ "acronimo": "HUL",
+ "nome": "Nico Hulkenberg",
+ "team": "Audi",
+ "colore": "F50537",
+ "posizione": 15,
+ "punti": 7.0,
+ "weekend": [
+  {
+   "id": 1279,
+   "nome": "Gran Premio d'Australia",
+   "inizio": "2026-03-06T01:30:00+00:00",
+   "qualifiche": {
+    "pos": 11,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": {
+    "pos": null,
+    "stato": "NP"
+   }
+  },
+  {
+   "id": 1280,
+   "nome": "Gran Premio di Cina",
+   "inizio": "2026-03-13T03:30:00+00:00",
+   "qualifiche": {
+    "pos": 11,
+    "stato": null
+   },
+   "sprint": {
+    "pos": null,
+    "stato": "RIT"
+   },
+   "gara": {
+    "pos": 11,
+    "stato": null
+   }
+  },
+  {
+   "id": 1281,
+   "nome": "Gran Premio del Giappone",
+   "inizio": "2026-03-27T02:30:00+00:00",
+   "qualifiche": {
+    "pos": 13,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": {
+    "pos": 11,
+    "stato": null
+   }
+  },
+  {
+   "id": 1284,
+   "nome": "Gran Premio di Miami",
+   "inizio": "2026-05-01T16:00:00+00:00",
+   "qualifiche": {
+    "pos": 10,
+    "stato": null
+   },
+   "sprint": {
+    "pos": null,
+    "stato": "NP"
+   },
+   "gara": {
+    "pos": null,
+    "stato": "RIT"
+   }
+  },
+  {
+   "id": 1285,
+   "nome": "Gran Premio del Canada",
+   "inizio": "2026-05-22T16:30:00+00:00",
+   "qualifiche": {
+    "pos": 11,
+    "stato": null
+   },
+   "sprint": {
+    "pos": 15,
+    "stato": null
+   },
+   "gara": {
+    "pos": 12,
+    "stato": null
+   }
+  },
+  {
+   "id": 1286,
+   "nome": "Gran Premio di Monaco",
+   "inizio": "2026-06-05T11:30:00+00:00",
+   "qualifiche": {
+    "pos": 13,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": {
+    "pos": 13,
+    "stato": null
+   }
+  },
+  {
+   "id": 1287,
+   "nome": "Gran Premio di Barcellona",
+   "inizio": "2026-06-12T11:30:00+00:00",
+   "qualifiche": {
+    "pos": 9,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": {
+    "pos": null,
+    "stato": "RIT"
+   }
+  },
+  {
+   "id": 1288,
+   "nome": "Gran Premio d'Austria",
+   "inizio": "2026-06-26T11:30:00+00:00",
+   "qualifiche": {
+    "pos": 14,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": {
+    "pos": 12,
+    "stato": null
+   }
+  },
+  {
+   "id": 1289,
+   "nome": "Gran Premio di Gran Bretagna",
+   "inizio": "2026-07-03T11:30:00+00:00",
+   "qualifiche": {
+    "pos": 13,
+    "stato": null
+   },
+   "sprint": {
+    "pos": 15,
+    "stato": null
+   },
+   "gara": {
+    "pos": null,
+    "stato": "RIT"
+   }
+  },
+  {
+   "id": 1290,
+   "nome": "Gran Premio del Belgio",
+   "inizio": "2026-07-17T11:30:00+00:00",
+   "qualifiche": {
+    "pos": 14,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": {
+    "pos": 13,
+    "stato": null
+   }
+  },
+  {
+   "id": 1291,
+   "nome": "Gran Premio d'Ungheria",
+   "inizio": "2026-07-24T11:30:00+00:00",
+   "qualifiche": {
+    "pos": 10,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": {
+    "pos": 9,
+    "stato": null
+   }
+  },
+  {
+   "id": 1292,
+   "nome": "Gran Premio d'Olanda",
+   "inizio": "2026-08-21T10:30:00+00:00",
+   "qualifiche": {
+    "pos": 13,
+    "stato": null
+   },
+   "sprint": {
+    "pos": null,
+    "stato": null
+   },
+   "gara": {
+    "pos": 8,
+    "stato": null
+   }
+  },
+  {
+   "id": 1293,
+   "nome": "Gran Premio d'Italia",
+   "inizio": "2026-09-04T10:30:00+00:00",
+   "qualifiche": {
+    "pos": 13,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": {
+    "pos": 12,
+    "stato": null
+   }
+  },
+  {
+   "id": 1294,
+   "nome": "Gran Premio di Spagna",
+   "inizio": "2026-09-11T11:30:00+00:00",
+   "qualifiche": {
+    "pos": 11,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": {
+    "pos": 10,
+    "stato": null
+   }
+  },
+  {
+   "id": 1295,
+   "nome": "Gran Premio dell'Azerbaigian",
+   "inizio": "2026-09-24T08:30:00+00:00",
+   "qualifiche": {
+    "pos": 18,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": {
+    "pos": 11,
+    "stato": null
+   }
+  },
+  {
+   "id": 1308,
+   "nome": "Gran Premio del Bahrain",
+   "inizio": "2026-10-02T04:30:00+00:00",
+   "qualifiche": {
+    "pos": 17,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": null
+  }
+ ],
+ "vittorie": 0,
+ "podi": 0,
+ "pole": 0,
+ "miglior_arrivo": 8,
+ "ritiri": 3
+}

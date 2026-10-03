@@ -1,4 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- tracciato stilizzato (Monza), disegnato da zero -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path id="pista" d="M60 384 L420 384 C488 384 508 330 486 290 C476 270 462 258 444 244 L300 120 C280 104 252 100 232 108 C208 118 206 142 222 154 L238 166 L120 214 C100 222 92 236 98 252 L108 262 L84 276 C40 296 24 340 40 366 C46 376 52 384 60 384 Z" stroke="#cfcbc1" stroke-width="12"/>
+    <use href="#pista" stroke="#ffffff" stroke-width="2" stroke-dasharray="8 8"/>
+  </g>
   <ellipse cx="262" cy="392" rx="236" ry="9" fill="#15151a" opacity=".16"/>
   <!-- ala posteriore -->
   <path d="M22 258 Q60 248 112 252 L110 268 Q62 266 24 274 Z" fill="#15151a"/>

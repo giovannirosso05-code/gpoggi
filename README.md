@@ -14,7 +14,9 @@ python scraper_f1.py [anno]     # scrive docs/data/ (la prima run ~2 min, poi us
 python -m http.server 8000 --directory docs
 ```
 
-`scraper_f1.py` produce `roster.json`, `standings.json`, `events.json`, `meta.json` e `gare/<id>.json`.
+`scraper_f1.py` produce `roster.json`, `standings.json`, `events.json`, `meta.json`, `gare/<id>.json` e `piloti/<numero>.json`.
+
+Foto dei piloti e mappe dei circuiti: `foto_wiki.py` le cerca su Wikipedia/Wikimedia Commons, accetta solo licenze libere (CC BY, CC BY-SA, CC0, OGL, pubblico dominio) e salva una copia in `docs/img/foto/`. Autore e licenza di ogni immagine sono mostrati sotto la foto e nella pagina `crediti.html` (obbligatorio per le licenze CC). Il logo è disegnato da zero: sorgente in `docs/img/logo-sorgente.svg`.
 Se un dato manca nella fonte, il sito mostra «n.d.». Il workflow `.github/workflows/update-data.yml` rilancia lo scraper ogni 6 ore e committa `docs/data/`.
 
 ## Pubblicazione

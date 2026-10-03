@@ -47,5 +47,13 @@
    "fine": "2026-12-06T15:00:00+00:00",
    "risultati": null
   }
- ]
+ ],
+ "mappa": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Yas_Marina_Circuit.png/960px-Yas_Marina_Circuit.png",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Yas_Marina_Circuit.png/1280px-Yas_Marina_Circuit.png",
+  "autore": "Anthony Alessio Tralongo",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Yas_Marina_Circuit.png",
+  "file": "img/foto/fb49dcfcbf42e2ee.jpg"
+ }
 }

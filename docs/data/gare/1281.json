@@ -1262,5 +1262,13 @@
     }
    ]
   }
- ]
+ ],
+ "mappa": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Suzuka_circuit_map--2005.svg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Suzuka_circuit_map--2005.svg",
+  "autore": "Will Pittenger",
+  "licenza": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Suzuka_circuit_map--2005.svg",
+  "file": "img/foto/4c07624d4a730750.svg"
+ }
 }

@@ -1262,5 +1262,13 @@
     }
    ]
   }
- ]
+ ],
+ "mappa": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Baku_Formula_One_circuit_map.svg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Baku_Formula_One_circuit_map.svg/1280px-Baku_Formula_One_circuit_map.svg.png",
+  "autore": "HumanBodyPiloter5",
+  "licenza": "CC0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Baku_Formula_One_circuit_map.svg",
+  "file": "img/foto/86d80b2d35cc8789.svg"
+ }
 }

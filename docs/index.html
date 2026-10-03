@@ -6,7 +6,7 @@
 <link rel="icon" type="image/png" href="img/favicon-64.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#0a0a0d">
+<meta name="theme-color" content="#ffffff">
 <title>F1 Oggi — Piloti, classifiche e gare di Formula 1</title>
 <meta name="description" content="Piloti, classifiche, calendario e risultati per sessione della stagione di Formula 1 in corso, in italiano. Sito non ufficiale.">
 <meta property="og:type" content="website">
@@ -17,43 +17,26 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=4">
+<link rel="stylesheet" href="css/style.css?v=5">
 </head>
 <body>
 
 <header id="site-header" class="site-header"></header>
 
 <div class="container">
+  <section class="hero-foto" id="hero">
+    <div class="hero-foto-testo">
+      <span class="kicker" id="hero-kicker">Prossima sessione</span>
+      <h1 id="hero-titolo">La stagione F1 in un posto solo</h1>
+      <p id="hero-sotto">Piloti, classifiche, calendario e risultati per sessione, in italiano.</p>
+      <div class="hero-countdown" id="hero-countdown"></div>
+    </div>
+    <div class="hero-credito" id="hero-credito"></div>
+  </section>
+
   <div class="home-layout">
-    <section class="hero home-hero">
-      <h1>La stagione <span class="accent">F1</span> in un posto solo</h1>
-      <p class="hero-sub-desktop">Piloti, classifiche, calendario e risultati per sessione — dati da OpenF1, aggiornati più volte al giorno.</p>
-      <p class="hero-tagline-mobile">🏁 Piloti, classifiche e gare. Tutti i numeri.</p>
-      <div class="stat-strip">
-        <div class="stat"><div class="stat-number" id="stat-piloti">–</div><div class="stat-label">Piloti</div></div>
-        <div class="stat"><div class="stat-number" id="stat-team">–</div><div class="stat-label">Team</div></div>
-        <div class="stat"><div class="stat-number" id="stat-gare">–</div><div class="stat-label">Weekend di gara</div></div>
-      </div>
-    </section>
-
-    <aside class="home-aside">
-      <div class="evento-widget" id="prossima-sessione" style="margin-bottom:16px" hidden>
-        <div class="evento-widget-titolo">⏱ Prossima sessione</div>
-        <div id="ps-nome" class="event-name" style="margin:0"></div>
-        <div id="ps-gp" class="evento-widget-mini-data"></div>
-        <div id="ps-countdown" class="stat-number" style="margin-top:8px"></div>
-        <div id="ps-ora" class="evento-widget-mini-data"></div>
-      </div>
-      <div class="evento-widget">
-        <div class="evento-widget-titolo">📅 Prossimi weekend</div>
-        <div id="prossimi-mini"></div>
-        <a class="evento-widget-tutti" href="gare.html">Tutto il calendario →</a>
-      </div>
-    </aside>
-
     <div class="home-piloti">
-      <div class="section-title" style="margin-top:0;">Piloti <span class="count" id="result-count"></span></div>
-      <p id="riassunto-nota" style="font-size:12px; color:var(--text-muted); margin:-6px 0 12px;"></p>
+      <div class="section-title">Piloti <span class="count" id="result-count"></span></div>
       <div class="filter-bar">
         <div class="search-input">
           <span id="search-icon"></span>
@@ -63,11 +46,25 @@
       </div>
       <div class="driver-grid" id="piloti-grid"></div>
     </div>
+
+    <aside class="home-aside">
+      <div class="evento-widget">
+        <div class="evento-widget-titolo">Classifica piloti</div>
+        <p id="riassunto-nota" class="muted" style="font-size:12px;margin:0 0 4px"></p>
+        <ol class="mini-classifica" id="mini-classifica"></ol>
+        <a class="evento-widget-tutti" href="classifiche.html">Classifiche complete →</a>
+      </div>
+      <div class="evento-widget">
+        <div class="evento-widget-titolo">Prossimi weekend</div>
+        <div id="prossimi-mini"></div>
+        <a class="evento-widget-tutti" href="gare.html">Tutto il calendario →</a>
+      </div>
+    </aside>
   </div>
 </div>
 
 <footer id="site-footer" class="site-footer"></footer>
 
-<script type="module" src="js/piloti.js?v=4"></script>
+<script type="module" src="js/piloti.js?v=5"></script>
 </body>
 </html>

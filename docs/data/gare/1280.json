@@ -1251,5 +1251,13 @@
     }
    ]
   }
- ]
+ ],
+ "mappa": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Shanghai_International_Racing_Circuit_track_map.svg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/1/14/Shanghai_International_Racing_Circuit_track_map.svg",
+  "autore": "Will Pittenger",
+  "licenza": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Shanghai_International_Racing_Circuit_track_map.svg",
+  "file": "img/foto/13ff56b396016d4e.svg"
+ }
 }

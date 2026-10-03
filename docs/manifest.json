@@ -4,8 +4,8 @@
   "description": "Piloti, classifiche e gare di Formula 1 (sito non ufficiale)",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#0a0a0d",
-  "theme_color": "#0a0a0d",
+  "background_color": "#f5f4f0",
+  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "img/icon-192.png",

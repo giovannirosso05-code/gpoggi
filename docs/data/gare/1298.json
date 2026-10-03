@@ -47,5 +47,13 @@
    "fine": "2026-11-01T22:00:00+00:00",
    "risultati": null
   }
- ]
+ ],
+ "mappa": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_2015.svg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/3/36/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_2015.svg",
+  "autore": "Pitlane02",
+  "licenza": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_2015.svg",
+  "file": "img/foto/f1f9a77fd17b8279.svg"
+ }
 }

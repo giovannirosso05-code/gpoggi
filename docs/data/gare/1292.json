@@ -1262,5 +1262,13 @@
     }
    ]
   }
- ]
+ ],
+ "mappa": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Zandvoort_Circuit.png/960px-Zandvoort_Circuit.png",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Zandvoort_Circuit.png/1280px-Zandvoort_Circuit.png",
+  "autore": "Anthony Alessio Tralongo",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Zandvoort_Circuit.png",
+  "file": "img/foto/ff44fc05f79d853c.jpg"
+ }
 }

@@ -47,5 +47,13 @@
    "fine": "2026-11-08T19:00:00+00:00",
    "risultati": null
   }
- ]
+ ],
+ "mappa": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace_%28AKA_Interlagos%29_track_map.svg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace_%28AKA_Interlagos%29_track_map.svg/1280px-Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace_%28AKA_Interlagos%29_track_map.svg.png",
+  "autore": "Will Pittenger",
+  "licenza": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace_(AKA_Interlagos)_track_map.svg",
+  "file": "img/foto/17b19f31f86fbcc1.svg"
+ }
 }

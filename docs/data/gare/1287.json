@@ -1251,5 +1251,13 @@
     }
    ]
   }
- ]
+ ],
+ "mappa": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Circuit_de_Catalunya_moto_2021.svg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Circuit_de_Catalunya_moto_2021.svg/1280px-Circuit_de_Catalunya_moto_2021.svg.png",
+  "autore": "Formula1 Circuit Catalunya.svg: Will Pittenger\nderivative work: HorsePunchKid, Cs-wolves, Sentoan, Gpmat",
+  "licenza": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Circuit_de_Catalunya_moto_2021.svg",
+  "file": "img/foto/7315d6ed8cbfb2a0.svg"
+ }
 }

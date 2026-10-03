@@ -1,7 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <circle cx="256" cy="268" r="222" fill="none" stroke="#f4f4f6" stroke-width="13" stroke-dasharray="22 14"/>
-  <circle cx="256" cy="268" r="196" fill="none" stroke="#f4f4f6" stroke-width="30"/>
-  <text x="256" y="378" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="300" fill="#f4f4f6" transform="skewX(-10) translate(66 0)" letter-spacing="-6">F1</text>
-  <rect x="146" y="22" width="220" height="104" fill="#e8352f"/>
-  <text x="256" y="106" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="88" fill="#ffffff">OGGI</text>
+  <ellipse cx="262" cy="392" rx="236" ry="9" fill="#15151a" opacity=".16"/>
+  <!-- ala posteriore -->
+  <path d="M22 258 Q60 248 112 252 L110 268 Q62 266 24 274 Z" fill="#15151a"/>
+  <path d="M30 270 L46 268 L58 344 L42 346 Z" fill="#15151a"/>
+  <path d="M78 266 L88 266 L92 316 L82 316 Z" fill="#15151a"/>
+  <!-- scocca -->
+  <path d="M44 344 L52 312 Q120 300 170 288 L200 258 Q214 252 228 258 L236 278 Q256 270 280 280 L300 296 Q420 318 496 346 L498 356 Q400 362 300 362 L60 362 Z" fill="#15151a"/>
+  <!-- pance laterali -->
+  <path d="M150 314 Q230 300 296 306 Q332 316 340 340 Q300 352 170 352 Q148 340 150 314 Z" fill="#2c2c36"/>
+  <!-- filetti rossi -->
+  <path d="M302 304 Q410 322 494 348 L492 354 Q408 332 300 314 Z" fill="#e8352f"/>
+  <path d="M96 326 Q200 316 300 318 L300 326 Q200 326 98 334 Z" fill="#e8352f"/>
+  <!-- airbox -->
+  <path d="M200 258 Q214 252 228 258 L232 272 L206 274 Z" fill="#3a3a46"/>
+  <!-- casco + halo -->
+  <circle cx="258" cy="276" r="13" fill="#f4f4f6"/>
+  <path d="M246 277 h24 v6 h-24 z" fill="#15151a"/>
+  <path d="M230 286 Q258 248 304 296" fill="none" stroke="#15151a" stroke-width="6" stroke-linecap="round"/>
+  <!-- ala anteriore -->
+  <path d="M400 370 Q450 366 504 366 L502 378 Q450 380 402 382 Z" fill="#15151a"/>
+  <path d="M478 350 L496 350 L504 376 L488 376 Z" fill="#15151a"/>
+  <!-- ruote -->
+  <g fill="#15151a"><circle cx="120" cy="346" r="44"/><circle cx="398" cy="346" r="42"/></g>
+  <g fill="none" stroke="#f4f4f6" stroke-width="5"><circle cx="120" cy="346" r="24"/><circle cx="398" cy="346" r="23"/></g>
+  <g fill="#e8352f"><circle cx="120" cy="346" r="8"/><circle cx="398" cy="346" r="8"/></g>
+  <!-- etichetta OGGI -->
+  <rect x="150" y="122" width="212" height="100" fill="#e8352f"/>
+  <text x="256" y="203" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="86" fill="#ffffff">OGGI</text>
 </svg>

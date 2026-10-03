@@ -38,7 +38,15 @@
     "inizio": "2026-03-08T04:00:00+00:00",
     "fine": "2026-03-08T06:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Albert_Park_Circuit_2021.svg",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Albert_Park_Circuit_2021.svg/1280px-Albert_Park_Circuit_2021.svg.png",
+   "autore": "AEPA Racing",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Albert_Park_Circuit_2021.svg",
+   "file": "img/foto/295ef9169df4c378.svg"
+  }
  },
  {
   "id": 1280,
@@ -79,7 +87,15 @@
     "inizio": "2026-03-15T07:00:00+00:00",
     "fine": "2026-03-15T09:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Shanghai_International_Racing_Circuit_track_map.svg",
+   "grande": "https://upload.wikimedia.org/wikipedia/commons/1/14/Shanghai_International_Racing_Circuit_track_map.svg",
+   "autore": "Will Pittenger",
+   "licenza": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Shanghai_International_Racing_Circuit_track_map.svg",
+   "file": "img/foto/13ff56b396016d4e.svg"
+  }
  },
  {
   "id": 1281,
@@ -120,7 +136,15 @@
     "inizio": "2026-03-29T05:00:00+00:00",
     "fine": "2026-03-29T07:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Suzuka_circuit_map--2005.svg",
+   "grande": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Suzuka_circuit_map--2005.svg",
+   "autore": "Will Pittenger",
+   "licenza": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Suzuka_circuit_map--2005.svg",
+   "file": "img/foto/4c07624d4a730750.svg"
+  }
  },
  {
   "id": 1284,
@@ -161,7 +185,15 @@
     "inizio": "2026-05-03T17:00:00+00:00",
     "fine": "2026-05-03T19:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Hard_Rock_Stadium_Circuit_2022.svg",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Hard_Rock_Stadium_Circuit_2022.svg/1280px-Hard_Rock_Stadium_Circuit_2022.svg.png",
+   "autore": "GabrielStella",
+   "licenza": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Hard_Rock_Stadium_Circuit_2022.svg",
+   "file": "img/foto/82d95cec2bb20e3e.svg"
+  }
  },
  {
   "id": 1285,
@@ -202,7 +234,15 @@
     "inizio": "2026-05-24T20:00:00+00:00",
     "fine": "2026-05-24T22:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/%C3%8Ele_Notre-Dame_%28Circuit_Gilles_Villeneuve%29.svg",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/%C3%8Ele_Notre-Dame_%28Circuit_Gilles_Villeneuve%29.svg/1280px-%C3%8Ele_Notre-Dame_%28Circuit_Gilles_Villeneuve%29.svg.png",
+   "autore": "Will Pittenger",
+   "licenza": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:%C3%8Ele_Notre-Dame_(Circuit_Gilles_Villeneuve).svg",
+   "file": "img/foto/3a71b4771d00a4e0.svg"
+  }
  },
  {
   "id": 1286,
@@ -243,7 +283,15 @@
     "inizio": "2026-06-07T13:00:00+00:00",
     "fine": "2026-06-07T15:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Monte_Carlo_Formula_1_track_map.svg",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Monte_Carlo_Formula_1_track_map.svg/1280px-Monte_Carlo_Formula_1_track_map.svg.png",
+   "autore": "Will Pittenger",
+   "licenza": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Monte_Carlo_Formula_1_track_map.svg",
+   "file": "img/foto/b1ea83f39acebb2c.svg"
+  }
  },
  {
   "id": 1287,
@@ -284,7 +332,15 @@
     "inizio": "2026-06-14T13:00:00+00:00",
     "fine": "2026-06-14T15:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Circuit_de_Catalunya_moto_2021.svg",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Circuit_de_Catalunya_moto_2021.svg/1280px-Circuit_de_Catalunya_moto_2021.svg.png",
+   "autore": "Formula1 Circuit Catalunya.svg: Will Pittenger\nderivative work: HorsePunchKid, Cs-wolves, Sentoan, Gpmat",
+   "licenza": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Circuit_de_Catalunya_moto_2021.svg",
+   "file": "img/foto/7315d6ed8cbfb2a0.svg"
+  }
  },
  {
   "id": 1288,
@@ -325,7 +381,15 @@
     "inizio": "2026-06-28T13:00:00+00:00",
     "fine": "2026-06-28T15:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Spielberg_bare_map_numbers_contextless_2021_corner_names.svg",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Spielberg_bare_map_numbers_contextless_2021_corner_names.svg/1280px-Spielberg_bare_map_numbers_contextless_2021_corner_names.svg.png",
+   "autore": "I, User:HumanBodyPiloter5, created this SVG map as a derivative work based on the satellite image of the Spielberg circuit released by w:en:Planet Labs under CC-BY-SA 4.0 in 2018",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Spielberg_bare_map_numbers_contextless_2021_corner_names.svg",
+   "file": "img/foto/94d8de84dec7a750.svg"
+  }
  },
  {
   "id": 1289,
@@ -366,7 +430,15 @@
     "inizio": "2026-07-05T14:00:00+00:00",
     "fine": "2026-07-05T16:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Silverstone_Circuit_2020.png/960px-Silverstone_Circuit_2020.png",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Silverstone_Circuit_2020.png/1280px-Silverstone_Circuit_2020.png",
+   "autore": "Antoine266",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Silverstone_Circuit_2020.png",
+   "file": "img/foto/a47fad49568979e5.jpg"
+  }
  },
  {
   "id": 1290,
@@ -407,7 +479,15 @@
     "inizio": "2026-07-19T13:00:00+00:00",
     "fine": "2026-07-19T15:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Spa-Francorchamps_of_Belgium.svg",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Spa-Francorchamps_of_Belgium.svg/1280px-Spa-Francorchamps_of_Belgium.svg.png",
+   "autore": "Will Pittenger",
+   "licenza": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Spa-Francorchamps_of_Belgium.svg",
+   "file": "img/foto/d94ee120246ee830.svg"
+  }
  },
  {
   "id": 1291,
@@ -448,7 +528,15 @@
     "inizio": "2026-07-26T13:00:00+00:00",
     "fine": "2026-07-26T15:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Hungaroring2026.svg",
+   "grande": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Hungaroring2026.svg",
+   "autore": "PhilipTheLeftist",
+   "licenza": "CC0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Hungaroring2026.svg",
+   "file": "img/foto/44007f46f8bf9da8.svg"
+  }
  },
  {
   "id": 1292,
@@ -489,7 +577,15 @@
     "inizio": "2026-08-23T13:00:00+00:00",
     "fine": "2026-08-23T15:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Zandvoort_Circuit.png/960px-Zandvoort_Circuit.png",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Zandvoort_Circuit.png/1280px-Zandvoort_Circuit.png",
+   "autore": "Anthony Alessio Tralongo",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Zandvoort_Circuit.png",
+   "file": "img/foto/ff44fc05f79d853c.jpg"
+  }
  },
  {
   "id": 1293,
@@ -530,7 +626,15 @@
     "inizio": "2026-09-06T13:00:00+00:00",
     "fine": "2026-09-06T15:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Monza_track_map.svg",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Monza_track_map.svg/1280px-Monza_track_map.svg.png",
+   "autore": "Will Pittenger",
+   "licenza": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Monza_track_map.svg",
+   "file": "img/foto/70be6b48c4f1b3c3.svg"
+  }
  },
  {
   "id": 1294,
@@ -571,7 +675,15 @@
     "inizio": "2026-09-13T13:00:00+00:00",
     "fine": "2026-09-13T15:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Madring_%282026%29.svg",
+   "grande": "https://upload.wikimedia.org/wikipedia/commons/2/25/Madring_%282026%29.svg",
+   "autore": "GabrielStella, Cherkash",
+   "licenza": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Madring_(2026).svg",
+   "file": "img/foto/347cd3c749095c26.svg"
+  }
  },
  {
   "id": 1295,
@@ -612,7 +724,15 @@
     "inizio": "2026-09-26T11:00:00+00:00",
     "fine": "2026-09-26T13:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Baku_Formula_One_circuit_map.svg",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Baku_Formula_One_circuit_map.svg/1280px-Baku_Formula_One_circuit_map.svg.png",
+   "autore": "HumanBodyPiloter5",
+   "licenza": "CC0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Baku_Formula_One_circuit_map.svg",
+   "file": "img/foto/86d80b2d35cc8789.svg"
+  }
  },
  {
   "id": 1308,
@@ -653,7 +773,8 @@
     "inizio": "2026-10-04T07:00:00+00:00",
     "fine": "2026-10-04T09:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": null
  },
  {
   "id": 1296,
@@ -694,7 +815,15 @@
     "inizio": "2026-10-11T12:00:00+00:00",
     "fine": "2026-10-11T14:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Marina_Bay_circuit_2023.svg",
+   "grande": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Marina_Bay_circuit_2023.svg",
+   "autore": "Cherkash",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Marina_Bay_circuit_2023.svg",
+   "file": "img/foto/4dd15d71ceee82c6.svg"
+  }
  },
  {
   "id": 1297,
@@ -735,7 +864,15 @@
     "inizio": "2026-10-25T20:00:00+00:00",
     "fine": "2026-10-25T22:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Austin_circuit.svg",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Austin_circuit.svg/1280px-Austin_circuit.svg.png",
+   "autore": "Gustavo GirardelliOwn work This W3C-unspecified vector image was created with Inkscape .",
+   "licenza": "CC BY-SA 2.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Austin_circuit.svg",
+   "file": "img/foto/c37d9f9125070093.svg"
+  }
  },
  {
   "id": 1298,
@@ -776,7 +913,15 @@
     "inizio": "2026-11-01T20:00:00+00:00",
     "fine": "2026-11-01T22:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_2015.svg",
+   "grande": "https://upload.wikimedia.org/wikipedia/commons/3/36/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_2015.svg",
+   "autore": "Pitlane02",
+   "licenza": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_2015.svg",
+   "file": "img/foto/f1f9a77fd17b8279.svg"
+  }
  },
  {
   "id": 1299,
@@ -817,7 +962,15 @@
     "inizio": "2026-11-08T17:00:00+00:00",
     "fine": "2026-11-08T19:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace_%28AKA_Interlagos%29_track_map.svg",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace_%28AKA_Interlagos%29_track_map.svg/1280px-Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace_%28AKA_Interlagos%29_track_map.svg.png",
+   "autore": "Will Pittenger",
+   "licenza": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace_(AKA_Interlagos)_track_map.svg",
+   "file": "img/foto/17b19f31f86fbcc1.svg"
+  }
  },
  {
   "id": 1300,
@@ -858,7 +1011,15 @@
     "inizio": "2026-11-22T04:00:00+00:00",
     "fine": "2026-11-22T06:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/2023_Las_Vegas_street_circuit.svg",
+   "grande": "https://upload.wikimedia.org/wikipedia/commons/4/43/2023_Las_Vegas_street_circuit.svg",
+   "autore": "Valentin JJ.",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:2023_Las_Vegas_street_circuit.svg",
+   "file": "img/foto/ffe9a90500a2c36d.svg"
+  }
  },
  {
   "id": 1301,
@@ -899,7 +1060,15 @@
     "inizio": "2026-11-29T16:00:00+00:00",
     "fine": "2026-11-29T18:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Lusail_International_Circuit_2023.svg",
+   "grande": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Lusail_International_Circuit_2023.svg",
+   "autore": "Losail.svg: Will Pittenger\nderivative work: Gpmat",
+   "licenza": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Lusail_International_Circuit_2023.svg",
+   "file": "img/foto/0ea5a64340994381.svg"
+  }
  },
  {
   "id": 1302,
@@ -940,6 +1109,14 @@
     "inizio": "2026-12-06T13:00:00+00:00",
     "fine": "2026-12-06T15:00:00+00:00"
    }
-  ]
+  ],
+  "mappa": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Yas_Marina_Circuit.png/960px-Yas_Marina_Circuit.png",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Yas_Marina_Circuit.png/1280px-Yas_Marina_Circuit.png",
+   "autore": "Anthony Alessio Tralongo",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Yas_Marina_Circuit.png",
+   "file": "img/foto/fb49dcfcbf42e2ee.jpg"
+  }
  }
 ]

@@ -6,6 +6,14 @@
  "colore": "F50537",
  "posizione": 15,
  "punti": 7.0,
+ "foto": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/2019_Formula_One_tests_Barcelona%2C_Hulkenberg_%2840287128313%29.jpg/500px-2019_Formula_One_tests_Barcelona%2C_Hulkenberg_%2840287128313%29.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/2019_Formula_One_tests_Barcelona%2C_Hulkenberg_%2840287128313%29.jpg/1280px-2019_Formula_One_tests_Barcelona%2C_Hulkenberg_%2840287128313%29.jpg",
+  "autore": "Marc Alvarado",
+  "licenza": "CC BY-SA 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:2019_Formula_One_tests_Barcelona,_Hulkenberg_(40287128313).jpg",
+  "file": "img/foto/a43377232cc5f1af.jpg"
+ },
  "weekend": [
   {
    "id": 1279,

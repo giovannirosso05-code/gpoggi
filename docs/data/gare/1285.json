@@ -1240,5 +1240,13 @@
     }
    ]
   }
- ]
+ ],
+ "mappa": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/%C3%8Ele_Notre-Dame_%28Circuit_Gilles_Villeneuve%29.svg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/%C3%8Ele_Notre-Dame_%28Circuit_Gilles_Villeneuve%29.svg/1280px-%C3%8Ele_Notre-Dame_%28Circuit_Gilles_Villeneuve%29.svg.png",
+  "autore": "Will Pittenger",
+  "licenza": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:%C3%8Ele_Notre-Dame_(Circuit_Gilles_Villeneuve).svg",
+  "file": "img/foto/3a71b4771d00a4e0.svg"
+ }
 }

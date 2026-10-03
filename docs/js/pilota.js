@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, punti, ND, formattaData, erroreCaricamento } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, img, credito, punti, ND, formattaData, erroreCaricamento } from "./common.js";
 
 renderHeader("home");
 renderFooter();
@@ -6,7 +6,7 @@ renderFooter();
 const box = document.getElementById("pilota-box");
 const n = new URLSearchParams(location.search).get("n");
 
-const cella = (e) => !e ? '<span class="muted">–</span>' : e.stato ? `<span class="muted">${esc(e.stato)}</span>` : e.pos == null ? ND : `<span class="${e.pos === 1 ? "accent" : ""}">${e.pos}°</span>`;
+const cella = (e) => !e ? '<span class="muted">–</span>' : e.stato ? `<span class="muted">${esc(e.stato)}</span>` : e.pos == null ? ND : `<span class="${e.pos === 1 ? "accent" : ""}" style="font-weight:600">${e.pos}°</span>`;
 
 try {
   if (!/^\d+$/.test(n || "")) throw new Error("numero non valido");
@@ -16,17 +16,19 @@ try {
   const stat = (v, label) => `<div class="stat"><div class="stat-number">${v}</div><div class="stat-label">${label}</div></div>`;
 
   box.innerHTML = `
-    <section class="hero" style="padding:32px 0 8px">
-      <div class="driver-number" style="--team:#${esc(p.colore || "6b6b78")};font-size:64px;line-height:1">${p.numero}</div>
-      <h1>${esc(nome)}</h1>
-      <p class="muted">${esc(p.team || "Team n.d.")}${p.posizione ? ` · ${p.posizione}° in classifica` : ""}</p>
-      <div class="stat-strip six" style="max-width:900px;margin:24px auto 0">
-        ${stat(punti(p.punti), "Punti")}${stat(p.vittorie, "Vittorie")}${stat(p.podi, "Podi")}${stat(p.pole, "Pole")}${stat(p.miglior_arrivo ? p.miglior_arrivo + "°" : ND, "Miglior arrivo")}${stat(p.ritiri, "Ritiri")}
+    <section class="pilota-testata" style="--team:#${esc(p.colore || "8b8a92")}">
+      <div class="pilota-foto">${img(p.foto, nome)}<span class="driver-number">${p.numero}</span></div>
+      <div class="pilota-dati">
+        <span class="kicker">${p.posizione ? `${p.posizione}° nel mondiale` : "Stagione in corso"}</span>
+        <h1>${esc(nome)}</h1>
+        <p class="muted" style="margin:0;font-size:16px">${esc(p.team || "Team n.d.")}</p>
+        <div class="stat-strip six">
+          ${stat(punti(p.punti), "Punti")}${stat(p.vittorie, "Vittorie")}${stat(p.podi, "Podi")}${stat(p.pole, "Pole")}${stat(p.miglior_arrivo ? p.miglior_arrivo + "°" : ND, "Miglior arrivo")}${stat(p.ritiri, "Ritiri")}
+        </div>
+        <p style="margin:20px 0 0"><a class="pill" href="confronto.html?a=${p.numero}">Confronta con un altro pilota →</a></p>
+        ${p.foto ? `<p class="credito">${credito(p.foto)}</p>` : ""}
       </div>
     </section>
-    <div style="display:flex;justify-content:center;margin:16px 0 8px">
-      <a class="pill" href="confronto.html?a=${p.numero}">Confronta con un altro pilota →</a>
-    </div>
     <h3 class="section-title">Stagione weekend per weekend</h3>
     ${p.weekend.length ? `<div class="table-wrap"><table class="results">
       <thead><tr><th>Weekend</th><th>Data</th><th>Qualifiche</th><th>Sprint</th><th>Gara</th></tr></thead>

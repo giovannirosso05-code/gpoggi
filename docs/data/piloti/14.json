@@ -6,6 +6,14 @@
  "colore": "229971",
  "posizione": 19,
  "punti": 3.0,
+ "foto": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Alonso-68_%2824710447098%29.jpg/500px-Alonso-68_%2824710447098%29.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Alonso-68_%2824710447098%29.jpg/1280px-Alonso-68_%2824710447098%29.jpg",
+  "autore": "United Autosports",
+  "licenza": "CC BY-SA 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Alonso-68_(24710447098).jpg",
+  "file": "img/foto/c9492ba2d4b04572.jpg"
+ },
  "weekend": [
   {
    "id": 1279,

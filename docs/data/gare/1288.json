@@ -1262,5 +1262,13 @@
     }
    ]
   }
- ]
+ ],
+ "mappa": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Spielberg_bare_map_numbers_contextless_2021_corner_names.svg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Spielberg_bare_map_numbers_contextless_2021_corner_names.svg/1280px-Spielberg_bare_map_numbers_contextless_2021_corner_names.svg.png",
+  "autore": "I, User:HumanBodyPiloter5, created this SVG map as a derivative work based on the satellite image of the Spielberg circuit released by w:en:Planet Labs under CC-BY-SA 4.0 in 2018",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Spielberg_bare_map_numbers_contextless_2021_corner_names.svg",
+  "file": "img/foto/94d8de84dec7a750.svg"
+ }
 }

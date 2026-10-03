@@ -1251,5 +1251,13 @@
     }
    ]
   }
- ]
+ ],
+ "mappa": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Hungaroring2026.svg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Hungaroring2026.svg",
+  "autore": "PhilipTheLeftist",
+  "licenza": "CC0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Hungaroring2026.svg",
+  "file": "img/foto/44007f46f8bf9da8.svg"
+ }
 }

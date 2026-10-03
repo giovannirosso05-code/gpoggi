@@ -19,9 +19,12 @@ from pathlib import Path
 
 import requests
 
+from foto_wiki import con_cache, foto_pilota, mappa_circuito, salva_in_locale
+
 ROOT = Path(__file__).parent
 CACHE = ROOT / "cache"
 DATA = ROOT / "docs" / "data"
+CARTELLA_FOTO = ROOT / "docs" / "img" / "foto"
 BASE = "https://api.openf1.org/v1"
 PAUSA = 0.4
 GIORNI_CACHE = 2  # i dati di sessioni chiuse da piu' di N giorni non cambiano piu'
@@ -249,6 +252,17 @@ def main():
                       | {"sessioni": [{k: s[k] for k in ("nome", "tipo", "inizio", "fine")} for s in lista]})
         print(f"  {m['meeting_name']}: {len(finiti)}/{len(sess)} sessioni disputate")
 
+    file_foto = CACHE / "foto.json"
+    cache_foto = json.loads(file_foto.read_text()) if file_foto.exists() else {}
+    for g in eventi:
+        g["mappa"] = dict(con_cache(cache_foto, "circuito:" + g["circuito"], mappa_circuito, g["circuito"]) or {}) or None
+        if g["mappa"] and "/thumb/" in g["mappa"]["url"] and ".svg/" in g["mappa"]["url"]:
+            # il vettoriale originale pesa molto meno della sua resa in PNG
+            g["mappa"]["url"] = (g["mappa"]["url"].replace("://thumb.wikimedia.org/", "://upload.wikimedia.org/")
+                                 .replace("/thumb/", "/").rsplit("/", 1)[0])
+        salva_in_locale(g["mappa"], CARTELLA_FOTO, "img/foto")
+        scheda = json.loads((DATA / "gare" / f"{g['id']}.json").read_text())
+        scrivi(DATA / "gare" / f"{g['id']}.json", scheda | {"mappa": g["mappa"]})
     scrivi(DATA / "events.json", eventi)
 
     gare_fatte = [s for s in sessioni if s["session_name"] == "Race" and parse_data(s["date_end"]) < ORA and not s.get("is_cancelled")]
@@ -281,7 +295,18 @@ def main():
             standings["costruttori"].append({"posizione": c["position_current"], "team": c["team_name"],
                                              "colore": colori.get(c["team_name"]), "punti": c["points_current"]})
 
+    for p in roster:
+        p["foto"] = dict(con_cache(cache_foto, "pilota:" + (p["nome"] or str(p["numero"])), foto_pilota, p["nome"]) or {}) or None
+        salva_in_locale(p["foto"], CARTELLA_FOTO, "img/foto")
+        if p["posizione"] == 1:
+            salva_in_locale(p["foto"], CARTELLA_FOTO, "img/foto", "grande", "file_grande")
+    CACHE.mkdir(exist_ok=True)
+    file_foto.write_text(json.dumps(cache_foto, ensure_ascii=False))
     scrivi(DATA / "roster.json", roster)
+    usate = {Path(f[k]).name for f in [p["foto"] for p in roster] + [g["mappa"] for g in eventi] if f for k in ("file", "file_grande") if f.get(k)}
+    for vecchia in CARTELLA_FOTO.glob("*"):
+        if vecchia.name not in usate:
+            vecchia.unlink()
     scrivi_schede_piloti(roster, schede)
     scrivi(DATA / "standings.json", standings)
     scrivi(DATA / "meta.json", {"anno": anno, "aggiornato": ORA.isoformat(timespec="seconds"), "fonte": "OpenF1"})

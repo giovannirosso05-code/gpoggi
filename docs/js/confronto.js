@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, punti, ND, erroreCaricamento } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, img, punti, ND, erroreCaricamento } from "./common.js";
 
 renderHeader("confronto");
 renderFooter();
@@ -26,23 +26,27 @@ try {
     });
   }
 
-  function colonna(p, mio, altro) {
-    if (!p) return `<div class="compare-col"><p class="muted">Seleziona un pilota.</p></div>`;
-    const tutte = risultatiGara(p.numero);
-    const valide = tutte.filter((r) => r && r.pos != null && !r.stato);
-    const vittorie = valide.filter((r) => r.pos === 1).length;
-    const podi = valide.filter((r) => r.pos <= 3).length;
-    const punta = (r) => r && r.pos != null ? r.pos : null;
-    const riga = (label, val) => `<div class="compare-stat"><div class="compare-stat-label">${label}</div><div></div><div class="compare-stat-value">${val}</div></div>`;
-    return `<div class="compare-col" style="border-top:3px solid #${esc(p.colore || "2a2a33")}">
-      <h2>${esc(p.nome || "Pilota #" + p.numero)}</h2>
-      ${riga("Team", esc(p.team || "n.d."))}
-      ${riga("Numero", "#" + p.numero)}
-      ${riga("Posizione", p.posizione ? p.posizione + "°" : ND)}
-      ${riga("Punti", punti(p.punti))}
-      ${riga("Vittorie in gara", vittorie)}
-      ${riga("Podi in gara", podi)}
-      ${riga("Gare con risultato", valide.length)}
+  function numeri(p) {
+    const valide = risultatiGara(p.numero).filter((r) => r && r.pos != null && !r.stato);
+    return { punti: p.punti ?? -1, vittorie: valide.filter((r) => r.pos === 1).length, podi: valide.filter((r) => r.pos <= 3).length, arrivi: valide.length };
+  }
+
+  function colonna(p, altro) {
+    if (!p) return `<div class="compare-col"><div class="compare-vuoto">Scegli un pilota dal menu.</div></div>`;
+    const mio = numeri(p), suo = altro ? numeri(altro) : null;
+    const riga = (label, val, chiave) => `<div class="compare-stat"><span class="compare-stat-label">${label}</span><span class="compare-stat-value ${suo && chiave && mio[chiave] > suo[chiave] ? "meglio" : ""}">${val}</span></div>`;
+    return `<div class="compare-col" style="--team:#${esc(p.colore || "8b8a92")}">
+      <div class="compare-foto">${img(p.foto, p.nome || "")}</div>
+      <div class="compare-corpo">
+        <h2><a href="pilota.html?n=${p.numero}">${esc(p.nome || "Pilota #" + p.numero)}</a></h2>
+        ${riga("Team", esc(p.team || "n.d."))}
+        ${riga("Numero", "#" + p.numero)}
+        ${riga("Posizione", p.posizione ? p.posizione + "°" : ND)}
+        ${riga("Punti", punti(p.punti), "punti")}
+        ${riga("Vittorie in gara", mio.vittorie, "vittorie")}
+        ${riga("Podi in gara", mio.podi, "podi")}
+        ${riga("Gare concluse", mio.arrivi, "arrivi")}
+      </div>
     </div>`;
   }
 
@@ -61,7 +65,7 @@ try {
     const a = roster.find((p) => String(p.numero) === selA.value);
     const b = roster.find((p) => String(p.numero) === selB.value);
     document.getElementById("confronto-out").innerHTML =
-      `<div class="compare-layout">${colonna(a)}${colonna(b)}</div>${a && b ? testaATesta(a, b) : ""}`;
+      `<div class="compare-layout">${colonna(a, b)}${colonna(b, a)}</div>${a && b ? testaATesta(a, b) : ""}`;
   }
   selA.addEventListener("change", aggiorna);
   selB.addEventListener("change", aggiorna);

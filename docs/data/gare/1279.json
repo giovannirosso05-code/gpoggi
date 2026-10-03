@@ -1207,5 +1207,13 @@
     }
    ]
   }
- ]
+ ],
+ "mappa": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Albert_Park_Circuit_2021.svg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Albert_Park_Circuit_2021.svg/1280px-Albert_Park_Circuit_2021.svg.png",
+  "autore": "AEPA Racing",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Albert_Park_Circuit_2021.svg",
+  "file": "img/foto/295ef9169df4c378.svg"
+ }
 }

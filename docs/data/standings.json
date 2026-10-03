@@ -8,7 +8,16 @@
    "team": "Mercedes",
    "colore": "00D7B6",
    "posizione": 1,
-   "punti": 302.0
+   "punti": 302.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Kimi_Antonelli_at_the_2025_US_Grand_Prix_in_Austin%2C_TX_%28cropped%29.jpg/500px-Kimi_Antonelli_at_the_2025_US_Grand_Prix_in_Austin%2C_TX_%28cropped%29.jpg",
+    "grande": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Kimi_Antonelli_at_the_2025_US_Grand_Prix_in_Austin%2C_TX_%28cropped%29.jpg",
+    "autore": "Kuyper",
+    "licenza": "CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Kimi_Antonelli_at_the_2025_US_Grand_Prix_in_Austin,_TX_(cropped).jpg",
+    "file": "img/foto/cc724a6ff2d56a86.jpg",
+    "file_grande": "img/foto/ccbac7cf383638f4.jpg"
+   }
   },
   {
    "numero": 63,
@@ -17,7 +26,15 @@
    "team": "Mercedes",
    "colore": "00D7B6",
    "posizione": 2,
-   "punti": 236.0
+   "punti": 236.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/KingsLeonSilverstne040724_%2828_of_112%29_%2853838006028%29_%28cropped%29.jpg/500px-KingsLeonSilverstne040724_%2828_of_112%29_%2853838006028%29_%28cropped%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/KingsLeonSilverstne040724_%2828_of_112%29_%2853838006028%29_%28cropped%29.jpg/1280px-KingsLeonSilverstne040724_%2828_of_112%29_%2853838006028%29_%28cropped%29.jpg",
+    "autore": "Raph_PH",
+    "licenza": "CC BY 2.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:KingsLeonSilverstne040724_(28_of_112)_(53838006028)_(cropped).jpg",
+    "file": "img/foto/575d2e7f38feced0.jpg"
+   }
   },
   {
    "numero": 44,
@@ -26,7 +43,15 @@
    "team": "Ferrari",
    "colore": "ED1131",
    "posizione": 3,
-   "punti": 199.0
+   "punti": 199.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Prime_Minister_Keir_Starmer_meets_Sir_Lewis_Hamilton_%2854566928382%29_%28cropped%29.jpg/500px-Prime_Minister_Keir_Starmer_meets_Sir_Lewis_Hamilton_%2854566928382%29_%28cropped%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Prime_Minister_Keir_Starmer_meets_Sir_Lewis_Hamilton_%2854566928382%29_%28cropped%29.jpg/1280px-Prime_Minister_Keir_Starmer_meets_Sir_Lewis_Hamilton_%2854566928382%29_%28cropped%29.jpg",
+    "autore": "Picture by Lauren Hurley / No 10 Downing Street",
+    "licenza": "OGL 3",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Prime_Minister_Keir_Starmer_meets_Sir_Lewis_Hamilton_(54566928382)_(cropped).jpg",
+    "file": "img/foto/c782001dfe2286e9.jpg"
+   }
   },
   {
    "numero": 1,
@@ -35,7 +60,15 @@
    "team": "McLaren",
    "colore": "F47600",
    "posizione": 4,
-   "punti": 186.0
+   "punti": 186.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_%28cropped2%29.jpg/500px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_%28cropped2%29.jpg",
+    "grande": "https://upload.wikimedia.org/wikipedia/commons/9/90/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_%28cropped2%29.jpg",
+    "autore": "Original:  Steffen Prößdorf; Derivative work:  Mb2437",
+    "licenza": "CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:2024-08-25_Motorsport,_Formel_1,_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_(cropped2).jpg",
+    "file": "img/foto/9a47585746ab2c10.jpg"
+   }
   },
   {
    "numero": 16,
@@ -44,7 +77,15 @@
    "team": "Ferrari",
    "colore": "ED1131",
    "posizione": 5,
-   "punti": 179.0
+   "punti": 179.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg/500px-Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg/1280px-Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg",
+    "autore": "Gabriel Hutchinson",
+    "licenza": "CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Charles_Leclerc_at_the_2026_Cannes_Film_Festival_(cropped).jpg",
+    "file": "img/foto/2c0b7bb24e6b5e92.jpg"
+   }
   },
   {
    "numero": 3,
@@ -53,7 +94,15 @@
    "team": "Red Bull Racing",
    "colore": "4781D7",
    "posizione": 6,
-   "punti": 163.0
+   "punti": 163.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg/500px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg/1280px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg",
+    "autore": "Steffen Prößdorf",
+    "licenza": "CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:2024-08-25_Motorsport,_Formel_1,_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_(medium_crop).jpg",
+    "file": "img/foto/7b8e1e5f050948ab.jpg"
+   }
   },
   {
    "numero": 81,
@@ -62,7 +111,15 @@
    "team": "McLaren",
    "colore": "F47600",
    "posizione": 7,
-   "punti": 120.0
+   "punti": 120.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/2026_Chinese_GP_-_Oscar_Piastri_%28cropped%29_%28cropped%29.jpg/500px-2026_Chinese_GP_-_Oscar_Piastri_%28cropped%29_%28cropped%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/2026_Chinese_GP_-_Oscar_Piastri_%28cropped%29_%28cropped%29.jpg/1280px-2026_Chinese_GP_-_Oscar_Piastri_%28cropped%29_%28cropped%29.jpg",
+    "autore": "Liauzh",
+    "licenza": "CC BY 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Oscar_Piastri_(cropped)_(cropped).jpg",
+    "file": "img/foto/7ae541dfce08a9a0.jpg"
+   }
   },
   {
    "numero": 6,
@@ -71,7 +128,15 @@
    "team": "Red Bull Racing",
    "colore": "4781D7",
    "posizione": 8,
-   "punti": 86.0
+   "punti": 86.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Isack_Hadjar_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8753%29_%28cropped%29.jpg/500px-Isack_Hadjar_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8753%29_%28cropped%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Isack_Hadjar_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8753%29_%28cropped%29.jpg/1280px-Isack_Hadjar_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8753%29_%28cropped%29.jpg",
+    "autore": "Yu Chu Chin",
+    "licenza": "CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Isack_Hadjar_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_(028A8753)_(cropped).jpg",
+    "file": "img/foto/15e5cbbad0c31603.jpg"
+   }
   },
   {
    "numero": 30,
@@ -80,7 +145,15 @@
    "team": "Racing Bulls",
    "colore": "6C98FF",
    "posizione": 9,
-   "punti": 59.0
+   "punti": 59.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Liam_Lawson_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk%2C_Melbourne_%28028A7795%29.jpg/500px-Liam_Lawson_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk%2C_Melbourne_%28028A7795%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Liam_Lawson_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk%2C_Melbourne_%28028A7795%29.jpg/1280px-Liam_Lawson_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk%2C_Melbourne_%28028A7795%29.jpg",
+    "autore": "Yu Chu Chin",
+    "licenza": "CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Liam_Lawson_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk,_Melbourne_(028A7795).jpg",
+    "file": "img/foto/a264946720394031.jpg"
+   }
   },
   {
    "numero": 10,
@@ -89,7 +162,15 @@
    "team": "Alpine",
    "colore": "00A1E8",
    "posizione": 10,
-   "punti": 41.0
+   "punti": 41.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/2022_French_Grand_Prix_%2852279066548%29_%28cropped%29_%28cropped%29.png/500px-2022_French_Grand_Prix_%2852279066548%29_%28cropped%29_%28cropped%29.png",
+    "grande": "https://upload.wikimedia.org/wikipedia/commons/6/61/2022_French_Grand_Prix_%2852279066548%29_%28cropped%29_%28cropped%29.png",
+    "autore": "nabtifal",
+    "licenza": "CC BY 2.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:2022_French_Grand_Prix_(52279066548)_(cropped)_(cropped).png",
+    "file": "img/foto/f6322a63bf67cc92.jpg"
+   }
   },
   {
    "numero": 41,
@@ -98,7 +179,15 @@
    "team": "Racing Bulls",
    "colore": "6C98FF",
    "posizione": 11,
-   "punti": 37.0
+   "punti": 37.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Arvid_Lindblad_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk%2C_Melbourne_%28028A7869%29_%28cropped%29.jpg/500px-Arvid_Lindblad_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk%2C_Melbourne_%28028A7869%29_%28cropped%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Arvid_Lindblad_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk%2C_Melbourne_%28028A7869%29_%28cropped%29.jpg/1280px-Arvid_Lindblad_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk%2C_Melbourne_%28028A7869%29_%28cropped%29.jpg",
+    "autore": "Yu Chu Chin",
+    "licenza": "CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Arvid_Lindblad_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk,_Melbourne_(028A7869)_(cropped).jpg",
+    "file": "img/foto/5643b3da240a86d6.jpg"
+   }
   },
   {
    "numero": 43,
@@ -107,7 +196,15 @@
    "team": "Alpine",
    "colore": "00A1E8",
    "posizione": 12,
-   "punti": 27.0
+   "punti": 27.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Franco_Colapinto_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8698%29_cropped.jpg/500px-Franco_Colapinto_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8698%29_cropped.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Franco_Colapinto_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8698%29_cropped.jpg/1280px-Franco_Colapinto_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8698%29_cropped.jpg",
+    "autore": "Yu Chu Chin",
+    "licenza": "CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Franco_Colapinto_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_(028A8698)_cropped.jpg",
+    "file": "img/foto/567c6abc2bf9f750.jpg"
+   }
   },
   {
    "numero": 87,
@@ -116,7 +213,15 @@
    "team": "Haas F1 Team",
    "colore": "9C9FA2",
    "posizione": 13,
-   "punti": 20.0
+   "punti": 20.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/2025_Japan_GP_-_Haas_-_Oliver_Bearman_-_Thursday_%28cropped%29.jpg/500px-2025_Japan_GP_-_Haas_-_Oliver_Bearman_-_Thursday_%28cropped%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/2025_Japan_GP_-_Haas_-_Oliver_Bearman_-_Thursday_%28cropped%29.jpg/1280px-2025_Japan_GP_-_Haas_-_Oliver_Bearman_-_Thursday_%28cropped%29.jpg",
+    "autore": "Liauzh",
+    "licenza": "CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:2025_Japan_GP_-_Haas_-_Oliver_Bearman_-_Thursday_(cropped).jpg",
+    "file": "img/foto/e26163a3227ed370.jpg"
+   }
   },
   {
    "numero": 5,
@@ -125,7 +230,15 @@
    "team": "Audi",
    "colore": "F50537",
    "posizione": 14,
-   "punti": 10.0
+   "punti": 10.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Gabriel_Bortoleto_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8581%29_cropped.jpg/500px-Gabriel_Bortoleto_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8581%29_cropped.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Gabriel_Bortoleto_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8581%29_cropped.jpg/1280px-Gabriel_Bortoleto_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8581%29_cropped.jpg",
+    "autore": "Yu Chu Chin",
+    "licenza": "CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Gabriel_Bortoleto_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_(028A8581)_cropped.jpg",
+    "file": "img/foto/217379f6693d5ca4.jpg"
+   }
   },
   {
    "numero": 27,
@@ -134,7 +247,15 @@
    "team": "Audi",
    "colore": "F50537",
    "posizione": 15,
-   "punti": 7.0
+   "punti": 7.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/2019_Formula_One_tests_Barcelona%2C_Hulkenberg_%2840287128313%29.jpg/500px-2019_Formula_One_tests_Barcelona%2C_Hulkenberg_%2840287128313%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/2019_Formula_One_tests_Barcelona%2C_Hulkenberg_%2840287128313%29.jpg/1280px-2019_Formula_One_tests_Barcelona%2C_Hulkenberg_%2840287128313%29.jpg",
+    "autore": "Marc Alvarado",
+    "licenza": "CC BY-SA 2.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:2019_Formula_One_tests_Barcelona,_Hulkenberg_(40287128313).jpg",
+    "file": "img/foto/a43377232cc5f1af.jpg"
+   }
   },
   {
    "numero": 31,
@@ -143,7 +264,15 @@
    "team": "Haas F1 Team",
    "colore": "9C9FA2",
    "posizione": 16,
-   "punti": 7.0
+   "punti": 7.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Esteban_Ocon_2024_Suzuka_%28cropped%29.jpg/500px-Esteban_Ocon_2024_Suzuka_%28cropped%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Esteban_Ocon_2024_Suzuka_%28cropped%29.jpg/1280px-Esteban_Ocon_2024_Suzuka_%28cropped%29.jpg",
+    "autore": "Rrtb505050",
+    "licenza": "CC0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Esteban_Ocon_2024_Suzuka_(cropped).jpg",
+    "file": "img/foto/3872c19f7aae80d4.jpg"
+   }
   },
   {
    "numero": 55,
@@ -152,7 +281,15 @@
    "team": "Williams",
    "colore": "1868DB",
    "posizione": 17,
-   "punti": 7.0
+   "punti": 7.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_%28cropped%29.jpg/500px-Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_%28cropped%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_%28cropped%29.jpg/1280px-Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_%28cropped%29.jpg",
+    "autore": "LucaFazPhoto",
+    "licenza": "CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_(cropped).jpg",
+    "file": "img/foto/b2cc1f7cecb051dc.jpg"
+   }
   },
   {
    "numero": 23,
@@ -161,7 +298,15 @@
    "team": "Williams",
    "colore": "1868DB",
    "posizione": 18,
-   "punti": 5.0
+   "punti": 5.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Alex_Albon_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8626%29_%28cropped%29.jpg/500px-Alex_Albon_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8626%29_%28cropped%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Alex_Albon_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8626%29_%28cropped%29.jpg/1280px-Alex_Albon_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8626%29_%28cropped%29.jpg",
+    "autore": "Yu Chu Chin",
+    "licenza": "CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Alex_Albon_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_(028A8626)_(cropped).jpg",
+    "file": "img/foto/f273f206c00ae1e7.jpg"
+   }
   },
   {
    "numero": 14,
@@ -170,7 +315,15 @@
    "team": "Aston Martin",
    "colore": "229971",
    "posizione": 19,
-   "punti": 3.0
+   "punti": 3.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Alonso-68_%2824710447098%29.jpg/500px-Alonso-68_%2824710447098%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Alonso-68_%2824710447098%29.jpg/1280px-Alonso-68_%2824710447098%29.jpg",
+    "autore": "United Autosports",
+    "licenza": "CC BY-SA 2.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Alonso-68_(24710447098).jpg",
+    "file": "img/foto/c9492ba2d4b04572.jpg"
+   }
   },
   {
    "numero": 22,
@@ -179,7 +332,15 @@
    "team": "Racing Bulls",
    "colore": "6C98FF",
    "posizione": 20,
-   "punti": 1.0
+   "punti": 1.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Yuki_Tsunoda_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8096%29.jpg/500px-Yuki_Tsunoda_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8096%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Yuki_Tsunoda_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8096%29.jpg/1280px-Yuki_Tsunoda_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8096%29.jpg",
+    "autore": "Yu Chu Chin",
+    "licenza": "CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Yuki_Tsunoda_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_(028A8096).jpg",
+    "file": "img/foto/3c3c4c3310dae060.jpg"
+   }
   },
   {
    "numero": 18,
@@ -188,7 +349,15 @@
    "team": "Aston Martin",
    "colore": "229971",
    "posizione": 21,
-   "punti": 0.0
+   "punti": 0.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/2025_Japan_GP_-_Aston_Martin_-_Lance_Stroll_-_Fanzone_Stage_%28cropped%29.jpg/500px-2025_Japan_GP_-_Aston_Martin_-_Lance_Stroll_-_Fanzone_Stage_%28cropped%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/2025_Japan_GP_-_Aston_Martin_-_Lance_Stroll_-_Fanzone_Stage_%28cropped%29.jpg/1280px-2025_Japan_GP_-_Aston_Martin_-_Lance_Stroll_-_Fanzone_Stage_%28cropped%29.jpg",
+    "autore": "Liauzh",
+    "licenza": "CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:2025_Japan_GP_-_Aston_Martin_-_Lance_Stroll_-_Fanzone_Stage_(cropped).jpg",
+    "file": "img/foto/0f908019b5a92e14.jpg"
+   }
   },
   {
    "numero": 77,
@@ -197,7 +366,15 @@
    "team": "Cadillac",
    "colore": "909090",
    "posizione": 22,
-   "punti": 0.0
+   "punti": 0.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Valtteri_Bottas_at_the_2026_Adelaide_Motorsport_Festival_%28028A7556%29.jpg/500px-Valtteri_Bottas_at_the_2026_Adelaide_Motorsport_Festival_%28028A7556%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Valtteri_Bottas_at_the_2026_Adelaide_Motorsport_Festival_%28028A7556%29.jpg/1280px-Valtteri_Bottas_at_the_2026_Adelaide_Motorsport_Festival_%28028A7556%29.jpg",
+    "autore": "Yu Chu Chin",
+    "licenza": "CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Valtteri_Bottas_at_the_2026_Adelaide_Motorsport_Festival_(028A7556).jpg",
+    "file": "img/foto/e266fad25d3fb942.jpg"
+   }
   },
   {
    "numero": 11,
@@ -206,7 +383,15 @@
    "team": "Cadillac",
    "colore": "909090",
    "posizione": 23,
-   "punti": 0.0
+   "punti": 0.0,
+   "foto": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Sergio_P%C3%A9rez_2019_%28cropped%29.jpg",
+    "grande": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Sergio_P%C3%A9rez_2019_%28cropped%29.jpg",
+    "autore": "XaviYuahanda",
+    "licenza": "CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Sergio_P%C3%A9rez_2019_(cropped).jpg",
+    "file": "img/foto/40763485e6eb2b4f.jpg"
+   }
   }
  ],
  "costruttori": [

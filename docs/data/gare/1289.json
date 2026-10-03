@@ -1262,5 +1262,13 @@
     }
    ]
   }
- ]
+ ],
+ "mappa": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Silverstone_Circuit_2020.png/960px-Silverstone_Circuit_2020.png",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Silverstone_Circuit_2020.png/1280px-Silverstone_Circuit_2020.png",
+  "autore": "Antoine266",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Silverstone_Circuit_2020.png",
+  "file": "img/foto/a47fad49568979e5.jpg"
+ }
 }

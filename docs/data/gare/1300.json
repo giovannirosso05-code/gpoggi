@@ -47,5 +47,13 @@
    "fine": "2026-11-22T06:00:00+00:00",
    "risultati": null
   }
- ]
+ ],
+ "mappa": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/2023_Las_Vegas_street_circuit.svg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/4/43/2023_Las_Vegas_street_circuit.svg",
+  "autore": "Valentin JJ.",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:2023_Las_Vegas_street_circuit.svg",
+  "file": "img/foto/ffe9a90500a2c36d.svg"
+ }
 }

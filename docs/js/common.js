@@ -25,7 +25,7 @@ export function renderHeader(paginaAttuale) {
   ];
   document.getElementById("site-header").innerHTML = `
     <nav class="nav container">
-      <a href="index.html" class="brand" aria-label="F1 Oggi, home"><img src="img/logo-128.png" alt="" class="brand-logo" width="56" height="56"><span>F1<span class="dot">•</span>Oggi</span></a>
+      <a href="index.html" class="brand" aria-label="F1 Oggi, home"><img src="img/logo-wide.png" alt="" class="brand-logo" width="88" height="52"><span>F1<span class="dot">•</span>Oggi</span></a>
       <div class="nav-links">
         ${voci.map(([id, href, label]) => `<a href="${href}" class="${id === paginaAttuale ? "active" : ""}">${label}</a>`).join("")}
       </div>
@@ -35,6 +35,15 @@ export function renderHeader(paginaAttuale) {
 export function renderFooter() {
   document.getElementById("site-footer").innerHTML = `
     <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Sezioni</h3>
+        <ul>
+          <li><a href="index.html">Piloti</a></li>
+          <li><a href="classifiche.html">Classifiche</a></li>
+          <li><a href="gare.html">Calendario</a></li>
+          <li><a href="confronto.html">Confronto</a></li>
+        </ul>
+      </div>
       <div class="footer-col">
         <h3>Fonte dati</h3>
         <ul>
@@ -47,11 +56,12 @@ export function renderFooter() {
         <ul>
           <li><a href="chi-siamo.html">Chi siamo</a></li>
           <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="crediti.html">Crediti foto</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>Sito non ufficiale, non affiliato a Formula 1, FIA o ai team.<br>
+      <p>Sito non ufficiale, non affiliato a Formula 1, FIA o ai team. Foto e mappe da Wikimedia Commons con licenze libere.<br>
       <small>Formula 1 è un marchio di Formula 1 World Championship Limited.</small></p>
     </div>`;
   fetchJSON("data/meta.json").then((m) => {
@@ -80,4 +90,14 @@ export function punti(v) {
 
 export function erroreCaricamento(el) {
   el.innerHTML = `<p class="muted center">Dati non disponibili al momento. Riprova più tardi.</p>`;
+}
+
+export function img(foto, alt, cls = "") {
+  if (!foto) return "";
+  return `<img src="${esc(foto.file || foto.url)}" alt="${esc(alt)}" class="${cls}" loading="lazy" title="${esc(foto.autore)} · ${esc(foto.licenza)}">`;
+}
+
+export function credito(foto, cosa = "Foto") {
+  if (!foto) return "";
+  return `${cosa}: ${esc(foto.autore)} · <a href="${esc(foto.pagina)}" target="_blank" rel="noopener">${esc(foto.licenza)}</a>, via Wikimedia Commons`;
 }

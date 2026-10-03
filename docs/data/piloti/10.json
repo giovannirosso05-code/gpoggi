@@ -6,6 +6,14 @@
  "colore": "00A1E8",
  "posizione": 10,
  "punti": 41.0,
+ "foto": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/2022_French_Grand_Prix_%2852279066548%29_%28cropped%29_%28cropped%29.png/500px-2022_French_Grand_Prix_%2852279066548%29_%28cropped%29_%28cropped%29.png",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/6/61/2022_French_Grand_Prix_%2852279066548%29_%28cropped%29_%28cropped%29.png",
+  "autore": "nabtifal",
+  "licenza": "CC BY 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:2022_French_Grand_Prix_(52279066548)_(cropped)_(cropped).png",
+  "file": "img/foto/f6322a63bf67cc92.jpg"
+ },
  "weekend": [
   {
    "id": 1279,

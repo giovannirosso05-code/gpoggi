@@ -6,6 +6,14 @@
  "colore": "9C9FA2",
  "posizione": 16,
  "punti": 7.0,
+ "foto": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Esteban_Ocon_2024_Suzuka_%28cropped%29.jpg/500px-Esteban_Ocon_2024_Suzuka_%28cropped%29.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Esteban_Ocon_2024_Suzuka_%28cropped%29.jpg/1280px-Esteban_Ocon_2024_Suzuka_%28cropped%29.jpg",
+  "autore": "Rrtb505050",
+  "licenza": "CC0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Esteban_Ocon_2024_Suzuka_(cropped).jpg",
+  "file": "img/foto/3872c19f7aae80d4.jpg"
+ },
  "weekend": [
   {
    "id": 1279,

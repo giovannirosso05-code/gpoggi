@@ -47,5 +47,13 @@
    "fine": "2026-10-25T22:00:00+00:00",
    "risultati": null
   }
- ]
+ ],
+ "mappa": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Austin_circuit.svg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Austin_circuit.svg/1280px-Austin_circuit.svg.png",
+  "autore": "Gustavo GirardelliOwn work This W3C-unspecified vector image was created with Inkscape .",
+  "licenza": "CC BY-SA 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Austin_circuit.svg",
+  "file": "img/foto/c37d9f9125070093.svg"
+ }
 }

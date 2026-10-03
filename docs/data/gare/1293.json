@@ -1262,5 +1262,13 @@
     }
    ]
   }
- ]
+ ],
+ "mappa": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Monza_track_map.svg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Monza_track_map.svg/1280px-Monza_track_map.svg.png",
+  "autore": "Will Pittenger",
+  "licenza": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Monza_track_map.svg",
+  "file": "img/foto/70be6b48c4f1b3c3.svg"
+ }
 }

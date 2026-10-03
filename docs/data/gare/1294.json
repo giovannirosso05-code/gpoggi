@@ -1240,5 +1240,13 @@
     }
    ]
   }
- ]
+ ],
+ "mappa": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Madring_%282026%29.svg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/2/25/Madring_%282026%29.svg",
+  "autore": "GabrielStella, Cherkash",
+  "licenza": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Madring_(2026).svg",
+  "file": "img/foto/347cd3c749095c26.svg"
+ }
 }

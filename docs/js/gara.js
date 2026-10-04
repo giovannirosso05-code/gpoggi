@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, img, credito, stemma, ND, formattaDataOra, intervalloWeekend, erroreCaricamento } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, img, credito, stemma, ND, formattaDataOra, intervalloWeekend, erroreCaricamento, montaCronaca } from "./common.js";
 
 renderHeader("gare");
 renderFooter();
@@ -41,6 +41,7 @@ try {
       <div>${g.mappa ? img(g.mappa, "Tracciato di " + g.circuito, "mappa") + `<p class="credito center">${credito(g.mappa, "Mappa")}</p>` : ""}</div>
     </section>
     ${rep ? `<h3 class="section-title">Com'è andata</h3><article class="report-card"><h3 style="margin-top:0">${esc(rep.titolo)}</h3>${rep.paragrafi.map((p) => `<p>${esc(p)}</p>`).join("")}</article>` : ""}
+    <h3 class="section-title">Cronaca giro per giro</h3><div id="cronaca-box"><p class="muted">Cronaca non disponibile per questa gara.</p></div>
     <div id="tabs" class="category-pills" style="margin-bottom:8px">
       ${sessioni.map((s) => `<button class="pill ${s.key === predefinita.key ? "active" : ""}" data-key="${s.key}">${esc(s.nome)}</button>`).join("")}
     </div>
@@ -59,6 +60,7 @@ try {
     mostra(b.dataset.key);
   });
   mostra(predefinita.key);
+  fetchJSON(`data/cronaca/${id}.json`).then((c) => montaCronaca(document.getElementById("cronaca-box"), c.voci, c.giri)).catch(() => {});
 } catch (e) {
   erroreCaricamento(box);
 }

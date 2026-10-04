@@ -1,0 +1,125 @@
+{
+ "giri": 56,
+ "voci": [
+  {
+   "giro": 1,
+   "tipo": "via",
+   "testo": "Parte la gara alle 08:03 (ora italiana)."
+  },
+  {
+   "giro": 1,
+   "tipo": "sorpasso",
+   "testo": "Primo giro: Alonso risale dal 18° al 10° posto; Lindblad risale dal 15° al 8° posto."
+  },
+  {
+   "giro": 2,
+   "tipo": "comando",
+   "testo": "Antonelli passa al comando."
+  },
+  {
+   "giro": 3,
+   "tipo": "incidente",
+   "testo": "Perez e Bottas: incidente segnalato (contatto)."
+  },
+  {
+   "giro": 5,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Perez e Bottas (contatto)."
+  },
+  {
+   "giro": 10,
+   "tipo": "safety",
+   "testo": "Safety car in pista."
+  },
+  {
+   "giro": 10,
+   "tipo": "ritiro",
+   "testo": "Lance Stroll si ritira (9 giri completati su 56)."
+  },
+  {
+   "giro": 10,
+   "tipo": "pit",
+   "testo": "Ai box: Antonelli, Russell, Hamilton, Leclerc, Gasly, Bearman."
+  },
+  {
+   "giro": 13,
+   "tipo": "safety",
+   "testo": "La safety car rientra ai box: si ripartirà nel giro."
+  },
+  {
+   "giro": 19,
+   "tipo": "incidente",
+   "testo": "Gasly e Verstappen: incidente segnalato."
+  },
+  {
+   "giro": 20,
+   "tipo": "incidente",
+   "testo": "Bearman e Lindblad: incidente segnalato."
+  },
+  {
+   "giro": 21,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Bearman e Lindblad."
+  },
+  {
+   "giro": 22,
+   "tipo": "incidente",
+   "testo": "Gasly e Verstappen: incidente segnalato."
+  },
+  {
+   "giro": 23,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Gasly e Verstappen."
+  },
+  {
+   "giro": 24,
+   "tipo": "incidente",
+   "testo": "Lawson e Lindblad: incidente segnalato (ha spinto un avversario fuori pista)."
+  },
+  {
+   "giro": 26,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Gasly e Verstappen."
+  },
+  {
+   "giro": 29,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Lawson e Lindblad (ha spinto un avversario fuori pista)."
+  },
+  {
+   "giro": 33,
+   "tipo": "ritiro",
+   "testo": "Fernando Alonso si ritira (32 giri completati su 56)."
+  },
+  {
+   "giro": 34,
+   "tipo": "incidente",
+   "testo": "Ocon e Colapinto: incidente segnalato (contatto)."
+  },
+  {
+   "giro": 34,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Ocon e Colapinto (contatto)."
+  },
+  {
+   "giro": 37,
+   "tipo": "penalita",
+   "testo": "Penalità di 10 secondi per Ocon (contatto)."
+  },
+  {
+   "giro": 46,
+   "tipo": "ritiro",
+   "testo": "Max Verstappen si ritira (45 giri completati su 56)."
+  },
+  {
+   "giro": 51,
+   "tipo": "penalita",
+   "testo": "Ocon sconta la penalità."
+  },
+  {
+   "giro": 56,
+   "tipo": "arrivo",
+   "testo": "Bandiera a scacchi: vince Kimi Antonelli (Mercedes), davanti a George Russell e Lewis Hamilton."
+  }
+ ]
+}

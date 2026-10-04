@@ -1,0 +1,260 @@
+{
+ "giri": 66,
+ "voci": [
+  {
+   "giro": 1,
+   "tipo": "via",
+   "testo": "Parte la gara alle 15:03 (ora italiana); rischio pioggia indicato al 0%."
+  },
+  {
+   "giro": 1,
+   "tipo": "sorpasso",
+   "testo": "Primo giro: Sainz risale dal 16° al 13° posto; Leclerc risale dal 10° al 7° posto."
+  },
+  {
+   "giro": 3,
+   "tipo": "incidente",
+   "testo": "Hulkenberg: incidente segnalato."
+  },
+  {
+   "giro": 3,
+   "tipo": "incidente",
+   "testo": "Lindblad: incidente segnalato."
+  },
+  {
+   "giro": 5,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Lindblad."
+  },
+  {
+   "giro": 5,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Hulkenberg."
+  },
+  {
+   "giro": 6,
+   "tipo": "ritiro",
+   "testo": "Lance Stroll si ritira (5 giri completati su 66)."
+  },
+  {
+   "giro": 8,
+   "tipo": "incidente",
+   "testo": "Bearman e Hadjar: incidente segnalato (ha spinto un avversario fuori pista)."
+  },
+  {
+   "giro": 9,
+   "tipo": "incidente",
+   "testo": "Ocon e Bortoleto: incidente segnalato (ha spinto un avversario fuori pista)."
+  },
+  {
+   "giro": 10,
+   "tipo": "incidente",
+   "testo": "Albon: incidente segnalato."
+  },
+  {
+   "giro": 11,
+   "tipo": "pit",
+   "testo": "Ai box: Hamilton."
+  },
+  {
+   "giro": 12,
+   "tipo": "pit",
+   "testo": "Ai box: Russell, Verstappen."
+  },
+  {
+   "giro": 13,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Bearman e Hadjar (ha spinto un avversario fuori pista)."
+  },
+  {
+   "giro": 13,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Ocon e Bortoleto (ha spinto un avversario fuori pista)."
+  },
+  {
+   "giro": 13,
+   "tipo": "pit",
+   "testo": "Ai box: Norris."
+  },
+  {
+   "giro": 14,
+   "tipo": "pit",
+   "testo": "Ai box: Piastri."
+  },
+  {
+   "giro": 15,
+   "tipo": "incidente",
+   "testo": "Commissari: Albon verrà esaminato dopo la gara."
+  },
+  {
+   "giro": 15,
+   "tipo": "comando",
+   "testo": "Leclerc passa al comando."
+  },
+  {
+   "giro": 15,
+   "tipo": "pit",
+   "testo": "Ai box: Hadjar."
+  },
+  {
+   "giro": 16,
+   "tipo": "incidente",
+   "testo": "Sainz: incidente segnalato."
+  },
+  {
+   "giro": 16,
+   "tipo": "ritiro",
+   "testo": "Valtteri Bottas si ritira (15 giri completati su 66)."
+  },
+  {
+   "giro": 16,
+   "tipo": "comando",
+   "testo": "Russell passa al comando."
+  },
+  {
+   "giro": 23,
+   "tipo": "incidente",
+   "testo": "Commissari: Sainz verrà esaminato dopo la gara."
+  },
+  {
+   "giro": 27,
+   "tipo": "pit",
+   "testo": "Ai box: Hamilton."
+  },
+  {
+   "giro": 29,
+   "tipo": "penalita",
+   "testo": "Bandiera bianconera per Antonelli: limiti della pista."
+  },
+  {
+   "giro": 29,
+   "tipo": "pit",
+   "testo": "Ai box: Verstappen."
+  },
+  {
+   "giro": 30,
+   "tipo": "ritiro",
+   "testo": "Nico Hulkenberg si ritira (29 giri completati su 66)."
+  },
+  {
+   "giro": 32,
+   "tipo": "pit",
+   "testo": "Ai box: Hadjar."
+  },
+  {
+   "giro": 35,
+   "tipo": "pit",
+   "testo": "Ai box: Norris."
+  },
+  {
+   "giro": 36,
+   "tipo": "comando",
+   "testo": "Antonelli passa al comando."
+  },
+  {
+   "giro": 36,
+   "tipo": "pit",
+   "testo": "Ai box: Russell, Piastri."
+  },
+  {
+   "giro": 38,
+   "tipo": "ritiro",
+   "testo": "Fernando Alonso si ritira (37 giri completati su 66)."
+  },
+  {
+   "giro": 38,
+   "tipo": "comando",
+   "testo": "Hamilton passa al comando."
+  },
+  {
+   "giro": 40,
+   "tipo": "pit",
+   "testo": "Ai box: Verstappen."
+  },
+  {
+   "giro": 41,
+   "tipo": "safety",
+   "testo": "Virtual safety car."
+  },
+  {
+   "giro": 41,
+   "tipo": "pit",
+   "testo": "Ai box: Hamilton."
+  },
+  {
+   "giro": 42,
+   "tipo": "safety",
+   "testo": "Termina la virtual safety car."
+  },
+  {
+   "giro": 44,
+   "tipo": "incidente",
+   "testo": "Hamilton: incidente segnalato."
+  },
+  {
+   "giro": 45,
+   "tipo": "incidente",
+   "testo": "Colapinto: incidente segnalato."
+  },
+  {
+   "giro": 46,
+   "tipo": "incidente",
+   "testo": "Hamilton: incidente segnalato."
+  },
+  {
+   "giro": 48,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Hamilton."
+  },
+  {
+   "giro": 57,
+   "tipo": "incidente",
+   "testo": "Commissari: Colapinto verrà esaminato dopo la gara."
+  },
+  {
+   "giro": 58,
+   "tipo": "pit",
+   "testo": "Ai box: Hadjar."
+  },
+  {
+   "giro": 61,
+   "tipo": "ritiro",
+   "testo": "Oliver Bearman si ritira (60 giri completati su 66)."
+  },
+  {
+   "giro": 62,
+   "tipo": "ritiro",
+   "testo": "Kimi Antonelli si ritira (61 giri completati su 66)."
+  },
+  {
+   "giro": 63,
+   "tipo": "safety",
+   "testo": "Virtual safety car."
+  },
+  {
+   "giro": 63,
+   "tipo": "ritiro",
+   "testo": "Charles Leclerc si ritira (62 giri completati su 66)."
+  },
+  {
+   "giro": 65,
+   "tipo": "safety",
+   "testo": "Termina la virtual safety car."
+  },
+  {
+   "giro": 66,
+   "tipo": "incidente",
+   "testo": "Antonelli: incidente segnalato (limiti della pista)."
+  },
+  {
+   "giro": 66,
+   "tipo": "incidente",
+   "testo": "Commissari: Antonelli verrà esaminato dopo la gara (limiti della pista)."
+  },
+  {
+   "giro": 66,
+   "tipo": "arrivo",
+   "testo": "Bandiera a scacchi: vince Lewis Hamilton (Ferrari), davanti a George Russell e Lando Norris."
+  }
+ ]
+}

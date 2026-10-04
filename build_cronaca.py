@@ -1,0 +1,194 @@
+"""Cronaca giro per giro delle gare di F1, scritta dai dati OpenF1 (messaggi della direzione gara, posizioni, giri, pit stop).
+
+Ogni voce è un fatto dei dati: via (con l'eventuale ritardo), safety car, incidenti e decisioni dei commissari, ritiri con il giro,
+cambi al comando, pit stop dei primi, arrivo. Le cause dei ritiri non si scrivono se i dati non le riportano.
+Scrive docs/data/cronaca/<id gara>.json. Con una sessione dal vivo OpenF1 risponde 401: in quel caso si salta senza errori.
+"""
+import bisect
+import json
+import re
+import time
+from datetime import datetime, timezone
+from pathlib import Path
+from zoneinfo import ZoneInfo
+
+import requests
+
+DATA = Path(__file__).parent / "docs" / "data"
+OUT = DATA / "cronaca"
+H = {"User-Agent": "GPOggiBot/1.0 (+https://gpoggi.it; progetto non commerciale)"}
+ROMA = ZoneInfo("Europe/Rome")
+MOTIVI = {"CAUSING A COLLISION": "contatto", "FALSE START - MOVING BEFORE SIGNAL": "falsa partenza", "DRIVING ERRATICALLY": "guida irregolare", "UNSAFE RELEASE": "rilascio pericoloso",
+          "TRACK LIMITS": "limiti della pista", "FORCING ANOTHER DRIVER OFF THE TRACK": "ha spinto un avversario fuori pista", "SPEEDING IN THE PIT LANE": "eccesso di velocità ai box"}
+
+
+def get(percorso, **p):
+    for t in range(4):
+        time.sleep(0.4 + 2 * t)
+        r = requests.get(f"https://api.openf1.org/v1/{percorso}", params=p, headers=H, timeout=60)
+        if r.status_code == 429:
+            continue
+        r.raise_for_status()
+        return r.json()
+    raise requests.RequestException("troppe richieste")
+
+
+def ora_it(iso):
+    return datetime.fromisoformat(iso).astimezone(ROMA).strftime("%H:%M")
+
+
+def cronaca(g):
+    r = next(s for s in g["sessioni"] if s["tipo"] == "Race")
+    k, ris = r["key"], [x for x in (r.get("risultati") or [])]
+    if not ris:
+        return None
+    nome = {x["numero"]: x["nome"] for x in ris}
+    acr = {x["acronimo"]: x["nome"] for x in ris if x.get("acronimo")}
+    cogn = lambda n: (n or "pilota").split()[-1] if n else "pilota"
+    giri_tot = max((x["giri"] or 0) for x in ris)
+    rc, pit, pos, laps = get("race_control", session_key=k), get("pit", session_key=k), get("position", session_key=k), get("laps", session_key=k)
+    inizio_lap = {}
+    for l in laps:
+        if l.get("date_start"):
+            inizio_lap.setdefault(l["driver_number"], []).append((l["date_start"], l["lap_number"]))
+    for v in inizio_lap.values():
+        v.sort()
+    def giro_a(num, data):
+        v = inizio_lap.get(num)
+        if not v:
+            return None
+        i = bisect.bisect_right([d for d, _ in v], data) - 1
+        return v[max(i, 0)][1]
+    ev = []
+    add = lambda giro, tipo, testo, ordine=0: ev.append({"giro": giro, "tipo": tipo, "testo": testo, "o": ordine})
+
+    # partenza: ritardo rispetto all'orario previsto, pioggia
+    primo = min((d for v in inizio_lap.values() for d, n in v if n == 1), default=None)
+    previsto = r["inizio"]
+    riga = "Parte la gara"
+    if primo:
+        ritardo = (datetime.fromisoformat(primo) - datetime.fromisoformat(previsto)).total_seconds() / 60
+        riga += f" alle {ora_it(primo)} (ora italiana)"
+        if ritardo >= 10:
+            h, m = divmod(int(round(ritardo)), 60)
+            riga += f", con {f'{h}h ' if h else ''}{m} minuti di ritardo sull'orario previsto delle {ora_it(previsto)}"
+    pioggia = next((re.search(r"(\d+)%", x["message"]).group(1) for x in rc if "RISK OF RAIN" in x["message"]), None)
+    sospesa = any("STARTING PROCEDURE SUSPENDED" in x["message"] for x in rc)
+    if sospesa:
+        riga += ". Procedura di partenza sospesa prima del via"
+    if pioggia:
+        riga += f"; rischio pioggia indicato al {pioggia}%"
+    add(1, "via", riga + ".", -1)
+
+    # primo giro: chi guadagna di piu' rispetto alla griglia
+    if pos and primo:
+        griglia = {}
+        for p in pos:
+            if p["date"] <= primo:
+                griglia[p["driver_number"]] = p["position"]
+        fine1 = {}
+        for n, v in inizio_lap.items():
+            t2 = next((d for d, ln in v if ln == 2), None)
+            if t2:
+                c = [p for p in pos if p["driver_number"] == n and p["date"] <= t2]
+                if c:
+                    fine1[n] = c[-1]["position"]
+        mov = sorted(((griglia[n] - fine1[n], n) for n in fine1 if n in griglia), reverse=True)[:2]
+        mov = [(d, n) for d, n in mov if d >= 3]
+        if mov:
+            add(1, "sorpasso", "Primo giro: " + "; ".join(f"{cogn(nome.get(n))} risale dal {griglia[n]}° al {fine1[n]}° posto" for d, n in mov) + ".", 1)
+
+    # messaggi della direzione gara
+    def nomi(testo):
+        trovati = re.findall(r"\((\w{3})\)", testo)
+        return " e ".join(cogn(acr.get(a, a)) for a in trovati) or "pilota"
+    def motivo(testo):
+        for en, it in MOTIVI.items():
+            if en in testo:
+                return it
+        return None
+    visti = set()
+    for x in rc:
+        m, lap, cat = x["message"].strip(), x.get("lap_number") or 1, x["category"]
+        if cat == "SafetyCar":
+            t = {"SAFETY CAR DEPLOYED": ("safety", "Safety car in pista"), "SAFETY CAR IN THIS LAP": ("safety", "La safety car rientra ai box: si ripartirà nel giro"), "VSC DEPLOYED": ("safety", "Virtual safety car"),
+                 "VSC ENDING": ("safety", "Termina la virtual safety car")}.get(m)
+            if t and (t[1], lap) not in visti:
+                visti.add((t[1], lap)); add(lap, t[0], t[1] + ".", 2)
+        elif cat == "Flag" and x.get("flag") == "RED":
+            add(lap, "safety", "Bandiera rossa: gara sospesa.", 2)
+        elif cat == "Flag" and x.get("flag") == "BLACK AND WHITE":
+            add(lap, "penalita", f"Bandiera bianconera per {nomi(m)}: {motivo(m) or 'comportamento scorretto'}.", 4)
+        elif cat == "Other" and re.search(r"INCIDENT INVOLVING CAR", m) and "FIA STEWARDS" not in m and "NOTED" in m:
+            mt = motivo(m)
+            add(lap, "incidente", f"{nomi(m)}: incidente segnalato{f' ({mt})' if mt else ''}.", 3)
+        elif m.startswith("FIA STEWARDS:"):
+            mt = motivo(m)
+            suff = f" ({mt})" if mt else ""
+            if "NO FURTHER INVESTIGATION" in m:
+                add(lap, "incidente", f"Commissari: nessuna penalità per {nomi(m)}{suff}.", 4)
+            elif "UNDER INVESTIGATION" in m:
+                add(lap, "incidente", f"Commissari: sotto investigazione {nomi(m)}{suff}.", 4)
+            elif "AFTER THE RACE" in m:
+                add(lap, "incidente", f"Commissari: {nomi(m)} verrà esaminato dopo la gara{suff}.", 4)
+            elif "PENALTY SERVED" in m:
+                add(lap, "penalita", f"{nomi(m)} sconta la penalità.", 4)
+            elif re.search(r"TIME PENALTY", m):
+                s = re.search(r"(\d+) SECOND", m)
+                add(lap, "penalita", f"Penalità di {s.group(1) if s else 'alcuni'} secondi per {nomi(m)}{suff}.", 4)
+
+    # ritiri col giro in cui si sono fermati
+    for x in ris:
+        if x.get("stato") == "RIT" and x["giri"] is not None and x["giri"] < giri_tot:
+            add(x["giri"] + 1, "ritiro", f"{x['nome']} si ritira ({x['giri']} giri completati su {giri_tot}).", 5)
+
+    # cambi al comando e pit stop dei primi sei
+    if pos:
+        capo, ultimo = None, None
+        for p in sorted(pos, key=lambda p: p["date"]):
+            if p["position"] != 1 or (primo and p["date"] < primo):
+                continue
+            if capo is not None and p["driver_number"] != capo:
+                lap = giro_a(p["driver_number"], p["date"])
+                if lap and lap > 1 and (lap, p["driver_number"]) != ultimo:
+                    add(lap, "comando", f"{cogn(nome.get(p['driver_number']))} passa al comando.", 6)
+                    ultimo = (lap, p["driver_number"])
+            capo = p["driver_number"]
+    primi = {x["numero"] for x in ris if x.get("pos") and x["pos"] <= 6}
+    per_giro = {}
+    for p in pit:
+        if p["driver_number"] in primi and p.get("lap_number") and p["lap_number"] > 1 and (p.get("pit_duration") or 0) < 60:
+            per_giro.setdefault(p["lap_number"], []).append(cogn(nome.get(p["driver_number"])))
+    for lap, lista in per_giro.items():
+        add(lap, "pit", ("Ai box: " if len(lista) > 1 else "Ai box: ") + ", ".join(lista) + ".", 7)
+
+    top = sorted((x for x in ris if x.get("pos")), key=lambda x: x["pos"])[:3]
+    if len(top) == 3:
+        add(giri_tot, "arrivo", f"Bandiera a scacchi: vince {top[0]['nome']} ({top[0]['team']}), davanti a {top[1]['nome']} e {top[2]['nome']}.", 9)
+    ev.sort(key=lambda e: (e["giro"], e["o"]))
+    return [{"giro": e["giro"], "tipo": e["tipo"], "testo": e["testo"]} for e in ev], giri_tot
+
+
+def main():
+    OUT.mkdir(exist_ok=True)
+    eventi = json.loads((DATA / "events.json").read_text())
+    ora = datetime.now(timezone.utc).isoformat()
+    for e in eventi:
+        if e["fine"] > ora:
+            continue
+        f = OUT / f"{e['id']}.json"
+        if f.exists() and f.stat().st_size > 50:
+            continue
+        g = json.loads((DATA / "gare" / f"{e['id']}.json").read_text())
+        try:
+            r = cronaca(g)
+        except requests.RequestException as ex:
+            print(f"  {e['nome']}: dati non disponibili ({ex})")
+            continue
+        if r:
+            f.write_text(json.dumps({"giri": r[1], "voci": r[0]}, ensure_ascii=False, indent=1))
+            print(f"{e['nome']}: {len(r[0])} voci")
+
+
+if __name__ == "__main__":
+    main()

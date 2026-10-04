@@ -1,0 +1,230 @@
+{
+ "giri": 57,
+ "voci": [
+  {
+   "giro": 1,
+   "tipo": "via",
+   "testo": "Parte la gara alle 15:04 (ora italiana); rischio pioggia indicato al 0%."
+  },
+  {
+   "giro": 4,
+   "tipo": "incidente",
+   "testo": "Verstappen: incidente segnalato."
+  },
+  {
+   "giro": 4,
+   "tipo": "incidente",
+   "testo": "Sainz e Tsunoda: incidente segnalato (contatto)."
+  },
+  {
+   "giro": 5,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Verstappen."
+  },
+  {
+   "giro": 6,
+   "tipo": "penalita",
+   "testo": "Bandiera bianconera per Hamilton: limiti della pista."
+  },
+  {
+   "giro": 7,
+   "tipo": "ritiro",
+   "testo": "Lewis Hamilton si ritira (6 giri completati su 57)."
+  },
+  {
+   "giro": 8,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Sainz e Tsunoda (contatto)."
+  },
+  {
+   "giro": 10,
+   "tipo": "incidente",
+   "testo": "Piastri: incidente segnalato."
+  },
+  {
+   "giro": 12,
+   "tipo": "incidente",
+   "testo": "Lindblad: incidente segnalato."
+  },
+  {
+   "giro": 13,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Piastri."
+  },
+  {
+   "giro": 13,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Lindblad."
+  },
+  {
+   "giro": 13,
+   "tipo": "ritiro",
+   "testo": "Lance Stroll si ritira (12 giri completati su 57)."
+  },
+  {
+   "giro": 14,
+   "tipo": "safety",
+   "testo": "Virtual safety car."
+  },
+  {
+   "giro": 14,
+   "tipo": "pit",
+   "testo": "Ai box: Antonelli, Verstappen, Russell."
+  },
+  {
+   "giro": 15,
+   "tipo": "safety",
+   "testo": "Termina la virtual safety car."
+  },
+  {
+   "giro": 15,
+   "tipo": "pit",
+   "testo": "Ai box: Norris."
+  },
+  {
+   "giro": 16,
+   "tipo": "incidente",
+   "testo": "Tsunoda: incidente segnalato."
+  },
+  {
+   "giro": 16,
+   "tipo": "incidente",
+   "testo": "Sainz e Alonso: incidente segnalato."
+  },
+  {
+   "giro": 16,
+   "tipo": "comando",
+   "testo": "Leclerc passa al comando."
+  },
+  {
+   "giro": 17,
+   "tipo": "incidente",
+   "testo": "Perez e Tsunoda: incidente segnalato."
+  },
+  {
+   "giro": 18,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Sainz e Alonso."
+  },
+  {
+   "giro": 19,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Perez e Tsunoda."
+  },
+  {
+   "giro": 20,
+   "tipo": "penalita",
+   "testo": "Penalità di 5 secondi per Sainz."
+  },
+  {
+   "giro": 24,
+   "tipo": "penalita",
+   "testo": "Bandiera bianconera per Sainz: limiti della pista."
+  },
+  {
+   "giro": 27,
+   "tipo": "penalita",
+   "testo": "Sainz sconta la penalità."
+  },
+  {
+   "giro": 28,
+   "tipo": "pit",
+   "testo": "Ai box: Russell."
+  },
+  {
+   "giro": 32,
+   "tipo": "ritiro",
+   "testo": "Sergio Perez si ritira (31 giri completati su 57)."
+  },
+  {
+   "giro": 44,
+   "tipo": "ritiro",
+   "testo": "Carlos Sainz si ritira (43 giri completati su 57)."
+  },
+  {
+   "giro": 44,
+   "tipo": "pit",
+   "testo": "Ai box: Lawson."
+  },
+  {
+   "giro": 45,
+   "tipo": "incidente",
+   "testo": "Colapinto: incidente segnalato."
+  },
+  {
+   "giro": 47,
+   "tipo": "incidente",
+   "testo": "Bortoleto: incidente segnalato."
+  },
+  {
+   "giro": 48,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Colapinto."
+  },
+  {
+   "giro": 48,
+   "tipo": "comando",
+   "testo": "Antonelli passa al comando."
+  },
+  {
+   "giro": 48,
+   "tipo": "pit",
+   "testo": "Ai box: Leclerc."
+  },
+  {
+   "giro": 49,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Bortoleto."
+  },
+  {
+   "giro": 50,
+   "tipo": "penalita",
+   "testo": "Bandiera bianconera per Piastri: limiti della pista."
+  },
+  {
+   "giro": 53,
+   "tipo": "penalita",
+   "testo": "Bandiera bianconera per Bortoleto: limiti della pista."
+  },
+  {
+   "giro": 57,
+   "tipo": "incidente",
+   "testo": "Lindblad e Hulkenberg: incidente segnalato (ha spinto un avversario fuori pista)."
+  },
+  {
+   "giro": 57,
+   "tipo": "incidente",
+   "testo": "Verstappen: incidente segnalato."
+  },
+  {
+   "giro": 57,
+   "tipo": "incidente",
+   "testo": "Gasly: incidente segnalato (eccesso di velocità ai box)."
+  },
+  {
+   "giro": 57,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Lindblad e Hulkenberg (ha spinto un avversario fuori pista)."
+  },
+  {
+   "giro": 57,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Verstappen."
+  },
+  {
+   "giro": 57,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Gasly (eccesso di velocità ai box)."
+  },
+  {
+   "giro": 57,
+   "tipo": "penalita",
+   "testo": "Penalità di 5 secondi per Gasly (eccesso di velocità ai box)."
+  },
+  {
+   "giro": 57,
+   "tipo": "arrivo",
+   "testo": "Bandiera a scacchi: vince Kimi Antonelli (Mercedes), davanti a Max Verstappen e Lando Norris."
+  }
+ ]
+}

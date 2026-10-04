@@ -1,0 +1,230 @@
+{
+ "giri": 70,
+ "voci": [
+  {
+   "giro": 1,
+   "tipo": "via",
+   "testo": "Parte la gara alle 15:03 (ora italiana); rischio pioggia indicato al 20%."
+  },
+  {
+   "giro": 1,
+   "tipo": "sorpasso",
+   "testo": "Primo giro: Ocon risale dal 15° al 12° posto; Lawson risale dal 11° al 8° posto."
+  },
+  {
+   "giro": 3,
+   "tipo": "incidente",
+   "testo": "Alonso e Bearman: incidente segnalato (ha spinto un avversario fuori pista)."
+  },
+  {
+   "giro": 4,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Alonso e Bearman (ha spinto un avversario fuori pista)."
+  },
+  {
+   "giro": 7,
+   "tipo": "incidente",
+   "testo": "Perez: incidente segnalato."
+  },
+  {
+   "giro": 8,
+   "tipo": "incidente",
+   "testo": "Commissari: Perez verrà esaminato dopo la gara."
+  },
+  {
+   "giro": 13,
+   "tipo": "pit",
+   "testo": "Ai box: Hamilton."
+  },
+  {
+   "giro": 14,
+   "tipo": "ritiro",
+   "testo": "Valtteri Bottas si ritira (13 giri completati su 70)."
+  },
+  {
+   "giro": 14,
+   "tipo": "pit",
+   "testo": "Ai box: Verstappen."
+  },
+  {
+   "giro": 16,
+   "tipo": "comando",
+   "testo": "Norris passa al comando."
+  },
+  {
+   "giro": 16,
+   "tipo": "pit",
+   "testo": "Ai box: Leclerc."
+  },
+  {
+   "giro": 17,
+   "tipo": "pit",
+   "testo": "Ai box: Norris."
+  },
+  {
+   "giro": 18,
+   "tipo": "comando",
+   "testo": "Antonelli passa al comando."
+  },
+  {
+   "giro": 19,
+   "tipo": "pit",
+   "testo": "Ai box: Hadjar."
+  },
+  {
+   "giro": 22,
+   "tipo": "pit",
+   "testo": "Ai box: Antonelli."
+  },
+  {
+   "giro": 23,
+   "tipo": "comando",
+   "testo": "Piastri passa al comando."
+  },
+  {
+   "giro": 30,
+   "tipo": "pit",
+   "testo": "Ai box: Hamilton."
+  },
+  {
+   "giro": 33,
+   "tipo": "comando",
+   "testo": "Norris passa al comando."
+  },
+  {
+   "giro": 36,
+   "tipo": "pit",
+   "testo": "Ai box: Leclerc."
+  },
+  {
+   "giro": 39,
+   "tipo": "incidente",
+   "testo": "Sainz e Piastri: incidente segnalato (contatto)."
+  },
+  {
+   "giro": 40,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Sainz e Piastri (contatto)."
+  },
+  {
+   "giro": 41,
+   "tipo": "comando",
+   "testo": "Antonelli passa al comando."
+  },
+  {
+   "giro": 41,
+   "tipo": "pit",
+   "testo": "Ai box: Verstappen."
+  },
+  {
+   "giro": 42,
+   "tipo": "pit",
+   "testo": "Ai box: Hadjar."
+  },
+  {
+   "giro": 44,
+   "tipo": "incidente",
+   "testo": "Leclerc: incidente segnalato."
+  },
+  {
+   "giro": 44,
+   "tipo": "penalita",
+   "testo": "Penalità di 5 secondi per Sainz (contatto)."
+  },
+  {
+   "giro": 46,
+   "tipo": "comando",
+   "testo": "Norris passa al comando."
+  },
+  {
+   "giro": 47,
+   "tipo": "incidente",
+   "testo": "Bearman: incidente segnalato."
+  },
+  {
+   "giro": 49,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Leclerc."
+  },
+  {
+   "giro": 49,
+   "tipo": "ritiro",
+   "testo": "Sergio Perez si ritira (48 giri completati su 70)."
+  },
+  {
+   "giro": 50,
+   "tipo": "incidente",
+   "testo": "Stroll: incidente segnalato."
+  },
+  {
+   "giro": 50,
+   "tipo": "penalita",
+   "testo": "Sainz sconta la penalità."
+  },
+  {
+   "giro": 53,
+   "tipo": "pit",
+   "testo": "Ai box: Antonelli."
+  },
+  {
+   "giro": 56,
+   "tipo": "safety",
+   "testo": "Virtual safety car."
+  },
+  {
+   "giro": 56,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Stroll."
+  },
+  {
+   "giro": 56,
+   "tipo": "ritiro",
+   "testo": "Oscar Piastri si ritira (55 giri completati su 70)."
+  },
+  {
+   "giro": 56,
+   "tipo": "pit",
+   "testo": "Ai box: Norris, Hamilton, Leclerc."
+  },
+  {
+   "giro": 57,
+   "tipo": "safety",
+   "testo": "Termina la virtual safety car."
+  },
+  {
+   "giro": 57,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Bearman."
+  },
+  {
+   "giro": 58,
+   "tipo": "penalita",
+   "testo": "Penalità di 5 secondi per Bearman."
+  },
+  {
+   "giro": 61,
+   "tipo": "incidente",
+   "testo": "Hamilton: incidente segnalato (eccesso di velocità ai box)."
+  },
+  {
+   "giro": 62,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Hamilton (eccesso di velocità ai box)."
+  },
+  {
+   "giro": 66,
+   "tipo": "penalita",
+   "testo": "Penalità di 5 secondi per Hamilton (eccesso di velocità ai box)."
+  },
+  {
+   "giro": 70,
+   "tipo": "penalita",
+   "testo": "Bandiera bianconera per Bortoleto: limiti della pista."
+  },
+  {
+   "giro": 70,
+   "tipo": "arrivo",
+   "testo": "Bandiera a scacchi: vince Lando Norris (McLaren), davanti a Max Verstappen e Kimi Antonelli."
+  }
+ ]
+}

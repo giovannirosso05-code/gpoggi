@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, img, credito, intervalloWeekend, formattaDataOra, punti, stemma, stemmaMoto, ND, mischia, fotoMotoMap, mappeMotoMap } from "./common.js";
+import { iniz, renderHeader, renderFooter, fetchJSON, esc, img, credito, intervalloWeekend, formattaDataOra, punti, stemma, stemmaMoto, ND, mischia, fotoMotoMap, mappeMotoMap } from "./common.js";
 
 import { montaPronostico, colonnaF1, colonnaMoto } from "./prono.js";
 
@@ -86,7 +86,7 @@ function tabellaMoto() {
   const lista = (c.categorie || {}).MotoGP || c.piloti || [];
   return lista.length ? `<div class="table-wrap"><table class="results"><thead><tr><th>Pos</th><th>Pilota</th><th>Moto</th><th>Punti</th></tr></thead>
     <tbody>${lista.slice(0, 10).map((p) => `<tr class="${p.pos <= 3 ? "podio" : ""}"><td>${p.pos}</td>
-      <td><a class="link-nome" href="pilota-moto.html?id=${esc(p.id)}${tema}"><strong>${esc(p.nome)}</strong></a> <span class="muted">#${p.numero ?? ""}</span></td>
+      <td><a class="cella-pilota" href="pilota-moto.html?id=${esc(p.id)}${tema}">${FM["nome:" + p.nome] ? img(FM["nome:" + p.nome], p.nome, "foto-mini") : iniz(p.nome)}<strong>${esc(p.nome)}</strong></a> <span class="muted">#${p.numero ?? ""}</span></td>
       <td><span class="cella-team">${stemmaMoto(p.moto)}${esc(p.moto)}</span></td><td><strong>${punti(p.punti)}</strong></td></tr>`).join("")}</tbody></table></div>` : `<p class="muted">Classifica non disponibile.</p>`;
 }
 function mostraClassifica(k) {

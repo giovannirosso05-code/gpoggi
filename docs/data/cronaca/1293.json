@@ -1,0 +1,185 @@
+{
+ "giri": 53,
+ "voci": [
+  {
+   "giro": 1,
+   "tipo": "via",
+   "testo": "Parte la gara alle 15:03 (ora italiana); rischio pioggia indicato al 0%."
+  },
+  {
+   "giro": 1,
+   "tipo": "sorpasso",
+   "testo": "Primo giro: Antonelli risale dal 19° al 14° posto; Lawson risale dal 22° al 19° posto."
+  },
+  {
+   "giro": 1,
+   "tipo": "incidente",
+   "testo": "Perez: incidente segnalato."
+  },
+  {
+   "giro": 1,
+   "tipo": "incidente",
+   "testo": "Colapinto: incidente segnalato."
+  },
+  {
+   "giro": 1,
+   "tipo": "incidente",
+   "testo": "Commissari: Perez verrà esaminato dopo la gara."
+  },
+  {
+   "giro": 1,
+   "tipo": "incidente",
+   "testo": "Commissari: Colapinto verrà esaminato dopo la gara."
+  },
+  {
+   "giro": 2,
+   "tipo": "incidente",
+   "testo": "Leclerc e Hamilton: incidente segnalato."
+  },
+  {
+   "giro": 2,
+   "tipo": "ritiro",
+   "testo": "Charles Leclerc si ritira (1 giri completati su 53)."
+  },
+  {
+   "giro": 3,
+   "tipo": "safety",
+   "testo": "Safety car in pista."
+  },
+  {
+   "giro": 4,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Leclerc e Hamilton."
+  },
+  {
+   "giro": 7,
+   "tipo": "incidente",
+   "testo": "Tsunoda: incidente segnalato."
+  },
+  {
+   "giro": 11,
+   "tipo": "incidente",
+   "testo": "Commissari: Tsunoda verrà esaminato dopo la gara."
+  },
+  {
+   "giro": 12,
+   "tipo": "comando",
+   "testo": "Verstappen passa al comando."
+  },
+  {
+   "giro": 14,
+   "tipo": "incidente",
+   "testo": "Lawson e Hulkenberg: incidente segnalato."
+  },
+  {
+   "giro": 14,
+   "tipo": "comando",
+   "testo": "Russell passa al comando."
+  },
+  {
+   "giro": 14,
+   "tipo": "comando",
+   "testo": "Verstappen passa al comando."
+  },
+  {
+   "giro": 15,
+   "tipo": "comando",
+   "testo": "Russell passa al comando."
+  },
+  {
+   "giro": 18,
+   "tipo": "comando",
+   "testo": "Antonelli passa al comando."
+  },
+  {
+   "giro": 19,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Lawson e Hulkenberg."
+  },
+  {
+   "giro": 20,
+   "tipo": "comando",
+   "testo": "Russell passa al comando."
+  },
+  {
+   "giro": 20,
+   "tipo": "comando",
+   "testo": "Antonelli passa al comando."
+  },
+  {
+   "giro": 22,
+   "tipo": "comando",
+   "testo": "Russell passa al comando."
+  },
+  {
+   "giro": 22,
+   "tipo": "comando",
+   "testo": "Antonelli passa al comando."
+  },
+  {
+   "giro": 23,
+   "tipo": "comando",
+   "testo": "Russell passa al comando."
+  },
+  {
+   "giro": 24,
+   "tipo": "ritiro",
+   "testo": "Fernando Alonso si ritira (23 giri completati su 53)."
+  },
+  {
+   "giro": 25,
+   "tipo": "incidente",
+   "testo": "Perez: incidente segnalato."
+  },
+  {
+   "giro": 27,
+   "tipo": "ritiro",
+   "testo": "Lance Stroll si ritira (26 giri completati su 53)."
+  },
+  {
+   "giro": 28,
+   "tipo": "safety",
+   "testo": "Virtual safety car."
+  },
+  {
+   "giro": 28,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Perez."
+  },
+  {
+   "giro": 28,
+   "tipo": "pit",
+   "testo": "Ai box: Antonelli, Verstappen."
+  },
+  {
+   "giro": 29,
+   "tipo": "safety",
+   "testo": "Termina la virtual safety car."
+  },
+  {
+   "giro": 30,
+   "tipo": "penalita",
+   "testo": "Penalità di 5 secondi per Perez."
+  },
+  {
+   "giro": 33,
+   "tipo": "incidente",
+   "testo": "Russell: incidente segnalato."
+  },
+  {
+   "giro": 37,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Russell."
+  },
+  {
+   "giro": 50,
+   "tipo": "comando",
+   "testo": "Antonelli passa al comando."
+  },
+  {
+   "giro": 53,
+   "tipo": "arrivo",
+   "testo": "Bandiera a scacchi: vince Kimi Antonelli (Mercedes), davanti a George Russell e Max Verstappen."
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "giri": 53,
+ "voci": [
+  {
+   "giro": 1,
+   "tipo": "via",
+   "testo": "Parte la gara alle 07:14 (ora italiana), con 14 minuti di ritardo sull'orario previsto delle 07:00; rischio pioggia indicato al 0%."
+  },
+  {
+   "giro": 8,
+   "tipo": "comando",
+   "testo": "Russell passa al comando."
+  },
+  {
+   "giro": 9,
+   "tipo": "comando",
+   "testo": "Piastri passa al comando."
+  },
+  {
+   "giro": 15,
+   "tipo": "penalita",
+   "testo": "Bandiera bianconera per Lindblad: comportamento scorretto."
+  },
+  {
+   "giro": 16,
+   "tipo": "pit",
+   "testo": "Ai box: Norris."
+  },
+  {
+   "giro": 17,
+   "tipo": "pit",
+   "testo": "Ai box: Leclerc."
+  },
+  {
+   "giro": 18,
+   "tipo": "comando",
+   "testo": "Russell passa al comando."
+  },
+  {
+   "giro": 18,
+   "tipo": "pit",
+   "testo": "Ai box: Piastri."
+  },
+  {
+   "giro": 21,
+   "tipo": "ritiro",
+   "testo": "Oliver Bearman si ritira (20 giri completati su 53)."
+  },
+  {
+   "giro": 21,
+   "tipo": "comando",
+   "testo": "Antonelli passa al comando."
+  },
+  {
+   "giro": 21,
+   "tipo": "pit",
+   "testo": "Ai box: Russell."
+  },
+  {
+   "giro": 22,
+   "tipo": "safety",
+   "testo": "Safety car in pista."
+  },
+  {
+   "giro": 22,
+   "tipo": "pit",
+   "testo": "Ai box: Antonelli, Hamilton."
+  },
+  {
+   "giro": 27,
+   "tipo": "safety",
+   "testo": "La safety car rientra ai box: si ripartirà nel giro."
+  },
+  {
+   "giro": 30,
+   "tipo": "incidente",
+   "testo": "Colapinto e Bearman: incidente segnalato."
+  },
+  {
+   "giro": 31,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Colapinto e Bearman."
+  },
+  {
+   "giro": 31,
+   "tipo": "ritiro",
+   "testo": "Lance Stroll si ritira (30 giri completati su 53)."
+  },
+  {
+   "giro": 45,
+   "tipo": "incidente",
+   "testo": "Hamilton: incidente segnalato."
+  },
+  {
+   "giro": 48,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Hamilton."
+  },
+  {
+   "giro": 53,
+   "tipo": "arrivo",
+   "testo": "Bandiera a scacchi: vince Kimi Antonelli (Mercedes), davanti a Oscar Piastri e Charles Leclerc."
+  }
+ ]
+}

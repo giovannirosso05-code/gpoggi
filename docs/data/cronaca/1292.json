@@ -1,0 +1,315 @@
+{
+ "giri": 72,
+ "voci": [
+  {
+   "giro": 1,
+   "tipo": "via",
+   "testo": "Parte la gara alle 15:03 (ora italiana); rischio pioggia indicato al 30%."
+  },
+  {
+   "giro": 1,
+   "tipo": "sorpasso",
+   "testo": "Primo giro: Bearman risale dal 20° al 16° posto; Colapinto risale dal 14° al 10° posto."
+  },
+  {
+   "giro": 1,
+   "tipo": "incidente",
+   "testo": "Albon: incidente segnalato."
+  },
+  {
+   "giro": 1,
+   "tipo": "incidente",
+   "testo": "Verstappen: incidente segnalato."
+  },
+  {
+   "giro": 1,
+   "tipo": "incidente",
+   "testo": "Sainz: incidente segnalato."
+  },
+  {
+   "giro": 1,
+   "tipo": "incidente",
+   "testo": "Hamilton: incidente segnalato."
+  },
+  {
+   "giro": 1,
+   "tipo": "incidente",
+   "testo": "Colapinto: incidente segnalato."
+  },
+  {
+   "giro": 1,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Albon."
+  },
+  {
+   "giro": 1,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Verstappen."
+  },
+  {
+   "giro": 1,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Sainz."
+  },
+  {
+   "giro": 1,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Hamilton."
+  },
+  {
+   "giro": 1,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Colapinto."
+  },
+  {
+   "giro": 1,
+   "tipo": "ritiro",
+   "testo": "Max Verstappen si ritira (0 giri completati su 72)."
+  },
+  {
+   "giro": 3,
+   "tipo": "incidente",
+   "testo": "Lindblad: incidente segnalato."
+  },
+  {
+   "giro": 3,
+   "tipo": "incidente",
+   "testo": "Ocon: incidente segnalato."
+  },
+  {
+   "giro": 3,
+   "tipo": "incidente",
+   "testo": "Colapinto: incidente segnalato."
+  },
+  {
+   "giro": 3,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Ocon."
+  },
+  {
+   "giro": 3,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Lindblad."
+  },
+  {
+   "giro": 3,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Colapinto."
+  },
+  {
+   "giro": 3,
+   "tipo": "ritiro",
+   "testo": "Oliver Bearman si ritira (2 giri completati su 72)."
+  },
+  {
+   "giro": 9,
+   "tipo": "incidente",
+   "testo": "Bearman: incidente segnalato."
+  },
+  {
+   "giro": 10,
+   "tipo": "incidente",
+   "testo": "Bortoleto: incidente segnalato."
+  },
+  {
+   "giro": 12,
+   "tipo": "incidente",
+   "testo": "Commissari: Bearman verrà esaminato dopo la gara."
+  },
+  {
+   "giro": 12,
+   "tipo": "incidente",
+   "testo": "Commissari: Bortoleto verrà esaminato dopo la gara."
+  },
+  {
+   "giro": 13,
+   "tipo": "penalita",
+   "testo": "Lindblad sconta la penalità."
+  },
+  {
+   "giro": 13,
+   "tipo": "penalita",
+   "testo": "Colapinto sconta la penalità."
+  },
+  {
+   "giro": 17,
+   "tipo": "pit",
+   "testo": "Ai box: Russell."
+  },
+  {
+   "giro": 18,
+   "tipo": "pit",
+   "testo": "Ai box: Piastri."
+  },
+  {
+   "giro": 21,
+   "tipo": "pit",
+   "testo": "Ai box: Antonelli, Norris, Leclerc."
+  },
+  {
+   "giro": 22,
+   "tipo": "comando",
+   "testo": "Hamilton passa al comando."
+  },
+  {
+   "giro": 25,
+   "tipo": "comando",
+   "testo": "Antonelli passa al comando."
+  },
+  {
+   "giro": 25,
+   "tipo": "pit",
+   "testo": "Ai box: Hamilton."
+  },
+  {
+   "giro": 36,
+   "tipo": "incidente",
+   "testo": "Piastri e Hamilton: incidente segnalato (guida irregolare)."
+  },
+  {
+   "giro": 38,
+   "tipo": "incidente",
+   "testo": "Commissari: nessuna penalità per Piastri e Hamilton (guida irregolare)."
+  },
+  {
+   "giro": 38,
+   "tipo": "penalita",
+   "testo": "Bandiera bianconera per Piastri: guida irregolare."
+  },
+  {
+   "giro": 40,
+   "tipo": "comando",
+   "testo": "Norris passa al comando."
+  },
+  {
+   "giro": 40,
+   "tipo": "pit",
+   "testo": "Ai box: Antonelli, Russell."
+  },
+  {
+   "giro": 43,
+   "tipo": "pit",
+   "testo": "Ai box: Leclerc."
+  },
+  {
+   "giro": 44,
+   "tipo": "pit",
+   "testo": "Ai box: Piastri."
+  },
+  {
+   "giro": 46,
+   "tipo": "ritiro",
+   "testo": "Lance Stroll si ritira (45 giri completati su 72)."
+  },
+  {
+   "giro": 47,
+   "tipo": "pit",
+   "testo": "Ai box: Norris."
+  },
+  {
+   "giro": 48,
+   "tipo": "comando",
+   "testo": "Hamilton passa al comando."
+  },
+  {
+   "giro": 53,
+   "tipo": "ritiro",
+   "testo": "Esteban Ocon si ritira (52 giri completati su 72)."
+  },
+  {
+   "giro": 54,
+   "tipo": "comando",
+   "testo": "Norris passa al comando."
+  },
+  {
+   "giro": 55,
+   "tipo": "safety",
+   "testo": "Virtual safety car."
+  },
+  {
+   "giro": 55,
+   "tipo": "pit",
+   "testo": "Ai box: Hamilton, Leclerc, Piastri."
+  },
+  {
+   "giro": 56,
+   "tipo": "pit",
+   "testo": "Ai box: Antonelli."
+  },
+  {
+   "giro": 57,
+   "tipo": "safety",
+   "testo": "Termina la virtual safety car."
+  },
+  {
+   "giro": 60,
+   "tipo": "incidente",
+   "testo": "Colapinto: incidente segnalato."
+  },
+  {
+   "giro": 62,
+   "tipo": "incidente",
+   "testo": "Lawson: incidente segnalato."
+  },
+  {
+   "giro": 62,
+   "tipo": "ritiro",
+   "testo": "Valtteri Bottas si ritira (61 giri completati su 72)."
+  },
+  {
+   "giro": 66,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Colapinto."
+  },
+  {
+   "giro": 67,
+   "tipo": "ritiro",
+   "testo": "Alexander Albon si ritira (66 giri completati su 72)."
+  },
+  {
+   "giro": 68,
+   "tipo": "penalita",
+   "testo": "Penalità di 10 secondi per Colapinto."
+  },
+  {
+   "giro": 68,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Lawson."
+  },
+  {
+   "giro": 70,
+   "tipo": "safety",
+   "testo": "Virtual safety car."
+  },
+  {
+   "giro": 70,
+   "tipo": "safety",
+   "testo": "Termina la virtual safety car."
+  },
+  {
+   "giro": 70,
+   "tipo": "penalita",
+   "testo": "Penalità di 10 secondi per Lawson."
+  },
+  {
+   "giro": 71,
+   "tipo": "incidente",
+   "testo": "Sainz e Albon: incidente segnalato (contatto)."
+  },
+  {
+   "giro": 71,
+   "tipo": "incidente",
+   "testo": "Commissari: sotto investigazione Sainz e Albon (contatto)."
+  },
+  {
+   "giro": 71,
+   "tipo": "penalita",
+   "testo": "Penalità di 10 secondi per Sainz (contatto)."
+  },
+  {
+   "giro": 72,
+   "tipo": "arrivo",
+   "testo": "Bandiera a scacchi: vince Lando Norris (McLaren), davanti a Kimi Antonelli e George Russell."
+  }
+ ]
+}

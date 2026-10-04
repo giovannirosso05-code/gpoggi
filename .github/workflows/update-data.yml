@@ -26,6 +26,7 @@ jobs:
       - name: Report MotoGP, foto e mappe (solo le novità), pronostici
         run: |
           python build_report_moto.py
+          python build_cronaca.py || true
           python foto_motogp.py || true
           python foto_circuiti_moto.py || true
           python build_pronostici.py

@@ -319,3 +319,28 @@ export async function leggiVoti(chiave) {
     return r.ok ? (await r.json()).voti : null;
   } catch (e) { return null; }
 }
+
+// Cronaca giro per giro: elenco con filtri (tutto, safety car, incidenti e penalità, ritiri, box).
+const CRON_FILTRI = [["", "Tutto"], ["safety", "Safety car"], ["incidente,penalita", "Incidenti e penalità"], ["ritiro", "Ritiri"], ["pit", "Box"], ["comando,sorpasso", "Comando"]];
+export function montaCronaca(el, voci, giriTot) {
+  if (!voci || !voci.length) { el.innerHTML = ""; return; }
+  const tipi = new Set(voci.map((v) => v.tipo));
+  const filtri = CRON_FILTRI.filter(([k]) => !k || k.split(",").some((t) => tipi.has(t)));
+  el.innerHTML = `<div class="category-pills cron-filtri">${filtri.map(([k, n], i) => `<button type="button" class="pill ${i === 0 ? "active" : ""}" data-k="${k}">${n}</button>`).join("")}</div>
+    <ol class="cronaca" id="cron-lista"></ol>`;
+  const lista = el.querySelector("#cron-lista");
+  const disegna = (k) => {
+    const ok = k ? k.split(",") : null;
+    lista.innerHTML = voci.filter((v) => !ok || ok.includes(v.tipo)).map((v) => `<li class="cron-${v.tipo}"><span class="cron-giro">Giro ${v.giro}${giriTot ? `<small>/${giriTot}</small>` : ""}</span><span class="cron-testo">${esc(v.testo)}</span></li>`).join("");
+  };
+  el.querySelector(".cron-filtri").addEventListener("click", (e) => {
+    const b = e.target.closest(".pill");
+    if (!b) return;
+    el.querySelectorAll(".cron-filtri .pill").forEach((x) => x.classList.toggle("active", x === b));
+    disegna(b.dataset.k);
+  });
+  disegna("");
+}
+
+// Cerchio con le iniziali, al posto della foto quando non ce n'è una libera.
+export const iniz = (nome) => `<span class="foto-mini ini" aria-hidden="true">${esc((nome || "").split(/\s+/).filter(Boolean).map((w) => w[0]).slice(0, 2).join("").toUpperCase())}</span>`;

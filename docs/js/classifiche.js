@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, img, punti, stemma, stemmaMoto, erroreCaricamento } from "./common.js";
+import { iniz, renderHeader, renderFooter, fetchJSON, esc, img, punti, stemma, stemmaMoto, erroreCaricamento, fotoMotoMap } from "./common.js";
 
 renderHeader("classifiche");
 renderFooter();
@@ -34,6 +34,7 @@ async function f1() {
 }
 
 async function moto(cat) {
+  const FM = await fotoMotoMap();
   const [c, cal] = await Promise.all([carica("motogp", "data/motogp-classifica.json"), carica("motogp-cal", "data/motogp.json")]);
   const piloti = (c.categorie || {})[cat] || [];
   if (!piloti.length) return { html: `<p class="muted center">Classifica non disponibile.</p>` };
@@ -46,7 +47,7 @@ async function moto(cat) {
     fonte: `Dati dal servizio pubblico del campionato, per uso non commerciale. Sito non ufficiale, non affiliato a MotoGP o Dorna. Schede dei piloti nella <a href="motogp.html">pagina MotoGP</a>.`,
     html: colonne(
       { titolo: "Piloti", html: tab(["Pos", "Pilota", "Moto", "Punti", "Vitt."], piloti.map((p) => `<tr class="${p.pos <= 3 ? "podio" : ""}"><td>${p.pos}</td>
-        <td><a class="link-nome" href="pilota-moto.html?id=${esc(p.id)}${tema}"><strong>${esc(p.nome)}</strong></a> <span class="muted">#${p.numero ?? ""}</span></td>
+        <td><a class="cella-pilota" href="pilota-moto.html?id=${esc(p.id)}${tema}">${FM["nome:" + p.nome] ? img(FM["nome:" + p.nome], p.nome, "foto-mini") : iniz(p.nome)}<strong>${esc(p.nome)}</strong></a> <span class="muted">#${p.numero ?? ""}</span></td>
         <td><span class="cella-team">${stemmaMoto(p.moto)}${esc(p.moto)}</span></td><td><strong>${punti(p.punti)}</strong></td><td>${p.vittorie}</td></tr>`).join("")) },
       { titolo: "Team", html: tab(["Pos", "Team", "Punti"], squadre.map((t, i) => `<tr class="${i < 3 ? "podio" : ""}"><td>${i + 1}</td><td><span class="cella-team">${stemmaMoto(t.moto)}<strong>${esc(t.team)}</strong></span></td><td><strong>${punti(t.punti)}</strong></td></tr>`).join("")) + `<p class="muted" style="font-size:12px;margin-top:8px">Punti dei team: somma dei punti dei loro piloti.</p>` }),
   };

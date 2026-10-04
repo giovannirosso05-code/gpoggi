@@ -25,7 +25,8 @@ python -m pip install -r requirements.txt
 python scraper_f1.py          # F1 stagione in corso: docs/data/, foto e mappe
 python build_news.py          # rassegna stampa
 python build_motogp.py        # MotoGP (calendario, classifiche, schede pilota)
-python build_report_moto.py   # report di gara MotoGP dai dati del campionato
+python build_report_moto.py   # report di gara MotoGP dai dati del campionato (e cronaca giro per giro)
+python build_cronaca.py       # cronaca giro per giro delle gare F1 (OpenF1: ritiri, safety car, incidenti, ritardi)
 python build_pronostici.py    # pronostico F1 e MotoGP (indice da forma, classifica, circuito)
 python foto_motogp.py         # foto dei piloti MotoGP/Moto2/Moto3 (Wikimedia); poi foto_motogp_openverse.py per quelli rimasti senza
 python foto_circuiti_moto.py  # mappe dei circuiti MotoGP (Wikimedia Commons)

@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, stemma, stemmaMoto, formattaData, formattaDataOra, punti, erroreCaricamento, img, credito, fotoMotoMap, mappeMotoMap } from "./common.js";
+import { iniz, renderHeader, renderFooter, fetchJSON, esc, stemma, stemmaMoto, formattaData, formattaDataOra, punti, erroreCaricamento, img, credito, fotoMotoMap, mappeMotoMap } from "./common.js";
 
 import { montaPronostico, colonnaMoto } from "./prono.js";
 
@@ -13,7 +13,7 @@ const dataIt = (iso) => new Date(iso).toLocaleDateString("it-IT", { day: "numeri
 let classifica = null, ultima = null, cat = "MotoGP";
 const idDa = (nome) => (classifica.categorie[cat].find((p) => p.nome === nome) || {}).id;
 const nomeLink = (nome, id) => {
-  const f = FM["nome:" + nome], mini = f ? img(f, nome, "foto-mini") : '<span class="foto-mini"></span>';
+  const f = FM["nome:" + nome], mini = f ? img(f, nome, "foto-mini") : iniz(nome);
   const tema = document.documentElement.dataset.theme ? "&tema=" + document.documentElement.dataset.theme : "";
   return id ? `<a class="cella-pilota" href="pilota-moto.html?id=${esc(id)}${tema}">${mini}<strong>${esc(nome)}</strong></a>` : `<span class="cella-pilota">${mini}<strong>${esc(nome)}</strong></span>`;
 };

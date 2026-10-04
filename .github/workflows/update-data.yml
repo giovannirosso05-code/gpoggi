@@ -23,6 +23,8 @@ jobs:
         run: python build_news.py
       - name: Calendario MotoGP
         run: python build_motogp.py
+      - name: Calendari scaricabili
+        run: python build_calendari.py
       - name: Pubblica la gara sul canale Telegram (una sola volta per gara)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -32,5 +34,5 @@ jobs:
         run: |
           git config user.name "gpoggi-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/data docs/img/foto foto_cache.json telegram_stato.json 2>/dev/null || git add docs/data docs/img/foto foto_cache.json
+          git add docs/data docs/calendario docs/img/foto foto_cache.json telegram_stato.json 2>/dev/null || git add docs/data docs/calendario docs/img/foto foto_cache.json
           git diff --cached --quiet || (git commit -m "dati: aggiornamento da OpenF1" && git push)

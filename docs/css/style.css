@@ -691,3 +691,12 @@ select.sel {
 .link-archivio { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin: 0 0 20px; background: var(--accent-soft); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 20px; font-weight: 600; }
 .link-archivio span { font-weight: 400; color: var(--text-secondary); font-size: 13px; display: block; }
 .link-archivio b { color: var(--accent); white-space: nowrap; }
+
+/* ---------- Calendario .ics ---------- */
+.cal-lista { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.cal-card { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-card); padding: 20px; display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+.cal-card h3 { font-size: 22px; } .cal-card p { margin: 0 0 8px; font-size: 14px; }
+.cal-azioni { display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; }
+.cal-azioni .quiz-avanti { margin: 0; text-decoration: none; display: inline-block; }
+.cal-card .cd-sigla { margin-bottom: 4px; }
+@media (max-width: 768px) { .cal-lista { grid-template-columns: 1fr; } }

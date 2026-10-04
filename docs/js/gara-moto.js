@@ -29,8 +29,8 @@ try {
     box.innerHTML = `
       <section class="campione" style="margin-top:32px"><span class="kicker">MotoGP · ${intervalloWeekend({ inizio: w.sessioni[0].inizio, fine: w.sessioni[w.sessioni.length - 1].fine })}</span><h1>${esc(gp)}</h1>
         <p class="muted" style="margin:0">${esc(w.circuito || "")}${w.paese ? " · " + esc(w.paese) : ""}</p></section>
-      ${mp ? `<div class="mappa-circuito">${img(mp, "Tracciato di " + w.circuito)}<p class="credito">${credito(mp, "Mappa")}</p></div>` : ""}
       ${programmaHtml(w.sessioni)}
+      ${mp ? `<div class="mappa-circuito">${img(mp, "Tracciato di " + w.circuito)}<p class="credito">${credito(mp, "Mappa")}</p></div>` : ""}
       <p class="muted">Programma della classe MotoGP. I risultati compariranno dopo la gara.</p>
       <p class="muted" style="margin-top:18px;font-size:13px"><a class="accent" href="calendario.html${tema ? "?" + tema.slice(1) : ""}">← Torna al calendario</a></p>`;
   } else {

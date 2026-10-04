@@ -31,6 +31,7 @@ try {
   const ora = new Date();
   const sessioni = g.sessioni;
   const predefinita = [...sessioni].reverse().find((s) => s.risultati) || sessioni[0];
+  const haRisultati = sessioni.some((s) => s.risultati && s.risultati.length);
 
   box.innerHTML = `
     <section class="gara-testata">
@@ -38,12 +39,14 @@ try {
         <span class="kicker">${intervalloWeekend(g)}</span>
         <h1>${esc(g.nome)}</h1>
         <p class="muted" style="margin:0">${esc(g.circuito)} · ${esc(g.localita)}, ${esc(g.paese)}</p>
+        ${haRisultati ? "" : `<div style="margin-top:16px">${programmaHtml(g.sessioni)}</div>`}
       </div>
       <div>${g.mappa ? img(g.mappa, "Tracciato di " + g.circuito, "mappa") + `<p class="credito center">${credito(g.mappa, "Mappa")}</p>` : ""}</div>
     </section>
-    ${programmaHtml(g.sessioni)}
+    ${haRisultati ? programmaHtml(g.sessioni) : ""}
     ${rep ? `<h3 class="section-title">Com'è andata</h3><article class="report-card"><h3 style="margin-top:0">${esc(rep.titolo)}</h3>${rep.paragrafi.map((p) => `<p>${esc(p)}</p>`).join("")}</article>` : ""}
-    <div id="tabs" class="category-pills" style="margin-bottom:8px">
+    ${haRisultati ? "" : `<p class="muted">I risultati di ogni sessione compariranno qui man mano che si disputano.</p>`}
+    <div id="tabs" class="category-pills" style="margin-bottom:8px" ${haRisultati ? "" : "hidden"}>
       ${sessioni.map((s) => `<button class="pill ${s.key === predefinita.key ? "active" : ""}" data-key="${s.key}">${esc(s.nome)}</button>`).join("")}
     </div>
     <div id="sessione"></div>
@@ -63,7 +66,7 @@ try {
     document.querySelectorAll("#tabs .pill").forEach((p) => p.classList.toggle("active", p === b));
     mostra(b.dataset.key);
   });
-  mostra(predefinita.key);
+  if (haRisultati) mostra(predefinita.key);
   fetchJSON(`data/cronaca/${id}.json`).then((c) => { montaCronaca(document.getElementById("cronaca-box"), c.voci, c.giri); griglia = c.griglia && Object.keys(c.griglia).length ? c.griglia : null; if (griglia && sessioneCorrente != null) mostra(sessioneCorrente); }).catch(() => {});
 } catch (e) {
   erroreCaricamento(box);

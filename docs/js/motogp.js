@@ -56,6 +56,7 @@ try {
   const sess = weekend.flatMap((g) => g.sessioni.map((s) => ({ ...s, g }))).filter((s) => new Date(s.fine) > ora).sort((a, b) => new Date(a.inizio) - new Date(b.inizio))[0];
   const prono = await fetchJSON("data/pronostici.json").catch(() => null);
   const el = document.getElementById("pross-moto");
+  if (sess) el.href = `gara-moto.html?gp=${encodeURIComponent(sess.g.nome)}${document.documentElement.dataset.theme ? "&tema=" + document.documentElement.dataset.theme : ""}`;
   const leader = ((cl.categorie || {}).MotoGP || [])[0], fl = leader && FM["nome:" + leader.nome];
   if (sess) {
     const f = fl && (fl.file_grande || fl.file);
@@ -75,7 +76,7 @@ try {
   }
   // gare: la prossima e le già disputate
   const gareMoto = await fetchJSON("data/motogp-gare.json").catch(() => ({}));
-  const cardMoto = (nome, circuito, quando, passata) => `<a class="event-card ${passata ? "passata" : ""}" href="gara-moto.html?gp=${encodeURIComponent(nome)}">
+  const cardMoto = (nome, circuito, quando, passata) => `<a class="event-card ${passata ? "passata" : "prossima"}" href="gara-moto.html?gp=${encodeURIComponent(nome)}">
     <div class="event-map">${MAPPE[circuito] ? img(MAPPE[circuito], "Tracciato di " + circuito) : `<span class="senza-mappa">${esc(circuito || "")}</span>`}</div>
     <div class="event-body"><div class="event-date">${quando}</div><div class="event-name">${esc(nome)}</div><div class="event-location">${esc(circuito || "")}</div>
     <span class="event-status ${passata ? "passato" : ""}">${passata ? "Vai ai risultati →" : "Programma e orari →"}</span></div></a>`;

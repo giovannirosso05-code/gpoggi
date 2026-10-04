@@ -58,7 +58,7 @@ function podioF1(g, foto) {
 const FM = await fotoMotoMap();
 function podioMoto(u) {
   const top = u.risultati.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos);
-  return blocco("MotoGP", "moto", u.nome, u.circuito, `motogp.html${tema ? "?" + tema.slice(1) : ""}`, top.map((r) => `<a href="motogp.html${tema ? "?" + tema.slice(1) : ""}" style="--team:#8b8a92">
+  return blocco("MotoGP", "moto", u.nome, u.circuito, `gara-moto.html?gp=${encodeURIComponent(u.nome)}${tema}`, top.map((r) => `<a href="gara-moto.html?gp=${encodeURIComponent(u.nome)}${tema}" style="--team:#8b8a92">
       <div class="posto">${r.pos}°</div>${FM["nome:" + r.nome] ? img(FM["nome:" + r.nome], r.nome) : '<span class="vuota"></span>'}
       <strong>${esc(r.nome)}</strong><div>${stemmaMoto(r.moto)}</div><div class="tempo">${r.tempo ? esc(r.tempo) : ND}</div></a>`).join(""));
 }
@@ -66,7 +66,8 @@ function blocco(sigla, classe, nome, sotto, link, podio) {
   return `<div class="ultima-gara serie-${classe || "f1"}">
     <div class="ultima-gara-testa"><div><span class="cd-sigla ${classe}">${sigla}</span><h3>${esc(nome)}</h3></div>
       <div class="muted">${esc(sotto)} · <a href="${link}" class="accent">Risultati</a></div></div>
-    <div class="podio-home">${podio}</div></div>`;
+    <div class="podio-home">${podio}</div>
+    <a class="guarda-gara" href="${link}">Guarda il resto della gara →</a></div>`;
 }
 
 // ---- Classifica con scelta F1 / MotoGP

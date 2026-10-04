@@ -33,7 +33,7 @@ function disegnaCategoria() {
   document.querySelectorAll("#m-cat .pill").forEach((b) => b.classList.toggle("active", b.dataset.c === cat));
   const u = ultima.categorie && ultima.categorie[cat];
   document.getElementById("m-ultima-nome").textContent = u ? `· ${u.nome}` : "";
-  document.getElementById("m-ultima").innerHTML = u ? tabellaGara(u.risultati) : `<p class="muted">Risultati non disponibili.</p>`;
+  document.getElementById("m-ultima").innerHTML = u ? tabellaGara(u.risultati) + `<a class="guarda-gara" href="gara-moto.html?gp=${encodeURIComponent(u.nome)}${document.documentElement.dataset.theme ? "&tema=" + document.documentElement.dataset.theme : ""}">Guarda il resto della gara →</a>` : `<p class="muted">Risultati non disponibili.</p>`;
   const pil = classifica.categorie[cat] || [];
   document.getElementById("m-classifica").innerHTML = pil.length ? tabellaClassifica(pil) : `<p class="muted">Classifica non disponibile.</p>`;
 }

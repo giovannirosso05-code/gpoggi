@@ -114,6 +114,7 @@ export function renderHeader(paginaAttuale) {
         <button type="button" class="tema-btn" id="tema-btn" aria-label="Cambia tema chiaro o scuro">${ICONA_LUNA}${ICONA_SOLE}</button>
       </div>
     </nav>`;
+  barraIndietro();
   if (paginaAttuale !== "home") renderCountdown();
   const selLingua = document.getElementById("lingua");
   if (selLingua) selLingua.addEventListener("change", () => cambiaLingua(selLingua.value));
@@ -344,3 +345,24 @@ export function montaCronaca(el, voci, giriTot) {
 
 // Cerchio con le iniziali, al posto della foto quando non ce n'è una libera.
 export const iniz = (nome) => `<span class="foto-mini ini" aria-hidden="true">${esc((nome || "").split(/\s+/).filter(Boolean).map((w) => w[0]).slice(0, 2).join("").toUpperCase())}</span>`;
+
+// Freccia "Indietro" sulle pagine di dettaglio (gara, pilota, storico): torna alla pagina da cui si arriva, o all'elenco di riferimento.
+const PAGINA_MADRE = {
+  "gara.html": ["f1.html", "Formula 1"], "gara-moto.html": ["motogp.html", "MotoGP"], "pilota.html": ["piloti.html?serie=f1", "Piloti"],
+  "pilota-moto.html": ["piloti.html?serie=motogp", "Piloti"], "storico.html": ["piloti.html?serie=f1", "Piloti"], "storico-moto.html": ["piloti.html?serie=motogp", "Piloti"],
+  "confronto.html": ["piloti.html", "Piloti"],
+};
+function barraIndietro() {
+  const pagina = location.pathname.split("/").pop();
+  const madre = PAGINA_MADRE[pagina];
+  const header = document.getElementById("site-header");
+  if (!madre || !header || document.getElementById("indietro-barra")) return;
+  const tema = document.documentElement.dataset.theme;
+  const href = madre[0] + (tema ? (madre[0].includes("?") ? "&" : "?") + "tema=" + tema : "");
+  header.insertAdjacentHTML("afterend", `<div class="indietro-barra" id="indietro-barra"><div class="container"><a class="indietro" href="${href}" aria-label="Torna indietro"><span aria-hidden="true">←</span> Indietro<small> · ${madre[1]}</small></a></div></div>`);
+  document.querySelector("#indietro-barra a").addEventListener("click", (e) => {
+    let stessoSito = false;
+    try { stessoSito = document.referrer && new URL(document.referrer).origin === location.origin; } catch (err) {}
+    if (stessoSito && history.length > 1) { e.preventDefault(); history.back(); }
+  });
+}

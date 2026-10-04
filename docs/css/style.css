@@ -987,3 +987,11 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
   .hero2 { margin-bottom: 30px; }
   .home-sezioni section + section { margin-top: 0; }
 }
+
+/* freccia per tornare indietro */
+.indietro-barra { position: relative; z-index: 40; padding: 10px 0 0; background: transparent; pointer-events: none; }
+.indietro-barra .container { display: flex; }
+.indietro { pointer-events: auto; display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px 9px 12px; border-radius: 999px; background: var(--bg-elevated); border: 1px solid var(--border); box-shadow: var(--shadow-card); color: var(--text); font: 600 14px var(--font-body, Inter, sans-serif); text-decoration: none; }
+.indietro span { font-size: 18px; line-height: 1; color: var(--accent); }
+.indietro small { color: var(--text-muted); font-weight: 500; font-size: 12px; }
+.indietro:hover { border-color: var(--text); }

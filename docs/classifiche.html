@@ -8,34 +8,42 @@
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#f5f4f0">
-<title>Classifiche F1 — Piloti e costruttori | GP Oggi</title>
-<meta name="description" content="Classifica piloti e costruttori del mondiale di Formula 1 in corso.">
+<title>Classifiche — GP Oggi</title>
+<meta name="description" content="Classifiche piloti e team di Formula 1, MotoGP, Moto2, Moto3, Formula 2 e Formula 3 della stagione in corso, in un solo posto. Sito non ufficiale.">
 <link rel="canonical" href="https://gpoggi.it/classifiche.html">
 <meta property="og:url" content="https://gpoggi.it/classifiche.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GP Oggi">
-<meta property="og:title" content="Classifiche F1 — Piloti e costruttori | GP Oggi">
+<meta property="og:title" content="Classifiche — GP Oggi">
 <meta property="og:description" content="Classifica piloti e costruttori del mondiale di Formula 1 in corso.">
 <meta property="og:image" content="https://gpoggi.it/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=25">
+<link rel="stylesheet" href="css/style.css?v=29">
 </head>
 <body>
 
 <header id="site-header" class="site-header"></header>
 
 <div class="container">
-  <section class="hero" style="padding:32px 0 16px"><h1>Classifiche <span class="accent">F1</span></h1><p class="muted" id="dopo"></p></section>
-  <a class="link-archivio" href="formule.html"><div>Classifiche di Formula 2 e Formula 3<span>Piloti e team della stagione in corso</span></div><b>Apri →</b></a>
-  <a class="link-archivio" href="archivio.html"><div>Archivio storico dal 1950<span>Classifiche e vincitori di ogni stagione, tutti i piloti del passato</span></div><b>Apri l'archivio →</b></a>
+  <div class="section-title" style="margin-top:32px">Classifiche</div>
+  <div class="filtri-archivio">
+    <label for="serie" class="muted">Campionato</label>
+    <select id="serie" class="sel" aria-label="Scegli il campionato">
+      <optgroup label="Auto"><option value="f1">Formula 1</option><option value="f2">Formula 2</option><option value="f3">Formula 3</option></optgroup>
+      <optgroup label="Moto"><option value="motogp">MotoGP</option><option value="moto2">Moto2</option><option value="moto3">Moto3</option></optgroup>
+    </select>
+    <a class="link-storici" id="link-archivio" href="archivio.html">Archivio storico →</a>
+  </div>
+  <p class="muted" id="dopo" style="margin:-6px 0 16px;font-size:13px"></p>
   <div id="classifiche-box"></div>
+  <p class="credito center" style="margin-top:24px" id="fonte"></p>
 </div>
 
 <footer id="site-footer" class="site-footer"></footer>
 
-<script type="module" src="js/classifiche.js?v=5"></script>
+<script type="module" src="js/classifiche.js?v=29"></script>
 </body>
 </html>

@@ -94,7 +94,6 @@ export function renderHeader(paginaAttuale) {
     ["classifiche", "classifiche.html", "Classifiche"],
     ["gare", "gare.html", "Calendario"],
     ["notizie", "notizie.html", "Notizie"],
-    ["formule", "formule.html", "F2·F3"],
     ["motogp", "motogp.html", "MotoGP"],
     ["giochi", "giochi.html", "Giochi"],
   ];
@@ -129,7 +128,6 @@ export function renderFooter() {
           <li><a href="classifiche.html">Classifiche</a></li>
           <li><a href="archivio.html">Archivio storico</a></li>
           <li><a href="gare.html">Calendario F1</a></li>
-          <li><a href="formule.html">Formula 2 e Formula 3</a></li>
           <li><a href="motogp.html">MotoGP</a></li>
           <li><a href="motogp-archivio.html">Archivio MotoGP</a></li>
           <li><a href="calendario.html">Aggiungi al calendario</a></li>

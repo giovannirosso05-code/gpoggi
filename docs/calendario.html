@@ -9,7 +9,7 @@
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#f5f4f0">
 <title>Calendario — GP Oggi</title>
-<meta name="description" content="Aggiungi al calendario del telefono le sessioni di F1 e MotoGP, già in ora italiana, con promemoria 15 minuti prima. Sito non ufficiale.">
+<meta name="description" content="Calendario di Formula 1 e MotoGP in formato agenda: mesi, weekend e sessioni in ora italiana, con file da scaricare per il calendario del telefono. Sito non ufficiale.">
 <link rel="canonical" href="https://gpoggi.it/calendario.html">
 <meta property="og:url" content="https://gpoggi.it/calendario.html">
 <meta property="og:type" content="website">
@@ -21,33 +21,51 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=25">
+<link rel="stylesheet" href="css/style.css?v=29">
 </head>
 <body>
 
 <header id="site-header" class="site-header"></header>
 
 <div class="container">
-  <div class="section-title" style="margin-top:32px">Aggiungi al calendario</div>
-  <p class="muted" style="margin:-8px 0 20px;font-size:14px;max-width:62ch">Tutte le sessioni di F1 e MotoGP nel calendario del tuo telefono o computer. Gli orari si adattano al tuo fuso: in Italia li vedi in ora italiana. Ogni sessione ha un promemoria 15 minuti prima.</p>
-  <div class="cal-lista">
-    <article class="cal-card"><span class="cd-sigla">F1</span><h3>Formula 1</h3><p id="n-f1" class="muted"></p>
-      <div class="cal-azioni"><a class="quiz-avanti" href="calendario/f1.ics" download>Scarica .ics</a><a class="quiz-avanti secondario" href="webcal://gpoggi.it/calendario/f1.ics">Iscriviti</a></div></article>
-    <article class="cal-card"><span class="cd-sigla moto">MotoGP</span><h3>MotoGP</h3><p id="n-moto" class="muted"></p>
-      <div class="cal-azioni"><a class="quiz-avanti" href="calendario/motogp.ics" download>Scarica .ics</a><a class="quiz-avanti secondario" href="webcal://gpoggi.it/calendario/motogp.ics">Iscriviti</a></div></article>
-    <article class="cal-card"><span class="cd-sigla" style="background:var(--text);color:var(--bg)">F1 + MotoGP</span><h3>Tutti e due</h3><p id="n-tutto" class="muted"></p>
-      <div class="cal-azioni"><a class="quiz-avanti" href="calendario/tutto.ics" download>Scarica .ics</a><a class="quiz-avanti secondario" href="webcal://gpoggi.it/calendario/tutto.ics">Iscriviti</a></div></article>
+  <div class="section-title" style="margin-top:32px">Calendario</div>
+
+  <div class="agenda-barra">
+    <div class="agenda-nav">
+      <button class="agenda-btn" id="mese-prec" aria-label="Mese precedente">‹</button>
+      <h2 id="mese-titolo" aria-live="polite"></h2>
+      <button class="agenda-btn" id="mese-succ" aria-label="Mese successivo">›</button>
+      <button class="agenda-btn testo" id="mese-oggi">Oggi</button>
+    </div>
+    <div class="agenda-filtri" id="filtri">
+      <button class="chip-serie f1 attivo" data-s="f1" aria-pressed="true">Formula 1</button>
+      <button class="chip-serie moto attivo" data-s="moto" aria-pressed="true">MotoGP</button>
+    </div>
   </div>
-  <div class="prosa" style="margin-top:28px">
-    <h2>Come si usa</h2>
-    <p><strong>Iscriviti</strong> aggiunge un calendario che si aggiorna da solo quando cambiano gli orari: su iPhone e Mac si apre direttamente, su Google Calendar vai su "Altri calendari", "Da URL" e incolla l'indirizzo <code>https://gpoggi.it/calendario/f1.ics</code>.</p>
-    <p><strong>Scarica .ics</strong> aggiunge le sessioni una volta sola, senza aggiornamenti: apri il file e conferma.</p>
-    <p class="muted" style="font-size:13px">Le sessioni MotoGP senza ora di fine nella fonte hanno una durata indicativa di un'ora. Il calendario MotoGP include solo i weekend ancora da disputare.</p>
+
+  <div class="agenda-layout">
+    <div class="agenda-mese" id="agenda"></div>
+    <aside class="agenda-dettaglio" id="dettaglio"></aside>
   </div>
+
+  <section class="cal-scarica">
+    <h3 class="section-title">Porta il calendario sul telefono</h3>
+    <p class="muted" style="margin:-8px 0 16px;font-size:14px;max-width:62ch">Tutte le sessioni nel calendario del tuo telefono o computer, già in ora italiana, con un promemoria 15 minuti prima.</p>
+    <div class="cal-lista">
+      <article class="cal-card"><span class="cd-sigla">F1</span><h3>Formula 1</h3><p id="n-f1" class="muted"></p>
+        <div class="cal-azioni"><a class="quiz-avanti" href="calendario/f1.ics" download>Scarica .ics</a><a class="quiz-avanti secondario" href="webcal://gpoggi.it/calendario/f1.ics">Iscriviti</a></div></article>
+      <article class="cal-card"><span class="cd-sigla moto">MotoGP</span><h3>MotoGP</h3><p id="n-moto" class="muted"></p>
+        <div class="cal-azioni"><a class="quiz-avanti" href="calendario/motogp.ics" download>Scarica .ics</a><a class="quiz-avanti secondario" href="webcal://gpoggi.it/calendario/motogp.ics">Iscriviti</a></div></article>
+      <article class="cal-card"><span class="cd-sigla" style="background:var(--text);color:var(--bg)">F1 + MotoGP</span><h3>Tutti e due</h3><p id="n-tutto" class="muted"></p>
+        <div class="cal-azioni"><a class="quiz-avanti" href="calendario/tutto.ics" download>Scarica .ics</a><a class="quiz-avanti secondario" href="webcal://gpoggi.it/calendario/tutto.ics">Iscriviti</a></div></article>
+    </div>
+    <p class="muted" style="font-size:13px;margin-top:14px"><b>Iscriviti</b> mantiene il calendario aggiornato da solo (iPhone, Mac; su Google Calendar: "Altri calendari", "Da URL", indirizzo <code>https://gpoggi.it/calendario/f1.ics</code>). <b>Scarica</b> aggiunge le sessioni una volta sola. Il calendario MotoGP include i weekend ancora da disputare; le sessioni senza ora di fine nella fonte durano un'ora indicativa.</p>
+    <p class="muted" style="font-size:13px"><a class="accent" href="gare.html">Elenco dei Gran Premi di F1 con i circuiti →</a></p>
+  </section>
 </div>
 
 <footer id="site-footer" class="site-footer"></footer>
 
-<script type="module" src="js/calendario.js?v=25"></script>
+<script type="module" src="js/calendario.js?v=29"></script>
 </body>
 </html>

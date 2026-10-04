@@ -6,12 +6,13 @@ renderFooter();
 const box = document.getElementById("gara-box");
 const id = new URLSearchParams(location.search).get("id");
 
-function tabella(risultati, foto, colori) {
+function tabella(risultati, foto, colori, griglia) {
   if (!risultati || !risultati.length) return `<p class="muted">Risultati non disponibili.</p>`;
   return `<div class="table-wrap"><table class="results">
-    <thead><tr><th>Pos</th><th>Pilota</th><th>Team</th><th>Giri</th><th>Tempo</th><th>Distacco</th></tr></thead>
+    <thead><tr><th>Pos</th>${griglia ? "<th>Griglia</th>" : ""}<th>Pilota</th><th>Team</th><th>Giri</th><th>Tempo</th><th>Distacco</th></tr></thead>
     <tbody>${risultati.map((r) => `<tr class="${r.pos && r.pos <= 3 ? "podio" : ""}">
       <td>${r.pos ?? esc(r.stato || "–")}</td>
+      ${griglia ? `<td class="muted">${griglia[r.numero] ? "P" + griglia[r.numero] + (r.pos && !r.stato && griglia[r.numero] !== r.pos ? ` <span class="${r.pos < griglia[r.numero] ? "su" : "giu"}">${r.pos < griglia[r.numero] ? "▲" : "▼"}${Math.abs(r.pos - griglia[r.numero])}</span>` : "") : "–"}</td>` : ""}
       <td><a class="cella-pilota" href="pilota.html?n=${r.numero}">${foto[r.numero] ? img(foto[r.numero], r.nome || "", "foto-mini") : '<span class="foto-mini"></span>'}<strong>${esc(r.nome || "Pilota #" + r.numero)}</strong></a></td>
       <td><span class="cella-team">${stemma(r.team, colori[r.team])}${esc(r.team || "")}</span></td>
       <td>${r.giri ?? ND}</td>
@@ -47,11 +48,13 @@ try {
     </div>
     <div id="sessione"></div>`;
 
+  let griglia = null, sessioneCorrente = null;
   const mostra = (key) => {
     const s = sessioni.find((x) => String(x.key) === String(key));
     document.getElementById("sessione").innerHTML = `
       <h3 class="section-title" style="margin-top:20px">${esc(s.nome)} <span class="count">· ${formattaDataOra(s.inizio)}</span></h3>
-      ${new Date(s.fine) > ora && !s.risultati ? `<p class="muted">Sessione non ancora disputata.</p>` : tabella(s.risultati, foto, colori)}`;
+      ${new Date(s.fine) > ora && !s.risultati ? `<p class="muted">Sessione non ancora disputata.</p>` : tabella(s.risultati, foto, colori, s.tipo === "Race" ? griglia : null)}`;
+    sessioneCorrente = key;
   };
   document.getElementById("tabs").addEventListener("click", (e) => {
     const b = e.target.closest(".pill");
@@ -60,7 +63,7 @@ try {
     mostra(b.dataset.key);
   });
   mostra(predefinita.key);
-  fetchJSON(`data/cronaca/${id}.json`).then((c) => montaCronaca(document.getElementById("cronaca-box"), c.voci, c.giri)).catch(() => {});
+  fetchJSON(`data/cronaca/${id}.json`).then((c) => { montaCronaca(document.getElementById("cronaca-box"), c.voci, c.giri); griglia = c.griglia && Object.keys(c.griglia).length ? c.griglia : null; if (griglia && sessioneCorrente != null) mostra(sessioneCorrente); }).catch(() => {});
 } catch (e) {
   erroreCaricamento(box);
 }

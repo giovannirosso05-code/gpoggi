@@ -37,6 +37,9 @@ def ora_it(iso):
     return datetime.fromisoformat(iso).astimezone(ROMA).strftime("%H:%M")
 
 
+GRIGLIA = {}
+
+
 def cronaca(g):
     r = next(s for s in g["sessioni"] if s["tipo"] == "Race")
     k, ris = r["key"], [x for x in (r.get("risultati") or [])]
@@ -81,8 +84,8 @@ def cronaca(g):
     add(1, "via", riga + ".", -1)
 
     # primo giro: chi guadagna di piu' rispetto alla griglia
+    griglia = {}
     if pos and primo:
-        griglia = {}
         for p in pos:
             if p["date"] <= primo:
                 griglia[p["driver_number"]] = p["position"]
@@ -166,6 +169,8 @@ def cronaca(g):
     if len(top) == 3:
         add(giri_tot, "arrivo", f"Bandiera a scacchi: vince {top[0]['nome']} ({top[0]['team']}), davanti a {top[1]['nome']} e {top[2]['nome']}.", 9)
     ev.sort(key=lambda e: (e["giro"], e["o"]))
+    GRIGLIA.clear()
+    GRIGLIA.update({str(n): p for n, p in (griglia or {}).items()})
     return [{"giro": e["giro"], "tipo": e["tipo"], "testo": e["testo"]} for e in ev], giri_tot
 
 
@@ -186,7 +191,7 @@ def main():
             print(f"  {e['nome']}: dati non disponibili ({ex})")
             continue
         if r:
-            f.write_text(json.dumps({"giri": r[1], "voci": r[0]}, ensure_ascii=False, indent=1))
+            f.write_text(json.dumps({"giri": r[1], "griglia": dict(GRIGLIA), "voci": r[0]}, ensure_ascii=False, indent=1))
             print(f"{e['nome']}: {len(r[0])} voci")
 
 

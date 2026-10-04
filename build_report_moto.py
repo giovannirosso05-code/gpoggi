@@ -33,8 +33,21 @@ def classifica(sid):
     return bm.api_cache(f"results/session/{sid}/classification", test="false")
 
 
-def righe(cl):
-    return [{"pos": x.get("position"), "nome": x["rider"]["full_name"], "numero": x["rider"].get("number"), "team": x["team"]["name"], "moto": x["constructor"]["name"],
+def griglia(sess):
+    """Ordine di partenza dalle qualifiche: prima la Q2, poi chi si e' fermato in Q1 (penalita' in griglia non incluse)."""
+    ordine = []
+    for numero in (2, 1):
+        q = next((x for x in sess if x["type"] == "Q" and x.get("number") == numero), None)
+        if q:
+            for x in sorted((y for y in classifica(q["id"])["classification"] if y.get("position")), key=lambda y: y["position"]):
+                if x["rider"]["id"] not in ordine:
+                    ordine.append(x["rider"]["id"])
+    return {rid: i + 1 for i, rid in enumerate(ordine)}
+
+
+def righe(cl, grid=None):
+    grid = grid or {}
+    return [{"griglia": grid.get(x["rider"]["id"]), "pos": x.get("position"), "nome": x["rider"]["full_name"], "numero": x["rider"].get("number"), "team": x["team"]["name"], "moto": x["constructor"]["name"],
              "tempo": x.get("time"), "distacco": (x.get("gap") or {}).get("first"), "giri": x.get("total_laps"), "stato": x.get("status"), "punti": x.get("points")} for x in cl["classification"]]
 
 
@@ -49,7 +62,7 @@ def classifiche_evento(e, cat_ids):
             q = next((x for x in sess if x["type"] == tipo), None)
             if q and (tipo == "RAC" or c == "MotoGP"):
                 try:
-                    out[chiave] = righe(classifica(q["id"]))
+                    out[chiave] = righe(classifica(q["id"]), griglia(sess) if tipo == "RAC" else None)
                 except Exception:
                     pass
     return out

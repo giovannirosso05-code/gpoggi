@@ -968,3 +968,6 @@ a.ag-risultati { display: inline-block; text-decoration: none; text-align: cente
 .event-card.prossima { border: 2px solid #e8352f; box-shadow: 0 8px 28px rgba(232, 53, 47, .22); }
 .event-card.passata { opacity: .94; }
 .event-card.passata .event-name { font-size: 0.95em; }
+
+td .su { color: #2f9e44; font-weight: 700; font-size: 12px; }
+td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }

@@ -21,4 +21,4 @@ Se un dato manca nella fonte, il sito mostra «n.d.». Il workflow `.github/work
 
 ## Pubblicazione
 
-GitHub Pages: Settings → Pages → branch `main`, cartella `/docs`. Nessun dominio personalizzato per ora (aggiungere `docs/CNAME` e i meta canonical/og:url quando c'è).
+GitHub Pages: Settings → Pages → branch `main`, cartella `/docs`. Dominio: gpoggi.it (registrato su OVHcloud). Canonical, og:url e sitemap puntano a https://gpoggi.it/.

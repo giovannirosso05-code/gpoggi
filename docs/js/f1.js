@@ -12,7 +12,7 @@ const conto = (diff) => {
 
 function card(g, passata, prossima) {
   const sprint = g.sessioni.some((s) => s.tipo === "Sprint");
-  return `<a class="event-card ${passata ? "passata" : ""}" href="gara.html?id=${g.id}${tema}">
+  return `<a class="event-card ${passata ? "passata" : "prossima"}" href="gara.html?id=${g.id}${tema}">
     <div class="event-map">${g.mappa ? img(g.mappa, "Tracciato di " + g.circuito) : `<span class="senza-mappa">${esc(g.circuito)}</span>`}</div>
     <div class="event-body">
       <div class="event-date">${intervalloWeekend(g)}</div>
@@ -53,7 +53,8 @@ try {
 
   // gare: la prossima e le già disputate (le altre future stanno nel calendario)
   const prossime = eventi.filter((g) => new Date(g.fine) > ora), passate = eventi.filter((g) => new Date(g.fine) <= ora).reverse();
-  document.getElementById("gare-f1").innerHTML = (prossime[0] ? card(prossime[0], false, true) : "") + passate.map((g) => card(g, true)).join("");
+  document.getElementById("gare-f1").innerHTML = (prossime[0] ? `<h4 class="gare-sottotitolo prossima">Prossima gara</h4><div class="gare-grid">${card(prossime[0], false, true)}</div>` : "")
+    + (passate.length ? `<h4 class="gare-sottotitolo">Gare già disputate</h4><div class="gare-grid">${passate.map((g) => card(g, true)).join("")}</div>` : "");
   document.getElementById("report-f1").innerHTML = (report || []).slice(0, 2).map((r) => `<article class="report-card"><div class="report-data">${esc(r.circuito)}, ${esc(r.paese)}</div><h3><a href="gara.html?id=${r.id}${tema}">${esc(r.titolo)}</a></h3>${r.paragrafi.map((p) => `<p>${esc(p)}</p>`).join("")}<a class="accent" href="gara.html?id=${r.id}${tema}">Vai ai risultati →</a></article>`).join("") || `<p class="muted">Nessuna gara ancora disputata.</p>`;
 
   const foto = Object.fromEntries(roster.filter((p) => p.foto).map((p) => [p.numero, p.foto]));

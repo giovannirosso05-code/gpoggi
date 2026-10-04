@@ -85,8 +85,8 @@ try {
     <span class="event-status ${passata ? "passato" : ""}">${passata ? "Vai ai risultati →" : "Prossima gara"}</span></div></a>`;
   const passateM = Object.values(gareMoto).sort((a, b) => b.data.localeCompare(a.data));
   const prossimo = weekend[0];
-  document.getElementById("gare-moto").innerHTML = (prossimo ? cardMoto(prossimo.nome, prossimo.circuito, `${dataIt(prossimo.sessioni[0].inizio)} – ${dataIt((prossimo.sessioni.find((s) => s.codice === "RAC") || prossimo.sessioni[prossimo.sessioni.length - 1]).inizio)}`, false) : "")
-    + passateM.map((g) => cardMoto(g.nome, g.circuito, new Date(g.data).toLocaleDateString("it-IT", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }), true)).join("");
+  document.getElementById("gare-moto").innerHTML = (prossimo ? `<h4 class="gare-sottotitolo prossima">Prossima gara</h4><div class="gare-grid">` + cardMoto(prossimo.nome, prossimo.circuito, `${dataIt(prossimo.sessioni[0].inizio)} – ${dataIt((prossimo.sessioni.find((s) => s.codice === "RAC") || prossimo.sessioni[prossimo.sessioni.length - 1]).inizio)}`, false) + `</div>` : "")
+    + (passateM.length ? `<h4 class="gare-sottotitolo">Gare già disputate</h4><div class="gare-grid">` + passateM.map((g) => cardMoto(g.nome, g.circuito, new Date(g.data).toLocaleDateString("it-IT", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }), true)).join("") + `</div>` : "");
   const ras = await fetchJSON("data/rassegna.json").catch(() => null);
   document.getElementById("m-notizie").innerHTML = ras ? ras.articoli.filter((a) => a.serie === "MotoGP").slice(0, 6).map((a) => `<article class="rassegna-voce"><div class="report-data">${esc(a.fonte)}</div><h3><a href="${esc(a.url)}" target="_blank" rel="noopener nofollow">${esc(a.titolo)}</a></h3>${a.estratto ? `<p>${esc(a.estratto)}</p>` : ""}</article>`).join("") : "";
 } catch (e) {

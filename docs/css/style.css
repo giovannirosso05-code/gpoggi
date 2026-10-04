@@ -958,3 +958,13 @@ a.ag-risultati { display: inline-block; text-decoration: none; text-align: cente
 .cron-filtri { margin: 8px 0 4px; }
 
 .foto-mini.ini { display: inline-flex; align-items: center; justify-content: center; background: var(--border); color: var(--text-secondary); font: 700 11px var(--font-display, Oswald, sans-serif); letter-spacing: .02em; }
+
+/* gare: la prossima ben distinta da quelle già disputate */
+.gare-sottotitolo { display: flex; align-items: center; gap: 12px; margin: 26px 0 12px; font-family: var(--font-display); font-size: 15px; letter-spacing: .1em; text-transform: uppercase; color: var(--text-secondary); }
+.gare-sottotitolo::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+.gare-sottotitolo.prossima { margin-top: 6px; color: #fff; }
+.gare-sottotitolo.prossima::before { content: "Prossima gara"; display: none; }
+.gare-sottotitolo.prossima { color: var(--accent, #e8352f); }
+.event-card.prossima { border: 2px solid #e8352f; box-shadow: 0 8px 28px rgba(232, 53, 47, .22); }
+.event-card.passata { opacity: .94; }
+.event-card.passata .event-name { font-size: 0.95em; }

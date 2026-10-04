@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, img, punti, ICON_SEARCH, erroreCaricamento } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, fotoMotoMap, esc, img, punti, ICON_SEARCH, erroreCaricamento } from "./common.js";
 
 renderHeader("piloti");
 renderFooter();
@@ -48,7 +48,7 @@ function elenco() {
   if (serie === "motogp" || serie === "moto2" || serie === "moto3") {
     const cat = { motogp: "MotoGP", moto2: "Moto2", moto3: "Moto3" }[serie];
     const attuali = Object.values(D.motoPiloti).filter((p) => p.categoria === cat).sort((a, b) => (a.pos ?? 999) - (b.pos ?? 999));
-    const lista = attuali.map((p) => ({ nome: p.nome, team: p.team, pos: p.pos, grande: p.numero ?? iniziali(p.nome), riga: pt(p.punti), href: `pilota-moto.html?id=${p.id}${tema()}`, ordine: 9999 }));
+    const lista = attuali.map((p) => ({ nome: p.nome, team: p.team, pos: p.pos, foto: D.fotoMoto[p.id], grande: p.numero ?? iniziali(p.nome), riga: pt(p.punti), href: `pilota-moto.html?id=${p.id}${tema()}`, ordine: 9999 }));
     if (serie !== "motogp" || modo === "oggi") return lista;
     const noti = new Set(attuali.map((p) => norm(p.nome)));
     const da = D.anno - ANNI;
@@ -91,11 +91,11 @@ function barre() {
 }
 
 try {
-  const [roster, storici, motoPiloti, motoArch, f2, f3, meta, foto] = await Promise.all([
+  const [roster, storici, motoPiloti, motoArch, f2, f3, meta, foto, fotoMoto] = await Promise.all([
     fetchJSON("data/roster.json"), fetchJSON("data/storici.json"), fetchJSON("data/motogp-piloti.json"), fetchJSON("data/motogp-archivio.json"),
     fetchJSON("data/f2.json").catch(() => ({ piloti: [] })), fetchJSON("data/f3.json").catch(() => ({ piloti: [] })),
-    fetchJSON("data/meta.json").catch(() => ({})), fetchJSON("data/foto-storici.json").catch(() => [])]);
-  Object.assign(D, { roster, storici: storici.piloti, motoPiloti, motoArch: motoArch.anni, f2, f3 });
+    fetchJSON("data/meta.json").catch(() => ({})), fetchJSON("data/foto-storici.json").catch(() => []), fotoMotoMap()]);
+  Object.assign(D, { fotoMoto, roster, storici: storici.piloti, motoPiloti, motoArch: motoArch.anni, f2, f3 });
   D.foto = Object.fromEntries(foto.map((f) => [norm(f.nome), f.foto]));
   D.anno = Math.max(...storici.piloti.flatMap((p) => p.stagioni), new Date().getFullYear() - 1);
   barre();

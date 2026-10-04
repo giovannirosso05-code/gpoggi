@@ -94,7 +94,6 @@ export function renderHeader(paginaAttuale) {
     ["classifiche", "classifiche.html", "Classifiche"],
     ["gare", "calendario.html", "Calendario"],
     ["notizie", "notizie.html", "Notizie"],
-    ["motogp", "motogp.html", "MotoGP"],
     ["giochi", "giochi.html", "Giochi"],
   ];
   document.getElementById("site-header").innerHTML = `
@@ -102,12 +101,16 @@ export function renderHeader(paginaAttuale) {
       <a href="index.html" class="brand" aria-label="GP Oggi, home"><img src="img/logo-wide.png" alt="" class="brand-logo chiaro" width="98" height="54"><img src="img/logo-wide-scuro.png" alt="" class="brand-logo scuro" width="98" height="54"><span>GP<span class="dot">•</span>Oggi</span></a>
       <div class="nav-destra">
         <div class="nav-links">
-          ${voci.map(([id, href, label]) => `<a href="${href}" class="${id === paginaAttuale ? "active" : ""}">${label}</a>`).join("")}
+          ${voci.map(([id, href, label]) => `<a href="${href}" class="${id === "giochi" ? "nav-giochi " : ""}${id === paginaAttuale ? "active" : ""}">${label}</a>`).join("")}
         </div>
+        ${selettoreLingua()}
         <button type="button" class="tema-btn" id="tema-btn" aria-label="Cambia tema chiaro o scuro">${ICONA_LUNA}${ICONA_SOLE}</button>
       </div>
     </nav>`;
   if (paginaAttuale !== "home") renderCountdown();
+  const selLingua = document.getElementById("lingua");
+  if (selLingua) selLingua.addEventListener("change", () => cambiaLingua(selLingua.value));
+  if (!window.__traduzioneAvviata) { window.__traduzioneAvviata = true; avviaTraduzione(); }
   document.getElementById("tema-btn").addEventListener("click", () => {
     const nuovo = temaCorrente() === "dark" ? "light" : "dark";
     document.documentElement.dataset.theme = nuovo;
@@ -208,4 +211,68 @@ export function mischia(articoli, n) {
     for (const l of prima) if (l.length && out.length < n) out.push(l.shift());
   }
   return [...out, ...altri].slice(0, n);
+}
+
+// Foto dei piloti del motomondiale (id e nome -> foto con autore e licenza); vuota finché non sono state cercate.
+let _fotoMoto;
+export function fotoMotoMap() {
+  return (_fotoMoto ||= fetchJSON("data/foto-motogp.json").catch(() => ({})));
+}
+
+// ---------- Lingue ----------
+// Il sito resta in italiano. Le altre lingue usano il traduttore di Google DENTRO la pagina (stessa soluzione di MMA Oggi):
+// la scelta vive nel cookie googtrans (/it/<lingua>) che il traduttore legge da solo. Nomi di piloti e del sito non si traducono.
+const LINGUE = [
+  ["it", "Italiano"], ["en", "English"], ["es", "Español"], ["fr", "Français"], ["de", "Deutsch"], ["pt", "Português"],
+  ["pl", "Polski"], ["ro", "Română"], ["sq", "Shqip"], ["ar", "العربية"], ["ru", "Русский"], ["uk", "Українська"],
+  ["tr", "Türkçe"], ["zh-CN", "中文"], ["ja", "日本語"],
+];
+function linguaAttuale() {
+  const m = document.cookie.match(/(?:^|;\s*)googtrans=\/it\/([^;]+)/);
+  return m && LINGUE.some(([c]) => c === m[1]) ? m[1] : "it";
+}
+function cambiaLingua(lingua) {
+  const scadenza = lingua === "it" ? "; expires=Thu, 01 Jan 1970 00:00:00 GMT" : "; max-age=31536000";
+  const valore = lingua === "it" ? "" : `/it/${lingua}`;
+  for (const dominio of ["", `; domain=${location.hostname}`, `; domain=.${location.hostname}`]) {
+    document.cookie = `googtrans=${valore}; path=/${dominio}${scadenza}`;
+  }
+  location.reload();
+}
+const SELETTORE_NOMI = ".brand, .name, .nome, .nome2, .cella-pilota strong, .link-nome, .pm-testa h1, .campione h1, .stemma, .cd-sigla, .pross-gp, .podio-home strong";
+function proteggiNomi(radice) {
+  const el = radice.matches && radice.matches(SELETTORE_NOMI) ? [radice] : [];
+  for (const e of [...el, ...radice.querySelectorAll(SELETTORE_NOMI)]) { e.classList.add("notranslate"); e.setAttribute("translate", "no"); }
+}
+function avviaTraduzione() {
+  const lingua = linguaAttuale();
+  if (lingua === "it") return;
+  document.documentElement.classList.add("tradotto");
+  proteggiNomi(document.body);
+  new MutationObserver((cambi) => {
+    for (const c of cambi) for (const n of c.addedNodes) if (n.nodeType === 1 && !n.closest(".skiptranslate")) proteggiNomi(n);
+  }).observe(document.body, { childList: true, subtree: true });
+  const box = document.createElement("div");
+  box.id = "google_translate_element";
+  box.hidden = true;
+  document.body.appendChild(box);
+  window.googleTranslateElementInit = () => {
+    new window.google.translate.TranslateElement({ pageLanguage: "it", autoDisplay: false }, "google_translate_element");
+  };
+  const s = document.createElement("script");
+  s.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+  document.body.appendChild(s);
+}
+function selettoreLingua() {
+  const attuale = linguaAttuale();
+  const opzioni = LINGUE.map(([codice, nome]) => `<option value="${codice}"${codice === attuale ? " selected" : ""}>${nome}</option>`).join("");
+  return `<label class="lingua notranslate" translate="no" title="Lingua / Language">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+      <select id="lingua" aria-label="Lingua / Language">${opzioni}</select></label>`;
+}
+
+// Mappe dei circuiti della MotoGP (nome del circuito -> mappa con autore e licenza).
+let _mappeMoto;
+export function mappeMotoMap() {
+  return (_mappeMoto ||= fetchJSON("data/mappe-motogp.json").catch(() => ({})));
 }

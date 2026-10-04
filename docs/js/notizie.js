@@ -6,7 +6,8 @@ renderFooter();
 const box = document.getElementById("notizie-box");
 let serie = "tutte";
 try {
-  const [report, news, rassegna] = await Promise.all([fetchJSON("data/report.json"), fetchJSON("data/news.json").catch(() => []), fetchJSON("data/rassegna.json").catch(() => ({ articoli: [] }))]);
+  const [reportF1, news, rassegna, reportMoto] = await Promise.all([fetchJSON("data/report.json"), fetchJSON("data/news.json").catch(() => []), fetchJSON("data/rassegna.json").catch(() => ({ articoli: [] })), fetchJSON("data/motogp-report.json").catch(() => [])]);
+  const report = [...reportF1.map((r) => ({ ...r, serie: "F1", href: `gara.html?id=${r.id}` })), ...reportMoto.map((r) => ({ data: r.data, circuito: r.circuito, paese: "", titolo: r.titolo, paragrafi: r.paragrafi, serie: "MotoGP", href: "motogp.html" }))].sort((a, b) => new Date(b.data) - new Date(a.data));
 
   const redazione = document.getElementById("redazione");
   redazione.innerHTML = news.length ? news.map((n) => `
@@ -31,12 +32,12 @@ try {
   document.getElementById("filtro-serie").addEventListener("click", (e) => { const b = e.target.closest(".pill"); if (!b) return; serie = b.dataset.s; document.querySelectorAll("#filtro-serie .pill").forEach((x) => x.classList.toggle("active", x === b)); disegnaRassegna(); });
   disegnaRassegna();
 
-  document.getElementById("report-lista").innerHTML = report.length ? report.map((r) => `
+  document.getElementById("report-lista").innerHTML = report.length ? report.slice(0, 12).map((r) => `
     <article class="report-card">
-      <div class="report-data">${formattaData(r.data)} · ${esc(r.circuito)}, ${esc(r.paese)}</div>
-      <h3><a href="gara.html?id=${r.id}">${esc(r.titolo)}</a></h3>
+      <div class="report-data"><b>${r.serie}</b> · ${formattaData(r.data)} · ${esc(r.circuito)}${r.paese ? ", " + esc(r.paese) : ""}</div>
+      <h3><a href="${r.href}">${esc(r.titolo)}</a></h3>
       ${r.paragrafi.map((p) => `<p>${esc(p)}</p>`).join("")}
-      <a class="accent" href="gara.html?id=${r.id}">Tutti i risultati →</a>
+      <a class="accent" href="${r.href}">Tutti i risultati →</a>
     </article>`).join("") : `<p class="muted">Nessuna gara ancora disputata.</p>`;
 } catch (e) {
   erroreCaricamento(box);

@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, img, intervalloWeekend, formattaDataOra, punti, stemma, ND, mischia } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, img, intervalloWeekend, formattaDataOra, punti, stemma, ND, mischia, fotoMotoMap, mappeMotoMap } from "./common.js";
 
 renderHeader("home");
 renderFooter();
@@ -48,10 +48,11 @@ function podioF1(g, foto) {
       <div class="posto">${r.pos}°</div>${foto[r.numero] ? img(foto[r.numero], r.nome || "") : '<span class="vuota"></span>'}
       <strong>${esc(r.nome || "Pilota #" + r.numero)}</strong><div>${stemma(r.team, coloreTeam[r.team])}</div><div class="tempo">${r.tempo ? esc(r.tempo) : ND}</div></a>`).join(""));
 }
+const FM = await fotoMotoMap();
 function podioMoto(u) {
   const top = u.risultati.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos);
   return blocco("MotoGP", "moto", u.nome, u.circuito, `motogp.html${tema ? "?" + tema.slice(1) : ""}`, top.map((r) => `<a href="motogp.html${tema ? "?" + tema.slice(1) : ""}" style="--team:#8b8a92">
-      <div class="posto">${r.pos}°</div><span class="vuota"></span>
+      <div class="posto">${r.pos}°</div>${FM["nome:" + r.nome] ? img(FM["nome:" + r.nome], r.nome) : '<span class="vuota"></span>'}
       <strong>${esc(r.nome)}</strong><div>${stemma(r.moto)}</div><div class="tempo">${r.tempo ? esc(r.tempo) : ND}</div></a>`).join(""));
 }
 function blocco(sigla, classe, nome, sotto, link, podio) {
@@ -125,8 +126,28 @@ if (ras) {
 const prossimi = [...(eventi || []).filter((g) => new Date(g.fine) > new Date()).map((g) => ({ ...g, serie: "F1", link: `gara.html?id=${g.id}${tema}` })),
   ...((cal && cal.weekend) || []).filter((g) => new Date(g.fine || g.sessioni[g.sessioni.length - 1].fine) > new Date()).map((g) => ({ ...g, serie: "MotoGP", inizio: g.inizio || g.sessioni[0].inizio, fine: g.fine || g.sessioni[g.sessioni.length - 1].fine, link: `motogp.html${tema ? "?" + tema.slice(1) : ""}` }))]
   .sort((a, b) => new Date(a.inizio) - new Date(b.inizio)).slice(0, 5);
+const MAPPE = await mappeMotoMap();
 document.getElementById("prossimi-mini").innerHTML = prossimi.length ? prossimi.map((g) => `
   <a class="evento-widget-mini" href="${g.link}">
+    ${g.serie === "F1" ? (g.mappa ? img(g.mappa, "Tracciato di " + g.circuito) : "") : (MAPPE[g.circuito] ? img(MAPPE[g.circuito], "Tracciato di " + g.circuito) : "")}
     <div><div class="evento-widget-mini-nome"><span class="cd-sigla ${g.serie === "MotoGP" ? "moto" : ""}">${g.serie}</span> ${esc(g.nome)}</div>
     <div class="evento-widget-mini-data">${esc(g.circuito)} · ${intervalloWeekend(g)}</div></div>
   </a>`).join("") : `<p class="muted" style="font-size:12px">Nessun weekend in programma.</p>`;
+
+// ---- Pronostico: indice calcolato dai dati (forma, campionato, stesso circuito l'anno scorso)
+try {
+  const pr = await fetchJSON("data/pronostici.json");
+  const fotoF1 = Object.fromEntries((roster || []).filter((p) => p.foto).map((p) => [p.numero, p.foto]));
+  const colonna = (sigla, classe, d, fotoDi) => d ? `<div class="prono-col">
+    <div class="prono-testa"><span class="cd-sigla ${classe}">${sigla}</span><b>${esc(d.gp)}</b><span class="muted">gara ${formattaDataOra(d.gara)}</span></div>
+    ${d.favoriti.slice(0, 3).map((r, i) => `<div class="prono-riga ${i === 0 ? "primo" : ""}">
+      <span class="prono-pos">${i + 1}</span>${fotoDi(r) ? img(fotoDi(r), r.nome, "foto-mini") : '<span class="foto-mini"></span>'}
+      <div class="prono-info"><strong>${esc(r.nome)}</strong><span class="muted">${esc(r.motivi.join(" · "))}</span>
+        <div class="prono-barra"><i style="width:${r.indice}%"></i></div></div><span class="prono-ind">${r.indice}</span></div>`).join("")}</div>` : "";
+  const html = colonna("F1", "", pr.f1, (r) => fotoF1[r.numero]) + colonna("MotoGP", "moto", pr.motogp, (r) => FM[r.id]);
+  if (html) {
+    document.getElementById("prono-griglia").innerHTML = html;
+    document.getElementById("prono-nota").textContent = pr.metodo;
+    document.getElementById("prono").hidden = false;
+  }
+} catch (e) {}

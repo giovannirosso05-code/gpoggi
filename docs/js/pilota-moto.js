@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, stemma, formattaData, punti, erroreCaricamento } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, stemma, formattaData, punti, erroreCaricamento, img, credito, fotoMotoMap } from "./common.js";
 
 renderHeader("motogp");
 renderFooter();
@@ -9,7 +9,9 @@ const tema = document.documentElement.dataset.theme ? "&tema=" + document.docume
 
 try {
   const dati = await fetchJSON("data/motogp-piloti.json");
+  const FM = await fotoMotoMap();
   const p = dati[id];
+  const foto = FM[id];
   if (!p) throw new Error("pilota non trovato");
   document.title = `${p.nome} — GP Oggi`;
   const gare = p.gare;
@@ -17,8 +19,9 @@ try {
   const migliore = gare.map((g) => g.gara).filter(Boolean).sort((a, b) => a - b)[0];
   const esito = (g) => (g.gara ? `${g.gara}°` : g.stato_gara && g.stato_gara !== "INSTND" ? "Ritirato" : "–");
   box.innerHTML = `
-    <section class="campione" style="margin-top:32px"><span class="kicker">${esc(p.categoria)} · #${p.numero ?? "n.d."}</span><h1>${esc(p.nome)}</h1>
-      <p class="muted" style="margin:0"><span class="cella-team">${stemma(p.moto)}${esc(p.team)}</span> · ${esc(p.paese || "")}</p></section>
+    <section class="campione" style="margin-top:32px"><span class="kicker">${esc(p.categoria)} · #${p.numero ?? "n.d."}</span><div class="pm-testa">${foto ? img(foto, p.nome, "pm-foto") : ""}<div><h1>${esc(p.nome)}</h1>
+      <p class="muted" style="margin:0"><span class="cella-team">${stemma(p.moto)}${esc(p.team)}</span> · ${esc(p.paese || "")}</p></div></div>
+      ${foto ? `<p class="credito" style="margin:10px 0 0">${credito(foto)}</p>` : ""}</section>
     <div class="stat-strip">
       <div class="stat"><div class="stat-number">${p.pos ?? "n.d."}${p.pos ? "°" : ""}</div><div class="stat-label">In classifica</div></div>
       <div class="stat"><div class="stat-number">${punti(p.punti)}</div><div class="stat-label">Punti</div></div>

@@ -803,3 +803,45 @@ select.sel {
 .driver-card.nofoto .driver-card-image { aspect-ratio: 16 / 7; }
 .driver-card.nofoto .driver-card-image .driver-number.solo { font-size: 44px; }
 .modo-pills, .serie-pills { margin-bottom: 8px; }
+
+/* pagina pilota di moto: foto in testata */
+.pm-testa { display: flex; align-items: center; gap: 18px; }
+.pm-foto { width: 112px; height: 112px; border-radius: 50%; object-fit: cover; object-position: center 20%; flex: none; border: 3px solid var(--border); }
+@media (max-width: 640px) { .pm-foto { width: 84px; height: 84px; } }
+
+/* ---------- Traduttore Google dentro la pagina: niente barra, niente evidenziazioni ---------- */
+body > .skiptranslate, iframe.skiptranslate, .goog-te-banner-frame, #goog-gt-tt, .goog-te-balloon-frame, .VIpgJd-ZVi9od-ORHb-OEVmcd { display: none !important; }
+html.tradotto body { top: 0 !important; position: static !important; }
+.goog-text-highlight { background: none !important; box-shadow: none !important; }
+font { background: none !important; box-shadow: none !important; }
+.lingua { display: inline-flex; align-items: center; gap: 6px; color: var(--text-secondary); flex-shrink: 0; }
+.lingua select { background: var(--card, var(--bg)); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 6px 8px; font: 500 12.5px Inter, sans-serif; cursor: pointer; max-width: 118px; }
+/* Giochi in evidenza nel menu, in carattere pixel */
+.nav-links a.nav-giochi { font-family: "Press Start 2P", monospace; font-size: 10px; letter-spacing: 0; text-transform: uppercase; background: #e8352f; color: #fff; padding: 9px 12px; border-radius: 6px; box-shadow: 0 3px 0 #9d1f1a; line-height: 1; align-self: center; }
+.nav-links a.nav-giochi:hover { transform: translateY(1px); box-shadow: 0 2px 0 #9d1f1a; color: #fff; }
+.nav-links a.nav-giochi.active { background: #16161b; box-shadow: 0 3px 0 #000; }
+.nav-links a.nav-giochi::after { display: none; }
+@media (max-width: 640px) { .nav-links a.nav-giochi { order: -1; margin-right: 4px; } }
+
+/* pronostico in home */
+.prono-griglia { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.prono-col { border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; min-width: 0; }
+.prono-testa { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-bottom: 8px; }
+.prono-testa .muted { font-size: 12px; width: 100%; }
+.prono-riga { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-top: 1px solid var(--border); }
+.prono-pos { font-family: var(--font-display); font-weight: 700; font-size: 20px; width: 18px; color: var(--accent, #e8352f); }
+.prono-info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.prono-info .muted { font-size: 11.5px; line-height: 1.3; }
+.prono-barra { height: 5px; border-radius: 3px; background: var(--border); overflow: hidden; margin-top: 3px; }
+.prono-barra i { display: block; height: 100%; background: var(--accent, #e8352f); }
+.prono-ind { font-family: var(--font-display); font-weight: 700; font-size: 18px; }
+.prono-riga.primo .prono-info strong { font-size: 16px; }
+.prono-nota { font-size: 12px; margin: 8px 0 0; }
+@media (max-width: 640px) { .prono-griglia { grid-template-columns: 1fr; } }
+
+/* mappe dei circuiti MotoGP */
+.mappa-circuito { background: #f5f4f0; border-radius: 10px; padding: 10px; margin: 0 0 14px; text-align: center; }
+.mappa-circuito img { max-height: 260px; max-width: 100%; }
+.mappa-circuito .credito { margin: 6px 0 0; font-size: 11px; color: #666; }
+.mappa-mini { height: 64px; width: auto; background: #f5f4f0; border-radius: 6px; padding: 4px; margin: 2px 0 6px; }
+.pross-card .cd-sigla { align-self: flex-start; }

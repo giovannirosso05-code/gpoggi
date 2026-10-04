@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420">
-  <g transform="translate(-16,54) scale(1.49,0.86)" opacity="1"><g fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g transform="translate(-16,54) scale(1.49,0.86)" opacity="1"><g transform="translate(532,0) scale(-1,1)" fill="none" stroke-linecap="round" stroke-linejoin="round">
     <path id="pista" d="M60 384 L420 384 C488 384 508 330 486 290 C476 270 462 258 444 244 L300 120 C280 104 252 100 232 108 C208 118 206 142 222 154 L238 166 L120 214 C100 222 92 236 98 252 L108 262 L84 276 C40 296 24 340 40 366 C46 376 52 384 60 384 Z" stroke="#4d4d5a" stroke-width="7" vector-effect="non-scaling-stroke"/>
     
   </g></g>

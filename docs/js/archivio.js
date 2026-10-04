@@ -6,7 +6,7 @@ renderFooter();
 const box = document.getElementById("archivio-box");
 const sel = document.getElementById("anno");
 
-function riga(p) { return `<tr class="${p.pos && p.pos <= 3 ? "podio" : ""}"><td>${p.pos ?? "–"}</td><td><strong>${esc(p.nome)}</strong> <span class="muted">${esc(p.naz || "")}</span></td><td>${esc(p.team)}</td><td><strong>${punti(p.punti)}</strong></td><td>${p.vittorie}</td></tr>`; }
+function riga(p) { return `<tr class="${p.pos && p.pos <= 3 ? "podio" : ""}"><td>${p.pos ?? "–"}</td><td><a href="storico.html?id=${esc(p.id)}" class="link-nome"><strong>${esc(p.nome)}</strong></a> <span class="muted">${esc(p.naz || "")}</span></td><td>${esc(p.team)}</td><td><strong>${punti(p.punti)}</strong></td><td>${p.vittorie}</td></tr>`; }
 
 async function mostra(anno) {
   box.innerHTML = `<p class="muted">Caricamento…</p>`;
@@ -26,7 +26,7 @@ async function mostra(anno) {
       </div>
       <h3 class="section-title">Vincitori delle gare</h3><div class="table-wrap"><table class="results">
         <thead><tr><th>Gara</th><th>Data</th><th>Gran Premio</th><th>Vincitore</th><th>Team</th></tr></thead>
-        <tbody>${s.gare.map((g) => `<tr><td>${g.round}</td><td>${formattaData(g.data)}</td><td>${esc(g.nome)}</td><td><strong>${esc(g.vincitore)}</strong></td><td>${esc(g.team)}</td></tr>`).join("")}</tbody></table></div>`;
+        <tbody>${s.gare.map((g) => `<tr><td>${g.round}</td><td>${formattaData(g.data)}</td><td>${esc(g.nome)}</td><td><a href="storico.html?id=${esc(g.id)}" class="link-nome"><strong>${esc(g.vincitore)}</strong></a></td><td>${esc(g.team)}</td></tr>`).join("")}</tbody></table></div>`;
   } catch (e) { erroreCaricamento(box); }
 }
 

@@ -108,6 +108,18 @@ def main():
             for t in p["team"].split(" / "):
                 if t and t not in sch["team"]:
                     sch["team"].append(t)
+    # dettaglio per la scheda di ogni pilota: stagioni (anno, posizione, team, punti, vittorie) e gare vinte
+    dettaglio = {}
+    for anno in range(1950, ultimo + 1):
+        f = OUT / f"{anno}.json"
+        if not f.exists():
+            continue
+        s_ = json.loads(f.read_text())
+        for p in s_["piloti"]:
+            dettaglio.setdefault(p["id"], {"s": [], "v": []})["s"].append([anno, p["pos"], p["team"], p["punti"], p["vittorie"]])
+        for g in s_["gare"]:
+            dettaglio.setdefault(g["id"], {"s": [], "v": []})["v"].append([anno, g["nome"]])
+    (ROOT / "docs" / "data" / "storici-stagioni.json").write_text(json.dumps(dettaglio, ensure_ascii=False, separators=(",", ":")))
     (OUT / "indice.json").write_text(json.dumps(indice, ensure_ascii=False, separators=(",", ":")))
     elenco = sorted(piloti.values(), key=lambda p: (-p["titoli"], -p["vittorie"], p["nome"]))
     (ROOT / "docs" / "data" / "storici.json").write_text(json.dumps({"fonte": "Jolpica F1 (CC BY-NC-SA 4.0)", "piloti": elenco}, ensure_ascii=False, separators=(",", ":")))

@@ -1,0 +1,271 @@
+{
+ "serie": "Formula 3",
+ "anno": 2026,
+ "aggiornato": "2026-10-04T13:30:37+00:00",
+ "fonte": "https://en.wikipedia.org/wiki/2026_FIA_Formula_3_Championship",
+ "licenza": "CC BY-SA 4.0",
+ "piloti": [
+  {
+   "pos": 1,
+   "nome": "Ugo Ugochukwu",
+   "team": "Campos Racing",
+   "punti": 159.0
+  },
+  {
+   "pos": 2,
+   "nome": "Freddie Slater",
+   "team": "Trident",
+   "punti": 145.0
+  },
+  {
+   "pos": 3,
+   "nome": "Tuukka Taponen",
+   "team": "MP Motorsport",
+   "punti": 109.0
+  },
+  {
+   "pos": 4,
+   "nome": "Taito Kato",
+   "team": "ART Grand Prix",
+   "punti": 105.0
+  },
+  {
+   "pos": 5,
+   "nome": "Théophile Naël",
+   "team": "Campos Racing",
+   "punti": 88.0
+  },
+  {
+   "pos": 6,
+   "nome": "Pedro Clerot",
+   "team": "Rodin Motorsport",
+   "punti": 88.0
+  },
+  {
+   "pos": 7,
+   "nome": "Ernesto Rivera",
+   "team": null,
+   "punti": 87.0
+  },
+  {
+   "pos": 8,
+   "nome": "Brando Badoer",
+   "team": "Rodin Motorsport",
+   "punti": 71.0
+  },
+  {
+   "pos": 9,
+   "nome": "Hiyu Yamakoshi",
+   "team": "Van Amersfoort Racing",
+   "punti": 71.0
+  },
+  {
+   "pos": 10,
+   "nome": "Noah Strømsted",
+   "team": "Trident",
+   "punti": 65.0
+  },
+  {
+   "pos": 11,
+   "nome": "Bruno del Pino",
+   "team": "Van Amersfoort Racing",
+   "punti": 57.0
+  },
+  {
+   "pos": 12,
+   "nome": "Maciej Gładysz",
+   "team": "ART Grand Prix",
+   "punti": 54.0
+  },
+  {
+   "pos": 13,
+   "nome": "Mattia Colnaghi",
+   "team": "MP Motorsport",
+   "punti": 54.0
+  },
+  {
+   "pos": 14,
+   "nome": "Jin Nakamura",
+   "team": "Hitech",
+   "punti": 53.0
+  },
+  {
+   "pos": 15,
+   "nome": "Alessandro Giusti",
+   "team": "MP Motorsport",
+   "punti": 45.0
+  },
+  {
+   "pos": 16,
+   "nome": "Enzo Deligny",
+   "team": "Van Amersfoort Racing",
+   "punti": 40.0
+  },
+  {
+   "pos": 17,
+   "nome": "James Wharton",
+   "team": "Prema Racing",
+   "punti": 39.0
+  },
+  {
+   "pos": 18,
+   "nome": "Yevan David",
+   "team": "AIX Racing",
+   "punti": 35.0
+  },
+  {
+   "pos": 19,
+   "nome": "Nicola Lacorte",
+   "team": "DAMS Lucas Oil",
+   "punti": 33.0
+  },
+  {
+   "pos": 20,
+   "nome": "Kanato Le",
+   "team": "ART Grand Prix",
+   "punti": 30.0
+  },
+  {
+   "pos": 21,
+   "nome": "Louis Sharp",
+   "team": "Prema Racing",
+   "punti": 21.0
+  },
+  {
+   "pos": 22,
+   "nome": "Gerrard Xie",
+   "team": "DAMS Lucas Oil",
+   "punti": 20.0
+  },
+  {
+   "pos": 23,
+   "nome": "Alex Powell",
+   "team": null,
+   "punti": 14.0
+  },
+  {
+   "pos": 24,
+   "nome": "Matteo De Palo",
+   "team": "Trident",
+   "punti": 7.0
+  },
+  {
+   "pos": 25,
+   "nome": "Brad Benavides",
+   "team": "AIX Racing",
+   "punti": 6.0
+  },
+  {
+   "pos": 26,
+   "nome": "Christian Ho",
+   "team": "Rodin Motorsport",
+   "punti": 2.0
+  },
+  {
+   "pos": 27,
+   "nome": "Fionn McLaughlin",
+   "team": "Hitech",
+   "punti": 2.0
+  },
+  {
+   "pos": 28,
+   "nome": "Fernando Barrichello",
+   "team": "AIX Racing",
+   "punti": 2.0
+  },
+  {
+   "pos": 29,
+   "nome": "José Garfias",
+   "team": "Prema Racing",
+   "punti": 1.0
+  },
+  {
+   "pos": 30,
+   "nome": "Nandhavud Bhirombhakdi",
+   "team": "DAMS Lucas Oil",
+   "punti": 0.0
+  },
+  {
+   "pos": 31,
+   "nome": "Ricardo Escotto",
+   "team": null,
+   "punti": 0.0
+  },
+  {
+   "pos": 32,
+   "nome": "Patrick Heuzenroeder",
+   "team": "Campos Racing",
+   "punti": 0.0
+  },
+  {
+   "pos": 33,
+   "nome": "Michael Shin",
+   "team": "Hitech",
+   "punti": 0.0
+  },
+  {
+   "pos": 34,
+   "nome": "Niccolò Maccagnani",
+   "team": null,
+   "punti": 0.0
+  },
+  {
+   "pos": 35,
+   "nome": "Salim Hanna",
+   "team": null,
+   "punti": 0.0
+  }
+ ],
+ "team": [
+  {
+   "pos": 1,
+   "team": "Campos Racing",
+   "punti": 334.0
+  },
+  {
+   "pos": 2,
+   "team": "Trident",
+   "punti": 217.0
+  },
+  {
+   "pos": 3,
+   "team": "MP Motorsport",
+   "punti": 208.0
+  },
+  {
+   "pos": 4,
+   "team": "ART Grand Prix",
+   "punti": 189.0
+  },
+  {
+   "pos": 5,
+   "team": "Van Amersfoort Racing",
+   "punti": 168.0
+  },
+  {
+   "pos": 6,
+   "team": "Rodin Motorsport",
+   "punti": 161.0
+  },
+  {
+   "pos": 7,
+   "team": "Prema Racing",
+   "punti": 75.0
+  },
+  {
+   "pos": 8,
+   "team": "Hitech",
+   "punti": 55.0
+  },
+  {
+   "pos": 9,
+   "team": "DAMS Lucas Oil",
+   "punti": 53.0
+  },
+  {
+   "pos": 10,
+   "team": "AIX Racing",
+   "punti": 43.0
+  }
+ ]
+}

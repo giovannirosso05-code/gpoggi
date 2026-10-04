@@ -7,6 +7,7 @@ pages:
     - python scraper_f1.py
     - python build_news.py
     - python build_motogp.py
+    - python build_formule.py
     - python build_calendari.py
     - mkdir -p public
     - cp -r docs/. public/

@@ -1,0 +1,204 @@
+{
+ "serie": "Formula 2",
+ "anno": 2026,
+ "aggiornato": "2026-10-04T13:30:37+00:00",
+ "fonte": "https://en.wikipedia.org/wiki/2026_FIA_Formula_2_Championship",
+ "licenza": "CC BY-SA 4.0",
+ "piloti": [
+  {
+   "pos": 1,
+   "nome": "Rafael Câmara",
+   "team": "Invicta Racing",
+   "punti": 207.0
+  },
+  {
+   "pos": 2,
+   "nome": "Nikola Tsolov",
+   "team": "Campos Racing",
+   "punti": 200.0
+  },
+  {
+   "pos": 3,
+   "nome": "Alex Dunne",
+   "team": "Rodin Motorsport",
+   "punti": 189.0
+  },
+  {
+   "pos": 4,
+   "nome": "Gabriele Minì",
+   "team": "MP Motorsport",
+   "punti": 163.0
+  },
+  {
+   "pos": 5,
+   "nome": "Dino Beganovic",
+   "team": "DAMS Lucas Oil",
+   "punti": 137.0
+  },
+  {
+   "pos": 6,
+   "nome": "Noel León",
+   "team": "Campos Racing",
+   "punti": 133.0
+  },
+  {
+   "pos": 7,
+   "nome": "Martinius Stenshorne",
+   "team": "Rodin Motorsport",
+   "punti": 107.0
+  },
+  {
+   "pos": 8,
+   "nome": "Joshua Dürksen",
+   "team": "Invicta Racing",
+   "punti": 90.0
+  },
+  {
+   "pos": 9,
+   "nome": "Kush Maini",
+   "team": "ART Grand Prix",
+   "punti": 90.0
+  },
+  {
+   "pos": 10,
+   "nome": "Laurens van Hoepen",
+   "team": "Trident",
+   "punti": 90.0
+  },
+  {
+   "pos": 11,
+   "nome": "Tasanapol Inthraphuvasak",
+   "team": "ART Grand Prix",
+   "punti": 71.0
+  },
+  {
+   "pos": 12,
+   "nome": "Ritomo Miyata",
+   "team": "Hitech",
+   "punti": 70.0
+  },
+  {
+   "pos": 13,
+   "nome": "Rafael Villagómez",
+   "team": "Van Amersfoort Racing",
+   "punti": 42.0
+  },
+  {
+   "pos": 14,
+   "nome": "John Bennett",
+   "team": "Trident",
+   "punti": 38.0
+  },
+  {
+   "pos": 15,
+   "nome": "Oliver Goethe",
+   "team": "MP Motorsport",
+   "punti": 37.0
+  },
+  {
+   "pos": 16,
+   "nome": "Roman Bilinski",
+   "team": "DAMS Lucas Oil",
+   "punti": 36.0
+  },
+  {
+   "pos": 17,
+   "nome": "Sebastián Montoya",
+   "team": "Prema Racing",
+   "punti": 30.0
+  },
+  {
+   "pos": 18,
+   "nome": "Emerson Fittipaldi Jr.",
+   "team": "AIX Racing",
+   "punti": 28.0
+  },
+  {
+   "pos": 19,
+   "nome": "Colton Herta",
+   "team": "Hitech",
+   "punti": 26.0
+  },
+  {
+   "pos": 20,
+   "nome": "Mari Boya",
+   "team": "Prema Racing",
+   "punti": 21.0
+  },
+  {
+   "pos": 21,
+   "nome": "Nico Varrone",
+   "team": "Van Amersfoort Racing",
+   "punti": 15.0
+  },
+  {
+   "pos": 22,
+   "nome": "Cian Shields",
+   "team": "AIX Racing",
+   "punti": 10.0
+  },
+  {
+   "pos": 23,
+   "nome": "Hiyu Yamakoshi",
+   "team": null,
+   "punti": 2.0
+  }
+ ],
+ "team": [
+  {
+   "pos": 1,
+   "team": "Campos Racing",
+   "punti": 333.0
+  },
+  {
+   "pos": 2,
+   "team": "Invicta Racing",
+   "punti": 297.0
+  },
+  {
+   "pos": 3,
+   "team": "Rodin Motorsport",
+   "punti": 296.0
+  },
+  {
+   "pos": 4,
+   "team": "MP Motorsport",
+   "punti": 200.0
+  },
+  {
+   "pos": 5,
+   "team": "DAMS Lucas Oil",
+   "punti": 173.0
+  },
+  {
+   "pos": 6,
+   "team": "ART Grand Prix",
+   "punti": 161.0
+  },
+  {
+   "pos": 7,
+   "team": "Trident",
+   "punti": 128.0
+  },
+  {
+   "pos": 8,
+   "team": "Hitech",
+   "punti": 96.0
+  },
+  {
+   "pos": 9,
+   "team": "Van Amersfoort Racing",
+   "punti": 59.0
+  },
+  {
+   "pos": 10,
+   "team": "Prema Racing",
+   "punti": 51.0
+  },
+  {
+   "pos": 11,
+   "team": "AIX Racing",
+   "punti": 38.0
+  }
+ ]
+}

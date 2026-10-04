@@ -23,6 +23,10 @@ jobs:
         run: python build_news.py
       - name: Calendario MotoGP
         run: python build_motogp.py
+      - name: Classifiche F2 e F3 (Wikipedia)
+        run: python build_formule.py
+      - name: Archivi storici F1 e MotoGP (solo il lunedì)
+        run: if [ "$(date +%u)" = "1" ]; then python build_archivio.py && python build_motogp_archivio.py; fi
       - name: Calendari scaricabili
         run: python build_calendari.py
       - name: Pubblica la gara sul canale Telegram (una sola volta per gara)

@@ -914,3 +914,26 @@ a.ag-risultati { display: inline-block; text-decoration: none; text-align: cente
 .hero2.uno { grid-template-columns: 1fr; }
 .hero2.uno .hero2-lato { min-height: 400px; }
 .prono-griglia.uno { grid-template-columns: 1fr; max-width: 640px; }
+
+/* telefono: F1 e MotoGP ben separate, ognuna col suo colore */
+.prono-col[data-serie="f1"], .ultima-gara.serie-f1 { border-top: 5px solid #e8352f; }
+.prono-col[data-serie="motogp"], .ultima-gara.serie-moto { border-top: 5px solid #111115; }
+:root[data-theme="dark"] .prono-col[data-serie="motogp"], :root[data-theme="dark"] .ultima-gara.serie-moto { border-top-color: #f2f1ee; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .prono-col[data-serie="motogp"], :root:not([data-theme="light"]) .ultima-gara.serie-moto { border-top-color: #f2f1ee; } }
+@media (max-width: 700px) {
+  .hero2 { gap: 14px; box-shadow: none; border-radius: 0; overflow: visible; }
+  .hero2-lato { border-radius: 16px; overflow: hidden; box-shadow: 0 8px 26px rgba(0, 0, 0, .28); border-left: 0 !important; border-top: 0 !important; min-height: 280px; }
+  .hero2-lato.f1 { border-bottom: 5px solid #e8352f; }
+  .hero2-lato.moto { border-bottom: 5px solid #fff; }
+  .hero2.uno { gap: 0; }
+  .prono-griglia { gap: 22px; }
+  .ultime-gare { gap: 22px; }
+  .prono-col, .ultima-gara { border-radius: 14px; }
+  .ultima-gara { border-left: 1px solid var(--border); border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .home-sezioni section + section { margin-top: 8px; }
+}
+@media (max-width: 700px) {
+  .hero2-lato { justify-content: flex-start; padding-top: 18px; }
+  .hero2-lato .cd-sigla { position: static; align-self: flex-start; font-size: 13px; padding: 4px 10px; margin-bottom: 120px; }
+  .hero2-lato .hero2-fav { margin-top: 4px; }
+}

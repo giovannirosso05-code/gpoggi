@@ -63,7 +63,7 @@ function podioMoto(u) {
       <strong>${esc(r.nome)}</strong><div>${stemmaMoto(r.moto)}</div><div class="tempo">${r.tempo ? esc(r.tempo) : ND}</div></a>`).join(""));
 }
 function blocco(sigla, classe, nome, sotto, link, podio) {
-  return `<div class="ultima-gara">
+  return `<div class="ultima-gara serie-${classe || "f1"}">
     <div class="ultima-gara-testa"><div><span class="cd-sigla ${classe}">${sigla}</span><h3>${esc(nome)}</h3></div>
       <div class="muted">${esc(sotto)} · <a href="${link}" class="accent">Risultati</a></div></div>
     <div class="podio-home">${podio}</div></div>`;

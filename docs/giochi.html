@@ -8,14 +8,14 @@
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#f5f4f0">
-<title>Calendario F1 — Weekend di gara | GP Oggi</title>
-<meta name="description" content="Calendario dei weekend di Formula 1 con prove libere, qualifiche, sprint e gara.">
-<link rel="canonical" href="https://gpoggi.it/gare.html">
-<meta property="og:url" content="https://gpoggi.it/gare.html">
+<title>Giochi — GP Oggi</title>
+<meta name="description" content="Quiz sulla Formula 1: indovina il circuito e il pilota. Giochi gratuiti, nessuna registrazione. Sito non ufficiale.">
+<link rel="canonical" href="https://gpoggi.it/giochi.html">
+<meta property="og:url" content="https://gpoggi.it/giochi.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GP Oggi">
-<meta property="og:title" content="Calendario F1 — Weekend di gara | GP Oggi">
-<meta property="og:description" content="Calendario dei weekend di Formula 1 con prove libere, qualifiche, sprint e gara.">
+<meta property="og:title" content="Giochi — GP Oggi">
+<meta property="og:description" content="Piloti, classifiche, calendario e risultati per sessione della stagione di Formula 1 in corso, in italiano. Sito non ufficiale.">
 <meta property="og:image" content="https://gpoggi.it/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,12 +28,17 @@
 <header id="site-header" class="site-header"></header>
 
 <div class="container">
-  <section class="hero"><h1>Calendario <span class="accent">F1</span></h1><p class="muted">Tutti i weekend della stagione, con prove libere, qualifiche, sprint e gara</p></section>
-  <div id="gare-list"></div>
+  <div class="section-title" style="margin-top:32px">Giochi</div>
+  <p class="muted" style="margin:-8px 0 20px;font-size:14px">Quiz di 10 domande. Il record resta sul tuo dispositivo, nessuna registrazione.</p>
+  <div class="gioco-scelta" id="scelta">
+    <button class="gioco-card" data-gioco="circuito"><b>Indovina il circuito</b><span>Ti mostro il tracciato, tu scegli il Gran Premio.</span></button>
+    <button class="gioco-card" data-gioco="pilota"><b>Chi è il pilota?</b><span>Una foto, quattro nomi. Quanti ne riconosci?</span></button>
+  </div>
+  <div id="partita" class="partita hidden"></div>
 </div>
 
 <footer id="site-footer" class="site-footer"></footer>
 
-<script type="module" src="js/gare.js?v=5"></script>
+<script type="module" src="js/giochi.js?v=17"></script>
 </body>
 </html>

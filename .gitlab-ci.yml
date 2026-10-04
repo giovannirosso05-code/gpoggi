@@ -6,6 +6,7 @@ pages:
     - pip install -r requirements.txt
     - python scraper_f1.py
     - python build_news.py
+    - python build_motogp.py
     - mkdir -p public
     - cp -r docs/. public/
   allow_failure:

@@ -21,6 +21,8 @@ jobs:
         run: python scraper_f1.py || [ $? -eq 75 ]
       - name: Rassegna stampa F1
         run: python build_news.py
+      - name: Calendario MotoGP
+        run: python build_motogp.py
       - name: Pubblica la gara sul canale Telegram (una sola volta per gara)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

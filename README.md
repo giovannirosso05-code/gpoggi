@@ -1,24 +1,42 @@
 # GP Oggi
 
-Sito statico non ufficiale sulla Formula 1: piloti, classifiche, calendario e risultati per sessione. (HTML/CSS/JS vanilla, dati in JSON statici, aggiornamento via GitHub Actions).
+Sito statico non ufficiale su Formula 1, MotoGP, Formula 2 e Formula 3, in italiano (HTML/CSS/JS senza framework, dati in JSON statici, aggiornamento automatico con un file di istruzioni per GitHub Actions o GitLab).
 
-Non affiliato a Formula 1, FIA o ai team. Nessun logo, immagine o font ufficiale.
+Non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team. Nessun logo, immagine o font ufficiale.
 
-## Dati
+## Sezioni
+Home con conto alla rovescia F1 e MotoGP, piloti, classifiche, calendario (con file .ics scaricabili), notizie (report di gara automatici e rassegna stampa con link alle fonti), giochi (quiz), MotoGP (MotoGP, Moto2, Moto3, schede pilota, archivio dal 1949), F2 e F3 (classifiche), archivio storico F1 dal 1950 con schede dei piloti.
 
-Fonte: [OpenF1](https://openf1.org) (API pubblica, dati di terzi non ufficiali).
+## Dati e licenze
+| Contenuto | Fonte | Note |
+|---|---|---|
+| F1 stagione in corso | OpenF1 | pensata per uso non commerciale; blocca le richieste durante le sessioni dal vivo (lo script salta il giro) |
+| Archivio F1 dal 1950 | Jolpica F1 | CC BY-NC-SA 4.0, uso non commerciale |
+| MotoGP: calendario, classifiche, risultati, archivio | servizio pubblico del campionato | non documentato, condizioni d'uso non trovate |
+| F2 e F3 | Wikipedia | testo CC BY-SA 4.0 |
+| Notizie | feed RSS pubblici (titolo, estratto breve e link alla fonte) | condizioni dei singoli siti da verificare |
+| Foto piloti e mappe F1 | Wikimedia Commons | solo licenze libere; autore e licenza mostrati e in `crediti.html` |
 
+Con pubblicità o guadagni serve un accordo scritto con i gestori delle fonti non commerciali.
+
+## Script (cartella principale)
 ```
 python -m pip install -r requirements.txt
-python scraper_f1.py [anno]     # scrive docs/data/ (la prima run ~2 min, poi usa cache/)
+python scraper_f1.py          # F1 stagione in corso: docs/data/, foto e mappe
+python build_news.py          # rassegna stampa
+python build_motogp.py        # MotoGP (calendario, classifiche, schede pilota)
+python build_formule.py       # classifiche F2 e F3
+python build_calendari.py     # file .ics
+python build_archivio.py      # archivio F1 dal 1950 (le stagioni già scaricate non si rifanno)
+python build_motogp_archivio.py
+python telegram_post.py --prova   # messaggio Telegram senza inviarlo
 python -m http.server 8000 --directory docs
 ```
-
-`scraper_f1.py` produce `roster.json`, `standings.json`, `events.json`, `meta.json`, `gare/<id>.json` e `piloti/<numero>.json`.
-
-Foto dei piloti e mappe dei circuiti: `foto_wiki.py` le cerca su Wikipedia/Wikimedia Commons, accetta solo licenze libere (CC BY, CC BY-SA, CC0, OGL, pubblico dominio) e salva una copia in `docs/img/foto/`. Autore e licenza di ogni immagine sono mostrati sotto la foto e nella pagina `crediti.html` (obbligatorio per le licenze CC). Il logo è disegnato da zero: sorgente in `docs/img/logo-sorgente.svg`.
-Se un dato manca nella fonte, il sito mostra «n.d.». Il workflow `.github/workflows/update-data.yml` rilancia lo scraper ogni 6 ore e committa `docs/data/`.
+`.github/workflows/update-data.yml` esegue tutto ogni 6 ore (gli archivi solo il lunedì); `.gitlab-ci.yml` fa lo stesso su GitLab Pages. Telegram usa i segreti `TELEGRAM_BOT_TOKEN` e `TELEGRAM_CANALE` (mai nei file).
 
 ## Pubblicazione
+La cartella `docs` è il sito. Dominio: gpoggi.it (OVHcloud). Canonical, og:url e sitemap puntano a https://gpoggi.it/.
+Per usare il dominio nudo su Cloudflare Pages i DNS vanno spostati a Cloudflare; con GitHub Pages bastano i record A e CNAME.
 
-GitHub Pages: Settings → Pages → branch `main`, cartella `/docs`. Dominio: gpoggi.it (registrato su OVHcloud). Canonical, og:url e sitemap puntano a https://gpoggi.it/.
+## Idee per i video
+Vedi `video/IDEE.md`.

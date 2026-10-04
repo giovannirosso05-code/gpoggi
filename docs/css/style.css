@@ -876,22 +876,22 @@ font { background: none !important; box-shadow: none !important; }
 .vota-riga { display: grid; grid-template-columns: 1fr 70px 38px; align-items: center; gap: 8px; font-size: 12.5px; margin-top: 6px; }
 .vota-riga b { text-align: right; }
 
-/* testata scura, più da giornale sportivo: barra dei timer e menu sempre su fondo nero */
-.cd-barra { background: #0c0c10; border-bottom: 1px solid #23232b; color: #e6e5ea; }
-.cd-barra .cd-testo { color: #b9b8c0; }
-.cd-barra .cd-testo b { color: #fff; }
-.cd-barra .cd-sigla.moto { background: #fff; color: #111115; }
-.site-header { background: #141418; border-bottom: 3px solid var(--accent); backdrop-filter: none; }
-.site-header .brand, .site-header .nav-links a { color: #f2f1ee; }
-.site-header .nav-links a:not(.nav-giochi):hover, .site-header .nav-links a.active { color: #fff; }
-.site-header .nav-links a { opacity: .82; }
-.site-header .nav-links a.active, .site-header .nav-links a:hover { opacity: 1; }
-.site-header .brand-logo.chiaro { display: none !important; }
-.site-header .brand-logo.scuro { display: block !important; }
-.site-header .tema-btn { background: #1f1f26; border-color: #34343d; color: #f2f1ee; }
-.site-header .lingua { color: #b9b8c0; }
-.site-header .lingua select { background: #1f1f26; color: #f2f1ee; border-color: #34343d; }
-.site-header .nav-links a.nav-giochi.active { background: #fff; color: #111115; box-shadow: 0 3px 0 #9c9ca6; }
+/* testata scura solo nel tema scuro: nel tema chiaro resta chiara, coerente col resto della pagina */
+:root[data-theme="dark"] .cd-barra { background: #0c0c10; border-bottom: 1px solid #23232b; color: #e6e5ea; }
+:root[data-theme="dark"] .cd-barra .cd-testo { color: #b9b8c0; }
+:root[data-theme="dark"] .cd-barra .cd-testo b { color: #fff; }
+:root[data-theme="dark"] .cd-barra .cd-sigla.moto { background: #fff; color: #111115; }
+:root[data-theme="dark"] .site-header { background: #141418; border-bottom: 3px solid var(--accent); backdrop-filter: none; }
+:root[data-theme="dark"] .site-header .brand, :root[data-theme="dark"] .site-header .nav-links a { color: #f2f1ee; }
+:root[data-theme="dark"] .site-header .nav-links a:not(.nav-giochi):hover, :root[data-theme="dark"] .site-header .nav-links a.active { color: #fff; }
+:root[data-theme="dark"] .site-header .nav-links a { opacity: .82; }
+:root[data-theme="dark"] .site-header .nav-links a.active, :root[data-theme="dark"] .site-header .nav-links a:hover { opacity: 1; }
+:root[data-theme="dark"] .site-header .brand-logo.chiaro { display: none !important; }
+:root[data-theme="dark"] .site-header .brand-logo.scuro { display: block !important; }
+:root[data-theme="dark"] .site-header .tema-btn { background: #1f1f26; border-color: #34343d; color: #f2f1ee; }
+:root[data-theme="dark"] .site-header .lingua { color: #b9b8c0; }
+:root[data-theme="dark"] .site-header .lingua select { background: #1f1f26; color: #f2f1ee; border-color: #34343d; }
+:root[data-theme="dark"] .site-header .nav-links a.nav-giochi.active { background: #fff; color: #111115; box-shadow: 0 3px 0 #9c9ca6; }
 
 /* calendario: prossimi eventi, commento e link ai risultati */
 .pe-griglia { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }

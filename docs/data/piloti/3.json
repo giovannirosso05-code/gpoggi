@@ -5,7 +5,7 @@
  "team": "Red Bull Racing",
  "colore": "4781D7",
  "posizione": 6,
- "punti": 163.0,
+ "punti": 188.0,
  "foto": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg/500px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg",
   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg/1280px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg",
@@ -246,12 +246,15 @@
     "stato": null
    },
    "sprint": null,
-   "gara": null
+   "gara": {
+    "pos": 1,
+    "stato": null
+   }
   }
  ],
- "vittorie": 0,
- "podi": 7,
+ "vittorie": 1,
+ "podi": 8,
  "pole": 1,
- "miglior_arrivo": 2,
+ "miglior_arrivo": 1,
  "ritiri": 4
 }

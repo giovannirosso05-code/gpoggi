@@ -4,8 +4,8 @@
  "nome": "Fernando Alonso",
  "team": "Aston Martin",
  "colore": "229971",
- "posizione": 19,
- "punti": 3.0,
+ "posizione": 17,
+ "punti": 7.0,
  "foto": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Alonso-68_%2824710447098%29.jpg/500px-Alonso-68_%2824710447098%29.jpg",
   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Alonso-68_%2824710447098%29.jpg/1280px-Alonso-68_%2824710447098%29.jpg",
@@ -249,12 +249,15 @@
     "stato": null
    },
    "sprint": null,
-   "gara": null
+   "gara": {
+    "pos": 8,
+    "stato": null
+   }
   }
  ],
  "vittorie": 0,
  "podi": 0,
  "pole": 0,
- "miglior_arrivo": 9,
+ "miglior_arrivo": 8,
  "ritiri": 6
 }

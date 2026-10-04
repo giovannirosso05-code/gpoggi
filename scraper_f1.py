@@ -315,6 +315,8 @@ def main():
     scrivi_schede_piloti(roster, schede)
     scrivi(DATA / "standings.json", standings)
     scrivi(DATA / "meta.json", {"anno": anno, "aggiornato": ORA.isoformat(timespec="seconds"), "fonte": "OpenF1"})
+    from report_gare import aggiorna_report
+    aggiorna_report()
     print(f"Fatto: {len(eventi)} weekend, {len(roster)} piloti, aggiornato {ORA:%Y-%m-%d %H:%M} UTC")
 
 

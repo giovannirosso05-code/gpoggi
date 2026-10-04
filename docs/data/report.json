@@ -1,0 +1,211 @@
+[
+ {
+  "id": 1308,
+  "nome": "Gran Premio del Bahrain",
+  "circuito": "Kuala Lumpur",
+  "paese": "Bahrain",
+  "data": "2026-10-04T09:00:00+00:00",
+  "titolo": "Max Verstappen vince il Gran Premio del Bahrain",
+  "paragrafi": [
+   "Max Verstappen (Red Bull Racing) vince il Gran Premio del Bahrain in 1:47:14.808, davanti a Kimi Antonelli (+2.307) e a Lewis Hamilton (+4.919).",
+   "La pole position era stata di Max Verstappen con 1:35.130.",
+   "Si sono ritirati 3 piloti: George Russell, Alexander Albon, Valtteri Bottas.",
+   "Dopo la gara guida il campionato piloti Kimi Antonelli con 320 punti; tra i costruttori è primo Mercedes con 556."
+  ]
+ },
+ {
+  "id": 1295,
+  "nome": "Gran Premio dell'Azerbaigian",
+  "circuito": "Baku",
+  "paese": "Azerbaigian",
+  "data": "2026-09-26T13:00:00+00:00",
+  "titolo": "George Russell vince il Gran Premio dell'Azerbaigian",
+  "paragrafi": [
+   "George Russell (Mercedes) vince il Gran Premio dell'Azerbaigian in 1:38:02.143, davanti a Max Verstappen (+0.196) e a Isack Hadjar (+10.704).",
+   "La pole position era stata di George Russell con 1:42.526.",
+   "Si sono ritirati 7 piloti: Valtteri Bottas, Franco Colapinto, Pierre Gasly, Lando Norris, Alexander Albon, Fernando Alonso…."
+  ]
+ },
+ {
+  "id": 1294,
+  "nome": "Gran Premio di Spagna",
+  "circuito": "Madring",
+  "paese": "Spagna",
+  "data": "2026-09-13T15:00:00+00:00",
+  "titolo": "Kimi Antonelli vince il Gran Premio di Spagna",
+  "paragrafi": [
+   "Kimi Antonelli (Mercedes) vince il Gran Premio di Spagna in 1:34:23.754, davanti a Max Verstappen (+4.351) e a Lando Norris (+5.089).",
+   "La pole position era stata di Lando Norris con 1:31.824.",
+   "Si sono ritirati 4 piloti: Carlos Sainz, Sergio Perez, Lance Stroll, Lewis Hamilton."
+  ]
+ },
+ {
+  "id": 1293,
+  "nome": "Gran Premio d'Italia",
+  "circuito": "Monza",
+  "paese": "Italia",
+  "data": "2026-09-06T15:00:00+00:00",
+  "titolo": "Kimi Antonelli vince il Gran Premio d'Italia",
+  "paragrafi": [
+   "Kimi Antonelli (Mercedes) vince il Gran Premio d'Italia in 1:51:15.281, davanti a George Russell (+3.857) e a Max Verstappen (+14.718).",
+   "La pole position era stata di Pierre Gasly con 1:21.786.",
+   "Si sono ritirati 3 piloti: Lance Stroll, Fernando Alonso, Charles Leclerc."
+  ]
+ },
+ {
+  "id": 1292,
+  "nome": "Gran Premio d'Olanda",
+  "circuito": "Zandvoort",
+  "paese": "Paesi Bassi",
+  "data": "2026-08-23T15:00:00+00:00",
+  "titolo": "Lando Norris vince il Gran Premio d'Olanda",
+  "paragrafi": [
+   "Lando Norris (McLaren) vince il Gran Premio d'Olanda in 2:04:44.859, davanti a Kimi Antonelli (+11.536) e a George Russell (+15.906).",
+   "La pole position era stata di Lando Norris con 1:11.163.",
+   "Si sono ritirati 6 piloti: Alexander Albon, Valtteri Bottas, Esteban Ocon, Lance Stroll, Oliver Bearman, Max Verstappen."
+  ]
+ },
+ {
+  "id": 1291,
+  "nome": "Gran Premio d'Ungheria",
+  "circuito": "Hungaroring",
+  "paese": "Ungheria",
+  "data": "2026-07-26T15:00:00+00:00",
+  "titolo": "Lando Norris vince il Gran Premio d'Ungheria",
+  "paragrafi": [
+   "Lando Norris (McLaren) vince il Gran Premio d'Ungheria in 1:39:56.180, davanti a Max Verstappen (+15.080) e a Kimi Antonelli (+18.728).",
+   "La pole position era stata di Lando Norris con 1:17.207.",
+   "Si sono ritirati 3 piloti: Oscar Piastri, Sergio Perez, Valtteri Bottas."
+  ]
+ },
+ {
+  "id": 1290,
+  "nome": "Gran Premio del Belgio",
+  "circuito": "Spa-Francorchamps",
+  "paese": "Belgio",
+  "data": "2026-07-19T15:00:00+00:00",
+  "titolo": "Kimi Antonelli vince il Gran Premio del Belgio",
+  "paragrafi": [
+   "Kimi Antonelli (Mercedes) vince il Gran Premio del Belgio in 1:24:42.479, davanti a Charles Leclerc (+1.952) e a Max Verstappen (+11.586).",
+   "La pole position era stata di Kimi Antonelli con 1:44.361.",
+   "Si sono ritirati 3 piloti: Lance Stroll, Sergio Perez, George Russell."
+  ]
+ },
+ {
+  "id": 1289,
+  "nome": "Gran Premio di Gran Bretagna",
+  "circuito": "Silverstone",
+  "paese": "Regno Unito",
+  "data": "2026-07-05T16:00:00+00:00",
+  "titolo": "Charles Leclerc vince il Gran Premio di Gran Bretagna",
+  "paragrafi": [
+   "Charles Leclerc (Ferrari) vince il Gran Premio di Gran Bretagna in 1:27:11.335, davanti a George Russell (+0.427) e a Lewis Hamilton (+0.772).",
+   "La pole position era stata di Kimi Antonelli con 1:28.111.",
+   "Si sono ritirati 3 piloti: Max Verstappen, Alexander Albon, Nico Hulkenberg."
+  ]
+ },
+ {
+  "id": 1288,
+  "nome": "Gran Premio d'Austria",
+  "circuito": "Spielberg",
+  "paese": "Austria",
+  "data": "2026-06-28T15:00:00+00:00",
+  "titolo": "George Russell vince il Gran Premio d'Austria",
+  "paragrafi": [
+   "George Russell (Mercedes) vince il Gran Premio d'Austria in 1:26:37.979, davanti a Max Verstappen (+1.611) e a Kimi Antonelli (+1.986).",
+   "La pole position era stata di George Russell con 1:06.113.",
+   "Si sono ritirati 4 piloti: Lance Stroll, Carlos Sainz, Sergio Perez, Valtteri Bottas."
+  ]
+ },
+ {
+  "id": 1287,
+  "nome": "Gran Premio di Barcellona",
+  "circuito": "Catalunya",
+  "paese": "Spagna",
+  "data": "2026-06-14T15:00:00+00:00",
+  "titolo": "Lewis Hamilton vince il Gran Premio di Barcellona",
+  "paragrafi": [
+   "Lewis Hamilton (Ferrari) vince il Gran Premio di Barcellona in 1:32:28.105, davanti a George Russell (+19.561) e a Lando Norris (+23.719).",
+   "La pole position era stata di George Russell con 1:14.679.",
+   "Si sono ritirati 7 piloti: Charles Leclerc, Kimi Antonelli, Oliver Bearman, Fernando Alonso, Nico Hulkenberg, Valtteri Bottas…."
+  ]
+ },
+ {
+  "id": 1286,
+  "nome": "Gran Premio di Monaco",
+  "circuito": "Monte Carlo",
+  "paese": "Monaco",
+  "data": "2026-06-07T15:00:00+00:00",
+  "titolo": "Kimi Antonelli vince il Gran Premio di Monaco",
+  "paragrafi": [
+   "Kimi Antonelli (Mercedes) vince il Gran Premio di Monaco in 2:23:31.243, davanti a Lewis Hamilton (+6.271) e a Isack Hadjar (+23.394).",
+   "La pole position era stata di Kimi Antonelli con 1:12.051.",
+   "Si sono ritirati 7 piloti: Carlos Sainz, Charles Leclerc, Lance Stroll, Lando Norris, Oliver Bearman, Valtteri Bottas…."
+  ]
+ },
+ {
+  "id": 1285,
+  "nome": "Gran Premio del Canada",
+  "circuito": "Montreal",
+  "paese": "Canada",
+  "data": "2026-05-24T22:00:00+00:00",
+  "titolo": "Kimi Antonelli vince il Gran Premio del Canada",
+  "paragrafi": [
+   "Kimi Antonelli (Mercedes) vince il Gran Premio del Canada in 1:28:15.758, davanti a Lewis Hamilton (+10.768) e a Max Verstappen (+11.276).",
+   "La pole position era stata di George Russell con 1:12.578.",
+   "Si sono ritirati 5 piloti: Sergio Perez, Lando Norris, George Russell, Fernando Alonso, Alexander Albon."
+  ]
+ },
+ {
+  "id": 1284,
+  "nome": "Gran Premio di Miami",
+  "circuito": "Miami",
+  "paese": "Stati Uniti",
+  "data": "2026-05-03T19:00:00+00:00",
+  "titolo": "Kimi Antonelli vince il Gran Premio di Miami",
+  "paragrafi": [
+   "Kimi Antonelli (Mercedes) vince il Gran Premio di Miami in 1:33:19.273, davanti a Lando Norris (+3.264) e a Oscar Piastri (+27.092).",
+   "La pole position era stata di Kimi Antonelli con 1:27.798.",
+   "Si sono ritirati 4 piloti: Nico Hulkenberg, Liam Lawson, Pierre Gasly, Isack Hadjar."
+  ]
+ },
+ {
+  "id": 1281,
+  "nome": "Gran Premio del Giappone",
+  "circuito": "Suzuka",
+  "paese": "Giappone",
+  "data": "2026-03-29T07:00:00+00:00",
+  "titolo": "Kimi Antonelli vince il Gran Premio del Giappone",
+  "paragrafi": [
+   "Kimi Antonelli (Mercedes) vince il Gran Premio del Giappone in 1:28:03.403, davanti a Oscar Piastri (+13.722) e a Charles Leclerc (+15.270).",
+   "La pole position era stata di Kimi Antonelli con 1:28.778.",
+   "Si sono ritirati 2 piloti: Lance Stroll, Oliver Bearman."
+  ]
+ },
+ {
+  "id": 1280,
+  "nome": "Gran Premio di Cina",
+  "circuito": "Shanghai",
+  "paese": "Cina",
+  "data": "2026-03-15T09:00:00+00:00",
+  "titolo": "Kimi Antonelli vince il Gran Premio di Cina",
+  "paragrafi": [
+   "Kimi Antonelli (Mercedes) vince il Gran Premio di Cina in 1:33:15.607, davanti a George Russell (+5.515) e a Lewis Hamilton (+25.267).",
+   "La pole position era stata di Kimi Antonelli con 1:32.064.",
+   "Si sono ritirati 3 piloti: Max Verstappen, Fernando Alonso, Lance Stroll."
+  ]
+ },
+ {
+  "id": 1279,
+  "nome": "Gran Premio d'Australia",
+  "circuito": "Melbourne",
+  "paese": "Australia",
+  "data": "2026-03-08T06:00:00+00:00",
+  "titolo": "George Russell vince il Gran Premio d'Australia",
+  "paragrafi": [
+   "George Russell (Mercedes) vince il Gran Premio d'Australia in 1:23:06.801, davanti a Kimi Antonelli (+2.974) e a Charles Leclerc (+15.519).",
+   "La pole position era stata di George Russell con 1:18.518.",
+   "Si sono ritirati 3 piloti: Fernando Alonso, Valtteri Bottas, Isack Hadjar."
+  ]
+ }
+]

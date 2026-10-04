@@ -41,8 +41,8 @@ export function renderHeader(paginaAttuale) {
     ["piloti", "piloti.html", "Piloti"],
     ["classifiche", "classifiche.html", "Classifiche"],
     ["gare", "gare.html", "Gare"],
+    ["notizie", "notizie.html", "Notizie"],
     ["confronto", "confronto.html", "Confronto"],
-    ["chi-siamo", "chi-siamo.html", "Info"],
   ];
   document.getElementById("site-header").innerHTML = `
     <nav class="nav container">
@@ -71,6 +71,7 @@ export function renderFooter() {
           <li><a href="piloti.html">Piloti</a></li>
           <li><a href="classifiche.html">Classifiche</a></li>
           <li><a href="gare.html">Calendario</a></li>
+          <li><a href="notizie.html">Notizie</a></li>
           <li><a href="confronto.html">Confronto</a></li>
         </ul>
       </div>

@@ -243,12 +243,15 @@
     "stato": null
    },
    "sprint": null,
-   "gara": null
+   "gara": {
+    "pos": 12,
+    "stato": null
+   }
   }
  ],
  "vittorie": 0,
  "podi": 0,
  "pole": 0,
- "miglior_arrivo": 13,
+ "miglior_arrivo": 12,
  "ritiri": 10
 }

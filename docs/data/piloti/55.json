@@ -4,7 +4,7 @@
  "nome": "Carlos Sainz",
  "team": "Williams",
  "colore": "1868DB",
- "posizione": 17,
+ "posizione": 18,
  "punti": 7.0,
  "foto": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_%28cropped%29.jpg/500px-Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_%28cropped%29.jpg",
@@ -246,7 +246,10 @@
     "stato": null
    },
    "sprint": null,
-   "gara": null
+   "gara": {
+    "pos": 17,
+    "stato": null
+   }
   }
  ],
  "vittorie": 0,

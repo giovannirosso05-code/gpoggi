@@ -249,7 +249,10 @@
     "stato": "RIT"
    },
    "sprint": null,
-   "gara": null
+   "gara": {
+    "pos": 13,
+    "stato": null
+   }
   }
  ],
  "vittorie": 0,

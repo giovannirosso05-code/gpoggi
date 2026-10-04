@@ -4,7 +4,7 @@
  "nome": "Alexander Albon",
  "team": "Williams",
  "colore": "1868DB",
- "posizione": 18,
+ "posizione": 19,
  "punti": 5.0,
  "foto": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Alex_Albon_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8626%29_%28cropped%29.jpg/500px-Alex_Albon_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8626%29_%28cropped%29.jpg",
@@ -249,12 +249,15 @@
     "stato": null
    },
    "sprint": null,
-   "gara": null
+   "gara": {
+    "pos": null,
+    "stato": "RIT"
+   }
   }
  ],
  "vittorie": 0,
  "podi": 0,
  "pole": 0,
  "miglior_arrivo": 8,
- "ritiri": 4
+ "ritiri": 5
 }

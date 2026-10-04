@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, img, credito, intervalloWeekend, formattaDataOra, punti, stemma, ND, erroreCaricamento } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, img, credito, intervalloWeekend, formattaData, formattaDataOra, punti, stemma, ND, erroreCaricamento } from "./common.js";
 
 renderHeader("home");
 renderFooter();
@@ -81,6 +81,14 @@ try {
 
   document.getElementById("mini-costruttori").innerHTML = standings.costruttori.slice(0, 5).map((c) => `
     <li><a href="classifiche.html"><span class="pos">${c.posizione}</span>${stemma(c.team, c.colore)}<span>${esc(c.team)}</span><span class="pt">${punti(c.punti)}</span></a></li>`).join("");
+
+  try {
+    const report = await fetchJSON("data/report.json");
+    document.getElementById("ultime-notizie").innerHTML = report.slice(0, 3).map((r) => `
+      <a class="evento-widget-mini" href="notizie.html"><div>
+        <div class="evento-widget-mini-nome">${esc(r.titolo)}</div>
+        <div class="evento-widget-mini-data">${formattaData(r.data)}</div></div></a>`).join("");
+  } catch (e) {}
 
   const prossimi = eventi.filter((g) => new Date(g.fine) > ora).slice(0, 3);
   document.getElementById("prossimi-mini").innerHTML = prossimi.length ? prossimi.map((g) => `

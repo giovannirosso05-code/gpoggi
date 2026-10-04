@@ -1,5 +1,5 @@
 {
- "dopo": "Gran Premio dell'Azerbaigian",
+ "dopo": "Gran Premio del Bahrain",
  "piloti": [
   {
    "numero": 12,
@@ -8,7 +8,7 @@
    "team": "Mercedes",
    "colore": "00D7B6",
    "posizione": 1,
-   "punti": 302.0,
+   "punti": 320.0,
    "foto": {
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Kimi_Antonelli_at_the_2025_US_Grand_Prix_in_Austin%2C_TX_%28cropped%29.jpg/500px-Kimi_Antonelli_at_the_2025_US_Grand_Prix_in_Austin%2C_TX_%28cropped%29.jpg",
     "grande": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Kimi_Antonelli_at_the_2025_US_Grand_Prix_in_Austin%2C_TX_%28cropped%29.jpg",
@@ -43,7 +43,7 @@
    "team": "Ferrari",
    "colore": "ED1131",
    "posizione": 3,
-   "punti": 199.0,
+   "punti": 214.0,
    "foto": {
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Prime_Minister_Keir_Starmer_meets_Sir_Lewis_Hamilton_%2854566928382%29_%28cropped%29.jpg/500px-Prime_Minister_Keir_Starmer_meets_Sir_Lewis_Hamilton_%2854566928382%29_%28cropped%29.jpg",
     "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Prime_Minister_Keir_Starmer_meets_Sir_Lewis_Hamilton_%2854566928382%29_%28cropped%29.jpg/1280px-Prime_Minister_Keir_Starmer_meets_Sir_Lewis_Hamilton_%2854566928382%29_%28cropped%29.jpg",
@@ -54,30 +54,13 @@
    }
   },
   {
-   "numero": 1,
-   "acronimo": "NOR",
-   "nome": "Lando Norris",
-   "team": "McLaren",
-   "colore": "F47600",
-   "posizione": 4,
-   "punti": 186.0,
-   "foto": {
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_%28cropped2%29.jpg/500px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_%28cropped2%29.jpg",
-    "grande": "https://upload.wikimedia.org/wikipedia/commons/9/90/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_%28cropped2%29.jpg",
-    "autore": "Original:  Steffen Prößdorf; Derivative work:  Mb2437",
-    "licenza": "CC BY-SA 4.0",
-    "pagina": "https://commons.wikimedia.org/wiki/File:2024-08-25_Motorsport,_Formel_1,_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_(cropped2).jpg",
-    "file": "img/foto/9a47585746ab2c10.jpg"
-   }
-  },
-  {
    "numero": 16,
    "acronimo": "LEC",
    "nome": "Charles Leclerc",
    "team": "Ferrari",
    "colore": "ED1131",
-   "posizione": 5,
-   "punti": 179.0,
+   "posizione": 4,
+   "punti": 191.0,
    "foto": {
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg/500px-Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg",
     "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg/1280px-Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg",
@@ -88,13 +71,30 @@
    }
   },
   {
+   "numero": 1,
+   "acronimo": "NOR",
+   "nome": "Lando Norris",
+   "team": "McLaren",
+   "colore": "F47600",
+   "posizione": 5,
+   "punti": 188.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_%28cropped2%29.jpg/500px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_%28cropped2%29.jpg",
+    "grande": "https://upload.wikimedia.org/wikipedia/commons/9/90/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_%28cropped2%29.jpg",
+    "autore": "Original:  Steffen Prößdorf; Derivative work:  Mb2437",
+    "licenza": "CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:2024-08-25_Motorsport,_Formel_1,_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_(cropped2).jpg",
+    "file": "img/foto/9a47585746ab2c10.jpg"
+   }
+  },
+  {
    "numero": 3,
    "acronimo": "VER",
    "nome": "Max Verstappen",
    "team": "Red Bull Racing",
    "colore": "4781D7",
    "posizione": 6,
-   "punti": 163.0,
+   "punti": 188.0,
    "foto": {
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg/500px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg",
     "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg/1280px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg",
@@ -111,7 +111,7 @@
    "team": "McLaren",
    "colore": "F47600",
    "posizione": 7,
-   "punti": 120.0,
+   "punti": 128.0,
    "foto": {
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/2026_Chinese_GP_-_Oscar_Piastri_%28cropped%29_%28cropped%29.jpg/500px-2026_Chinese_GP_-_Oscar_Piastri_%28cropped%29_%28cropped%29.jpg",
     "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/2026_Chinese_GP_-_Oscar_Piastri_%28cropped%29_%28cropped%29.jpg/1280px-2026_Chinese_GP_-_Oscar_Piastri_%28cropped%29_%28cropped%29.jpg",
@@ -128,7 +128,7 @@
    "team": "Red Bull Racing",
    "colore": "4781D7",
    "posizione": 8,
-   "punti": 86.0,
+   "punti": 96.0,
    "foto": {
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Isack_Hadjar_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8753%29_%28cropped%29.jpg/500px-Isack_Hadjar_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8753%29_%28cropped%29.jpg",
     "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Isack_Hadjar_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8753%29_%28cropped%29.jpg/1280px-Isack_Hadjar_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8753%29_%28cropped%29.jpg",
@@ -145,7 +145,7 @@
    "team": "Racing Bulls",
    "colore": "6C98FF",
    "posizione": 9,
-   "punti": 59.0,
+   "punti": 65.0,
    "foto": {
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Liam_Lawson_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk%2C_Melbourne_%28028A7795%29.jpg/500px-Liam_Lawson_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk%2C_Melbourne_%28028A7795%29.jpg",
     "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Liam_Lawson_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk%2C_Melbourne_%28028A7795%29.jpg/1280px-Liam_Lawson_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk%2C_Melbourne_%28028A7795%29.jpg",
@@ -179,7 +179,7 @@
    "team": "Racing Bulls",
    "colore": "6C98FF",
    "posizione": 11,
-   "punti": 37.0,
+   "punti": 38.0,
    "foto": {
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Arvid_Lindblad_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk%2C_Melbourne_%28028A7869%29_%28cropped%29.jpg/500px-Arvid_Lindblad_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk%2C_Melbourne_%28028A7869%29_%28cropped%29.jpg",
     "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Arvid_Lindblad_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk%2C_Melbourne_%28028A7869%29_%28cropped%29.jpg/1280px-Arvid_Lindblad_at_the_Red_Bull_Fan_Zone_%E2%80%93_Crown_Riverwalk%2C_Melbourne_%28028A7869%29_%28cropped%29.jpg",
@@ -275,12 +275,29 @@
    }
   },
   {
+   "numero": 14,
+   "acronimo": "ALO",
+   "nome": "Fernando Alonso",
+   "team": "Aston Martin",
+   "colore": "229971",
+   "posizione": 17,
+   "punti": 7.0,
+   "foto": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Alonso-68_%2824710447098%29.jpg/500px-Alonso-68_%2824710447098%29.jpg",
+    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Alonso-68_%2824710447098%29.jpg/1280px-Alonso-68_%2824710447098%29.jpg",
+    "autore": "United Autosports",
+    "licenza": "CC BY-SA 2.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Alonso-68_(24710447098).jpg",
+    "file": "img/foto/c9492ba2d4b04572.jpg"
+   }
+  },
+  {
    "numero": 55,
    "acronimo": "SAI",
    "nome": "Carlos Sainz",
    "team": "Williams",
    "colore": "1868DB",
-   "posizione": 17,
+   "posizione": 18,
    "punti": 7.0,
    "foto": {
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_%28cropped%29.jpg/500px-Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_%28cropped%29.jpg",
@@ -297,7 +314,7 @@
    "nome": "Alexander Albon",
    "team": "Williams",
    "colore": "1868DB",
-   "posizione": 18,
+   "posizione": 19,
    "punti": 5.0,
    "foto": {
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Alex_Albon_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8626%29_%28cropped%29.jpg/500px-Alex_Albon_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8626%29_%28cropped%29.jpg",
@@ -306,23 +323,6 @@
     "licenza": "CC BY-SA 4.0",
     "pagina": "https://commons.wikimedia.org/wiki/File:Alex_Albon_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_(028A8626)_(cropped).jpg",
     "file": "img/foto/f273f206c00ae1e7.jpg"
-   }
-  },
-  {
-   "numero": 14,
-   "acronimo": "ALO",
-   "nome": "Fernando Alonso",
-   "team": "Aston Martin",
-   "colore": "229971",
-   "posizione": 19,
-   "punti": 3.0,
-   "foto": {
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Alonso-68_%2824710447098%29.jpg/500px-Alonso-68_%2824710447098%29.jpg",
-    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Alonso-68_%2824710447098%29.jpg/1280px-Alonso-68_%2824710447098%29.jpg",
-    "autore": "United Autosports",
-    "licenza": "CC BY-SA 2.0",
-    "pagina": "https://commons.wikimedia.org/wiki/File:Alonso-68_(24710447098).jpg",
-    "file": "img/foto/c9492ba2d4b04572.jpg"
    }
   },
   {
@@ -399,31 +399,31 @@
    "posizione": 1,
    "team": "Mercedes",
    "colore": "00D7B6",
-   "punti": 538.0
+   "punti": 556.0
   },
   {
    "posizione": 2,
    "team": "Ferrari",
    "colore": "ED1131",
-   "punti": 378.0
+   "punti": 405.0
   },
   {
    "posizione": 3,
    "team": "McLaren",
    "colore": "F47600",
-   "punti": 306.0
+   "punti": 316.0
   },
   {
    "posizione": 4,
    "team": "Red Bull Racing",
    "colore": "4781D7",
-   "punti": 263.0
+   "punti": 298.0
   },
   {
    "posizione": 5,
    "team": "Racing Bulls",
    "colore": "6C98FF",
-   "punti": 83.0
+   "punti": 90.0
   },
   {
    "posizione": 6,
@@ -453,7 +453,7 @@
    "posizione": 10,
    "team": "Aston Martin",
    "colore": "229971",
-   "punti": 3.0
+   "punti": 7.0
   },
   {
    "posizione": 11,

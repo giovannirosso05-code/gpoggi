@@ -249,12 +249,15 @@
     "stato": null
    },
    "sprint": null,
-   "gara": null
+   "gara": {
+    "pos": 20,
+    "stato": "RIT"
+   }
   }
  ],
  "vittorie": 3,
  "podi": 8,
  "pole": 5,
  "miglior_arrivo": 1,
- "ritiri": 2
+ "ritiri": 3
 }

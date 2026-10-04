@@ -616,3 +616,21 @@ select.sel {
   .nav-destra { width: 100%; justify-content: space-between; gap: 8px; }
   .nav-destra .nav-links { width: auto; flex: 1; }
 }
+
+/* ---------- Notizie ---------- */
+
+.report-lista { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.report-card { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-card); padding: 20px; min-width: 0; }
+.report-card.in-evidenza { margin-bottom: 16px; border-left: 5px solid var(--accent); }
+.report-card h3 { font-size: 20px; line-height: 1.2; margin: 6px 0 12px; }
+.report-card h3 a:hover { color: var(--accent); }
+.report-card p { margin: 0 0 10px; font-size: 14px; color: var(--text-secondary); }
+.report-data { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); }
+.report-card > a.accent { font-weight: 600; font-size: 13px; }
+@media (max-width: 768px) { .report-lista { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .nav-links { overflow-x: auto; scrollbar-width: none; } .nav-links a { flex: none; } }
+@media (max-width: 600px) {
+  .nav-destra { display: contents; }
+  .nav .tema-btn { order: 2; }
+  .nav .nav-links { order: 3; width: 100%; flex: none; overflow-x: visible; justify-content: space-between; font-size: 12px; gap: 4px; }
+}

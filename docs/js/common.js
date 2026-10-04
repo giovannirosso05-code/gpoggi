@@ -58,6 +58,8 @@ export function renderHeader(paginaAttuale) {
     const nuovo = temaCorrente() === "dark" ? "light" : "dark";
     document.documentElement.dataset.theme = nuovo;
     try { localStorage.setItem("tema", nuovo); } catch (e) {}
+    // riserva se il browser blocca localStorage (anteprime, finestre incorporate): window.name resta tra una pagina e l'altra
+    window.name = window.name.replace(/(^|;)gpoggi-tema=[a-z]+/, "") + ";gpoggi-tema=" + nuovo;
   });
 }
 

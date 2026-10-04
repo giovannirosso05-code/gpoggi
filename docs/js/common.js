@@ -78,6 +78,7 @@ export function renderFooter() {
         <h3>Fonte dati</h3>
         <ul>
           <li><a href="https://openf1.org/" target="_blank" rel="noopener">OpenF1</a></li>
+          <li class="muted">Progetto senza scopo di lucro</li>
           <li id="footer-aggiornato"></li>
         </ul>
       </div>

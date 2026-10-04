@@ -17,10 +17,11 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -r requirements.txt
-      - run: python scraper_f1.py
+      - name: Scarica i dati (se c'è una sessione dal vivo si salta il giro)
+        run: python scraper_f1.py || [ $? -eq 75 ]
       - name: Commit se ci sono novità
         run: |
           git config user.name "gpoggi-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/data docs/img/foto
+          git add docs/data docs/img/foto foto_cache.json
           git diff --cached --quiet || (git commit -m "dati: aggiornamento da OpenF1" && git push)

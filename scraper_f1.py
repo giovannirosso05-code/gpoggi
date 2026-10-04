@@ -77,6 +77,10 @@ def parse_data(s):
     return datetime.fromisoformat(s)
 
 
+class SessioneLive(Exception):
+    """OpenF1 blocca l'accesso gratuito mentre c'e' una sessione dal vivo."""
+
+
 def get(path, params=None, definitivo=False):
     """GET su OpenF1 con retry su 429. 'No results found' (404) = lista vuota."""
     chiave = hashlib.md5(f"{path}{sorted((params or {}).items())}".encode()).hexdigest()
@@ -97,6 +101,8 @@ def get(path, params=None, definitivo=False):
         if r.status_code == 429:
             time.sleep(2 * (tentativo + 1))
             continue
+        if r.status_code == 401 and "Live F1 session" in r.text:
+            raise SessioneLive(r.text[:200])
         r.raise_for_status()
     raise RuntimeError(f"OpenF1 non risponde su {path} {params}")
 
@@ -252,7 +258,7 @@ def main():
                       | {"sessioni": [{k: s[k] for k in ("nome", "tipo", "inizio", "fine")} for s in lista]})
         print(f"  {m['meeting_name']}: {len(finiti)}/{len(sess)} sessioni disputate")
 
-    file_foto = CACHE / "foto.json"
+    file_foto = ROOT / "foto_cache.json"  # nel repository: così l'aggiornamento automatico non rifa le ricerche su Wikimedia
     cache_foto = json.loads(file_foto.read_text()) if file_foto.exists() else {}
     for g in eventi:
         g["mappa"] = dict(con_cache(cache_foto, "circuito:" + g["circuito"], mappa_circuito, g["circuito"]) or {}) or None
@@ -300,8 +306,7 @@ def main():
         salva_in_locale(p["foto"], CARTELLA_FOTO, "img/foto")
         if p["posizione"] == 1:
             salva_in_locale(p["foto"], CARTELLA_FOTO, "img/foto", "grande", "file_grande")
-    CACHE.mkdir(exist_ok=True)
-    file_foto.write_text(json.dumps(cache_foto, ensure_ascii=False))
+    file_foto.write_text(json.dumps(cache_foto, ensure_ascii=False, indent=1))
     scrivi(DATA / "roster.json", roster)
     usate = {Path(f[k]).name for f in [p["foto"] for p in roster] + [g["mappa"] for g in eventi] if f for k in ("file", "file_grande") if f.get(k)}
     for vecchia in CARTELLA_FOTO.glob("*"):
@@ -314,4 +319,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except SessioneLive as e:
+        # sessione dal vivo: si lasciano i dati gia' pubblicati e si riprova al prossimo giro
+        print("Sessione dal vivo in corso, aggiornamento saltato:", e)
+        sys.exit(75)

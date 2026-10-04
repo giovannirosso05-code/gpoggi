@@ -1,0 +1,17 @@
+# Pubblicazione su GitLab Pages con aggiornamento automatico dei dati.
+# Dopo aver caricato il progetto: Build > Pipeline schedules > nuova pianificazione con cron "0 */6 * * *".
+pages:
+  image: python:3.12-slim
+  script:
+    - pip install -r requirements.txt
+    - python scraper_f1.py
+    - mkdir -p public
+    - cp -r docs/. public/
+  allow_failure:
+    exit_codes: 75  # sessione dal vivo: OpenF1 blocca l'accesso, il sito resta com'è
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

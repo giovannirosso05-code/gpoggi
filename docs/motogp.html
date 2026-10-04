@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=49">
+<link rel="stylesheet" href="css/style.css?v=50">
 </head>
 <body>
 
@@ -31,7 +31,6 @@
   <div id="moto-box">
     <div class="section-title" style="margin-top:28px">MotoGP</div>
     <section class="hero2 uno" id="hero-moto"><a class="hero2-lato moto" id="pross-moto" href="calendario.html"><span class="cd-sigla moto">MotoGP</span><span class="muted">Caricamento…</span></a></section>
-    <section id="m-prossimo" class="blocco" style="margin-top:22px"></section>
 
     <section class="prono blocco" id="prono" hidden>
       <div class="section-title">Chi vince? Il pronostico</div>
@@ -39,25 +38,29 @@
       <p class="muted prono-nota" id="prono-nota"></p>
     </section>
 
-    <section class="blocco"><div class="section-title" style="margin-top:0">Gare</div>
-    <p class="muted" style="margin:-6px 0 12px;font-size:13px">La prossima e quelle già disputate. Per le altre gare future vai al <a class="accent" href="calendario.html">Calendario →</a></p>
-    <div id="gare-moto"></div></section>
-
-    <section class="blocco"><div class="category-pills" id="m-cat"><button class="pill active" data-c="MotoGP">MotoGP</button><button class="pill" data-c="Moto2">Moto2</button><button class="pill" data-c="Moto3">Moto3</button></div>
-    <div class="two-col" style="margin-top:20px">
-      <div><h3 class="section-title" style="margin-top:0">Ultima gara <span class="count" id="m-ultima-nome"></span></h3><div id="m-ultima"></div></div>
-      <div><h3 class="section-title" style="margin-top:0">Classifica piloti</h3><p class="muted" id="m-agg" style="font-size:12px;margin:-8px 0 10px"></p><div id="m-classifica"></div></div>
-    </div></section>
-    <section class="blocco"><h3 class="section-title" style="margin-top:0">Com'è andata</h3><div id="m-report"></div></section>
-    <section class="blocco"><h3 class="section-title" style="margin-top:0">Notizie MotoGP</h3><div id="m-notizie" class="rassegna"></div></section>
-    <a class="vai-piloti" href="piloti.html?serie=motogp" style="margin-top:22px"><div>Piloti MotoGP, Moto2 e Moto3<br><span>In pista oggi e ultimi 20 anni: schede con foto e numeri</span></div><b>Vedi i piloti →</b></a>
-    <p class="muted" style="margin:18px 0 0;font-size:14px"><a class="accent" href="motogp-archivio.html">Archivio storico della MotoGP →</a></p>
+    <div class="home-layout">
+      <div class="home-sezioni">
+        <section class="blocco"><div class="section-title" style="margin-top:0">Gare</div>
+          <p class="muted" style="margin:-6px 0 12px;font-size:13px">La prossima e quelle già disputate. Per le altre gare future vai al <a class="accent" href="calendario.html">Calendario →</a></p>
+          <div id="gare-moto"></div></section>
+        <section class="blocco"><div class="section-title" style="margin-top:0">Com'è andata</div><div id="m-report"></div></section>
+        <section class="blocco"><div class="section-title" style="margin-top:0">Classifica piloti</div>
+          <div class="category-pills" id="m-cat" style="margin-bottom:10px"><button class="pill active" data-c="MotoGP">MotoGP</button><button class="pill" data-c="Moto2">Moto2</button><button class="pill" data-c="Moto3">Moto3</button></div>
+          <p class="muted" id="m-agg" style="font-size:13px;margin:0 0 12px"></p><div id="m-classifica"></div>
+          <a class="evento-widget-tutti" href="classifiche.html?serie=motogp" style="display:block;margin-top:10px">Classifiche complete →</a></section>
+        <a class="vai-piloti" href="piloti.html?serie=motogp"><div>Piloti MotoGP, Moto2 e Moto3<br><span>In pista oggi e ultimi 20 anni: schede con foto e numeri</span></div><b>Vedi i piloti →</b></a>
+      </div>
+      <aside class="home-aside">
+        <div class="evento-widget"><div class="evento-widget-titolo">Notizie MotoGP</div><div id="m-notizie"></div><a class="evento-widget-tutti" href="notizie.html">Tutte le notizie →</a></div>
+        <div class="evento-widget"><div class="evento-widget-titolo">Team</div><ol class="mini-classifica" id="m-team"></ol><a class="evento-widget-tutti" href="motogp-archivio.html">Archivio storico MotoGP →</a></div>
+      </aside>
+    </div>
     <p class="credito center" style="margin-top:24px">Calendario e risultati MotoGP dal servizio pubblico del campionato, per uso non commerciale. Sito non ufficiale, non affiliato a MotoGP o Dorna.</p>
   </div>
 </div>
 
 <footer id="site-footer" class="site-footer"></footer>
 
-<script type="module" src="js/motogp.js?v=49"></script>
+<script type="module" src="js/motogp.js?v=50"></script>
 </body>
 </html>

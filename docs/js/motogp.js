@@ -31,11 +31,11 @@ function tabellaClassifica(pil) {
 
 function disegnaCategoria() {
   document.querySelectorAll("#m-cat .pill").forEach((b) => b.classList.toggle("active", b.dataset.c === cat));
-  const u = ultima.categorie && ultima.categorie[cat];
-  document.getElementById("m-ultima-nome").textContent = u ? `· ${u.nome}` : "";
-  document.getElementById("m-ultima").innerHTML = u ? tabellaGara(u.risultati) + `<a class="guarda-gara" href="gara-moto.html?gp=${encodeURIComponent(u.nome)}${document.documentElement.dataset.theme ? "&tema=" + document.documentElement.dataset.theme : ""}">Guarda il resto della gara →</a>` : `<p class="muted">Risultati non disponibili.</p>`;
   const pil = classifica.categorie[cat] || [];
   document.getElementById("m-classifica").innerHTML = pil.length ? tabellaClassifica(pil) : `<p class="muted">Classifica non disponibile.</p>`;
+  const squadre = {};
+  pil.forEach((p) => { const t = (squadre[p.team] ||= { team: p.team, moto: p.moto, punti: 0 }); t.punti += p.punti; });
+  document.getElementById("m-team").innerHTML = Object.values(squadre).sort((a, b) => b.punti - a.punti).slice(0, 5).map((t, i) => `<li><a href="classifiche.html?serie=${cat.toLowerCase()}"><span class="pos">${i + 1}</span>${stemmaMoto(t.moto)}<span>${esc(t.team)}</span><span class="pt">${punti(t.punti)}</span></a></li>`).join("");
 }
 
 try {
@@ -43,10 +43,6 @@ try {
   classifica = cl; ultima = ul;
   const weekend = calendario.weekend;
   const w = weekend[0];
-  document.getElementById("m-prossimo").innerHTML = w ? `<article class="moto-prossimo"><span class="kicker">Prossimo weekend</span><h2>${esc(w.nome)}</h2>
-      <p class="muted" style="margin:0 0 14px">${esc(w.circuito)} · ${esc(w.paese)} · ora italiana · programma della classe MotoGP</p>
-      ${MAPPE[w.circuito] ? `<div class="mappa-circuito">${img(MAPPE[w.circuito], "Tracciato di " + w.circuito)}<p class="credito">${credito(MAPPE[w.circuito], "Mappa")}</p></div>` : ""}
-      <div class="moto-sessioni">${w.sessioni.map((s) => `<div class="moto-sess"><b>${esc(s.nome)}</b><span>${formattaDataOra(s.inizio)}</span></div>`).join("")}</div></article>` : `<p class="muted">Nessun weekend in programma.</p>`;
   document.getElementById("m-agg").textContent = `Dati aggiornati al ${new Date(calendario.generato_il).toLocaleString("it-IT", { dateStyle: "short", timeStyle: "short", timeZone: "Europe/Rome" })}`;
   document.getElementById("m-cat").addEventListener("click", (e) => { const b = e.target.closest(".pill"); if (b) { cat = b.dataset.c; disegnaCategoria(); } });
   disegnaCategoria();
@@ -88,7 +84,7 @@ try {
   document.getElementById("gare-moto").innerHTML = (prossimo ? `<h4 class="gare-sottotitolo prossima">Prossima gara</h4><div class="gare-grid">` + cardMoto(prossimo.nome, prossimo.circuito, `${dataIt(prossimo.sessioni[0].inizio)} – ${dataIt((prossimo.sessioni.find((s) => s.codice === "RAC") || prossimo.sessioni[prossimo.sessioni.length - 1]).inizio)}`, false) + `</div>` : "")
     + (passateM.length ? `<h4 class="gare-sottotitolo">Gare già disputate</h4><div class="gare-grid">` + passateM.map((g) => cardMoto(g.nome, g.circuito, new Date(g.data).toLocaleDateString("it-IT", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }), true)).join("") + `</div>` : "");
   const ras = await fetchJSON("data/rassegna.json").catch(() => null);
-  document.getElementById("m-notizie").innerHTML = ras ? ras.articoli.filter((a) => a.serie === "MotoGP").slice(0, 6).map((a) => `<article class="rassegna-voce"><div class="report-data">${esc(a.fonte)}</div><h3><a href="${esc(a.url)}" target="_blank" rel="noopener nofollow">${esc(a.titolo)}</a></h3>${a.estratto ? `<p>${esc(a.estratto)}</p>` : ""}</article>`).join("") : "";
+  document.getElementById("m-notizie").innerHTML = ras ? ras.articoli.filter((a) => a.serie === "MotoGP").slice(0, 5).map((a) => `<a class="evento-widget-mini" href="${esc(a.url)}" target="_blank" rel="noopener nofollow"><div><div class="evento-widget-mini-nome">${esc(a.titolo)}</div><div class="evento-widget-mini-data">${esc(a.fonte)}</div></div></a>`).join("") : "";
 } catch (e) {
   erroreCaricamento(box);
 }

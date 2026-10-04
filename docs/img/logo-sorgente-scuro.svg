@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420">
+  <g transform="translate(-16,54) scale(1.49,0.86)" opacity="1"><g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path id="pista" d="M60 384 L420 384 C488 384 508 330 486 290 C476 270 462 258 444 244 L300 120 C280 104 252 100 232 108 C208 118 206 142 222 154 L238 166 L120 214 C100 222 92 236 98 252 L108 262 L84 276 C40 296 24 340 40 366 C46 376 52 384 60 384 Z" stroke="#4d4d5a" stroke-width="7" vector-effect="non-scaling-stroke"/>
+    
+  </g></g>
+  <ellipse cx="380" cy="372" rx="340" ry="8" fill="#000" opacity=".16"/>
+  <g transform="translate(123,-92)"><!-- etichetta OGGI -->
+  <rect x="95" y="122" width="112" height="100" fill="#f2f1ee"/><rect x="207" y="122" width="212" height="100" fill="#e8352f"/>
+  <text x="151" y="203" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="86" fill="#15151a">GP</text><text x="313" y="203" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="86" fill="#ffffff">OGGI</text>
+</g>
+  <g transform="translate(30,104) scale(.7)"><!-- ala posteriore -->
+  <path d="M22 258 Q60 248 112 252 L110 268 Q62 266 24 274 Z" fill="#ececf0"/>
+  <path d="M30 270 L46 268 L58 344 L42 346 Z" fill="#ececf0"/>
+  <path d="M78 266 L88 266 L92 316 L82 316 Z" fill="#ececf0"/>
+  <!-- scocca -->
+  <path d="M44 344 L52 312 Q120 300 170 288 L200 258 Q214 252 228 258 L236 278 Q256 270 280 280 L300 296 Q420 318 496 346 L498 356 Q400 362 300 362 L60 362 Z" fill="#ececf0"/>
+  <!-- pance laterali -->
+  <path d="M150 314 Q230 300 296 306 Q332 316 340 340 Q300 352 170 352 Q148 340 150 314 Z" fill="#c9c9d2"/>
+  <!-- filetti rossi -->
+  <path d="M302 304 Q410 322 494 348 L492 354 Q408 332 300 314 Z" fill="#e8352f"/>
+  <path d="M96 326 Q200 316 300 318 L300 326 Q200 326 98 334 Z" fill="#e8352f"/>
+  <!-- airbox -->
+  <path d="M200 258 Q214 252 228 258 L232 272 L206 274 Z" fill="#b4b4be"/>
+  <!-- casco + halo -->
+  <circle cx="258" cy="276" r="13" fill="#2a2a32"/>
+  <path d="M246 277 h24 v6 h-24 z" fill="#ececf0"/>
+  <path d="M230 286 Q258 248 304 296" fill="none" stroke="#ececf0" stroke-width="6" stroke-linecap="round"/>
+  <!-- ala anteriore -->
+  <path d="M400 370 Q450 366 504 366 L502 378 Q450 380 402 382 Z" fill="#ececf0"/>
+  <path d="M478 350 L496 350 L504 376 L488 376 Z" fill="#ececf0"/>
+  <!-- ruote -->
+  <g fill="#ececf0"><circle cx="120" cy="346" r="44"/><circle cx="398" cy="346" r="42"/></g>
+  <g fill="none" stroke="#2a2a32" stroke-width="5"><circle cx="120" cy="346" r="24"/><circle cx="398" cy="346" r="23"/></g>
+  <g fill="#e8352f"><circle cx="120" cy="346" r="8"/><circle cx="398" cy="346" r="8"/></g>
+  </g>
+  <g transform="translate(387,237) scale(.95)">
+<path d="M118 100 L62 106" stroke="#ececf0" stroke-width="10" stroke-linecap="round"/>
+<path d="M244 108 L208 58" stroke="#ececf0" stroke-width="8" stroke-linecap="round"/>
+<path d="M120 106 L50 96" stroke="#9d9da8" stroke-width="8" stroke-linecap="round"/>
+<g fill="#ececf0"><circle cx="62" cy="106" r="34"/><circle cx="244" cy="108" r="32"/></g>
+<g fill="none" stroke="#2a2a32" stroke-width="5"><circle cx="62" cy="106" r="20"/><circle cx="244" cy="108" r="19"/></g>
+<g fill="#e8352f"><circle cx="62" cy="106" r="6"/><circle cx="244" cy="108" r="6"/></g>
+<path d="M116 84 L178 82 L190 110 L124 114 Z" fill="#b9b9c3" stroke="#16161b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M38 58 L154 62 L162 86 L116 94 Q68 88 38 58 Z" fill="#ececf0" stroke="#16161b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M174 68 L206 54 Q238 60 270 92 Q276 100 266 104 L198 114 Q176 108 168 92 Z" fill="#ececf0" stroke="#16161b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M182 90 L262 94" stroke="#e8352f" stroke-width="5" stroke-linecap="round"/>
+<path d="M238 82 L264 76 L267 83 L244 90 Z" fill="#e8352f" stroke="#16161b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M202 56 L224 54 L232 60 L210 64 Z" fill="#8a8a96"/>
+<path d="M110 76 Q130 58 172 52 L198 56 L194 72 Q160 76 126 88 Z" fill="#e8352f" stroke="#16161b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M186 60 L216 68" stroke="#e8352f" stroke-width="8" stroke-linecap="round"/>
+<path d="M124 86 Q150 108 178 100" fill="none" stroke="#e8352f" stroke-width="10" stroke-linecap="round"/>
+<circle cx="208" cy="44" r="13" fill="#f4f4f6" stroke="#ececf0" stroke-width="3"/><path d="M210 40 h13 v8 h-13 z" fill="#ececf0"/>
+</g>
+</svg>

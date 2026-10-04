@@ -30,6 +30,6 @@
   <g fill="none" stroke="#f4f4f6" stroke-width="5"><circle cx="120" cy="346" r="24"/><circle cx="398" cy="346" r="23"/></g>
   <g fill="#e8352f"><circle cx="120" cy="346" r="8"/><circle cx="398" cy="346" r="8"/></g>
   <!-- etichetta OGGI -->
-  <rect x="150" y="122" width="212" height="100" fill="#e8352f"/>
-  <text x="256" y="203" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="86" fill="#ffffff">OGGI</text>
+  <rect x="95" y="122" width="112" height="100" fill="#15151a"/><rect x="207" y="122" width="212" height="100" fill="#e8352f"/>
+  <text x="151" y="203" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="86" fill="#ffffff">GP</text><text x="313" y="203" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="86" fill="#ffffff">OGGI</text>
 </svg>

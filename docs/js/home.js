@@ -84,10 +84,10 @@ function tabellaMoto() {
   const c = classifica.moto;
   document.getElementById("riassunto-nota").textContent = "Classe MotoGP";
   const lista = (c.categorie || {}).MotoGP || c.piloti || [];
-  return lista.length ? `<div class="table-wrap"><table class="results"><thead><tr><th>Pos</th><th>Pilota</th><th>Moto</th><th>Punti</th></tr></thead>
+  return lista.length ? `<div class="table-wrap"><table class="results"><thead><tr><th>Pos</th><th>Pilota</th><th>Team</th><th>Punti</th></tr></thead>
     <tbody>${lista.slice(0, 10).map((p) => `<tr class="${p.pos <= 3 ? "podio" : ""}"><td>${p.pos}</td>
       <td><a class="cella-pilota" href="pilota-moto.html?id=${esc(p.id)}${tema}">${FM["nome:" + p.nome] ? img(FM["nome:" + p.nome], p.nome, "foto-mini") : iniz(p.nome)}<strong>${esc(p.nome)}</strong></a></td>
-      <td><span class="cella-team">${stemmaMoto(p.moto)}${esc(p.moto)}</span></td><td><strong>${punti(p.punti)}</strong></td></tr>`).join("")}</tbody></table></div>` : `<p class="muted">Classifica non disponibile.</p>`;
+      <td><span class="cella-team">${stemmaMoto(p.moto)}${esc(p.team)}</span></td><td><strong>${punti(p.punti)}</strong></td></tr>`).join("")}</tbody></table></div>` : `<p class="muted">Classifica non disponibile.</p>`;
 }
 function mostraClassifica(k) {
   document.querySelectorAll("#home-serie .pill").forEach((b) => b.classList.toggle("active", b.dataset.s === k));

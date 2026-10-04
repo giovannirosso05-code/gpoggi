@@ -141,7 +141,7 @@ def report_evento(e, cat_ids):
         cr.append({"giro": veloce["bestLap"]["number"], "tipo": "giro", "testo": f"Giro più veloce: {veloce['rider']['full_name']}, {tempo_giro(veloce['bestLap']['time'])}" + (", nuovo record in gara." if veloce.get("isNewRecord") else ".")})
     cr.append({"giro": giri, "tipo": "arrivo", "testo": f"Bandiera a scacchi: vince {top[0]['rider']['full_name']} ({top[0]['constructor']['name']}), davanti a {top[1]['rider']['full_name']} e {top[2]['rider']['full_name']}."})
     cr.sort(key=lambda c: c["giro"])
-    GARE[nome_gp] = {"nome": nome_gp, "circuito": (e.get("circuit") or {}).get("name"), "data": e["date_end"], "classifiche": classifiche_evento(e, cat_ids), "cronaca": cr}
+    GARE[nome_gp] = {"nome": nome_gp, "circuito": (e.get("circuit") or {}).get("name"), "data": e["date_end"], "inizio": e["date_start"], "classifiche": classifiche_evento(e, cat_ids), "cronaca": cr}
     return {"gp": nome_gp, "circuito": (e.get("circuit") or {}).get("name"), "data": e["date_end"], "titolo": f"{top[0]['rider']['full_name']} vince il {nome_gp}", "paragrafi": par}
 
 

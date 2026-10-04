@@ -9,11 +9,11 @@ const tema = document.documentElement.dataset.theme ? "&tema=" + document.docume
 
 function tabella(righe, FM) {
   if (!righe || !righe.length) return `<p class="muted">Risultati non disponibili.</p>`;
-  return `<div class="table-wrap"><table class="results"><thead><tr><th>Pos</th>${righe.some((r) => r.griglia) ? "<th>Griglia</th>" : ""}<th>Pilota</th><th>Moto</th><th>Giri</th><th>Tempo / distacco</th><th>Punti</th></tr></thead>
+  return `<div class="table-wrap"><table class="results"><thead><tr><th>Pos</th>${righe.some((r) => r.griglia) ? "<th>Griglia</th>" : ""}<th>Pilota</th><th>Team</th><th>Giri</th><th>Tempo</th><th>Distacco</th></tr></thead>
     <tbody>${righe.map((r) => `<tr class="${r.pos && r.pos <= 3 ? "podio" : ""}"><td>${r.pos ?? esc(r.stato === "OUTSTND" ? "RIT" : r.stato || "–")}</td>${righe.some((x) => x.griglia) ? `<td class="muted">${r.griglia ? "P" + r.griglia + (r.pos && r.griglia !== r.pos ? ` <span class="${r.pos < r.griglia ? "su" : "giu"}">${r.pos < r.griglia ? "▲" : "▼"}${Math.abs(r.pos - r.griglia)}</span>` : "") : "–"}</td>` : ""}
       <td><span class="cella-pilota">${FM["nome:" + r.nome] ? img(FM["nome:" + r.nome], r.nome, "foto-mini") : iniz(r.nome)}<strong>${esc(r.nome)}</strong></span></td>
-      <td><span class="cella-team">${stemmaMoto(r.moto)}${esc(r.moto)}</span></td><td>${r.giri ?? ND}</td>
-      <td>${r.pos === 1 ? esc(r.tempo || "") : r.distacco && r.distacco !== "0.000" ? "+" + esc(r.distacco) : r.pos ? "–" : ""}</td><td>${r.punti ?? "–"}</td></tr>`).join("")}</tbody></table></div>`;
+      <td><span class="cella-team">${stemmaMoto(r.moto)}${esc(r.team)}</span></td><td>${r.giri ?? ND}</td>
+      <td>${r.pos ? (r.tempo ? esc(r.tempo) : ND) : "–"}${r.stato && r.pos && r.stato !== "INSTND" ? ` <span class="muted">${esc(r.stato)}</span>` : ""}</td><td>${r.distacco && r.distacco !== "0.000" ? "+" + esc(r.distacco) : "–"}</td></tr>`).join("")}</tbody></table></div>`;
 }
 
 try {

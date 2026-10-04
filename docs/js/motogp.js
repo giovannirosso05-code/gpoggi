@@ -1,4 +1,4 @@
-import { iniz, renderHeader, renderFooter, fetchJSON, esc, stemma, stemmaMoto, formattaData, formattaDataOra, punti, erroreCaricamento, img, credito, fotoMotoMap, mappeMotoMap } from "./common.js";
+import { intervalloWeekend, iniz, renderHeader, renderFooter, fetchJSON, esc, stemma, stemmaMoto, formattaData, formattaDataOra, punti, erroreCaricamento, img, credito, fotoMotoMap, mappeMotoMap } from "./common.js";
 
 import { montaPronostico, colonnaMoto } from "./prono.js";
 
@@ -25,8 +25,8 @@ function tabellaGara(ris) {
 }
 
 function tabellaClassifica(pil) {
-  return `<div class="table-wrap"><table class="results"><thead><tr><th>Pos</th><th>Pilota</th><th>Moto</th><th>Punti</th><th>Vitt.</th></tr></thead><tbody>${pil.slice(0, 20).map((p) => `<tr class="${p.pos <= 3 ? "podio" : ""}">
-    <td>${p.pos}</td><td>${nomeLink(p.nome, p.id)}</td><td><span class="cella-team">${stemmaMoto(p.moto)}${esc(p.moto)}</span></td><td><strong>${punti(p.punti)}</strong></td><td>${p.vittorie}</td></tr>`).join("")}</tbody></table></div>`;
+  return `<div class="table-wrap"><table class="results"><thead><tr><th>Pos</th><th>Pilota</th><th>Team</th><th>Punti</th></tr></thead><tbody>${pil.slice(0, 20).map((p) => `<tr class="${p.pos <= 3 ? "podio" : ""}">
+    <td>${p.pos}</td><td>${nomeLink(p.nome, p.id)}</td><td><span class="cella-team">${stemmaMoto(p.moto)}${esc(p.team)}</span></td><td><strong>${punti(p.punti)}</strong></td></tr>`).join("")}</tbody></table></div>`;
 }
 
 function disegnaCategoria() {
@@ -49,7 +49,7 @@ try {
   try {
     const rep = await fetchJSON("data/motogp-report.json");
     document.getElementById("m-report").innerHTML = rep.slice(0, 1).map((r) => `<article class="report-card"><div class="report-data">${dataIt(r.data)} · ${esc(r.circuito || "")}</div>
-      <h3>${esc(r.titolo)}</h3>${r.paragrafi.map((p) => `<p>${esc(p)}</p>`).join("")}</article>`).join("") || `<p class="muted">Nessuna gara ancora disputata.</p>`;
+      <h3><a href="gara-moto.html?gp=${encodeURIComponent(r.gp)}">${esc(r.titolo)}</a></h3>${r.paragrafi.map((p) => `<p>${esc(p)}</p>`).join("")}<a class="accent" href="gara-moto.html?gp=${encodeURIComponent(r.gp)}">Vai ai risultati →</a></article>`).join("") || `<p class="muted">Nessuna gara ancora disputata.</p>`;
   } catch (e) {}
   // testata: prossimo GP con la foto del leader della classifica
   const ora = new Date();
@@ -83,7 +83,7 @@ try {
   const passateM = Object.values(gareMoto).sort((a, b) => b.data.localeCompare(a.data));
   const prossimo = weekend[0];
   document.getElementById("gare-moto").innerHTML = (prossimo ? `<h4 class="gare-sottotitolo prossima">Prossima gara</h4><div class="gare-grid">` + cardMoto(prossimo.nome, prossimo.circuito, `${dataIt(prossimo.sessioni[0].inizio)} – ${dataIt((prossimo.sessioni.find((s) => s.codice === "RAC") || prossimo.sessioni[prossimo.sessioni.length - 1]).inizio)}`, false) + `</div>` : "")
-    + (passateM.length ? `<h4 class="gare-sottotitolo">Gare già disputate</h4><div class="gare-grid">` + passateM.map((g) => cardMoto(g.nome, g.circuito, new Date(g.data).toLocaleDateString("it-IT", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }), true)).join("") + `</div>` : "");
+    + (passateM.length ? `<h4 class="gare-sottotitolo">Gare già disputate</h4><div class="gare-grid">` + passateM.map((g) => cardMoto(g.nome, g.circuito, (g.inizio ? intervalloWeekend({ inizio: g.inizio + "T00:00:00Z", fine: g.data + "T12:00:00Z" }) : new Date(g.data).toLocaleDateString("it-IT", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" })), true)).join("") + `</div>` : "");
   const ras = await fetchJSON("data/rassegna.json").catch(() => null);
   document.getElementById("m-notizie").innerHTML = ras ? ras.articoli.filter((a) => a.serie === "MotoGP").slice(0, 5).map((a) => `<a class="evento-widget-mini" href="${esc(a.url)}" target="_blank" rel="noopener nofollow"><div><div class="evento-widget-mini-nome">${esc(a.titolo)}</div><div class="evento-widget-mini-data">${esc(a.fonte)}</div></div></a>`).join("") : "";
 } catch (e) {

@@ -129,6 +129,7 @@ export function renderFooter() {
           <li><a href="archivio.html">Archivio storico</a></li>
           <li><a href="gare.html">Calendario F1</a></li>
           <li><a href="motogp.html">MotoGP</a></li>
+          <li><a href="motogp-archivio.html">Archivio MotoGP</a></li>
           <li><a href="calendario.html">Aggiungi al calendario</a></li>
           <li><a href="notizie.html">Notizie</a></li>
           <li><a href="confronto.html">Confronto piloti</a></li>

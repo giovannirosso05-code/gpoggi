@@ -6,6 +6,7 @@ Prova in locale:  python build_motogp.py --prova
 """
 import json
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -13,7 +14,7 @@ import requests
 
 URL = "https://api.motogp.pulselive.com/motogp/v1/events"
 FILE = Path(__file__).parent / "docs" / "data" / "motogp.json"
-PAESI = {"Indonesia": "Indonesia", "Australia": "Australia", "Malaysia": "Malesia", "Qatar": "Qatar", "Portugal": "Portogallo",
+PAESI = {"United Kingdom of Great Britain and Northern Ireland": "Regno Unito", "Indonesia": "Indonesia", "Australia": "Australia", "Malaysia": "Malesia", "Qatar": "Qatar", "Portugal": "Portogallo",
          "Spain": "Spagna", "Italy": "Italia", "France": "Francia", "Germany": "Germania", "Netherlands": "Paesi Bassi",
          "United Kingdom": "Regno Unito", "Austria": "Austria", "Czechia": "Repubblica Ceca", "Hungary": "Ungheria",
          "San Marino": "San Marino", "Japan": "Giappone", "Thailand": "Thailandia", "India": "India",
@@ -41,28 +42,73 @@ def paese(c):
     return PAESI.get((c or {}).get("name"), (c or {}).get("name"))
 
 
+CACHE = Path(__file__).parent / "cache" / "motogp"
+
+
+def api_cache(percorso, **p):
+    """Le gare gia' concluse non cambiano: si salvano in cache e non si riscaricano."""
+    import hashlib
+    f = CACHE / (hashlib.md5(f"{percorso}{sorted(p.items())}".encode()).hexdigest() + ".json")
+    if f.exists():
+        return json.loads(f.read_text())
+    time.sleep(0.3)
+    d = api(percorso, **p)
+    CACHE.mkdir(parents=True, exist_ok=True)
+    f.write_text(json.dumps(d))
+    return d
+
+
+def riga_rider(x):
+    r = x["rider"]
+    return {"id": r["id"], "nome": r["full_name"], "numero": r.get("number"), "paese": paese(r.get("country")), "team": x["team"]["name"], "moto": x["constructor"]["name"]}
+
+
 def classifica_e_ultima():
-    """Classifica piloti MotoGP e risultato dell'ultima gara disputata."""
+    """Classifiche piloti di MotoGP, Moto2 e Moto3, ultima gara e risultati di ogni gara per le schede dei piloti."""
     anno = datetime.now(timezone.utc).year
     stagione = next(x for x in api("results/seasons") if x["year"] == anno)["id"]
-    cat = next(x for x in api("results/categories", seasonUuid=stagione) if x["name"].startswith("MotoGP"))["id"]
-    cl = api("results/standings", seasonUuid=stagione, categoryUuid=cat)["classification"]
-    piloti = [{"pos": x["position"], "nome": x["rider"]["full_name"], "numero": x["rider"].get("number"), "paese": paese(x["rider"].get("country")),
-               "team": x["team"]["name"], "moto": x["constructor"]["name"], "punti": x["points"], "vittorie": x.get("race_wins", 0)} for x in cl]
+    categorie = {x["name"].replace("\u2122", ""): x["id"] for x in api("results/categories", seasonUuid=stagione)}
     eventi = [e for e in api("results/events", seasonUuid=stagione, isFinished="true") if not e.get("test")]
     eventi.sort(key=lambda e: e["date_start"])
-    ultima = None
-    if eventi:
-        e = eventi[-1]
-        sess = api("results/sessions", eventUuid=e["id"], categoryUuid=cat)
-        gara = next((s for s in sess if s["type"] == "RAC"), None)
-        if gara:
-            ris = api(f"results/session/{gara['id']}/classification", test="false")["classification"]
-            ultima = {"nome": f"GP {PAESI.get((e.get('country') or {}).get('name'), (e.get('country') or {}).get('name') or '')}".strip(), "circuito": (e.get("circuit") or {}).get("name"),
-                      "data": e["date_end"], "risultati": [{"pos": x["position"], "nome": x["rider"]["full_name"], "numero": x["rider"].get("number"), "team": x["team"]["name"],
-                                                            "moto": x["constructor"]["name"], "tempo": x.get("time"), "distacco": (x.get("gap") or {}).get("first"), "giri": x.get("total_laps"),
-                                                            "stato": x.get("status"), "punti": x.get("points")} for x in ris]}
-    return {"aggiornata_dopo": ultima["nome"] if ultima else None, "piloti": piloti}, ultima
+    out_class, ultime, piloti = {}, {}, {}
+    for nome, cat in categorie.items():
+        cl = api("results/standings", seasonUuid=stagione, categoryUuid=cat)["classification"]
+        out_class[nome] = [{"pos": x["position"], **riga_rider(x), "punti": x["points"], "vittorie": x.get("race_wins", 0)} for x in cl]
+        for x in cl:
+            piloti[x["rider"]["id"]] = {**riga_rider(x), "categoria": nome, "pos": x["position"], "punti": x["points"], "vittorie": x.get("race_wins", 0), "gare": []}
+        for e in eventi:
+            sess = api_cache("results/sessions", eventUuid=e["id"], categoryUuid=cat)
+            nome_gp = f"GP {PAESI.get((e.get('country') or {}).get('name'), (e.get('country') or {}).get('name') or '')}".strip()
+            ris_gara = {}
+            for tipo in ("SPR", "RAC"):
+                sd = next((q for q in sess if q["type"] == tipo), None)
+                if not sd:
+                    continue
+                try:
+                    cls = api_cache(f"results/session/{sd['id']}/classification", test="false")["classification"]
+                except Exception:
+                    continue
+                if tipo == "RAC":
+                    ris_gara = cls
+                for x in cls:
+                    p = piloti.get(x["rider"]["id"])
+                    if p is None:
+                        piloti[x["rider"]["id"]] = p = {**riga_rider(x), "categoria": nome, "pos": None, "punti": 0, "vittorie": 0, "gare": []}
+                    voce = next((g for g in p["gare"] if g["gp"] == nome_gp), None)
+                    if voce is None:
+                        voce = {"gp": nome_gp, "data": e["date_end"], "sprint": None, "gara": None, "stato_gara": None, "punti": 0}
+                        p["gare"].append(voce)
+                    voce["sprint" if tipo == "SPR" else "gara"] = x["position"]
+                    if tipo == "RAC":
+                        voce["stato_gara"] = x.get("status")
+                    voce["punti"] += x.get("points") or 0
+            if e is eventi[-1] and ris_gara:
+                ultime[nome] = {"nome": nome_gp, "circuito": (e.get("circuit") or {}).get("name"), "data": e["date_end"],
+                                "risultati": [{"pos": x["position"], **{k: v for k, v in riga_rider(x).items() if k != "id"}, "tempo": x.get("time"), "distacco": (x.get("gap") or {}).get("first"),
+                                               "giri": x.get("total_laps"), "stato": x.get("status"), "punti": x.get("points")} for x in ris_gara]}
+    for p in piloti.values():
+        p["gare"].sort(key=lambda g: g["data"])
+    return {"categorie": out_class, "piloti": out_class.get("MotoGP", [])}, {"categorie": ultime, **(ultime.get("MotoGP") or {})}, piloti
 
 
 def main():
@@ -88,11 +134,11 @@ def main():
         return
     FILE.write_text(json.dumps({"generato_il": ora.isoformat(timespec="seconds"), "weekend": weekend}, ensure_ascii=False, indent=1))
     try:
-        classifica, ultima = classifica_e_ultima()
-        (FILE.parent / "motogp-classifica.json").write_text(json.dumps(classifica, ensure_ascii=False, indent=1))
-        if ultima:
-            (FILE.parent / "motogp-ultima.json").write_text(json.dumps(ultima, ensure_ascii=False, indent=1))
-        print(f"MotoGP: classifica di {len(classifica['piloti'])} piloti, ultima gara {ultima and ultima['nome']}")
+        classifica, ultima, piloti = classifica_e_ultima()
+        (FILE.parent / "motogp-classifica.json").write_text(json.dumps(classifica, ensure_ascii=False, separators=(",", ":")))
+        (FILE.parent / "motogp-ultima.json").write_text(json.dumps(ultima, ensure_ascii=False, separators=(",", ":")))
+        (FILE.parent / "motogp-piloti.json").write_text(json.dumps(piloti, ensure_ascii=False, separators=(",", ":")))
+        print(f"MotoGP: {sum(len(v) for v in classifica['categorie'].values())} piloti in classifica, {len(piloti)} schede")
     except Exception as e:  # la classifica e' un di piu': se la fonte non risponde si lasciano i file com'erano
         print("MotoGP: classifica non aggiornata:", e)
     print(f"MotoGP: {len(weekend)} weekend in programma")

@@ -8,13 +8,13 @@
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#f5f4f0">
-<title>Piloti — GP Oggi</title>
-<meta name="description" content="Tutti i piloti della stagione di Formula 1: foto, team, punti in classifica e schede con i risultati. Sito non ufficiale.">
-<link rel="canonical" href="https://gpoggi.it/piloti.html">
-<meta property="og:url" content="https://gpoggi.it/piloti.html">
+<title>Archivio MotoGP — GP Oggi</title>
+<meta name="description" content="Classe regina del motomondiale dal 1949: classifica finale e campione di ogni stagione, dalla 500cc alla MotoGP. Sito non ufficiale.">
+<link rel="canonical" href="https://gpoggi.it/motogp-archivio.html">
+<meta property="og:url" content="https://gpoggi.it/motogp-archivio.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GP Oggi">
-<meta property="og:title" content="Piloti — GP Oggi">
+<meta property="og:title" content="Archivio MotoGP — GP Oggi">
 <meta property="og:description" content="Piloti, classifiche, calendario e risultati per sessione della stagione di Formula 1 in corso, in italiano. Sito non ufficiale.">
 <meta property="og:image" content="https://gpoggi.it/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -28,19 +28,18 @@
 <header id="site-header" class="site-header"></header>
 
 <div class="container">
-  <div class="section-title" style="margin-top:32px">Piloti <span class="count" id="result-count"></span></div>
-  <div class="filter-bar">
-    <div class="search-input">
-      <span id="search-icon"></span>
-      <input id="search" type="text" placeholder="Cerca un pilota, un team o un numero...">
-    </div>
-    <div id="category-pills" class="category-pills"></div>
+  <div class="section-title" style="margin-top:32px">Archivio MotoGP</div>
+  <div class="filtri-archivio">
+    <label for="anno" class="muted">Stagione</label>
+    <select id="anno" class="sel"></select>
+    <a class="link-storici" href="motogp.html">← Torna alla MotoGP</a>
   </div>
-  <div class="driver-grid" id="piloti-grid"></div>
+  <div id="ma-box"></div>
+  <p class="credito center" style="margin-top:24px">Dati storici dal servizio pubblico del campionato, per uso non commerciale. Sito non ufficiale, non affiliato a MotoGP o Dorna.</p>
 </div>
 
 <footer id="site-footer" class="site-footer"></footer>
 
-<script type="module" src="js/piloti.js?v=23"></script>
+<script type="module" src="js/motogp-archivio.js?v=23"></script>
 </body>
 </html>

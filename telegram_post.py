@@ -59,8 +59,30 @@ def nuove_notizie(stato):
     return nuovi, (urls + visti)[:300]
 
 
+def messaggio_moto():
+    """Riepilogo dell'ultima gara MotoGP (podio, primi cinque della classifica) dai file motogp-ultima.json e motogp-classifica.json."""
+    f = DATA / "motogp-ultima.json"
+    if not f.exists():
+        return None, None
+    u = json.loads(f.read_text())
+    ris = [r for r in u.get("risultati", []) if r.get("pos")][:3]
+    if not ris:
+        return None, None
+    righe = [f"<b>MotoGP · {html.escape(u['nome'], quote=False)}</b>", html.escape(u.get("circuito") or "", quote=False), ""]
+    for r in ris:
+        dist = f" · {html.escape(r['tempo'])}" if r["pos"] == 1 and r.get("tempo") else (f" · +{html.escape(r['distacco'])}" if r.get("distacco") else "")
+        righe.append(f"{r['pos']}° {html.escape(r['nome'], quote=False)} ({html.escape(r['moto'], quote=False)}){dist}")
+    cf = DATA / "motogp-classifica.json"
+    if cf.exists():
+        righe += ["", "<b>Classifica piloti MotoGP</b>"]
+        for p in json.loads(cf.read_text())["piloti"][:5]:
+            righe.append(f"{p['pos']}. {html.escape(p['nome'], quote=False)} — {p['punti']:g}")
+    righe += ["", f'<a href="{SITO}/motogp.html">Tutta la MotoGP</a>']
+    return f"{u['nome']}:{u['data']}", "\n".join(righe)
+
+
 def testo_notizia(a):
-    return f'<b>{html.escape(a["titolo"], quote=False)}</b>\n{html.escape(a["fonte"], quote=False)} · <a href="{html.escape(a["url"])}">Leggi</a>'
+    return f'<b>[{html.escape(a.get("serie", "F1"))}] {html.escape(a["titolo"], quote=False)}</b>\n{html.escape(a["fonte"], quote=False)} · <a href="{html.escape(a["url"])}">Leggi</a>'
 
 
 def invia(token, chat, testo):
@@ -79,8 +101,11 @@ def main():
     stato = json.loads(STATO.read_text()) if STATO.exists() else {}
     testo = messaggio(g, s)
     nuove, visti = nuove_notizie(stato)
+    chiave_moto, testo_moto = messaggio_moto()
     if prova:
         print(testo)
+        if testo_moto:
+            print("\n" + testo_moto)
         for a in nuove or []:
             print("\n" + testo_notizia(a))
         return
@@ -92,6 +117,10 @@ def main():
         invia(token, canale, testo)
         stato["ultima"] = chiave
         print("Report pubblicato:", chiave)
+    if testo_moto and stato.get("ultima_moto") != chiave_moto:
+        invia(token, canale, testo_moto)
+        stato["ultima_moto"] = chiave_moto
+        print("Report MotoGP pubblicato:", chiave_moto)
     for a in nuove:
         invia(token, canale, testo_notizia(a))
     stato["visti"] = visti

@@ -4,6 +4,7 @@ renderHeader("notizie");
 renderFooter();
 
 const box = document.getElementById("notizie-box");
+let serie = "tutte";
 try {
   const [report, news, rassegna] = await Promise.all([fetchJSON("data/report.json"), fetchJSON("data/news.json").catch(() => []), fetchJSON("data/rassegna.json").catch(() => ({ articoli: [] }))]);
 
@@ -17,13 +18,18 @@ try {
     </article>`).join("") : "";
 
   const ras = document.getElementById("rassegna");
-  ras.innerHTML = rassegna.articoli.length ? rassegna.articoli.slice(0, 12).map((a) => `
+  const disegnaRassegna = () => {
+  const lista = rassegna.articoli.filter((a) => serie === "tutte" || a.serie === serie);
+  ras.innerHTML = lista.length ? lista.slice(0, 14).map((a) => `
     <article class="rassegna-voce">
-      <div class="report-data">${esc(a.fonte)}${a.pubblicato ? " · " + formattaDataOra(a.pubblicato) : ""}</div>
+      <div class="report-data"><b>${esc(a.serie || "F1")}</b> · ${esc(a.fonte)}${a.pubblicato ? " · " + formattaDataOra(a.pubblicato) : ""}</div>
       <h3><a href="${esc(a.url)}" target="_blank" rel="noopener nofollow">${esc(a.titolo)}</a></h3>
       ${a.estratto ? `<p>${esc(a.estratto)}</p>` : ""}
       <a class="accent" href="${esc(a.url)}" target="_blank" rel="noopener nofollow">Leggi su ${esc(a.fonte)} →</a>
-    </article>`).join("") : `<p class="muted" style="font-size:13px">Rassegna non disponibile al momento.</p>`;
+    </article>`).join("") : `<p class="muted" style="font-size:13px">Nessuna notizia al momento.</p>`;
+  };
+  document.getElementById("filtro-serie").addEventListener("click", (e) => { const b = e.target.closest(".pill"); if (!b) return; serie = b.dataset.s; document.querySelectorAll("#filtro-serie .pill").forEach((x) => x.classList.toggle("active", x === b)); disegnaRassegna(); });
+  disegnaRassegna();
 
   document.getElementById("report-lista").innerHTML = report.length ? report.map((r) => `
     <article class="report-card">

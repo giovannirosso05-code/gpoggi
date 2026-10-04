@@ -15,13 +15,14 @@ from pathlib import Path
 
 import requests
 
-FEEDS = {
-    "Motorsport.com": "https://it.motorsport.com/rss/f1/news/",
-    "FormulaPassion": "https://www.formulapassion.it/feed",
-    "GPone": "https://www.gpone.com/rss.xml",
+FEEDS = {  # nome della fonte: (indirizzo del feed, serie)
+    "Motorsport.com": ("https://it.motorsport.com/rss/f1/news/", "F1"),
+    "FormulaPassion": ("https://www.formulapassion.it/feed", "F1"),
+    "GPone": ("https://www.gpone.com/rss.xml", "F1"),
+    "Motorsport.com ": ("https://it.motorsport.com/rss/motogp/news/", "MotoGP"),
 }
 MAX_PER_FEED = 12
-MAX_TOTALE = 30
+MAX_TOTALE = 40
 ESTRATTO_MAX = 200
 HEADERS = "GPOggiBot/1.0 (+https://gpoggi.it; progetto non commerciale, rassegna con link alle fonti)"
 FILE = Path(__file__).parent / "docs" / "data" / "rassegna.json"
@@ -59,7 +60,7 @@ def leggi_feed(url):
 
 def main():
     articoli = []
-    for fonte, url in FEEDS.items():
+    for fonte, (url, serie) in FEEDS.items():
         try:
             voci = leggi_feed(url)
         except Exception as e:
@@ -69,7 +70,7 @@ def main():
             titolo, link = testo(e["title"]), e["link"]
             if not titolo or not link.startswith("http"):
                 continue
-            articoli.append({"titolo": titolo, "estratto": estratto(e["summary"]), "fonte": fonte, "url": link, "pubblicato": data_iso(e["data"])})
+            articoli.append({"titolo": titolo, "estratto": estratto(e["summary"]), "fonte": fonte.strip(), "serie": serie, "url": link, "pubblicato": data_iso(e["data"])})
         print(f"  {fonte}: {min(len(voci), MAX_PER_FEED)} articoli")
     if not articoli:
         print("Nessun feed raggiungibile: si lascia il file com'e'.")

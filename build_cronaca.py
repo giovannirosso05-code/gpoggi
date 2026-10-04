@@ -111,39 +111,40 @@ def cronaca(g):
                 return it
         return None
     visti = set()
+    # incidenti con due vetture: nomi per riferimento orario, per collegare le penalita' al contatto
+    contatti = {}
+    for x in rc:
+        mt = re.search(r"INCIDENT INVOLVING CARS \d+ \((\w{3})\) AND \d+ \((\w{3})\) NOTED.*\((\d\d:\d\d:\d\d)\)", x["message"])
+        if mt:
+            contatti[mt.group(3)] = (mt.group(1), mt.group(2))
     for x in rc:
         m, lap, cat = x["message"].strip(), x.get("lap_number") or 1, x["category"]
         if cat == "SafetyCar":
-            t = {"SAFETY CAR DEPLOYED": ("safety", "Safety car in pista"), "SAFETY CAR IN THIS LAP": ("safety", "La safety car rientra ai box: si ripartirà nel giro"), "VSC DEPLOYED": ("safety", "Virtual safety car"),
-                 "VSC ENDING": ("safety", "Termina la virtual safety car")}.get(m)
+            t = {"SAFETY CAR DEPLOYED": ("safety", "**Safety car in pista.**"), "SAFETY CAR IN THIS LAP": ("safety", "La safety car rientra ai box: si riparte."), "VSC DEPLOYED": ("safety", "**Virtual safety car.**"),
+                 "VSC ENDING": ("safety", "Termina la virtual safety car.")}.get(m)
             if t and (t[1], lap) not in visti:
-                visti.add((t[1], lap)); add(lap, t[0], t[1] + ".", 2)
+                visti.add((t[1], lap)); add(lap, t[0], t[1], 2)
         elif cat == "Flag" and x.get("flag") == "RED":
-            add(lap, "safety", "Bandiera rossa: gara sospesa.", 2)
-        elif cat == "Flag" and x.get("flag") == "BLACK AND WHITE":
-            add(lap, "penalita", f"Bandiera bianconera per {nomi(m)}: {motivo(m) or 'comportamento scorretto'}.", 4)
-        elif cat == "Other" and re.search(r"INCIDENT INVOLVING CAR", m) and "FIA STEWARDS" not in m and "NOTED" in m:
+            add(lap, "safety", "**Bandiera rossa: gara sospesa.**", 2)
+        elif cat == "Other" and re.search(r"INCIDENT INVOLVING CARS", m) and "FIA STEWARDS" not in m and "NOTED" in m and "AND" in m:
             mt = motivo(m)
-            add(lap, "incidente", f"{nomi(m)}: incidente segnalato{f' ({mt})' if mt else ''}.", 3)
-        elif m.startswith("FIA STEWARDS:"):
+            if mt in (None, "contatto"):
+                add(lap, "incidente", f"**Incidente tra {nomi(m)}.**", 3)
+        elif m.startswith("FIA STEWARDS:") and re.search(r"TIME PENALTY FOR", m) and "SERVED" not in m:
+            s2 = re.search(r"(\d+) SECOND", m)
+            rif = re.search(r"\((\d\d:\d\d:\d\d)\)\s*$", m)
+            chi = re.search(r"\((\w{3})\)", m)
+            altro = None
+            if rif and chi and rif.group(1) in contatti:
+                altro = next((a for a in contatti[rif.group(1)] if a != chi.group(1)), None)
             mt = motivo(m)
-            suff = f" ({mt})" if mt else ""
-            if "NO FURTHER INVESTIGATION" in m:
-                add(lap, "incidente", f"Commissari: nessuna penalità per {nomi(m)}{suff}.", 4)
-            elif "UNDER INVESTIGATION" in m:
-                add(lap, "incidente", f"Commissari: sotto investigazione {nomi(m)}{suff}.", 4)
-            elif "AFTER THE RACE" in m:
-                add(lap, "incidente", f"Commissari: {nomi(m)} verrà esaminato dopo la gara{suff}.", 4)
-            elif "PENALTY SERVED" in m:
-                add(lap, "penalita", f"{nomi(m)} sconta la penalità.", 4)
-            elif re.search(r"TIME PENALTY", m):
-                s = re.search(r"(\d+) SECOND", m)
-                add(lap, "penalita", f"Penalità di {s.group(1) if s else 'alcuni'} secondi per {nomi(m)}{suff}.", 4)
+            motivo_txt = f" per il contatto con {cogn(acr.get(altro, altro))}" if altro else (f" ({mt})" if mt else "")
+            add(lap, "penalita", f"**Penalità di {s2.group(1) if s2 else 'alcuni'} secondi a {nomi(m)}**{motivo_txt}.", 4)
 
     # ritiri col giro in cui si sono fermati
     for x in ris:
         if x.get("stato") == "RIT" and x["giri"] is not None and x["giri"] < giri_tot:
-            add(x["giri"] + 1, "ritiro", f"{x['nome']} si ritira ({x['giri']} giri completati su {giri_tot}).", 5)
+            add(x["giri"] + 1, "ritiro", f"**{x['nome']} si ritira** ({x['giri']} giri completati su {giri_tot}).", 5)
 
     # cambi al comando e pit stop dei primi sei
     if pos:
@@ -154,9 +155,43 @@ def cronaca(g):
             if capo is not None and p["driver_number"] != capo:
                 lap = giro_a(p["driver_number"], p["date"])
                 if lap and lap > 1 and (lap, p["driver_number"]) != ultimo:
-                    add(lap, "comando", f"{cogn(nome.get(p['driver_number']))} passa al comando.", 6)
+                    add(lap, "comando", f"**{cogn(nome.get(p['driver_number']))} passa al comando.**", 6)
                     ultimo = (lap, p["driver_number"])
             capo = p["driver_number"]
+    # sorpassi nelle prime cinque posizioni (esclusi pit stop, safety car e ritiri)
+    if pos:
+        sc = set()
+        aperta = None
+        for x in sorted(rc, key=lambda x: x["date"]):
+            if x["category"] == "SafetyCar":
+                if x["message"].strip() in ("SAFETY CAR DEPLOYED", "VSC DEPLOYED"):
+                    aperta = x.get("lap_number") or 1
+                elif aperta is not None and x["message"].strip() in ("SAFETY CAR IN THIS LAP", "VSC ENDING"):
+                    sc.update(range(aperta, (x.get("lap_number") or aperta) + 2)); aperta = None
+        if aperta is not None:
+            sc.update(range(aperta, giri_tot + 1))
+        sta_ai_box = {(p["driver_number"], p["lap_number"] + d) for p in pit if p.get("lap_number") for d in (-1, 0, 1)}
+        ritirati = {x["numero"]: (x["giri"] or 0) for x in ris if x.get("stato") == "RIT"}
+        tiene = {}
+        gia = set()
+        for p in sorted(pos, key=lambda p: p["date"]):
+            n, nuova = p["driver_number"], p["position"]
+            if primo and p["date"] < primo:
+                tiene[nuova] = n
+                continue
+            precedente = next((q for q, d in tiene.items() if d == n), None)
+            passato = tiene.get(nuova)
+            if precedente is not None and precedente > nuova:
+                tiene.pop(precedente, None)
+            tiene[nuova] = n
+            if nuova <= 5 and precedente is not None and precedente > nuova and passato and passato != n:
+                lap = giro_a(n, p["date"])
+                if not lap or lap <= 1 or lap in sc or (passato, lap) in sta_ai_box or (n, lap) in sta_ai_box or passato in ritirati and ritirati[passato] <= lap:
+                    continue
+                if nuova == 1 or (lap, n, passato) in gia:
+                    continue  # i cambi al comando sono gia' nella cronaca
+                gia.add((lap, n, passato))
+                add(lap, "sorpasso", f"**{cogn(nome.get(n))} supera {cogn(nome.get(passato))}** e sale al {nuova}° posto.", 6)
     primi = {x["numero"] for x in ris if x.get("pos") and x["pos"] <= 6}
     per_giro = {}
     for p in pit:
@@ -167,7 +202,7 @@ def cronaca(g):
 
     top = sorted((x for x in ris if x.get("pos")), key=lambda x: x["pos"])[:3]
     if len(top) == 3:
-        add(giri_tot, "arrivo", f"Bandiera a scacchi: vince {top[0]['nome']} ({top[0]['team']}), davanti a {top[1]['nome']} e {top[2]['nome']}.", 9)
+        add(giri_tot, "arrivo", f"**Bandiera a scacchi: vince {top[0]['nome']}** ({top[0]['team']}), davanti a {top[1]['nome']} e {top[2]['nome']}.", 9)
     ev.sort(key=lambda e: (e["giro"], e["o"]))
     GRIGLIA.clear()
     GRIGLIA.update({str(n): p for n, p in (griglia or {}).items()})

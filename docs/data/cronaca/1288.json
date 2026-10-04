@@ -36,79 +36,24 @@
    "testo": "Primo giro: Ocon risale dal 15° al 12° posto."
   },
   {
-   "giro": 1,
-   "tipo": "incidente",
-   "testo": "Lawson: incidente segnalato."
-  },
-  {
-   "giro": 1,
-   "tipo": "incidente",
-   "testo": "Commissari: Lawson verrà esaminato dopo la gara."
-  },
-  {
-   "giro": 3,
-   "tipo": "incidente",
-   "testo": "Antonelli: incidente segnalato."
-  },
-  {
-   "giro": 3,
-   "tipo": "incidente",
-   "testo": "Antonelli: incidente segnalato."
+   "giro": 2,
+   "tipo": "sorpasso",
+   "testo": "**Leclerc supera Antonelli** e sale al 3° posto."
   },
   {
    "giro": 3,
    "tipo": "ritiro",
-   "testo": "Valtteri Bottas si ritira (2 giri completati su 71)."
-  },
-  {
-   "giro": 4,
-   "tipo": "incidente",
-   "testo": "Commissari: Piastri verrà esaminato dopo la gara."
-  },
-  {
-   "giro": 4,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Antonelli."
-  },
-  {
-   "giro": 5,
-   "tipo": "incidente",
-   "testo": "Bortoleto e Gasly: incidente segnalato (ha spinto un avversario fuori pista)."
-  },
-  {
-   "giro": 5,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Antonelli."
+   "testo": "**Valtteri Bottas si ritira** (2 giri completati su 71)."
   },
   {
    "giro": 5,
    "tipo": "ritiro",
-   "testo": "Sergio Perez si ritira (4 giri completati su 71)."
-  },
-  {
-   "giro": 6,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Bortoleto e Gasly (ha spinto un avversario fuori pista)."
-  },
-  {
-   "giro": 9,
-   "tipo": "incidente",
-   "testo": "Perez: incidente segnalato (falsa partenza)."
-  },
-  {
-   "giro": 12,
-   "tipo": "incidente",
-   "testo": "Commissari: Perez verrà esaminato dopo la gara (falsa partenza)."
+   "testo": "**Sergio Perez si ritira** (4 giri completati su 71)."
   },
   {
    "giro": 12,
    "tipo": "pit",
    "testo": "Ai box: Hamilton."
-  },
-  {
-   "giro": 15,
-   "tipo": "incidente",
-   "testo": "Hamilton e Verstappen: incidente segnalato (ha spinto un avversario fuori pista)."
   },
   {
    "giro": 18,
@@ -121,14 +66,14 @@
    "testo": "Ai box: Russell, Piastri."
   },
   {
-   "giro": 21,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Hamilton e Verstappen (ha spinto un avversario fuori pista)."
+   "giro": 22,
+   "tipo": "sorpasso",
+   "testo": "**Hamilton supera Verstappen** e sale al 3° posto."
   },
   {
    "giro": 24,
    "tipo": "ritiro",
-   "testo": "Carlos Sainz si ritira (23 giri completati su 71)."
+   "testo": "**Carlos Sainz si ritira** (23 giri completati su 71)."
   },
   {
    "giro": 24,
@@ -138,12 +83,12 @@
   {
    "giro": 25,
    "tipo": "safety",
-   "testo": "Virtual safety car."
+   "testo": "**Virtual safety car.**"
   },
   {
    "giro": 25,
    "tipo": "comando",
-   "testo": "Russell passa al comando."
+   "testo": "**Russell passa al comando.**"
   },
   {
    "giro": 25,
@@ -156,41 +101,6 @@
    "testo": "Termina la virtual safety car."
   },
   {
-   "giro": 30,
-   "tipo": "incidente",
-   "testo": "Stroll: incidente segnalato."
-  },
-  {
-   "giro": 31,
-   "tipo": "incidente",
-   "testo": "Albon: incidente segnalato."
-  },
-  {
-   "giro": 33,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Stroll."
-  },
-  {
-   "giro": 34,
-   "tipo": "incidente",
-   "testo": "Ocon: incidente segnalato."
-  },
-  {
-   "giro": 36,
-   "tipo": "incidente",
-   "testo": "Alonso: incidente segnalato (eccesso di velocità ai box)."
-  },
-  {
-   "giro": 40,
-   "tipo": "incidente",
-   "testo": "Commissari: Albon verrà esaminato dopo la gara."
-  },
-  {
-   "giro": 40,
-   "tipo": "incidente",
-   "testo": "Commissari: sotto investigazione Alonso (eccesso di velocità ai box)."
-  },
-  {
    "giro": 40,
    "tipo": "pit",
    "testo": "Ai box: Hadjar."
@@ -198,7 +108,7 @@
   {
    "giro": 41,
    "tipo": "penalita",
-   "testo": "Penalità di 5 secondi per Alonso (eccesso di velocità ai box)."
+   "testo": "**Penalità di 5 secondi a Alonso** (eccesso di velocità ai box)."
   },
   {
    "giro": 42,
@@ -207,13 +117,8 @@
   },
   {
    "giro": 43,
-   "tipo": "incidente",
-   "testo": "Alonso: incidente segnalato."
-  },
-  {
-   "giro": 43,
    "tipo": "comando",
-   "testo": "Verstappen passa al comando."
+   "testo": "**Verstappen passa al comando.**"
   },
   {
    "giro": 43,
@@ -221,29 +126,24 @@
    "testo": "Ai box: Russell."
   },
   {
-   "giro": 45,
-   "tipo": "incidente",
-   "testo": "Stroll: incidente segnalato."
-  },
-  {
    "giro": 46,
    "tipo": "ritiro",
-   "testo": "Lance Stroll si ritira (45 giri completati su 71)."
+   "testo": "**Lance Stroll si ritira** (45 giri completati su 71)."
   },
   {
    "giro": 48,
    "tipo": "incidente",
-   "testo": "Hadjar e Ocon: incidente segnalato."
+   "testo": "**Incidente tra Hadjar e Ocon.**"
   },
   {
-   "giro": 49,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Ocon."
+   "giro": 48,
+   "tipo": "sorpasso",
+   "testo": "**Leclerc supera Piastri** e sale al 4° posto."
   },
   {
    "giro": 49,
    "tipo": "comando",
-   "testo": "Antonelli passa al comando."
+   "testo": "**Antonelli passa al comando.**"
   },
   {
    "giro": 49,
@@ -258,17 +158,12 @@
   {
    "giro": 52,
    "tipo": "safety",
-   "testo": "Virtual safety car."
-  },
-  {
-   "giro": 52,
-   "tipo": "incidente",
-   "testo": "Norris: incidente segnalato."
+   "testo": "**Virtual safety car.**"
   },
   {
    "giro": 52,
    "tipo": "comando",
-   "testo": "Russell passa al comando."
+   "testo": "**Russell passa al comando.**"
   },
   {
    "giro": 53,
@@ -276,39 +171,9 @@
    "testo": "Termina la virtual safety car."
   },
   {
-   "giro": 53,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Hadjar e Ocon."
-  },
-  {
-   "giro": 55,
-   "tipo": "penalita",
-   "testo": "Alonso sconta la penalità."
-  },
-  {
-   "giro": 57,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Norris."
-  },
-  {
-   "giro": 68,
-   "tipo": "incidente",
-   "testo": "Commissari: Alonso verrà esaminato dopo la gara."
-  },
-  {
-   "giro": 68,
-   "tipo": "incidente",
-   "testo": "Commissari: Stroll verrà esaminato dopo la gara."
-  },
-  {
-   "giro": 71,
-   "tipo": "penalita",
-   "testo": "Bandiera bianconera per Norris: limiti della pista."
-  },
-  {
    "giro": 71,
    "tipo": "arrivo",
-   "testo": "Bandiera a scacchi: vince George Russell (Mercedes), davanti a Max Verstappen e Kimi Antonelli."
+   "testo": "**Bandiera a scacchi: vince George Russell** (Mercedes), davanti a Max Verstappen e Kimi Antonelli."
   }
  ]
 }

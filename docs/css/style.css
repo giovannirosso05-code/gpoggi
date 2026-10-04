@@ -1007,3 +1007,5 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 .programma-sess b { font-variant-numeric: tabular-nums; margin-left: 3px; }
 .programma-sess.gara { background: #e8352f; color: #fff; font-weight: 600; }
 .programma-sess.finita { opacity: .55; }
+.cron-testo strong { font-weight: 700; color: var(--text); }
+.cron-testo { color: var(--text-secondary); }

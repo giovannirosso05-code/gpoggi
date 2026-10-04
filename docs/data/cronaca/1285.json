@@ -36,174 +36,119 @@
    "testo": "Primo giro: Bearman risale dal 16° al 11° posto; Alonso risale dal 19° al 14° posto."
   },
   {
-   "giro": 1,
-   "tipo": "incidente",
-   "testo": "Commissari: Bortoleto e Bottas e Gasly verrà esaminato dopo la gara."
-  },
-  {
    "giro": 2,
    "tipo": "comando",
-   "testo": "Antonelli passa al comando."
+   "testo": "**Antonelli passa al comando.**"
   },
   {
    "giro": 3,
    "tipo": "incidente",
-   "testo": "Bottas e Stroll: incidente segnalato."
+   "testo": "**Incidente tra Bottas e Stroll.**"
   },
   {
    "giro": 3,
    "tipo": "incidente",
-   "testo": "Lawson e Hulkenberg: incidente segnalato."
+   "testo": "**Incidente tra Lawson e Hulkenberg.**"
   },
   {
    "giro": 6,
    "tipo": "comando",
-   "testo": "Russell passa al comando."
-  },
-  {
-   "giro": 9,
-   "tipo": "incidente",
-   "testo": "Hulkenberg: incidente segnalato (eccesso di velocità ai box)."
-  },
-  {
-   "giro": 11,
-   "tipo": "incidente",
-   "testo": "Bortoleto: incidente segnalato."
-  },
-  {
-   "giro": 12,
-   "tipo": "incidente",
-   "testo": "Commissari: sotto investigazione Hulkenberg (eccesso di velocità ai box)."
+   "testo": "**Russell passa al comando.**"
   },
   {
    "giro": 12,
    "tipo": "ritiro",
-   "testo": "Alexander Albon si ritira (11 giri completati su 68)."
+   "testo": "**Alexander Albon si ritira** (11 giri completati su 68)."
   },
   {
    "giro": 12,
    "tipo": "comando",
-   "testo": "Antonelli passa al comando."
+   "testo": "**Antonelli passa al comando.**"
   },
   {
    "giro": 12,
    "tipo": "comando",
-   "testo": "Russell passa al comando."
+   "testo": "**Russell passa al comando.**"
   },
   {
    "giro": 13,
    "tipo": "penalita",
-   "testo": "Penalità di 5 secondi per Hulkenberg (eccesso di velocità ai box)."
+   "testo": "**Penalità di 5 secondi a Hulkenberg** (eccesso di velocità ai box)."
+  },
+  {
+   "giro": 14,
+   "tipo": "sorpasso",
+   "testo": "**Hadjar supera Leclerc** e sale al 5° posto."
   },
   {
    "giro": 16,
    "tipo": "incidente",
-   "testo": "Piastri e Albon: incidente segnalato (contatto)."
+   "testo": "**Incidente tra Piastri e Albon.**"
   },
   {
    "giro": 17,
    "tipo": "comando",
-   "testo": "Antonelli passa al comando."
+   "testo": "**Antonelli passa al comando.**"
   },
   {
    "giro": 17,
    "tipo": "comando",
-   "testo": "Russell passa al comando."
+   "testo": "**Russell passa al comando.**"
   },
   {
    "giro": 17,
    "tipo": "comando",
-   "testo": "Antonelli passa al comando."
+   "testo": "**Antonelli passa al comando.**"
   },
   {
    "giro": 17,
    "tipo": "comando",
-   "testo": "Russell passa al comando."
-  },
-  {
-   "giro": 19,
-   "tipo": "incidente",
-   "testo": "Commissari: sotto investigazione Lawson e Hulkenberg."
-  },
-  {
-   "giro": 20,
-   "tipo": "incidente",
-   "testo": "Bearman: incidente segnalato."
-  },
-  {
-   "giro": 20,
-   "tipo": "incidente",
-   "testo": "Alonso: incidente segnalato."
-  },
-  {
-   "giro": 20,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Bortoleto."
-  },
-  {
-   "giro": 22,
-   "tipo": "incidente",
-   "testo": "Commissari: sotto investigazione Piastri e Albon (contatto)."
+   "testo": "**Russell passa al comando.**"
   },
   {
    "giro": 22,
    "tipo": "comando",
-   "testo": "Antonelli passa al comando."
+   "testo": "**Antonelli passa al comando.**"
   },
   {
    "giro": 23,
    "tipo": "penalita",
-   "testo": "Penalità di 10 secondi per Piastri (contatto)."
-  },
-  {
-   "giro": 24,
-   "tipo": "penalita",
-   "testo": "Hulkenberg sconta la penalità."
+   "testo": "**Penalità di 10 secondi a Piastri** per il contatto con Albon."
   },
   {
    "giro": 24,
    "tipo": "ritiro",
-   "testo": "Fernando Alonso si ritira (23 giri completati su 68)."
+   "testo": "**Fernando Alonso si ritira** (23 giri completati su 68)."
   },
   {
    "giro": 24,
    "tipo": "comando",
-   "testo": "Russell passa al comando."
+   "testo": "**Russell passa al comando.**"
   },
   {
    "giro": 24,
    "tipo": "comando",
-   "testo": "Antonelli passa al comando."
+   "testo": "**Antonelli passa al comando.**"
   },
   {
    "giro": 25,
    "tipo": "comando",
-   "testo": "Russell passa al comando."
+   "testo": "**Russell passa al comando.**"
   },
   {
    "giro": 26,
    "tipo": "incidente",
-   "testo": "Antonelli e Russell: incidente segnalato."
-  },
-  {
-   "giro": 26,
-   "tipo": "incidente",
-   "testo": "Commissari: Lawson e Hulkenberg verrà esaminato dopo la gara."
-  },
-  {
-   "giro": 30,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Antonelli e Russell."
+   "testo": "**Incidente tra Antonelli e Russell.**"
   },
   {
    "giro": 30,
    "tipo": "ritiro",
-   "testo": "George Russell si ritira (29 giri completati su 68)."
+   "testo": "**George Russell si ritira** (29 giri completati su 68)."
   },
   {
    "giro": 30,
    "tipo": "comando",
-   "testo": "Antonelli passa al comando."
+   "testo": "**Antonelli passa al comando.**"
   },
   {
    "giro": 30,
@@ -213,7 +158,7 @@
   {
    "giro": 31,
    "tipo": "safety",
-   "testo": "Virtual safety car."
+   "testo": "**Virtual safety car.**"
   },
   {
    "giro": 31,
@@ -226,64 +171,24 @@
    "testo": "Termina la virtual safety car."
   },
   {
-   "giro": 33,
-   "tipo": "incidente",
-   "testo": "Russell: incidente segnalato."
-  },
-  {
-   "giro": 34,
-   "tipo": "incidente",
-   "testo": "Commissari: Russell verrà esaminato dopo la gara."
-  },
-  {
-   "giro": 35,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Alonso."
-  },
-  {
-   "giro": 36,
-   "tipo": "incidente",
-   "testo": "Hadjar: incidente segnalato."
-  },
-  {
-   "giro": 39,
-   "tipo": "incidente",
-   "testo": "Hadjar: incidente segnalato."
-  },
-  {
    "giro": 39,
    "tipo": "ritiro",
-   "testo": "Lando Norris si ritira (38 giri completati su 68)."
-  },
-  {
-   "giro": 40,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Bearman."
+   "testo": "**Lando Norris si ritira** (38 giri completati su 68)."
   },
   {
    "giro": 40,
    "tipo": "ritiro",
-   "testo": "Sergio Perez si ritira (39 giri completati su 68)."
-  },
-  {
-   "giro": 43,
-   "tipo": "incidente",
-   "testo": "Commissari: sotto investigazione Hadjar."
-  },
-  {
-   "giro": 44,
-   "tipo": "incidente",
-   "testo": "Perez: incidente segnalato."
+   "testo": "**Sergio Perez si ritira** (39 giri completati su 68)."
   },
   {
    "giro": 44,
    "tipo": "penalita",
-   "testo": "Penalità di 10 secondi per Hadjar."
+   "testo": "**Penalità di 10 secondi a Hadjar**."
   },
   {
    "giro": 46,
    "tipo": "safety",
-   "testo": "Virtual safety car."
+   "testo": "**Virtual safety car.**"
   },
   {
    "giro": 46,
@@ -291,34 +196,9 @@
    "testo": "Termina la virtual safety car."
   },
   {
-   "giro": 46,
-   "tipo": "incidente",
-   "testo": "Bottas: incidente segnalato (eccesso di velocità ai box)."
-  },
-  {
-   "giro": 47,
-   "tipo": "incidente",
-   "testo": "Commissari: sotto investigazione Bottas (eccesso di velocità ai box)."
-  },
-  {
    "giro": 47,
    "tipo": "penalita",
-   "testo": "Penalità di 5 secondi per Bottas (eccesso di velocità ai box)."
-  },
-  {
-   "giro": 49,
-   "tipo": "incidente",
-   "testo": "Commissari: Perez verrà esaminato dopo la gara."
-  },
-  {
-   "giro": 52,
-   "tipo": "incidente",
-   "testo": "Gasly: incidente segnalato."
-  },
-  {
-   "giro": 52,
-   "tipo": "incidente",
-   "testo": "Commissari: sotto investigazione Hadjar."
+   "testo": "**Penalità di 5 secondi a Bottas** (eccesso di velocità ai box)."
   },
   {
    "giro": 52,
@@ -328,7 +208,7 @@
   {
    "giro": 53,
    "tipo": "safety",
-   "testo": "Virtual safety car."
+   "testo": "**Virtual safety car.**"
   },
   {
    "giro": 54,
@@ -336,29 +216,9 @@
    "testo": "Termina la virtual safety car."
   },
   {
-   "giro": 55,
-   "tipo": "incidente",
-   "testo": "Bortoleto: incidente segnalato."
-  },
-  {
-   "giro": 57,
-   "tipo": "incidente",
-   "testo": "Commissari: Hadjar verrà esaminato dopo la gara."
-  },
-  {
-   "giro": 58,
-   "tipo": "penalita",
-   "testo": "Hadjar sconta la penalità."
-  },
-  {
-   "giro": 58,
-   "tipo": "penalita",
-   "testo": "Piastri sconta la penalità."
-  },
-  {
-   "giro": 58,
-   "tipo": "penalita",
-   "testo": "Bottas sconta la penalità."
+   "giro": 62,
+   "tipo": "sorpasso",
+   "testo": "**Hamilton supera Verstappen** e sale al 2° posto."
   },
   {
    "giro": 62,
@@ -366,39 +226,14 @@
    "testo": "Ai box: Hadjar."
   },
   {
-   "giro": 64,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Gasly."
-  },
-  {
-   "giro": 65,
-   "tipo": "penalita",
-   "testo": "Hadjar sconta la penalità."
-  },
-  {
-   "giro": 67,
-   "tipo": "incidente",
-   "testo": "Commissari: sotto investigazione Bortoleto."
-  },
-  {
-   "giro": 68,
-   "tipo": "incidente",
-   "testo": "Lawson: incidente segnalato."
-  },
-  {
    "giro": 68,
    "tipo": "penalita",
-   "testo": "Penalità di 5 secondi per Bortoleto."
-  },
-  {
-   "giro": 68,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Lawson."
+   "testo": "**Penalità di 5 secondi a Bortoleto**."
   },
   {
    "giro": 68,
    "tipo": "arrivo",
-   "testo": "Bandiera a scacchi: vince Kimi Antonelli (Mercedes), davanti a Lewis Hamilton e Max Verstappen."
+   "testo": "**Bandiera a scacchi: vince Kimi Antonelli** (Mercedes), davanti a Lewis Hamilton e Max Verstappen."
   }
  ]
 }

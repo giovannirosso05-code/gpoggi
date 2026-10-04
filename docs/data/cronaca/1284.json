@@ -38,37 +38,37 @@
   {
    "giro": 3,
    "tipo": "incidente",
-   "testo": "Colapinto e Hamilton: incidente segnalato (contatto)."
+   "testo": "**Incidente tra Colapinto e Hamilton.**"
   },
   {
-   "giro": 4,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Colapinto e Hamilton (contatto)."
+   "giro": 3,
+   "tipo": "sorpasso",
+   "testo": "**Russell supera Piastri** e sale al 4° posto."
   },
   {
    "giro": 4,
    "tipo": "comando",
-   "testo": "Antonelli passa al comando."
+   "testo": "**Antonelli passa al comando.**"
   },
   {
    "giro": 5,
    "tipo": "ritiro",
-   "testo": "Pierre Gasly si ritira (4 giri completati su 57)."
+   "testo": "**Pierre Gasly si ritira** (4 giri completati su 57)."
   },
   {
    "giro": 5,
    "tipo": "ritiro",
-   "testo": "Isack Hadjar si ritira (4 giri completati su 57)."
+   "testo": "**Isack Hadjar si ritira** (4 giri completati su 57)."
   },
   {
    "giro": 5,
    "tipo": "comando",
-   "testo": "Leclerc passa al comando."
+   "testo": "**Leclerc passa al comando.**"
   },
   {
    "giro": 6,
    "tipo": "safety",
-   "testo": "Safety car in pista."
+   "testo": "**Safety car in pista.**"
   },
   {
    "giro": 6,
@@ -78,77 +78,37 @@
   {
    "giro": 7,
    "tipo": "ritiro",
-   "testo": "Liam Lawson si ritira (6 giri completati su 57)."
-  },
-  {
-   "giro": 8,
-   "tipo": "incidente",
-   "testo": "Gasly: incidente segnalato (contatto)."
-  },
-  {
-   "giro": 8,
-   "tipo": "incidente",
-   "testo": "Commissari: sotto investigazione Gasly (contatto)."
+   "testo": "**Liam Lawson si ritira** (6 giri completati su 57)."
   },
   {
    "giro": 8,
    "tipo": "ritiro",
-   "testo": "Nico Hulkenberg si ritira (7 giri completati su 57)."
-  },
-  {
-   "giro": 9,
-   "tipo": "incidente",
-   "testo": "Commissari: sotto investigazione Lawson e Gasly (contatto)."
-  },
-  {
-   "giro": 9,
-   "tipo": "incidente",
-   "testo": "Commissari: Lawson e Gasly verrà esaminato dopo la gara (contatto)."
+   "testo": "**Nico Hulkenberg si ritira** (7 giri completati su 57)."
   },
   {
    "giro": 11,
    "tipo": "safety",
-   "testo": "La safety car rientra ai box: si ripartirà nel giro."
+   "testo": "La safety car rientra ai box: si riparte."
   },
   {
    "giro": 13,
    "tipo": "comando",
-   "testo": "Norris passa al comando."
+   "testo": "**Norris passa al comando.**"
+  },
+  {
+   "giro": 13,
+   "tipo": "sorpasso",
+   "testo": "**Antonelli supera Leclerc** e sale al 2° posto."
   },
   {
    "giro": 14,
-   "tipo": "incidente",
-   "testo": "Lindblad e Perez: incidente segnalato (ha spinto un avversario fuori pista)."
-  },
-  {
-   "giro": 16,
-   "tipo": "incidente",
-   "testo": "Verstappen: incidente segnalato."
-  },
-  {
-   "giro": 16,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Lindblad e Perez (ha spinto un avversario fuori pista)."
+   "tipo": "sorpasso",
+   "testo": "**Antonelli supera Leclerc** e sale al 2° posto."
   },
   {
    "giro": 17,
-   "tipo": "incidente",
-   "testo": "Ocon: incidente segnalato."
-  },
-  {
-   "giro": 17,
-   "tipo": "incidente",
-   "testo": "Albon: incidente segnalato."
-  },
-  {
-   "giro": 17,
-   "tipo": "incidente",
-   "testo": "Alonso: incidente segnalato."
-  },
-  {
-   "giro": 20,
-   "tipo": "incidente",
-   "testo": "Commissari: Verstappen verrà esaminato dopo la gara."
+   "tipo": "sorpasso",
+   "testo": "**Leclerc supera Piastri** e sale al 3° posto."
   },
   {
    "giro": 20,
@@ -158,17 +118,7 @@
   {
    "giro": 21,
    "tipo": "incidente",
-   "testo": "Albon e Verstappen: incidente segnalato."
-  },
-  {
-   "giro": 22,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Albon e Verstappen."
-  },
-  {
-   "giro": 26,
-   "tipo": "incidente",
-   "testo": "Bottas: incidente segnalato (eccesso di velocità ai box)."
+   "testo": "**Incidente tra Albon e Verstappen.**"
   },
   {
    "giro": 26,
@@ -182,28 +132,13 @@
   },
   {
    "giro": 28,
-   "tipo": "incidente",
-   "testo": "Commissari: sotto investigazione Bottas (eccesso di velocità ai box)."
-  },
-  {
-   "giro": 28,
-   "tipo": "incidente",
-   "testo": "Commissari: Ocon verrà esaminato dopo la gara."
-  },
-  {
-   "giro": 28,
-   "tipo": "incidente",
-   "testo": "Commissari: Albon verrà esaminato dopo la gara."
+   "tipo": "comando",
+   "testo": "**Piastri passa al comando.**"
   },
   {
    "giro": 28,
    "tipo": "comando",
-   "testo": "Piastri passa al comando."
-  },
-  {
-   "giro": 28,
-   "tipo": "comando",
-   "testo": "Verstappen passa al comando."
+   "testo": "**Verstappen passa al comando.**"
   },
   {
    "giro": 28,
@@ -212,83 +147,53 @@
   },
   {
    "giro": 29,
-   "tipo": "incidente",
-   "testo": "Commissari: Alonso verrà esaminato dopo la gara."
+   "tipo": "comando",
+   "testo": "**Antonelli passa al comando.**"
   },
   {
    "giro": 29,
-   "tipo": "comando",
-   "testo": "Antonelli passa al comando."
+   "tipo": "sorpasso",
+   "testo": "**Verstappen supera Norris** e sale al 2° posto."
   },
   {
-   "giro": 33,
-   "tipo": "penalita",
-   "testo": "Bottas sconta la penalità."
+   "giro": 31,
+   "tipo": "sorpasso",
+   "testo": "**Leclerc supera Russell** e sale al 5° posto."
   },
   {
-   "giro": 43,
-   "tipo": "penalita",
-   "testo": "Bandiera bianconera per Bottas: comportamento scorretto."
+   "giro": 35,
+   "tipo": "sorpasso",
+   "testo": "**Russell supera Piastri** e sale al 5° posto."
   },
   {
-   "giro": 48,
-   "tipo": "penalita",
-   "testo": "Bandiera bianconera per Alonso: limiti della pista."
+   "giro": 47,
+   "tipo": "sorpasso",
+   "testo": "**Verstappen supera Leclerc** e sale al 3° posto."
   },
   {
-   "giro": 57,
-   "tipo": "incidente",
-   "testo": "Russell: incidente segnalato."
-  },
-  {
-   "giro": 57,
-   "tipo": "incidente",
-   "testo": "Verstappen e Russell: incidente segnalato (contatto)."
+   "giro": 55,
+   "tipo": "sorpasso",
+   "testo": "**Verstappen supera Russell** e sale al 5° posto."
   },
   {
    "giro": 57,
    "tipo": "incidente",
-   "testo": "Leclerc e Russell: incidente segnalato (contatto)."
+   "testo": "**Incidente tra Verstappen e Russell.**"
   },
   {
    "giro": 57,
    "tipo": "incidente",
-   "testo": "Leclerc: incidente segnalato."
+   "testo": "**Incidente tra Leclerc e Russell.**"
   },
   {
    "giro": 57,
-   "tipo": "incidente",
-   "testo": "Leclerc: incidente segnalato."
-  },
-  {
-   "giro": 57,
-   "tipo": "incidente",
-   "testo": "Commissari: Leclerc verrà esaminato dopo la gara."
-  },
-  {
-   "giro": 57,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Russell."
-  },
-  {
-   "giro": 57,
-   "tipo": "incidente",
-   "testo": "Commissari: Verstappen e Russell verrà esaminato dopo la gara (contatto)."
-  },
-  {
-   "giro": 57,
-   "tipo": "incidente",
-   "testo": "Commissari: Leclerc e Russell verrà esaminato dopo la gara (contatto)."
-  },
-  {
-   "giro": 57,
-   "tipo": "incidente",
-   "testo": "Commissari: Leclerc verrà esaminato dopo la gara."
+   "tipo": "sorpasso",
+   "testo": "**Verstappen supera Leclerc** e sale al 5° posto."
   },
   {
    "giro": 57,
    "tipo": "arrivo",
-   "testo": "Bandiera a scacchi: vince Kimi Antonelli (Mercedes), davanti a Lando Norris e Oscar Piastri."
+   "testo": "**Bandiera a scacchi: vince Kimi Antonelli** (Mercedes), davanti a Lando Norris e Oscar Piastri."
   }
  ]
 }

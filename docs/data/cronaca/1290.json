@@ -38,27 +38,17 @@
   {
    "giro": 1,
    "tipo": "safety",
-   "testo": "Safety car in pista."
-  },
-  {
-   "giro": 1,
-   "tipo": "incidente",
-   "testo": "Albon: incidente segnalato."
-  },
-  {
-   "giro": 1,
-   "tipo": "incidente",
-   "testo": "Commissari: Albon verrà esaminato dopo la gara."
+   "testo": "**Safety car in pista.**"
   },
   {
    "giro": 1,
    "tipo": "ritiro",
-   "testo": "George Russell si ritira (0 giri completati su 44)."
+   "testo": "**George Russell si ritira** (0 giri completati su 44)."
   },
   {
    "giro": 2,
    "tipo": "incidente",
-   "testo": "Hamilton e Russell: incidente segnalato (contatto)."
+   "testo": "**Incidente tra Hamilton e Russell.**"
   },
   {
    "giro": 2,
@@ -66,34 +56,34 @@
    "testo": "Ai box: Hadjar."
   },
   {
-   "giro": 3,
-   "tipo": "incidente",
-   "testo": "Commissari: sotto investigazione Hamilton e Russell (contatto)."
-  },
-  {
    "giro": 4,
    "tipo": "safety",
-   "testo": "La safety car rientra ai box: si ripartirà nel giro."
+   "testo": "La safety car rientra ai box: si riparte."
+  },
+  {
+   "giro": 6,
+   "tipo": "sorpasso",
+   "testo": "**Verstappen supera Leclerc** e sale al 2° posto."
   },
   {
    "giro": 9,
    "tipo": "incidente",
-   "testo": "Leclerc e Piastri: incidente segnalato (contatto)."
+   "testo": "**Incidente tra Leclerc e Piastri.**"
   },
   {
    "giro": 9,
    "tipo": "penalita",
-   "testo": "Penalità di 5 secondi per Hamilton (contatto)."
+   "testo": "**Penalità di 5 secondi a Hamilton** per il contatto con Russell."
   },
   {
-   "giro": 11,
-   "tipo": "incidente",
-   "testo": "Commissari: sotto investigazione Leclerc e Piastri (contatto)."
+   "giro": 9,
+   "tipo": "sorpasso",
+   "testo": "**Hamilton supera Piastri** e sale al 4° posto."
   },
   {
    "giro": 14,
    "tipo": "ritiro",
-   "testo": "Sergio Perez si ritira (13 giri completati su 44)."
+   "testo": "**Sergio Perez si ritira** (13 giri completati su 44)."
   },
   {
    "giro": 17,
@@ -103,7 +93,7 @@
   {
    "giro": 18,
    "tipo": "safety",
-   "testo": "Virtual safety car."
+   "testo": "**Virtual safety car.**"
   },
   {
    "giro": 18,
@@ -118,17 +108,12 @@
   {
    "giro": 19,
    "tipo": "comando",
-   "testo": "Leclerc passa al comando."
+   "testo": "**Leclerc passa al comando.**"
   },
   {
    "giro": 20,
    "tipo": "safety",
-   "testo": "Virtual safety car."
-  },
-  {
-   "giro": 20,
-   "tipo": "incidente",
-   "testo": "Lindblad e Lawson: incidente segnalato (ha spinto un avversario fuori pista)."
+   "testo": "**Virtual safety car.**"
   },
   {
    "giro": 20,
@@ -142,58 +127,43 @@
   },
   {
    "giro": 21,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Lindblad e Lawson (ha spinto un avversario fuori pista)."
-  },
-  {
-   "giro": 21,
    "tipo": "comando",
-   "testo": "Norris passa al comando."
-  },
-  {
-   "giro": 22,
-   "tipo": "penalita",
-   "testo": "Hamilton sconta la penalità."
-  },
-  {
-   "giro": 23,
-   "tipo": "incidente",
-   "testo": "Hamilton: incidente segnalato (rilascio pericoloso)."
+   "testo": "**Norris passa al comando.**"
   },
   {
    "giro": 23,
    "tipo": "comando",
-   "testo": "Leclerc passa al comando."
-  },
-  {
-   "giro": 24,
-   "tipo": "incidente",
-   "testo": "Commissari: Hamilton verrà esaminato dopo la gara (rilascio pericoloso)."
+   "testo": "**Leclerc passa al comando.**"
   },
   {
    "giro": 26,
    "tipo": "ritiro",
-   "testo": "Lance Stroll si ritira (25 giri completati su 44)."
+   "testo": "**Lance Stroll si ritira** (25 giri completati su 44)."
+  },
+  {
+   "giro": 26,
+   "tipo": "sorpasso",
+   "testo": "**Antonelli supera Norris** e sale al 2° posto."
   },
   {
    "giro": 34,
    "tipo": "comando",
-   "testo": "Antonelli passa al comando."
+   "testo": "**Antonelli passa al comando.**"
   },
   {
    "giro": 40,
    "tipo": "incidente",
-   "testo": "Bortoleto e Lindblad: incidente segnalato."
+   "testo": "**Incidente tra Bortoleto e Lindblad.**"
   },
   {
-   "giro": 43,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Bortoleto e Lindblad."
+   "giro": 40,
+   "tipo": "sorpasso",
+   "testo": "**Hamilton supera Piastri** e sale al 4° posto."
   },
   {
    "giro": 44,
    "tipo": "arrivo",
-   "testo": "Bandiera a scacchi: vince Kimi Antonelli (Mercedes), davanti a Charles Leclerc e Max Verstappen."
+   "testo": "**Bandiera a scacchi: vince Kimi Antonelli** (Mercedes), davanti a Charles Leclerc e Max Verstappen."
   }
  ]
 }

@@ -322,7 +322,7 @@ export async function leggiVoti(chiave) {
 }
 
 // Cronaca giro per giro: elenco con filtri (tutto, safety car, incidenti e penalità, ritiri, box).
-const CRON_FILTRI = [["", "Tutto"], ["safety", "Safety car"], ["incidente,penalita", "Incidenti e penalità"], ["ritiro", "Ritiri"], ["pit", "Box"], ["comando,sorpasso", "Comando"]];
+const CRON_FILTRI = [["", "Tutto"], ["safety", "Safety car"], ["incidente,penalita", "Incidenti e penalità"], ["ritiro", "Ritiri"], ["pit", "Box"], ["comando,sorpasso", "Sorpassi e comando"]];
 export function montaCronaca(el, voci, giriTot) {
   if (!voci || !voci.length) { el.innerHTML = ""; return; }
   const tipi = new Set(voci.map((v) => v.tipo));
@@ -332,7 +332,7 @@ export function montaCronaca(el, voci, giriTot) {
   const lista = el.querySelector("#cron-lista");
   const disegna = (k) => {
     const ok = k ? k.split(",") : null;
-    lista.innerHTML = voci.filter((v) => !ok || ok.includes(v.tipo)).map((v) => `<li class="cron-${v.tipo}"><span class="cron-giro">Giro ${v.giro}${giriTot ? `<small>/${giriTot}</small>` : ""}</span><span class="cron-testo">${esc(v.testo)}</span></li>`).join("");
+    lista.innerHTML = voci.filter((v) => !ok || ok.includes(v.tipo)).map((v) => `<li class="cron-${v.tipo}"><span class="cron-giro">Giro ${v.giro}${giriTot ? `<small>/${giriTot}</small>` : ""}</span><span class="cron-testo">${esc(v.testo).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")}</span></li>`).join("");
   };
   el.querySelector(".cron-filtri").addEventListener("click", (e) => {
     const b = e.target.closest(".pill");

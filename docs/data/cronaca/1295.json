@@ -31,39 +31,29 @@
    "testo": "Parte la gara alle 13:03 (ora italiana); rischio pioggia indicato al 0%."
   },
   {
-   "giro": 1,
-   "tipo": "incidente",
-   "testo": "Hadjar: incidente segnalato."
+   "giro": 2,
+   "tipo": "sorpasso",
+   "testo": "**Hadjar supera Norris** e sale al 4° posto."
   },
   {
-   "giro": 1,
-   "tipo": "incidente",
-   "testo": "Sainz: incidente segnalato."
-  },
-  {
-   "giro": 1,
-   "tipo": "incidente",
-   "testo": "Commissari: Hadjar verrà esaminato dopo la gara."
-  },
-  {
-   "giro": 1,
-   "tipo": "incidente",
-   "testo": "Commissari: Sainz verrà esaminato dopo la gara."
+   "giro": 4,
+   "tipo": "sorpasso",
+   "testo": "**Leclerc supera Hadjar** e sale al 3° posto."
   },
   {
    "giro": 8,
    "tipo": "ritiro",
-   "testo": "Lance Stroll si ritira (7 giri completati su 51)."
+   "testo": "**Lance Stroll si ritira** (7 giri completati su 51)."
   },
   {
    "giro": 21,
    "tipo": "ritiro",
-   "testo": "Fernando Alonso si ritira (20 giri completati su 51)."
+   "testo": "**Fernando Alonso si ritira** (20 giri completati su 51)."
   },
   {
    "giro": 30,
    "tipo": "ritiro",
-   "testo": "Alexander Albon si ritira (29 giri completati su 51)."
+   "testo": "**Alexander Albon si ritira** (29 giri completati su 51)."
   },
   {
    "giro": 30,
@@ -73,7 +63,7 @@
   {
    "giro": 31,
    "tipo": "safety",
-   "testo": "Safety car in pista."
+   "testo": "**Safety car in pista.**"
   },
   {
    "giro": 31,
@@ -83,22 +73,22 @@
   {
    "giro": 35,
    "tipo": "safety",
-   "testo": "La safety car rientra ai box: si ripartirà nel giro."
+   "testo": "La safety car rientra ai box: si riparte."
   },
   {
    "giro": 36,
    "tipo": "safety",
-   "testo": "Safety car in pista."
+   "testo": "**Safety car in pista.**"
   },
   {
    "giro": 36,
    "tipo": "ritiro",
-   "testo": "Pierre Gasly si ritira (35 giri completati su 51)."
+   "testo": "**Pierre Gasly si ritira** (35 giri completati su 51)."
   },
   {
    "giro": 36,
    "tipo": "ritiro",
-   "testo": "Lando Norris si ritira (35 giri completati su 51)."
+   "testo": "**Lando Norris si ritira** (35 giri completati su 51)."
   },
   {
    "giro": 36,
@@ -108,87 +98,47 @@
   {
    "giro": 37,
    "tipo": "ritiro",
-   "testo": "Franco Colapinto si ritira (36 giri completati su 51)."
+   "testo": "**Franco Colapinto si ritira** (36 giri completati su 51)."
   },
   {
    "giro": 38,
    "tipo": "safety",
-   "testo": "La safety car rientra ai box: si ripartirà nel giro."
+   "testo": "La safety car rientra ai box: si riparte."
   },
   {
    "giro": 38,
    "tipo": "incidente",
-   "testo": "Norris e Gasly e Colapinto: incidente segnalato."
+   "testo": "**Incidente tra Norris e Gasly e Colapinto.**"
   },
   {
    "giro": 40,
    "tipo": "incidente",
-   "testo": "Lindblad e Lawson: incidente segnalato."
+   "testo": "**Incidente tra Lindblad e Lawson.**"
+  },
+  {
+   "giro": 40,
+   "tipo": "sorpasso",
+   "testo": "**Leclerc supera Piastri** e sale al 4° posto."
   },
   {
    "giro": 41,
    "tipo": "incidente",
-   "testo": "Bortoleto: incidente segnalato."
-  },
-  {
-   "giro": 41,
-   "tipo": "incidente",
-   "testo": "Norris e Gasly e Colapinto: incidente segnalato (contatto)."
-  },
-  {
-   "giro": 41,
-   "tipo": "incidente",
-   "testo": "Commissari: sotto investigazione Lindblad e Lawson."
-  },
-  {
-   "giro": 42,
-   "tipo": "incidente",
-   "testo": "Commissari: sotto investigazione Norris e Gasly e Colapinto (contatto)."
-  },
-  {
-   "giro": 45,
-   "tipo": "incidente",
-   "testo": "Verstappen: incidente segnalato."
-  },
-  {
-   "giro": 48,
-   "tipo": "incidente",
-   "testo": "Commissari: sotto investigazione Bortoleto."
-  },
-  {
-   "giro": 49,
-   "tipo": "incidente",
-   "testo": "Commissari: nessuna penalità per Verstappen."
+   "testo": "**Incidente tra Norris e Gasly e Colapinto.**"
   },
   {
    "giro": 50,
    "tipo": "ritiro",
-   "testo": "Valtteri Bottas si ritira (49 giri completati su 51)."
-  },
-  {
-   "giro": 51,
-   "tipo": "incidente",
-   "testo": "Bottas: incidente segnalato."
-  },
-  {
-   "giro": 51,
-   "tipo": "incidente",
-   "testo": "Commissari: Bortoleto verrà esaminato dopo la gara."
+   "testo": "**Valtteri Bottas si ritira** (49 giri completati su 51)."
   },
   {
    "giro": 51,
    "tipo": "penalita",
-   "testo": "Penalità di 10 secondi per Colapinto (contatto)."
-  },
-  {
-   "giro": 51,
-   "tipo": "incidente",
-   "testo": "Commissari: Bottas verrà esaminato dopo la gara."
+   "testo": "**Penalità di 10 secondi a Colapinto** (contatto)."
   },
   {
    "giro": 51,
    "tipo": "arrivo",
-   "testo": "Bandiera a scacchi: vince George Russell (Mercedes), davanti a Max Verstappen e Isack Hadjar."
+   "testo": "**Bandiera a scacchi: vince George Russell** (Mercedes), davanti a Max Verstappen e Isack Hadjar."
   }
  ]
 }

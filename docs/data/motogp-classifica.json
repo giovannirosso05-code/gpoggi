@@ -1,0 +1,315 @@
+{
+ "aggiornata_dopo": "GP Giappone",
+ "piloti": [
+  {
+   "pos": 1,
+   "nome": "Jorge Martin",
+   "numero": 89,
+   "paese": "Spagna",
+   "team": "Aprilia Racing",
+   "moto": "Aprilia",
+   "punti": 333,
+   "vittorie": 1
+  },
+  {
+   "pos": 2,
+   "nome": "Marc Marquez",
+   "numero": 93,
+   "paese": "Spagna",
+   "team": "Ducati Lenovo Team",
+   "moto": "Ducati",
+   "punti": 331,
+   "vittorie": 6
+  },
+  {
+   "pos": 3,
+   "nome": "Marco Bezzecchi",
+   "numero": 72,
+   "paese": "Italia",
+   "team": "Aprilia Racing",
+   "moto": "Aprilia",
+   "punti": 284,
+   "vittorie": 4
+  },
+  {
+   "pos": 4,
+   "nome": "Pedro Acosta",
+   "numero": 37,
+   "paese": "Spagna",
+   "team": "Red Bull KTM Factory Racing",
+   "moto": "KTM",
+   "punti": 243,
+   "vittorie": 1
+  },
+  {
+   "pos": 5,
+   "nome": "Ai Ogura",
+   "numero": 79,
+   "paese": "Giappone",
+   "team": "SuperFile Trackhouse MotoGP Team",
+   "moto": "Aprilia",
+   "punti": 237,
+   "vittorie": 1
+  },
+  {
+   "pos": 6,
+   "nome": "Fabio Di Giannantonio",
+   "numero": 49,
+   "paese": "Italia",
+   "team": "Pertamina Enduro VR46 Racing Team",
+   "moto": "Ducati",
+   "punti": 230,
+   "vittorie": 1
+  },
+  {
+   "pos": 7,
+   "nome": "Raul Fernandez",
+   "numero": 25,
+   "paese": "Spagna",
+   "team": "SuperFile Trackhouse MotoGP Team",
+   "moto": "Aprilia",
+   "punti": 216,
+   "vittorie": 1
+  },
+  {
+   "pos": 8,
+   "nome": "Francesco Bagnaia",
+   "numero": 63,
+   "paese": "Italia",
+   "team": "Ducati Lenovo Team",
+   "moto": "Ducati",
+   "punti": 164,
+   "vittorie": 0
+  },
+  {
+   "pos": 9,
+   "nome": "Alex Marquez",
+   "numero": 73,
+   "paese": "Spagna",
+   "team": "BK8 Gresini Racing MotoGP",
+   "moto": "Ducati",
+   "punti": 158,
+   "vittorie": 1
+  },
+  {
+   "pos": 10,
+   "nome": "Fermin Aldeguer",
+   "numero": 54,
+   "paese": "Spagna",
+   "team": "BK8 Gresini Racing MotoGP",
+   "moto": "Ducati",
+   "punti": 122,
+   "vittorie": 0
+  },
+  {
+   "pos": 11,
+   "nome": "Enea Bastianini",
+   "numero": 23,
+   "paese": "Italia",
+   "team": "Red Bull KTM Tech3",
+   "moto": "KTM",
+   "punti": 116,
+   "vittorie": 0
+  },
+  {
+   "pos": 12,
+   "nome": "Luca Marini",
+   "numero": 10,
+   "paese": "Italia",
+   "team": "Honda HRC Castrol",
+   "moto": "Honda",
+   "punti": 104,
+   "vittorie": 0
+  },
+  {
+   "pos": 13,
+   "nome": "Brad Binder",
+   "numero": 33,
+   "paese": "South Africa",
+   "team": "Red Bull KTM Factory Racing",
+   "moto": "KTM",
+   "punti": 99,
+   "vittorie": 0
+  },
+  {
+   "pos": 14,
+   "nome": "Diogo Moreira",
+   "numero": 11,
+   "paese": "Brasile",
+   "team": "Pro Honda LCR",
+   "moto": "Honda",
+   "punti": 74,
+   "vittorie": 0
+  },
+  {
+   "pos": 15,
+   "nome": "Fabio Quartararo",
+   "numero": 20,
+   "paese": "Francia",
+   "team": "Monster Energy Yamaha MotoGP Team",
+   "moto": "Yamaha",
+   "punti": 66,
+   "vittorie": 0
+  },
+  {
+   "pos": 16,
+   "nome": "Franco Morbidelli",
+   "numero": 21,
+   "paese": "Italia",
+   "team": "Pertamina Enduro VR46 Racing Team",
+   "moto": "Ducati",
+   "punti": 57,
+   "vittorie": 0
+  },
+  {
+   "pos": 17,
+   "nome": "Johann Zarco",
+   "numero": 5,
+   "paese": "Francia",
+   "team": "Castrol Honda LCR",
+   "moto": "Honda",
+   "punti": 48,
+   "vittorie": 0
+  },
+  {
+   "pos": 18,
+   "nome": "Joan Mir",
+   "numero": 36,
+   "paese": "Spagna",
+   "team": "Honda HRC Castrol",
+   "moto": "Honda",
+   "punti": 33,
+   "vittorie": 0
+  },
+  {
+   "pos": 19,
+   "nome": "Jack Miller",
+   "numero": 43,
+   "paese": "Australia",
+   "team": "Prima Pramac Yamaha MotoGP",
+   "moto": "Yamaha",
+   "punti": 28,
+   "vittorie": 0
+  },
+  {
+   "pos": 20,
+   "nome": "Alex Rins",
+   "numero": 42,
+   "paese": "Spagna",
+   "team": "Monster Energy Yamaha MotoGP Team",
+   "moto": "Yamaha",
+   "punti": 24,
+   "vittorie": 0
+  },
+  {
+   "pos": 21,
+   "nome": "Toprak Razgatlioglu",
+   "numero": 7,
+   "paese": "Türkiye",
+   "team": "Prima Pramac Yamaha MotoGP",
+   "moto": "Yamaha",
+   "punti": 18,
+   "vittorie": 0
+  },
+  {
+   "pos": 22,
+   "nome": "Maverick Viñales",
+   "numero": 12,
+   "paese": "Spagna",
+   "team": "Red Bull KTM Tech3",
+   "moto": "KTM",
+   "punti": 12,
+   "vittorie": 0
+  },
+  {
+   "pos": 23,
+   "nome": "Iker Lecuona",
+   "numero": 27,
+   "paese": "Spagna",
+   "team": "BK8 Gresini Racing MotoGP",
+   "moto": "Ducati",
+   "punti": 9,
+   "vittorie": 0
+  },
+  {
+   "pos": 24,
+   "nome": "Augusto Fernandez",
+   "numero": 47,
+   "paese": "Spagna",
+   "team": "Yamaha Factory Racing",
+   "moto": "Yamaha",
+   "punti": 6,
+   "vittorie": 0
+  },
+  {
+   "pos": 25,
+   "nome": "Pol Espargaro",
+   "numero": 44,
+   "paese": "Spagna",
+   "team": "Red Bull KTM Tech3",
+   "moto": "KTM",
+   "punti": 5,
+   "vittorie": 0
+  },
+  {
+   "pos": 26,
+   "nome": "Somkiat Chantra",
+   "numero": 15,
+   "paese": "Thailandia",
+   "team": "Honda HRC Castrol",
+   "moto": "Honda",
+   "punti": 3,
+   "vittorie": 0
+  },
+  {
+   "pos": 27,
+   "nome": "Takaaki Nakagami",
+   "numero": 30,
+   "paese": "Giappone",
+   "team": "Honda HRC Castrol",
+   "moto": "Honda",
+   "punti": 3,
+   "vittorie": 0
+  },
+  {
+   "pos": 28,
+   "nome": "Cal Crutchlow",
+   "numero": 35,
+   "paese": "United Kingdom of Great Britain and Northern Ireland",
+   "team": "Castrol Honda LCR",
+   "moto": "Honda",
+   "punti": 0,
+   "vittorie": 0
+  },
+  {
+   "pos": 29,
+   "nome": "Jonas Folger",
+   "numero": 94,
+   "paese": "Germania",
+   "team": "Red Bull KTM Tech3",
+   "moto": "KTM",
+   "punti": 0,
+   "vittorie": 0
+  },
+  {
+   "pos": 30,
+   "nome": "Lorenzo Savadori",
+   "numero": 32,
+   "paese": "Italia",
+   "team": "SuperFile Trackhouse MotoGP Team",
+   "moto": "Aprilia",
+   "punti": 0,
+   "vittorie": 0
+  },
+  {
+   "pos": 31,
+   "nome": "Michele Pirro",
+   "numero": 51,
+   "paese": "Italia",
+   "team": "BK8 Gresini Racing MotoGP",
+   "moto": "Ducati",
+   "punti": 0,
+   "vittorie": 0
+  }
+ ]
+}

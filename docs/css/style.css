@@ -702,3 +702,21 @@ select.sel {
 @media (max-width: 768px) { .cal-lista { grid-template-columns: 1fr; } }
 
 .link-nome:hover { color: var(--accent); text-decoration: underline; }
+
+/* ---------- MotoGP ---------- */
+.moto-prossimo { background: var(--bg-elevated); border: 1px solid var(--border); border-left: 5px solid var(--text); border-radius: var(--radius); box-shadow: var(--shadow-card); padding: 20px 24px; }
+.moto-prossimo h2 { font-size: 34px; margin: 8px 0 4px; }
+.moto-sessioni { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
+.moto-sess { background: var(--bg-elevated-2); border-radius: 10px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; font-size: 13px; }
+.moto-sess b { font-size: 14px; } .moto-sess span { color: var(--text-secondary); }
+.moto-home { margin: 16px 0 0; background: var(--bg-elevated); border: 1px solid var(--border); border-left: 5px solid var(--text); border-radius: var(--radius); box-shadow: var(--shadow-card); padding: 16px 20px; }
+.moto-home[hidden] { display: none; }
+.moto-home-testa { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; font-weight: 600; font-size: 13px; }
+.moto-home-corpo { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center; }
+.moto-home-gp { font-family: var(--font-display); font-weight: 600; font-size: 26px; text-transform: uppercase; line-height: 1.1; }
+.moto-home-gara { margin-top: 8px; font-size: 14px; color: var(--text-secondary); } .moto-home-gara b { color: var(--text); }
+@media (max-width: 768px) { .moto-home-corpo { grid-template-columns: 1fr; gap: 10px; } .moto-prossimo { padding: 16px; } .moto-prossimo h2 { font-size: 28px; } }
+@media (max-width: 600px) {
+  .nav .nav-links { overflow-x: auto; justify-content: flex-start; gap: 16px; scrollbar-width: none; padding-bottom: 2px; }
+  .nav .nav-links a { flex: none; }
+}

@@ -94,6 +94,7 @@ export function renderHeader(paginaAttuale) {
     ["classifiche", "classifiche.html", "Classifiche"],
     ["gare", "gare.html", "Gare"],
     ["notizie", "notizie.html", "Notizie"],
+    ["motogp", "motogp.html", "MotoGP"],
     ["giochi", "giochi.html", "Giochi"],
   ];
   document.getElementById("site-header").innerHTML = `
@@ -126,7 +127,8 @@ export function renderFooter() {
           <li><a href="piloti.html">Piloti</a></li>
           <li><a href="classifiche.html">Classifiche</a></li>
           <li><a href="archivio.html">Archivio storico</a></li>
-          <li><a href="gare.html">Calendario</a></li>
+          <li><a href="gare.html">Calendario F1</a></li>
+          <li><a href="motogp.html">MotoGP</a></li>
           <li><a href="calendario.html">Aggiungi al calendario</a></li>
           <li><a href="notizie.html">Notizie</a></li>
           <li><a href="confronto.html">Confronto piloti</a></li>

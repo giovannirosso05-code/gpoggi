@@ -97,6 +97,23 @@ try {
       <div><div class="evento-widget-mini-nome">${esc(g.nome)}</div>
       <div class="evento-widget-mini-data">${esc(g.circuito)} · ${intervalloWeekend(g)}</div></div>
     </a>`).join("") : `<p class="muted" style="font-size:12px">Nessun weekend in programma.</p>`;
+  // riquadro MotoGP: prossimo weekend e primi tre della classifica
+  try {
+    const [cal, cl, ul] = await Promise.all([fetchJSON("data/motogp.json"), fetchJSON("data/motogp-classifica.json").catch(() => null), fetchJSON("data/motogp-ultima.json").catch(() => null)]);
+    const w = cal.weekend[0];
+    if (w) {
+      const gara = w.sessioni.find((s) => s.codice === "RAC") || w.sessioni[w.sessioni.length - 1];
+      const el = document.getElementById("moto-home");
+      el.hidden = false;
+      el.innerHTML = `<div class="moto-home-testa"><span class="cd-sigla moto">MotoGP</span><a href="motogp.html" class="accent">Tutta la MotoGP →</a></div>
+        <div class="moto-home-corpo">
+          <div><div class="moto-home-gp">${esc(w.nome)}</div><div class="muted">${esc(w.circuito)}</div>
+            <div class="moto-home-gara">Gara: <b>${formattaDataOra(gara.inizio)}</b></div>
+            ${ul ? `<div class="moto-home-gara">Ultima gara, ${esc(ul.nome)}: <b>${ul.risultati.slice(0, 3).map((r) => esc(r.nome.split(" ").slice(-1)[0])).join(", ")}</b></div>` : ""}</div>
+          ${cl ? `<ol class="mini-classifica">${cl.piloti.slice(0, 3).map((p) => `<li><a href="motogp.html"><span class="pos">${p.pos}</span><span>${esc(p.nome)}</span><span class="pt">${punti(p.punti)}</span></a></li>`).join("")}</ol>` : ""}
+        </div>`;
+    }
+  } catch (e) {}
 } catch (e) {
   erroreCaricamento(document.getElementById("ultima-gara"));
 }

@@ -100,22 +100,25 @@ export function renderFooter() {
     </div>`;
   fetchJSON("data/meta.json").then((m) => {
     const el = document.getElementById("footer-aggiornato");
-    if (el) el.textContent = "Dati aggiornati al " + new Date(m.aggiornato).toLocaleString("it-IT", { dateStyle: "short", timeStyle: "short" });
+    if (el) el.textContent = "Dati aggiornati al " + new Date(m.aggiornato).toLocaleString("it-IT", { dateStyle: "short", timeStyle: "short", timeZone: "Europe/Rome" });
   }).catch(() => {});
 }
 
 export function formattaData(iso) {
-  return new Date(iso).toLocaleDateString("it-IT", { day: "numeric", month: "short", year: "numeric" });
+  return new Date(iso).toLocaleDateString("it-IT", { day: "numeric", month: "short", year: "numeric", timeZone: "Europe/Rome" });
 }
 
 export function formattaDataOra(iso) {
-  return new Date(iso).toLocaleString("it-IT", { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+  return new Date(iso).toLocaleString("it-IT", { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Rome" });
 }
 
 export function intervalloWeekend(g) {
   const a = new Date(g.inizio), b = new Date(g.fine);
-  const mese = (d) => d.toLocaleDateString("it-IT", { month: "short" });
-  return a.getMonth() === b.getMonth() ? `${a.getDate()}–${b.getDate()} ${mese(b)} ${b.getFullYear()}` : `${a.getDate()} ${mese(a)} – ${b.getDate()} ${mese(b)} ${b.getFullYear()}`;
+  const f = (d, o) => d.toLocaleDateString("it-IT", { ...o, timeZone: "Europe/Rome" });
+  const mese = (d) => f(d, { month: "short" });
+  return f(a, { month: "numeric" }) === f(b, { month: "numeric" })
+    ? `${f(a, { day: "numeric" })}–${f(b, { day: "numeric" })} ${mese(b)} ${f(b, { year: "numeric" })}`
+    : `${f(a, { day: "numeric" })} ${mese(a)} – ${f(b, { day: "numeric" })} ${mese(b)} ${f(b, { year: "numeric" })}`;
 }
 
 export function punti(v) {

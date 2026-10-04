@@ -366,3 +366,17 @@ function barraIndietro() {
     if (stessoSito && history.length > 1) { e.preventDefault(); history.back(); }
   });
 }
+
+// Programma del weekend in forma compatta: un riga per giorno con le sessioni e l'orario italiano.
+export function programmaHtml(sessioni) {
+  const TZ = "Europe/Rome";
+  const giorno = (iso) => new Date(iso).toLocaleDateString("sv-SE", { timeZone: TZ });
+  const per = {};
+  for (const s of sessioni) (per[giorno(s.inizio)] ||= []).push(s);
+  const ora = Date.now();
+  return `<div class="programma" aria-label="Programma del weekend, ora italiana">
+    <div class="programma-testa">Programma <span>· ora italiana</span></div>
+    ${Object.keys(per).sort().map((k) => `<div class="programma-giorno"><b>${new Date(k + "T12:00:00").toLocaleDateString("it-IT", { weekday: "short", day: "numeric", month: "short" })}</b>
+      <div class="programma-sessioni">${per[k].sort((a, b) => new Date(a.inizio) - new Date(b.inizio)).map((s) => `<span class="programma-sess ${/^gara$/i.test(s.nome) ? "gara" : ""} ${new Date(s.fine) < ora ? "finita" : ""}">${esc(s.nome)} <b>${new Date(s.inizio).toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit", timeZone: TZ })}</b></span>`).join("")}</div></div>`).join("")}
+  </div>`;
+}

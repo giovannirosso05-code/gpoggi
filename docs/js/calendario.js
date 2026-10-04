@@ -109,7 +109,7 @@ function dettaglio() {
         ${giorni[k].map((s) => `<div class="ag-sessione"><span>${esc(s.nome)}</span><span>${s.senzaOra ? "" : ora(s.inizio)}</span></div>`).join("")}</div>`).join("")}${finito(w) && INFO.report[w.serie + "|" + w.id] ? `<div class="ag-commento"><b>Com'è andata</b><p>${esc(INFO.report[w.serie + "|" + w.id])}</p></div>` : ""}
       <div class="ag-wk-azioni">${finito(w) ? "" : `<button class="quiz-avanti ag-scarica" data-w="${esc(w.serie + "|" + w.id)}">Aggiungi al calendario</button>`}${
         w.serie === "f1" ? `<a class="${finito(w) ? "quiz-avanti ag-risultati" : "accent"}" href="gara.html?id=${w.id}">${finito(w) ? "Vai ai risultati" : "Pagina del weekend →"}</a>`
-        : `<a class="${finito(w) ? "quiz-avanti ag-risultati" : "accent"}" href="${finito(w) ? "gara-moto.html?gp=" + encodeURIComponent(w.id) : "motogp.html"}">${finito(w) ? "Vai ai risultati" : "Pagina MotoGP →"}</a>`}</div>
+        : `<a class="${finito(w) ? "quiz-avanti ag-risultati" : "accent"}" href="${finito(w) ? "gara-moto.html?gp=" + encodeURIComponent(w.id) : "gara-moto.html?gp=" + encodeURIComponent(w.id)}">${finito(w) ? "Vai ai risultati" : "Pagina del weekend →"}</a>`}</div>
     </article>`;
   }).join("");
 }
@@ -136,7 +136,7 @@ function prossimiEventi() {
       <p class="muted">${esc(w.circuito || "")}${w.paese ? " · " + esc(w.paese) : ""}</p>
       ${mappa ? `<div class="pe-mappa">${img(mappa, "Tracciato di " + w.circuito)}</div>` : ""}
       <p class="pe-data"><b>${periodo(w)}</b><br><span class="muted">Gara: ${new Date(gara.inizio).toLocaleString("it-IT", { weekday: "long", hour: "2-digit", minute: "2-digit", timeZone: TZ })}</span></p>
-      <a class="quiz-avanti" href="${w.serie === "f1" ? "gara.html?id=" + w.id : "motogp.html"}">Programma e orari</a>
+      <a class="quiz-avanti" href="${w.serie === "f1" ? "gara.html?id=" + w.id : "gara-moto.html?gp=" + encodeURIComponent(w.id)}">Programma e orari</a>
     </article>`;
   }).join("") || `<p class="muted">Nessun evento in programma.</p>`;
 }

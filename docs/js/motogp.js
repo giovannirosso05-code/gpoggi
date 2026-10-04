@@ -75,10 +75,10 @@ try {
   }
   // gare: la prossima e le già disputate
   const gareMoto = await fetchJSON("data/motogp-gare.json").catch(() => ({}));
-  const cardMoto = (nome, circuito, quando, passata) => `<a class="event-card ${passata ? "passata" : ""}" href="${passata ? "gara-moto.html?gp=" + encodeURIComponent(nome) : "calendario.html"}">
+  const cardMoto = (nome, circuito, quando, passata) => `<a class="event-card ${passata ? "passata" : ""}" href="gara-moto.html?gp=${encodeURIComponent(nome)}">
     <div class="event-map">${MAPPE[circuito] ? img(MAPPE[circuito], "Tracciato di " + circuito) : `<span class="senza-mappa">${esc(circuito || "")}</span>`}</div>
     <div class="event-body"><div class="event-date">${quando}</div><div class="event-name">${esc(nome)}</div><div class="event-location">${esc(circuito || "")}</div>
-    <span class="event-status ${passata ? "passato" : ""}">${passata ? "Vai ai risultati →" : "Prossima gara"}</span></div></a>`;
+    <span class="event-status ${passata ? "passato" : ""}">${passata ? "Vai ai risultati →" : "Programma e orari →"}</span></div></a>`;
   const passateM = Object.values(gareMoto).sort((a, b) => b.data.localeCompare(a.data));
   const prossimo = weekend[0];
   document.getElementById("gare-moto").innerHTML = (prossimo ? `<h4 class="gare-sottotitolo prossima">Prossima gara</h4><div class="gare-grid">` + cardMoto(prossimo.nome, prossimo.circuito, `${dataIt(prossimo.sessioni[0].inizio)} – ${dataIt((prossimo.sessioni.find((s) => s.codice === "RAC") || prossimo.sessioni[prossimo.sessioni.length - 1]).inizio)}`, false) + `</div>` : "")

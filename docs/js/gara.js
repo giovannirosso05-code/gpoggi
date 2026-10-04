@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, img, credito, stemma, ND, formattaDataOra, intervalloWeekend, erroreCaricamento, montaCronaca } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, img, credito, stemma, ND, formattaDataOra, intervalloWeekend, erroreCaricamento, montaCronaca, programmaHtml } from "./common.js";
 
 renderHeader("gare");
 renderFooter();
@@ -41,6 +41,7 @@ try {
       </div>
       <div>${g.mappa ? img(g.mappa, "Tracciato di " + g.circuito, "mappa") + `<p class="credito center">${credito(g.mappa, "Mappa")}</p>` : ""}</div>
     </section>
+    ${programmaHtml(g.sessioni)}
     ${rep ? `<h3 class="section-title">Com'è andata</h3><article class="report-card"><h3 style="margin-top:0">${esc(rep.titolo)}</h3>${rep.paragrafi.map((p) => `<p>${esc(p)}</p>`).join("")}</article>` : ""}
     <div id="tabs" class="category-pills" style="margin-bottom:8px">
       ${sessioni.map((s) => `<button class="pill ${s.key === predefinita.key ? "active" : ""}" data-key="${s.key}">${esc(s.nome)}</button>`).join("")}

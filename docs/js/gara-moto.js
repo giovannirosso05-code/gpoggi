@@ -1,4 +1,4 @@
-import { iniz, renderHeader, renderFooter, fetchJSON, esc, img, credito, stemma, stemmaMoto, ND, formattaData, punti, erroreCaricamento, fotoMotoMap, mappeMotoMap, montaCronaca } from "./common.js";
+import { iniz, renderHeader, renderFooter, fetchJSON, esc, img, credito, stemma, stemmaMoto, ND, formattaData, punti, erroreCaricamento, fotoMotoMap, mappeMotoMap, montaCronaca, programmaHtml, intervalloWeekend } from "./common.js";
 
 renderHeader("gare");
 renderFooter();
@@ -19,7 +19,21 @@ function tabella(righe, FM) {
 try {
   const [gare, rep, FM, MAPPE] = await Promise.all([fetchJSON("data/motogp-gare.json"), fetchJSON("data/motogp-report.json").catch(() => []), fotoMotoMap(), mappeMotoMap()]);
   const g = gare[gp];
-  if (!g) throw new Error("gara non trovata");
+  if (!g) {
+    // weekend non ancora disputato: intestazione, mappa e programma con gli orari
+    const cal = await fetchJSON("data/motogp.json");
+    const w = cal.weekend.find((x) => x.nome === gp);
+    if (!w) throw new Error("gara non trovata");
+    document.title = `${gp} — GP Oggi`;
+    const mp = MAPPE[w.circuito];
+    box.innerHTML = `
+      <section class="campione" style="margin-top:32px"><span class="kicker">MotoGP · ${intervalloWeekend({ inizio: w.sessioni[0].inizio, fine: w.sessioni[w.sessioni.length - 1].fine })}</span><h1>${esc(gp)}</h1>
+        <p class="muted" style="margin:0">${esc(w.circuito || "")}${w.paese ? " · " + esc(w.paese) : ""}</p></section>
+      ${mp ? `<div class="mappa-circuito">${img(mp, "Tracciato di " + w.circuito)}<p class="credito">${credito(mp, "Mappa")}</p></div>` : ""}
+      ${programmaHtml(w.sessioni)}
+      <p class="muted">Programma della classe MotoGP. I risultati compariranno dopo la gara.</p>
+      <p class="muted" style="margin-top:18px;font-size:13px"><a class="accent" href="calendario.html${tema ? "?" + tema.slice(1) : ""}">← Torna al calendario</a></p>`;
+  } else {
   const r = rep.find((x) => x.gp === gp);
   document.title = `${gp} — GP Oggi`;
   const mappa = MAPPE[g.circuito];
@@ -41,6 +55,7 @@ try {
   document.getElementById("gm-cat").addEventListener("click", (e) => { const b = e.target.closest(".pill"); if (b) mostra(b.dataset.k); });
   mostra(chiavi[0]);
   if (g.cronaca) montaCronaca(document.getElementById("cronaca-box"), g.cronaca, g.cronaca[g.cronaca.length - 1].giro);
+  }
 } catch (e) {
   erroreCaricamento(box);
 }

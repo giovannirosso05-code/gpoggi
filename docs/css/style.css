@@ -995,3 +995,15 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 .indietro span { font-size: 18px; line-height: 1; color: var(--accent); }
 .indietro small { color: var(--text-muted); font-weight: 500; font-size: 12px; }
 .indietro:hover { border-color: var(--text); }
+
+/* programma del weekend: compatto ma ben visibile */
+.programma { margin: 4px 0 22px; padding: 14px 16px; border: 1px solid var(--border); border-radius: 14px; background: var(--bg-elevated); }
+.programma-testa { font-family: var(--font-display); text-transform: uppercase; letter-spacing: .08em; font-size: 13px; color: var(--accent); margin-bottom: 8px; }
+.programma-testa span { color: var(--text-muted); letter-spacing: 0; text-transform: none; font-family: var(--font-body); }
+.programma-giorno { display: grid; grid-template-columns: 78px 1fr; gap: 8px; padding: 7px 0; border-top: 1px solid var(--border-soft, var(--border)); align-items: baseline; }
+.programma-giorno > b { font-size: 12.5px; text-transform: capitalize; color: var(--text-secondary); }
+.programma-sessioni { display: flex; flex-wrap: wrap; gap: 6px 8px; }
+.programma-sess { font-size: 13px; padding: 3px 9px; border-radius: 999px; background: var(--bg-elevated-2, var(--border)); color: var(--text); white-space: nowrap; }
+.programma-sess b { font-variant-numeric: tabular-nums; margin-left: 3px; }
+.programma-sess.gara { background: #e8352f; color: #fff; font-weight: 600; }
+.programma-sess.finita { opacity: .55; }

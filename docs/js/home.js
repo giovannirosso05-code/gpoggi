@@ -104,7 +104,7 @@ const prono = await fetchJSON("data/pronostici.json").catch(() => null);
 const leaderF1 = (roster || []).find((p) => p.posizione === 1 && p.foto) || (roster || []).find((p) => p.foto);
 const leaderMoto = ((clMoto && (clMoto.categorie || {}).MotoGP) || [])[0];
 riquadro("pross-f1", "F1", "", eventi && prossimaSessione(eventi), (g) => `gara.html?id=${g.id}${tema}`, leaderF1 && leaderF1.foto, prono && prono.f1 && prono.f1.favoriti[0].nome);
-riquadro("pross-moto", "MotoGP", "moto", cal && prossimaSessione(cal.weekend), () => `motogp.html${tema ? "?" + tema.slice(1) : ""}`, leaderMoto && FM["nome:" + leaderMoto.nome], prono && prono.motogp && prono.motogp.favoriti[0].nome);
+riquadro("pross-moto", "MotoGP", "moto", cal && prossimaSessione(cal.weekend), (g) => `gara-moto.html?gp=${encodeURIComponent(g.nome)}${tema}`, leaderMoto && FM["nome:" + leaderMoto.nome], prono && prono.motogp && prono.motogp.favoriti[0].nome);
 timer.forEach((f) => f());
 
 if (standings) standings.costruttori.forEach((c) => (coloreTeam[c.team] = c.colore));

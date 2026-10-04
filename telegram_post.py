@@ -1,7 +1,7 @@
 """Pubblica sul canale Telegram il riepilogo dell'ultima gara disputata, una sola volta per gara.
 
 Legge i dati gia' scaricati in docs/data/ (nessuna notizia copiata da altri siti).
-Variabili d'ambiente: TELEGRAM_BOT_TOKEN e TELEGRAM_CANALE (per esempio @nomecanale).
+Variabili d'ambiente: TELEGRAM_BOT_TOKEN e TELEGRAM_CANALE (il codice numerico della chat con il bot, oppure @nomecanale).
 Uso:  python telegram_post.py --prova    (stampa il messaggio senza inviarlo)
 """
 import html
@@ -45,6 +45,30 @@ def messaggio(g, s):
     return "\n".join(righe)
 
 
+def nuove_notizie(stato):
+    """Titoli della rassegna stampa non ancora inviati (solo titolo, fonte e link). Alla prima volta si segnano tutti come gia' visti."""
+    file = DATA / "rassegna.json"
+    if not file.exists():
+        return [], stato.get("visti", [])
+    articoli = json.loads(file.read_text())["articoli"]
+    visti = stato.get("visti")
+    urls = [a["url"] for a in articoli]
+    if visti is None:
+        return [], urls
+    nuovi = [a for a in articoli if a["url"] not in set(visti)][:5]
+    return nuovi, (urls + visti)[:300]
+
+
+def testo_notizia(a):
+    return f'<b>{html.escape(a["titolo"], quote=False)}</b>\n{html.escape(a["fonte"], quote=False)} · <a href="{html.escape(a["url"])}">Leggi</a>'
+
+
+def invia(token, chat, testo):
+    r = requests.post(f"https://api.telegram.org/bot{token}/sendMessage",
+                      data={"chat_id": chat, "text": testo, "parse_mode": "HTML", "disable_web_page_preview": "true"}, timeout=30)
+    r.raise_for_status()
+
+
 def main():
     prova = "--prova" in sys.argv
     g, s = ultima_gara()
@@ -54,21 +78,25 @@ def main():
     chiave = f"{g['id']}:{s['key']}"
     stato = json.loads(STATO.read_text()) if STATO.exists() else {}
     testo = messaggio(g, s)
+    nuove, visti = nuove_notizie(stato)
     if prova:
         print(testo)
-        return
-    if stato.get("ultima") == chiave:
-        print("Gara gia' pubblicata:", chiave)
+        for a in nuove or []:
+            print("\n" + testo_notizia(a))
         return
     token, canale = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CANALE")
     if not token or not canale:
         print("Mancano TELEGRAM_BOT_TOKEN o TELEGRAM_CANALE: invio saltato.")
         return
-    r = requests.post(f"https://api.telegram.org/bot{token}/sendMessage",
-                      data={"chat_id": canale, "text": testo, "parse_mode": "HTML", "disable_web_page_preview": "true"}, timeout=30)
-    r.raise_for_status()
-    STATO.write_text(json.dumps({"ultima": chiave}))
-    print("Pubblicato:", chiave)
+    if stato.get("ultima") != chiave:
+        invia(token, canale, testo)
+        stato["ultima"] = chiave
+        print("Report pubblicato:", chiave)
+    for a in nuove:
+        invia(token, canale, testo_notizia(a))
+    stato["visti"] = visti
+    STATO.write_text(json.dumps(stato))
+    print(f"Notizie inviate: {len(nuove)}")
 
 
 if __name__ == "__main__":

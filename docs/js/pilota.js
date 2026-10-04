@@ -12,7 +12,7 @@ try {
   if (!/^\d+$/.test(n || "")) throw new Error("numero non valido");
   const p = await fetchJSON(`data/piloti/${n}.json`);
   const nome = p.nome || `Pilota #${p.numero}`;
-  document.title = `${nome} — F1 Oggi`;
+  document.title = `${nome} — GP Oggi`;
   const stat = (v, label) => `<div class="stat"><div class="stat-number">${v}</div><div class="stat-label">${label}</div></div>`;
 
   box.innerHTML = `

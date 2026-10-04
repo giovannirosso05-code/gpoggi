@@ -1,6 +1,6 @@
-# F1 Oggi
+# GP Oggi
 
-Sito statico non ufficiale sulla Formula 1: piloti, classifiche, calendario e risultati per sessione. Stessa impronta di MMA Oggi (HTML/CSS/JS vanilla, dati in JSON statici, aggiornamento via GitHub Actions).
+Sito statico non ufficiale sulla Formula 1: piloti, classifiche, calendario e risultati per sessione. (HTML/CSS/JS vanilla, dati in JSON statici, aggiornamento via GitHub Actions).
 
 Non affiliato a Formula 1, FIA o ai team. Nessun logo, immagine o font ufficiale.
 

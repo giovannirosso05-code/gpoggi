@@ -16,7 +16,7 @@ from PIL import Image
 
 WIKI = "https://en.wikipedia.org/w/api.php"
 COMMONS = "https://commons.wikimedia.org/w/api.php"
-HEADERS = {"User-Agent": "F1OggiBot/0.1 (sito non ufficiale; giovannirosso05@gmail.com)"}
+HEADERS = {"User-Agent": "GPOggiBot/0.1 (sito non ufficiale; giovannirosso05@gmail.com)"}
 LICENZE_OK = ("CC BY", "CC BY-SA", "CC0", "Public domain", "PD", "OGL")
 
 CIRCUITI = {

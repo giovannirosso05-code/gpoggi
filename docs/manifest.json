@@ -1,6 +1,6 @@
 {
-  "name": "F1 Oggi",
-  "short_name": "F1 Oggi",
+  "name": "GP Oggi",
+  "short_name": "GP Oggi",
   "description": "Piloti, classifiche e gare di Formula 1 (sito non ufficiale)",
   "start_url": "./",
   "display": "standalone",

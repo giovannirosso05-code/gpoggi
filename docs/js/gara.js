@@ -25,7 +25,7 @@ try {
   const [g, roster, st] = await Promise.all([fetchJSON(`data/gare/${id}.json`), fetchJSON("data/roster.json"), fetchJSON("data/standings.json")]);
   const colori = Object.fromEntries(st.costruttori.map((c) => [c.team, c.colore]));
   const foto = Object.fromEntries(roster.filter((p) => p.foto).map((p) => [p.numero, p.foto]));
-  document.title = `${g.nome} — F1 Oggi`;
+  document.title = `${g.nome} — GP Oggi`;
   const ora = new Date();
   const sessioni = g.sessioni;
   const predefinita = [...sessioni].reverse().find((s) => s.risultati) || sessioni[0];

@@ -16,7 +16,7 @@ const salvaRecord = (g, v) => { if (v > record(g)) scrivi("record-" + g, String(
 
 const GIOCHI = {
   circuito: { titolo: "Indovina il circuito", testo: "Ti mostro il tracciato, tu scegli il Gran Premio." },
-  pilota: { titolo: "Chi è il pilota?", testo: "Una foto di Formula 1, quattro nomi." },
+  pilota: { titolo: "Chi è il pilota?", testo: "Una foto, quattro nomi: piloti di oggi e leggende del passato, F1 e MotoGP." },
   moto: { titolo: "MotoGP: che moto guida?", testo: "Un pilota, quattro marche." },
   numero: { titolo: "Che numero ha?", testo: "Numeri di gara di piloti F1 e MotoGP." },
   campioni: { titolo: "Chi vinse il mondiale?", testo: "Campioni del mondo di F1 e MotoGP, dal passato a oggi." },
@@ -28,10 +28,10 @@ const GIOCHI = {
 let dati = null;
 async function carica() {
   if (dati) return dati;
-  const [eventi, roster, moto, indice, motoArch] = await Promise.all([
+  const [eventi, roster, moto, indice, motoArch, storiche] = await Promise.all([
     fetchJSON("data/events.json"), fetchJSON("data/roster.json"),
-    fetchJSON("data/motogp-classifica.json").catch(() => null), fetchJSON("data/archivio/indice.json").catch(() => []), fetchJSON("data/motogp-archivio.json").catch(() => null)]);
-  dati = { eventi, roster, moto: moto ? moto.piloti : [], indice, motoArch: motoArch ? motoArch.anni : [] };
+    fetchJSON("data/motogp-classifica.json").catch(() => null), fetchJSON("data/archivio/indice.json").catch(() => []), fetchJSON("data/motogp-archivio.json").catch(() => null), fetchJSON("data/foto-storici.json").catch(() => [])]);
+  dati = { eventi, roster, moto: moto ? moto.piloti : [], indice, motoArch: motoArch ? motoArch.anni : [], storiche };
   return dati;
 }
 
@@ -44,10 +44,16 @@ const GEN = {
     return mescola(ev).slice(0, N).map((g) => ({ titolo: "Di quale Gran Premio è questo tracciato?", img: `<div class="quiz-img mappa-quiz"><img src="${esc(g.mappa.file || g.mappa.url)}" alt="Tracciato da indovinare"></div>`,
       ...quattro(g.nome, ev.map((e) => e.nome)), cred: credito(g.mappa, "Mappa") }));
   },
-  pilota() {
-    const r = dati.roster.filter((p) => p.foto && p.nome);
-    return mescola(r).slice(0, N).map((p) => ({ titolo: "Chi è questo pilota?", img: `<div class="quiz-img foto-quiz"><img src="${esc(p.foto.file || p.foto.url)}" alt="Pilota da indovinare"></div>`,
-      ...quattro(p.nome, r.map((x) => x.nome)), cred: credito(p.foto) }));
+  pilota(modo = "tutti") {
+    const oggi = dati.roster.filter((p) => p.foto && p.nome).map((p) => ({ nome: p.nome, foto: p.foto, nota: `${p.team || ""}`.trim() }));
+    const leggende = dati.storiche.map((p) => ({ nome: p.nome, foto: p.foto, nota: `${p.serie} · ${p.anni}`, serie: p.serie }));
+    const pool = modo === "oggi" ? oggi : modo === "leggende" ? leggende : [...oggi, ...leggende];
+    return mescola(pool).slice(0, N).map((p) => {
+      // le alternative arrivano dalla stessa epoca/serie, cosi' non basta riconoscere una foto a colori o in bianco e nero
+      const simili = modo === "tutti" ? pool.filter((x) => (x.serie || "Formula 1") === (p.serie || "Formula 1")) : pool;
+      return { titolo: "Chi è questo pilota?", img: `<div class="quiz-img foto-quiz"><img src="${esc(p.foto.file || p.foto.url)}" alt="Pilota da indovinare"></div>`,
+        ...quattro(p.nome, simili.map((x) => x.nome)), cred: `${p.nota ? "<b>" + esc(p.nota) + "</b> · " : ""}${credito(p.foto)}` };
+    });
   },
   moto() {
     const marche = [...new Set(dati.moto.map((p) => p.moto))];
@@ -179,9 +185,23 @@ async function avvia(chiave) {
   if (g.speciale) return partitaPronostico();
   if (g.serie) return partitaPunti();
   box.classList.remove("hidden"); scelta.classList.add("hidden"); box.innerHTML = `<p class="muted">Preparo le domande…</p>`;
-  const qs = await GEN[chiave]();
+  let modo;
+  if (chiave === "pilota") modo = await scegliModo();
+  const qs = await GEN[chiave](modo);
   if (!qs.length) { box.innerHTML = `<p class="muted">Non ci sono abbastanza dati per questo gioco.</p>`; return; }
   partitaQuiz(chiave, qs);
+}
+
+function scegliModo() {
+  const n = dati.storiche.length;
+  return new Promise((ris) => {
+    if (!n) return ris("oggi");
+    box.innerHTML = `<h3 class="quiz-titolo">Chi è il pilota? Scegli la difficoltà</h3><div class="quiz-opzioni">
+      <button class="quiz-opz grande" data-m="oggi"><b>Piloti di oggi</b><span>La griglia della stagione in corso</span></button>
+      <button class="quiz-opz grande" data-m="leggende"><b>Leggende</b><span>${n} piloti del passato: campioni e grandi vincitori di F1 e MotoGP</span></button>
+      <button class="quiz-opz grande" data-m="tutti"><b>Tutti insieme</b><span>Oggi e passato mescolati</span></button></div>`;
+    box.querySelectorAll("[data-m]").forEach((b) => b.addEventListener("click", () => ris(b.dataset.m), { once: true }));
+  });
 }
 
 function aggiornaRecord() {

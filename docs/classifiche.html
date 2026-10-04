@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=29">
+<link rel="stylesheet" href="css/style.css?v=30">
 </head>
 <body>
 
@@ -29,12 +29,9 @@
 
 <div class="container">
   <div class="section-title" style="margin-top:32px">Classifiche</div>
-  <div class="filtri-archivio">
-    <label for="serie" class="muted">Campionato</label>
-    <select id="serie" class="sel" aria-label="Scegli il campionato">
-      <optgroup label="Auto"><option value="f1">Formula 1</option><option value="f2">Formula 2</option><option value="f3">Formula 3</option></optgroup>
-      <optgroup label="Moto"><option value="motogp">MotoGP</option><option value="moto2">Moto2</option><option value="moto3">Moto3</option></optgroup>
-    </select>
+  <div class="serie-barra" id="serie-barra" role="tablist" aria-label="Scegli il campionato">
+    <div class="serie-gruppo"><span class="muted">Auto</span><button class="pill" data-s="f1">F1</button><button class="pill" data-s="f2">F2</button><button class="pill" data-s="f3">F3</button></div>
+    <div class="serie-gruppo"><span class="muted">Moto</span><button class="pill" data-s="motogp">MotoGP</button><button class="pill" data-s="moto2">Moto2</button><button class="pill" data-s="moto3">Moto3</button></div>
     <a class="link-storici" id="link-archivio" href="archivio.html">Archivio storico →</a>
   </div>
   <p class="muted" id="dopo" style="margin:-6px 0 16px;font-size:13px"></p>
@@ -44,6 +41,6 @@
 
 <footer id="site-footer" class="site-footer"></footer>
 
-<script type="module" src="js/classifiche.js?v=29"></script>
+<script type="module" src="js/classifiche.js?v=30"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, formattaData, formattaDataOra, erroreCaricamento } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, formattaData, formattaDataOra, erroreCaricamento, mischia } from "./common.js";
 
 renderHeader("notizie");
 renderFooter();
@@ -19,8 +19,8 @@ try {
 
   const ras = document.getElementById("rassegna");
   const disegnaRassegna = () => {
-  const lista = rassegna.articoli.filter((a) => serie === "tutte" || a.serie === serie);
-  ras.innerHTML = lista.length ? lista.slice(0, 14).map((a) => `
+  const lista = serie === "tutte" ? mischia(rassegna.articoli, 16) : rassegna.articoli.filter((a) => a.serie === serie).slice(0, 16);
+  ras.innerHTML = lista.length ? lista.map((a) => `
     <article class="rassegna-voce">
       <div class="report-data"><b>${esc(a.serie || "F1")}</b> · ${esc(a.fonte)}${a.pubblicato ? " · " + formattaDataOra(a.pubblicato) : ""}</div>
       <h3><a href="${esc(a.url)}" target="_blank" rel="noopener nofollow">${esc(a.titolo)}</a></h3>

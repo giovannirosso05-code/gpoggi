@@ -776,3 +776,30 @@ select.sel {
 .pron-form { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 14px; } .pron-form label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: .05em; }
 @media (max-width: 600px) { .pron-form { grid-template-columns: 1fr; } }
 .partita { max-width: 720px; }
+
+/* pagina piloti: serie e modalità */
+.serie-pills .pill, .modo-pills .pill { font-weight: 600; }
+.modo-pills { margin-top: 2px; }
+.driver-card.senza-link { cursor: default; }
+.driver-card-image .driver-number.solo { color: var(--text-muted); }
+
+/* classifiche: scelta del campionato a pulsanti */
+.serie-barra { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; margin: 0 0 14px; }
+.serie-gruppo { display: flex; align-items: center; gap: 8px; }
+.serie-gruppo > .muted { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+.serie-barra .link-storici { margin-left: auto; }
+
+/* home: prossimo GP e ultime gare affiancati */
+.pross-griglia { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.pross-card { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--card, var(--bg)); text-decoration: none; color: inherit; min-width: 0; }
+.pross-card:hover { border-color: var(--text); }
+.pross-gp { font-family: var(--font-display); font-size: 20px; text-transform: uppercase; line-height: 1.15; }
+.pross-circ, .pross-sess { font-size: 12px; }
+.pross-timer { font-family: var(--font-display); font-weight: 600; font-size: 17px; margin-top: 4px; color: var(--accent, #e8352f); }
+.pross-timer.live { color: #1a9d4b; }
+.ultime-gare { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.ultime-gare .ultima-gara { min-width: 0; }
+@media (max-width: 640px) { .pross-griglia { gap: 8px; } .pross-card { padding: 10px 12px; } .pross-gp { font-size: 16px; } .pross-timer { font-size: 14px; } .ultime-gare { grid-template-columns: 1fr; } }
+.driver-card.nofoto .driver-card-image { aspect-ratio: 16 / 7; }
+.driver-card.nofoto .driver-card-image .driver-number.solo { font-size: 44px; }
+.modo-pills, .serie-pills { margin-bottom: 8px; }

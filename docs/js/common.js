@@ -92,7 +92,7 @@ export function renderHeader(paginaAttuale) {
     ["home", "index.html", "Home"],
     ["piloti", "piloti.html", "Piloti"],
     ["classifiche", "classifiche.html", "Classifiche"],
-    ["gare", "gare.html", "Calendario"],
+    ["gare", "calendario.html", "Calendario"],
     ["notizie", "notizie.html", "Notizie"],
     ["motogp", "motogp.html", "MotoGP"],
     ["giochi", "giochi.html", "Giochi"],
@@ -107,7 +107,7 @@ export function renderHeader(paginaAttuale) {
         <button type="button" class="tema-btn" id="tema-btn" aria-label="Cambia tema chiaro o scuro">${ICONA_LUNA}${ICONA_SOLE}</button>
       </div>
     </nav>`;
-  renderCountdown();
+  if (paginaAttuale !== "home") renderCountdown();
   document.getElementById("tema-btn").addEventListener("click", () => {
     const nuovo = temaCorrente() === "dark" ? "light" : "dark";
     document.documentElement.dataset.theme = nuovo;
@@ -196,4 +196,16 @@ export function img(foto, alt, cls = "") {
 export function credito(foto, cosa = "Foto") {
   if (!foto) return "";
   return `${cosa}: ${esc(foto.autore)} · <a href="${esc(foto.pagina)}" target="_blank" rel="noopener">${esc(foto.licenza)}</a>, via Wikimedia Commons`;
+}
+
+// Mescola due serie in ordine di data, alternando quando possibile: nessuna delle due sommerge l'altra.
+export function mischia(articoli, n) {
+  const per = (s) => articoli.filter((a) => a.serie === s).sort((a, b) => new Date(b.pubblicato || 0) - new Date(a.pubblicato || 0));
+  const f1 = per("F1"), moto = per("MotoGP"), altri = articoli.filter((a) => a.serie !== "F1" && a.serie !== "MotoGP");
+  const out = [];
+  while ((f1.length || moto.length) && out.length < n) {
+    const prima = (new Date(f1[0]?.pubblicato || 0) >= new Date(moto[0]?.pubblicato || 0)) ? [f1, moto] : [moto, f1];
+    for (const l of prima) if (l.length && out.length < n) out.push(l.shift());
+  }
+  return [...out, ...altri].slice(0, n);
 }

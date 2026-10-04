@@ -4,7 +4,7 @@ renderHeader("classifiche");
 renderFooter();
 
 const box = document.getElementById("classifiche-box");
-const sel = document.getElementById("serie");
+const barra = document.getElementById("serie-barra");
 const SERIE = {
   f1: { archivio: "archivio.html", etichetta: "Archivio storico F1 →" },
   f2: { archivio: "archivio.html", etichetta: "Archivio storico F1 →" },
@@ -77,10 +77,17 @@ async function mostra(k) {
 }
 
 const richiesta = (new URLSearchParams(location.search).get("serie") || "").toLowerCase();
-sel.value = SERIE[richiesta] ? richiesta : "f1";
-sel.addEventListener("change", () => {
+let corrente = SERIE[richiesta] ? richiesta : "f1";
+function scegli(k) {
+  corrente = k;
+  barra.querySelectorAll("[data-s]").forEach((b) => b.classList.toggle("active", b.dataset.s === k));
+  mostra(k);
+}
+barra.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-s]");
+  if (!b) return;
   const t = document.documentElement.dataset.theme ? "&tema=" + document.documentElement.dataset.theme : "";
-  history.replaceState(null, "", `?serie=${sel.value}${t}`);
-  mostra(sel.value);
+  history.replaceState(null, "", `?serie=${b.dataset.s}${t}`);
+  scegli(b.dataset.s);
 });
-mostra(sel.value);
+scegli(corrente);

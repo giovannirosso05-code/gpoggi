@@ -45,6 +45,69 @@ def griglia(sess):
     return {rid: i + 1 for i, rid in enumerate(ordine)}
 
 
+def lap_chart(rac):
+    """Ordine dei piloti giro per giro dal 'Lap chart' del campionato (PDF pubblico): {giro: [numeri in ordine]} e la griglia."""
+    url = ((rac.get("session_files") or {}).get("lap_chart") or {}).get("url")
+    if not url:
+        return None, None
+    f = bm.CACHE / ("lapchart_" + rac["id"] + ".txt")
+    if f.exists():
+        testo = f.read_text()
+    else:
+        import subprocess
+        r = bm.requests.get(url, headers=bm.H, timeout=60)
+        if r.status_code != 200:
+            return None, None
+        pdf = f.with_suffix(".pdf")
+        bm.CACHE.mkdir(parents=True, exist_ok=True)
+        pdf.write_bytes(r.content)
+        testo = subprocess.run(["pdftotext", "-layout", str(pdf), "-"], capture_output=True, text=True).stdout
+        pdf.unlink()
+        f.write_text(testo)
+    import re
+    griglia, giri = None, {}
+    for riga in testo.splitlines():
+        m = re.match(r"^\s*Grid\s+([\d\s]+)$", riga)
+        if m:
+            griglia = [int(x) for x in m.group(1).split()]
+            continue
+        m = re.match(r"^\s*(?:[A-Za-z]\s+)?(\d{1,2})\s{2,}(\d[\d\s]*)$", riga)
+        if m and int(m.group(1)) not in giri:
+            giri[int(m.group(1))] = [int(x) for x in m.group(2).split()]
+    if not griglia or not giri or sorted(giri) != list(range(1, max(giri) + 1)):
+        return None, None
+    return griglia, giri
+
+
+def cronaca_giri(griglia, giri, nome, finiti=()):
+    """Sorpassi nelle prime cinque posizioni, cambi al comando e ritiri dall'ordine giro per giro."""
+    out = []
+    prec = griglia
+    cognomi = [(v or "").split()[-1] for v in nome.values()]
+    # con due piloti dello stesso cognome (es. Marc e Alex Marquez) si usa il nome completo
+    cogn = lambda n: (nome.get(n) or f"#{n}") if cognomi.count((nome.get(n) or "").split()[-1:] and (nome.get(n) or "").split()[-1]) > 1 else (nome.get(n) or f"#{n}").split()[-1]
+    for lap in sorted(giri):
+        ora = giri[lap]
+        for n in prec:
+            if n not in ora and n not in finiti:
+                out.append({"giro": lap, "tipo": "ritiro", "testo": f"**{nome.get(n, '#' + str(n))} si ritira** durante il giro {lap}."})
+        comuni = [n for n in ora if n in prec]
+        if ora and prec and ora[0] != prec[0]:
+            out.append({"giro": lap, "tipo": "comando", "testo": f"**{cogn(ora[0])} passa al comando.**"})
+        visti = set()
+        for a in ora[:5]:
+            for b in comuni:
+                if b == a or (a, b) in visti:
+                    continue
+                if prec.index(a) > prec.index(b) and ora.index(a) < ora.index(b) and ora.index(a) < 5:
+                    visti.add((a, b))
+                    if ora.index(a) == 0:
+                        continue  # gia' nel cambio al comando
+                    out.append({"giro": lap, "tipo": "sorpasso", "testo": f"**{cogn(a)} supera {cogn(b)}** e sale al {ora.index(a) + 1}° posto."})
+        prec = ora
+    return out
+
+
 def righe(cl, grid=None):
     grid = grid or {}
     return [{"griglia": grid.get(x["rider"]["id"]), "pos": x.get("position"), "nome": x["rider"]["full_name"], "numero": x["rider"].get("number"), "team": x["team"]["name"], "moto": x["constructor"]["name"],
@@ -140,7 +203,15 @@ def report_evento(e, cat_ids):
     if veloce and veloce["bestLap"].get("number"):
         cr.append({"giro": veloce["bestLap"]["number"], "tipo": "giro", "testo": f"Giro più veloce: {veloce['rider']['full_name']}, {tempo_giro(veloce['bestLap']['time'])}" + (", nuovo record in gara." if veloce.get("isNewRecord") else ".")})
     cr.append({"giro": giri, "tipo": "arrivo", "testo": f"**Bandiera a scacchi: vince {top[0]['rider']['full_name']}** ({top[0]['constructor']['name']}), davanti a {top[1]['rider']['full_name']} e {top[2]['rider']['full_name']}."})
-    cr.sort(key=lambda c: c["giro"])
+    try:
+        gr, gi = lap_chart(rac)
+        if gr:
+            nomi_num = {x["rider"].get("number"): x["rider"]["full_name"] for x in cl["classification"]}
+            finiti = {x["rider"].get("number") for x in cl["classification"] if x.get("position")}
+            cr = [c for c in cr if c["tipo"] not in ("ritiro",)] + cronaca_giri(gr, gi, nomi_num, finiti)
+    except Exception as ex:
+        print("  lap chart non disponibile:", ex)
+    cr.sort(key=lambda c: (c["giro"], {"via": 0, "ritiro": 2, "comando": 3, "sorpasso": 4}.get(c["tipo"], 5)))
     GARE[nome_gp] = {"nome": nome_gp, "circuito": (e.get("circuit") or {}).get("name"), "data": e["date_end"], "inizio": e["date_start"], "classifiche": classifiche_evento(e, cat_ids), "cronaca": cr}
     return {"gp": nome_gp, "circuito": (e.get("circuit") or {}).get("name"), "data": e["date_end"], "titolo": f"{top[0]['rider']['full_name']} vince il {nome_gp}", "paragrafi": par}
 

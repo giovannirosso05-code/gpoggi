@@ -634,3 +634,10 @@ select.sel {
   .nav .tema-btn { order: 2; }
   .nav .nav-links { order: 3; width: 100%; flex: none; overflow-x: visible; justify-content: space-between; font-size: 12px; gap: 4px; }
 }
+
+.rassegna { display: flex; flex-direction: column; gap: 12px; margin-bottom: 8px; }
+.rassegna-voce { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; min-width: 0; }
+.rassegna-voce h3 { font-size: 18px; line-height: 1.25; margin: 4px 0 8px; text-transform: none; font-family: var(--font-body); font-weight: 600; letter-spacing: 0; }
+.rassegna-voce h3 a:hover { color: var(--accent); }
+.rassegna-voce p { margin: 0 0 8px; font-size: 14px; color: var(--text-secondary); }
+.rassegna-voce > a.accent { font-weight: 600; font-size: 13px; }

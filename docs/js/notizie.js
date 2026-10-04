@@ -1,11 +1,11 @@
-import { renderHeader, renderFooter, fetchJSON, esc, formattaData, erroreCaricamento } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, formattaData, formattaDataOra, erroreCaricamento } from "./common.js";
 
 renderHeader("notizie");
 renderFooter();
 
 const box = document.getElementById("notizie-box");
 try {
-  const [report, news] = await Promise.all([fetchJSON("data/report.json"), fetchJSON("data/news.json").catch(() => [])]);
+  const [report, news, rassegna] = await Promise.all([fetchJSON("data/report.json"), fetchJSON("data/news.json").catch(() => []), fetchJSON("data/rassegna.json").catch(() => ({ articoli: [] }))]);
 
   const redazione = document.getElementById("redazione");
   redazione.innerHTML = news.length ? news.map((n) => `
@@ -14,7 +14,16 @@ try {
       <h3>${esc(n.titolo)}</h3>
       ${n.testo ? `<p>${esc(n.testo)}</p>` : ""}
       ${n.link ? `<a class="accent" href="${esc(n.link)}" target="_blank" rel="noopener">Leggi la fonte →</a>` : ""}
-    </article>`).join("") : `<p class="muted" style="font-size:13px">Qui compaiono le notizie scritte dalla redazione. Per ora ci sono solo i report di gara.</p>`;
+    </article>`).join("") : "";
+
+  const ras = document.getElementById("rassegna");
+  ras.innerHTML = rassegna.articoli.length ? rassegna.articoli.slice(0, 12).map((a) => `
+    <article class="rassegna-voce">
+      <div class="report-data">${esc(a.fonte)}${a.pubblicato ? " · " + formattaDataOra(a.pubblicato) : ""}</div>
+      <h3><a href="${esc(a.url)}" target="_blank" rel="noopener nofollow">${esc(a.titolo)}</a></h3>
+      ${a.estratto ? `<p>${esc(a.estratto)}</p>` : ""}
+      <a class="accent" href="${esc(a.url)}" target="_blank" rel="noopener nofollow">Leggi su ${esc(a.fonte)} →</a>
+    </article>`).join("") : `<p class="muted" style="font-size:13px">Rassegna non disponibile al momento.</p>`;
 
   document.getElementById("report-lista").innerHTML = report.length ? report.map((r) => `
     <article class="report-card">

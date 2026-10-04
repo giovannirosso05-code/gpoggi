@@ -83,11 +83,11 @@ try {
     <li><a href="classifiche.html"><span class="pos">${c.posizione}</span>${stemma(c.team, c.colore)}<span>${esc(c.team)}</span><span class="pt">${punti(c.punti)}</span></a></li>`).join("");
 
   try {
-    const report = await fetchJSON("data/report.json");
-    document.getElementById("ultime-notizie").innerHTML = report.slice(0, 3).map((r) => `
-      <a class="evento-widget-mini" href="notizie.html"><div>
-        <div class="evento-widget-mini-nome">${esc(r.titolo)}</div>
-        <div class="evento-widget-mini-data">${formattaData(r.data)}</div></div></a>`).join("");
+    const ras = await fetchJSON("data/rassegna.json");
+    document.getElementById("ultime-notizie").innerHTML = ras.articoli.slice(0, 3).map((a) => `
+      <a class="evento-widget-mini" href="${esc(a.url)}" target="_blank" rel="noopener nofollow"><div>
+        <div class="evento-widget-mini-nome">${esc(a.titolo)}</div>
+        <div class="evento-widget-mini-data">${esc(a.fonte)}</div></div></a>`).join("");
   } catch (e) {}
 
   const prossimi = eventi.filter((g) => new Date(g.fine) > ora).slice(0, 3);

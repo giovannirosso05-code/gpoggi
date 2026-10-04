@@ -19,6 +19,8 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Scarica i dati (se c'è una sessione dal vivo si salta il giro)
         run: python scraper_f1.py || [ $? -eq 75 ]
+      - name: Rassegna stampa F1
+        run: python build_news.py
       - name: Pubblica la gara sul canale Telegram (una sola volta per gara)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

@@ -1,0 +1,122 @@
+{
+ "f1:12": {
+  "nascita": "2006-08-25",
+  "nazionalita": "Italian",
+  "titoli": null,
+  "gare": 40,
+  "vittorie": 8,
+  "podi": 16,
+  "pole": 9,
+  "giri_veloci": 10
+ },
+ "f1:63": {
+  "nascita": "1998-02-15",
+  "nazionalita": "British",
+  "titoli": 0,
+  "gare": 168,
+  "vittorie": 8,
+  "podi": 32,
+  "pole": 18,
+  "giri_veloci": 13
+ },
+ "f1:44": {
+  "nascita": "1985-01-07",
+  "nazionalita": "British",
+  "titoli": 7,
+  "gare": 396,
+  "vittorie": 106,
+  "podi": 208,
+  "pole": 118,
+  "giri_veloci": 69
+ },
+ "f1:16": {
+  "nascita": "1997-10-16",
+  "nazionalita": "Monegasque",
+  "titoli": 0,
+  "gare": 189,
+  "vittorie": 9,
+  "podi": 54,
+  "pole": 34,
+  "giri_veloci": 13
+ },
+ "f1:1": {
+  "nascita": "1999-11-13",
+  "nazionalita": "British",
+  "titoli": 1,
+  "gare": 168,
+  "vittorie": 13,
+  "podi": 49,
+  "pole": 33,
+  "giri_veloci": 20
+ },
+ "f1:3": {
+  "nascita": "1997-09-30",
+  "nazionalita": "Dutch",
+  "titoli": 4,
+  "gare": 249,
+  "vittorie": 72,
+  "podi": 135,
+  "pole": 66,
+  "giri_veloci": 38
+ },
+ "f1:81": {
+  "nascita": "2001-04-06",
+  "nazionalita": "Australian",
+  "titoli": 0,
+  "gare": 86,
+  "vittorie": 9,
+  "podi": 28,
+  "pole": 15,
+  "giri_veloci": 9
+ },
+ "f1:6": {
+  "nascita": "2004-09-28",
+  "nazionalita": "French",
+  "titoli": 0,
+  "gare": 37,
+  "vittorie": 0,
+  "podi": 3,
+  "pole": 3,
+  "giri_veloci": 0
+ },
+ "f1:30": {
+  "nascita": "2002-02-11",
+  "nazionalita": "New Zealander",
+  "titoli": 0,
+  "gare": 51,
+  "vittorie": 0,
+  "podi": 0,
+  "pole": 0,
+  "giri_veloci": 0
+ },
+ "f1:10": {
+  "nascita": "1996-02-07",
+  "nazionalita": "French",
+  "titoli": 0,
+  "gare": 194,
+  "vittorie": 1,
+  "podi": 5,
+  "pole": 1,
+  "giri_veloci": 3
+ },
+ "f1:41": {
+  "nascita": "2007-08-08",
+  "nazionalita": "British",
+  "titoli": null,
+  "gare": 16,
+  "vittorie": 0,
+  "podi": 0,
+  "pole": 0,
+  "giri_veloci": 0
+ },
+ "f1:43": {
+  "nascita": "2003-05-27",
+  "nazionalita": "Argentine",
+  "titoli": 0,
+  "gare": 43,
+  "vittorie": 0,
+  "podi": 0,
+  "pole": 0,
+  "giri_veloci": 0
+ }
+}

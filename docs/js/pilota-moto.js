@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, stemma, formattaData, punti, erroreCaricamento, img, credito, fotoMotoMap } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, stemma, formattaData, punti, erroreCaricamento, img, credito, fotoMotoMap, schedeMap, bioHtml, dataIt } from "./common.js";
 
 renderHeader("motogp");
 renderFooter();
@@ -12,6 +12,8 @@ try {
   const FM = await fotoMotoMap();
   const p = dati[id];
   const foto = FM[id];
+  const SC = await schedeMap();
+  const sm = SC[`moto:${id}`], bio = SC[`nome:${p.nome}`];
   if (!p) throw new Error("pilota non trovato");
   document.title = `${p.nome} — GP Oggi`;
   const gare = p.gare;
@@ -28,6 +30,13 @@ try {
       <div class="stat"><div class="stat-number">${p.vittorie}</div><div class="stat-label">Vittorie</div></div>
       <div class="stat"><div class="stat-number">${podi}</div><div class="stat-label">Podi in gara</div></div>
     </div>
+    ${sm ? `<h3 class="section-title">Scheda</h3>
+    <div class="stat-strip">${sm.nascita ? `<div class="stat"><div class="stat-number" style="font-size:22px">${dataIt(sm.nascita)}</div><div class="stat-label">Nato${sm.luogo ? " · " + esc(sm.luogo) : ""}</div></div>` : ""}
+      ${sm.debutto ? `<div class="stat"><div class="stat-number">${sm.debutto}</div><div class="stat-label">Debutto nel mondiale</div></div>` : ""}
+      ${sm.altezza ? `<div class="stat"><div class="stat-number">${sm.altezza} cm</div><div class="stat-label">Altezza</div></div>` : ""}
+      ${sm.peso ? `<div class="stat"><div class="stat-number">${sm.peso} kg</div><div class="stat-label">Peso</div></div>` : ""}</div>
+    ${sm.carriera.length ? `<h3 class="section-title">Carriera nel mondiale</h3><div class="table-wrap"><table class="results"><thead><tr><th>Anno</th><th>Classe</th><th>Team</th><th>N.</th></tr></thead><tbody>${[...sm.carriera].reverse().map((a) => a.classi.map((c) => `<tr><td>${a.anno}</td><td>${esc(c.categoria)}</td><td>${esc(c.team || "")}</td><td>${c.numero ?? ""}</td></tr>`).join("")).join("")}</tbody></table></div><p class="muted" style="font-size:12px;margin-top:8px">Dati dal servizio pubblico del campionato.</p>` : ""}` : ""}
+    ${bioHtml(bio)}
     <h3 class="section-title">Gara per gara${migliore ? ` <span class="count">· miglior risultato ${migliore}°</span>` : ""}</h3>
     <div class="table-wrap"><table class="results"><thead><tr><th>Gran Premio</th><th>Data</th><th>Sprint</th><th>Gara</th><th>Punti</th></tr></thead><tbody>${
       [...gare].reverse().map((g) => `<tr class="${g.gara === 1 ? "podio" : ""}"><td><strong>${esc(g.gp)}</strong></td><td>${formattaData(g.data)}</td><td>${g.sprint ? g.sprint + "°" : "–"}</td><td>${esito(g)}</td><td><strong>${g.punti}</strong></td></tr>`).join("")

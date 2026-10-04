@@ -65,7 +65,7 @@ function elenco() {
       const u = Math.max(...v.anni), pr = Math.min(...v.anni);
       return { nome: v.nome, team: v.team, grande: iniziali(v.nome), foto: D.foto[norm(v.nome)],
         riga: `<b>${pr}${u !== pr ? "–" + u : ""}</b>${v.titoli ? ` · ${v.titoli} ${v.titoli === 1 ? "titolo" : "titoli"}` : ""} · miglior pos. ${v.migliore}°`,
-        href: `motogp-archivio.html?anno=${u}${tema()}`, ordine: u };
+        href: `storico-moto.html?n=${encodeURIComponent(v.nome)}${tema()}`, ordine: u };
     })].sort((a, b) => b.ordine - a.ordine || (a.pos ?? 999) - (b.pos ?? 999) || a.nome.localeCompare(b.nome));
   }
   const f = D[serie];

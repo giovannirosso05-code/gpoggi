@@ -23,6 +23,12 @@ jobs:
         run: python build_news.py
       - name: Calendario MotoGP
         run: python build_motogp.py
+      - name: Report MotoGP, foto e mappe (solo le novità), pronostici
+        run: |
+          python build_report_moto.py
+          python foto_motogp.py || true
+          python foto_circuiti_moto.py || true
+          python build_pronostici.py
       - name: Classifiche F2 e F3 (Wikipedia)
         run: python build_formule.py
       - name: Archivi storici F1 e MotoGP (solo il lunedì)
@@ -38,5 +44,5 @@ jobs:
         run: |
           git config user.name "gpoggi-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/data docs/calendario docs/img/foto foto_cache.json telegram_stato.json 2>/dev/null || git add docs/data docs/calendario docs/img/foto foto_cache.json
+          git add docs/data docs/calendario docs/img/foto foto_cache.json foto_motogp_cache.json foto_circuiti_moto_cache.json telegram_stato.json 2>/dev/null || git add docs/data docs/calendario docs/img/foto foto_cache.json
           git diff --cached --quiet || (git commit -m "dati: aggiornamento da OpenF1" && git push)

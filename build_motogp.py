@@ -76,7 +76,7 @@ def api_cache(percorso, **p):
 
 def riga_rider(x):
     r = x["rider"]
-    return {"id": r["id"], "nome": r["full_name"], "numero": r.get("number"), "paese": paese(r.get("country")), "team": x["team"]["name"], "moto": x["constructor"]["name"]}
+    return {"id": r["id"], "nome": r["full_name"], "numero": r.get("number"), "paese": paese(r.get("country")), "team": x["team"]["name"], "moto": x["constructor"]["name"], "riders_id": r.get("riders_id")}
 
 
 def classifica_e_ultima():

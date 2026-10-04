@@ -7,6 +7,10 @@ pages:
     - python scraper_f1.py
     - python build_news.py
     - python build_motogp.py
+    - python build_report_moto.py
+    - python foto_motogp.py || true
+    - python foto_circuiti_moto.py || true
+    - python build_pronostici.py
     - python build_formule.py
     - python build_calendari.py
     - mkdir -p public

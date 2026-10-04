@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, img, credito, punti, ND, formattaData, erroreCaricamento } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, img, credito, punti, ND, formattaData, erroreCaricamento, schedeMap, bioHtml, dataIt } from "./common.js";
 
 renderHeader("home");
 renderFooter();
@@ -13,6 +13,8 @@ try {
   const p = await fetchJSON(`data/piloti/${n}.json`);
   const nome = p.nome || `Pilota #${p.numero}`;
   document.title = `${nome} — GP Oggi`;
+  const SC = await schedeMap();
+  const sf = SC[`f1:${n}`], bio = SC[`nome:${p.nome}`];
   const stat = (v, label) => `<div class="stat"><div class="stat-number">${v}</div><div class="stat-label">${label}</div></div>`;
 
   box.innerHTML = `
@@ -29,6 +31,10 @@ try {
         ${p.foto ? `<p class="credito">${credito(p.foto)}</p>` : ""}
       </div>
     </section>
+    ${sf ? `<h3 class="section-title">Scheda carriera in Formula 1</h3>
+    <div class="stat-strip six">${stat(sf.gare, "Gran Premi")}${stat(sf.vittorie, "Vittorie")}${stat(sf.podi, "Podi")}${stat(sf.pole, "Pole")}${stat(sf.giri_veloci, "Giri veloci")}${stat(sf.titoli ?? ND, "Titoli")}</div>
+    <p class="muted" style="font-size:13px;margin-top:8px">${sf.nascita ? `Nato il ${dataIt(sf.nascita)}` : ""}${sf.nazionalita ? ` · ${esc(sf.nazionalita)}` : ""} · numeri di carriera da Jolpica (Ergast)</p>` : ""}
+    ${bioHtml(bio)}
     <h3 class="section-title">Stagione weekend per weekend</h3>
     ${p.weekend.length ? `<div class="table-wrap"><table class="results">
       <thead><tr><th>Weekend</th><th>Data</th><th>Qualifiche</th><th>Sprint</th><th>Gara</th></tr></thead>

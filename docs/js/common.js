@@ -276,3 +276,17 @@ let _mappeMoto;
 export function mappeMotoMap() {
   return (_mappeMoto ||= fetchJSON("data/mappe-motogp.json").catch(() => ({})));
 }
+
+// Schede carriera (numeri di carriera e biografia breve da Wikipedia in italiano); vuote se non ancora generate.
+let _schede;
+export function schedeMap() {
+  return (_schede ||= fetchJSON("data/schede.json").catch(() => ({})));
+}
+export function bioHtml(w) {
+  if (!w) return "";
+  return `<h3 class="section-title">Chi è</h3><div class="bio"><p>${esc(w.testo)}</p>
+    <p class="credito">Fonte: <a href="${esc(w.pagina)}" target="_blank" rel="noopener">Wikipedia in italiano</a>, testo con licenza CC BY-SA 4.0.</p></div>`;
+}
+export function dataIt(iso) {
+  return iso ? new Date(iso).toLocaleDateString("it-IT", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }) : "";
+}

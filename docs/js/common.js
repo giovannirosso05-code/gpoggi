@@ -125,6 +125,7 @@ export function renderFooter() {
           <li><a href="index.html">Home</a></li>
           <li><a href="piloti.html">Piloti</a></li>
           <li><a href="classifiche.html">Classifiche</a></li>
+          <li><a href="archivio.html">Archivio storico</a></li>
           <li><a href="gare.html">Calendario</a></li>
           <li><a href="notizie.html">Notizie</a></li>
           <li><a href="confronto.html">Confronto piloti</a></li>

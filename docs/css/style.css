@@ -680,3 +680,14 @@ select.sel {
 .quiz-fine { text-align: center; padding: 16px 0; } .quiz-punteggio { font-family: var(--font-display); font-weight: 700; font-size: 96px; color: var(--accent); line-height: 1; } .quiz-punteggio span { font-size: 36px; color: var(--text-muted); }
 .quiz-azioni { display: flex; gap: 10px; justify-content: center; margin-top: 16px; } .quiz-azioni .quiz-avanti { margin: 0; }
 @media (max-width: 600px) { .gioco-scelta, .quiz-opzioni { grid-template-columns: 1fr; } .partita { padding: 18px; } }
+
+/* ---------- Archivio ---------- */
+.filtri-archivio { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: -4px 0 20px; }
+.filtri-archivio .sel { width: auto; min-width: 220px; }
+.link-storici { margin-left: auto; font-weight: 600; color: var(--accent); }
+.campione { background: var(--bg-elevated); border: 1px solid var(--border); border-left: 5px solid var(--accent); border-radius: var(--radius); box-shadow: var(--shadow-card); padding: 20px 24px; margin-bottom: 24px; }
+.campione h1 { font-size: 36px; margin: 8px 0; }
+.team-lungo { white-space: normal; min-width: 160px; font-size: 13px; color: var(--text-secondary); }
+.link-archivio { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin: 0 0 20px; background: var(--accent-soft); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 20px; font-weight: 600; }
+.link-archivio span { font-weight: 400; color: var(--text-secondary); font-size: 13px; display: block; }
+.link-archivio b { color: var(--accent); white-space: nowrap; }

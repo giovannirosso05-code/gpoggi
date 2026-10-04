@@ -24,6 +24,22 @@ SESSIONI = {"FP1": "Prove libere 1", "FP2": "Prove libere 2", "PR": "Prove liber
             "SPR": "Sprint", "WUP": "Warm up", "RAC": "Gara"}
 
 
+GP_MOTO = {"THAILAND": "Thailandia", "BRAZIL": "Brasile", "UNITED STATES": "Stati Uniti", "SPAIN": "Spagna", "FRANCE": "Francia", "CATALONIA": "Catalogna",
+           "ITALY": "Italia", "HUNGARY": "Ungheria", "CZECHIA": "Repubblica Ceca", "NETHERLANDS": "Paesi Bassi", "GERMANY": "Germania", "GREAT BRITAIN": "Gran Bretagna",
+           "ARAGON": "Aragona", "SAN MARINO": "San Marino", "AUSTRIA": "Austria", "JAPAN": "Giappone", "INDONESIA": "Indonesia", "AUSTRALIA": "Australia",
+           "MALAYSIA": "Malesia", "QATAR": "Qatar", "PORTUGAL": "Portogallo", "VALENCIA": "Valencia", "ARGENTINA": "Argentina", "AMERICAS": "delle Americhe"}
+
+
+def nome_gp_moto(nome_evento, country=None):
+    """'PETRONAS GRAND PRIX OF MALAYSIA' -> 'GP Malesia' (il nome della gara, non solo il paese: la Spagna ne ospita piu' d'una)."""
+    import re
+    m = re.search(r"GRAND PRIX (?:OF|DE)\s+(?:THE\s+)?(.+?)\s*$", (nome_evento or "").upper())
+    chiave = m.group(1).strip() if m else ""
+    if chiave in GP_MOTO:
+        return f"GP {GP_MOTO[chiave]}"
+    return f"GP {PAESI.get(country, country or chiave.title())}"
+
+
 def utc(s):
     return datetime.strptime(s, "%Y-%m-%dT%H:%M:%S%z").astimezone(timezone.utc).isoformat(timespec="seconds")
 
@@ -78,7 +94,7 @@ def classifica_e_ultima():
             piloti[x["rider"]["id"]] = {**riga_rider(x), "categoria": nome, "pos": x["position"], "punti": x["points"], "vittorie": x.get("race_wins", 0), "gare": []}
         for e in eventi:
             sess = api_cache("results/sessions", eventUuid=e["id"], categoryUuid=cat)
-            nome_gp = f"GP {PAESI.get((e.get('country') or {}).get('name'), (e.get('country') or {}).get('name') or '')}".strip()
+            nome_gp = nome_gp_moto(e.get("name"), (e.get("country") or {}).get("name"))
             ris_gara = {}
             for tipo in ("SPR", "RAC"):
                 sd = next((q for q in sess if q["type"] == tipo), None)
@@ -124,7 +140,7 @@ def main():
         if not sess or max(s["fine"] for s in sess) < ora.isoformat(timespec="seconds"):
             continue
         paese = (e.get("circuit") or {}).get("country") or ""
-        weekend.append({"nome": f"GP {PAESI.get(paese, paese)}", "circuito": (e.get("circuit") or {}).get("name"), "paese": PAESI.get(paese, paese),
+        weekend.append({"nome": nome_gp_moto(e.get("name"), paese), "circuito": (e.get("circuit") or {}).get("name"), "paese": PAESI.get(paese, paese),
                         "sessioni": sorted(sess, key=lambda s: s["inizio"])})
     if "--prova" in sys.argv:
         for w in weekend[:2]:

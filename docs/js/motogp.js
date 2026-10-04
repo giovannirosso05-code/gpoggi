@@ -20,13 +20,13 @@ const nomeLink = (nome, id) => {
 
 function tabellaGara(ris) {
   return `<div class="table-wrap"><table class="results"><thead><tr><th>Pos</th><th>Pilota</th><th>Moto</th><th>Distacco</th><th>Punti</th></tr></thead><tbody>${ris.slice(0, 15).map((r) => `<tr class="${r.pos && r.pos <= 3 ? "podio" : ""}">
-    <td>${r.pos ?? esc(r.stato || "–")}</td><td>${nomeLink(r.nome, idDa(r.nome))} <span class="muted">#${r.numero ?? ""}</span></td>
+    <td>${r.pos ?? esc(r.stato || "–")}</td><td>${nomeLink(r.nome, idDa(r.nome))}</td>
     <td><span class="cella-team">${stemmaMoto(r.moto)}${esc(r.moto)}</span></td><td>${r.pos === 1 ? esc(r.tempo || "") : r.distacco && r.distacco !== "0.000" ? "+" + esc(r.distacco) : "–"}</td><td>${r.punti ?? "–"}</td></tr>`).join("")}</tbody></table></div>`;
 }
 
 function tabellaClassifica(pil) {
   return `<div class="table-wrap"><table class="results"><thead><tr><th>Pos</th><th>Pilota</th><th>Moto</th><th>Punti</th><th>Vitt.</th></tr></thead><tbody>${pil.slice(0, 20).map((p) => `<tr class="${p.pos <= 3 ? "podio" : ""}">
-    <td>${p.pos}</td><td>${nomeLink(p.nome, p.id)} <span class="muted">#${p.numero ?? ""}</span></td><td><span class="cella-team">${stemmaMoto(p.moto)}${esc(p.moto)}</span></td><td><strong>${punti(p.punti)}</strong></td><td>${p.vittorie}</td></tr>`).join("")}</tbody></table></div>`;
+    <td>${p.pos}</td><td>${nomeLink(p.nome, p.id)}</td><td><span class="cella-team">${stemmaMoto(p.moto)}${esc(p.moto)}</span></td><td><strong>${punti(p.punti)}</strong></td><td>${p.vittorie}</td></tr>`).join("")}</tbody></table></div>`;
 }
 
 function disegnaCategoria() {

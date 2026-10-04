@@ -14,12 +14,21 @@ const salvaRecord = (g, v) => { try { if (v > record(g)) localStorage.setItem("r
 let dati = null;
 async function carica() {
   if (dati) return dati;
-  const [eventi, roster] = await Promise.all([fetchJSON("data/events.json"), fetchJSON("data/roster.json")]);
-  dati = { eventi: eventi.filter((e) => e.mappa), roster: roster.filter((p) => p.foto && p.nome) };
+  const [eventi, roster, moto] = await Promise.all([fetchJSON("data/events.json"), fetchJSON("data/roster.json"), fetchJSON("data/motogp-classifica.json").catch(() => null)]);
+  dati = { eventi: eventi.filter((e) => e.mappa), roster: roster.filter((p) => p.foto && p.nome), moto: moto ? moto.piloti : [] };
   return dati;
 }
 
+function domandeMoto() {
+  const marche = [...new Set(dati.moto.map((p) => p.moto))];
+  return mescola(dati.moto).slice(0, N).map((p) => {
+    const altre = mescola(marche.filter((m) => m !== p.moto)).slice(0, 3);
+    return { giusto: { nome: p.moto, rider: p.nome, team: p.team }, opzioni: mescola([{ nome: p.moto }, ...altre.map((m) => ({ nome: m }))]) };
+  });
+}
+
 function domande(gioco) {
+  if (gioco === "moto") return domandeMoto();
   const { eventi, roster } = dati;
   const pool = gioco === "circuito" ? eventi : roster;
   const etichetta = (x) => (gioco === "circuito" ? x.nome : x.nome);
@@ -37,12 +46,12 @@ function partita(gioco) {
 
   const mostra = () => {
     const q = qs[i];
-    const immagine = gioco === "circuito"
+    const immagine = gioco === "moto" ? `<div class="quiz-img foto-quiz" style="padding:28px"><div class="quiz-pilota"><b>${esc(q.giusto.rider)}</b><span>${esc(q.giusto.team)}</span></div></div>` : gioco === "circuito"
       ? `<div class="quiz-img mappa-quiz"><img src="${esc(q.giusto.mappa.file || q.giusto.mappa.url)}" alt="Tracciato da indovinare"></div>`
       : `<div class="quiz-img foto-quiz"><img src="${esc(q.giusto.foto.file || q.giusto.foto.url)}" alt="Pilota da indovinare"></div>`;
     box.innerHTML = `
       <div class="quiz-testa"><span>Domanda ${i + 1} di ${qs.length}</span><span>Punti: <b>${punti}</b></span></div>
-      <h3 class="quiz-titolo">${gioco === "circuito" ? "Di quale Gran Premio è questo tracciato?" : "Chi è questo pilota?"}</h3>
+      <h3 class="quiz-titolo">${gioco === "moto" ? "Che moto guida questo pilota?" : gioco === "circuito" ? "Di quale Gran Premio è questo tracciato?" : "Chi è questo pilota?"}</h3>
       ${immagine}
       <div class="quiz-opzioni">${q.opzioni.map((o, k) => `<button class="quiz-opz" data-k="${k}">${esc(o.nome)}</button>`).join("")}</div>
       <div class="quiz-esito" id="esito"></div>`;
@@ -58,7 +67,7 @@ function partita(gioco) {
       if (q.opzioni[idx].nome === q.giusto.nome) b.classList.add("giusta");
       else if (idx === k) b.classList.add("sbagliata");
     });
-    const cred = gioco === "pilota" ? `<div class="credito">${credito(q.giusto.foto)}</div>` : `<div class="credito">${credito(q.giusto.mappa, "Mappa")}</div>`;
+    const cred = gioco === "moto" ? "" : gioco === "pilota" ? `<div class="credito">${credito(q.giusto.foto)}</div>` : `<div class="credito">${credito(q.giusto.mappa, "Mappa")}</div>`;
     document.getElementById("esito").innerHTML = `<b>${ok ? "Giusto!" : "Sbagliato."}</b> ${ok ? "" : "Era " + esc(q.giusto.nome) + "."}
       <button class="quiz-avanti" id="avanti">${i + 1 < qs.length ? "Avanti →" : "Vedi il risultato"}</button>${cred}`;
     document.getElementById("avanti").addEventListener("click", () => { i++; i < qs.length ? mostra() : fine(); });

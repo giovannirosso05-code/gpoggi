@@ -971,3 +971,19 @@ a.ag-risultati { display: inline-block; text-decoration: none; text-align: cente
 
 td .su { color: #2f9e44; font-weight: 700; font-size: 12px; }
 td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
+
+/* sezioni ben separate: ogni blocco è un pannello a sé, con titolo e spazio intorno */
+.blocco { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 18px; padding: 22px 20px; margin: 0 0 32px; box-shadow: var(--shadow-card); }
+.blocco > .section-title:first-child, .blocco > h3.section-title:first-child { margin-top: 0; }
+.blocco .section-title { font-size: 24px; margin-bottom: 14px; }
+.blocco .prono-col { background: transparent; box-shadow: none; }
+.blocco .ultima-gara { box-shadow: none; }
+.hero2 { margin-bottom: 34px; }
+.home-sezioni { display: flex; flex-direction: column; }
+.home-aside .evento-widget { margin-bottom: 26px; }
+@media (max-width: 700px) {
+  .blocco { padding: 18px 14px; border-radius: 16px; margin-bottom: 28px; }
+  .blocco .section-title { font-size: 22px; }
+  .hero2 { margin-bottom: 30px; }
+  .home-sezioni section + section { margin-top: 0; }
+}

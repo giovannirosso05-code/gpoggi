@@ -35,6 +35,20 @@ function temaCorrente() {
   return t || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 }
 
+// Il tema scelto viaggia anche nell'indirizzo (?tema=dark) quando si cambia pagina: funziona pure dove
+// il browser blocca la memoria del sito (anteprime, finestre incorporate) e vale anche per una nuova scheda.
+document.addEventListener("click", (e) => {
+  const tema = document.documentElement.dataset.theme;
+  const a = e.target.closest && e.target.closest("a[href]");
+  if (!tema || !a || a.target === "_blank") return;
+  try {
+    const u = new URL(a.href, location.href);
+    if (u.origin !== location.origin || !/\.html$|\/$/.test(u.pathname)) return;
+    u.searchParams.set("tema", tema);
+    a.href = u.href;
+  } catch (err) {}
+}, true);
+
 export function renderHeader(paginaAttuale) {
   const voci = [
     ["home", "index.html", "Home"],

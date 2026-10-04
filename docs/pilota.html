@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>try{var t=null;try{t=localStorage.getItem("tema")}catch(e){}if(!t){var m=/(?:^|;)gpoggi-tema=(light|dark)/.exec(window.name);t=m&&m[1]}if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<script>try{var t=null,q=/[?&]tema=(light|dark)/.exec(location.search);if(q)t=q[1];try{if(t)localStorage.setItem("tema",t);else t=localStorage.getItem("tema")}catch(e){}if(!t){var m=/(?:^|;)gpoggi-tema=(light|dark)/.exec(window.name);t=m&&m[1]}if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="icon" type="image/png" href="img/favicon-64.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="manifest" href="manifest.json">
@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=13">
+<link rel="stylesheet" href="css/style.css?v=14">
 </head>
 <body>
 

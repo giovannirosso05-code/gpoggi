@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, stemma, formattaData, punti, erroreCaricamento, img, credito, fotoMotoMap, schedeMap, bioHtml, dataIt } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, stemma, stemmaMoto, formattaData, punti, erroreCaricamento, img, credito, fotoMotoMap, schedeMap, bioHtml, dataIt } from "./common.js";
 
 renderHeader("motogp");
 renderFooter();
@@ -22,7 +22,7 @@ try {
   const esito = (g) => (g.gara ? `${g.gara}°` : g.stato_gara && g.stato_gara !== "INSTND" ? "Ritirato" : "–");
   box.innerHTML = `
     <section class="campione" style="margin-top:32px"><span class="kicker">${esc(p.categoria)} · #${p.numero ?? "n.d."}</span><div class="pm-testa">${foto ? img(foto, p.nome, "pm-foto") : ""}<div><h1>${esc(p.nome)}</h1>
-      <p class="muted" style="margin:0"><span class="cella-team">${stemma(p.moto)}${esc(p.team)}</span> · ${esc(p.paese || "")}</p></div></div>
+      <p class="muted" style="margin:0"><span class="cella-team">${stemmaMoto(p.moto)}${esc(p.team)}</span> · ${esc(p.paese || "")}</p></div></div>
       ${foto ? `<p class="credito" style="margin:10px 0 0">${credito(foto)}</p>` : ""}</section>
     <div class="stat-strip">
       <div class="stat"><div class="stat-number">${p.pos ?? "n.d."}${p.pos ? "°" : ""}</div><div class="stat-label">In classifica</div></div>

@@ -1,4 +1,6 @@
-import { renderHeader, renderFooter, fetchJSON, esc, img, intervalloWeekend, formattaDataOra, punti, stemma, ND, mischia, fotoMotoMap, mappeMotoMap } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, img, credito, intervalloWeekend, formattaDataOra, punti, stemma, stemmaMoto, ND, mischia, fotoMotoMap, mappeMotoMap } from "./common.js";
+
+import { montaPronostico, colonnaF1, colonnaMoto } from "./prono.js";
 
 renderHeader("home");
 renderFooter();
@@ -19,16 +21,21 @@ const conto = (diff) => {
   return g > 0 ? `${g}g ${d(h)}h ${d(m)}m ${d(s)}s` : `${d(h)}h ${d(m)}m ${d(s)}s`;
 };
 const timer = [];
-function riquadro(id, sigla, classe, trovata, link) {
+function riquadro(id, sigla, classe, trovata, link, foto, favorito) {
   const el = document.getElementById(id);
   if (!trovata) { el.innerHTML = `<span class="cd-sigla ${classe}">${sigla}</span><span class="muted">Nessun weekend in programma</span>`; return; }
   const { g, s } = trovata;
   el.href = link(g);
+  const f = foto && (foto.file_grande || foto.grande || foto.file || foto.url);
+  if (f) el.style.setProperty("--foto", `url("${new URL(f, document.baseURI).href}")`);
   el.innerHTML = `<span class="cd-sigla ${classe}">${sigla}</span>
+    <span class="hero2-kicker">Prossimo GP</span>
     <strong class="pross-gp">${esc(g.nome)}</strong>
-    <span class="muted pross-circ">${esc(g.circuito)}</span>
+    <span class="pross-circ">${esc(g.circuito)}</span>
     <span class="pross-sess">${esc(s.nome)} · ${formattaDataOra(s.inizio)}</span>
-    <span class="pross-timer cd-tempo"></span>`;
+    <span class="pross-timer cd-tempo"></span>
+    ${favorito ? `<span class="hero2-fav">Favorito: <b>${esc(favorito)}</b></span>` : ""}
+    ${foto ? `<span class="hero2-credito">${credito(foto)}</span>` : ""}`;
   const t = el.querySelector(".pross-timer");
   timer.push(() => {
     const diff = new Date(s.inizio).getTime() - Date.now();
@@ -53,7 +60,7 @@ function podioMoto(u) {
   const top = u.risultati.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos);
   return blocco("MotoGP", "moto", u.nome, u.circuito, `motogp.html${tema ? "?" + tema.slice(1) : ""}`, top.map((r) => `<a href="motogp.html${tema ? "?" + tema.slice(1) : ""}" style="--team:#8b8a92">
       <div class="posto">${r.pos}°</div>${FM["nome:" + r.nome] ? img(FM["nome:" + r.nome], r.nome) : '<span class="vuota"></span>'}
-      <strong>${esc(r.nome)}</strong><div>${stemma(r.moto)}</div><div class="tempo">${r.tempo ? esc(r.tempo) : ND}</div></a>`).join(""));
+      <strong>${esc(r.nome)}</strong><div>${stemmaMoto(r.moto)}</div><div class="tempo">${r.tempo ? esc(r.tempo) : ND}</div></a>`).join(""));
 }
 function blocco(sigla, classe, nome, sotto, link, podio) {
   return `<div class="ultima-gara">
@@ -79,7 +86,7 @@ function tabellaMoto() {
   return lista.length ? `<div class="table-wrap"><table class="results"><thead><tr><th>Pos</th><th>Pilota</th><th>Moto</th><th>Punti</th></tr></thead>
     <tbody>${lista.slice(0, 10).map((p) => `<tr class="${p.pos <= 3 ? "podio" : ""}"><td>${p.pos}</td>
       <td><a class="link-nome" href="pilota-moto.html?id=${esc(p.id)}${tema}"><strong>${esc(p.nome)}</strong></a> <span class="muted">#${p.numero ?? ""}</span></td>
-      <td><span class="cella-team">${stemma(p.moto)}${esc(p.moto)}</span></td><td><strong>${punti(p.punti)}</strong></td></tr>`).join("")}</tbody></table></div>` : `<p class="muted">Classifica non disponibile.</p>`;
+      <td><span class="cella-team">${stemmaMoto(p.moto)}${esc(p.moto)}</span></td><td><strong>${punti(p.punti)}</strong></td></tr>`).join("")}</tbody></table></div>` : `<p class="muted">Classifica non disponibile.</p>`;
 }
 function mostraClassifica(k) {
   document.querySelectorAll("#home-serie .pill").forEach((b) => b.classList.toggle("active", b.dataset.s === k));
@@ -92,8 +99,11 @@ const [roster, eventi, standings, cal, clMoto, ultMoto, ras] = await Promise.all
   sicuro(fetchJSON("data/roster.json")), sicuro(fetchJSON("data/events.json")), sicuro(fetchJSON("data/standings.json")),
   sicuro(fetchJSON("data/motogp.json")), sicuro(fetchJSON("data/motogp-classifica.json")), sicuro(fetchJSON("data/motogp-ultima.json")), sicuro(fetchJSON("data/rassegna.json"))]);
 
-riquadro("pross-f1", "F1", "", eventi && prossimaSessione(eventi), (g) => `gara.html?id=${g.id}${tema}`);
-riquadro("pross-moto", "MotoGP", "moto", cal && prossimaSessione(cal.weekend), () => `motogp.html${tema ? "?" + tema.slice(1) : ""}`);
+const prono = await fetchJSON("data/pronostici.json").catch(() => null);
+const leaderF1 = (roster || []).find((p) => p.posizione === 1 && p.foto) || (roster || []).find((p) => p.foto);
+const leaderMoto = ((clMoto && (clMoto.categorie || {}).MotoGP) || [])[0];
+riquadro("pross-f1", "F1", "", eventi && prossimaSessione(eventi), (g) => `gara.html?id=${g.id}${tema}`, leaderF1 && leaderF1.foto, prono && prono.f1 && prono.f1.favoriti[0].nome);
+riquadro("pross-moto", "MotoGP", "moto", cal && prossimaSessione(cal.weekend), () => `motogp.html${tema ? "?" + tema.slice(1) : ""}`, leaderMoto && FM["nome:" + leaderMoto.nome], prono && prono.motogp && prono.motogp.favoriti[0].nome);
 timer.forEach((f) => f());
 
 if (standings) standings.costruttori.forEach((c) => (coloreTeam[c.team] = c.colore));
@@ -134,20 +144,9 @@ document.getElementById("prossimi-mini").innerHTML = prossimi.length ? prossimi.
     <div class="evento-widget-mini-data">${esc(g.circuito)} · ${intervalloWeekend(g)}</div></div>
   </a>`).join("") : `<p class="muted" style="font-size:12px">Nessun weekend in programma.</p>`;
 
-// ---- Pronostico: indice calcolato dai dati (forma, campionato, stesso circuito l'anno scorso)
-try {
-  const pr = await fetchJSON("data/pronostici.json");
-  const fotoF1 = Object.fromEntries((roster || []).filter((p) => p.foto).map((p) => [p.numero, p.foto]));
-  const colonna = (sigla, classe, d, fotoDi) => d ? `<div class="prono-col">
-    <div class="prono-testa"><span class="cd-sigla ${classe}">${sigla}</span><b>${esc(d.gp)}</b><span class="muted">gara ${formattaDataOra(d.gara)}</span></div>
-    ${d.favoriti.slice(0, 3).map((r, i) => `<div class="prono-riga ${i === 0 ? "primo" : ""}">
-      <span class="prono-pos">${i + 1}</span>${fotoDi(r) ? img(fotoDi(r), r.nome, "foto-mini") : '<span class="foto-mini"></span>'}
-      <div class="prono-info"><strong>${esc(r.nome)}</strong><span class="muted">${esc(r.motivi.join(" · "))}</span>
-        <div class="prono-barra"><i style="width:${r.indice}%"></i></div></div><span class="prono-ind">${r.indice}</span></div>`).join("")}</div>` : "";
-  const html = colonna("F1", "", pr.f1, (r) => fotoF1[r.numero]) + colonna("MotoGP", "moto", pr.motogp, (r) => FM[r.id]);
-  if (html) {
-    document.getElementById("prono-griglia").innerHTML = html;
-    document.getElementById("prono-nota").textContent = pr.metodo;
-    document.getElementById("prono").hidden = false;
-  }
-} catch (e) {}
+// ---- Pronostico: indice calcolato dai dati (forma, campionato, stesso circuito l'anno scorso) e voto dei visitatori
+if (prono && (prono.f1 || prono.motogp)) {
+  montaPronostico(document.getElementById("prono-griglia"), [colonnaF1(prono, roster), colonnaMoto(prono, clMoto, FM)]);
+  document.getElementById("prono-nota").textContent = prono.metodo;
+  document.getElementById("prono").hidden = false;
+}

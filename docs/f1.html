@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{var t=null,q=/[?&]tema=(light|dark)/.exec(location.search);if(q)t=q[1];try{if(t)localStorage.setItem("tema",t);else t=localStorage.getItem("tema")}catch(e){}if(!t){var m=/(?:^|;)gpoggi-tema=(light|dark)/.exec(window.name);t=m&&m[1]}if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="icon" type="image/png" href="img/favicon-64.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#f5f4f0">
+<title>Formula 1 — GP Oggi</title>
+<meta name="description" content="Formula 1: prossimo Gran Premio, pronostico, gare, classifiche e piloti. Sito non ufficiale.">
+<link rel="canonical" href="https://gpoggi.it/gare.html">
+<meta property="og:url" content="https://gpoggi.it/gare.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GP Oggi">
+<meta property="og:title" content="Calendario F1 — Weekend di gara | GP Oggi">
+<meta property="og:description" content="Calendario dei weekend di Formula 1 con prove libere, qualifiche, sprint e gara.">
+<meta property="og:image" content="https://gpoggi.it/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=37">
+</head>
+<body>
+
+<header id="site-header" class="site-header"></header>
+
+<div class="container">
+  <div class="section-title" style="margin-top:28px">Formula 1</div>
+  <section class="hero2 uno" id="hero-f1"><a class="hero2-lato f1" id="pross-f1" href="calendario.html"><span class="cd-sigla">F1</span><span class="muted">Caricamento…</span></a></section>
+
+  <section class="prono" id="prono" hidden>
+    <div class="section-title">Chi vince? Il pronostico</div>
+    <div class="prono-griglia uno" id="prono-griglia"></div>
+    <p class="muted prono-nota" id="prono-nota"></p>
+  </section>
+
+  <div class="home-layout">
+    <div class="home-sezioni">
+      <section><div class="section-title" style="margin-top:0">Gare</div>
+        <p class="muted" style="margin:-6px 0 12px;font-size:13px">La prossima e quelle già disputate. Per le altre gare future vai al <a class="accent" href="calendario.html">Calendario →</a></p>
+        <div class="gare-grid" id="gare-f1"></div></section>
+      <section><div class="section-title">Com'è andata</div><div id="report-f1"></div></section>
+      <section><div class="section-title">Classifica piloti</div><p id="f1-nota" class="muted" style="font-size:13px;margin:-6px 0 12px"></p><div id="top-classifica"></div>
+        <a class="evento-widget-tutti" href="classifiche.html?serie=f1" style="display:block;margin-top:10px">Classifiche complete →</a></section>
+      <a class="vai-piloti" href="piloti.html?serie=f1"><div>Piloti di Formula 1<br><span>In pista oggi e ultimi 20 anni: schede con foto e numeri</span></div><b>Vedi i piloti →</b></a>
+    </div>
+    <aside class="home-aside">
+      <div class="evento-widget"><div class="evento-widget-titolo">Notizie Formula 1</div><div id="notizie-f1"></div><a class="evento-widget-tutti" href="notizie.html">Tutte le notizie →</a></div>
+      <div class="evento-widget"><div class="evento-widget-titolo">Costruttori</div><ol class="mini-classifica" id="mini-costruttori"></ol><a class="evento-widget-tutti" href="archivio.html">Archivio storico F1 →</a></div>
+    </aside>
+  </div>
+</div>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script type="module" src="js/f1.js?v=37"></script>
+</body>
+</html>

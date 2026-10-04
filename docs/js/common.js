@@ -27,6 +27,11 @@ export function stemma(team, colore) {
   return `<span class="stemma" style="--team:#${hex};--stemma-testo:${lum > 150 ? "#16161b" : "#fff"}" title="${esc(team)}">${esc(codice)}</span>`;
 }
 
+// Colori delle case motociclistiche (solo il colore, non i marchi) per le classifiche della MotoGP.
+const MOTO_COLORI = { Ducati: "e1251b", Aprilia: "7b2c8f", KTM: "f26a1b", Yamaha: "1d4fa3", Honda: "dcdce2", Kalex: "0f9d8f", Boscoscuro: "c9a227", Forward: "6b7280", Suter: "8a5a2b", Husqvarna: "1e3a8a", Gas: "d6336c", CFMoto: "2aa84a" };
+export const coloreMoto = (marca) => MOTO_COLORI[marca];
+export const stemmaMoto = (marca) => stemma(marca, MOTO_COLORI[marca]);
+
 const ICONA_LUNA = `<svg class="luna" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>`;
 const ICONA_SOLE = `<svg class="sole" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>`;
 
@@ -90,6 +95,8 @@ async function renderCountdown() {
 export function renderHeader(paginaAttuale) {
   const voci = [
     ["home", "index.html", "Home"],
+    ["f1", "f1.html", "Formula 1"],
+    ["motogp", "motogp.html", "MotoGP"],
     ["piloti", "piloti.html", "Piloti"],
     ["classifiche", "classifiche.html", "Classifiche"],
     ["gare", "calendario.html", "Calendario"],
@@ -130,7 +137,7 @@ export function renderFooter() {
           <li><a href="piloti.html">Piloti</a></li>
           <li><a href="classifiche.html">Classifiche</a></li>
           <li><a href="archivio.html">Archivio storico</a></li>
-          <li><a href="gare.html">Calendario F1</a></li>
+          <li><a href="f1.html">Formula 1</a></li>
           <li><a href="motogp.html">MotoGP</a></li>
           <li><a href="motogp-archivio.html">Archivio MotoGP</a></li>
           <li><a href="calendario.html">Aggiungi al calendario</a></li>
@@ -289,4 +296,26 @@ export function bioHtml(w) {
 }
 export function dataIt(iso) {
   return iso ? new Date(iso).toLocaleDateString("it-IT", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }) : "";
+}
+
+// Votazioni del pronostico. Con VOTI_URL vuoto il voto resta nel browser; con l'indirizzo del Worker (vedi worker/voti.js)
+// i voti si sommano tra tutti i visitatori e si vedono le percentuali.
+export const VOTI_URL = "";
+export function votoSalvato(chiave) {
+  try { return localStorage.getItem("voto:" + chiave); } catch (e) { return null; }
+}
+export async function inviaVoto(chiave, scelta) {
+  try { localStorage.setItem("voto:" + chiave, scelta); } catch (e) {}
+  if (!VOTI_URL) return null;
+  try {
+    const r = await fetch(VOTI_URL, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ gp: chiave, scelta }) });
+    return r.ok ? (await r.json()).voti : null;
+  } catch (e) { return null; }
+}
+export async function leggiVoti(chiave) {
+  if (!VOTI_URL) return null;
+  try {
+    const r = await fetch(`${VOTI_URL}?gp=${encodeURIComponent(chiave)}`);
+    return r.ok ? (await r.json()).voti : null;
+  } catch (e) { return null; }
 }

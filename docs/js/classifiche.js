@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, img, punti, stemma, erroreCaricamento } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, img, punti, stemma, stemmaMoto, erroreCaricamento } from "./common.js";
 
 renderHeader("classifiche");
 renderFooter();
@@ -47,8 +47,8 @@ async function moto(cat) {
     html: colonne(
       { titolo: "Piloti", html: tab(["Pos", "Pilota", "Moto", "Punti", "Vitt."], piloti.map((p) => `<tr class="${p.pos <= 3 ? "podio" : ""}"><td>${p.pos}</td>
         <td><a class="link-nome" href="pilota-moto.html?id=${esc(p.id)}${tema}"><strong>${esc(p.nome)}</strong></a> <span class="muted">#${p.numero ?? ""}</span></td>
-        <td><span class="cella-team">${stemma(p.moto)}${esc(p.moto)}</span></td><td><strong>${punti(p.punti)}</strong></td><td>${p.vittorie}</td></tr>`).join("")) },
-      { titolo: "Team", html: tab(["Pos", "Team", "Punti"], squadre.map((t, i) => `<tr class="${i < 3 ? "podio" : ""}"><td>${i + 1}</td><td><span class="cella-team">${stemma(t.moto)}<strong>${esc(t.team)}</strong></span></td><td><strong>${punti(t.punti)}</strong></td></tr>`).join("")) + `<p class="muted" style="font-size:12px;margin-top:8px">Punti dei team: somma dei punti dei loro piloti.</p>` }),
+        <td><span class="cella-team">${stemmaMoto(p.moto)}${esc(p.moto)}</span></td><td><strong>${punti(p.punti)}</strong></td><td>${p.vittorie}</td></tr>`).join("")) },
+      { titolo: "Team", html: tab(["Pos", "Team", "Punti"], squadre.map((t, i) => `<tr class="${i < 3 ? "podio" : ""}"><td>${i + 1}</td><td><span class="cella-team">${stemmaMoto(t.moto)}<strong>${esc(t.team)}</strong></span></td><td><strong>${punti(t.punti)}</strong></td></tr>`).join("")) + `<p class="muted" style="font-size:12px;margin-top:8px">Punti dei team: somma dei punti dei loro piloti.</p>` }),
   };
 }
 

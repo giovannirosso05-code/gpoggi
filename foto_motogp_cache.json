@@ -1,6 +1,12 @@
 {
  "Adrian Cruces": null,
- "Adrian Fernandez": null,
+ "Adrian Fernandez": {
+  "url": "https://api.openverse.org/v1/images/ee5bece3-1369-41fb-a42b-9e4481cf13db/thumb/",
+  "grande": "https://live.staticflickr.com/5065/5852722408_fdd5ab4842_b.jpg",
+  "autore": "Dave Hamster",
+  "licenza": "CC BY 2.0",
+  "pagina": "https://www.flickr.com/photos/14265068@N00/5852722408"
+ },
  "Adrian Huertas": null,
  "Ai Ogura": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg/500px-Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg",
@@ -163,7 +169,13 @@
   "licenza": "CC BY 2.0",
   "pagina": "https://commons.wikimedia.org/wiki/File:Iker_Lecuona_2023_(cropped).jpg"
  },
- "Augusto Fernandez": null,
+ "Augusto Fernandez": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Augusto_Fernandez.JPG/500px-Augusto_Fernandez.JPG",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Augusto_Fernandez.JPG",
+  "autore": "File:508cdc331d159-img partido Celta-Dépor, 27 outubro 2012.jpg by Zelia García\nDerivative work by Elisardojm",
+  "licenza": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Augusto_Fernandez.JPG"
+ },
  "Somkiat Chantra": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Somkiat_Chantra_at_the_2025_Malaysian_Grand_Prix.jpg/500px-Somkiat_Chantra_at_the_2025_Malaysian_Grand_Prix.jpg",
   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Somkiat_Chantra_at_the_2025_Malaysian_Grand_Prix.jpg/1280px-Somkiat_Chantra_at_the_2025_Malaysian_Grand_Prix.jpg",
@@ -206,7 +218,13 @@
   "licenza": "CC BY-SA 4.0",
   "pagina": "https://commons.wikimedia.org/wiki/File:Michele_Pirro_at_the_2025_Malaysian_Grand_Prix.jpg"
  },
- "Manuel Gonzalez": null,
+ "Manuel Gonzalez": {
+  "url": "https://api.openverse.org/v1/images/b3e2cb55-bee0-43e3-8407-e9f2d3e803bf/thumb/",
+  "grande": "https://live.staticflickr.com/3655/3344309431_5d0353e8a7_b.jpg",
+  "autore": "icannphotos",
+  "licenza": "CC BY-SA 2.0",
+  "pagina": "https://www.flickr.com/photos/28660070@N07/3344309431"
+ },
  "Izan Guevara": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Podio_ETC_2._FIM_CEV_Repsol_2019_Arag%C3%B3n_%28cropped%29.jpg/500px-Podio_ETC_2._FIM_CEV_Repsol_2019_Arag%C3%B3n_%28cropped%29.jpg",
   "grande": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Podio_ETC_2._FIM_CEV_Repsol_2019_Arag%C3%B3n_%28cropped%29.jpg",
@@ -244,7 +262,13 @@
   "licenza": "CC BY 2.0",
   "pagina": "https://commons.wikimedia.org/wiki/File:Celestino_Vietti_2019.jpg"
  },
- "Alonso Lopez": null,
+ "Alonso Lopez": {
+  "url": "https://api.openverse.org/v1/images/70b9ec51-69d0-4292-ac6a-b3e4facc19ac/thumb/",
+  "grande": "https://live.staticflickr.com/2103/2404997483_fd39ac273d_b.jpg",
+  "autore": "peregrine blue",
+  "licenza": "CC BY 2.0",
+  "pagina": "https://www.flickr.com/photos/46786430@N00/2404997483"
+ },
  "Collin Veijer": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/2025_04_27_Gran_Premio_de_Motociclismo_de_Jerez_%2854482426021%29_%28cropped%29.jpg/500px-2025_04_27_Gran_Premio_de_Motociclismo_de_Jerez_%2854482426021%29_%28cropped%29.jpg",
   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/2025_04_27_Gran_Premio_de_Motociclismo_de_Jerez_%2854482426021%29_%28cropped%29.jpg/1280px-2025_04_27_Gran_Premio_de_Motociclismo_de_Jerez_%2854482426021%29_%28cropped%29.jpg",
@@ -267,5 +291,128 @@
   "licenza": "CC BY 2.0",
   "pagina": "https://commons.wikimedia.org/wiki/File:Barry_Baltus_(cropped).jpg"
  },
- "Deniz öncü": null
+ "Deniz öncü": {
+  "url": "https://api.openverse.org/v1/images/a90b6ecf-9299-4cf2-be7c-4e675e8eda1c/thumb/",
+  "grande": "https://live.staticflickr.com/65535/46807308665_4cea8e5435_b.jpg",
+  "autore": "Box Repsol",
+  "licenza": "CC BY 2.0",
+  "pagina": "https://www.flickr.com/photos/48027348@N04/46807308665"
+ },
+ "Joe Roberts": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Joe_Roberts_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg/500px-Joe_Roberts_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Joe_Roberts_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg",
+  "autore": "TeamEG00",
+  "licenza": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Joe_Roberts_at_the_2026_German_motorcycle_Grand_Prix_(cropped).jpg"
+ },
+ "Jose Antonio Rueda": {
+  "url": "https://api.openverse.org/v1/images/0d905a6a-0863-4954-aacd-52e74a2d7a9f/thumb/",
+  "grande": "https://live.staticflickr.com/65535/49533853631_5b5e591111_b.jpg",
+  "autore": "Junta de Comunidades de Castilla-La Mancha",
+  "licenza": "CC BY-SA 2.0",
+  "pagina": "https://www.flickr.com/photos/71161813@N05/49533853631"
+ },
+ "Luca Lunetta": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Luca_Lunetta_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg/500px-Luca_Lunetta_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/1/13/Luca_Lunetta_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg",
+  "autore": "TeamEG00",
+  "licenza": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Luca_Lunetta_at_the_2026_German_motorcycle_Grand_Prix_(cropped).jpg"
+ },
+ "Ayumu Sasaki": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ayumu_Sasaki_2016.jpg/500px-Ayumu_Sasaki_2016.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Ayumu_Sasaki_2016.jpg",
+  "autore": "Box Repsol",
+  "licenza": "CC BY 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Ayumu_Sasaki_2016.jpg"
+ },
+ "Alberto Ferrandez": null,
+ "Aron Canet": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Aron_Canet._Presentacion_EG0%2C0_Moto3_%2840634667171%29.jpg/500px-Aron_Canet._Presentacion_EG0%2C0_Moto3_%2840634667171%29.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Aron_Canet._Presentacion_EG0%2C0_Moto3_%2840634667171%29.jpg/1280px-Aron_Canet._Presentacion_EG0%2C0_Moto3_%2840634667171%29.jpg",
+  "autore": "Box Repsol",
+  "licenza": "CC BY 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Aron_Canet._Presentacion_EG0,0_Moto3_(40634667171).jpg"
+ },
+ "Sergio Garcia": {
+  "url": "https://api.openverse.org/v1/images/28e175e5-8322-4f91-91b1-2cbd62e73934/thumb/",
+  "grande": "https://live.staticflickr.com/65535/50154796928_281c6313d3_b.jpg",
+  "autore": "Box Repsol",
+  "licenza": "CC BY 2.0",
+  "pagina": "https://www.flickr.com/photos/48027348@N04/50154796928"
+ },
+ "Angel Piqueras": null,
+ "Mario Aji": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Mario_Aji_at_Merdeka_Palace_%282025-09-30%29.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Mario_Aji_at_Merdeka_Palace_%282025-09-30%29.jpg",
+  "autore": "Bureau of Press, Media, and Information of the President's Secretariat/Laily Rachev",
+  "licenza": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Mario_Aji_at_Merdeka_Palace_(2025-09-30).jpg"
+ },
+ "Unai Orradre": null,
+ "Jorge Navarro": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Navarro_2016_%28cropped%29.jpg/500px-Navarro_2016_%28cropped%29.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Navarro_2016_%28cropped%29.jpg/1280px-Navarro_2016_%28cropped%29.jpg",
+  "autore": "Box Repsol",
+  "licenza": "CC BY 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Navarro_2016_(cropped).jpg"
+ },
+ "Dennis Foggia": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Dennis_Foggia_2017.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/4/42/Dennis_Foggia_2017.jpg",
+  "autore": "Box Repsol",
+  "licenza": "CC BY 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Dennis_Foggia_2017.jpg"
+ },
+ "Jacob Roulstone": null,
+ "Milan Pawelec": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Milan_Pawelec_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg/500px-Milan_Pawelec_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/3/37/Milan_Pawelec_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg",
+  "autore": "TeamEG00",
+  "licenza": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Milan_Pawelec_at_the_2026_German_motorcycle_Grand_Prix_(cropped).jpg"
+ },
+ "Maximo Quiles": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/M%C3%A1ximo_Quiles_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg/500px-M%C3%A1ximo_Quiles_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/4/40/M%C3%A1ximo_Quiles_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg",
+  "autore": "TeamEG00",
+  "licenza": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:M%C3%A1ximo_Quiles_at_the_2026_German_motorcycle_Grand_Prix_(cropped).jpg"
+ },
+ "David Almansa": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Moto3_podium_at_the_2026_San_Marino_and_Rimini_Riviera_motorcycle_Grand_Prix_%28cropped_Almansa%29.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Moto3_podium_at_the_2026_San_Marino_and_Rimini_Riviera_motorcycle_Grand_Prix_%28cropped_Almansa%29.jpg",
+  "autore": "TeamEG00",
+  "licenza": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Moto3_podium_at_the_2026_San_Marino_and_Rimini_Riviera_motorcycle_Grand_Prix_(cropped_Almansa).jpg"
+ },
+ "Alvaro Carpe": null,
+ "Brian Uriarte": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Brian_Uriarte_2026_San_Marino_GP.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Brian_Uriarte_2026_San_Marino_GP.jpg",
+  "autore": "TeamEG00",
+  "licenza": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Brian_Uriarte_2026_San_Marino_GP.jpg"
+ },
+ "Marco Morelli": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Cerim%C3%B4nia_de_transmiss%C3%A3o_de_cargo._Marcos_Morelli_SMCS._10-01-2023_%2852619415244%29.jpg/500px-Cerim%C3%B4nia_de_transmiss%C3%A3o_de_cargo._Marcos_Morelli_SMCS._10-01-2023_%2852619415244%29.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Cerim%C3%B4nia_de_transmiss%C3%A3o_de_cargo._Marcos_Morelli_SMCS._10-01-2023_%2852619415244%29.jpg/1280px-Cerim%C3%B4nia_de_transmiss%C3%A3o_de_cargo._Marcos_Morelli_SMCS._10-01-2023_%2852619415244%29.jpg",
+  "autore": "Prefeitura São José do Rio Preto from São José do Rio Preto SP, Brasil",
+  "licenza": "CC BY 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Cerim%C3%B4nia_de_transmiss%C3%A3o_de_cargo._Marcos_Morelli_SMCS._10-01-2023_(52619415244).jpg"
+ },
+ "Valentin Perrone": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Valent%C3%ADn_Perrone_recorri%C3%B3_las_obras_del_G%C3%A1lvez_1_%28cropped%29.jpg/500px-Valent%C3%ADn_Perrone_recorri%C3%B3_las_obras_del_G%C3%A1lvez_1_%28cropped%29.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Valent%C3%ADn_Perrone_recorri%C3%B3_las_obras_del_G%C3%A1lvez_1_%28cropped%29.jpg/1280px-Valent%C3%ADn_Perrone_recorri%C3%B3_las_obras_del_G%C3%A1lvez_1_%28cropped%29.jpg",
+  "autore": "GCBA",
+  "licenza": "CC BY 2.5 ar",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Valent%C3%ADn_Perrone_recorri%C3%B3_las_obras_del_G%C3%A1lvez_1_(cropped).jpg"
+ },
+ "Hakim Danish": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Hakim_Danish_at_the_2026_San_Marino_and_Rimini_Riviera_motorcycle_Grand_Prix_%28cropped%29.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Hakim_Danish_at_the_2026_San_Marino_and_Rimini_Riviera_motorcycle_Grand_Prix_%28cropped%29.jpg",
+  "autore": "TeamEG00",
+  "licenza": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Hakim_Danish_at_the_2026_San_Marino_and_Rimini_Riviera_motorcycle_Grand_Prix_(cropped).jpg"
+ }
 }

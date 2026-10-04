@@ -52,6 +52,12 @@ GP_IT = {
 }
 
 
+# Il Gran Premio del Bahrain 2026 si corre a Sepang: la pista e il suo paese si mostrano come sono, il nome del GP resta quello ufficiale.
+CIRCUITI_RINOMINATI = {"Kuala Lumpur": "Sepang International Circuit"}
+LOCALITA_RINOMINATE = {"Kuala Lumpur": "Sepang"}
+PAESE_PISTA = {"Kuala Lumpur": "Malaysia"}
+
+
 def nome_gp(nome):
     """'Italian Grand Prix' -> 'Gran Premio d'Italia'; se non e' in elenco resta il nome della fonte."""
     if nome.endswith(" Grand Prix") and nome[:-11] in GP_IT:
@@ -242,11 +248,13 @@ def main():
                 "risultati": risultati_sessione(s, piloti) if finita else None,
             })
         paese = m["country_name"]
+        if m["location"] in CIRCUITI_RINOMINATI:  # OpenF1 dichiara il paese del nome del GP, non quello della pista
+            paese = PAESE_PISTA[m["location"]]
         scheda = {
             "id": key,
             "nome": nome_gp(m["meeting_name"]),
-            "circuito": m["circuit_short_name"],
-            "localita": m["location"],
+            "circuito": CIRCUITI_RINOMINATI.get(m["location"], m["circuit_short_name"]),
+            "localita": LOCALITA_RINOMINATE.get(m["location"], m["location"]),
             "paese": PAESI_IT.get(paese, paese),
             "inizio": min(s["date_start"] for s in sess),
             "fine": max(s["date_end"] for s in sess),

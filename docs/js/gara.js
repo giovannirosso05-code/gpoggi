@@ -22,7 +22,8 @@ function tabella(risultati, foto, colori) {
 
 try {
   if (!/^\d+$/.test(id || "")) throw new Error("id non valido");
-  const [g, roster, st] = await Promise.all([fetchJSON(`data/gare/${id}.json`), fetchJSON("data/roster.json"), fetchJSON("data/standings.json")]);
+  const [g, roster, st, reports] = await Promise.all([fetchJSON(`data/gare/${id}.json`), fetchJSON("data/roster.json"), fetchJSON("data/standings.json"), fetchJSON("data/report.json").catch(() => [])]);
+  const rep = reports.find((r) => String(r.id) === String(id));
   const colori = Object.fromEntries(st.costruttori.map((c) => [c.team, c.colore]));
   const foto = Object.fromEntries(roster.filter((p) => p.foto).map((p) => [p.numero, p.foto]));
   document.title = `${g.nome} — GP Oggi`;
@@ -39,6 +40,7 @@ try {
       </div>
       <div>${g.mappa ? img(g.mappa, "Tracciato di " + g.circuito, "mappa") + `<p class="credito center">${credito(g.mappa, "Mappa")}</p>` : ""}</div>
     </section>
+    ${rep ? `<h3 class="section-title">Com'è andata</h3><article class="report-card"><h3 style="margin-top:0">${esc(rep.titolo)}</h3>${rep.paragrafi.map((p) => `<p>${esc(p)}</p>`).join("")}</article>` : ""}
     <div id="tabs" class="category-pills" style="margin-bottom:8px">
       ${sessioni.map((s) => `<button class="pill ${s.key === predefinita.key ? "active" : ""}" data-key="${s.key}">${esc(s.nome)}</button>`).join("")}
     </div>

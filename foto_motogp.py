@@ -75,10 +75,16 @@ def main():
         except Exception as e:
             print(f"  {p['nome']}: download non riuscito ({e})")
             continue
+        if p.get("categoria") == "MotoGP" and (p.get("pos") or 99) <= 6 and foto.get("grande"):
+            try:  # i primi della classifica servono anche in grande (testata della home)
+                fw.salva_in_locale(foto, ROOT / "docs" / "img" / "foto", "img/foto", "grande", "file_grande")
+            except Exception as e:
+                print(f"  {p['nome']}: foto grande non scaricata ({e})")
         out[i] = foto
         out["nome:" + p["nome"]] = foto  # per le pagine che conoscono solo il nome (es. podio dell'ultima gara)
     (DATA / "foto-motogp.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
-    print(f"Foto MotoGP/Moto2/Moto3: {len(out)} su {len(piloti)}")
+    n_piloti = sum(1 for k in out if not k.startswith("nome:"))
+    print(f"Foto MotoGP/Moto2/Moto3: {n_piloti} su {len(piloti)}")
 
 
 if __name__ == "__main__":

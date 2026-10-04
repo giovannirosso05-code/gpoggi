@@ -1,9 +1,9 @@
 {
  "id": 1308,
  "nome": "Gran Premio del Bahrain",
- "circuito": "Kuala Lumpur",
- "localita": "Kuala Lumpur",
- "paese": "Bahrain",
+ "circuito": "Sepang International Circuit",
+ "localita": "Sepang",
+ "paese": "Malesia",
  "inizio": "2026-10-02T04:30:00+00:00",
  "fine": "2026-10-04T09:00:00+00:00",
  "sessioni": [
@@ -1263,5 +1263,12 @@
    ]
   }
  ],
- "mappa": null
+ "mappa": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Sepang.svg/960px-Sepang.svg.png",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/6/67/Sepang.svg",
+  "autore": "Will Pittenger",
+  "licenza": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Sepang.svg",
+  "file": "img/foto/b251eb41cf364e16.jpg"
+ }
 }

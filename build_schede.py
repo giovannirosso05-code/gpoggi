@@ -8,6 +8,7 @@ Scrive docs/data/schede.json (chiavi: "f1:<numero>", "moto:<id>", "nome:<nome>")
 """
 import json
 import re
+import sys
 import time
 import unicodedata
 from datetime import datetime, timezone
@@ -24,6 +25,7 @@ CACHE = ROOT / "schede_cache.json"
 H = {"User-Agent": "GPOggiBot/1.0 (+https://gpoggi.it; progetto non commerciale; giovannirosso05@gmail.com)"}
 norm = lambda s: unicodedata.normalize("NFD", s or "").encode("ascii", "ignore").decode().lower().strip()
 JOLPICA = "https://api.jolpi.ca/ergast/f1"
+SOLO_CACHE = "--solo-cache" in sys.argv  # scrive il file con quello che e' gia' nella cache, senza nuove richieste
 
 
 def get(url, **kw):
@@ -97,8 +99,8 @@ def main():
     anno = datetime.now(timezone.utc).year
 
     def passo(chiave, funzione, *a):
-        if chiave in cache:
-            return cache[chiave]
+        if chiave in cache or SOLO_CACHE:
+            return cache.get(chiave)
         try:
             cache[chiave] = funzione(*a)
         except requests.RequestException as e:

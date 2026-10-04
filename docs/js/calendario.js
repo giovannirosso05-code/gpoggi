@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, img, credito, mappeMotoMap } from "./common.js";
 
 renderHeader("gare");
 renderFooter();
@@ -24,10 +24,15 @@ function peso(nome) {
 
 const ab = (n) => n.replace("Qualifiche sprint", "Q.Sprint").replace("Qualifiche", "Quali").replace(/^Prove libere\s*(\d)?$/, (m, d) => "PL" + (d || "")).replace("Warm up", "Warm-up");
 
-function costruisci(eventi, moto) {
+let INFO = { report: {}, mappe: {}, f1: {} };   // commenti (report) e mappe per i riquadri
+const finito = (w) => w.sessioni.every((s) => new Date(s.fine) < new Date());
+
+function costruisci(eventi, moto, gareMoto) {
   const f1 = eventi.map((g) => ({ serie: "f1", id: g.id, nome: g.nome, circuito: g.circuito, paese: g.paese, sessioni: g.sessioni.map((s) => ({ nome: s.nome, inizio: s.inizio, fine: s.fine, peso: peso(s.nome) })) }));
   const m = moto.weekend.map((w) => ({ serie: "moto", id: w.nome, nome: w.nome, circuito: w.circuito, paese: w.paese, sessioni: w.sessioni.map((s) => ({ nome: s.nome, inizio: s.inizio, fine: s.fine, peso: peso(s.nome) })) }));
-  return [...f1, ...m];
+  const passati = Object.values(gareMoto || {}).filter((g) => !m.some((w) => w.nome === g.nome)).map((g) => ({ serie: "moto", id: g.nome, nome: g.nome, circuito: g.circuito, paese: "", passato: true,
+    sessioni: [{ nome: "Gara", inizio: g.data + "T12:00:00+00:00", fine: g.data + "T13:00:00+00:00", peso: PESO.gara, senzaOra: true }] }));
+  return [...f1, ...m, ...passati];
 }
 
 function perGiorno() {
@@ -101,8 +106,10 @@ function dettaglio() {
       <div class="ag-wk-testa"><span class="cd-sigla ${w.serie === "moto" ? "moto" : ""}">${w.serie === "f1" ? "F1" : "MotoGP"}</span><h3>${esc(w.nome)}</h3></div>
       <p class="muted" style="margin:0 0 10px;font-size:13px">${esc(w.circuito || "")}${w.paese ? " · " + esc(w.paese) : ""}</p>
       ${Object.keys(giorni).sort().map((k) => `<div class="ag-wk-giorno${k === scelto ? " evid" : ""}"><b>${new Date(k + "T12:00:00").toLocaleDateString("it-IT", { weekday: "short", day: "numeric", month: "short" })}</b>
-        ${giorni[k].map((s) => `<div class="ag-sessione"><span>${esc(s.nome)}</span><span>${ora(s.inizio)}</span></div>`).join("")}</div>`).join("")}
-      <div class="ag-wk-azioni"><button class="quiz-avanti ag-scarica" data-w="${esc(w.serie + "|" + w.id)}">Aggiungi al calendario</button>${w.serie === "f1" ? `<a class="accent" href="gara.html?id=${w.id}">Pagina del weekend →</a>` : `<a class="accent" href="motogp.html">Pagina MotoGP →</a>`}</div>
+        ${giorni[k].map((s) => `<div class="ag-sessione"><span>${esc(s.nome)}</span><span>${s.senzaOra ? "" : ora(s.inizio)}</span></div>`).join("")}</div>`).join("")}${finito(w) && INFO.report[w.serie + "|" + w.id] ? `<div class="ag-commento"><b>Com'è andata</b><p>${esc(INFO.report[w.serie + "|" + w.id])}</p></div>` : ""}
+      <div class="ag-wk-azioni">${finito(w) ? "" : `<button class="quiz-avanti ag-scarica" data-w="${esc(w.serie + "|" + w.id)}">Aggiungi al calendario</button>`}${
+        w.serie === "f1" ? `<a class="${finito(w) ? "quiz-avanti ag-risultati" : "accent"}" href="gara.html?id=${w.id}">${finito(w) ? "Vai ai risultati" : "Pagina del weekend →"}</a>`
+        : `<a class="${finito(w) ? "quiz-avanti ag-risultati" : "accent"}" href="${finito(w) ? "gara-moto.html?gp=" + encodeURIComponent(w.id) : "motogp.html"}">${finito(w) ? "Vai ai risultati" : "Pagina MotoGP →"}</a>`}</div>
     </article>`;
   }).join("");
 }
@@ -113,9 +120,35 @@ function cambiaMese(delta) {
   disegnaMese();
 }
 
+// "Prossimi eventi": i prossimi weekend di F1 e MotoGP in ordine di data, con mappa e conto alla rovescia
+function prossimiEventi() {
+  const el = document.getElementById("prossimi-eventi");
+  if (!el) return;
+  const lista = weekend.filter((w) => !finito(w)).sort((a, b) => new Date(a.sessioni[0].inizio) - new Date(b.sessioni[0].inizio)).slice(0, 6);
+  const giorniA = (w) => Math.max(0, Math.ceil((new Date(w.sessioni[0].inizio) - Date.now()) / 864e5));
+  const periodo = (w) => { const a = w.sessioni[0].inizio, b = w.sessioni[w.sessioni.length - 1].fine; const f = (x) => new Date(x).toLocaleDateString("it-IT", { day: "numeric", month: "short", timeZone: TZ }); return `${f(a)} – ${f(b)}`; };
+  el.innerHTML = lista.map((w) => {
+    const mappa = w.serie === "f1" ? (INFO.f1[w.id] || {}).mappa : INFO.mappe[w.circuito];
+    const gara = w.sessioni[w.sessioni.length - 1];
+    return `<article class="pe-card ${w.serie}">
+      <div class="pe-testa"><span class="cd-sigla ${w.serie === "moto" ? "moto" : ""}">${w.serie === "f1" ? "F1" : "MotoGP"}</span><span class="pe-giorni">${giorniA(w) === 0 ? "Questo weekend" : "tra " + giorniA(w) + (giorniA(w) === 1 ? " giorno" : " giorni")}</span></div>
+      <h3>${esc(w.nome)}</h3>
+      <p class="muted">${esc(w.circuito || "")}${w.paese ? " · " + esc(w.paese) : ""}</p>
+      ${mappa ? `<div class="pe-mappa">${img(mappa, "Tracciato di " + w.circuito)}</div>` : ""}
+      <p class="pe-data"><b>${periodo(w)}</b><br><span class="muted">Gara: ${new Date(gara.inizio).toLocaleString("it-IT", { weekday: "long", hour: "2-digit", minute: "2-digit", timeZone: TZ })}</span></p>
+      <a class="quiz-avanti" href="${w.serie === "f1" ? "gara.html?id=" + w.id : "motogp.html"}">Programma e orari</a>
+    </article>`;
+  }).join("") || `<p class="muted">Nessun evento in programma.</p>`;
+}
+
 try {
-  const [eventi, moto] = await Promise.all([fetchJSON("data/events.json"), fetchJSON("data/motogp.json")]);
-  weekend = costruisci(eventi, moto);
+  const [eventi, moto, gareMoto, repF1, repMoto, mappeMoto] = await Promise.all([fetchJSON("data/events.json"), fetchJSON("data/motogp.json"), fetchJSON("data/motogp-gare.json").catch(() => ({})),
+    fetchJSON("data/report.json").catch(() => []), fetchJSON("data/motogp-report.json").catch(() => []), mappeMotoMap()]);
+  for (const r of repF1) INFO.report["f1|" + r.id] = r.paragrafi[0];
+  for (const r of repMoto) INFO.report["moto|" + r.gp] = r.paragrafi[0];
+  INFO.mappe = mappeMoto; INFO.f1 = Object.fromEntries(eventi.map((g) => [g.id, g]));
+  weekend = costruisci(eventi, moto, gareMoto);
+  prossimiEventi();
   const nf = eventi.reduce((n, g) => n + g.sessioni.length, 0), nm = moto.weekend.reduce((n, w) => n + w.sessioni.length, 0);
   document.getElementById("n-f1").textContent = `${eventi.length} weekend, ${nf} sessioni.`;
   document.getElementById("n-moto").textContent = `${moto.weekend.length} weekend da disputare, ${nm} sessioni.`;

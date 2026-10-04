@@ -118,5 +118,8761 @@
   "podi": 0,
   "pole": 0,
   "giri_veloci": 0
+ },
+ "f1:87": {
+  "nascita": "2005-05-08",
+  "nazionalita": "British",
+  "titoli": 0,
+  "gare": 43,
+  "vittorie": 0,
+  "podi": 0,
+  "pole": 0,
+  "giri_veloci": 0
+ },
+ "f1:5": {
+  "nascita": "2004-10-14",
+  "nazionalita": "Brazilian",
+  "titoli": 0,
+  "gare": 40,
+  "vittorie": 0,
+  "podi": 0,
+  "pole": 0,
+  "giri_veloci": 0
+ },
+ "f1:27": {
+  "nascita": "1987-08-19",
+  "nazionalita": "German",
+  "titoli": 0,
+  "gare": 270,
+  "vittorie": 0,
+  "podi": 1,
+  "pole": 1,
+  "giri_veloci": 2
+ },
+ "f1:31": {
+  "nascita": "1996-09-17",
+  "nazionalita": "French",
+  "titoli": 0,
+  "gare": 196,
+  "vittorie": 1,
+  "podi": 4,
+  "pole": 0,
+  "giri_veloci": 1
+ },
+ "f1:14": {
+  "nascita": "1981-07-29",
+  "nazionalita": "Spanish",
+  "titoli": 2,
+  "gare": 444,
+  "vittorie": 32,
+  "podi": 106,
+  "pole": 23,
+  "giri_veloci": 25
+ },
+ "f1:55": {
+  "nascita": "1994-09-01",
+  "nazionalita": "Spanish",
+  "titoli": 0,
+  "gare": 248,
+  "vittorie": 4,
+  "podi": 29,
+  "pole": 11,
+  "giri_veloci": 4
+ },
+ "f1:23": {
+  "nascita": "1996-03-23",
+  "nazionalita": "Thai",
+  "titoli": 0,
+  "gare": 145,
+  "vittorie": 0,
+  "podi": 2,
+  "pole": 1,
+  "giri_veloci": 1
+ },
+ "f1:22": {
+  "nascita": "2000-05-11",
+  "nazionalita": "Japanese",
+  "titoli": 0,
+  "gare": 117,
+  "vittorie": 0,
+  "podi": 0,
+  "pole": 1,
+  "giri_veloci": 1
+ },
+ "f1:18": {
+  "nascita": "1998-10-29",
+  "nazionalita": "Canadian",
+  "titoli": 0,
+  "gare": 207,
+  "vittorie": 0,
+  "podi": 3,
+  "pole": 1,
+  "giri_veloci": 0
+ },
+ "f1:77": {
+  "nascita": "1989-08-28",
+  "nazionalita": "Finnish",
+  "titoli": 0,
+  "gare": 263,
+  "vittorie": 10,
+  "podi": 67,
+  "pole": 19,
+  "giri_veloci": 19
+ },
+ "f1:11": {
+  "nascita": "1990-01-26",
+  "nazionalita": "Mexican",
+  "titoli": 0,
+  "gare": 299,
+  "vittorie": 6,
+  "podi": 39,
+  "pole": 4,
+  "giri_veloci": 12
+ },
+ "moto:5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b": {
+  "nascita": "1998-01-29",
+  "luogo": "Madrid, Spain",
+  "altezza": 168,
+  "peso": 63,
+  "debutto": 2015,
+  "carriera": [
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "MAPFRE Team MAHINDRA",
+      "numero": 88
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Pull & Bear Aspar Mahindra Team",
+      "numero": 88
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Del Conca Gresini Moto3",
+      "numero": 88
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 88
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 88
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 89
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 89
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 89
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 89
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 1
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 89
+     }
+    ]
+   }
+  ]
+ },
+ "moto:f55b433d-38b8-4d1d-bb3a-a709c82a0260": {
+  "nascita": "1993-02-17",
+  "luogo": "Cervera, Spain",
+  "altezza": 169,
+  "peso": 64,
+  "debutto": 2008,
+  "carriera": [
+   {
+    "anno": 2008,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Repsol KTM 125cc",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2009,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Red Bull KTM Moto Sport",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2010,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Red Bull Ajo Motorsport",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2011,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Team CatalunyaCaixa Repsol",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2012,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Team Catalunya Caixa Repsol",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2013,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "BK8 Gresini Racing MotoGP",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 93
+     }
+    ]
+   }
+  ]
+ },
+ "moto:ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd": {
+  "nascita": "1998-11-12",
+  "luogo": "Rimini, Italy",
+  "altezza": 176,
+  "peso": 64,
+  "debutto": 2016,
+  "carriera": [
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "MAHINDRA-ASPAR JUNIOR TEAM",
+      "numero": 53
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Mahindra Racing",
+      "numero": 53
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CIP",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Tech3 KTM Factory Racing",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Tech3 KTM Factory Racing",
+      "numero": 72
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SKY Racing Team VR46",
+      "numero": 72
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SKY Racing Team VR46",
+      "numero": 72
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Mooney VR46 Racing Team",
+      "numero": 72
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Mooney VR46 Racing Team",
+      "numero": 72
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Pertamina Enduro VR46 Racing Team",
+      "numero": 72
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 72
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 72
+     }
+    ]
+   }
+  ]
+ },
+ "moto:a6108385-dd4c-490d-b02e-542ed0275f79": {
+  "nascita": "2004-05-25",
+  "luogo": "Murcia, Spain",
+  "altezza": 171,
+  "peso": 63,
+  "debutto": 2020,
+  "carriera": [
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 37
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 37
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull GASGAS Tech3",
+      "numero": 31
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 37
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 37
+     }
+    ]
+   }
+  ]
+ },
+ "moto:eb47c439-e136-40ff-9534-5c612853f529": {
+  "nascita": "2001-01-26",
+  "luogo": "Kiyose, Japan",
+  "altezza": 169,
+  "peso": 60,
+  "debutto": 2018,
+  "carriera": [
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 79
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 79
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 79
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Pons Wegow Los40",
+      "numero": 79
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 79
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 79
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "QJ MOTOR - JP Financial - MSI",
+      "numero": 79
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "SuperFile Trackhouse MotoGP Team",
+      "numero": 79
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "SuperFile Trackhouse MotoGP Team",
+      "numero": 79
+     }
+    ]
+   }
+  ]
+ },
+ "moto:6c33de41-f014-4f17-8dc9-e6f36e61026a": {
+  "nascita": "1998-10-10",
+  "luogo": "Rome, Italy",
+  "altezza": 177,
+  "peso": 62,
+  "debutto": 2016,
+  "carriera": [
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Gresini Racing Moto3",
+      "numero": 4
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Del Conca Gresini Moto3",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "MB Conveyors Speed Up",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "MB Conveyors Speed Up",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "MB Conveyors Speed Up",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Federal Oil Gresini Moto2",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "BK8 Gresini Racing MotoGP",
+      "numero": 49
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "BK8 Gresini Racing MotoGP",
+      "numero": 49
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Pertamina Enduro VR46 Racing Team",
+      "numero": 49
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Pertamina Enduro VR46 Racing Team",
+      "numero": 49
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Pertamina Enduro VR46 Racing Team",
+      "numero": 49
+     }
+    ]
+   }
+  ]
+ },
+ "moto:58448742-f520-466a-a1a1-bf3286cce9c3": {
+  "nascita": "2000-10-23",
+  "luogo": "Madrid, Spain",
+  "altezza": 178,
+  "peso": 65,
+  "debutto": 2016,
+  "carriera": [
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull MotoGP Rookies Cup",
+      "numero": 31
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull MotoGP Rookies Cup",
+      "numero": 31
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Angel Nieto Team",
+      "numero": 25
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Valresa Angel Nieto Team",
+      "numero": 25
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 25
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 25
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Tech3 KTM Factory Racing",
+      "numero": 25
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "CryptoDATA RNF MotoGP Team",
+      "numero": 25
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "SuperFile Trackhouse MotoGP Team",
+      "numero": 25
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "SuperFile Trackhouse MotoGP Team",
+      "numero": 25
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "SuperFile Trackhouse MotoGP Team",
+      "numero": 25
+     }
+    ]
+   }
+  ]
+ },
+ "moto:9cb55304-0ac1-401c-beb6-1a4f445018a4": {
+  "nascita": "1997-01-14",
+  "luogo": "Torino, Italy",
+  "altezza": 176,
+  "peso": 64,
+  "debutto": 2014,
+  "carriera": [
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "SKY Racing Team  VR46",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "MAPFRE Team MAHINDRA",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Pull & Bear Aspar Mahindra Team",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SKY Racing Team VR46",
+      "numero": 42
+     },
+     {
+      "categoria": "Moto2",
+      "team": "SKY Racing Team VR46",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Alma Pramac Racing",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 63
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 63
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 63
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 63
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 1
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 1
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 63
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 63
+     }
+    ]
+   }
+  ]
+ },
+ "moto:e7e4c72e-952e-4f64-8e8a-a47ff590fade": {
+  "nascita": "1996-04-23",
+  "luogo": "Cervera, Spain",
+  "altezza": 180,
+  "peso": 65,
+  "debutto": 2012,
+  "carriera": [
+   {
+    "anno": 2012,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 12
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Ambrogio Next Racing",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2013,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 73
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 73
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 73
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 73
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 73
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 73
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 73
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 73
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "BK8 Gresini Racing MotoGP",
+      "numero": 73
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "BK8 Gresini Racing MotoGP",
+      "numero": 73
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "BK8 Gresini Racing MotoGP",
+      "numero": 73
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "BK8 Gresini Racing MotoGP",
+      "numero": 73
+     }
+    ]
+   }
+  ]
+ },
+ "moto:2614e0f6-7e02-4076-a746-50f43fe3143c": {
+  "nascita": "2005-04-05",
+  "luogo": "El Palmar, Spain",
+  "altezza": 181,
+  "peso": 69,
+  "debutto": 2021,
+  "carriera": [
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "MB Conveyors Speed Up",
+      "numero": 54
+     },
+     {
+      "categoria": "MotoE",
+      "team": "Power Electronics Aspar Team",
+      "numero": 54
+     },
+     {
+      "categoria": "Moto2",
+      "team": "MB Conveyors Speed Up",
+      "numero": 54
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Lightech Speed Up",
+      "numero": 54
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SpeedRS Team",
+      "numero": 54
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SpeedRS Team",
+      "numero": 54
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "BK8 Gresini Racing MotoGP",
+      "numero": 54
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "BK8 Gresini Racing MotoGP",
+      "numero": 54
+     }
+    ]
+   }
+  ]
+ },
+ "moto:ff225c9d-64a2-43ac-a70e-62cf385a85a1": {
+  "nascita": "1997-12-30",
+  "luogo": "Rimini, Italy",
+  "altezza": 168,
+  "peso": 64,
+  "debutto": 2014,
+  "carriera": [
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Gresini Racing Team Moto3",
+      "numero": 33
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Gresini Racing Team Moto3",
+      "numero": 33
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Gresini Racing Moto3",
+      "numero": 33
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 33
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Italtrans Racing Team",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 33
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 33
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Sky VR46 Avintia",
+      "numero": 23
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "BK8 Gresini Racing MotoGP",
+      "numero": 23
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 23
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 23
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Tech3",
+      "numero": 23
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Tech3",
+      "numero": 23
+     }
+    ]
+   }
+  ]
+ },
+ "moto:7b0687b0-90bd-4ad6-b157-8c66fb8a93cf": {
+  "nascita": "1997-08-10",
+  "luogo": "Urbino, Italy",
+  "altezza": 184,
+  "peso": 69,
+  "debutto": 2016,
+  "carriera": [
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Forward Team",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Forward Racing Team",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SKY Racing Team VR46",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SKY Racing Team VR46",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SKY Racing Team VR46",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Sky VR46 Avintia",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Mooney VR46 Racing Team",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Mooney VR46 Racing Team",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 10
+     }
+    ]
+   }
+  ]
+ },
+ "moto:ba579548-f026-402b-a607-38db5317d33f": {
+  "nascita": "1995-08-11",
+  "luogo": "Potchefstroom, South Africa",
+  "altezza": 170,
+  "peso": 63,
+  "debutto": 2012,
+  "carriera": [
+   {
+    "anno": 2012,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "RW Racing GP",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2013,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Ambrogio Racing",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Ambrogio Racing",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 33
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 33
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 33
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 33
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 33
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 33
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 33
+     }
+    ]
+   }
+  ]
+ },
+ "moto:3c7598e5-12ec-4e19-9311-1c0e9a017cbe": {
+  "nascita": "2004-04-23",
+  "luogo": "São Paulo",
+  "altezza": 169,
+  "peso": 60,
+  "debutto": 2022,
+  "carriera": [
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "AEON Credit - MT Helmets - MSI",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "AEON Credit - MT Helmets - MSI",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 11
+     }
+    ]
+   }
+  ]
+ },
+ "moto:fcdd5500-a769-4ff4-8b9e-080d1849ff42": {
+  "nascita": "1999-04-20",
+  "luogo": "Nice, France",
+  "altezza": 177,
+  "peso": 69,
+  "debutto": 2015,
+  "carriera": [
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 20
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 20
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "IDEMITSU Honda Team Asia",
+      "numero": 40
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Petronas Yamaha SRT",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Petronas Yamaha SRT",
+      "numero": 20
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Petronas Yamaha SRT",
+      "numero": 20
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 20
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 20
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 20
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 20
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 20
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 20
+     }
+    ]
+   }
+  ]
+ },
+ "moto:a73f8ef2-784f-4f52-8511-1d315fd3a459": {
+  "nascita": "1994-12-04",
+  "luogo": "Rome, Italy",
+  "altezza": 176,
+  "peso": 68,
+  "debutto": 2013,
+  "carriera": [
+   {
+    "anno": 2013,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Petronas Yamaha SRT",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Petronas Yamaha SRT",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Petronas Yamaha SRT",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 21
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Pertamina Enduro VR46 Racing Team",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Pertamina Enduro VR46 Racing Team",
+      "numero": 21
+     }
+    ]
+   }
+  ]
+ },
+ "moto:487440af-cfa9-478a-903b-4e893ee18d3a": {
+  "nascita": "1990-07-16",
+  "luogo": "Cannes, France",
+  "altezza": 171,
+  "peso": 68,
+  "debutto": 2009,
+  "carriera": [
+   {
+    "anno": 2009,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "WTR San Marino Team",
+      "numero": 14
+     }
+    ]
+   },
+   {
+    "anno": 2010,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "WTR San Marino Team",
+      "numero": 14
+     }
+    ]
+   },
+   {
+    "anno": 2011,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Avant-AirAsia-Ajo",
+      "numero": 5
+     }
+    ]
+   },
+   {
+    "anno": 2012,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "JIR Moto2",
+      "numero": 5
+     }
+    ]
+   },
+   {
+    "anno": 2013,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "JIR Moto2",
+      "numero": 5
+     }
+    ]
+   },
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "JIR Moto2",
+      "numero": 5
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Ajo Motorsport",
+      "numero": 5
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Ajo Motorsport",
+      "numero": 5
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Yamaha Tech 3",
+      "numero": 5
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Yamaha Tech 3",
+      "numero": 5
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Sky VR46 Avintia",
+      "numero": 5
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 5
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 5
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 5
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 5
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 5
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 5
+     }
+    ]
+   }
+  ]
+ },
+ "moto:9a441928-d1af-452d-afce-fa028c044932": {
+  "nascita": "1997-09-01",
+  "luogo": "Palma de Mallorca, Spain",
+  "altezza": 181,
+  "peso": 69,
+  "debutto": 2016,
+  "carriera": [
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 36
+     }
+    ]
+   }
+  ]
+ },
+ "moto:6e940243-5167-4cc3-a343-a74337369b94": {
+  "nascita": "1995-01-18",
+  "luogo": "Townsville, Australia",
+  "altezza": 173,
+  "peso": 64,
+  "debutto": 2012,
+  "carriera": [
+   {
+    "anno": 2012,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Caretta Technology",
+      "numero": 8
+     }
+    ]
+   },
+   {
+    "anno": 2013,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Caretta Technology - RTG",
+      "numero": 8
+     }
+    ]
+   },
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 8
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 43
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 43
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 43
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Alma Pramac Racing",
+      "numero": 43
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 43
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 43
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 43
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 43
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 43
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 43
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Yamaha MotoGP",
+      "numero": 43
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Yamaha MotoGP",
+      "numero": 43
+     }
+    ]
+   }
+  ]
+ },
+ "moto:56475aa3-f3d1-485a-b6db-ca1149e1b6fa": {
+  "nascita": "1995-12-08",
+  "luogo": "Barcelona, Spain",
+  "altezza": 176,
+  "peso": 68,
+  "debutto": 2012,
+  "carriera": [
+   {
+    "anno": 2012,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2013,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Paginas Amarillas HP 40",
+      "numero": 40
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Paginas Amarillas HP 40",
+      "numero": 40
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 42
+     }
+    ]
+   }
+  ]
+ },
+ "moto:24c03c0c-b2d9-4959-99e0-017214043604": {
+  "nascita": "1996-10-16",
+  "luogo": "Alanya, Türkiye",
+  "altezza": 185,
+  "peso": 80,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Yamaha MotoGP",
+      "numero": 7
+     }
+    ]
+   }
+  ]
+ },
+ "moto:66ee98b2-239c-487f-8913-aab8493ce280": {
+  "nascita": "1995-01-12",
+  "luogo": "Figueres, Spain",
+  "altezza": 171,
+  "peso": 64,
+  "debutto": 2011,
+  "carriera": [
+   {
+    "anno": 2011,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Blusens by Paris Hilton Racing",
+      "numero": 25
+     }
+    ]
+   },
+   {
+    "anno": 2012,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Blusens Avintia",
+      "numero": 25
+     }
+    ]
+   },
+   {
+    "anno": 2013,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Team Calvo",
+      "numero": 25
+     }
+    ]
+   },
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Paginas Amarillas HP 40",
+      "numero": 40
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 25
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 25
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Movistar Yamaha MotoGP",
+      "numero": 25
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 12
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing Team Gresini",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Tech3",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Tech3",
+      "numero": 12
+     }
+    ]
+   }
+  ]
+ },
+ "moto:173da4e6-99bd-4468-b277-cf47f1efd24b": {
+  "nascita": "2000-01-06",
+  "luogo": "Valencia, Spain",
+  "altezza": 179,
+  "peso": 70,
+  "debutto": 2016,
+  "carriera": [
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "CarXpert Interwetten",
+      "numero": 27
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Garage Plus Interwetten",
+      "numero": 27
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "American Team",
+      "numero": 27
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "American Team",
+      "numero": 0
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "American Team",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Tech3 KTM Factory Racing",
+      "numero": 27
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Tech3 KTM Factory Racing",
+      "numero": 27
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 27
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Repsol Honda",
+      "numero": 27
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "BK8 Gresini Racing MotoGP",
+      "numero": 27
+     }
+    ]
+   }
+  ]
+ },
+ "moto:1113c9b8-c231-4ba7-a352-4c11c92ab9df": {
+  "nascita": "1997-09-23",
+  "luogo": "Madrid, Spain",
+  "altezza": 181,
+  "peso": 73,
+  "debutto": 2017,
+  "carriera": [
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "MB Conveyors Speed Up",
+      "numero": 37
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Join Contract Pons 40",
+      "numero": 40
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "FLEXBOX HP 40",
+      "numero": 40
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 37
+     },
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 37
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 37
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 37
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull GASGAS Tech3",
+      "numero": 37
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull GASGAS Tech3",
+      "numero": 37
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Yamaha Factory Racing Team",
+      "numero": 7
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Yamaha Factory Racing Team",
+      "numero": 47
+     }
+    ]
+   }
+  ]
+ },
+ "moto:40c19361-abe5-46e8-bed9-b3fa648dd7ac": {
+  "nascita": "1991-06-10",
+  "luogo": "Granollers, Spain",
+  "altezza": 170,
+  "peso": 64,
+  "debutto": 2006,
+  "carriera": [
+   {
+    "anno": 2006,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Stop And Go Racing Team",
+      "numero": 42
+     },
+     {
+      "categoria": "125cc",
+      "team": "Stop And Go Racing Team",
+      "numero": 42
+     },
+     {
+      "categoria": "125cc",
+      "team": "Campetella Racing Junior",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2007,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Belson Campetella Aprilia",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2008,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Belson Derbi",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2009,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Derbi Racing Team",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2010,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Tuenti Racing",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2011,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "HP Tuenti Speed Up",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2012,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Tuenti Movil HP 40",
+      "numero": 40
+     }
+    ]
+   },
+   {
+    "anno": 2013,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Tuenti HP 40",
+      "numero": 40
+     }
+    ]
+   },
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Yamaha Tech 3",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Yamaha Tech 3",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Yamaha Tech 3",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull GASGAS Tech3",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Tech3",
+      "numero": 44
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Tech3",
+      "numero": 44
+     }
+    ]
+   }
+  ]
+ },
+ "moto:a463fc7c-ee5b-4fa8-9229-b041a8637051": {
+  "nascita": "1998-12-15",
+  "luogo": "Chon Buri, Thailand",
+  "altezza": 172,
+  "peso": 63,
+  "debutto": 2018,
+  "carriera": [
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Pons Wegow Los40",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 15
+     }
+    ]
+   }
+  ]
+ },
+ "moto:201ae7a4-0dc7-4191-be71-d91ac0330090": {
+  "nascita": "1992-02-09",
+  "luogo": "Chiba, Japan",
+  "altezza": 175,
+  "peso": 70,
+  "debutto": 2008,
+  "carriera": [
+   {
+    "anno": 2008,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "I.C. Team",
+      "numero": 73
+     }
+    ]
+   },
+   {
+    "anno": 2009,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "I.C. Team",
+      "numero": 73
+     }
+    ]
+   },
+   {
+    "anno": 2012,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 30
+     }
+    ]
+   },
+   {
+    "anno": 2013,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 30
+     }
+    ]
+   },
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 30
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 30
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 30
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 30
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 30
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 30
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 30
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 30
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 30
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 30
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 30
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 30
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 30
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "HRC Test Team",
+      "numero": 30
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 30
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 30
+     }
+    ]
+   }
+  ]
+ },
+ "moto:c2e99a2c-ec5b-4757-8728-ed3254ebbeee": {
+  "nascita": "1985-10-29",
+  "luogo": "Coventry, United Kingdom",
+  "altezza": 170,
+  "peso": 66,
+  "debutto": 2011,
+  "carriera": [
+   {
+    "anno": 2011,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Yamaha Tech 3",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2012,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Yamaha Tech 3",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2013,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Yamaha Tech 3",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 35
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Energy Yamaha MotoGP",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "WithU Yamaha RNF MotoGP™ Team",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Yamalube RS4GP Racing Team",
+      "numero": 35
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 35
+     }
+    ]
+   }
+  ]
+ },
+ "moto:14ca9be2-6d69-4a70-b224-ea44b791638c": {
+  "nascita": "1993-08-13",
+  "luogo": "Mühldorf, Germany",
+  "altezza": 177,
+  "peso": 68,
+  "debutto": 2008,
+  "carriera": [
+   {
+    "anno": 2008,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Red Bull KTM 125",
+      "numero": 94
+     },
+     {
+      "categoria": "125cc",
+      "team": "Red Bull KTM 125",
+      "numero": 94
+     },
+     {
+      "categoria": "125cc",
+      "team": "Red Bull KTM 125",
+      "numero": 94
+     },
+     {
+      "categoria": "125cc",
+      "team": "Red Bull KTM 125",
+      "numero": 94
+     },
+     {
+      "categoria": "125cc",
+      "team": "Red Bull KTM 125",
+      "numero": 94
+     }
+    ]
+   },
+   {
+    "anno": 2009,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Red Bull KTM 125",
+      "numero": 94
+     },
+     {
+      "categoria": "125cc",
+      "team": "Red Bull KTM 125",
+      "numero": 94
+     }
+    ]
+   },
+   {
+    "anno": 2010,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Ongetta Team",
+      "numero": 94
+     }
+    ]
+   },
+   {
+    "anno": 2011,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Red Bull Ajo MotorSport",
+      "numero": 94
+     }
+    ]
+   },
+   {
+    "anno": 2012,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GASGAS Gaviota Aspar",
+      "numero": 94
+     }
+    ]
+   },
+   {
+    "anno": 2013,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GASGAS Gaviota Aspar",
+      "numero": 94
+     }
+    ]
+   },
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "AGR Team",
+      "numero": 94
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "AGR Team",
+      "numero": 94
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Dynavolt Intact GP",
+      "numero": 94
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Monster Yamaha Tech 3",
+      "numero": 94
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Monster Yamaha Tech 3",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull GASGAS Tech3",
+      "numero": 94
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Tech3",
+      "numero": 94
+     }
+    ]
+   }
+  ]
+ },
+ "moto:0c9405ff-e879-498c-964d-b39409361a6c": {
+  "nascita": "1993-04-04",
+  "luogo": "Cesena, Italy",
+  "altezza": 177,
+  "peso": 67,
+  "debutto": 2008,
+  "carriera": [
+   {
+    "anno": 2008,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "I.C. Team",
+      "numero": 40
+     },
+     {
+      "categoria": "125cc",
+      "team": "I.C. Team",
+      "numero": 40
+     },
+     {
+      "categoria": "125cc",
+      "team": "I.C. Team",
+      "numero": 40
+     }
+    ]
+   },
+   {
+    "anno": 2009,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Fontana Racing",
+      "numero": 32
+     },
+     {
+      "categoria": "125cc",
+      "team": "Fontana Racing",
+      "numero": 32
+     }
+    ]
+   },
+   {
+    "anno": 2010,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Matteoni Racing",
+      "numero": 32
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoE",
+      "team": "Team Gresini MotoE",
+      "numero": 32
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing Team Gresini",
+      "numero": 32
+     },
+     {
+      "categoria": "MotoE",
+      "team": "Team Gresini MotoE",
+      "numero": 32
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing Team Gresini",
+      "numero": 32
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 32
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "CryptoDATA RNF MotoGP Team",
+      "numero": 32
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 32
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 32
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "SuperFile Trackhouse MotoGP Team",
+      "numero": 32
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 32
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "SuperFile Trackhouse MotoGP Team",
+      "numero": 32
+     }
+    ]
+   }
+  ]
+ },
+ "moto:eed93130-03ac-4f5d-9d2e-b207ab47154e": {
+  "nascita": "1986-07-05",
+  "luogo": "San Giovanni Rotondo, Italy",
+  "altezza": 178,
+  "peso": 74,
+  "debutto": 2005,
+  "carriera": [
+   {
+    "anno": 2005,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Malaguti Reparto Corse",
+      "numero": 15
+     }
+    ]
+   },
+   {
+    "anno": 2010,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Malaguti Reparto Corse",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2011,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Gresini Racing Moto2",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2012,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "San Carlo Honda Gresini",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2013,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Test Team",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 51
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Test Team",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Test Team",
+      "numero": 51
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 51
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aruba.it Racing",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aruba.it Racing",
+      "numero": 51
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Pertamina Enduro VR46 Racing Team",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Ducati Lenovo Team",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "BK8 Gresini Racing MotoGP",
+      "numero": 51
+     }
+    ]
+   }
+  ]
+ },
+ "moto:9a6bd0ef-1531-4efa-9806-4b6435e75ba4": {
+  "nascita": "2002-08-04",
+  "luogo": "Madrid, Spain",
+  "altezza": 171,
+  "peso": 67,
+  "debutto": 2021,
+  "carriera": [
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "KLINT Racing Team",
+      "numero": 81
+     },
+     {
+      "categoria": "Moto3",
+      "team": "KLINT Racing Team",
+      "numero": 81
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Yamaha VR46 Master Camp Team",
+      "numero": 18
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Yamaha VR46 Master Camp Team",
+      "numero": 18
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ITALJET Gresini Moto2",
+      "numero": 18
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 18
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 18
+     }
+    ]
+   }
+  ]
+ },
+ "moto:be31d4c4-f4c9-4e23-ae14-7ec35ed19f72": {
+  "nascita": "2004-06-28",
+  "luogo": "Palma de Mallorca, Spain",
+  "altezza": 173,
+  "peso": 54,
+  "debutto": 2020,
+  "carriera": [
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GASGAS Gaviota Aspar",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GASGAS Gaviota Aspar",
+      "numero": 28
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Gaviota GASGAS Aspar Team",
+      "numero": 28
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "GASGAS Aspar Team",
+      "numero": 28
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "CFMOTO Aspar Team",
+      "numero": 28
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "BLU CRU Pramac Yamaha Moto2",
+      "numero": 28
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "BLU CRU Pramac Yamaha Moto2",
+      "numero": 28
+     }
+    ]
+   }
+  ]
+ },
+ "moto:f0125053-baf8-4a61-8575-9dfb8fe37227": {
+  "nascita": "2004-08-04",
+  "luogo": "Valencia, Spain",
+  "altezza": 180,
+  "peso": 60,
+  "debutto": 2022,
+  "carriera": [
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "LEVEL UP - MTA",
+      "numero": 48
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "LEVEL UP - MTA",
+      "numero": 48
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "AEON Credit - MT Helmets - MSI",
+      "numero": 48
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "QJ MOTOR - JP Financial - MSI",
+      "numero": 4
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "QJ MOTOR - JP Financial - MSI",
+      "numero": 4
+     }
+    ]
+   }
+  ]
+ },
+ "moto:f9d74cc7-4747-4956-881b-b79ce1edb6f5": {
+  "nascita": "2006-04-25",
+  "luogo": "Madrid, Spain",
+  "altezza": 162,
+  "peso": 55,
+  "debutto": 2021,
+  "carriera": [
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GASGAS Gaviota Aspar",
+      "numero": 80
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Inde GASGAS Aspar Team",
+      "numero": 80
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GASGAS Aspar Team",
+      "numero": 80
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CFMOTO Aspar Team",
+      "numero": 80
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "CFMOTO Aspar Team",
+      "numero": 80
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "CFMOTO Aspar Team",
+      "numero": 80
+     }
+    ]
+   }
+  ]
+ },
+ "moto:e27904a7-0e30-4d91-84f8-016d421aa89e": {
+  "nascita": "2005-04-27",
+  "luogo": "Sant Vicent del Raspeig, Spain",
+  "altezza": 167,
+  "peso": 59,
+  "debutto": 2021,
+  "carriera": [
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Tech3",
+      "numero": 96
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Tech3",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Tech3",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull GASGAS Tech3",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "CFMOTO Aspar Team",
+      "numero": 27
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "CFMOTO Aspar Team",
+      "numero": 96
+     }
+    ]
+   }
+  ]
+ },
+ "moto:2e991b48-6cce-4488-9839-705fa2d198da": {
+  "nascita": "2005-06-09",
+  "luogo": "Liverpool NSW, Australia",
+  "altezza": 179,
+  "peso": 68,
+  "debutto": 2022,
+  "carriera": [
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 8
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Liqui Moly Husqvarna Intact GP",
+      "numero": 8
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Liqui Moly Husqvarna Intact GP",
+      "numero": 81
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 81
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 81
+     }
+    ]
+   }
+  ]
+ },
+ "moto:d4c7af32-3b73-4f8f-b3bf-f732e0aadb52": {
+  "nascita": "2001-12-12",
+  "luogo": "Mlada Boleslav, Czechia",
+  "altezza": 172,
+  "peso": 66,
+  "debutto": 2018,
+  "carriera": [
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Kopron Rivacold Snipers Team",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Kopron Rivacold Snipers Team",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Kopron Rivacold Snipers Team",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CarXpert PruestelGP",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ITALJET Gresini Moto2",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ITALJET Gresini Moto2",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "OnlyFans American Racing Team",
+      "numero": 12
+     }
+    ]
+   }
+  ]
+ },
+ "moto:67e88ff7-6a0c-404c-ae79-7d9fdfdef986": {
+  "nascita": "2001-10-13",
+  "luogo": "Cirie, Italy",
+  "altezza": 172,
+  "peso": 65,
+  "debutto": 2018,
+  "carriera": [
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "SKY Racing Team VR46",
+      "numero": 13
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "SKY Racing Team VR46",
+      "numero": 13
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "SKY Racing Team VR46",
+      "numero": 13
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SKY Racing Team VR46",
+      "numero": 13
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Pertamina Enduro VR46 Racing Team",
+      "numero": 13
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "REDS Fantic Racing",
+      "numero": 13
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 13
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SpeedRS Team",
+      "numero": 13
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SpeedRS Team",
+      "numero": 13
+     },
+     {
+      "categoria": "Moto2",
+      "team": "SpeedRS Team",
+      "numero": 13
+     }
+    ]
+   }
+  ]
+ },
+ "moto:021761c5-a8a4-4749-8603-479ce2984722": {
+  "nascita": "2001-12-21",
+  "luogo": "Madrid, Spain",
+  "altezza": 181,
+  "peso": 70,
+  "debutto": 2018,
+  "carriera": [
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Sterilgarda Husqvarna Max",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "MB Conveyors Speed Up",
+      "numero": 2
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Lightech Speed Up",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SpeedRS Team",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SpeedRS Team",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SpeedRS Team",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ITALJET Gresini Moto2",
+      "numero": 21
+     }
+    ]
+   }
+  ]
+ },
+ "moto:642ca2e1-3962-45ba-8745-fd7c8b140462": {
+  "nascita": "2005-02-19",
+  "luogo": "Meppel, Netherlands",
+  "altezza": 178,
+  "peso": 62,
+  "debutto": 2023,
+  "carriera": [
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 95
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 95
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 95
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 95
+     }
+    ]
+   }
+  ]
+ },
+ "moto:64c448a5-6f5e-4bef-bac5-d0f5e8a9b89a": {
+  "nascita": "2000-08-03",
+  "luogo": "Garbagnate Milanese, Italy",
+  "altezza": 171,
+  "peso": 59,
+  "debutto": 2017,
+  "carriera": [
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "SIC58 Squadra Corse",
+      "numero": 14
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Snipers Team",
+      "numero": 14
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "VNE Snipers",
+      "numero": 14
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Liqui Moly Intact GP",
+      "numero": 14
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Liqui Moly Intact GP",
+      "numero": 14
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 14
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 14
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 14
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "BLU CRU Pramac Yamaha Moto2",
+      "numero": 14
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "REDS Fantic Racing",
+      "numero": 14
+     }
+    ]
+   }
+  ]
+ },
+ "moto:3fc01a22-75e3-4cb3-a19d-401386cf80cc": {
+  "nascita": "2006-04-28",
+  "luogo": "Dos Hermanas, Spain",
+  "altezza": 176,
+  "peso": 67,
+  "debutto": 2024,
+  "carriera": [
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Preicanos Racing Team",
+      "numero": 17
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 17
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 17
+     }
+    ]
+   }
+  ]
+ },
+ "moto:3f1dfb38-8fee-460b-83e0-01fe8b1f175e": {
+  "nascita": "2004-02-21",
+  "luogo": "Valencia, Spain",
+  "altezza": 184,
+  "peso": 69,
+  "debutto": 2021,
+  "carriera": [
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoE",
+      "team": "Tech3 E-Racing",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoE",
+      "team": "Tech3 E-Racing",
+      "numero": 0
+     },
+     {
+      "categoria": "MotoE",
+      "team": "Tech3 E-Racing",
+      "numero": 17
+     },
+     {
+      "categoria": "Moto2",
+      "team": "KLINT Racing Team",
+      "numero": 17
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "KLINT Racing Team",
+      "numero": 17
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "KLINT Racing Team",
+      "numero": 11
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "KLINT Racing Team",
+      "numero": 11
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "KLINT Racing Team",
+      "numero": 11
+     }
+    ]
+   }
+  ]
+ },
+ "moto:5315c17f-fe2f-4478-8ad6-fac49d337c84": {
+  "nascita": "2004-05-03",
+  "luogo": "Namur, Belgium",
+  "altezza": 178,
+  "peso": 69,
+  "debutto": 2020,
+  "carriera": [
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CarXpert PruestelGP",
+      "numero": 70
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Momoven Idrofoglia RW Racing Team",
+      "numero": 70
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Momoven Idrofoglia RW Racing Team",
+      "numero": 70
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Momoven Idrofoglia RW Racing Team",
+      "numero": 7
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Momoven Idrofoglia RW Racing Team",
+      "numero": 7
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Momoven Idrofoglia RW Racing Team",
+      "numero": 7
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "REDS Fantic Racing",
+      "numero": 7
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "REDS Fantic Racing",
+      "numero": 7
+     }
+    ]
+   }
+  ]
+ },
+ "moto:b31fb050-e422-4aec-bca3-10988f9ca858": {
+  "nascita": "2003-07-26",
+  "luogo": "Alanya, Türkiye",
+  "altezza": 172,
+  "peso": 62,
+  "debutto": 2019,
+  "carriera": [
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 53
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Tech3 KTM Factory Racing",
+      "numero": 53
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Tech3",
+      "numero": 53
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Tech3",
+      "numero": 53
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 53
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 53
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 53
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 53
+     }
+    ]
+   }
+  ]
+ },
+ "moto:d6920eaa-0923-4590-b7b9-61740535a33b": {
+  "nascita": "1997-06-16",
+  "luogo": "Malibu, United States of America",
+  "altezza": 180,
+  "peso": 68,
+  "debutto": 2017,
+  "carriera": [
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "AGR Team",
+      "numero": 20
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "American Team",
+      "numero": 16
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "American Racing KTM",
+      "numero": 16
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "OnlyFans American Racing Team",
+      "numero": 16
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 16
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 16
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 16
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "OnlyFans American Racing Team",
+      "numero": 16
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "OnlyFans American Racing Team",
+      "numero": 16
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "OnlyFans American Racing Team",
+      "numero": 16
+     }
+    ]
+   }
+  ]
+ },
+ "moto:fb24c9f6-c2d0-40a5-b92b-1c362367cfcf": {
+  "nascita": "2003-08-21",
+  "luogo": "Madrid, Spain",
+  "altezza": 171,
+  "peso": 65,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 99
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 99
+     }
+    ]
+   }
+  ]
+ },
+ "moto:f2afe40e-140a-4e76-a071-95e2b79c3273": {
+  "nascita": "2005-10-29",
+  "luogo": "Sevilla, Spain",
+  "altezza": 169,
+  "peso": 58,
+  "debutto": 2021,
+  "carriera": [
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Indonesian Gresini Racing Moto3",
+      "numero": 95
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Kopron Rivacold Snipers Team",
+      "numero": 98
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 99
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 99
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 99
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 98
+     }
+    ]
+   }
+  ]
+ },
+ "moto:53cc6347-ccd4-4143-80cd-3c05595afe01": {
+  "nascita": "2006-05-27",
+  "luogo": "Roma, Italy",
+  "altezza": 177,
+  "peso": 62,
+  "debutto": 2022,
+  "carriera": [
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "QJMotor Avintia Racing Team",
+      "numero": 85
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "AEON Credit - MT Helmets - MSI",
+      "numero": 58
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "SIC58 Squadra Corse",
+      "numero": 58
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "SIC58 Squadra Corse",
+      "numero": 58
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SpeedRS Team",
+      "numero": 32
+     }
+    ]
+   }
+  ]
+ },
+ "moto:64025abc-f78f-4223-9ede-219164f128e6": {
+  "nascita": "2000-10-04",
+  "luogo": "Yokosuka, Japan",
+  "altezza": 164,
+  "peso": 62,
+  "debutto": 2017,
+  "carriera": [
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "SIC Racing Team",
+      "numero": 71
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Petronas Sprinta Racing",
+      "numero": 71
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Petronas Sprinta Racing",
+      "numero": 71
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Tech3 KTM Factory Racing",
+      "numero": 71
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Tech3",
+      "numero": 71
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Sterilgarda Husqvarna Max",
+      "numero": 71
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 71
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Yamaha VR46 Master Camp Team",
+      "numero": 22
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Momoven Idrofoglia RW Racing Team",
+      "numero": 71
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Momoven Idrofoglia RW Racing Team",
+      "numero": 71
+     }
+    ]
+   }
+  ]
+ },
+ "moto:1664981e-31f7-4e93-8c58-7604352b41b7": {
+  "nascita": "2007-09-02",
+  "luogo": "Cox, Spain",
+  "altezza": 181,
+  "peso": 59,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Beta Tools - Boscoscuro",
+      "numero": 93
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "BLU CRU Pramac Yamaha Moto2",
+      "numero": 54
+     }
+    ]
+   }
+  ]
+ },
+ "moto:3a5b3421-fb15-4254-8ab3-b90cdd59a293": {
+  "nascita": "1999-09-30",
+  "luogo": "Corbera, Spain",
+  "altezza": 169,
+  "peso": 62,
+  "debutto": 2016,
+  "carriera": [
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Max Racing Team",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Sterilgarda Husqvarna Max",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Valresa GASGAS Aspar Team",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Inde Aspar Team",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Pons Wegow Los40",
+      "numero": 40
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Pons Wegow Los40",
+      "numero": 40
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "REDS Fantic Racing",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "REDS Fantic Racing",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 44
+     }
+    ]
+   }
+  ]
+ },
+ "moto:d6db2a4e-676a-4971-8049-0c91a506a22d": {
+  "nascita": "2005-07-12",
+  "luogo": "Kagoshima, Japan",
+  "altezza": 162,
+  "peso": 57,
+  "debutto": 2021,
+  "carriera": [
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 72
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 72
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 72
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 72
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 72
+     }
+    ]
+   }
+  ]
+ },
+ "moto:5002549c-2e5c-4aee-b106-b7c9830e328a": {
+  "nascita": "2005-12-01",
+  "luogo": "Breda, Netherlands",
+  "altezza": 182,
+  "peso": 65,
+  "debutto": 2022,
+  "carriera": [
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Momoven Idrofoglia RW Racing Team",
+      "numero": 84
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Momoven Idrofoglia RW Racing Team",
+      "numero": 84
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Momoven Idrofoglia RW Racing Team",
+      "numero": 84
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Momoven Idrofoglia RW Racing Team",
+      "numero": 84
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Momoven Idrofoglia RW Racing Team",
+      "numero": 84
+     }
+    ]
+   }
+  ]
+ },
+ "moto:bba55487-31c8-4129-a512-7e11bcb373a9": {
+  "nascita": "2003-03-22",
+  "luogo": "Burriana, Spain",
+  "altezza": 167,
+  "peso": 60,
+  "debutto": 2019,
+  "carriera": [
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 11
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 11
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GASGAS Gaviota Aspar",
+      "numero": 11
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Gaviota GASGAS Aspar Team",
+      "numero": 11
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Pons Wegow Los40",
+      "numero": 11
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "QJ MOTOR - JP Financial - MSI",
+      "numero": 3
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 3
+     },
+     {
+      "categoria": "Moto2",
+      "team": "QJ MOTOR - JP Financial - MSI",
+      "numero": 3
+     },
+     {
+      "categoria": "Moto2",
+      "team": "ITALJET Gresini Moto2",
+      "numero": 3
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ITALJET Gresini Moto2",
+      "numero": 3
+     }
+    ]
+   }
+  ]
+ },
+ "moto:41a3e43f-7865-48d7-801c-5999eb317433": {
+  "nascita": "2006-12-01",
+  "luogo": "Ayora, Spain",
+  "altezza": 170,
+  "peso": 59,
+  "debutto": 2024,
+  "carriera": [
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "AEON Credit - MT Helmets - MSI",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "QJ MOTOR - JP Financial - MSI",
+      "numero": 36
+     }
+    ]
+   }
+  ]
+ },
+ "moto:0d25c1f3-ba66-42dd-a161-2f434d6a676d": {
+  "nascita": "2004-03-16",
+  "luogo": "Java, Indonesia",
+  "altezza": 173,
+  "peso": 72,
+  "debutto": 2021,
+  "carriera": [
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 64
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 64
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 64
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 64
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 34
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 64
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 64
+     }
+    ]
+   }
+  ]
+ },
+ "moto:be8956f3-85e2-4814-9930-a4e7ebecc520": {
+  "nascita": "1997-12-16",
+  "luogo": "Conil de la Frontera, Spain",
+  "altezza": 173,
+  "peso": 68,
+  "debutto": 2016,
+  "carriera": [
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 42
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "OnlyFans American Racing Team",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "OnlyFans American Racing Team",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "KLINT Racing Team",
+      "numero": 42
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "OnlyFans American Racing Team",
+      "numero": 24
+     },
+     {
+      "categoria": "Moto2",
+      "team": "KLINT Racing Team",
+      "numero": 24
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "OnlyFans American Racing Team",
+      "numero": 24
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "OnlyFans American Racing Team",
+      "numero": 24
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "KLINT Racing Team",
+      "numero": 24
+     },
+     {
+      "categoria": "Moto2",
+      "team": "QJ MOTOR - JP Financial - MSI",
+      "numero": 24
+     }
+    ]
+   }
+  ]
+ },
+ "moto:ec3cc0b6-0353-4dc1-92f5-78af41d3d3bb": {
+  "nascita": "2006-04-07",
+  "luogo": "Legazpi, Spain",
+  "altezza": 168,
+  "peso": 57,
+  "debutto": 2023,
+  "carriera": [
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 85
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "OnlyFans American Racing Team",
+      "numero": 85
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "KLINT Racing Team",
+      "numero": 85
+     }
+    ]
+   }
+  ]
+ },
+ "moto:c897059e-2972-4b56-8891-cca6dd92b6e2": {
+  "nascita": "2004-04-09",
+  "luogo": "La Rioja, Spain",
+  "altezza": 169,
+  "peso": 62,
+  "debutto": 2022,
+  "carriera": [
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoE",
+      "team": "Avintia Esponsorama Racing",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "KLINT Racing Team",
+      "numero": 40
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "QJ MOTOR - JP Financial - MSI",
+      "numero": 19
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "QJ MOTOR - JP Financial - MSI",
+      "numero": 10
+     }
+    ]
+   }
+  ]
+ },
+ "moto:82543329-bbe8-4e9b-b2ce-d88f32bb4882": {
+  "nascita": "1996-02-03",
+  "luogo": "La Puebla de Vallbona, Spain",
+  "altezza": 173,
+  "peso": 64,
+  "debutto": 2014,
+  "carriera": [
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Marc VDS Racing Team",
+      "numero": 99
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Marc VDS Racing Team",
+      "numero": 99
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 9
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 9
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Federal Oil Gresini Moto2",
+      "numero": 9
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "MB Conveyors Speed Up",
+      "numero": 9
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "MB Conveyors Speed Up",
+      "numero": 9
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "MB Conveyors Speed Up",
+      "numero": 9
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "MB Conveyors Speed Up",
+      "numero": 9
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Pons Wegow Los40",
+      "numero": 9
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "KLINT Racing Team",
+      "numero": 9
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "KLINT Racing Team",
+      "numero": 9
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "REDS Fantic Racing",
+      "numero": 9
+     },
+     {
+      "categoria": "Moto2",
+      "team": "KLINT Racing Team",
+      "numero": 9
+     }
+    ]
+   }
+  ]
+ },
+ "moto:c6466a01-d6d1-4d9f-b8d0-385fef5f6b53": {
+  "nascita": "2001-01-07",
+  "luogo": "Rome, Italy",
+  "altezza": 165,
+  "peso": 63,
+  "debutto": 2017,
+  "carriera": [
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "SKY Racing Team VR46",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "SKY Racing Team VR46",
+      "numero": 7
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "SKY Racing Team VR46",
+      "numero": 7
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 7
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 7
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 7
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 71
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 71
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CFMOTO Aspar Team",
+      "numero": 71
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SpeedRS Team",
+      "numero": 8
+     }
+    ]
+   }
+  ]
+ },
+ "moto:05d25dbd-de45-4ae8-9aa1-cbcb40b4058c": {
+  "nascita": "2005-02-04",
+  "luogo": "Figtree NSW, Australia",
+  "altezza": 181,
+  "peso": 58,
+  "debutto": 2024,
+  "carriera": [
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull GASGAS Tech3",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Tech3",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 22
+     }
+    ]
+   }
+  ]
+ },
+ "moto:7f6957d2-b394-46d7-a5e6-9400a5844d61": {
+  "nascita": "2007-04-04",
+  "luogo": "Wolsztyn, Poland",
+  "altezza": 0,
+  "peso": 0,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "AGR Team Fusport",
+      "numero": 40
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ITALJET Gresini Moto2",
+      "numero": 40
+     },
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 40
+     }
+    ]
+   }
+  ]
+ },
+ "moto:e6532a75-fac6-4d72-a03d-26904d3298af": {
+  "nascita": "2008-03-19",
+  "luogo": "Murcia, Spain",
+  "altezza": 172,
+  "peso": 55,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CFMOTO Aspar Team",
+      "numero": 28
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CFMOTO Aspar Team",
+      "numero": 28
+     }
+    ]
+   }
+  ]
+ },
+ "moto:0bfba4d0-4af8-4174-a566-8236e75a3b08": {
+  "nascita": "2006-01-22",
+  "luogo": "Puertollano, Spain",
+  "altezza": 167,
+  "peso": 56,
+  "debutto": 2022,
+  "carriera": [
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 95
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Kopron Rivacold Snipers Team",
+      "numero": 92
+     },
+     {
+      "categoria": "Moto3",
+      "team": "CFMOTO Racing PruestelGP",
+      "numero": 92
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Kopron Rivacold Snipers Team",
+      "numero": 92
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 92
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Kopron Rivacold Snipers Team",
+      "numero": 22
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 22
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 22
+     }
+    ]
+   }
+  ]
+ },
+ "moto:8c6da2df-4891-41f1-a703-8d51dc51c284": {
+  "nascita": "2007-06-05",
+  "luogo": "Murcia, Spain",
+  "altezza": 170,
+  "peso": 57,
+  "debutto": 2024,
+  "carriera": [
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 83
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 83
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 83
+     }
+    ]
+   }
+  ]
+ },
+ "moto:ebbcbb0f-0692-4963-9a8b-7efb7bd91d9e": {
+  "nascita": "2008-08-11",
+  "luogo": "Santander, Spain",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 51
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 51
+     }
+    ]
+   }
+  ]
+ },
+ "moto:eff84411-d39e-49c1-8447-a42160daf173": {
+  "nascita": "2007-07-03",
+  "luogo": "Barcelona, Argentina",
+  "altezza": 0,
+  "peso": 0,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GRYD Racing",
+      "numero": 95
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CFMOTO Aspar Team",
+      "numero": 97
+     }
+    ]
+   }
+  ]
+ },
+ "moto:f69ef365-138a-4727-a992-b8857bc5bb52": {
+  "nascita": "2007-12-28",
+  "luogo": "Barcelona, Argentina",
+  "altezza": 171,
+  "peso": 57,
+  "debutto": 2024,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Tech3",
+      "numero": 73
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Tech3",
+      "numero": 73
+     }
+    ]
+   }
+  ]
+ },
+ "moto:b187512c-fb56-46b1-b00d-62b46a7c65aa": {
+  "nascita": "2007-07-30",
+  "luogo": "Terengganu, Malaysia",
+  "altezza": 159,
+  "peso": 59,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "AEON Credit - MT Helmets - MSI",
+      "numero": 13
+     },
+     {
+      "categoria": "Moto3",
+      "team": "AEON CREDIT SIC Racing MSI",
+      "numero": 13
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "AEON Credit - MT Helmets - MSI",
+      "numero": 13
+     }
+    ]
+   }
+  ]
+ },
+ "moto:4540b4b4-43ca-46a9-bbca-68ade8c5ced2": {
+  "nascita": "2008-11-23",
+  "luogo": "Gunungkidul Regency, Indonesia",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 9
+     }
+    ]
+   }
+  ]
+ },
+ "moto:760c8192-f5d5-4f96-a032-36dde524ea62": {
+  "nascita": "2004-02-18",
+  "luogo": "Monselice, Italy",
+  "altezza": 174,
+  "peso": 62,
+  "debutto": 2021,
+  "carriera": [
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Team Bardahl VR46 Riders Academy",
+      "numero": 18
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Team Bardahl VR46 Riders Academy",
+      "numero": 18
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "QJMotor Avintia Racing Team",
+      "numero": 18
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Kopron Rivacold Snipers Team",
+      "numero": 18
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Kopron Rivacold Snipers Team",
+      "numero": 18
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "LEVEL UP - MTA",
+      "numero": 18
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "LEVEL UP - MTA",
+      "numero": 18
+     }
+    ]
+   }
+  ]
+ },
+ "moto:f3dd914c-72cf-446a-a135-12c05a0eebde": {
+  "nascita": "2008-02-14",
+  "luogo": "Pirkanmaa, Finland",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Tech3",
+      "numero": 27
+     }
+    ]
+   }
+  ]
+ },
+ "moto:aa5b1925-1b45-4cf1-8b0d-7d2726e99415": {
+  "nascita": "2006-08-09",
+  "luogo": "Valencia, Spain",
+  "altezza": 178,
+  "peso": 61,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GRYD Racing",
+      "numero": 11
+     },
+     {
+      "categoria": "Moto3",
+      "team": "CIP Green Power",
+      "numero": 11
+     },
+     {
+      "categoria": "Moto3",
+      "team": "CIP Green Power",
+      "numero": 11
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CIP Green Power",
+      "numero": 11
+     }
+    ]
+   }
+  ]
+ },
+ "moto:bc85adec-2833-4acb-8f42-0d1b7b3839e8": {
+  "nascita": "2008-01-09",
+  "luogo": "Italy, Italy",
+  "altezza": 176,
+  "peso": 58,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 94
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 94
+     }
+    ]
+   }
+  ]
+ },
+ "moto:b2ad206f-7eb7-4ecf-b53f-8be998663b23": {
+  "nascita": "2007-08-07",
+  "luogo": "Portlaoise",
+  "altezza": 175,
+  "peso": 61,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "SIC58 Squadra Corse",
+      "numero": 67
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 67
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "SIC58 Squadra Corse",
+      "numero": 67
+     }
+    ]
+   }
+  ]
+ },
+ "moto:8d4c8c88-f989-4d86-8cfd-702237b8083b": {
+  "nascita": "2003-06-12",
+  "luogo": "Nambour QLD, Australia",
+  "altezza": 163,
+  "peso": 59,
+  "debutto": 2021,
+  "carriera": [
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CIP Green Power",
+      "numero": 66
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CIP Green Power",
+      "numero": 66
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CFMOTO Racing PruestelGP",
+      "numero": 66
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 66
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "LEVEL UP - MTA",
+      "numero": 66
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GRYD Racing",
+      "numero": 66
+     }
+    ]
+   }
+  ]
+ },
+ "moto:dd9a6ca6-8bb0-4d66-ad73-86092335975f": {
+  "nascita": "2005-08-07",
+  "luogo": "El Prat de Llobregat, Spain",
+  "altezza": 159,
+  "peso": 58,
+  "debutto": 2024,
+  "carriera": [
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CFMOTO Aspar Team",
+      "numero": 78
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CFMOTO Aspar Team",
+      "numero": 78
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Tech3",
+      "numero": 78
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "LEVEL UP - MTA",
+      "numero": 78
+     }
+    ]
+   }
+  ]
+ },
+ "moto:39bd22aa-4179-411f-bebb-c8bb3c0c8620": {
+  "nascita": "2006-09-25",
+  "luogo": "Leicester, United Kingdom",
+  "altezza": 170,
+  "peso": 55,
+  "debutto": 2024,
+  "carriera": [
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GRYD Racing",
+      "numero": 8
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GRYD Racing",
+      "numero": 8
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GRYD Racing",
+      "numero": 8
+     }
+    ]
+   }
+  ]
+ },
+ "moto:16332a3a-5c77-4f28-b58f-1381711cd452": {
+  "nascita": "2004-01-31",
+  "luogo": "Madrid, Spain",
+  "altezza": 168,
+  "peso": 60,
+  "debutto": 2020,
+  "carriera": [
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Kopron Rivacold Snipers Team",
+      "numero": 31
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Kopron Rivacold Snipers Team",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Sterilgarda Husqvarna Max",
+      "numero": 31
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Tech3",
+      "numero": 31
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 31
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 31
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 31
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 31
+     }
+    ]
+   }
+  ]
+ },
+ "moto:ed6ebad8-3f85-48db-8539-5cf755de6c30": {
+  "nascita": "2006-05-15",
+  "luogo": "Brenes, Spain",
+  "altezza": 168,
+  "peso": 53,
+  "debutto": 2022,
+  "carriera": [
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 64
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 64
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 64
+     }
+    ]
+   }
+  ]
+ },
+ "moto:f7138283-ea5f-475a-bd40-cb1fcb02c6aa": {
+  "nascita": "2007-10-29",
+  "luogo": "Marbella, Spain",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Rivacold Snipers Team",
+      "numero": 45
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Rivacold Snipers Team",
+      "numero": 54
+     }
+    ]
+   }
+  ]
+ },
+ "moto:9de28705-315e-4370-a304-308147bf8203": {
+  "nascita": "2001-11-06",
+  "luogo": "Yotsukaido, Japan",
+  "altezza": 170,
+  "peso": 57,
+  "debutto": 2019,
+  "carriera": [
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 6
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 6
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 6
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CarXpert PruestelGP",
+      "numero": 6
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "AEON Credit - MT Helmets - MSI",
+      "numero": 6
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GASGAS Aspar Team",
+      "numero": 6
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "AEON Credit - MT Helmets - MSI",
+      "numero": 6
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "AEON Credit - MT Helmets - MSI",
+      "numero": 6
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "AEON Credit - MT Helmets - MSI",
+      "numero": 6
+     }
+    ]
+   }
+  ]
+ },
+ "moto:4331b1bc-b5f4-4649-b787-485f762639cb": {
+  "nascita": "2003-10-16",
+  "luogo": "Doncaster, United Kingdom",
+  "altezza": 175,
+  "peso": 60,
+  "debutto": 2022,
+  "carriera": [
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Visiontrack Racing Team",
+      "numero": 19
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Visiontrack Racing Team",
+      "numero": 19
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GRYD Racing",
+      "numero": 19
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CIP Green Power",
+      "numero": 19
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CIP Green Power",
+      "numero": 19
+     }
+    ]
+   }
+  ]
+ },
+ "moto:8eb7bb58-ad5e-4191-84d9-4fec986d62fb": {
+  "nascita": "2008-02-11",
+  "luogo": "Medina-Sidonia, Spain",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2026,
+  "carriera": [
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 71
+     }
+    ]
+   }
+  ]
+ },
+ "moto:6adb635c-52cd-4473-8479-67869e89b97d": {
+  "nascita": "2004-12-07",
+  "luogo": "Cantabria, Spain",
+  "altezza": 172,
+  "peso": 61,
+  "debutto": 2022,
+  "carriera": [
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Kopron Rivacold Snipers Team",
+      "numero": 89
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CFMOTO Aspar Team",
+      "numero": 89
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "LEVEL UP - MTA",
+      "numero": 89
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 88
+     },
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 88
+     }
+    ]
+   }
+  ]
+ },
+ "moto:cb4628b6-3af2-4b76-bd84-aa9d195876f4": {
+  "nascita": "2006-08-23",
+  "luogo": "New Zealand, New Zealand",
+  "altezza": 173,
+  "peso": 59,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 14
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 14
+     }
+    ]
+   }
+  ]
+ },
+ "moto:23269713-f105-44db-9f83-7d10c1c1c058": {
+  "nascita": "2004-08-13",
+  "luogo": "Linz, Austria",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2026,
+  "carriera": [
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "SIC58 Squadra Corse",
+      "numero": 5
+     }
+    ]
+   }
+  ]
+ },
+ "moto:9aad8146-4002-4852-9857-e1edb47543ea": {
+  "nascita": "2007-03-27",
+  "luogo": "Ibaraki, Japan",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Rivacold Snipers Team",
+      "numero": 2
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 2
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 32
+     }
+    ]
+   }
+  ]
+ },
+ "moto:39a2c75d-08af-4d3f-89ae-0a38ae2affb9": {
+  "nascita": "2006-12-16",
+  "luogo": "South Africa, South Africa",
+  "altezza": 170,
+  "peso": 58,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 21
+     }
+    ]
+   }
+  ]
+ },
+ "moto:055c69fa-ccac-4086-9ba8-28de9fb3e59f": {
+  "nascita": "2005-09-05",
+  "luogo": "Chanthaburi, Thailand",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2026,
+  "carriera": [
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 85
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Rivacold Snipers Team",
+      "numero": 85
+     }
+    ]
+   }
+  ]
+ },
+ "moto:a14ea48a-578d-45a6-9e95-1007032024e9": {
+  "nascita": "2002-05-21",
+  "luogo": "Padova, Italy",
+  "altezza": 168,
+  "peso": 62,
+  "debutto": 2022,
+  "carriera": [
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "QJMotor Avintia Racing Team",
+      "numero": 9
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Kopron Rivacold Snipers Team",
+      "numero": 9
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "LEVEL UP - MTA",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Rivacold Snipers Team",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Rivacold Snipers Team",
+      "numero": 10
+     }
+    ]
+   }
+  ]
+ },
+ "moto:eb622674-1751-486a-b97f-e252353ed7a9": {
+  "nascita": "2008-09-07",
+  "luogo": "Kawagoe, Japan",
+  "altezza": 162,
+  "peso": 45,
+  "debutto": 2026,
+  "carriera": [
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 79
+     }
+    ]
+   }
+  ]
+ },
+ "moto:513193e6-6725-48f0-b62f-c5eb6bc0f740": {
+  "nascita": "2007-02-16",
+  "luogo": "Busto Arsizio, Italy",
+  "altezza": 169,
+  "peso": 63,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GRYD Racing",
+      "numero": 25
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 25
+     }
+    ]
+   }
+  ]
+ },
+ "moto:67d13fd3-1b88-4557-b547-ca0e6e4f5535": {
+  "nascita": "2008-05-03",
+  "luogo": "Sevilla, Spain",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2026,
+  "carriera": [
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 41
+     }
+    ]
+   }
+  ]
+ },
+ "nome:Kimi Antonelli": {
+  "testo": "Andrea Kimi Antonelli è un pilota automobilistico italiano, attivo in Formula 1 con la Mercedes.",
+  "descrizione": "pilota automobilistico bolognese",
+  "pagina": "https://it.wikipedia.org/wiki/Andrea_Kimi_Antonelli"
+ },
+ "nome:George Russell": null,
+ "nome:Lewis Hamilton": {
+  "testo": "Sir Lewis Carl Davidson Hamilton è un pilota automobilistico britannico, attivo in Formula 1 con la Ferrari.",
+  "descrizione": "pilota automobilistico britannico (1985-)",
+  "pagina": "https://it.wikipedia.org/wiki/Lewis_Hamilton"
+ },
+ "nome:Charles Leclerc": {
+  "testo": "Charles Marc Hervé Perceval Leclerc è un pilota automobilistico monegasco, attivo in Formula 1 con la Ferrari.",
+  "descrizione": "pilota automobilistico e imprenditore monegasco (1997-)",
+  "pagina": "https://it.wikipedia.org/wiki/Charles_Leclerc"
+ },
+ "nome:Lando Norris": {
+  "testo": "Lando Norris è un pilota automobilistico britannico con cittadinanza belga, attivo in Formula 1 con la McLaren, scuderia con la quale è diventato campione del mondo nel 2025.",
+  "descrizione": "pilota automobilistico britannico (1999-)",
+  "pagina": "https://it.wikipedia.org/wiki/Lando_Norris"
+ },
+ "nome:Max Verstappen": {
+  "testo": "Max Emilian Verstappen /maks emiliˈaːn ʋərˈstɑpən/ è un pilota automobilistico olandese con cittadinanza belga, attivo in Formula 1 con la Red Bull Racing, scuderia con la quale è diventato campione del mondo per 4 volte consecutive.",
+  "descrizione": "pilota automobilistico olandese con cittadinanza belga (1997-)",
+  "pagina": "https://it.wikipedia.org/wiki/Max_Verstappen"
+ },
+ "nome:Oscar Piastri": {
+  "testo": "Oscar Jack Piastri è un pilota automobilistico australiano, attivo in Formula 1 con la McLaren.",
+  "descrizione": "pilota automobilistico australiano (2001-)",
+  "pagina": "https://it.wikipedia.org/wiki/Oscar_Piastri"
+ },
+ "nome:Isack Hadjar": {
+  "testo": "Isack Alexandre Hadjar è un pilota automobilistico francese di origine algerina, attivo in Formula 1 con la Red Bull.",
+  "descrizione": "pilota automobilistico francese (2004-)",
+  "pagina": "https://it.wikipedia.org/wiki/Isack_Hadjar"
+ },
+ "nome:Liam Lawson": {
+  "testo": "Liam Jared Lawson è un pilota automobilistico neozelandese, attivo in Formula 1 con la Racing Bulls.",
+  "descrizione": "pilota automobilistico neozelandese (2002-)",
+  "pagina": "https://it.wikipedia.org/wiki/Liam_Lawson"
+ },
+ "nome:Pierre Gasly": {
+  "testo": "Pierre Jean-Jacques Gasly è un pilota automobilistico francese, attivo in Formula 1 con l'Alpine.",
+  "descrizione": "pilota automobilistico francese (1996-)",
+  "pagina": "https://it.wikipedia.org/wiki/Pierre_Gasly"
+ },
+ "nome:Arvid Lindblad": {
+  "testo": "Arvid Anand Olof Lindblad è un pilota automobilistico britannico con origini indiane e svedesi, attivo in Formula 1 con la Racing Bulls.",
+  "descrizione": "pilota automobilistico britannico (2007-)",
+  "pagina": "https://it.wikipedia.org/wiki/Arvid_Lindblad"
+ },
+ "nome:Franco Colapinto": {
+  "testo": "Franco Alejandro Colapinto è un pilota automobilistico argentino con cittadinanza italiana, attivo in Formula 1 con l'Alpine.",
+  "descrizione": "pilota automobilistico argentino (2003-)",
+  "pagina": "https://it.wikipedia.org/wiki/Franco_Colapinto"
+ },
+ "nome:Oliver Bearman": {
+  "testo": "Oliver James Bearman, detto Ollie, è un pilota automobilistico britannico, attivo in Formula 1 con la Haas.",
+  "descrizione": "pilota automobilistico britannico (2005-)",
+  "pagina": "https://it.wikipedia.org/wiki/Oliver_Bearman"
+ },
+ "nome:Gabriel Bortoleto": {
+  "testo": "Gabriel Bortoleto è un pilota automobilistico brasiliano, attivo in Formula 1 con l'Audi.",
+  "descrizione": "pilota automobilistico brasiliano (2004-)",
+  "pagina": "https://it.wikipedia.org/wiki/Gabriel_Bortoleto"
+ },
+ "nome:Nico Hulkenberg": {
+  "testo": "Nicolas Hülkenberg, detto Nico, è un pilota automobilistico tedesco, attivo in Formula 1 con l'Audi.",
+  "descrizione": "pilota automobilistico tedesco (1987-)",
+  "pagina": "https://it.wikipedia.org/wiki/Nico_H%C3%BClkenberg"
+ },
+ "nome:Esteban Ocon": {
+  "testo": "Esteban José Jean-Pierre Ocon-Khelfane è un pilota automobilistico francese, attivo in Formula 1 con la Haas.",
+  "descrizione": "pilota automobilistico francese (1996-)",
+  "pagina": "https://it.wikipedia.org/wiki/Esteban_Ocon"
+ },
+ "nome:Fernando Alonso": {
+  "testo": "Fernando Alonso Díaz è un pilota automobilistico spagnolo, attivo in Formula 1 con l'Aston Martin. In carriera si è laureato due volte campione del mondo di Formula 1 con la scuderia Renault e ha trionfato, inoltre, a Le Mans 2018, 2019 e alla 24 Ore di Daytona 2019.",
+  "descrizione": "pilota automobilistico spagnolo (1981-)",
+  "pagina": "https://it.wikipedia.org/wiki/Fernando_Alonso"
+ },
+ "nome:Carlos Sainz": {
+  "testo": "Carlos Sainz Cenamor è un pilota di rally spagnolo, vincitore di due edizioni del campionato del mondo rally e di quattro edizioni del Rally Dakar.",
+  "descrizione": "pilota di rally spagnolo (1962-)",
+  "pagina": "https://it.wikipedia.org/wiki/Carlos_Sainz"
+ },
+ "nome:Alexander Albon": {
+  "testo": "Alexander Albon Ansusinha è un pilota automobilistico thailandese con cittadinanza britannica, attivo in Formula 1 con la Williams.",
+  "descrizione": "pilota automobilistico thailandese con passaporto britannico (1996-)",
+  "pagina": "https://it.wikipedia.org/wiki/Alexander_Albon"
+ },
+ "nome:Yuki Tsunoda": {
+  "testo": "Yūki Tsunoda è un pilota automobilistico giapponese.",
+  "descrizione": "pilota automobilistico giapponese (2000-)",
+  "pagina": "https://it.wikipedia.org/wiki/Y%C5%ABki_Tsunoda"
+ },
+ "nome:Lance Stroll": {
+  "testo": "Lance Stroll, pseudonimo di Lance Strulovitch, è un pilota automobilistico canadese, attivo in Formula 1 con l'Aston Martin.",
+  "descrizione": "pilota automobilistico canadese (1998-)",
+  "pagina": "https://it.wikipedia.org/wiki/Lance_Stroll"
+ },
+ "nome:Valtteri Bottas": {
+  "testo": "Valtteri Viktor Bottas è un pilota automobilistico finlandese, attivo in Formula 1 con la Cadillac.",
+  "descrizione": "pilota automobilistico finlandese (1989-)",
+  "pagina": "https://it.wikipedia.org/wiki/Valtteri_Bottas"
+ },
+ "nome:Sergio Perez": null,
+ "nome:Michael Schumacher": {
+  "testo": "Michael Schumacher è un ex pilota automobilistico tedesco. È considerato uno dei migliori piloti di tutti i tempi in Formula 1. Insieme a Lewis Hamilton, è il più vincente nella storia della Formula 1 con 7 titoli mondiali, i primi due con la Benetton e successivamente cinque consecutivi con la Ferrari, quest'ultimo un record assoluto.",
+  "descrizione": "pilota automobilistico tedesco (1969–)",
+  "pagina": "https://it.wikipedia.org/wiki/Michael_Schumacher"
+ },
+ "nome:Sebastian Vettel": {
+  "testo": "Sebastian Vettel /zeˈbastjan ˈfɛtl̩/ è un ex pilota automobilistico tedesco, campione del mondo di Formula 1 per 4 volte consecutive con la scuderia Red Bull Racing.",
+  "descrizione": "pilota automobilistico tedesco (1987-)",
+  "pagina": "https://it.wikipedia.org/wiki/Sebastian_Vettel"
+ },
+ "nome:Nico Rosberg": {
+  "testo": "Nico Erik Rosberg è un ex pilota automobilistico tedesco con cittadinanza finlandese, campione del mondo di Formula 1 nel 2016 con la Mercedes.",
+  "descrizione": "pilota automobilistico tedesco con cittadinanza finlandese (1985-)",
+  "pagina": "https://it.wikipedia.org/wiki/Nico_Rosberg"
+ },
+ "nome:Kimi Räikkönen": {
+  "testo": "Kimi-Matias Räikkönen è un ex pilota automobilistico e dirigente sportivo finlandese, campione del mondo di Formula 1 nel 2007 con la Ferrari.",
+  "descrizione": "pilota automobilistico finlandese (1979-)",
+  "pagina": "https://it.wikipedia.org/wiki/Kimi_R%C3%A4ikk%C3%B6nen"
+ },
+ "nome:Jacques Villeneuve": {
+  "testo": "Jacques Joseph Charles Villeneuve è un pilota automobilistico canadese con cittadinanza italiana, campione del mondo di Formula 1 nel 1997 con la Williams e vincitore della 500 Miglia di Indianapolis e del Campionato CART nel 1995.",
+  "descrizione": "pilota automobilistico canadese",
+  "pagina": "https://it.wikipedia.org/wiki/Jacques_Villeneuve"
+ },
+ "nome:Felipe Massa": {
+  "testo": "Felipe Massa è un pilota automobilistico brasiliano attualmente impegnato nel campionato Stock Car Pro Series e nella IMSA SportsCar Championship classe LMP2.",
+  "descrizione": "pilota automobilistico brasiliano (1981-)",
+  "pagina": "https://it.wikipedia.org/wiki/Felipe_Massa"
+ },
+ "nome:Rubens Barrichello": {
+  "testo": "Rubens Gonçalves Barrichello è un pilota automobilistico brasiliano di origini italiane, dal 2013 inviato per Rede Globo come giornalista sulla pitlane.",
+  "descrizione": "giornalista e pilota automobilistico brasiliano",
+  "pagina": "https://it.wikipedia.org/wiki/Rubens_Barrichello"
+ },
+ "nome:Mark Webber": {
+  "testo": "Mark Alan Webber è un ex pilota automobilistico australiano.",
+  "descrizione": "pilota automobilistico australiano",
+  "pagina": "https://it.wikipedia.org/wiki/Mark_Webber"
+ },
+ "nome:Daniel Ricciardo": {
+  "testo": "Daniel Joseph Ricciardo è un ex pilota automobilistico australiano.",
+  "descrizione": "pilota automobilistico australiano (1989-)",
+  "pagina": "https://it.wikipedia.org/wiki/Daniel_Ricciardo"
+ },
+ "nome:Juan Pablo Montoya": {
+  "testo": "Juan Pablo Montoya Roldán è un pilota automobilistico colombiano, campione della F3000 Internazionale (1998), della Formula CART (1999) e due volte vincitore della 500 Miglia di Indianapolis, di tre 24 Ore di Daytona, di 7 Gran Premi di Formula 1 e del campionato IMSA SportsCar WeaterTech (2019). Il 6 agosto 2017 è stato chiamato a guidare la Bugatti Chiron, sul circuito di Ehra-Lessien in Germania, per portarla a stabilire un nuovo record mondiale come auto di serie con maggiore accelerazione 0-400-0 km/h al mondo stabilendo 42 secondi in 3112 m.",
+  "descrizione": "pilota automobilistico colombiano",
+  "pagina": "https://it.wikipedia.org/wiki/Juan_Pablo_Montoya"
+ },
+ "nome:Ralf Schumacher": {
+  "testo": "Ralf Schumacher è un ex pilota automobilistico tedesco, noto soprattutto per aver corso in Formula 1.",
+  "descrizione": "ex pilota automobilistico tedesco (1975–)",
+  "pagina": "https://it.wikipedia.org/wiki/Ralf_Schumacher"
+ },
+ "nome:Giancarlo Fisichella": {
+  "testo": "Giancarlo Fisichella è un pilota automobilistico italiano, attualmente attivo nelle gare Gran Turismo per la Ferrari.",
+  "descrizione": "pilota automobilistico italiano (1973-)",
+  "pagina": "https://it.wikipedia.org/wiki/Giancarlo_Fisichella"
+ },
+ "nome:Heikki Kovalainen": {
+  "testo": "Heikki Johannes Kovalainen è un pilota automobilistico finlandese, attivo in Formula 1 dal 2007 al 2013 con Renault, McLaren, Caterham e Lotus.",
+  "descrizione": "pilota automobilistico finlandese",
+  "pagina": "https://it.wikipedia.org/wiki/Heikki_Kovalainen"
+ },
+ "nome:Jarno Trulli": {
+  "testo": "Jarno Trulli è un ex pilota automobilistico italiano, che ha partecipato al campionato mondiale di Formula 1 dal 1997 al 2011.",
+  "descrizione": "pilota automobilistico italiano (1974-)",
+  "pagina": "https://it.wikipedia.org/wiki/Jarno_Trulli"
+ },
+ "nome:Pastor Maldonado": {
+  "testo": "Pastor Rafael Maldonado Motta è un ex pilota automobilistico venezuelano, attivo in Formula 1 dal 2011 al 2015 con Williams e Lotus e vincitore del campionato GP2 nel 2010.",
+  "descrizione": "pilota automobilistico venezuelano",
+  "pagina": "https://it.wikipedia.org/wiki/Pastor_Maldonado"
+ },
+ "nome:Robert Kubica": {
+  "testo": "Robert Józef Kubica è un pilota automobilistico polacco, attivo in Formula 1 dal 2006 al 2021 a più riprese.",
+  "descrizione": "pilota automobilistico polacco (1984-)",
+  "pagina": "https://it.wikipedia.org/wiki/Robert_Kubica"
+ },
+ "nome:Adrian Sutil": {
+  "testo": "Adrian Sutil è un ex pilota automobilistico tedesco, attivo in Formula 1 dal 2007 al 2011 e dal 2013 al 2014.",
+  "descrizione": "pilota automobilistico tedesco",
+  "pagina": "https://it.wikipedia.org/wiki/Adrian_Sutil"
+ },
+ "nome:Alexander Rossi": {
+  "testo": "Alexander Michael Rossi è un pilota automobilistico statunitense, di chiare origini italiane, impegnato nel campionato IndyCar. Ha vinto la 500 Miglia di Indianapolis del 2016.",
+  "descrizione": "pilota automobilistico statunitense",
+  "pagina": "https://it.wikipedia.org/wiki/Alexander_Rossi"
+ },
+ "nome:Alexander Wurz": {
+  "testo": "Alexander Georg Wurz, detto Alex, è un pilota automobilistico austriaco, due volte vincitore della 24 Ore di Le Mans.",
+  "descrizione": "pilota automobilistico e dirigente sportivo austriaco",
+  "pagina": "https://it.wikipedia.org/wiki/Alexander_Wurz"
+ },
+ "nome:Andrea Kimi Antonelli": {
+  "testo": "Andrea Kimi Antonelli è un pilota automobilistico italiano, attivo in Formula 1 con la Mercedes.",
+  "descrizione": "pilota automobilistico bolognese",
+  "pagina": "https://it.wikipedia.org/wiki/Andrea_Kimi_Antonelli"
+ },
+ "nome:André Lotterer": {
+  "testo": "André Lotterer è un pilota automobilistico tedesco, vincitore della 24 Ore di Le Mans nel 2011, nel 2012 e nel 2014, e campione del mondo endurance nel 2012 con Audi e nel 2024 con la Porsche.",
+  "descrizione": "pilota automobilistico tedesco",
+  "pagina": "https://it.wikipedia.org/wiki/Andr%C3%A9_Lotterer"
+ },
+ "nome:Anthony Davidson": {
+  "testo": "Anthony Denis Davidson è un ex pilota automobilistico britannico, campione del mondo endurance nel 2014 con la Toyota.",
+  "descrizione": "pilota automobilistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Anthony_Davidson"
+ },
+ "nome:Antonio Giovinazzi": {
+  "testo": "Antonio Maria Giovinazzi è un pilota automobilistico italiano, vincitore della 24 Ore di Le Mans 2023 e del Campionato del mondo endurance 2025 con la Ferrari 499P.",
+  "descrizione": "pilota automobilistico italiano (1993-)",
+  "pagina": "https://it.wikipedia.org/wiki/Antonio_Giovinazzi"
+ },
+ "nome:Brendon Hartley": {
+  "testo": "Brendon Morris Hartley è un pilota automobilistico neozelandese, quattro volte campione del mondo Endurance nel 2015, nel 2017, 2022 e nel 2023, inoltre, ha vinto tre volte la 24 Ore di Le Mans nel 2017, 2020 e nel 2022.",
+  "descrizione": "pilota automobilistico neozelandese",
+  "pagina": "https://it.wikipedia.org/wiki/Brendon_Hartley"
+ },
+ "nome:Bruno Senna": {
+  "testo": "Bruno Senna Lalli è un ex pilota automobilistico brasiliano. È nipote di Ayrton Senna, figlio della sorella Viviane.",
+  "descrizione": "pilota automobilistico brasiliano",
+  "pagina": "https://it.wikipedia.org/wiki/Bruno_Senna"
+ },
+ "nome:Christian Klien": {
+  "testo": "Christian Klien è un pilota automobilistico austriaco, attivo in Formula 1 dal 2004 al 2006 e nel 2010.",
+  "descrizione": "pilota automobilistico austriaco",
+  "pagina": "https://it.wikipedia.org/wiki/Christian_Klien"
+ },
+ "nome:Christijan Albers": {
+  "testo": "Christijan Albers è un ex pilota automobilistico e dirigente sportivo olandese.",
+  "descrizione": "pilota automobilistico olandese",
+  "pagina": "https://it.wikipedia.org/wiki/Christijan_Albers"
+ },
+ "nome:Daniil Kvyat": {
+  "testo": "Daniil Vjačeslavovič Kvjat è un pilota automobilistico russo attivo anche con licenza italiana.",
+  "descrizione": "pilota automobilistico russo (1994-)",
+  "pagina": "https://it.wikipedia.org/wiki/Daniil_Kvjat"
+ },
+ "nome:Esteban Gutiérrez": {
+  "testo": "Esteban Manuel Gutiérrez è un pilota automobilistico messicano, attivo in Formula 1 nel 2013 e 2014 con la Sauber e nel 2016 con la scuderia statunitense Haas.",
+  "descrizione": "pilota automobilistico messicano",
+  "pagina": "https://it.wikipedia.org/wiki/Esteban_Guti%C3%A9rrez"
+ },
+ "nome:Felipe Nasr": {
+  "testo": "Luiz Felipe de Oliveira Nasr è un pilota automobilistico brasiliano di origini libanesi.",
+  "descrizione": "pilota automobilistico brasiliano",
+  "pagina": "https://it.wikipedia.org/wiki/Felipe_Nasr"
+ },
+ "nome:Franck Montagny": {
+  "testo": "Franck Montagny è un ex pilota automobilistico francese.",
+  "descrizione": "pilota automobilistico francese",
+  "pagina": "https://it.wikipedia.org/wiki/Franck_Montagny"
+ },
+ "nome:Giedo van der Garde": {
+  "testo": "Giedo Gijsbertus Gerrit van der Garde è un ex pilota automobilistico olandese, ha corso in Formula 1 nel 2013 con la Caterham. Vincitore della World Series by Renault 3.5 nel 2008 e della European Le Mans Series nel 2016.",
+  "descrizione": "pilota automobilistico olandese",
+  "pagina": "https://it.wikipedia.org/wiki/Giedo_van_der_Garde"
+ },
+ "nome:Guanyu Zhou": {
+  "testo": "Zhou Guanyu è un pilota automobilistico cinese.",
+  "descrizione": "pilota automobilistico cinese (1999-)",
+  "pagina": "https://it.wikipedia.org/wiki/Zhou_Guanyu"
+ },
+ "nome:Jack Aitken": {
+  "testo": "Jack Aitken è un pilota automobilistico britannico con cittadinanza sudcoreana, vincitore della 12 Ore di Sebring nel 2023.",
+  "descrizione": "pilota automobilistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Jack_Aitken"
+ },
+ "nome:Jack Doohan": {
+  "testo": "Jack Doohan è un pilota automobilistico australiano.",
+  "descrizione": "pilota automobilistico australiano (2003-)",
+  "pagina": "https://it.wikipedia.org/wiki/Jack_Doohan"
+ },
+ "nome:Jaime Alguersuari": {
+  "testo": "Jaime Víctor Alguersuari Escudero Jr. è un ex pilota automobilistico e disc jockey spagnolo.",
+  "descrizione": "pilota automobilistico spagnolo (1990-)",
+  "pagina": "https://it.wikipedia.org/wiki/Jaime_Alguersuari"
+ },
+ "nome:Jean-Éric Vergne": {
+  "testo": "Jean-Éric Serge Raymond Vergne, noto anche con lo pseudonimo di JEV, è un pilota automobilistico francese vincitore di due campionati di Formula E, nel 2017-18 e nel 2018-19.",
+  "descrizione": "pilota automobilistico francese",
+  "pagina": "https://it.wikipedia.org/wiki/Jean-%C3%89ric_Vergne"
+ },
+ "nome:Jolyon Palmer": {
+  "testo": "Jolyon Carlyle Palmer è un ex pilota automobilistico e conduttore radiofonico britannico.",
+  "descrizione": "pilota automobilistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Jolyon_Palmer"
+ },
+ "nome:Jules Bianchi": {
+  "testo": "Jules Lucien André Bianchi è stato un pilota automobilistico francese. Di origini italiane, con antenati di Milano, e nipote del pilota Mauro Bianchi e pronipote di Lucien Bianchi, ha disputato 34 Gran Premi di Formula 1, ottenendo 2 punti.",
+  "descrizione": "pilota automobilistico francese (1989-2015)",
+  "pagina": "https://it.wikipedia.org/wiki/Jules_Bianchi"
+ },
+ "nome:Jérôme d'Ambrosio": {
+  "testo": "Jérôme d'Ambrosio è un dirigente sportivo ed ex pilota automobilistico belga.",
+  "descrizione": "pilota automobilistico belga",
+  "pagina": "https://it.wikipedia.org/wiki/J%C3%A9r%C3%B4me_d'Ambrosio"
+ },
+ "nome:Kamui Kobayashi": {
+  "testo": "Kamui Kobayashi è un pilota automobilistico giapponese, con la Toyota Gazoo Racing ha vinto due volte il Mondiale Endurance e due volte la 24 Ore di Le Mans. Ha corso in Formula 1 nel 2009 con Toyota, dal 2010 al 2012 con la Sauber e nel 2014 con la Caterham.",
+  "descrizione": "pilota automobilistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Kamui_Kobayashi"
+ },
+ "nome:Karun Chandhok": {
+  "testo": "Karun Chandhok è un ex pilota automobilistico e telecronista sportivo indiano.",
+  "descrizione": "pilota automobilistico indiano",
+  "pagina": "https://it.wikipedia.org/wiki/Karun_Chandhok"
+ },
+ "nome:Kazuki Nakajima": {
+  "testo": "Kazuki Nakajima è un dirigente sportivo ed ex pilota automobilistico giapponese. È figlio dell'ex pilota Satoru Nakajima. Anche suo fratello, Daisuke, è un pilota automobilistico.",
+  "descrizione": "pilota automobilistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Kazuki_Nakajima"
+ },
+ "nome:Kevin Magnussen": {
+  "testo": "Kevin Jan Magnussen è un pilota automobilistico danese.",
+  "descrizione": "pilota automobilistico danese",
+  "pagina": "https://it.wikipedia.org/wiki/Kevin_Magnussen"
+ },
+ "nome:Logan Sargeant": {
+  "testo": "Logan Hunter Sargeant è un pilota automobilistico statunitense.",
+  "descrizione": "pilota automobilistico statunitense (2000-)",
+  "pagina": "https://it.wikipedia.org/wiki/Logan_Sargeant"
+ },
+ "nome:Luca Badoer": {
+  "testo": "Luca Badoer è un ex pilota automobilistico italiano.",
+  "descrizione": "pilota automobilistico italiano (1971-)",
+  "pagina": "https://it.wikipedia.org/wiki/Luca_Badoer"
+ },
+ "nome:Lucas di Grassi": {
+  "testo": "Lucas Tucci Di Grassi è un pilota automobilistico brasiliano di origini italiane, campione del mondo di Formula E nel 2017.",
+  "descrizione": "pilota automobilistico brasiliano",
+  "pagina": "https://it.wikipedia.org/wiki/Lucas_Di_Grassi"
+ },
+ "nome:Marcus Ericsson": {
+  "testo": "Marcus Thorbjörn Ericsson è un pilota automobilistico svedese, attivo in Formula 1 dal 2014 al 2018 con Caterham e Sauber, e vincitore della 500 Miglia di Indianapolis nel 2022.",
+  "descrizione": "pilota automobilistico svedese",
+  "pagina": "https://it.wikipedia.org/wiki/Marcus_Ericsson"
+ },
+ "nome:Markus Winkelhock": {
+  "testo": "Markus Winkelhock è un pilota automobilistico tedesco.",
+  "descrizione": "pilota automobilistico tedesco",
+  "pagina": "https://it.wikipedia.org/wiki/Markus_Winkelhock"
+ },
+ "nome:Max Chilton": {
+  "testo": "Max Chilton, all'anagrafe Maximilian Alexander Chilton è un pilota automobilistico britannico.",
+  "descrizione": "pilota automobilistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Max_Chilton"
+ },
+ "nome:Mick Schumacher": {
+  "testo": "Mick Schumacher è un pilota automobilistico tedesco con cittadinanza svizzera, attualmente impegnato nell'IndyCar Series con Rahal Letterman Racing.",
+  "descrizione": "pilota automobilistico tedesco con cittadinanza svizzera",
+  "pagina": "https://it.wikipedia.org/wiki/Mick_Schumacher"
+ },
+ "nome:Narain Karthikeyan": {
+  "testo": "Kumar Ram Narain Karthikeyan è un ex pilota automobilistico indiano.",
+  "descrizione": "pilota automobilistico indiano",
+  "pagina": "https://it.wikipedia.org/wiki/Narain_Karthikeyan"
+ },
+ "nome:Nelson Piquet Jr.": {
+  "testo": "Nelson Angelo Tamsma Piquet Souto Maior, conosciuto come Nelson Piquet Jr.  o Nelsinho Piquet, è un pilota automobilistico brasiliano, primo campione della storia della Formula E.",
+  "descrizione": "pilota automobilistico brasiliano (1985-)",
+  "pagina": "https://it.wikipedia.org/wiki/Nelson_Piquet_Jr."
+ },
+ "nome:Nicholas Latifi": {
+  "testo": "Nicholas Daniel Latifi è un ex pilota automobilistico canadese, ha corso in Formula 1 dal 2020 al 2022 con la Williams.",
+  "descrizione": "pilota automobilistico canadese",
+  "pagina": "https://it.wikipedia.org/wiki/Nicholas_Latifi"
+ },
+ "nome:Nick Heidfeld": {
+  "testo": "Nick Lars Heidfeld è un ex pilota automobilistico tedesco. È stato attivo nella massima categoria formulistica, la Formula 1, dal 2000 fino al 2011. Detiene, al 2025, il primato del maggior numero di podi in F1 senza vittorie (13).",
+  "descrizione": "pilota automobilistico tedesco (1977-)",
+  "pagina": "https://it.wikipedia.org/wiki/Nick_Heidfeld"
+ },
+ "nome:Nico Hülkenberg": {
+  "testo": "Nicolas Hülkenberg, detto Nico, è un pilota automobilistico tedesco, attivo in Formula 1 con l'Audi.",
+  "descrizione": "pilota automobilistico tedesco (1987-)",
+  "pagina": "https://it.wikipedia.org/wiki/Nico_H%C3%BClkenberg"
+ },
+ "nome:Nikita Mazepin": {
+  "testo": "Nikita Dmitrievič Mazepin è un ex pilota automobilistico russo, nel 2021 ha corso in Formula 1 con la scuderia Haas.",
+  "descrizione": "pilota automobilistico russo (1999-)",
+  "pagina": "https://it.wikipedia.org/wiki/Nikita_Mazepin"
+ },
+ "nome:Pascal Wehrlein": {
+  "testo": "Pascal Konrad Wehrlein è un pilota automobilistico tedesco naturalizzato mauriziano, attivo in Formula 1 nel 2016 con Manor e nel 2017 con Sauber. Dal 2019 corre in Formula E dove si è laureato campione nella stagione 2023-24 e nella stagione 2025-26.",
+  "descrizione": "pilota automobilistico tedesco",
+  "pagina": "https://it.wikipedia.org/wiki/Pascal_Wehrlein"
+ },
+ "nome:Paul di Resta": {
+  "testo": "Paul di Resta è un pilota automobilistico britannico di origini italiane.",
+  "descrizione": "pilota automobilistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Paul_di_Resta"
+ },
+ "nome:Pedro de la Rosa": {
+  "testo": "Pedro Martínez de la Rosa è un ex pilota automobilistico spagnolo.",
+  "descrizione": "pilota automobilistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Pedro_de_la_Rosa"
+ },
+ "nome:Pietro Fittipaldi": {
+  "testo": "Pietro Fittipaldi da Cruz è un pilota automobilistico brasiliano, con passaporto statunitense, nipote del due volte campione del mondo di Formula 1 Emerson Fittipaldi. Ha un fratello, Enzo, anche lui pilota automobilistico.",
+  "descrizione": "pilota automobilistico brasiliano",
+  "pagina": "https://it.wikipedia.org/wiki/Pietro_Fittipaldi"
+ },
+ "nome:Rio Haryanto": {
+  "testo": "Rio Haryanto è un ex pilota automobilistico indonesiano.",
+  "descrizione": "pilota automobilistico indonesiano",
+  "pagina": "https://it.wikipedia.org/wiki/Rio_Haryanto"
+ },
+ "nome:Robert Doornbos": {
+  "testo": "Robert Michael Doornbos è un ex pilota automobilistico olandese.",
+  "descrizione": "pilota automobilistico olandese",
+  "pagina": "https://it.wikipedia.org/wiki/Robert_Doornbos"
+ },
+ "nome:Roberto Merhi": {
+  "testo": "Roberto Merhi Muntan, detto Teto, è un pilota automobilistico spagnolo, attivo in Formula E con la Mahindra, ex pilota di Formula 1 con la Manor Marussia nel 2015 e vincitore del campionato F3 Euro Series 2011.",
+  "descrizione": "pilota automobilistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Roberto_Merhi"
+ },
+ "nome:Romain Grosjean": {
+  "testo": "Romain David Jérémie Grosjean Brandt è un pilota automobilistico francese con cittadinanza svizzera, ex pilota di Formula 1 ora impegnato nel campionato americano IndyCar. Dal 2023 diventa pilota ufficiale del marchio italiano Lamborghini.",
+  "descrizione": "pilota automobilistico svizzero con passaporto francese (1986-)",
+  "pagina": "https://it.wikipedia.org/wiki/Romain_Grosjean"
+ },
+ "nome:Sakon Yamamoto": {
+  "testo": "Sakon Yamamoto è un ex pilota automobilistico e politico giapponese.",
+  "descrizione": "pilota automobilistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Sakon_Yamamoto"
+ },
+ "nome:Scott Speed": {
+  "testo": "Scott Andrew Speed è un pilota automobilistico statunitense.",
+  "descrizione": "pilota automobilistico statunitense",
+  "pagina": "https://it.wikipedia.org/wiki/Scott_Speed"
+ },
+ "nome:Sergey Sirotkin": {
+  "testo": "Sergej Olegovič Sirotkin è un pilota automobilistico russo. Campione europeo di Formula Abarth nel 2011, nel 2018 ha fatto il suo esordio in Formula 1 come pilota titolare della Williams. Il suo numero di gara era il 35.",
+  "descrizione": "pilota automobilistico russo",
+  "pagina": "https://it.wikipedia.org/wiki/Sergej_Sirotkin"
+ },
+ "nome:Stoffel Vandoorne": {
+  "testo": "Stoffel Jacques Luc Vandoorne è un pilota automobilistico belga, pilota della McLaren in Formula 1 dal 2016 al 2018. Nel 2022 si laurea campione del mondo di Formula E con il team Mercedes EQ.",
+  "descrizione": "pilota automobilistico belga",
+  "pagina": "https://it.wikipedia.org/wiki/Stoffel_Vandoorne"
+ },
+ "nome:Sébastien Bourdais": {
+  "testo": "Sébastien Olivier Bourdais è un pilota automobilistico francese.",
+  "descrizione": "pilota automobilistico francese",
+  "pagina": "https://it.wikipedia.org/wiki/S%C3%A9bastien_Bourdais"
+ },
+ "nome:Sébastien Buemi": {
+  "testo": "Sébastien Olivier Humbert Buemi è un pilota automobilistico svizzero, quattro volte campione del mondo Endurance con la Toyota Motorsport, campione di Formula E nel 2016 e quattro volte vincitore della 24 Ore di Le Mans, nel 2018, 2019, 2020 e 2022.",
+  "descrizione": "pilota automobilistico svizzero (1988-)",
+  "pagina": "https://it.wikipedia.org/wiki/S%C3%A9bastien_Buemi"
+ },
+ "nome:Takuma Sato": {
+  "testo": "Takuma Satō, detto Taku, è un pilota automobilistico giapponese, primo giapponese a vincere la 500 Miglia di Indianapolis. Dal 2023 è pilota del team Chip Ganassi Racing nella IndyCar Series. Attivo in Formula 1 dal 2002 al 2008, il suo ottavo posto in classifica finale nel 2004 è il miglior risultato mai ottenuto da un pilota giapponese nella serie.",
+  "descrizione": "pilota automobilistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Takuma_Sat%C5%8D"
+ },
+ "nome:Tiago Monteiro": {
+  "testo": "Tiago Vagaroso Monteiro Da Costa Pereira è un pilota automobilistico portoghese.",
+  "descrizione": "pilota automobilistico portoghese",
+  "pagina": "https://it.wikipedia.org/wiki/Tiago_Monteiro"
+ },
+ "nome:Timo Glock": {
+  "testo": "Timo Glock è un pilota automobilistico tedesco, attivo in Formula 1 per sei stagioni e vincitore del campionato GP2 nel 2007. Dal 2013 al 2022 ha corso nel DTM.",
+  "descrizione": "pilota automobilistico tedesco",
+  "pagina": "https://it.wikipedia.org/wiki/Timo_Glock"
+ },
+ "nome:Vitaly Petrov": null,
+ "nome:Vitantonio Liuzzi": {
+  "testo": "Vitantonio Liuzzi, detto Tonio è un ex pilota automobilistico italiano, attivo in Formula 1 dal 2005 al 2007 e dal 2009 al 2011.",
+  "descrizione": "ex pilota automobilistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Vitantonio_Liuzzi"
+ },
+ "nome:Will Stevens": {
+  "testo": "William Jonathan Richard Stevens è un pilota automobilistico britannico, attivo in Formula 1 dal 2014 al 2015. Vincitore della 24 Ore di Le Mans 2022 nella classe LMP2.",
+  "descrizione": "pilota automobilistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Will_Stevens"
+ },
+ "nome:Yuji Ide": {
+  "testo": "Yūji Ide è un ex pilota automobilistico giapponese.",
+  "descrizione": "pilota automobilistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Y%C5%ABji_Ide"
+ },
+ "nome:Jorge Martin": {
+  "testo": "Jorge Martín Almoguera è un pilota motociclistico spagnolo, vincitore della Red Bull Rookies Cup nel 2014, campione del mondo Moto3 nel 2018 e MotoGP nel 2024.",
+  "descrizione": "pilota motociclistico spagnolo (1998-)",
+  "pagina": "https://it.wikipedia.org/wiki/Jorge_Mart%C3%ADn"
+ },
+ "nome:Marc Marquez": {
+  "testo": "Marc Márquez Alentà è un pilota motociclistico spagnolo, campione del mondo classe 125 nel 2010; Moto2 nel 2012 e MotoGP nel 2013, 2014, 2016, 2017, 2018, 2019 e 2025.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Marc_M%C3%A1rquez"
+ },
+ "nome:Marco Bezzecchi": {
+  "testo": "Marco Bezzecchi è un pilota motociclistico italiano, campione italiano Moto3 nel 2015.",
+  "descrizione": "pilota motociclistico italiano (1998-)",
+  "pagina": "https://it.wikipedia.org/wiki/Marco_Bezzecchi"
+ },
+ "nome:Pedro Acosta": {
+  "testo": "Pedro Acosta Sánchez è un pilota motociclistico spagnolo, vincitore della MotoGP Rookies Cup nel 2020, campione mondiale Moto3 nel 2021 e Moto2 nel 2023.",
+  "descrizione": "pilota motociclistico spagnolo (2004-)",
+  "pagina": "https://it.wikipedia.org/wiki/Pedro_Acosta"
+ },
+ "nome:Ai Ogura": {
+  "testo": "Ai Ogura è un pilota motociclistico giapponese, campione del mondo Moto2 nel 2024.",
+  "descrizione": "pilota motociclistico giapponese (2001-)",
+  "pagina": "https://it.wikipedia.org/wiki/Ai_Ogura"
+ },
+ "nome:Fabio Di Giannantonio": {
+  "testo": "Fabio Di Giannantonio è un pilota motociclistico italiano.",
+  "descrizione": "pilota motociclistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Fabio_Di_Giannantonio"
  }
 }

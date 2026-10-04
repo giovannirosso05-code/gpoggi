@@ -11,6 +11,7 @@ from pathlib import Path
 import build_motogp as bm
 
 OUT = Path(__file__).parent / "docs" / "data" / "motogp-report.json"
+OUT_GARE = Path(__file__).parent / "docs" / "data" / "motogp-gare.json"
 PISTA = {"dry": "asciutta", "wet": "bagnata", "damp": "umida"}
 CIELO = {"cloudy": "nuvoloso", "sunny": "soleggiato", "overcast": "coperto", "rain": "pioggia", "rainy": "pioggia", "clear": "sereno", "partly cloudy": "poco nuvoloso", "fog": "nebbia"}
 ORDINALE = {1: "primo", 2: "secondo", 3: "terzo"}
@@ -30,6 +31,28 @@ def tempo_giro(t):
 
 def classifica(sid):
     return bm.api_cache(f"results/session/{sid}/classification", test="false")
+
+
+def righe(cl):
+    return [{"pos": x.get("position"), "nome": x["rider"]["full_name"], "numero": x["rider"].get("number"), "team": x["team"]["name"], "moto": x["constructor"]["name"],
+             "tempo": x.get("time"), "distacco": (x.get("gap") or {}).get("first"), "giri": x.get("total_laps"), "stato": x.get("status"), "punti": x.get("points")} for x in cl["classification"]]
+
+
+def classifiche_evento(e, cat_ids):
+    """Classifica completa della gara per MotoGP, Moto2 e Moto3, piu' la sprint della MotoGP."""
+    out = {}
+    for c, cid in cat_ids.items():
+        if c not in ("MotoGP", "Moto2", "Moto3"):
+            continue
+        sess = bm.api_cache("results/sessions", eventUuid=e["id"], categoryUuid=cid)
+        for tipo, chiave in (("RAC", c), ("SPR", c + " sprint")):
+            q = next((x for x in sess if x["type"] == tipo), None)
+            if q and (tipo == "RAC" or c == "MotoGP"):
+                try:
+                    out[chiave] = righe(classifica(q["id"]))
+                except Exception:
+                    pass
+    return out
 
 
 def report_evento(e, cat_ids):
@@ -97,7 +120,11 @@ def report_evento(e, cat_ids):
             pass
     if altri:
         par.append("Vincitori delle altre classi: " + "; ".join(altri) + ".")
+    GARE[nome_gp] = {"nome": nome_gp, "circuito": (e.get("circuit") or {}).get("name"), "data": e["date_end"], "classifiche": classifiche_evento(e, cat_ids)}
     return {"gp": nome_gp, "circuito": (e.get("circuit") or {}).get("name"), "data": e["date_end"], "titolo": f"{top[0]['rider']['full_name']} vince il {nome_gp}", "paragrafi": par}
+
+
+GARE = {}
 
 
 def main():
@@ -108,6 +135,7 @@ def main():
     out = [r for r in (report_evento(e, cat_ids) for e in eventi) if r]
     out.sort(key=lambda r: r["data"], reverse=True)
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1))
+    OUT_GARE.write_text(json.dumps(GARE, ensure_ascii=False))
     print(f"Report MotoGP: {len(out)}")
 
 

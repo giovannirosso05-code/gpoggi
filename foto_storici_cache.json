@@ -357,6 +357,23 @@
   "grande": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Sergio_P%C3%A9rez_2019_%28cropped%29.jpg",
   "autore": "XaviYuahanda",
   "licenza": "CC BY-SA 4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Sergio_P%C3%A9rez_2019_(cropped).jpg"
+  "pagina": "https://commons.wikimedia.org/wiki/File:Sergio_P%C3%A9rez_2019_(cropped).jpg",
+  "file": "img/storici/40763485e6eb2b4f.jpg"
+ },
+ "Formula 1:Tony Brooks": null,
+ "Formula 1:Clay Regazzoni": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Anefo_924-6609_Clay_Reggazoni%2C_Catherine_Blaton%2C_Jacky_Ickx_Zandvoort_18_06_1971_-_Cropped.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Anefo_924-6609_Clay_Reggazoni%2C_Catherine_Blaton%2C_Jacky_Ickx_Zandvoort_18_06_1971_-_Cropped.jpg",
+  "autore": "Nationaal Archief, Den Haag, Rijksfotoarchief: Fotocollectie Algemeen Nederlands Fotopersbureau (ANEFO), 1945-1989 - negatiefstroken zwart/wit, nummer toegang 2.24.01.05, bestanddeelnummer 924-6609",
+  "licenza": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Anefo_924-6609_Clay_Reggazoni,_Catherine_Blaton,_Jacky_Ickx_Zandvoort_18_06_1971_-_Cropped.jpg",
+  "file": "img/storici/97c0e910c834cb74.jpg"
+ },
+ "Formula 1:John Watson": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/John_Watson_%282346102684%29.jpg/500px-John_Watson_%282346102684%29.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/John_Watson_%282346102684%29.jpg/1280px-John_Watson_%282346102684%29.jpg",
+  "autore": "Chris Bloom from Durban, South Africa",
+  "licenza": "CC BY-SA 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:John_Watson_(2346102684).jpg"
  }
 }

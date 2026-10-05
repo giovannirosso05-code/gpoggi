@@ -1074,3 +1074,16 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 .scarica-tipo { display: inline-flex; align-items: center; gap: 7px; font-size: 14px; cursor: pointer; }
 .scarica-tipo input { width: 18px; height: 18px; accent-color: var(--accent, #e8352f); }
 .ag-includi { display: block; font-size: 12px; margin-top: 6px; }
+
+/* Pronostico del podio in rosso, punti e classifica */
+.gioco-card[data-gioco="pronostico"] { background: #e8352f; color: #fff; border-color: #b9211c; box-shadow: 0 3px 0 #9d1f1a; }
+.gioco-card[data-gioco="pronostico"] span, .gioco-card[data-gioco="pronostico"] small, .gioco-card[data-gioco="pronostico"] b { color: #fff; }
+.pron-testa { background: #e8352f; color: #fff; border-radius: 10px; padding: 10px 14px; }
+.pron-testa b { color: #fff; }
+.pron-rosso { background: #e8352f; color: #fff; }
+.pron-nome { display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; margin: 14px 0; max-width: 320px; }
+.pron-nome input, .pron-scegli select { font: inherit; font-weight: 400; padding: 10px 12px; border-radius: 10px; border: 1.5px solid var(--border); background: var(--card, var(--bg)); color: var(--text); }
+.pron-punti { border-left: 4px solid #e8352f; padding: 8px 14px; margin: 16px 0; font-size: 14px; }
+.pron-punti ul { margin: 6px 0; padding-left: 18px; }
+.pron-scegli { display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; margin: 8px 0 12px; max-width: 360px; }
+.results tr.pron-io td { background: rgba(232, 53, 47, .12); }

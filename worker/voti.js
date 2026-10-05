@@ -16,12 +16,43 @@ export default {
   async fetch(req, env) {
     if (req.method === "OPTIONS") return new Response(null, { headers: CORS });
     const url = new URL(req.url);
+    if (req.method === "GET" && url.pathname === "/pronostici") {
+      // Tutti i pronostici del gioco "Pronostico del podio" (opzionale ?gp=ID): nome, podio e orario di invio dato dal server
+      const gp = (url.searchParams.get("gp") || "").replace(/[^\w-]/g, "").slice(0, 40);
+      const prefisso = gp ? `pron:${gp}:` : "pron:";
+      const out = [];
+      let cursor;
+      for (let i = 0; i < 5; i++) {
+        const r = await env.VOTI.list({ prefix: prefisso, cursor, limit: 1000 });
+        for (const k of r.keys) if (k.metadata) out.push({ gp: k.name.split(":")[1], ...k.metadata });
+        if (r.list_complete) break;
+        cursor = r.cursor;
+      }
+      return json({ pronostici: out });
+    }
     if (req.method === "GET" && url.pathname === "/consiglio") return json({ consigli: true });   // il sito lo usa per sapere se il modulo dei consigli funziona
     if (req.method === "GET") {
       const gp = (url.searchParams.get("gp") || "").slice(0, 80);
       return json({ voti: JSON.parse((await env.VOTI.get("conteggio:" + gp)) || "{}") });
     }
     if (req.method !== "POST") return json({ errore: "metodo non consentito" }, 405);
+    if (url.pathname === "/pronostico") {
+      const c = await req.json().catch(() => ({}));
+      const gp = String(c.gp || "").replace(/[^\w-]/g, "").slice(0, 40), id = String(c.id || "").replace(/[^\w-]/g, "").slice(0, 40);
+      const nick = String(c.nick || "").trim().replace(/\s+/g, " ");
+      const podio = Array.isArray(c.podio) ? c.podio.map((x) => String(x).slice(0, 10)) : [];
+      if (!gp || id.length < 8 || !/^[\p{L}\p{N} _.-]{3,16}$/u.test(nick) || podio.length !== 3 || new Set(podio).size !== 3) return json({ errore: "dati non validi" }, 400);
+      const limite = `limite:pron:${await impronta((req.headers.get("CF-Connecting-IP") || "") + new Date().toISOString().slice(0, 10))}`;
+      const n = Number((await env.VOTI.get(limite)) || 0);
+      if (n >= 30) return json({ errore: "troppi invii oggi" }, 429);
+      await env.VOTI.put(limite, String(n + 1), { expirationTtl: 86400 });
+      const chiaveNome = `nick:${gp}:${nick.toLowerCase()}`;
+      const occupato = await env.VOTI.get(chiaveNome);
+      if (occupato && occupato !== id) return json({ errore: "nome già usato" }, 409);
+      await env.VOTI.put(chiaveNome, id, { expirationTtl: 90 * 86400 });
+      await env.VOTI.put(`pron:${gp}:${id}`, "1", { metadata: { nick, podio, ts: Date.now() }, expirationTtl: 90 * 86400 });
+      return json({ ok: true });
+    }
     if (url.pathname === "/consiglio") {
       // Consigli dei visitatori: solo testo, nessun dato personale. Massimo 3 al giorno per indirizzo; si leggono nel pannello KV di Cloudflare.
       const c = await req.json().catch(() => ({}));

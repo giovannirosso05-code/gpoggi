@@ -121,8 +121,9 @@ def main():
         invia(token, canale, testo_moto)
         stato["ultima_moto"] = chiave_moto
         print("Report MotoGP pubblicato:", chiave_moto)
-    for a in nuove:
-        invia(token, canale, testo_notizia(a))
+    if os.environ.get("TELEGRAM_MODALITA") != "privata":   # in chat privata le notizie arrivano dal sondaggio del giorno
+        for a in nuove:
+            invia(token, canale, testo_notizia(a))
     stato["visti"] = visti
     STATO.write_text(json.dumps(stato))
     print(f"Notizie inviate: {len(nuove)}")

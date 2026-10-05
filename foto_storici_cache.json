@@ -260,6 +260,22 @@
   "grande": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Reutemann_1981.jpg",
   "autore": "Unknown authorUnknown author",
   "licenza": "Public domain",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Reutemann_1981.jpg"
+  "pagina": "https://commons.wikimedia.org/wiki/File:Reutemann_1981.jpg",
+  "file": "img/storici/4d131b4847f4f863.jpg"
+ },
+ "Formula 1:Felipe Massa": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Felipe_Massa.jpg/500px-Felipe_Massa.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Felipe_Massa.jpg",
+  "autore": "TV Brasil Central AO VIVO",
+  "licenza": "CC BY 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Felipe_Massa.jpg",
+  "file": "img/storici/717abd34b240e2c8.jpg"
+ },
+ "Formula 1:Rubens Barrichello": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Rubinho.jpg/500px-Rubinho.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Rubinho.jpg",
+  "autore": "TV Brasil Central AO VIVO",
+  "licenza": "CC BY 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Rubinho.jpg"
  }
 }

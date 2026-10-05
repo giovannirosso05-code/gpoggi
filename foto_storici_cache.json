@@ -316,6 +316,39 @@
   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/DSC1509_%2851683678455%29%28cropped%29.jpg/1280px-DSC1509_%2851683678455%29%28cropped%29.jpg",
   "autore": "Andrew-44-19",
   "licenza": "CC0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:DSC1509_(51683678455)(cropped).jpg"
+  "pagina": "https://commons.wikimedia.org/wiki/File:DSC1509_(51683678455)(cropped).jpg",
+  "file": "img/storici/4ff5f742e2a6fe5e.jpg"
+ },
+ "Formula 1:René Arnoux": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Rene_Arnoux_WSR2008_HU.png",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Rene_Arnoux_WSR2008_HU.png",
+  "autore": "Peter Moricz",
+  "licenza": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Rene_Arnoux_WSR2008_HU.png",
+  "file": "img/storici/2a6f05281a82ae7e.jpg"
+ },
+ "Formula 1:Gilles Villeneuve": null,
+ "Formula 1:Jacques Laffite": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Jacques_Laffite_2015.jpg/500px-Jacques_Laffite_2015.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Jacques_Laffite_2015.jpg/1280px-Jacques_Laffite_2015.jpg",
+  "autore": "Thesupermat",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Jacques_Laffite_2015.jpg",
+  "file": "img/storici/b880ab216f70b8c5.jpg"
+ },
+ "Formula 1:Ralf Schumacher": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Ralf_Schumacher%2C_2016.png/500px-Ralf_Schumacher%2C_2016.png",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Ralf_Schumacher%2C_2016.png/1280px-Ralf_Schumacher%2C_2016.png",
+  "autore": "9EkieraM1",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Ralf_Schumacher,_2016.png",
+  "file": "img/storici/133abf26566fdf45.jpg"
+ },
+ "Formula 1:Riccardo Patrese": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Riccardo_Patrese_in_the_paddock_before_the_1993_British_Grand_Prix_%2833686653515%29_%28Cropped%29.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Riccardo_Patrese_in_the_paddock_before_the_1993_British_Grand_Prix_%2833686653515%29_%28Cropped%29.jpg",
+  "autore": "Martin Lee from London, UK",
+  "licenza": "CC BY-SA 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Riccardo_Patrese_in_the_paddock_before_the_1993_British_Grand_Prix_(33686653515)_(Cropped).jpg"
  }
 }

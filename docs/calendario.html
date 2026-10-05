@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=61">
+<link rel="stylesheet" href="css/style.css?v=62">
 <!-- Statistiche senza cookie, Plausible -->
 <script async src="https://plausible.io/js/pa-ZWqatc_5BB5FuQLCJYeLj.js"></script>
 <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
@@ -48,6 +48,7 @@
   </div>
 
   <div class="agenda-opzioni">
+    <span class="agenda-etichetta">Mostra nell'agenda:</span>
     <div class="agenda-tipi" id="tipi" role="group" aria-label="Sessioni da mostrare"></div>
     <label class="agenda-fuso">Orari in <select id="fuso" aria-label="Fuso orario"></select></label>
   </div>
@@ -64,7 +65,11 @@
 
   <section class="cal-scarica" id="scarica">
     <h3 class="section-title">Porta il calendario sul telefono</h3>
-    <p class="muted" style="margin:-8px 0 16px;font-size:14px;max-width:62ch">Le sessioni che hai scelto sopra (gara, qualifiche, prove libere…) nel calendario del tuo telefono o computer, con un promemoria 15 minuti prima. L'ora si adatta da sola al fuso del tuo telefono.</p>
+    <p class="muted" style="margin:-8px 0 16px;font-size:14px;max-width:62ch">Le sessioni che scegli qui sotto (gara, qualifiche, prove libere…) nel calendario del tuo telefono o computer, con un promemoria 15 minuti prima. L'ora si adatta da sola al fuso del tuo telefono.</p>
+    <fieldset class="scarica-scelta"><legend>Quali sessioni vuoi nel tuo calendario?</legend>
+      <div id="scarica-tipi" class="scarica-tipi"></div>
+      <p class="muted" style="font-size:12px;margin:8px 0 0">Per la maggior parte delle persone bastano gara, sprint e qualifiche: le prove libere sono spente.</p>
+    </fieldset>
     <div class="cal-lista">
       <article class="cal-card"><span class="cd-sigla">F1</span><h3>Formula 1</h3><p id="n-f1" class="muted"></p>
         <div class="cal-azioni"><button type="button" class="quiz-avanti" data-ics="f1">Scarica .ics</button><a class="quiz-avanti secondario" href="webcal://gpoggi.it/calendario/f1.ics">Iscriviti</a></div></article>
@@ -73,13 +78,13 @@
       <article class="cal-card"><span class="cd-sigla" style="background:var(--text);color:var(--bg)">F1 + MotoGP</span><h3>Tutti e due</h3><p id="n-tutto" class="muted"></p>
         <div class="cal-azioni"><button type="button" class="quiz-avanti" data-ics="tutto">Scarica .ics</button><a class="quiz-avanti secondario" href="webcal://gpoggi.it/calendario/tutto.ics">Iscriviti</a></div></article>
     </div>
-    <p class="muted" style="font-size:13px;margin-top:14px"><b>Iscriviti</b> mantiene il calendario aggiornato da solo (iPhone, Mac; su Google Calendar: "Altri calendari", "Da URL", indirizzo <code>https://gpoggi.it/calendario/f1.ics</code>). <b>Scarica</b> aggiunge una volta sola le sessioni scelte sopra; <b>Iscriviti</b> invece le contiene tutte, prove libere comprese. Il calendario MotoGP include i weekend ancora da disputare; le sessioni senza ora di fine nella fonte durano un'ora indicativa.</p>
+    <p class="muted" style="font-size:13px;margin-top:14px"><b>Iscriviti</b> mantiene il calendario aggiornato da solo (iPhone, Mac; su Google Calendar: "Altri calendari", "Da URL", indirizzo <code>https://gpoggi.it/calendario/f1.ics</code>). <b>Scarica</b> aggiunge una volta sola le sessioni scelte qui sopra; <b>Iscriviti</b> invece le contiene tutte, prove libere comprese. Il calendario MotoGP include i weekend ancora da disputare; le sessioni senza ora di fine nella fonte durano un'ora indicativa.</p>
     <p class="muted" style="font-size:13px"><a class="accent" href="gare.html">Elenco dei Gran Premi di F1 con i circuiti →</a></p>
   </section>
 </div>
 
 <footer id="site-footer" class="site-footer"></footer>
 
-<script type="module" src="js/calendario.js?v=61"></script>
+<script type="module" src="js/calendario.js?v=62"></script>
 </body>
 </html>

@@ -22,6 +22,11 @@ function tipo(nome) {
   return "altro";
 }
 const mostra = (sess) => visibili[tipo(sess.nome)] !== false;
+// Cosa mettere nel file del calendario: scelta a parte, fatta solo nella sezione dei download (non dipende dai tasti dell'agenda)
+let nelFile = { gara: true, sprint: true, quali: true, libere: false, altro: false };
+try { const sf = JSON.parse(memo("cal-scarica") || "null"); if (sf) nelFile = { ...nelFile, ...sf }; } catch (e) {}
+const nelCal = (sess) => nelFile[tipo(sess.nome)] !== false;
+const elencoFile = () => TIPI.filter(([k]) => nelFile[k]).map(([, n]) => n.replace(" (warm-up)", "").toLowerCase()).join(", ");
 const visibiliDi = (w) => { const l = w.sessioni.filter(mostra); return l.length ? l : w.sessioni; };
 const giorno = (iso) => new Date(iso).toLocaleDateString("sv-SE", { timeZone: TZ });          // AAAA-MM-GG in ora italiana
 const ora = (iso) => new Date(iso).toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit", timeZone: TZ });
@@ -100,7 +105,7 @@ function icsWeekend(w, tutti = false) { return icsDi([w], tutti); }
 function icsDi(lista, tutti = false) {
   const z = (iso) => new Date(iso).toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
   const righe = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//GP Oggi//Calendario//IT", "CALSCALE:GREGORIAN"];
-  for (const w of lista) for (const s of tutti ? w.sessioni : w.sessioni.filter(mostra)) {
+  for (const w of lista) for (const s of tutti ? w.sessioni : w.sessioni.filter(nelCal)) {
     const fine = new Date(s.fine) > new Date(s.inizio) ? s.fine : new Date(new Date(s.inizio).getTime() + 36e5).toISOString();
     righe.push("BEGIN:VEVENT", `UID:${w.serie}-${w.id}-${s.nome}@gpoggi.it`.replace(/\s+/g, ""), `DTSTAMP:${z(new Date().toISOString())}`, `DTSTART:${z(s.inizio)}`, `DTEND:${z(fine)}`,
       `SUMMARY:${w.serie === "f1" ? "F1" : "MotoGP"} · ${s.nome} · ${w.nome}`, `LOCATION:${(w.circuito || "") + (w.paese ? ", " + w.paese : "")}`.replace(/,/g, "\\,"),
@@ -111,6 +116,7 @@ function icsDi(lista, tutti = false) {
 }
 
 function dettaglio() {
+  queueMicrotask(() => document.querySelectorAll(".ag-includi").forEach((el) => { el.textContent = `Nel file: ${elencoFile()} (puoi cambiarlo in fondo, in «Porta il calendario sul telefono»).`; }));
   const box = document.getElementById("dettaglio");
   const mappa = perGiorno();
   const ev = mappa[scelto] || [];
@@ -129,7 +135,7 @@ function dettaglio() {
       <p class="muted" style="margin:0 0 10px;font-size:13px">${esc(w.circuito || "")}${w.paese ? " · " + esc(w.paese) : ""}</p>
       ${Object.keys(giorni).sort().map((k) => `<div class="ag-wk-giorno${k === scelto ? " evid" : ""}"><b>${new Date(k + "T12:00:00").toLocaleDateString("it-IT", { weekday: "short", day: "numeric", month: "short" })}</b>
         ${giorni[k].map((s) => `<div class="ag-sessione"><span>${esc(s.nome)}</span><span>${s.senzaOra ? "" : ora(s.inizio)}</span></div>`).join("")}</div>`).join("")}${finito(w) && INFO.report[w.serie + "|" + w.id] ? `<div class="ag-commento"><b>Com'è andata</b><p>${esc(INFO.report[w.serie + "|" + w.id])}</p></div>` : ""}
-      <div class="ag-wk-azioni">${finito(w) ? "" : `<button class="quiz-avanti ag-scarica" data-w="${esc(w.serie + "|" + w.id)}">Aggiungi al calendario</button>`}${
+      <div class="ag-wk-azioni">${finito(w) ? "" : `<button class="quiz-avanti ag-scarica" data-w="${esc(w.serie + "|" + w.id)}">Aggiungi al calendario</button><span class="ag-includi muted"></span>`}${
         w.serie === "f1" ? `<a class="${finito(w) ? "quiz-avanti ag-risultati" : "accent"}" href="gara.html?id=${w.id}">${finito(w) ? "Vai ai risultati" : "Pagina del weekend →"}</a>`
         : `<a class="${finito(w) ? "quiz-avanti ag-risultati" : "accent"}" href="${finito(w) ? "gara-moto.html?gp=" + encodeURIComponent(w.id) : "gara-moto.html?gp=" + encodeURIComponent(w.id)}">${finito(w) ? "Vai ai risultati" : "Pagina del weekend →"}</a>`}</div>
     </article>`;
@@ -165,7 +171,7 @@ function prossimiEventi() {
 
 function conteggi() {
   const da = (serie) => weekend.filter((w) => !finito(w) && !w.passato && (!serie || w.serie === serie));
-  const n = (l) => l.reduce((t, w) => t + w.sessioni.filter(mostra).length, 0);
+  const n = (l) => l.reduce((t, w) => t + w.sessioni.filter(nelCal).length, 0);
   document.getElementById("n-f1").textContent = `${da("f1").length} weekend, ${n(da("f1"))} sessioni.`;
   document.getElementById("n-moto").textContent = `${da("moto").length} weekend da disputare, ${n(da("moto"))} sessioni.`;
   document.getElementById("n-tutto").textContent = `${n(da())} sessioni in un solo calendario.`;
@@ -174,6 +180,10 @@ function conteggi() {
 function controlli() {
   document.getElementById("tipi").innerHTML = TIPI.map(([k, nome]) => `<button type="button" class="chip-tipo${visibili[k] ? " attivo" : ""}" data-t="${k}" aria-pressed="${!!visibili[k]}">${nome}</button>`).join("");
   document.getElementById("fuso").innerHTML = FUSI.map(([z, nome]) => `<option value="${z}"${z === TZ ? " selected" : ""}>${nome}${z === "Europe/Rome" ? " (predefinito)" : ""}</option>`).join("");
+}
+function controlliScarica() {
+  document.getElementById("scarica-tipi").innerHTML = TIPI.map(([k, nome]) => `<label class="scarica-tipo"><input type="checkbox" data-t="${k}"${nelFile[k] ? " checked" : ""}><span>${nome}</span></label>`).join("");
+  document.querySelectorAll(".ag-includi").forEach((el) => { el.textContent = `Nel file: ${elencoFile()}.`; });
 }
 function ridisegna() { disegnaMese(); dettaglio(); prossimiEventi(); conteggi(); }
 
@@ -185,7 +195,13 @@ try {
   INFO.mappe = mappeMoto; INFO.f1 = Object.fromEntries(eventi.map((g) => [g.id, g]));
   weekend = costruisci(eventi, moto, gareMoto);
   prossimiEventi();
-  controlli(); conteggi();
+  controlli(); controlliScarica(); conteggi();
+  document.getElementById("scarica-tipi").addEventListener("change", (e) => {
+    const c = e.target.closest("input[data-t]"); if (!c) return;
+    nelFile[c.dataset.t] = c.checked;
+    if (!Object.values(nelFile).some(Boolean)) { nelFile[c.dataset.t] = true; c.checked = true; }   // almeno un tipo di sessione resta scelto
+    memo("cal-scarica", JSON.stringify(nelFile)); controlliScarica(); conteggi();
+  });
   document.getElementById("tipi").addEventListener("click", (e) => {
     const b = e.target.closest(".chip-tipo"); if (!b) return;
     visibili[b.dataset.t] = !visibili[b.dataset.t];

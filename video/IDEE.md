@@ -23,3 +23,8 @@ autore e licenza. I percorsi nello script puntano alla cartella di lavoro e vann
 ## Da non fare
 - Non scrivere la causa di un ritiro o commenti sulle gomme se non c'è una fonte verificabile.
 - Non usare foto senza credito in video.
+
+## Logo per serie nei video di anteprima
+- F1: logo con circuito di Monza e sola monoposto (`auto-gp-scuro.svg`).
+- MotoGP: logo con circuito del Mugello e sola moto (`moto-gp-scuro.svg`).
+- `anteprima.py` e `notizia.py` scelgono il logo dall'argomento `f1|moto`.

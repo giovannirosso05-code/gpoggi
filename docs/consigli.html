@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{var t=null,q=/[?&]tema=(light|dark)/.exec(location.search);if(q)t=q[1];try{if(t)localStorage.setItem("tema",t);else t=localStorage.getItem("tema")}catch(e){}if(!t){var m=/(?:^|;)gpoggi-tema=(light|dark)/.exec(window.name);t=m&&m[1]}document.documentElement.dataset.theme=t||"light"}catch(e){document.documentElement.dataset.theme="light"}</script>
+<link rel="icon" type="image/png" href="img/favicon-64.png?v=2">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=2">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#f5f4f0">
+<title>Consigli — GP Oggi</title>
+<meta name="description" content="Cosa guardare nel prossimo weekend di Formula 1 e MotoGP e come mandarci un consiglio. Sito non ufficiale.">
+<link rel="canonical" href="https://gpoggi.it/consigli.html">
+<meta property="og:url" content="https://gpoggi.it/consigli.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GP Oggi">
+<meta property="og:title" content="Consigli — GP Oggi">
+<meta property="og:description" content="Cosa guardare nel prossimo weekend di Formula 1 e MotoGP e come mandarci un consiglio. Sito non ufficiale.">
+<meta property="og:image" content="https://gpoggi.it/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=59">
+</head>
+<body>
+
+<header id="site-header" class="site-header"></header>
+
+<div class="container">
+  <div class="section-title" style="margin-top:32px">Consigli</div>
+  <p class="muted" style="max-width:62ch">Poco tempo? Qui trovi cosa vale la pena guardare nel prossimo weekend, e se hai un'idea per migliorare il sito puoi scrivercela.</p>
+
+  <h2 class="cons-titolo">Cosa guardare nel weekend</h2>
+  <p class="muted" id="cons-fuso" style="font-size:13px;margin:-6px 0 14px"></p>
+  <div class="cons-griglia" id="cons-weekend"></div>
+
+  <h2 class="cons-titolo">Come funziona un weekend</h2>
+  <div class="cons-come">
+    <article><span class="cd-sigla">F1</span><p>Venerdì e sabato mattina si prova (prove libere). Il sabato le <b>qualifiche</b> decidono la griglia, la domenica c'è la <b>gara</b>. Nei weekend con la sprint, il sabato c'è anche una gara breve.</p></article>
+    <article><span class="cd-sigla moto">MotoGP</span><p>Venerdì prove e qualificazioni (Q1 e Q2) per entrare nei primi. Il sabato c'è la <b>sprint</b>, mezza gara con punti, e la domenica la <b>gara</b> completa.</p></article>
+  </div>
+
+  <h2 class="cons-titolo" id="scrivici">Hai un consiglio?</h2>
+  <p class="muted" style="max-width:62ch">Una funzione che vorresti, un dato che non torna, un errore: scrivilo qui. Non chiediamo email né nome.</p>
+  <form id="cons-form" class="cons-form" hidden>
+    <label>Di cosa si tratta
+      <select name="tipo"><option value="funzione">Vorrei una funzione</option><option value="errore">C'è un errore</option><option value="altro">Altro</option></select></label>
+    <label>Il tuo consiglio
+      <textarea name="testo" rows="5" maxlength="600" required placeholder="Scrivi qui (massimo 600 caratteri)"></textarea></label>
+    <input type="text" name="sito" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+    <button type="submit" class="quiz-avanti">Invia il consiglio</button>
+    <p class="muted" id="cons-esito" role="status" style="font-size:13px"></p>
+  </form>
+  <div class="cons-dm" id="cons-dm">
+    <p class="muted" style="margin:0 0 10px">Puoi anche scriverci in messaggio privato:</p>
+    <div class="cons-dm-bottoni"><a class="quiz-avanti" href="https://www.instagram.com/gp.oggi/" target="_blank" rel="noopener">Instagram @gp.oggi</a><a class="quiz-avanti secondario" href="https://www.tiktok.com/@gp.oggi" target="_blank" rel="noopener">TikTok @gp.oggi</a></div>
+  </div>
+</div>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script type="module" src="js/consigli.js?v=59"></script>
+</body>
+</html>

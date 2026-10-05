@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{var t=null,q=/[?&]tema=(light|dark)/.exec(location.search);if(q)t=q[1];try{if(t)localStorage.setItem("tema",t);else t=localStorage.getItem("tema")}catch(e){}if(!t){var m=/(?:^|;)gpoggi-tema=(light|dark)/.exec(window.name);t=m&&m[1]}document.documentElement.dataset.theme=t||"light"}catch(e){document.documentElement.dataset.theme="light"}</script>
+<link rel="icon" type="image/png" href="img/favicon-64.png?v=2">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=2">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#f5f4f0">
+<title>Social — GP Oggi</title>
+<meta name="description" content="Seguici su Instagram e TikTok (@gp.oggi): anteprime dei Gran Premi, pronostici e notizie di Formula 1 e MotoGP. Sito non ufficiale.">
+<link rel="canonical" href="https://gpoggi.it/social.html">
+<meta property="og:url" content="https://gpoggi.it/social.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GP Oggi">
+<meta property="og:title" content="Social — GP Oggi">
+<meta property="og:description" content="Seguici su Instagram e TikTok (@gp.oggi): anteprime dei Gran Premi, pronostici e notizie di Formula 1 e MotoGP. Sito non ufficiale.">
+<meta property="og:image" content="https://gpoggi.it/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=59">
+</head>
+<body>
+
+<header id="site-header" class="site-header"></header>
+
+<div class="container">
+  <div class="section-title" style="margin-top:32px">Social</div>
+  <p class="muted" style="max-width:62ch">Anteprime dei Gran Premi, pronostici e notizie di Formula 1 e MotoGP in video brevi. Ci trovi con il nome <b>@gp.oggi</b>.</p>
+  <div class="soc-griglia">
+    <a class="soc-card" href="https://www.instagram.com/gp.oggi/" target="_blank" rel="noopener"><span class="soc-nome">Instagram</span><span class="soc-utente">@gp.oggi</span><span class="soc-cta">Apri il profilo →</span></a>
+    <a class="soc-card" href="https://www.tiktok.com/@gp.oggi" target="_blank" rel="noopener"><span class="soc-nome">TikTok</span><span class="soc-utente">@gp.oggi</span><span class="soc-cta">Apri il profilo →</span></a>
+  </div>
+  <h2 class="cons-titolo">Fai conoscere il sito</h2>
+  <p class="muted" style="max-width:62ch">Se ti piace GP Oggi, mandalo a chi segue la F1 o la MotoGP.</p>
+  <div class="cons-dm-bottoni"><button type="button" class="quiz-avanti" id="soc-condividi">Condividi gpoggi.it</button><button type="button" class="quiz-avanti secondario" id="soc-copia">Copia il link</button></div>
+  <p class="muted" id="soc-esito" role="status" style="font-size:13px"></p>
+  <p class="muted" style="font-size:12px;margin-top:28px;max-width:62ch">Account non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team. Instagram e TikTok sono marchi dei rispettivi proprietari.</p>
+</div>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script type="module" src="js/social.js?v=59"></script>
+</body>
+</html>

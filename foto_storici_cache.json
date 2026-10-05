@@ -228,6 +228,38 @@
   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Giuseppe_Farina_-_El_Gr%C3%A1fico_1750.jpg/1280px-Giuseppe_Farina_-_El_Gr%C3%A1fico_1750.jpg",
   "autore": "El Gráfico",
   "licenza": "Public domain",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Giuseppe_Farina_-_El_Gr%C3%A1fico_1750.jpg"
+  "pagina": "https://commons.wikimedia.org/wiki/File:Giuseppe_Farina_-_El_Gr%C3%A1fico_1750.jpg",
+  "file": "img/storici/36c856af5cd5f4ea.jpg"
+ },
+ "Formula 1:Phil Hill": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Phil_Hill_1991_USA_%28cropped%29.jpg/500px-Phil_Hill_1991_USA_%28cropped%29.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/8/84/Phil_Hill_1991_USA_%28cropped%29.jpg",
+  "autore": "Stuart Seeger from College Station, Texas, USA",
+  "licenza": "CC BY 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Phil_Hill_1991_USA_(cropped).jpg",
+  "file": "img/storici/b1167819eef5d015.jpg"
+ },
+ "Formula 1:Stirling Moss": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Stirling_Moss.jpg/500px-Stirling_Moss.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Stirling_Moss.jpg/1280px-Stirling_Moss.jpg",
+  "autore": "SAS Scandinavian Airlines",
+  "licenza": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Stirling_Moss.jpg",
+  "file": "img/storici/3fb2ce721efda4d1.jpg"
+ },
+ "Formula 1:David Coulthard": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/David_Coulthard_at_the_2025_Adelaide_Grand_Final_Parade_-_12.jpg/500px-David_Coulthard_at_the_2025_Adelaide_Grand_Final_Parade_-_12.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/David_Coulthard_at_the_2025_Adelaide_Grand_Final_Parade_-_12.jpg/1280px-David_Coulthard_at_the_2025_Adelaide_Grand_Final_Parade_-_12.jpg",
+  "autore": "Yu Chu Chin",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:David_Coulthard_at_the_2025_Adelaide_Grand_Final_Parade_-_12.jpg",
+  "file": "img/storici/2495364e1da18702.jpg"
+ },
+ "Formula 1:Carlos Reutemann": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Reutemann_1981.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Reutemann_1981.jpg",
+  "autore": "Unknown authorUnknown author",
+  "licenza": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Reutemann_1981.jpg"
  }
 }

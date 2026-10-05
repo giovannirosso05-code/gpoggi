@@ -21,6 +21,19 @@ export default {
       return json({ voti: JSON.parse((await env.VOTI.get("conteggio:" + gp)) || "{}") });
     }
     if (req.method !== "POST") return json({ errore: "metodo non consentito" }, 405);
+    if (url.pathname === "/consiglio") {
+      // Consigli dei visitatori: solo testo, nessun dato personale. Massimo 3 al giorno per indirizzo; si leggono nel pannello KV di Cloudflare.
+      const c = await req.json().catch(() => ({}));
+      const testo = typeof c.testo === "string" ? c.testo.trim().slice(0, 600) : "";
+      const tipo = ["funzione", "errore", "altro"].includes(c.tipo) ? c.tipo : "altro";
+      if (testo.length < 5 || c.sito) return json({ errore: "testo troppo corto" }, 400);
+      const chiave = `limite:consiglio:${await impronta((req.headers.get("CF-Connecting-IP") || "") + new Date().toISOString().slice(0, 10))}`;
+      const n = Number((await env.VOTI.get(chiave)) || 0);
+      if (n >= 3) return json({ errore: "troppi consigli oggi" }, 429);
+      await env.VOTI.put(chiave, String(n + 1), { expirationTtl: 86400 });
+      await env.VOTI.put(`consiglio:${new Date().toISOString()}:${Math.random().toString(36).slice(2, 6)}`, JSON.stringify({ tipo, testo }), { expirationTtl: 90 * 86400 });
+      return json({ ok: true });
+    }
     const { gp, scelta } = await req.json().catch(() => ({}));
     if (typeof gp !== "string" || typeof scelta !== "string" || !gp || !scelta || gp.length > 80 || scelta.length > 60) return json({ errore: "dati non validi" }, 400);
     const chiaveIp = `ip:${gp}:${await impronta(req.headers.get("CF-Connecting-IP") || "")}`;

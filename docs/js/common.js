@@ -102,6 +102,8 @@ export function renderHeader(paginaAttuale) {
     ["gare", "calendario.html", "Calendario"],
     ["notizie", "notizie.html", "Notizie"],
     ["giochi", "giochi.html", "Giochi"],
+    ["consigli", "consigli.html", "Consigli"],
+    ["social", "social.html", "Social"],
   ];
   document.getElementById("site-header").innerHTML = `
     <nav class="nav container">
@@ -145,6 +147,8 @@ export function renderFooter() {
           <li><a href="notizie.html">Notizie</a></li>
           <li><a href="confronto.html">Confronto piloti</a></li>
           <li><a href="giochi.html">Giochi</a></li>
+          <li><a href="consigli.html">Consigli</a></li>
+          <li><a href="social.html">Social</a></li>
         </ul>
       </div>
       <div class="footer-col">

@@ -57,7 +57,7 @@ SCENE = [
     {"voce": "La Moto G P ha la sua scheda, uguale a quella della Formula uno, con la classifica a colori delle marche.", "didascalia": "MotoGP · tutte le gare"},
     {"voce": "Tocca un pilota e apri la sua scheda: foto, carriera e biografia, di oggi e del passato.", "didascalia": "La scheda dei piloti"},
     {"voce": "Le classifiche di piloti e costruttori, sempre aggiornate.", "didascalia": "Classifiche"},
-    {"voce": "Il calendario ha gli orari in ora italiana, ma puoi cambiare fuso, scegliere solo qualifiche e gare, e scaricarlo sul tuo telefono.", "didascalia": "Calendario · il tuo fuso orario"},
+    {"voce": "Il calendario ha gli orari in ora italiana, ma puoi cambiare fuso, scaricarlo sul telefono scegliendo solo le sessioni che ti interessano.", "didascalia": "Calendario · il tuo fuso orario"},
     {"voce": "Ogni giorno le notizie dei due campionati, in italiano.", "didascalia": "Notizie ogni giorno"},
     {"voce": "Tutto gratis e senza registrazione. E sul sito ci sono già un sacco di giochi, che vi faremo scoprire presto.", "didascalia": "Giochi già online · presto vi raccontiamo"},
     {"voce": "E lo installi sul telefono come una vera app. Su iPhone: Condividi, poi Aggiungi alla schermata Home. Su Android: Installa app.", "didascalia": None},
@@ -282,20 +282,36 @@ async def _s_class(r, base):
 
 async def _s_cal(r, base):
     await r.tocca_link(MENU, M_CAL, menu=True)
-    await r.fermo(0.5)
-    await r.tocca_bottone('.chip-tipo[data-t="libere"]', 0, y_finestra=330)
-    await r.js("document.querySelector('.chip-tipo[data-t=\"libere\"]').click()")
-    await r.fermo(0.8)
+    await r.fermo(0.6)
+    await r.scorri(160, 1.0)
     await r.tocca_bottone("#fuso", 0, y_finestra=330)
     await r.js("(() => { const s = document.getElementById('fuso'); s.value = 'America/New_York'; s.dispatchEvent(new Event('change', {bubbles: true})); })()")
-    await r.fermo(0.9)
+    await r.fermo(1.0)
     await r.js("(() => { const s = document.getElementById('fuso'); s.value = 'Europe/Rome'; s.dispatchEvent(new Event('change', {bubbles: true})); })()")
-    await r.js("document.querySelector('.chip-tipo[data-t=\"libere\"]').click()")
     await r.fermo(0.3)
+    await r.scorri(0, 0.8)
     await r.tocca_bottone("#vai-scarica", 0, y_finestra=300)
-    dest = await r.js("document.getElementById('scarica').getBoundingClientRect().top + window.scrollY - 120")
+    dest = await r.js("document.getElementById('scarica').getBoundingClientRect().top + window.scrollY - 140")
     await r.scorri(dest, 1.6)
-    await r.fermo(0.5)
+    await r.fermo(0.4)
+    # "Scarica .ics" apre la finestra con la scelta delle sessioni: il cursore passa dentro la finestra per restare visibile
+    await r.tocca_bottone('[data-ics="f1"]', 0, y_finestra=380)
+    await r.js("document.querySelector('[data-ics=\"f1\"]').click()")
+    await r.fermo(0.6)
+    await r.js("(() => { const d = document.querySelector('dialog[open]'); for (const id of ['demo-onda', 'demo-cursore', 'demo-didascalia']) d.appendChild(document.getElementById(id)); })()")
+
+    async def tocca_in_finestra(selettore):
+        x, y = await r.centro(selettore, 0, doc=False)
+        await r.muovi(x, y, 0.6)
+        await r.tocca()
+
+    await tocca_in_finestra('.dlg-sessioni input[data-t="libere"]')
+    await r.js("document.querySelector('.dlg-sessioni input[data-t=\"libere\"]').click()")
+    await r.fermo(1.0)
+    await tocca_in_finestra('.dlg-sessioni button[value="annulla"]')
+    await r.js("for (const id of ['demo-onda', 'demo-cursore', 'demo-didascalia']) document.body.appendChild(document.getElementById(id))")
+    await r.js("document.querySelector('.dlg-sessioni button[value=\"annulla\"]').click()")
+    await r.fermo(0.6)
 
 
 async def _s_news(r, base):

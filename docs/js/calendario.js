@@ -11,8 +11,6 @@ const memo = (k, v) => { try { if (v === undefined) return localStorage.getItem(
 let TZ = memo("cal-fuso");
 if (!FUSI.some(([z]) => z === TZ)) TZ = "Europe/Rome";
 const TIPI = [["gara", "Gara"], ["sprint", "Sprint"], ["quali", "Qualifiche"], ["libere", "Prove libere"], ["altro", "Altro (warm-up)"]];
-let visibili = { gara: true, sprint: true, quali: true, libere: false, altro: false };
-try { const salvato = JSON.parse(memo("cal-sessioni") || "null"); if (salvato) visibili = { ...visibili, ...salvato }; } catch (e) {}
 function tipo(nome) {
   const n = nome.toLowerCase();
   if (n === "gara") return "gara";
@@ -21,12 +19,11 @@ function tipo(nome) {
   if (n.startsWith("prove libere")) return "libere";
   return "altro";
 }
-const mostra = (sess) => visibili[tipo(sess.nome)] !== false;
+const mostra = () => true;   // il calendario mostra sempre tutte le sessioni: la scelta si fa solo al momento di scaricare
 // Cosa mettere nel file del calendario: scelta a parte, fatta solo nella sezione dei download (non dipende dai tasti dell'agenda)
 let nelFile = { gara: true, sprint: true, quali: true, libere: false, altro: false };
 try { const sf = JSON.parse(memo("cal-scarica") || "null"); if (sf) nelFile = { ...nelFile, ...sf }; } catch (e) {}
 const nelCal = (sess) => nelFile[tipo(sess.nome)] !== false;
-const elencoFile = () => TIPI.filter(([k]) => nelFile[k]).map(([, n]) => n.replace(" (warm-up)", "").toLowerCase()).join(", ");
 const visibiliDi = (w) => { const l = w.sessioni.filter(mostra); return l.length ? l : w.sessioni; };
 const giorno = (iso) => new Date(iso).toLocaleDateString("sv-SE", { timeZone: TZ });          // AAAA-MM-GG in ora italiana
 const ora = (iso) => new Date(iso).toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit", timeZone: TZ });
@@ -84,13 +81,8 @@ function disegnaMese() {
   for (let d = 1; d <= giorni; d++) {
     const k = `${anno}-${String(m + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
     const ev = mappa[k] || [];
-    // per ogni serie si mostra la sessione piu' importante del giorno
-    const principali = ["f1", "moto"].map((serie) => {
-      const l = ev.filter((e) => e.w.serie === serie);
-      if (!l.length) return "";
-      const top = l.reduce((a, b) => (b.peso > a.peso ? b : a));
-      return `<span class="ag-chip ${serie}" title="${esc(top.w.nome)} · ${esc(top.nome)}">${esc(ab(top.nome))} <b>${ora(top.inizio)}</b></span>`;
-    }).join("");
+    // per ogni serie si mostrano tutte le sessioni del giorno, in ordine di orario
+    const principali = ["f1", "moto"].map((serie) => ev.filter((e) => e.w.serie === serie).map((x) => `<span class="ag-chip ${serie}" title="${esc(x.w.nome)} · ${esc(x.nome)}">${esc(ab(x.nome))} <b>${ora(x.inizio)}</b></span>`).join("")).join("");
     const punti = ["f1", "moto"].map((s) => (ev.some((e) => e.w.serie === s) ? `<i class="ag-punto ${s}"></i>` : "")).join("");
     const tn = tinta[k] ? " wk-" + [...tinta[k]].join(" wk-") : "";
     html += `<button class="ag-giorno${ev.length ? " con-eventi" : ""}${tn}${k === oggi ? " oggi" : ""}${k === scelto ? " scelto" : ""}" data-k="${k}" aria-label="${d} ${MESI[m]}${ev.length ? ", con sessioni" : ""}">
@@ -116,7 +108,6 @@ function icsDi(lista, tutti = false) {
 }
 
 function dettaglio() {
-  queueMicrotask(() => document.querySelectorAll(".ag-includi").forEach((el) => { el.textContent = `Nel file: ${elencoFile()} (puoi cambiarlo in fondo, in «Porta il calendario sul telefono»).`; }));
   const box = document.getElementById("dettaglio");
   const mappa = perGiorno();
   const ev = mappa[scelto] || [];
@@ -135,7 +126,7 @@ function dettaglio() {
       <p class="muted" style="margin:0 0 10px;font-size:13px">${esc(w.circuito || "")}${w.paese ? " · " + esc(w.paese) : ""}</p>
       ${Object.keys(giorni).sort().map((k) => `<div class="ag-wk-giorno${k === scelto ? " evid" : ""}"><b>${new Date(k + "T12:00:00").toLocaleDateString("it-IT", { weekday: "short", day: "numeric", month: "short" })}</b>
         ${giorni[k].map((s) => `<div class="ag-sessione"><span>${esc(s.nome)}</span><span>${s.senzaOra ? "" : ora(s.inizio)}</span></div>`).join("")}</div>`).join("")}${finito(w) && INFO.report[w.serie + "|" + w.id] ? `<div class="ag-commento"><b>Com'è andata</b><p>${esc(INFO.report[w.serie + "|" + w.id])}</p></div>` : ""}
-      <div class="ag-wk-azioni">${finito(w) ? "" : `<button class="quiz-avanti ag-scarica" data-w="${esc(w.serie + "|" + w.id)}">Aggiungi al calendario</button><span class="ag-includi muted"></span>`}${
+      <div class="ag-wk-azioni">${finito(w) ? "" : `<button class="quiz-avanti ag-scarica" data-w="${esc(w.serie + "|" + w.id)}">Aggiungi al calendario</button>`}${
         w.serie === "f1" ? `<a class="${finito(w) ? "quiz-avanti ag-risultati" : "accent"}" href="gara.html?id=${w.id}">${finito(w) ? "Vai ai risultati" : "Pagina del weekend →"}</a>`
         : `<a class="${finito(w) ? "quiz-avanti ag-risultati" : "accent"}" href="${finito(w) ? "gara-moto.html?gp=" + encodeURIComponent(w.id) : "gara-moto.html?gp=" + encodeURIComponent(w.id)}">${finito(w) ? "Vai ai risultati" : "Pagina del weekend →"}</a>`}</div>
     </article>`;
@@ -169,21 +160,40 @@ function prossimiEventi() {
   }).join("") || `<p class="muted">Nessun evento in programma.</p>`;
 }
 
+// Prima di ogni download si chiede quali sessioni mettere nel file (la scelta resta memorizzata per la volta dopo)
+function chiediSessioni() {
+  return new Promise((risolvi) => {
+    const dlg = document.createElement("dialog");
+    dlg.className = "dlg-sessioni";
+    dlg.innerHTML = `<form method="dialog"><h3>Quali sessioni vuoi nel calendario?</h3>
+      <p class="muted" style="margin:0 0 12px;font-size:13px">Per la maggior parte delle persone bastano gara, sprint e qualifiche.</p>
+      <div class="dlg-lista">${TIPI.map(([k, nome]) => `<label class="scarica-tipo"><input type="checkbox" data-t="${k}"${nelFile[k] ? " checked" : ""}><span>${nome}</span></label>`).join("")}</div>
+      <div class="dlg-azioni"><button value="annulla" class="quiz-avanti secondario" formnovalidate>Annulla</button><button value="ok" class="quiz-avanti" id="dlg-ok">Scarica</button></div></form>`;
+    document.body.appendChild(dlg);
+    const ok = dlg.querySelector("#dlg-ok");
+    const controlla = () => { ok.disabled = !dlg.querySelector("input:checked"); };
+    dlg.addEventListener("change", controlla);
+    controlla();
+    dlg.addEventListener("close", () => {
+      const sel = dlg.returnValue === "ok" ? Object.fromEntries(TIPI.map(([k]) => [k, !!dlg.querySelector(`input[data-t="${k}"]`).checked])) : null;
+      dlg.remove();
+      if (sel) { nelFile = sel; memo("cal-scarica", JSON.stringify(sel)); }
+      risolvi(sel);
+    });
+    dlg.showModal();
+  });
+}
+
 function conteggi() {
   const da = (serie) => weekend.filter((w) => !finito(w) && !w.passato && (!serie || w.serie === serie));
-  const n = (l) => l.reduce((t, w) => t + w.sessioni.filter(nelCal).length, 0);
+  const n = (l) => l.reduce((t, w) => t + w.sessioni.length, 0);
   document.getElementById("n-f1").textContent = `${da("f1").length} weekend, ${n(da("f1"))} sessioni.`;
   document.getElementById("n-moto").textContent = `${da("moto").length} weekend da disputare, ${n(da("moto"))} sessioni.`;
   document.getElementById("n-tutto").textContent = `${n(da())} sessioni in un solo calendario.`;
 }
 
 function controlli() {
-  document.getElementById("tipi").innerHTML = TIPI.map(([k, nome]) => `<button type="button" class="chip-tipo${visibili[k] ? " attivo" : ""}" data-t="${k}" aria-pressed="${!!visibili[k]}">${nome}</button>`).join("");
   document.getElementById("fuso").innerHTML = FUSI.map(([z, nome]) => `<option value="${z}"${z === TZ ? " selected" : ""}>${nome}${z === "Europe/Rome" ? " (predefinito)" : ""}</option>`).join("");
-}
-function controlliScarica() {
-  document.getElementById("scarica-tipi").innerHTML = TIPI.map(([k, nome]) => `<label class="scarica-tipo"><input type="checkbox" data-t="${k}"${nelFile[k] ? " checked" : ""}><span>${nome}</span></label>`).join("");
-  document.querySelectorAll(".ag-includi").forEach((el) => { el.textContent = `Nel file: ${elencoFile()}.`; });
 }
 function ridisegna() { disegnaMese(); dettaglio(); prossimiEventi(); conteggi(); }
 
@@ -195,22 +205,11 @@ try {
   INFO.mappe = mappeMoto; INFO.f1 = Object.fromEntries(eventi.map((g) => [g.id, g]));
   weekend = costruisci(eventi, moto, gareMoto);
   prossimiEventi();
-  controlli(); controlliScarica(); conteggi();
-  document.getElementById("scarica-tipi").addEventListener("change", (e) => {
-    const c = e.target.closest("input[data-t]"); if (!c) return;
-    nelFile[c.dataset.t] = c.checked;
-    if (!Object.values(nelFile).some(Boolean)) { nelFile[c.dataset.t] = true; c.checked = true; }   // almeno un tipo di sessione resta scelto
-    memo("cal-scarica", JSON.stringify(nelFile)); controlliScarica(); conteggi();
-  });
-  document.getElementById("tipi").addEventListener("click", (e) => {
-    const b = e.target.closest(".chip-tipo"); if (!b) return;
-    visibili[b.dataset.t] = !visibili[b.dataset.t];
-    if (!Object.values(visibili).some(Boolean)) visibili[b.dataset.t] = true;   // almeno un tipo di sessione resta acceso
-    memo("cal-sessioni", JSON.stringify(visibili)); controlli(); ridisegna();
-  });
+  controlli(); conteggi();
   document.getElementById("fuso").addEventListener("change", (e) => { TZ = e.target.value; memo("cal-fuso", TZ); ridisegna(); });
-  document.getElementById("scarica").addEventListener("click", (e) => {
+  document.getElementById("scarica").addEventListener("click", async (e) => {
     const b = e.target.closest("[data-ics]"); if (!b) return;
+    if (!(await chiediSessioni())) return;
     const serie = b.dataset.ics;
     const lista = weekend.filter((w) => !finito(w) && !w.passato && (serie === "tutto" || w.serie === serie));
     const url = URL.createObjectURL(new Blob([icsDi(lista)], { type: "text/calendar" }));
@@ -229,8 +228,9 @@ try {
   document.getElementById("mese-oggi").addEventListener("click", () => { const o = giorno(new Date().toISOString()); mese = [Number(o.slice(0, 4)), Number(o.slice(5, 7)) - 1]; scelto = o; disegnaMese(); dettaglio(); });
   document.getElementById("agenda").addEventListener("click", (e) => { const b = e.target.closest(".ag-giorno[data-k]"); if (!b) return; scelto = scelto === b.dataset.k ? null : b.dataset.k; disegnaMese(); dettaglio(); if (scelto && matchMedia("(max-width: 900px)").matches) document.getElementById("dettaglio").scrollIntoView({ behavior: "smooth", block: "nearest" }); });
   document.getElementById("filtri").addEventListener("click", (e) => { const b = e.target.closest(".chip-serie"); if (!b) return; attive[b.dataset.s] = !attive[b.dataset.s]; b.classList.toggle("attivo", attive[b.dataset.s]); b.setAttribute("aria-pressed", attive[b.dataset.s]); disegnaMese(); dettaglio(); });
-  document.getElementById("dettaglio").addEventListener("click", (e) => {
+  document.getElementById("dettaglio").addEventListener("click", async (e) => {
     const b = e.target.closest(".ag-scarica"); if (!b) return;
+    if (!(await chiediSessioni())) return;
     const [serie, id] = b.dataset.w.split("|");
     const w = weekend.find((x) => x.serie === serie && String(x.id) === id);
     const url = URL.createObjectURL(new Blob([icsWeekend(w)], { type: "text/calendar" }));

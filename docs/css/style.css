@@ -1116,3 +1116,51 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
   .brand-logo { height: 46px; }
   .nav-links a.nav-giochi { padding: 8px 9px; font-size: 9px; }
 }
+
+/* Telefoni stretti (320-400 px): nome, lingua e tema restano sulla stessa riga */
+@media (max-width: 400px) {
+  .nav { padding: 8px 12px; gap: 4px; }
+  .brand { font-size: 16px; gap: 6px; }
+  .brand-logo { height: 34px; }
+  .nav .lingua { gap: 4px; }
+  .nav .lingua select { width: 96px; font-size: 12px; padding: 5px 4px; }
+  .nav .lingua svg { display: none; }
+  .nav .tema-btn { width: 34px; height: 34px; }
+}
+
+/* Calendario: finestra "quali sessioni vuoi?" prima del download */
+.dlg-sessioni { border: 2px solid #e8352f; border-radius: 16px; padding: 22px; max-width: min(92vw, 420px); background: var(--bg, #fff); color: var(--text, #111); box-shadow: 0 20px 60px rgba(0, 0, 0, .4); }
+.dlg-sessioni::backdrop { background: rgba(10, 10, 12, .6); }
+.dlg-sessioni h3 { margin: 0 0 6px; font-family: var(--font-display); text-transform: uppercase; font-size: 22px; }
+.dlg-lista { display: flex; flex-direction: column; gap: 12px; margin: 0 0 18px; }
+.dlg-lista .scarica-tipo { font-size: 16px; }
+.dlg-azioni { display: flex; gap: 10px; justify-content: flex-end; }
+.dlg-azioni button { margin: 0; }
+.dlg-azioni button:disabled { opacity: .45; cursor: not-allowed; }
+
+/* Computer: il menu (Home, Formula 1...) parte subito dopo il nome; lingua e tema restano a destra */
+@media (min-width: 981px) {
+  .site-header .nav { justify-content: flex-start; gap: 36px; }
+  .site-header .nav-destra { flex: 1; min-width: 0; justify-content: flex-start; }
+  .site-header .nav-links { margin-right: auto; }
+}
+@media (min-width: 981px) and (max-width: 1280px) { .site-header .nav { gap: 18px; } }
+@media (min-width: 981px) and (max-width: 1110px) {
+  .site-header .nav { gap: 12px; }
+  .brand { font-size: 17px; }
+  .nav-links { gap: 8px; font-size: 11.5px; letter-spacing: .01em; }
+  .nav-links a.nav-giochi { padding: 7px 7px; }
+  .nav .lingua svg { display: none; }
+  .nav .lingua select { max-width: 98px; padding: 5px 4px; font-size: 12px; }
+}
+
+/* MotoGP in blu: la sigla di ogni evento e i bordi si leggono meglio del nero */
+:root { --moto-blu: #1f5fd1; }
+.cd-sigla.moto, :root[data-theme="dark"] .cd-barra .cd-sigla.moto { background: var(--moto-blu); color: #fff; }
+.pe-card.moto, :root[data-theme="light"] .pe-card.moto, .cons-card.moto, .soc-card:nth-child(2) { border-top-color: var(--moto-blu); }
+:root[data-theme="light"] .pe-card.moto { border-top: 5px solid var(--moto-blu); }
+.prono-col[data-serie="motogp"], .ultima-gara.serie-moto { border-top-color: var(--moto-blu); }
+.moto-prossimo { border-left-color: var(--moto-blu); }
+.ag-chip.moto { background: rgba(31, 95, 209, .13); color: var(--moto-blu); }
+:root[data-theme="dark"] .ag-chip.moto { background: rgba(80, 140, 255, .18); color: #8fb6ff; }
+.chip-serie.moto.attivo { background: var(--moto-blu); border-color: var(--moto-blu); color: #fff; }

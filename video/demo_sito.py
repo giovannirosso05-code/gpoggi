@@ -1,6 +1,6 @@
 """Video "come funziona GP Oggi" (~1 minuto) per TikTok e Instagram: tour del sito vero con una freccia che si muove e tocca,
 didascalia per ogni sezione, voce Diego sincronizzata scena per scena, chiusura con installazione come app e indirizzo.
-Stile del video demo di MMA Oggi. Senza parlare dei giochi: la scheda Giochi si vede solo con i nomi, come anticipazione.
+Stile del video demo di MMA Oggi. Dei giochi si accenna soltanto, a voce: la scheda Giochi si vede solo con i nomi, come anticipazione.
 
 Ogni fotogramma viene preparato (cursore, scroll) e poi catturato: il video e' fluido a prescindere dalla velocita' della macchina.
 Viewport 360x640 a densita' 3 = esattamente 1080x1920.
@@ -59,7 +59,7 @@ SCENE = [
     {"voce": "Le classifiche di piloti e costruttori, sempre aggiornate.", "didascalia": "Classifiche"},
     {"voce": "Il calendario ha gli orari in ora italiana, ma puoi cambiare fuso, scegliere solo qualifiche e gare, e scaricarlo sul tuo telefono.", "didascalia": "Calendario · il tuo fuso orario"},
     {"voce": "Ogni giorno le notizie dei due campionati, in italiano.", "didascalia": "Notizie ogni giorno"},
-    {"voce": "Tutto gratis, e senza registrazione.", "didascalia": "Presto altre novità…"},
+    {"voce": "Tutto gratis e senza registrazione. E sul sito ci sono già un sacco di giochi, che vi faremo scoprire presto.", "didascalia": "Giochi già online · presto vi raccontiamo"},
     {"voce": "E lo installi sul telefono come una vera app. Su iPhone: Condividi, poi Aggiungi alla schermata Home. Su Android: Installa app.", "didascalia": None},
     {"voce": "G P Oggi. Lo trovi su G P Oggi punto it.", "didascalia": None},
 ]

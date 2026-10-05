@@ -92,6 +92,23 @@ async function renderCountdown() {
   setInterval(tick, 1000);
 }
 
+// Sbarretta sotto le schede del menu (solo telefono): la parte colorata mostra quanto si vede e dove ci si trova
+function sbarrettaSchede() {
+  const lista = document.querySelector("#site-header .nav-links"), barra = document.getElementById("nav-scrollbar");
+  if (!lista || !barra) return;
+  const thumb = barra.querySelector("i");
+  const aggiorna = () => {
+    const tot = lista.scrollWidth, vis = lista.clientWidth;
+    barra.classList.toggle("tutto", tot <= vis + 2);
+    thumb.style.width = Math.max(12, (vis / tot) * 100) + "%";
+    thumb.style.left = (lista.scrollLeft / tot) * 100 + "%";
+  };
+  lista.addEventListener("scroll", aggiorna, { passive: true });
+  addEventListener("resize", aggiorna);
+  aggiorna();
+  setTimeout(aggiorna, 400);
+}
+
 export function renderHeader(paginaAttuale) {
   const voci = [
     ["home", "index.html", "Home"],
@@ -115,7 +132,9 @@ export function renderHeader(paginaAttuale) {
         ${selettoreLingua()}
         <button type="button" class="tema-btn" id="tema-btn" aria-label="Cambia tema chiaro o scuro">${ICONA_LUNA}${ICONA_SOLE}</button>
       </div>
+      <div class="nav-scrollbar" id="nav-scrollbar" aria-hidden="true"><i></i></div>
     </nav>`;
+  sbarrettaSchede();
   barraIndietro();
   if (paginaAttuale !== "home") renderCountdown();
   const selLingua = document.getElementById("lingua");
@@ -312,7 +331,7 @@ export function dataIt(iso) {
 
 // Votazioni del pronostico. Con VOTI_URL vuoto il voto resta nel browser; con l'indirizzo del Worker (vedi worker/voti.js)
 // i voti si sommano tra tutti i visitatori e si vedono le percentuali.
-export const VOTI_URL = "";
+export const VOTI_URL = "https://gpoggivotti.giovannirosso05.workers.dev";
 export function votoSalvato(chiave) {
   try { return localStorage.getItem("voto:" + chiave); } catch (e) { return null; }
 }

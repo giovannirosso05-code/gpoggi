@@ -16,6 +16,7 @@ export default {
   async fetch(req, env) {
     if (req.method === "OPTIONS") return new Response(null, { headers: CORS });
     const url = new URL(req.url);
+    if (req.method === "GET" && url.pathname === "/consiglio") return json({ consigli: true });   // il sito lo usa per sapere se il modulo dei consigli funziona
     if (req.method === "GET") {
       const gp = (url.searchParams.get("gp") || "").slice(0, 80);
       return json({ voti: JSON.parse((await env.VOTI.get("conteggio:" + gp)) || "{}") });

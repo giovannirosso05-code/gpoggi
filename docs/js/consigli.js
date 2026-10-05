@@ -48,14 +48,16 @@ try {
 
 // Modulo: attivo solo quando il servizio dei voti (Cloudflare Worker) è collegato, altrimenti restano i messaggi privati
 const form = document.getElementById("cons-form");
-if (VOTI_URL) {
+const base = VOTI_URL.replace(/\/$/, "");
+const attivo = VOTI_URL ? await fetch(base + "/consiglio").then((r) => r.json()).then((d) => !!d.consigli).catch(() => false) : false;
+if (attivo) {
   form.hidden = false;
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const esito = document.getElementById("cons-esito"), d = Object.fromEntries(new FormData(form));
     esito.textContent = "Invio…";
     try {
-      const r = await fetch(VOTI_URL.replace(/\/$/, "") + "/consiglio", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(d) });
+      const r = await fetch(base + "/consiglio", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(d) });
       if (r.status === 429) { esito.textContent = "Hai già mandato qualche consiglio oggi: riprova domani."; return; }
       if (!r.ok) throw new Error();
       form.reset(); esito.textContent = "Grazie! Il consiglio è arrivato.";

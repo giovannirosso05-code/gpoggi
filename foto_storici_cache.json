@@ -204,6 +204,30 @@
   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Rindt_at_1970_Dutch_Grand_Prix_%282C%29.jpg/1280px-Rindt_at_1970_Dutch_Grand_Prix_%282C%29.jpg",
   "autore": "Evers, Joost / Anefo / neg. stroken, 1945-1989, 2.24.01.05, item number 923-6109",
   "licenza": "CC BY-SA 3.0 nl",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Rindt_at_1970_Dutch_Grand_Prix_(2C).jpg"
+  "pagina": "https://commons.wikimedia.org/wiki/File:Rindt_at_1970_Dutch_Grand_Prix_(2C).jpg",
+  "file": "img/storici/3dcb56b30fe88fb6.jpg"
+ },
+ "Formula 1:John Surtees": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/John_Surtees.JPG",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/c/c3/John_Surtees.JPG",
+  "autore": "Autore sconosciuto",
+  "licenza": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:John_Surtees.JPG",
+  "file": "img/storici/668ec4ea98794ea8.jpg"
+ },
+ "Formula 1:Keke Rosberg": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Anefo_932-2378_Keke_Rosberg%2C_Zandvoort%2C_03-07-1982_-_Restoration.jpg/500px-Anefo_932-2378_Keke_Rosberg%2C_Zandvoort%2C_03-07-1982_-_Restoration.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Anefo_932-2378_Keke_Rosberg%2C_Zandvoort%2C_03-07-1982_-_Restoration.jpg/1280px-Anefo_932-2378_Keke_Rosberg%2C_Zandvoort%2C_03-07-1982_-_Restoration.jpg",
+  "autore": "Hans van Dijk for Anefo \n\nMinor restoration by Adam Cuerden: No need to credit me.",
+  "licenza": "CC0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Anefo_932-2378_Keke_Rosberg,_Zandvoort,_03-07-1982_-_Restoration.jpg",
+  "file": "img/storici/bde92ee4363cf147.jpg"
+ },
+ "Formula 1:Nino Farina": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Giuseppe_Farina_-_El_Gr%C3%A1fico_1750.jpg/500px-Giuseppe_Farina_-_El_Gr%C3%A1fico_1750.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Giuseppe_Farina_-_El_Gr%C3%A1fico_1750.jpg/1280px-Giuseppe_Farina_-_El_Gr%C3%A1fico_1750.jpg",
+  "autore": "El Gráfico",
+  "licenza": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Giuseppe_Farina_-_El_Gr%C3%A1fico_1750.jpg"
  }
 }

@@ -1018,3 +1018,11 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 :root[data-theme="light"] .pe-card.f1 { border-top: 5px solid #e8352f; }
 :root[data-theme="light"] .pe-card.moto { border-top: 5px solid #111115; }
 :root[data-theme="light"] .pe-mappa { background: #eceae3; }
+
+/* Calendario: scelta delle sessioni e del fuso orario */
+.agenda-opzioni { display: flex; flex-wrap: wrap; gap: 12px 18px; align-items: center; margin: 4px 0 18px; }
+.agenda-tipi { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip-tipo { font: inherit; font-size: 13px; font-weight: 600; padding: 7px 13px; border-radius: 999px; border: 1.5px solid var(--border); background: transparent; color: var(--muted, #6b6a72); cursor: pointer; }
+.chip-tipo.attivo { background: var(--text); color: var(--bg); border-color: var(--text); }
+.agenda-fuso { font-size: 13px; color: var(--muted, #6b6a72); display: flex; align-items: center; gap: 8px; }
+.agenda-fuso select { font: inherit; font-size: 13px; padding: 7px 10px; border-radius: 10px; border: 1.5px solid var(--border); background: var(--card, var(--bg)); color: var(--text); max-width: 100%; }

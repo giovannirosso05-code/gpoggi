@@ -3,7 +3,26 @@ import { renderHeader, renderFooter, fetchJSON, esc, img, credito, mappeMotoMap 
 renderHeader("gare");
 renderFooter();
 
-const TZ = "Europe/Rome";
+// Fuso orario scelto dal visitatore: all'inizio sempre quello italiano. Le sessioni mostrate si scelgono con i tasti sopra il calendario.
+const FUSI = [["Europe/Rome", "Italia"], ["Europe/London", "Regno Unito / Portogallo"], ["Europe/Athens", "Grecia / Finlandia"], ["Europe/Moscow", "Mosca"], ["America/Sao_Paulo", "Brasile (San Paolo)"],
+  ["America/New_York", "USA costa est"], ["America/Chicago", "USA centro"], ["America/Los_Angeles", "USA costa ovest"], ["America/Mexico_City", "Messico"], ["Asia/Dubai", "Emirati / Oman"],
+  ["Asia/Kolkata", "India"], ["Asia/Bangkok", "Thailandia / Indonesia (Giava)"], ["Asia/Singapore", "Singapore / Malesia"], ["Asia/Tokyo", "Giappone"], ["Australia/Sydney", "Australia (Sydney)"], ["Pacific/Auckland", "Nuova Zelanda"]];
+const memo = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) {} return null; };
+let TZ = memo("cal-fuso");
+if (!FUSI.some(([z]) => z === TZ)) TZ = "Europe/Rome";
+const TIPI = [["gara", "Gara"], ["sprint", "Sprint"], ["quali", "Qualifiche"], ["libere", "Prove libere"], ["altro", "Altro (warm-up)"]];
+let visibili = { gara: true, sprint: true, quali: true, libere: false, altro: false };
+try { const salvato = JSON.parse(memo("cal-sessioni") || "null"); if (salvato) visibili = { ...visibili, ...salvato }; } catch (e) {}
+function tipo(nome) {
+  const n = nome.toLowerCase();
+  if (n === "gara") return "gara";
+  if (n.startsWith("sprint") && !n.includes("qualifiche")) return "sprint";
+  if (n.includes("qualifiche")) return "quali";
+  if (n.startsWith("prove libere")) return "libere";
+  return "altro";
+}
+const mostra = (sess) => visibili[tipo(sess.nome)] !== false;
+const visibiliDi = (w) => { const l = w.sessioni.filter(mostra); return l.length ? l : w.sessioni; };
 const giorno = (iso) => new Date(iso).toLocaleDateString("sv-SE", { timeZone: TZ });          // AAAA-MM-GG in ora italiana
 const ora = (iso) => new Date(iso).toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit", timeZone: TZ });
 const MESI = ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"];
@@ -39,7 +58,7 @@ function perGiorno() {
   const mappa = {};
   for (const w of weekend) {
     if (!attive[w.serie]) continue;
-    for (const s of w.sessioni) (mappa[giorno(s.inizio)] ||= []).push({ ...s, w });
+    for (const s of w.sessioni.filter(mostra)) (mappa[giorno(s.inizio)] ||= []).push({ ...s, w });
   }
   for (const k of Object.keys(mappa)) mappa[k].sort((a, b) => new Date(a.inizio) - new Date(b.inizio));
   return mappa;
@@ -54,7 +73,7 @@ function disegnaMese() {
   const oggi = giorno(new Date().toISOString());
   const mappa = perGiorno();
   const tinta = {};
-  for (const w of weekend) { if (!attive[w.serie]) continue; const ks = w.sessioni.map((s) => giorno(s.inizio)).sort(); for (const k of ks) (tinta[k] ||= new Set()).add(w.serie); }
+  for (const w of weekend) { if (!attive[w.serie]) continue; const ks = w.sessioni.filter(mostra).map((s) => giorno(s.inizio)).sort(); for (const k of ks) (tinta[k] ||= new Set()).add(w.serie); }
   let html = GIORNI.map((g) => `<div class="ag-sett">${g}</div>`).join("");
   for (let i = 0; i < offset; i++) html += `<div class="ag-giorno vuoto"></div>`;
   for (let d = 1; d <= giorni; d++) {
@@ -75,10 +94,13 @@ function disegnaMese() {
   document.getElementById("agenda").innerHTML = `<div class="ag-griglia">${html}</div>`;
 }
 
-function icsWeekend(w) {
+function icsWeekend(w, tutti = false) { return icsDi([w], tutti); }
+
+// Calendario da scaricare con le sole sessioni scelte (gli orari sono in UTC: l'app calendario li mostra nel fuso del telefono)
+function icsDi(lista, tutti = false) {
   const z = (iso) => new Date(iso).toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
   const righe = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//GP Oggi//Calendario//IT", "CALSCALE:GREGORIAN"];
-  for (const s of w.sessioni) {
+  for (const w of lista) for (const s of tutti ? w.sessioni : w.sessioni.filter(mostra)) {
     const fine = new Date(s.fine) > new Date(s.inizio) ? s.fine : new Date(new Date(s.inizio).getTime() + 36e5).toISOString();
     righe.push("BEGIN:VEVENT", `UID:${w.serie}-${w.id}-${s.nome}@gpoggi.it`.replace(/\s+/g, ""), `DTSTAMP:${z(new Date().toISOString())}`, `DTSTART:${z(s.inizio)}`, `DTEND:${z(fine)}`,
       `SUMMARY:${w.serie === "f1" ? "F1" : "MotoGP"} · ${s.nome} · ${w.nome}`, `LOCATION:${(w.circuito || "") + (w.paese ? ", " + w.paese : "")}`.replace(/,/g, "\\,"),
@@ -101,7 +123,7 @@ function dettaglio() {
   const weekends = [...new Map(ev.map((e) => [e.w.serie + e.w.id, e.w])).values()];
   box.innerHTML = weekends.map((w) => {
     const giorni = {};
-    for (const s of w.sessioni) (giorni[giorno(s.inizio)] ||= []).push(s);
+    for (const s of w.sessioni.filter(mostra)) (giorni[giorno(s.inizio)] ||= []).push(s);
     return `<article class="ag-wk ${w.serie}">
       <div class="ag-wk-testa"><span class="cd-sigla ${w.serie === "moto" ? "moto" : ""}">${w.serie === "f1" ? "F1" : "MotoGP"}</span><h3>${esc(w.nome)}</h3></div>
       <p class="muted" style="margin:0 0 10px;font-size:13px">${esc(w.circuito || "")}${w.paese ? " · " + esc(w.paese) : ""}</p>
@@ -126,7 +148,7 @@ function prossimiEventi() {
   if (!el) return;
   const lista = weekend.filter((w) => !finito(w)).sort((a, b) => new Date(a.sessioni[0].inizio) - new Date(b.sessioni[0].inizio)).slice(0, 6);
   const giorniA = (w) => Math.max(0, Math.ceil((new Date(w.sessioni[0].inizio) - Date.now()) / 864e5));
-  const periodo = (w) => { const a = w.sessioni[0].inizio, b = w.sessioni[w.sessioni.length - 1].fine; const f = (x) => new Date(x).toLocaleDateString("it-IT", { day: "numeric", month: "short", timeZone: TZ }); return `${f(a)} – ${f(b)}`; };
+  const periodo = (w) => { const vs = visibiliDi(w); const a = vs[0].inizio, b = vs[vs.length - 1].fine; const f = (x) => new Date(x).toLocaleDateString("it-IT", { day: "numeric", month: "short", timeZone: TZ }); return `${f(a)} – ${f(b)}`; };
   el.innerHTML = lista.map((w) => {
     const mappa = w.serie === "f1" ? (INFO.f1[w.id] || {}).mappa : INFO.mappe[w.circuito];
     const gara = w.sessioni[w.sessioni.length - 1];
@@ -141,6 +163,20 @@ function prossimiEventi() {
   }).join("") || `<p class="muted">Nessun evento in programma.</p>`;
 }
 
+function conteggi() {
+  const da = (serie) => weekend.filter((w) => !finito(w) && !w.passato && (!serie || w.serie === serie));
+  const n = (l) => l.reduce((t, w) => t + w.sessioni.filter(mostra).length, 0);
+  document.getElementById("n-f1").textContent = `${da("f1").length} weekend, ${n(da("f1"))} sessioni.`;
+  document.getElementById("n-moto").textContent = `${da("moto").length} weekend da disputare, ${n(da("moto"))} sessioni.`;
+  document.getElementById("n-tutto").textContent = `${n(da())} sessioni in un solo calendario.`;
+}
+
+function controlli() {
+  document.getElementById("tipi").innerHTML = TIPI.map(([k, nome]) => `<button type="button" class="chip-tipo${visibili[k] ? " attivo" : ""}" data-t="${k}" aria-pressed="${!!visibili[k]}">${nome}</button>`).join("");
+  document.getElementById("fuso").innerHTML = FUSI.map(([z, nome]) => `<option value="${z}"${z === TZ ? " selected" : ""}>${nome}${z === "Europe/Rome" ? " (predefinito)" : ""}</option>`).join("");
+}
+function ridisegna() { disegnaMese(); dettaglio(); prossimiEventi(); conteggi(); }
+
 try {
   const [eventi, moto, gareMoto, repF1, repMoto, mappeMoto] = await Promise.all([fetchJSON("data/events.json"), fetchJSON("data/motogp.json"), fetchJSON("data/motogp-gare.json").catch(() => ({})),
     fetchJSON("data/report.json").catch(() => []), fetchJSON("data/motogp-report.json").catch(() => []), mappeMotoMap()]);
@@ -149,10 +185,22 @@ try {
   INFO.mappe = mappeMoto; INFO.f1 = Object.fromEntries(eventi.map((g) => [g.id, g]));
   weekend = costruisci(eventi, moto, gareMoto);
   prossimiEventi();
-  const nf = eventi.reduce((n, g) => n + g.sessioni.length, 0), nm = moto.weekend.reduce((n, w) => n + w.sessioni.length, 0);
-  document.getElementById("n-f1").textContent = `${eventi.length} weekend, ${nf} sessioni.`;
-  document.getElementById("n-moto").textContent = `${moto.weekend.length} weekend da disputare, ${nm} sessioni.`;
-  document.getElementById("n-tutto").textContent = `${nf + nm} sessioni in un solo calendario.`;
+  controlli(); conteggi();
+  document.getElementById("tipi").addEventListener("click", (e) => {
+    const b = e.target.closest(".chip-tipo"); if (!b) return;
+    visibili[b.dataset.t] = !visibili[b.dataset.t];
+    if (!Object.values(visibili).some(Boolean)) visibili[b.dataset.t] = true;   // almeno un tipo di sessione resta acceso
+    memo("cal-sessioni", JSON.stringify(visibili)); controlli(); ridisegna();
+  });
+  document.getElementById("fuso").addEventListener("change", (e) => { TZ = e.target.value; memo("cal-fuso", TZ); ridisegna(); });
+  document.getElementById("scarica").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-ics]"); if (!b) return;
+    const serie = b.dataset.ics;
+    const lista = weekend.filter((w) => !finito(w) && !w.passato && (serie === "tutto" || w.serie === serie));
+    const url = URL.createObjectURL(new Blob([icsDi(lista)], { type: "text/calendar" }));
+    const a = Object.assign(document.createElement("a"), { href: url, download: `gp-oggi-${serie}.ics` });
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 2000);
+  });
   // mese iniziale: quello della prossima sessione (o di oggi)
   const prossima = weekend.flatMap((w) => w.sessioni).filter((s) => new Date(s.fine) > new Date()).sort((a, b) => new Date(a.inizio) - new Date(b.inizio))[0];
   const base = prossima ? giorno(prossima.inizio) : giorno(new Date().toISOString());

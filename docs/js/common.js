@@ -137,7 +137,7 @@ export function renderHeader(paginaAttuale) {
   ];
   document.getElementById("site-header").innerHTML = `
     <nav class="nav container">
-      <a href="index.html" class="brand" aria-label="GP Oggi, home"><img src="img/logo-wide.png" alt="" class="brand-logo chiaro" width="98" height="54"><img src="img/logo-wide-scuro.png" alt="" class="brand-logo scuro" width="98" height="54"><span>GP<span class="dot">•</span>Oggi</span></a>
+      <a href="index.html" class="brand" aria-label="GP Oggi, home"><img src="img/logo-wide.png" alt="" class="brand-logo chiaro" width="98" height="54"><img src="img/logo-wide-scuro.png" alt="" class="brand-logo scuro" width="98" height="54"><span class="brand-nome">GP <span class="brand-oggi">Oggi</span></span></a>
       <div class="nav-destra">
         <div class="nav-links">
           ${voci.map(([id, href, label]) => `<a href="${href}" class="${id === "giochi" ? "nav-giochi " : ""}${id === paginaAttuale ? "active" : ""}">${label}</a>`).join("")}

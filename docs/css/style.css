@@ -1192,3 +1192,7 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
   .nav-links a.active::after { bottom: -3px; }
   .nav .nav-scrollbar { margin-top: 0; height: 3px; }
 }
+
+/* Nome del sito nella testata: "GP" nel colore del testo e "OGGI" in rosso, come MMA Oggi */
+.brand-nome { font-family: var(--font-display); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; line-height: 1; white-space: nowrap; }
+.brand-oggi { color: var(--accent, #e8352f); }

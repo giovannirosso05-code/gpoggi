@@ -59,7 +59,7 @@ SCENE = [
     {"voce": "Le classifiche di piloti e costruttori, sempre aggiornate.", "didascalia": "Classifiche"},
     {"voce": "Il calendario ha gli orari in ora italiana, ma puoi cambiare fuso, scaricarlo sul telefono scegliendo solo le sessioni che ti interessano.", "didascalia": "Calendario · il tuo fuso orario"},
     {"voce": "Ogni giorno le notizie dei due campionati, in italiano.", "didascalia": "Notizie ogni giorno"},
-    {"voce": "Tutto gratis e senza registrazione. E sul sito ci sono già un sacco di giochi, che vi faremo scoprire presto.", "didascalia": "Giochi già online · presto vi raccontiamo"},
+    {"voce": "Tutto gratis e senza registrazione. E sul sito ci sono già un sacco di giochi, che vi faremo scoprire presto.", "didascalia": "Giochi già online"},
     {"voce": "E lo installi sul telefono come una vera app. Su iPhone: Condividi, poi Aggiungi alla schermata Home. Su Android: Installa app.", "didascalia": None},
     {"voce": "G P Oggi. Lo trovi su G P Oggi punto it.", "didascalia": None},
 ]

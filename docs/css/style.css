@@ -1164,3 +1164,23 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 .ag-chip.moto { background: rgba(31, 95, 209, .13); color: var(--moto-blu); }
 :root[data-theme="dark"] .ag-chip.moto { background: rgba(80, 140, 255, .18); color: #8fb6ff; }
 .chip-serie.moto.attivo { background: var(--moto-blu); border-color: var(--moto-blu); color: #fff; }
+
+/* Computer e tablet: la foto sta nella parte alta della scheda e il testo sotto, cosi' la scritta non copre il viso del pilota */
+@media (min-width: 701px) {
+  .hero2-lato, .hero2-lato.f1, .hero2-lato.moto { min-height: 640px; background: #101014; overflow: hidden; }
+  .hero2.uno .hero2-lato { min-height: 600px; }
+  .hero2-lato::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 58%; background: var(--foto, none) center 16% / cover; }
+  .hero2-lato::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(16, 16, 20, 0) 0%, rgba(16, 16, 20, 0) 36%, rgba(16, 16, 20, .88) 58%, rgba(16, 16, 20, .98) 78%); }
+  .hero2-lato > * { z-index: 1; }
+}
+
+/* Tablet (601-980 px): nome, lingua e tema sopra, le dieci schede su una riga a parte che scorre di lato con la sbarretta */
+@media (min-width: 601px) and (max-width: 980px) {
+  .site-header .nav { height: auto; flex-wrap: wrap; padding: 10px 20px; gap: 6px; justify-content: flex-start; }
+  .site-header .nav-destra { display: contents; }
+  .site-header .nav .lingua { margin-left: auto; }
+  .site-header .nav .tema-btn { order: 2; }
+  .site-header .nav .nav-links { order: 3; width: 100%; flex: none; overflow-x: auto; overflow-y: hidden; touch-action: pan-x; gap: 20px; padding-bottom: 8px; margin-right: 0; font-size: 13px; scrollbar-width: none; }
+  .site-header .nav .nav-links a { flex: none; }
+  .nav .nav-scrollbar { display: block; order: 4; width: 100%; height: 4px; border-radius: 4px; background: rgba(120, 118, 128, .28); position: relative; overflow: hidden; margin-top: 2px; }
+}

@@ -56,4 +56,4 @@ jobs:
           git config user.name "gpoggi-bot"
           git config user.email "actions@users.noreply.github.com"
           git add docs/data docs/calendario docs/img/foto docs/img/storici foto_storici_cache.json foto_cache.json foto_motogp_cache.json foto_circuiti_moto_cache.json schede_cache.json telegram_stato.json telegram_sondaggi.json video/scelta.json 2>/dev/null || git add docs/data docs/calendario docs/img/foto foto_cache.json
-          git diff --cached --quiet || (git commit -m "dati: aggiornamento da OpenF1" && git pull --rebase -X theirs origin main && git push)
+          git diff --cached --quiet || (git commit -m "dati: aggiornamento da OpenF1" && git pull --rebase --autostash -X theirs origin main && git push)

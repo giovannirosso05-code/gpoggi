@@ -1095,3 +1095,8 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
   .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 60; }
   .cal-scarica { scroll-margin-top: 0; }
 }
+
+/* Telefono: le schede del menu scorrono solo in orizzontale (prima si muovevano anche in verticale di qualche pixel) */
+@media (max-width: 600px) {
+  .nav .nav-links { overflow-x: auto; overflow-y: hidden; touch-action: pan-x; overscroll-behavior: contain; padding-bottom: 8px; -webkit-overflow-scrolling: touch; }
+}

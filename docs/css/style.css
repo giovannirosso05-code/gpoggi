@@ -1009,3 +1009,12 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 .programma-sess.finita { opacity: .55; }
 .cron-testo strong { font-weight: 700; color: var(--text); }
 .cron-testo { color: var(--text-secondary); }
+
+/* Calendario: pulsante per saltare ai file da scaricare e schede dei circuiti ben separate nel tema chiaro */
+.cal-vai-scarica { display: inline-block; margin: -4px 0 16px; text-decoration: none; }
+.cal-scarica { scroll-margin-top: 90px; }
+.pe-griglia { gap: 22px; }
+:root[data-theme="light"] .pe-card, :root[data-theme="light"] .ag-wk { border: 1.5px solid #c4c1b8; box-shadow: 0 3px 10px rgba(21, 21, 26, .10); }
+:root[data-theme="light"] .pe-card.f1 { border-top: 5px solid #e8352f; }
+:root[data-theme="light"] .pe-card.moto { border-top: 5px solid #111115; }
+:root[data-theme="light"] .pe-mappa { background: #eceae3; }

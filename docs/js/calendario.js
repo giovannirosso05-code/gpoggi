@@ -157,12 +157,13 @@ try {
   const prossima = weekend.flatMap((w) => w.sessioni).filter((s) => new Date(s.fine) > new Date()).sort((a, b) => new Date(a.inizio) - new Date(b.inizio))[0];
   const base = prossima ? giorno(prossima.inizio) : giorno(new Date().toISOString());
   mese = [Number(base.slice(0, 4)), Number(base.slice(5, 7)) - 1];
-  scelto = base;
+  scelto = null; // nessun giorno aperto di default: il programma si apre solo toccando un giorno
   disegnaMese(); dettaglio();
+  document.getElementById("vai-scarica").addEventListener("click", () => document.getElementById("scarica").scrollIntoView({ behavior: "smooth", block: "start" }));
   document.getElementById("mese-prec").addEventListener("click", () => cambiaMese(-1));
   document.getElementById("mese-succ").addEventListener("click", () => cambiaMese(1));
   document.getElementById("mese-oggi").addEventListener("click", () => { const o = giorno(new Date().toISOString()); mese = [Number(o.slice(0, 4)), Number(o.slice(5, 7)) - 1]; scelto = o; disegnaMese(); dettaglio(); });
-  document.getElementById("agenda").addEventListener("click", (e) => { const b = e.target.closest(".ag-giorno[data-k]"); if (!b) return; scelto = b.dataset.k; disegnaMese(); dettaglio(); if (matchMedia("(max-width: 900px)").matches) document.getElementById("dettaglio").scrollIntoView({ behavior: "smooth", block: "nearest" }); });
+  document.getElementById("agenda").addEventListener("click", (e) => { const b = e.target.closest(".ag-giorno[data-k]"); if (!b) return; scelto = scelto === b.dataset.k ? null : b.dataset.k; disegnaMese(); dettaglio(); if (scelto && matchMedia("(max-width: 900px)").matches) document.getElementById("dettaglio").scrollIntoView({ behavior: "smooth", block: "nearest" }); });
   document.getElementById("filtri").addEventListener("click", (e) => { const b = e.target.closest(".chip-serie"); if (!b) return; attive[b.dataset.s] = !attive[b.dataset.s]; b.classList.toggle("attivo", attive[b.dataset.s]); b.setAttribute("aria-pressed", attive[b.dataset.s]); disegnaMese(); dettaglio(); });
   document.getElementById("dettaglio").addEventListener("click", (e) => {
     const b = e.target.closest(".ag-scarica"); if (!b) return;

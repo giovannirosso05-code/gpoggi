@@ -36,6 +36,7 @@ FPS = 30
 VOCE = "it-IT-DiegoNeural"
 VELOCITA = "+15%"
 PAUSE, SCORRI = 0.7, 0.75
+DURATA_DIDASCALIA = 2.8
 ROSSO, NERO = "#e8352f", "#0b0b0e"
 
 OVERLAY_CSS = """
@@ -81,6 +82,7 @@ class Regista:
         self.cx, self.cy = VIEW["width"] + 30, VIEW["height"] * 0.6
         self.scroll = 0
         self.didascalia, self.op = "", 0.0
+        self.t0 = 0.0
 
     @property
     def t(self):
@@ -106,6 +108,7 @@ class Regista:
         }""", {"x": self.cx, "y": self.cy, "premuto": premuto, "onda": onda, "testo": self.didascalia, "op": self.op, "scroll": self.scroll})
 
     async def _scatta(self, premuto=0.0, onda=0.0):
+        self._dissolvenza()
         if self.out is not None:
             await self._stato(premuto, onda)
             r = await self.cdp.send("Page.captureScreenshot", {"format": "jpeg", "quality": 92})
@@ -113,8 +116,10 @@ class Regista:
         self.n += 1
 
     def _dissolvenza(self):
-        if self.op < 1:
-            self.op = min(1.0, self.op + 1 / (0.3 * FPS))
+        """La didascalia entra a inizio scena e sparisce dopo qualche secondo (DURATA_DIDASCALIA), per non coprire visi e testi."""
+        bersaglio = 1.0 if (self.t - self.t0) < DURATA_DIDASCALIA else 0.0
+        passo = 1 / (0.3 * FPS)
+        self.op = min(bersaglio, self.op + passo) if self.op < bersaglio else max(bersaglio, self.op - passo)
 
     async def _prepara(self):
         try:
@@ -137,7 +142,6 @@ class Regista:
 
     async def fermo(self, secondi):
         for _ in range(round(secondi * PAUSE * FPS)):
-            self._dissolvenza()
             await self._scatta()
 
     async def muovi(self, x, y, secondi=0.7):
@@ -146,7 +150,6 @@ class Regista:
         for i in range(1, passi + 1):
             e = _ease(i / passi)
             self.cx, self.cy = x0 + (x - x0) * e, y0 + (y - y0) * e
-            self._dissolvenza()
             await self._scatta()
 
     async def scorri(self, y, secondi=1.2):
@@ -156,7 +159,6 @@ class Regista:
         passi = max(1, round(secondi * SCORRI * FPS))
         for i in range(1, passi + 1):
             self.scroll = y0 + (y - y0) * _ease(i / passi)
-            self._dissolvenza()
             await self._scatta()
 
     async def tocca(self):
@@ -220,7 +222,7 @@ class Regista:
         return await self.page.evaluate(codice, arg)
 
     def nuova_scena(self, didascalia):
-        self.didascalia, self.op = didascalia or "", 0.0
+        self.didascalia, self.op, self.t0 = didascalia or "", 0.0, self.t
 
 
 # ---- le scene: ognuna dura quanto la sua voce (se le azioni finiscono prima, l'ultima inquadratura resta ferma)
@@ -339,7 +341,7 @@ _UA = "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Ch
 async def _esterna(route):
     """Font e immagini esterne arrivano da Python (il browser non si fida del proxy); le statistiche sono bloccate."""
     url = route.request.url
-    if "plausible.io" in url:
+    if "plausible.io" in url or "workers.dev" in url:   # niente statistiche e niente voti veri nelle riprese
         return await route.abort()
     if url not in _CACHE:
         def scarica():

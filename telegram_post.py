@@ -109,7 +109,8 @@ def main():
         for a in nuove or []:
             print("\n" + testo_notizia(a))
         return
-    token, canale = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CANALE")
+    token = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN")
+    canale = os.environ.get("TELEGRAM_CANALE") or os.environ.get("TELEGRAM_CHAT_ID")
     if not token or not canale:
         print("Mancano TELEGRAM_BOT_TOKEN o TELEGRAM_CANALE: invio saltato.")
         return

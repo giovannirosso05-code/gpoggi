@@ -42,14 +42,14 @@ jobs:
         run: python build_calendari.py
       - name: Pubblica la gara sul canale Telegram (una sola volta per gara)
         env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_MODALITA: privata
         run: python telegram_post.py
       - name: Notizie del giorno da votare sul tuo Telegram e raccolta dei voti
         env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID }}
         run: python telegram_sondaggio.py || true
       - name: Commit se ci sono novità
         run: |

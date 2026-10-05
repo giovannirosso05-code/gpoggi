@@ -156,6 +156,13 @@ export function renderFooter() {
         </ul>
       </div>
       <div class="footer-col">
+        <h3>Seguici</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/gp.oggi/" target="_blank" rel="noopener">Instagram @gp.oggi</a></li>
+          <li><a href="https://www.tiktok.com/@gp.oggi" target="_blank" rel="noopener">TikTok @gp.oggi</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
         <h3>Legale</h3>
         <ul>
           <li><a href="chi-siamo.html">Chi siamo</a></li>

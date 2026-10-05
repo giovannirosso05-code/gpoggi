@@ -143,7 +143,7 @@ h1, h2, h3, h4 {
 .site-footer { margin-top: 80px; padding: 40px 0 28px; background: #16161b; color: #b9b8c0; font-size: 13px; }
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 32px;
   max-width: var(--container);
   margin: 0 auto 24px;

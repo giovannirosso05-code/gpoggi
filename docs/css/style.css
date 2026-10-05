@@ -1100,3 +1100,19 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 @media (max-width: 600px) {
   .nav .nav-links { overflow-x: auto; overflow-y: hidden; touch-action: pan-x; overscroll-behavior: contain; padding-bottom: 8px; -webkit-overflow-scrolling: touch; }
 }
+
+/* Computer: con dieci schede la testata non va a capo (nome, schede, lingua e tema su una sola riga) */
+.brand, .brand span, .nav-links a { white-space: nowrap; }
+@media (min-width: 981px) {
+  .site-header .nav.container { max-width: 1500px; }
+  .nav-links { gap: 18px; font-size: 13px; }
+  .nav-destra { gap: 14px; }
+}
+@media (min-width: 981px) and (max-width: 1280px) {
+  .site-header .nav.container { padding: 0 16px; }
+  .nav-links { gap: 11px; font-size: 12px; letter-spacing: .02em; }
+  .nav-destra { gap: 8px; }
+  .brand { font-size: 19px; gap: 8px; }
+  .brand-logo { height: 46px; }
+  .nav-links a.nav-giochi { padding: 8px 9px; font-size: 9px; }
+}

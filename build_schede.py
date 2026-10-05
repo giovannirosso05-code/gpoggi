@@ -62,7 +62,9 @@ def jolpica_pilota(roster_p):
 
 def wiki_it(nome):
     """Biografia breve dalla Wikipedia italiana; vuota se la voce non e' un pilota o e' ambigua."""
-    for titolo in (nome, f"{nome} (pilota)"):
+    alias = {"Sergio Perez": "Sergio Pérez", "Vitaly Petrov": "Vitalij Petrov"}
+    base = alias.get(nome, nome)
+    for titolo in (base, f"{base} (pilota)", f"{base} (pilota automobilistico)", f"{base} (pilota motociclistico)", f"{base} (motociclista)"):
         r = get("https://it.wikipedia.org/api/rest_v1/page/summary/" + quote(titolo.replace(" ", "_"), safe="_"))
         if r.status_code == 404:
             continue

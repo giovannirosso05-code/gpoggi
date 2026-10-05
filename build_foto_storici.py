@@ -6,6 +6,7 @@ foto_storici_cache.json: le ricerche gia' fatte non si ripetono.
 """
 import json
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
@@ -30,7 +31,9 @@ def foto_motociclista(nome):
 def main():
     attuali = {p["nome"] for p in json.loads((DATA / "roster.json").read_text()) if p.get("nome")}
     storici = json.loads((DATA / "storici.json").read_text())["piloti"]
-    f1 = [p for p in storici if (p["titoli"] >= 1 or p["vittorie"] >= 3) and p["nome"] not in attuali]
+    anno = datetime.now(timezone.utc).year
+    # campioni e vincitori di sempre, piu' tutti quelli corsi negli ultimi 20 anni (gli stessi della pagina Piloti)
+    f1 = [p for p in storici if (p["titoli"] >= 1 or p["vittorie"] >= 3 or p["stagioni"][-1] >= anno - 20) and p["nome"] not in attuali]
     campioni = {}
     for s in json.loads((DATA / "motogp-archivio.json").read_text())["anni"]:
         c = next((p for p in s["classifica"] if p["pos"] == 1), None)

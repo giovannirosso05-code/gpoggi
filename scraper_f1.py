@@ -93,7 +93,7 @@ def get(path, params=None, definitivo=False):
     file_cache = CACHE / f"{chiave}.json"
     if definitivo and file_cache.exists():
         return json.loads(file_cache.read_text())
-    for tentativo in range(6):
+    for tentativo in range(8):
         time.sleep(PAUSA)
         r = requests.get(f"{BASE}/{path}", params=params, timeout=30)
         if r.status_code == 200:
@@ -105,12 +105,13 @@ def get(path, params=None, definitivo=False):
         if r.status_code == 404:
             return []
         if r.status_code == 429:
-            time.sleep(2 * (tentativo + 1))
+            time.sleep(5 * (tentativo + 1))
             continue
         if r.status_code == 401 and "Live F1 session" in r.text:
             raise SessioneLive(r.text[:200])
         r.raise_for_status()
-    raise RuntimeError(f"OpenF1 non risponde su {path} {params}")
+    # troppe richieste di seguito: si salta il giro (i dati gia' pubblicati restano) e si riprova alla prossima esecuzione
+    raise SessioneLive(f"OpenF1 sovraccarico su {path} {params}")
 
 
 def scrivi(percorso, dati):

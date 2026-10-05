@@ -1184,3 +1184,11 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
   .site-header .nav .nav-links a { flex: none; }
   .nav .nav-scrollbar { display: block; order: 4; width: 100%; height: 4px; border-radius: 4px; background: rgba(120, 118, 128, .28); position: relative; overflow: hidden; margin-top: 2px; }
 }
+
+/* Telefono: tolto lo spazio bianco sotto le schede del menu (la testata e' piu' bassa) */
+@media (max-width: 600px) {
+  .site-header .nav { padding-bottom: 5px; gap: 4px; }
+  .nav .nav-links { padding-bottom: 6px; }
+  .nav-links a.active::after { bottom: -3px; }
+  .nav .nav-scrollbar { margin-top: 0; height: 3px; }
+}

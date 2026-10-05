@@ -1,4 +1,4 @@
-import { iniz, renderHeader, renderFooter, fetchJSON, esc, img, credito, intervalloWeekend, formattaDataOra, punti, stemma, stemmaMoto, ND, mischia, fotoMotoMap, mappeMotoMap } from "./common.js";
+import { iniz, renderHeader, renderFooter, fetchJSON, esc, img, credito, intervalloWeekend, formattaDataOra, punti, stemma, stemmaMoto, coloreMoto, ND, mischia, fotoMotoMap, mappeMotoMap } from "./common.js";
 
 import { montaPronostico, colonnaF1, colonnaMoto } from "./prono.js";
 
@@ -58,7 +58,7 @@ function podioF1(g, foto) {
 const FM = await fotoMotoMap();
 function podioMoto(u) {
   const top = u.risultati.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos);
-  return blocco("MotoGP", "moto", u.nome, u.circuito, `gara-moto.html?gp=${encodeURIComponent(u.nome)}${tema}`, top.map((r) => `<a href="gara-moto.html?gp=${encodeURIComponent(u.nome)}${tema}" style="--team:#8b8a92">
+  return blocco("MotoGP", "moto", u.nome, u.circuito, `gara-moto.html?gp=${encodeURIComponent(u.nome)}${tema}`, top.map((r) => `<a href="gara-moto.html?gp=${encodeURIComponent(u.nome)}${tema}" style="--team:#${esc(coloreMoto(r.moto) || "8b8a92")}">
       <div class="posto">${r.pos}°</div>${FM["nome:" + r.nome] ? img(FM["nome:" + r.nome], r.nome) : '<span class="vuota"></span>'}
       <strong>${esc(r.nome)}</strong><div>${stemmaMoto(r.moto)}</div><div class="tempo">${r.tempo ? esc(r.tempo) : ND}</div></a>`).join(""));
 }

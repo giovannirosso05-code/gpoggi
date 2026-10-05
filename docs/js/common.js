@@ -70,7 +70,7 @@ function testoConto(diff) {
 async function renderCountdown() {
   const header = document.getElementById("site-header");
   if (!header || document.getElementById("cd-barra")) return;
-  header.insertAdjacentHTML("beforebegin", `<div class="cd-barra" id="cd-barra"><div class="container cd-griglia">
+  header.insertAdjacentHTML(matchMedia("(max-width: 600px)").matches ? "afterend" : "beforebegin", `<div class="cd-barra" id="cd-barra"><div class="container cd-griglia">
     <div class="cd-voce" id="cd-f1"><span class="cd-sigla">F1</span><span class="cd-testo muted">Caricamento…</span></div>
     <div class="cd-voce" id="cd-moto"><span class="cd-sigla moto">MotoGP</span><span class="cd-testo muted">Caricamento…</span></div></div></div>`);
   const fonti = [["cd-f1", "data/events.json", (d) => d], ["cd-moto", "data/motogp.json", (d) => d.weekend]];
@@ -109,6 +109,19 @@ function sbarrettaSchede() {
   setTimeout(aggiorna, 400);
 }
 
+// Telefono: la testata (Home, Formula 1, Calendario, Giochi…) e' sempre fissa in alto. Si usa position: fixed, che funziona
+// ovunque (sticky su alcuni iPhone non regge), e il corpo della pagina viene spostato giu' di quanto e' alta.
+function fissaTestata() {
+  const h = document.getElementById("site-header");
+  if (!h) return;
+  const misura = () => document.documentElement.style.setProperty("--hh", h.offsetHeight + "px");
+  misura();
+  addEventListener("resize", misura);
+  addEventListener("load", misura);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(misura);
+  setTimeout(misura, 500);
+}
+
 export function renderHeader(paginaAttuale) {
   const voci = [
     ["home", "index.html", "Home"],
@@ -135,6 +148,7 @@ export function renderHeader(paginaAttuale) {
       <div class="nav-scrollbar" id="nav-scrollbar" aria-hidden="true"><i></i></div>
     </nav>`;
   sbarrettaSchede();
+  fissaTestata();
   barraIndietro();
   if (paginaAttuale !== "home") renderCountdown();
   const selLingua = document.getElementById("lingua");

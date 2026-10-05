@@ -1087,3 +1087,11 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 .pron-punti ul { margin: 6px 0; padding-left: 18px; }
 .pron-scegli { display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; margin: 8px 0 12px; max-width: 360px; }
 .results tr.pron-io td { background: rgba(232, 53, 47, .12); }
+
+/* Telefono: testata sempre fissa in alto (position: fixed); la barra del conto alla rovescia scorre sotto di lei */
+@media (max-width: 600px) {
+  html { scroll-padding-top: var(--hh, 100px); }
+  body { padding-top: var(--hh, 100px); }
+  .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 60; }
+  .cal-scarica { scroll-margin-top: 0; }
+}

@@ -374,6 +374,14 @@
   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/John_Watson_%282346102684%29.jpg/1280px-John_Watson_%282346102684%29.jpg",
   "autore": "Chris Bloom from Durban, South Africa",
   "licenza": "CC BY-SA 2.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:John_Watson_(2346102684).jpg"
+  "pagina": "https://commons.wikimedia.org/wiki/File:John_Watson_(2346102684).jpg",
+  "file": "img/storici/862e3db7c7aeeebe.jpg"
+ },
+ "Formula 1:Michele Alboreto": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Michele_Alboreto_at_the_Hungarian_Formula_One_Grand_Prix_in_Budapest_in_1988_%28JOKAMAA2H-2%29.tif/lossy-page1-500px-Michele_Alboreto_at_the_Hungarian_Formula_One_Grand_Prix_in_Budapest_in_1988_%28JOKAMAA2H-2%29.tif.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Michele_Alboreto_at_the_Hungarian_Formula_One_Grand_Prix_in_Budapest_in_1988_%28JOKAMAA2H-2%29.tif",
+  "autore": "Mauritz Antin",
+  "licenza": "CC BY 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Michele_Alboreto_at_the_Hungarian_Formula_One_Grand_Prix_in_Budapest_in_1988_(JOKAMAA2H-2).tif"
  }
 }

@@ -51,6 +51,13 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID }}
         run: python telegram_sondaggio.py || true
+      - name: Report di fine giornata con le notizie e i voti (solo al giro serale, circa le 20 in Italia)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          h=$(date -u +%H)
+          if [ "$h" = "18" ] || [ "$h" = "19" ]; then python telegram_report.py || true; fi
       - name: Commit se ci sono novità
         run: |
           git config user.name "gpoggi-bot"

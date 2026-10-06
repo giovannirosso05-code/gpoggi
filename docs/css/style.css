@@ -1179,3 +1179,14 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 /* Nome del sito nella testata: "GP" nel colore del testo e "OGGI" in rosso, come MMA Oggi */
 .brand-nome { font-family: var(--font-display); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; line-height: 1; white-space: nowrap; }
 .brand-oggi { color: var(--accent, #e8352f); }
+
+/* La foto di MotoGP è verticale: la si posiziona più in basso così si vedono cappellino, occhi e mento */
+.hero2-lato.moto { background-position: center, center 24%; }
+@media (min-width: 701px) { .hero2-lato.moto::before { background-position: center 22%; } }
+
+/* Pronostico: le due schede hanno righe della stessa altezza e barre che partono e finiscono negli stessi punti */
+.prono-col { display: flex; flex-direction: column; }
+.prono-riga { min-height: 78px; }
+.prono-info .muted { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: calc(2 * 1.3 * 11.5px); }
+.prono-ind { width: 44px; flex: none; text-align: right; font-variant-numeric: tabular-nums; }
+.prono-pos { flex: none; text-align: center; }

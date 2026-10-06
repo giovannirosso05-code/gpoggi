@@ -12,7 +12,7 @@ try {
 
   const selA = document.getElementById("sel-a");
   const selB = document.getElementById("sel-b");
-  const opz = roster.map((p) => `<option value="${p.numero}">${esc(p.nome || "Pilota #" + p.numero)} (#${p.numero})</option>`).join("");
+  const opz = [...roster].sort((x, y) => x.numero - y.numero).map((p) => `<option value="${p.numero}">#${p.numero} · ${esc(p.nome || "Pilota #" + p.numero)}</option>`).join("");
   selA.innerHTML = `<option value="">Primo pilota…</option>${opz}`;
   selB.innerHTML = `<option value="">Secondo pilota…</option>${opz}`;
   selA.value = params.get("a") || "";

@@ -42,7 +42,7 @@ try {
       [...gare].reverse().map((g) => `<tr class="${g.gara === 1 ? "podio" : ""}"><td><strong>${esc(g.gp)}</strong></td><td>${formattaData(g.data)}</td><td>${g.sprint ? g.sprint + "°" : "–"}</td><td>${esito(g)}</td><td><strong>${g.punti}</strong></td></tr>`).join("")
     }</tbody></table></div>
     <section id="conf-moto" class="conf-moto"><h3 class="section-title">Confronta con un altro pilota</h3>
-      <label class="confronta">Confronta con <select id="conf-sel"><option value="">scegli un pilota…</option>${Object.entries(dati).filter(([k, x]) => k !== id && x.categoria === p.categoria).sort((a, b) => a[1].nome.localeCompare(b[1].nome)).map(([k, x]) => `<option value="${esc(k)}">${esc(x.nome)}</option>`).join("")}</select></label>
+      <label class="confronta">Confronta con <select id="conf-sel"><option value="">scegli un pilota…</option>${Object.entries(dati).filter(([k, x]) => k !== id && x.categoria === p.categoria).sort((a, b) => (a[1].numero ?? 999) - (b[1].numero ?? 999)).map(([k, x]) => `<option value="${esc(k)}">${x.numero != null ? "#" + x.numero + " · " : ""}${esc(x.nome)}</option>`).join("")}</select></label>
       <div id="conf-risultato"></div></section>
     <p class="muted" style="margin-top:18px;font-size:13px"><a class="accent" href="motogp.html${tema ? "?" + tema.slice(1) : ""}">← Torna alla MotoGP</a></p>`;
   const stat = (x) => {

@@ -46,7 +46,7 @@ try {
       <p class="muted" style="font-size:12px;margin-top:8px">RIT = ritirato · NP = non partito · SQ = squalificato · – = non presente o sessione non prevista</p>` : `<p class="muted">Nessun risultato disponibile.</p>`}`;
   fetchJSON("data/roster.json").then((r) => {
     const sel = document.getElementById("conf-sel"); if (!sel) return;
-    sel.insertAdjacentHTML("beforeend", r.filter((x) => String(x.numero) !== String(n)).map((x) => `<option value="${x.numero}">${esc(x.nome || "Pilota #" + x.numero)}</option>`).join(""));
+    sel.insertAdjacentHTML("beforeend", [...r].sort((x, y) => x.numero - y.numero).filter((x) => String(x.numero) !== String(n)).map((x) => `<option value="${x.numero}">#${x.numero} · ${esc(x.nome || "Pilota #" + x.numero)}</option>`).join(""));
     sel.addEventListener("change", () => { if (sel.value) location.href = `confronto.html?a=${n}&b=${sel.value}`; });
   }).catch(() => { const l = document.querySelector(".confronta"); if (l) l.hidden = true; });
 } catch (e) {

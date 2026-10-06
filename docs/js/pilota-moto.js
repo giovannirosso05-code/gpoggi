@@ -49,22 +49,30 @@ try {
     const g = x.gare, pod = g.filter((r) => r.gara && r.gara <= 3).length, best = g.map((r) => r.gara).filter(Boolean).sort((a, b) => a - b)[0];
     return { pos: x.pos, punti: x.punti ?? 0, vitt: x.vittorie ?? 0, podi: pod, best: best ?? null, gare: g.length };
   };
-  const riga = (et, a, b, minimoMeglio) => {
-    const va = a == null ? null : a, vb = b == null ? null : b;
-    const meglio = va == null || vb == null || va === vb ? 0 : (minimoMeglio ? (va < vb ? 1 : 2) : (va > vb ? 1 : 2));
+  const riga = (et, a, b, modo) => {   // modo: omesso = vince il valore più alto, "basso" = vince il più basso, "no" = nessuna evidenza
+    const va = a ?? null, vb = b ?? null;
+    const meglio = modo === "no" || va == null || vb == null || va === vb ? 0 : (modo === "basso" ? (va < vb ? 1 : 2) : (va > vb ? 1 : 2));
     const f = (v) => (v == null ? "n.d." : v);
-    return `<tr><td class="${meglio === 1 ? "conf-vince" : ""}">${f(va)}${minimoMeglio && va != null ? "°" : ""}</td><td class="conf-et">${et}</td><td class="${meglio === 2 ? "conf-vince" : ""}">${f(vb)}${minimoMeglio && vb != null ? "°" : ""}</td></tr>`;
+    const suf = modo === "basso" ? "°" : "";
+    return `<tr><td class="${meglio === 1 ? "conf-vince" : ""}">${f(va)}${va != null ? suf : ""}</td><td class="conf-et">${et}</td><td class="${meglio === 2 ? "conf-vince" : ""}">${f(vb)}${vb != null ? suf : ""}</td></tr>`;
+  };
+  const carr = (k, x) => {
+    const c = SC[`moto:${k}`]; if (!c) return null;
+    const anni = (c.carriera || []).length, inGp = (c.carriera || []).filter((r) => r.classi.some((q) => q.categoria === "MotoGP")).length;
+    const eta = c.nascita ? Math.floor((Date.now() - new Date(c.nascita)) / 31557600000) : null;
+    const classi = [...new Set((c.carriera || []).flatMap((r) => r.classi.map((q) => q.categoria)))].join(" → ");
+    return { debutto: c.debutto ?? null, anni: anni || null, inGp: anni ? inGp : null, eta, altezza: c.altezza ?? null, peso: c.peso ?? null, classi };
   };
   document.getElementById("conf-sel").addEventListener("change", (e) => {
     const out = document.getElementById("conf-risultato");
     const q = dati[e.target.value]; if (!q) { out.innerHTML = ""; return; }
-    const A = stat(p), B = stat(q), fq = FM[e.target.value];
+    const A = stat(p), B = stat(q), fq = FM[e.target.value], CA = carr(id, p), CB = carr(e.target.value, q);
     const gps = [...new Set([...p.gare, ...q.gare].map((r) => r.gp))];
     const get = (x, gp) => x.gare.find((r) => r.gp === gp);
     const es = (r) => (!r ? "–" : r.gara ? `${r.gara}°` : r.stato_gara && r.stato_gara !== "INSTND" ? "Rit." : "–");
     const testa = (x, ft, nome) => `<div class="conf-pil">${ft ? img(ft, nome, "foto-mini") : ""}<strong>${esc(nome)}</strong><span class="muted">${esc(x.team || "")}</span></div>`;
     out.innerHTML = `<div class="conf-testa">${testa(p, foto, p.nome)}<span class="conf-vs">VS</span>${testa(q, fq, q.nome)}</div>
-      <table class="conf-tab"><tbody>${riga("Posizione", A.pos, B.pos, true)}${riga("Punti", A.punti, B.punti)}${riga("Vittorie", A.vitt, B.vitt)}${riga("Podi in gara", A.podi, B.podi)}${riga("Miglior risultato", A.best, B.best, true)}${riga("Gare disputate", A.gare, B.gare)}</tbody></table>
+      <table class="conf-tab"><tbody>${riga("Posizione", A.pos, B.pos, "basso")}${riga("Punti", A.punti, B.punti)}${riga("Vittorie", A.vitt, B.vitt)}${riga("Podi in gara", A.podi, B.podi)}${riga("Miglior risultato", A.best, B.best, "basso")}${riga("Gare disputate", A.gare, B.gare)}<tr><td colspan="3" class="conf-sub">In carriera</td></tr>${CA && CB ? `${riga("Debutto nel mondiale", CA.debutto, CB.debutto, "no")}${riga("Stagioni nel mondiale", CA.anni, CB.anni)}${riga("Stagioni in MotoGP", CA.inGp, CB.inGp)}${riga("Età", CA.eta, CB.eta, "no")}${riga("Altezza (cm)", CA.altezza, CB.altezza, "no")}${riga("Peso (kg)", CA.peso, CB.peso, "no")}<tr><td class="conf-testo">${esc(CA.classi || "n.d.")}</td><td class="conf-et">Classi disputate</td><td class="conf-testo">${esc(CB.classi || "n.d.")}</td></tr>` : `<tr><td colspan="3" class="conf-et">Dati di carriera non disponibili per uno dei due piloti.</td></tr>`}</tbody></table><p class="muted" style="font-size:12px;margin:-8px 0 16px">Il totale dei Gran Premi e delle vittorie in carriera non è ancora tra i nostri dati: sopra ci sono quelli della stagione.</p>
       <div class="table-wrap"><table class="results"><thead><tr><th>Gran Premio</th><th>${esc(p.nome.split(" ").slice(-1)[0])}</th><th>${esc(q.nome.split(" ").slice(-1)[0])}</th></tr></thead><tbody>${[...gps].reverse().map((gp) => `<tr><td>${esc(gp)}</td><td>${es(get(p, gp))}</td><td>${es(get(q, gp))}</td></tr>`).join("")}</tbody></table></div>`;
   });
 } catch (e) {

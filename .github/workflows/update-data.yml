@@ -46,11 +46,14 @@ jobs:
           TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_MODALITA: privata
         run: python telegram_post.py
-      - name: Notizie del giorno da votare sul tuo Telegram e raccolta dei voti
+      - name: Chiedi un voto su una notizia (ogni giorno intorno alle 14:00 Roma)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID }}
-        run: python telegram_sondaggio.py || true
+          VOTI_WORKER_URL: ${{ secrets.VOTI_WORKER_URL || 'https://gpoggivotti.giovannirosso05.workers.dev' }}
+        run: |
+          h=$(date -u +%H)
+          if [ "$h" = "12" ] || [ "$h" = "13" ]; then python telegram_vota.py || true; fi
       - name: Report di fine giornata con le notizie e i voti (solo al giro serale, circa le 20 in Italia)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
@@ -64,7 +67,7 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           # ogni percorso si aggiunge da solo: se uno manca (per esempio il file dei sondaggi la prima volta) gli altri entrano comunque
           git add docs/data docs/calendario docs/img/foto docs/img/storici
-          for f in foto_storici_cache.json foto_cache.json foto_motogp_cache.json foto_circuiti_moto_cache.json schede_cache.json telegram_stato.json telegram_sondaggi.json video/scelta.json; do
+          for f in foto_storici_cache.json foto_cache.json foto_motogp_cache.json foto_circuiti_moto_cache.json schede_cache.json telegram_stato.json telegram_voti.json video/scelta.json; do
             [ -e "$f" ] && git add "$f" || true
           done
           git diff --cached --quiet || (git commit -m "dati: aggiornamento da OpenF1" && git pull --rebase --autostash -X theirs origin main && git push)

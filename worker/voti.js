@@ -32,10 +32,37 @@ export default {
     }
     if (req.method === "GET" && url.pathname === "/consiglio") return json({ consigli: true });   // il sito lo usa per sapere se il modulo dei consigli funziona
     if (req.method === "GET") {
+      const voti_url = url.searchParams.get("voti");
+      if (voti_url) {
+        // Voti accumulati per una notizia (report giornaliero)
+        const chiave = `voti:${voti_url}`;
+        const n = parseInt(await env.VOTI.get(chiave) || "0");
+        return json({ voti: n, url: voti_url });
+      }
       const gp = (url.searchParams.get("gp") || "").slice(0, 80);
       return json({ voti: JSON.parse((await env.VOTI.get("conteggio:" + gp)) || "{}") });
     }
     if (req.method !== "POST") return json({ errore: "metodo non consentito" }, 405);
+
+    // Callback di Telegram: vota_<url_encoded>
+    const body = await req.json().catch(() => ({}));
+    if (body.callback_query && body.callback_query.data && body.callback_query.data.startsWith("vota_")) {
+      const voti_url = decodeURIComponent(body.callback_query.data.slice(5));
+      const chiave = `voti:${voti_url}`;
+      let count = parseInt(await env.VOTI.get(chiave) || "0") + 1;
+      await env.VOTI.put(chiave, String(count), { expirationTtl: 30 * 86400 });
+      const botToken = env.TELEGRAM_BOT_TOKEN;
+      if (botToken && body.callback_query.id) {
+        const msg = count >= 75 ? "✅ Voto registrato! Questa notizia è il video di domani." : `✅ Voto registrato (${count}/75)`;
+        fetch(`https://api.telegram.org/bot${botToken}/answerCallbackQuery`, {
+          method: "POST",
+          body: JSON.stringify({ callback_query_id: body.callback_query.id, text: msg, show_alert: false }),
+          headers: { "Content-Type": "application/json" }
+        }).catch(() => {});
+      }
+      return json({ ok: true, voti: count });
+    }
+
     if (url.pathname === "/pronostico") {
       const c = await req.json().catch(() => ({}));
       const gp = String(c.gp || "").replace(/[^\w-]/g, "").slice(0, 40), id = String(c.id || "").replace(/[^\w-]/g, "").slice(0, 40);

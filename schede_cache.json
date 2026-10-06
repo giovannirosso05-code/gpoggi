@@ -9627,5 +9627,23 @@
   "testo": "Nobuatsu Aoki è un ex pilota motociclistico giapponese.",
   "descrizione": "pilota motociclistico giapponese",
   "pagina": "https://it.wikipedia.org/wiki/Nobuatsu_Aoki"
+ },
+ "wikistat:5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b": {
+  "gare": 194,
+  "vittorie": 19,
+  "podi": 67,
+  "pole": 43,
+  "giri_veloci": 14,
+  "titoli": 2,
+  "motogp": {
+   "gare": 95,
+   "vittorie": 9,
+   "podi": 39,
+   "pole": 22,
+   "giri_veloci": 6,
+   "titoli": 1
+  },
+  "immagine": "Jorge Martin at the 2026 Spanish Grand Prix.jpg",
+  "fonte": "https://en.wikipedia.org/wiki/Jorge_Martin"
  }
 }

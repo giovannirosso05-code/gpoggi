@@ -17,7 +17,9 @@ import foto_wiki as fw
 
 ROOT = Path(__file__).parent
 DATA = ROOT / "docs" / "data"
-CACHE = ROOT / "foto_motogp_cache.json"
+CACHE = ROOT / "foto_motogp_cache_v2.json"
+SCHEDE = ROOT
+CACHE_VECCHIA = ROOT / "foto_motogp_cache.json"
 PAROLE = ("motorcycle", "motorcyclist", "grand prix", "motogp", "moto2", "moto3", "racer")
 
 
@@ -40,34 +42,37 @@ def riassunto(titolo):
     raise requests.RequestException("troppe richieste")
 
 
-def trova_file(nome):
-    for titolo in (nome, f"{nome} (motorcyclist)", f"{nome} (motorcycle racer)"):
-        descrizione, file = riassunto(titolo)
-        if file and any(w in (descrizione or "") for w in PAROLE):
-            return file
-    return None
+def immagine_verificata(i):
+    """Nome del file dell'immagine nell'infobox della voce Wikipedia del pilota, ma solo se la voce e' stata verificata (stesso anno di nascita,
+    vedi build_schede.wiki_en_stats). Mai una ricerca per nome: due piloti con lo stesso nome non si possono confondere."""
+    f = SCHEDE / "schede_cache.json"
+    ws = (json.loads(f.read_text()) if f.exists() else {}).get(f"wikistat:{i}", "assente")
+    if ws == "assente":
+        return "assente"
+    return (ws or {}).get("immagine")
 
 
 def main():
     piloti = json.loads((DATA / "motogp-piloti.json").read_text())
-    ordine = {"MotoGP": 0, "Moto2": 1, "Moto3": 2}  # prima i piloti della classe regina
-    nomi = list(dict.fromkeys(p["nome"] for p in sorted(piloti.values(), key=lambda p: (ordine.get(p.get("categoria"), 3), p.get("pos") or 99)) if p.get("nome")))
     cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
     solo_cache = "--solo-cache" in sys.argv  # genera i file dalle foto gia' trovate, senza nuove ricerche
-    for n in nomi:
-        if n in cache or solo_cache:
+    for i, p in piloti.items():
+        if i in cache or solo_cache or not p.get("nome"):
             continue
+        f = immagine_verificata(i)
+        if f == "assente":
+            continue  # la voce non e' ancora stata verificata: si riprova al prossimo giro (nel frattempo resta la foto di prima, se c'era)
         try:
-            f = trova_file(n)
-            cache[n] = fw._info_file(f, 500) if f else None
+            cache[i] = fw._info_file(f, 500) if f else None
         except requests.RequestException as e:
-            print(f"  {n}: errore di rete ({e}), riprovo alla prossima esecuzione")
+            print(f"  {p['nome']}: errore di rete ({e}), riprovo alla prossima esecuzione")
             continue
-        print(f"{n}: {'ok ' + cache[n]['licenza'] if cache[n] else 'nessuna foto libera'}")
+        print(f"{p['nome']}: {'ok ' + cache[i]['licenza'] if cache[i] else 'nessuna foto libera verificata'}")
         CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1))
+    vecchia = json.loads(CACHE_VECCHIA.read_text()) if CACHE_VECCHIA.exists() else {}
     out = {}
     for i, p in piloti.items():
-        foto = cache.get(p.get("nome"))
+        foto = cache[i] if i in cache else vecchia.get(p.get("nome"))  # provvisoria finche' la voce Wikipedia del pilota non e' verificata
         if not foto:
             continue
         try:

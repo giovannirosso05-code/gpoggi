@@ -104,8 +104,10 @@ def wiki_en_stats(nome, nascita):
                 tot[CAMPI_WIKI[mm.group(2).lower()]] += int(n.group(0))
                 if mm.group(1).lower() == "motogp":
                     motogp[CAMPI_WIKI[mm.group(2).lower()]] += int(n.group(0))
+        im = re.search(r"\|\s*image\s*=\s*(?:\[\[)?(?:File:|Image:)?([^|\]\n<]+)", w)
+        immagine = im.group(1).strip() if im and im.group(1).strip() and "placeholder" not in im.group(1).lower() else None
         if trovato:
-            return {**tot, "motogp": motogp, "fonte": "https://en.wikipedia.org/wiki/" + quote(c["title"].replace(" ", "_"), safe="_()")}
+            return {**tot, "motogp": motogp, "immagine": immagine, "fonte": "https://en.wikipedia.org/wiki/" + quote(c["title"].replace(" ", "_"), safe="_()")}
     return None
 
 

@@ -8357,6 +8357,11 @@
   "descrizione": "pilota automobilistico bolognese",
   "pagina": "https://it.wikipedia.org/wiki/Andrea_Kimi_Antonelli"
  },
+ "nome:George Russell": {
+  "testo": "George William Russell è un pilota automobilistico britannico, attivo in Formula 1 con la Mercedes.",
+  "descrizione": "pilota automobilistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/George_Russell_(pilota_automobilistico)"
+ },
  "nome:Lewis Hamilton": {
   "testo": "Sir Lewis Carl Davidson Hamilton è un pilota automobilistico britannico, attivo in Formula 1 con la Ferrari.",
   "descrizione": "pilota automobilistico britannico (1985-)",
@@ -8457,6 +8462,11 @@
   "descrizione": "pilota automobilistico finlandese (1989-)",
   "pagina": "https://it.wikipedia.org/wiki/Valtteri_Bottas"
  },
+ "nome:Sergio Perez": {
+  "testo": "Sergio Michel Pérez Mendoza, detto Checo, è un pilota automobilistico messicano, attivo in Formula 1 con la Cadillac.",
+  "descrizione": "pilota automobilistico messicano (1990-)",
+  "pagina": "https://it.wikipedia.org/wiki/Sergio_P%C3%A9rez_(pilota_automobilistico)"
+ },
  "nome:Michael Schumacher": {
   "testo": "Michael Schumacher è un ex pilota automobilistico tedesco. È considerato uno dei migliori piloti di tutti i tempi in Formula 1. Insieme a Lewis Hamilton, è il più vincente nella storia della Formula 1 con 7 titoli mondiali, i primi due con la Benetton e successivamente cinque consecutivi con la Ferrari, quest'ultimo un record assoluto.",
   "descrizione": "pilota automobilistico tedesco (1969–)",
@@ -8477,10 +8487,20 @@
   "descrizione": "pilota automobilistico finlandese (1979-)",
   "pagina": "https://it.wikipedia.org/wiki/Kimi_R%C3%A4ikk%C3%B6nen"
  },
+ "nome:Jenson Button": {
+  "testo": "Jenson Alexander Lyons Button è un ex pilota automobilistico britannico, campione del mondo di Formula 1 nel 2009 con la Brawn GP.",
+  "descrizione": "pilota automobilistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Jenson_Button"
+ },
  "nome:Jacques Villeneuve": {
   "testo": "Jacques Joseph Charles Villeneuve è un pilota automobilistico canadese con cittadinanza italiana, campione del mondo di Formula 1 nel 1997 con la Williams e vincitore della 500 Miglia di Indianapolis e del Campionato CART nel 1995.",
   "descrizione": "pilota automobilistico canadese",
   "pagina": "https://it.wikipedia.org/wiki/Jacques_Villeneuve"
+ },
+ "nome:David Coulthard": {
+  "testo": "David Marshall Coulthard è un ex pilota automobilistico britannico, vicecampione di Formula 1 nel 2001.",
+  "descrizione": "pilota automobilistico scozzese",
+  "pagina": "https://it.wikipedia.org/wiki/David_Coulthard"
  },
  "nome:Felipe Massa": {
   "testo": "Felipe Massa è un pilota automobilistico brasiliano attualmente impegnato nel campionato Stock Car Pro Series e nella IMSA SportsCar Championship classe LMP2.",
@@ -8511,6 +8531,11 @@
   "testo": "Ralf Schumacher è un ex pilota automobilistico tedesco, noto soprattutto per aver corso in Formula 1.",
   "descrizione": "ex pilota automobilistico tedesco (1975–)",
   "pagina": "https://it.wikipedia.org/wiki/Ralf_Schumacher"
+ },
+ "nome:Sergio Pérez": {
+  "testo": "Sergio Michel Pérez Mendoza, detto Checo, è un pilota automobilistico messicano, attivo in Formula 1 con la Cadillac.",
+  "descrizione": "pilota automobilistico messicano (1990-)",
+  "pagina": "https://it.wikipedia.org/wiki/Sergio_P%C3%A9rez_(pilota_automobilistico)"
  },
  "nome:Giancarlo Fisichella": {
   "testo": "Giancarlo Fisichella è un pilota automobilistico italiano, attualmente attivo nelle gare Gran Turismo per la Ferrari.",
@@ -8581,6 +8606,11 @@
   "testo": "Bruno Senna Lalli è un ex pilota automobilistico brasiliano. È nipote di Ayrton Senna, figlio della sorella Viviane.",
   "descrizione": "pilota automobilistico brasiliano",
   "pagina": "https://it.wikipedia.org/wiki/Bruno_Senna"
+ },
+ "nome:Charles Pic": {
+  "testo": "Charles Maurice Marcel Pic è un ex pilota automobilistico francese, attivo in Formula 1 dal 2012 al 2013. Dal 2022 diventa proprietario del team DAMS.",
+  "descrizione": "pilota automobilistico francese",
+  "pagina": "https://it.wikipedia.org/wiki/Charles_Pic"
  },
  "nome:Christian Klien": {
   "testo": "Christian Klien è un pilota automobilistico austriaco, attivo in Formula 1 dal 2004 al 2006 e nel 2010.",
@@ -8742,6 +8772,11 @@
   "descrizione": "pilota automobilistico russo (1999-)",
   "pagina": "https://it.wikipedia.org/wiki/Nikita_Mazepin"
  },
+ "nome:Nyck de Vries": {
+  "testo": "Hendrik Johannes Nicasius de Vries, detto Nyck, è un pilota automobilistico olandese, campione in Formula 2 nel 2019 e campione del mondo di Formula E con il team Mercedes EQ nella stagione 2020-2021.",
+  "descrizione": "pilota automobilistico olandese",
+  "pagina": "https://it.wikipedia.org/wiki/Nyck_de_Vries"
+ },
  "nome:Pascal Wehrlein": {
   "testo": "Pascal Konrad Wehrlein è un pilota automobilistico tedesco naturalizzato mauriziano, attivo in Formula 1 nel 2016 con Manor e nel 2017 con Sauber. Dal 2019 corre in Formula E dove si è laureato campione nella stagione 2023-24 e nella stagione 2025-26.",
   "descrizione": "pilota automobilistico tedesco",
@@ -8827,6 +8862,11 @@
   "descrizione": "pilota automobilistico tedesco",
   "pagina": "https://it.wikipedia.org/wiki/Timo_Glock"
  },
+ "nome:Vitaly Petrov": {
+  "testo": "Vitalij Aleksandrovič Petrov è un ex pilota automobilistico russo.",
+  "descrizione": "pilota automobilistico russo",
+  "pagina": "https://it.wikipedia.org/wiki/Vitalij_Petrov_(pilota_automobilistico)"
+ },
  "nome:Vitantonio Liuzzi": {
   "testo": "Vitantonio Liuzzi, detto Tonio è un ex pilota automobilistico italiano, attivo in Formula 1 dal 2005 al 2007 e dal 2009 al 2011.",
   "descrizione": "ex pilota automobilistico italiano",
@@ -8871,5 +8911,675 @@
   "testo": "Fabio Di Giannantonio è un pilota motociclistico italiano.",
   "descrizione": "pilota motociclistico italiano",
   "pagina": "https://it.wikipedia.org/wiki/Fabio_Di_Giannantonio"
+ },
+ "nome:Francesco Bagnaia": {
+  "testo": "Francesco Bagnaia è un pilota motociclistico italiano, vincitore di tre titoli mondiali.",
+  "descrizione": "pilota motociclistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Francesco_Bagnaia"
+ },
+ "nome:Alex Marquez": {
+  "testo": "Álex Márquez Alentà è un pilota motociclistico spagnolo, campione del mondo Moto3 nel 2014 e Moto2 nel 2019.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/%C3%81lex_M%C3%A1rquez"
+ },
+ "nome:Enea Bastianini": {
+  "testo": "Enea Bastianini è un pilota motociclistico italiano, campione del mondo Moto2 nel 2020.",
+  "descrizione": "pilota motociclistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Enea_Bastianini"
+ },
+ "nome:Luca Marini": {
+  "testo": "Luca Marini è un pilota motociclistico italiano.",
+  "descrizione": "pilota motociclistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Luca_Marini"
+ },
+ "nome:Brad Binder": {
+  "testo": "Brad Binder è un pilota motociclistico sudafricano, campione del mondo Moto3 nel 2016.",
+  "descrizione": "pilota motociclistico sudafricano",
+  "pagina": "https://it.wikipedia.org/wiki/Brad_Binder"
+ },
+ "nome:Diogo Moreira": {
+  "testo": "Diogo Moreira Nascimento è un pilota motociclistico brasiliano, campione del mondo Moto2 nel 2025.",
+  "descrizione": "pilota motociclistico brasiliano (2004-)",
+  "pagina": "https://it.wikipedia.org/wiki/Diogo_Moreira"
+ },
+ "nome:Fabio Quartararo": {
+  "testo": "Fabio Quartararo è un pilota motociclistico francese, campione del mondo MotoGP nel 2021.",
+  "descrizione": "pilota motociclistico francese",
+  "pagina": "https://it.wikipedia.org/wiki/Fabio_Quartararo"
+ },
+ "nome:Franco Morbidelli": {
+  "testo": "Franco Morbidelli è un pilota motociclistico italiano con cittadinanza brasiliana, campione europeo Superstock 600 nel 2013 e campione mondiale Moto2 nel 2017.",
+  "descrizione": "pilota motociclistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Franco_Morbidelli"
+ },
+ "nome:Johann Zarco": {
+  "testo": "Johann Zarco è un pilota motociclistico francese, vincitore della Red Bull Rookies Cup nel 2007 e campione del mondo Moto2 nel 2015 e 2016.",
+  "descrizione": "pilota motociclistico francese",
+  "pagina": "https://it.wikipedia.org/wiki/Johann_Zarco"
+ },
+ "nome:Joan Mir": {
+  "testo": "Joan Mir Mayrata è un pilota motociclistico spagnolo, campione del mondo Moto3 nel 2017 e MotoGP nel 2020.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Joan_Mir"
+ },
+ "nome:Jack Miller": {
+  "testo": "Jack Peter Miller è un pilota motociclistico australiano.",
+  "descrizione": "pilota motociclistico australiano",
+  "pagina": "https://it.wikipedia.org/wiki/Jack_Miller"
+ },
+ "nome:Alex Rins": {
+  "testo": "Alejandro Rins Navarro è un pilota motociclistico spagnolo.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/%C3%81lex_Rins"
+ },
+ "nome:Toprak Razgatlioglu": {
+  "testo": "Toprak Razgatlıoğlu è un pilota motociclistico turco vincitore del campionato europeo Superstock 600 nel 2015, del Trofeo Indipendenti nel mondiale Superbike 2019, campione del mondo Superbike nel 2021, 2024 e 2025.",
+  "descrizione": "pilota motociclistico turco (1996-)",
+  "pagina": "https://it.wikipedia.org/wiki/Toprak_Razgatl%C4%B1o%C4%9Flu"
+ },
+ "nome:Maverick Viñales": {
+  "testo": "Maverick Viñales Ruiz è un pilota motociclistico spagnolo, campione europeo della classe 125 nel 2010 e campione mondiale Moto3 nel 2013.",
+  "descrizione": "pilota motociclistico spagnolo (1995-)",
+  "pagina": "https://it.wikipedia.org/wiki/Maverick_Vi%C3%B1ales"
+ },
+ "nome:Iker Lecuona": {
+  "testo": "Iker Lecuona Gascón è un pilota motociclistico spagnolo.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Iker_Lecuona"
+ },
+ "nome:Augusto Fernandez": {
+  "testo": "Augusto Fernández Guerra è un pilota motociclistico spagnolo vincitore della European Junior Cup nel 2014 e campione del mondo Moto2 nel 2022.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Augusto_Fern%C3%A1ndez_(motociclista)"
+ },
+ "nome:Pol Espargaro": {
+  "testo": "Pol Espargaró Villà è un pilota motociclistico spagnolo, campione mondiale Moto2 nel 2013.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Pol_Espargar%C3%B3"
+ },
+ "nome:Somkiat Chantra": {
+  "testo": "Somkiat Chantra è un pilota motociclistico thailandese.",
+  "descrizione": "pilota motociclistico thailandese (1998-)",
+  "pagina": "https://it.wikipedia.org/wiki/Somkiat_Chantra"
+ },
+ "nome:Takaaki Nakagami": {
+  "testo": "Takaaki Nakagami è un pilota motociclistico giapponese.",
+  "descrizione": "pilota motociclistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Takaaki_Nakagami"
+ },
+ "nome:Cal Crutchlow": {
+  "testo": "Cal Crutchlow è un pilota motociclistico britannico campione britannico (2006) e mondiale Supersport (2009).",
+  "descrizione": "pilota motociclistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Cal_Crutchlow"
+ },
+ "nome:Jonas Folger": {
+  "testo": "Jonas Folger è un pilota motociclistico tedesco.",
+  "descrizione": "pilota motociclistico tedesco",
+  "pagina": "https://it.wikipedia.org/wiki/Jonas_Folger"
+ },
+ "nome:Lorenzo Savadori": {
+  "testo": "Lorenzo Savadori è un pilota motociclistico italiano vincitore della Superstock 1000 FIM Cup nel 2015, del campionato italiano Superbike nel 2020, campione italiano ed europeo Classe 125 nel 2008.",
+  "descrizione": "pilota motociclistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Lorenzo_Savadori"
+ },
+ "nome:Michele Pirro": {
+  "testo": "Michele Pio Pirro è un pilota motociclistico italiano, campione europeo della classe 125 nel 2004 e dieci volte Campione Italiano: due in Superstock 1000, uno in Supersport 600 (2009) e sette in Superbike nel 2015, 2017, 2018, 2019, 2021, \n2022 e 2024.",
+  "descrizione": "pilota motociclistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Michele_Pirro"
+ },
+ "nome:Izan Guevara": {
+  "testo": "Izan Guevara Bonnin è un pilota motociclistico spagnolo, vincitore della European Talent Cup nel 2019 e campione mondiale Moto3 nel 2022.",
+  "descrizione": "pilota motociclistico spagnolo (2004-)",
+  "pagina": "https://it.wikipedia.org/wiki/Izan_Guevara"
+ },
+ "nome:David Alonso": {
+  "testo": "David Alonso Gómez è un pilota motociclistico colombiano con cittadinanza spagnola, vincitore della European Talent Cup nel 2020, della MotoGP Rookies Cup nel 2021 e del mondiale Moto3 nel 2024.",
+  "descrizione": "pilota motociclistico colombiano",
+  "pagina": "https://it.wikipedia.org/wiki/David_Alonso"
+ },
+ "nome:Daniel Holgado": {
+  "testo": "Daniel Holgado Miralles è un pilota motociclistico spagnolo.",
+  "descrizione": "pilota motociclistico spagnolo (2005-)",
+  "pagina": "https://it.wikipedia.org/wiki/Daniel_Holgado"
+ },
+ "nome:Senna Agius": {
+  "testo": "Senna Agius è un pilota motociclistico australiano, campione europeo Moto2 nel 2023.",
+  "descrizione": "pilota motociclistico australiano (2005-)",
+  "pagina": "https://it.wikipedia.org/wiki/Senna_Agius"
+ },
+ "nome:Filip Salac": {
+  "testo": "Filip Salač è un pilota motociclistico ceco.",
+  "descrizione": "pilota motociclistico ceco",
+  "pagina": "https://it.wikipedia.org/wiki/Filip_Sala%C4%8D"
+ },
+ "nome:Celestino Vietti": {
+  "testo": "Celestino Vietti-Ramus è un pilota motociclistico italiano.",
+  "descrizione": "pilota motociclistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Celestino_Vietti"
+ },
+ "nome:Collin Veijer": {
+  "testo": "Collin Veijer è un pilota motociclistico olandese.",
+  "descrizione": "pilota motociclistico olandese",
+  "pagina": "https://it.wikipedia.org/wiki/Collin_Veijer"
+ },
+ "nome:Tony Arbolino": {
+  "testo": "Tony Arbolino è un pilota motociclistico italiano.",
+  "descrizione": "pilota motociclistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Tony_Arbolino"
+ },
+ "nome:Barry Baltus": {
+  "testo": "Barry Baltus è un pilota motociclistico belga.",
+  "descrizione": "pilota motociclistico belga",
+  "pagina": "https://it.wikipedia.org/wiki/Barry_Baltus"
+ },
+ "nome:Joe Roberts": {
+  "testo": "Joe Roberts è un pilota motociclistico statunitense.",
+  "descrizione": "pilota motociclistico statunitense",
+  "pagina": "https://it.wikipedia.org/wiki/Joe_Roberts_(motociclista)"
+ },
+ "nome:Luca Lunetta": {
+  "testo": "Luca Lunetta è un pilota motociclistico italiano.",
+  "descrizione": "pilota motociclistico italiano (2006-)",
+  "pagina": "https://it.wikipedia.org/wiki/Luca_Lunetta"
+ },
+ "nome:Ayumu Sasaki": {
+  "testo": "Ayumu Sasaki è un pilota motociclistico giapponese, vincitore della Red Bull Rookies Cup nel 2016.",
+  "descrizione": "pilota motociclistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Ayumu_Sasaki"
+ },
+ "nome:Aron Canet": {
+  "testo": "Arón Canet Barbero è un pilota motociclistico spagnolo.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Ar%C3%B3n_Canet"
+ },
+ "nome:Taiyo Furusato": {
+  "testo": "Taiyō Furusato è un pilota motociclistico giapponese, vincitore dell'Asia Talent Cup nel 2021.",
+  "descrizione": "pilota motociclistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Taiy%C5%8D_Furusato"
+ },
+ "nome:Angel Piqueras": {
+  "testo": "Ángel Piqueras è un pilota motociclistico spagnolo, vincitore della MotoGP Rookies Cup nel 2023.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/%C3%81ngel_Piqueras"
+ },
+ "nome:Marcos Ramirez": {
+  "testo": "Marcos Ramírez Fernández è un pilota motociclistico spagnolo.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Marcos_Ram%C3%ADrez"
+ },
+ "nome:Jorge Navarro": {
+  "testo": "Jorge Navarro Sánchez è un pilota motociclistico spagnolo.",
+  "descrizione": "pilota motociclistico spagnolo (1996-)",
+  "pagina": "https://it.wikipedia.org/wiki/Jorge_Navarro"
+ },
+ "nome:Dennis Foggia": {
+  "testo": "Dennis Foggia è un pilota motociclistico italiano.",
+  "descrizione": "pilota motociclistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Dennis_Foggia"
+ },
+ "nome:Maximo Quiles": {
+  "testo": "Máximo Martínez Quiles è un pilota motociclistico spagnolo, vincitore della European Talent Cup nel 2021 e 2023.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/M%C3%A1ximo_Quiles"
+ },
+ "nome:David Almansa": {
+  "testo": "David García Almansa è un pilota motociclistico spagnolo.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/David_Almansa"
+ },
+ "nome:Alvaro Carpe": {
+  "testo": "Álvaro Carpe è un pilota motociclistico spagnolo, vincitore della MotoGP Rookies Cup nel 2024.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/%C3%81lvaro_Carpe"
+ },
+ "nome:Matteo Bertelle": {
+  "testo": "Matteo Bertelle è un pilota motociclistico italiano.",
+  "descrizione": "pilota motociclistico italiano (2004-)",
+  "pagina": "https://it.wikipedia.org/wiki/Matteo_Bertelle"
+ },
+ "nome:Guido Pini": {
+  "testo": "Guido Pini è un pilota motociclistico italiano, vincitore della European Talent Cup nel 2022.",
+  "descrizione": "pilota motociclistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Guido_Pini"
+ },
+ "nome:Joel Kelso": {
+  "testo": "Joel Damon Kelso è un pilota motociclistico australiano.",
+  "descrizione": "pilota motociclistico australiano",
+  "pagina": "https://it.wikipedia.org/wiki/Joel_Kelso"
+ },
+ "nome:David Muñoz": {
+  "testo": "David Muñoz Rodríguez è un pilota motociclistico spagnolo.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/David_Mu%C3%B1oz_(motociclista)"
+ },
+ "nome:Ryusei Yamanaka": {
+  "testo": "Ryūsei Yamanaka è un pilota motociclistico giapponese.",
+  "descrizione": "pilota motociclistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Ry%C5%ABsei_Yamanaka"
+ },
+ "nome:Scott Ogden": {
+  "testo": "Scott Ogden è un pilota motociclistico britannico, campione britannico Motostar Moto3 e vincitore della British Talent Cup nel 2019.",
+  "descrizione": "pilota motociclistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Scott_Ogden"
+ },
+ "nome:Miguel Oliveira": {
+  "testo": "Miguel Ângelo Falcão de Oliveira è un pilota motociclistico portoghese.",
+  "descrizione": "pilota motociclistico portoghese",
+  "pagina": "https://it.wikipedia.org/wiki/Miguel_Oliveira"
+ },
+ "nome:Aleix Espargaro": {
+  "testo": "Aleix Espargaró Villà è un pilota motociclistico e ciclista spagnolo.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Aleix_Espargar%C3%B3"
+ },
+ "nome:Daniel Pedrosa": {
+  "testo": "Daniel Pedrosa Ramal, detto Dani, è un ex pilota motociclistico spagnolo, campione mondiale classe 125 (2003) e 250.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Daniel_Pedrosa"
+ },
+ "nome:Stefan Bradl": {
+  "testo": "Stefan Bradl è un ex pilota motociclistico tedesco, campione mondiale Moto2 nel 2011.",
+  "descrizione": "pilota motociclistico tedesco",
+  "pagina": "https://it.wikipedia.org/wiki/Stefan_Bradl"
+ },
+ "nome:Remy Gardner": {
+  "testo": "Remy Gardner è un pilota motociclistico australiano, campione del mondo Moto2 nel 2021.",
+  "descrizione": "pilota motociclistico australiano",
+  "pagina": "https://it.wikipedia.org/wiki/Remy_Gardner"
+ },
+ "nome:Andrea Iannone": {
+  "testo": "Andrea Iannone è un pilota motociclistico italiano.",
+  "descrizione": "pilota motociclistico italiano (1989-)",
+  "pagina": "https://it.wikipedia.org/wiki/Andrea_Iannone"
+ },
+ "nome:Danilo Petrucci": {
+  "testo": "Danilo Carlo Petrucci è un pilota motociclistico italiano, vincitore del campionato europeo Superstock Junior nel 2009, del campionato italiano Superstock 1000 nel 2011 e del Trofeo Indipendenti nel mondiale Superbike 2024 e 2025.",
+  "descrizione": "pilota motociclistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Danilo_Petrucci"
+ },
+ "nome:Alvaro Bautista": {
+  "testo": "Álvaro Bautista Arce è un pilota motociclistico spagnolo, campione del mondo classe 125 nel 2006 e Superbike nel 2022 e 2023.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/%C3%81lvaro_Bautista"
+ },
+ "nome:Andrea Dovizioso": {
+  "testo": "Andrea Dovizioso è un ex pilota motociclistico italiano, campione europeo (2001) e mondiale (2004) della classe 125.",
+  "descrizione": "pilota motociclistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Andrea_Dovizioso"
+ },
+ "nome:Darryn Binder": {
+  "testo": "Darryn Binder è un pilota motociclistico sudafricano.",
+  "descrizione": "pilota motociclistico sudafricano",
+  "pagina": "https://it.wikipedia.org/wiki/Darryn_Binder"
+ },
+ "nome:Tetsuta Nagashima": {
+  "testo": "Tetsuta Nagashima è un pilota motociclistico giapponese.",
+  "descrizione": "pilota motociclistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Tetsuta_Nagashima"
+ },
+ "nome:Valentino Rossi": {
+  "testo": "Valentino Rossi è un pilota automobilistico, dirigente sportivo ed ex pilota motociclistico italiano, vincitore di nove titoli nel motomondiale.",
+  "descrizione": "pilota motociclistico, pilota automobilistico e dirigente sportivo italiano (1979-)",
+  "pagina": "https://it.wikipedia.org/wiki/Valentino_Rossi"
+ },
+ "nome:Tito Rabat": {
+  "testo": "Esteve Rabat Bergada, detto Tito, è un pilota motociclistico spagnolo, campione del mondo della Moto2 nel 2014.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Esteve_Rabat"
+ },
+ "nome:Garrett Gerloff": {
+  "testo": "Garrett Gerloff è un pilota motociclistico statunitense vincitore del Trofeo Indipendenti nel mondiale Superbike 2021.",
+  "descrizione": "pilota motociclistico statunitense",
+  "pagina": "https://it.wikipedia.org/wiki/Garrett_Gerloff"
+ },
+ "nome:Jake Dixon": {
+  "testo": "Jake Curtis Dixon è un pilota motociclistico britannico.",
+  "descrizione": "pilota motociclistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Jake_Dixon"
+ },
+ "nome:Bradley Smith": {
+  "testo": "Bradley William Smith è un pilota motociclistico britannico.",
+  "descrizione": "pilota motociclistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Bradley_Smith"
+ },
+ "nome:Mika Kallio": {
+  "testo": "Mika Kallio è un ex pilota motociclistico finlandese.",
+  "descrizione": "pilota motociclistico finlandese",
+  "pagina": "https://it.wikipedia.org/wiki/Mika_Kallio"
+ },
+ "nome:Jorge Lorenzo": {
+  "testo": "Jorge Lorenzo Guerrero è un ex pilota motociclistico spagnolo, vincitore di cinque titoli iridati nel motomondiale: nel 2006 e nel 2007 nella classe 250, nel 2010, 2012 e 2015 in MotoGP.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Jorge_Lorenzo"
+ },
+ "nome:Hafizh Syahrin": {
+  "testo": "Hafizh Syahrin Bin Abdullah è un pilota motociclistico malese.",
+  "descrizione": "pilota motociclistico malese",
+  "pagina": "https://it.wikipedia.org/wiki/Hafizh_Syahrin"
+ },
+ "nome:Karel Abraham": {
+  "testo": "Karel Abraham è un ex pilota motociclistico ceco.",
+  "descrizione": "pilota motociclistico ceco",
+  "pagina": "https://it.wikipedia.org/wiki/Karel_Abraham"
+ },
+ "nome:Sylvain Guintoli": {
+  "testo": "Sylvain Guintoli è un pilota motociclistico francese, vincitore del Campionato mondiale Superbike nel 2014 e della 24 ore di Le Mans di motociclismo nel 2021.",
+  "descrizione": "pilota motociclistico francese",
+  "pagina": "https://it.wikipedia.org/wiki/Sylvain_Guintoli"
+ },
+ "nome:Scott Redding": {
+  "testo": "Scott Redding è un pilota motociclistico britannico, vincitore del campionato britannico Superbike nel 2019.",
+  "descrizione": "pilota motociclistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Scott_Redding"
+ },
+ "nome:Katsuyuki Nakasuga": {
+  "testo": "Katsuyuki Nakasuga è un pilota motociclistico giapponese, tredici volte campione giapponse JSB1000.",
+  "descrizione": "pilota motociclistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Katsuyuki_Nakasuga"
+ },
+ "nome:Xavier Simeon": {
+  "testo": "Xavier Siméon è un ex pilota motociclistico belga, vincitore del campionato europeo Superstock 600 nel 2006, Stocksport Junior nel 2008 e della Superstock 1000 FIM Cup nel 2009.",
+  "descrizione": "pilota motociclistico belga",
+  "pagina": "https://it.wikipedia.org/wiki/Xavier_Sim%C3%A9on"
+ },
+ "nome:Jordi Torres": {
+  "testo": "Jordi Torres Fernández è un pilota motociclistico spagnolo, campione europeo Supersport nel 2011 e 2012, vincitore della Coppa del Mondo MotoE nel 2020 e nel 2021.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Jordi_Torres"
+ },
+ "nome:Thomas Luthi": {
+  "testo": "Thomas Lüthi è un ex pilota motociclistico svizzero, campione mondiale classe 125 nel 2005.",
+  "descrizione": "pilota motociclistico svizzero",
+  "pagina": "https://it.wikipedia.org/wiki/Thomas_L%C3%BCthi"
+ },
+ "nome:Mike Jones": {
+  "testo": "Michael Jones è un pilota motociclistico australiano, campione Australiano Superbike nel 2015, 2019 e 2022.",
+  "descrizione": "pilota motociclistico australiano",
+  "pagina": "https://it.wikipedia.org/wiki/Mike_Jones_(motociclista)"
+ },
+ "nome:Christophe Ponsson": {
+  "testo": "Christophe Ponsson è un pilota motociclistico francese.",
+  "descrizione": "pilota motociclistico francese",
+  "pagina": "https://it.wikipedia.org/wiki/Christophe_Ponsson"
+ },
+ "nome:Loris Baz": {
+  "testo": "Loris Baz è un pilota motociclistico francese, campione europeo Superstock 600 nel 2008 e Superstock 1000 (Junior) nel 2011.",
+  "descrizione": "pilota motociclistico francese",
+  "pagina": "https://it.wikipedia.org/wiki/Loris_Baz"
+ },
+ "nome:Hector Barbera": {
+  "testo": "Héctor Barberá Vall è un ex pilota motociclistico spagnolo.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/H%C3%A9ctor_Barber%C3%A1"
+ },
+ "nome:Sam Lowes": {
+  "testo": "Samuel Deane Lowes è un pilota motociclistico britannico vincitore del campionato mondiale Supersport nel 2013.",
+  "descrizione": "pilota motociclistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Sam_Lowes"
+ },
+ "nome:Michael Van Der Mark": {
+  "testo": "Michael van der Mark è un pilota motociclistico olandese vincitore del campionato mondiale Supersport nel 2014 e del campionato europeo Superstock 600 nel 2012.",
+  "descrizione": "pilota motociclistico olandese",
+  "pagina": "https://it.wikipedia.org/wiki/Michael_van_der_Mark"
+ },
+ "nome:Hiroshi Aoyama": {
+  "testo": "Hiroshi Aoyama è un ex pilota motociclistico e dirigente sportivo giapponese, campione mondiale classe 250 nel 2009.",
+  "descrizione": "pilota motociclistico giapponese (1981-)",
+  "pagina": "https://it.wikipedia.org/wiki/Hiroshi_Aoyama"
+ },
+ "nome:Broc Parkes": {
+  "testo": "Broc Parkes è un ex pilota motociclistico australiano.",
+  "descrizione": "pilota motociclistico australiano",
+  "pagina": "https://it.wikipedia.org/wiki/Broc_Parkes"
+ },
+ "nome:Eugene Laverty": {
+  "testo": "Eugene Laverty è un pilota motociclistico britannico, ritiratosi dall'attività agonistica.",
+  "descrizione": "pilota motociclistico nordirlandese (1986-)",
+  "pagina": "https://it.wikipedia.org/wiki/Eugene_Laverty"
+ },
+ "nome:Yonny Hernandez": {
+  "testo": "Yonny Hernández Vega è un ex pilota motociclistico colombiano.",
+  "descrizione": "pilota motociclistico colombiano",
+  "pagina": "https://it.wikipedia.org/wiki/Yonny_Hern%C3%A1ndez"
+ },
+ "nome:Alex Lowes": {
+  "testo": "Alexander Thomas Lowes è un pilota motociclistico britannico, vincitore del campionato britannico Superbike nel 2013.",
+  "descrizione": "pilota motociclistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Alex_Lowes"
+ },
+ "nome:Nicky Hayden": {
+  "testo": "Nicholas Patrick Hayden, detto Nicky, è stato un pilota motociclistico statunitense, campione americano Superbike nel 2002 e campione del mondo MotoGP nel 2006.",
+  "descrizione": "pilota motociclistico statunitense (1981-2017)",
+  "pagina": "https://it.wikipedia.org/wiki/Nicky_Hayden"
+ },
+ "nome:Mike Di Meglio": {
+  "testo": "Mickaël Teddy Di Meglio è un pilota motociclistico francese, vincitore del mondiale classe 125 nel 2008 e di due edizioni del mondiale Endurance.",
+  "descrizione": "pilota motociclistico francese",
+  "pagina": "https://it.wikipedia.org/wiki/Mike_Di_Meglio"
+ },
+ "nome:Takumi Takahashi": {
+  "testo": "Takumi Takahashi è un pilota motociclistico giapponese pluri vincitore della 8 Ore di Suzuka.",
+  "descrizione": "pilota motociclistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Takumi_Takahashi"
+ },
+ "nome:Toni Elias": {
+  "testo": "Antonio Elías Justicia, detto Toni, è un ex pilota motociclistico spagnolo, campione mondiale Moto2 nel 2010 e campione di MotoAmerica Superbike nel 2017.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Toni_El%C3%ADas"
+ },
+ "nome:Alex De Angelis": {
+  "testo": "Alex De Angelis è un ex pilota motociclistico sammarinese.",
+  "descrizione": "pilota motociclistico sammarinese",
+  "pagina": "https://it.wikipedia.org/wiki/Alex_De_Angelis"
+ },
+ "nome:Colin Edwards": {
+  "testo": "Colin Edwards II è un ex pilota motociclistico statunitense, campione mondiale Superbike nel 2000 e 2002.",
+  "descrizione": "pilota motociclistico statunitense",
+  "pagina": "https://it.wikipedia.org/wiki/Colin_Edwards"
+ },
+ "nome:Michael Laverty": {
+  "testo": "Michael Laverty è un pilota motociclistico britannico ritiratosi dall'attività agonistica.",
+  "descrizione": "pilota motociclistico britannico (1981-)",
+  "pagina": "https://it.wikipedia.org/wiki/Michael_Laverty"
+ },
+ "nome:Leon Camier": {
+  "testo": "Leon Stuart Camier è un pilota motociclistico britannico, ritiratosi dall'attività agonistica.",
+  "descrizione": "pilota motociclistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Leon_Camier"
+ },
+ "nome:Randy De Puniet": {
+  "testo": "Randy de Puniet è un pilota motociclistico francese.",
+  "descrizione": "pilota motociclistico francese",
+  "pagina": "https://it.wikipedia.org/wiki/Randy_de_Puniet"
+ },
+ "nome:Claudio Corti": {
+  "testo": "Claudio Corti è un pilota motociclistico italiano, vincitore del campionato europeo Superstock 600 nel 2005.",
+  "descrizione": "pilota motociclistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Claudio_Corti_(motociclista)"
+ },
+ "nome:Ben Spies": {
+  "testo": "Ben Spies è un ex pilota motociclistico statunitense, campione americano Superbike dal 2006 al 2008, campione mondiale Superbike nel 2009.",
+  "descrizione": "pilota motociclistico statunitense",
+  "pagina": "https://it.wikipedia.org/wiki/Ben_Spies"
+ },
+ "nome:Bryan Staring": {
+  "testo": "Bryan Staring è un ex pilota motociclistico australiano, campione australiano Superbike nel 2010.",
+  "descrizione": "pilota motociclistico australiano",
+  "pagina": "https://it.wikipedia.org/wiki/Bryan_Staring"
+ },
+ "nome:Casey Stoner": {
+  "testo": "Casey Stoner è un ex pilota motociclistico australiano vincitore del campionato del mondo in MotoGP nel 2007 e nel 2011.",
+  "descrizione": "ex pilota motociclistico australiano",
+  "pagina": "https://it.wikipedia.org/wiki/Casey_Stoner"
+ },
+ "nome:James Ellison": {
+  "testo": "James Ellison è un ex pilota motociclistico britannico, campione europeo Superstock 1000 nel 2000 e 2001.",
+  "descrizione": "pilota motociclistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/James_Ellison"
+ },
+ "nome:Jonathan Rea": {
+  "testo": "Jonathan Andrew Rea è un pilota motociclistico britannico, 6 volte campione mondiale Superbike: nel 2015, 2016, 2017, 2018, 2019 e 2020. Dal 2026 è collaudatore tecnico per Honda.",
+  "descrizione": "pilota motociclistico britannico (1987-)",
+  "pagina": "https://it.wikipedia.org/wiki/Jonathan_Rea"
+ },
+ "nome:Mattia Pasini": {
+  "testo": "Mattia Pasini è un pilota motociclistico italiano.",
+  "descrizione": "pilota motociclistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Mattia_Pasini"
+ },
+ "nome:Ivan Silva": {
+  "testo": "Iván Silva Alberola è un ex pilota motociclistico spagnolo campione europeo Superstock 1000 nel 2011.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Iv%C3%A1n_Silva"
+ },
+ "nome:David Salom": {
+  "testo": "David Salom Fuentes è un ex pilota motociclistico e dirigente sportivo spagnolo, vincitore del trofeo Superbike EVO nel 2014.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/David_Salom"
+ },
+ "nome:Marco Simoncelli": {
+  "testo": "Marco Simoncelli è stato un pilota motociclistico italiano, campione europeo classe 125 nel 2002 e campione del mondo classe 250 nel 2008.",
+  "descrizione": "pilota motociclistico italiano (1987-2011)",
+  "pagina": "https://it.wikipedia.org/wiki/Marco_Simoncelli"
+ },
+ "nome:Loris Capirossi": {
+  "testo": "Loris Capirossi è un ex pilota motociclistico italiano.",
+  "descrizione": "pilota motociclistico italiano (1973-)",
+  "pagina": "https://it.wikipedia.org/wiki/Loris_Capirossi"
+ },
+ "nome:Josh Hayes": {
+  "testo": "Joshua Kurt Hayes è un ex pilota motociclistico statunitense, sette volte campione MotoAmericaː Superstock nel 2003, Formula Extreme nel 2006-07 e Superbike nel 2010, 2011, 2012 e 2014.",
+  "descrizione": "pilota motociclistico statunitense",
+  "pagina": "https://it.wikipedia.org/wiki/Josh_Hayes"
+ },
+ "nome:Kousuke Akiyoshi": {
+  "testo": "Kōsuke Akiyoshi è un ex pilota motociclistico giapponese.",
+  "descrizione": "pilota motociclistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/K%C5%8Dsuke_Akiyoshi"
+ },
+ "nome:John Hopkins": {
+  "testo": "John Hopkins è un ex pilota motociclistico statunitense.",
+  "descrizione": "pilota motociclistico statunitense",
+  "pagina": "https://it.wikipedia.org/wiki/John_Hopkins"
+ },
+ "nome:Shinichi Ito": {
+  "testo": "Shin'ichi Itō è un ex pilota motociclistico giapponese, campione giapponese Classe 500 (1990) e tre volte Superbike.",
+  "descrizione": "pilota motociclistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Shin'ichi_It%C5%8D"
+ },
+ "nome:Marco Melandri": {
+  "testo": "Marco Melandri è un pilota motociclistico italiano ritiratosi dall'attività agonistica, campione del mondo della classe 250 nel 2002.",
+  "descrizione": "pilota motociclistico italiano (1982-)",
+  "pagina": "https://it.wikipedia.org/wiki/Marco_Melandri"
+ },
+ "nome:Roger Lee Hayden": {
+  "testo": "Roger Lee Hayden è un ex pilota motociclistico statunitense.",
+  "descrizione": "pilota motociclistico statunitense",
+  "pagina": "https://it.wikipedia.org/wiki/Roger_Lee_Hayden"
+ },
+ "nome:Carlos Checa": {
+  "testo": "Carlos Checa Carrera è un ex pilota motociclistico spagnolo, campione mondiale Superbike nel 2011.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Carlos_Checa"
+ },
+ "nome:Wataru Yoshikawa": {
+  "testo": "Wataru Yoshikawa è un ex pilota motociclistico giapponese, due volte campione giapponese Superbike.",
+  "descrizione": "pilota motociclistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Wataru_Yoshikawa"
+ },
+ "nome:Chris Vermeulen": {
+  "testo": "Chris Vermeulen è un ex pilota motociclistico australiano, campione mondiale Supersport nel 2003.",
+  "descrizione": "pilota motociclistico australiano",
+  "pagina": "https://it.wikipedia.org/wiki/Chris_Vermeulen"
+ },
+ "nome:James Toseland": {
+  "testo": "James Michael Toseland è un pilota motociclistico britannico ritiratosi dall'attività agonistica, campione mondiale Superbike nel 2004 e nel 2007.",
+  "descrizione": "pilota motociclistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/James_Toseland"
+ },
+ "nome:Niccolo Canepa": {
+  "testo": "Niccolò Canepa è un ex pilota motociclistico italiano, vincitore della Superstock 1000 FIM Cup nel 2007 e campione del mondo Endurance nel 2017 e 2023.",
+  "descrizione": "pilota motociclistico italiano (1988-)",
+  "pagina": "https://it.wikipedia.org/wiki/Niccol%C3%B2_Canepa"
+ },
+ "nome:Gabor Talmacsi": {
+  "testo": "Gábor Talmácsi è un ex pilota motociclistico ed ex pilota automobilistico ungherese, campione mondiale classe 125 nel 2007.",
+  "descrizione": "pilota motociclistico ungherese",
+  "pagina": "https://it.wikipedia.org/wiki/G%C3%A1bor_Talm%C3%A1csi"
+ },
+ "nome:Sete Gibernau": {
+  "testo": "Manuel Gibernau Bultó, meglio conosciuto come Sete Gibernau, è un ex pilota motociclistico spagnolo.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Sete_Gibernau"
+ },
+ "nome:Yuki Takahashi": {
+  "testo": "Yūki Takahashi è un ex pilota motociclistico giapponese.",
+  "descrizione": "pilota motociclistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Y%C5%ABki_Takahashi"
+ },
+ "nome:Shinya Nakano": {
+  "testo": "Shin'ya Nakano è un ex pilota motociclistico giapponese.",
+  "descrizione": "pilota motociclistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Shin'ya_Nakano"
+ },
+ "nome:Anthony West": {
+  "testo": "Anthony West è un pilota motociclistico australiano.",
+  "descrizione": "pilota motociclistico australiano (1981-)",
+  "pagina": "https://it.wikipedia.org/wiki/Anthony_West"
+ },
+ "nome:Jamie Hacking": {
+  "testo": "Jamie Hacking è un pilota motociclistico britannico.",
+  "descrizione": "pilota motociclistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Jamie_Hacking"
+ },
+ "nome:Tadayuki Okada": {
+  "testo": "Tadayuki Okada è un ex pilota motociclistico giapponese.",
+  "descrizione": "pilota motociclistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Tadayuki_Okada"
+ },
+ "nome:Alex Barros": {
+  "testo": "Alexandre Barros, detto Alex, è un pilota motociclistico brasiliano ritiratosi dall'attività agonistica.",
+  "descrizione": "pilota motociclistico brasiliano",
+  "pagina": "https://it.wikipedia.org/wiki/Alex_Barros"
+ },
+ "nome:Alex Hofmann": {
+  "testo": "Alexander Hofmann è un ex pilota motociclistico tedesco campione europeo della classe 250 nel 1998.",
+  "descrizione": "pilota motociclistico tedesco",
+  "pagina": "https://it.wikipedia.org/wiki/Alex_Hofmann"
+ },
+ "nome:Makoto Tamada": {
+  "testo": "Makoto Tamada è un ex pilota motociclistico giapponese.",
+  "descrizione": "pilota motociclistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Makoto_Tamada"
+ },
+ "nome:Kurtis Roberts": {
+  "testo": "Kurtis Roberts è un ex pilota motociclistico statunitense.",
+  "descrizione": "pilota motociclistico statunitense",
+  "pagina": "https://it.wikipedia.org/wiki/Kurtis_Roberts"
+ },
+ "nome:Michel Fabrizio": {
+  "testo": "Michel Fabrizio è un ex pilota motociclistico italiano campione europeo Superstock 1000 nel 2003.",
+  "descrizione": "pilota motociclistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Michel_Fabrizio"
+ },
+ "nome:Fonsi Nieto": {
+  "testo": "Alfonso González Nieto, meglio conosciuto come Fonsi Nieto, è un ex pilota motociclistico spagnolo.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Fonsi_Nieto"
+ },
+ "nome:Olivier Jacque": {
+  "testo": "Olivier Jacque è un ex pilota motociclistico francese, campione del mondo Classe 250 nel 2000.",
+  "descrizione": "pilota motociclistico francese",
+  "pagina": "https://it.wikipedia.org/wiki/Olivier_Jacque"
+ },
+ "nome:Kenny Roberts Jr": {
+  "testo": "Kenneth Leroy Roberts Junior è un ex pilota motociclistico statunitense campione mondiale Classe 500 nel 2000.",
+  "descrizione": "pilota motociclistico statunitense",
+  "pagina": "https://it.wikipedia.org/wiki/Kenny_Roberts_Junior"
+ },
+ "nome:Nobuatsu Aoki": {
+  "testo": "Nobuatsu Aoki è un ex pilota motociclistico giapponese.",
+  "descrizione": "pilota motociclistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Nobuatsu_Aoki"
  }
 }

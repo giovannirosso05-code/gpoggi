@@ -356,7 +356,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 194,
+   "vittorie": 19,
+   "podi": 67,
+   "pole": 43,
+   "giri_veloci": 14,
+   "titoli": 2,
+   "motogp": {
+    "gare": 95,
+    "vittorie": 9,
+    "podi": 39,
+    "pole": 22,
+    "giri_veloci": 6,
+    "titoli": 1
+   },
+   "immagine": "Jorge Martin at the 2026 Spanish Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Jorge_Martin"
+  }
  },
  "moto:f55b433d-38b8-4d1d-bb3a-a709c82a0260": {
   "nascita": "1993-02-17",
@@ -555,7 +573,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 299,
+   "vittorie": 105,
+   "podi": 171,
+   "pole": 105,
+   "giri_veloci": 91,
+   "titoli": 9,
+   "motogp": {
+    "gare": 221,
+    "vittorie": 79,
+    "podi": 132,
+    "pole": 77,
+    "giri_veloci": 75,
+    "titoli": 7
+   },
+   "immagine": "Marc Marquez at the 2026 Spanish Grand Prix (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Marc_Marquez"
+  }
  },
  "moto:ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd": {
   "nascita": "1998-11-12",
@@ -679,7 +715,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 187,
+   "vittorie": 16,
+   "podi": 50,
+   "pole": 17,
+   "giri_veloci": 9,
+   "titoli": 0,
+   "motogp": {
+    "gare": 95,
+    "vittorie": 10,
+    "podi": 26,
+    "pole": 13,
+    "giri_veloci": 8,
+    "titoli": 0
+   },
+   "immagine": "Marco Bezzecchi at the 2025 Malaysian motorcycle Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Marco_Bezzecchi"
+  }
  },
  "moto:a6108385-dd4c-490d-b02e-542ed0275f79": {
   "nascita": "2004-05-25",
@@ -758,7 +812,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 113,
+   "vittorie": 17,
+   "podi": 43,
+   "pole": 7,
+   "giri_veloci": 14,
+   "titoli": 2,
+   "motogp": {
+    "gare": 57,
+    "vittorie": 1,
+    "podi": 16,
+    "pole": 2,
+    "giri_veloci": 4,
+    "titoli": 0
+   },
+   "immagine": "Pedro Acosta at the 2025 Italian motorcycle Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Pedro_Acosta_(motorcyclist)"
+  }
  },
  "moto:eb47c439-e136-40ff-9534-5c612853f529": {
   "nascita": "2001-01-26",
@@ -857,7 +929,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 140,
+   "vittorie": 7,
+   "podi": 31,
+   "pole": 7,
+   "giri_veloci": 7,
+   "titoli": 1,
+   "motogp": {
+    "gare": 29,
+    "vittorie": 1,
+    "podi": 4,
+    "pole": 1,
+    "giri_veloci": 2,
+    "titoli": 0
+   },
+   "immagine": "Ai Ogura at the 2026 Spanish Grand Prix (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Ai_Ogura"
+  }
  },
  "moto:6c33de41-f014-4f17-8dc9-e6f36e61026a": {
   "nascita": "1998-10-10",
@@ -976,7 +1066,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 192,
+   "vittorie": 5,
+   "podi": 31,
+   "pole": 4,
+   "giri_veloci": 5,
+   "titoli": 0,
+   "motogp": {
+    "gare": 85,
+    "vittorie": 2,
+    "podi": 9,
+    "pole": 3,
+    "giri_veloci": 2,
+    "titoli": 0
+   },
+   "immagine": "Fabio Di Giannantonio at the 2025 Malaysian motorcycle Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Fabio_Di_Giannantonio"
+  }
  },
  "moto:58448742-f520-466a-a1a1-bf3286cce9c3": {
   "nascita": "2000-10-23",
@@ -1095,7 +1203,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 146,
+   "vittorie": 12,
+   "podi": 22,
+   "pole": 13,
+   "giri_veloci": 10,
+   "titoli": 0,
+   "motogp": {
+    "gare": 86,
+    "vittorie": 2,
+    "podi": 6,
+    "pole": 0,
+    "giri_veloci": 2,
+    "titoli": 0
+   },
+   "immagine": "Raul Fernandez at the 2025 Malaysian motorcycle Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Raul_Fernandez_(motorcyclist)"
+  }
  },
  "moto:9cb55304-0ac1-401c-beb6-1a4f445018a4": {
   "nascita": "1997-01-14",
@@ -1239,7 +1365,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 249,
+   "vittorie": 41,
+   "podi": 86,
+   "pole": 35,
+   "giri_veloci": 27,
+   "titoli": 3,
+   "motogp": {
+    "gare": 144,
+    "vittorie": 31,
+    "podi": 63,
+    "pole": 28,
+    "giri_veloci": 22,
+    "titoli": 2
+   },
+   "immagine": "Pecco Bagnaia at the 2026 Spanish Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Francesco_Bagnaia"
+  }
  },
  "moto:e7e4c72e-952e-4f64-8e8a-a47ff590fade": {
   "nascita": "1996-04-23",
@@ -1403,7 +1547,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 259,
+   "vittorie": 16,
+   "podi": 57,
+   "pole": 17,
+   "giri_veloci": 25,
+   "titoli": 2,
+   "motogp": {
+    "gare": 124,
+    "vittorie": 4,
+    "podi": 19,
+    "pole": 2,
+    "giri_veloci": 8,
+    "titoli": 0
+   },
+   "immagine": "Alex Marquez 2023.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Alex_Marquez"
+  }
  },
  "moto:2614e0f6-7e02-4076-a746-50f43fe3143c": {
   "nascita": "2005-04-05",
@@ -1482,7 +1644,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 101,
+   "vittorie": 9,
+   "podi": 16,
+   "pole": 8,
+   "giri_veloci": 8,
+   "titoli": 0,
+   "motogp": {
+    "gare": 34,
+    "vittorie": 1,
+    "podi": 4,
+    "pole": 0,
+    "giri_veloci": 2,
+    "titoli": 0
+   },
+   "immagine": "Fermin Aldeguer at the 2026 Spanish Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Fermin_Aldeguer"
+  }
  },
  "moto:ff225c9d-64a2-43ac-a70e-62cf385a85a1": {
   "nascita": "1997-12-30",
@@ -1621,7 +1801,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 211,
+   "vittorie": 13,
+   "podi": 51,
+   "pole": 11,
+   "giri_veloci": 13,
+   "titoli": 1,
+   "motogp": {
+    "gare": 90,
+    "vittorie": 7,
+    "podi": 19,
+    "pole": 2,
+    "giri_veloci": 8,
+    "titoli": 0
+   },
+   "immagine": "Enea Bastianini at the 2026 Spanish Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Enea_Bastianini"
+  }
  },
  "moto:7b0687b0-90bd-4ad6-b157-8c66fb8a93cf": {
   "nascita": "1997-08-10",
@@ -1740,7 +1938,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 182,
+   "vittorie": 6,
+   "podi": 17,
+   "pole": 7,
+   "giri_veloci": 6,
+   "titoli": 0,
+   "motogp": {
+    "gare": 94,
+    "vittorie": 0,
+    "podi": 2,
+    "pole": 2,
+    "giri_veloci": 1,
+    "titoli": 0
+   },
+   "immagine": "Luca Marini at the 2025 Malaysian Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Luca_Marini"
+  }
  },
  "moto:ba579548-f026-402b-a607-38db5317d33f": {
   "nascita": "1995-08-11",
@@ -1899,7 +2115,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 278,
+   "vittorie": 17,
+   "podi": 46,
+   "pole": 7,
+   "giri_veloci": 14,
+   "titoli": 1,
+   "motogp": {
+    "gare": 133,
+    "vittorie": 2,
+    "podi": 11,
+    "pole": 0,
+    "giri_veloci": 4,
+    "titoli": 0
+   },
+   "immagine": "Brad_Binder_at_the_2023_Japanese_motorcycle_Grand_Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Brad_Binder"
+  }
  },
  "moto:3c7598e5-12ec-4e19-9311-1c0e9a017cbe": {
   "nascita": "2004-04-23",
@@ -1958,7 +2192,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 81,
+   "vittorie": 5,
+   "podi": 13,
+   "pole": 9,
+   "giri_veloci": 3,
+   "titoli": 1,
+   "motogp": {
+    "gare": 2,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Diogo Moreira at the 2025 Italian motorcycle Grand Prix (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Diogo_Moreira"
+  }
  },
  "moto:fcdd5500-a769-4ff4-8b9e-080d1849ff42": {
   "nascita": "1999-04-20",
@@ -2087,7 +2339,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 210,
+   "vittorie": 12,
+   "podi": 36,
+   "pole": 24,
+   "giri_veloci": 14,
+   "titoli": 1,
+   "motogp": {
+    "gare": 144,
+    "vittorie": 11,
+    "podi": 32,
+    "pole": 21,
+    "giri_veloci": 13,
+    "titoli": 1
+   },
+   "immagine": "Fabio Quartararo at the 2026 German motorcycle Grand Prix (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Fabio_Quartararo"
+  }
  },
  "moto:a73f8ef2-784f-4f52-8511-1d315fd3a459": {
   "nascita": "1994-12-04",
@@ -2241,7 +2511,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 213,
+   "vittorie": 11,
+   "podi": 29,
+   "pole": 8,
+   "giri_veloci": 15,
+   "titoli": 1,
+   "motogp": {
+    "gare": 142,
+    "vittorie": 3,
+    "podi": 8,
+    "pole": 2,
+    "giri_veloci": 2,
+    "titoli": 0
+   },
+   "immagine": "Franco Morbidelli at the 2025 Malaysian Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Franco_Morbidelli"
+  }
  },
  "moto:487440af-cfa9-478a-903b-4e893ee18d3a": {
   "nascita": "1990-07-16",
@@ -2430,7 +2718,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 304,
+   "vittorie": 18,
+   "podi": 64,
+   "pole": 27,
+   "giri_veloci": 23,
+   "titoli": 2,
+   "motogp": {
+    "gare": 166,
+    "vittorie": 2,
+    "podi": 23,
+    "pole": 8,
+    "giri_veloci": 11,
+    "titoli": 0
+   },
+   "immagine": "Johann Zarco at the 2025 Malaysian Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Johann_Zarco"
+  }
  },
  "moto:9a441928-d1af-452d-afce-fa028c044932": {
   "nascita": "1997-09-01",
@@ -2549,7 +2855,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 185,
+   "vittorie": 12,
+   "podi": 35,
+   "pole": 2,
+   "giri_veloci": 7,
+   "titoli": 2,
+   "motogp": {
+    "gare": 130,
+    "vittorie": 1,
+    "podi": 15,
+    "pole": 0,
+    "giri_veloci": 1,
+    "titoli": 1
+   },
+   "immagine": "Joan Mir at the 2025 Malaysian Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Joan_Mir"
+  }
  },
  "moto:6e940243-5167-4cc3-a343-a74337369b94": {
   "nascita": "1995-01-18",
@@ -2708,7 +3032,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 253,
+   "vittorie": 10,
+   "podi": 33,
+   "pole": 10,
+   "giri_veloci": 4,
+   "titoli": 0,
+   "motogp": {
+    "gare": 198,
+    "vittorie": 4,
+    "podi": 23,
+    "pole": 2,
+    "giri_veloci": 3,
+    "titoli": 0
+   },
+   "immagine": "Jack Miller at the 2025 Malaysian Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Jack_Miller_(motorcyclist)"
+  }
  },
  "moto:56475aa3-f3d1-485a-b6db-ca1149e1b6fa": {
   "nascita": "1995-12-08",
@@ -2867,7 +3209,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 231,
+   "vittorie": 18,
+   "podi": 58,
+   "pole": 17,
+   "giri_veloci": 19,
+   "titoli": 0,
+   "motogp": {
+    "gare": 144,
+    "vittorie": 6,
+    "podi": 18,
+    "pole": 0,
+    "giri_veloci": 7,
+    "titoli": 0
+   },
+   "immagine": "Alex_Rins_at_the_2023_Japanese_motorcycle_Grand_Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Alex_Rins"
+  }
  },
  "moto:24c03c0c-b2d9-4959-99e0-017214043604": {
   "nascita": "1996-10-16",
@@ -2886,7 +3246,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 15,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 15,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Toprak Razgatlıoğlu at the 2026 German motorcycle Grand Prix (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Toprak_Razgatlioglu"
+  }
  },
  "moto:66ee98b2-239c-487f-8913-aab8493ce280": {
   "nascita": "1995-01-12",
@@ -3060,7 +3438,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 266,
+   "vittorie": 26,
+   "podi": 75,
+   "pole": 26,
+   "giri_veloci": 24,
+   "titoli": 1,
+   "motogp": {
+    "gare": 199,
+    "vittorie": 10,
+    "podi": 35,
+    "pole": 15,
+    "giri_veloci": 12,
+    "titoli": 0
+   },
+   "immagine": "Maverick Viñales at the 2025 Italian motorcycle Grand Prix (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Maverick_Vi%C3%B1ales"
+  }
  },
  "moto:173da4e6-99bd-4468-b277-cf47f1efd24b": {
   "nascita": "2000-01-06",
@@ -3159,7 +3555,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 94,
+   "vittorie": 0,
+   "podi": 2,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 39,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Iker Lecuona 2023 (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Iker_Lecuona"
+  }
  },
  "moto:1113c9b8-c231-4ba7-a352-4c11c92ab9df": {
   "nascita": "1997-09-23",
@@ -3273,7 +3687,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 143,
+   "vittorie": 7,
+   "podi": 20,
+   "pole": 3,
+   "giri_veloci": 11,
+   "titoli": 1,
+   "motogp": {
+    "gare": 49,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Augusto Fernandez at the 2025 Malaysian Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Augusto_Fern%C3%A1ndez_(motorcyclist)"
+  }
  },
  "moto:40c19361-abe5-46e8-bed9-b3fa648dd7ac": {
   "nascita": "1991-06-10",
@@ -3507,7 +3939,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 296,
+   "vittorie": 15,
+   "podi": 52,
+   "pole": 20,
+   "giri_veloci": 16,
+   "titoli": 1,
+   "motogp": {
+    "gare": 174,
+    "vittorie": 0,
+    "podi": 8,
+    "pole": 3,
+    "giri_veloci": 1,
+    "titoli": 0
+   },
+   "immagine": "Pol Espargaró portrait 2022 (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Pol_Espargaro"
+  }
  },
  "moto:a463fc7c-ee5b-4fa8-9229-b041a8637051": {
   "nascita": "1998-12-15",
@@ -3606,7 +4056,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 123,
+   "vittorie": 2,
+   "podi": 6,
+   "pole": 2,
+   "giri_veloci": 3,
+   "titoli": 0,
+   "motogp": {
+    "gare": 17,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Somkiat Chantra at the 2025 Malaysian Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Somkiat_Chantra"
+  }
  },
  "moto:201ae7a4-0dc7-4191-be71-d91ac0330090": {
   "nascita": "1992-02-09",
@@ -3800,7 +4268,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 266,
+   "vittorie": 2,
+   "podi": 14,
+   "pole": 6,
+   "giri_veloci": 1,
+   "titoli": 0,
+   "motogp": {
+    "gare": 127,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 1,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Takaaki_Nakagami_at_the_2023_Japanese_motorcycle_Grand_Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Takaaki_Nakagami"
+  }
  },
  "moto:c2e99a2c-ec5b-4757-8728-ed3254ebbeee": {
   "nascita": "1985-10-29",
@@ -3954,7 +4440,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 180,
+   "vittorie": 3,
+   "podi": 19,
+   "pole": 4,
+   "giri_veloci": 4,
+   "titoli": 0,
+   "motogp": {
+    "gare": 180,
+    "vittorie": 3,
+    "podi": 19,
+    "pole": 4,
+    "giri_veloci": 4,
+    "titoli": 0
+   },
+   "immagine": "Crutchlow COTA 2015.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Cal_Crutchlow"
+  }
  },
  "moto:14ca9be2-6d69-4a70-b224-ea44b791638c": {
   "nascita": "1993-08-13",
@@ -4118,7 +4622,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 163,
+   "vittorie": 5,
+   "podi": 24,
+   "pole": 6,
+   "giri_veloci": 8,
+   "titoli": 0,
+   "motogp": {
+    "gare": 20,
+    "vittorie": 0,
+    "podi": 1,
+    "pole": 0,
+    "giri_veloci": 2,
+    "titoli": 0
+   },
+   "immagine": "Jonas Folger 2017.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Jonas_Folger"
+  }
  },
  "moto:0c9405ff-e879-498c-964d-b39409361a6c": {
   "nascita": "1993-04-04",
@@ -4267,7 +4789,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 74,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 44,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Lorenzo Savadori at the 2026 Spanish Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Lorenzo_Savadori"
+  }
  },
  "moto:eed93130-03ac-4f5d-9d2e-b207ab47154e": {
   "nascita": "1986-07-05",
@@ -4476,7 +5016,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 120,
+   "vittorie": 1,
+   "podi": 2,
+   "pole": 1,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 73,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Michele_Pirro_at_the_2025_Malaysian_Grand_Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Michele_Pirro"
+  }
  },
  "moto:9a6bd0ef-1531-4efa-9806-4b6435e75ba4": {
   "nascita": "2002-08-04",
@@ -4550,7 +5108,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 97,
+   "vittorie": 10,
+   "podi": 24,
+   "pole": 9,
+   "giri_veloci": 9,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "FIMCEVRepsol 2017 Albacete02 (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Manuel_Gonz%C3%A1lez_(motorcyclist)"
+  }
  },
  "moto:be31d4c4-f4c9-4e23-ae14-7ec35ed19f72": {
   "nascita": "2004-06-28",
@@ -4629,7 +5205,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 113,
+   "vittorie": 11,
+   "podi": 23,
+   "pole": 8,
+   "giri_veloci": 7,
+   "titoli": 1,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Podio ETC 2. FIM CEV Repsol 2019 Aragón (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Izan_Guevara"
+  }
  },
  "moto:f0125053-baf8-4a61-8575-9dfb8fe37227": {
   "nascita": "2004-08-04",
@@ -4688,7 +5282,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 97,
+   "vittorie": 6,
+   "podi": 15,
+   "pole": 7,
+   "giri_veloci": 8,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Podium ETC. FIM CEV Repsol 2019. Valencia (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Iv%C3%A1n_Ortol%C3%A1"
+  }
  },
  "moto:f9d74cc7-4747-4956-881b-b79ce1edb6f5": {
   "nascita": "2006-04-25",
@@ -4757,7 +5369,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 80,
+   "vittorie": 20,
+   "podi": 32,
+   "pole": 9,
+   "giri_veloci": 9,
+   "titoli": 1,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "David Alonso 2025.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/David_Alonso_(motorcyclist)"
+  }
  },
  "moto:e27904a7-0e30-4d91-84f8-016d421aa89e": {
   "nascita": "2005-04-27",
@@ -4831,7 +5461,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 100,
+   "vittorie": 7,
+   "podi": 25,
+   "pole": 8,
+   "giri_veloci": 9,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Daniel Holgado 2019.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Daniel_Holgado"
+  }
  },
  "moto:2e991b48-6cce-4488-9839-705fa2d198da": {
   "nascita": "2005-06-09",
@@ -4890,7 +5538,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 65,
+   "vittorie": 4,
+   "podi": 9,
+   "pole": 2,
+   "giri_veloci": 2,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Senna_Agius"
+  }
  },
  "moto:d4c7af32-3b73-4f8f-b3bf-f732e0aadb52": {
   "nascita": "2001-12-12",
@@ -4989,7 +5655,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 142,
+   "vittorie": 1,
+   "podi": 8,
+   "pole": 3,
+   "giri_veloci": 2,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Filip Salac 2019.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Filip_Salac"
+  }
  },
  "moto:67e88ff7-6a0c-404c-ae79-7d9fdfdef986": {
   "nascita": "2001-10-13",
@@ -5093,7 +5777,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 147,
+   "vittorie": 10,
+   "podi": 25,
+   "pole": 9,
+   "giri_veloci": 11,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Celestino Vietti 2019.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Celestino_Vietti"
+  }
  },
  "moto:021761c5-a8a4-4749-8603-479ce2984722": {
   "nascita": "2001-12-21",
@@ -5192,7 +5894,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 143,
+   "vittorie": 4,
+   "podi": 18,
+   "pole": 4,
+   "giri_veloci": 6,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Alonso López. Presentacion EG0,0 Moto3 (25763924007).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Alonso_L%C3%B3pez_(motorcyclist)"
+  }
  },
  "moto:642ca2e1-3962-45ba-8745-fd7c8b140462": {
   "nascita": "2005-02-19",
@@ -5241,7 +5961,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 73,
+   "vittorie": 2,
+   "podi": 14,
+   "pole": 4,
+   "giri_veloci": 4,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "2025 04 27 Gran Premio de Motociclismo de Jerez (54482426021) (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Collin_Veijer"
+  }
  },
  "moto:64c448a5-6f5e-4bef-bac5-d0f5e8a9b89a": {
   "nascita": "2000-08-03",
@@ -5350,7 +6088,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 184,
+   "vittorie": 9,
+   "podi": 29,
+   "pole": 7,
+   "giri_veloci": 6,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Tony Arbolino 2019.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Tony_Arbolino"
+  }
  },
  "moto:3fc01a22-75e3-4cb3-a19d-401386cf80cc": {
   "nascita": "2006-04-28",
@@ -5468,7 +6224,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 62,
+   "vittorie": 0,
+   "podi": 1,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Alex_Escrig"
+  }
  },
  "moto:5315c17f-fe2f-4478-8ad6-fac49d337c84": {
   "nascita": "2004-05-03",
@@ -5552,7 +6326,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 117,
+   "vittorie": 0,
+   "podi": 9,
+   "pole": 2,
+   "giri_veloci": 2,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Barry Baltus (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Barry_Baltus"
+  }
  },
  "moto:b31fb050-e422-4aec-bca3-10988f9ca858": {
   "nascita": "2003-07-26",
@@ -5641,7 +6433,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 120,
+   "vittorie": 5,
+   "podi": 17,
+   "pole": 8,
+   "giri_veloci": 7,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "FIM CEV 2018 Valencia I (12).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Deniz_%C3%96nc%C3%BC"
+  }
  },
  "moto:d6920eaa-0923-4590-b7b9-61740535a33b": {
   "nascita": "1997-06-16",
@@ -5750,7 +6560,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 162,
+   "vittorie": 3,
+   "podi": 9,
+   "pole": 5,
+   "giri_veloci": 3,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Joe Roberts at the 2026 German motorcycle Grand Prix (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Joe_Roberts_(motorcyclist)"
+  }
  },
  "moto:fb24c9f6-c2d0-40a5-b92b-1c362367cfcf": {
   "nascita": "2003-08-21",
@@ -5779,7 +6607,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 34,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Adrian_Huertas"
+  }
  },
  "moto:f2afe40e-140a-4e76-a071-95e2b79c3273": {
   "nascita": "2005-10-29",
@@ -5848,7 +6694,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 74,
+   "vittorie": 11,
+   "podi": 19,
+   "pole": 6,
+   "giri_veloci": 6,
+   "titoli": 1,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "José Antonio Rueda 2025.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Jos%C3%A9_Antonio_Rueda"
+  }
  },
  "moto:53cc6347-ccd4-4143-80cd-3c05595afe01": {
   "nascita": "2006-05-27",
@@ -5907,7 +6771,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 52,
+   "vittorie": 0,
+   "podi": 4,
+   "pole": 0,
+   "giri_veloci": 2,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Luca Lunetta at the 2026 German motorcycle Grand Prix (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Luca_Lunetta"
+  }
  },
  "moto:64025abc-f78f-4223-9ede-219164f128e6": {
   "nascita": "2000-10-04",
@@ -6016,7 +6898,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 174,
+   "vittorie": 3,
+   "podi": 22,
+   "pole": 8,
+   "giri_veloci": 8,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Ayumu Sasaki 2016.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Ayumu_Sasaki"
+  }
  },
  "moto:1664981e-31f7-4e93-8c58-7604352b41b7": {
   "nascita": "2007-09-02",
@@ -6045,7 +6945,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 15,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Alberto_Ferr%C3%A1ndez"
+  }
  },
  "moto:3a5b3421-fb15-4254-8ab3-b90cdd59a293": {
   "nascita": "1999-09-30",
@@ -6164,7 +7082,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 196,
+   "vittorie": 11,
+   "podi": 51,
+   "pole": 19,
+   "giri_veloci": 17,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Aron Canet. Presentacion EG0,0 Moto3 (40634667171).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Aron_Canet"
+  }
  },
  "moto:d6db2a4e-676a-4971-8049-0c91a506a22d": {
   "nascita": "2005-07-12",
@@ -6233,7 +7169,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 94,
+   "vittorie": 1,
+   "podi": 9,
+   "pole": 1,
+   "giri_veloci": 3,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Moto3 2024 Malaysian Grand Prix - Honda Team Asia - Taiyo Furusato.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Taiyo_Furusato"
+  }
  },
  "moto:5002549c-2e5c-4aee-b106-b7c9830e328a": {
   "nascita": "2005-12-01",
@@ -6391,7 +7345,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 130,
+   "vittorie": 9,
+   "podi": 25,
+   "pole": 3,
+   "giri_veloci": 6,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Sergio Garcia Dols 2021.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Sergio_Garc%C3%ADa_(motorcyclist)"
+  }
  },
  "moto:41a3e43f-7865-48d7-801c-5999eb317433": {
   "nascita": "2006-12-01",
@@ -6430,7 +7402,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 50,
+   "vittorie": 5,
+   "podi": 11,
+   "pole": 1,
+   "giri_veloci": 4,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Ángel Piqueras at the 2026 German motorcycle Grand Prix (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/%C3%81ngel_Piqueras"
+  }
  },
  "moto:0d25c1f3-ba66-42dd-a161-2f434d6a676d": {
   "nascita": "2004-03-16",
@@ -6504,7 +7494,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 82,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Mario Aji at Merdeka Palace (2025-09-30).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Mario_Aji"
+  }
  },
  "moto:be8956f3-85e2-4814-9930-a4e7ebecc520": {
   "nascita": "1997-12-16",
@@ -6638,7 +7646,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 182,
+   "vittorie": 2,
+   "podi": 10,
+   "pole": 2,
+   "giri_veloci": 2,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Marcos Ramirez 2016.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Marcos_Ram%C3%ADrez_(motorcyclist)"
+  }
  },
  "moto:ec3cc0b6-0353-4dc1-92f5-78af41d3d3bb": {
   "nascita": "2006-04-07",
@@ -6687,7 +7713,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 30,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Xabi_Zurutuza"
+  }
  },
  "moto:c897059e-2972-4b56-8891-cca6dd92b6e2": {
   "nascita": "2004-04-09",
@@ -6875,7 +7919,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 188,
+   "vittorie": 2,
+   "podi": 20,
+   "pole": 6,
+   "giri_veloci": 4,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Navarro 2016 (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Jorge_Navarro"
+  }
  },
  "moto:c6466a01-d6d1-4d9f-b8d0-385fef5f6b53": {
   "nascita": "2001-01-07",
@@ -6984,7 +8046,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 153,
+   "vittorie": 10,
+   "podi": 24,
+   "pole": 4,
+   "giri_veloci": 4,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Dennis Foggia 2017.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Dennis_Foggia"
+  }
  },
  "moto:05d25dbd-de45-4ae8-9aa1-cbcb40b4058c": {
   "nascita": "2005-02-04",
@@ -7023,7 +8103,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 40,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Jacob_Roulstone"
+  }
  },
  "moto:7f6957d2-b394-46d7-a5e6-9400a5844d61": {
   "nascita": "2007-04-04",
@@ -7086,7 +8184,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 33,
+   "vittorie": 12,
+   "podi": 23,
+   "pole": 5,
+   "giri_veloci": 4,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Máximo Quiles at the 2026 German motorcycle Grand Prix (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Maximo_Quiles"
+  }
  },
  "moto:0bfba4d0-4af8-4174-a566-8236e75a3b08": {
   "nascita": "2006-01-22",
@@ -7160,7 +8276,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 58,
+   "vittorie": 3,
+   "podi": 8,
+   "pole": 9,
+   "giri_veloci": 3,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Moto3 podium at the 2026 San Marino and Rimini Riviera motorcycle Grand Prix (cropped Almansa).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/David_Almansa"
+  }
  },
  "moto:8c6da2df-4891-41f1-a703-8d51dc51c284": {
   "nascita": "2007-06-05",
@@ -7199,7 +8333,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 38,
+   "vittorie": 0,
+   "podi": 10,
+   "pole": 2,
+   "giri_veloci": 4,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Alvaro_Carpe"
+  }
  },
  "moto:ebbcbb0f-0692-4963-9a8b-7efb7bd91d9e": {
   "nascita": "2008-08-11",
@@ -7233,7 +8385,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 19,
+   "vittorie": 2,
+   "podi": 4,
+   "pole": 2,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Brian Uriarte 2026 San Marino GP.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Brian_Uriarte"
+  }
  },
  "moto:eff84411-d39e-49c1-8447-a42160daf173": {
   "nascita": "2007-07-03",
@@ -7262,7 +8432,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 0,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Marco_Morelli_(motorcyclist)"
+  }
  },
  "moto:f69ef365-138a-4727-a992-b8857bc5bb52": {
   "nascita": "2007-12-28",
@@ -7291,7 +8479,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 36,
+   "vittorie": 0,
+   "podi": 4,
+   "pole": 3,
+   "giri_veloci": 2,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Valentín Perrone recorrió las obras del Gálvez 1 (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Valentin_Perrone"
+  }
  },
  "moto:b187512c-fb56-46b1-b00d-62b46a7c65aa": {
   "nascita": "2007-07-30",
@@ -7325,7 +8531,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 18,
+   "vittorie": 1,
+   "podi": 2,
+   "pole": 0,
+   "giri_veloci": 1,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Hakim Danish at the 2026 San Marino and Rimini Riviera motorcycle Grand Prix (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Hakim_Danish_(motorcyclist)"
+  }
  },
  "moto:4540b4b4-43ca-46a9-bbca-68ade8c5ced2": {
   "nascita": "2008-11-23",
@@ -7344,7 +8568,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 15,
+   "vittorie": 0,
+   "podi": 2,
+   "pole": 0,
+   "giri_veloci": 1,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Veda Pratama at Merdeka Palace (2025-09-30).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Veda_Pratama"
+  }
  },
  "moto:760c8192-f5d5-4f96-a032-36dde524ea62": {
   "nascita": "2004-02-18",
@@ -7437,7 +8679,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 15,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Rico_Salmela"
+  }
  },
  "moto:aa5b1925-1b45-4cf1-8b0d-7d2726e99415": {
   "nascita": "2006-08-09",
@@ -7505,7 +8765,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 36,
+   "vittorie": 1,
+   "podi": 2,
+   "pole": 1,
+   "giri_veloci": 1,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Guido_Pini"
+  }
  },
  "moto:b2ad206f-7eb7-4ecf-b53f-8be998663b23": {
   "nascita": "2007-08-07",
@@ -7539,7 +8817,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 19,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 1,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Casey O'Gorman at the 2026 San Marino and Rimini Riviera motorcycle Grand Prix (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Casey_O%27Gorman_(motorcyclist)"
+  }
  },
  "moto:8d4c8c88-f989-4d86-8cfd-702237b8083b": {
   "nascita": "2003-06-12",
@@ -7608,7 +8904,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 96,
+   "vittorie": 0,
+   "podi": 5,
+   "pole": 3,
+   "giri_veloci": 1,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Joel_Kelso"
+  }
  },
  "moto:dd9a6ca6-8bb0-4d66-ad73-86092335975f": {
   "nascita": "2005-08-07",
@@ -7652,7 +8966,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 42,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 1,
+   "giri_veloci": 1,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Joel_Esteban"
+  }
  },
  "moto:39bd22aa-4179-411f-bebb-c8bb3c0c8620": {
   "nascita": "2006-09-25",
@@ -7691,7 +9023,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 41,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Eddie_O%27Shea"
+  }
  },
  "moto:16332a3a-5c77-4f28-b58f-1381711cd452": {
   "nascita": "2004-01-31",
@@ -7775,7 +9125,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 101,
+   "vittorie": 1,
+   "podi": 7,
+   "pole": 3,
+   "giri_veloci": 2,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Adrian Fernandez 2019.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Adri%C3%A1n_Fern%C3%A1ndez_(motorcyclist)"
+  }
  },
  "moto:ed6ebad8-3f85-48db-8539-5cf755de6c30": {
   "nascita": "2006-05-15",
@@ -7834,7 +9202,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 75,
+   "vittorie": 3,
+   "podi": 18,
+   "pole": 2,
+   "giri_veloci": 5,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/David_Mu%C3%B1oz_(motorcyclist)"
+  }
  },
  "moto:f7138283-ea5f-475a-bd40-cb1fcb02c6aa": {
   "nascita": "2007-10-29",
@@ -7863,7 +9249,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 0,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Marco_Morelli"
+  }
  },
  "moto:9de28705-315e-4370-a304-308147bf8203": {
   "nascita": "2001-11-06",
@@ -7957,7 +9361,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 130,
+   "vittorie": 0,
+   "podi": 3,
+   "pole": 1,
+   "giri_veloci": 3,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Ryusei Yamanaka. GP de la Comunitat Valenciana 2020 (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Ryusei_Yamanaka"
+  }
  },
  "moto:4331b1bc-b5f4-4649-b787-485f762639cb": {
   "nascita": "2003-10-16",
@@ -8016,7 +9438,25 @@
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 95,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 2,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Scott_Ogden"
+  }
  },
  "moto:8eb7bb58-ad5e-4191-84d9-4fec986d62fb": {
   "nascita": "2008-02-11",

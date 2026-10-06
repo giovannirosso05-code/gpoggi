@@ -1,9 +1,129 @@
 {
- "generato_il": "2026-10-06T12:36:29+00:00",
+ "generato_il": "2026-10-06T22:10:15+00:00",
  "articoli": [
   {
+   "titolo": "Cosa c’è dietro il bug software che ha fermato la F1",
+   "estratto": "Cosa è successo a Sepang con le power unit? Scopriamo cosa c'è dietro il bug che ha mandato in tilt la Formula 1",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/video/video-f1/cosa-ce-dietro-il-bug-software-che-ha-fermato-la-f1-a-sepang-partenza-bagnato-power-unit-ferrari",
+   "pubblicato": "2026-10-06T19:00:00+00:00"
+  },
+  {
+   "titolo": "Dacia, le nuove Striker e Spring in vetrina a Parigi",
+   "estratto": "Il Gruppo Renault prenderà parte al Salone di Parigi 2026 anche con Dacia. Una presenza tutt’altro che marginale quella della casa rumena, che approfitterà della kermesse parigina per presentare una…",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/auto/saloni/dacia-striker-spring-salone-parigi-anteprime",
+   "pubblicato": "2026-10-06T17:45:00+00:00"
+  },
+  {
+   "titolo": "MotoGP | Vinales vede la fine del tunnel: \"La mia sensazione è che la spalla sia guarita\"",
+   "estratto": "Maverick Vinales considera guarita la sua spalla dopo aver completato il suo ultimo rientro nel Mondiale MotoGP, nel Gran Premio del Giappone dello scorso fine settimana. Il veterano spagnolo ha…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-vinales-vede-la-fine-del-tunnel-la-mia-sensazione-e-che-la-spalla-sia-gia-guarita/10862430/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-06T16:53:05+00:00"
+  },
+  {
+   "titolo": "F1 | GP di Singapore: ecco perché le Soft si candidano per essere usate anche in gara",
+   "estratto": "Dalla Malesia a Singapore, due mondi completamente diversi. Marina Bay ospita il terzo appuntamento della tripletta asiatica e lo fa con le sue tipiche caratteristiche. Quelle di un circuito…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-gp-di-singapore-questanno-le-soft-si-candidano-per-essere-usate-anche-in-gara/10862464/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-06T16:31:50+00:00"
+  },
+  {
+   "titolo": "MINI Countryman Untamed Edition, spirito off-road",
+   "estratto": "Il prezzo di allestimento è di 4.000 euro, gli ordini aprono proprio oggi mentre la produzione avrà inizio il prossimo mese",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/auto/auto-news/mini-countryman-untamed-edition-spirito-offroad-prezzo",
+   "pubblicato": "2026-10-06T16:29:21+00:00"
+  },
+  {
+   "titolo": "UFI in pista al GP Storico d’Italia affidando ad Arnoux la Ferrari di Gilles Villeneuve",
+   "estratto": "Il Gran Premio Storico d’Italia, in programma sul circuito del Mugello dal 2 al 4 ottobre, ha visto UFI protagonista di un momento ad alta intensità emotiva. Per la F1 & Single-seaters over 2 l…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/ufi-in-pista-al-gp-storico-ditalia-affidando-ad-arnoux-la-ferrari-di-gilles-villeneuve/10862495/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-06T15:29:18+00:00"
+  },
+  {
+   "titolo": "GP Indonesia 2026: orari Sky/Now e TV8",
+   "estratto": "I dettagli della programmazione televisiva dell'appuntamento di Mandalika",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/motogp/motogp-orari/orari-tv-gp-indonesia-2026-mandalika-programmazione-televisione-sky-tv8-diretta-differita-dove-vederla-marquez-ducati-martin-aprilia",
+   "pubblicato": "2026-10-06T15:00:00+00:00"
+  },
+  {
+   "titolo": "GP Singapore 2026: orari Sky/Now e TV8",
+   "estratto": "Il weekend di Singapore sarà quasi tutto in diretta anche su TV8 a eccezione delle prove libere e del GP",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-singapore-2026-sprint-marina-bay-televisione-diretta-sky-differita-tv8-programmazione-dove-vederla-ferrari-leclerc-hamilton-sf26-antonelli",
+   "pubblicato": "2026-10-06T15:00:00+00:00"
+  },
+  {
+   "titolo": "Dall’Igna verso Mandalika: “A fine stagione non esistono piste pro o contro, il pilota può sempre tirare fuori il coniglio dal cilindro”",
+   "estratto": "Nel weekend si corre in Indonesia",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/dalligna-non-parte-battuto-indonesia-mandalika-fine-anno-non-esistono-piste-pro-contro-marquez-coniglio-cilindro",
+   "pubblicato": "2026-10-06T15:00:00+00:00"
+  },
+  {
+   "titolo": "MotoGP | Tardozzi ammette: \"Per Marquez in Indonesia perdere 10 o 12 punti potrebbe essere non male\"",
+   "estratto": "Il Circuito di Mandalika, sull’isola indonesiana di Lombok, non è un luogo di grandi ricordi per il nove volte campione del mondo Marc Marquez. La prima volta che questo tracciato ospitò un gran…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-tardozzi-ammette-per-marquez-in-indonesia-perdere-10-o-12-punti-potrebbe-essere-non-male/10862331/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-06T14:34:20+00:00"
+  },
+  {
+   "titolo": "Alfa Romeo rinnova la gamma: tutte le novità",
+   "estratto": "Da Junior a Tonale passando per Giulia e Stelvio: la casa del Biscione rinnova la sua line-up puntando su comfort e qualità percepita",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/auto/auto-news/alfa-romeo-rinnova-gamma-junior-tonale-stelvio-giulia",
+   "pubblicato": "2026-10-06T13:45:00+00:00"
+  },
+  {
+   "titolo": "F1 | McLaren cerca il riscatto a Singapore, Houldey: \"Vogliamo vincere entrambre le gare\"",
+   "estratto": "La McLaren deve ritrovare sé stessa: le due vittorie di Lando Norris in Ungheria e Olanda sembrano ormai lontane anni luce, anche se i due appuntamenti hanno aperto e chiuso rispettivamente la sosta…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-mclaren-cerca-il-riscatto-a-singapore-houldey-vogliamo-vincere-entrambre-le-gare/10862497/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-06T13:42:32+00:00"
+  },
+  {
+   "titolo": "MotoGP | Taramasso: \"Motegi servirà da lezione: la carcassa rinforzata lavorava a 20 gradi in meno a parità di mescola\"",
+   "estratto": "La lotta per il titolo della MotoGP entra sempre di più nel vivo, con appena 2 punti a separare Jorge Martin e Marc Marquez a sei gare dal termine. Nonostante questo, a Motegi si è finito per parlare…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-taramasso-motegi-servira-da-lezione-la-carcassa-rinforzata-lavorava-a-20-gradi-in-meno-a-par/10862448/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-06T13:10:38+00:00"
+  },
+  {
+   "titolo": "Estoril 2026: programma e orari TV",
+   "estratto": "Le prove del penultimo round della stagione, il secondo del 2026 dopo Portimão",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/superbike/superbike-news/estoril-2026-programma-orari-tv",
+   "pubblicato": "2026-10-06T13:00:00+00:00"
+  },
+  {
+   "titolo": "F1 | Mercedes, Russell verrà penalizzato a Singapore: c’è il dubbio dell’ADUO anticipato",
+   "estratto": "La Mercedes arriva a Singapore con più interrogativi di quanti avrebbe probabilmente voluto. Il weekend di Sepang ha lasciato in eredità due questioni importanti, una ormai definita e l’altra ancora…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-mercedes-russell-verra-penalizzato-a-singapore-ce-il-dubbio-delladuo-anticipato/10862524/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-06T12:49:00+00:00"
+  },
+  {
    "titolo": "Mir ancora out, in Indonesia HRC ripesca Aleix Espargaró",
-   "estratto": "Il ritorno di Aleix La MotoGP si prepara a volare in Indonesia per la seconda gara consecutiva nel continente asiatico e il team factory Honda sarà ancora una volta privo di Joan Mir. Il campione del…",
+   "estratto": "Il campione del mondo 2020 è ancora out e a Mandalika sarà sostituito dall'ex pilota dell'Aprilia, che rientra da un infortunio",
    "fonte": "FormulaPassion",
    "serie": "F1",
    "url": "https://www.formulapassion.it/motogp/motogp-news/mir-ancora-out-in-indonesia-hrc-ripesca-aleix-espargaro",
@@ -34,36 +154,12 @@
    "pubblicato": "2026-10-06T11:45:00+00:00"
   },
   {
-   "titolo": "Bezzecchi: “Mandalika pista che mi piace molto”",
-   "estratto": "Il pilota italiano deve recuperare 49 punti nei confronti di Jorge Martin",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/bezzecchi-mandalika-ultima-chiamata-mondiale-pista-mi-piace-aprilia-martin-marquez-ducati",
-   "pubblicato": "2026-10-06T11:35:00+00:00"
-  },
-  {
-   "titolo": "Martin: “Mandalika mi ha sempre dato buone sensazioni”",
-   "estratto": "Il leader del Mondiale è pronto per il GP in Indonesia",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/martin-prepara-scatto-mondiale-mandalika-sempre-dato-buone-sensazioni-gp-indonesia-aprilia-marquez",
-   "pubblicato": "2026-10-06T11:30:00+00:00"
-  },
-  {
    "titolo": "F1 | Mercedes spiega come abbia scelto le gomme giuste al via del GP del Bahrain in Malesia",
    "estratto": "Il via del Gran Premio del Bahrain in Malesia è stato a dir poco atipico, almeno per questa stagione di Formula 1. La pioggia dirompente che si è abbattuta su Sepang poche decine di minuti prima del…",
    "fonte": "Motorsport.com",
    "serie": "F1",
    "url": "https://it.motorsport.com/f1/news/f1-mercedes-spiega-come-abbia-scelto-le-gomme-giuste-al-via-del-gp-del-bahrain-in-malesia/10862480/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-06T11:04:05+00:00"
-  },
-  {
-   "titolo": "Williams: altro weekend da dimenticare in Malesia, al via solo un’illusione",
-   "estratto": "Mentre Albon si è ritirato per un guasto al cambio, Sainz ha chiuso al 17° dopo essere stato tamponato da Bortoleto",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/williams-weekend-da-dimenticare-in-malesia-via-solo-illusione-peccato-sainz-albon-ritiro",
-   "pubblicato": "2026-10-06T11:00:00+00:00"
   },
   {
    "titolo": "MotoGP | Quartararo: \"Questo motore non è solo lento, consuma anche molto\"",
@@ -74,52 +170,12 @@
    "pubblicato": "2026-10-06T10:05:47+00:00"
   },
   {
-   "titolo": "Alpine PS1, un nuovo progetto speciale sta arrivando",
-   "estratto": "Al momento la casa francese si è limitata a mostrare uno dei fari anteriori della concept, che debutterà al Salone di Parigi 2026",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/auto/auto-news/alpine-ps1-nuovo-progetto-speciale-concept-a110",
-   "pubblicato": "2026-10-06T09:45:00+00:00"
-  },
-  {
    "titolo": "F1 | Hadjar si conferma veloce, ma non basta. Red Bull indaga il brusco calo di prestazione in gara",
    "estratto": "Isack Hadjar non fa altro che raccogliere consensi, soprattutto da quando è tornato dall'infortunio che lo ha costretto a saltare le prime tre gare successive alla pausa estiva. In realtà l'ex pilota…",
    "fonte": "Motorsport.com",
    "serie": "F1",
    "url": "https://it.motorsport.com/f1/news/f1-hadjar-si-conferma-veloce-ma-non-basta-red-bull-indaga-il-brusco-calo-di-prestazione-in-gara/10862455/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-06T09:29:44+00:00"
-  },
-  {
-   "titolo": "Antonelli, residenza contesa tra Monte Carlo e San Marino",
-   "estratto": "Il leader del mondiale negli ultimi giorni è stato al centro di un caso dopo le recenti dichiarazioni di Alberto di Monaco alla stampa italiana",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/antonelli-residenza-contesa-monte-carlo-monaco-san-marino",
-   "pubblicato": "2026-10-06T08:24:37+00:00"
-  },
-  {
-   "titolo": "Leapmotor, due grandi novità al Salone di Parigi",
-   "estratto": "Alla kermesse parigina l'azienda cinese presenterà in anteprima extra Cina la nuova berlina compatta B03 e il SUV ammiraglia D19",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/auto/saloni/leapmotor-salone-parigi-anteprime-nuovi-modelli",
-   "pubblicato": "2026-10-06T08:04:23+00:00"
-  },
-  {
-   "titolo": "Retroscena Ferrari: decisione sulle slick presa dopo aver visto gli onboard della Safety Car",
-   "estratto": "Lo scambio radio tra il muretto box e i piloti ha rivelato la ragione per cui la Ferrari è partita con gomme d'asciutto in Malesia",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/retroscena-ferrari-decisione-slick-presa-dopo-onboard-safety-car-hamilton-leclerc",
-   "pubblicato": "2026-10-06T08:00:58+00:00"
-  },
-  {
-   "titolo": "VR46 in Indonesia col mitologico Garuda: ecco la livrea speciale – FOTO",
-   "estratto": "In occasione della gara di Mandalika, la squadra di Tavullia scenderà in pista con una livrea speciale che omaggia l’Indonesia",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/vr46-in-indonesia-col-mitologico-garuda-ecco-la-livrea-speciale-foto",
-   "pubblicato": "2026-10-06T07:50:28+00:00"
   },
   {
    "titolo": "MotoGP | VR46 omaggia l'Indonesia con il Garuda sulla livrea delle sue Ducati per Mandalika",
@@ -213,25 +269,9 @@
    "titolo": "Cambio al vertice di HRC: Watanabe va in pensione. Dal 2027 il nuovo presidente sarà Yasuda",
    "estratto": "HRC cambia. Anzi, cambierà a partire dal 1 gennaio 2027. Koji Watanabe, attuale presidente e amministratore delegato di Honda Racing Corporation (HRC), a fine anno lascerà l'incarico perché andrà in…",
    "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-motogp-cambio-hrc-2027-il-nuovo-presidente-yasuda/10862193/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-05T08:26:58+00:00"
-  },
-  {
-   "titolo": "Cambio al vertice di HRC: Watanabe va in pensione. Dal 2027 il nuovo presidente sarà Yasuda",
-   "estratto": "HRC cambia. Anzi, cambierà a partire dal 1 gennaio 2027. Koji Watanabe, attuale presidente e amministratore delegato di Honda Racing Corporation (HRC), a fine anno lascerà l'incarico perché andrà in…",
-   "fonte": "Motorsport.com",
    "serie": "MotoGP",
    "url": "https://it.motorsport.com/f1/news/f1-motogp-cambio-hrc-2027-il-nuovo-presidente-yasuda/10862193/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-05T08:26:58+00:00"
-  },
-  {
-   "titolo": "F1 | Il caos di Sepang oltre le colpe della FIA: le nuove power unit presentano il conto",
-   "estratto": "La scena è stata tanto surreale quanto difficile da immaginare per la Formula 1 del 2026. Piloti con il piede sull’acceleratore e monoposto che non acceleravano, vetture costrette quasi a fermarsi e…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-il-caos-di-sepang-oltre-le-colpe-della-fia-le-nuove-power-unit-presentano-il-conto/10862184/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-05T08:07:57+00:00"
   },
   {
    "titolo": "MotoGP | Ecco gli orari TV di Sky, Now e TV8 del Gran Premio d'Indonesia",
@@ -242,22 +282,6 @@
    "pubblicato": "2026-10-05T07:44:39+00:00"
   },
   {
-   "titolo": "F1 2026 | Ecco gli orari TV di Sky, Now e TV8 del GP di Singapore",
-   "estratto": "Singapore. Ecco il terzo appuntamento della tripletta asiatica che sta portando la Formula 1 verso la parte conclusiva della stagione, quella che sarà disputata in America (un'altra tripletta) prima…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-2026-ecco-gli-orari-tv-di-sky-now-e-tv8-del-gp-di-singapore/10862011/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-05T07:27:41+00:00"
-  },
-  {
-   "titolo": "F1 | Red Bull, Sepang vale doppio: Max vince e porta nella storia il motore di Milton Keynes",
-   "estratto": "Ci sono vittorie che servono per conquistare un mondiale e altre che, pur non cambiando sostanzialmente una classifica, finiscono per occupare un posto importante nella storia di una squadra. Quella…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-red-bull-sepang-vale-doppio-max-vince-e-porta-nella-storia-il-motore-di-milton-keynes/10862019/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-04T16:00:05+00:00"
-  },
-  {
    "titolo": "MotoGP | La lezione che lascia il pneumatico bistrattato a Motegi",
    "estratto": "Giovedì pomeriggio, alla vigilia del Gran Premio del Giappone, Jack Miller ha parlato come sempre con i giornalisti, che gli hanno chiesto della scelta degli pneumatici fatta da Michelin, il…",
    "fonte": "Motorsport.com",
@@ -266,28 +290,28 @@
    "pubblicato": "2026-10-04T14:40:02+00:00"
   },
   {
-   "titolo": "MotoGP | Marquez morde, ma Martin non si spaventa: inizia un mini-Mondiale a due di 6 GP",
-   "estratto": "Fino a qualche gara fa, la corsa al titolo della MotoGP sembrava aperta a qualsiasi risultato, con almeno 6 o 7 piloti che sembravano avere una chance iridata. Lo scenario però è mutato radicalmente…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-marquez-morde-ma-martin-non-si-spaventa-inizia-un-mini-mondiale-a-due-di-6-gp/10861891/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-04T11:52:38+00:00"
+   "titolo": "The new East conquering Europe: are China and India really a threat?",
+   "estratto": "Twenty-five years ago, China and India were primarily huge factories for small-displacement motorcycles. Today they produce millions of bikes, develop technology, work for major European brands and…",
+   "fonte": "GPone",
+   "serie": "F1",
+   "url": "https://www.gpone.com/en/2026/10/06/moto-news/the-new-east-conquering-europe-are-china-and-india-really-a-threat.html",
+   "pubblicato": null
   },
   {
-   "titolo": "MotoGP | Di Giannantonio frenato dal dolore: \"Sembrava di avere un coltello conficcato nel costato\"",
-   "estratto": "Si potrebbe quasi dire che il weekend del Gran Premio del Giappone di MotoGP sia praticamente finito al primo giro della Sprint per Fabio Di Giannantonio. Il pilota della Pertamina Enduro VR46 si è…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-di-giannantonio-frenato-dal-dolore-sembrava-di-avere-un-coltello-conficcato-nel-costato/10861846/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-04T09:35:35+00:00"
+   "titolo": "Stoner: \"Today's riders don't know what Phillip Island is really like on a MotoGP bike\"",
+   "estratto": "VIDEO - \"Electronics and aerodynamics don't allow them to have that kind of experience. I didn't like that track in the 125 class, but I was still able to go fast without taking risks.\"",
+   "fonte": "GPone",
+   "serie": "F1",
+   "url": "https://www.gpone.com/en/2026/10/06/motogp/stoner-todays-riders-dont-know-what-phillip-island-is-really-like-on-a-motogp-bike.html",
+   "pubblicato": null
   },
   {
-   "titolo": "MotoGP | Bagnaia: \"Abbiamo sbagliato noi piloti a non provare la gomma dura venerdì\"",
-   "estratto": "Se c'era qualcuno che avrebbe potuto essere arrabbiato o rancoroso nei confronti della Michelin per il weekend di Motegi, questo era senza ombra di dubbio Pecco Bagnaia. Il pilota della Ducati, che…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bagnaia-abbiamo-sbagliato-noi-piloti-a-non-provare-la-gomma-dura-venerdi/10861830/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-04T09:12:54+00:00"
+   "titolo": "Marquez two points behind Martin, but the calendar could favour Aprilia",
+   "estratto": "Motegi reopens a World Championship that, in truth, was never closed. Marc takes all 37 points and moves within touching distance of the leader. Mandalika will be the first test. Six weekends and 222…",
+   "fonte": "GPone",
+   "serie": "F1",
+   "url": "https://www.gpone.com/en/2026/10/06/motogp/marquez-two-points-behind-martin-but-the-calendar-could-favour-aprilia.html",
+   "pubblicato": null
   },
   {
    "titolo": "LIVE Bar Sport at 18:00 - Motegi: the award-winning Marquez & Dall'Igna partnership",
@@ -295,30 +319,6 @@
    "fonte": "GPone",
    "serie": "F1",
    "url": "https://www.gpone.com/en/2026/10/06/motogp/live-bar-sport-at-18-00-motegi-the-award-winning-marquez-dalligna-partnership.html",
-   "pubblicato": null
-  },
-  {
-   "titolo": "Arbolino: “I don’t need any confirmation from anyone: I know the speed is there\"",
-   "estratto": "“Moto2 is a category that is too difficult to be consistently at the front. Because sometimes it is not just a matter of speed; it is about many things.”",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/06/moto2/arbolino-i-dont-need-any-confirmation-from-anyone-i-know-the-speed-is-there.html",
-   "pubblicato": null
-  },
-  {
-   "titolo": "But how much do you cost me? Yamaha Moto3 spec bikes costs set to drop by 50%",
-   "estratto": "Thanks to the 689cc twin-cylinder engines built by Yamaha, the Moto3 – currently contested using 250cc single-cylinder bikes – is expected to become significantly more affordable for teams by 2028",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/06/moto3/but-how-much-do-you-cost-me-yamaha-moto3-spec-bikes-costs-set-to-drop-by-50.html",
-   "pubblicato": null
-  },
-  {
-   "titolo": "MGM continues with Baz: he will replace Mackenzie in the Estoril and Jerez Rounds too",
-   "estratto": "With the Briton still recovering, it will be the Frenchman who takes Michael Galinski’s team Ducati Panigale V4 R to the track in the final two rounds of the season.",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/06/wsbk/mgm-continues-with-baz-he-will-replace-mackenzie-in-the-estoril-and-jerez-rounds-too.html",
    "pubblicato": null
   }
  ]

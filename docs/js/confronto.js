@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, img, punti, ND, erroreCaricamento } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, img, punti, ND, erroreCaricamento, schedeMap } from "./common.js";
 
 renderHeader("confronto");
 renderFooter();
@@ -10,6 +10,8 @@ try {
   const [roster, eventi] = await Promise.all([fetchJSON("data/roster.json"), fetchJSON("data/events.json")]);
   const gare = await Promise.all(eventi.filter((g) => new Date(g.inizio) < new Date()).map((g) => fetchJSON(`data/gare/${g.id}.json`)));
 
+  const SC = await schedeMap();
+  const carriera = (p) => (p ? SC[`f1:${p.numero}`] || null : null);
   const selA = document.getElementById("sel-a");
   const selB = document.getElementById("sel-b");
   const opz = [...roster].sort((x, y) => x.numero - y.numero).map((p) => `<option value="${p.numero}">#${p.numero} · ${esc(p.nome || "Pilota #" + p.numero)}</option>`).join("");
@@ -46,6 +48,11 @@ try {
         ${riga("Vittorie in gara", mio.vittorie, "vittorie")}
         ${riga("Podi in gara", mio.podi, "podi")}
         ${riga("Gare concluse", mio.arrivi, "arrivi")}
+        ${(() => {
+          const c = carriera(p), d = altro ? carriera(altro) : null;
+          const voce = (label, k) => { const v = c ? c[k] : null; const w = d ? d[k] : null; return `<div class="compare-stat"><span class="compare-stat-label">${label}</span><span class="compare-stat-value ${v != null && w != null && v > w ? "meglio" : ""}">${v == null ? ND : v}</span></div>`; };
+          return `<div class="compare-sub">In carriera in Formula 1</div>${voce("Gran Premi", "gare")}${voce("Vittorie", "vittorie")}${voce("Podi", "podi")}${voce("Pole position", "pole")}${voce("Giri veloci", "giri_veloci")}`;
+        })()}
       </div>
     </div>`;
   }

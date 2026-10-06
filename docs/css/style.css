@@ -1226,3 +1226,5 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 .conf-tab td { padding: 12px 8px; border-top: 1px solid var(--border); text-align: center; font-family: var(--font-display); font-weight: 700; font-size: 22px; width: 36%; }
 .conf-tab td.conf-et { width: 28%; font: 500 13px var(--font-body); color: var(--text-secondary); text-transform: uppercase; letter-spacing: .06em; }
 .conf-tab td.conf-vince { color: #fff; background: var(--moto-blu, #1f5fd1); border-radius: 8px; }
+
+.compare-sub { margin: 18px 0 2px; padding-top: 14px; border-top: 2px solid var(--team, var(--accent)); font-family: var(--font-display); font-weight: 700; font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: var(--text-secondary); }

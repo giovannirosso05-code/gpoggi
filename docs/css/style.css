@@ -643,18 +643,6 @@ select.sel {
 .rassegna-voce p { margin: 0 0 8px; font-size: 14px; color: var(--text-secondary); }
 .rassegna-voce > a.accent { font-weight: 600; font-size: 13px; }
 
-/* ---------- Barra conto alla rovescia F1 + MotoGP ---------- */
-.cd-barra { background: var(--bg-elevated-2); border-bottom: 1px solid var(--border); font-size: 13px; }
-.cd-griglia { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 24px; padding-top: 8px; padding-bottom: 8px; }
-.cd-voce { display: flex; align-items: center; gap: 10px; min-width: 0; }
-.cd-sigla { flex: none; font-family: var(--font-display); font-weight: 700; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; background: var(--accent); padding: 2px 8px; border-radius: 4px; }
-.cd-sigla.moto { background: var(--text); color: var(--bg); }
-.cd-testo { min-width: 0; line-height: 1.35; color: var(--text-secondary); }
-.cd-testo b { color: var(--text); }
-.cd-tempo { font-family: var(--font-display); font-weight: 600; font-size: 14px; color: var(--accent); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.cd-tempo.live { color: var(--accent); }
-@media (max-width: 768px) { .cd-griglia { grid-template-columns: 1fr; } .cd-barra { font-size: 12px; } }
-
 /* ---------- Giochi ---------- */
 .gioco-scelta { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
 .gioco-card { text-align: left; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-card); padding: 24px; cursor: pointer; color: var(--text); font: inherit; display: flex; flex-direction: column; gap: 8px; transition: transform .15s, box-shadow .15s; }
@@ -876,11 +864,6 @@ font { background: none !important; box-shadow: none !important; }
 .vota-riga { display: grid; grid-template-columns: 1fr 70px 38px; align-items: center; gap: 8px; font-size: 12.5px; margin-top: 6px; }
 .vota-riga b { text-align: right; }
 
-/* testata scura solo nel tema scuro: nel tema chiaro resta chiara, coerente col resto della pagina */
-:root[data-theme="dark"] .cd-barra { background: #0c0c10; border-bottom: 1px solid #23232b; color: #e6e5ea; }
-:root[data-theme="dark"] .cd-barra .cd-testo { color: #b9b8c0; }
-:root[data-theme="dark"] .cd-barra .cd-testo b { color: #fff; }
-:root[data-theme="dark"] .cd-barra .cd-sigla.moto { background: #fff; color: #111115; }
 :root[data-theme="dark"] .site-header { background: #141418; border-bottom: 3px solid var(--accent); backdrop-filter: none; }
 :root[data-theme="dark"] .site-header .brand, :root[data-theme="dark"] .site-header .nav-links a { color: #f2f1ee; }
 :root[data-theme="dark"] .site-header .nav-links a:not(.nav-giochi):hover, :root[data-theme="dark"] .site-header .nav-links a.active { color: #fff; }

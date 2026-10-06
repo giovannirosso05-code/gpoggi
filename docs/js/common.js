@@ -150,7 +150,6 @@ export function renderHeader(paginaAttuale) {
   sbarrettaSchede();
   fissaTestata();
   barraIndietro();
-  if (paginaAttuale !== "home") renderCountdown();
   const selLingua = document.getElementById("lingua");
   if (selLingua) selLingua.addEventListener("change", () => cambiaLingua(selLingua.value));
   if (!window.__traduzioneAvviata) { window.__traduzioneAvviata = true; avviaTraduzione(); }

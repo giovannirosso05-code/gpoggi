@@ -39,10 +39,22 @@ async function carica() {
 const quattro = (giusto, pool) => ({ opzioni: mescola([giusto, ...mescola([...new Set(pool.filter((x) => x !== giusto))]).slice(0, 3)]), giusto });
 
 const GEN = {
-  circuito() {
-    const ev = dati.eventi.filter((e) => e.mappa);
-    return mescola(ev).slice(0, N).map((g) => ({ titolo: "Di quale Gran Premio è questo tracciato?", img: `<div class="quiz-img mappa-quiz"><img src="${esc(g.mappa.file || g.mappa.url)}" alt="Tracciato da indovinare"></div>`,
-      ...quattro(g.nome, ev.map((e) => e.nome)), cred: credito(g.mappa, "Mappa") }));
+  // Nel quiz del circuito la mappa non deve contenere scritte (titolo, nomi delle curve): sarebbero la risposta.
+  // Le mappe vettoriali si ripuliscono qui, togliendo ogni testo; quelle che sono già immagini con le scritte dentro restano fuori dal gioco.
+  async circuito() {
+    const pulita = async (g) => {
+      const u = g.mappa.file || g.mappa.url;
+      if (!/\.svg(\?|$)/i.test(u)) return null;
+      try {
+        const doc = new DOMParser().parseFromString(await (await fetch(u)).text(), "image/svg+xml");
+        if (doc.querySelector("parsererror") || doc.querySelector("image")) return null;
+        doc.querySelectorAll("text, title, desc, metadata").forEach((el) => el.remove());
+        return URL.createObjectURL(new Blob([new XMLSerializer().serializeToString(doc)], { type: "image/svg+xml" }));
+      } catch (e) { return null; }
+    };
+    const ev = (await Promise.all(dati.eventi.filter((e) => e.mappa).map(async (e) => ({ e, src: await pulita(e) })))).filter((x) => x.src);
+    return mescola(ev).slice(0, N).map(({ e: g, src }) => ({ titolo: "Di quale Gran Premio è questo tracciato?", img: `<div class="quiz-img mappa-quiz"><img src="${src}" alt="Tracciato da indovinare"></div>`,
+      ...quattro(g.nome, ev.map((x) => x.e.nome)), cred: credito(g.mappa, "Mappa") }));
   },
   pilota(modo = "tutti") {
     const oggi = dati.roster.filter((p) => p.foto && p.nome).map((p) => ({ nome: p.nome, foto: p.foto, nota: `${p.team || ""}`.trim() }));

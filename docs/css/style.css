@@ -788,8 +788,8 @@ select.sel {
 .ultime-gare { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .ultime-gare .ultima-gara { min-width: 0; }
 @media (max-width: 640px) { .pross-griglia { gap: 8px; } .pross-card { padding: 10px 12px; } .pross-gp { font-size: 16px; } .pross-timer { font-size: 14px; } .ultime-gare { grid-template-columns: 1fr; } }
-.driver-card.nofoto .driver-card-image { aspect-ratio: 16 / 7; }
-.driver-card.nofoto .driver-card-image .driver-number.solo { font-size: 44px; }
+/* con o senza foto il riquadro ha sempre la stessa forma (4:5) */
+.driver-card.nofoto .driver-card-image { aspect-ratio: 4 / 5; }
 .modo-pills, .serie-pills { margin-bottom: 8px; }
 
 /* pagina pilota di moto: foto in testata */

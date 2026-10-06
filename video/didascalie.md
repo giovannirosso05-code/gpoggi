@@ -149,3 +149,44 @@ Presto altre novità… 👀
 
 ## Bio
 - TikTok (max 80 caratteri) e Instagram (max 150): il campo link del profilo deve puntare a `https://gpoggi.it`.
+
+---
+
+## Video fissati · Orari dei Gran Premi
+
+**F1 · Singapore**
+```
+Orari del Gran Premio di Singapore 🏁
+
+📅 Da venerdì 9 a domenica 11 ottobre
+🕑 Tutti in ora italiana
+
+Gara domenica alle 14:00.
+
+Il nostro favorito: Antonelli.
+
+Salva il video per non perderti niente 📌
+
+🔗 gpoggi.it
+
+#gpoggi #f1 #formula1 #singapore #orari
+```
+
+**MotoGP · Indonesia**
+```
+Orari del GP d'Indonesia 🏍️
+
+📅 Da venerdì 9 a domenica 11 ottobre
+🕑 Tutti in ora italiana
+⏰ Sessioni di prima mattina
+
+Gara domenica alle 09:00.
+
+Il nostro favorito: Marc Marquez.
+
+Salva il video per non perderti niente 📌
+
+🔗 gpoggi.it
+
+#gpoggi #motogp #gpindonesia #mandalika #orari
+```

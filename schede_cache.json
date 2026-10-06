@@ -9645,5 +9645,59 @@
   },
   "immagine": "Jorge Martin at the 2026 Spanish Grand Prix.jpg",
   "fonte": "https://en.wikipedia.org/wiki/Jorge_Martin"
+ },
+ "wikistat:f55b433d-38b8-4d1d-bb3a-a709c82a0260": {
+  "gare": 299,
+  "vittorie": 105,
+  "podi": 171,
+  "pole": 105,
+  "giri_veloci": 91,
+  "titoli": 9,
+  "motogp": {
+   "gare": 221,
+   "vittorie": 79,
+   "podi": 132,
+   "pole": 77,
+   "giri_veloci": 75,
+   "titoli": 7
+  },
+  "immagine": "Marc Marquez at the 2026 Spanish Grand Prix (cropped).jpg",
+  "fonte": "https://en.wikipedia.org/wiki/Marc_Marquez"
+ },
+ "wikistat:ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd": {
+  "gare": 187,
+  "vittorie": 16,
+  "podi": 50,
+  "pole": 17,
+  "giri_veloci": 9,
+  "titoli": 0,
+  "motogp": {
+   "gare": 95,
+   "vittorie": 10,
+   "podi": 26,
+   "pole": 13,
+   "giri_veloci": 8,
+   "titoli": 0
+  },
+  "immagine": "Marco Bezzecchi at the 2025 Malaysian motorcycle Grand Prix.jpg",
+  "fonte": "https://en.wikipedia.org/wiki/Marco_Bezzecchi"
+ },
+ "wikistat:a6108385-dd4c-490d-b02e-542ed0275f79": {
+  "gare": 113,
+  "vittorie": 17,
+  "podi": 43,
+  "pole": 7,
+  "giri_veloci": 14,
+  "titoli": 2,
+  "motogp": {
+   "gare": 57,
+   "vittorie": 1,
+   "podi": 16,
+   "pole": 2,
+   "giri_veloci": 4,
+   "titoli": 0
+  },
+  "immagine": "Pedro Acosta at the 2025 Italian motorcycle Grand Prix.jpg",
+  "fonte": "https://en.wikipedia.org/wiki/Pedro_Acosta_(motorcyclist)"
  }
 }

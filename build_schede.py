@@ -88,7 +88,7 @@ def wiki_en_stats(nome, nascita):
         w = r2.json()["parse"]["wikitext"]["*"]
         if "Infobox motorcycle rider" not in w:
             continue
-        m = re.search(r"birth_date\s*=\s*\{\{[^|}]*\|(\d{4})", w)
+        m = re.search(r"birth_date\s*=\s*\{\{[^}]*?\b(1[89]\d{2}|20\d{2})\b", w)
         if not m or (anno_nascita and m.group(1) != anno_nascita):
             continue
         tot = {k: 0 for k in CAMPI_WIKI.values()}

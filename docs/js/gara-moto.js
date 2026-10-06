@@ -32,6 +32,7 @@ try {
       ${programmaHtml(w.sessioni)}
       ${mp ? `<div class="mappa-circuito">${img(mp, "Tracciato di " + w.circuito)}<p class="credito">${credito(mp, "Mappa")}</p></div>` : ""}
       <p class="muted">Programma della classe MotoGP. I risultati compariranno dopo la gara.</p>
+      <h3 class="section-title">Cronaca giro per giro</h3><p class="muted">Cronaca disponibile dopo la gara: compare qui poche ore dopo l'arrivo.</p>
       <p class="muted" style="margin-top:18px;font-size:13px"><a class="accent" href="calendario.html${tema ? "?" + tema.slice(1) : ""}">← Torna al calendario</a></p>`;
   } else {
   const r = rep.find((x) => x.gp === gp);

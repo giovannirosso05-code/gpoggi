@@ -50,7 +50,7 @@ try {
       ${sessioni.map((s) => `<button class="pill ${s.key === predefinita.key ? "active" : ""}" data-key="${s.key}">${esc(s.nome)}</button>`).join("")}
     </div>
     <div id="sessione"></div>
-    <h3 class="section-title">Cronaca giro per giro</h3><div id="cronaca-box"><p class="muted">Cronaca non disponibile per questa gara.</p></div>`;
+    <h3 class="section-title">Cronaca giro per giro</h3><div id="cronaca-box"><p class="muted">${haRisultati ? "Cronaca non disponibile per questa gara." : "Cronaca disponibile dopo la gara: compare qui poche ore dopo l'arrivo."}</p></div>`;
 
   let griglia = null, sessioneCorrente = null;
   const mostra = (key) => {

@@ -119,38 +119,38 @@ def pagina(d, gruppi):
     carte = ""
     for g, n, o in gara:
         carte += (f'<div class="carta gara"><div class="scacchi"></div><div><div class="et">{n}</div><div class="gg">{g}</div></div>'
-                  f'<b class="ora" style="font-size:150px">{o}</b></div>')
+                  f'<b class="ora" style="font-size:130px">{o}</b></div>')
     if qual:
         carte += '<div class="coppia">' + "".join(
-            f'<div class="carta qual"><div><div class="et">{n}</div><div class="gg">{g}</div></div><b class="ora" style="font-size:{92 if len(qual) == 1 else 76}px">{o}</b></div>'
+            f'<div class="carta qual"><div><div class="et">{n}</div><div class="gg">{g}</div></div><b class="ora" style="font-size:{78 if len(qual) == 1 else 66}px">{o}</b></div>'
             for g, n, o in qual) + "</div>"
     chips = "".join(f'<div class="chip"><span class="cg">{sigla_g(g)}</span><span class="cn">{n}</span><b>{o}</b></div>' for g, n, o in altre)
     return f"""<!doctype html><meta charset=utf-8><style>{font}
 *{{box-sizing:border-box}} html,body{{margin:0;width:{W}px;height:{H}px;background:#0b0b0e;color:#fff;font-family:Inter,sans-serif;overflow:hidden}}
 /* zona sicura: i pulsanti di TikTok e Instagram stanno a destra (circa 160 px) e in alto, la didascalia in basso */
 .logo{{position:absolute;left:0;right:0;top:135px;text-align:center}} .logo img{{width:210px}}
-.foto{{position:absolute;left:0;top:260px;width:{W}px;height:470px;background:url(data:image/jpeg;base64,{b64(foto)}) center {'-175' if d['motogp'] else '-85'}px/{W}px auto no-repeat}}
-.vel{{position:absolute;left:0;top:260px;width:{W}px;height:470px;background:linear-gradient(180deg,#0b0b0e 0%,rgba(11,11,14,0) 16%,rgba(11,11,14,0) 62%,#0b0b0e 100%)}}
-.testata{{position:absolute;left:60px;width:860px;top:695px}}
+.foto{{position:absolute;left:0;top:260px;width:{W}px;height:600px;background:url(data:image/jpeg;base64,{b64(foto)}) center {'-175' if d['motogp'] else '-85'}px/{W}px auto no-repeat}}
+.vel{{position:absolute;left:0;top:260px;width:{W}px;height:600px;background:linear-gradient(180deg,#0b0b0e 0%,rgba(11,11,14,0) 16%,rgba(11,11,14,0) 62%,#0b0b0e 100%)}}
+.testata{{position:absolute;left:60px;width:860px;top:825px}}
 .pill{{display:inline-block;font:700 28px Oswald;letter-spacing:.1em;background:{colore};padding:3px 16px;border-radius:8px;text-transform:uppercase;vertical-align:middle}}
 .ora-it{{float:right;font:700 24px Oswald;letter-spacing:.1em;text-transform:uppercase;color:#c9c9d2;margin-top:6px}}
 h1{{margin:12px 0 0;font:700 64px/1 Oswald;text-transform:uppercase;white-space:nowrap}}
 .sotto{{font:500 28px Inter;color:#c9c9d2;margin-top:8px;white-space:nowrap}} .sotto b{{color:#fff}}
-.blocco{{position:absolute;left:60px;width:860px;top:920px}}
+.blocco{{position:absolute;left:60px;width:860px;top:1050px}}
 .carta{{position:relative;overflow:hidden;display:flex;justify-content:space-between;align-items:center;border-radius:20px;padding:0 30px;margin-bottom:16px}}
 .carta .et{{font:700 38px Oswald;letter-spacing:.1em;text-transform:uppercase}} .carta .gg{{font:500 26px Inter;opacity:.85;text-transform:capitalize;margin-top:2px}}
 .carta .ora{{font-family:Oswald;font-weight:700;line-height:1;letter-spacing:.01em}}
-.carta.gara{{height:220px;background:linear-gradient(100deg,{colore} 0%,{colore} 55%,#0b0b0e 220%)}}
+.carta.gara{{height:190px;background:linear-gradient(100deg,{colore} 0%,{colore} 55%,#0b0b0e 220%)}}
 .carta.gara .et{{font-size:56px}}
 .scacchi{{position:absolute;right:0;top:0;bottom:0;width:340px;opacity:.22;background:conic-gradient(#000 25%,transparent 0 50%,#000 0 75%,transparent 0) 0 0/46px 46px;-webkit-mask-image:linear-gradient(90deg,transparent,#000);mask-image:linear-gradient(90deg,transparent,#000)}}
 .carta.gara .et,.carta.gara .gg,.carta.gara .ora{{position:relative}}
-.coppia{{display:flex;gap:16px}} .coppia .carta{{flex:1;margin-bottom:16px;height:150px;padding:0 22px}}
+.coppia{{display:flex;gap:16px}} .coppia .carta{{flex:1;margin-bottom:16px;height:125px;padding:0 22px}}
 .carta.qual{{background:linear-gradient(100deg,{ambra} 0%,#c98a00 100%);color:#1a1300}} .carta.qual .et{{font-size:34px}} .coppia .carta.qual .et{{font-size:27px;letter-spacing:.05em;white-space:nowrap}} .carta.qual .gg{{font-size:22px}}
 .chips{{display:grid;grid-template-columns:1fr 1fr;gap:10px}}
-.chip{{display:flex;align-items:center;gap:12px;background:#17171d;border-radius:12px;padding:0 16px;height:70px;white-space:nowrap}}
+.chip{{display:flex;align-items:center;gap:12px;background:#17171d;border-radius:12px;padding:0 16px;height:60px;white-space:nowrap}}
 .cg{{font:700 22px Oswald;letter-spacing:.06em;color:{colore};width:64px;flex:none}} .cn{{flex:1;font:500 25px Inter;color:#c9c9d2;overflow:hidden;text-overflow:ellipsis}}
-.chip b{{font:700 36px Oswald;color:#fff}}
-.piede{{margin-top:22px}} .url{{font:700 48px Oswald;color:{colore};letter-spacing:.04em}}
+.chip b{{font:700 32px Oswald;color:#fff}}
+.piede{{margin-top:16px}} .url{{font:700 44px Oswald;color:{colore};letter-spacing:.04em}}
 .piccolo{{font:500 20px Inter;color:#6d6d78;margin-top:4px}}
 </style>
 <div class=logo><img src="data:image/png;base64,{b64(SITO / 'img/logo-wide-scuro.png')}"></div>

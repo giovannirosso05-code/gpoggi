@@ -1190,3 +1190,26 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 .prono-info .muted { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: calc(2 * 1.3 * 11.5px); }
 .prono-ind { width: 44px; flex: none; text-align: right; font-variant-numeric: tabular-nums; }
 .prono-pos { flex: none; text-align: center; }
+
+/* Notizie: schede a due colonne con etichetta e filo colorato della serie (rosso F1, blu MotoGP); la prima è in evidenza */
+.rassegna { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.rassegna-voce { position: relative; display: flex; flex-direction: column; gap: 8px; padding: 18px 20px 16px 24px; border-radius: 14px; box-shadow: var(--shadow-card); overflow: hidden; }
+.rassegna-voce::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: var(--accent, #e8352f); }
+.rassegna-voce.moto::before { background: var(--moto-blu, #1f5fd1); }
+.rassegna-voce.grande { grid-column: 1 / -1; padding: 24px 28px 20px 32px; }
+.rassegna-voce.grande h3 { font-size: 26px; line-height: 1.2; }
+.rassegna-voce.grande p { font-size: 16px; -webkit-line-clamp: 4; }
+.rv-testa { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.rv-tag { font-family: var(--font-display); font-weight: 700; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #fff; background: var(--accent, #e8352f); padding: 2px 9px; border-radius: 5px; }
+.rassegna-voce.moto .rv-tag { background: var(--moto-blu, #1f5fd1); }
+.rv-meta { font-size: 12px; color: var(--text-secondary); }
+.rassegna-voce h3 { margin: 0; font-size: 19px; }
+.rassegna-voce p { margin: 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.5; }
+.rv-leggi { margin-top: auto; padding-top: 6px; font-weight: 600; font-size: 13px; color: var(--accent, #e8352f); }
+.rassegna-voce.moto .rv-leggi { color: var(--moto-blu, #1f5fd1); }
+.rv-leggi:hover { text-decoration: underline; text-underline-offset: 3px; }
+#filtro-serie .pill[data-s="MotoGP"].active { background: var(--moto-blu, #1f5fd1); border-color: var(--moto-blu, #1f5fd1); color: #fff; }
+#filtro-serie .pill[data-s="F1"].active { background: #e8352f; border-color: #e8352f; color: #fff; }
+.report-lista { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.report-lista .report-card { margin: 0; }
+@media (max-width: 760px) { .rassegna, .report-lista { grid-template-columns: 1fr; } .rassegna-voce.grande h3 { font-size: 21px; } .rassegna-voce.grande { padding: 18px 20px 16px 24px; } }

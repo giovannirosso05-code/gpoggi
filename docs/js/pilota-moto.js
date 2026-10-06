@@ -41,7 +41,32 @@ try {
     <div class="table-wrap"><table class="results"><thead><tr><th>Gran Premio</th><th>Data</th><th>Sprint</th><th>Gara</th><th>Punti</th></tr></thead><tbody>${
       [...gare].reverse().map((g) => `<tr class="${g.gara === 1 ? "podio" : ""}"><td><strong>${esc(g.gp)}</strong></td><td>${formattaData(g.data)}</td><td>${g.sprint ? g.sprint + "°" : "–"}</td><td>${esito(g)}</td><td><strong>${g.punti}</strong></td></tr>`).join("")
     }</tbody></table></div>
+    <section id="conf-moto" class="conf-moto"><h3 class="section-title">Confronta con un altro pilota</h3>
+      <label class="confronta">Confronta con <select id="conf-sel"><option value="">scegli un pilota…</option>${Object.entries(dati).filter(([k, x]) => k !== id && x.categoria === p.categoria).sort((a, b) => a[1].nome.localeCompare(b[1].nome)).map(([k, x]) => `<option value="${esc(k)}">${esc(x.nome)}</option>`).join("")}</select></label>
+      <div id="conf-risultato"></div></section>
     <p class="muted" style="margin-top:18px;font-size:13px"><a class="accent" href="motogp.html${tema ? "?" + tema.slice(1) : ""}">← Torna alla MotoGP</a></p>`;
+  const stat = (x) => {
+    const g = x.gare, pod = g.filter((r) => r.gara && r.gara <= 3).length, best = g.map((r) => r.gara).filter(Boolean).sort((a, b) => a - b)[0];
+    return { pos: x.pos, punti: x.punti ?? 0, vitt: x.vittorie ?? 0, podi: pod, best: best ?? null, gare: g.length };
+  };
+  const riga = (et, a, b, minimoMeglio) => {
+    const va = a == null ? null : a, vb = b == null ? null : b;
+    const meglio = va == null || vb == null || va === vb ? 0 : (minimoMeglio ? (va < vb ? 1 : 2) : (va > vb ? 1 : 2));
+    const f = (v) => (v == null ? "n.d." : v);
+    return `<tr><td class="${meglio === 1 ? "conf-vince" : ""}">${f(va)}${minimoMeglio && va != null ? "°" : ""}</td><td class="conf-et">${et}</td><td class="${meglio === 2 ? "conf-vince" : ""}">${f(vb)}${minimoMeglio && vb != null ? "°" : ""}</td></tr>`;
+  };
+  document.getElementById("conf-sel").addEventListener("change", (e) => {
+    const out = document.getElementById("conf-risultato");
+    const q = dati[e.target.value]; if (!q) { out.innerHTML = ""; return; }
+    const A = stat(p), B = stat(q), fq = FM[e.target.value];
+    const gps = [...new Set([...p.gare, ...q.gare].map((r) => r.gp))];
+    const get = (x, gp) => x.gare.find((r) => r.gp === gp);
+    const es = (r) => (!r ? "–" : r.gara ? `${r.gara}°` : r.stato_gara && r.stato_gara !== "INSTND" ? "Rit." : "–");
+    const testa = (x, ft, nome) => `<div class="conf-pil">${ft ? img(ft, nome, "foto-mini") : ""}<strong>${esc(nome)}</strong><span class="muted">${esc(x.team || "")}</span></div>`;
+    out.innerHTML = `<div class="conf-testa">${testa(p, foto, p.nome)}<span class="conf-vs">VS</span>${testa(q, fq, q.nome)}</div>
+      <table class="conf-tab"><tbody>${riga("Posizione", A.pos, B.pos, true)}${riga("Punti", A.punti, B.punti)}${riga("Vittorie", A.vitt, B.vitt)}${riga("Podi in gara", A.podi, B.podi)}${riga("Miglior risultato", A.best, B.best, true)}${riga("Gare disputate", A.gare, B.gare)}</tbody></table>
+      <div class="table-wrap"><table class="results"><thead><tr><th>Gran Premio</th><th>${esc(p.nome.split(" ").slice(-1)[0])}</th><th>${esc(q.nome.split(" ").slice(-1)[0])}</th></tr></thead><tbody>${[...gps].reverse().map((gp) => `<tr><td>${esc(gp)}</td><td>${es(get(p, gp))}</td><td>${es(get(q, gp))}</td></tr>`).join("")}</tbody></table></div>`;
+  });
 } catch (e) {
   erroreCaricamento(box);
 }

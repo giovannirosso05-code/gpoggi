@@ -1213,3 +1213,16 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 .report-lista { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .report-lista .report-card { margin: 0; }
 @media (max-width: 760px) { .rassegna, .report-lista { grid-template-columns: 1fr; } .rassegna-voce.grande h3 { font-size: 21px; } .rassegna-voce.grande { padding: 18px 20px 16px 24px; } }
+
+/* Confronto tra piloti dalla scheda */
+.confronta { display: inline-flex; align-items: center; gap: 10px; margin-top: 18px; font-family: var(--font-display); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; font-size: 14px; }
+.confronta select { font: 500 15px var(--font-body); text-transform: none; letter-spacing: 0; padding: 10px 14px; border-radius: 999px; border: 1.5px solid var(--border); background: var(--bg-elevated); color: var(--text); min-width: 220px; }
+.conf-moto { margin-top: 8px; }
+.conf-testa { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; margin: 16px 0; }
+.conf-pil { display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; }
+.conf-pil img, .conf-pil .foto-mini { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; }
+.conf-vs { font-family: var(--font-display); font-weight: 700; font-size: 22px; color: var(--moto-blu, #1f5fd1); }
+.conf-tab { width: 100%; border-collapse: collapse; margin-bottom: 18px; }
+.conf-tab td { padding: 12px 8px; border-top: 1px solid var(--border); text-align: center; font-family: var(--font-display); font-weight: 700; font-size: 22px; width: 36%; }
+.conf-tab td.conf-et { width: 28%; font: 500 13px var(--font-body); color: var(--text-secondary); text-transform: uppercase; letter-spacing: .06em; }
+.conf-tab td.conf-vince { color: #fff; background: var(--moto-blu, #1f5fd1); border-radius: 8px; }

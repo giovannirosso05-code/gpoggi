@@ -27,7 +27,7 @@ try {
         <div class="stat-strip six">
           ${stat(punti(p.punti), "Punti")}${stat(p.vittorie, "Vittorie")}${stat(p.podi, "Podi")}${stat(p.pole, "Pole")}${stat(p.miglior_arrivo ? p.miglior_arrivo + "°" : ND, "Miglior arrivo")}${stat(p.ritiri, "Ritiri")}
         </div>
-        <p style="margin:20px 0 0"><a class="pill" href="confronto.html?a=${p.numero}">Confronta con un altro pilota →</a></p>
+        <label class="confronta">Confronta con <select id="conf-sel"><option value="">scegli un pilota…</option></select></label>
         ${p.foto ? `<p class="credito">${credito(p.foto)}</p>` : ""}
       </div>
     </section>
@@ -44,6 +44,11 @@ try {
         <td>${cella(w.qualifiche)}</td><td>${cella(w.sprint)}</td><td>${cella(w.gara)}</td>
       </tr>`).join("")}</tbody></table></div>
       <p class="muted" style="font-size:12px;margin-top:8px">RIT = ritirato · NP = non partito · SQ = squalificato · – = non presente o sessione non prevista</p>` : `<p class="muted">Nessun risultato disponibile.</p>`}`;
+  fetchJSON("data/roster.json").then((r) => {
+    const sel = document.getElementById("conf-sel"); if (!sel) return;
+    sel.insertAdjacentHTML("beforeend", r.filter((x) => String(x.numero) !== String(n)).map((x) => `<option value="${x.numero}">${esc(x.nome || "Pilota #" + x.numero)}</option>`).join(""));
+    sel.addEventListener("change", () => { if (sel.value) location.href = `confronto.html?a=${n}&b=${sel.value}`; });
+  }).catch(() => { const l = document.querySelector(".confronta"); if (l) l.hidden = true; });
 } catch (e) {
   erroreCaricamento(box);
 }

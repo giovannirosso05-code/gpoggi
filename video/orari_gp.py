@@ -116,18 +116,18 @@ def pagina(d, gruppi):
 .logo{{position:absolute;left:0;right:0;top:34px;text-align:center}} .logo img{{width:300px}}
 .foto{{position:absolute;left:0;top:190px;width:{W}px;height:610px;background:url(data:image/jpeg;base64,{b64(foto)}) center {'-98' if d['motogp'] else '-105'}px/{W}px auto no-repeat}}
 .vel{{position:absolute;left:0;top:190px;width:{W}px;height:610px;background:linear-gradient(180deg,#0b0b0e 0%,rgba(11,11,14,0) 14%,rgba(11,11,14,0) 66%,#0b0b0e 100%)}}
-.pill{{position:absolute;left:70px;top:786px;font:700 32px Oswald;letter-spacing:.08em;background:{d['colore']};padding:3px 20px;border-radius:8px;text-transform:uppercase}}
-h1{{position:absolute;left:70px;right:70px;top:846px;margin:0;font:700 78px/1 Oswald;text-transform:uppercase;white-space:nowrap}}
-.sotto{{position:absolute;left:70px;right:70px;top:946px;font:500 32px Inter;color:#c9c9d2;white-space:nowrap}}
-.ora-it{{position:absolute;right:70px;top:792px;font:700 30px Oswald;letter-spacing:.08em;text-transform:uppercase;color:#c9c9d2}}
-.tab{{position:absolute;left:70px;right:70px;top:1030px}}
+.pill{{position:absolute;left:20px;top:280px;font:700 28px Oswald;letter-spacing:.08em;background:{d['colore']};padding:4px 14px;border-radius:6px;text-transform:uppercase}}
+h1{{position:absolute;left:20px;top:340px;margin:0;font:700 72px/1 Oswald;text-transform:uppercase;width:550px;max-width:90%;line-height:1.05}}
+.sotto{{position:absolute;left:20px;top:320px;font:500 26px Inter;color:#c9c9d2}}
+.ora-it{{display:none}}
+.tab{{position:absolute;left:20px;right:auto;width:550px;top:800px;font-size:0.92em}}
 .giorno{{font:700 {giorno_px}px Oswald;letter-spacing:.08em;text-transform:uppercase;color:{d['colore']};margin-top:{giorno_mt}px;padding-bottom:6px}}
 .giorno:first-child{{margin-top:0}}
-.riga{{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #26262e;font:500 {nome_px}px Inter}}
-.riga b{{font:700 {ora_px}px Oswald;letter-spacing:.02em}}
-.riga.gara{{background:{d['colore']}30;border-bottom:0;border-radius:10px;padding:0 14px;margin:0 -14px;border-left:8px solid {d['colore']}}}
-.fav{{position:absolute;left:70px;right:70px;top:{fine_tab + 34}px;font:500 36px Inter;color:#e6e6ec}} .fav b{{color:#fff}}
-.cred{{position:absolute;left:70px;right:70px;top:{fine_tab + 90}px;font:500 24px Inter;color:#8a8a96}}
+.riga{{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #26262e;font:500 {max(nome_px-4,24)}px Inter;padding-right:16px}}
+.riga b{{font:700 {max(ora_px-4,40)}px Oswald;letter-spacing:.02em}}
+.riga.gara{{background:{d['colore']}30;border-bottom:0;border-radius:8px;padding:6px 10px;border-left:6px solid {d['colore']}}}
+.fav{{position:absolute;left:20px;top:{1550}px;font:500 28px Inter;color:#c9c9d2;width:540px}} .fav b{{color:#fff}}
+.cred{{position:absolute;left:20px;top:{1620}px;font:500 20px Inter;color:#8a8a96;width:540px;line-height:1.3}}
 .url{{position:absolute;left:0;right:0;top:{max(fine_tab + 140, 1730)}px;text-align:center;font:700 60px Oswald;color:{d['colore']};letter-spacing:.04em}}
 .avviso{{position:absolute;left:70px;right:70px;top:1835px;text-align:center;font:500 22px Inter;color:#6d6d78}}
 </style>

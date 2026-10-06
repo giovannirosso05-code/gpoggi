@@ -97,48 +97,70 @@ def b64(p):
     return base64.b64encode(Path(p).read_bytes()).decode()
 
 
+def tipo_sessione(nome):
+    n = nome.lower()
+    if n == "gara":
+        return "gara"
+    if n.startswith("qualifiche") and "sprint" not in n:
+        return "qualifica"
+    return "altro"
+
+
 def pagina(d, gruppi):
     foto = SITO / (d["foto"].get("file_grande") or d["foto"]["file"])
     n_righe = sum(len(s) for _, s in gruppi)
-    riga_h = 66 if n_righe <= 5 else 48
-    nome_px, ora_px, giorno_px, giorno_mt = (44, 56, 40, 26) if n_righe <= 5 else (36, 46, 34, 18)
-    righe_html = ""
+    compatto = n_righe > 5
+    # altezze e caratteri per tipo di sessione: gara e qualifica grandi e colorati, il resto piu' piccolo e spento
+    misure = {"gara": (74, 64, 40), "qualifica": (58, 52, 34), "altro": (44 if compatto else 50, 38 if compatto else 42, 30 if compatto else 32)}
+    colore, ambra = d["colore"], "#f5b301"
+    giorno_px = 28 if compatto else 30
+    righe_html, altezza = "", 0
     for giorno, sess in gruppi:
         righe_html += f'<div class="giorno">{giorno}</div>'
+        altezza += giorno_px + 20
         for nome, ora, _, _ in sess:
-            righe_html += f'<div class="riga{" gara" if nome == "Gara" else ""}" style="height:{riga_h}px"><span>{nome}</span><b>{ora}</b></div>'
-    spazio = n_righe * riga_h + len(gruppi) * (giorno_px + giorno_mt + 14)
-    fine_tab = 1030 + spazio
+            t = tipo_sessione(nome)
+            h, ora_px, nome_px = misure[t]
+            altezza += h
+            righe_html += f'<div class="riga {t}" style="height:{h}px;font-size:{nome_px}px"><span>{nome}</span><b style="font-size:{ora_px}px">{ora}</b></div>'
+    foto_h = 520 if compatto else 560
+    titolo_y = 260 + foto_h + 12
+    tab_y = titolo_y + 150
+    fine_tab = tab_y + altezza
     font = (f"@font-face{{font-family:Oswald;font-weight:700;src:url(data:font/woff2;base64,{b64(FONT / 'oswald-latin-700-normal.woff2')})}}"
             f"@font-face{{font-family:Inter;font-weight:500;src:url(data:font/woff2;base64,{b64(FONT / 'inter-latin-500-normal.woff2')})}}")
     return f"""<!doctype html><meta charset=utf-8><style>{font}
 *{{box-sizing:border-box}} html,body{{margin:0;width:{W}px;height:{H}px;background:#0b0b0e;color:#fff;font-family:Inter,sans-serif;overflow:hidden}}
-.logo{{position:absolute;left:0;right:0;top:34px;text-align:center}} .logo img{{width:300px}}
-.foto{{position:absolute;left:0;top:190px;width:{W}px;height:610px;background:url(data:image/jpeg;base64,{b64(foto)}) center {'-98' if d['motogp'] else '-105'}px/{W}px auto no-repeat}}
-.vel{{position:absolute;left:0;top:190px;width:{W}px;height:610px;background:linear-gradient(180deg,#0b0b0e 0%,rgba(11,11,14,0) 14%,rgba(11,11,14,0) 66%,#0b0b0e 100%)}}
-.pill{{position:absolute;left:20px;top:280px;font:700 28px Oswald;letter-spacing:.08em;background:{d['colore']};padding:4px 14px;border-radius:6px;text-transform:uppercase}}
-h1{{position:absolute;left:20px;top:340px;margin:0;font:700 72px/1 Oswald;text-transform:uppercase;width:550px;max-width:90%;line-height:1.05}}
-.sotto{{position:absolute;left:20px;top:320px;font:500 26px Inter;color:#c9c9d2}}
-.ora-it{{display:none}}
-.tab{{position:absolute;left:20px;right:auto;width:550px;top:800px;font-size:0.92em}}
-.giorno{{font:700 {giorno_px}px Oswald;letter-spacing:.08em;text-transform:uppercase;color:{d['colore']};margin-top:{giorno_mt}px;padding-bottom:6px}}
+/* zona sicura: i pulsanti di TikTok e Instagram stanno a destra (circa 160 px) e in alto, la didascalia in basso */
+.logo{{position:absolute;left:0;right:0;top:135px;text-align:center}} .logo img{{width:210px}}
+.foto{{position:absolute;left:0;top:260px;width:{W}px;height:{foto_h}px;background:url(data:image/jpeg;base64,{b64(foto)}) center {'-150' if d['motogp'] else '-80'}px/{W}px auto no-repeat}}
+.vel{{position:absolute;left:0;top:260px;width:{W}px;height:{foto_h}px;background:linear-gradient(180deg,#0b0b0e 0%,rgba(11,11,14,0) 14%,rgba(11,11,14,0) 72%,#0b0b0e 100%)}}
+.pill{{position:absolute;left:60px;top:{titolo_y}px;font:700 30px Oswald;letter-spacing:.08em;background:{colore};padding:3px 18px;border-radius:8px;text-transform:uppercase}}
+.ora-it{{position:absolute;left:60px;width:860px;top:{titolo_y + 4}px;text-align:right;font:700 26px Oswald;letter-spacing:.08em;text-transform:uppercase;color:#c9c9d2}}
+h1{{position:absolute;left:60px;width:860px;top:{titolo_y + 52}px;margin:0;font:700 66px/1 Oswald;text-transform:uppercase;white-space:nowrap}}
+.sotto{{position:absolute;left:60px;width:860px;top:{titolo_y + 126}px;font:500 28px Inter;color:#c9c9d2;white-space:nowrap}}
+.tab{{position:absolute;left:60px;width:860px;top:{tab_y + 14}px}}
+.giorno{{font:700 {giorno_px}px Oswald;letter-spacing:.1em;text-transform:uppercase;color:#8a8a96;margin-top:14px;padding-bottom:6px}}
 .giorno:first-child{{margin-top:0}}
-.riga{{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #26262e;font:500 {max(nome_px-4,24)}px Inter;padding-right:16px}}
-.riga b{{font:700 {max(ora_px-4,40)}px Oswald;letter-spacing:.02em}}
-.riga.gara{{background:{d['colore']}30;border-bottom:0;border-radius:8px;padding:6px 10px;border-left:6px solid {d['colore']}}}
-.fav{{position:absolute;left:20px;top:{1550}px;font:500 28px Inter;color:#c9c9d2;width:540px}} .fav b{{color:#fff}}
-.cred{{position:absolute;left:20px;top:{1620}px;font:500 20px Inter;color:#8a8a96;width:540px;line-height:1.3}}
-.url{{position:absolute;left:0;right:0;top:{max(fine_tab + 140, 1730)}px;text-align:center;font:700 60px Oswald;color:{d['colore']};letter-spacing:.04em}}
-.avviso{{position:absolute;left:70px;right:70px;top:1835px;text-align:center;font:500 22px Inter;color:#6d6d78}}
+.riga{{display:flex;justify-content:space-between;align-items:center;font-family:Inter;font-weight:500;color:#9a9aa6;border-bottom:2px solid #1e1e25}}
+.riga b{{font-family:Oswald;font-weight:700;letter-spacing:.02em;color:#d6d6de}}
+.riga.qualifica{{background:{ambra}22;border:0;border-left:8px solid {ambra};border-radius:10px;padding:0 16px;color:#fff;margin:4px 0}}
+.riga.qualifica b{{color:{ambra}}}
+.riga.gara{{background:{colore};border:0;border-radius:12px;padding:0 20px;color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin:6px 0}}
+.riga.gara b{{color:#fff}}
+.fav{{margin-top:26px;font:500 30px Inter;color:#e6e6ec}} .fav b{{color:#fff}}
+.url{{margin-top:6px;font:700 52px Oswald;color:{colore};letter-spacing:.04em}}
+.avviso{{margin-top:6px;font:500 20px Inter;color:#6d6d78}}
+.cred{{margin-top:4px;font:500 20px Inter;color:#6d6d78}}
 </style>
 <div class=logo><img src="data:image/png;base64,{b64(SITO / 'img/logo-wide-scuro.png')}"></div>
 <div class=foto></div><div class=vel></div>
-<span class=pill>{d['sigla']}</span><h1>{d['titolo']}</h1><span class=ora-it>Orari in ora italiana</span><div class=sotto>{d['luogo']}</div>
-<div class=tab>{righe_html}</div>
+<span class=pill>{d['sigla']}</span><span class=ora-it>Orari in ora italiana</span><h1>{d['titolo']}</h1><div class=sotto>{d['luogo']}</div>
+<div class=tab>{righe_html}
 <div class=fav>Il nostro favorito: <b>{d['fav']}</b></div>
-<div class=cred>Foto: {d['foto'].get('autore', '')} · {d['foto'].get('licenza', '')} · via Wikimedia Commons</div>
 <div class=url>gpoggi.it</div>
-<div class=avviso>Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team</div>"""
+<div class=avviso>Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team</div>
+<div class=cred>Foto: {d['foto'].get('autore', '')} · {d['foto'].get('licenza', '')} · via Wikimedia Commons</div></div>"""
 
 
 async def main(args):

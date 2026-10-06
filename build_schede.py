@@ -34,6 +34,7 @@ def get(url, **kw):
         r = requests.get(url, headers=H, timeout=30, **kw)
         if r.status_code != 429:
             return r
+        time.sleep(min(int(r.headers.get("retry-after") or 0), 60))
     raise requests.RequestException("troppe richieste")
 
 
@@ -58,6 +59,54 @@ def jolpica_pilota(roster_p):
             "gare": totale(f"drivers/{i}/results"), "vittorie": totale(f"drivers/{i}/results/1"),
             "podi": sum(totale(f"drivers/{i}/results/{p}") for p in (1, 2, 3)),
             "pole": totale(f"drivers/{i}/qualifying/1"), "giri_veloci": totale(f"drivers/{i}/fastest/1/results")}
+
+
+CLASSI_WIKI = ("MotoGP", "Moto2", "Moto3", "500", "350", "250", "125", "80", "50", "500cc", "350cc", "250cc", "125cc", "80cc", "50cc")
+CAMPI_WIKI = {"race starts": "gare", "race wins": "vittorie", "podiums": "podi", "poles": "pole", "fastest laps": "giri_veloci", "championships": "titoli"}
+
+
+def wiki_en_stats(nome, nascita):
+    """Totali di carriera (gare, vittorie, podi, pole, giri veloci, titoli) dall'infobox della Wikipedia inglese.
+    Sono numeri, non testo copiato. Si accetta la voce solo se e' l'infobox di un pilota motociclistico con lo stesso anno di nascita."""
+    anno_nascita = (nascita or "")[:4]
+    # prima i titoli piu' probabili (una sola richiesta ciascuno), la ricerca solo se nessuno funziona
+    titoli = [f"{nome} (motorcyclist)", f"{nome} (motorcycle racer)", nome]
+
+    def candidati():
+        for t in titoli:
+            yield t
+        r = get("https://en.wikipedia.org/w/api.php", params={"action": "query", "list": "search", "srsearch": f'"{nome}" motorcycle racer', "srlimit": 3, "format": "json"})
+        r.raise_for_status()
+        for c in r.json()["query"]["search"]:
+            yield c["title"]
+
+    for titolo in candidati():
+        c = {"title": titolo}
+        r2 = get("https://en.wikipedia.org/w/api.php", params={"action": "parse", "page": c["title"], "prop": "wikitext", "section": 0, "format": "json", "redirects": 1})
+        if r2.status_code != 200 or "parse" not in r2.json():
+            continue
+        w = r2.json()["parse"]["wikitext"]["*"]
+        if "Infobox motorcycle rider" not in w:
+            continue
+        m = re.search(r"birth_date\s*=\s*\{\{[^|}]*\|(\d{4})", w)
+        if not m or (anno_nascita and m.group(1) != anno_nascita):
+            continue
+        tot = {k: 0 for k in CAMPI_WIKI.values()}
+        motogp = {k: 0 for k in CAMPI_WIKI.values()}
+        trovato = False
+        for riga in w.splitlines():
+            mm = re.match(r"\|\s*(" + "|".join(CLASSI_WIKI) + r")\s+(Race Starts|Race Wins|Podiums|Poles|Fastest laps|Championships)\s*=\s*(.*)", riga, re.I)
+            if not mm:
+                continue
+            n = re.search(r"\d+", re.sub(r"\{\{.*?\}\}|<ref.*", "", mm.group(3)))
+            if n:
+                trovato = True
+                tot[CAMPI_WIKI[mm.group(2).lower()]] += int(n.group(0))
+                if mm.group(1).lower() == "motogp":
+                    motogp[CAMPI_WIKI[mm.group(2).lower()]] += int(n.group(0))
+        if trovato:
+            return {**tot, "motogp": motogp, "fonte": "https://en.wikipedia.org/wiki/" + quote(c["title"].replace(" ", "_"), safe="_()")}
+    return None
 
 
 def wiki_it(nome):
@@ -133,6 +182,9 @@ def main():
             rid = p.get("riders_id")
             m = passo(f"moto:{i}", moto_api, rid or i) if rid else None
             if m:
+                ws = passo(f"wikistat:{i}", wiki_en_stats, p["nome"], m.get("nascita"))
+                if ws:
+                    m = {**m, "totali": ws}
                 out[f"moto:{i}"] = m
     for n in dict.fromkeys(nomi):
         w = passo(f"nome:{n}", wiki_it, n)

@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, stemma, stemmaMoto, formattaData, punti, erroreCaricamento, img, credito, fotoMotoMap, schedeMap, bioHtml, dataIt } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, ND, coloreMoto, stemma, stemmaMoto, formattaData, punti, erroreCaricamento, img, credito, fotoMotoMap, schedeMap, bioHtml, dataIt } from "./common.js";
 
 renderHeader("motogp");
 renderFooter();
@@ -20,30 +20,35 @@ try {
   const podi = gare.filter((g) => g.gara && g.gara <= 3).length;
   const migliore = gare.map((g) => g.gara).filter(Boolean).sort((a, b) => a - b)[0];
   const esito = (g) => (g.gara ? `${g.gara}°` : g.stato_gara && g.stato_gara !== "INSTND" ? "Ritirato" : "–");
+  // Stessa struttura della scheda F1: foto grande a sinistra col numero, a destra nome, team e sei riquadri; poi scheda carriera con sei riquadri
+  const statBox = (v, label) => `<div class="stat"><div class="stat-number">${v}</div><div class="stat-label">${label}</div></div>`;
+  const colore = (coloreMoto(p.moto) || "#8b8a92").replace("#", "");
+  const ritiri = gare.filter((g) => !g.gara && g.stato_gara && g.stato_gara !== "INSTND").length;
+  const tot = sm && sm.totali, num = (v) => (v == null ? ND : v);
   box.innerHTML = `
-    <section class="campione" style="margin-top:32px"><span class="kicker">${esc(p.categoria)} · #${p.numero ?? "n.d."}</span><div class="pm-testa">${foto ? img(foto, p.nome, "pm-foto") : ""}<div><h1>${esc(p.nome)}</h1>
-      <p class="muted" style="margin:0"><span class="cella-team">${stemmaMoto(p.moto)}${esc(p.team)}</span> · ${esc(p.paese || "")}</p></div></div>
-      ${foto ? `<p class="credito" style="margin:10px 0 0">${credito(foto)}</p>` : ""}</section>
-    <div class="stat-strip">
-      <div class="stat"><div class="stat-number">${p.pos ?? "n.d."}${p.pos ? "°" : ""}</div><div class="stat-label">In classifica</div></div>
-      <div class="stat"><div class="stat-number">${punti(p.punti)}</div><div class="stat-label">Punti</div></div>
-      <div class="stat"><div class="stat-number">${p.vittorie}</div><div class="stat-label">Vittorie</div></div>
-      <div class="stat"><div class="stat-number">${podi}</div><div class="stat-label">Podi in gara</div></div>
-    </div>
-    ${sm ? `<h3 class="section-title">Scheda</h3>
-    <div class="stat-strip">${sm.nascita ? `<div class="stat"><div class="stat-number" style="font-size:22px">${dataIt(sm.nascita)}</div><div class="stat-label">Nato${sm.luogo ? " · " + esc(sm.luogo) : ""}</div></div>` : ""}
-      ${sm.debutto ? `<div class="stat"><div class="stat-number">${sm.debutto}</div><div class="stat-label">Debutto nel mondiale</div></div>` : ""}
-      ${sm.altezza ? `<div class="stat"><div class="stat-number">${sm.altezza} cm</div><div class="stat-label">Altezza</div></div>` : ""}
-      ${sm.peso ? `<div class="stat"><div class="stat-number">${sm.peso} kg</div><div class="stat-label">Peso</div></div>` : ""}</div>
+    <section class="pilota-testata" style="--team:#${esc(colore)}">
+      <div class="pilota-foto">${foto ? img(foto, p.nome) : ""}<span class="driver-number">${p.numero ?? ""}</span></div>
+      <div class="pilota-dati">
+        <span class="kicker">${p.pos ? `${p.pos}° in ${esc(p.categoria)}` : esc(p.categoria)}</span>
+        <h1>${esc(p.nome)}</h1>
+        <p class="muted" style="margin:0;font-size:16px">${esc(p.team || "Team n.d.")}${p.paese ? " · " + esc(p.paese) : ""}</p>
+        <div class="stat-strip six">
+          ${statBox(punti(p.punti), "Punti")}${statBox(p.vittorie, "Vittorie")}${statBox(podi, "Podi")}${statBox(gare.length, "Gare")}${statBox(migliore ? migliore + "°" : ND, "Miglior arrivo")}${statBox(ritiri, "Ritiri")}
+        </div>
+        <label class="confronta">Confronta con <select id="conf-sel"><option value="">scegli un pilota…</option>${Object.entries(dati).filter(([k, x]) => k !== id && x.categoria === p.categoria).sort((a, b) => (a[1].numero ?? 999) - (b[1].numero ?? 999)).map(([k, x]) => `<option value="${esc(k)}">${x.numero != null ? "#" + x.numero + " · " : ""}${esc(x.nome)}</option>`).join("")}</select></label>
+        ${foto ? `<p class="credito">${credito(foto)}</p>` : ""}
+      </div>
+    </section>
+    <div id="conf-risultato"></div>
+    ${sm ? `<h3 class="section-title">Scheda carriera nel mondiale</h3>
+    <div class="stat-strip six">${statBox(num(tot && tot.gare), "Gran Premi")}${statBox(num(tot && tot.vittorie), "Vittorie")}${statBox(num(tot && tot.podi), "Podi")}${statBox(num(tot && tot.pole), "Pole")}${statBox(num(tot && tot.giri_veloci), "Giri veloci")}${statBox(num(tot && tot.titoli), "Titoli")}</div>
+    <p class="muted" style="font-size:13px;margin-top:8px">${sm.nascita ? `Nato il ${dataIt(sm.nascita)}` : ""}${sm.luogo ? ` · ${esc(sm.luogo)}` : ""}${sm.debutto ? ` · debutto nel mondiale ${sm.debutto}` : ""}${sm.altezza ? ` · ${sm.altezza} cm` : ""}${sm.peso ? ` · ${sm.peso} kg` : ""}${tot ? ` · totali di tutte le classi (in MotoGP: ${tot.motogp.gare} GP, ${tot.motogp.vittorie} vittorie, ${tot.motogp.titoli} titoli), da <a href="${esc(tot.fonte)}" target="_blank" rel="noopener">Wikipedia</a>` : " · totali di carriera non ancora disponibili"}</p>
     ${sm.carriera.length ? `<h3 class="section-title">Carriera nel mondiale</h3><div class="table-wrap"><table class="results"><thead><tr><th>Anno</th><th>Classe</th><th>Team</th><th>N.</th></tr></thead><tbody>${[...sm.carriera].reverse().map((a) => a.classi.map((c) => `<tr><td>${a.anno}</td><td>${esc(c.categoria)}</td><td>${esc(c.team || "")}</td><td>${c.numero ?? ""}</td></tr>`).join("")).join("")}</tbody></table></div><p class="muted" style="font-size:12px;margin-top:8px">Dati dal servizio pubblico del campionato.</p>` : ""}` : ""}
     ${bioHtml(bio)}
     <h3 class="section-title">Gara per gara${migliore ? ` <span class="count">· miglior risultato ${migliore}°</span>` : ""}</h3>
     <div class="table-wrap"><table class="results"><thead><tr><th>Gran Premio</th><th>Data</th><th>Sprint</th><th>Gara</th><th>Punti</th></tr></thead><tbody>${
       [...gare].reverse().map((g) => `<tr class="${g.gara === 1 ? "podio" : ""}"><td><strong>${esc(g.gp)}</strong></td><td>${formattaData(g.data)}</td><td>${g.sprint ? g.sprint + "°" : "–"}</td><td>${esito(g)}</td><td><strong>${g.punti}</strong></td></tr>`).join("")
     }</tbody></table></div>
-    <section id="conf-moto" class="conf-moto"><h3 class="section-title">Confronta con un altro pilota</h3>
-      <label class="confronta">Confronta con <select id="conf-sel"><option value="">scegli un pilota…</option>${Object.entries(dati).filter(([k, x]) => k !== id && x.categoria === p.categoria).sort((a, b) => (a[1].numero ?? 999) - (b[1].numero ?? 999)).map(([k, x]) => `<option value="${esc(k)}">${x.numero != null ? "#" + x.numero + " · " : ""}${esc(x.nome)}</option>`).join("")}</select></label>
-      <div id="conf-risultato"></div></section>
     <p class="muted" style="margin-top:18px;font-size:13px"><a class="accent" href="motogp.html${tema ? "?" + tema.slice(1) : ""}">← Torna alla MotoGP</a></p>`;
   const stat = (x) => {
     const g = x.gare, pod = g.filter((r) => r.gara && r.gara <= 3).length, best = g.map((r) => r.gara).filter(Boolean).sort((a, b) => a - b)[0];
@@ -61,7 +66,7 @@ try {
     const anni = (c.carriera || []).length, inGp = (c.carriera || []).filter((r) => r.classi.some((q) => q.categoria === "MotoGP")).length;
     const eta = c.nascita ? Math.floor((Date.now() - new Date(c.nascita)) / 31557600000) : null;
     const classi = [...new Set((c.carriera || []).flatMap((r) => r.classi.map((q) => q.categoria)))].join(" → ");
-    return { debutto: c.debutto ?? null, anni: anni || null, inGp: anni ? inGp : null, eta, altezza: c.altezza ?? null, peso: c.peso ?? null, classi };
+    return { tot: c.totali || null, debutto: c.debutto ?? null, anni: anni || null, inGp: anni ? inGp : null, eta, altezza: c.altezza ?? null, peso: c.peso ?? null, classi };
   };
   document.getElementById("conf-sel").addEventListener("change", (e) => {
     const out = document.getElementById("conf-risultato");
@@ -72,7 +77,7 @@ try {
     const es = (r) => (!r ? "–" : r.gara ? `${r.gara}°` : r.stato_gara && r.stato_gara !== "INSTND" ? "Rit." : "–");
     const testa = (x, ft, nome) => `<div class="conf-pil">${ft ? img(ft, nome, "foto-mini") : ""}<strong>${esc(nome)}</strong><span class="muted">${esc(x.team || "")}</span></div>`;
     out.innerHTML = `<div class="conf-testa">${testa(p, foto, p.nome)}<span class="conf-vs">VS</span>${testa(q, fq, q.nome)}</div>
-      <table class="conf-tab"><tbody>${riga("Posizione", A.pos, B.pos, "basso")}${riga("Punti", A.punti, B.punti)}${riga("Vittorie", A.vitt, B.vitt)}${riga("Podi in gara", A.podi, B.podi)}${riga("Miglior risultato", A.best, B.best, "basso")}${riga("Gare disputate", A.gare, B.gare)}<tr><td colspan="3" class="conf-sub">In carriera</td></tr>${CA && CB ? `${riga("Debutto nel mondiale", CA.debutto, CB.debutto, "no")}${riga("Stagioni nel mondiale", CA.anni, CB.anni)}${riga("Stagioni in MotoGP", CA.inGp, CB.inGp)}${riga("Età", CA.eta, CB.eta, "no")}${riga("Altezza (cm)", CA.altezza, CB.altezza, "no")}${riga("Peso (kg)", CA.peso, CB.peso, "no")}<tr><td class="conf-testo">${esc(CA.classi || "n.d.")}</td><td class="conf-et">Classi disputate</td><td class="conf-testo">${esc(CB.classi || "n.d.")}</td></tr>` : `<tr><td colspan="3" class="conf-et">Dati di carriera non disponibili per uno dei due piloti.</td></tr>`}</tbody></table><p class="muted" style="font-size:12px;margin:-8px 0 16px">Il totale dei Gran Premi e delle vittorie in carriera non è ancora tra i nostri dati: sopra ci sono quelli della stagione.</p>
+      <table class="conf-tab"><tbody>${riga("Posizione", A.pos, B.pos, "basso")}${riga("Punti", A.punti, B.punti)}${riga("Vittorie", A.vitt, B.vitt)}${riga("Podi in gara", A.podi, B.podi)}${riga("Miglior risultato", A.best, B.best, "basso")}${riga("Gare disputate", A.gare, B.gare)}<tr><td colspan="3" class="conf-sub">In carriera</td></tr>${CA && CB ? `${CA.tot && CB.tot ? `${riga("Gran Premi", CA.tot.gare, CB.tot.gare)}${riga("Vittorie", CA.tot.vittorie, CB.tot.vittorie)}${riga("Podi", CA.tot.podi, CB.tot.podi)}${riga("Pole", CA.tot.pole, CB.tot.pole)}${riga("Giri veloci", CA.tot.giri_veloci, CB.tot.giri_veloci)}${riga("Titoli", CA.tot.titoli, CB.tot.titoli)}` : ""}${riga("Debutto nel mondiale", CA.debutto, CB.debutto, "no")}${riga("Stagioni nel mondiale", CA.anni, CB.anni)}${riga("Stagioni in MotoGP", CA.inGp, CB.inGp)}${riga("Età", CA.eta, CB.eta, "no")}${riga("Altezza (cm)", CA.altezza, CB.altezza, "no")}${riga("Peso (kg)", CA.peso, CB.peso, "no")}<tr><td class="conf-testo">${esc(CA.classi || "n.d.")}</td><td class="conf-et">Classi disputate</td><td class="conf-testo">${esc(CB.classi || "n.d.")}</td></tr>` : `<tr><td colspan="3" class="conf-et">Dati di carriera non disponibili per uno dei due piloti.</td></tr>`}</tbody></table><p class="muted" style="font-size:12px;margin:-8px 0 16px">Totali di carriera da Wikipedia, dove disponibili; sopra ci sono i dati della stagione.</p>
       <div class="table-wrap"><table class="results"><thead><tr><th>Gran Premio</th><th>${esc(p.nome.split(" ").slice(-1)[0])}</th><th>${esc(q.nome.split(" ").slice(-1)[0])}</th></tr></thead><tbody>${[...gps].reverse().map((gp) => `<tr><td>${esc(gp)}</td><td>${es(get(p, gp))}</td><td>${es(get(q, gp))}</td></tr>`).join("")}</tbody></table></div>`;
   });
 } catch (e) {

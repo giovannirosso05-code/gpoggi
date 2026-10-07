@@ -256,7 +256,9 @@ def main():
     if prima and prima[0].get("nome") in nomi:
         predef["F1"] = [prima[0]["nome"]]
     if a.url:
-        scelte = [x for x in json.load(open(DATA / "rassegna.json"))["articoli"] if x["url"] == a.url][:1]
+        u, *r = [x.strip() for x in a.url.split("|")]   # "url|titolo|fonte|serie" se l'articolo non è più nella rassegna
+        scelte = [x for x in json.load(open(DATA / "rassegna.json"))["articoli"] if x["url"] == u][:1] or [
+            {"url": u, "titolo": r[0] if r else u, "fonte": r[1] if len(r) > 1 else "", "serie": r[2] if len(r) > 2 else "F1", "pubblicato": datetime.now(timezone.utc).isoformat()}]
     else:
         scelte = scegli(a.n, nomi, fatte)
     print("Scelte:", [x["titolo"][:70] for x in scelte])

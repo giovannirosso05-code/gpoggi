@@ -147,6 +147,29 @@ def scegli_notizia(stato):
     turno = "MotoGP" if stato.get("ultima_serie") == "F1" else "F1"
     return next((a for a in libere if a.get("serie", "F1") == turno), None) or (libere[0] if libere else None)
 
+def social_notizia(n):
+    tag = "#motogp" if n["serie"] == "MotoGP" else "#f1 #formula1"
+    return f"{n['titolo']} 📰\n\nFonte: {n['fonte']}.\n\nCosa ne pensi? Scrivilo nei commenti 👇\n\n🔗 gpoggi.it\n\n#gpoggi {tag} #notizie"
+
+
+def social_previsioni():
+    pron = json.load(open(DATA / "pronostici.json")); righe = []
+    for chiave, icona in (("f1", "🏁"), ("motogp", "🏍️")):
+        p = pron.get(chiave)
+        if p and p.get("favoriti"):
+            righe.append(f"{icona} {p['gp']}\n" + "\n".join(f"{i}. {f['nome']}" for i, f in enumerate(p["favoriti"][:3], 1)))
+    return "Il pronostico di GP Oggi 🔮\n\n" + "\n\n".join(righe) + "\n\nÈ un'opinione basata sui numeri, non una certezza.\n\nTu chi dici? 👇\n\n🔗 gpoggi.it\n\n#gpoggi #f1 #motogp #pronostici #previsioni"
+
+
+def invia_testo(testo):
+    """Didascalia pronta per TikTok e Instagram, in un messaggio a parte dentro un riquadro: un tocco e si copia tutta."""
+    tok = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN"); chat = os.environ.get("TELEGRAM_CANALE") or os.environ.get("TELEGRAM_CHAT_ID")
+    if not tok or not chat: return
+    r = requests.post(f"https://api.telegram.org/bot{tok}/sendMessage", data={"chat_id": chat, "parse_mode": "HTML", "disable_notification": "true", "disable_web_page_preview": "true",
+                      "text": "📋 <b>Didascalia per TikTok e Instagram</b> (tocca per copiare)\n\n<pre>" + html.escape(testo) + "</pre>"}, timeout=60)
+    r.raise_for_status()
+
+
 def invia(video, didascalia):
     tok = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN"); chat = os.environ.get("TELEGRAM_CANALE") or os.environ.get("TELEGRAM_CHAT_ID")
     if not tok or not chat: print("Token Telegram mancante: video non inviato."); return False
@@ -155,6 +178,7 @@ def invia(video, didascalia):
     r.raise_for_status(); return True
 
 def main():
+    social = None
     ap = argparse.ArgumentParser(); ap.add_argument("cosa", choices=["notizia", "previsioni"]); ap.add_argument("--invia", action="store_true"); ap.add_argument("--uscita", type=Path, default=QUI / "auto.mp4")
     a = ap.parse_args()
     stato = json.load(open(STATO)) if STATO.exists() else {}
@@ -164,13 +188,16 @@ def main():
         n.setdefault("serie", "F1")
         nome, foto = pilota_nel_titolo(n["titolo"], n["serie"])
         scene = [(pagina_notizia(n, foto), testo_notizia(n, nome))]
+        social = social_notizia(n)
         did = f"📰 {n['titolo']}\n\nFonte: {n['fonte']}\nArticolo: {n['url']}\n\n🏁 Tutte le notizie: https://gpoggi.it\n\n#{'MotoGP' if n['serie']=='MotoGP' else 'F1'} #gpoggi"
     else:
         scene = pagine_previsioni()
         if not scene: print("Nessun pronostico disponibile."); return
+        social = social_previsioni()
         did = "🔮 Il pronostico di GP Oggi per il prossimo weekend: F1 e MotoGP.\nUn'opinione basata sui numeri, non una certezza. Tu chi dici? Fai il tuo pronostico: https://gpoggi.it/giochi.html\n\n#F1 #MotoGP #gpoggi"
     asyncio.run(componi(scene, a.uscita)); print("Video:", a.uscita)
     if a.invia and invia(a.uscita, did):
+        invia_testo(social)
         if a.cosa == "notizia":
             stato.setdefault("notizie", []).insert(0, n["url"]); stato["notizie"] = stato["notizie"][:400]; stato["ultima_serie"] = n["serie"]
         else:

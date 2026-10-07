@@ -8,7 +8,7 @@ on:
     - cron: '30 11 * * *'
     - cron: '30 17 * * *'
     - cron: '0 17 * * 4'
-    - cron: '0 6 * * *'
+    # - cron: '0 6 * * *'   # gioco del giorno in video: spento, mostrava un gioco che sul sito non c'è (si può lanciare a mano con cosa=gioco)
   workflow_dispatch:
     inputs:
       cosa:

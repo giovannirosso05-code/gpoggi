@@ -202,6 +202,7 @@ export function renderFooter() {
           <li><a href="chi-siamo.html">Chi siamo</a></li>
           <li><a href="privacy.html">Privacy</a></li>
           <li><a href="crediti.html">Crediti foto</a></li>
+          <li>Segnalazioni: <a href="mailto:info@gpoggi.it">info@gpoggi.it</a></li>
         </ul>
       </div>
     </div>

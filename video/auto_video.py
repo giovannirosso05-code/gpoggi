@@ -135,6 +135,11 @@ async def componi(scene, uscita):
         (tmp / "l.txt").write_text("\n".join(clip))
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(tmp / "l.txt"), "-c", "copy", "-movflags", "+faststart", str(uscita)], check=True)
 
+def pulisci_titolo(t):
+    """Toglie il prefisso della fonte ("MotoGP | ", "F1 | "): a video e a voce non serve."""
+    return re.sub(r"^\s*(?:MotoGP|F1|Formula\s*1|Formula\s*Uno)\s*[|:–-]\s*", "", t or "", flags=re.I).strip()
+
+
 def scegli_notizia(stato):
     fatte = set(stato.get("notizie", []))
     rass = json.load(open(DATA / "rassegna.json"))["articoli"]
@@ -186,6 +191,7 @@ def main():
         n = scegli_notizia(stato)
         if not n: print("Nessuna notizia nuova."); return
         n.setdefault("serie", "F1")
+        n = {**n, "titolo": pulisci_titolo(n["titolo"])}
         nome, foto = pilota_nel_titolo(n["titolo"], n["serie"])
         scene = [(pagina_notizia(n, foto), testo_notizia(n, nome))]
         social = social_notizia(n)

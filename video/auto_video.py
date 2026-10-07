@@ -24,6 +24,7 @@ CHROMIUM = os.environ.get("GP_CHROMIUM") or ("/opt/pw-browsers/chromium" if Path
 ROMA = ZoneInfo("Europe/Rome")
 W, H = 1080, 1920
 VOCE, VELOCITA = "it-IT-DiegoNeural", "+12%"
+VELOCITA_NOTIZIE = "+29%"  # +15% rispetto alla voce di base
 ROSSO, BLU = "#e8352f", "#1f5fd1"
 norm = lambda s: unicodedata.normalize("NFD", s or "").encode("ascii", "ignore").decode().lower().strip()
 b64 = lambda p: base64.b64encode(Path(p).read_bytes()).decode()
@@ -90,7 +91,7 @@ def pagina_notizia(a, foto):
 def testo_notizia(a, nome):
     serie = "Moto G P" if a.get("serie") == "MotoGP" else "Formula uno"
     titolo = re.sub(r"\b(ADUO\d?|DRS|ERS|KERS|MGU)\b", lambda m: " ".join(m.group(1)), a["titolo"])  # le sigle si leggono lettera per lettera
-    return f"{serie}, notizia di oggi. {titolo}. Fonte: {a['fonte']}. Il link all'articolo completo è nella descrizione. Tutte le notizie su G P Oggi punto it."
+    return f"{titolo}. Fonte: {a['fonte']}. Il link all'articolo completo è nella descrizione. Tutte le notizie su G P Oggi punto it."
 
 def pagine_previsioni():
     pron = json.load(open(DATA / "pronostici.json")); ro = {p["nome"]: p for p in json.load(open(DATA / "roster.json"))}
@@ -115,7 +116,7 @@ def pagine_previsioni():
         out.append((cornice(corpo, colore, foto), voce))
     return out
 
-async def componi(scene, uscita):
+async def componi(scene, uscita, velocita=None):
     """scene = [(html, testo)] -> mp4 verticale con la voce."""
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp); clip = []
@@ -123,7 +124,7 @@ async def componi(scene, uscita):
             b = await p.chromium.launch(**({"executable_path": CHROMIUM} if CHROMIUM else {}), args=["--no-sandbox"])
             pg = await b.new_page(viewport={"width": W, "height": H})
             for i, (h, t) in enumerate(scene):
-                await edge_tts.Communicate(t, VOCE, rate=VELOCITA).save(str(tmp / f"v{i}.mp3"))
+                await edge_tts.Communicate(t, VOCE, rate=velocita or VELOCITA).save(str(tmp / f"v{i}.mp3"))
                 await pg.set_content(h); await pg.wait_for_timeout(500); await pg.screenshot(path=str(tmp / f"s{i}.png"))
             await b.close()
         for i in range(len(scene)):
@@ -202,7 +203,7 @@ def main():
         if not scene: print("Nessun pronostico disponibile."); return
         social = social_previsioni()
         did = "🔮 Il pronostico di GP Oggi per il prossimo weekend: F1 e MotoGP.\nUn'opinione basata sui numeri, non una certezza. Tu chi dici? Fai il tuo pronostico: https://gpoggi.it/giochi.html\n\n#F1 #MotoGP #gpoggi"
-    asyncio.run(componi(scene, a.uscita)); print("Video:", a.uscita)
+    asyncio.run(componi(scene, a.uscita, VELOCITA_NOTIZIE if a.cosa == "notizia" else None)); print("Video:", a.uscita)
     if a.invia and invia(a.uscita, did):
         invia_testo(social)
         if a.cosa == "notizia":

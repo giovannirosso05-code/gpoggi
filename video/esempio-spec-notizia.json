@@ -1,12 +1,1 @@
-{"serie":"MotoGP","titolo_breve":"Marquez e la controfigura al kart","fonte":"Motorsport.com","velocita":"+25%",
- "scene":[
-  {"foto":"Marc Marquez","hook":true,"hook_titolo":"Marquez manda una controfigura al kart!","testo":"[Marquez] manda una controfigura alla gara di kart!"},
-  {"foto":"Marc Marquez","testo":"La MotoGP aveva organizzato una *gara di kart* dopo il warm up di Motegi."},
-  {"foto":"Marc Marquez","testo":"Ma si è capito subito che quello in kart *non era Marquez*."},
-  {"foto":"Marc Marquez","testo":"Un responsabile gli ha chiesto di *alzare la visiera*. Ma non l'ha fatto."},
-  {"foto":"Marc Marquez","nome":"Marc Marquez","testo":"Lui racconta: aveva *bisogno di ghiaccio*, e qualcuno ha proposto la controfigura."},
-  {"foto":"Marc Marquez","testo":"Risultato? Una *tirata d'orecchie* dall'organizzazione."},
-  {"foto":"Marc Marquez","testo":"Ma per lui *conta il campionato*: domenica ha vinto, con *trentasette punti*."},
-  {"foto":"Jorge Martin","nome":"Jorge Martin","testo":"[Jorge Martin] se n'era accorto *subito*."}
- ],
- "finale":{"foto":"Marc Marquez","domanda":"Ha fatto bene Marquez a saltare lo show?"}}
+{"serie": "MotoGP", "titolo_breve": "MotoGP 2027: due qualifiche", "fonte": "Motorsport.com", "velocita": "+25%", "scene": [{"foto": "Marc Marquez", "hook": true, "hook_titolo": "Dal 2027 la MotoGP avrà due qualifiche!", "testo": "Dal 2027 la [MotoGP] avrà due qualifiche!"}, {"foto": "Marc Marquez", "testo": "Lo hanno deciso le squadre con una votazione al *Red Bull Ring*."}, {"foto": "Marc Marquez", "testo": "Accanto alla sprint ci saranno *due sessioni di qualifica*, una per ogni griglia."}, {"foto": "Fabio Quartararo", "testo": "Il venerdì pomeriggio, *15 minuti* di qualifica decidono la griglia della sprint."}, {"foto": "Fabio Quartararo", "testo": "Il sabato mattina, dopo le libere, ci sono Q1 e Q2 per la griglia della *gara*."}, {"foto": "Marc Marquez", "testo": "Spariscono la *Practice* del venerdì e il *warm up* della domenica."}, {"foto": "Marc Marquez", "testo": "E la proposta di tre qualifiche, come in F1, è stata *bocciata*."}], "finale": {"foto": "Fabio Quartararo", "domanda": "Ti piace il nuovo format della MotoGP?"}}

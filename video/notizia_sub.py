@@ -8,6 +8,7 @@ spec.json:
 { "serie": "MotoGP" | "F1", "titolo_breve": "…", "fonte": "Motorsport.com", "velocita": "+25%",
   "scene": [ {"foto": "Marc Marquez", "testo": "…", "nome": "MARC MARQUEZ" (opzionale), "hook": true (solo la prima)}, … ],
   "finale": {"foto": "Marc Marquez", "domanda": "Ha fatto bene …?"} }
+Per spostare la foto nel riquadro si può aggiungere "pos": "0%" (0% = parte alta della foto) a una scena.
 Nel testo: *parole* = gialle, [parole] = nel colore della serie (nomi). Ogni fatto deve venire dall'articolo, raccontato con parole proprie.
 Le foto dei piloti sono quelle con licenza libera del sito (docs/img), con il credito scritto nel video.
 """
@@ -103,7 +104,7 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
     logo = b64(SITO / "img/logo-wide-scuro.png")
     base = f"""<!doctype html><meta charset=utf-8><style>{CSS_FONT}
 *{{box-sizing:border-box}} html,body{{margin:0;width:{W}px;height:{H}px;background:#0b0b0e;color:#fff;font-family:Inter,sans-serif;overflow:hidden;position:relative}}
-.bg{{position:absolute;inset:0;background:url(data:image/jpeg;base64,{foto_b64}) center 14%/cover no-repeat}}
+.bg{{position:absolute;inset:0;background:url(data:image/jpeg;base64,{foto_b64}) center {scena.get('pos', '14%')}/cover no-repeat}}
 .velo{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 22%,rgba(0,0,0,0) 45%,rgba(8,8,10,.92) 78%,#0b0b0e 100%)}}
 .prog{{position:absolute;left:0;top:0;height:10px;width:{avanzamento * 100:.1f}%;background:{col}}}
 .logo{{position:absolute;left:50px;top:150px;width:190px}}

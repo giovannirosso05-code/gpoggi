@@ -241,6 +241,7 @@ def main():
     ap.add_argument("--prova", action="store_true")
     ap.add_argument("--n", type=int, default=2)
     ap.add_argument("--risposta-modello")
+    ap.add_argument("--url", help="racconta proprio questo articolo della rassegna")
     ap.add_argument("--una-volta-al-giorno", action="store_true", help="esce subito se oggi (ora italiana) i video sono già stati fatti")
     a = ap.parse_args()
     nomi = nomi_con_foto()
@@ -254,7 +255,10 @@ def main():
     prima = json.load(open(DATA / "roster.json"))
     if prima and prima[0].get("nome") in nomi:
         predef["F1"] = [prima[0]["nome"]]
-    scelte = scegli(a.n, nomi, fatte)
+    if a.url:
+        scelte = [x for x in json.load(open(DATA / "rassegna.json"))["articoli"] if x["url"] == a.url][:1]
+    else:
+        scelte = scegli(a.n, nomi, fatte)
     print("Scelte:", [x["titolo"][:70] for x in scelte])
     fatti = 0
     for k, art in enumerate(scelte):

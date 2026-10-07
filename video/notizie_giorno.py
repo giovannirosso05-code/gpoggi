@@ -79,6 +79,9 @@ def punteggio(a, nomi):
     return p + (3 if ore < 12 else 1 if ore < 30 else -5)
 
 
+ROTAZIONE = {"MotoGP": ["Fabio Quartararo", "Alex Marquez", "Pedro Acosta", "Fabio Di Giannantonio", "Francesco Bagnaia", "Marco Bezzecchi", "Franco Morbidelli", "Marc Marquez"]}   # volti che stanno bene in verticale
+
+
 def nomi_con_foto():
     nomi = {p["nome"]: "F1" for p in json.load(open(DATA / "roster.json")) if p.get("foto") and p.get("nome")}
     for k in json.load(open(DATA / "foto-motogp.json")):
@@ -170,6 +173,28 @@ def valida(j, a, testo, nomi, predefiniti):
         out.append({"foto": f, "testo": t, **({"nome": str(s["nome"]).strip()} if s.get("nome") else {})})
     if tot > 175:
         raise ValueError("testo troppo lungo")
+    # Le foto: resta quella scelta dal modello solo se il pilota è citato nell'articolo; altrimenti si ruota tra più piloti (mai sempre lo stesso)
+    # e lo stesso volto non compare per più di due scene di fila.
+    parole_art = set(norm(testo + " " + a["titolo"]).split())
+    citati = {n for n in nomi if len(norm(n).split()[-1]) > 3 and norm(n).split()[-1] in parole_art}
+    if a["serie"] == "F1":
+        rot = [p["nome"] for p in json.load(open(DATA / "roster.json")) if p.get("foto") and p.get("nome") in nomi]
+    else:
+        rot = [n for n in ROTAZIONE.get(a["serie"], []) if n in nomi]
+    rot = rot or list(predefiniti)
+    giro = datetime.now(timezone.utc).toordinal()
+    usate = []
+    for sc in out:
+        f = sc["foto"]
+        if f not in citati or (len(usate) >= 2 and usate[-1] == f and usate[-2] == f):
+            for _ in range(len(rot)):
+                c = rot[giro % len(rot)]
+                giro += 1
+                if c != (usate[-1] if usate else None):
+                    f = c
+                    break
+        sc["foto"] = f
+        usate.append(f)
     hv = re.sub(r"[*\[\]]", "", str(j.get("hook_voce", ""))).strip()
     ht = re.sub(r"[*\[\]]", "", str(j.get("hook_titolo", ""))).strip()
     dom = re.sub(r"[*\[\]]", "", str(j.get("domanda", ""))).strip()

@@ -1242,3 +1242,14 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 
 /* la sbarretta rossa che scorreva sotto le schede è stata tolta */
 .nav-scrollbar { display: none !important; }
+
+/* Quiz su telefono: tutta la domanda (foto, risposte in due colonne e esito) sta in una schermata, così non serve scorrere a ogni risposta */
+@media (max-width: 600px) {
+  .quiz-opzioni:not(:has(.grande)) { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .quiz-opzioni:not(:has(.grande)) .quiz-opz { padding: 12px 8px; font-size: 14px; line-height: 1.2; min-height: 52px; display: flex; align-items: center; justify-content: center; }
+  .quiz-titolo { font-size: 19px; margin: 8px 0 10px; }
+  .quiz-img { margin-bottom: 10px; }
+  .mappa-quiz { height: 210px; }
+  .foto-quiz img { max-height: 250px; }
+  .quiz-esito { margin-top: 10px; }
+}

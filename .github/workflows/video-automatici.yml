@@ -1,19 +1,19 @@
 name: Video automatici
 
-# Ogni mattina il gioco del giorno (Chi è? / Che GP è?), tre video di notizie al giorno (orari UTC: 07:30, 13:30, 19:30 ora italiana d'estate) e il giovedì sera quello sui pronostici.
+# Ogni giorno alle 12:00 (ora italiana) due video di notizie raccontate, e il giovedì sera quello sui pronostici.
 # Il video arriva sul tuo Telegram, senza notifica. Funziona anche se Claude non è in uso.
 on:
   schedule:
-    - cron: '30 5 * * *'
-    - cron: '30 11 * * *'
-    - cron: '30 17 * * *'
+    # ogni giorno alle 12:00 italiane due video di notizie: due orari UTC (estate e inverno), ne parte uno solo grazie al controllo dell'ora e a "una volta al giorno"
+    - cron: '0 10 * * *'
+    - cron: '0 11 * * *'
     - cron: '0 17 * * 4'
     # - cron: '0 6 * * *'   # gioco del giorno in video: spento, mostrava un gioco che sul sito non c'è (si può lanciare a mano con cosa=gioco)
   workflow_dispatch:
     inputs:
       cosa:
-        description: 'notizia, previsioni oppure gioco'
-        default: 'notizia'
+        description: 'notizie (due raccontate), notizia (una semplice), previsioni oppure gioco'
+        default: 'notizie'
 
 permissions:
   contents: write
@@ -39,14 +39,20 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "cosa=${{ github.event.inputs.cosa }}" >> $GITHUB_OUTPUT
           elif [ "${{ github.event.schedule }}" = "0 17 * * 4" ]; then echo "cosa=previsioni" >> $GITHUB_OUTPUT
           elif [ "${{ github.event.schedule }}" = "0 6 * * *" ]; then echo "cosa=gioco" >> $GITHUB_OUTPUT
-          else echo "cosa=notizia" >> $GITHUB_OUTPUT; fi
+          elif [ "$(TZ=Europe/Rome date +%H)" = "12" ] || [ "$(TZ=Europe/Rome date +%H)" = "13" ]; then echo "cosa=notizie" >> $GITHUB_OUTPUT
+          else echo "cosa=salta" >> $GITHUB_OUTPUT; fi
       - name: Prepara e invia il video
+        if: steps.quale.outputs.cosa != 'salta'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          if [ "${{ steps.quale.outputs.cosa }}" = "gioco" ]; then python video/gioco.py giorno --invia --uscita "$RUNNER_TEMP/gioco.mp4"
-          else python video/auto_video.py ${{ steps.quale.outputs.cosa }} --invia --uscita "$RUNNER_TEMP/video.mp4"; fi
+          case "${{ steps.quale.outputs.cosa }}" in
+            gioco) python video/gioco.py giorno --invia --uscita "$RUNNER_TEMP/gioco.mp4" ;;
+            notizie) python video/notizie_giorno.py --una-volta-al-giorno ;;
+            *) python video/auto_video.py ${{ steps.quale.outputs.cosa }} --invia --uscita "$RUNNER_TEMP/video.mp4" ;;
+          esac
       - name: Salva lo stato (video già fatti)
         run: |
           git config user.name "gpoggi-bot"

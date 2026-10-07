@@ -89,7 +89,8 @@ def pagina_notizia(a, foto):
 
 def testo_notizia(a, nome):
     serie = "Moto G P" if a.get("serie") == "MotoGP" else "Formula uno"
-    return f"{serie}, notizia di oggi. {a['titolo']}. Fonte: {a['fonte']}. Il link all'articolo completo è nella descrizione. Tutte le notizie su G P Oggi punto it."
+    titolo = re.sub(r"\b(ADUO\d?|DRS|ERS|KERS|MGU)\b", lambda m: " ".join(m.group(1)), a["titolo"])  # le sigle si leggono lettera per lettera
+    return f"{serie}, notizia di oggi. {titolo}. Fonte: {a['fonte']}. Il link all'articolo completo è nella descrizione. Tutte le notizie su G P Oggi punto it."
 
 def pagine_previsioni():
     pron = json.load(open(DATA / "pronostici.json")); ro = {p["nome"]: p for p in json.load(open(DATA / "roster.json"))}

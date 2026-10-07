@@ -29,7 +29,7 @@ C._SSL_CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
 QUI = Path(__file__).parent
 SITO = QUI.parent / "docs"
 FONT = QUI / "logo" / "font"
-CHROMIUM = "/opt/pw-browsers/chromium"
+CHROMIUM = "/opt/pw-browsers/chromium" if Path("/opt/pw-browsers/chromium").exists() else None
 W, H = 1080, 1920
 VIEW = {"width": 360, "height": 640}
 FPS = 30

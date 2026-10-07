@@ -1261,3 +1261,8 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 .pixel-indizi { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; min-height: 28px; }
 .pixel-indizi span { background: var(--bg-elevated-2); border: 1px solid var(--border); border-radius: 999px; padding: 4px 12px; font-size: 13px; font-weight: 600; }
 @media (max-width: 600px) { .pixel-quiz canvas { max-height: 195px; } }
+
+/* Esito del quiz: testo e pulsante "Avanti" allineati a sinistra, senza rientri */
+.quiz-esito { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+.quiz-esito .quiz-avanti { margin: 0; }
+.quiz-esito .credito { flex-basis: 100%; }

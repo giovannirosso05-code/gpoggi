@@ -49,7 +49,7 @@ const GEN = {
       try {
         const doc = new DOMParser().parseFromString(await (await fetch(u)).text(), "image/svg+xml");
         if (doc.querySelector("parsererror") || doc.querySelector("image")) return null;
-        doc.querySelectorAll("text, title, desc, metadata").forEach((el) => el.remove());
+        doc.querySelectorAll("text, title, desc, metadata").forEach((el) => { if (el.localName === "text" && /^\s*\d{1,2}\s*$/.test(el.textContent)) return; el.remove(); });   // restano solo i numeri delle curve
         return URL.createObjectURL(new Blob([new XMLSerializer().serializeToString(doc)], { type: "image/svg+xml" }));
       } catch (e) { return null; }
     };
@@ -112,7 +112,7 @@ function partitaQuiz(chiave, qs) {
     const q = qs[i], ok = q.opzioni[k] === q.giusto;
     if (ok) punti++;
     box.querySelectorAll(".quiz-opz").forEach((b, idx) => { b.disabled = true; if (q.opzioni[idx] === q.giusto) b.classList.add("giusta"); else if (idx === k) b.classList.add("sbagliata"); });
-    document.getElementById("esito").innerHTML = `<b>${ok ? "Giusto!" : "Sbagliato."}</b> ${ok ? "" : "Era " + esc(q.giusto) + "."}
+    document.getElementById("esito").innerHTML = `<span class="esito-testo"><b>${ok ? "Giusto!" : "Sbagliato."}</b> ${ok ? "" : "Era " + (/^Gran Premio/.test(q.giusto) ? "il " : "") + esc(q.giusto) + "."}</span>
       <button class="quiz-avanti" id="avanti">${i + 1 < qs.length ? "Avanti →" : "Vedi il risultato"}</button>${q.cred ? `<div class="credito">${q.cred}</div>` : ""}`;
     document.getElementById("avanti").addEventListener("click", () => { i++; i < qs.length ? mostra() : fine(); });
   };
@@ -321,7 +321,7 @@ async function partitaPixel() {
       punti += guadagno;
       pixelata(im, Math.max(im.naturalWidth, im.naturalHeight), canvas); ptxt.textContent = "";
       box.querySelectorAll(".quiz-opz").forEach((x, idx) => { x.disabled = true; if (opzioni[idx] === p.nome) x.classList.add("giusta"); else if (x === b) x.classList.add("sbagliata"); });
-      document.getElementById("esito").innerHTML = `<b>${ok ? `Giusto! +${guadagno}` : "Sbagliato."}</b> ${ok ? "" : "Era " + esc(p.nome) + "."}
+      document.getElementById("esito").innerHTML = `<span class="esito-testo"><b>${ok ? `Giusto! +${guadagno}` : "Sbagliato."}</b> ${ok ? "" : "Era " + esc(p.nome) + "."}</span>
         <button class="quiz-avanti" id="avanti">${i + 1 < domande.length ? "Avanti →" : "Vedi il risultato"}</button><div class="credito">${credito(p.foto)}</div>`;
       document.getElementById("avanti").addEventListener("click", () => { i++; i < domande.length ? mostra() : fine(); });
     }));

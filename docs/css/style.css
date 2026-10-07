@@ -1231,3 +1231,11 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 
 .conf-tab td.conf-sub { background: transparent; text-align: left; font: 700 14px var(--font-display); letter-spacing: .1em; text-transform: uppercase; color: var(--text-secondary); border-top: 2px solid var(--moto-blu, #1f5fd1); padding-top: 18px; width: auto; }
 .conf-tab td.conf-testo { font: 500 13px var(--font-body); }
+
+/* Stelle del voto al sito */
+.cons-stelle { margin-bottom: 8px; }
+.stelle-riga { display: flex; gap: 6px; }
+.stelle-riga button { background: none; border: 0; padding: 4px; font-size: 44px; line-height: 1; cursor: pointer; color: var(--border, #cfcdc6); transition: transform .12s, color .12s; }
+.stelle-riga button.on { color: #f5b301; }
+.stelle-riga button:hover { transform: scale(1.12); }
+.stelle-riga button:focus-visible { outline: 2px solid var(--accent, #e8352f); outline-offset: 2px; border-radius: 8px; }

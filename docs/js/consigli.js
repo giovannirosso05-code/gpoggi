@@ -64,3 +64,29 @@ if (attivo) {
     } catch (err) { esito.textContent = "Non sono riuscito a inviarlo. Riprova più tardi o scrivici in messaggio privato."; }
   });
 }
+
+
+// Stelle: un voto per dispositivo, la media la tiene il servizio dei voti (Cloudflare Worker)
+const stelle = document.getElementById("cons-stelle"), media = document.getElementById("cons-media");
+let miaId = "", mioVoto = 0;
+try { miaId = localStorage.getItem("val-id") || ""; if (!miaId) { miaId = (crypto.randomUUID ? crypto.randomUUID() : String(Math.random()).slice(2) + Date.now()); localStorage.setItem("val-id", miaId); } mioVoto = Number(localStorage.getItem("val-voto") || 0); } catch (e) { miaId = String(Math.random()).slice(2) + Date.now(); }
+const disegna = (n) => stelle.querySelectorAll("button").forEach((b) => { const on = Number(b.dataset.s) <= n; b.classList.toggle("on", on); b.setAttribute("aria-checked", String(Number(b.dataset.s) === mioVoto)); });
+const testoMedia = (d) => (d && d.voti ? `Voto medio ${String(d.media).replace(".", ",")} su 5 · ${d.voti} ${d.voti === 1 ? "voto" : "voti"}` : "Sii il primo a votare.");
+const servizio = VOTI_URL ? await fetch(base + "/valutazione").then((r) => r.json()).then((d) => (d && "media" in d ? d : null)).catch(() => null) : null;
+disegna(mioVoto);
+media.textContent = servizio ? testoMedia(servizio) + (mioVoto ? ` · il tuo voto: ${mioVoto}` : "") : "Le valutazioni si attivano a breve.";
+stelle.querySelectorAll("button").forEach((b) => {
+  b.addEventListener("mouseenter", () => disegna(Number(b.dataset.s)));
+  b.addEventListener("mouseleave", () => disegna(mioVoto));
+  b.addEventListener("click", async () => {
+    if (!servizio) { media.textContent = "Le valutazioni si attivano a breve: riprova tra poco."; return; }
+    const v = Number(b.dataset.s); media.textContent = "Invio…";
+    try {
+      const r = await fetch(base + "/valutazione", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: miaId, stelle: v }) });
+      if (r.status === 429) { media.textContent = "Troppi voti oggi da questa rete: riprova domani."; return; }
+      if (!r.ok) throw new Error();
+      const d = await r.json(); mioVoto = v; try { localStorage.setItem("val-voto", String(v)); } catch (e) {}
+      disegna(v); media.textContent = "Grazie! " + testoMedia(d);
+    } catch (err) { media.textContent = "Non sono riuscito a registrare il voto. Riprova più tardi."; disegna(mioVoto); }
+  });
+});

@@ -30,6 +30,11 @@ export default {
       }
       return json({ pronostici: out });
     }
+    if (req.method === "GET" && url.pathname === "/valutazione") {
+      // Voto medio del sito (da 1 a 5 stelle): { media, voti }
+      const a = JSON.parse((await env.VOTI.get("valutazione:totale")) || "{}");
+      return json({ media: a.n ? Math.round((a.somma / a.n) * 10) / 10 : null, voti: a.n || 0 });
+    }
     if (req.method === "GET" && url.pathname === "/consiglio") return json({ consigli: true });   // il sito lo usa per sapere se il modulo dei consigli funziona
     if (req.method === "GET") {
       const voti_url = url.searchParams.get("voti");
@@ -79,6 +84,22 @@ export default {
       await env.VOTI.put(chiaveNome, id, { expirationTtl: 90 * 86400 });
       await env.VOTI.put(`pron:${gp}:${id}`, "1", { metadata: { nick, podio, ts: Date.now() }, expirationTtl: 90 * 86400 });
       return json({ ok: true });
+    }
+    if (url.pathname === "/valutazione") {
+      // Un voto per dispositivo (id casuale conservato nel browser); chi cambia idea sostituisce il voto precedente. Nessun dato personale.
+      const c = body;
+      const id = String(c.id || "").replace(/[^\w-]/g, "").slice(0, 40), stelle = Math.round(Number(c.stelle));
+      if (id.length < 8 || !(stelle >= 1 && stelle <= 5)) return json({ errore: "dati non validi" }, 400);
+      const limite = `limite:val:${await impronta((req.headers.get("CF-Connecting-IP") || "") + new Date().toISOString().slice(0, 10))}`;
+      const n = Number((await env.VOTI.get(limite)) || 0);
+      if (n >= 20) return json({ errore: "troppi voti oggi" }, 429);
+      await env.VOTI.put(limite, String(n + 1), { expirationTtl: 86400 });
+      const prima = Number((await env.VOTI.get(`valutazione:${id}`)) || 0);
+      const a = JSON.parse((await env.VOTI.get("valutazione:totale")) || "{}");
+      a.somma = (a.somma || 0) - prima + stelle; a.n = (a.n || 0) + (prima ? 0 : 1);
+      await env.VOTI.put(`valutazione:${id}`, String(stelle));
+      await env.VOTI.put("valutazione:totale", JSON.stringify(a));
+      return json({ media: Math.round((a.somma / a.n) * 10) / 10, voti: a.n });
     }
     if (url.pathname === "/consiglio") {
       // Consigli dei visitatori: solo testo, nessun dato personale. Massimo 3 al giorno per indirizzo; si leggono nel pannello KV di Cloudflare.

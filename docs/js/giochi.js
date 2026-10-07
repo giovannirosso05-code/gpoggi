@@ -17,6 +17,7 @@ const salvaRecord = (g, v) => { if (v > record(g)) scrivi("record-" + g, String(
 const GIOCHI = {
   circuito: { titolo: "Indovina il circuito", testo: "Ti mostro il tracciato, tu scegli il Gran Premio." },
   pilota: { titolo: "Chi è il pilota?", testo: "Una foto, quattro nomi: piloti di oggi e leggende del passato, F1 e MotoGP." },
+  pixel: { titolo: "Chi è? Foto pixelata", testo: "La foto si schiarisce a poco a poco: prima indovini, più punti fai. Tutti i piloti dell'archivio.", pixel: true },
   moto: { titolo: "MotoGP: che moto guida?", testo: "Un pilota, quattro marche." },
   numero: { titolo: "Che numero ha?", testo: "Numeri di gara di piloti F1 e MotoGP." },
   campioni: { titolo: "Chi vinse il mondiale?", testo: "Campioni del mondo di F1 e MotoGP, dal passato a oggi." },
@@ -265,12 +266,67 @@ async function avvia(chiave) {
   const g = GIOCHI[chiave];
   if (g.speciale) return partitaPronostico();
   if (g.serie) return partitaPunti();
+  if (g.pixel) return partitaPixel();
   box.classList.remove("hidden"); scelta.classList.add("hidden"); box.innerHTML = `<p class="muted">Preparo le domande…</p>`;
   let modo;
   if (chiave === "pilota") modo = await scegliModo();
   const qs = await GEN[chiave](modo);
   if (!qs.length) { box.innerHTML = `<p class="muted">Non ci sono abbastanza dati per questo gioco.</p>`; return; }
   partitaQuiz(chiave, qs);
+}
+
+// ---- Chi è? Foto pixelata: la foto parte sgranata e si schiarisce ogni due secondi; i punti calano a ogni passo (5, 4, 3, 2, 1)
+const BLOCCHI_PIXEL = [5, 7, 10, 14, 22, 36], PUNTI_PIXEL = [5, 4, 3, 2, 1, 1], PASSO_PIXEL = 2200;
+let timerPixel = null;
+function pixelata(img, blocchi, canvas) {
+  const w = img.naturalWidth, h = img.naturalHeight, scala = Math.min(1, 700 / Math.max(w, h));
+  canvas.width = Math.round(w * scala); canvas.height = Math.round(h * scala);
+  const piccolo = document.createElement("canvas"), lato = Math.max(w, h);
+  piccolo.width = Math.max(1, Math.round(blocchi * w / lato)); piccolo.height = Math.max(1, Math.round(blocchi * h / lato));
+  piccolo.getContext("2d").drawImage(img, 0, 0, piccolo.width, piccolo.height);
+  const c = canvas.getContext("2d"); c.imageSmoothingEnabled = false; c.drawImage(piccolo, 0, 0, piccolo.width, piccolo.height, 0, 0, canvas.width, canvas.height);
+}
+async function partitaPixel() {
+  box.classList.remove("hidden"); scelta.classList.add("hidden"); box.innerHTML = `<p class="muted">Preparo le foto…</p>`;
+  const oggi = dati.roster.filter((p) => p.foto && p.nome).map((p) => ({ nome: p.nome, foto: p.foto, serie: "Formula 1", indizio: `${p.team || ""}`.trim() }));
+  const passato = dati.storiche.map((p) => ({ nome: p.nome, foto: p.foto, serie: p.serie, indizio: `Anni in pista: ${p.anni}` }));
+  const pool = [...oggi, ...passato];
+  const domande = mescola(pool).slice(0, N);
+  let i = 0, punti = 0;
+  const carica = (p) => new Promise((ok, no) => { const im = new Image(); im.onload = () => ok(im); im.onerror = no; im.src = p.foto.file || p.foto.url; });
+  const fine = () => { clearInterval(timerPixel); const prec = record("pixel"); salvaRecord("pixel", punti); schermataFine("pixel", punti, N * PUNTI_PIXEL[0], prec, () => avvia("pixel")); };
+  const mostra = async () => {
+    clearInterval(timerPixel);
+    const p = domande[i];
+    let im; try { im = await carica(p); } catch (e) { i++; return i < domande.length ? mostra() : fine(); }
+    const stessi = pool.filter((x) => x.serie === p.serie && x.nome !== p.nome);
+    const opzioni = mescola([p.nome, ...mescola([...new Set(stessi.map((x) => x.nome))]).slice(0, 3)]);
+    let livello = 0, risposto = false;
+    box.innerHTML = `<div class="quiz-testa"><span>${esc(GIOCHI.pixel.titolo)} · ${i + 1} di ${domande.length}</span><span>Punti: <b>${punti}</b></span></div>
+      <h3 class="quiz-titolo">Chi è questo pilota?</h3>
+      <div class="quiz-img foto-quiz pixel-quiz"><canvas id="px" aria-label="Foto pixelata del pilota da indovinare" role="img"></canvas><span class="pixel-punti" id="pxp"></span></div>
+      <div class="pixel-indizi" id="pxi"><span>${esc(p.serie)}</span></div>
+      <div class="quiz-opzioni">${opzioni.map((o, k) => `<button class="quiz-opz" data-k="${k}">${esc(o)}</button>`).join("")}</div><div class="quiz-esito" id="esito"></div>`;
+    const canvas = document.getElementById("px"), ptxt = document.getElementById("pxp"), indizi = document.getElementById("pxi");
+    const disegna = () => {
+      pixelata(im, BLOCCHI_PIXEL[livello], canvas); ptxt.textContent = `+${PUNTI_PIXEL[livello]}`;
+      if (livello >= 2 && p.indizio) indizi.innerHTML = `<span>${esc(p.serie)}</span><span>${esc(p.indizio)}</span>`;
+    };
+    disegna();
+    window.__px = { giusto: p.nome, opzioni, avanza: () => { if (livello < BLOCCHI_PIXEL.length - 1) { livello++; disegna(); } } };   // serve solo a registrare i video dimostrativi
+    timerPixel = setInterval(() => { if (livello < BLOCCHI_PIXEL.length - 1) { livello++; disegna(); } else clearInterval(timerPixel); }, PASSO_PIXEL);
+    box.querySelectorAll(".quiz-opz").forEach((b) => b.addEventListener("click", () => {
+      if (risposto) return; risposto = true; clearInterval(timerPixel);
+      const ok = opzioni[Number(b.dataset.k)] === p.nome, guadagno = ok ? PUNTI_PIXEL[livello] : 0;
+      punti += guadagno;
+      pixelata(im, Math.max(im.naturalWidth, im.naturalHeight), canvas); ptxt.textContent = "";
+      box.querySelectorAll(".quiz-opz").forEach((x, idx) => { x.disabled = true; if (opzioni[idx] === p.nome) x.classList.add("giusta"); else if (x === b) x.classList.add("sbagliata"); });
+      document.getElementById("esito").innerHTML = `<b>${ok ? `Giusto! +${guadagno}` : "Sbagliato."}</b> ${ok ? "" : "Era " + esc(p.nome) + "."}
+        <button class="quiz-avanti" id="avanti">${i + 1 < domande.length ? "Avanti →" : "Vedi il risultato"}</button><div class="credito">${credito(p.foto)}</div>`;
+      document.getElementById("avanti").addEventListener("click", () => { i++; i < domande.length ? mostra() : fine(); });
+    }));
+  };
+  mostra();
 }
 
 function scegliModo() {
@@ -289,7 +345,7 @@ function aggiornaRecord() {
   scelta.querySelectorAll(".gioco-card").forEach((b) => {
     const r = record(b.dataset.gioco);
     let el = b.querySelector(".rec"); if (!el) { el = document.createElement("small"); el.className = "rec"; b.appendChild(el); }
-    el.textContent = r ? (b.dataset.gioco === "punti" ? `Record: ${r} di fila` : `Record: ${r}/${N}`) : "";
+    el.textContent = r ? (b.dataset.gioco === "punti" ? `Record: ${r} di fila` : b.dataset.gioco === "pixel" ? `Record: ${r}/${N * PUNTI_PIXEL[0]}` : `Record: ${r}/${N}`) : "";
   });
 }
 

@@ -1,7 +1,7 @@
 """Video "provo un gioco di GP Oggi" per TikTok e Instagram: si gioca davvero sul sito (cursore che tocca, risposte giuste e una sbagliata, punteggio finale),
 con la voce di Diego che accompagna ogni passaggio. Stesso metodo del tour del sito (demo_sito.py).
 
-Uso:  python3 demo_giochi.py pilota|circuito|moto [--prova] [--uscita FILE]
+Uso:  python3 demo_giochi.py pixel|pilota|circuito|moto [--prova] [--uscita FILE]
 
 Per rispondere in modo credibile, solo durante la ripresa la pagina espone le domande del gioco (window.__qs): il sito pubblicato non cambia.
 """
@@ -23,22 +23,29 @@ SITO = D.SITO
 PORTA = 8142
 
 GIOCHI = {
+    "pixel": dict(chiave="pixel", nome="Chi è? Foto pixelata", modo=None, intro="Riconosci un pilota da una foto sgranata? Ecco il nuovo gioco di G P Oggi!",
+                  apri="Sul sito ci sono nove giochi, tutti gratis e senza registrazione. Apriamo «Chi è? Foto pixelata».",
+                  scelta="Tocco il gioco e si parte.",
+                  prima="La foto parte molto sgranata e si schiarisce a poco a poco: prima indovini, più punti fai.",
+                  sbaglio="Se sbagli, il gioco ti mostra chi era.",
+                  avanti="Dieci foto, con tutti i piloti dell'archivio: da quelli di oggi alle leggende.",
+                  fine="Alla fine vedi il punteggio su cinquanta e il tuo record. Quanto fai tu?"),
     "pilota": dict(chiave="pilota", nome="Chi è il pilota?", modo="oggi", intro="Sai riconoscere i piloti di Formula uno e di Moto G P? Mettiti alla prova con i giochi di G P Oggi!",
-                   apri="Sul sito ci sono otto giochi, tutti gratis e senza registrazione. Apriamo «Chi è il pilota?».",
+                   apri="Sul sito ci sono nove giochi, tutti gratis e senza registrazione. Apriamo «Chi è il pilota?».",
                    scelta="Scelgo la difficoltà: oggi i piloti della griglia.",
                    prima="Ti mostra una foto e quattro nomi: tocca quello giusto.",
                    sbaglio="Se sbagli, il gioco te lo dice subito e ti fa vedere la risposta.",
                    avanti="E così per dieci domande: più sei veloce, meglio è.",
                    fine="Alla fine vedi il punteggio e il tuo record, che resta sul telefono. Riesci a fare dieci su dieci?"),
     "circuito": dict(chiave="circuito", nome="Indovina il circuito", modo=None, intro="Conosci a memoria i circuiti della Formula uno? Proviamo con il gioco di G P Oggi!",
-                     apri="Sul sito ci sono otto giochi, tutti gratis e senza registrazione. Apriamo «Indovina il circuito».",
+                     apri="Sul sito ci sono nove giochi, tutti gratis e senza registrazione. Apriamo «Indovina il circuito».",
                      scelta=None,
                      prima="Ti mostra solo il tracciato, senza nomi: di quale Gran Premio si tratta?",
                      sbaglio="Se sbagli, il gioco ti dice qual era quello giusto.",
                      avanti="Dieci tracciati da riconoscere: quanti ne indovini?",
                      fine="Alla fine vedi il punteggio e il tuo record. Riesci a farli tutti?"),
     "moto": dict(chiave="moto", nome="MotoGP: che moto guida?", modo=None, intro="Sai con che moto corre ogni pilota della Moto G P? Giochiamo insieme su G P Oggi!",
-                 apri="Sul sito ci sono otto giochi, tutti gratis e senza registrazione. Apriamo «Moto G P: che moto guida?».",
+                 apri="Sul sito ci sono nove giochi, tutti gratis e senza registrazione. Apriamo «Moto G P: che moto guida?».",
                  scelta=None,
                  prima="Ti dice il pilota, tu scegli la marca della moto.",
                  sbaglio="Se sbagli, il gioco te lo dice subito.",
@@ -54,6 +61,7 @@ async def hook_domande(route):
     t = f.read_text(encoding="utf-8")
     assert "  partitaQuiz(chiave, qs);\n}" in t, "giochi.js è cambiato: aggiorna il punto di aggancio"
     t = t.replace("  partitaQuiz(chiave, qs);\n}", "  window.__qs = qs; partitaQuiz(chiave, qs);\n}", 1)
+    t = t.replace("PASSO_PIXEL = 2200", "PASSO_PIXEL = 1e9", 1)   # nella ripresa le foto si schiariscono a comando (window.__px.avanza), non a tempo reale
     await route.fulfill(status=200, headers={"content-type": "text/javascript", "cache-control": "no-store"}, body=t)
 
 
@@ -74,12 +82,15 @@ async def tocca_vis(r, selettore, indice=0, secondi=0.55):
     await r.tocca()
 
 
-async def risposta(r, giusta=True, veloce=False):
+async def risposta(r, giusta=True, veloce=False, passi=0):
     """Risponde alla domanda in corso (giusta o sbagliata) e passa alla successiva. Ritorna False se il gioco è finito."""
     i, n = await stato(r)
     c = await r.centro(".quiz-testa", 0)
     await r.scorri(c[1] - 112, 0.35)   # la domanda intera (foto e risposte) sotto l'intestazione
-    q = await r.js("(i) => { const q = window.__qs[i - 1]; return { o: q.opzioni, g: q.giusto }; }", i)
+    for _ in range(passi):    # gioco pixelato: la foto si schiarisce un passo alla volta
+        await r.fermo(0.45 if veloce else 0.9)
+        await r.js("window.__px.avanza()")
+    q = await r.js("(i) => { if (window.__px) return { o: window.__px.opzioni, g: window.__px.giusto }; const q = window.__qs[i - 1]; return { o: q.opzioni, g: q.giusto }; }", i)
     corretto = q["o"].index(q["g"])
     k = corretto if giusta else next(j for j in range(len(q["o"])) if j != corretto)
     await r.fermo(0.3 if veloce else 1.2)
@@ -87,7 +98,10 @@ async def risposta(r, giusta=True, veloce=False):
     await r.js("(k) => document.querySelectorAll('.quiz-opz')[k].click()", k)
     await r.fermo(0.4 if veloce else 1.3)
     await tocca_vis(r, "#avanti", 0, 0.22 if veloce else 0.5)
+    prima = await r.js("document.querySelector('.quiz-testa span').textContent")
     await r.js("document.getElementById('avanti').click()")
+    # nel gioco pixelato la domanda dopo si carica con un attimo di ritardo (foto): si aspetta che cambi
+    await r.page.wait_for_function("(t) => { const e = document.querySelector('.quiz-testa span'); return !e || e.textContent !== t; }", arg=prima, timeout=8000)
     await r.fermo(0.1 if veloce else 0.5)
     return i < n
 
@@ -108,19 +122,21 @@ def azioni(g):
             await r.fermo(1.2)
             await tocca_vis(r, f'[data-m="{g["modo"]}"]', 0, 0.7)
             await r.js("(m) => document.querySelector('[data-m=\"' + m + '\"]').click()", g["modo"])
-        await r.js("() => new Promise((ok) => { const t = setInterval(() => { if (window.__qs) { clearInterval(t); ok(); } }, 50); })")
+        await r.js("() => new Promise((ok) => { const t = setInterval(() => { if (window.__qs || window.__px) { clearInterval(t); ok(); } }, 50); })")
         await r.scorri(0, 0.4)
         await r.fermo(0.8)
 
+    pix = g["chiave"] == "pixel"
+
     async def a_prima(r, base):
-        await risposta(r, giusta=True)
+        await risposta(r, giusta=True, passi=3 if pix else 0)
 
     async def a_sbaglio(r, base):
-        await risposta(r, giusta=False)
+        await risposta(r, giusta=False, passi=2 if pix else 0)
 
     async def a_avanti(r, base):
         for k in range(10):
-            if not await risposta(r, giusta=(k != 3), veloce=True):
+            if not await risposta(r, giusta=(k != 3), veloce=True, passi=1 if pix else 0):
                 break
 
     async def a_fine(r, base):

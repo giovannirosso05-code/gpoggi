@@ -1239,3 +1239,6 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 .stelle-riga button.on { color: #f5b301; }
 .stelle-riga button:hover { transform: scale(1.12); }
 .stelle-riga button:focus-visible { outline: 2px solid var(--accent, #e8352f); outline-offset: 2px; border-radius: 8px; }
+
+/* la sbarretta rossa che scorreva sotto le schede è stata tolta */
+.nav-scrollbar { display: none !important; }

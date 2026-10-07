@@ -145,9 +145,7 @@ export function renderHeader(paginaAttuale) {
         ${selettoreLingua()}
         <button type="button" class="tema-btn" id="tema-btn" aria-label="Cambia tema chiaro o scuro">${ICONA_LUNA}${ICONA_SOLE}</button>
       </div>
-      <div class="nav-scrollbar" id="nav-scrollbar" aria-hidden="true"><i></i></div>
     </nav>`;
-  sbarrettaSchede();
   fissaTestata();
   barraIndietro();
   const selLingua = document.getElementById("lingua");

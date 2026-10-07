@@ -15,6 +15,16 @@ from pathlib import Path
 
 import requests
 
+def serie_da_indirizzo(link, predefinita):
+    """Il feed di FormulaPassion mescola F1 e MotoGP: la serie si legge dal percorso dell'articolo (/motogp/, /f1/), altrimenti vale quella del feed."""
+    l = link.lower().split("?")[0]
+    if "/motogp/" in l or "/moto2/" in l or "/moto3/" in l:
+        return "MotoGP"
+    if "/f1/" in l or "/formula-1/" in l:
+        return "F1"
+    return predefinita
+
+
 FEEDS = {  # nome della fonte: (indirizzo del feed, serie)
     "Motorsport.com": ("https://it.motorsport.com/rss/f1/news/", "F1"),
     "FormulaPassion": ("https://www.formulapassion.it/feed", "F1"),
@@ -70,7 +80,7 @@ def main():
             titolo, link = testo(e["title"]), e["link"]
             if not titolo or not link.startswith("http"):
                 continue
-            articoli.append({"titolo": titolo, "estratto": estratto(e["summary"]), "fonte": fonte.strip(), "serie": serie, "url": link, "pubblicato": data_iso(e["data"])})
+            articoli.append({"titolo": titolo, "estratto": estratto(e["summary"]), "fonte": fonte.strip(), "serie": serie_da_indirizzo(link, serie), "url": link, "pubblicato": data_iso(e["data"])})
         print(f"  {fonte}: {min(len(voci), MAX_PER_FEED)} articoli")
     if not articoli:
         print("Nessun feed raggiungibile: si lascia il file com'e'.")

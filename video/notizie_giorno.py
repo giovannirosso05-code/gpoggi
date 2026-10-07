@@ -76,7 +76,17 @@ def punteggio(a, nomi):
         ore = (datetime.now(timezone.utc) - datetime.fromisoformat(a["pubblicato"])).total_seconds() / 3600
     except Exception:
         ore = 99
+    if weekend_gara() and any(k in t for k in SESSIONI):
+        p += 8   # weekend di gara: prove, qualifica e sprint passano avanti
     return p + (3 if ore < 12 else 1 if ore < 30 else -5)
+
+
+SESSIONI = ["prove libere", "libere", "qualific", "pole", "sprint", "fp1", "fp2", "fp3", "griglia", "singapore"]
+
+
+def weekend_gara():
+    d = datetime.now(timezone.utc)
+    return (d.month, d.day) in ((10, 9), (10, 10), (10, 11)) and d.year == 2026
 
 
 ROTAZIONE = {"MotoGP": ["Fabio Quartararo", "Alex Marquez", "Pedro Acosta", "Fabio Di Giannantonio", "Francesco Bagnaia", "Marco Bezzecchi", "Franco Morbidelli", "Marc Marquez"]}   # volti che stanno bene in verticale

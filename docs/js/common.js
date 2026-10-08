@@ -458,7 +458,7 @@ function collegaAiuto() {
       const r = await fetch(base + "/consiglio", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(d) });
       if (r.status === 429) { esito.textContent = "Hai già mandato qualche consiglio oggi: riprova domani."; return; }
       if (!r.ok) throw new Error();
-      form.reset(); esito.textContent = "Grazie! Lo leggiamo tutti.";
+      form.reset(); esito.textContent = "Grazie! Leggiamo tutti i messaggi.";
     } catch (err) { esito.textContent = "Non è partito: riprova più tardi."; }
   });
   const stelle = box.querySelectorAll(".aiuto-stelle button"), media = box.querySelector(".aiuto-media");

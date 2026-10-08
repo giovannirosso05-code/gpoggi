@@ -171,8 +171,19 @@ async def principale(uscita):
         print("Questa settimana non c'è nessuna gara: nessun video.")
         sys.exit(75)
     nomi_gp = " e nel ".join(x["gp"] for x in serie)
+    icone = " ".join("🏁" if x["id"] == "f1" else "🏍️" for x in serie)
+    righe_gp = "\n".join(f"{'🏁' if x['id'] == 'f1' else '🏍️'} {x['gp']}" for x in serie)
     Path(str(uscita) + ".txt").write_text(
-        f"Chi sale sul podio nel {nomi_gp}? 🏁 Scegli podio, pole e giro più veloce e sfida gli altri tifosi nella classifica di GP Oggi. Si vota fino all'inizio delle qualifiche! Gioco gratuito, link nel commento fissato. #f1 #motogp #formula1 #gpoggi",
+        f"{icone} CHI SALE SUL PODIO? {icone}\n\n"
+        f"{righe_gp}\n\n"
+        f"🥇🥈🥉 Scegli il podio\n"
+        f"🎯 Indovina la pole\n"
+        f"⚡ E il giro veloce!\n\n"
+        f"⏰ Si vota fino all'inizio delle qualifiche: dopo non si cambia più niente\n\n"
+        f"📲 Gioca gratis su gpoggi.it → Giochi\n"
+        f"💬 Scrivi nei commenti il tuo podio 👇\n"
+        f"👥 Segui @gp.oggi\n\n"
+        f"#f1 #motogp #formula1 #gpoggi #podio #pole",
         encoding="utf-8")
     base = f"http://localhost:{PORTA}"
     srv = subprocess.Popen([sys.executable, "-m", "http.server", str(PORTA), "-d", str(SITO)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)

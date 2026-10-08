@@ -1,0 +1,61 @@
+name: Risultati del weekend
+
+# Nel weekend di gara (venerdì, sabato, domenica e le prime ore di lunedì) aggiorna solo i risultati ogni 15 minuti circa:
+# prove libere, qualifiche, sprint e gara compaiono sul sito poco dopo la fine. Fuori dai weekend di gara non fa niente.
+# Quando una sessione è dal vivo i dati ufficiali sono bloccati dalla fonte: il giro dopo recupera tutto.
+on:
+  schedule:
+    - cron: '7,22,37,52 * * * 5,6,0'
+    - cron: '7,22,37,52 0-5 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dati-sito
+  cancel-in-progress: false
+
+jobs:
+  risultati:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: C'è un weekend di gara?
+        id: gara
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, datetime as dt, os
+          ora = dt.datetime.now(dt.timezone.utc)
+          orari = json.load(open("docs/data/gara-orari.json"))
+          vicine = [k for k, v in orari.items() if dt.timedelta(hours=-30) <= dt.datetime.fromisoformat(v) - ora <= dt.timedelta(hours=44)]
+          forza = os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch"
+          print("attivo=" + ("si" if vicine or forza else "no"))
+          PY
+      - if: steps.gara.outputs.attivo == 'si'
+        run: pip install -r requirements.txt
+      - name: Risultati F1 (se c'è una sessione dal vivo si salta il giro)
+        if: steps.gara.outputs.attivo == 'si'
+        run: python scraper_f1.py || [ $? -eq 75 ]
+      - name: Calendario e risultati MotoGP
+        if: steps.gara.outputs.attivo == 'si'
+        run: |
+          python build_motogp.py
+          python build_orari_gara.py
+          python build_report_moto.py
+          python build_cronaca.py || true
+          python build_pronostici.py
+      - name: Commit se ci sono novità
+        if: steps.gara.outputs.attivo == 'si'
+        run: |
+          git config user.name "gpoggi-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/data docs/calendario docs/img/foto
+          for f in foto_cache.json foto_motogp_cache.json foto_motogp_cache_v2.json foto_circuiti_moto_cache.json; do
+            [ -e "$f" ] && git add "$f" || true
+          done
+          git diff --cached --quiet || (git commit -m "dati: risultati del weekend" && git pull --rebase --autostash -X theirs origin main && git push)

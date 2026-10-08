@@ -23,6 +23,8 @@ jobs:
         run: python build_news.py
       - name: Calendario MotoGP
         run: python build_motogp.py
+      - name: Ora di partenza delle gare (per chiudere i voti del pronostico)
+        run: python build_orari_gara.py
       - name: Schede carriera e biografie (riprende da dove era arrivato; prima delle foto, che si fidano dei dati verificati qui)
         run: python build_schede.py || true
       - name: Report MotoGP, foto e mappe (solo le novità), pronostici

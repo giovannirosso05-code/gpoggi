@@ -174,14 +174,16 @@ async function podioVeroF1(id) {
     return { vero: sess.risultati.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos).map((r) => String(r.numero)), inizio: new Date(sess.inizio).getTime() };
   } catch (e) { return null; }
 }
-let garePassateMoto = null;
+let garePassateMoto = null, orariGara = null;
+const caricaOrari = async () => orariGara || (orariGara = await fetchJSON("data/gara-orari.json").catch(() => ({})));
 async function podioVeroMoto(chiave) {
   if (!garePassateMoto) garePassateMoto = await fetchJSON("data/motogp-gare.json").catch(() => ({}));
   const nome = Object.keys(garePassateMoto).find((n) => chiaveMoto(n) === chiave);
   const g = nome && garePassateMoto[nome], righe = g && (g.classifiche || {}).MotoGP;
   if (!righe || !righe.length) return null;
-  // l'ora esatta di partenza non è salvata per le gare passate: vale tutto il giorno della gara
-  return { nome, vero: righe.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos).map((r) => String(r.numero)), inizio: new Date(g.data + "T23:59:59Z").getTime() };
+  // ora di partenza esatta se salvata; per le gare più vecchie (senza pronostici) vale la fine del giorno
+  const orari = await caricaOrari();
+  return { nome, vero: righe.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos).map((r) => String(r.numero)), inizio: orari[chiave] ? new Date(orari[chiave]).getTime() : new Date(g.data + "T23:59:59Z").getTime() };
 }
 
 // per ogni serie: piloti tra cui scegliere, prossimo Gran Premio e Gran Premi già disputati
@@ -190,7 +192,7 @@ async function serieDati(serie) {
     const cal = await fetchJSON("data/motogp.json").catch(() => ({ weekend: [] }));
     const piloti = dati.moto.map((p) => ({ n: String(p.numero), nome: p.nome }));
     const gareOrd = cal.weekend.map((w) => ({ w, gara: w.sessioni.find((x) => x.nome === "Gara") })).filter((x) => x.gara).sort((a, b) => new Date(a.gara.inizio) - new Date(b.gara.inizio));
-    const pross = gareOrd.find((x) => new Date(x.gara.fine) > new Date());
+    const pross = gareOrd.find((x) => new Date(x.gara.inizio).getTime() + 45 * 60000 > Date.now());   // il calendario MotoGP non ha la fine della gara: la si conta 45 minuti dopo il via
     if (!garePassateMoto) garePassateMoto = await fetchJSON("data/motogp-gare.json").catch(() => ({}));
     return { serie, etichetta: "MotoGP", piloti, prossimo: pross && { chiave: chiaveMoto(pross.w.nome), nome: pross.w.nome, inizio: pross.gara.inizio },
       vero: podioVeroMoto, passate: Object.keys(garePassateMoto).map((n) => ({ chiave: chiaveMoto(n), nome: n, data: garePassateMoto[n].data })), appartiene: (c) => c.startsWith("m") };
@@ -240,7 +242,8 @@ async function partitaPronostico(serie = "f1") {
     <div class="quiz-esito"><button class="quiz-avanti pron-rosso" id="salva" style="margin:0">Salva il pronostico</button> <span id="msg" class="muted"></span></div>` : `<p class="muted">Le votazioni per questo Gran Premio sono chiuse: la gara è iniziata.</p>`}
     <div class="pron-punti"><b>Come si fanno i punti</b><ul><li>1° posto indovinato: <b>5</b> punti</li><li>2° posto indovinato: <b>3</b> punti</li><li>3° posto indovinato: <b>2</b> punti</li><li>Pilota sul podio ma in un'altra posizione: <b>1</b> punto</li><li>Podio completo esatto: <b>+5</b> (massimo 15)</li></ul>
     <span class="muted">Il pronostico si può cambiare fino all'inizio della gara. La classifica si aggiorna dopo ogni gara.</span></div>` : `<p class="muted">Nessun Gran Premio ${S.etichetta} in programma.</p>`}
-    ${base ? `<h3 class="quiz-titolo" style="margin-top:24px">Classifica</h3><div id="classifica"><p class="muted">Carico la classifica…</p></div>` : ""}
+    ${base ? `<h3 class="quiz-titolo" style="margin-top:24px">Classifica</h3><div id="classifica"><p class="muted">Carico la classifica…</p></div>
+    <h3 class="quiz-titolo" style="margin-top:24px">Chi ha votato${pr ? ` · ${esc(pr.nome)}` : ""}</h3><div id="votanti"><p class="muted">Carico l'elenco…</p></div>` : ""}
     ${righe ? `<h3 class="quiz-titolo" style="margin-top:20px">I tuoi pronostici ${S.etichetta}</h3><div class="table-wrap"><table class="results"><thead><tr><th>Gran Premio</th><th>Il tuo podio</th><th>Podio vero</th><th>Punti</th></tr></thead><tbody>${righe}</tbody></table></div>` : ""}
     <div class="quiz-azioni" style="margin-top:16px"><button class="quiz-avanti secondario" id="menu" style="margin:0">Cambia gioco</button></div>`;
   document.getElementById("menu").addEventListener("click", () => { box.classList.remove("serie-moto"); tornaMenu(); });
@@ -249,6 +252,7 @@ async function partitaPronostico(serie = "f1") {
   if (salva) salva.addEventListener("click", async () => {
     const podio = [1, 2, 3].map((i) => document.getElementById("p" + i).value);
     const msg = document.getElementById("msg");
+    if (pr.inizio && new Date(pr.inizio) <= new Date()) { msg.textContent = "Le votazioni sono chiuse: la gara è iniziata."; setTimeout(() => partitaPronostico(serie), 1500); return; }
     if (podio.some((x) => !x) || new Set(podio).size < 3) { msg.textContent = "Scegli tre piloti diversi."; return; }
     const nomeEl = document.getElementById("nome"), nome = nomeEl ? nomeEl.value.trim().replace(/\s+/g, " ") : "";
     if (base && !/^[\p{L}\p{N} _.-]{3,16}$/u.test(nome)) { msg.textContent = "Scrivi un nickname di 3-16 caratteri (lettere, numeri, spazi)."; return; }
@@ -260,6 +264,7 @@ async function partitaPronostico(serie = "f1") {
         const r = await fetch(base + "/pronostico", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ gp: pr.chiave, id: idGiocatore(), nick: nome, podio }) });
         if (r.status === 409) testo = "Questo nickname è già usato da un altro giocatore: scegline un altro.";
         else if (r.status === 429) testo = "Troppi invii oggi: riprova domani.";
+        else if (r.status === 403) testo = "Le votazioni sono chiuse: la gara è iniziata.";
         else if (!r.ok) throw new Error();
         else testo = `Salvato! Sei in classifica come ${nome}.`;
       } catch (e) { testo += " Non sono riuscito a raggiungere la classifica: riprova più tardi."; }
@@ -269,20 +274,33 @@ async function partitaPronostico(serie = "f1") {
   });
   if (base) mostraClassifica();
 
+  // Chi ha votato per il prossimo Gran Premio, in ordine di orario (il podio scelto non si vede finché la gara non parte)
+  function mostraVotanti(perGp) {
+    const el = document.getElementById("votanti");
+    if (!el) return;
+    const voti = pr ? (perGp[pr.chiave] || []).slice().sort((a, b) => a.ts - b.ts) : [];
+    const quando = (ts) => new Date(ts).toLocaleString("it-IT", { timeZone: "Europe/Rome", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+    const io = (leggi("pron-nome") || "").toLowerCase();
+    el.innerHTML = !voti.length ? `<p class="muted">Ancora nessun voto: puoi essere il primo.</p>`
+      : `<p class="muted" style="font-size:13px">${voti.length} ${voti.length === 1 ? "giocatore ha votato" : "giocatori hanno votato"} (ora italiana). Il podio scelto resta nascosto fino alla partenza della gara.</p>
+         <div class="table-wrap"><table class="results"><thead><tr><th>#</th><th>Nickname</th><th>Votato il</th></tr></thead><tbody>${voti.slice(0, 100).map((v, i) => `<tr class="${v.nick.toLowerCase() === io ? "pron-io" : ""}"><td>${i + 1}</td><td><b>${esc(v.nick)}</b></td><td>${quando(v.ts)}</td></tr>`).join("")}</tbody></table></div>`;
+  }
+
   // Classifica generale (F1 + MotoGP), dell'ultimo weekend e Gran Premio per Gran Premio: contano solo i pronostici arrivati prima della gara
   async function mostraClassifica() {
     const el = document.getElementById("classifica");
     if (!el) return;
     let lista = [];
-    try { lista = (await fetch(base + "/pronostici").then((r) => r.json())).pronostici || []; } catch (e) { el.innerHTML = `<p class="muted">Classifica non disponibile al momento.</p>`; return; }
+    try { lista = (await fetch(base + "/pronostici").then((r) => r.json())).pronostici || []; } catch (e) { el.innerHTML = `<p class="muted">Classifica non disponibile al momento.</p>`; const v = document.getElementById("votanti"); if (v) v.innerHTML = `<p class="muted">Elenco non disponibile al momento.</p>`; return; }
     const perGp = {};
     for (const x of lista) (perGp[x.gp] ||= []).push(x);
+    mostraVotanti(perGp);
     const chiusi = [];
     for (const s of [F1, MO]) {
       for (const g of s.passate.slice().sort((a, b) => new Date(a.data) - new Date(b.data))) {
         if (!perGp[g.chiave]) continue;
         const r = await s.vero(g.chiave);
-        if (r) chiusi.push({ s, g, r, voci: perGp[g.chiave].filter((x) => x.ts <= r.inizio).map((x) => ({ nick: x.nick, podio: x.podio, pt: punteggio(x.podio, r.vero) })).sort((a, b) => b.pt - a.pt || a.nick.localeCompare(b.nick)) });
+        if (r) chiusi.push({ s, g, r, voci: perGp[g.chiave].filter((x) => x.podio && x.ts <= r.inizio).map((x) => ({ nick: x.nick, podio: x.podio, pt: punteggio(x.podio, r.vero) })).sort((a, b) => b.pt - a.pt || a.nick.localeCompare(b.nick)) });
       }
     }
     chiusi.sort((a, b) => a.r.inizio - b.r.inizio);

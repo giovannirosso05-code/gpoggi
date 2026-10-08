@@ -12,6 +12,14 @@ const CORS = { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods
 const json = (d, s = 200) => new Response(JSON.stringify(d), { status: s, headers: { "Content-Type": "application/json", ...CORS } });
 const impronta = async (t) => [...new Uint8Array(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(t)))].slice(0, 8).map((b) => b.toString(16).padStart(2, "0")).join("");
 
+// Ora di partenza delle gare (file del sito, aggiornato a ogni giro dei dati): serve a chiudere i voti e a tenere nascosto il podio scelto fino al via.
+let orariCache = { t: 0, v: null };
+async function orariGara() {
+  if (orariCache.v && Date.now() - orariCache.t < 300000) return orariCache.v;
+  try { const r = await fetch("https://gpoggi.it/data/gara-orari.json", { cf: { cacheTtl: 300 } }); if (r.ok) orariCache = { t: Date.now(), v: await r.json() }; } catch (e) {}
+  return orariCache.v || {};
+}
+
 export default {
   async fetch(req, env) {
     if (req.method === "OPTIONS") return new Response(null, { headers: CORS });
@@ -21,10 +29,17 @@ export default {
       const gp = (url.searchParams.get("gp") || "").replace(/[^\w-]/g, "").slice(0, 40);
       const prefisso = gp ? `pron:${gp}:` : "pron:";
       const out = [];
+      const orari = await orariGara();
       let cursor;
       for (let i = 0; i < 5; i++) {
         const r = await env.VOTI.list({ prefix: prefisso, cursor, limit: 1000 });
-        for (const k of r.keys) if (k.metadata) out.push({ gp: k.name.split(":")[1], ...k.metadata });
+        for (const k of r.keys) {
+          if (!k.metadata) continue;
+          const gara = k.name.split(":")[1], via = orari[gara] ? Date.parse(orari[gara]) : null;
+          // prima della partenza il podio scelto non si vede: restano nickname e orario del voto
+          if (via && Date.now() >= via) out.push({ gp: gara, ...k.metadata });
+          else out.push({ gp: gara, nick: k.metadata.nick, ts: k.metadata.ts });
+        }
         if (r.list_complete) break;
         cursor = r.cursor;
       }
@@ -74,6 +89,8 @@ export default {
       const nick = String(c.nick || "").trim().replace(/\s+/g, " ");
       const podio = Array.isArray(c.podio) ? c.podio.map((x) => String(x).slice(0, 10)) : [];
       if (!gp || id.length < 8 || !/^[\p{L}\p{N} _.-]{3,16}$/u.test(nick) || podio.length !== 3 || new Set(podio).size !== 3) return json({ errore: "dati non validi" }, 400);
+      const via = (await orariGara())[gp];
+      if (via && Date.now() >= Date.parse(via)) return json({ errore: "votazioni chiuse" }, 403);
       const limite = `limite:pron:${await impronta((req.headers.get("CF-Connecting-IP") || "") + new Date().toISOString().slice(0, 10))}`;
       const n = Number((await env.VOTI.get(limite)) || 0);
       if (n >= 30) return json({ errore: "troppi invii oggi" }, 429);

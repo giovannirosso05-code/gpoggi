@@ -109,16 +109,17 @@ def contesto_pronostico():
 def gioco_pronostico(serie):
     nomi_gp = " e nel ".join(x["gp"] for x in serie)
     primo = serie[0]
-    voci = ["Vai su G P Oggi punto it e tocca Giochi. È gratis e non serve registrarsi.",
-            "Il primo gioco è il pronostico del podio. Chi è primo in classifica a fine anno vince una carta regalo Amazon da cinquanta euro.",
-            f"Scegli il podio del {primo['gp']}: primo, secondo e terzo. Poi scrivi il tuo nickname e la tua email, che serve solo per mandarti il premio. Tocca Salva e fai uno screenshot del codice di recupero.",
-            "Il nickname e l'email li inserisci una volta sola: il sito ti ricorda sul tuo telefono.",
-            (f"Lo stesso vale per il {serie[1]['gp']}: tocca {'Moto G P' if serie[1]['id'] == 'moto' else 'Formula uno'} e scegli il podio." if len(serie) > 1 else "Puoi cambiare il tuo podio fino all'inizio della gara."),
-            "Vedi anche chi ha già votato. La classifica si aggiorna dopo ogni gara, e il regolamento è sul sito. Vota su G P Oggi punto it: che podio fai tu?"]
+    due = len(serie) > 1
+    voci = ["Apri G P Oggi punto it e tocca Giochi.",
+            "Il primo gioco è il pronostico del podio. In palio, a fine anno, una carta Amazon da cinquanta euro.",
+            f"Scegli primo, secondo e terzo del {primo['gp']}.",
+            "Metti un nickname e la tua email, serve solo per il premio. Salva, e fai uno screenshot del codice di recupero.",
+            (f"Poi fai lo stesso per il {serie[1]['gp']}." if due else "Puoi cambiare il podio fino all'inizio della gara."),
+            "Qui vedi chi ha già votato. Ci vogliono trenta secondi: fai il tuo pronostico su G P Oggi punto it!"]
     return dict(chiave="pronostico", nome="Pronostico del podio", modo=None, custom=True, serie=serie,
-                intro=f"Che podio fai nel {nomi_gp}? Chi è primo a fine anno vince una carta Amazon da cinquanta euro!",
+                intro="Fai il tuo pronostico per questo weekend!",
                 voci=voci,
-                did=["Giochi · gratis", "Premio: carta Amazon 50 €", "Scegli il podio", "Nickname, email e codice", "Il podio si può cambiare" if len(serie) == 1 else "Anche l'altra serie", "Chi ha già votato"])
+                did=["Apri Giochi", "Premio: carta Amazon 50 €", "Scegli il podio", "Nickname e email", "Anche l'altra serie" if due else "Cambialo fino al via", "Chi ha già votato"])
 
 
 async def finto_server_voti(route):
@@ -190,16 +191,16 @@ def azioni_pronostico(g):
         await r.fermo(0.4)
 
     async def a_scelta(r, base):
-        await tocca_vis(r, '.gioco-card[data-gioco="pronostico"]', 0, 0.7)
+        await tocca_vis(r, '.gioco-card[data-gioco="pronostico"]', 0, 0.5)
         await r.js("document.querySelector('.gioco-card[data-gioco=\"pronostico\"]').click()")
         await r.js("() => new Promise((ok) => { const t = setInterval(() => { if (document.getElementById('p1')) { clearInterval(t); ok(); } }, 50); })")
         await r.scorri(0, 0.4)
-        await r.fermo(2.6)
+        await r.fermo(1.3)
 
     async def scegli(r, idx, testo):
-        await tocca_vis(r, f"#p{idx}", 0, 0.6)
+        await tocca_vis(r, f"#p{idx}", 0, 0.4)
         await r.js("(a) => { const s = document.getElementById('p' + a.i); const o = [...s.options].find((x) => x.textContent === a.t); s.value = o.value; s.dispatchEvent(new Event('change')); }", {"i": idx, "t": testo})
-        await r.fermo(0.7)
+        await r.fermo(0.4)
 
     async def passa_a(r, ser):
         """Tocca la serie giusta (F1 o MotoGP) e aspetta il modulo con i piloti di quella serie."""
@@ -219,24 +220,24 @@ def azioni_pronostico(g):
             await scegli(r, i, nome)
 
     async def a_nome(r, base):
-        await tocca_vis(r, "#nome", 0, 0.6)
+        await tocca_vis(r, "#nome", 0, 0.4)
         for k in range(1, 7):
             await r.js("(n) => { const e = document.getElementById('nome'); e.value = 'GP_Fan'.slice(0, n); e.dispatchEvent(new Event('input')); }", k)
-            await r.fermo(0.12)
-        await r.fermo(0.4)
-        await tocca_vis(r, "#email", 0, 0.5)
+            await r.fermo(0.06)
+        await r.fermo(0.2)
+        await tocca_vis(r, "#email", 0, 0.4)
         for k in range(1, 9):
             await r.js("(n) => { const e = document.getElementById('email'); e.value = 'tuamail@esempio.it'.slice(0, n * 2); e.dispatchEvent(new Event('input')); }", k)
-            await r.fermo(0.1)
+            await r.fermo(0.05)
         await r.js("() => { document.getElementById('email').value = 'tuamail@esempio.it'; }")
         await r.fermo(0.5)
-        await tocca_vis(r, "#salva", 0, 0.6)
+        await tocca_vis(r, "#salva", 0, 0.45)
         await r.js("document.getElementById('salva').click()")
-        await r.fermo(1.8)
+        await r.fermo(1.5)
 
     async def a_altra(r, base):
         if len(serie) < 2:
-            await r.fermo(2.0)
+            await r.fermo(1.0)
             return
         await passa_a(r, serie[1])
         for i, nome in enumerate(serie[1]["nomi"], 1):
@@ -251,7 +252,7 @@ def azioni_pronostico(g):
         await r.js("() => new Promise((ok) => { const t = setInterval(() => { const e = document.querySelector('#votanti table'); if (e) { clearInterval(t); ok(); } }, 80); setTimeout(ok, 4000); })")
         c = await r.centro("#votanti", 0)
         await r.scorri(c[1] - 190, 1.0)
-        await r.fermo(2.4)
+        await r.fermo(1.6)
 
     return [a_apri, a_scelta, a_podio, a_nome, a_altra, a_fine]
 
@@ -344,7 +345,7 @@ async def principale(args):
             print("Questa settimana non c'è nessuna gara: nessun video.")
             sys.exit(75)
         GIOCHI["pronostico"] = gioco_pronostico(serie)
-        nomi = " e ".join(x["gp"] for x in serie)
+        nomi = " e nel ".join(x["gp"] for x in serie)
         Path(str(args.uscita) + ".txt").write_text(
             f"Che podio fai nel {nomi}? Chi è primo a fine anno vince una carta regalo Amazon da 50 €. Gratis. Cerca GP Oggi su Google, Giochi, Pronostico del podio. Regolamento sul sito. Amazon non è sponsor. #f1 #motogp #pronostici #gpoggi", encoding="utf-8")
     g = GIOCHI[args.gioco]

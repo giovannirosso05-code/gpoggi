@@ -116,15 +116,28 @@ def pagina(d, gruppi):
     sigla_g = lambda g: g.split()[0][:3].upper() + " " + g.split()[1]
     font = (f"@font-face{{font-family:Oswald;font-weight:700;src:url(data:font/woff2;base64,{b64(FONT / 'oswald-latin-700-normal.woff2')})}}"
             f"@font-face{{font-family:Inter;font-weight:500;src:url(data:font/woff2;base64,{b64(FONT / 'inter-latin-500-normal.woff2')})}}")
+    # ordine dall'alto in basso: domenica, sabato, venerdì (e dentro ogni giorno la sessione più tarda per prima)
+    def blocco_chips(giorno_testo=None, escludi=None):
+        out = ""
+        for g, sess in reversed(gruppi):
+            if (giorno_testo is not None and g != giorno_testo) or (escludi is not None and g == escludi):
+                continue
+            voci = [(g, n, o) for n, o, _, _ in reversed(sess) if tipo_sessione(n) == "altro"]
+            if voci:
+                out += '<div class="chips">' + "".join(f'<div class="chip"><span class="cg">{sigla_g(gg)}</span><span class="cn">{n}</span><b>{o}</b></div>' for gg, n, o in voci) + "</div>"
+        return out
+    giorno_gara = gara[0][0] if gara else None
+    chips_domenica = blocco_chips(giorno_gara) if giorno_gara else ""
+    chips = blocco_chips(escludi=giorno_gara)
     carte = ""
     for g, n, o in gara:
         carte += (f'<div class="carta gara"><div class="scacchi"></div><div><div class="et">{n}</div><div class="gg">{g}</div></div>'
                   f'<b class="ora" style="font-size:130px">{o}</b></div>')
+    carte += chips_domenica
     if qual:
         carte += '<div class="coppia">' + "".join(
             f'<div class="carta qual"><div><div class="et">{n}</div><div class="gg">{g}</div></div><b class="ora" style="font-size:{78 if len(qual) == 1 else 66}px">{o}</b></div>'
             for g, n, o in qual) + "</div>"
-    chips = "".join(f'<div class="chip"><span class="cg">{sigla_g(g)}</span><span class="cn">{n}</span><b>{o}</b></div>' for g, n, o in altre)
     return f"""<!doctype html><meta charset=utf-8><style>{font}
 *{{box-sizing:border-box}} html,body{{margin:0;width:{W}px;height:{H}px;background:#0b0b0e;color:#fff;font-family:Inter,sans-serif;overflow:hidden}}
 /* zona sicura: i pulsanti di TikTok e Instagram stanno a destra (circa 160 px) e in alto, la didascalia in basso */
@@ -146,7 +159,7 @@ h1{{margin:12px 0 0;font:700 64px/1 Oswald;text-transform:uppercase;white-space:
 .carta.gara .et,.carta.gara .gg,.carta.gara .ora{{position:relative}}
 .coppia{{display:flex;gap:16px}} .coppia .carta{{flex:1;margin-bottom:16px;height:125px;padding:0 22px}}
 .carta.qual{{background:linear-gradient(100deg,{ambra} 0%,#c98a00 100%);color:#1a1300}} .carta.qual .et{{font-size:34px}} .coppia .carta.qual .et{{font-size:27px;letter-spacing:.05em;white-space:nowrap}} .carta.qual .gg{{font-size:22px}}
-.chips{{display:grid;grid-template-columns:1fr 1fr;gap:10px}}
+.chips{{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}}
 .chip{{display:flex;align-items:center;gap:12px;background:#17171d;border-radius:12px;padding:0 16px;height:60px;white-space:nowrap}}
 .cg{{font:700 22px Oswald;letter-spacing:.06em;color:{colore};width:64px;flex:none}} .cn{{flex:1;font:500 25px Inter;color:#c9c9d2;overflow:hidden;text-overflow:ellipsis}}
 .chip b{{font:700 32px Oswald;color:#fff}}
@@ -157,7 +170,7 @@ h1{{margin:12px 0 0;font:700 64px/1 Oswald;text-transform:uppercase;white-space:
 <div class=foto></div><div class=vel></div>
 <div class=testata><span class=pill>{d['sigla']}</span><span class=ora-it>Orari in ora italiana</span><h1>{d['titolo']}</h1>
 <div class=sotto>{d['luogo'][:34]}</div><div class=sotto style='margin-top:2px'>Il nostro favorito: <b>{d['fav']}</b></div></div>
-<div class=blocco>{carte}<div class=chips>{chips}</div>
+<div class=blocco>{carte}{chips}
 <div class=piede><div class=url>gpoggi.it</div><div class=piccolo>Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team</div>
 <div class=piccolo>Foto: {d['foto'].get('autore', '')} · {d['foto'].get('licenza', '')} · via Wikimedia Commons</div></div></div>"""
 

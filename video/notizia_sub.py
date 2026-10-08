@@ -170,8 +170,11 @@ async def genera(spec, uscita):
         totale = t
         fotos = {}
         for s in lavoro:
-            nome = s["s"]["foto"]; chiave = f"{nome}|{s['s'].get('alt', '')}"
-            if chiave not in fotos:
+            nome = s["s"]["foto"]; chiave = f"{nome}|{s['s'].get('alt', '')}|{s['s'].get('foto_file', '')}"
+            if chiave not in fotos and s["s"].get("foto_file"):
+                # immagine già pronta 1080x1920 (per esempio da ritratti_espn.py) con il suo credito
+                fotos[chiave] = (b64(s["s"]["foto_file"]), s["s"].get("credito", ""))
+            elif chiave not in fotos:
                 f = trova_foto(nome, s["s"].get("alt")); autore = re.sub(r"Original:\s*", "", f["autore"]); fotos[chiave] = (b64(file_foto(f)), f"Foto: {autore} · {f['licenza']} · Wikimedia Commons")
         # fotogrammi
         quadri = []   # (png, inizio, fine)
@@ -185,7 +188,7 @@ async def genera(spec, uscita):
                 f = tmp / f"q{k}.png"; k += 1
                 await pg.screenshot(path=str(f)); return f
             for idx, s in enumerate(lavoro):
-                fb, cred = fotos[f"{s['s']['foto']}|{s['s'].get('alt', '')}"]
+                fb, cred = fotos[f"{s['s']['foto']}|{s['s'].get('alt', '')}|{s['s'].get('foto_file', '')}"]
                 fine_scena = s["ini"] + s["dur"] + (0.22 if idx < len(lavoro) - 1 else 0.6)
                 if s["s"].get("finale"):
                     f = await scatta(pagina(spec, s["s"], fb, cred, 1.0, finale=s["s"]["domanda"]))

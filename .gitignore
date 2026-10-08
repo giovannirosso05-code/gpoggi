@@ -1,5 +1,6 @@
-cache/
-__pycache__/
 *.pyc
 .env
+__pycache__/
+cache/
 foto_extra_lavoro/
+video/_cache/

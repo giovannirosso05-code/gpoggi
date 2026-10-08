@@ -97,8 +97,6 @@ def nomi_con_foto():
     for k in json.load(open(DATA / "foto-motogp.json")):
         if k.startswith("nome:"):
             nomi[k[5:]] = "MotoGP"
-    for p in json.load(open(DATA / "foto-storici.json")):
-        nomi.setdefault(p["nome"], p["serie"])
     return nomi
 
 
@@ -278,7 +276,7 @@ def main():
             stato.setdefault("storie", []).insert(0, art["url"])
             stato["storie"] = simili(art, json.load(open(DATA / "rassegna.json"))["articoli"]) + stato["storie"]
             fatti += 1
-        except Exception as e:   # ripiego: video semplice (titolo e fonte), così il video esce comunque
+        except (Exception, SystemExit) as e:   # ripiego: video semplice (titolo e fonte), così il video esce comunque
             print(f"  racconto non riuscito ({type(e).__name__}: {e}); nessun video: meglio niente di uno brutto")
     stato["storie"] = stato.get("storie", [])[:400]
     if not a.prova:

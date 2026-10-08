@@ -1,7 +1,7 @@
 name: Risultati del weekend
 
-# Nel weekend di gara (venerdì, sabato, domenica e le prime ore di lunedì) aggiorna solo i risultati ogni 15 minuti circa:
-# prove libere, qualifiche, sprint e gara compaiono sul sito poco dopo la fine. Fuori dai weekend di gara non fa niente.
+# Da venerdì a domenica (e le prime ore di lunedì) ogni 15 minuti controlla se è finita una sessione nelle ultime 4 ore:
+# se sì, aggiorna i risultati (prove libere, qualifiche, sprint, gara); se no, non fa niente. Dopo 4 ore dalla fine smette di riprovare.
 # Quando una sessione è dal vivo i dati ufficiali sono bloccati dalla fonte: il giro dopo recupera tutto.
 on:
   schedule:
@@ -25,16 +25,23 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: C'è un weekend di gara?
+      - name: "È appena finita una sessione? (limite 4 ore dopo la fine)"
         id: gara
         run: |
           python - <<'PY' >> "$GITHUB_OUTPUT"
           import json, datetime as dt, os
+          t = dt.datetime.fromisoformat
           ora = dt.datetime.now(dt.timezone.utc)
-          orari = json.load(open("docs/data/gara-orari.json"))
-          vicine = [k for k, v in orari.items() if dt.timedelta(hours=-30) <= dt.datetime.fromisoformat(v) - ora <= dt.timedelta(hours=44)]
+          fine = []
+          for g in json.load(open("docs/data/events.json")):
+              fine += [t(s["fine"]) for s in g["sessioni"]]
+          for w in json.load(open("docs/data/motogp.json"))["weekend"]:
+              for s in w["sessioni"]:
+                  i, f = t(s["inizio"]), t(s["fine"])
+                  fine.append(f if f > i else i + dt.timedelta(minutes=45))   # il calendario MotoGP non ha la fine di alcune sessioni
+          recenti = [f for f in fine if dt.timedelta(0) <= ora - f <= dt.timedelta(hours=4)]
           forza = os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch"
-          print("attivo=" + ("si" if vicine or forza else "no"))
+          print("attivo=" + ("si" if recenti or forza else "no"))
           PY
       - if: steps.gara.outputs.attivo == 'si'
         run: pip install -r requirements.txt

@@ -33,7 +33,7 @@ try {
     document.title = `${gp} — GP Oggi`;
     const mp = MAPPE[w.circuito];
     box.innerHTML = `
-      ${testata("MotoGP · " + intervalloWeekend({ inizio: w.sessioni[0].inizio, fine: w.sessioni[w.sessioni.length - 1].fine }), gp, (w.circuito || "") + (w.paese ? " · " + w.paese : ""), mp, w.circuito, programmaHtml(w.sessioni))}
+      ${testata("" + intervalloWeekend({ inizio: w.sessioni[0].inizio, fine: w.sessioni[w.sessioni.length - 1].fine }), gp, (w.circuito || "") + (w.paese ? " · " + w.paese : ""), mp, w.circuito, programmaHtml(w.sessioni))}
       <p class="muted">Programma della classe MotoGP. I risultati compariranno dopo la gara.</p>
       <h3 class="section-title">Cronaca giro per giro</h3><p class="muted">Cronaca disponibile dopo la gara: compare qui poche ore dopo l'arrivo.</p>
       <p class="muted" style="margin-top:18px;font-size:13px"><a class="accent" href="calendario.html${tema ? "?" + tema.slice(1) : ""}">← Torna al calendario</a></p>`;
@@ -43,7 +43,7 @@ try {
   const mappa = MAPPE[g.circuito];
   const chiavi = Object.keys(g.classifiche);
   box.innerHTML = `
-    ${testata("MotoGP · " + formattaData(g.data), gp, g.circuito || "", mappa, g.circuito, "")}
+    ${testata("" + formattaData(g.data), gp, g.circuito || "", mappa, g.circuito, "")}
     ${r ? `<h3 class="section-title">Com'è andata</h3><article class="report-card">${r.paragrafi.map((p) => `<p>${esc(p)}</p>`).join("")}</article>` : ""}
     <h3 class="section-title">Risultati</h3>
     <div class="category-pills" id="gm-cat" style="margin-bottom:12px">${chiavi.map((k, i) => `<button class="pill ${i === 0 ? "active" : ""}" data-k="${esc(k)}">${esc(k.replace(" sprint", " · sprint"))}</button>`).join("")}</div>

@@ -76,12 +76,12 @@ def main_libero(video, cop):
              "testo": "L'ultima vittoria Ferrari qui è di *Sainz, nel 2023*. E questo è l'ultimo *weekend sprint* della stagione, con *una sola sessione di prove*."}],
         "finale": {"foto": "Charles Leclerc", "foto_file": str(lec), "credito": c_lec, "domanda": "E tu che dici? Può vincere la Ferrari a Singapore?"}}
     asyncio.run(N.genera(spec, video))
-    c1 = R.ritratto_libero(ex / "charles_leclerc_ferrari.jpg", "lec_cop", larghezza=720, y0=60, fondo=(150, 14, 20))
-    c2 = R.ritratto_libero(ex / "lewis_hamilton_fanzone2025.jpg", "ham_cop", larghezza=720, y0=60, fondo=(150, 14, 20))
-    c3 = R.ritratto_libero(ex / "fr_d_ric_vasseur_ritratto.jpg", "vasseur_cop", larghezza=620, y0=345, fondo=(150, 14, 20))
+    # copertina nello stile del profilo: un volto a tutto schermo e due tondi con gli altri
     spec_cop = {"serie": "F1", "etichetta": "Ultim'ora", "titolo": ["FERRARI A SINGAPORE:", "È IL MOMENTO?"], "evidenzia": 1, "sottotitolo": "Non vince da 7 gare",
-                "foto": [{"file": str(c1), "credito": "Foto: Wikimedia Commons (Gilzetbase, Liauzh, Ferrari/Danyele) · CC BY-SA 4.0", "pos": "50% 0%"},
-                         {"file": str(c2), "pos": "50% 0%"}, {"file": str(c3), "pos": "50% 0%"}]}
+                "principale": {"file": str(ex / "charles_leclerc_ferrari.jpg"), "pos": "55% 12%", "nome": "Charles Leclerc"},
+                "tondi": [{"file": str(ex / "lewis_hamilton_fanzone2025.jpg"), "box": [170, 30, 760, 620], "nome": "Lewis Hamilton"},
+                          {"file": str(ex / "fr_d_ric_vasseur_ritratto.jpg"), "box": [230, 70, 760, 600], "nome": "Fred Vasseur"}],
+                "credito": "Foto: Wikimedia Commons (Gilzetbase, Liauzh, Ferrari/Danyele) · CC BY-SA 4.0"}
     asyncio.run(C.main(spec_cop, cop))
 
 

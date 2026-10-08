@@ -15,6 +15,7 @@ const record = (g) => Number(leggi("record-" + g)) || 0;
 const salvaRecord = (g, v) => { if (v > record(g)) scrivi("record-" + g, String(v)); };
 
 const GIOCHI = {
+  pronostico: { titolo: "Pronostico del podio", testo: "Scegli il podio di F1 e MotoGP, scrivi il tuo nome ed entra in classifica.", speciale: true },
   circuito: { titolo: "Indovina il circuito", testo: "Ti mostro il tracciato, tu scegli il Gran Premio." },
   pilota: { titolo: "Chi è il pilota?", testo: "Una foto, quattro nomi: piloti di oggi e leggende del passato, F1 e MotoGP." },
   pixel: { titolo: "Chi è? Foto pixelata", testo: "La foto si schiarisce a poco a poco: prima indovini, più punti fai. Tutti i piloti dell'archivio.", pixel: true },
@@ -23,7 +24,6 @@ const GIOCHI = {
   campioni: { titolo: "Chi vinse il mondiale?", testo: "Campioni del mondo di F1 e MotoGP, dal passato a oggi." },
   vincitore: { titolo: "Chi vinse quel Gran Premio?", testo: "Vincitori di Gran Premi di F1 dal 1980." },
   punti: { titolo: "Più o meno punti", testo: "Chi ha più punti in classifica? Quanto riesci ad andare avanti?", serie: true },
-  pronostico: { titolo: "Pronostico del podio", testo: "Scegli il podio del prossimo Gran Premio e guarda quanti punti fai.", speciale: true },
 };
 
 let dati = null;
@@ -155,7 +155,7 @@ function partitaPunti() {
   turno();
 }
 
-// ---- Pronostico del podio: punti per posizione e classifica Gran Premio per Gran Premio
+// ---- Pronostico del podio (F1 e MotoGP): punti per posizione e classifica con il nome dei giocatori
 // 1° posto indovinato 5 punti, 2° 3 punti, 3° 2 punti; un pilota sul podio ma in un'altra posizione vale 1; podio completo esatto +5 (massimo 15).
 const PUNTI_POSIZIONE = [5, 3, 2];
 function punteggio(podio, vero) {
@@ -165,7 +165,8 @@ function punteggio(podio, vero) {
 }
 const base = VOTI_URL.replace(/\/$/, "");
 const idGiocatore = () => { let v = leggi("pron-id"); if (!v) { v = "g" + Math.random().toString(36).slice(2) + Date.now().toString(36); scrivi("pron-id", v); } return v; };
-async function podioVero(id) {
+const chiaveMoto = (nome) => "m" + nome.replace(/\W/g, "").slice(0, 38);
+async function podioVeroF1(id) {
   try {
     const g = await fetchJSON(`data/gare/${id}.json`);
     const sess = g.sessioni.find((x) => x.tipo === "Race" && x.risultati && x.risultati.length);
@@ -173,35 +174,66 @@ async function podioVero(id) {
     return { vero: sess.risultati.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos).map((r) => String(r.numero)), inizio: new Date(sess.inizio).getTime() };
   } catch (e) { return null; }
 }
+let garePassateMoto = null;
+async function podioVeroMoto(chiave) {
+  if (!garePassateMoto) garePassateMoto = await fetchJSON("data/motogp-gare.json").catch(() => ({}));
+  const nome = Object.keys(garePassateMoto).find((n) => chiaveMoto(n) === chiave);
+  const g = nome && garePassateMoto[nome], righe = g && (g.classifiche || {}).MotoGP;
+  if (!righe || !righe.length) return null;
+  // l'ora esatta di partenza non è salvata per le gare passate: vale tutto il giorno della gara
+  return { nome, vero: righe.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos).map((r) => String(r.numero)), inizio: new Date(g.data + "T23:59:59Z").getTime() };
+}
 
-async function partitaPronostico() {
+// per ogni serie: piloti tra cui scegliere, prossimo Gran Premio e Gran Premi già disputati
+async function serieDati(serie) {
+  if (serie === "moto") {
+    const cal = await fetchJSON("data/motogp.json").catch(() => ({ weekend: [] }));
+    const piloti = dati.moto.map((p) => ({ n: String(p.numero), nome: p.nome }));
+    const gareOrd = cal.weekend.map((w) => ({ w, gara: w.sessioni.find((x) => x.nome === "Gara") })).filter((x) => x.gara).sort((a, b) => new Date(a.gara.inizio) - new Date(b.gara.inizio));
+    const pross = gareOrd.find((x) => new Date(x.gara.fine) > new Date());
+    if (!garePassateMoto) garePassateMoto = await fetchJSON("data/motogp-gare.json").catch(() => ({}));
+    return { serie, etichetta: "MotoGP", piloti, prossimo: pross && { chiave: chiaveMoto(pross.w.nome), nome: pross.w.nome, inizio: pross.gara.inizio },
+      vero: podioVeroMoto, passate: Object.keys(garePassateMoto).map((n) => ({ chiave: chiaveMoto(n), nome: n, data: garePassateMoto[n].data })), appartiene: (c) => c.startsWith("m") };
+  }
+  const piloti = dati.roster.filter((p) => p.nome).sort((a, b) => (a.posizione ?? 99) - (b.posizione ?? 99)).map((p) => ({ n: String(p.numero), nome: p.nome }));
+  const pross = dati.eventi.filter((g) => new Date(g.fine) > new Date()).sort((a, b) => new Date(a.inizio) - new Date(b.inizio))[0];
+  const gara = pross && pross.sessioni.find((x) => x.nome === "Gara");
+  return { serie, etichetta: "F1", piloti, prossimo: pross && { chiave: String(pross.id), nome: pross.nome, inizio: gara ? gara.inizio : null },
+    vero: podioVeroF1, passate: dati.eventi.map((g) => ({ chiave: String(g.id), nome: g.nome, data: g.inizio })), appartiene: (c) => !c.startsWith("m") };
+}
+
+async function partitaPronostico(serie = "f1") {
   scelta.classList.add("hidden"); box.classList.remove("hidden");
+  box.classList.toggle("serie-moto", serie === "moto");
+  const [S, altra] = await Promise.all([serieDati(serie), serieDati(serie === "f1" ? "moto" : "f1")]);
+  const F1 = serie === "f1" ? S : altra, MO = serie === "moto" ? S : altra;
   const salvati = () => { try { return JSON.parse(leggi("pronostici") || "{}"); } catch (e) { return {}; } };
-  const prossimo = dati.eventi.filter((g) => new Date(g.fine) > new Date()).sort((a, b) => new Date(a.inizio) - new Date(b.inizio))[0];
-  const piloti = dati.roster.filter((p) => p.nome).sort((a, b) => (a.posizione ?? 99) - (b.posizione ?? 99));
-  const opz = (sel) => `<option value="">Scegli…</option>` + piloti.map((p) => `<option value="${p.numero}" ${String(sel) === String(p.numero) ? "selected" : ""}>${esc(p.nome)}</option>`).join("");
-  const nomePil = (n) => (piloti.find((p) => String(p.numero) === String(n)) || {}).nome || "n.d.";
-  const gara = prossimo && prossimo.sessioni.find((x) => x.nome === "Gara");
-  const aperto = prossimo && gara && new Date(gara.inizio) > new Date();
+  const opz = (sel) => `<option value="">Scegli…</option>` + S.piloti.map((p) => `<option value="${p.n}" ${String(sel) === p.n ? "selected" : ""}>${esc(p.nome)}</option>`).join("");
+  const nomeDi = (s, n) => (s.piloti.find((p) => p.n === String(n)) || {}).nome || "n.d.";
+  const pr = S.prossimo;
+  const aperto = pr && pr.inizio && new Date(pr.inizio) > new Date();
   const tutti = salvati();
   let totale = 0, righe = "";
-  for (const [id, pr] of Object.entries(tutti)) {
-    const r = await podioVero(id);
-    const pt = r ? punteggio(pr.podio, r.vero) : null;
+  for (const [id, mio] of Object.entries(tutti)) {
+    if (!S.appartiene(id)) continue;
+    const r = await S.vero(id);
+    const pt = r ? punteggio(mio.podio, r.vero) : null;
     if (pt !== null) totale += pt;
-    righe += `<tr><td><strong>${esc(pr.nome)}</strong></td><td>${pr.podio.map(nomePil).map(esc).join(", ")}</td><td>${r ? r.vero.map(nomePil).map(esc).join(", ") : "<span class='muted'>in attesa</span>"}</td><td><strong>${pt ?? "–"}</strong></td></tr>`;
+    righe += `<tr><td><strong>${esc(mio.nome)}</strong></td><td>${mio.podio.map((n) => nomeDi(S, n)).map(esc).join(", ")}</td><td>${r ? r.vero.map((n) => nomeDi(S, n)).map(esc).join(", ") : "<span class='muted'>in attesa</span>"}</td><td><strong>${pt ?? "–"}</strong></td></tr>`;
   }
-  box.innerHTML = `<div class="quiz-testa pron-testa"><span>Pronostico del podio</span><span>Punti totali: <b>${totale}</b></span></div>
-    ${prossimo ? `<h3 class="quiz-titolo">${esc(prossimo.nome)}: chi sale sul podio?</h3>
-    ${aperto ? `<div class="pron-form">${[1, 2, 3].map((i) => `<label>${i}° posto<select class="sel" id="p${i}">${opz((tutti[prossimo.id] || { podio: [] }).podio[i - 1])}</select></label>`).join("")}</div>
+  box.innerHTML = `<div class="quiz-testa pron-testa"><span>Pronostico del podio</span><span>I tuoi punti ${S.etichetta}: <b>${totale}</b></span></div>
+    <div class="chip-serie-riga" style="display:flex;gap:8px;margin:14px 0 4px"><button class="chip-serie f1 ${serie === "f1" ? "attivo" : ""}" data-s="f1">Formula 1</button><button class="chip-serie moto ${serie === "moto" ? "attivo" : ""}" data-s="moto">MotoGP</button></div>
+    ${pr ? `<h3 class="quiz-titolo">${esc(pr.nome)}: chi sale sul podio?</h3>
+    ${aperto ? `<div class="pron-form">${[1, 2, 3].map((i) => `<label>${i}° posto<select class="sel" id="p${i}">${opz((tutti[pr.chiave] || { podio: [] }).podio[i - 1])}</select></label>`).join("")}</div>
     ${base ? `<label class="pron-nome">Il tuo nome in classifica<input type="text" id="nome" maxlength="16" autocomplete="nickname" placeholder="Per esempio Giovanni" value="${esc(leggi("pron-nome") || "")}"></label>` : ""}
     <div class="quiz-esito"><button class="quiz-avanti pron-rosso" id="salva" style="margin:0">Salva il pronostico</button> <span id="msg" class="muted"></span></div>` : `<p class="muted">Le votazioni per questo Gran Premio sono chiuse: la gara è iniziata.</p>`}
     <div class="pron-punti"><b>Come si fanno i punti</b><ul><li>1° posto indovinato: <b>5</b> punti</li><li>2° posto indovinato: <b>3</b> punti</li><li>3° posto indovinato: <b>2</b> punti</li><li>Pilota sul podio ma in un'altra posizione: <b>1</b> punto</li><li>Podio completo esatto: <b>+5</b> (massimo 15)</li></ul>
-    <span class="muted">Il pronostico si può cambiare fino all'inizio della gara.</span></div>` : `<p class="muted">Nessun Gran Premio in programma.</p>`}
+    <span class="muted">Il pronostico si può cambiare fino all'inizio della gara. La classifica si aggiorna dopo ogni gara.</span></div>` : `<p class="muted">Nessun Gran Premio ${S.etichetta} in programma.</p>`}
     ${base ? `<h3 class="quiz-titolo" style="margin-top:24px">Classifica</h3><div id="classifica"><p class="muted">Carico la classifica…</p></div>` : ""}
-    ${righe ? `<h3 class="quiz-titolo" style="margin-top:20px">I tuoi pronostici</h3><div class="table-wrap"><table class="results"><thead><tr><th>Gran Premio</th><th>Il tuo podio</th><th>Podio vero</th><th>Punti</th></tr></thead><tbody>${righe}</tbody></table></div>` : ""}
+    ${righe ? `<h3 class="quiz-titolo" style="margin-top:20px">I tuoi pronostici ${S.etichetta}</h3><div class="table-wrap"><table class="results"><thead><tr><th>Gran Premio</th><th>Il tuo podio</th><th>Podio vero</th><th>Punti</th></tr></thead><tbody>${righe}</tbody></table></div>` : ""}
     <div class="quiz-azioni" style="margin-top:16px"><button class="quiz-avanti secondario" id="menu" style="margin:0">Cambia gioco</button></div>`;
-  document.getElementById("menu").addEventListener("click", tornaMenu);
+  document.getElementById("menu").addEventListener("click", () => { box.classList.remove("serie-moto"); tornaMenu(); });
+  box.querySelectorAll(".chip-serie").forEach((b) => b.addEventListener("click", () => { if (b.dataset.s !== serie) partitaPronostico(b.dataset.s); }));
   const salva = document.getElementById("salva");
   if (salva) salva.addEventListener("click", async () => {
     const podio = [1, 2, 3].map((i) => document.getElementById("p" + i).value);
@@ -209,12 +241,12 @@ async function partitaPronostico() {
     if (podio.some((x) => !x) || new Set(podio).size < 3) { msg.textContent = "Scegli tre piloti diversi."; return; }
     const nomeEl = document.getElementById("nome"), nome = nomeEl ? nomeEl.value.trim().replace(/\s+/g, " ") : "";
     if (base && !/^[\p{L}\p{N} _.-]{3,16}$/u.test(nome)) { msg.textContent = "Scrivi un nome di 3-16 caratteri (lettere, numeri, spazi)."; return; }
-    const t = salvati(); t[prossimo.id] = { nome: prossimo.nome, podio }; scrivi("pronostici", JSON.stringify(t));
+    const t = salvati(); t[pr.chiave] = { nome: pr.nome, podio }; scrivi("pronostici", JSON.stringify(t));
     let testo = leggi("pronostici") ? "Salvato sul dispositivo." : "Salvato solo finché la pagina resta aperta (la memoria del browser è bloccata).";
     if (base) {
       scrivi("pron-nome", nome);
       try {
-        const r = await fetch(base + "/pronostico", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ gp: String(prossimo.id), id: idGiocatore(), nick: nome, podio }) });
+        const r = await fetch(base + "/pronostico", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ gp: pr.chiave, id: idGiocatore(), nick: nome, podio }) });
         if (r.status === 409) testo = "Questo nome è già usato da un altro giocatore: scegline un altro.";
         else if (r.status === 429) testo = "Troppi invii oggi: riprova domani.";
         else if (!r.ok) throw new Error();
@@ -226,7 +258,7 @@ async function partitaPronostico() {
   });
   if (base) mostraClassifica();
 
-  // Classifica Gran Premio per Gran Premio e generale: contano solo i pronostici arrivati prima della partenza della gara
+  // Classifica generale (F1 + MotoGP), dell'ultimo weekend e Gran Premio per Gran Premio: contano solo i pronostici arrivati prima della gara
   async function mostraClassifica() {
     const el = document.getElementById("classifica");
     if (!el) return;
@@ -235,25 +267,37 @@ async function partitaPronostico() {
     const perGp = {};
     for (const x of lista) (perGp[x.gp] ||= []).push(x);
     const chiusi = [];
-    for (const g of dati.eventi.slice().sort((a, b) => new Date(a.inizio) - new Date(b.inizio))) {
-      if (!perGp[g.id]) continue;
-      const r = await podioVero(g.id);
-      if (r) chiusi.push({ g, r, voci: perGp[g.id].filter((x) => x.ts <= r.inizio).map((x) => ({ nick: x.nick, podio: x.podio, pt: punteggio(x.podio, r.vero) })).sort((a, b) => b.pt - a.pt || a.nick.localeCompare(b.nick)) });
+    for (const s of [F1, MO]) {
+      for (const g of s.passate.slice().sort((a, b) => new Date(a.data) - new Date(b.data))) {
+        if (!perGp[g.chiave]) continue;
+        const r = await s.vero(g.chiave);
+        if (r) chiusi.push({ s, g, r, voci: perGp[g.chiave].filter((x) => x.ts <= r.inizio).map((x) => ({ nick: x.nick, podio: x.podio, pt: punteggio(x.podio, r.vero) })).sort((a, b) => b.pt - a.pt || a.nick.localeCompare(b.nick)) });
+      }
     }
-    const generale = {};
-    for (const c of chiusi) for (const v of c.voci) { const o = (generale[v.nick] ||= { nick: v.nick, pt: 0, gare: 0 }); o.pt += v.pt; o.gare++; }
-    const gen = Object.values(generale).sort((a, b) => b.pt - a.pt || b.gare - a.gare || a.nick.localeCompare(b.nick));
+    chiusi.sort((a, b) => a.r.inizio - b.r.inizio);
+    const somma = (gruppo) => {
+      const m = {};
+      for (const c of gruppo) for (const v of c.voci) { const o = (m[v.nick] ||= { nick: v.nick, pt: 0, gare: 0 }); o.pt += v.pt; o.gare++; }
+      return Object.values(m).sort((a, b) => b.pt - a.pt || b.gare - a.gare || a.nick.localeCompare(b.nick));
+    };
     const io = (leggi("pron-nome") || "").toLowerCase();
     const riga = (v, i, extra) => `<tr class="${v.nick.toLowerCase() === io ? "pron-io" : ""}"><td>${i + 1}</td><td><b>${esc(v.nick)}</b></td>${extra}<td><b>${v.pt}</b></td></tr>`;
-    const inAttesa = prossimo && perGp[prossimo.id] ? `<p class="muted" style="font-size:13px">Per il ${esc(prossimo.nome)} hanno già giocato ${perGp[prossimo.id].length} ${perGp[prossimo.id].length === 1 ? "persona" : "persone"}: la classifica esce a fine gara.</p>` : "";
-    if (!chiusi.length) { el.innerHTML = inAttesa + `<p class="muted">Ancora nessuna classifica: compare dopo la prima gara con dei pronostici.</p>`; return; }
-    el.innerHTML = inAttesa + `<label class="pron-scegli">Gran Premio <select id="gp-class" class="sel">${chiusi.slice().reverse().map((c) => `<option value="${c.g.id}">${esc(c.g.nome)}</option>`).join("")}</select></label>
-      <div class="table-wrap"><table class="results" id="tab-gp"></table></div>
-      <h4 class="quiz-titolo" style="margin-top:18px;font-size:18px">Classifica generale</h4>
-      <div class="table-wrap"><table class="results"><thead><tr><th>#</th><th>Nome</th><th>Gare</th><th>Punti</th></tr></thead><tbody>${gen.map((v, i) => riga(v, i, `<td>${v.gare}</td>`)).join("")}</tbody></table></div>`;
+    const inAttesa = [F1, MO].filter((s) => s.prossimo && perGp[s.prossimo.chiave]).map((s) => `${esc(s.prossimo.nome)} (${s.etichetta}): ${perGp[s.prossimo.chiave].length} ${perGp[s.prossimo.chiave].length === 1 ? "giocatore" : "giocatori"}`);
+    const nota = inAttesa.length ? `<p class="muted" style="font-size:13px">Hanno già giocato: ${inAttesa.join(" · ")}. La classifica si aggiorna dopo la gara.</p>` : "";
+    if (!chiusi.length) { el.innerHTML = nota + `<p class="muted">Ancora nessuna classifica: compare dopo la prima gara con dei pronostici.</p>`; return; }
+    const ultimo = chiusi[chiusi.length - 1].r.inizio;
+    const weekend = chiusi.filter((c) => ultimo - c.r.inizio < 4 * 864e5);
+    el.innerHTML = nota + `<label class="pron-scegli">Classifica <select id="gp-class" class="sel"><option value="gen">Generale (F1 + MotoGP)</option><option value="wk">Ultimo weekend</option>${chiusi.slice().reverse().map((c, i) => `<option value="${chiusi.length - 1 - i}">${esc(c.g.nome)} (${c.s.etichetta})</option>`).join("")}</select></label>
+      <div class="table-wrap"><table class="results" id="tab-gp"></table></div>`;
     const disegna = () => {
-      const c = chiusi.find((x) => String(x.g.id) === document.getElementById("gp-class").value);
-      document.getElementById("tab-gp").innerHTML = `<thead><tr><th>#</th><th>Nome</th><th>Il suo podio</th><th>Punti</th></tr></thead><tbody>${c.voci.map((v, i) => riga(v, i, `<td>${v.podio.map(nomePil).map(esc).join(", ")}</td>`)).join("")}</tbody>`;
+      const val = document.getElementById("gp-class").value, t = document.getElementById("tab-gp");
+      if (val === "gen" || val === "wk") {
+        const gr = val === "gen" ? chiusi : weekend, lista = somma(gr);
+        t.innerHTML = `<thead><tr><th>#</th><th>Nome</th><th>Gare</th><th>Punti</th></tr></thead><tbody>${lista.map((v, i) => riga(v, i, `<td>${v.gare}</td>`)).join("")}</tbody>`;
+      } else {
+        const c = chiusi[Number(val)];
+        t.innerHTML = `<thead><tr><th>#</th><th>Nome</th><th>Il suo podio</th><th>Punti</th></tr></thead><tbody>${c.voci.map((v, i) => riga(v, i, `<td>${v.podio.map((n) => nomeDi(c.s, n)).map(esc).join(", ")}</td>`)).join("")}</tbody>`;
+      }
     };
     document.getElementById("gp-class").addEventListener("change", disegna);
     disegna();

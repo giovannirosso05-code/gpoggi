@@ -30,7 +30,7 @@ jobs:
         id: crea
         run: |
           set +e
-          python video/demo_giochi.py pronostico --uscita "$RUNNER_TEMP/pronostico.mp4"
+          python video/pronostico_breve.py --uscita "$RUNNER_TEMP/pronostico.mp4"
           codice=$?
           if [ $codice -eq 75 ]; then echo "video=no" >> $GITHUB_OUTPUT; exit 0; fi
           [ $codice -eq 0 ] && echo "video=si" >> $GITHUB_OUTPUT

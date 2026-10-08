@@ -1288,3 +1288,18 @@ body.serie-moto { --accent: #1f5fd1; --accent-hover: #174aa8; --accent-soft: rgb
 .serie-moto .ag-commento { border-left-color: var(--accent); background: var(--accent-soft); }
 .serie-moto .pron-punti { border-left-color: var(--accent); }
 .serie-moto .results tr.pron-io td { background: var(--accent-soft); }
+
+/* sigle F1 / MotoGP: etichetta piccola, stesso stile per entrambe (prima la MotoGP sembrava testo evidenziato) */
+.cd-sigla { display: inline-block; font-family: var(--font-display); font-weight: 600; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; line-height: 1.2; padding: 3px 9px; border-radius: 4px; background: var(--accent); color: #fff; }
+.cd-sigla.moto { background: var(--moto-blu); color: #fff; }
+
+/* schede MotoGP nelle pagine comuni (home, pronostici): bordo e dettagli in blu, anche nel tema scuro */
+:root { --moto-vivo: #1f5fd1; }
+:root[data-theme="dark"] { --moto-vivo: #3a78e8; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --moto-vivo: #3a78e8; } }
+.prono-col[data-serie="motogp"], .ultima-gara.serie-moto,
+:root[data-theme="dark"] .prono-col[data-serie="motogp"], :root[data-theme="dark"] .ultima-gara.serie-moto,
+:root:not([data-theme="light"]) .prono-col[data-serie="motogp"], :root:not([data-theme="light"]) .ultima-gara.serie-moto { border-top-color: var(--moto-vivo); }
+.prono-col[data-serie="motogp"], .ultima-gara.serie-moto { --accent: var(--moto-vivo); }
+.prono-col[data-serie="motogp"] .vota-apri, .ultima-gara.serie-moto .guarda-gara { background: var(--moto-vivo); }
+.prono-col[data-serie="motogp"] .vota-pilota.scelto { border-color: var(--moto-vivo); box-shadow: inset 0 0 0 1px var(--moto-vivo); }

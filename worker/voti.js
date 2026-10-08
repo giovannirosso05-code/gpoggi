@@ -241,20 +241,23 @@ export default {
         const usata = await env.VOTI.get(`mailacc:${await impronta(emailNorm)}`);
         if (usata && usata !== id) return json({ errore: "email gia collegata a un altro giocatore" }, 409);
       }
-      const limite = `limite:pron:${await impronta((req.headers.get("CF-Connecting-IP") || "") + new Date().toISOString().slice(0, 10))}`;
-      const n = Number((await env.VOTI.get(limite)) || 0);
-      if (n >= 30) return json({ errore: "troppi invii oggi" }, 429);
-      await env.VOTI.put(limite, String(n + 1), { expirationTtl: 86400 });
+      // chi aggiorna un voto che ha già (cambia il podio, aggiunge pole e giro) non conta nel limite giornaliero
+      const prima = await env.VOTI.getWithMetadata(`pron:${gp}:${id}`);
       const chiaveNome = `nick:${gp}:${nick.toLowerCase()}`;
       const occupato = await env.VOTI.get(chiaveNome);
       if (occupato && occupato !== id) return json({ errore: "nome già usato" }, 409);
+      if (!(prima && prima.metadata)) {
+        const limite = `limite:pron:${await impronta((req.headers.get("CF-Connecting-IP") || "") + new Date().toISOString().slice(0, 10))}`;
+        const n = Number((await env.VOTI.get(limite)) || 0);
+        if (n >= 60) return json({ errore: "troppi invii oggi" }, 429);
+        await env.VOTI.put(limite, String(n + 1), { expirationTtl: 86400 });
+      }
       await env.VOTI.put(chiaveNome, id, { expirationTtl: 90 * 86400 });
       if (emailNorm) {
         await env.VOTI.put(`mailacc:${await impronta(emailNorm)}`, id, { expirationTtl: 400 * 86400 });
         await env.VOTI.put(`mail:${id}`, emailNorm, { expirationTtl: 400 * 86400 });
       }
       // la pole si sceglie entro l'inizio delle qualifiche: dopo resta quella di prima
-      const prima = await env.VOTI.getWithMetadata(`pron:${gp}:${id}`);
       const vecchio = (prima && prima.metadata) || {};
       if (viaQuali && Date.now() >= Date.parse(viaQuali)) { pole = vecchio.pole || null; tp = vecchio.tp || vecchio.ts || null; }
       const h = (await impronta((req.headers.get("CF-Connecting-IP") || "") + "|pron")).slice(0, 8);

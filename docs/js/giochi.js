@@ -359,16 +359,16 @@ async function partitaPronostico(serie = "f1") {
     const riga = (v, i, extra) => `<tr class="${v.nick.toLowerCase() === io ? "pron-io" : ""}"><td>${i + 1}</td><td><b>${esc(v.nick)}</b></td>${extra}<td><b>${v.pt}</b></td></tr>`;
     const inAttesa = [F1, MO].filter((s) => s.prossimo && perGp[s.prossimo.chiave]).map((s) => `${esc(s.prossimo.nome)} (${s.etichetta}): ${perGp[s.prossimo.chiave].length} ${perGp[s.prossimo.chiave].length === 1 ? "giocatore" : "giocatori"}`);
     const nota = inAttesa.length ? `<p class="muted" style="font-size:13px">Hanno già giocato: ${inAttesa.join(" · ")}. La classifica si aggiorna dopo la gara.</p>` : "";
-    if (!chiusi.length) { el.innerHTML = nota + `<p class="muted">Ancora nessuna classifica: compare dopo la prima gara con dei pronostici.</p>`; return; }
-    const ultimo = chiusi[chiusi.length - 1].r.inizio;
+    const ultimo = chiusi.length ? chiusi[chiusi.length - 1].r.inizio : 0;
     const weekend = chiusi.filter((c) => ultimo - c.r.inizio < 4 * 864e5);
-    el.innerHTML = nota + `<label class="pron-scegli">Classifica <select id="gp-class" class="sel"><optgroup label="Classifiche"><option value="gen">Generale · premio di fine anno (F1 + MotoGP)</option><option value="f1">Solo Formula 1</option><option value="mo">Solo MotoGP</option><option value="wk">Ultimo weekend</option></optgroup><optgroup label="Per Gran Premio">${chiusi.slice().reverse().map((c, i) => `<option value="${chiusi.length - 1 - i}">${esc(c.g.nome)} (${c.s.etichetta})</option>`).join("")}</optgroup></select></label>
+    el.innerHTML = nota + `<label class="pron-scegli">Classifica <select id="gp-class" class="sel"><optgroup label="Classifiche"><option value="gen">Generale · premio di fine anno (F1 + MotoGP)</option><option value="f1">Solo Formula 1</option><option value="mo">Solo MotoGP</option><option value="wk">Ultimo weekend</option></optgroup><optgroup label="Per Gran Premio" ${chiusi.length ? "" : "hidden"}>${chiusi.slice().reverse().map((c, i) => `<option value="${chiusi.length - 1 - i}">${esc(c.g.nome)} (${c.s.etichetta})</option>`).join("")}</optgroup></select></label>
       <p class="muted" id="nota-class" style="font-size:13px;margin:0 0 8px"></p>
       <div class="table-wrap"><table class="results" id="tab-gp"></table></div>`;
     const disegna = () => {
       const val = document.getElementById("gp-class").value, t = document.getElementById("tab-gp");
       const nota = document.getElementById("nota-class");
       nota.textContent = val === "gen" ? "È la classifica del premio di fine anno: somma dei punti di Formula 1 e MotoGP." : val === "f1" ? "Statistiche: solo i pronostici di Formula 1." : val === "mo" ? "Statistiche: solo i pronostici di MotoGP." : "";
+      if (!chiusi.length) { t.innerHTML = `<tbody><tr><td class="muted">Ancora nessuna gara disputata con pronostici: i punteggi compaiono qui dopo la prima gara, quando i risultati sono ufficiali.</td></tr></tbody>`; return; }
       if (val === "gen") {
         t.innerHTML = `<thead><tr><th>#</th><th>Nickname</th><th>F1</th><th>MotoGP</th><th>Gare</th><th>Totale</th></tr></thead><tbody>${somma(chiusi).map((v, i) => riga(v, i, `<td>${v.f1}</td><td>${v.mo}</td><td>${v.gare}</td>`)).join("")}</tbody>`;
       } else if (val === "f1" || val === "mo" || val === "wk") {

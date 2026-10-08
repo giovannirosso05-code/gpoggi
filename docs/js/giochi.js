@@ -371,7 +371,7 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
     if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { msg.textContent = "L'email non sembra valida: correggila o lasciala vuota."; return; }
     const pole = (document.getElementById("pole") || {}).value || "", giro = (document.getElementById("giro") || {}).value || "";
     // sul dispositivo si salva solo se il voto è arrivato davvero (altrimenti comparirebbe "votato" anche quando non lo è)
-    const salvaQui = () => { const t = salvati(); t[pr.chiave] = { nome: pr.nome, podio, pole, giro }; scrivi("pronostici", JSON.stringify(t)); };
+    const salvaQui = () => { const t = salvati(); t[pr.chiave] = { nome: pr.nome, podio, pole, giro, ok: 1 }; scrivi("pronostici", JSON.stringify(t)); };
     let testo = "Salvato sul dispositivo.", ok = !base;
     if (!base) salvaQui();
     if (base) {
@@ -412,9 +412,15 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
     for (const x of lista) (perGp[x.gp] ||= []).push(x);
     // se sul telefono risulta "votato" ma il voto non è arrivato online (per esempio un salvataggio andato male), si riapre il modulo
     const mioNick = (leggi("pron-nome") || "").toLowerCase(), salvaBtn = document.getElementById("salva");
-    if (pr && salvaBtn && tutti[pr.chiave] && mioNick && !(perGp[pr.chiave] || []).some((x) => String(x.nick).toLowerCase() === mioNick)) {
-      sblocca();
-      const m = document.getElementById("msg"); m.textContent = "Il tuo voto non risulta salvato online: controlla le scelte e premi «Salva le modifiche»."; m.className = "pron-msg errore";
+    const mioVoto = pr && tutti[pr.chiave];
+    if (salvaBtn && mioVoto && mioNick) {
+      const m = document.getElementById("msg");
+      if (!(perGp[pr.chiave] || []).some((x) => String(x.nick).toLowerCase() === mioNick)) {
+        sblocca(); m.textContent = "Il tuo voto non risulta salvato online: controlla le scelte e premi «Salva le modifiche»."; m.className = "pron-msg errore";
+      } else if (!mioVoto.ok && (mioVoto.pole || mioVoto.giro)) {
+        // voto con pole e giro registrato da una versione vecchia della pagina, senza conferma del server: si riconferma una volta
+        sblocca(); m.textContent = "Per sicurezza conferma il voto: controlla le scelte e premi «Salva le modifiche»."; m.className = "pron-msg errore";
+      }
     }
     const chiusi = [];
     for (const s of [F1, MO]) {

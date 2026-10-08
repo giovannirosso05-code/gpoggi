@@ -14,6 +14,12 @@ const impronta = async (t) => [...new Uint8Array(await crypto.subtle.digest("SHA
 
 // Ora di partenza delle gare (file del sito, aggiornato a ogni giro dei dati): serve a chiudere i voti e a tenere nascosto il podio scelto fino al via.
 let orariCache = { t: 0, v: null };
+// Chiave di chi gestisce il sito: spazi e "a capo" all'inizio o alla fine non contano (capita incollandola in Cloudflare)
+function chiaveOk(url, env) {
+  const vera = String(env.ADMIN_KEY || "").trim();
+  return !!vera && (url.searchParams.get("k") || "").trim() === vera;
+}
+
 async function orariGara() {
   if (orariCache.v && Date.now() - orariCache.t < 300000) return orariCache.v;
   try { const r = await fetch("https://gpoggi.it/data/gara-orari.json", { cf: { cacheTtl: 300 } }); if (r.ok) orariCache = { t: Date.now(), v: await r.json() }; } catch (e) {}
@@ -41,6 +47,8 @@ export default {
   async fetch(req, env) {
     if (req.method === "OPTIONS") return new Response(null, { headers: CORS });
     const url = new URL(req.url);
+    // dice solo se la chiave admin è impostata (mai il valore): serve a capire perché il pannello non entra
+    if (req.method === "GET" && url.pathname === "/admin-stato") return json({ chiave_impostata: !!String(env.ADMIN_KEY || "").trim() });
     if (req.method === "GET" && url.pathname === "/pronostici") {
       // Tutti i pronostici del gioco "Pronostico del podio" (opzionale ?gp=ID): nome, podio e orario di invio dato dal server
       const gp = (url.searchParams.get("gp") || "").replace(/[^\w-]/g, "").slice(0, 40);
@@ -64,7 +72,7 @@ export default {
     }
     if (req.method === "GET" && url.pathname === "/sospetti") {
       // Solo per chi gestisce il sito: nickname collegati tra loro (stessa connessione o stesso dispositivo). Serve il segreto ADMIN_KEY impostato in Cloudflare.
-      if (!env.ADMIN_KEY || url.searchParams.get("k") !== env.ADMIN_KEY) return new Response("non trovato", { status: 404 });
+      if (!chiaveOk(url, env)) return new Response("non trovato", { status: 404 });
       const perConn = {}, perDisp = {};
       let cursor;
       for (let i = 0; i < 10; i++) {
@@ -83,7 +91,7 @@ export default {
     }
     if (req.method === "GET" && url.pathname === "/vincitore") {
       // Solo per chi gestisce il sito: email salvata per un nickname (serve ADMIN_KEY). Uso: /vincitore?k=CHIAVE&nick=NICKNAME
-      if (!env.ADMIN_KEY || url.searchParams.get("k") !== env.ADMIN_KEY) return new Response("non trovato", { status: 404 });
+      if (!chiaveOk(url, env)) return new Response("non trovato", { status: 404 });
       let cerca = (url.searchParams.get("nick") || "").trim().toLowerCase();
       const emailCerca = normalizzaEmail(url.searchParams.get("email"));
       const idDaEmail = emailCerca ? await env.VOTI.get(`mailacc:${await impronta(emailCerca)}`) : null;
@@ -106,7 +114,7 @@ export default {
     }
     if (req.method === "GET" && url.pathname === "/voti-admin") {
       // Solo per chi gestisce il sito: tutti i pronostici con il podio scelto (anche prima del via). Serve ADMIN_KEY.
-      if (!env.ADMIN_KEY || url.searchParams.get("k") !== env.ADMIN_KEY) return new Response("non trovato", { status: 404 });
+      if (!chiaveOk(url, env)) return new Response("non trovato", { status: 404 });
       const voti = [];
       let cursor;
       for (let i = 0; i < 10; i++) {
@@ -120,7 +128,7 @@ export default {
     if (req.method === "GET" && url.pathname === "/ripristina") {
       // Solo per chi gestisce il sito: "password dimenticata". Dà al giocatore un NUOVO codice di recupero e sposta lì i suoi punti.
       // Prima controlla che chi scrive sia davvero il titolare (la mail deve essere quella salvata: vedi /vincitore). Uso: /ripristina?k=CHIAVE&nick=NICKNAME
-      if (!env.ADMIN_KEY || url.searchParams.get("k") !== env.ADMIN_KEY) return new Response("non trovato", { status: 404 });
+      if (!chiaveOk(url, env)) return new Response("non trovato", { status: 404 });
       const cerca = (url.searchParams.get("nick") || "").trim().toLowerCase();
       if (!cerca) return json({ errore: "manca il nickname" }, 400);
       const voci = [];
@@ -154,7 +162,7 @@ export default {
     }
     if (req.method === "GET" && url.pathname === "/svincola") {
       // Solo per chi gestisce il sito: libera un'email dal giocatore a cui è collegata (per chi ha perso il codice). Uso: /svincola?k=CHIAVE&email=INDIRIZZO
-      if (!env.ADMIN_KEY || url.searchParams.get("k") !== env.ADMIN_KEY) return new Response("non trovato", { status: 404 });
+      if (!chiaveOk(url, env)) return new Response("non trovato", { status: 404 });
       const em = normalizzaEmail(url.searchParams.get("email"));
       if (!em) return json({ errore: "email non valida" }, 400);
       await env.VOTI.delete(`mailacc:${await impronta(em)}`);

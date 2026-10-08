@@ -1320,3 +1320,5 @@ body.serie-moto { --accent: #1f5fd1; --accent-hover: #174aa8; --accent-soft: rgb
 .pron-recupero summary { cursor: pointer; font-weight: 600; }
 
 a.vota-cta { display: block; width: 100%; box-sizing: border-box; text-align: center; text-decoration: none; }
+
+.chip-serie.chip-class { margin-left: auto; background: var(--text); color: var(--bg); border-color: var(--text); }

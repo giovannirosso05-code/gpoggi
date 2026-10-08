@@ -265,7 +265,7 @@ async function partitaPronostico(serie = "f1") {
         <li><b>Minorenni:</b> possono partecipare solo con il consenso di un genitore.</li>
         <li><b>Modifiche:</b> l'organizzatore può cambiare o annullare l'iniziativa per cause tecniche, avvisando sul sito.</li>
       </ol></details></div>
-    <div class="chip-serie-riga" style="display:flex;gap:8px;margin:14px 0 4px"><button class="chip-serie f1 ${serie === "f1" ? "attivo" : ""}" data-s="f1">Formula 1</button><button class="chip-serie moto ${serie === "moto" ? "attivo" : ""}" data-s="moto">MotoGP</button></div>
+    <div class="chip-serie-riga" style="display:flex;gap:8px;margin:14px 0 4px"><button class="chip-serie f1 ${serie === "f1" ? "attivo" : ""}" data-s="f1">Formula 1</button><button class="chip-serie moto ${serie === "moto" ? "attivo" : ""}" data-s="moto">MotoGP</button>${base ? `<button class="chip-serie chip-class" data-vai="classifica">Classifica</button>` : ""}</div>
     ${pr ? `<h3 class="quiz-titolo">${esc(pr.nome)}: chi sale sul podio?</h3>
     ${aperto ? `<div class="pron-form">${[1, 2, 3].map((i) => `<label>${i}° posto<select class="sel" id="p${i}">${opz((tutti[pr.chiave] || { podio: [] }).podio[i - 1])}</select></label>`).join("")}</div>
     ${base ? `<label class="pron-nome">Il tuo nickname in classifica<input type="text" id="nome" maxlength="16" autocomplete="nickname" placeholder="Per esempio Giovanni_F1" value="${esc(leggi("pron-nome") || "")}"></label>` : ""}
@@ -274,7 +274,7 @@ async function partitaPronostico(serie = "f1") {
     <div class="quiz-esito"><button class="quiz-avanti pron-rosso" id="salva" style="margin:0">Salva il pronostico</button> <span id="msg" class="muted"></span></div>` : `<p class="muted">Le votazioni per questo Gran Premio sono chiuse: la gara è iniziata.</p>`}
     <div class="pron-punti"><b>Come si fanno i punti</b><ul><li>1° posto indovinato: <b>5</b> punti</li><li>2° posto indovinato: <b>3</b> punti</li><li>3° posto indovinato: <b>2</b> punti</li><li>Pilota sul podio ma in un'altra posizione: <b>1</b> punto</li><li>Podio completo esatto: <b>+5</b> (massimo 15)</li></ul>
     <span class="muted">Il pronostico si può cambiare fino all'inizio della gara. La classifica si aggiorna dopo ogni gara.</span></div>` : `<p class="muted">Nessun Gran Premio ${S.etichetta} in programma.</p>`}
-    ${base ? `<h3 class="quiz-titolo" style="margin-top:24px">Classifica</h3><div id="classifica"><p class="muted">Carico la classifica…</p></div>
+    ${base ? `<h3 class="quiz-titolo" id="titolo-classifica" style="margin-top:24px;scroll-margin-top:110px">Classifica</h3><div id="classifica"><p class="muted">Carico la classifica…</p></div>
     <h3 class="quiz-titolo" style="margin-top:24px">Chi ha votato${pr ? ` · ${esc(pr.nome)}` : ""}</h3><div id="votanti"><p class="muted">Carico l'elenco…</p></div>` : ""}
     ${righe ? `<h3 class="quiz-titolo" style="margin-top:20px">I tuoi pronostici ${S.etichetta}</h3><div class="table-wrap"><table class="results"><thead><tr><th>Gran Premio</th><th>Il tuo podio</th><th>Podio vero</th><th>Punti</th></tr></thead><tbody>${righe}</tbody></table></div>` : ""}
     ${base ? boxRecupero() : ""}
@@ -288,7 +288,9 @@ async function partitaPronostico(serie = "f1") {
     setTimeout(() => partitaPronostico(serie), 1800);
   });
   document.getElementById("menu").addEventListener("click", () => { box.classList.remove("serie-moto"); tornaMenu(); });
-  box.querySelectorAll(".chip-serie").forEach((b) => b.addEventListener("click", () => { if (b.dataset.s !== serie) partitaPronostico(b.dataset.s); }));
+  box.querySelectorAll(".chip-serie[data-s]").forEach((b) => b.addEventListener("click", () => { if (b.dataset.s !== serie) partitaPronostico(b.dataset.s); }));
+  const vaiClass = box.querySelector("[data-vai]");
+  if (vaiClass) vaiClass.addEventListener("click", () => document.getElementById("titolo-classifica").scrollIntoView({ behavior: "smooth", block: "start" }));
   const salva = document.getElementById("salva");
   if (salva) salva.addEventListener("click", async () => {
     const podio = [1, 2, 3].map((i) => document.getElementById("p" + i).value);

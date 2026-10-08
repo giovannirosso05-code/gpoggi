@@ -251,18 +251,30 @@ def scene_previsione(chiave):
           f"<div style='position:absolute;left:70px;right:70px;top:880px'>{''.join(blocco(f, n) for n, f in rivali)}{avvisi}</div>")
     scene = [(cornice(c1, colore, foto0), voce1), (cornice(c2, colore, foto1), voce2)]
     # --- scena 3: la pole, dallo studio di GP Oggi
-    if tip:
-        n = dict(ordine)[tip]
-        voce3 = f"E la pole? Dal nostro studio sulle ultime cinque qualifiche: {cognome(tip)}, " + (f"{it(n)} pole su cinque." if n > 1 else "ha preso l'ultima pole.")
-        righe3 = "".join(f"<div style='display:flex;justify-content:space-between;font:700 48px Oswald;text-transform:uppercase;padding:12px 0;border-bottom:2px solid #26262e'><span>{esc(nm)}</span><span style='color:{colore}'>{c} {'pole' if c == 1 else 'pole'}</span></div>" for nm, c in ordine[:4])
-        c3 = (f"<span class=pill style='top:790px;background:{colore}'>La pole · studio GP Oggi</span>"
-              f"<h1 style='position:absolute;left:70px;right:70px;top:850px;margin:0;font:700 90px/1 Oswald;text-transform:uppercase'>{esc(tip)}</h1>"
-              f"<div style='position:absolute;left:70px;right:70px;top:970px;font:500 30px Inter;color:#9a9aa6'>Pole nelle ultime 5 qualifiche</div>"
-              f"<div style='position:absolute;left:70px;right:70px;top:1040px'>{righe3}</div>")
-        scene.append((cornice(c3, colore, foto_per_nome(tip, chiave)), voce3))
+    pole_nota = note.get("pole") or {}
+    if tip or pole_nota:
+        fav_pole = pole_nota.get("favorito") or tip
+        occhio = pole_nota.get("occhio") if pole_nota else None
+        righe3 = "".join(f"<div style='display:flex;justify-content:space-between;font:700 48px Oswald;text-transform:uppercase;padding:12px 0;border-bottom:2px solid #26262e'><span>{esc(nm)}</span><span style='color:{colore}'>{c} pole</span></div>" for nm, c in ordine[:4])
+        if occhio:
+            c_o = conta_pole.get(occhio, 0)
+            frase = (("una pole" if c_o == 1 else f"{it(c_o)} pole") + " nelle ultime cinque qualifiche") if c_o else "in crescita"
+            voce3 = f"E la pole? Per noi sempre {cognome(fav_pole)}, ma occhio a {cognome(occhio)}: {frase}."
+            sotto = f"Occhio a <b style='color:#fff'>{esc(occhio)}</b>: {c_o} pole nelle ultime 5 qualifiche" if c_o else f"Occhio a <b style='color:#fff'>{esc(occhio)}</b>"
+            pill3 = "La pole · il nostro favorito"
+        else:
+            n = conta_pole[tip]
+            voce3 = f"E la pole? Dal nostro studio sulle ultime cinque qualifiche: {cognome(tip)}, " + (f"{it(n)} pole su cinque." if n > 1 else "ha preso l'ultima pole.")
+            sotto = "Pole nelle ultime 5 qualifiche"; pill3 = "La pole · studio GP Oggi"
+        c3 = (f"<span class=pill style='top:790px;background:{colore}'>{pill3}</span>"
+              f"<h1 style='position:absolute;left:70px;right:70px;top:850px;margin:0;font:700 90px/1 Oswald;text-transform:uppercase'>{esc(fav_pole)}</h1>"
+              f"<div style='position:absolute;left:70px;right:70px;top:970px;font:500 34px Inter;color:#c9c9d2'>{sotto}</div>"
+              f"<div style='position:absolute;left:70px;right:70px;top:1050px'>{righe3}</div>"
+              f"<div style='position:absolute;left:70px;right:70px;top:1500px;font:500 26px Inter;color:#8a8a96'>Studio di GP Oggi sulle ultime 5 qualifiche</div>")
+        scene.append((cornice(c3, colore, foto_per_nome(fav_pole, chiave)), voce3))
     # --- scena 4: tu che dici? vai a votare
     quando_v, quando_s = chiusura_voti(p, chiave)
-    voce4 = "E tu che dici? Scrivilo nei commenti e vai a votare il tuo pronostico su G P Oggi punto it, prima delle qualifiche."
+    voce4 = "E tu che dici, chi sale sul podio? Scrivilo nei commenti e vai a votare il tuo pronostico su G P Oggi punto it, prima delle qualifiche."
     c4 = (f"<div style='position:absolute;left:70px;right:70px;top:480px;text-align:center;font:700 150px/1 Oswald;text-transform:uppercase'>Tu che<br><span style='color:{colore}'>dici?</span></div>"
           f"<div style='position:absolute;left:70px;right:70px;top:900px;text-align:center;font:500 46px Inter;color:#e8e8ee'>Scrivilo nei commenti 👇</div>"
           f"<div style='position:absolute;left:90px;right:90px;top:1060px;text-align:center;background:{colore};border-radius:28px;padding:34px 20px;font:700 62px/1.1 Oswald;text-transform:uppercase'>Vota il tuo pronostico<br>su gpoggi.it</div>"
@@ -276,7 +288,9 @@ def social_serie(chiave):
     if not p or not p.get("favoriti"): return ""
     luogo = re.sub(r"^(Gran Premio (di|del|dello|della|d')\s*|GP )", "", p["gp"]).strip(); f0 = p["favoriti"][0]["nome"]
     _, tip = studio_pole(chiave); icona, tag = ("🏁", "#f1 #formula1") if chiave == "f1" else ("🏍️", "#motogp")
-    pole = f"🎯 Pole? Dal nostro studio sulle ultime 5 qualifiche occhio a {tip}\n" if tip else ""
+    nf = QUI / "note_weekend.json"; pn = ((json.load(open(nf)).get(chiave) or {}).get("pole") or {}) if nf.exists() else {}
+    if pn: pole = f"🎯 Pole? Per noi sempre {pn['favorito']}, ma occhio a {pn['occhio']}\n"
+    else: pole = f"🎯 Pole? Dal nostro studio sulle ultime 5 qualifiche occhio a {tip}\n" if tip else ""
     return (f"{icona} {luogo}: chi sale sul PODIO? {icona}\n\n"
             f"👑 Il nostro favorito: {f0}\n{pole}\n"
             f"🗳️ E tu che dici?\n"

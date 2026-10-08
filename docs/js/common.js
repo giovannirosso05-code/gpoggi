@@ -162,7 +162,19 @@ export function renderHeader(paginaAttuale) {
 }
 
 export function renderFooter() {
-  document.getElementById("site-footer").innerHTML = `
+  // nella pagina Consigli c'è già il modulo completo: lì non si ripete
+  const aiuto = document.getElementById("cons-stelle") ? "" : `
+    <div class="aiuto">
+      <div class="aiuto-riga"><button type="button" class="aiuto-apri" aria-expanded="false">Aiutaci a migliorare +</button>
+        <span class="aiuto-stelle" role="radiogroup" aria-label="Voto al sito">${[1, 2, 3, 4, 5].map((n) => `<button type="button" data-s="${n}" aria-label="${n} stelle">★</button>`).join("")}</span><small class="aiuto-media"></small></div>
+      <form class="aiuto-form" hidden>
+        <select name="tipo"><option value="funzione">Vorrei una funzione nuova</option><option value="errore">Ho trovato un errore</option><option value="altro">Altro</option></select>
+        <textarea name="testo" maxlength="550" rows="3" placeholder="Cosa miglioreresti in questa pagina?" required></textarea>
+        <input name="sito" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+        <button type="submit">Invia</button> <small class="aiuto-esito"></small>
+      </form>
+    </div>`;
+  document.getElementById("site-footer").innerHTML = aiuto + `
     <div class="footer-grid">
       <div class="footer-col">
         <h3>Sezioni</h3>
@@ -211,6 +223,7 @@ export function renderFooter() {
       <p>Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team. Foto e mappe da Wikimedia Commons con licenze libere.<br>
       <small>Formula 1 è un marchio di Formula One Licensing B.V.; MotoGP è un marchio di Dorna Sports. Nomi usati solo per descrivere i contenuti.</small></p>
     </div>`;
+  if (aiuto) collegaAiuto();
   fetchJSON("data/meta.json").then((m) => {
     const el = document.getElementById("footer-aggiornato");
     if (el) el.textContent = "Dati aggiornati al " + new Date(m.aggiornato).toLocaleString("it-IT", { dateStyle: "short", timeStyle: "short", timeZone: "Europe/Rome" });
@@ -422,4 +435,46 @@ export function programmaHtml(sessioni) {
     ${Object.keys(per).sort().map((k) => `<div class="programma-giorno"><b>${new Date(k + "T12:00:00").toLocaleDateString("it-IT", { weekday: "short", day: "numeric", month: "short" })}</b>
       <div class="programma-sessioni">${per[k].sort((a, b) => new Date(a.inizio) - new Date(b.inizio)).map((s) => `<span class="programma-sess ${/^gara$/i.test(s.nome) ? "gara" : ""} ${new Date(s.fine) < ora ? "finita" : ""}">${esc(s.nome)} <b>${new Date(s.inizio).toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit", timeZone: TZ })}</b></span>`).join("")}</div></div>`).join("")}
   </div>`;
+}
+
+// "Aiutaci a migliorare" in fondo a ogni pagina: consiglio (testo) e voto in stelle, sullo stesso servizio della pagina Consigli
+function collegaAiuto() {
+  const base = VOTI_URL.replace(/\/$/, ""), box = document.querySelector("#site-footer .aiuto");
+  if (!box || !base) { if (box) box.remove(); return; }
+  const form = box.querySelector(".aiuto-form"), apri = box.querySelector(".aiuto-apri"), esito = box.querySelector(".aiuto-esito");
+  apri.addEventListener("click", () => {
+    form.hidden = !form.hidden; apri.setAttribute("aria-expanded", String(!form.hidden));
+    apri.textContent = form.hidden ? "Aiutaci a migliorare +" : "Aiutaci a migliorare −";
+    if (!form.hidden) form.querySelector("textarea").focus();
+  });
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(form));
+    if ((d.testo || "").trim().length < 5) { esito.textContent = "Scrivi almeno qualche parola."; return; }
+    // la pagina da cui arriva il consiglio aiuta a capire a cosa si riferisce
+    d.testo = `[${(location.pathname.split("/").pop() || "index.html")}] ${d.testo.trim()}`;
+    esito.textContent = "Invio…";
+    try {
+      const r = await fetch(base + "/consiglio", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(d) });
+      if (r.status === 429) { esito.textContent = "Hai già mandato qualche consiglio oggi: riprova domani."; return; }
+      if (!r.ok) throw new Error();
+      form.reset(); esito.textContent = "Grazie! Lo leggiamo tutti.";
+    } catch (err) { esito.textContent = "Non è partito: riprova più tardi."; }
+  });
+  const stelle = box.querySelectorAll(".aiuto-stelle button"), media = box.querySelector(".aiuto-media");
+  let id = "", mio = 0;
+  try { id = localStorage.getItem("val-id") || ""; if (!id) { id = crypto.randomUUID ? crypto.randomUUID() : String(Math.random()).slice(2) + Date.now(); localStorage.setItem("val-id", id); } mio = Number(localStorage.getItem("val-voto") || 0); } catch (e) { id = String(Math.random()).slice(2) + Date.now(); }
+  const disegna = (n) => stelle.forEach((b) => b.classList.toggle("on", Number(b.dataset.s) <= n));
+  const scrivi = (d) => { media.textContent = d && d.voti ? `${String(d.media).replace(".", ",")}/5 · ${d.voti} ${d.voti === 1 ? "voto" : "voti"}` : ""; };
+  disegna(mio);
+  fetch(base + "/valutazione").then((r) => r.json()).then(scrivi).catch(() => {});
+  stelle.forEach((b) => {
+    b.addEventListener("mouseenter", () => disegna(Number(b.dataset.s)));
+    b.addEventListener("mouseleave", () => disegna(mio));
+    b.addEventListener("click", async () => {
+      mio = Number(b.dataset.s); disegna(mio);
+      try { localStorage.setItem("val-voto", String(mio)); } catch (e) {}
+      try { const r = await fetch(base + "/valutazione", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id, stelle: mio }) }); if (r.ok) { scrivi(await r.json()); media.textContent += " · grazie!"; } } catch (e) {}
+    });
+  });
 }

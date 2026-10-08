@@ -1350,3 +1350,17 @@ a.vota-cta { display: block; width: 100%; box-sizing: border-box; text-align: ce
 .pron-msg:empty { display: none; }
 .pron-chiusure { font-size: 14px; margin: -4px 0 12px; color: var(--muted, #666); }
 .pron-chiusure b { color: var(--text); }
+
+/* "Aiutaci a migliorare" in fondo a ogni pagina */
+.aiuto { max-width: var(--container); margin: 0 auto 28px; padding: 0 28px 24px; border-bottom: 1px solid #2c2c34; }
+.aiuto-riga { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.aiuto-apri { background: none; border: 0; color: #f0453f; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; padding: 0; }
+.aiuto-stelle button { background: none; border: 0; color: #55555f; font-size: 24px; line-height: 1; cursor: pointer; padding: 0 2px; }
+.aiuto-stelle button.on { color: #ffc531; }
+.aiuto-media { color: #85858f; }
+.aiuto-form { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 14px; max-width: 640px; position: relative; }
+.aiuto-form select, .aiuto-form textarea { background: #22222a; color: #f2f1ee; border: 1px solid #34343e; border-radius: 10px; padding: 10px 12px; font: inherit; font-size: 15px; }
+.aiuto-form textarea { width: 100%; resize: vertical; }
+.aiuto-form button[type=submit] { background: #e8352f; color: #fff; border: 0; border-radius: 10px; padding: 10px 22px; font-weight: 700; font-size: 15px; cursor: pointer; }
+.aiuto-esito { color: #b9b8c0; }
+@media (max-width: 640px) { .aiuto { padding: 0 16px 20px; } }

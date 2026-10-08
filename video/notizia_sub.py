@@ -5,7 +5,7 @@ Stile del video "ultim'ora" di MMA Oggi.
 Uso:  python3 notizia_sub.py spec.json uscita.mp4
 
 spec.json:
-{ "serie": "MotoGP" | "F1", "titolo_breve": "…", "fonte": "Motorsport.com", "velocita": "+25%",
+{ "serie": "MotoGP" | "F1", "titolo_breve": "…", "fonte": "Motorsport.com", "velocita": "+38%",
   "scene": [ {"foto": "Marc Marquez", "testo": "…", "nome": "MARC MARQUEZ" (opzionale), "hook": true (solo la prima)}, … ],
   "finale": {"foto": "Marc Marquez", "domanda": "Ha fatto bene …?"} }
 Per spostare la foto nel riquadro si può aggiungere "pos": "0%" (0% = parte alta della foto) a una scena.
@@ -141,7 +141,7 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
 
 
 async def genera(spec, uscita):
-    vel = spec.get("velocita", "+25%")
+    vel = spec.get("velocita", "+38%")
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         scene = list(spec["scene"])

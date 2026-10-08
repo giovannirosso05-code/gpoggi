@@ -20,7 +20,7 @@ if os.path.exists("/root/.ccr/ca-bundle.crt"):
 QUI = Path(__file__).parent; SITO = QUI.parent / "docs"; DATA = SITO / "data"; FONT = QUI / "logo" / "font"
 W, H = 1080, 1920
 H_ = H
-VOCE, VEL = "it-IT-DiegoNeural", "+8%"
+VOCE, VEL = "it-IT-DiegoNeural", "+19%"
 PROFILO = "@gp.oggi"
 b64 = lambda p: base64.b64encode(Path(p).read_bytes()).decode()
 MESI = "gennaio febbraio marzo aprile maggio giugno luglio agosto settembre ottobre novembre dicembre".split()

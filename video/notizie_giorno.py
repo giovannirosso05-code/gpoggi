@@ -215,7 +215,7 @@ def valida(j, a, testo, nomi, predefiniti):
     social = str(j.get("social", "")).strip()
     if "gpoggi.it" not in social or len(re.findall(r"#\w+", social)) > 5:
         social = f"{ht} 📰\n\n{dom} 👇\n\nFonte: {a['fonte']}\n🔗 gpoggi.it\n\n#gpoggi #{'motogp' if a['serie'] == 'MotoGP' else 'f1'} #notizie"
-    return {"serie": a["serie"], "titolo_breve": str(j.get("titolo_breve") or ht)[:40], "fonte": a["fonte"].strip(), "velocita": "+25%",
+    return {"serie": a["serie"], "titolo_breve": str(j.get("titolo_breve") or ht)[:40], "fonte": a["fonte"].strip(), "velocita": "+38%",
             "scene": [{"foto": out[0]["foto"], "hook": True, "hook_titolo": ht, "testo": hv}] + out,
             "finale": {"foto": out[-1]["foto"], "domanda": dom}}, social
 

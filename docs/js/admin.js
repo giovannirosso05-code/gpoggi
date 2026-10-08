@@ -11,7 +11,11 @@ async function api(percorso, params = {}) {
   for (const [k, v] of Object.entries(params)) u.searchParams.set(k, v);
   let r;
   try { r = await fetch(u); } catch (e) { throw new Error("Chiave non valida, oppure il Worker non è ancora aggiornato."); }
-  if (!r.ok) throw new Error(r.status === 404 ? "Chiave non valida, oppure il Worker non è ancora aggiornato." : "Errore " + r.status);
+  if (!r.ok) {
+    // il Worker risponde 404 anche quando il nickname non esiste: in quel caso c'è il motivo nel testo
+    const j = await r.json().catch(() => null);
+    throw new Error(j && j.errore ? "Errore: " + j.errore : r.status === 404 ? "Chiave non valida, oppure il Worker non è ancora aggiornato." : "Errore " + r.status);
+  }
   return r.json();
 }
 

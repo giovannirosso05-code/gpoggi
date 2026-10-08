@@ -20,7 +20,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 import demo_giochi as G  # noqa: E402
 import demo_sito as D  # noqa: E402
 
-D.VELOCITA = "+22%"
+D.VELOCITA = "+34%"
 PORTA = 8143
 W, H = D.W, D.H
 SITO = D.SITO
@@ -66,15 +66,15 @@ async def schermate(browser, base, serie, nomi_fotografati):
     if serie[0]["id"] == "moto":
         await page.click(".chip-serie.moto")
         await page.wait_for_function("(n) => { const e = document.getElementById('p1'); return e && [...e.options].some((o) => o.textContent === n); }", arg=serie[0]["nomi"][0])
-    await page.evaluate("window.scrollTo(0, 0)")
-    await page.evaluate("(() => { const b = document.querySelector('.pron-premio'); window.scrollTo(0, b.getBoundingClientRect().top + window.scrollY - 200); })()")
-    await page.wait_for_timeout(300)
-    out["premio"] = (await page.screenshot(type="png"), None)
     for i, nome in enumerate(serie[0]["nomi"], 1):
         await page.evaluate("(a) => { const s = document.getElementById('p' + a.i); const o = [...s.options].find((x) => x.textContent === a.t); s.value = o.value; }", {"i": i, "t": nome})
+    # pole al primo e giro veloce al secondo: si vede che oltre al podio ci sono altre due scelte
+    for campo, nome in (("pole", serie[0]["nomi"][0]), ("giro", serie[0]["nomi"][1])):
+        await page.evaluate("(a) => { const s = document.getElementById(a.c); const o = [...s.options].find((x) => x.textContent === a.t); if (o) s.value = o.value; }", {"c": campo, "t": nome})
     await page.fill("#nome", "GP_Fan")
-    await page.fill("#email", "tuamail@esempio.it")
-    await page.evaluate("(() => { const s = document.getElementById('p1'); window.scrollTo(0, s.getBoundingClientRect().top + window.scrollY - 215); })()")
+    # nella schermata del modulo la testata del sito coprirebbe il titolo: si toglie, così si vedono podio, pole e giro veloce
+    await page.add_style_tag(content=".site-header{display:none!important} body{padding-top:0!important} .pron-premio,.pron-doppio,.chip-serie-riga,.pron-testa,.page-title,main > h1,main > p,.section-title{display:none!important}")
+    await page.evaluate("(() => { const s = document.querySelector('#vista-voto .quiz-titolo'); window.scrollTo(0, s.getBoundingClientRect().top + window.scrollY - 24); })()")
     await page.wait_for_timeout(300)
     out["modulo"] = (await page.screenshot(type="png"), None)
     await ctx.close()
@@ -116,6 +116,37 @@ def slide_apertura(serie):
     return D._html(corpo)
 
 
+def chiusure(serie):
+    """Orario di chiusura dei voti (inizio qualifiche) per ogni serie della settimana, in ora italiana."""
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    orari = json.load(open(SITO / "data" / "gara-orari.json"))
+    adesso = datetime.now(ZoneInfo("UTC"))
+    giorni = ["lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"]
+    out = []
+    for s in serie:
+        qs = sorted(datetime.fromisoformat(v) for k, v in orari.items() if k.startswith("q:") and (k[2:].startswith("m") == (s["id"] == "moto"))
+                    and datetime.fromisoformat(v) > adesso)
+        if qs:
+            t = qs[0].astimezone(ZoneInfo("Europe/Rome"))
+            out.append((s, f"{giorni[t.weekday()]} {t:%H:%M}"))
+    return out
+
+
+def slide_chiusura(serie):
+    righe, top = "", 640
+    for s, quando in chiusure(serie):
+        colore = BLU if s["id"] == "moto" else ROSSO
+        sigla = "MotoGP" if s["id"] == "moto" else "F1"
+        righe += (f'<div class="c" style="top:{top}px"><span class="o" style="background:{colore};padding:8px 30px;border-radius:12px;font-size:60px">{sigla}</span>'
+                  f'<div class="o" style="font-size:96px;margin-top:22px">{quando}</div></div>')
+        top += 340
+    corpo = ('<div class="c o" style="top:150px;font-size:130px;line-height:1">Si chiude<br>alle <span class="r">qualifiche</span></div>'
+             '<div class="c o" style="top:480px;font-size:56px;color:#ffd21f">Dopo non si cambia più niente</div>' + righe +
+             f'<div class="c o" style="top:{top + 80}px;font-size:66px;line-height:1.1;padding:0 60px">Vota <span class="r">F1</span> + <span style="color:{BLU}">MotoGP</span><br>i punti si sommano</div>')
+    return D._html(corpo)
+
+
 def slide_fine():
     corpo = (f'<img src="{D._logo_uri()}" style="position:absolute;left:90px;top:300px;width:900px">'
              '<div class="c o r" style="top:830px;font-size:150px;line-height:1">Gioca ora</div>'
@@ -141,7 +172,7 @@ async def principale(uscita):
         sys.exit(75)
     nomi_gp = " e nel ".join(x["gp"] for x in serie)
     Path(str(uscita) + ".txt").write_text(
-        f"Chi sale sul podio nel {nomi_gp}? 🏁 Indovinalo e sfida gli altri tifosi nella classifica di GP Oggi. Gioco gratuito. Link nel commento fissato. #f1 #motogp #formula1 #gpoggi",
+        f"Chi sale sul podio nel {nomi_gp}? 🏁 Scegli podio, pole e giro più veloce e sfida gli altri tifosi nella classifica di GP Oggi. Si vota fino all'inizio delle qualifiche! Gioco gratuito, link nel commento fissato. #f1 #motogp #formula1 #gpoggi",
         encoding="utf-8")
     base = f"http://localhost:{PORTA}"
     srv = subprocess.Popen([sys.executable, "-m", "http.server", str(PORTA), "-d", str(SITO)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -151,9 +182,10 @@ async def principale(uscita):
             tmp = Path(tmp)
             gp_parlato = " e il ".join(x["gp"] for x in serie)
             testi = [f"Chi sale sul podio questo weekend? {gp_parlato}. Indovinalo e sfida gli altri tifosi!",
-                     "Vai su G P Oggi punto it, tocca Giochi: è il primo gioco.",
-                     "Scegli primo, secondo e terzo, metti il tuo nickname e salva. Entri nella classifica di tutti i tifosi.",
-                     "È gratis e ci vogliono trenta secondi. Segui G P punto oggi e gioca su G P Oggi punto it!"]
+                     "Vai su G P Oggi punto it e tocca Giochi: è il primo gioco.",
+                     "Scegli il podio, poi chi fa la pole e il giro più veloce. Più indovini, più punti fai.",
+                     "Ma attenzione: si vota solo fino alle qualifiche. Fai Formula 1 e MotoGP, i punti si sommano.",
+                     "È gratis. Segui G P punto oggi e gioca su G P Oggi punto it!"]
             voci, durate = [], []
             for i, t in enumerate(testi):
                 f = tmp / f"voce{i}.mp3"
@@ -165,7 +197,8 @@ async def principale(uscita):
                 sh = await schermate(browser, base, serie, None)
                 htmls = [slide_apertura(serie),
                          slide('Tocca <span class="r">Giochi</span>', "Primo gioco: il podio del weekend", *sh["elenco"][:1], evidenzia=sh["elenco"][1]),
-                         slide('Scegli il <span class="r">podio</span>', "Metti il nickname e salva", sh["modulo"][0]),
+                         slide('Podio, <span class="r">pole</span><br>e giro veloce', "Più indovini, più punti fai", sh["modulo"][0]),
+                         slide_chiusura(serie),
                          slide_fine()]
                 clips = []
                 for i, h in enumerate(htmls):

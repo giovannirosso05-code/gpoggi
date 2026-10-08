@@ -4,7 +4,7 @@ import edge_tts, edge_tts.communicate as C
 from playwright.sync_api import sync_playwright
 C._SSL_CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
 D=Path(__file__).parent; L=D.parent/"logo"; DATA=Path("/home/user/F1-Site/docs/data")
-RATE=sys.argv[1] if len(sys.argv)>1 else "+18%"
+RATE=sys.argv[1] if len(sys.argv)>1 else "+30%"
 st=json.load(open(DATA/"standings.json")); col={c["team"]:c["colore"] for c in st["costruttori"]}
 # Fatti presi da OpenF1: race_control (ritardo, safety car, episodi, indagini), weather (pioggia), risultati di gara
 SEG=[

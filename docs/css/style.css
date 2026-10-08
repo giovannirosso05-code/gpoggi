@@ -1364,3 +1364,4 @@ a.vota-cta { display: block; width: 100%; box-sizing: border-box; text-align: ce
 .aiuto-form button[type=submit] { background: #e8352f; color: #fff; border: 0; border-radius: 10px; padding: 10px 22px; font-weight: 700; font-size: 15px; cursor: pointer; }
 .aiuto-esito { color: #b9b8c0; }
 @media (max-width: 640px) { .aiuto { padding: 0 16px 20px; } }
+.pron-ok { color: #1f8f5f; font-weight: 700; }

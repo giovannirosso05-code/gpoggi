@@ -1,0 +1,73 @@
+{
+ "serie": "MotoGP",
+ "fonti": "Crash.net · Motorsport.com · Autosport · The Race",
+ "didascalia": "🏍️ MotoGP 2027: IL NUOVO WEEKEND DIVIDE I PILOTI! 😮\n\n📅 Venerdì: qualifica da 15 minuti per la sprint\n❌ Domenica: via il warm-up\n\n👎 Marquez: «Dobbiamo stare zitti»\n👍 Bagnaia: «Mi piace, voleva due qualifiche»\n👎 Acosta: scelta imposta ai piloti, taglierebbe le sprint\n🤝 Martin: «Noi piloti non siamo uniti»\n\n🗳️ E tu che dici? Meglio il nuovo formato o quello di oggi?\n✍️ Scrivilo nei commenti 👇\n\n🏁 Intanto vota il podio di Mandalika: gpoggi.it → Giochi\n👥 Segui @gp.oggi\n\n#motogp #motogp2027 #marquez #bagnaia #acosta #martin #gpoggi",
+ "scene": [
+  {
+   "tipo": "titolo",
+   "etichetta": "MotoGP · 2027",
+   "titolo": "Il nuovo weekend divide i piloti",
+   "righe": [
+    "Venerdì: qualifica da 15 minuti per la sprint",
+    "Domenica: via il warm-up"
+   ],
+   "voce": "MotoGP duemilaventisette: il nuovo weekend divide i piloti. Venerdì qualifica per la sprint, domenica via il warm-up."
+  },
+  {
+   "tipo": "pilota",
+   "pilota": "Marc Marquez",
+   "etichetta": "CONTRO",
+   "colore": "#e8352f",
+   "frase": "«Dobbiamo stare zitti»",
+   "righe": [
+    "Nessuno ci ha chiesto cosa ne pensiamo",
+    "Idea: un'associazione dei piloti, come in F1"
+   ],
+   "voce": "Marquez: noi piloti dobbiamo stare zitti, nessuno ci ha chiesto niente. Meglio un'associazione, come in F1."
+  },
+  {
+   "tipo": "pilota",
+   "pilota": "Francesco Bagnaia",
+   "etichetta": "A FAVORE",
+   "colore": "#1f8f5f",
+   "frase": "«Mi piace»",
+   "righe": [
+    "Voleva da tempo due qualifiche",
+    "Alla riunione erano solo in 4"
+   ],
+   "voce": "Bagnaia è d'accordo: voleva due qualifiche. E alla riunione erano solo in quattro."
+  },
+  {
+   "tipo": "pilota",
+   "pilota": "Pedro Acosta",
+   "etichetta": "CONTRO",
+   "colore": "#e8352f",
+   "frase": "Scelta imposta ai piloti",
+   "righe": [
+    "Non conta cosa pensano i piloti",
+    "Dimezzerebbe le sprint"
+   ],
+   "voce": "Acosta no: scelta imposta. Taglierebbe le sprint."
+  },
+  {
+   "tipo": "pilota",
+   "pilota": "Jorge Martin",
+   "etichetta": "IL PROBLEMA",
+   "colore": "#ffb020",
+   "frase": "«Noi piloti non siamo uniti»",
+   "righe": [
+    "Il leader del Mondiale ammette: così contano poco"
+   ],
+   "voce": "Martin: il problema è che noi piloti non siamo uniti."
+  },
+  {
+   "tipo": "cta",
+   "titolo": "Tu che dici?",
+   "righe": [
+    "Meglio il nuovo formato o quello di oggi?",
+    "Scrivilo nei commenti 👇"
+   ],
+   "voce": "E tu che dici, meglio il nuovo formato o quello di oggi? Scrivilo nei commenti, e vota il podio di Mandalika su G P Oggi punto it."
+  }
+ ]
+}

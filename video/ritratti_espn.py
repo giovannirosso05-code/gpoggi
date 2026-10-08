@@ -43,8 +43,8 @@ def _sfondo(colore):
     base = Image.new("RGB", (W, H))
     px = Image.new("RGB", (1, H))
     for y in range(H):
-        t = min(1.0, y / (H * 0.78))
-        k = 0.85 * (1 - t) ** 1.4 + 0.04
+        t = min(1.0, y / (H * 0.97))
+        k = 0.82 * (1 - t) ** 1.15 + 0.07
         px.putpixel((0, y), (int(r * k), int(g * k), int(b * k)))
     base = px.resize((W, H))
     alone = Image.new("L", (W, H), 0)
@@ -54,7 +54,7 @@ def _sfondo(colore):
     return Image.composite(chiaro, base, alone)
 
 
-def ritratto(nome, colore=(232, 53, 47), larghezza=1380, centro_volto_y=720, volto_rel=0.39, sfx=""):
+def ritratto(nome, colore=(232, 53, 47), larghezza=1500, centro_volto_y=590, volto_rel=0.39, sfx=""):
     """Percorso di un JPG 1080x1920 con il pilota di ESPN sul gradiente del team."""
     uscita = CACHE / (re.sub(r"[^a-z0-9]+", "_", nome.lower()) + sfx + "_scena.jpg")
     if uscita.exists():

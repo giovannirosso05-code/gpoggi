@@ -30,6 +30,7 @@ def main(video, cop, libero=False):
     fan = R.ritratto_libero(SITO / "img/foto-extra/lewis_hamilton_fanzone2025.jpg", "hamilton_fan", larghezza=1080, y0=0)
     spec = {
         "serie": "F1", "titolo_breve": "Ferrari a Singapore: è il momento?", "fonte": "Motorsport.com", "velocita": "+38%",
+        "sub_top": 1440, "nome_top": 1330,   # il ritratto ESPN finisce al petto: nome e sottotitoli stanno sotto, nello spazio che prima restava vuoto
         "scene": [
             {"foto": "Charles Leclerc", "foto_file": str(lec), "credito": ESPN, "hook": True, "hook_titolo": "Ferrari a Singapore: è il momento?",
              "testo": "[Ferrari] non vince da *7 gare*: l'ultima volta a Silverstone, a luglio. Ma a Singapore può essere l'occasione giusta."},

@@ -123,8 +123,8 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
 .logo{{position:absolute;left:50px;top:150px;width:190px}}
 .tag{{position:absolute;left:265px;top:172px;font:700 30px Oswald;letter-spacing:.06em;text-transform:uppercase;background:{col};padding:4px 16px;border-radius:6px}}
 .strip{{position:absolute;left:40px;top:300px;max-width:900px;background:{col};font:700 44px/1.1 Oswald;text-transform:uppercase;padding:10px 18px}}
-.nome{{position:absolute;left:60px;top:930px;background:#000;font:700 38px Oswald;text-transform:uppercase;letter-spacing:.04em;padding:6px 18px}}
-.sub{{position:absolute;left:90px;width:780px;top:1180px;text-align:center;font:700 62px/1.18 Oswald;text-transform:uppercase;word-spacing:.18em;-webkit-text-stroke:2px #000;paint-order:stroke fill;text-shadow:0 4px 18px rgba(0,0,0,.7)}}
+.nome{{position:absolute;left:60px;top:{spec.get('nome_top', 930)}px;background:#000;font:700 38px Oswald;text-transform:uppercase;letter-spacing:.04em;padding:6px 18px}}
+.sub{{position:absolute;left:90px;width:780px;top:{spec.get('sub_top', 1180)}px;text-align:center;font:700 62px/1.18 Oswald;text-transform:uppercase;word-spacing:.18em;-webkit-text-stroke:2px #000;paint-order:stroke fill;text-shadow:0 4px 18px rgba(0,0,0,.7)}}
 .sub .g{{color:{GIALLO}}} .sub .s{{color:{nom}}}
 .cred{{position:absolute;right:40px;bottom:36px;font:500 20px Inter;color:rgba(255,255,255,.75);max-width:600px;text-align:right}}
 </style><div class=bg></div><div class=velo></div><div class=prog></div>"""

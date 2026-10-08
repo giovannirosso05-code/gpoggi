@@ -97,7 +97,7 @@ def slide(titolo_html, sottotitolo, immagine=None, evidenzia=None, extra_html=""
 
 def slide_apertura(serie):
     righe = ""
-    top = 640
+    top = 740
     for s in serie:
         colore = BLU if s["id"] == "moto" else ROSSO
         sigla = "MotoGP" if s["id"] == "moto" else "F1"
@@ -105,12 +105,13 @@ def slide_apertura(serie):
         for n, nome in enumerate(s["nomi"]):
             f = foto_pilota(nome, s["id"])
             if f:
-                faccine += f'<img src="{uri_foto(f)}" style="width:250px;height:250px;border-radius:50%;object-fit:cover;object-position:center 15%;border:8px solid {colore};margin:0 18px">'
+                faccine += f'<img src="{uri_foto(f)}" style="width:220px;height:220px;border-radius:50%;object-fit:cover;object-position:center 15%;border:8px solid {colore};margin:0 16px">'
         righe += (f'<div class="c" style="top:{top}px"><span class="o" style="background:{colore};padding:8px 30px;border-radius:12px;font-size:56px">{sigla}</span>'
-                  f'<div class="o" style="font-size:82px;margin:22px 0 26px">{s["gp"]}</div><div style="display:flex;justify-content:center">{faccine}</div></div>')
-        top += 640
-    corpo = ('<div class="c o" style="top:120px;font-size:150px;line-height:1">Fai il tuo<br><span class="r">pronostico</span></div>'
-             '<div class="c o" style="top:430px;font-size:70px;color:#b9b9c3">per questo weekend</div>' + righe)
+                  f'<div class="o" style="font-size:76px;margin:18px 0 22px">{s["gp"]}</div><div style="display:flex;justify-content:center">{faccine}</div></div>')
+        top += 600
+    corpo = ('<div class="c o" style="top:80px;font-size:84px;color:#ffd21f;letter-spacing:4px">In palio</div>'
+             '<div class="c o r" style="top:170px;font-size:150px;line-height:1">Carta Amazon<br>50 €</div>'
+             '<div class="c o" style="top:540px;font-size:68px;line-height:1.05">Fai il tuo pronostico<br><span style="color:#b9b9c3;font-size:56px">per questo weekend</span></div>' + righe)
     return D._html(corpo)
 
 
@@ -139,7 +140,7 @@ async def principale(uscita):
         sys.exit(75)
     nomi_gp = " e nel ".join(x["gp"] for x in serie)
     Path(str(uscita) + ".txt").write_text(
-        f"Che podio fai nel {nomi_gp}? Chi è primo a fine anno vince una carta regalo Amazon da 50 €. Gratis. Cerca GP Oggi su Google, Giochi, Pronostico del podio. Regolamento sul sito. Amazon non è sponsor. #f1 #motogp #pronostici #gpoggi",
+        f"In palio una carta regalo Amazon da 50 €! Che podio fai nel {nomi_gp}? Chi è primo a fine anno vince. Gratis. Cerca GP Oggi su Google, Giochi, Pronostico del podio. Regolamento sul sito. Amazon non è sponsor. #f1 #motogp #pronostici #gpoggi",
         encoding="utf-8")
     base = f"http://localhost:{PORTA}"
     srv = subprocess.Popen([sys.executable, "-m", "http.server", str(PORTA), "-d", str(SITO)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -148,10 +149,9 @@ async def principale(uscita):
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
             gp_parlato = " e il ".join(x["gp"] for x in serie)
-            testi = [f"Fai il tuo pronostico per questo weekend! {gp_parlato}.",
+            testi = [f"In palio una carta Amazon da cinquanta euro! Fai il tuo pronostico per questo weekend: {gp_parlato}.",
                      "Vai su G P Oggi punto it, tocca Giochi e scegli il pronostico del podio.",
-                     "In palio, a fine anno, una carta regalo Amazon da cinquanta euro.",
-                     "Scegli il podio, metti il tuo nickname e la tua email, e salva.",
+                     "Scegli il podio, metti il tuo nickname e la tua email, e salva. Il primo in classifica a fine anno vince la carta.",
                      "Vota ora: ci vogliono trenta secondi! G P Oggi punto it."]
             voci, durate = [], []
             for i, t in enumerate(testi):
@@ -164,7 +164,6 @@ async def principale(uscita):
                 sh = await schermate(browser, base, serie, None)
                 htmls = [slide_apertura(serie),
                          slide('Tocca <span class="r">Giochi</span>', "Primo gioco: Pronostico del podio", *sh["elenco"][:1], evidenzia=sh["elenco"][1]),
-                         slide('In palio:<br><span class="r">carta Amazon 50 €</span>', "Chi è primo a fine anno · gratis", sh["premio"][0]),
                          slide('Scegli il <span class="r">podio</span>', "Nickname + email e salva", sh["modulo"][0]),
                          slide_fine()]
                 clips = []

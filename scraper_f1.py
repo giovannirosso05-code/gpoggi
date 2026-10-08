@@ -318,6 +318,19 @@ def main():
     file_foto.write_text(json.dumps(cache_foto, ensure_ascii=False, indent=1))
     scrivi(DATA / "roster.json", roster)
     usate = {Path(f[k]).name for f in [p["foto"] for p in roster] + [g["mappa"] for g in eventi] if f for k in ("file", "file_grande") if f.get(k)}
+    # nella stessa cartella ci sono anche le foto e le mappe della MotoGP: non vanno cancellate
+    def _percorsi(x):
+        if isinstance(x, dict):
+            for v in x.values():
+                yield from _percorsi(v)
+        elif isinstance(x, list):
+            for v in x:
+                yield from _percorsi(v)
+        elif isinstance(x, str) and x.startswith("img/foto/"):
+            yield Path(x).name
+    for altro in ("foto-motogp.json", "mappe-motogp.json", "foto-storici.json"):
+        if (DATA / altro).exists():
+            usate |= set(_percorsi(json.loads((DATA / altro).read_text())))
     for vecchia in CARTELLA_FOTO.glob("*"):
         if vecchia.name not in usate:
             vecchia.unlink()

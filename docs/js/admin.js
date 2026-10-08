@@ -111,7 +111,9 @@ async function mostra() {
   await Promise.all([...new Set(futuri.map((v) => v.nick))].map(async (n) => {
     try { emailDi[n] = ((await api("/vincitore", { nick: n })).email || []).map((e) => e.email).find(Boolean) || null; } catch (e) { emailDi[n] = null; }
   }));
-  $("t-voti").innerHTML = futuri.length ? `<thead><tr><th>Gara</th><th>Nickname</th><th>Email</th><th>Podio</th><th>Ora</th></tr></thead><tbody>${futuri.map((v) => `<tr><td>${esc(nomeGara(v.gp))}</td><td><b>${esc(v.nick)}</b></td><td>${emailDi[v.nick] ? esc(emailDi[v.nick]) : '<span class="muted">nessuna</span>'}</td><td>${v.podio.map((n) => esc(nomePil(v.gp, n))).join(", ")}${v.pole ? ` <span class="muted">· pole ${esc(nomePil(v.gp, v.pole))}</span>` : ""}${v.giro ? ` <span class="muted">· giro ${esc(nomePil(v.gp, v.giro))}</span>` : ""}</td><td>${quando(v.ts)}</td></tr>`).join("")}</tbody>` : `<tbody><tr><td class="muted">Nessun voto per gare future.</td></tr></tbody>`;
+  const tabellaVoti = (lista) => lista.length ? `<thead><tr><th>Gara</th><th>Nickname</th><th>Email</th><th>Podio</th><th>Ora</th></tr></thead><tbody>${lista.map((v) => `<tr><td>${esc(nomeGara(v.gp))}</td><td><b>${esc(v.nick)}</b></td><td>${emailDi[v.nick] ? esc(emailDi[v.nick]) : '<span class="muted">nessuna</span>'}</td><td>${v.podio.map((n) => esc(nomePil(v.gp, n))).join(", ")}${v.pole ? ` <span class="muted">· pole ${esc(nomePil(v.gp, v.pole))}</span>` : ""}${v.giro ? ` <span class="muted">· giro ${esc(nomePil(v.gp, v.giro))}</span>` : ""}</td><td>${quando(v.ts)}</td></tr>`).join("")}</tbody>` : `<tbody><tr><td class="muted">Nessun voto per le prossime gare.</td></tr></tbody>`;
+  $("t-voti-f1").innerHTML = tabellaVoti(futuri.filter((v) => !v.gp.startsWith("m")));
+  $("t-voti-moto").innerHTML = tabellaVoti(futuri.filter((v) => v.gp.startsWith("m")));
 }
 
 async function entra() {

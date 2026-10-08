@@ -4,8 +4,14 @@ renderHeader("gare");
 renderFooter();
 
 const box = document.getElementById("gara-moto-box");
+box.classList.add("serie-moto");
 const gp = new URLSearchParams(location.search).get("gp") || "";
 const tema = document.documentElement.dataset.theme ? "&tema=" + document.documentElement.dataset.theme : "";
+
+function testata(kicker, titolo, sotto, mp, circuito, programma) {
+  return `<section class="gara-testata"><div><span class="kicker">${kicker}</span><h1>${esc(titolo)}</h1><p class="muted" style="margin:0">${esc(sotto)}</p>${programma ? `<div style="margin-top:16px">${programma}</div>` : ""}</div>
+    <div>${mp ? img(mp, "Tracciato di " + circuito, "mappa") + `<p class="credito center">${credito(mp, "Mappa")}</p>` : ""}</div></section>`;
+}
 
 function tabella(righe, FM) {
   if (!righe || !righe.length) return `<p class="muted">Risultati non disponibili.</p>`;
@@ -27,10 +33,7 @@ try {
     document.title = `${gp} — GP Oggi`;
     const mp = MAPPE[w.circuito];
     box.innerHTML = `
-      <section class="campione" style="margin-top:32px"><span class="kicker">MotoGP · ${intervalloWeekend({ inizio: w.sessioni[0].inizio, fine: w.sessioni[w.sessioni.length - 1].fine })}</span><h1>${esc(gp)}</h1>
-        <p class="muted" style="margin:0">${esc(w.circuito || "")}${w.paese ? " · " + esc(w.paese) : ""}</p></section>
-      ${programmaHtml(w.sessioni)}
-      ${mp ? `<div class="mappa-circuito">${img(mp, "Tracciato di " + w.circuito)}<p class="credito">${credito(mp, "Mappa")}</p></div>` : ""}
+      ${testata("MotoGP · " + intervalloWeekend({ inizio: w.sessioni[0].inizio, fine: w.sessioni[w.sessioni.length - 1].fine }), gp, (w.circuito || "") + (w.paese ? " · " + w.paese : ""), mp, w.circuito, programmaHtml(w.sessioni))}
       <p class="muted">Programma della classe MotoGP. I risultati compariranno dopo la gara.</p>
       <h3 class="section-title">Cronaca giro per giro</h3><p class="muted">Cronaca disponibile dopo la gara: compare qui poche ore dopo l'arrivo.</p>
       <p class="muted" style="margin-top:18px;font-size:13px"><a class="accent" href="calendario.html${tema ? "?" + tema.slice(1) : ""}">← Torna al calendario</a></p>`;
@@ -40,9 +43,7 @@ try {
   const mappa = MAPPE[g.circuito];
   const chiavi = Object.keys(g.classifiche);
   box.innerHTML = `
-    <section class="campione" style="margin-top:32px"><span class="kicker">MotoGP · ${formattaData(g.data)}</span><h1>${esc(gp)}</h1>
-      <p class="muted" style="margin:0">${esc(g.circuito || "")}</p></section>
-    ${mappa ? `<div class="mappa-circuito">${img(mappa, "Tracciato di " + g.circuito)}<p class="credito">${credito(mappa, "Mappa")}</p></div>` : ""}
+    ${testata("MotoGP · " + formattaData(g.data), gp, g.circuito || "", mappa, g.circuito, "")}
     ${r ? `<h3 class="section-title">Com'è andata</h3><article class="report-card">${r.paragrafi.map((p) => `<p>${esc(p)}</p>`).join("")}</article>` : ""}
     <h3 class="section-title">Risultati</h3>
     <div class="category-pills" id="gm-cat" style="margin-bottom:12px">${chiavi.map((k, i) => `<button class="pill ${i === 0 ? "active" : ""}" data-k="${esc(k)}">${esc(k.replace(" sprint", " · sprint"))}</button>`).join("")}</div>

@@ -1267,3 +1267,9 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 .quiz-esito { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
 .quiz-esito .quiz-avanti { margin: 0; }
 .quiz-esito .credito { flex-basis: 100%; }
+
+/* pagina del GP MotoGP: stessa grafica della Formula 1, ma in blu */
+.serie-moto { --accent: var(--moto-blu); --accent-hover: #174aa8; --accent-soft: rgba(31, 95, 209, .1); }
+.serie-moto .programma-sess.gara { background: var(--moto-blu); }
+:root[data-theme="dark"] .serie-moto .programma-testa, :root[data-theme="dark"] .serie-moto .accent { color: #8fb6ff; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .serie-moto .programma-testa, :root:not([data-theme="light"]) .serie-moto .accent { color: #8fb6ff; } }

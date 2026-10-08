@@ -1,0 +1,18 @@
+{
+ "Marc Marquez": {
+  "ritratto": {
+   "file": "img/foto-extra/mm_ritratto.jpg",
+   "autore": "Box Repsol",
+   "licenza": "CC BY 2.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Marc_M%C3%A1rquez_portrait_2022_(cropped).jpg",
+   "titolo": "Marc Márquez portrait 2022 (cropped).jpg"
+  },
+  "sorriso": {
+   "file": "img/foto-extra/mm_sorriso.jpg",
+   "autore": "Box Repsol",
+   "licenza": "CC BY 2.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Marc_M%C3%A1rquez_2014_Catalunya_2.jpeg",
+   "titolo": "Marc Márquez 2014 Catalunya 2.jpeg"
+  }
+ }
+}

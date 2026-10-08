@@ -1,0 +1,42 @@
+{
+ "serie": "MotoGP",
+ "titolo_breve": "MotoGP 2027: piloti divisi",
+ "fonte": "Crash.net · The Race · Motorsport.com · FormulaPassion",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto": "Marc Marquez",
+   "alt": "ritratto",
+   "hook": true,
+   "hook_titolo": "Formato 2027: piloti divisi",
+   "testo": "Dal duemilaventisette cambia il weekend di MotoGP: venerdì una *qualifica da quindici minuti* per la sprint, e domenica niente più *warm up*. E i piloti si dividono."
+  },
+  {
+   "foto": "Marc Marquez",
+   "alt": "ritratto",
+   "nome": "MARC MARQUEZ",
+   "testo": "[Marquez] è scettico: dice che *decidono team e organizzazione*. O accetti, o te ne vai."
+  },
+  {
+   "foto": "Francesco Bagnaia",
+   "nome": "FRANCESCO BAGNAIA",
+   "testo": "[Bagnaia] invece dice che *gli piace*: è un miglioramento. Ma il *warm up va tenuto*."
+  },
+  {
+   "foto": "Pedro Acosta",
+   "nome": "PEDRO ACOSTA",
+   "testo": "[Acosta] teme più infortuni: una *qualifica il venerdì con ventidue piloti* in pista.",
+   "pos": "22% 8%"
+  },
+  {
+   "foto": "Jorge Martin",
+   "nome": "JORGE MARTIN",
+   "testo": "[Martin] vede più spettacolo, ma anche più rischio. E ammette: *noi piloti non siamo uniti*."
+  }
+ ],
+ "finale": {
+  "foto": "Marc Marquez",
+  "alt": "sorriso",
+  "domanda": "E tu che dici? Meglio il nuovo formato o quello di oggi?"
+ }
+}

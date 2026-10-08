@@ -29,8 +29,14 @@ b64 = lambda p: base64.b64encode(Path(p).read_bytes()).decode()
 esc = html.escape
 
 
-def trova_foto(nome):
-    """Foto libera di un pilota del sito (F1 dal roster, MotoGP dal file delle foto)."""
+def trova_foto(nome, alt=None):
+    """Foto libera di un pilota del sito (F1 dal roster, MotoGP dal file delle foto).
+    Con alt ("ritratto", "sorriso"…) si usa una foto alternativa di docs/data/foto-extra.json, per non ripetere sempre la stessa."""
+    if alt:
+        extra = json.load(open(DATA / "foto-extra.json")).get(nome, {})
+        if alt not in extra:
+            raise SystemExit(f"Nessuna foto alternativa '{alt}' per {nome}: {', '.join(extra) or 'nessuna'}")
+        return extra[alt]
     for p in json.load(open(DATA / "roster.json")):
         if p.get("nome") == nome and p.get("foto"):
             return p["foto"]
@@ -99,13 +105,19 @@ CSS_FONT = (f"@font-face{{font-family:Oswald;font-weight:700;src:url(data:font/w
             f"@font-face{{font-family:Inter;font-weight:500;src:url(data:font/woff2;base64,{b64(FONT / 'inter-latin-500-normal.woff2')})}}")
 
 
+def pos_bg(scena):
+    """Posizione della foto nel riquadro: "pos" = solo verticale ("14%") oppure orizzontale e verticale ("25% 10%")."""
+    p = str(scena.get("pos", "14%")).strip()
+    return p if " " in p else f"center {p}"
+
+
 def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, hook=False, finale=None):
     col = "#1f5fd1" if spec["serie"] == "MotoGP" else "#e8352f"
     nom = "#5b9bff" if spec["serie"] == "MotoGP" else "#ff5a52"
     logo = b64(SITO / "img/logo-wide-scuro.png")
     base = f"""<!doctype html><meta charset=utf-8><style>{CSS_FONT}
 *{{box-sizing:border-box}} html,body{{margin:0;width:{W}px;height:{H}px;background:#0b0b0e;color:#fff;font-family:Inter,sans-serif;overflow:hidden;position:relative}}
-.bg{{position:absolute;inset:0;background:url(data:image/jpeg;base64,{foto_b64}) center {scena.get('pos', '14%')}/cover no-repeat}}
+.bg{{position:absolute;inset:0;background:url(data:image/jpeg;base64,{foto_b64}) {pos_bg(scena)}/cover no-repeat}}
 .velo{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 22%,rgba(0,0,0,0) 45%,rgba(8,8,10,.92) 78%,#0b0b0e 100%)}}
 .prog{{position:absolute;left:0;top:0;height:10px;width:{avanzamento * 100:.1f}%;background:{col}}}
 .logo{{position:absolute;left:50px;top:150px;width:190px}}
@@ -158,9 +170,9 @@ async def genera(spec, uscita):
         totale = t
         fotos = {}
         for s in lavoro:
-            nome = s["s"]["foto"]
-            if nome not in fotos:
-                f = trova_foto(nome); autore = re.sub(r"Original:\s*", "", f["autore"]); fotos[nome] = (b64(file_foto(f)), f"Foto: {autore} · {f['licenza']} · Wikimedia Commons")
+            nome = s["s"]["foto"]; chiave = f"{nome}|{s['s'].get('alt', '')}"
+            if chiave not in fotos:
+                f = trova_foto(nome, s["s"].get("alt")); autore = re.sub(r"Original:\s*", "", f["autore"]); fotos[chiave] = (b64(file_foto(f)), f"Foto: {autore} · {f['licenza']} · Wikimedia Commons")
         # fotogrammi
         quadri = []   # (png, inizio, fine)
         async with async_playwright() as p:
@@ -173,7 +185,7 @@ async def genera(spec, uscita):
                 f = tmp / f"q{k}.png"; k += 1
                 await pg.screenshot(path=str(f)); return f
             for idx, s in enumerate(lavoro):
-                fb, cred = fotos[s["s"]["foto"]]
+                fb, cred = fotos[f"{s['s']['foto']}|{s['s'].get('alt', '')}"]
                 fine_scena = s["ini"] + s["dur"] + (0.22 if idx < len(lavoro) - 1 else 0.6)
                 if s["s"].get("finale"):
                     f = await scatta(pagina(spec, s["s"], fb, cred, 1.0, finale=s["s"]["domanda"]))

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Gestione GP Oggi</title>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="stylesheet" href="css/style.css?v=97">
+<style>
+.adm { max-width: 760px; margin: 0 auto; padding: 20px 16px 80px; }
+.adm h1 { font-size: 28px; margin: 0 0 6px; } .adm h2 { font-size: 20px; margin: 30px 0 10px; }
+.adm input[type=password], .adm input[type=text] { width: 100%; font: inherit; padding: 11px 12px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg-elevated); color: var(--text); margin: 6px 0; }
+.adm button { font: inherit; font-weight: 600; padding: 11px 16px; border-radius: 10px; border: 0; background: var(--accent); color: #fff; margin: 4px 6px 4px 0; cursor: pointer; }
+.adm button.sec { background: var(--bg-elevated-2, #ddd); color: var(--text); }
+.adm .ok { color: #1f8f5f; font-weight: 700; } .adm .no { color: var(--accent); font-weight: 700; }
+.adm pre { white-space: pre-wrap; word-break: break-word; background: var(--bg-elevated-2, #eee); padding: 10px; border-radius: 10px; font-size: 14px; }
+</style>
+</head>
+<body>
+<main class="adm">
+  <h1>Gestione GP Oggi</h1>
+  <p class="muted">Pagina riservata: senza la tua chiave non mostra niente. Non è collegata dal sito.</p>
+  <div id="login">
+    <label>La tua chiave (ADMIN_KEY)<input type="password" id="chiave" autocomplete="off"></label>
+    <button id="entra">Entra</button> <span id="err" class="no"></span>
+  </div>
+  <div id="pannello" hidden>
+    <button class="sec" id="esci">Esci</button>
+    <h2>Classifica del premio</h2>
+    <p class="muted" id="n-premio">Carico…</p>
+    <div class="table-wrap"><table class="results" id="t-premio"></table></div>
+    <h2>Voti dei prossimi Gran Premi (con il podio)</h2>
+    <p class="muted">Solo per te: per gli altri il podio resta nascosto fino al via.</p>
+    <div class="table-wrap"><table class="results" id="t-voti"></table></div>
+    <h2>Cerca per email</h2>
+    <input type="text" id="q-email" placeholder="email del giocatore" autocapitalize="none"><button id="b-email">Trova il nickname</button>
+    <pre id="o-email" hidden></pre>
+    <h2>Nickname o codice dimenticato</h2>
+    <p class="muted">Prima controlla che la mail ricevuta arrivi dall'indirizzo salvato (cerca sopra). Poi crea un nuovo codice: i punti restano.</p>
+    <input type="text" id="q-nick" placeholder="nickname" autocapitalize="none"><button id="b-rip">Crea nuovo codice</button>
+    <pre id="o-rip" hidden></pre>
+    <h2>Liberare un'email</h2>
+    <p class="muted">Per chi vuole ricominciare con la stessa email: la scollega dal vecchio giocatore.</p>
+    <input type="text" id="q-svin" placeholder="email da liberare" autocapitalize="none"><button class="sec" id="b-svin">Libera l'email</button>
+    <pre id="o-svin" hidden></pre>
+  </div>
+</main>
+<script type="module" src="js/admin.js?v=1"></script>
+</body>
+</html>

@@ -104,6 +104,19 @@ export default {
       }
       return json({ nickname: cerca, email: Object.entries(trovati).map(([id, email]) => ({ id, email })) });
     }
+    if (req.method === "GET" && url.pathname === "/voti-admin") {
+      // Solo per chi gestisce il sito: tutti i pronostici con il podio scelto (anche prima del via). Serve ADMIN_KEY.
+      if (!env.ADMIN_KEY || url.searchParams.get("k") !== env.ADMIN_KEY) return new Response("non trovato", { status: 404 });
+      const voti = [];
+      let cursor;
+      for (let i = 0; i < 10; i++) {
+        const r = await env.VOTI.list({ prefix: "pron:", cursor, limit: 1000 });
+        for (const k of r.keys) if (k.metadata) voti.push({ gp: k.name.split(":")[1], nick: k.metadata.nick, podio: k.metadata.podio, ts: k.metadata.ts });
+        if (r.list_complete) break;
+        cursor = r.cursor;
+      }
+      return json({ voti });
+    }
     if (req.method === "GET" && url.pathname === "/ripristina") {
       // Solo per chi gestisce il sito: "password dimenticata". Dà al giocatore un NUOVO codice di recupero e sposta lì i suoi punti.
       // Prima controlla che chi scrive sia davvero il titolare (la mail deve essere quella salvata: vedi /vincitore). Uso: /ripristina?k=CHIAVE&nick=NICKNAME

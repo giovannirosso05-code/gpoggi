@@ -1,0 +1,129 @@
+import { fetchJSON, esc, VOTI_URL } from "./common.js";
+
+const base = VOTI_URL.replace(/\/$/, "");
+const $ = (id) => document.getElementById(id);
+let chiave = "";
+try { chiave = sessionStorage.getItem("adm-k") || ""; } catch (e) {}
+
+async function api(percorso, params = {}) {
+  const u = new URL(base + percorso);
+  u.searchParams.set("k", chiave);
+  for (const [k, v] of Object.entries(params)) u.searchParams.set(k, v);
+  let r;
+  try { r = await fetch(u); } catch (e) { throw new Error("Chiave non valida, oppure il Worker non è ancora aggiornato."); }
+  if (!r.ok) throw new Error(r.status === 404 ? "Chiave non valida, oppure il Worker non è ancora aggiornato." : "Errore " + r.status);
+  return r.json();
+}
+
+const PUNTI_POSIZIONE = [5, 3, 2];
+function punteggio(podio, vero) {
+  let pt = 0, esatti = 0;
+  podio.forEach((n, i) => { if (vero[i] === String(n)) { pt += PUNTI_POSIZIONE[i]; esatti++; } else if (vero.includes(String(n))) pt += 1; });
+  return pt + (esatti === 3 ? 5 : 0);
+}
+const chiaveMoto = (nome) => "m" + nome.replace(/\W/g, "").slice(0, 38);
+const quando = (ts) => new Date(ts).toLocaleString("it-IT", { timeZone: "Europe/Rome", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+
+async function carica() {
+  const [eventi, roster, motoCl, motoGare, orari] = await Promise.all([
+    fetchJSON("data/events.json"), fetchJSON("data/roster.json"), fetchJSON("data/motogp-classifica.json").catch(() => ({ piloti: [] })),
+    fetchJSON("data/motogp-gare.json").catch(() => ({})), fetchJSON("data/gara-orari.json").catch(() => ({}))]);
+  const nomiF1 = Object.fromEntries(roster.filter((p) => p.nome).map((p) => [String(p.numero), p.nome]));
+  const nomiMoto = Object.fromEntries((motoCl.piloti || []).map((p) => [String(p.numero), p.nome]));
+  const gare = {};
+  for (const g of eventi) gare[String(g.id)] = { serie: "F1", nome: g.nome, ev: g };
+  for (const n of Object.keys(motoGare)) gare[chiaveMoto(n)] = { serie: "MotoGP", nome: n, moto: motoGare[n] };
+  return { nomiF1, nomiMoto, gare, orari };
+}
+
+async function podioVero(d, chiaveGara) {
+  const g = d.gare[chiaveGara];
+  if (!g) return null;
+  if (g.serie === "F1") {
+    try {
+      const dett = await fetchJSON(`data/gare/${chiaveGara}.json`);
+      const sess = dett.sessioni.find((x) => x.tipo === "Race" && x.risultati && x.risultati.length);
+      if (!sess) return null;
+      return { vero: sess.risultati.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos).map((r) => String(r.numero)), inizio: new Date(sess.inizio).getTime() };
+    } catch (e) { return null; }
+  }
+  const righe = (g.moto.classifiche || {}).MotoGP;
+  if (!righe || !righe.length) return null;
+  return { vero: righe.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos).map((r) => String(r.numero)), inizio: d.orari[chiaveGara] ? new Date(d.orari[chiaveGara]).getTime() : new Date(g.moto.data + "T23:59:59Z").getTime() };
+}
+
+async function mostra() {
+  const d = await carica();
+  const [pub, tutti, sosp] = await Promise.all([
+    fetch(base + "/pronostici").then((r) => r.json()).then((j) => j.pronostici || []),
+    api("/voti-admin").then((j) => j.voti), api("/sospetti").then((j) => j.sospetti).catch(() => [])]);
+  const sospetti = new Set();
+  for (const s of sosp) for (const n of s.nickname) sospetti.add(n.nick.toLowerCase());
+
+  // classifica del premio, calcolata come sul sito
+  const perGp = {};
+  for (const x of pub) (perGp[x.gp] ||= []).push(x);
+  const classifica = {};
+  for (const k of Object.keys(perGp)) {
+    const r = await podioVero(d, k);
+    if (!r) continue;
+    for (const x of perGp[k]) {
+      if (!x.podio || x.ts > r.inizio) continue;
+      const o = (classifica[x.nick] ||= { nick: x.nick, f1: 0, mo: 0, gare: 0 });
+      o[d.gare[k].serie === "F1" ? "f1" : "mo"] += punteggio(x.podio, r.vero);
+      o.gare++;
+    }
+  }
+  const lista = Object.values(classifica).map((o) => ({ ...o, tot: o.f1 + o.mo })).sort((a, b) => b.tot - a.tot || b.gare - a.gare || a.nick.localeCompare(b.nick)).slice(0, 10);
+  let primo = false;
+  const righe = [];
+  for (const v of lista) {
+    let email = null;
+    try { email = ((await api("/vincitore", { nick: v.nick })).email || []).map((e) => e.email).find(Boolean) || null; } catch (e) {}
+    const sosp = sospetti.has(v.nick.toLowerCase());
+    let nota = "";
+    if (email && !sosp && !primo) { nota = `<span class="ok">IDONEO: primo con email</span>`; primo = true; }
+    else if (!email) nota = `<span class="muted">senza email</span>`;
+    else if (sosp) nota = `<span class="no">controlla: nickname collegati</span>`;
+    righe.push(`<tr><td>${righe.length + 1}</td><td><b>${esc(v.nick)}</b></td><td>${v.f1}</td><td>${v.mo}</td><td>${v.gare}</td><td><b>${v.tot}</b></td><td>${email ? esc(email) : "—"}</td><td>${nota}</td></tr>`);
+  }
+  $("n-premio").textContent = lista.length ? "Primi 10 nella classifica generale (F1 + MotoGP). Vince il primo idoneo: ha l'email e non ha nickname collegati." : "Ancora nessuna gara disputata con pronostici.";
+  $("t-premio").innerHTML = lista.length ? `<thead><tr><th>#</th><th>Nickname</th><th>F1</th><th>MotoGP</th><th>Gare</th><th>Tot</th><th>Email</th><th>Esito</th></tr></thead><tbody>${righe.join("")}</tbody>` : "";
+
+  // tutti i voti dei Gran Premi non ancora disputati, con il podio
+  const nomeGara = (k) => (d.gare[k] ? `${d.gare[k].nome} (${d.gare[k].serie})` : k.startsWith("m") ? k.slice(1) + " (MotoGP)" : "Gran Premio " + k);
+  const nomePil = (k, n) => (k.startsWith("m") ? d.nomiMoto : d.nomiF1)[String(n)] || "n." + n;
+  const futuri = [];
+  for (const v of tutti) { if (!(await podioVero(d, v.gp))) futuri.push(v); }
+  futuri.sort((a, b) => a.gp.localeCompare(b.gp) || a.ts - b.ts);
+  $("t-voti").innerHTML = futuri.length ? `<thead><tr><th>Gara</th><th>Nickname</th><th>Podio</th><th>Ora</th></tr></thead><tbody>${futuri.map((v) => `<tr><td>${esc(nomeGara(v.gp))}</td><td><b>${esc(v.nick)}</b></td><td>${v.podio.map((n) => esc(nomePil(v.gp, n))).join(", ")}</td><td>${quando(v.ts)}</td></tr>`).join("")}</tbody>` : `<tbody><tr><td class="muted">Nessun voto per gare future.</td></tr></tbody>`;
+}
+
+async function entra() {
+  $("err").textContent = "";
+  chiave = $("chiave").value.trim() || chiave;
+  try {
+    await api("/sospetti");
+    try { sessionStorage.setItem("adm-k", chiave); } catch (e) {}
+    $("login").hidden = true; $("pannello").hidden = false;
+    await mostra();
+  } catch (e) { $("err").textContent = e.message; $("login").hidden = false; $("pannello").hidden = true; }
+}
+const scrivi = (id, testo) => { const el = $(id); el.hidden = false; el.textContent = testo; };
+$("entra").addEventListener("click", entra);
+$("chiave").addEventListener("keydown", (e) => { if (e.key === "Enter") entra(); });
+$("esci").addEventListener("click", () => { try { sessionStorage.removeItem("adm-k"); } catch (e) {} location.reload(); });
+$("b-email").addEventListener("click", async () => {
+  try { const j = await api("/vincitore", { email: $("q-email").value.trim() }); scrivi("o-email", j.nota || `Nickname: ${j.nickname}\nEmail: ${(j.email || []).map((e) => e.email).join(", ")}`); } catch (e) { scrivi("o-email", e.message); }
+});
+$("b-rip").addEventListener("click", async () => {
+  const n = $("q-nick").value.trim();
+  if (!n || !confirm(`Creare un nuovo codice per "${n}"? Il vecchio codice smette di funzionare.`)) return;
+  try { const j = await api("/ripristina", { nick: n }); scrivi("o-rip", `Nickname: ${j.nickname}\nNuovo codice: ${j.codice}\n\nScrivi questo codice all'email salvata. Lui lo inserisce in "Riprendi il tuo nickname" con il nickname.`); } catch (e) { scrivi("o-rip", e.message); }
+});
+$("b-svin").addEventListener("click", async () => {
+  const em = $("q-svin").value.trim();
+  if (!em || !confirm(`Liberare l'email ${em} dal giocatore a cui è collegata?`)) return;
+  try { const j = await api("/svincola", { email: em }); scrivi("o-svin", `Fatto: ${j.email} non è più collegata a nessun giocatore.`); } catch (e) { scrivi("o-svin", e.message); }
+});
+if (chiave) entra();

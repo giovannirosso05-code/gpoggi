@@ -5,9 +5,9 @@ name: Video automatici
 on:
   schedule:
     # ogni giorno alle 12:00 italiane due video di notizie: due orari UTC (estate e inverno), ne parte uno solo grazie al controllo dell'ora e a "una volta al giorno"
-    - cron: '0 10 * * *'
-    - cron: '0 11 * * *'
-    - cron: '0 17 * * 4'
+    - cron: '7 10 * * *'
+    - cron: '7 11 * * *'
+    - cron: '7 17 * * 4'
     # - cron: '0 6 * * *'   # gioco del giorno in video: spento, mostrava un gioco che sul sito non c'è (si può lanciare a mano con cosa=gioco)
   workflow_dispatch:
     inputs:
@@ -38,7 +38,7 @@ jobs:
         id: quale
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "cosa=${{ github.event.inputs.cosa }}" >> $GITHUB_OUTPUT
-          elif [ "${{ github.event.schedule }}" = "0 17 * * 4" ]; then echo "cosa=previsioni" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "7 17 * * 4" ]; then echo "cosa=previsioni" >> $GITHUB_OUTPUT
           elif [ "${{ github.event.schedule }}" = "0 6 * * *" ]; then echo "cosa=gioco" >> $GITHUB_OUTPUT
           elif [ "$(TZ=Europe/Rome date +%H)" = "12" ] || [ "$(TZ=Europe/Rome date +%H)" = "13" ]; then echo "cosa=notizie" >> $GITHUB_OUTPUT
           else echo "cosa=salta" >> $GITHUB_OUTPUT; fi

@@ -1,7 +1,7 @@
 name: Video maratona
 
-# Temporaneo: da giovedì 8 ottobre a domenica 11 ottobre 2026 ore 8:00 italiane, ogni 2 ore (dalle 8 alle 22) un video di notizia
-# raccontata e un video di gioco giocato davvero, entrambi sul Telegram. Dopo la scadenza i job si spengono da soli.
+# Temporaneo: da giovedì 8 ottobre a domenica 11 ottobre 2026 ore 8:00 italiane, ogni 2 ore (dalle 8 alle 22) tre video di notizie
+# raccontate sul Telegram (i giochi sono spenti). Dopo la scadenza i job si spengono da soli.
 on:
   schedule:
     - cron: '0 6,8,10,12,14,16,18,20 * * *'
@@ -48,7 +48,7 @@ jobs:
             python video/notizie_giorno.py --url "$(head -n1 video/richiesta.txt)" || true
             git rm -q video/richiesta.txt
           else
-            python video/notizie_giorno.py --n 2
+            python video/notizie_giorno.py --n 3
           fi
       - name: Salva lo stato (notizie già fatte)
         if: steps.sc.outputs.attivo == 'si'
@@ -58,42 +58,3 @@ jobs:
           git add video_stato.json 2>/dev/null || true
           git add -u video/richiesta.txt 2>/dev/null || true
           git diff --cached --quiet || (git commit -m "video: stato" && git pull --rebase --autostash -X theirs origin main && git push)
-
-  gioco:
-    runs-on: ubuntu-latest
-    timeout-minutes: 25
-    concurrency:
-      group: maratona-gioco
-      cancel-in-progress: false
-    steps:
-      - name: Controllo scadenza
-        id: sc
-        run: |
-          if [ "$(date -u +%s)" -ge "$(date -u -d "$SCADENZA" +%s)" ]; then echo "attivo=no" >> $GITHUB_OUTPUT; else echo "attivo=si" >> $GITHUB_OUTPUT; fi
-          giochi=(pixel pilota circuito moto)
-          giro=$(( $(date -u +%s) / 7200 ))
-          echo "gioco=${giochi[$(( (giro / 2) % 4 ))]}" >> $GITHUB_OUTPUT
-          if [ $(( giro % 2 )) -ne 0 ]; then echo "attivo=no" >> $GITHUB_OUTPUT; fi
-      - uses: actions/checkout@v4
-        if: steps.sc.outputs.attivo == 'si'
-      - uses: actions/setup-python@v5
-        if: steps.sc.outputs.attivo == 'si'
-        with:
-          python-version: '3.12'
-      - if: steps.sc.outputs.attivo == 'si'
-        run: pip install -r requirements.txt edge-tts playwright
-      - if: steps.sc.outputs.attivo == 'si'
-        run: python -m playwright install --with-deps chromium
-      - if: steps.sc.outputs.attivo == 'si'
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
-      - name: Partita registrata e invio
-        if: steps.sc.outputs.attivo == 'si'
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
-          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID }}
-        run: |
-          python video/demo_giochi.py ${{ steps.sc.outputs.gioco }} --uscita "$RUNNER_TEMP/gioco.mp4"
-          curl -sS --fail -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendVideo" \
-            -F chat_id="${TELEGRAM_CANALE}" -F disable_notification=true -F supports_streaming=true \
-            -F caption="🎮 Giochi di GP Oggi: ${{ steps.sc.outputs.gioco }} · gpoggi.it" \
-            -F video=@"$RUNNER_TEMP/gioco.mp4" > /dev/null

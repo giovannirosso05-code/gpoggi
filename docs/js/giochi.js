@@ -253,10 +253,11 @@ async function partitaPronostico(serie = "f1") {
       <details class="pron-reg"><summary>Regolamento</summary><ol>
         <li><b>Chi organizza:</b> GP Oggi, sito indipendente. Contatti: info@gpoggi.it.</li>
         <li><b>Durata:</b> dall'8 ottobre al 31 dicembre 2026. Contano i pronostici di Formula 1 e MotoGP inviati prima della partenza di ogni gara.</li>
+        <li><b>Email:</b> per concorrere al premio serve inserire un'email valida al momento del pronostico. Una stessa email può essere usata con un solo nickname per ogni Gran Premio. L'email non è pubblica, serve solo a consegnare il premio e viene cancellata dopo la consegna. Senza email si gioca e si va in classifica, ma non si può vincere.</li>
         <li><b>Partecipazione:</b> gratuita, senza acquisti né registrazione. Un solo nickname a persona. Prima di consegnare il premio GP Oggi controlla i nickname collegati tra loro (stesso dispositivo o stessa connessione) e può chiedere al vincitore di dimostrare che il nickname è il suo: chi usa più nickname o trucchi viene escluso, con tutti i suoi nickname.</li>
         <li><b>Chi vince:</b> chi ha più punti nella classifica generale a fine anno. A parità di punti vince chi ha giocato più gare; se ancora pari, il premio viene sorteggiato tra i pari merito.</li>
         <li><b>Premio:</b> una carta regalo Amazon da 50 euro, non convertibile in denaro. Amazon non sponsorizza e non partecipa all'iniziativa.</li>
-        <li><b>Come si ritira:</b> il nickname vincitore sarà pubblicato sul sito e sui profili social. Il vincitore scrive a info@gpoggi.it entro 30 giorni indicando il nickname; l'email serve solo a consegnare il premio.</li>
+        <li><b>Come si ritira:</b> il nickname vincitore sarà pubblicato sul sito e sui profili social. Il premio viene mandato all'email indicata dal vincitore. GP Oggi lo contatta; se non risponde o non dimostra di essere il titolare del nickname entro 30 giorni, il premio passa al secondo in classifica.</li>
         <li><b>Minorenni:</b> possono partecipare solo con il consenso di un genitore.</li>
         <li><b>Modifiche:</b> l'organizzatore può cambiare o annullare l'iniziativa per cause tecniche, avvisando sul sito.</li>
       </ol></details></div>
@@ -264,6 +265,8 @@ async function partitaPronostico(serie = "f1") {
     ${pr ? `<h3 class="quiz-titolo">${esc(pr.nome)}: chi sale sul podio?</h3>
     ${aperto ? `<div class="pron-form">${[1, 2, 3].map((i) => `<label>${i}° posto<select class="sel" id="p${i}">${opz((tutti[pr.chiave] || { podio: [] }).podio[i - 1])}</select></label>`).join("")}</div>
     ${base ? `<label class="pron-nome">Il tuo nickname in classifica<input type="text" id="nome" maxlength="16" autocomplete="nickname" placeholder="Per esempio Giovanni_F1" value="${esc(leggi("pron-nome") || "")}"></label>` : ""}
+    ${base ? `<label class="pron-nome">Email per il premio (facoltativa)<input type="email" id="email" maxlength="80" autocomplete="email" placeholder="nome@esempio.it" value="${esc(leggi("pron-email") || "")}"></label>
+    <p class="muted" style="font-size:13px;margin:-6px 0 12px">Serve solo per mandarti il premio se vinci: senza email giochi lo stesso ma non puoi vincere. Non è mai pubblica e la cancelliamo dopo la consegna. <a href="privacy.html" class="accent">Privacy</a></p>` : ""}
     <div class="quiz-esito"><button class="quiz-avanti pron-rosso" id="salva" style="margin:0">Salva il pronostico</button> <span id="msg" class="muted"></span></div>` : `<p class="muted">Le votazioni per questo Gran Premio sono chiuse: la gara è iniziata.</p>`}
     <div class="pron-punti"><b>Come si fanno i punti</b><ul><li>1° posto indovinato: <b>5</b> punti</li><li>2° posto indovinato: <b>3</b> punti</li><li>3° posto indovinato: <b>2</b> punti</li><li>Pilota sul podio ma in un'altra posizione: <b>1</b> punto</li><li>Podio completo esatto: <b>+5</b> (massimo 15)</li></ul>
     <span class="muted">Il pronostico si può cambiare fino all'inizio della gara. La classifica si aggiorna dopo ogni gara.</span></div>` : `<p class="muted">Nessun Gran Premio ${S.etichetta} in programma.</p>`}
@@ -290,13 +293,18 @@ async function partitaPronostico(serie = "f1") {
     if (podio.some((x) => !x) || new Set(podio).size < 3) { msg.textContent = "Scegli tre piloti diversi."; return; }
     const nomeEl = document.getElementById("nome"), nome = nomeEl ? nomeEl.value.trim().replace(/\s+/g, " ") : "";
     if (base && !/^[\p{L}\p{N} _.-]{3,16}$/u.test(nome)) { msg.textContent = "Scrivi un nickname di 3-16 caratteri (lettere, numeri, spazi)."; return; }
+    const emailEl = document.getElementById("email"), email = emailEl ? emailEl.value.trim() : "";
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { msg.textContent = "L'email non sembra valida: correggila o lasciala vuota."; return; }
     const t = salvati(); t[pr.chiave] = { nome: pr.nome, podio }; scrivi("pronostici", JSON.stringify(t));
     let testo = leggi("pronostici") ? "Salvato sul dispositivo." : "Salvato solo finché la pagina resta aperta (la memoria del browser è bloccata).";
     if (base) {
-      scrivi("pron-nome", nome);
+      scrivi("pron-nome", nome); if (email) scrivi("pron-email", email);
       try {
-        const r = await fetch(base + "/pronostico", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ gp: pr.chiave, id: await idGiocatore(nome), nick: nome, podio }) });
-        if (r.status === 409) testo = "Questo nickname è già usato da un altro giocatore: scegline un altro.";
+        const r = await fetch(base + "/pronostico", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ gp: pr.chiave, id: await idGiocatore(nome), nick: nome, podio, ...(email ? { email } : {}) }) });
+        if (r.status === 409) {
+          const j = await r.json().catch(() => ({}));
+          testo = /email/.test(j.errore || "") ? "Questa email è già stata usata per questo Gran Premio con un altro nickname: usa un'altra email o lasciala vuota." : "Questo nickname è già usato da un altro giocatore: scegline un altro.";
+        }
         else if (r.status === 429) testo = "Troppi invii oggi: riprova domani.";
         else if (r.status === 403) testo = "Le votazioni sono chiuse: la gara è iniziata.";
         else if (!r.ok) throw new Error();

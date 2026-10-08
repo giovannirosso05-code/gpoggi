@@ -20,6 +20,17 @@ async function orariGara() {
   return orariCache.v || {};
 }
 
+// Email per il premio: si toglie il "+alias" e, per Gmail, i punti, così la stessa casella non conta due volte.
+function normalizzaEmail(e) {
+  const m = String(e || "").trim().toLowerCase().match(/^([^\s@]+)@([^\s@]+\.[^\s@]{2,})$/);
+  if (!m || e.length > 80) return null;
+  let [, loc, dom] = m;
+  loc = loc.split("+")[0];
+  if (dom === "googlemail.com") dom = "gmail.com";
+  if (dom === "gmail.com") loc = loc.replace(/\./g, "");
+  return loc ? loc + "@" + dom : null;
+}
+
 export default {
   async fetch(req, env) {
     if (req.method === "OPTIONS") return new Response(null, { headers: CORS });
@@ -64,6 +75,24 @@ export default {
       const raggruppa = (m, tipo) => Object.entries(m).filter(([, n]) => Object.keys(n).length >= 2).map(([chiave, n]) => ({ tipo, chiave, nickname: Object.entries(n).map(([nick, g]) => ({ nick, gare: g.size })) }));
       return json({ sospetti: [...raggruppa(perDisp, "stesso dispositivo"), ...raggruppa(perConn, "stessa connessione")] });
     }
+    if (req.method === "GET" && url.pathname === "/vincitore") {
+      // Solo per chi gestisce il sito: email salvata per un nickname (serve ADMIN_KEY). Uso: /vincitore?k=CHIAVE&nick=NICKNAME
+      if (!env.ADMIN_KEY || url.searchParams.get("k") !== env.ADMIN_KEY) return new Response("non trovato", { status: 404 });
+      const cerca = (url.searchParams.get("nick") || "").trim().toLowerCase();
+      const trovati = {};
+      let cursor;
+      for (let i = 0; i < 10; i++) {
+        const r = await env.VOTI.list({ prefix: "pron:", cursor, limit: 1000 });
+        for (const k of r.keys) {
+          if (!k.metadata || String(k.metadata.nick).toLowerCase() !== cerca) continue;
+          const id = k.name.split(":")[2];
+          trovati[id] = (await env.VOTI.get(`mail:${id}`)) || null;
+        }
+        if (r.list_complete) break;
+        cursor = r.cursor;
+      }
+      return json({ nickname: cerca, email: Object.entries(trovati).map(([id, email]) => ({ id, email })) });
+    }
     if (req.method === "GET" && url.pathname === "/valutazione") {
       // Voto medio del sito (da 1 a 5 stelle): { media, voti }
       const a = JSON.parse((await env.VOTI.get("valutazione:totale")) || "{}");
@@ -103,13 +132,20 @@ export default {
     }
 
     if (url.pathname === "/pronostico") {
-      const c = await req.json().catch(() => ({}));
+      const c = body;
       const gp = String(c.gp || "").replace(/[^\w-]/g, "").slice(0, 40), id = String(c.id || "").replace(/[^\w-]/g, "").slice(0, 40);
       const nick = String(c.nick || "").trim().replace(/\s+/g, " ");
       const podio = Array.isArray(c.podio) ? c.podio.map((x) => String(x).slice(0, 10)) : [];
       if (!gp || id.length < 8 || !/^[\p{L}\p{N} _.-]{3,16}$/u.test(nick) || podio.length !== 3 || new Set(podio).size !== 3) return json({ errore: "dati non validi" }, 400);
       const via = (await orariGara())[gp];
       if (via && Date.now() >= Date.parse(via)) return json({ errore: "votazioni chiuse" }, 403);
+      const emailNorm = c.email ? normalizzaEmail(c.email) : null;
+      if (c.email && !emailNorm) return json({ errore: "email non valida" }, 400);
+      if (emailNorm) {
+        const chiaveMail = `mailgp:${gp}:${await impronta(emailNorm)}`;
+        const usata = await env.VOTI.get(chiaveMail);
+        if (usata && usata !== id) return json({ errore: "email gia usata per questo gran premio" }, 409);
+      }
       const limite = `limite:pron:${await impronta((req.headers.get("CF-Connecting-IP") || "") + new Date().toISOString().slice(0, 10))}`;
       const n = Number((await env.VOTI.get(limite)) || 0);
       if (n >= 30) return json({ errore: "troppi invii oggi" }, 429);
@@ -118,6 +154,10 @@ export default {
       const occupato = await env.VOTI.get(chiaveNome);
       if (occupato && occupato !== id) return json({ errore: "nome già usato" }, 409);
       await env.VOTI.put(chiaveNome, id, { expirationTtl: 90 * 86400 });
+      if (emailNorm) {
+        await env.VOTI.put(`mailgp:${gp}:${await impronta(emailNorm)}`, id, { expirationTtl: 90 * 86400 });
+        await env.VOTI.put(`mail:${id}`, emailNorm, { expirationTtl: 400 * 86400 });
+      }
       const h = (await impronta((req.headers.get("CF-Connecting-IP") || "") + "|pron")).slice(0, 8);
       await env.VOTI.put(`pron:${gp}:${id}`, "1", { metadata: { nick, podio, ts: Date.now(), h }, expirationTtl: 90 * 86400 });
       return json({ ok: true });
@@ -140,7 +180,7 @@ export default {
     }
     if (url.pathname === "/consiglio") {
       // Consigli dei visitatori: solo testo, nessun dato personale. Massimo 3 al giorno per indirizzo; si leggono nel pannello KV di Cloudflare.
-      const c = await req.json().catch(() => ({}));
+      const c = body;
       const testo = typeof c.testo === "string" ? c.testo.trim().slice(0, 600) : "";
       const tipo = ["funzione", "errore", "altro"].includes(c.tipo) ? c.tipo : "altro";
       if (testo.length < 5 || c.sito) return json({ errore: "testo troppo corto" }, 400);
@@ -151,7 +191,7 @@ export default {
       await env.VOTI.put(`consiglio:${new Date().toISOString()}:${Math.random().toString(36).slice(2, 6)}`, JSON.stringify({ tipo, testo }), { expirationTtl: 90 * 86400 });
       return json({ ok: true });
     }
-    const { gp, scelta } = await req.json().catch(() => ({}));
+    const { gp, scelta } = body;
     if (typeof gp !== "string" || typeof scelta !== "string" || !gp || !scelta || gp.length > 80 || scelta.length > 60) return json({ errore: "dati non validi" }, 400);
     const chiaveIp = `ip:${gp}:${await impronta(req.headers.get("CF-Connecting-IP") || "")}`;
     const conteggio = JSON.parse((await env.VOTI.get("conteggio:" + gp)) || "{}");

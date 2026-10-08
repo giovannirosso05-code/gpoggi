@@ -146,6 +146,7 @@ export function renderHeader(paginaAttuale) {
         <button type="button" class="tema-btn" id="tema-btn" aria-label="Cambia tema chiaro o scuro">${ICONA_LUNA}${ICONA_SOLE}</button>
       </div>
     </nav>`;
+  if (/(^|\/)(motogp|gara-moto|pilota-moto|storico-moto|motogp-archivio)\.html$/.test(location.pathname)) document.body.classList.add("serie-moto");
   fissaTestata();
   barraIndietro();
   const selLingua = document.getElementById("lingua");

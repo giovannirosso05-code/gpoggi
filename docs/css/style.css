@@ -809,7 +809,8 @@ font { background: none !important; box-shadow: none !important; }
 .nav-links a.nav-giochi:hover { transform: translateY(1px); box-shadow: 0 2px 0 #9d1f1a; color: #fff; }
 .nav-links a.nav-giochi.active { background: #16161b; box-shadow: 0 3px 0 #000; }
 .nav-links a.nav-giochi::after { display: none; }
-@media (max-width: 640px) { .nav-links a.nav-giochi { order: -1; margin-right: 4px; } }
+.nav-links a.nav-giochi { order: 99; margin-left: 10px; }
+@media (max-width: 640px) { .nav-links a.nav-giochi { order: -1; margin-left: 0; margin-right: 4px; } }
 
 /* pronostico in home */
 .prono-griglia { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
@@ -1337,3 +1338,7 @@ a.vota-cta { display: block; width: 100%; box-sizing: border-box; text-align: ce
 @media (max-width: 600px) { .pron-extra { grid-template-columns: 1fr; } }
 .chip-serie.grande { white-space: nowrap; }
 @media (max-width: 600px) { .chip-serie-riga { flex-wrap: wrap; } .chip-serie.chip-class { flex-basis: 100%; margin-left: 0; padding: 9px; } }
+
+.pron-nuovo { background: #fff4d6; border: 2px solid #e0a14a; color: #16161b; border-radius: 10px; padding: 10px 14px; margin: 12px 0 4px; font-size: 15px; animation: pron-pulsa 1.6s ease-in-out 3; }
+.chip-serie.chip-class.attivo { background: var(--accent); border-color: var(--accent); color: #fff; }
+.pron-invito { margin: 24px 0 8px; padding: 14px 16px; border-radius: 12px; background: var(--card, #fff); border: 2px dashed var(--accent); font-size: 15px; line-height: 1.5; }

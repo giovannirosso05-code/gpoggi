@@ -242,7 +242,7 @@ async function serieDati(serie) {
     vero: podioVeroF1, passate: dati.eventi.map((g) => ({ chiave: String(g.id), nome: g.nome, data: g.inizio })), appartiene: (c) => !c.startsWith("m") };
 }
 
-async function partitaPronostico(serie = "f1") {
+async function partitaPronostico(serie = "f1", vista = "voto") {
   scelta.classList.add("hidden"); box.classList.remove("hidden");
   box.classList.toggle("serie-moto", serie === "moto");
   const [S, altra] = await Promise.all([serieDati(serie), serieDati(serie === "f1" ? "moto" : "f1")]);
@@ -282,20 +282,21 @@ async function partitaPronostico(serie = "f1") {
       </ol></details></div>
     <div class="pron-doppio">Vota <span class="pd-f1">F1</span> + <span class="pd-moto">MotoGP</span><small>i punti si sommano nella stessa classifica</small></div>
     <div class="chip-serie-riga" style="display:flex;gap:8px;margin:14px 0 4px"><button class="chip-serie grande f1 ${serie === "f1" ? "attivo" : ""}" data-s="f1">Formula 1${F1.prossimo && tutti[F1.prossimo.chiave] ? " ✓" : ""}</button><button class="chip-serie grande moto ${serie === "moto" ? "attivo" : ""}" data-s="moto">MotoGP${MO.prossimo && tutti[MO.prossimo.chiave] ? " ✓" : ""}</button>${base ? `<button class="chip-serie chip-class" data-vai="classifica">Classifica</button>` : ""}</div>
-    ${pr ? `<h3 class="quiz-titolo">${esc(pr.nome)}: chi sale sul podio?</h3>
+    <div id="vista-voto">${pr ? `<h3 class="quiz-titolo">${esc(pr.nome)}: chi sale sul podio?</h3>
     ${aperto ? `<div class="pron-form">${[1, 2, 3].map((i) => `<label>${i}° posto<select class="sel" id="p${i}">${opz((tutti[pr.chiave] || { podio: [] }).podio[i - 1])}</select></label>`).join("")}</div>
+    ${tutti[pr.chiave] && !tutti[pr.chiave].pole && !tutti[pr.chiave].giro ? `<div class="pron-nuovo"><b>Novità:</b> hai già votato, ora puoi aggiungere pole${poleAperta ? "" : " (chiusa: qualifiche iniziate)"} e giro veloce. Scegli qui sotto e premi «Aggiorna il pronostico».</div>` : ""}
     <div class="pron-form pron-extra"><label>Pole position · <b>5 punti</b><select class="sel" id="pole" ${poleAperta ? "" : "disabled"}>${opz((tutti[pr.chiave] || {}).pole)}</select>${poleAperta ? "" : `<small class="muted" style="text-transform:none;letter-spacing:0">Chiusa: le qualifiche sono iniziate</small>`}</label>
       <label>Giro più veloce in gara · <b>1 punto</b><select class="sel" id="giro">${opz((tutti[pr.chiave] || {}).giro)}</select></label></div>
     ${base ? `<label class="pron-nome">Il tuo nickname in classifica<input type="text" id="nome" maxlength="16" autocomplete="nickname" placeholder="Per esempio Giovanni_F1" value="${esc(leggi("pron-nome") || "")}"></label>` : ""}
     ${base ? `<label class="pron-nome">Email per il premio (facoltativa)<input type="email" id="email" maxlength="80" autocomplete="email" placeholder="nome@esempio.it" value="${esc(leggi("pron-email") || "")}"></label>
     <p class="muted" style="font-size:13px;margin:-6px 0 12px">Serve solo per mandarti il premio se vinci: senza email giochi lo stesso ma non puoi vincere. Non è mai pubblica e la cancelliamo dopo la consegna. <a href="privacy.html" class="accent">Privacy</a></p>` : ""}
-    <div class="quiz-esito"><button class="quiz-avanti pron-rosso" id="salva" style="margin:0">Salva il pronostico</button> <span id="msg" class="muted"></span></div><div id="poi"></div>` : `<p class="muted">Le votazioni per questo Gran Premio sono chiuse: la gara è iniziata.</p>`}
+    <div class="quiz-esito"><button class="quiz-avanti pron-rosso" id="salva" style="margin:0">${tutti[pr.chiave] ? "Aggiorna il pronostico" : "Salva il pronostico"}</button> <span id="msg" class="muted"></span></div><div id="poi"></div>` : `<p class="muted">Le votazioni per questo Gran Premio sono chiuse: la gara è iniziata.</p>`}
     <div class="pron-punti"><b>Come si fanno i punti</b><ul><li>1° posto indovinato: <b>5</b> punti</li><li>2° posto indovinato: <b>3</b> punti</li><li>3° posto indovinato: <b>2</b> punti</li><li>Pilota sul podio ma in un'altra posizione: <b>1</b> punto</li><li>Podio completo esatto: <b>+5</b></li><li>Pole position indovinata: <b>5</b> punti (si sceglie prima che inizino le qualifiche)</li><li>Giro più veloce in gara indovinato: <b>1</b> punto</li></ul><span class="muted">Massimo 21 punti per Gran Premio. </span>
     <span class="muted">Il pronostico si può cambiare fino all'inizio della gara. La classifica si aggiorna dopo ogni gara.</span></div>` : `<p class="muted">Nessun Gran Premio ${S.etichetta} in programma.</p>`}
-    ${base ? `<h3 class="quiz-titolo" id="titolo-classifica" style="margin-top:24px;scroll-margin-top:110px">Classifica</h3><div id="classifica"><p class="muted">Carico la classifica…</p></div>
-    <h3 class="quiz-titolo" style="margin-top:24px">Quanti hanno votato${pr ? ` · ${esc(pr.nome)}` : ""}</h3><div id="votanti"><p class="muted">Carico l'elenco…</p></div>` : ""}
+    ${base ? `<div class="pron-invito"><b>La classifica è appena partita: tutti da zero.</b> Ogni Gran Premio vale fino a 21 punti e ogni weekend ci sono due gare, una di Formula 1 e una di MotoGP. Chi le vota tutte e due fa punti il doppio più in fretta.</div>` : ""}
     ${righe ? `<h3 class="quiz-titolo" style="margin-top:20px">I tuoi pronostici ${S.etichetta}</h3><div class="table-wrap"><table class="results"><thead><tr><th>Gran Premio</th><th>Il tuo podio</th><th>Podio vero</th><th>Punti</th></tr></thead><tbody>${righe}</tbody></table></div>` : ""}
-    ${base ? boxRecupero() : ""}
+    ${base ? boxRecupero() : ""}</div>
+    ${base ? `<div id="vista-class" class="hidden"><h3 class="quiz-titolo" id="titolo-classifica">Classifica</h3><div id="classifica"><p class="muted">Carico la classifica…</p></div></div>` : ""}
     <div class="quiz-azioni" style="margin-top:16px"><button class="quiz-avanti secondario" id="menu" style="margin:0">Cambia gioco</button></div>`;
   const recVai = document.getElementById("rec-vai");
   if (recVai) recVai.addEventListener("click", async () => {
@@ -306,9 +307,17 @@ async function partitaPronostico(serie = "f1") {
     setTimeout(() => partitaPronostico(serie), 1800);
   });
   document.getElementById("menu").addEventListener("click", () => { box.classList.remove("serie-moto"); tornaMenu(); });
-  box.querySelectorAll(".chip-serie[data-s]").forEach((b) => b.addEventListener("click", () => { if (b.dataset.s !== serie) partitaPronostico(b.dataset.s); }));
+  // Classifica: scheda a parte, al posto del modulo di voto
   const vaiClass = box.querySelector("[data-vai]");
-  if (vaiClass) vaiClass.addEventListener("click", () => document.getElementById("titolo-classifica").scrollIntoView({ behavior: "smooth", block: "start" }));
+  const mostraVista = (classifica) => {
+    document.getElementById("vista-voto").classList.toggle("hidden", classifica);
+    const vc = document.getElementById("vista-class"); if (vc) vc.classList.toggle("hidden", !classifica);
+    box.querySelectorAll(".chip-serie[data-s]").forEach((b) => b.classList.toggle("attivo", !classifica && b.dataset.s === serie));
+    if (vaiClass) vaiClass.classList.toggle("attivo", classifica);
+  };
+  box.querySelectorAll(".chip-serie[data-s]").forEach((b) => b.addEventListener("click", () => { if (b.dataset.s !== serie) partitaPronostico(b.dataset.s); else mostraVista(false); }));
+  if (vaiClass) vaiClass.addEventListener("click", () => mostraVista(true));
+  if (vista === "classifica") mostraVista(true);
   const salva = document.getElementById("salva");
   if (salva) salva.addEventListener("click", async () => {
     const podio = [1, 2, 3].map((i) => document.getElementById("p" + i).value);
@@ -348,24 +357,14 @@ async function partitaPronostico(serie = "f1") {
   });
   if (base) mostraClassifica();
 
-  // Chi ha votato per il prossimo Gran Premio, in ordine di orario (il podio scelto non si vede finché la gara non parte)
-  function mostraVotanti(perGp) {
-    const el = document.getElementById("votanti");
-    if (!el) return;
-    const voti = pr ? (perGp[pr.chiave] || []).slice().sort((a, b) => a.ts - b.ts) : [];
-    el.innerHTML = !voti.length ? `<p class="muted">Ancora nessun voto: puoi essere il primo.</p>`
-      : `<p style="font-size:18px;margin:4px 0"><b>${voti.length}</b> ${voti.length === 1 ? "giocatore ha già votato" : "giocatori hanno già votato"}.</p><p class="muted" style="font-size:13px;margin:0">I nickname e i podi scelti compaiono in classifica dopo la gara.</p>`;
-  }
-
   // Classifica generale (F1 + MotoGP), dell'ultimo weekend e Gran Premio per Gran Premio: contano solo i pronostici arrivati prima della gara
   async function mostraClassifica() {
     const el = document.getElementById("classifica");
     if (!el) return;
     let lista = [];
-    try { lista = (await fetch(base + "/pronostici").then((r) => r.json())).pronostici || []; } catch (e) { el.innerHTML = `<p class="muted">Classifica non disponibile al momento.</p>`; const v = document.getElementById("votanti"); if (v) v.innerHTML = `<p class="muted">Elenco non disponibile al momento.</p>`; return; }
+    try { lista = (await fetch(base + "/pronostici").then((r) => r.json())).pronostici || []; } catch (e) { el.innerHTML = `<p class="muted">Classifica non disponibile al momento.</p>`; return; }
     const perGp = {};
     for (const x of lista) (perGp[x.gp] ||= []).push(x);
-    mostraVotanti(perGp);
     const chiusi = [];
     for (const s of [F1, MO]) {
       for (const g of s.passate.slice().sort((a, b) => new Date(a.data) - new Date(b.data))) {
@@ -382,8 +381,7 @@ async function partitaPronostico(serie = "f1") {
     };
     const io = (leggi("pron-nome") || "").toLowerCase();
     const riga = (v, i, extra) => `<tr class="${v.nick.toLowerCase() === io ? "pron-io" : ""}"><td>${i + 1}</td><td><b>${esc(v.nick)}</b></td>${extra}<td><b>${v.pt}</b></td></tr>`;
-    const inAttesa = [F1, MO].filter((s) => s.prossimo && perGp[s.prossimo.chiave]).map((s) => `${esc(s.prossimo.nome)} (${s.etichetta}): ${perGp[s.prossimo.chiave].length} ${perGp[s.prossimo.chiave].length === 1 ? "giocatore" : "giocatori"}`);
-    const nota = inAttesa.length ? `<p class="muted" style="font-size:13px">Hanno già giocato: ${inAttesa.join(" · ")}. La classifica si aggiorna dopo la gara.</p>` : "";
+    const nota = `<p class="muted" style="font-size:13px">La classifica si aggiorna dopo ogni gara, quando i risultati sono ufficiali.</p>`;
     const ultimo = chiusi.length ? chiusi[chiusi.length - 1].r.inizio : 0;
     const weekend = chiusi.filter((c) => ultimo - c.r.inizio < 4 * 864e5);
     el.innerHTML = nota + `<label class="pron-scegli">Classifica <select id="gp-class" class="sel"><optgroup label="Classifiche"><option value="gen">Generale · premio di fine anno (F1 + MotoGP)</option><option value="f1">Solo Formula 1</option><option value="mo">Solo MotoGP</option><option value="wk">Ultimo weekend</option></optgroup><optgroup label="Per Gran Premio" ${chiusi.length ? "" : "hidden"}>${chiusi.slice().reverse().map((c, i) => `<option value="${chiusi.length - 1 - i}">${esc(c.g.nome)} (${c.s.etichetta})</option>`).join("")}</optgroup></select></label>
@@ -393,7 +391,7 @@ async function partitaPronostico(serie = "f1") {
       const val = document.getElementById("gp-class").value, t = document.getElementById("tab-gp");
       const nota = document.getElementById("nota-class");
       nota.textContent = val === "gen" ? "È la classifica del premio di fine anno: somma dei punti di Formula 1 e MotoGP." : val === "f1" ? "Statistiche: solo i pronostici di Formula 1." : val === "mo" ? "Statistiche: solo i pronostici di MotoGP." : "";
-      if (!chiusi.length) { t.innerHTML = `<tbody><tr><td class="muted">Ancora nessuna gara disputata con pronostici: i punteggi compaiono qui dopo la prima gara, quando i risultati sono ufficiali.</td></tr></tbody>`; return; }
+      if (!chiusi.length) { t.innerHTML = `<tbody><tr><td class="muted" style="white-space:normal">Ancora nessuna gara disputata con pronostici: i punteggi compaiono qui dopo la prima gara, quando i risultati sono ufficiali.</td></tr></tbody>`; return; }
       if (val === "gen") {
         t.innerHTML = `<thead><tr><th>#</th><th>Nickname</th><th>F1</th><th>MotoGP</th><th>Gare</th><th>Totale</th></tr></thead><tbody>${somma(chiusi).map((v, i) => riga(v, i, `<td>${v.f1}</td><td>${v.mo}</td><td>${v.gare}</td>`)).join("")}</tbody>`;
       } else if (val === "f1" || val === "mo" || val === "wk") {
@@ -504,7 +502,7 @@ try {
   aggiornaRecord();
   scelta.addEventListener("click", (e) => { const b = e.target.closest(".gioco-card"); if (b) avvia(b.dataset.gioco); });
   const q = new URLSearchParams(location.search);
-  if (q.get("gioco") === "pronostico") partitaPronostico(q.get("serie") === "moto" ? "moto" : "f1");
+  if (q.get("gioco") === "pronostico") partitaPronostico(q.get("serie") === "moto" ? "moto" : "f1", q.get("vista") === "classifica" ? "classifica" : "voto");
 } catch (e) {
   erroreCaricamento(scelta);
 }

@@ -52,14 +52,14 @@ GIOCHI = {
                  avanti="Dieci domande per scoprire quanto conosci la griglia.",
                  fine="Alla fine vedi il punteggio e il tuo record. Riesci a fare il pieno?"),
     "pronostico": dict(chiave="pronostico", nome="Pronostico del podio", modo=None, custom=True,
-                       intro="Che podio fai a Singapore e in Indonesia? Vota su G P Oggi!",
+                       intro="Che podio fai a Singapore e in Indonesia? Chi è primo a fine anno vince una carta Amazon da cinquanta euro!",
                        voci=["Vai su G P Oggi punto it e tocca Giochi. Costa niente e non serve registrarsi.",
-                             "Il primo gioco è il pronostico del podio: scegli il podio del prossimo Gran Premio di Formula uno.",
+                             "Il primo gioco è il pronostico del podio. Chi è primo in classifica a fine anno vince una carta regalo Amazon da cinquanta euro.",
                              "Per ogni posto scegli un pilota: primo, secondo e terzo.",
-                             "Scrivi il tuo nome e tocca Salva: da quel momento sei in classifica.",
+                             "Scegli il podio di Formula uno, scrivi il tuo nickname e tocca Salva: da quel momento sei in classifica.",
                              "Lo stesso vale per la Moto G P: tocca Moto G P e scegli il podio dell'Indonesia.",
-                             "Chi azzecca di più sale in classifica, che si aggiorna dopo ogni gara. Che podio fai tu?"],
-                       did=["Giochi · gratis", "Pronostico del podio", "Scegli il podio", "Scrivi il nome e salva", "Anche per la MotoGP", "Classifica dopo ogni gara"]),
+                             "Chi azzecca di più sale in classifica, che si aggiorna dopo ogni gara. Vota su G P Oggi punto it: che podio fai tu?"],
+                       did=["Giochi · gratis", "Premio: carta Amazon 50 €", "Scegli il podio", "Scrivi il nickname e salva", "Anche per la MotoGP", "Classifica dopo ogni gara"]),
 }
 CHIUSURA = "G P Oggi. Lo trovi su G P Oggi punto it."
 
@@ -148,7 +148,7 @@ def azioni_pronostico(g):
         await r.js("document.querySelector('.gioco-card[data-gioco=\"pronostico\"]').click()")
         await r.js("() => new Promise((ok) => { const t = setInterval(() => { if (document.getElementById('p1')) { clearInterval(t); ok(); } }, 50); })")
         await r.scorri(0, 0.4)
-        await r.fermo(1.0)
+        await r.fermo(2.6)
 
     async def scegli(r, idx, testo):
         await tocca_vis(r, f"#p{idx}", 0, 0.6)
@@ -161,8 +161,8 @@ def azioni_pronostico(g):
 
     async def a_nome(r, base):
         await tocca_vis(r, "#nome", 0, 0.6)
-        for k in range(1, 9):
-            await r.js("(n) => { const e = document.getElementById('nome'); e.value = 'Giovanni'.slice(0, n); e.dispatchEvent(new Event('input')); }", k)
+        for k in range(1, 7):
+            await r.js("(n) => { const e = document.getElementById('nome'); e.value = 'GP_Fan'.slice(0, n); e.dispatchEvent(new Event('input')); }", k)
             await r.fermo(0.12)
         await r.fermo(0.5)
         await tocca_vis(r, "#salva", 0, 0.6)
@@ -179,7 +179,7 @@ def azioni_pronostico(g):
         for i, nome in enumerate(["Marc Marquez", "Pedro Acosta", "Jorge Martin"], 1):
             await scegli(r, i, nome)
         await tocca_vis(r, "#nome", 0, 0.5)
-        await r.js("() => { const e = document.getElementById('nome'); e.value = 'Giovanni'; e.dispatchEvent(new Event('input')); }")
+        await r.js("() => { const e = document.getElementById('nome'); e.value = 'GP_Fan'; e.dispatchEvent(new Event('input')); }")
         await tocca_vis(r, "#salva", 0, 0.5)
         await r.js("document.getElementById('salva').click()")
         await r.fermo(1.4)

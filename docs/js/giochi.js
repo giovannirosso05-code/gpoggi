@@ -15,7 +15,7 @@ const record = (g) => Number(leggi("record-" + g)) || 0;
 const salvaRecord = (g, v) => { if (v > record(g)) scrivi("record-" + g, String(v)); };
 
 const GIOCHI = {
-  pronostico: { titolo: "Pronostico del podio", testo: "Scegli il podio di F1 e MotoGP, scrivi il tuo nome ed entra in classifica.", speciale: true },
+  pronostico: { titolo: "Pronostico del podio", testo: "Scegli il podio di F1 e MotoGP, scegli il tuo nickname ed entra in classifica: a fine anno chi è primo vince 50 € in carta Amazon.", speciale: true },
   circuito: { titolo: "Indovina il circuito", testo: "Ti mostro il tracciato, tu scegli il Gran Premio." },
   pilota: { titolo: "Chi è il pilota?", testo: "Una foto, quattro nomi: piloti di oggi e leggende del passato, F1 e MotoGP." },
   pixel: { titolo: "Chi è? Foto pixelata", testo: "La foto si schiarisce a poco a poco: prima indovini, più punti fai. Tutti i piloti dell'archivio.", pixel: true },
@@ -222,10 +222,21 @@ async function partitaPronostico(serie = "f1") {
     righe += `<tr><td><strong>${esc(mio.nome)}</strong></td><td>${mio.podio.map((n) => nomeDi(S, n)).map(esc).join(", ")}</td><td>${r ? r.vero.map((n) => nomeDi(S, n)).map(esc).join(", ") : "<span class='muted'>in attesa</span>"}</td><td><strong>${pt ?? "–"}</strong></td></tr>`;
   }
   box.innerHTML = `<div class="quiz-testa pron-testa"><span>Pronostico del podio</span><span>I tuoi punti ${S.etichetta}: <b>${totale}</b></span></div>
+    <div class="pron-premio"><b>Premio di fine anno</b><span>Chi è primo nella classifica generale (F1 + MotoGP) il 31 dicembre 2026 vince una <b>carta regalo Amazon da 50 €</b>. Gratis, senza registrazione.</span>
+      <details class="pron-reg"><summary>Regolamento</summary><ol>
+        <li><b>Chi organizza:</b> GP Oggi, sito indipendente. Contatti: info@gpoggi.it.</li>
+        <li><b>Durata:</b> dall'8 ottobre al 31 dicembre 2026. Contano i pronostici di Formula 1 e MotoGP inviati prima della partenza di ogni gara.</li>
+        <li><b>Partecipazione:</b> gratuita, senza acquisti né registrazione. Un solo nickname a persona: chi usa più nickname o trucchi può essere escluso.</li>
+        <li><b>Chi vince:</b> chi ha più punti nella classifica generale a fine anno. A parità di punti vince chi ha giocato più gare; se ancora pari, il premio viene sorteggiato tra i pari merito.</li>
+        <li><b>Premio:</b> una carta regalo Amazon da 50 euro, non convertibile in denaro. Amazon non sponsorizza e non partecipa all'iniziativa.</li>
+        <li><b>Come si ritira:</b> il nickname vincitore sarà pubblicato sul sito e sui profili social. Il vincitore scrive a info@gpoggi.it entro 30 giorni indicando il nickname; l'email serve solo a consegnare il premio.</li>
+        <li><b>Minorenni:</b> possono partecipare solo con il consenso di un genitore.</li>
+        <li><b>Modifiche:</b> l'organizzatore può cambiare o annullare l'iniziativa per cause tecniche, avvisando sul sito.</li>
+      </ol></details></div>
     <div class="chip-serie-riga" style="display:flex;gap:8px;margin:14px 0 4px"><button class="chip-serie f1 ${serie === "f1" ? "attivo" : ""}" data-s="f1">Formula 1</button><button class="chip-serie moto ${serie === "moto" ? "attivo" : ""}" data-s="moto">MotoGP</button></div>
     ${pr ? `<h3 class="quiz-titolo">${esc(pr.nome)}: chi sale sul podio?</h3>
     ${aperto ? `<div class="pron-form">${[1, 2, 3].map((i) => `<label>${i}° posto<select class="sel" id="p${i}">${opz((tutti[pr.chiave] || { podio: [] }).podio[i - 1])}</select></label>`).join("")}</div>
-    ${base ? `<label class="pron-nome">Il tuo nome in classifica<input type="text" id="nome" maxlength="16" autocomplete="nickname" placeholder="Per esempio Giovanni" value="${esc(leggi("pron-nome") || "")}"></label>` : ""}
+    ${base ? `<label class="pron-nome">Il tuo nickname in classifica<input type="text" id="nome" maxlength="16" autocomplete="nickname" placeholder="Per esempio Giovanni_F1" value="${esc(leggi("pron-nome") || "")}"></label>` : ""}
     <div class="quiz-esito"><button class="quiz-avanti pron-rosso" id="salva" style="margin:0">Salva il pronostico</button> <span id="msg" class="muted"></span></div>` : `<p class="muted">Le votazioni per questo Gran Premio sono chiuse: la gara è iniziata.</p>`}
     <div class="pron-punti"><b>Come si fanno i punti</b><ul><li>1° posto indovinato: <b>5</b> punti</li><li>2° posto indovinato: <b>3</b> punti</li><li>3° posto indovinato: <b>2</b> punti</li><li>Pilota sul podio ma in un'altra posizione: <b>1</b> punto</li><li>Podio completo esatto: <b>+5</b> (massimo 15)</li></ul>
     <span class="muted">Il pronostico si può cambiare fino all'inizio della gara. La classifica si aggiorna dopo ogni gara.</span></div>` : `<p class="muted">Nessun Gran Premio ${S.etichetta} in programma.</p>`}
@@ -240,14 +251,14 @@ async function partitaPronostico(serie = "f1") {
     const msg = document.getElementById("msg");
     if (podio.some((x) => !x) || new Set(podio).size < 3) { msg.textContent = "Scegli tre piloti diversi."; return; }
     const nomeEl = document.getElementById("nome"), nome = nomeEl ? nomeEl.value.trim().replace(/\s+/g, " ") : "";
-    if (base && !/^[\p{L}\p{N} _.-]{3,16}$/u.test(nome)) { msg.textContent = "Scrivi un nome di 3-16 caratteri (lettere, numeri, spazi)."; return; }
+    if (base && !/^[\p{L}\p{N} _.-]{3,16}$/u.test(nome)) { msg.textContent = "Scrivi un nickname di 3-16 caratteri (lettere, numeri, spazi)."; return; }
     const t = salvati(); t[pr.chiave] = { nome: pr.nome, podio }; scrivi("pronostici", JSON.stringify(t));
     let testo = leggi("pronostici") ? "Salvato sul dispositivo." : "Salvato solo finché la pagina resta aperta (la memoria del browser è bloccata).";
     if (base) {
       scrivi("pron-nome", nome);
       try {
         const r = await fetch(base + "/pronostico", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ gp: pr.chiave, id: idGiocatore(), nick: nome, podio }) });
-        if (r.status === 409) testo = "Questo nome è già usato da un altro giocatore: scegline un altro.";
+        if (r.status === 409) testo = "Questo nickname è già usato da un altro giocatore: scegline un altro.";
         else if (r.status === 429) testo = "Troppi invii oggi: riprova domani.";
         else if (!r.ok) throw new Error();
         else testo = `Salvato! Sei in classifica come ${nome}.`;

@@ -1303,3 +1303,10 @@ body.serie-moto { --accent: #1f5fd1; --accent-hover: #174aa8; --accent-soft: rgb
 .prono-col[data-serie="motogp"], .ultima-gara.serie-moto { --accent: var(--moto-vivo); }
 .prono-col[data-serie="motogp"] .vota-apri, .ultima-gara.serie-moto .guarda-gara { background: var(--moto-vivo); }
 .prono-col[data-serie="motogp"] .vota-pilota.scelto { border-color: var(--moto-vivo); box-shadow: inset 0 0 0 1px var(--moto-vivo); }
+
+/* premio del pronostico */
+.pron-premio { margin: 14px 0 6px; padding: 12px 14px; border-radius: 12px; background: var(--accent-soft, rgba(232, 53, 47, .08)); border: 1px solid var(--accent, #e8352f); display: flex; flex-direction: column; gap: 4px; font-size: 14px; line-height: 1.45; }
+.pron-premio > b { font-family: var(--font-display); text-transform: uppercase; letter-spacing: .06em; color: var(--accent, #e8352f); font-size: 13px; }
+.pron-reg { margin-top: 4px; font-size: 13px; }
+.pron-reg summary { cursor: pointer; font-weight: 600; text-decoration: underline; }
+.pron-reg ol { margin: 8px 0 0; padding-left: 20px; } .pron-reg li { margin-bottom: 6px; }

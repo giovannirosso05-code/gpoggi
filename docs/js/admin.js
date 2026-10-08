@@ -152,9 +152,23 @@ $("b-email").addEventListener("click", async () => {
   try { const j = await api("/vincitore", { email: $("q-email").value.trim() }); scrivi("o-email", j.nota || `Nickname: ${j.nickname}\nEmail: ${(j.email || []).map((e) => e.email).join(", ")}`); } catch (e) { scrivi("o-email", e.message); }
 });
 $("b-rip").addEventListener("click", async () => {
-  const n = $("q-nick").value.trim();
-  if (!n || !confirm(`Creare un nuovo codice per "${n}"? Il vecchio codice smette di funzionare.`)) return;
-  try { const j = await api("/ripristina", { nick: n }); scrivi("o-rip", `Nickname: ${j.nickname}\nNuovo codice: ${j.codice}\n\nScrivi questo codice all'email salvata. Lui lo inserisce in "Riprendi il tuo nickname" con il nickname.`); } catch (e) { scrivi("o-rip", e.message); }
+  // si può scrivere il nickname oppure l'email salvata: con l'email si cerca prima il nickname collegato
+  const q = $("q-nick").value.trim();
+  if (!q) return;
+  try {
+    let nick = q, email = null;
+    if (q.includes("@")) {
+      const j = await api("/vincitore", { email: q });
+      if (!j.nickname) { scrivi("o-rip", "Nessun giocatore collegato a questa email."); return; }
+      nick = j.nickname; email = q;
+    } else {
+      try { email = ((await api("/vincitore", { nick: q })).email || []).map((e) => e.email).find(Boolean) || null; } catch (e) {}
+    }
+    if (!confirm(`Creare un nuovo codice per "${nick}"? Il vecchio codice smette di funzionare.`)) return;
+    const j = await api("/ripristina", { nick });
+    scrivi("o-rip", `Nickname: ${j.nickname}\nNuovo codice: ${j.codice}\nEmail salvata: ${email || "nessuna (senza email non puoi verificare che sia davvero lui)"}\n\nMandagli il codice a quell'email. Lo inserisce nel gioco in «Hai già giocato da un altro telefono?» insieme al nickname.`);
+  } catch (e) { scrivi("o-rip", e.message); }
+}); scrivi("o-rip", `Nickname: ${j.nickname}\nNuovo codice: ${j.codice}\n\nScrivi questo codice all'email salvata. Lui lo inserisce in "Riprendi il tuo nickname" con il nickname.`); } catch (e) { scrivi("o-rip", e.message); }
 });
 $("b-svin").addEventListener("click", async () => {
   const em = $("q-svin").value.trim();

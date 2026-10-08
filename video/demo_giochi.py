@@ -51,6 +51,15 @@ GIOCHI = {
                  sbaglio="Se sbagli, il gioco te lo dice subito.",
                  avanti="Dieci domande per scoprire quanto conosci la griglia.",
                  fine="Alla fine vedi il punteggio e il tuo record. Riesci a fare il pieno?"),
+    "pronostico": dict(chiave="pronostico", nome="Pronostico del podio", modo=None, custom=True,
+                       intro="Che podio fai a Singapore e in Indonesia? Vota su G P Oggi!",
+                       voci=["Vai su G P Oggi punto it e tocca Giochi. Costa niente e non serve registrarsi.",
+                             "Il primo gioco è il pronostico del podio: scegli il podio del prossimo Gran Premio di Formula uno.",
+                             "Per ogni posto scegli un pilota: primo, secondo e terzo.",
+                             "Scrivi il tuo nome e tocca Salva: da quel momento sei in classifica.",
+                             "Lo stesso vale per la Moto G P: tocca Moto G P e scegli il podio dell'Indonesia.",
+                             "Chi azzecca di più sale in classifica, che si aggiorna dopo ogni gara. Che podio fai tu?"],
+                       did=["Giochi · gratis", "Pronostico del podio", "Scegli il podio", "Scrivi il nome e salva", "Anche per la MotoGP", "Classifica dopo ogni gara"]),
 }
 CHIUSURA = "G P Oggi. Lo trovi su G P Oggi punto it."
 
@@ -63,6 +72,25 @@ async def hook_domande(route):
     t = t.replace("  partitaQuiz(chiave, qs);\n}", "  window.__qs = qs; partitaQuiz(chiave, qs);\n}", 1)
     t = t.replace("PASSO_PIXEL = 2200", "PASSO_PIXEL = 1e9", 1)   # nella ripresa le foto si schiariscono a comando (window.__px.avanza), non a tempo reale
     await route.fulfill(status=200, headers={"content-type": "text/javascript", "cache-control": "no-store"}, body=t)
+
+
+VOTI = []
+
+
+async def finto_server_voti(route):
+    """Durante la ripresa il server dei voti è finto: il voto della demo non finisce nella classifica vera."""
+    h = {"access-control-allow-origin": "*", "access-control-allow-headers": "content-type", "access-control-allow-methods": "GET, POST, OPTIONS", "content-type": "application/json"}
+    req = route.request
+    if req.method == "OPTIONS":
+        return await route.fulfill(status=204, headers=h, body="")
+    if req.method == "POST" and req.url.endswith("/pronostico"):
+        import json as _j
+        VOTI.append(_j.loads(req.post_data or "{}"))
+        return await route.fulfill(status=200, headers=h, body='{"ok":true}')
+    if req.url.endswith("/pronostici"):
+        import json as _j
+        return await route.fulfill(status=200, headers=h, body=_j.dumps({"pronostici": [{"gp": v["gp"], "nick": v["nick"], "podio": v["podio"], "ts": 1} for v in VOTI]}))
+    return await route.fulfill(status=200, headers=h, body="{}")
 
 
 async def stato(r):
@@ -106,7 +134,68 @@ async def risposta(r, giusta=True, veloce=False, passi=0):
     return i < n
 
 
+def azioni_pronostico(g):
+    async def a_apri(r, base):
+        await r.vai(base + "/index.html")
+        await r.fermo(0.4)
+        await r.tocca_link(D.MENU, D.M_GIOCHI, menu=True)
+        await r.fermo(0.5)
+        await r.scorri(220, 1.4)
+        await r.fermo(0.4)
+
+    async def a_scelta(r, base):
+        await tocca_vis(r, '.gioco-card[data-gioco="pronostico"]', 0, 0.7)
+        await r.js("document.querySelector('.gioco-card[data-gioco=\"pronostico\"]').click()")
+        await r.js("() => new Promise((ok) => { const t = setInterval(() => { if (document.getElementById('p1')) { clearInterval(t); ok(); } }, 50); })")
+        await r.scorri(0, 0.4)
+        await r.fermo(1.0)
+
+    async def scegli(r, idx, testo):
+        await tocca_vis(r, f"#p{idx}", 0, 0.6)
+        await r.js("(a) => { const s = document.getElementById('p' + a.i); const o = [...s.options].find((x) => x.textContent === a.t); s.value = o.value; s.dispatchEvent(new Event('change')); }", {"i": idx, "t": testo})
+        await r.fermo(0.7)
+
+    async def a_f1(r, base):
+        for i, nome in enumerate(["Kimi Antonelli", "George Russell", "Max Verstappen"], 1):
+            await scegli(r, i, nome)
+
+    async def a_nome(r, base):
+        await tocca_vis(r, "#nome", 0, 0.6)
+        for k in range(1, 9):
+            await r.js("(n) => { const e = document.getElementById('nome'); e.value = 'Giovanni'.slice(0, n); e.dispatchEvent(new Event('input')); }", k)
+            await r.fermo(0.12)
+        await r.fermo(0.5)
+        await tocca_vis(r, "#salva", 0, 0.6)
+        await r.js("document.getElementById('salva').click()")
+        await r.fermo(1.6)
+
+    async def a_moto(r, base):
+        c = await r.centro(".chip-serie-riga", 0)
+        await r.scorri(c[1] - 140, 0.6)
+        await tocca_vis(r, ".chip-serie.moto", 0, 0.6)
+        await r.js("document.querySelector('.chip-serie.moto').click()")
+        await r.js("() => new Promise((ok) => { const t = setInterval(() => { const e = document.getElementById('p1'); if (e && [...e.options].some((o) => o.textContent === 'Marc Marquez')) { clearInterval(t); ok(); } }, 50); })")
+        await r.fermo(0.6)
+        for i, nome in enumerate(["Marc Marquez", "Pedro Acosta", "Jorge Martin"], 1):
+            await scegli(r, i, nome)
+        await tocca_vis(r, "#nome", 0, 0.5)
+        await r.js("() => { const e = document.getElementById('nome'); e.value = 'Giovanni'; e.dispatchEvent(new Event('input')); }")
+        await tocca_vis(r, "#salva", 0, 0.5)
+        await r.js("document.getElementById('salva').click()")
+        await r.fermo(1.4)
+
+    async def a_fine(r, base):
+        c = await r.centro("#classifica", 0)
+        await r.scorri(c[1] - 160, 1.0)
+        await r.fermo(2.0)
+
+    return [a_apri, a_scelta, a_f1, a_nome, a_moto, a_fine]
+
+
 def azioni(g):
+    if g.get("custom"):
+        return azioni_pronostico(g)
+
     async def a_apri(r, base):
         await r.vai(base + "/index.html")
         await r.fermo(0.4)
@@ -147,6 +236,8 @@ def azioni(g):
 
 
 def copione(g):
+    if g.get("custom"):
+        return g["voci"], g["did"]
     voci = [g["apri"], g["scelta"] or f"Tocco «{g['nome']}» e si parte.", g["prima"], g["sbaglio"], g["avanti"], g["fine"]]
     didascalie = ["Giochi · gratis", g["nome"], "Tocca la risposta giusta", "Se sbagli lo vedi subito", "Dieci domande", "Punteggio e record"]
     return voci, didascalie
@@ -162,6 +253,7 @@ async def registra(g, base, tmp, durate, prova):
         ctx = await browser.new_context(viewport=D.VIEW, device_scale_factor=1 if prova else 3, is_mobile=True, has_touch=True)
         await ctx.route(re.compile(r"/js/giochi\.js"), hook_domande)
         await ctx.route(re.compile(r"^https?://(?!localhost)"), D._esterna)
+        await ctx.route(re.compile(r"gpoggivotti\.giovannirosso05\.workers\.dev"), finto_server_voti)
         page = await ctx.new_page()
         page.on("pageerror", lambda e: print("  errore nella pagina:", e))
         cdp = await ctx.new_cdp_session(page)

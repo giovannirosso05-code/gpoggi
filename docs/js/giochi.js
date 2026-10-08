@@ -228,7 +228,7 @@ async function partitaPronostico(serie = "f1") {
       <details class="pron-reg"><summary>Regolamento</summary><ol>
         <li><b>Chi organizza:</b> GP Oggi, sito indipendente. Contatti: info@gpoggi.it.</li>
         <li><b>Durata:</b> dall'8 ottobre al 31 dicembre 2026. Contano i pronostici di Formula 1 e MotoGP inviati prima della partenza di ogni gara.</li>
-        <li><b>Partecipazione:</b> gratuita, senza acquisti né registrazione. Un solo nickname a persona: chi usa più nickname o trucchi può essere escluso.</li>
+        <li><b>Partecipazione:</b> gratuita, senza acquisti né registrazione. Un solo nickname a persona. Prima di consegnare il premio GP Oggi controlla i nickname collegati tra loro (stesso dispositivo o stessa connessione) e può chiedere al vincitore di dimostrare che il nickname è il suo: chi usa più nickname o trucchi viene escluso, con tutti i suoi nickname.</li>
         <li><b>Chi vince:</b> chi ha più punti nella classifica generale a fine anno. A parità di punti vince chi ha giocato più gare; se ancora pari, il premio viene sorteggiato tra i pari merito.</li>
         <li><b>Premio:</b> una carta regalo Amazon da 50 euro, non convertibile in denaro. Amazon non sponsorizza e non partecipa all'iniziativa.</li>
         <li><b>Come si ritira:</b> il nickname vincitore sarà pubblicato sul sito e sui profili social. Il vincitore scrive a info@gpoggi.it entro 30 giorni indicando il nickname; l'email serve solo a consegnare il premio.</li>

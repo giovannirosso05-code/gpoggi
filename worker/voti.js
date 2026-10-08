@@ -37,13 +37,32 @@ export default {
           if (!k.metadata) continue;
           const gara = k.name.split(":")[1], via = orari[gara] ? Date.parse(orari[gara]) : null;
           // prima della partenza il podio scelto non si vede: restano nickname e orario del voto
-          if (via && Date.now() >= via) out.push({ gp: gara, ...k.metadata });
+          if (via && Date.now() >= via) { const { h, ...pubblico } = k.metadata; out.push({ gp: gara, ...pubblico }); }
           else out.push({ gp: gara, nick: k.metadata.nick, ts: k.metadata.ts });
         }
         if (r.list_complete) break;
         cursor = r.cursor;
       }
       return json({ pronostici: out });
+    }
+    if (req.method === "GET" && url.pathname === "/sospetti") {
+      // Solo per chi gestisce il sito: nickname collegati tra loro (stessa connessione o stesso dispositivo). Serve il segreto ADMIN_KEY impostato in Cloudflare.
+      if (!env.ADMIN_KEY || url.searchParams.get("k") !== env.ADMIN_KEY) return new Response("non trovato", { status: 404 });
+      const perConn = {}, perDisp = {};
+      let cursor;
+      for (let i = 0; i < 10; i++) {
+        const r = await env.VOTI.list({ prefix: "pron:", cursor, limit: 1000 });
+        for (const k of r.keys) {
+          if (!k.metadata) continue;
+          const [, gp, id] = k.name.split(":");
+          if (k.metadata.h) ((perConn[k.metadata.h] ||= {})[k.metadata.nick] ||= new Set()).add(gp);
+          ((perDisp[id] ||= {})[k.metadata.nick] ||= new Set()).add(gp);
+        }
+        if (r.list_complete) break;
+        cursor = r.cursor;
+      }
+      const raggruppa = (m, tipo) => Object.entries(m).filter(([, n]) => Object.keys(n).length >= 2).map(([chiave, n]) => ({ tipo, chiave, nickname: Object.entries(n).map(([nick, g]) => ({ nick, gare: g.size })) }));
+      return json({ sospetti: [...raggruppa(perDisp, "stesso dispositivo"), ...raggruppa(perConn, "stessa connessione")] });
     }
     if (req.method === "GET" && url.pathname === "/valutazione") {
       // Voto medio del sito (da 1 a 5 stelle): { media, voti }
@@ -99,7 +118,8 @@ export default {
       const occupato = await env.VOTI.get(chiaveNome);
       if (occupato && occupato !== id) return json({ errore: "nome già usato" }, 409);
       await env.VOTI.put(chiaveNome, id, { expirationTtl: 90 * 86400 });
-      await env.VOTI.put(`pron:${gp}:${id}`, "1", { metadata: { nick, podio, ts: Date.now() }, expirationTtl: 90 * 86400 });
+      const h = (await impronta((req.headers.get("CF-Connecting-IP") || "") + "|pron")).slice(0, 8);
+      await env.VOTI.put(`pron:${gp}:${id}`, "1", { metadata: { nick, podio, ts: Date.now(), h }, expirationTtl: 90 * 86400 });
       return json({ ok: true });
     }
     if (url.pathname === "/valutazione") {

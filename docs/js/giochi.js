@@ -478,6 +478,8 @@ try {
   scelta.innerHTML = Object.entries(GIOCHI).map(([k, g]) => `<button class="gioco-card" data-gioco="${k}"><b>${esc(g.titolo)}</b><span>${esc(g.testo)}</span></button>`).join("");
   aggiornaRecord();
   scelta.addEventListener("click", (e) => { const b = e.target.closest(".gioco-card"); if (b) avvia(b.dataset.gioco); });
+  const q = new URLSearchParams(location.search);
+  if (q.get("gioco") === "pronostico") partitaPronostico(q.get("serie") === "moto" ? "moto" : "f1");
 } catch (e) {
   erroreCaricamento(scelta);
 }

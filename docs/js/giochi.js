@@ -410,6 +410,12 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
     try { lista = (await fetch(base + "/pronostici").then((r) => r.json())).pronostici || []; } catch (e) { el.innerHTML = `<p class="muted">Classifica non disponibile al momento.</p>`; return; }
     const perGp = {};
     for (const x of lista) (perGp[x.gp] ||= []).push(x);
+    // se sul telefono risulta "votato" ma il voto non è arrivato online (per esempio un salvataggio andato male), si riapre il modulo
+    const mioNick = (leggi("pron-nome") || "").toLowerCase(), salvaBtn = document.getElementById("salva");
+    if (pr && salvaBtn && tutti[pr.chiave] && mioNick && !(perGp[pr.chiave] || []).some((x) => String(x.nick).toLowerCase() === mioNick)) {
+      sblocca();
+      const m = document.getElementById("msg"); m.textContent = "Il tuo voto non risulta salvato online: controlla le scelte e premi «Salva le modifiche»."; m.className = "pron-msg errore";
+    }
     const chiusi = [];
     for (const s of [F1, MO]) {
       for (const g of s.passate.slice().sort((a, b) => new Date(a.data) - new Date(b.data))) {

@@ -1153,11 +1153,13 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 @media (min-width: 701px) {
   .hero2-lato, .hero2-lato.f1, .hero2-lato.moto { min-height: 640px; background: #101014; overflow: hidden; }
   .hero2.uno .hero2-lato { min-height: 600px; }
-  .hero2-lato::before { content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 50%; background: var(--foto, none) center 14% / cover no-repeat; -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 38%); mask-image: linear-gradient(90deg, transparent 0%, #000 38%); }
-  .hero2-lato::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(16, 16, 20, .8) 0%, rgba(16, 16, 20, 0) 40%); }
+  /* sfondo: la stessa foto, ingrandita e sfocata (niente nero); sopra, la foto nitida a destra con dissolvenza */
+  .hero2-lato::after { content: ""; position: absolute; inset: -40px; z-index: 0; background: var(--foto, none) center 20% / cover no-repeat; filter: blur(34px) brightness(.5) saturate(1.1); }
+  .hero2-lato::before { content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 56%; z-index: 1; background: linear-gradient(0deg, rgba(16, 16, 20, .75) 0%, rgba(16, 16, 20, 0) 42%), var(--foto, none) center 14% / cover no-repeat; -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 34%); mask-image: linear-gradient(90deg, transparent 0%, #000 34%); }
+  .hero2:not(.uno) .hero2-lato::before { width: 78%; }
   .hero2.uno .hero2-lato { min-height: 520px; }
   .hero2-lato.moto { border-left-color: var(--moto-blu) !important; }
-  .hero2-lato > * { z-index: 1; }
+  .hero2-lato > * { z-index: 2; }
 }
 
 /* Tablet (601-980 px): nome, lingua e tema sopra, le dieci schede su una riga a parte che scorre di lato con la sbarretta */

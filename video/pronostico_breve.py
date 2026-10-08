@@ -119,8 +119,9 @@ def slide_fine():
     corpo = (f'<img src="{D._logo_uri()}" style="position:absolute;left:90px;top:300px;width:900px">'
              '<div class="c o r" style="top:830px;font-size:150px;line-height:1">Vota ora</div>'
              '<div class="c o" style="top:1030px;font-size:84px">gpoggi.it → Giochi</div>'
-             '<div class="c" style="top:1210px;font-size:50px;color:#ffd21f;font-weight:700">Premio di fine anno: carta Amazon 50 €</div>'
-             '<div class="c" style="top:1330px;font-size:42px;color:#b9b9c3">Gratis · ci vogliono 30 secondi</div>'
+             '<div class="c" style="top:1200px;font-size:50px;color:#ffd21f;font-weight:700">Premio di fine anno: carta Amazon 50 €</div>'
+             '<div class="c o" style="top:1310px;font-size:62px">Per vincere segui <span class="r">@gp.oggi</span> su TikTok</div>'
+             '<div class="c" style="top:1440px;font-size:42px;color:#b9b9c3">Gratis · ci vogliono 30 secondi</div>'
              '<div class="c" style="top:1700px;font-size:28px;color:#85858f;padding:0 60px">Regolamento sul sito. Amazon non è sponsor. Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team</div>')
     return D._html(corpo)
 
@@ -140,7 +141,7 @@ async def principale(uscita):
         sys.exit(75)
     nomi_gp = " e nel ".join(x["gp"] for x in serie)
     Path(str(uscita) + ".txt").write_text(
-        f"In palio una carta regalo Amazon da 50 €! Che podio fai nel {nomi_gp}? Chi è primo a fine anno vince. Gratis. Cerca GP Oggi su Google, Giochi, Pronostico del podio. Regolamento sul sito. Amazon non è sponsor. #f1 #motogp #pronostici #gpoggi",
+        f"In palio una carta regalo Amazon da 50 €! Che podio fai nel {nomi_gp}? Chi è primo a fine anno vince (segui @gp.oggi su TikTok). Gratis. Cerca GP Oggi su Google, Giochi, Pronostico del podio. Regolamento sul sito. Amazon non è sponsor. #f1 #motogp #pronostici #gpoggi",
         encoding="utf-8")
     base = f"http://localhost:{PORTA}"
     srv = subprocess.Popen([sys.executable, "-m", "http.server", str(PORTA), "-d", str(SITO)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -152,7 +153,7 @@ async def principale(uscita):
             testi = [f"In palio una carta Amazon da cinquanta euro! Fai il tuo pronostico per questo weekend: {gp_parlato}.",
                      "Vai su G P Oggi punto it, tocca Giochi e scegli il pronostico del podio.",
                      "Scegli il podio, metti il tuo nickname e la tua email, e salva. Il primo in classifica a fine anno vince la carta.",
-                     "Vota ora: ci vogliono trenta secondi! G P Oggi punto it."]
+                     "Vota ora: ci vogliono trenta secondi! Per vincere, segui G P punto oggi su TikTok. G P Oggi punto it."]
             voci, durate = [], []
             for i, t in enumerate(testi):
                 f = tmp / f"voce{i}.mp3"

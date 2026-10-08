@@ -62,7 +62,7 @@ def pagina_tondi(spec):
             f"@font-face{{font-family:Inter;font-weight:500;src:url(data:font/woff2;base64,{b64(FONT / 'inter-latin-500-normal.woff2')})}}")
     return f"""<!doctype html><meta charset=utf-8><style>{font}
 *{{box-sizing:border-box}} html,body{{margin:0;width:{W}px;height:{H}px;background:#0b0b0e;color:#fff;font-family:Inter,sans-serif;overflow:hidden;position:relative}}
-.bg{{position:absolute;inset:0;background:url(data:image/jpeg;base64,{b64(pr['file'])}) {pr.get('pos', '55% 20%')}/cover no-repeat}}
+.bg{{position:absolute;inset:0;background:url(data:image/jpeg;base64,{b64(pr['file'])}) {pr.get('pos', '55% 20%')}/{pr.get('size', 'cover')} no-repeat {pr.get('sfondo', '#0b0b0e')}}}
 .velo{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 22%,rgba(0,0,0,0) 38%,rgba(8,8,10,.9) 62%,#0b0b0e 82%)}}
 .logo{{position:absolute;left:50px;top:150px;width:190px}}
 .tag{{position:absolute;left:265px;top:172px;font:700 30px Oswald;letter-spacing:.06em;text-transform:uppercase;background:{col};padding:4px 16px;border-radius:6px}}

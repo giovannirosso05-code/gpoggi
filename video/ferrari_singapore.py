@@ -78,10 +78,10 @@ def main_libero(video, cop):
     asyncio.run(N.genera(spec, video))
     # copertina nello stile del profilo: un volto a tutto schermo e due tondi con gli altri
     spec_cop = {"serie": "F1", "etichetta": "Ultim'ora", "titolo": ["FERRARI A SINGAPORE:", "È IL MOMENTO?"], "evidenzia": 1, "sottotitolo": "Non vince da 7 gare",
-                "principale": {"file": str(ex / "charles_leclerc_ferrari.jpg"), "pos": "55% 12%", "nome": "Charles Leclerc"},
-                "tondi": [{"file": str(ex / "lewis_hamilton_fanzone2025.jpg"), "box": [170, 30, 760, 620], "nome": "Lewis Hamilton"},
-                          {"file": str(ex / "fr_d_ric_vasseur_ritratto.jpg"), "box": [230, 70, 760, 600], "nome": "Fred Vasseur"}],
-                "credito": "Foto: Wikimedia Commons (Gilzetbase, Liauzh, Ferrari/Danyele) · CC BY-SA 4.0"}
+                "principale": {"file": str(ex / "fr_d_ric_vasseur_ritratto.jpg"), "pos": "center 120px", "size": "1080px auto", "sfondo": "#220000", "nome": "Fred Vasseur"},
+                "tondi": [{"file": str(ex / "charles_leclerc_ferrari.jpg"), "box": [225, 70, 835, 680], "nome": "Charles Leclerc"},
+                          {"file": str(ex / "lewis_hamilton_fanzone2025.jpg"), "box": [170, 30, 760, 620], "nome": "Lewis Hamilton"}],
+                "credito": "Foto: Wikimedia Commons (Ferrari/Danyele, Gilzetbase, Liauzh) · CC BY-SA 4.0"}
     asyncio.run(C.main(spec_cop, cop))
 
 

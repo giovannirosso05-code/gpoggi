@@ -48,7 +48,7 @@ jobs:
             python video/notizie_giorno.py --url "$(head -n1 video/richiesta.txt)" || true
             git rm -q video/richiesta.txt
           else
-            python video/notizie_giorno.py --n 1
+            python video/notizie_giorno.py --n 2
           fi
       - name: Salva lo stato (notizie già fatte)
         if: steps.sc.outputs.attivo == 'si'
@@ -71,7 +71,9 @@ jobs:
         run: |
           if [ "$(date -u +%s)" -ge "$(date -u -d "$SCADENZA" +%s)" ]; then echo "attivo=no" >> $GITHUB_OUTPUT; else echo "attivo=si" >> $GITHUB_OUTPUT; fi
           giochi=(pixel pilota circuito moto)
-          echo "gioco=${giochi[$(( ($(date -u +%s) / 7200) % 4 ))]}" >> $GITHUB_OUTPUT
+          giro=$(( $(date -u +%s) / 7200 ))
+          echo "gioco=${giochi[$(( (giro / 2) % 4 ))]}" >> $GITHUB_OUTPUT
+          if [ $(( giro % 2 )) -ne 0 ]; then echo "attivo=no" >> $GITHUB_OUTPUT; fi
       - uses: actions/checkout@v4
         if: steps.sc.outputs.attivo == 'si'
       - uses: actions/setup-python@v5

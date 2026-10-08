@@ -279,9 +279,7 @@ def main():
             stato["storie"] = simili(art, json.load(open(DATA / "rassegna.json"))["articoli"]) + stato["storie"]
             fatti += 1
         except Exception as e:   # ripiego: video semplice (titolo e fonte), così il video esce comunque
-            print(f"  racconto non riuscito ({type(e).__name__}: {e}); uso il video semplice")
-            if not a.prova:
-                subprocess.run([sys.executable, str(Path(__file__).parent / "auto_video.py"), "notizia", "--invia", "--uscita", str(uscita)], check=False)
+            print(f"  racconto non riuscito ({type(e).__name__}: {e}); nessun video: meglio niente di uno brutto")
     stato["storie"] = stato.get("storie", [])[:400]
     if not a.prova:
         STATO.write_text(json.dumps({**stato_leggi(), "storie": stato["storie"], "giorno_notizie": oggi}, ensure_ascii=False, indent=1))

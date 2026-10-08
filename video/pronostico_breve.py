@@ -1,4 +1,4 @@
-"""Video breve (circa 20 secondi) "Fai il tuo pronostico per questo weekend": immagini fisse del sito, scritte grandi e voce, senza dimostrare come funziona.
+"""Video breve (circa 20 secondi) "Chi sale sul podio?": immagini fisse del sito, scritte grandi e voce, senza dimostrare come funziona.
 I Gran Premi e i piloti sono quelli della settimana (stessa scelta di demo_giochi.contesto_pronostico). Senza gare in settimana esce con codice 75.
 
 Uso:  python3 pronostico_breve.py [--uscita FILE]     (PRON_ORA=2026-10-08T10:00:00Z simula un altro momento)
@@ -56,6 +56,8 @@ async def schermate(browser, base, serie, nomi_fotografati):
     await page.goto(base + "/giochi.html")
     await page.wait_for_selector('.gioco-card[data-gioco="pronostico"]')
     await page.evaluate("document.querySelector('.gioco-card[data-gioco=\"pronostico\"]').scrollIntoView({block:'start'}); window.scrollBy(0, -200)")
+    # nel video niente premi in denaro: TikTok lo scambia per una scommessa
+    await page.evaluate("document.querySelector('.gioco-card[data-gioco=\"pronostico\"] span').textContent = 'Scegli il podio di F1 e MotoGP ed entra nella classifica dei tifosi.'")
     await page.wait_for_timeout(400)
     box = await page.evaluate("(() => { const r = document.querySelector('.gioco-card[data-gioco=\"pronostico\"]').getBoundingClientRect(); return [r.x, r.y, r.width, r.height]; })()")
     out["elenco"] = (await page.screenshot(type="png"), box)
@@ -109,21 +111,18 @@ def slide_apertura(serie):
         righe += (f'<div class="c" style="top:{top}px"><span class="o" style="background:{colore};padding:8px 30px;border-radius:12px;font-size:56px">{sigla}</span>'
                   f'<div class="o" style="font-size:76px;margin:18px 0 22px">{s["gp"]}</div><div style="display:flex;justify-content:center">{faccine}</div></div>')
         top += 600
-    corpo = ('<div class="c o" style="top:80px;font-size:84px;color:#ffd21f;letter-spacing:4px">In palio</div>'
-             '<div class="c o r" style="top:170px;font-size:150px;line-height:1">Carta Amazon<br>50 €</div>'
-             '<div class="c o" style="top:540px;font-size:68px;line-height:1.05">Fai il tuo pronostico<br><span style="color:#b9b9c3;font-size:56px">per questo weekend</span></div>' + righe)
+    corpo = ('<div class="c o" style="top:110px;font-size:150px;line-height:1">Chi sale<br>sul <span class="r">podio</span>?</div>'
+             '<div class="c o" style="top:470px;font-size:64px;line-height:1.05;color:#ffd21f">Indovinalo e sfida i tifosi</div>' + righe)
     return D._html(corpo)
 
 
 def slide_fine():
     corpo = (f'<img src="{D._logo_uri()}" style="position:absolute;left:90px;top:300px;width:900px">'
-             '<div class="c o r" style="top:830px;font-size:150px;line-height:1">Vota ora</div>'
+             '<div class="c o r" style="top:830px;font-size:150px;line-height:1">Gioca ora</div>'
              '<div class="c o" style="top:1030px;font-size:84px">gpoggi.it → Giochi</div>'
-             '<div class="c" style="top:1200px;font-size:50px;color:#ffd21f;font-weight:700">Premio di fine anno: carta Amazon 50 €</div>'
-             '<div class="c o" style="top:1310px;font-size:62px">Per vincere segui <span class="r">@gp.oggi</span> su TikTok</div>'
-             '<div class="c" style="top:1440px;font-size:42px;color:#b9b9c3">Gratis · ci vogliono 30 secondi</div>'
-             '<div class="c o" style="top:1530px;font-size:50px;color:#ffd21f">Premi in aggiornamento</div>'
-             '<div class="c" style="top:1700px;font-size:28px;color:#85858f;padding:0 60px">Regolamento sul sito. Amazon non è sponsor. Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team</div>')
+             '<div class="c" style="top:1200px;font-size:50px;color:#ffd21f;font-weight:700">Gratis · classifica F1 e MotoGP</div>'
+             '<div class="c o" style="top:1310px;font-size:62px">Segui <span class="r">@gp.oggi</span></div>'
+             '<div class="c" style="top:1700px;font-size:28px;color:#85858f;padding:0 60px">Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team</div>')
     return D._html(corpo)
 
 
@@ -142,7 +141,7 @@ async def principale(uscita):
         sys.exit(75)
     nomi_gp = " e nel ".join(x["gp"] for x in serie)
     Path(str(uscita) + ".txt").write_text(
-        f"In palio una carta regalo Amazon da 50 €! Che podio fai nel {nomi_gp}? Chi è primo a fine anno vince (segui @gp.oggi su TikTok). Premi in aggiornamento. Gratis. Cerca GP Oggi su Google, Giochi, Pronostico del podio. Regolamento sul sito. Amazon non è sponsor. #f1 #motogp #pronostici #gpoggi",
+        f"Chi sale sul podio nel {nomi_gp}? 🏁 Indovinalo e sfida gli altri tifosi nella classifica di GP Oggi. Gioco gratuito. Link nel commento fissato. #f1 #motogp #formula1 #gpoggi",
         encoding="utf-8")
     base = f"http://localhost:{PORTA}"
     srv = subprocess.Popen([sys.executable, "-m", "http.server", str(PORTA), "-d", str(SITO)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -151,10 +150,10 @@ async def principale(uscita):
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
             gp_parlato = " e il ".join(x["gp"] for x in serie)
-            testi = [f"In palio una carta Amazon da cinquanta euro! Fai il tuo pronostico per questo weekend: {gp_parlato}.",
-                     "Vai su G P Oggi punto it, tocca Giochi e scegli il pronostico del podio.",
-                     "Scegli il podio, metti il tuo nickname e la tua email, e salva. Il primo in classifica a fine anno vince la carta.",
-                     "Vota ora: ci vogliono trenta secondi! Per vincere, segui G P punto oggi su TikTok. Premi in aggiornamento! G P Oggi punto it."]
+            testi = [f"Chi sale sul podio questo weekend? {gp_parlato}. Indovinalo e sfida gli altri tifosi!",
+                     "Vai su G P Oggi punto it, tocca Giochi: è il primo gioco.",
+                     "Scegli primo, secondo e terzo, metti il tuo nickname e salva. Entri nella classifica di tutti i tifosi.",
+                     "È gratis e ci vogliono trenta secondi. Segui G P punto oggi e gioca su G P Oggi punto it!"]
             voci, durate = [], []
             for i, t in enumerate(testi):
                 f = tmp / f"voce{i}.mp3"
@@ -165,8 +164,8 @@ async def principale(uscita):
                 browser = await p.chromium.launch(executable_path=D.CHROMIUM)
                 sh = await schermate(browser, base, serie, None)
                 htmls = [slide_apertura(serie),
-                         slide('Tocca <span class="r">Giochi</span>', "Primo gioco: Pronostico del podio", *sh["elenco"][:1], evidenzia=sh["elenco"][1]),
-                         slide('Scegli il <span class="r">podio</span>', "Nickname + email e salva", sh["modulo"][0]),
+                         slide('Tocca <span class="r">Giochi</span>', "Primo gioco: il podio del weekend", *sh["elenco"][:1], evidenzia=sh["elenco"][1]),
+                         slide('Scegli il <span class="r">podio</span>', "Metti il nickname e salva", sh["modulo"][0]),
                          slide_fine()]
                 clips = []
                 for i, h in enumerate(htmls):

@@ -164,7 +164,32 @@ function punteggio(podio, vero) {
   return pt + (esatti === 3 ? 5 : 0);
 }
 const base = VOTI_URL.replace(/\/$/, "");
-const idGiocatore = () => { let v = leggi("pron-id"); if (!v) { v = "g" + Math.random().toString(36).slice(2) + Date.now().toString(36); scrivi("pron-id", v); } return v; };
+// Il giocatore si riconosce da un id. Alla prima partita si crea un codice di recupero (8 caratteri) e l'id si ricava da nickname + codice:
+// su un altro telefono basta rimettere gli stessi nickname e codice per riavere lo stesso id, quindi gli stessi punti. Nessuna email, nessuna registrazione.
+const ALFABETO = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+const nuovoCodice = () => Array.from(crypto.getRandomValues(new Uint8Array(8)), (b) => ALFABETO[b % 32]).join("");
+async function idDa(nick, codice) {
+  const h = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(nick.trim().toLowerCase() + ":" + codice.trim().toUpperCase()));
+  return "g" + [...new Uint8Array(h)].map((b) => b.toString(16).padStart(2, "0")).join("").slice(0, 24);
+}
+async function idGiocatore(nick) {
+  let id = leggi("pron-id");
+  if (id) return id;
+  const codice = nuovoCodice();
+  id = await idDa(nick, codice);
+  scrivi("pron-id", id); scrivi("pron-codice", codice); scrivi("pron-nick0", nick);
+  return id;
+}
+function boxRecupero() {
+  const cod = leggi("pron-codice"), nick0 = leggi("pron-nick0");
+  return `<div class="pron-recupero">
+    ${cod ? `<p><b>Il tuo codice di recupero</b><br>Nickname <b>${esc(nick0)}</b> · codice <b class="pron-cod">${esc(cod)}</b><br><span class="muted">Fai uno screenshot: se cambi telefono o cancelli i dati, con questi due dati riprendi i tuoi punti.</span></p>` : ""}
+    <details><summary>Hai già giocato da un altro telefono? Riprendi il tuo nickname</summary>
+      <label class="pron-nome">Nickname<input type="text" id="rec-nick" maxlength="16" autocomplete="off" value="${esc(leggi("pron-nome") || "")}"></label>
+      <label class="pron-nome">Codice di recupero<input type="text" id="rec-cod" maxlength="8" autocomplete="off" autocapitalize="characters" placeholder="8 caratteri"></label>
+      <button class="quiz-avanti secondario" id="rec-vai" style="margin:0">Riprendi</button> <span id="rec-msg" class="muted"></span>
+    </details></div>`;
+}
 const chiaveMoto = (nome) => "m" + nome.replace(/\W/g, "").slice(0, 38);
 async function podioVeroF1(id) {
   try {
@@ -245,7 +270,16 @@ async function partitaPronostico(serie = "f1") {
     ${base ? `<h3 class="quiz-titolo" style="margin-top:24px">Classifica</h3><div id="classifica"><p class="muted">Carico la classifica…</p></div>
     <h3 class="quiz-titolo" style="margin-top:24px">Chi ha votato${pr ? ` · ${esc(pr.nome)}` : ""}</h3><div id="votanti"><p class="muted">Carico l'elenco…</p></div>` : ""}
     ${righe ? `<h3 class="quiz-titolo" style="margin-top:20px">I tuoi pronostici ${S.etichetta}</h3><div class="table-wrap"><table class="results"><thead><tr><th>Gran Premio</th><th>Il tuo podio</th><th>Podio vero</th><th>Punti</th></tr></thead><tbody>${righe}</tbody></table></div>` : ""}
+    ${base ? boxRecupero() : ""}
     <div class="quiz-azioni" style="margin-top:16px"><button class="quiz-avanti secondario" id="menu" style="margin:0">Cambia gioco</button></div>`;
+  const recVai = document.getElementById("rec-vai");
+  if (recVai) recVai.addEventListener("click", async () => {
+    const n = document.getElementById("rec-nick").value.trim().replace(/\s+/g, " "), c = document.getElementById("rec-cod").value.trim().toUpperCase(), m = document.getElementById("rec-msg");
+    if (!/^[\p{L}\p{N} _.-]{3,16}$/u.test(n) || !/^[A-Z2-9]{8}$/.test(c)) { m.textContent = "Scrivi il nickname e il codice di 8 caratteri."; return; }
+    scrivi("pron-id", await idDa(n, c)); scrivi("pron-codice", c); scrivi("pron-nick0", n); scrivi("pron-nome", n);
+    m.textContent = "Fatto: da ora giochi come " + n + ". Se il codice è sbagliato, al prossimo salvataggio ti dirà che il nickname è già usato.";
+    setTimeout(() => partitaPronostico(serie), 1800);
+  });
   document.getElementById("menu").addEventListener("click", () => { box.classList.remove("serie-moto"); tornaMenu(); });
   box.querySelectorAll(".chip-serie").forEach((b) => b.addEventListener("click", () => { if (b.dataset.s !== serie) partitaPronostico(b.dataset.s); }));
   const salva = document.getElementById("salva");
@@ -261,12 +295,12 @@ async function partitaPronostico(serie = "f1") {
     if (base) {
       scrivi("pron-nome", nome);
       try {
-        const r = await fetch(base + "/pronostico", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ gp: pr.chiave, id: idGiocatore(), nick: nome, podio }) });
+        const r = await fetch(base + "/pronostico", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ gp: pr.chiave, id: await idGiocatore(nome), nick: nome, podio }) });
         if (r.status === 409) testo = "Questo nickname è già usato da un altro giocatore: scegline un altro.";
         else if (r.status === 429) testo = "Troppi invii oggi: riprova domani.";
         else if (r.status === 403) testo = "Le votazioni sono chiuse: la gara è iniziata.";
         else if (!r.ok) throw new Error();
-        else testo = `Salvato! Sei in classifica come ${nome}.`;
+        else { testo = `Salvato! Sei in classifica come ${nome}.`; if (leggi("pron-codice")) testo += ` Il tuo codice di recupero è ${leggi("pron-codice")}: fai uno screenshot.`; }
       } catch (e) { testo += " Non sono riuscito a raggiungere la classifica: riprova più tardi."; }
     }
     msg.textContent = testo;

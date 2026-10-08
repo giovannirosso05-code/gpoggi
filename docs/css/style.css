@@ -1312,3 +1312,7 @@ body.serie-moto { --accent: #1f5fd1; --accent-hover: #174aa8; --accent-soft: rgb
 .pron-reg { margin-top: 4px; font-size: 13px; }
 .pron-reg summary { cursor: pointer; font-weight: 600; text-decoration: underline; }
 .pron-reg ol { margin: 8px 0 0; padding-left: 20px; } .pron-reg li { margin-bottom: 6px; }
+
+.pron-recupero { margin: 18px 0 4px; padding: 12px 14px; border: 1px dashed var(--border); border-radius: 12px; font-size: 14px; }
+.pron-recupero p { margin: 0 0 8px; } .pron-cod { font-family: monospace; font-size: 18px; letter-spacing: .12em; }
+.pron-recupero summary { cursor: pointer; font-weight: 600; }

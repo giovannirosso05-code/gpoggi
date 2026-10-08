@@ -4,7 +4,7 @@ import { esc, img, formattaDataOra } from "./common.js";
 function inviti(s, d) {
   return `<div class="vota" data-s="${s}">
     <a class="vota-apri vota-cta" href="giochi.html?gioco=pronostico&serie=${s === "motogp" ? "moto" : "f1"}">Fai il tuo pronostico · carta Amazon 50 €</a>
-    <p class="muted" style="font-size:12px;margin:8px 0 0;text-align:center">Scegli il podio di ${esc(d.gp)}: gratis, il primo in classifica a fine anno vince.</p></div>`;
+    <p class="muted" style="font-size:12px;margin:8px 0 0;text-align:center">Scegli il podio di ${esc(d.gp)}: gratis, il primo in classifica a fine anno vince. Premi in aggiornamento.</p></div>`;
 }
 
 /** colonne: [{ s: "f1"|"motogp", sigla, classe, d (dati del pronostico), fotoDi(favorito), tutti: [{nome, sotto, foto}] }] */

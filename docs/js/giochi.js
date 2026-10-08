@@ -188,6 +188,7 @@ function boxRecupero() {
       <label class="pron-nome">Nickname<input type="text" id="rec-nick" maxlength="16" autocomplete="off" value="${esc(leggi("pron-nome") || "")}"></label>
       <label class="pron-nome">Codice di recupero<input type="text" id="rec-cod" maxlength="8" autocomplete="off" autocapitalize="characters" placeholder="8 caratteri"></label>
       <button class="quiz-avanti secondario" id="rec-vai" style="margin:0">Riprendi</button> <span id="rec-msg" class="muted"></span>
+      <p class="muted" style="font-size:13px;margin:12px 0 0"><b>Hai dimenticato nickname o codice?</b> <a class="accent" href="mailto:info@gpoggi.it?subject=${encodeURIComponent("Recupero nickname GP Oggi")}&body=${encodeURIComponent("Ciao, ho dimenticato il nickname o il codice di recupero del Pronostico di GP Oggi.\n\nEmail che ho inserito nel pronostico (scrivi da questo indirizzo):\nNickname, se lo ricordo:\n")}">Scrivi all'amministrazione</a>: se hai inserito l'email nel pronostico ti rispondiamo con un nuovo codice, come per la password dimenticata. Senza email non possiamo verificare che sei tu.</p>
     </details></div>`;
 }
 const chiaveMoto = (nome) => "m" + nome.replace(/\W/g, "").slice(0, 38);
@@ -257,6 +258,7 @@ async function partitaPronostico(serie = "f1") {
         <li><b>Partecipazione:</b> gratuita, senza acquisti né registrazione. Un solo nickname a persona. Prima di consegnare il premio GP Oggi controlla i nickname collegati tra loro (stesso dispositivo o stessa connessione) e può chiedere al vincitore di dimostrare che il nickname è il suo: chi usa più nickname o trucchi viene escluso, con tutti i suoi nickname.</li>
         <li><b>Chi vince:</b> chi ha più punti nella classifica generale a fine anno. A parità di punti vince chi ha giocato più gare; se ancora pari, il premio viene sorteggiato tra i pari merito.</li>
         <li><b>Premio:</b> una carta regalo Amazon da 50 euro, non convertibile in denaro. Amazon non sponsorizza e non partecipa all'iniziativa.</li>
+        <li><b>Nickname o codice dimenticato:</b> chi ha inserito l'email nel pronostico può scrivere a info@gpoggi.it dall'indirizzo che ha usato e riceve un nuovo codice di recupero; i punti restano. Senza email non è possibile verificare l'identità.</li>
         <li><b>Come si ritira:</b> il nickname vincitore sarà pubblicato sul sito e sui profili social. Il premio viene mandato all'email indicata dal vincitore. GP Oggi lo contatta; se non risponde o non dimostra di essere il titolare del nickname entro 30 giorni, il premio passa al secondo in classifica.</li>
         <li><b>Minorenni:</b> possono partecipare solo con il consenso di un genitore.</li>
         <li><b>Modifiche:</b> l'organizzatore può cambiare o annullare l'iniziativa per cause tecniche, avvisando sul sito.</li>

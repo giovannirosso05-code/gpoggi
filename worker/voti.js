@@ -31,6 +31,12 @@ function normalizzaEmail(e) {
   return loc ? loc + "@" + dom : null;
 }
 
+const ALFABETO = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+async function idDa(nick, codice) {
+  const h = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(nick.trim().toLowerCase() + ":" + codice.trim().toUpperCase()));
+  return "g" + [...new Uint8Array(h)].map((b) => b.toString(16).padStart(2, "0")).join("").slice(0, 24);
+}
+
 export default {
   async fetch(req, env) {
     if (req.method === "OPTIONS") return new Response(null, { headers: CORS });
@@ -78,20 +84,60 @@ export default {
     if (req.method === "GET" && url.pathname === "/vincitore") {
       // Solo per chi gestisce il sito: email salvata per un nickname (serve ADMIN_KEY). Uso: /vincitore?k=CHIAVE&nick=NICKNAME
       if (!env.ADMIN_KEY || url.searchParams.get("k") !== env.ADMIN_KEY) return new Response("non trovato", { status: 404 });
-      const cerca = (url.searchParams.get("nick") || "").trim().toLowerCase();
+      let cerca = (url.searchParams.get("nick") || "").trim().toLowerCase();
+      const emailCerca = normalizzaEmail(url.searchParams.get("email"));
+      const idDaEmail = emailCerca ? await env.VOTI.get(`mailacc:${await impronta(emailCerca)}`) : null;
+      if (emailCerca && !idDaEmail) return json({ email: emailCerca, nickname: null, nota: "nessun giocatore collegato a questa email" });
       const trovati = {};
       let cursor;
       for (let i = 0; i < 10; i++) {
         const r = await env.VOTI.list({ prefix: "pron:", cursor, limit: 1000 });
         for (const k of r.keys) {
-          if (!k.metadata || String(k.metadata.nick).toLowerCase() !== cerca) continue;
+          if (!k.metadata) continue;
           const id = k.name.split(":")[2];
+          if (idDaEmail ? id !== idDaEmail : String(k.metadata.nick).toLowerCase() !== cerca) continue;
+          cerca = String(k.metadata.nick).toLowerCase();
           trovati[id] = (await env.VOTI.get(`mail:${id}`)) || null;
         }
         if (r.list_complete) break;
         cursor = r.cursor;
       }
       return json({ nickname: cerca, email: Object.entries(trovati).map(([id, email]) => ({ id, email })) });
+    }
+    if (req.method === "GET" && url.pathname === "/ripristina") {
+      // Solo per chi gestisce il sito: "password dimenticata". Dà al giocatore un NUOVO codice di recupero e sposta lì i suoi punti.
+      // Prima controlla che chi scrive sia davvero il titolare (la mail deve essere quella salvata: vedi /vincitore). Uso: /ripristina?k=CHIAVE&nick=NICKNAME
+      if (!env.ADMIN_KEY || url.searchParams.get("k") !== env.ADMIN_KEY) return new Response("non trovato", { status: 404 });
+      const cerca = (url.searchParams.get("nick") || "").trim().toLowerCase();
+      if (!cerca) return json({ errore: "manca il nickname" }, 400);
+      const voci = [];
+      let cursor;
+      for (let i = 0; i < 10; i++) {
+        const r = await env.VOTI.list({ prefix: "pron:", cursor, limit: 1000 });
+        for (const k of r.keys) if (k.metadata && String(k.metadata.nick).toLowerCase() === cerca) voci.push(k);
+        if (r.list_complete) break;
+        cursor = r.cursor;
+      }
+      if (!voci.length) return json({ errore: "nickname non trovato" }, 404);
+      const nickVero = String(voci[0].metadata.nick);
+      const codice = Array.from(crypto.getRandomValues(new Uint8Array(8)), (b) => ALFABETO[b % 32]).join("");
+      const nuovoId = await idDa(nickVero, codice);
+      const vecchi = new Set();
+      for (const k of voci) {
+        const [, gara, vecchio] = k.name.split(":");
+        vecchi.add(vecchio);
+        await env.VOTI.put(`pron:${gara}:${nuovoId}`, "1", { metadata: k.metadata, expirationTtl: 90 * 86400 });
+        if (vecchio !== nuovoId) await env.VOTI.delete(k.name);
+        await env.VOTI.put(`nick:${gara}:${nickVero.toLowerCase()}`, nuovoId, { expirationTtl: 90 * 86400 });
+      }
+      for (const vecchio of vecchi) {
+        const em = await env.VOTI.get(`mail:${vecchio}`);
+        if (!em) continue;
+        await env.VOTI.put(`mail:${nuovoId}`, em, { expirationTtl: 400 * 86400 });
+        await env.VOTI.put(`mailacc:${await impronta(em)}`, nuovoId, { expirationTtl: 400 * 86400 });
+        await env.VOTI.delete(`mail:${vecchio}`);
+      }
+      return json({ nickname: nickVero, codice, nota: "Manda questo codice all'email salvata. Il giocatore lo inserisce in 'Riprendi il tuo nickname' con il nickname." });
     }
     if (req.method === "GET" && url.pathname === "/svincola") {
       // Solo per chi gestisce il sito: libera un'email dal giocatore a cui è collegata (per chi ha perso il codice). Uso: /svincola?k=CHIAVE&email=INDIRIZZO

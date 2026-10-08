@@ -350,7 +350,7 @@ async function partitaPronostico(serie = "f1") {
     chiusi.sort((a, b) => a.r.inizio - b.r.inizio);
     const somma = (gruppo) => {
       const m = {};
-      for (const c of gruppo) for (const v of c.voci) { const o = (m[v.nick] ||= { nick: v.nick, pt: 0, gare: 0 }); o.pt += v.pt; o.gare++; }
+      for (const c of gruppo) for (const v of c.voci) { const o = (m[v.nick] ||= { nick: v.nick, pt: 0, gare: 0, f1: 0, mo: 0 }); o.pt += v.pt; o.gare++; o[c.s.etichetta === "F1" ? "f1" : "mo"] += v.pt; }
       return Object.values(m).sort((a, b) => b.pt - a.pt || b.gare - a.gare || a.nick.localeCompare(b.nick));
     };
     const io = (leggi("pron-nome") || "").toLowerCase();
@@ -360,13 +360,18 @@ async function partitaPronostico(serie = "f1") {
     if (!chiusi.length) { el.innerHTML = nota + `<p class="muted">Ancora nessuna classifica: compare dopo la prima gara con dei pronostici.</p>`; return; }
     const ultimo = chiusi[chiusi.length - 1].r.inizio;
     const weekend = chiusi.filter((c) => ultimo - c.r.inizio < 4 * 864e5);
-    el.innerHTML = nota + `<label class="pron-scegli">Classifica <select id="gp-class" class="sel"><option value="gen">Generale (F1 + MotoGP)</option><option value="wk">Ultimo weekend</option>${chiusi.slice().reverse().map((c, i) => `<option value="${chiusi.length - 1 - i}">${esc(c.g.nome)} (${c.s.etichetta})</option>`).join("")}</select></label>
+    el.innerHTML = nota + `<label class="pron-scegli">Classifica <select id="gp-class" class="sel"><optgroup label="Classifiche"><option value="gen">Generale · premio di fine anno (F1 + MotoGP)</option><option value="f1">Solo Formula 1</option><option value="mo">Solo MotoGP</option><option value="wk">Ultimo weekend</option></optgroup><optgroup label="Per Gran Premio">${chiusi.slice().reverse().map((c, i) => `<option value="${chiusi.length - 1 - i}">${esc(c.g.nome)} (${c.s.etichetta})</option>`).join("")}</optgroup></select></label>
+      <p class="muted" id="nota-class" style="font-size:13px;margin:0 0 8px"></p>
       <div class="table-wrap"><table class="results" id="tab-gp"></table></div>`;
     const disegna = () => {
       const val = document.getElementById("gp-class").value, t = document.getElementById("tab-gp");
-      if (val === "gen" || val === "wk") {
-        const gr = val === "gen" ? chiusi : weekend, lista = somma(gr);
-        t.innerHTML = `<thead><tr><th>#</th><th>Nome</th><th>Gare</th><th>Punti</th></tr></thead><tbody>${lista.map((v, i) => riga(v, i, `<td>${v.gare}</td>`)).join("")}</tbody>`;
+      const nota = document.getElementById("nota-class");
+      nota.textContent = val === "gen" ? "È la classifica del premio di fine anno: somma dei punti di Formula 1 e MotoGP." : val === "f1" ? "Statistiche: solo i pronostici di Formula 1." : val === "mo" ? "Statistiche: solo i pronostici di MotoGP." : "";
+      if (val === "gen") {
+        t.innerHTML = `<thead><tr><th>#</th><th>Nickname</th><th>F1</th><th>MotoGP</th><th>Gare</th><th>Totale</th></tr></thead><tbody>${somma(chiusi).map((v, i) => riga(v, i, `<td>${v.f1}</td><td>${v.mo}</td><td>${v.gare}</td>`)).join("")}</tbody>`;
+      } else if (val === "f1" || val === "mo" || val === "wk") {
+        const gr = val === "wk" ? weekend : chiusi.filter((c) => c.s.etichetta === (val === "f1" ? "F1" : "MotoGP")), lista = somma(gr);
+        t.innerHTML = lista.length ? `<thead><tr><th>#</th><th>Nickname</th><th>Gare</th><th>Punti</th></tr></thead><tbody>${lista.map((v, i) => riga(v, i, `<td>${v.gare}</td>`)).join("")}</tbody>` : `<tbody><tr><td class="muted">Ancora nessuna gara disputata con pronostici.</td></tr></tbody>`;
       } else {
         const c = chiusi[Number(val)];
         t.innerHTML = `<thead><tr><th>#</th><th>Nome</th><th>Il suo podio</th><th>Punti</th></tr></thead><tbody>${c.voci.map((v, i) => riga(v, i, `<td>${v.podio.map((n) => nomeDi(c.s, n)).map(esc).join(", ")}</td>`)).join("")}</tbody>`;

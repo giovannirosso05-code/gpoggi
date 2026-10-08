@@ -277,8 +277,16 @@ def social_serie(chiave):
     if not p or not p.get("favoriti"): return ""
     luogo = re.sub(r"^(Gran Premio (di|del|dello|della|d')\s*|GP )", "", p["gp"]).strip(); f0 = p["favoriti"][0]["nome"]
     _, tip = studio_pole(chiave); icona, tag = ("🏁", "#f1 #formula1") if chiave == "f1" else ("🏍️", "#motogp")
-    return (f"{luogo}: chi sale sul podio? {icona} Il nostro favorito è {f0}" + (f", ma per la pole occhio a {tip} (studio di GP Oggi sulle ultime 5 qualifiche)" if tip else "") +
-            f".\n\nE tu chi dici? Scrivilo nei commenti 👇 e vota il tuo pronostico su gpoggi.it prima delle qualifiche!\n\nÈ un'opinione basata sui numeri, non una certezza.\n\n#gpoggi {tag} #previsioni")
+    pole = f"🎯 Pole? Dal nostro studio sulle ultime 5 qualifiche occhio a {tip}\n" if tip else ""
+    return (f"{icona} {luogo}: chi sale sul PODIO? {icona}\n\n"
+            f"👑 Il nostro favorito: {f0}\n{pole}\n"
+            f"🗳️ E tu chi dici?\n"
+            f"✍️ Scrivilo nei commenti 👇\n"
+            f"📲 Vota il tuo pronostico su gpoggi.it PRIMA delle qualifiche!\n\n"
+            f"🔗 gpoggi.it → Giochi\n"
+            f"👥 Segui @gp.oggi\n\n"
+            f"ℹ️ Opinione basata sui numeri, non una certezza.\n\n"
+            f"#gpoggi {tag} #previsioni #podio #pole")
 
 
 async def componi(scene, uscita, velocita=None, rapido=False):

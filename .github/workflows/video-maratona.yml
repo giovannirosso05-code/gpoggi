@@ -35,6 +35,8 @@ jobs:
         run: pip install -r requirements.txt edge-tts playwright
       - if: steps.sc.outputs.attivo == 'si'
         run: python -m playwright install --with-deps chromium
+      - if: steps.sc.outputs.attivo == 'si'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: Video di una notizia
         if: steps.sc.outputs.attivo == 'si'
         env:
@@ -80,6 +82,8 @@ jobs:
         run: pip install -r requirements.txt edge-tts playwright
       - if: steps.sc.outputs.attivo == 'si'
         run: python -m playwright install --with-deps chromium
+      - if: steps.sc.outputs.attivo == 'si'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: Partita registrata e invio
         if: steps.sc.outputs.attivo == 'si'
         env:

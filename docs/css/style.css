@@ -1153,8 +1153,10 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 @media (min-width: 701px) {
   .hero2-lato, .hero2-lato.f1, .hero2-lato.moto { min-height: 640px; background: #101014; overflow: hidden; }
   .hero2.uno .hero2-lato { min-height: 600px; }
-  .hero2-lato::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 58%; background: var(--foto, none) center 16% / cover; }
-  .hero2-lato::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(16, 16, 20, 0) 0%, rgba(16, 16, 20, 0) 36%, rgba(16, 16, 20, .88) 58%, rgba(16, 16, 20, .98) 78%); }
+  .hero2-lato::before { content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 50%; background: var(--foto, none) center 14% / cover no-repeat; -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 38%); mask-image: linear-gradient(90deg, transparent 0%, #000 38%); }
+  .hero2-lato::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(16, 16, 20, .8) 0%, rgba(16, 16, 20, 0) 40%); }
+  .hero2.uno .hero2-lato { min-height: 520px; }
+  .hero2-lato.moto { border-left-color: var(--moto-blu) !important; }
   .hero2-lato > * { z-index: 1; }
 }
 

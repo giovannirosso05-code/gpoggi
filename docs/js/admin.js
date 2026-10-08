@@ -25,13 +25,14 @@ const chiaveMoto = (nome) => "m" + nome.replace(/\W/g, "").slice(0, 38);
 const quando = (ts) => new Date(ts).toLocaleString("it-IT", { timeZone: "Europe/Rome", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
 
 async function carica() {
-  const [eventi, roster, motoCl, motoGare, orari] = await Promise.all([
+  const [eventi, roster, motoCl, motoGare, orari, motoCal] = await Promise.all([
     fetchJSON("data/events.json"), fetchJSON("data/roster.json"), fetchJSON("data/motogp-classifica.json").catch(() => ({ piloti: [] })),
-    fetchJSON("data/motogp-gare.json").catch(() => ({})), fetchJSON("data/gara-orari.json").catch(() => ({}))]);
+    fetchJSON("data/motogp-gare.json").catch(() => ({})), fetchJSON("data/gara-orari.json").catch(() => ({})), fetchJSON("data/motogp.json").catch(() => ({ weekend: [] }))]);
   const nomiF1 = Object.fromEntries(roster.filter((p) => p.nome).map((p) => [String(p.numero), p.nome]));
   const nomiMoto = Object.fromEntries((motoCl.piloti || []).map((p) => [String(p.numero), p.nome]));
   const gare = {};
   for (const g of eventi) gare[String(g.id)] = { serie: "F1", nome: g.nome, ev: g };
+  for (const w of motoCal.weekend || []) gare[chiaveMoto(w.nome)] = { serie: "MotoGP", nome: w.nome, moto: null };
   for (const n of Object.keys(motoGare)) gare[chiaveMoto(n)] = { serie: "MotoGP", nome: n, moto: motoGare[n] };
   return { nomiF1, nomiMoto, gare, orari };
 }
@@ -47,7 +48,7 @@ async function podioVero(d, chiaveGara) {
       return { vero: sess.risultati.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos).map((r) => String(r.numero)), inizio: new Date(sess.inizio).getTime() };
     } catch (e) { return null; }
   }
-  const righe = (g.moto.classifiche || {}).MotoGP;
+  const righe = g.moto && (g.moto.classifiche || {}).MotoGP;
   if (!righe || !righe.length) return null;
   return { vero: righe.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos).map((r) => String(r.numero)), inizio: d.orari[chiaveGara] ? new Date(d.orari[chiaveGara]).getTime() : new Date(g.moto.data + "T23:59:59Z").getTime() };
 }
@@ -96,7 +97,11 @@ async function mostra() {
   const futuri = [];
   for (const v of tutti) { if (!(await podioVero(d, v.gp))) futuri.push(v); }
   futuri.sort((a, b) => a.gp.localeCompare(b.gp) || a.ts - b.ts);
-  $("t-voti").innerHTML = futuri.length ? `<thead><tr><th>Gara</th><th>Nickname</th><th>Podio</th><th>Ora</th></tr></thead><tbody>${futuri.map((v) => `<tr><td>${esc(nomeGara(v.gp))}</td><td><b>${esc(v.nick)}</b></td><td>${v.podio.map((n) => esc(nomePil(v.gp, n))).join(", ")}</td><td>${quando(v.ts)}</td></tr>`).join("")}</tbody>` : `<tbody><tr><td class="muted">Nessun voto per gare future.</td></tr></tbody>`;
+  const emailDi = {};
+  await Promise.all([...new Set(futuri.map((v) => v.nick))].map(async (n) => {
+    try { emailDi[n] = ((await api("/vincitore", { nick: n })).email || []).map((e) => e.email).find(Boolean) || null; } catch (e) { emailDi[n] = null; }
+  }));
+  $("t-voti").innerHTML = futuri.length ? `<thead><tr><th>Gara</th><th>Nickname</th><th>Email</th><th>Podio</th><th>Ora</th></tr></thead><tbody>${futuri.map((v) => `<tr><td>${esc(nomeGara(v.gp))}</td><td><b>${esc(v.nick)}</b></td><td>${emailDi[v.nick] ? esc(emailDi[v.nick]) : '<span class="muted">nessuna</span>'}</td><td>${v.podio.map((n) => esc(nomePil(v.gp, n))).join(", ")}</td><td>${quando(v.ts)}</td></tr>`).join("")}</tbody>` : `<tbody><tr><td class="muted">Nessun voto per gare future.</td></tr></tbody>`;
 }
 
 async function entra() {

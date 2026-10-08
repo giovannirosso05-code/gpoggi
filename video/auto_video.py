@@ -93,30 +93,195 @@ def testo_notizia(a, nome):
     titolo = re.sub(r"\b(ADUO\d?|DRS|ERS|KERS|MGU)\b", lambda m: " ".join(m.group(1)), a["titolo"])  # le sigle si leggono lettera per lettera
     return f"{titolo}. Fonte: {a['fonte']}. Il link all'articolo completo è nella descrizione. Tutte le notizie su G P Oggi punto it."
 
-def pagine_previsioni():
-    pron = json.load(open(DATA / "pronostici.json")); ro = {p["nome"]: p for p in json.load(open(DATA / "roster.json"))}
-    fm = json.load(open(DATA / "foto-motogp.json")); out = []
-    for chiave, sigla, colore in (("f1", "Formula 1", ROSSO), ("motogp", "MotoGP", BLU)):
-        p = pron.get(chiave)
-        if not p or not p.get("favoriti"): continue
-        top = p["favoriti"][:3]
-        d = datetime.fromisoformat(p["gara"]).astimezone(ROMA)
-        foto = (ro.get(top[0]["nome"], {}).get("foto") if chiave == "f1" else fm.get(top[0].get("id")))
-        righe = "".join(f"<div style='display:flex;align-items:center;gap:22px;padding:14px 0;border-bottom:2px solid #26262e'><span style='font:700 64px Oswald;color:{colore};width:60px'>{i}</span>"
-                        f"<div style='flex:1'><div style='font:700 46px Oswald;text-transform:uppercase'>{esc(f['nome'])}</div><div style='font:500 28px Inter;color:#b6b5bd'>{esc(f['team'])} · {esc(f['motivi'][0] if f.get('motivi') else '')}</div></div>"
-                        f"<b style='font:700 54px Oswald'>{f['indice']}</b></div>" for i, f in enumerate(top, 1))
-        corpo = (f"<span class=pill style='top:800px;background:{colore}'>{sigla} · il pronostico</span>"
-                 f"<h1 style='position:absolute;left:70px;right:70px;top:858px;margin:0;font:700 66px/1 Oswald;text-transform:uppercase'>{esc(p['gp'])}</h1>"
-                 f"<div style='position:absolute;left:70px;right:70px;top:942px;font:500 32px Inter;color:#c9c9d2'>Gara {GIORNI[d.weekday()]} {d.day} {MESI[d.month-1]} · indice da 0 a 100</div>"
-                 f"<div style='position:absolute;left:70px;right:70px;top:1010px'>{righe}</div>"
-                 f"<div style='position:absolute;left:70px;right:70px;top:1470px;font:500 28px Inter;color:#8a8a96'>Opinione di GP Oggi basata sui numeri (forma, classifica, circuito), non una previsione ufficiale. Tu chi dici? Gioca sul sito.</div>")
-        a = ", ".join(f"{f['nome']} con indice {f['indice']}" for f in top)
-        voce = (f"Il pronostico di G P Oggi per il {p['gp']}, gara {GIORNI[d.weekday()]} {it(d.day)} {MESI[d.month-1]}. " +
-                f"I tre favoriti: {a}. È un indice che mette insieme la forma, la classifica e il risultato sullo stesso circuito. È un'opinione, non una certezza: tu chi dici? Fai il tuo pronostico su G P Oggi punto it.")
-        out.append((cornice(corpo, colore, foto), voce))
-    return out
+ORD = "zero primo secondo terzo quarto quinto sesto settimo ottavo nono decimo undicesimo dodicesimo tredicesimo quattordicesimo quindicesimo sedicesimo diciassettesimo diciottesimo diciannovesimo ventesimo".split()
+ANNO = datetime.now(ROMA).year
 
-async def componi(scene, uscita, velocita=None):
+
+def _num(t, m=0):
+    r = re.search(r"\d+", t or ""); return int(r.group()) if r else 0
+
+
+def analisi_motivi(f):
+    """Dai motivi del sito ricava le frasi: cosa fa bene (si) e cosa no (no), sia a voce sia a schermo."""
+    si, no, circ = [], [], None
+    for m in f.get("motivi", []):
+        n = _num(m)
+        if "vittori" in m and "ultime" in m:
+            si.append((f"ha vinto {'una' if n == 1 else it(n)} delle ultime cinque gare", f"{n} {'vittoria' if n == 1 else 'vittorie'} nelle ultime 5 gare", "vit"))
+        elif "podi" in m and "ultime" in m:
+            si.append((f"è salito {it(n)} volte sul podio nelle ultime cinque gare", f"{n} podi nelle ultime 5 gare", "podi"))
+        elif "campionato" in m:
+            pt = re.search(r"\((\d+)", m); pt = pt.group(1) if pt else ""
+            si.append((("è primo nel mondiale" if n == 1 else f"è {ORD[min(n, 20)]} nel mondiale") + (f" con {pt} punti" if pt else ""), f"{n}° nel campionato ({pt} punti)" if pt else f"{n}° nel campionato", "camp"))
+        elif re.search(r"\b20\d\d:\s*\d+", m):
+            anno = int(re.search(r"\b(20\d\d)", m).group(1)); pos = int(re.search(r":\s*(\d+)", m).group(1))
+            quando = "l'anno scorso" if anno == ANNO - 1 else f"nel {anno}"
+            circ = (pos, quando, f"Qui {anno}: {pos}°")
+    return si, circ
+
+
+def dati_motivi(f):
+    d = {"camp": None, "vit": 0, "podi": 0, "circ": None}
+    for m in f.get("motivi", []):
+        n = _num(m)
+        if "vittori" in m and "ultime" in m: d["vit"] = n
+        elif "podi" in m and "ultime" in m: d["podi"] = n
+        elif "campionato" in m: d["camp"] = n
+        elif re.search(r"\b20\d\d:\s*\d+", m):
+            anno = int(re.search(r"\b(20\d\d)", m).group(1)); d["circ"] = (int(re.search(r":\s*(\d+)", m).group(1)), anno == ANNO - 1)
+    return d
+
+
+cognome = lambda nome: nome.split()[-1]
+
+
+def studio_pole(chiave):
+    """Chi ha preso la pole nelle ultime cinque qualifiche (dati del sito): [(nome, pole)] dal più frequente, e il nome da tenere d'occhio."""
+    poli = []
+    if chiave == "f1":
+        gare = []
+        for f in (DATA / "gare").glob("*.json"):
+            d = json.load(open(f)); q = next((x for x in d["sessioni"] if x["nome"] == "Qualifiche" and x.get("risultati")), None)
+            if q: gare.append((d["inizio"], q["risultati"][0]["nome"]))
+        poli = [n for _, n in sorted(gare)[-5:]]
+    else:
+        m = json.load(open(DATA / "motogp-gare.json")); gare = []
+        for g in m.values():
+            r = next((x for x in (g.get("classifiche") or {}).get("MotoGP", []) if x.get("griglia") == 1), None)
+            if r: gare.append((g.get("inizio") or g.get("data"), r["nome"]))
+        poli = [n for _, n in sorted(gare)[-5:]]
+    if not poli: return [], None
+    conta = {}
+    for n in poli: conta[n] = conta.get(n, 0) + 1
+    ordine = sorted(conta.items(), key=lambda kv: (-kv[1], -max(i for i, n in enumerate(poli) if n == kv[0])))
+    return ordine, ordine[0][0]
+
+
+def foto_per_nome(nome, chiave):
+    if chiave == "f1":
+        return next((p.get("foto") for p in json.load(open(DATA / "roster.json")) if p["nome"] == nome), None)
+    return json.load(open(DATA / "foto-motogp.json")).get("nome:" + nome)
+
+
+def chiusura_voti(p, chiave):
+    """Orario in cui si chiude il voto (inizio delle qualifiche): ("sabato alle quindici", "SABATO 15:00")."""
+    orari = json.load(open(DATA / "gara-orari.json"))
+    if chiave == "f1":
+        gara_id = next((g["id"] for g in json.load(open(DATA / "events.json")) if g["nome"] == p["gp"]), None)
+        k = f"q:{gara_id}"
+    else:
+        k = "q:m" + re.sub(r"\W", "", p["gp"])
+    if k not in orari: return None, None
+    d = datetime.fromisoformat(orari[k]).astimezone(ROMA)
+    ora = f"alle {it(d.hour)}" + (f" e {it(d.minute)}" if d.minute else "")
+    return f"{GIORNI[d.weekday()]} {ora}", f"{GIORNI[d.weekday()]} {d:%H:%M}".upper()
+
+
+def scene_previsione(chiave):
+    pron = json.load(open(DATA / "pronostici.json")); p = pron.get(chiave)
+    if not p or not p.get("favoriti"): return []
+    colore, sigla = (ROSSO, "Formula 1") if chiave == "f1" else (BLU, "MotoGP")
+    fav = p["favoriti"][:3]; f0 = fav[0]
+    luogo = re.sub(r"^(Gran Premio (di|del|dello|della|d')\s*|GP )", "", p["gp"]).strip()
+    foto0 = foto_per_nome(f0["nome"], chiave)
+    si, circ = analisi_motivi(f0)
+    # --- scena 1: il favorito, perché sì e perché no
+    parole_si = [t for t, _, c in sorted(si[:2], key=lambda x: x[2] != "camp")]
+    no_voce = no_schermo = ""
+    if circ and circ[0] > 3:
+        no_voce = f" Ma {circ[1]} qui ha chiuso solo {ORD[min(circ[0], 20)]}."; no_schermo = f"Ma {circ[2].replace('Qui', 'qui')}"
+    else:
+        camp = next((x for x in si if x[2] == "camp"), None)
+        primo = next((f for f in p["favoriti"] if "1° nel campionato" in " ".join(f.get("motivi", []))), None)
+        if camp and primo and primo is not f0:
+            pt0 = _num(re.search(r"\((\d+)", next(m for m in f0["motivi"] if "campionato" in m)).group(0)); pt1 = _num(re.search(r"\((\d+)", next(m for m in primo["motivi"] if "campionato" in m)).group(0))
+            if pt1 > pt0:
+                no_voce = f" Il dubbio? In campionato {primo['nome']} è davanti di {it(pt1 - pt0)} punti."; no_schermo = f"Dubbio: {primo['nome']} è davanti di {pt1 - pt0} punti"
+    d0 = dati_motivi(f0); pezzi = []
+    if d0["camp"]: pezzi.append(("primo" if d0["camp"] == 1 else ORD[min(d0["camp"], 20)]) + " nel mondiale")
+    if d0["vit"]: pezzi.append(("una vittoria" if d0["vit"] == 1 else f"{it(d0['vit'])} vittorie") + " nelle ultime cinque")
+    elif d0["podi"]: pezzi.append(f"{it(d0['podi'])} podi nelle ultime cinque")
+    voce1 = f"{luogo}, chi sale sul podio? Per noi il favorito è {cognome(f0['nome'])}: " + ", ".join(pezzi[:2]) + "."
+    if d0["circ"] and d0["circ"][0] > 3:
+        scorso = "l'anno scorso " if d0["circ"][1] else ""
+        voce1 += f" Ma qui {scorso}solo {ORD[min(d0['circ'][0], 20)]}."
+    elif no_voce:
+        primo_ = next((f for f in p["favoriti"] if dati_motivi(f)["camp"] == 1), None)
+        if primo_ and primo_ is not f0: voce1 += f" Il dubbio: {cognome(primo_['nome'])} in campionato è davanti."
+    righe1 = "".join(f"<div style='font:500 46px Inter;color:#e8e8ee;padding:14px 0'><b style='color:#35d07f'>SÌ</b>&nbsp; {esc(s[1])}</div>" for s in si[:2])
+    if no_schermo: righe1 += f"<div style='font:500 46px Inter;color:#e8e8ee;padding:14px 0'><b style='color:#ff5a52'>NO</b>&nbsp; {esc(no_schermo)}</div>"
+    c1 = (f"<span class=pill style='top:790px;background:{colore}'>{sigla} · il favorito</span>"
+          f"<h1 style='position:absolute;left:70px;right:70px;top:850px;margin:0;font:700 96px/1 Oswald;text-transform:uppercase'>{esc(f0['nome'])}</h1>"
+          f"<div style='position:absolute;left:70px;right:70px;top:1010px;font:500 30px Inter;color:#9a9aa6'>{esc(p['gp'])}</div>"
+          f"<div style='position:absolute;left:70px;right:70px;top:1090px'>{righe1}</div>")
+    # --- scena 2: gli altri due
+    def forza(f):
+        """Una frase breve e parlata su un rivale: il risultato sul circuito, poi il mondiale (o, se non c'è altro, la forma recente)."""
+        s_, c_ = analisi_motivi(f); v, sch = [], []
+        if c_ and c_[0] <= 3:
+            v.append(f"{c_[1]} qui {'ha vinto' if c_[0] == 1 else 'è arrivato ' + ORD[c_[0]]}"); sch.append(c_[2])
+        camp = next((x for x in s_ if x[2] == "camp"), None)
+        if camp and _num(camp[1]) >= 5:
+            v.append(f"ma nel mondiale è solo {ORD[min(_num(camp[1]), 20)]}"); sch.append(camp[1])
+        elif camp and len(v) < 2:
+            v.append(camp[0]); sch.append(camp[1])
+        for x in s_:
+            if len(v) >= 2 or x is camp or (x[2] == "vit" and c_ and c_[0] == 1): continue
+            v.append(x[0]); sch.append(x[1])
+        testo = v[0] if v else ""
+        for x in v[1:]: testo += (", " if x.startswith("ma ") else " e ") + x
+        return testo.replace(" e è ", " ed è "), sch
+    v1, s1 = forza(fav[1]); v2, s2 = forza(fav[2]) if len(fav) > 2 else ("", [])
+    def breve(f):
+        d = dati_motivi(f); v = []
+        if d["circ"] and d["circ"][0] == 1: v.append("qui ha vinto")
+        elif d["circ"] and d["circ"][0] <= 3: v.append(f"{ORD[d['circ'][0]]} qui")
+        if d["camp"]:
+            v.append(("ma solo " if d["camp"] >= 5 and v else "solo " if d["camp"] >= 5 else "") + ("primo" if d["camp"] == 1 else ORD[min(d["camp"], 20)]) + " nel mondiale")
+        if d["podi"] and len(v) < 2: v.append(f"{it(d['podi'])} podi nelle ultime cinque")
+        return ", ".join(v)
+    a_ = lambda c: ("ad " if c[0] in "AEIOU" else "a ") + c
+    voce2 = f"Occhio {a_(cognome(fav[1]['nome']))}: {breve(fav[1])}." + (f" E {a_(cognome(fav[2]['nome']))}: {breve(fav[2])}." if len(fav) > 2 else "")
+    def blocco(f, sch, n):
+        return (f"<div style='padding:18px 0;border-bottom:2px solid #26262e'><div style='display:flex;align-items:center;gap:22px'><span style='font:700 72px Oswald;color:{colore};width:60px'>{n}</span>"
+                f"<div><div style='font:700 56px Oswald;text-transform:uppercase'>{esc(f['nome'])}</div><div style='font:500 28px Inter;color:#b6b5bd'>{esc(f['team'])}</div></div></div>"
+                f"<div style='font:500 34px Inter;color:#e8e8ee;margin-top:8px;padding-left:82px'>{esc(' · '.join(sch))}</div></div>")
+    foto1 = foto_per_nome(fav[1]["nome"], chiave)
+    c2 = (f"<span class=pill style='top:790px;background:{colore}'>{sigla} · occhio a loro</span>"
+          f"<div style='position:absolute;left:70px;right:70px;top:880px'>{blocco(fav[1], s1, 2)}{blocco(fav[2], s2, 3) if len(fav) > 2 else ''}</div>")
+    scene = [(cornice(c1, colore, foto0), voce1), (cornice(c2, colore, foto1), voce2)]
+    # --- scena 3: la pole, dallo studio di GP Oggi
+    ordine, tip = studio_pole(chiave)
+    if tip:
+        n = dict(ordine)[tip]
+        voce3 = f"E la pole? Dal nostro studio sulle ultime cinque qualifiche: {cognome(tip)}, " + (f"{it(n)} pole su cinque." if n > 1 else "ha preso l'ultima pole.")
+        righe3 = "".join(f"<div style='display:flex;justify-content:space-between;font:700 48px Oswald;text-transform:uppercase;padding:12px 0;border-bottom:2px solid #26262e'><span>{esc(nm)}</span><span style='color:{colore}'>{c} {'pole' if c == 1 else 'pole'}</span></div>" for nm, c in ordine[:4])
+        c3 = (f"<span class=pill style='top:790px;background:{colore}'>La pole · studio GP Oggi</span>"
+              f"<h1 style='position:absolute;left:70px;right:70px;top:850px;margin:0;font:700 90px/1 Oswald;text-transform:uppercase'>{esc(tip)}</h1>"
+              f"<div style='position:absolute;left:70px;right:70px;top:970px;font:500 30px Inter;color:#9a9aa6'>Pole nelle ultime 5 qualifiche</div>"
+              f"<div style='position:absolute;left:70px;right:70px;top:1040px'>{righe3}</div>")
+        scene.append((cornice(c3, colore, foto_per_nome(tip, chiave)), voce3))
+    # --- scena 4: tu chi dici? vai a votare
+    quando_v, quando_s = chiusura_voti(p, chiave)
+    voce4 = "E tu chi dici? Scrivilo nei commenti e vai a votare il tuo pronostico su G P Oggi punto it, prima delle qualifiche."
+    c4 = (f"<div style='position:absolute;left:70px;right:70px;top:480px;text-align:center;font:700 150px/1 Oswald;text-transform:uppercase'>Tu chi<br><span style='color:{colore}'>dici?</span></div>"
+          f"<div style='position:absolute;left:70px;right:70px;top:900px;text-align:center;font:500 46px Inter;color:#e8e8ee'>Scrivilo nei commenti 👇</div>"
+          f"<div style='position:absolute;left:90px;right:90px;top:1060px;text-align:center;background:{colore};border-radius:28px;padding:34px 20px;font:700 62px/1.1 Oswald;text-transform:uppercase'>Vota il tuo pronostico<br>su gpoggi.it</div>"
+          + (f"<div style='position:absolute;left:70px;right:70px;top:1330px;text-align:center;font:500 38px Inter;color:#ffd21f'>Si vota fino alle qualifiche<br><b>{esc(quando_s)}</b></div>" if quando_s else ""))
+    scene.append((cornice(c4, colore, None), voce4))
+    return scene
+
+
+def social_serie(chiave):
+    pron = json.load(open(DATA / "pronostici.json")); p = pron.get(chiave)
+    if not p or not p.get("favoriti"): return ""
+    luogo = re.sub(r"^(Gran Premio (di|del|dello|della|d')\s*|GP )", "", p["gp"]).strip(); f0 = p["favoriti"][0]["nome"]
+    _, tip = studio_pole(chiave); icona, tag = ("🏁", "#f1 #formula1") if chiave == "f1" else ("🏍️", "#motogp")
+    return (f"{luogo}: chi sale sul podio? {icona} Il nostro favorito è {f0}" + (f", ma per la pole occhio a {tip} (studio di GP Oggi sulle ultime 5 qualifiche)" if tip else "") +
+            f".\n\nE tu chi dici? Scrivilo nei commenti 👇 e vota il tuo pronostico su gpoggi.it prima delle qualifiche!\n\nÈ un'opinione basata sui numeri, non una certezza.\n\n#gpoggi {tag} #previsioni")
+
+
+async def componi(scene, uscita, velocita=None, rapido=False):
     """scene = [(html, testo)] -> mp4 verticale con la voce."""
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp); clip = []
@@ -131,7 +296,7 @@ async def componi(scene, uscita, velocita=None):
             dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(tmp / f"v{i}.mp3")], capture_output=True, text=True).stdout)
             c = tmp / f"c{i}.mp4"
             subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-framerate", "30", "-i", str(tmp / f"s{i}.png"), "-i", str(tmp / f"v{i}.mp3"),
-                            "-af", "adelay=400:all=1,apad=pad_dur=0.9,loudnorm=I=-14:TP=-1.5:LRA=9", "-t", f"{dur + 1.3:.2f}", "-c:v", "libx264", "-tune", "stillimage", "-crf", "21",
+                            "-af", f"adelay={150 if rapido else 400}:all=1,apad=pad_dur={0.25 if rapido else 0.9},loudnorm=I=-14:TP=-1.5:LRA=9", "-t", f"{dur + (0.55 if rapido else 1.3):.2f}", "-c:v", "libx264", "-tune", "stillimage", "-crf", "21",
                             "-pix_fmt", "yuv420p", "-r", "30", "-c:a", "aac", "-b:a", "160k", "-ar", "44100", str(c)], check=True)
             clip.append(f"file '{c}'")
         (tmp / "l.txt").write_text("\n".join(clip))
@@ -199,17 +364,24 @@ def main():
         social = social_notizia(n)
         did = f"📰 {n['titolo']}\n\nFonte: {n['fonte']}\nArticolo: {n['url']}\n\n🏁 Tutte le notizie: https://gpoggi.it\n\n#{'MotoGP' if n['serie']=='MotoGP' else 'F1'} #gpoggi"
     else:
-        scene = pagine_previsioni()
-        if not scene: print("Nessun pronostico disponibile."); return
-        social = social_previsioni()
-        did = "🔮 Il pronostico di GP Oggi per il prossimo weekend: F1 e MotoGP.\nUn'opinione basata sui numeri, non una certezza. Tu chi dici? Fai il tuo pronostico: https://gpoggi.it/giochi.html\n\n#F1 #MotoGP #gpoggi"
+        # un video per serie: F1 e MotoGP separati, ciascuno con favorito, rivali, pole e invito al voto
+        fatti = 0
+        for chiave in ("f1", "motogp"):
+            scene = scene_previsione(chiave)
+            if not scene: continue
+            uscita = a.uscita.with_name(f"{a.uscita.stem}-{chiave}{a.uscita.suffix}")
+            social = social_serie(chiave)
+            did = social.split("\n\n")[0] + "\n\nVota il tuo pronostico: https://gpoggi.it/giochi.html?gioco=pronostico" + ("&serie=moto" if chiave == "motogp" else "") + "\n\n#gpoggi " + ("#MotoGP" if chiave == "motogp" else "#F1")
+            asyncio.run(componi(scene, uscita, VELOCITA_NOTIZIE, rapido=True)); print("Video:", uscita)
+            if a.invia and invia(uscita, did): invia_testo(social); fatti += 1
+        if a.invia and fatti:
+            stato["previsioni"] = datetime.now(ROMA).strftime("%Y-%m-%d"); STATO.write_text(json.dumps(stato, ensure_ascii=False, indent=1)); print("Inviato.")
+        if not fatti and not a.invia: print("Video pronti.")
+        return
     asyncio.run(componi(scene, a.uscita, VELOCITA_NOTIZIE if a.cosa == "notizia" else None)); print("Video:", a.uscita)
     if a.invia and invia(a.uscita, did):
         invia_testo(social)
-        if a.cosa == "notizia":
-            stato.setdefault("notizie", []).insert(0, n["url"]); stato["notizie"] = stato["notizie"][:400]; stato["ultima_serie"] = n["serie"]
-        else:
-            stato["previsioni"] = datetime.now(ROMA).strftime("%Y-%m-%d")
+        stato.setdefault("notizie", []).insert(0, n["url"]); stato["notizie"] = stato["notizie"][:400]; stato["ultima_serie"] = n["serie"]
         STATO.write_text(json.dumps(stato, ensure_ascii=False, indent=1)); print("Inviato.")
 
 if __name__ == "__main__":

@@ -29,10 +29,10 @@ def api(**p):
     return {}
 
 
-def cerca(nome):
+def cerca(nome, extra=()):
     cogn = norm(nome).split()[-1]
     titoli = []
-    for q in (nome, f"{nome} 2025", f"{nome} press conference"):
+    for q in (nome, f"{nome} 2025", f"{nome} press conference", *extra):
         for x in api(action="query", list="search", srsearch=q, srnamespace=6, srlimit=40).get("query", {}).get("search", []):
             t = x["title"]
             if cogn in norm(t) and not ESCLUDI.search(t) and t not in titoli and t.lower().endswith((".jpg", ".jpeg")):
@@ -70,8 +70,9 @@ def main():
     LAVORO.mkdir(exist_ok=True)
     cmd, args = sys.argv[1], sys.argv[2:]
     if cmd == "cerca":
-        for nome in args:
-            lista = cerca(nome)
+        extra = [a[4:] for a in args if a.startswith("--q=")]  # ricerche in più: --q="Lewis Hamilton Ferrari 2025"
+        for nome in [a for a in args if not a.startswith("--q=")]:
+            lista = cerca(nome, extra)
             (LAVORO / f"{norm(nome).replace(' ', '_')}.json").write_text(json.dumps(lista, ensure_ascii=False, indent=1))
             if lista:
                 foglio(nome, lista)

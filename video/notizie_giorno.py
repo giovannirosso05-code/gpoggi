@@ -133,7 +133,7 @@ Rispondi SOLO con un oggetto JSON valido con le chiavi: hook_voce, hook_titolo, 
 
 
 def chiedi_modello(a, testo, nomi, predefiniti):
-    chiave = os.environ.get("ANTHROPIC_API_KEY")
+    chiave = (os.environ.get("ANTHROPIC_API_KEY") or "").strip()
     if not chiave:
         raise RuntimeError("ANTHROPIC_API_KEY mancante")
     utente = (f"Serie: {a['serie']}\nFonte: {a['fonte']}\nTitolo: {a['titolo']}\n\nTesto dell'articolo:\n{testo}\n\n"

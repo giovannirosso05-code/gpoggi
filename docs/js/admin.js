@@ -120,6 +120,19 @@ async function mostra() {
   $("t-voti-moto").innerHTML = tabellaVoti(futuri.filter((v) => v.gp.startsWith("m")));
 }
 
+// Consigli lasciati dai visitatori con "Aiutaci a migliorare" e nella pagina Consigli
+async function mostraConsigli() {
+  try {
+    const j = await api("/consigli-admin");
+    const tipi = { funzione: "Funzione nuova", errore: "Errore", altro: "Altro" };
+    $("n-consigli").textContent = j.totale ? `${j.totale} ${j.totale === 1 ? "consiglio" : "consigli"} (si cancellano da soli dopo 90 giorni). Qui gli ultimi ${j.consigli.length}.` : "Ancora nessun consiglio.";
+    $("t-consigli").innerHTML = j.consigli.length ? `<thead><tr><th>Quando</th><th>Tipo</th><th>Pagina</th><th>Testo</th></tr></thead><tbody>${j.consigli.map((c) => {
+      const m = /^\[([^\]]+)\]\s*/.exec(c.testo || ""), pagina = m ? m[1] : "consigli.html", testo = m ? c.testo.slice(m[0].length) : c.testo || "";
+      return `<tr><td style="white-space:nowrap">${esc(new Date(c.quando).toLocaleString("it-IT", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }))}</td><td>${esc(tipi[c.tipo] || c.tipo || "")}</td><td>${esc(pagina)}</td><td style="white-space:normal">${esc(testo)}</td></tr>`;
+    }).join("")}</tbody>` : "";
+  } catch (e) { $("n-consigli").textContent = "Per vedere i consigli reincolla il Worker aggiornato in Cloudflare."; }
+}
+
 async function entra() {
   $("err").textContent = "";
   chiave = $("chiave").value.trim() || chiave;
@@ -127,6 +140,7 @@ async function entra() {
     await api("/sospetti");
     try { sessionStorage.setItem("adm-k", chiave); } catch (e) {}
     $("login").hidden = true; $("pannello").hidden = false;
+    mostraConsigli();
     await mostra();
   } catch (e) { $("err").textContent = e.message; $("login").hidden = false; $("pannello").hidden = true; }
 }

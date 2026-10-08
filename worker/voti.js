@@ -125,6 +125,21 @@ export default {
       }
       return json({ voti });
     }
+    if (req.method === "GET" && url.pathname === "/consigli-admin") {
+      // Solo per chi gestisce il sito: gli ultimi consigli dei visitatori (i più recenti per primi). Serve ADMIN_KEY.
+      if (!chiaveOk(url, env)) return new Response("non trovato", { status: 404 });
+      const chiavi = [];
+      let cursor;
+      for (let i = 0; i < 5; i++) {
+        const r = await env.VOTI.list({ prefix: "consiglio:", cursor, limit: 1000 });
+        chiavi.push(...r.keys.map((k) => k.name));
+        if (r.list_complete) break;
+        cursor = r.cursor;
+      }
+      const ultimi = chiavi.sort().reverse().slice(0, 100);
+      const consigli = await Promise.all(ultimi.map(async (k) => ({ quando: k.split(":").slice(1, -1).join(":"), ...JSON.parse((await env.VOTI.get(k)) || "{}") })));
+      return json({ consigli, totale: chiavi.length });
+    }
     if (req.method === "GET" && url.pathname === "/ripristina") {
       // Solo per chi gestisce il sito: "password dimenticata". Dà al giocatore un NUOVO codice di recupero e sposta lì i suoi punti.
       // Prima controlla che chi scrive sia davvero il titolare (la mail deve essere quella salvata: vedi /vincitore). Uso: /ripristina?k=CHIAVE&nick=NICKNAME

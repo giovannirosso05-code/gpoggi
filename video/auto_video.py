@@ -16,7 +16,7 @@ import requests
 from playwright.async_api import async_playwright
 
 CA = "/root/.ccr/ca-bundle.crt"
-if Path(CA).exists():
+if os.path.exists(CA):
     C._SSL_CTX = ssl.create_default_context(cafile=CA)
 QUI = Path(__file__).parent; ROOT = QUI.parent; SITO = ROOT / "docs"; DATA = SITO / "data"; FONT = QUI / "logo" / "font"
 STATO = ROOT / "video_stato.json"

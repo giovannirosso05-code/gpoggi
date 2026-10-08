@@ -8,6 +8,7 @@ Viewport 360x640 a densita' 3 = esattamente 1080x1920.
 Uso:  python3 demo_sito.py [--prova] [--uscita FILE]
   --prova  esegue solo le azioni sul sito (senza voce ne' video) per controllare che tutti i tocchi funzionino.
 """
+import os
 import argparse
 import asyncio
 import base64
@@ -25,7 +26,9 @@ import edge_tts.communicate as C
 import requests
 from playwright.async_api import async_playwright
 
-C._SSL_CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
+_CA = "/root/.ccr/ca-bundle.crt" if os.path.exists("/root/.ccr/ca-bundle.crt") else True
+if _CA is not True:
+    C._SSL_CTX = ssl.create_default_context(cafile=_CA)
 QUI = Path(__file__).parent
 SITO = QUI.parent / "docs"
 FONT = QUI / "logo" / "font"
@@ -346,7 +349,7 @@ async def _esterna(route):
     if url not in _CACHE:
         def scarica():
             try:
-                x = requests.get(url, headers={"User-Agent": _UA}, timeout=20, verify="/root/.ccr/ca-bundle.crt")
+                x = requests.get(url, headers={"User-Agent": _UA}, timeout=20, verify=_CA)
                 return x.status_code, x.headers.get("content-type", "application/octet-stream"), x.content
             except requests.RequestException:
                 return None

@@ -12,13 +12,14 @@ Per spostare la foto nel riquadro si può aggiungere "pos": "0%" (0% = parte alt
 Nel testo: *parole* = gialle, [parole] = nel colore della serie (nomi). Ogni fatto deve venire dall'articolo, raccontato con parole proprie.
 Le foto dei piloti sono quelle con licenza libera del sito (docs/img), con il credito scritto nel video.
 """
+import os
 import asyncio, base64, html, json, re, ssl, subprocess, sys, tempfile
 from pathlib import Path
 
 import edge_tts, edge_tts.communicate as C
 from playwright.async_api import async_playwright
 
-if Path("/root/.ccr/ca-bundle.crt").exists():
+if os.path.exists("/root/.ccr/ca-bundle.crt"):
     C._SSL_CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
 QUI = Path(__file__).parent; SITO = QUI.parent / "docs"; DATA = SITO / "data"; FONT = QUI / "logo" / "font"
 W, H = 1080, 1920

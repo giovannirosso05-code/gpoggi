@@ -6,6 +6,7 @@ Tutti i dati vengono dal sito (docs/data): nessun testo da scrivere a mano, quin
   python3 gioco.py circuito [--nome "Gran Premio di Singapore"] [--uscita FILE]          Indovina il circuito (mappa sfocata, senza scritte)
 Senza --nome sceglie in base al giorno (a rotazione). Scrive anche FILE.json con risposta e didascalia.
 """
+import os
 import argparse, asyncio, base64, io, json, re, ssl, subprocess, sys, tempfile
 from datetime import date, datetime
 from pathlib import Path
@@ -14,7 +15,7 @@ import edge_tts, edge_tts.communicate as C
 from PIL import Image, ImageFilter
 from playwright.async_api import async_playwright
 
-if Path("/root/.ccr/ca-bundle.crt").exists():
+if os.path.exists("/root/.ccr/ca-bundle.crt"):
     C._SSL_CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
 QUI = Path(__file__).parent; SITO = QUI.parent / "docs"; DATA = SITO / "data"; FONT = QUI / "logo" / "font"
 W, H = 1080, 1920

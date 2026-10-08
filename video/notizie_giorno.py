@@ -24,7 +24,7 @@ DATA = ROOT / "docs" / "data"
 STATO = ROOT / "video_stato.json"
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"}
 MODELLO = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-5-5")
-CA = "/root/.ccr/ca-bundle.crt" if Path("/root/.ccr/ca-bundle.crt").exists() else True
+CA = "/root/.ccr/ca-bundle.crt" if os.path.exists("/root/.ccr/ca-bundle.crt") else True
 norm = lambda s: re.sub(r"[^a-z0-9 ]", " ", unicodedata.normalize("NFD", s or "").encode("ascii", "ignore").decode().lower())
 
 POSITIVE = ["ufficial", "annunci", "penalizz", "lite", "polemic", "contratt", "mercato", "rinnov", "lascia", "sostitu", "squalific", "multa", "incident", "infortun", "ritir", "ripesca",

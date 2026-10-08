@@ -412,7 +412,7 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
     for (const x of lista) (perGp[x.gp] ||= []).push(x);
     // se sul telefono risulta "votato" ma il voto non è arrivato online (per esempio un salvataggio andato male), si riapre il modulo
     const mioNick = (leggi("pron-nome") || "").toLowerCase(), salvaBtn = document.getElementById("salva");
-    const mioVoto = pr && tutti[pr.chiave];
+    const mioVoto = pr && salvati()[pr.chiave];
     if (salvaBtn && mioVoto && mioNick) {
       const m = document.getElementById("msg");
       if (!(perGp[pr.chiave] || []).some((x) => String(x.nick).toLowerCase() === mioNick)) {

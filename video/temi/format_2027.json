@@ -23,7 +23,11 @@
     "Decidono team e organizzazione, non i piloti",
     "Per lui il programma di oggi bastava"
    ],
-   "voce": "Marquez è scettico: decidono team e organizzazione. O accetti, o te ne vai."
+   "voce": "Marquez è scettico: decidono team e organizzazione. O accetti, o te ne vai.",
+   "foto_extra": {
+    "file": "img/foto-extra/mm_7f324018.jpg",
+    "credito": "Foto: TeamEG00 · Public domain · via Wikimedia Commons"
+   }
   },
   {
    "tipo": "pilota",

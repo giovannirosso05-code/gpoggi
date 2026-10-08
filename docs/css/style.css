@@ -909,6 +909,7 @@ a.ag-risultati { display: inline-block; text-decoration: none; text-align: cente
   .hero2-lato.f1 { border-bottom: 5px solid #e8352f; }
   .hero2-lato.moto { border-bottom: 5px solid #fff; }
   .hero2.uno { gap: 0; }
+  .hero2.uno .hero2-lato { min-height: 470px; }
   .prono-griglia { gap: 22px; }
   .ultime-gare { gap: 22px; }
   .prono-col, .ultima-gara { border-radius: 14px; }

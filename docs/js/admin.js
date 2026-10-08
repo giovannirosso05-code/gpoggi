@@ -168,7 +168,6 @@ $("b-rip").addEventListener("click", async () => {
     const j = await api("/ripristina", { nick });
     scrivi("o-rip", `Nickname: ${j.nickname}\nNuovo codice: ${j.codice}\nEmail salvata: ${email || "nessuna (senza email non puoi verificare che sia davvero lui)"}\n\nMandagli il codice a quell'email. Lo inserisce nel gioco in «Hai già giocato da un altro telefono?» insieme al nickname.`);
   } catch (e) { scrivi("o-rip", e.message); }
-}); scrivi("o-rip", `Nickname: ${j.nickname}\nNuovo codice: ${j.codice}\n\nScrivi questo codice all'email salvata. Lui lo inserisce in "Riprendi il tuo nickname" con il nickname.`); } catch (e) { scrivi("o-rip", e.message); }
 });
 $("b-svin").addEventListener("click", async () => {
   const em = $("q-svin").value.trim();

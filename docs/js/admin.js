@@ -79,7 +79,7 @@ async function mostra() {
     const r = await podioVero(d, k);
     if (!r) continue;
     for (const x of perGp[k]) {
-      if (!x.podio || x.ts > r.inizio) continue;
+      if (!x.podio || x.ts > (r.qInizio || r.inizio)) continue;
       const o = (classifica[x.nick] ||= { nick: x.nick, f1: 0, mo: 0, gare: 0 });
       o[d.gare[k].serie === "F1" ? "f1" : "mo"] += punti(x, r);
       o.gare++;

@@ -252,10 +252,12 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
   const nomeDi = (s, n) => (s.piloti.find((p) => p.n === String(n)) || {}).nome || "n.d.";
   const pr = S.prossimo;
   const quando = (d) => new Date(d).toLocaleString("it-IT", { weekday: "long", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Rome" });
-  const aperto = pr && pr.inizio && new Date(pr.inizio) > new Date();
   const orariG = await caricaOrari();
   const qInizio = pr && orariG["q:" + pr.chiave];
-  const poleAperta = !qInizio || new Date(qInizio) > new Date();
+  // tutto il pronostico (podio, pole, giro veloce) si chiude all'inizio delle qualifiche, così nessuno copia dalla griglia
+  const chiusura = pr && (qInizio || pr.inizio);
+  const aperto = !!chiusura && new Date(chiusura) > new Date();
+  const poleAperta = aperto;
   const tutti = salvati();
   let totale = 0, righe = "";
   for (const [id, mio] of Object.entries(tutti)) {
@@ -269,7 +271,7 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
     <div class="pron-premio"><b>Premio di fine anno</b><span>Chi è primo nella classifica generale (F1 + MotoGP) il 31 dicembre 2026 vince una <b>carta regalo Amazon da 50 €</b>. Per vincere bisogna seguire <b>@gp.oggi su TikTok</b>. Gratis, senza registrazione. Premi in aggiornamento.</span>
       <details class="pron-reg"><summary>Regolamento</summary><ol>
         <li><b>Chi organizza:</b> GP Oggi, sito indipendente. Contatti: info@gpoggi.it.</li>
-        <li><b>Durata:</b> dall'8 ottobre al 31 dicembre 2026. Contano i pronostici di Formula 1 e MotoGP inviati prima della partenza di ogni gara.</li>
+        <li><b>Durata:</b> dall'8 ottobre al 31 dicembre 2026. Contano i pronostici di Formula 1 e MotoGP inviati prima dell'inizio delle qualifiche di ogni Gran Premio (per la MotoGP la Q1): da quel momento podio, pole e giro veloce non si possono più cambiare.</li>
         <li><b>Email:</b> per concorrere al premio serve inserire un'email valida al momento del pronostico. Una stessa email può essere collegata a un solo giocatore (un solo nickname e un solo codice di recupero). L'email non è pubblica, serve solo a consegnare il premio e viene cancellata dopo la consegna. Senza email si gioca e si va in classifica, ma non si può vincere.</li>
         <li><b>Partecipazione:</b> gratuita, senza acquisti né registrazione. Un solo nickname a persona. Prima di consegnare il premio GP Oggi controlla i nickname collegati tra loro (stesso dispositivo o stessa connessione) e può chiedere al vincitore di dimostrare che il nickname è il suo: chi usa più nickname o trucchi viene escluso, con tutti i suoi nickname.</li>
         <li><b>Seguirci per vincere:</b> per ricevere il premio il vincitore deve seguire il profilo TikTok <b>@gp.oggi</b> e lo dimostra con uno screenshot al momento del ritiro. In futuro potremo chiedere di seguire anche il nostro profilo Instagram: se cambia, lo scriviamo qui prima che l'iniziativa finisca.</li>
@@ -285,7 +287,7 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
     <div class="pron-doppio">Vota <span class="pd-f1">F1</span> + <span class="pd-moto">MotoGP</span><small>i punti si sommano nella stessa classifica</small></div>
     <div class="chip-serie-riga" style="display:flex;gap:8px;margin:14px 0 4px"><button class="chip-serie grande f1 ${serie === "f1" ? "attivo" : ""}" data-s="f1">Formula 1${F1.prossimo && tutti[F1.prossimo.chiave] ? " ✓" : ""}</button><button class="chip-serie grande moto ${serie === "moto" ? "attivo" : ""}" data-s="moto">MotoGP${MO.prossimo && tutti[MO.prossimo.chiave] ? " ✓" : ""}</button>${base ? `<button class="chip-serie chip-class" data-vai="classifica">Classifica</button>` : ""}</div>
     <div id="vista-voto">${pr ? `<h3 class="quiz-titolo">${esc(pr.nome)}: chi sale sul podio?</h3>
-    ${aperto ? `<p class="pron-chiusure">⏱ Si vota fino a: ${qInizio ? `pole <b>${quando(qInizio)}</b> (inizio qualifiche) · ` : ""}podio e giro veloce <b>${quando(pr.inizio)}</b> (partenza gara)</p>` : ""}
+    ${aperto ? `<p class="pron-chiusure">⏱ Si vota fino a <b>${quando(chiusura)}</b> (${qInizio ? "inizio delle qualifiche" : "partenza della gara"}): dopo non si cambia più niente</p>` : ""}
     ${aperto ? `<div class="pron-form">${[1, 2, 3].map((i) => `<label>${i}° posto<select class="sel" id="p${i}">${opz((tutti[pr.chiave] || { podio: [] }).podio[i - 1])}</select></label>`).join("")}</div>
     ${tutti[pr.chiave] && !tutti[pr.chiave].pole && !tutti[pr.chiave].giro ? `<div class="pron-nuovo"><b>Novità:</b> hai già votato, ora puoi aggiungere pole${poleAperta ? "" : " (chiusa: qualifiche iniziate)"} e giro veloce. Scegli qui sotto e premi «Salva le modifiche».</div>` : ""}
     <div class="pron-form pron-extra"><label>Pole position · <b>7 punti</b><select class="sel" id="pole" ${poleAperta ? "" : "disabled"}>${opz((tutti[pr.chiave] || {}).pole)}</select>${poleAperta ? "" : `<small class="muted" style="text-transform:none;letter-spacing:0">Chiusa: le qualifiche sono iniziate</small>`}</label>
@@ -293,9 +295,9 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
     ${base ? `<label class="pron-nome">Il tuo nickname in classifica<input type="text" id="nome" maxlength="16" autocomplete="nickname" placeholder="Per esempio Giovanni_F1" value="${esc(leggi("pron-nome") || "")}"></label>` : ""}
     ${base ? `<label class="pron-nome">Email per il premio (facoltativa)<input type="email" id="email" maxlength="80" autocomplete="email" placeholder="nome@esempio.it" value="${esc(leggi("pron-email") || "")}"></label>
     <p class="muted" style="font-size:13px;margin:-6px 0 12px">Serve solo per mandarti il premio se vinci: senza email giochi lo stesso ma non puoi vincere. Non è mai pubblica e la cancelliamo dopo la consegna. <a href="privacy.html" class="accent">Privacy</a></p>` : ""}
-    <div class="quiz-esito"><button class="quiz-avanti pron-rosso" id="salva" style="margin:0">${tutti[pr.chiave] ? "Aggiorna il pronostico" : "Salva il pronostico"}</button> <span id="msg" class="muted"></span></div><div id="poi"></div>` : `<p class="muted">Le votazioni per questo Gran Premio sono chiuse: la gara è iniziata.</p>`}
-    <div class="pron-punti"><b>Come si fanno i punti</b><ul><li>1° posto indovinato: <b>10</b> punti</li><li>2° posto indovinato: <b>5</b> punti</li><li>3° posto indovinato: <b>2</b> punti</li><li>Pilota sul podio ma in un'altra posizione: <b>1</b> punto</li><li>Podio completo esatto: <b>+5</b></li><li>Pole position indovinata: <b>7</b> punti (si sceglie prima che inizino le qualifiche)</li><li>Giro più veloce in gara indovinato: <b>1</b> punto</li></ul><span class="muted">Massimo 30 punti per Gran Premio. </span>
-    <span class="muted">Il pronostico si può cambiare fino all'inizio della gara. La classifica si aggiorna dopo ogni gara.</span></div>` : `<p class="muted">Nessun Gran Premio ${S.etichetta} in programma.</p>`}
+    <div class="quiz-esito"><button class="quiz-avanti pron-rosso" id="salva" style="margin:0">${tutti[pr.chiave] ? "Aggiorna il pronostico" : "Salva il pronostico"}</button> <span id="msg" class="muted"></span></div><div id="poi"></div>` : `<p class="muted">Le votazioni per questo Gran Premio sono chiuse: sono iniziate le qualifiche.</p>`}
+    <div class="pron-punti"><b>Come si fanno i punti</b><ul><li>1° posto indovinato: <b>10</b> punti</li><li>2° posto indovinato: <b>5</b> punti</li><li>3° posto indovinato: <b>2</b> punti</li><li>Pilota sul podio ma in un'altra posizione: <b>1</b> punto</li><li>Podio completo esatto: <b>+5</b></li><li>Pole position indovinata: <b>7</b> punti </li><li>Giro più veloce in gara indovinato: <b>1</b> punto</li></ul><span class="muted">Massimo 30 punti per Gran Premio. </span>
+    <span class="muted">Il pronostico si può cambiare fino all'inizio delle qualifiche: da quel momento è chiuso tutto, podio compreso. La classifica si aggiorna dopo ogni gara.</span></div>` : `<p class="muted">Nessun Gran Premio ${S.etichetta} in programma.</p>`}
     ${base ? `<div class="pron-invito"><b>La classifica è appena partita: tutti da zero.</b> Ogni Gran Premio vale fino a 30 punti e ogni weekend ci sono due gare, una di Formula 1 e una di MotoGP. Chi le vota tutte e due fa punti il doppio più in fretta.</div>` : ""}
     ${righe ? `<h3 class="quiz-titolo" style="margin-top:20px">I tuoi pronostici ${S.etichetta}</h3><div class="table-wrap"><table class="results"><thead><tr><th>Gran Premio</th><th>Il tuo podio</th><th>Podio vero</th><th>Punti</th></tr></thead><tbody>${righe}</tbody></table></div>` : ""}
     ${base ? boxRecupero() : ""}</div>
@@ -322,7 +324,7 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
   if (vaiClass) vaiClass.addEventListener("click", () => mostraVista(true));
   if (vista === "classifica") mostraVista(true);
   const salva = document.getElementById("salva");
-  // dopo il voto il modulo resta bloccato: per cambiarlo (fino al via della gara) si tocca «Cambia il voto»
+  // dopo il voto il modulo resta bloccato: per cambiarlo (fino all'inizio delle qualifiche) si tocca «Cambia il voto»
   const campi = () => box.querySelectorAll("#vista-voto .pron-form select, #nome, #email");
   const blocca = () => {
     campi().forEach((el) => { el.disabled = true; });
@@ -346,7 +348,7 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
   if (salva) salva.addEventListener("click", async () => {
     const podio = [1, 2, 3].map((i) => document.getElementById("p" + i).value);
     const msg = document.getElementById("msg");
-    if (pr.inizio && new Date(pr.inizio) <= new Date()) { msg.textContent = "Le votazioni sono chiuse: la gara è iniziata."; setTimeout(() => partitaPronostico(serie), 1500); return; }
+    if (new Date(chiusura) <= new Date()) { msg.textContent = "Le votazioni sono chiuse: sono iniziate le qualifiche."; setTimeout(() => partitaPronostico(serie), 1500); return; }
     if (podio.some((x) => !x) || new Set(podio).size < 3) { msg.textContent = "Scegli tre piloti diversi."; return; }
     const nomeEl = document.getElementById("nome"), nome = nomeEl ? nomeEl.value.trim().replace(/\s+/g, " ") : "";
     if (base && !/^[\p{L}\p{N} _.-]{3,16}$/u.test(nome)) { msg.textContent = "Scrivi un nickname di 3-16 caratteri (lettere, numeri, spazi)."; return; }
@@ -366,7 +368,7 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
           testo = /email/.test(j.errore || "") ? "Questa email è già collegata a un altro giocatore: in fondo alla pagina tocca «Hai già giocato da un altro telefono?» e inserisci nickname e codice di recupero. Se non hai più il codice, scrivi a info@gpoggi.it." : `Il nickname ${nome} è già usato. Se sei tu e hai votato da un altro telefono, in fondo alla pagina tocca «Hai già giocato da un altro telefono?» e inserisci nickname e codice di recupero. Altrimenti scegline un altro.`;
         }
         else if (r.status === 429) testo = "Troppi invii oggi: riprova domani.";
-        else if (r.status === 403) testo = "Le votazioni sono chiuse: la gara è iniziata.";
+        else if (r.status === 403) testo = "Le votazioni sono chiuse: sono iniziate le qualifiche.";
         else if (!r.ok) throw new Error();
         else { ok = true; salvaQui(); testo = `Salvato! Sei in classifica come ${nome}.`; if (leggi("pron-codice")) testo += ` Il tuo codice di recupero è ${leggi("pron-codice")}: fai uno screenshot.`; }
       } catch (e) { testo = "Non sono riuscito a salvare il voto: controlla la connessione e riprova."; }
@@ -398,7 +400,7 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
       for (const g of s.passate.slice().sort((a, b) => new Date(a.data) - new Date(b.data))) {
         if (!perGp[g.chiave]) continue;
         const r = await s.vero(g.chiave);
-        if (r) chiusi.push({ s, g, r, voci: perGp[g.chiave].filter((x) => x.podio && x.ts <= r.inizio).map((x) => ({ nick: x.nick, podio: x.podio, pt: punti(x, r) })).sort((a, b) => b.pt - a.pt || a.nick.localeCompare(b.nick)) });
+        if (r) chiusi.push({ s, g, r, voci: perGp[g.chiave].filter((x) => x.podio && x.ts <= (r.qInizio || r.inizio)).map((x) => ({ nick: x.nick, podio: x.podio, pt: punti(x, r) })).sort((a, b) => b.pt - a.pt || a.nick.localeCompare(b.nick)) });
       }
     }
     chiusi.sort((a, b) => a.r.inizio - b.r.inizio);

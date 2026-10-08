@@ -205,7 +205,9 @@ export default {
       const podio = Array.isArray(c.podio) ? c.podio.map((x) => String(x).slice(0, 10)) : [];
       if (!gp || id.length < 8 || !/^[\p{L}\p{N} _.-]{3,16}$/u.test(nick) || podio.length !== 3 || new Set(podio).size !== 3) return json({ errore: "dati non validi" }, 400);
       const orari = await orariGara(), via = orari[gp], viaQuali = orari["q:" + gp];
-      if (via && Date.now() >= Date.parse(via)) return json({ errore: "votazioni chiuse" }, 403);
+      // si chiude tutto all'inizio delle qualifiche (se l'orario c'è), altrimenti alla partenza della gara
+      const chiude = viaQuali || via;
+      if (chiude && Date.now() >= Date.parse(chiude)) return json({ errore: "votazioni chiuse" }, 403);
       const breve = (x) => (x === undefined || x === null || x === "" ? null : String(x).replace(/[^\w-]/g, "").slice(0, 10));
       let pole = breve(c.pole), tp = Date.now();
       const giro = breve(c.giro);

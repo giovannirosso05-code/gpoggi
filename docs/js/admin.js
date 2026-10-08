@@ -15,7 +15,7 @@ async function api(percorso, params = {}) {
   return r.json();
 }
 
-const PUNTI_POSIZIONE = [5, 3, 2];
+const PUNTI_POSIZIONE = [10, 5, 2];
 function punteggio(podio, vero) {
   let pt = 0, esatti = 0;
   podio.forEach((n, i) => { if (vero[i] === String(n)) { pt += PUNTI_POSIZIONE[i]; esatti++; } else if (vero.includes(String(n))) pt += 1; });
@@ -23,7 +23,7 @@ function punteggio(podio, vero) {
 }
 function punti(v, r) {
   let pt = punteggio(v.podio, r.vero);
-  if (v.pole && r.pole && String(v.pole) === String(r.pole) && (!r.qInizio || (v.tp || v.ts || 0) <= r.qInizio)) pt += 5;
+  if (v.pole && r.pole && String(v.pole) === String(r.pole) && (!r.qInizio || (v.tp || v.ts || 0) <= r.qInizio)) pt += 7;
   if (v.giro && r.giro && String(v.giro) === String(r.giro)) pt += 1;
   return pt;
 }

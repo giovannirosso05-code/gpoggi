@@ -156,17 +156,17 @@ function partitaPunti() {
 }
 
 // ---- Pronostico del podio (F1 e MotoGP): punti per posizione e classifica con il nome dei giocatori
-// 1° posto indovinato 5 punti, 2° 3 punti, 3° 2 punti; un pilota sul podio ma in un'altra posizione vale 1; podio completo esatto +5 (massimo 15).
-const PUNTI_POSIZIONE = [5, 3, 2];
+// 1° posto indovinato 10 punti, 2° 5 punti, 3° 2 punti; un pilota sul podio ma in un'altra posizione vale 1; podio completo esatto +5 (massimo 22).
+const PUNTI_POSIZIONE = [10, 5, 2];
 function punteggio(podio, vero) {
   let pt = 0, esatti = 0;
   podio.forEach((n, i) => { if (vero[i] === String(n)) { pt += PUNTI_POSIZIONE[i]; esatti++; } else if (vero.includes(String(n))) pt += 1; });
   return pt + (esatti === 3 ? 5 : 0);
 }
-// pole indovinata +5 (vale solo se scelta prima delle qualifiche), giro più veloce in gara +1
+// pole indovinata +7 (vale solo se scelta prima delle qualifiche), giro più veloce in gara +1
 function punti(v, r) {
   let pt = punteggio(v.podio, r.vero);
-  if (v.pole && r.pole && String(v.pole) === String(r.pole) && (!r.qInizio || (v.tp || v.ts || 0) <= r.qInizio)) pt += 5;
+  if (v.pole && r.pole && String(v.pole) === String(r.pole) && (!r.qInizio || (v.tp || v.ts || 0) <= r.qInizio)) pt += 7;
   if (v.giro && r.giro && String(v.giro) === String(r.giro)) pt += 1;
   return pt;
 }
@@ -285,15 +285,15 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
     <div id="vista-voto">${pr ? `<h3 class="quiz-titolo">${esc(pr.nome)}: chi sale sul podio?</h3>
     ${aperto ? `<div class="pron-form">${[1, 2, 3].map((i) => `<label>${i}° posto<select class="sel" id="p${i}">${opz((tutti[pr.chiave] || { podio: [] }).podio[i - 1])}</select></label>`).join("")}</div>
     ${tutti[pr.chiave] && !tutti[pr.chiave].pole && !tutti[pr.chiave].giro ? `<div class="pron-nuovo"><b>Novità:</b> hai già votato, ora puoi aggiungere pole${poleAperta ? "" : " (chiusa: qualifiche iniziate)"} e giro veloce. Scegli qui sotto e premi «Aggiorna il pronostico».</div>` : ""}
-    <div class="pron-form pron-extra"><label>Pole position · <b>5 punti</b><select class="sel" id="pole" ${poleAperta ? "" : "disabled"}>${opz((tutti[pr.chiave] || {}).pole)}</select>${poleAperta ? "" : `<small class="muted" style="text-transform:none;letter-spacing:0">Chiusa: le qualifiche sono iniziate</small>`}</label>
+    <div class="pron-form pron-extra"><label>Pole position · <b>7 punti</b><select class="sel" id="pole" ${poleAperta ? "" : "disabled"}>${opz((tutti[pr.chiave] || {}).pole)}</select>${poleAperta ? "" : `<small class="muted" style="text-transform:none;letter-spacing:0">Chiusa: le qualifiche sono iniziate</small>`}</label>
       <label>Giro più veloce in gara · <b>1 punto</b><select class="sel" id="giro">${opz((tutti[pr.chiave] || {}).giro)}</select></label></div>
     ${base ? `<label class="pron-nome">Il tuo nickname in classifica<input type="text" id="nome" maxlength="16" autocomplete="nickname" placeholder="Per esempio Giovanni_F1" value="${esc(leggi("pron-nome") || "")}"></label>` : ""}
     ${base ? `<label class="pron-nome">Email per il premio (facoltativa)<input type="email" id="email" maxlength="80" autocomplete="email" placeholder="nome@esempio.it" value="${esc(leggi("pron-email") || "")}"></label>
     <p class="muted" style="font-size:13px;margin:-6px 0 12px">Serve solo per mandarti il premio se vinci: senza email giochi lo stesso ma non puoi vincere. Non è mai pubblica e la cancelliamo dopo la consegna. <a href="privacy.html" class="accent">Privacy</a></p>` : ""}
     <div class="quiz-esito"><button class="quiz-avanti pron-rosso" id="salva" style="margin:0">${tutti[pr.chiave] ? "Aggiorna il pronostico" : "Salva il pronostico"}</button> <span id="msg" class="muted"></span></div><div id="poi"></div>` : `<p class="muted">Le votazioni per questo Gran Premio sono chiuse: la gara è iniziata.</p>`}
-    <div class="pron-punti"><b>Come si fanno i punti</b><ul><li>1° posto indovinato: <b>5</b> punti</li><li>2° posto indovinato: <b>3</b> punti</li><li>3° posto indovinato: <b>2</b> punti</li><li>Pilota sul podio ma in un'altra posizione: <b>1</b> punto</li><li>Podio completo esatto: <b>+5</b></li><li>Pole position indovinata: <b>5</b> punti (si sceglie prima che inizino le qualifiche)</li><li>Giro più veloce in gara indovinato: <b>1</b> punto</li></ul><span class="muted">Massimo 21 punti per Gran Premio. </span>
+    <div class="pron-punti"><b>Come si fanno i punti</b><ul><li>1° posto indovinato: <b>10</b> punti</li><li>2° posto indovinato: <b>5</b> punti</li><li>3° posto indovinato: <b>2</b> punti</li><li>Pilota sul podio ma in un'altra posizione: <b>1</b> punto</li><li>Podio completo esatto: <b>+5</b></li><li>Pole position indovinata: <b>7</b> punti (si sceglie prima che inizino le qualifiche)</li><li>Giro più veloce in gara indovinato: <b>1</b> punto</li></ul><span class="muted">Massimo 30 punti per Gran Premio. </span>
     <span class="muted">Il pronostico si può cambiare fino all'inizio della gara. La classifica si aggiorna dopo ogni gara.</span></div>` : `<p class="muted">Nessun Gran Premio ${S.etichetta} in programma.</p>`}
-    ${base ? `<div class="pron-invito"><b>La classifica è appena partita: tutti da zero.</b> Ogni Gran Premio vale fino a 21 punti e ogni weekend ci sono due gare, una di Formula 1 e una di MotoGP. Chi le vota tutte e due fa punti il doppio più in fretta.</div>` : ""}
+    ${base ? `<div class="pron-invito"><b>La classifica è appena partita: tutti da zero.</b> Ogni Gran Premio vale fino a 30 punti e ogni weekend ci sono due gare, una di Formula 1 e una di MotoGP. Chi le vota tutte e due fa punti il doppio più in fretta.</div>` : ""}
     ${righe ? `<h3 class="quiz-titolo" style="margin-top:20px">I tuoi pronostici ${S.etichetta}</h3><div class="table-wrap"><table class="results"><thead><tr><th>Gran Premio</th><th>Il tuo podio</th><th>Podio vero</th><th>Punti</th></tr></thead><tbody>${righe}</tbody></table></div>` : ""}
     ${base ? boxRecupero() : ""}</div>
     ${base ? `<div id="vista-class" class="hidden"><h3 class="quiz-titolo" id="titolo-classifica">Classifica</h3><div id="classifica"><p class="muted">Carico la classifica…</p></div></div>` : ""}
@@ -319,6 +319,8 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
   if (vaiClass) vaiClass.addEventListener("click", () => mostraVista(true));
   if (vista === "classifica") mostraVista(true);
   const salva = document.getElementById("salva");
+  if (salva && tutti[pr && pr.chiave]) { salva.disabled = true; salva.textContent = "✓ Votato"; }
+  box.querySelectorAll("#vista-voto select, #nome, #email").forEach((el) => el.addEventListener(el.tagName === "SELECT" ? "change" : "input", () => { if (salva) { salva.disabled = false; salva.textContent = salvati()[pr.chiave] ? "Aggiorna il pronostico" : "Salva il pronostico"; } }));
   if (salva) salva.addEventListener("click", async () => {
     const podio = [1, 2, 3].map((i) => document.getElementById("p" + i).value);
     const msg = document.getElementById("msg");
@@ -329,23 +331,27 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
     const emailEl = document.getElementById("email"), email = emailEl ? emailEl.value.trim() : "";
     if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { msg.textContent = "L'email non sembra valida: correggila o lasciala vuota."; return; }
     const pole = (document.getElementById("pole") || {}).value || "", giro = (document.getElementById("giro") || {}).value || "";
-    const t = salvati(); t[pr.chiave] = { nome: pr.nome, podio, pole, giro }; scrivi("pronostici", JSON.stringify(t));
-    let testo = leggi("pronostici") ? "Salvato sul dispositivo." : "Salvato solo finché la pagina resta aperta (la memoria del browser è bloccata).";
+    // sul dispositivo si salva solo se il voto è arrivato davvero (altrimenti comparirebbe "votato" anche quando non lo è)
+    const salvaQui = () => { const t = salvati(); t[pr.chiave] = { nome: pr.nome, podio, pole, giro }; scrivi("pronostici", JSON.stringify(t)); };
+    let testo = "Salvato sul dispositivo.", ok = !base;
+    if (!base) salvaQui();
     if (base) {
       scrivi("pron-nome", nome); if (email) scrivi("pron-email", email);
       try {
         const r = await fetch(base + "/pronostico", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ gp: pr.chiave, id: await idGiocatore(nome), nick: nome, podio, pole, giro, ...(email ? { email } : {}) }) });
         if (r.status === 409) {
           const j = await r.json().catch(() => ({}));
-          testo = /email/.test(j.errore || "") ? "Questa email è già collegata a un altro giocatore: in fondo alla pagina tocca «Hai già giocato da un altro telefono?» e inserisci nickname e codice di recupero. Se non hai più il codice, scrivi a info@gpoggi.it." : "Questo nickname è già usato da un altro giocatore: scegline un altro.";
+          testo = /email/.test(j.errore || "") ? "Questa email è già collegata a un altro giocatore: in fondo alla pagina tocca «Hai già giocato da un altro telefono?» e inserisci nickname e codice di recupero. Se non hai più il codice, scrivi a info@gpoggi.it." : `Il nickname ${nome} è già usato. Se sei tu e hai votato da un altro telefono, in fondo alla pagina tocca «Hai già giocato da un altro telefono?» e inserisci nickname e codice di recupero. Altrimenti scegline un altro.`;
         }
         else if (r.status === 429) testo = "Troppi invii oggi: riprova domani.";
         else if (r.status === 403) testo = "Le votazioni sono chiuse: la gara è iniziata.";
         else if (!r.ok) throw new Error();
-        else { testo = `Salvato! Sei in classifica come ${nome}.`; if (leggi("pron-codice")) testo += ` Il tuo codice di recupero è ${leggi("pron-codice")}: fai uno screenshot.`; }
-      } catch (e) { testo += " Non sono riuscito a raggiungere la classifica: riprova più tardi."; }
+        else { ok = true; salvaQui(); testo = `Salvato! Sei in classifica come ${nome}.`; if (leggi("pron-codice")) testo += ` Il tuo codice di recupero è ${leggi("pron-codice")}: fai uno screenshot.`; }
+      } catch (e) { testo = "Non sono riuscito a salvare il voto: controlla la connessione e riprova."; }
     }
     msg.textContent = testo;
+    msg.className = ok ? "pron-msg ok" : "pron-msg errore";
+    if (ok) { salva.disabled = true; salva.textContent = "✓ Votato"; }
     // subito dopo, l'invito a fare anche l'altra serie
     const altraS = serie === "f1" ? MO : F1, ap = altraS.prossimo && altraS.prossimo.inizio && new Date(altraS.prossimo.inizio) > new Date();
     if (ap && !salvati()[altraS.prossimo.chiave] && /Salvato/.test(testo)) {

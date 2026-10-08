@@ -1342,3 +1342,7 @@ a.vota-cta { display: block; width: 100%; box-sizing: border-box; text-align: ce
 .pron-nuovo { background: #fff4d6; border: 2px solid #e0a14a; color: #16161b; border-radius: 10px; padding: 10px 14px; margin: 12px 0 4px; font-size: 15px; animation: pron-pulsa 1.6s ease-in-out 3; }
 .chip-serie.chip-class.attivo { background: var(--accent); border-color: var(--accent); color: #fff; }
 .pron-invito { margin: 24px 0 8px; padding: 14px 16px; border-radius: 12px; background: var(--card, #fff); border: 2px dashed var(--accent); font-size: 15px; line-height: 1.5; }
+.pron-msg { display: block; margin-top: 10px; padding: 10px 14px; border-radius: 10px; font-weight: 600; font-size: 15px; }
+.pron-msg.ok { background: #e3f6ec; color: #136b44; border: 2px solid #1f8f5f; }
+.pron-msg.errore { background: #fdeceb; color: #a0201b; border: 2px solid #e8352f; }
+#salva:disabled { background: #1f8f5f; opacity: 1; cursor: default; box-shadow: none; }

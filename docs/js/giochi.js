@@ -190,7 +190,7 @@ async function idGiocatore(nick) {
 function boxRecupero() {
   const cod = leggi("pron-codice"), nick0 = leggi("pron-nick0");
   return `<div class="pron-recupero">
-    ${cod ? `<p><b>Il tuo codice di recupero</b><br>Nickname <b>${esc(nick0)}</b> · codice <b class="pron-cod">${esc(cod)}</b><br><span class="muted">Fai uno screenshot: se cambi telefono o cancelli i dati, con questi due dati riprendi i tuoi punti.</span></p>` : ""}
+    ${cod ? `<p><b>Il tuo codice di recupero</b><br>Nickname <b>${esc(nick0)}</b> · codice <b class="pron-cod">${esc(cod)}</b><br><span class="muted">Fai uno screenshot e gioca sempre da questo dispositivo: se cambi telefono, browser o cancelli i dati, ti servono nickname e codice per riprendere i tuoi punti.</span></p>` : ""}
     <details><summary>Hai già giocato da un altro telefono? Riprendi il tuo nickname</summary>
       <label class="pron-nome">Nickname<input type="text" id="rec-nick" maxlength="16" autocomplete="off" value="${esc(leggi("pron-nome") || "")}"></label>
       <label class="pron-nome">Codice di recupero<input type="text" id="rec-cod" maxlength="8" autocomplete="off" autocapitalize="characters" placeholder="8 caratteri"></label>
@@ -276,6 +276,7 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
         <li><b>Chi vince:</b> chi ha più punti nella classifica generale a fine anno. A parità di punti vince chi ha giocato più gare; se ancora pari, il premio viene sorteggiato tra i pari merito.</li>
         <li><b>Premi in aggiornamento:</b> il premio indicato qui è garantito e non viene ridotto. Se il sito inizia a generare ricavi potremo aggiungere altri premi (per esempio più carte regalo da 50 euro per i primi classificati): l'elenco aggiornato è sempre in questo regolamento e gli eventuali premi in più vengono annunciati sul sito e sui profili social.</li>
         <li><b>Premio:</b> una carta regalo Amazon da 50 euro, non convertibile in denaro. Amazon non sponsorizza e non partecipa all'iniziativa.</li>
+        <li><b>Gioca sempre dallo stesso dispositivo:</b> il sito ti riconosce dal telefono o dal computer su cui hai votato la prima volta. Dopo il primo voto ricevi un codice di recupero di 8 caratteri: fai uno screenshot e conservalo. Se cambi dispositivo, browser o cancelli i dati di navigazione, ti serve il codice per riprendere il tuo nickname e i tuoi punti.</li>
         <li><b>Nickname o codice dimenticato:</b> chi ha inserito l'email nel pronostico può scrivere a info@gpoggi.it dall'indirizzo che ha usato e riceve un nuovo codice di recupero; i punti restano. Senza email non è possibile verificare l'identità.</li>
         <li><b>Come si ritira:</b> il nickname vincitore sarà pubblicato sul sito e sui profili social. Il premio viene mandato all'email indicata dal vincitore. GP Oggi lo contatta; se non risponde o non dimostra di essere il titolare del nickname entro 30 giorni, il premio passa al secondo in classifica.</li>
         <li><b>Minorenni:</b> possono partecipare solo con il consenso di un genitore.</li>

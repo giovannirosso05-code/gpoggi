@@ -1,0 +1,9 @@
+{
+ "_nota": "Notizie del weekend che non stanno nei dati del sito (per esempio le penalità in griglia): nome del pilota -> motivo detto a voce. Si aggiorna a mano prima del video del giovedì.",
+ "f1": {
+  "penalizzati": {
+   "George Russell": "penalità motore"
+  }
+ },
+ "motogp": {}
+}

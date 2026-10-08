@@ -128,7 +128,7 @@ def dati_motivi(f):
         elif "podi" in m and "ultime" in m: d["podi"] = n
         elif "campionato" in m: d["camp"] = n
         elif re.search(r"\b20\d\d:\s*\d+", m):
-            anno = int(re.search(r"\b(20\d\d)", m).group(1)); d["circ"] = (int(re.search(r":\s*(\d+)", m).group(1)), anno == ANNO - 1)
+            anno = int(re.search(r"\b(20\d\d)", m).group(1)); d["circ"] = (int(re.search(r":\s*(\d+)", m).group(1)), anno == ANNO - 1, anno)
     return d
 
 
@@ -215,43 +215,42 @@ def scene_previsione(chiave):
           f"<div style='position:absolute;left:70px;right:70px;top:1010px;font:500 30px Inter;color:#9a9aa6'>{esc(p['gp'])}</div>"
           f"<div style='position:absolute;left:70px;right:70px;top:1090px'>{righe1}</div>")
     # --- scena 2: gli altri due
-    def forza(f):
-        """Una frase breve e parlata su un rivale: il risultato sul circuito, poi il mondiale (o, se non c'è altro, la forma recente)."""
-        s_, c_ = analisi_motivi(f); v, sch = [], []
-        if c_ and c_[0] <= 3:
-            v.append(f"{c_[1]} qui {'ha vinto' if c_[0] == 1 else 'è arrivato ' + ORD[c_[0]]}"); sch.append(c_[2])
-        camp = next((x for x in s_ if x[2] == "camp"), None)
-        if camp and _num(camp[1]) >= 5:
-            v.append(f"ma nel mondiale è solo {ORD[min(_num(camp[1]), 20)]}"); sch.append(camp[1])
-        elif camp and len(v) < 2:
-            v.append(camp[0]); sch.append(camp[1])
-        for x in s_:
-            if len(v) >= 2 or x is camp or (x[2] == "vit" and c_ and c_[0] == 1): continue
-            v.append(x[0]); sch.append(x[1])
-        testo = v[0] if v else ""
-        for x in v[1:]: testo += (", " if x.startswith("ma ") else " e ") + x
-        return testo.replace(" e è ", " ed è "), sch
-    v1, s1 = forza(fav[1]); v2, s2 = forza(fav[2]) if len(fav) > 2 else ("", [])
-    def breve(f):
-        d = dati_motivi(f); v = []
-        if d["circ"] and d["circ"][0] == 1: v.append("qui ha vinto")
-        elif d["circ"] and d["circ"][0] <= 3: v.append(f"{ORD[d['circ'][0]]} qui")
-        if d["camp"]:
-            v.append(("ma solo " if d["camp"] >= 5 and v else "solo " if d["camp"] >= 5 else "") + ("primo" if d["camp"] == 1 else ORD[min(d["camp"], 20)]) + " nel mondiale")
-        if d["podi"] and len(v) < 2: v.append(f"{it(d['podi'])} podi nelle ultime cinque")
-        return ", ".join(v)
+    # notizie del weekend che non stanno nei dati del sito (penalità in griglia ecc.): video/note_weekend.json
+    nf = QUI / "note_weekend.json"; note = (json.load(open(nf)).get(chiave) or {}) if nf.exists() else {}
+    penal = note.get("penalizzati") or {}
+    ordine, tip = studio_pole(chiave); conta_pole = dict(ordine)
+
+    def motivi_rivale(f):
+        """Perché guardarlo: [(frase a voce, riga a schermo)], i più forti per primi, dai dati del sito."""
+        d = dati_motivi(f); out = []
+        if d["circ"] and d["circ"][0] <= 3:
+            pos, scorso, anno = d["circ"]
+            quando = "l'anno scorso " if scorso else f"nel {anno} "
+            out.append((f"{quando}qui ha vinto" if pos == 1 else f"{ORD[pos]} qui {quando.strip()}", f"Qui {anno}: {pos}°"))
+        if d["vit"]: out.append((("una vittoria" if d["vit"] == 1 else f"{it(d['vit'])} vittorie") + " nelle ultime cinque", f"{d['vit']} {'vittoria' if d['vit'] == 1 else 'vittorie'} nelle ultime 5 gare"))
+        c = conta_pole.get(f["nome"], 0)
+        if c: out.append((("una pole" if c == 1 else f"{it(c)} pole") + " nelle ultime cinque qualifiche", f"{c} pole nelle ultime 5 qualifiche"))
+        if d["podi"]: out.append((f"{it(d['podi'])} podi nelle ultime cinque", f"{d['podi']} podi nelle ultime 5 gare"))
+        if d["camp"] and d["camp"] <= 4: out.append((("primo" if d["camp"] == 1 else ORD[d["camp"]]) + " nel mondiale", f"{d['camp']}° nel campionato"))
+        return out[:2]
+
+    rivali = [(i + 1, f) for i, f in enumerate(p["favoriti"][:6]) if i > 0 and f["nome"] not in penal][:2]
     a_ = lambda c: ("ad " if c[0] in "AEIOU" else "a ") + c
-    voce2 = f"Occhio {a_(cognome(fav[1]['nome']))}: {breve(fav[1])}." + (f" E {a_(cognome(fav[2]['nome']))}: {breve(fav[2])}." if len(fav) > 2 else "")
-    def blocco(f, sch, n):
+    voce2 = ""
+    for f in p["favoriti"][1:3]:
+        if f["nome"] in penal: voce2 += f"{cognome(f['nome'])} parte dal fondo: {penal[f['nome']]}. "
+    voce2 += f"Occhio {a_(cognome(rivali[0][1]['nome']))}: {', '.join(v for v, _ in motivi_rivale(rivali[0][1]))}." + (f" E {a_(cognome(rivali[1][1]['nome']))}: {', '.join(v for v, _ in motivi_rivale(rivali[1][1]))}." if len(rivali) > 1 else "")
+    def blocco(f, n):
+        sch = " · ".join(sc for _, sc in motivi_rivale(f))
         return (f"<div style='padding:18px 0;border-bottom:2px solid #26262e'><div style='display:flex;align-items:center;gap:22px'><span style='font:700 72px Oswald;color:{colore};width:60px'>{n}</span>"
                 f"<div><div style='font:700 56px Oswald;text-transform:uppercase'>{esc(f['nome'])}</div><div style='font:500 28px Inter;color:#b6b5bd'>{esc(f['team'])}</div></div></div>"
-                f"<div style='font:500 34px Inter;color:#e8e8ee;margin-top:8px;padding-left:82px'>{esc(' · '.join(sch))}</div></div>")
-    foto1 = foto_per_nome(fav[1]["nome"], chiave)
+                f"<div style='font:500 34px Inter;color:#e8e8ee;margin-top:8px;padding-left:82px'>{esc(sch)}</div></div>")
+    avvisi = "".join(f"<div style='font:500 34px Inter;color:#ff6a62;padding:16px 0;border-bottom:2px solid #26262e'><b>ATTENZIONE</b> · {esc(nm)} parte dal fondo ({esc(mot)})</div>" for nm, mot in penal.items() if nm in [x['nome'] for x in p['favoriti'][:5]])
+    foto1 = foto_per_nome(rivali[0][1]["nome"], chiave)
     c2 = (f"<span class=pill style='top:790px;background:{colore}'>{sigla} · occhio a loro</span>"
-          f"<div style='position:absolute;left:70px;right:70px;top:880px'>{blocco(fav[1], s1, 2)}{blocco(fav[2], s2, 3) if len(fav) > 2 else ''}</div>")
+          f"<div style='position:absolute;left:70px;right:70px;top:880px'>{''.join(blocco(f, n) for n, f in rivali)}{avvisi}</div>")
     scene = [(cornice(c1, colore, foto0), voce1), (cornice(c2, colore, foto1), voce2)]
     # --- scena 3: la pole, dallo studio di GP Oggi
-    ordine, tip = studio_pole(chiave)
     if tip:
         n = dict(ordine)[tip]
         voce3 = f"E la pole? Dal nostro studio sulle ultime cinque qualifiche: {cognome(tip)}, " + (f"{it(n)} pole su cinque." if n > 1 else "ha preso l'ultima pole.")
@@ -261,10 +260,10 @@ def scene_previsione(chiave):
               f"<div style='position:absolute;left:70px;right:70px;top:970px;font:500 30px Inter;color:#9a9aa6'>Pole nelle ultime 5 qualifiche</div>"
               f"<div style='position:absolute;left:70px;right:70px;top:1040px'>{righe3}</div>")
         scene.append((cornice(c3, colore, foto_per_nome(tip, chiave)), voce3))
-    # --- scena 4: tu chi dici? vai a votare
+    # --- scena 4: tu che dici? vai a votare
     quando_v, quando_s = chiusura_voti(p, chiave)
-    voce4 = "E tu chi dici? Scrivilo nei commenti e vai a votare il tuo pronostico su G P Oggi punto it, prima delle qualifiche."
-    c4 = (f"<div style='position:absolute;left:70px;right:70px;top:480px;text-align:center;font:700 150px/1 Oswald;text-transform:uppercase'>Tu chi<br><span style='color:{colore}'>dici?</span></div>"
+    voce4 = "E tu che dici? Scrivilo nei commenti e vai a votare il tuo pronostico su G P Oggi punto it, prima delle qualifiche."
+    c4 = (f"<div style='position:absolute;left:70px;right:70px;top:480px;text-align:center;font:700 150px/1 Oswald;text-transform:uppercase'>Tu che<br><span style='color:{colore}'>dici?</span></div>"
           f"<div style='position:absolute;left:70px;right:70px;top:900px;text-align:center;font:500 46px Inter;color:#e8e8ee'>Scrivilo nei commenti 👇</div>"
           f"<div style='position:absolute;left:90px;right:90px;top:1060px;text-align:center;background:{colore};border-radius:28px;padding:34px 20px;font:700 62px/1.1 Oswald;text-transform:uppercase'>Vota il tuo pronostico<br>su gpoggi.it</div>"
           + (f"<div style='position:absolute;left:70px;right:70px;top:1330px;text-align:center;font:500 38px Inter;color:#ffd21f'>Si vota fino alle qualifiche<br><b>{esc(quando_s)}</b></div>" if quando_s else ""))
@@ -280,7 +279,7 @@ def social_serie(chiave):
     pole = f"🎯 Pole? Dal nostro studio sulle ultime 5 qualifiche occhio a {tip}\n" if tip else ""
     return (f"{icona} {luogo}: chi sale sul PODIO? {icona}\n\n"
             f"👑 Il nostro favorito: {f0}\n{pole}\n"
-            f"🗳️ E tu chi dici?\n"
+            f"🗳️ E tu che dici?\n"
             f"✍️ Scrivilo nei commenti 👇\n"
             f"📲 Vota il tuo pronostico su gpoggi.it PRIMA delle qualifiche!\n\n"
             f"🔗 gpoggi.it → Giochi\n"
@@ -338,7 +337,7 @@ def social_previsioni():
         p = pron.get(chiave)
         if p and p.get("favoriti"):
             righe.append(f"{icona} {p['gp']}\n" + "\n".join(f"{i}. {f['nome']}" for i, f in enumerate(p["favoriti"][:3], 1)))
-    return "Il pronostico di GP Oggi 🔮\n\n" + "\n\n".join(righe) + "\n\nÈ un'opinione basata sui numeri, non una certezza.\n\nTu chi dici? 👇\n\n🔗 gpoggi.it\n\n#gpoggi #f1 #motogp #pronostici #previsioni"
+    return "Il pronostico di GP Oggi 🔮\n\n" + "\n\n".join(righe) + "\n\nÈ un'opinione basata sui numeri, non una certezza.\n\nTu che dici? 👇\n\n🔗 gpoggi.it\n\n#gpoggi #f1 #motogp #pronostici #previsioni"
 
 
 def invia_testo(testo):

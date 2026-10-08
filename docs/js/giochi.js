@@ -253,7 +253,7 @@ async function partitaPronostico(serie = "f1") {
       <details class="pron-reg"><summary>Regolamento</summary><ol>
         <li><b>Chi organizza:</b> GP Oggi, sito indipendente. Contatti: info@gpoggi.it.</li>
         <li><b>Durata:</b> dall'8 ottobre al 31 dicembre 2026. Contano i pronostici di Formula 1 e MotoGP inviati prima della partenza di ogni gara.</li>
-        <li><b>Email:</b> per concorrere al premio serve inserire un'email valida al momento del pronostico. Una stessa email può essere usata con un solo nickname per ogni Gran Premio. L'email non è pubblica, serve solo a consegnare il premio e viene cancellata dopo la consegna. Senza email si gioca e si va in classifica, ma non si può vincere.</li>
+        <li><b>Email:</b> per concorrere al premio serve inserire un'email valida al momento del pronostico. Una stessa email può essere collegata a un solo giocatore (un solo nickname e un solo codice di recupero). L'email non è pubblica, serve solo a consegnare il premio e viene cancellata dopo la consegna. Senza email si gioca e si va in classifica, ma non si può vincere.</li>
         <li><b>Partecipazione:</b> gratuita, senza acquisti né registrazione. Un solo nickname a persona. Prima di consegnare il premio GP Oggi controlla i nickname collegati tra loro (stesso dispositivo o stessa connessione) e può chiedere al vincitore di dimostrare che il nickname è il suo: chi usa più nickname o trucchi viene escluso, con tutti i suoi nickname.</li>
         <li><b>Chi vince:</b> chi ha più punti nella classifica generale a fine anno. A parità di punti vince chi ha giocato più gare; se ancora pari, il premio viene sorteggiato tra i pari merito.</li>
         <li><b>Premio:</b> una carta regalo Amazon da 50 euro, non convertibile in denaro. Amazon non sponsorizza e non partecipa all'iniziativa.</li>
@@ -303,7 +303,7 @@ async function partitaPronostico(serie = "f1") {
         const r = await fetch(base + "/pronostico", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ gp: pr.chiave, id: await idGiocatore(nome), nick: nome, podio, ...(email ? { email } : {}) }) });
         if (r.status === 409) {
           const j = await r.json().catch(() => ({}));
-          testo = /email/.test(j.errore || "") ? "Questa email è già stata usata per questo Gran Premio con un altro nickname: usa un'altra email o lasciala vuota." : "Questo nickname è già usato da un altro giocatore: scegline un altro.";
+          testo = /email/.test(j.errore || "") ? "Questa email è già collegata a un altro giocatore: in fondo alla pagina tocca «Hai già giocato da un altro telefono?» e inserisci nickname e codice di recupero. Se non hai più il codice, scrivi a info@gpoggi.it." : "Questo nickname è già usato da un altro giocatore: scegline un altro.";
         }
         else if (r.status === 429) testo = "Troppi invii oggi: riprova domani.";
         else if (r.status === 403) testo = "Le votazioni sono chiuse: la gara è iniziata.";

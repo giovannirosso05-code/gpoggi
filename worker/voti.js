@@ -93,6 +93,14 @@ export default {
       }
       return json({ nickname: cerca, email: Object.entries(trovati).map(([id, email]) => ({ id, email })) });
     }
+    if (req.method === "GET" && url.pathname === "/svincola") {
+      // Solo per chi gestisce il sito: libera un'email dal giocatore a cui è collegata (per chi ha perso il codice). Uso: /svincola?k=CHIAVE&email=INDIRIZZO
+      if (!env.ADMIN_KEY || url.searchParams.get("k") !== env.ADMIN_KEY) return new Response("non trovato", { status: 404 });
+      const em = normalizzaEmail(url.searchParams.get("email"));
+      if (!em) return json({ errore: "email non valida" }, 400);
+      await env.VOTI.delete(`mailacc:${await impronta(em)}`);
+      return json({ ok: true, email: em });
+    }
     if (req.method === "GET" && url.pathname === "/valutazione") {
       // Voto medio del sito (da 1 a 5 stelle): { media, voti }
       const a = JSON.parse((await env.VOTI.get("valutazione:totale")) || "{}");
@@ -142,9 +150,9 @@ export default {
       const emailNorm = c.email ? normalizzaEmail(c.email) : null;
       if (c.email && !emailNorm) return json({ errore: "email non valida" }, 400);
       if (emailNorm) {
-        const chiaveMail = `mailgp:${gp}:${await impronta(emailNorm)}`;
-        const usata = await env.VOTI.get(chiaveMail);
-        if (usata && usata !== id) return json({ errore: "email gia usata per questo gran premio" }, 409);
+        // una email = un solo giocatore: se è già collegata a un altro codice, non se ne crea un secondo
+        const usata = await env.VOTI.get(`mailacc:${await impronta(emailNorm)}`);
+        if (usata && usata !== id) return json({ errore: "email gia collegata a un altro giocatore" }, 409);
       }
       const limite = `limite:pron:${await impronta((req.headers.get("CF-Connecting-IP") || "") + new Date().toISOString().slice(0, 10))}`;
       const n = Number((await env.VOTI.get(limite)) || 0);
@@ -155,7 +163,7 @@ export default {
       if (occupato && occupato !== id) return json({ errore: "nome già usato" }, 409);
       await env.VOTI.put(chiaveNome, id, { expirationTtl: 90 * 86400 });
       if (emailNorm) {
-        await env.VOTI.put(`mailgp:${gp}:${await impronta(emailNorm)}`, id, { expirationTtl: 90 * 86400 });
+        await env.VOTI.put(`mailacc:${await impronta(emailNorm)}`, id, { expirationTtl: 400 * 86400 });
         await env.VOTI.put(`mail:${id}`, emailNorm, { expirationTtl: 400 * 86400 });
       }
       const h = (await impronta((req.headers.get("CF-Connecting-IP") || "") + "|pron")).slice(0, 8);

@@ -20,41 +20,28 @@ esc = html.escape
 
 
 def pagina(spec):
+    """Stesso stile della pagina: foto a tutto schermo, etichetta ULTIM'ORA, titolo in righe colorate. Con più foto: pannelli affiancati."""
     col = "#1f5fd1" if spec.get("serie") == "MotoGP" else "#e8352f"
-    foto = spec["foto"]; n = len(foto)
-    largh = (W + 90 * (n - 1)) // n                      # i pannelli si sovrappongono sulle diagonali
-    pannelli = ""
-    for i, f in enumerate(foto):
-        x = i * (largh - 90)
-        # bordi obliqui: il primo parte dritto a sinistra, l'ultimo finisce dritto a destra
-        sin = 0 if i == 0 else 90; des = 0 if i == n - 1 else 90
-        poli = f"polygon({sin}px 0,{largh}px 0,{largh - des}px 100%,0 100%)" if False else f"polygon({sin}px 0,100% 0,calc(100% - {des}px) 100%,0 100%)"
-        pannelli += (f"<div class=p style='left:{x}px;width:{largh}px;clip-path:{poli}'><div class=im style=\"background:url(data:image/jpeg;base64,{b64(f['file'])}) {f.get('pos', '50% 15%')}/cover no-repeat\"></div></div>")
-    righe = ""
-    for i, r in enumerate(spec["titolo"]):
-        giallo = spec.get("evidenzia") == i
-        righe += f"<div class='r{' g' if giallo else ''}'><span>{esc(r)}</span></div>"
+    foto = spec["foto"]; n = len(foto); largh = W // n
+    pannelli = "".join(
+        f"<div class=p style='left:{i * largh}px;width:{largh + (2 if i < n - 1 else 0)}px'><div class=im style=\"background:url(data:image/jpeg;base64,{b64(f['file'])}) {f.get('pos', '50% 12%')}/cover no-repeat\"></div></div>"
+        for i, f in enumerate(foto))
+    righe = "".join(f"<span style='display:inline-block;background:{'#ffd21f;color:#0b0b0e;-webkit-text-stroke:0' if spec.get('evidenzia') == i else col};padding:4px 16px;margin:4px 0'>{esc(r)}</span><br>" for i, r in enumerate(spec["titolo"]))
     crediti = " · ".join(dict.fromkeys(f.get("credito", "") for f in foto if f.get("credito")))
     font = (f"@font-face{{font-family:Oswald;font-weight:700;src:url(data:font/woff2;base64,{b64(FONT / 'oswald-latin-700-normal.woff2')})}}"
             f"@font-face{{font-family:Inter;font-weight:500;src:url(data:font/woff2;base64,{b64(FONT / 'inter-latin-500-normal.woff2')})}}")
     return f"""<!doctype html><meta charset=utf-8><style>{font}
 *{{box-sizing:border-box}} html,body{{margin:0;width:{W}px;height:{H}px;background:#0b0b0e;color:#fff;font-family:Inter,sans-serif;overflow:hidden;position:relative}}
-.p{{position:absolute;top:0;height:1240px;overflow:hidden}} .im{{position:absolute;inset:0}}
-.sep{{position:absolute;top:0;height:1240px;width:{W}px;pointer-events:none}}
-.velo{{position:absolute;left:0;top:560px;width:{W}px;height:1360px;background:linear-gradient(180deg,rgba(11,11,14,0) 0%,rgba(11,11,14,.88) 34%,#0b0b0e 62%)}}
-.logo{{position:absolute;left:50px;top:90px;width:230px}}
-.tag{{position:absolute;right:50px;top:104px;font:700 36px Oswald;letter-spacing:.08em;text-transform:uppercase;background:{col};padding:6px 20px;border-radius:6px}}
-.tit{{position:absolute;left:46px;right:46px;top:930px}}
-.r{{font:700 118px/1.02 Oswald;text-transform:uppercase;margin:6px 0;-webkit-text-stroke:3px #000;paint-order:stroke fill}}
-.r span{{display:inline-block;background:{col};padding:2px 22px 0}} .r.g span{{background:#ffd21f;color:#0b0b0e;-webkit-text-stroke:0}}
-.sub{{position:absolute;left:50px;right:50px;top:1420px;font:700 56px/1.1 Oswald;text-transform:uppercase;color:#ffd21f;-webkit-text-stroke:2px #000;paint-order:stroke fill}}
-.url{{position:absolute;left:50px;top:1760px;font:700 54px Oswald;letter-spacing:.04em;color:{col}}}
-.cred{{position:absolute;left:50px;right:50px;bottom:34px;font:500 19px Inter;color:rgba(255,255,255,.65)}}
-.bar{{position:absolute;left:0;top:1236px;width:{W}px;height:10px;background:{col}}}
-</style>{pannelli}<div class=bar></div><div class=velo></div>
+.p{{position:absolute;top:0;height:{H}px;overflow:hidden}} .im{{position:absolute;inset:0}}
+.velo{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 22%,rgba(0,0,0,0) 45%,rgba(8,8,10,.92) 78%,#0b0b0e 100%)}}
+.logo{{position:absolute;left:50px;top:150px;width:190px}}
+.tag{{position:absolute;left:265px;top:172px;font:700 30px Oswald;letter-spacing:.06em;text-transform:uppercase;background:{col};padding:4px 16px;border-radius:6px}}
+.tit{{position:absolute;left:60px;right:60px;top:860px;font:700 82px/1.12 Oswald;text-transform:uppercase;-webkit-text-stroke:2px #000;paint-order:stroke fill}}
+.sub{{position:absolute;left:60px;right:60px;top:1300px;font:700 60px/1.15 Oswald;text-transform:uppercase;color:#ffd21f;-webkit-text-stroke:2px #000;paint-order:stroke fill}}
+.cred{{position:absolute;right:40px;bottom:36px;font:500 20px Inter;color:rgba(255,255,255,.75);max-width:900px;text-align:right}}
+</style>{pannelli}<div class=velo></div>
 <img class=logo src="data:image/png;base64,{b64(SITO / 'img/logo-wide-scuro.png')}"><div class=tag>{esc(spec.get('etichetta', "Ultim'ora"))}</div>
-<div class=tit>{righe}</div><div class=sub>{esc(spec.get('sottotitolo', ''))}</div><div class=url>gpoggi.it</div>
-<div class=cred>{esc(crediti)} · Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team</div>"""
+<div class=tit>{righe}</div><div class=sub>{esc(spec.get('sottotitolo', ''))}</div><div class=cred>{esc(crediti)}</div>"""
 
 
 async def main(spec, uscita):

@@ -1,0 +1,37 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Ferrari a Singapore: è il momento?",
+ "fonte": "Motorsport.com",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto": "Charles Leclerc",
+   "hook": true,
+   "hook_titolo": "Ferrari a Singapore: è il momento?",
+   "testo": "[Ferrari] non vince da *7 gare*: l'ultima volta a Silverstone, a luglio. Ma a Singapore può essere l'occasione giusta."
+  },
+  {
+   "foto": "Charles Leclerc",
+   "nome": "CHARLES LECLERC",
+   "testo": "La pista piace alla [Ferrari]: *niente lunghi rettilinei*, quindi il *deficit di potenza* del motore pesa meno."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "nome": "LEWIS HAMILTON",
+   "testo": "In classifica la [Ferrari] è *seconda tra i costruttori*, con *58 punti* di vantaggio sulla McLaren."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "testo": "Ma il team principal [Vasseur] frena: *«una delle gare più impegnative dell'anno»*. E dice che i distacchi tra le squadre sono *molto ridotti*."
+  },
+  {
+   "foto": "Charles Leclerc",
+   "pos": "10%",
+   "testo": "L'ultima vittoria Ferrari qui è di *Sainz, nel 2023*. E questo è l'ultimo *weekend sprint* della stagione, con *una sola sessione di prove*."
+  }
+ ],
+ "finale": {
+  "foto": "Lewis Hamilton",
+  "domanda": "E tu che dici? Può vincere la Ferrari a Singapore?"
+ }
+}

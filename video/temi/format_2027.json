@@ -1,7 +1,7 @@
 {
  "serie": "MotoGP",
- "fonti": "Crash.net · Motorsport.com · Autosport · The Race",
- "didascalia": "🏍️ MotoGP 2027: IL NUOVO WEEKEND DIVIDE I PILOTI! 😮\n\n📅 Venerdì: qualifica da 15 minuti per la sprint\n❌ Domenica: via il warm-up\n\n👎 Marquez: «Dobbiamo stare zitti»\n👍 Bagnaia: «Mi piace, voleva due qualifiche»\n👎 Acosta: scelta imposta ai piloti, taglierebbe le sprint\n🤝 Martin: «Noi piloti non siamo uniti»\n\n🗳️ E tu che dici? Meglio il nuovo formato o quello di oggi?\n✍️ Scrivilo nei commenti 👇\n\n🏁 Intanto vota il podio di Mandalika: gpoggi.it → Giochi\n👥 Segui @gp.oggi\n\n#motogp #motogp2027 #marquez #bagnaia #acosta #martin #gpoggi",
+ "fonti": "Crash.net · The Race · Motorsport.com · FormulaPassion",
+ "didascalia": "🏍️ MotoGP 2027: IL NUOVO WEEKEND DIVIDE I PILOTI! 😮\n\n📅 Venerdì: qualifica da 15 minuti per la sprint\n❌ Domenica: via il warm-up\n\n🤨 Marquez: «O accetti o te ne vai»\n👍 Bagnaia: «Mi piace, è un miglioramento»... ma il warm-up va tenuto\n⚠️ Acosta: teme più rischio di infortuni\n🤝 Martin: «Noi piloti non siamo uniti»\n\n🗳️ E tu che dici? Meglio il nuovo formato o quello di oggi?\n✍️ Scrivilo nei commenti 👇\n\n🏁 Intanto vota il podio di Mandalika: gpoggi.it → Giochi\n👥 Segui @gp.oggi\n\nDichiarazioni dei piloti riportate da Crash.net, The Race, Motorsport.com e FormulaPassion.\n\n#motogp #motogp2027 #marquez #bagnaia #acosta #martin #gpoggi",
  "scene": [
   {
    "tipo": "titolo",
@@ -16,49 +16,50 @@
   {
    "tipo": "pilota",
    "pilota": "Marc Marquez",
-   "etichetta": "CONTRO",
-   "colore": "#e8352f",
-   "frase": "«Dobbiamo stare zitti»",
+   "etichetta": "SCETTICO",
+   "colore": "#ffb020",
+   "frase": "«O accetti o te ne vai»",
    "righe": [
-    "Nessuno ci ha chiesto cosa ne pensiamo",
-    "Idea: un'associazione dei piloti, come in F1"
+    "Decidono team e organizzazione, non i piloti",
+    "Per lui il programma di oggi bastava"
    ],
-   "voce": "Marquez: noi piloti dobbiamo stare zitti, nessuno ci ha chiesto niente. Meglio un'associazione, come in F1."
+   "voce": "Marquez è scettico: decidono team e organizzazione. O accetti, o te ne vai."
   },
   {
    "tipo": "pilota",
    "pilota": "Francesco Bagnaia",
-   "etichetta": "A FAVORE",
+   "etichetta": "A FAVORE, MA",
    "colore": "#1f8f5f",
-   "frase": "«Mi piace»",
+   "frase": "«Mi piace, è un miglioramento»",
    "righe": [
-    "Voleva da tempo due qualifiche",
-    "Alla riunione erano solo in 4"
+    "Però il warm-up va tenuto",
+    "Alla Safety Commission erano solo in 4"
    ],
-   "voce": "Bagnaia è d'accordo: voleva due qualifiche. E alla riunione erano solo in quattro."
+   "voce": "Bagnaia: mi piace, è un miglioramento. Ma il warm-up va tenuto."
   },
   {
    "tipo": "pilota",
    "pilota": "Pedro Acosta",
-   "etichetta": "CONTRO",
+   "etichetta": "PREOCCUPATO",
    "colore": "#e8352f",
-   "frase": "Scelta imposta ai piloti",
+   "frase": "Teme più infortuni",
    "righe": [
-    "Non conta cosa pensano i piloti",
-    "Dimezzerebbe le sprint"
+    "Qualifica del venerdì con 22 piloti in pista",
+    "Già oggi un weekend molto stressante"
    ],
-   "voce": "Acosta no: scelta imposta. Taglierebbe le sprint."
+   "voce": "Acosta teme più infortuni: qualifica il venerdì con ventidue piloti in pista."
   },
   {
    "tipo": "pilota",
    "pilota": "Jorge Martin",
-   "etichetta": "IL PROBLEMA",
+   "etichetta": "DIVISI",
    "colore": "#ffb020",
    "frase": "«Noi piloti non siamo uniti»",
    "righe": [
-    "Il leader del Mondiale ammette: così contano poco"
+    "Più spettacolo, ma anche più rischio",
+    "Contento di non fare più il warm-up"
    ],
-   "voce": "Martin: il problema è che noi piloti non siamo uniti."
+   "voce": "Martin: più spettacolo, ma anche più rischio. E i piloti? Non siamo uniti."
   },
   {
    "tipo": "cta",

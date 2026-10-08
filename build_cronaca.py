@@ -38,6 +38,7 @@ def ora_it(iso):
 
 
 GRIGLIA = {}
+GIRO_VELOCE = {}
 
 
 def cronaca(g):
@@ -50,6 +51,10 @@ def cronaca(g):
     cogn = lambda n: (n or "pilota").split()[-1] if n else "pilota"
     giri_tot = max((x["giri"] or 0) for x in ris)
     rc, pit, pos, laps = get("race_control", session_key=k), get("pit", session_key=k), get("position", session_key=k), get("laps", session_key=k)
+    veloci = [l for l in laps if l.get("lap_duration") and l.get("lap_number", 0) > 1]
+    GIRO_VELOCE.clear()
+    if veloci:
+        GIRO_VELOCE["numero"] = min(veloci, key=lambda l: l["lap_duration"])["driver_number"]
     inizio_lap = {}
     for l in laps:
         if l.get("date_start"):
@@ -226,7 +231,7 @@ def main():
             print(f"  {e['nome']}: dati non disponibili ({ex})")
             continue
         if r:
-            f.write_text(json.dumps({"giri": r[1], "griglia": dict(GRIGLIA), "voci": r[0]}, ensure_ascii=False, indent=1))
+            f.write_text(json.dumps({"giri": r[1], "griglia": dict(GRIGLIA), "giro_veloce": GIRO_VELOCE.get("numero"), "voci": r[0]}, ensure_ascii=False, indent=1))
             print(f"{e['nome']}: {len(r[0])} voci")
 
 

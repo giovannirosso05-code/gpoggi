@@ -1323,3 +1323,17 @@ body.serie-moto { --accent: #1f5fd1; --accent-hover: #174aa8; --accent-soft: rgb
 a.vota-cta { display: block; width: 100%; box-sizing: border-box; text-align: center; text-decoration: none; }
 
 .chip-serie.chip-class { margin-left: auto; background: var(--text); color: var(--bg); border-color: var(--text); }
+
+/* pronostico: F1 + MotoGP in grande, schede grandi, invito all'altra serie */
+.pron-doppio { margin: 16px 0 4px; text-align: center; font-family: var(--font-display); font-weight: 700; text-transform: uppercase; font-size: clamp(28px, 6vw, 42px); line-height: 1.1; }
+.pron-doppio .pd-f1 { color: #e8352f; } .pron-doppio .pd-moto { color: var(--moto-blu); }
+.pron-doppio small { display: block; font-family: var(--font-body); text-transform: none; font-weight: 500; font-size: 14px; color: var(--text-muted); margin-top: 4px; }
+.chip-serie.grande { flex: 1; font-size: 17px; padding: 13px 10px; }
+.pron-extra { grid-template-columns: repeat(2, 1fr); }
+.pron-poi { display: block; width: 100%; margin: 14px 0 4px; padding: 18px 14px; border: 0; border-radius: 14px; color: #fff; font: 700 19px var(--font-display, sans-serif); text-transform: uppercase; letter-spacing: .03em; cursor: pointer; animation: pron-pulsa 1.4s ease-in-out infinite; }
+.pron-poi.moto { background: var(--moto-blu); } .pron-poi.f1 { background: #e8352f; }
+@keyframes pron-pulsa { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.03); } }
+@media (prefers-reduced-motion: reduce) { .pron-poi { animation: none; } }
+@media (max-width: 600px) { .pron-extra { grid-template-columns: 1fr; } }
+.chip-serie.grande { white-space: nowrap; }
+@media (max-width: 600px) { .chip-serie-riga { flex-wrap: wrap; } .chip-serie.chip-class { flex-basis: 100%; margin-left: 0; padding: 9px; } }

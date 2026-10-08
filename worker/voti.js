@@ -111,7 +111,7 @@ export default {
       let cursor;
       for (let i = 0; i < 10; i++) {
         const r = await env.VOTI.list({ prefix: "pron:", cursor, limit: 1000 });
-        for (const k of r.keys) if (k.metadata) voti.push({ gp: k.name.split(":")[1], nick: k.metadata.nick, podio: k.metadata.podio, ts: k.metadata.ts });
+        for (const k of r.keys) if (k.metadata) voti.push({ gp: k.name.split(":")[1], nick: k.metadata.nick, podio: k.metadata.podio, pole: k.metadata.pole, giro: k.metadata.giro, ts: k.metadata.ts });
         if (r.list_complete) break;
         cursor = r.cursor;
       }
@@ -204,8 +204,11 @@ export default {
       const nick = String(c.nick || "").trim().replace(/\s+/g, " ");
       const podio = Array.isArray(c.podio) ? c.podio.map((x) => String(x).slice(0, 10)) : [];
       if (!gp || id.length < 8 || !/^[\p{L}\p{N} _.-]{3,16}$/u.test(nick) || podio.length !== 3 || new Set(podio).size !== 3) return json({ errore: "dati non validi" }, 400);
-      const via = (await orariGara())[gp];
+      const orari = await orariGara(), via = orari[gp], viaQuali = orari["q:" + gp];
       if (via && Date.now() >= Date.parse(via)) return json({ errore: "votazioni chiuse" }, 403);
+      const breve = (x) => (x === undefined || x === null || x === "" ? null : String(x).replace(/[^\w-]/g, "").slice(0, 10));
+      let pole = breve(c.pole), tp = Date.now();
+      const giro = breve(c.giro);
       const emailNorm = c.email ? normalizzaEmail(c.email) : null;
       if (c.email && !emailNorm) return json({ errore: "email non valida" }, 400);
       if (emailNorm) {
@@ -225,8 +228,12 @@ export default {
         await env.VOTI.put(`mailacc:${await impronta(emailNorm)}`, id, { expirationTtl: 400 * 86400 });
         await env.VOTI.put(`mail:${id}`, emailNorm, { expirationTtl: 400 * 86400 });
       }
+      // la pole si sceglie entro l'inizio delle qualifiche: dopo resta quella di prima
+      const prima = await env.VOTI.getWithMetadata(`pron:${gp}:${id}`);
+      const vecchio = (prima && prima.metadata) || {};
+      if (viaQuali && Date.now() >= Date.parse(viaQuali)) { pole = vecchio.pole || null; tp = vecchio.tp || vecchio.ts || null; }
       const h = (await impronta((req.headers.get("CF-Connecting-IP") || "") + "|pron")).slice(0, 8);
-      await env.VOTI.put(`pron:${gp}:${id}`, "1", { metadata: { nick, podio, ts: Date.now(), h }, expirationTtl: 90 * 86400 });
+      await env.VOTI.put(`pron:${gp}:${id}`, "1", { metadata: { nick, podio, pole, giro, ts: Date.now(), tp, h }, expirationTtl: 90 * 86400 });
       return json({ ok: true });
     }
     if (url.pathname === "/valutazione") {

@@ -21,6 +21,12 @@ function punteggio(podio, vero) {
   podio.forEach((n, i) => { if (vero[i] === String(n)) { pt += PUNTI_POSIZIONE[i]; esatti++; } else if (vero.includes(String(n))) pt += 1; });
   return pt + (esatti === 3 ? 5 : 0);
 }
+function punti(v, r) {
+  let pt = punteggio(v.podio, r.vero);
+  if (v.pole && r.pole && String(v.pole) === String(r.pole) && (!r.qInizio || (v.tp || v.ts || 0) <= r.qInizio)) pt += 5;
+  if (v.giro && r.giro && String(v.giro) === String(r.giro)) pt += 1;
+  return pt;
+}
 const chiaveMoto = (nome) => "m" + nome.replace(/\W/g, "").slice(0, 38);
 const quando = (ts) => new Date(ts).toLocaleString("it-IT", { timeZone: "Europe/Rome", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
 
@@ -45,12 +51,16 @@ async function podioVero(d, chiaveGara) {
       const dett = await fetchJSON(`data/gare/${chiaveGara}.json`);
       const sess = dett.sessioni.find((x) => x.tipo === "Race" && x.risultati && x.risultati.length);
       if (!sess) return null;
-      return { vero: sess.risultati.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos).map((r) => String(r.numero)), inizio: new Date(sess.inizio).getTime() };
+      const quali = dett.sessioni.find((x) => x.tipo === "Qualifying"), primoQ = quali && (quali.risultati || []).find((r) => r.pos === 1);
+      const cron = await fetchJSON(`data/cronaca/${chiaveGara}.json`).catch(() => null);
+      return { vero: sess.risultati.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos).map((r) => String(r.numero)), inizio: new Date(sess.inizio).getTime(),
+        pole: primoQ ? String(primoQ.numero) : null, qInizio: quali ? new Date(quali.inizio).getTime() : null, giro: cron && cron.giro_veloce != null ? String(cron.giro_veloce) : null };
     } catch (e) { return null; }
   }
   const righe = g.moto && (g.moto.classifiche || {}).MotoGP;
   if (!righe || !righe.length) return null;
-  return { vero: righe.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos).map((r) => String(r.numero)), inizio: d.orari[chiaveGara] ? new Date(d.orari[chiaveGara]).getTime() : new Date(g.moto.data + "T23:59:59Z").getTime() };
+  return { pole: g.moto.pole != null ? String(g.moto.pole) : null, giro: g.moto.giro_veloce != null ? String(g.moto.giro_veloce) : null, qInizio: d.orari["q:" + chiaveGara] ? new Date(d.orari["q:" + chiaveGara]).getTime() : null,
+    vero: righe.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos).map((r) => String(r.numero)), inizio: d.orari[chiaveGara] ? new Date(d.orari[chiaveGara]).getTime() : new Date(g.moto.data + "T23:59:59Z").getTime() };
 }
 
 async function mostra() {
@@ -71,7 +81,7 @@ async function mostra() {
     for (const x of perGp[k]) {
       if (!x.podio || x.ts > r.inizio) continue;
       const o = (classifica[x.nick] ||= { nick: x.nick, f1: 0, mo: 0, gare: 0 });
-      o[d.gare[k].serie === "F1" ? "f1" : "mo"] += punteggio(x.podio, r.vero);
+      o[d.gare[k].serie === "F1" ? "f1" : "mo"] += punti(x, r);
       o.gare++;
     }
   }
@@ -101,7 +111,7 @@ async function mostra() {
   await Promise.all([...new Set(futuri.map((v) => v.nick))].map(async (n) => {
     try { emailDi[n] = ((await api("/vincitore", { nick: n })).email || []).map((e) => e.email).find(Boolean) || null; } catch (e) { emailDi[n] = null; }
   }));
-  $("t-voti").innerHTML = futuri.length ? `<thead><tr><th>Gara</th><th>Nickname</th><th>Email</th><th>Podio</th><th>Ora</th></tr></thead><tbody>${futuri.map((v) => `<tr><td>${esc(nomeGara(v.gp))}</td><td><b>${esc(v.nick)}</b></td><td>${emailDi[v.nick] ? esc(emailDi[v.nick]) : '<span class="muted">nessuna</span>'}</td><td>${v.podio.map((n) => esc(nomePil(v.gp, n))).join(", ")}</td><td>${quando(v.ts)}</td></tr>`).join("")}</tbody>` : `<tbody><tr><td class="muted">Nessun voto per gare future.</td></tr></tbody>`;
+  $("t-voti").innerHTML = futuri.length ? `<thead><tr><th>Gara</th><th>Nickname</th><th>Email</th><th>Podio</th><th>Ora</th></tr></thead><tbody>${futuri.map((v) => `<tr><td>${esc(nomeGara(v.gp))}</td><td><b>${esc(v.nick)}</b></td><td>${emailDi[v.nick] ? esc(emailDi[v.nick]) : '<span class="muted">nessuna</span>'}</td><td>${v.podio.map((n) => esc(nomePil(v.gp, n))).join(", ")}${v.pole ? ` <span class="muted">· pole ${esc(nomePil(v.gp, v.pole))}</span>` : ""}${v.giro ? ` <span class="muted">· giro ${esc(nomePil(v.gp, v.giro))}</span>` : ""}</td><td>${quando(v.ts)}</td></tr>`).join("")}</tbody>` : `<tbody><tr><td class="muted">Nessun voto per gare future.</td></tr></tbody>`;
 }
 
 async function entra() {

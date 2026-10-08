@@ -163,6 +163,13 @@ function punteggio(podio, vero) {
   podio.forEach((n, i) => { if (vero[i] === String(n)) { pt += PUNTI_POSIZIONE[i]; esatti++; } else if (vero.includes(String(n))) pt += 1; });
   return pt + (esatti === 3 ? 5 : 0);
 }
+// pole indovinata +5 (vale solo se scelta prima delle qualifiche), giro più veloce in gara +1
+function punti(v, r) {
+  let pt = punteggio(v.podio, r.vero);
+  if (v.pole && r.pole && String(v.pole) === String(r.pole) && (!r.qInizio || (v.tp || v.ts || 0) <= r.qInizio)) pt += 5;
+  if (v.giro && r.giro && String(v.giro) === String(r.giro)) pt += 1;
+  return pt;
+}
 const base = VOTI_URL.replace(/\/$/, "");
 // Il giocatore si riconosce da un id. Alla prima partita si crea un codice di recupero (8 caratteri) e l'id si ricava da nickname + codice:
 // su un altro telefono basta rimettere gli stessi nickname e codice per riavere lo stesso id, quindi gli stessi punti. Nessuna email, nessuna registrazione.
@@ -197,7 +204,11 @@ async function podioVeroF1(id) {
     const g = await fetchJSON(`data/gare/${id}.json`);
     const sess = g.sessioni.find((x) => x.tipo === "Race" && x.risultati && x.risultati.length);
     if (!sess) return null;
-    return { vero: sess.risultati.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos).map((r) => String(r.numero)), inizio: new Date(sess.inizio).getTime() };
+    const quali = g.sessioni.find((x) => x.tipo === "Qualifying");
+    const primoQ = quali && (quali.risultati || []).find((r) => r.pos === 1);
+    const cron = await fetchJSON(`data/cronaca/${id}.json`).catch(() => null);
+    return { vero: sess.risultati.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos).map((r) => String(r.numero)), inizio: new Date(sess.inizio).getTime(),
+      pole: primoQ ? String(primoQ.numero) : null, qInizio: quali ? new Date(quali.inizio).getTime() : null, giro: cron && cron.giro_veloce != null ? String(cron.giro_veloce) : null };
   } catch (e) { return null; }
 }
 let garePassateMoto = null, orariGara = null;
@@ -209,7 +220,8 @@ async function podioVeroMoto(chiave) {
   if (!righe || !righe.length) return null;
   // ora di partenza esatta se salvata; per le gare più vecchie (senza pronostici) vale la fine del giorno
   const orari = await caricaOrari();
-  return { nome, vero: righe.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos).map((r) => String(r.numero)), inizio: orari[chiave] ? new Date(orari[chiave]).getTime() : new Date(g.data + "T23:59:59Z").getTime() };
+  return { nome, pole: g.pole != null ? String(g.pole) : null, giro: g.giro_veloce != null ? String(g.giro_veloce) : null, qInizio: orari["q:" + chiave] ? new Date(orari["q:" + chiave]).getTime() : null,
+    vero: righe.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos).map((r) => String(r.numero)), inizio: orari[chiave] ? new Date(orari[chiave]).getTime() : new Date(g.data + "T23:59:59Z").getTime() };
 }
 
 // per ogni serie: piloti tra cui scegliere, prossimo Gran Premio e Gran Premi già disputati
@@ -240,12 +252,15 @@ async function partitaPronostico(serie = "f1") {
   const nomeDi = (s, n) => (s.piloti.find((p) => p.n === String(n)) || {}).nome || "n.d.";
   const pr = S.prossimo;
   const aperto = pr && pr.inizio && new Date(pr.inizio) > new Date();
+  const orariG = await caricaOrari();
+  const qInizio = pr && orariG["q:" + pr.chiave];
+  const poleAperta = !qInizio || new Date(qInizio) > new Date();
   const tutti = salvati();
   let totale = 0, righe = "";
   for (const [id, mio] of Object.entries(tutti)) {
     if (!S.appartiene(id)) continue;
     const r = await S.vero(id);
-    const pt = r ? punteggio(mio.podio, r.vero) : null;
+    const pt = r ? punti({ ...mio, tp: 0 }, r) : null;
     if (pt !== null) totale += pt;
     righe += `<tr><td><strong>${esc(mio.nome)}</strong></td><td>${mio.podio.map((n) => nomeDi(S, n)).map(esc).join(", ")}</td><td>${r ? r.vero.map((n) => nomeDi(S, n)).map(esc).join(", ") : "<span class='muted'>in attesa</span>"}</td><td><strong>${pt ?? "–"}</strong></td></tr>`;
   }
@@ -265,14 +280,17 @@ async function partitaPronostico(serie = "f1") {
         <li><b>Minorenni:</b> possono partecipare solo con il consenso di un genitore.</li>
         <li><b>Modifiche:</b> l'organizzatore può cambiare o annullare l'iniziativa per cause tecniche, avvisando sul sito.</li>
       </ol></details></div>
-    <div class="chip-serie-riga" style="display:flex;gap:8px;margin:14px 0 4px"><button class="chip-serie f1 ${serie === "f1" ? "attivo" : ""}" data-s="f1">Formula 1</button><button class="chip-serie moto ${serie === "moto" ? "attivo" : ""}" data-s="moto">MotoGP</button>${base ? `<button class="chip-serie chip-class" data-vai="classifica">Classifica</button>` : ""}</div>
+    <div class="pron-doppio">Vota <span class="pd-f1">F1</span> + <span class="pd-moto">MotoGP</span><small>i punti si sommano nella stessa classifica</small></div>
+    <div class="chip-serie-riga" style="display:flex;gap:8px;margin:14px 0 4px"><button class="chip-serie grande f1 ${serie === "f1" ? "attivo" : ""}" data-s="f1">Formula 1${F1.prossimo && tutti[F1.prossimo.chiave] ? " ✓" : ""}</button><button class="chip-serie grande moto ${serie === "moto" ? "attivo" : ""}" data-s="moto">MotoGP${MO.prossimo && tutti[MO.prossimo.chiave] ? " ✓" : ""}</button>${base ? `<button class="chip-serie chip-class" data-vai="classifica">Classifica</button>` : ""}</div>
     ${pr ? `<h3 class="quiz-titolo">${esc(pr.nome)}: chi sale sul podio?</h3>
     ${aperto ? `<div class="pron-form">${[1, 2, 3].map((i) => `<label>${i}° posto<select class="sel" id="p${i}">${opz((tutti[pr.chiave] || { podio: [] }).podio[i - 1])}</select></label>`).join("")}</div>
+    <div class="pron-form pron-extra"><label>Pole position · <b>5 punti</b><select class="sel" id="pole" ${poleAperta ? "" : "disabled"}>${opz((tutti[pr.chiave] || {}).pole)}</select>${poleAperta ? "" : `<small class="muted" style="text-transform:none;letter-spacing:0">Chiusa: le qualifiche sono iniziate</small>`}</label>
+      <label>Giro più veloce in gara · <b>1 punto</b><select class="sel" id="giro">${opz((tutti[pr.chiave] || {}).giro)}</select></label></div>
     ${base ? `<label class="pron-nome">Il tuo nickname in classifica<input type="text" id="nome" maxlength="16" autocomplete="nickname" placeholder="Per esempio Giovanni_F1" value="${esc(leggi("pron-nome") || "")}"></label>` : ""}
     ${base ? `<label class="pron-nome">Email per il premio (facoltativa)<input type="email" id="email" maxlength="80" autocomplete="email" placeholder="nome@esempio.it" value="${esc(leggi("pron-email") || "")}"></label>
     <p class="muted" style="font-size:13px;margin:-6px 0 12px">Serve solo per mandarti il premio se vinci: senza email giochi lo stesso ma non puoi vincere. Non è mai pubblica e la cancelliamo dopo la consegna. <a href="privacy.html" class="accent">Privacy</a></p>` : ""}
-    <div class="quiz-esito"><button class="quiz-avanti pron-rosso" id="salva" style="margin:0">Salva il pronostico</button> <span id="msg" class="muted"></span></div>` : `<p class="muted">Le votazioni per questo Gran Premio sono chiuse: la gara è iniziata.</p>`}
-    <div class="pron-punti"><b>Come si fanno i punti</b><ul><li>1° posto indovinato: <b>5</b> punti</li><li>2° posto indovinato: <b>3</b> punti</li><li>3° posto indovinato: <b>2</b> punti</li><li>Pilota sul podio ma in un'altra posizione: <b>1</b> punto</li><li>Podio completo esatto: <b>+5</b> (massimo 15)</li></ul>
+    <div class="quiz-esito"><button class="quiz-avanti pron-rosso" id="salva" style="margin:0">Salva il pronostico</button> <span id="msg" class="muted"></span></div><div id="poi"></div>` : `<p class="muted">Le votazioni per questo Gran Premio sono chiuse: la gara è iniziata.</p>`}
+    <div class="pron-punti"><b>Come si fanno i punti</b><ul><li>1° posto indovinato: <b>5</b> punti</li><li>2° posto indovinato: <b>3</b> punti</li><li>3° posto indovinato: <b>2</b> punti</li><li>Pilota sul podio ma in un'altra posizione: <b>1</b> punto</li><li>Podio completo esatto: <b>+5</b></li><li>Pole position indovinata: <b>5</b> punti (si sceglie prima che inizino le qualifiche)</li><li>Giro più veloce in gara indovinato: <b>1</b> punto</li></ul><span class="muted">Massimo 21 punti per Gran Premio. </span>
     <span class="muted">Il pronostico si può cambiare fino all'inizio della gara. La classifica si aggiorna dopo ogni gara.</span></div>` : `<p class="muted">Nessun Gran Premio ${S.etichetta} in programma.</p>`}
     ${base ? `<h3 class="quiz-titolo" id="titolo-classifica" style="margin-top:24px;scroll-margin-top:110px">Classifica</h3><div id="classifica"><p class="muted">Carico la classifica…</p></div>
     <h3 class="quiz-titolo" style="margin-top:24px">Quanti hanno votato${pr ? ` · ${esc(pr.nome)}` : ""}</h3><div id="votanti"><p class="muted">Carico l'elenco…</p></div>` : ""}
@@ -301,12 +319,13 @@ async function partitaPronostico(serie = "f1") {
     if (base && !/^[\p{L}\p{N} _.-]{3,16}$/u.test(nome)) { msg.textContent = "Scrivi un nickname di 3-16 caratteri (lettere, numeri, spazi)."; return; }
     const emailEl = document.getElementById("email"), email = emailEl ? emailEl.value.trim() : "";
     if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { msg.textContent = "L'email non sembra valida: correggila o lasciala vuota."; return; }
-    const t = salvati(); t[pr.chiave] = { nome: pr.nome, podio }; scrivi("pronostici", JSON.stringify(t));
+    const pole = (document.getElementById("pole") || {}).value || "", giro = (document.getElementById("giro") || {}).value || "";
+    const t = salvati(); t[pr.chiave] = { nome: pr.nome, podio, pole, giro }; scrivi("pronostici", JSON.stringify(t));
     let testo = leggi("pronostici") ? "Salvato sul dispositivo." : "Salvato solo finché la pagina resta aperta (la memoria del browser è bloccata).";
     if (base) {
       scrivi("pron-nome", nome); if (email) scrivi("pron-email", email);
       try {
-        const r = await fetch(base + "/pronostico", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ gp: pr.chiave, id: await idGiocatore(nome), nick: nome, podio, ...(email ? { email } : {}) }) });
+        const r = await fetch(base + "/pronostico", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ gp: pr.chiave, id: await idGiocatore(nome), nick: nome, podio, pole, giro, ...(email ? { email } : {}) }) });
         if (r.status === 409) {
           const j = await r.json().catch(() => ({}));
           testo = /email/.test(j.errore || "") ? "Questa email è già collegata a un altro giocatore: in fondo alla pagina tocca «Hai già giocato da un altro telefono?» e inserisci nickname e codice di recupero. Se non hai più il codice, scrivi a info@gpoggi.it." : "Questo nickname è già usato da un altro giocatore: scegline un altro.";
@@ -318,6 +337,13 @@ async function partitaPronostico(serie = "f1") {
       } catch (e) { testo += " Non sono riuscito a raggiungere la classifica: riprova più tardi."; }
     }
     msg.textContent = testo;
+    // subito dopo, l'invito a fare anche l'altra serie
+    const altraS = serie === "f1" ? MO : F1, ap = altraS.prossimo && altraS.prossimo.inizio && new Date(altraS.prossimo.inizio) > new Date();
+    if (ap && !salvati()[altraS.prossimo.chiave] && /Salvato/.test(testo)) {
+      const poi = document.getElementById("poi");
+      poi.innerHTML = `<button class="pron-poi ${serie === "f1" ? "moto" : "f1"}">Ora fai il podio ${altraS.etichetta}: ${esc(altraS.prossimo.nome)} →</button>`;
+      poi.querySelector("button").addEventListener("click", () => { partitaPronostico(serie === "f1" ? "moto" : "f1").then(() => box.scrollIntoView({ behavior: "smooth" })); });
+    }
     if (base) mostraClassifica();
   });
   if (base) mostraClassifica();
@@ -345,7 +371,7 @@ async function partitaPronostico(serie = "f1") {
       for (const g of s.passate.slice().sort((a, b) => new Date(a.data) - new Date(b.data))) {
         if (!perGp[g.chiave]) continue;
         const r = await s.vero(g.chiave);
-        if (r) chiusi.push({ s, g, r, voci: perGp[g.chiave].filter((x) => x.podio && x.ts <= r.inizio).map((x) => ({ nick: x.nick, podio: x.podio, pt: punteggio(x.podio, r.vero) })).sort((a, b) => b.pt - a.pt || a.nick.localeCompare(b.nick)) });
+        if (r) chiusi.push({ s, g, r, voci: perGp[g.chiave].filter((x) => x.podio && x.ts <= r.inizio).map((x) => ({ nick: x.nick, podio: x.podio, pt: punti(x, r) })).sort((a, b) => b.pt - a.pt || a.nick.localeCompare(b.nick)) });
       }
     }
     chiusi.sort((a, b) => a.r.inizio - b.r.inizio);

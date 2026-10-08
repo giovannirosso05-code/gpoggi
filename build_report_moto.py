@@ -212,7 +212,10 @@ def report_evento(e, cat_ids):
     except Exception as ex:
         print("  lap chart non disponibile:", ex)
     cr.sort(key=lambda c: (c["giro"], {"via": 0, "ritiro": 2, "comando": 3, "sorpasso": 4}.get(c["tipo"], 5)))
-    GARE[nome_gp] = {"nome": nome_gp, "circuito": (e.get("circuit") or {}).get("name"), "data": e["date_end"], "inizio": e["date_start"], "classifiche": classifiche_evento(e, cat_ids), "cronaca": cr}
+    numero_di = {x["rider"]["full_name"]: x["rider"].get("number") for x in cl["classification"]}
+    num = lambda rec: rec and (rec["rider"].get("number") or numero_di.get(rec["rider"]["full_name"]))
+    GARE[nome_gp] = {"nome": nome_gp, "circuito": (e.get("circuit") or {}).get("name"), "data": e["date_end"], "inizio": e["date_start"], "classifiche": classifiche_evento(e, cat_ids), "cronaca": cr,
+                     "pole": num(pole), "giro_veloce": num(veloce)}
     return {"gp": nome_gp, "circuito": (e.get("circuit") or {}).get("name"), "data": e["date_end"], "titolo": f"{top[0]['rider']['full_name']} vince il {nome_gp}", "paragrafi": par}
 
 

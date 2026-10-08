@@ -7,6 +7,7 @@ Per rispondere in modo credibile, solo durante la ripresa la pagina espone le do
 """
 import argparse
 import asyncio
+import os
 import re
 import subprocess
 import sys
@@ -56,10 +57,10 @@ GIOCHI = {
                        voci=["Vai su G P Oggi punto it e tocca Giochi. Costa niente e non serve registrarsi.",
                              "Il primo gioco è il pronostico del podio. Chi è primo in classifica a fine anno vince una carta regalo Amazon da cinquanta euro.",
                              "Per ogni posto scegli un pilota: primo, secondo e terzo.",
-                             "Scegli il podio di Formula uno, scrivi il tuo nickname e tocca Salva: da quel momento sei in classifica.",
+                             "Scegli il podio di Formula uno, scrivi il tuo nickname e la tua email, che serve solo per mandarti il premio. Tocca Salva e fai uno screenshot del codice di recupero.",
                              "Lo stesso vale per la Moto G P: tocca Moto G P e scegli il podio dell'Indonesia.",
-                             "Chi azzecca di più sale in classifica, che si aggiorna dopo ogni gara. Vota su G P Oggi punto it: che podio fai tu?"],
-                       did=["Giochi · gratis", "Premio: carta Amazon 50 €", "Scegli il podio", "Scrivi il nickname e salva", "Anche per la MotoGP", "Classifica dopo ogni gara"]),
+                             "Vedi anche chi ha già votato. La classifica si aggiorna dopo ogni gara, e il regolamento è sul sito. Vota su G P Oggi punto it: che podio fai tu?"],
+                       did=["Giochi · gratis", "Premio: carta Amazon 50 €", "Scegli il podio", "Nickname, email e codice", "Anche per la MotoGP", "Chi ha già votato"]),
 }
 CHIUSURA = "G P Oggi. Lo trovi su G P Oggi punto it."
 
@@ -77,6 +78,49 @@ async def hook_domande(route):
 VOTI = []
 
 
+def contesto_pronostico():
+    """Gran Premi della settimana (F1 e MotoGP con la gara entro 5 giorni) e i tre piloti in testa al campionato, dai dati del sito.
+    Con PRON_ORA (ISO) si può simulare un altro momento. Ritorna None se questa settimana non c'è nessuna gara."""
+    import datetime as dt
+    import json as _j
+    ora = dt.datetime.fromisoformat(os.environ["PRON_ORA"].replace("Z", "+00:00")) if os.environ.get("PRON_ORA") else dt.datetime.now(dt.timezone.utc)
+    dati = SITO / "data"
+    t = lambda x: dt.datetime.fromisoformat(x)
+    f1 = moto = None
+    for g in sorted(_j.load(open(dati / "events.json")), key=lambda g: g["inizio"]):
+        gara = next((x for x in g["sessioni"] if x["nome"] == "Gara"), None)
+        if gara and t(gara["inizio"]) > ora:
+            f1 = (g["nome"], t(gara["inizio"])); break
+    gare_m = [(w, next((x for x in w["sessioni"] if x["nome"] == "Gara"), None)) for w in _j.load(open(dati / "motogp.json"))["weekend"]]
+    for w, gara in sorted([x for x in gare_m if x[1]], key=lambda x: x[1]["inizio"]):
+        if t(gara["inizio"]) + dt.timedelta(minutes=45) > ora:
+            moto = (w["nome"].replace("GP ", "Gran Premio ", 1), t(gara["inizio"])); break
+    limite = ora + dt.timedelta(days=5)
+    serie = []
+    if f1 and f1[1] < limite:
+        roster = sorted([p for p in _j.load(open(dati / "roster.json")) if p.get("nome")], key=lambda p: p.get("posizione") or 99)
+        serie.append(dict(id="f1", gp=f1[0], nomi=[p["nome"] for p in roster[:3]], breve=f1[0]))
+    if moto and moto[1] < limite:
+        piloti = sorted(_j.load(open(dati / "motogp-classifica.json"))["piloti"], key=lambda p: p["pos"])
+        serie.append(dict(id="moto", gp=moto[0], nomi=[p["nome"] for p in piloti[:3]], breve=moto[0]))
+    return serie or None
+
+
+def gioco_pronostico(serie):
+    nomi_gp = " e nel ".join(x["gp"] for x in serie)
+    primo = serie[0]
+    voci = ["Vai su G P Oggi punto it e tocca Giochi. È gratis e non serve registrarsi.",
+            "Il primo gioco è il pronostico del podio. Chi è primo in classifica a fine anno vince una carta regalo Amazon da cinquanta euro.",
+            f"Scegli il podio del {primo['gp']}: primo, secondo e terzo. Poi scrivi il tuo nickname e la tua email, che serve solo per mandarti il premio. Tocca Salva e fai uno screenshot del codice di recupero.",
+            "Il nickname e l'email li inserisci una volta sola: il sito ti ricorda sul tuo telefono.",
+            (f"Lo stesso vale per il {serie[1]['gp']}: tocca {'Moto G P' if serie[1]['id'] == 'moto' else 'Formula uno'} e scegli il podio." if len(serie) > 1 else "Puoi cambiare il tuo podio fino all'inizio della gara."),
+            "Vedi anche chi ha già votato. La classifica si aggiorna dopo ogni gara, e il regolamento è sul sito. Vota su G P Oggi punto it: che podio fai tu?"]
+    return dict(chiave="pronostico", nome="Pronostico del podio", modo=None, custom=True, serie=serie,
+                intro=f"Che podio fai nel {nomi_gp}? Chi è primo a fine anno vince una carta Amazon da cinquanta euro!",
+                voci=voci,
+                did=["Giochi · gratis", "Premio: carta Amazon 50 €", "Scegli il podio", "Nickname, email e codice", "Il podio si può cambiare" if len(serie) == 1 else "Anche l'altra serie", "Chi ha già votato"])
+
+
 async def finto_server_voti(route):
     """Durante la ripresa il server dei voti è finto: il voto della demo non finisce nella classifica vera."""
     h = {"access-control-allow-origin": "*", "access-control-allow-headers": "content-type", "access-control-allow-methods": "GET, POST, OPTIONS", "content-type": "application/json"}
@@ -89,7 +133,7 @@ async def finto_server_voti(route):
         return await route.fulfill(status=200, headers=h, body='{"ok":true}')
     if req.url.endswith("/pronostici"):
         import json as _j
-        return await route.fulfill(status=200, headers=h, body=_j.dumps({"pronostici": [{"gp": v["gp"], "nick": v["nick"], "podio": v["podio"], "ts": 1} for v in VOTI]}))
+        return await route.fulfill(status=200, headers=h, body=_j.dumps({"pronostici": [{"gp": v["gp"], "nick": v["nick"], "podio": v["podio"], "ts": int(time.time() * 1000)} for v in VOTI]}))
     return await route.fulfill(status=200, headers=h, body="{}")
 
 
@@ -135,6 +179,8 @@ async def risposta(r, giusta=True, veloce=False, passi=0):
 
 
 def azioni_pronostico(g):
+    serie = g["serie"]
+
     async def a_apri(r, base):
         await r.vai(base + "/index.html")
         await r.fermo(0.4)
@@ -155,8 +201,21 @@ def azioni_pronostico(g):
         await r.js("(a) => { const s = document.getElementById('p' + a.i); const o = [...s.options].find((x) => x.textContent === a.t); s.value = o.value; s.dispatchEvent(new Event('change')); }", {"i": idx, "t": testo})
         await r.fermo(0.7)
 
-    async def a_f1(r, base):
-        for i, nome in enumerate(["Kimi Antonelli", "George Russell", "Max Verstappen"], 1):
+    async def passa_a(r, ser):
+        """Tocca la serie giusta (F1 o MotoGP) e aspetta il modulo con i piloti di quella serie."""
+        sel = ".chip-serie." + ser["id"]
+        attivo = await r.js("(s) => document.querySelector(s).classList.contains('attivo')", sel)
+        if not attivo:
+            c = await r.centro(".chip-serie-riga", 0)
+            await r.scorri(c[1] - 140, 0.6)
+            await tocca_vis(r, sel, 0, 0.6)
+            await r.js("(s) => document.querySelector(s).click()", sel)
+            await r.js("(n) => new Promise((ok) => { const t = setInterval(() => { const e = document.getElementById('p1'); if (e && [...e.options].some((o) => o.textContent === n)) { clearInterval(t); ok(); } }, 50); })", ser["nomi"][0])
+            await r.fermo(0.6)
+
+    async def a_podio(r, base):
+        await passa_a(r, serie[0])
+        for i, nome in enumerate(serie[0]["nomi"], 1):
             await scegli(r, i, nome)
 
     async def a_nome(r, base):
@@ -164,32 +223,37 @@ def azioni_pronostico(g):
         for k in range(1, 7):
             await r.js("(n) => { const e = document.getElementById('nome'); e.value = 'GP_Fan'.slice(0, n); e.dispatchEvent(new Event('input')); }", k)
             await r.fermo(0.12)
+        await r.fermo(0.4)
+        await tocca_vis(r, "#email", 0, 0.5)
+        for k in range(1, 9):
+            await r.js("(n) => { const e = document.getElementById('email'); e.value = 'tuamail@esempio.it'.slice(0, n * 2); e.dispatchEvent(new Event('input')); }", k)
+            await r.fermo(0.1)
+        await r.js("() => { document.getElementById('email').value = 'tuamail@esempio.it'; }")
         await r.fermo(0.5)
         await tocca_vis(r, "#salva", 0, 0.6)
         await r.js("document.getElementById('salva').click()")
-        await r.fermo(1.6)
+        await r.fermo(1.8)
 
-    async def a_moto(r, base):
-        c = await r.centro(".chip-serie-riga", 0)
-        await r.scorri(c[1] - 140, 0.6)
-        await tocca_vis(r, ".chip-serie.moto", 0, 0.6)
-        await r.js("document.querySelector('.chip-serie.moto').click()")
-        await r.js("() => new Promise((ok) => { const t = setInterval(() => { const e = document.getElementById('p1'); if (e && [...e.options].some((o) => o.textContent === 'Marc Marquez')) { clearInterval(t); ok(); } }, 50); })")
-        await r.fermo(0.6)
-        for i, nome in enumerate(["Marc Marquez", "Pedro Acosta", "Jorge Martin"], 1):
+    async def a_altra(r, base):
+        if len(serie) < 2:
+            await r.fermo(2.0)
+            return
+        await passa_a(r, serie[1])
+        for i, nome in enumerate(serie[1]["nomi"], 1):
             await scegli(r, i, nome)
         await tocca_vis(r, "#nome", 0, 0.5)
-        await r.js("() => { const e = document.getElementById('nome'); e.value = 'GP_Fan'; e.dispatchEvent(new Event('input')); }")
+        await r.js("() => { const e = document.getElementById('nome'); e.value = 'GP_Fan'; e.dispatchEvent(new Event('input')); document.getElementById('email').value = 'tuamail@esempio.it'; }")
         await tocca_vis(r, "#salva", 0, 0.5)
         await r.js("document.getElementById('salva').click()")
         await r.fermo(1.4)
 
     async def a_fine(r, base):
-        c = await r.centro("#classifica", 0)
-        await r.scorri(c[1] - 160, 1.0)
-        await r.fermo(2.0)
+        await r.js("() => new Promise((ok) => { const t = setInterval(() => { const e = document.querySelector('#votanti table'); if (e) { clearInterval(t); ok(); } }, 80); setTimeout(ok, 4000); })")
+        c = await r.centro("#votanti", 0)
+        await r.scorri(c[1] - 190, 1.0)
+        await r.fermo(2.4)
 
-    return [a_apri, a_scelta, a_f1, a_nome, a_moto, a_fine]
+    return [a_apri, a_scelta, a_podio, a_nome, a_altra, a_fine]
 
 
 def azioni(g):
@@ -274,6 +338,15 @@ async def registra(g, base, tmp, durate, prova):
 
 
 async def principale(args):
+    if args.gioco == "pronostico":
+        serie = contesto_pronostico()
+        if not serie:
+            print("Questa settimana non c'è nessuna gara: nessun video.")
+            sys.exit(75)
+        GIOCHI["pronostico"] = gioco_pronostico(serie)
+        nomi = " e ".join(x["gp"] for x in serie)
+        Path(str(args.uscita) + ".txt").write_text(
+            f"Che podio fai nel {nomi}? Chi è primo a fine anno vince una carta regalo Amazon da 50 €. Gratis. Cerca GP Oggi su Google, Giochi, Pronostico del podio. Regolamento sul sito. Amazon non è sponsor. #f1 #motogp #pronostici #gpoggi", encoding="utf-8")
     g = GIOCHI[args.gioco]
     base = f"http://localhost:{PORTA}"
     srv = subprocess.Popen([sys.executable, "-m", "http.server", str(PORTA), "-d", str(SITO)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)

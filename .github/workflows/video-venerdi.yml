@@ -1,0 +1,47 @@
+name: Video del venerdì
+
+# Ogni venerdì mattina un video che ricorda di votare il podio dei Gran Premi della settimana (F1 e MotoGP, se c'è la gara).
+# Arriva sul Telegram con la didascalia già scritta, pronto da pubblicare su TikTok. Nelle settimane senza gara non parte.
+on:
+  schedule:
+    - cron: '23 7 * * 5'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: video-venerdi
+  cancel-in-progress: false
+
+jobs:
+  video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt edge-tts playwright
+      - run: python -m playwright install --with-deps chromium
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Crea il video
+        id: crea
+        run: |
+          set +e
+          python video/demo_giochi.py pronostico --uscita "$RUNNER_TEMP/pronostico.mp4"
+          codice=$?
+          if [ $codice -eq 75 ]; then echo "video=no" >> $GITHUB_OUTPUT; exit 0; fi
+          [ $codice -eq 0 ] && echo "video=si" >> $GITHUB_OUTPUT
+          exit $codice
+      - name: Invia su Telegram
+        if: steps.crea.outputs.video == 'si'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          curl -sS --fail -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendVideo" \
+            -F chat_id="${TELEGRAM_CANALE}" -F disable_notification=true -F supports_streaming=true \
+            --form-string caption="$(cat "$RUNNER_TEMP/pronostico.mp4.txt")" \
+            -F video=@"$RUNNER_TEMP/pronostico.mp4" > /dev/null

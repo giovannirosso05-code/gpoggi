@@ -275,7 +275,7 @@ async function partitaPronostico(serie = "f1") {
     <div class="pron-punti"><b>Come si fanno i punti</b><ul><li>1° posto indovinato: <b>5</b> punti</li><li>2° posto indovinato: <b>3</b> punti</li><li>3° posto indovinato: <b>2</b> punti</li><li>Pilota sul podio ma in un'altra posizione: <b>1</b> punto</li><li>Podio completo esatto: <b>+5</b> (massimo 15)</li></ul>
     <span class="muted">Il pronostico si può cambiare fino all'inizio della gara. La classifica si aggiorna dopo ogni gara.</span></div>` : `<p class="muted">Nessun Gran Premio ${S.etichetta} in programma.</p>`}
     ${base ? `<h3 class="quiz-titolo" id="titolo-classifica" style="margin-top:24px;scroll-margin-top:110px">Classifica</h3><div id="classifica"><p class="muted">Carico la classifica…</p></div>
-    <h3 class="quiz-titolo" style="margin-top:24px">Chi ha votato${pr ? ` · ${esc(pr.nome)}` : ""}</h3><div id="votanti"><p class="muted">Carico l'elenco…</p></div>` : ""}
+    <h3 class="quiz-titolo" style="margin-top:24px">Quanti hanno votato${pr ? ` · ${esc(pr.nome)}` : ""}</h3><div id="votanti"><p class="muted">Carico l'elenco…</p></div>` : ""}
     ${righe ? `<h3 class="quiz-titolo" style="margin-top:20px">I tuoi pronostici ${S.etichetta}</h3><div class="table-wrap"><table class="results"><thead><tr><th>Gran Premio</th><th>Il tuo podio</th><th>Podio vero</th><th>Punti</th></tr></thead><tbody>${righe}</tbody></table></div>` : ""}
     ${base ? boxRecupero() : ""}
     <div class="quiz-azioni" style="margin-top:16px"><button class="quiz-avanti secondario" id="menu" style="margin:0">Cambia gioco</button></div>`;
@@ -327,11 +327,8 @@ async function partitaPronostico(serie = "f1") {
     const el = document.getElementById("votanti");
     if (!el) return;
     const voti = pr ? (perGp[pr.chiave] || []).slice().sort((a, b) => a.ts - b.ts) : [];
-    const quando = (ts) => new Date(ts).toLocaleString("it-IT", { timeZone: "Europe/Rome", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
-    const io = (leggi("pron-nome") || "").toLowerCase();
     el.innerHTML = !voti.length ? `<p class="muted">Ancora nessun voto: puoi essere il primo.</p>`
-      : `<p class="muted" style="font-size:13px">${voti.length} ${voti.length === 1 ? "giocatore ha votato" : "giocatori hanno votato"} (ora italiana). Il podio scelto resta nascosto fino alla partenza della gara.</p>
-         <div class="table-wrap"><table class="results"><thead><tr><th>#</th><th>Nickname</th><th>Votato il</th></tr></thead><tbody>${voti.slice(0, 100).map((v, i) => `<tr class="${v.nick.toLowerCase() === io ? "pron-io" : ""}"><td>${i + 1}</td><td><b>${esc(v.nick)}</b></td><td>${quando(v.ts)}</td></tr>`).join("")}</tbody></table></div>`;
+      : `<p style="font-size:18px;margin:4px 0"><b>${voti.length}</b> ${voti.length === 1 ? "giocatore ha già votato" : "giocatori hanno già votato"}.</p><p class="muted" style="font-size:13px;margin:0">I nickname e i podi scelti compaiono in classifica dopo la gara.</p>`;
   }
 
   // Classifica generale (F1 + MotoGP), dell'ultimo weekend e Gran Premio per Gran Premio: contano solo i pronostici arrivati prima della gara

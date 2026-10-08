@@ -251,6 +251,7 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
   const opz = (sel) => `<option value="">Scegli…</option>` + S.piloti.map((p) => `<option value="${p.n}" ${String(sel) === p.n ? "selected" : ""}>${esc(p.nome)}</option>`).join("");
   const nomeDi = (s, n) => (s.piloti.find((p) => p.n === String(n)) || {}).nome || "n.d.";
   const pr = S.prossimo;
+  const quando = (d) => new Date(d).toLocaleString("it-IT", { weekday: "long", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Rome" });
   const aperto = pr && pr.inizio && new Date(pr.inizio) > new Date();
   const orariG = await caricaOrari();
   const qInizio = pr && orariG["q:" + pr.chiave];
@@ -283,8 +284,9 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
     <div class="pron-doppio">Vota <span class="pd-f1">F1</span> + <span class="pd-moto">MotoGP</span><small>i punti si sommano nella stessa classifica</small></div>
     <div class="chip-serie-riga" style="display:flex;gap:8px;margin:14px 0 4px"><button class="chip-serie grande f1 ${serie === "f1" ? "attivo" : ""}" data-s="f1">Formula 1${F1.prossimo && tutti[F1.prossimo.chiave] ? " ✓" : ""}</button><button class="chip-serie grande moto ${serie === "moto" ? "attivo" : ""}" data-s="moto">MotoGP${MO.prossimo && tutti[MO.prossimo.chiave] ? " ✓" : ""}</button>${base ? `<button class="chip-serie chip-class" data-vai="classifica">Classifica</button>` : ""}</div>
     <div id="vista-voto">${pr ? `<h3 class="quiz-titolo">${esc(pr.nome)}: chi sale sul podio?</h3>
+    ${aperto ? `<p class="pron-chiusure">⏱ Si vota fino a: ${qInizio ? `pole <b>${quando(qInizio)}</b> (inizio qualifiche) · ` : ""}podio e giro veloce <b>${quando(pr.inizio)}</b> (partenza gara)</p>` : ""}
     ${aperto ? `<div class="pron-form">${[1, 2, 3].map((i) => `<label>${i}° posto<select class="sel" id="p${i}">${opz((tutti[pr.chiave] || { podio: [] }).podio[i - 1])}</select></label>`).join("")}</div>
-    ${tutti[pr.chiave] && !tutti[pr.chiave].pole && !tutti[pr.chiave].giro ? `<div class="pron-nuovo"><b>Novità:</b> hai già votato, ora puoi aggiungere pole${poleAperta ? "" : " (chiusa: qualifiche iniziate)"} e giro veloce. Scegli qui sotto e premi «Aggiorna il pronostico».</div>` : ""}
+    ${tutti[pr.chiave] && !tutti[pr.chiave].pole && !tutti[pr.chiave].giro ? `<div class="pron-nuovo"><b>Novità:</b> hai già votato, ora puoi aggiungere pole${poleAperta ? "" : " (chiusa: qualifiche iniziate)"} e giro veloce. Scegli qui sotto e premi «Salva le modifiche».</div>` : ""}
     <div class="pron-form pron-extra"><label>Pole position · <b>7 punti</b><select class="sel" id="pole" ${poleAperta ? "" : "disabled"}>${opz((tutti[pr.chiave] || {}).pole)}</select>${poleAperta ? "" : `<small class="muted" style="text-transform:none;letter-spacing:0">Chiusa: le qualifiche sono iniziate</small>`}</label>
       <label>Giro più veloce in gara · <b>1 punto</b><select class="sel" id="giro">${opz((tutti[pr.chiave] || {}).giro)}</select></label></div>
     ${base ? `<label class="pron-nome">Il tuo nickname in classifica<input type="text" id="nome" maxlength="16" autocomplete="nickname" placeholder="Per esempio Giovanni_F1" value="${esc(leggi("pron-nome") || "")}"></label>` : ""}
@@ -319,8 +321,27 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
   if (vaiClass) vaiClass.addEventListener("click", () => mostraVista(true));
   if (vista === "classifica") mostraVista(true);
   const salva = document.getElementById("salva");
-  if (salva && tutti[pr && pr.chiave]) { salva.disabled = true; salva.textContent = "✓ Votato"; }
-  box.querySelectorAll("#vista-voto select, #nome, #email").forEach((el) => el.addEventListener(el.tagName === "SELECT" ? "change" : "input", () => { if (salva) { salva.disabled = false; salva.textContent = salvati()[pr.chiave] ? "Aggiorna il pronostico" : "Salva il pronostico"; } }));
+  // dopo il voto il modulo resta bloccato: per cambiarlo (fino al via della gara) si tocca «Cambia il voto»
+  const campi = () => box.querySelectorAll("#vista-voto .pron-form select, #nome, #email");
+  const blocca = () => {
+    campi().forEach((el) => { el.disabled = true; });
+    salva.disabled = true; salva.textContent = "✓ Votato";
+    if (!document.getElementById("cambia")) {
+      salva.insertAdjacentHTML("afterend", ` <button class="quiz-avanti secondario" id="cambia" style="margin:0">✏️ Cambia il voto</button>`);
+      document.getElementById("cambia").addEventListener("click", sblocca);
+    }
+  };
+  function sblocca() {
+    campi().forEach((el) => { el.disabled = el.id === "pole" && !poleAperta; });
+    salva.disabled = false; salva.textContent = "Salva le modifiche";
+    const c = document.getElementById("cambia"); if (c) c.remove();
+    const m = document.getElementById("msg"); m.textContent = poleAperta ? "Cambia quello che vuoi e premi «Salva le modifiche»." : "Cambia il podio o il giro veloce e premi «Salva le modifiche» (la pole è chiusa: le qualifiche sono iniziate)."; m.className = "pron-msg";
+  }
+  if (salva && tutti[pr && pr.chiave]) {
+    blocca();
+    // chi ha votato prima che esistessero pole e giro veloce trova il modulo già aperto
+    if (!tutti[pr.chiave].pole && !tutti[pr.chiave].giro) sblocca();
+  }
   if (salva) salva.addEventListener("click", async () => {
     const podio = [1, 2, 3].map((i) => document.getElementById("p" + i).value);
     const msg = document.getElementById("msg");
@@ -351,7 +372,7 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
     }
     msg.textContent = testo;
     msg.className = ok ? "pron-msg ok" : "pron-msg errore";
-    if (ok) { salva.disabled = true; salva.textContent = "✓ Votato"; }
+    if (ok) blocca();
     // subito dopo, l'invito a fare anche l'altra serie
     const altraS = serie === "f1" ? MO : F1, ap = altraS.prossimo && altraS.prossimo.inizio && new Date(altraS.prossimo.inizio) > new Date();
     if (ap && !salvati()[altraS.prossimo.chiave] && /Salvato/.test(testo)) {

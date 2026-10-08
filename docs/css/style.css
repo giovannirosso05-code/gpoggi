@@ -1346,3 +1346,7 @@ a.vota-cta { display: block; width: 100%; box-sizing: border-box; text-align: ce
 .pron-msg.ok { background: #e3f6ec; color: #136b44; border: 2px solid #1f8f5f; }
 .pron-msg.errore { background: #fdeceb; color: #a0201b; border: 2px solid #e8352f; }
 #salva:disabled { background: #1f8f5f; opacity: 1; cursor: default; box-shadow: none; }
+.pron-msg { background: var(--bg); border: 2px solid var(--line, #e2dfd6); }
+.pron-msg:empty { display: none; }
+.pron-chiusure { font-size: 14px; margin: -4px 0 12px; color: var(--muted, #666); }
+.pron-chiusure b { color: var(--text); }

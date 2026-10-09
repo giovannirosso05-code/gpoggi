@@ -24,7 +24,7 @@ const REPO_BASE = "giovannirosso05-code/gpoggi";
 const CHAT_BASE = "559225883";          // la tua chat privata (la stessa del bot di MMA Oggi: un id utente vale per tutti i bot)
 const BOT_BASE = "Gpoggibot";
 const RAMO = "main";
-const VERSIONE = "radar-notizia-2 sessioni-2 2026-10-09";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
+const VERSIONE = "radar-notizia-2 sessioni-3 2026-10-09";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
 const ETA_MASSIMA_SECONDI = 600;        // un comando più vecchio di 10 minuti non si esegue (Telegram può ripetere gli invii dopo un guasto)
 
 // comando -> [file del workflow, input del workflow o null, descrizione]
@@ -395,8 +395,10 @@ export default {
       if (Date.now() / 1000 - (msg.date || 0) > ETA_MASSIMA_SECONDI) return;
       const t = msg.text.trim();
       const comando = t.startsWith("/") ? t.split(/\s+/)[0].toLowerCase().split("@")[0] : "";
-      if (comando === "/sessione") { await comandoSessione(env, msg.chat.id); return; }
-      if (comando === "/sessionerisultati") { await comandoRisultati(env, msg.chat.id); return; }
+      // /sessione, /sessioni, /sessionerisultati, /sessionirisultati, /sessione_risultati: stessi due comandi, con o senza plurale
+      const ses = comando.replace(/^\/sessioni/, "/sessione").replace(/^\/sessione_/, "/sessione");
+      if (ses === "/sessione") { await comandoSessione(env, msg.chat.id); return; }
+      if (ses === "/sessionerisultati") { await comandoRisultati(env, msg.chat.id); return; }
       if (comando === "/radar" || comando === "/notizie" || comando === "/scegli") { await mostraLista(env, msg.chat.id); return; }
       const nv = comando.match(/^\/(?:notizia|video)(?:_(.*))?$/);   // /notizia norris, /notizia_norris (toccabile); /video resta come alias
       if (nv) {

@@ -63,12 +63,21 @@ def token(testo):
             out += [(w, "s") for w in m.group(2).split()]
         else:
             out += [(w, "") for w in m.group(3).split()]
-    return out
+    # un segno di punteggiatura da solo (per esempio la virgola dopo [Nome]) non è una parola: va attaccato a quella prima,
+    # altrimenti i sottotitoli contano una parola in più della voce e scalano di un posto
+    res = []
+    for w, fl in out:
+        if res and not any(c.isalnum() for c in w):
+            res[-1] = (res[-1][0] + w, res[-1][1])
+        else:
+            res.append((w, fl))
+    return res
 
 
 async def voce(testo, velocita, uscita, grido=False):
-    """Scrive l'audio e restituisce [(parola, inizio, fine)] in secondi. Con grido=True la voce è più acuta e forte, un po' più lenta (per un "POLE!" di esultanza)."""
-    extra = dict(rate="+8%", pitch="+14Hz", volume="+35%") if grido else dict(rate=velocita)
+    """Scrive l'audio e restituisce [(parola, inizio, fine)] in secondi.
+    Con grido=True la voce è la stessa di sempre (stesso tono) ma molto più forte e più veloce, come un urlo di esultanza."""
+    extra = dict(rate="+55%", volume="+100%") if grido else dict(rate=velocita)
     c = edge_tts.Communicate(testo, VOCE, boundary="WordBoundary", **extra)
     parole, audio = [], b""
     async for ch in c.stream():
@@ -77,6 +86,11 @@ async def voce(testo, velocita, uscita, grido=False):
         elif ch["type"] == "WordBoundary":
             parole.append((ch["text"], ch["offset"] / 1e7, (ch["offset"] + ch["duration"]) / 1e7))
     Path(uscita).write_bytes(audio)
+    if grido:   # ancora più volume, senza distorcere (limitatore)
+        grezzo = Path(uscita).with_suffix(".raw.mp3")
+        Path(uscita).replace(grezzo)
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(grezzo), "-af", "volume=2.2,alimiter=limit=0.9", str(uscita)], check=True)
+        grezzo.unlink()
     return parole
 
 

@@ -66,9 +66,10 @@ def token(testo):
     return out
 
 
-async def voce(testo, velocita, uscita):
-    """Scrive l'audio e restituisce [(parola, inizio, fine)] in secondi."""
-    c = edge_tts.Communicate(testo, VOCE, rate=velocita, boundary="WordBoundary")
+async def voce(testo, velocita, uscita, grido=False):
+    """Scrive l'audio e restituisce [(parola, inizio, fine)] in secondi. Con grido=True la voce è più acuta e forte, un po' più lenta (per un "POLE!" di esultanza)."""
+    extra = dict(rate="+8%", pitch="+14Hz", volume="+35%") if grido else dict(rate=velocita)
+    c = edge_tts.Communicate(testo, VOCE, boundary="WordBoundary", **extra)
     parole, audio = [], b""
     async for ch in c.stream():
         if ch["type"] == "audio":
@@ -163,7 +164,7 @@ async def genera(spec, uscita):
         for i, s in enumerate(scene + [dict(finale, testo=finale["domanda"], finale=True)]):
             tok = token(s["testo"]); parlato = " ".join(w for w, _ in tok)
             mp3 = tmp / f"v{i}.mp3"
-            tempi = await voce(parlato, vel, mp3)
+            tempi = await voce(parlato, vel, mp3, grido=bool(s.get("grido")))
             d = durata(mp3)
             lavoro.append(dict(s=s, tok=tok, tempi=tempi, ini=t, dur=d, mp3=mp3))
             t += d + 0.22

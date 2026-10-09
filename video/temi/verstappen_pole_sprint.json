@@ -1,13 +1,13 @@
-{"serie": "F1", "titolo_breve": "Verstappen in pole per la sprint", "fonte": "Cronometraggio ufficiale F1 (OpenF1) · FormulaPassion", "velocita": "+38%",
+{"serie": "F1", "titolo_breve": "Verstappen pole sprint, ma c'è l'investigazione", "fonte": "Cronometraggio ufficiale F1 (OpenF1) · FormulaPassion · RaceFans · The Race", "velocita": "+38%",
  "scene": [
-  {"foto": "Max Verstappen", "hook": true, "hook_titolo": "Verstappen in pole per la sprint!", "testo": "[Verstappen] in pole per la sprint di Singapore!"},
-  {"foto": "Max Verstappen", "nome": "Max Verstappen", "testo": "Giro da *un minuto, 31 secondi* e *156 millesimi*."},
-  {"foto": "George Russell", "nome": "George Russell", "testo": "Il secondo tempo è di [Russell], a *120 millesimi*."},
-  {"foto": "Charles Leclerc", "alt": "ferrari", "nome": "Charles Leclerc", "testo": "Il terzo è di [Leclerc], a *243 millesimi*."},
-  {"foto": "Kimi Antonelli", "nome": "Kimi Antonelli", "testo": "[Antonelli], leader del mondiale, ha il *settimo tempo*, a *693 millesimi*."},
-  {"foto": "George Russell", "nome": "George Russell", "testo": "Ma [Russell] ha una *penalità ufficiale* per i componenti della *power unit*."},
-  {"foto": "George Russell", "testo": "Vale solo per il *Gran Premio*: domenica parte *dal fondo*, la sprint non cambia."},
-  {"foto": "Kimi Antonelli", "nome": "Kimi Antonelli", "testo": "In classifica [Antonelli] è davanti a [Russell] di *84 punti*."},
-  {"foto": "Max Verstappen", "nome": "Max Verstappen", "testo": "La sprint è *domani alle 11*, e [Max] parte dalla *pole*."}
+  {"foto": "Max Verstappen", "hook": true, "grido": true, "hook_titolo": "Verstappen, POLE!", "testo": "[Verstappen]! *POLE*! *Pole* per la sprint di Singapore!"},
+  {"foto": "Max Verstappen", "nome": "Max Verstappen", "testo": "Con il giro più veloce: *un minuto, 31 secondi* e *156 millesimi*."},
+  {"foto": "George Russell", "nome": "George Russell", "testo": "Secondo [Russell]: la sua penalità vale per il *Gran Premio*, *non per la sprint*."},
+  {"foto": "Charles Leclerc", "alt": "ferrari", "nome": "Charles Leclerc", "testo": "Terzo è [Leclerc]."},
+  {"foto": "Max Verstappen", "nome": "Max Verstappen", "testo": "Ma [Verstappen] è sotto *investigazione* per un *presunto sorpasso* su [Hamilton] con la *bandiera gialla*."},
+  {"foto": "Max Verstappen", "testo": "Lui dice di *pensare* di averlo passato *prima* della gialla. Rischia la *pole*."},
+  {"foto": "Kimi Antonelli", "nome": "Kimi Antonelli", "testo": "Intanto in Mercedes: [Russell] usa la macchina *vecchia*, [Antonelli] quella *aggiornata*."},
+  {"foto": "Kimi Antonelli", "testo": "In qualifica [Russell] è *secondo*, [Antonelli] solo *settimo*."},
+  {"foto": "Max Verstappen", "nome": "Max Verstappen", "testo": "La sprint è *domani alle 11*."}
  ],
- "finale": {"foto": "Max Verstappen", "domanda": "Max vince anche la sprint?"}}
+ "finale": {"foto": "Max Verstappen", "domanda": "Secondo te Verstappen perde la pole?"}}

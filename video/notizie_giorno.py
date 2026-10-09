@@ -127,7 +127,7 @@ Regole:
 6. "domanda": una domanda neutra per i commenti, massimo 10 parole.
 7. "titolo_breve": massimo 5 parole.
 8. "social": didascalia per TikTok e Instagram: prima riga con la notizia e un'emoji, frasi corte una per riga con una riga vuota tra i blocchi, la domanda, "Fonte: <fonte>", "🔗 gpoggi.it", al massimo 5 hashtag con #gpoggi per primo.
-Rispondi SOLO con un oggetto JSON valido con le chiavi: hook_voce, hook_titolo, titolo_breve, scene, domanda, social."""
+Consegna il risultato chiamando lo strumento \"racconto\" con i campi: hook_voce, hook_titolo, titolo_breve, scene, domanda, social."""
 
 
 def chiedi_modello(a, testo, nomi, predefiniti, correzione=""):
@@ -137,12 +137,26 @@ def chiedi_modello(a, testo, nomi, predefiniti, correzione=""):
     utente = (f"Serie: {a['serie']}\nFonte: {a['fonte']}\nTitolo: {a['titolo']}\n\nTesto dell'articolo:\n{testo}\n\n"
               f"Piloti di cui abbiamo la foto (scegli solo da qui): {', '.join(sorted(nomi))}\nPredefiniti se nessun pilota è citato: {', '.join(predefiniti)}"
               + (f"\n\nATTENZIONE: {correzione}" if correzione else ""))
+    # Il risultato arriva come "strumento" con una struttura obbligatoria: niente JSON scritto a mano dal modello, quindi niente virgole o virgolette sbagliate.
+    strumento = {"name": "racconto", "description": "Consegna il testo del video che racconta la notizia.",
+                 "input_schema": {"type": "object", "required": ["hook_voce", "hook_titolo", "titolo_breve", "scene", "domanda", "social"],
+                                  "properties": {"hook_voce": {"type": "string"}, "hook_titolo": {"type": "string"}, "titolo_breve": {"type": "string"},
+                                                 "scene": {"type": "array", "items": {"type": "object", "required": ["testo", "foto"],
+                                                                                      "properties": {"testo": {"type": "string"}, "foto": {"type": "string"}, "nome": {"type": "string"}}}},
+                                                 "domanda": {"type": "string"}, "social": {"type": "string"}}}}
     r = requests.post("https://api.anthropic.com/v1/messages", timeout=120, verify=CA,
                       headers={"x-api-key": chiave, "anthropic-version": "2023-06-01", "content-type": "application/json"},
-                      json={"model": MODELLO, "max_tokens": 2000, "system": SISTEMA, "messages": [{"role": "user", "content": utente}]})
+                      json={"model": MODELLO, "max_tokens": 4000, "system": SISTEMA, "tools": [strumento], "tool_choice": {"type": "tool", "name": "racconto"},
+                            "messages": [{"role": "user", "content": utente}]})
     r.raise_for_status()
-    t = "".join(b.get("text", "") for b in r.json()["content"])
+    blocchi = r.json().get("content", [])
+    uso = next((b for b in blocchi if b.get("type") == "tool_use" and isinstance(b.get("input"), dict)), None)
+    if uso:
+        return uso["input"]
+    t = "".join(b.get("text", "") for b in blocchi)   # ripiego: JSON scritto nel testo
     m = re.search(r"\{.*\}", t, re.S)
+    if not m:
+        raise ValueError("il modello non ha consegnato un racconto: " + (t[:120].replace("\n", " ") or "risposta vuota"))
     return json.loads(m.group(0))
 
 

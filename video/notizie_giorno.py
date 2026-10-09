@@ -233,18 +233,23 @@ def valida(j, a, testo, nomi, predefiniti):
 
 
 def racconta(art, testo, nomi, predef, risposta_file=None, tentativi=3):
-    """Chiede il racconto al modello; se la verifica lo scarta (per esempio perché copia l'articolo) lo richiede dicendo cosa correggere."""
+    """Chiede il racconto al modello; se la risposta non è un JSON valido o la verifica la scarta (per esempio perché copia l'articolo)
+    la richiede dicendo cosa correggere."""
     correzione = ""
     for k in range(tentativi):
-        j = json.load(open(risposta_file)) if risposta_file else chiedi_modello(art, testo, nomi, predef, correzione)
         try:
+            j = json.load(open(risposta_file)) if risposta_file else chiedi_modello(art, testo, nomi, predef, correzione)
             return valida(j, art, testo, nomi, predef)
-        except ValueError as e:
+        except ValueError as e:   # comprende anche json.JSONDecodeError
             if risposta_file or k == tentativi - 1:
                 raise
-            print(f"  tentativo {k + 1} scartato ({e}): riprovo")
-            correzione = (f"la versione precedente è stata scartata perché: {e}. Riscrivi tutto con parole TUE: in nessuna scena, nel gancio e nella domanda "
-                          "devono comparire 6 parole di fila uguali all'articolo. Cambia l'ordine, usa sinonimi e frasi più brevi, e rispetta tutte le altre regole.")
+            print(f"  tentativo {k + 1} scartato ({type(e).__name__}: {e}): riprovo")
+            if isinstance(e, json.JSONDecodeError):
+                correzione = ("la risposta precedente non era un JSON valido. Rispondi SOLO con il JSON, senza testo prima o dopo, e dentro i testi non usare "
+                              "virgolette doppie (\") ma le virgolette « » o gli apici singoli; niente a capo dentro le stringhe.")
+            else:
+                correzione = (f"la versione precedente è stata scartata perché: {e}. Riscrivi tutto con parole TUE: in nessuna scena, nel gancio e nella domanda "
+                              "devono comparire 6 parole di fila uguali all'articolo. Cambia l'ordine, usa sinonimi e frasi più brevi, e rispetta tutte le altre regole.")
 
 
 def avviso(testo):

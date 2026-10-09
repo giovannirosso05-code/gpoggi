@@ -46,3 +46,6 @@ Per usare il dominio nudo su Cloudflare Pages i DNS vanno spostati a Cloudflare;
 
 ## Idee per i video
 Vedi `video/IDEE.md`.
+
+## Bot Telegram a comandi
+`worker/bot-telegram.js` (Cloudflare Worker `gpoggi-bot`) riceve i comandi di Gpoggibot e lancia al volo i workflow di GitHub: istruzioni in `worker/LEGGIMI.md`.

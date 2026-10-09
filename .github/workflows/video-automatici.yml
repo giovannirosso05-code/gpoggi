@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
     inputs:
       cosa:
-        description: 'notizie (due raccontate), notizia (una semplice), previsioni oppure gioco'
+        description: 'notizie (due raccontate, una volta al giorno), notizie-ora (due raccontate subito), notizia (una semplice), previsioni oppure gioco'
         default: 'notizie'
 
 permissions:
@@ -52,6 +52,7 @@ jobs:
           case "${{ steps.quale.outputs.cosa }}" in
             gioco) python video/gioco.py giorno --invia --uscita "$RUNNER_TEMP/gioco.mp4" ;;
             notizie) python video/notizie_giorno.py --una-volta-al-giorno ;;
+            notizie-ora) python video/notizie_giorno.py ;;
             *) python video/auto_video.py ${{ steps.quale.outputs.cosa }} --invia --uscita "$RUNNER_TEMP/video.mp4" ;;
           esac
       - name: Salva lo stato (video già fatti)

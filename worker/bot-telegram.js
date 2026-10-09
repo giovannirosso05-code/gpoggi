@@ -24,7 +24,7 @@ const REPO_BASE = "giovannirosso05-code/gpoggi";
 const CHAT_BASE = "559225883";          // la tua chat privata (la stessa del bot di MMA Oggi: un id utente vale per tutti i bot)
 const BOT_BASE = "Gpoggibot";
 const RAMO = "main";
-const VERSIONE = "radar-notizia 2026-10-09";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
+const VERSIONE = "radar-notizia-2 2026-10-09";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
 const ETA_MASSIMA_SECONDI = 600;        // un comando più vecchio di 10 minuti non si esegue (Telegram può ripetere gli invii dopo un guasto)
 
 // comando -> [file del workflow, input del workflow o null, descrizione]
@@ -85,13 +85,10 @@ function cerca(tutte, arg) {
 }
 
 async function lanciaNotizia(env, chat, art) {
-  const esito = await lancia(env, "video-automatici.yml", {
+  await eseguiLancio(env, chat, "video-automatici.yml", {
     cosa: "notizia-scelta",
     url: [art.url, senzaPrefisso(art.titolo), pulito(art.fonte), art.serie === "MotoGP" ? "MotoGP" : "F1"].join("|"),
-  });
-  await rispondi(env, chat, esito.ok
-    ? `✅ Lanciato: video su "${senzaPrefisso(art.titolo).slice(0, 90)}". Arriva tra qualche minuto.`
-    : `⚠️ Non sono riuscito a lanciare il video (GitHub ${esito.stato}).\n${esito.dettaglio}`);
+  }, `video su "${senzaPrefisso(art.titolo).slice(0, 90)}"`);
 }
 
 async function tastieraDi(lista) {
@@ -164,6 +161,34 @@ async function lancia(env, file, inputs) {
     body: JSON.stringify({ ref: RAMO, ...(inputs ? { inputs } : {}) }),
   });
   return { ok: r.status === 204, stato: r.status, dettaglio: r.status === 204 ? "" : (await r.text()).slice(0, 200) };
+}
+
+// Quanti lavori di questo flusso sono in corso o in attesa. GitHub tiene un solo lavoro in corso e uno solo in attesa:
+// un terzo cancellerebbe quello in attesa, e il bot direbbe "Lanciato" per un video che non esce mai.
+async function codaDi(env, file) {
+  const r = await fetch(`https://api.github.com/repos/${env.REPO || REPO_BASE}/actions/workflows/${file}/runs?per_page=10`, {
+    headers: { Authorization: `Bearer ${env.GITHUB_TOKEN}`, Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "gpoggi-bot" },
+  });
+  if (!r.ok) return null;   // non riesco a controllare: si lancia lo stesso
+  const attivi = ((await r.json()).workflow_runs || []).filter((x) => ["in_progress", "queued", "pending", "waiting", "requested"].includes(x.status));
+  return { inLavoro: attivi.filter((x) => x.status === "in_progress").length, inAttesa: attivi.filter((x) => x.status !== "in_progress").length };
+}
+
+// lancia il flusso e risponde in chat con l'esito vero (anche "in coda" o "occupato")
+async function eseguiLancio(env, chat, file, inputs, descrizione) {
+  let coda = null;
+  if (file === "video-automatici.yml") {
+    coda = await codaDi(env, file).catch(() => null);
+    if (coda && coda.inAttesa >= 1) {
+      await rispondi(env, chat, `⏳ Non lancio "${descrizione}": c'è già un video in lavorazione e uno in coda. Riscrivi il comando tra qualche minuto, altrimenti andrebbe perso.`);
+      return;
+    }
+  }
+  const esito = await lancia(env, file, inputs);
+  if (!esito.ok) { await rispondi(env, chat, `⚠️ Non sono riuscito a lanciare "${descrizione}" (GitHub ${esito.stato}).\n${esito.dettaglio}`); return; }
+  await rispondi(env, chat, coda && coda.inLavoro >= 1
+    ? `🕓 In coda: ${descrizione}. C'è un altro video in lavorazione: parte appena finisce, poi arriva tra qualche minuto.`
+    : `✅ Lanciato: ${descrizione}. Arriva tra qualche minuto.`);
 }
 
 const testo = (s, stato = 200) => new Response(s, { status: stato, headers: { "Content-Type": "text/plain; charset=utf-8" } });
@@ -251,14 +276,7 @@ export default {
         return;
       }
       const [file, inputs, descrizione] = COMANDI[comando];
-      const esito = await lancia(env, file, inputs);
-      await rispondi(
-        env,
-        msg.chat.id,
-        esito.ok
-          ? `✅ Lanciato: ${descrizione}. Arriva tra qualche minuto.`
-          : `⚠️ Non sono riuscito a lanciare "${descrizione}" (GitHub ${esito.stato}).\n${esito.dettaglio}`
-      );
+      await eseguiLancio(env, msg.chat.id, file, inputs, descrizione);
     })();
     // Risponde subito a Telegram e finisce il lavoro in coda: Telegram non aspetta e non ripete l'invio.
     ctx.waitUntil(lavoro.catch((e) => { console.error(e); return rispondi(env, msg.chat.id, "⚠️ Qualcosa non ha funzionato: riprova tra poco."); }));

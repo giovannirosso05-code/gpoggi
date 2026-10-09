@@ -1,0 +1,9 @@
+{"serie": "F1", "titolo_breve": "Verstappen in pole per la sprint", "fonte": "Cronometraggio ufficiale F1 (OpenF1)", "velocita": "+38%",
+ "scene": [
+  {"foto": "Max Verstappen", "hook": true, "hook_titolo": "Verstappen in pole per la sprint!", "testo": "[Verstappen] in pole per la sprint di Singapore!"},
+  {"foto": "Max Verstappen", "nome": "Max Verstappen", "testo": "Giro da *un minuto, 31 secondi* e *156 millesimi* nelle qualifiche sprint."},
+  {"foto": "George Russell", "nome": "George Russell", "testo": "Il secondo tempo è di [Russell], a *120 millesimi*."},
+  {"foto": "Charles Leclerc", "alt": "ferrari", "nome": "Charles Leclerc", "testo": "Il terzo è di [Leclerc], a *243 millesimi*."},
+  {"foto": "Max Verstappen", "nome": "Max Verstappen", "testo": "La sprint è *domani alle 11* e [Max] parte dalla *pole*."}
+ ],
+ "finale": {"foto": "Max Verstappen", "domanda": "Max vince anche la sprint?"}}

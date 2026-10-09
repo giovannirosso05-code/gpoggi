@@ -12,8 +12,12 @@ on:
   workflow_dispatch:
     inputs:
       cosa:
-        description: 'notizie (due raccontate, una volta al giorno), notizie-ora (due raccontate subito), notizia (una semplice), previsioni oppure gioco'
+        description: 'notizie (due raccontate, una volta al giorno), notizia-scelta (la notizia scelta con url), notizie-ora (due raccontate subito), notizia (una semplice), previsioni oppure gioco'
         default: 'notizie'
+      url:
+        description: 'solo per cosa=notizia-scelta: "indirizzo|titolo|fonte|serie" della notizia da raccontare'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -48,11 +52,13 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          URL_SCELTA: ${{ github.event.inputs.url }}
         run: |
           case "${{ steps.quale.outputs.cosa }}" in
             gioco) python video/gioco.py giorno --invia --uscita "$RUNNER_TEMP/gioco.mp4" ;;
             notizie) python video/notizie_giorno.py --una-volta-al-giorno ;;
             notizie-ora) python video/notizie_giorno.py ;;
+            notizia-scelta) python video/notizie_giorno.py --url "$URL_SCELTA" ;;
             *) python video/auto_video.py ${{ steps.quale.outputs.cosa }} --invia --uscita "$RUNNER_TEMP/video.mp4" ;;
           esac
       - name: Salva lo stato (video già fatti)

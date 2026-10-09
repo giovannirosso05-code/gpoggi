@@ -16,7 +16,7 @@
  *
  * Pagine di servizio (per te, con la parola segreta; i token non compaiono mai):
  *   /stato?k=PAROLA     dice di che bot si tratta e che webhook c'è adesso (non cambia niente)
- *   /attiva?k=PAROLA    imposta il webhook, solo se il bot è Gpoggibot e non c'è già un webhook di altri
+ *   /attiva?k=PAROLA    imposta (o aggiorna) il webhook, solo se il bot è Gpoggibot e non c'è già un webhook di altri
  *                       (con &forza=1 sostituisce un webhook esistente: solo se sai cosa c'è)
  */
 
@@ -32,11 +32,29 @@ const COMANDI = {
   "/previsioni": ["video-automatici.yml", { cosa: "previsioni" }, "Video delle previsioni dei prossimi Gran Premi (F1 e MotoGP)"],
   "/venerdi": ["video-venerdi.yml", null, "Video del venerdì: ricorda di votare il podio"],
   "/maratona": ["video-maratona.yml", null, "Tre video di notizie (la maratona, attiva fino all'11 ottobre)"],
-  "/risultati": ["risultati-weekend.yml", null, "Risultati del weekend (solo se una sessione è finita da meno di 4 ore)"],
+  "/risultati": ["risultati-weekend.yml", null, "Risultati del weekend (escono appena la sessione è finita, fino a 4 ore dopo)"],
   "/dati": ["update-data.yml", null, "Aggiorna tutti i dati del sito e rimanda i riepiloghi"],
 };
 
-const elenco = () => Object.entries(COMANDI).map(([c, [, , d]]) => `${c} · ${d}`).join("\n");
+const elenco = () => ["/scegli · Scegli tu la notizia per il video (con i pulsanti)", ...Object.entries(COMANDI).map(([c, [, , d]]) => `${c} · ${d}`)].join("\n");
+
+const RASSEGNA_BASE = "https://gpoggi.it/data/rassegna.json";
+const QUANTE = 8;                         // notizie mostrate da /scegli
+const ETA_PULSANTI_SECONDI = 6 * 3600;    // i pulsanti restano buoni 6 ore (la lista cambia, la notizia si ritrova dal suo codice)
+
+// codice breve di una notizia (i pulsanti di Telegram portano al massimo 64 caratteri)
+async function codice(url) {
+  const h = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(url));
+  return [...new Uint8Array(h)].slice(0, 5).map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+async function notizie(env) {
+  const r = await fetch(env.RASSEGNA_URL || RASSEGNA_BASE, { headers: { "User-Agent": "gpoggi-bot" } });
+  if (!r.ok) throw new Error(`rassegna ${r.status}`);
+  return (await r.json()).articoli || [];
+}
+
+const pulito = (t) => String(t || "").replace(/[|\n\r]+/g, " ").replace(/\s+/g, " ").trim();
 
 // confronto che non si ferma al primo carattere diverso (la parola segreta non si indovina dai tempi)
 function uguali(a, b) {
@@ -95,12 +113,39 @@ async function servizio(req, env, u) {
   if (String(nome).toLowerCase() !== String(atteso).toLowerCase()) {
     return testo(`${righe.join("\n")}\n\nFERMO: il token non è del bot @${atteso}. Non ho cambiato niente.`, 409);
   }
-  if (info.url === mio) return testo(`${righe.join("\n")}\n\nGià attivo: non serve rifarlo.`);
-  if (info.url && u.searchParams.get("forza") !== "1") {
+  if (info.url === mio && (info.allowed_updates || []).includes("callback_query")) return testo(`${righe.join("\n")}\n\nGià attivo: non serve rifarlo.`);
+  if (info.url && info.url !== mio && u.searchParams.get("forza") !== "1") {
     return testo(`${righe.join("\n")}\n\nFERMO: c'è già un webhook di qualcun altro. Se è proprio da sostituire, aggiungi &forza=1 all'indirizzo.`, 409);
   }
-  const r = await tg(env, "setWebhook", { url: mio, secret_token: env.WEBHOOK_SECRET, allowed_updates: ["message"] });
+  const r = await tg(env, "setWebhook", { url: mio, secret_token: env.WEBHOOK_SECRET, allowed_updates: ["message", "callback_query"] });
   return testo(r.ok ? `${righe.join("\n")}\n\nFatto: webhook attivato su ${mio}\nOra scrivi /start al bot.` : `Telegram ha rifiutato: ${r.description || "errore sconosciuto"}`, r.ok ? 200 : 502);
+}
+
+// tocco di un numero in /scegli: ritrova la notizia dal codice e lancia il video su quella
+function pulsante(cb, env, ctx) {
+  const chat = cb.message && cb.message.chat && cb.message.chat.id;
+  if (String(chat) !== String(env.CHAT_ID || CHAT_BASE)) return testo("ok");   // altri: ignorati in silenzio
+  if (!String(cb.data || "").startsWith("n:")) return testo("ok");             // pulsanti di altri messaggi (es. "vota_"): non sono nostri
+  const lavoro = (async () => {
+    if (Date.now() / 1000 - (cb.message.date || 0) > ETA_PULSANTI_SECONDI) {
+      await tg(env, "answerCallbackQuery", { callback_query_id: cb.id, text: "Lista vecchia: scrivi di nuovo /scegli" });
+      return;
+    }
+    await tg(env, "answerCallbackQuery", { callback_query_id: cb.id, text: "Lancio…" });
+    const cod = cb.data.slice(2);
+    let trovata = null;
+    for (const a of await notizie(env)) if ((await codice(a.url)) === cod) { trovata = a; break; }
+    if (!trovata) { await rispondi(env, chat, "Quella notizia non è più nella lista. Scrivi di nuovo /scegli."); return; }
+    const esito = await lancia(env, "video-automatici.yml", {
+      cosa: "notizia-scelta",
+      url: [trovata.url, pulito(trovata.titolo), pulito(trovata.fonte), trovata.serie === "MotoGP" ? "MotoGP" : "F1"].join("|"),
+    });
+    await rispondi(env, chat, esito.ok
+      ? `✅ Lanciato: video su "${pulito(trovata.titolo).slice(0, 90)}". Arriva tra qualche minuto.`
+      : `⚠️ Non sono riuscito a lanciare il video (GitHub ${esito.stato}).\n${esito.dettaglio}`);
+  })();
+  ctx.waitUntil(lavoro.catch((e) => console.error(e)));
+  return testo("ok");
 }
 
 export default {
@@ -114,6 +159,7 @@ export default {
     // Solo Telegram, che conosce la parola segreta, può farci eseguire qualcosa.
     if (!env.WEBHOOK_SECRET || !uguali(req.headers.get("X-Telegram-Bot-Api-Secret-Token"), env.WEBHOOK_SECRET)) return testo("non autorizzato", 401);
     const update = await req.json().catch(() => ({}));
+    if (update.callback_query) return pulsante(update.callback_query, env, ctx);
     const msg = update.message;
     if (!msg || !msg.text) return testo("ok");
     if (String(msg.chat && msg.chat.id) !== String(env.CHAT_ID || CHAT_BASE)) return testo("ok"); // chiunque altro: ignorato in silenzio
@@ -122,6 +168,16 @@ export default {
       if (Date.now() / 1000 - (msg.date || 0) > ETA_MASSIMA_SECONDI) return;
       const t = msg.text.trim();
       const comando = t.startsWith("/") ? t.split(/\s+/)[0].toLowerCase().split("@")[0] : "";
+      if (comando === "/scegli") {
+        const lista = (await notizie(env)).slice(0, QUANTE);
+        if (!lista.length) { await rispondi(env, msg.chat.id, "Non trovo notizie al momento. Riprova tra poco."); return; }
+        const righe = await Promise.all(lista.map(async (a, i) => ({ n: i + 1, c: await codice(a.url), a })));
+        const testoLista = righe.map(({ n, a }) => `${n}. [${a.serie}] ${pulito(a.titolo).slice(0, 90)} (${pulito(a.fonte)})`).join("\n");
+        const tastiera = [];
+        for (let i = 0; i < righe.length; i += 4) tastiera.push(righe.slice(i, i + 4).map(({ n, c }) => ({ text: String(n), callback_data: `n:${c}` })));
+        await tg(env, "sendMessage", { chat_id: msg.chat.id, text: `Su quale notizia faccio il video? Tocca il numero.\n\n${testoLista}`, reply_markup: { inline_keyboard: tastiera }, disable_web_page_preview: true });
+        return;
+      }
       if (!COMANDI[comando]) {
         await rispondi(env, msg.chat.id, `Sono sveglio. Scrivi uno di questi comandi:\n${elenco()}\n\n/aiuto · mostra questo elenco`);
         return;

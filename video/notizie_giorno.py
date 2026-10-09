@@ -291,7 +291,8 @@ def main():
             print(f"  racconto non riuscito ({type(e).__name__}: {e}); nessun video: meglio niente di uno brutto")
     stato["storie"] = stato.get("storie", [])[:400]
     if not a.prova:
-        STATO.write_text(json.dumps({**stato_leggi(), "storie": stato["storie"], "giorno_notizie": oggi}, ensure_ascii=False, indent=1))
+        # "oggi i video sono fatti" si segna solo per il giro automatico: un video chiesto a mano (bot Telegram) non deve spegnere quello delle 12
+        STATO.write_text(json.dumps({**stato_leggi(), "storie": stato["storie"], **({"giorno_notizie": oggi} if a.una_volta_al_giorno else {})}, ensure_ascii=False, indent=1))
     print(f"Fatto: {fatti} racconti su {len(scelte)}.")
 
 

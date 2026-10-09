@@ -144,16 +144,27 @@ def chiedi_modello(a, testo, nomi, predefiniti, correzione=""):
                                                  "scene": {"type": "array", "items": {"type": "object", "required": ["testo", "foto"],
                                                                                       "properties": {"testo": {"type": "string"}, "foto": {"type": "string"}, "nome": {"type": "string"}}}},
                                                  "domanda": {"type": "string"}, "social": {"type": "string"}}}}
-    r = requests.post("https://api.anthropic.com/v1/messages", timeout=120, verify=CA,
-                      headers={"x-api-key": chiave, "anthropic-version": "2023-06-01", "content-type": "application/json"},
-                      json={"model": MODELLO, "max_tokens": 4000, "system": SISTEMA, "tools": [strumento], "tool_choice": {"type": "tool", "name": "racconto"},
-                            "messages": [{"role": "user", "content": utente}]})
+    intest = {"x-api-key": chiave, "anthropic-version": "2023-06-01", "content-type": "application/json"}
+    messaggi = [{"role": "user", "content": utente}]
+
+    def chiama(corpo):
+        r = requests.post("https://api.anthropic.com/v1/messages", timeout=120, verify=CA, headers=intest, json=corpo)
+        if r.status_code == 400:   # il motivo vero dell'errore sta nel corpo della risposta
+            print("  API 400:", r.text[:400].replace("\n", " "))
+        return r
+
+    r = chiama({"model": MODELLO, "max_tokens": 4000, "system": SISTEMA, "tools": [strumento], "tool_choice": {"type": "tool", "name": "racconto"}, "messages": messaggi})
+    if r.status_code == 400:   # lo strumento è stato rifiutato: si torna al metodo di prima (JSON nel testo)
+        sistema_testo = SISTEMA.replace('Consegna il risultato chiamando lo strumento "racconto" con i campi:', "Rispondi SOLO con un oggetto JSON valido (virgolette « » dentro i testi, mai virgolette doppie) con le chiavi:")
+        r = chiama({"model": MODELLO, "max_tokens": 4000, "system": sistema_testo, "messages": messaggi})
+        if r.status_code == 400:
+            raise ValueError("l'API ha rifiutato la richiesta: " + r.text[:200].replace("\n", " "))
     r.raise_for_status()
     blocchi = r.json().get("content", [])
     uso = next((b for b in blocchi if b.get("type") == "tool_use" and isinstance(b.get("input"), dict)), None)
     if uso:
         return uso["input"]
-    t = "".join(b.get("text", "") for b in blocchi)   # ripiego: JSON scritto nel testo
+    t = "".join(b.get("text", "") for b in blocchi)   # JSON scritto nel testo
     m = re.search(r"\{.*\}", t, re.S)
     if not m:
         raise ValueError("il modello non ha consegnato un racconto: " + (t[:120].replace("\n", " ") or "risposta vuota"))

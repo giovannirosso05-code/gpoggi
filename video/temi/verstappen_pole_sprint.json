@@ -1,9 +1,13 @@
-{"serie": "F1", "titolo_breve": "Verstappen in pole per la sprint", "fonte": "Cronometraggio ufficiale F1 (OpenF1)", "velocita": "+38%",
+{"serie": "F1", "titolo_breve": "Verstappen in pole per la sprint", "fonte": "Cronometraggio ufficiale F1 (OpenF1) · FormulaPassion", "velocita": "+38%",
  "scene": [
   {"foto": "Max Verstappen", "hook": true, "hook_titolo": "Verstappen in pole per la sprint!", "testo": "[Verstappen] in pole per la sprint di Singapore!"},
-  {"foto": "Max Verstappen", "nome": "Max Verstappen", "testo": "Giro da *un minuto, 31 secondi* e *156 millesimi* nelle qualifiche sprint."},
+  {"foto": "Max Verstappen", "nome": "Max Verstappen", "testo": "Giro da *un minuto, 31 secondi* e *156 millesimi*."},
   {"foto": "George Russell", "nome": "George Russell", "testo": "Il secondo tempo è di [Russell], a *120 millesimi*."},
   {"foto": "Charles Leclerc", "alt": "ferrari", "nome": "Charles Leclerc", "testo": "Il terzo è di [Leclerc], a *243 millesimi*."},
-  {"foto": "Max Verstappen", "nome": "Max Verstappen", "testo": "La sprint è *domani alle 11* e [Max] parte dalla *pole*."}
+  {"foto": "Kimi Antonelli", "nome": "Kimi Antonelli", "testo": "[Antonelli], leader del mondiale, ha il *settimo tempo*, a *693 millesimi*."},
+  {"foto": "George Russell", "nome": "George Russell", "testo": "Ma [Russell] ha una *penalità ufficiale* per i componenti della *power unit*."},
+  {"foto": "George Russell", "testo": "Vale solo per il *Gran Premio*: domenica parte *dal fondo*, la sprint non cambia."},
+  {"foto": "Kimi Antonelli", "nome": "Kimi Antonelli", "testo": "In classifica [Antonelli] è davanti a [Russell] di *84 punti*."},
+  {"foto": "Max Verstappen", "nome": "Max Verstappen", "testo": "La sprint è *domani alle 11*, e [Max] parte dalla *pole*."}
  ],
  "finale": {"foto": "Max Verstappen", "domanda": "Max vince anche la sprint?"}}

@@ -60,16 +60,30 @@ def pilota_nel_titolo(titolo, serie):
 CSS = f"""@font-face{{font-family:Oswald;font-weight:700;src:url(data:font/woff2;base64,{b64(FONT / 'oswald-latin-700-normal.woff2')})}}
 @font-face{{font-family:Inter;font-weight:500;src:url(data:font/woff2;base64,{b64(FONT / 'inter-latin-500-normal.woff2')})}}
 *{{box-sizing:border-box}} html,body{{margin:0;width:{W}px;height:{H}px;background:#0b0b0e;color:#fff;font-family:Inter,sans-serif;overflow:hidden}}
-.logo{{position:absolute;left:0;right:0;top:34px;text-align:center}} .logo img{{width:300px}}
-.foto{{position:absolute;left:0;top:190px;width:{W}px;height:760px;background-size:{W}px auto;background-position:center -60px;background-repeat:no-repeat}}
-.vel{{position:absolute;left:0;top:190px;width:{W}px;height:760px;background:linear-gradient(180deg,#0b0b0e 0%,rgba(11,11,14,0) 12%,rgba(11,11,14,0) 70%,#0b0b0e 100%)}}
+.logo{{position:absolute;left:0;right:0;top:34px;text-align:center;z-index:5}} .logo img{{width:300px}}
+.foto{{position:absolute;left:0;top:0;width:{W}px;height:{H}px;background-size:cover;background-position:center 6%;background-repeat:no-repeat}}
+.vel{{position:absolute;left:0;top:0;width:{W}px;height:{H}px;background:linear-gradient(180deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.5) 5%,rgba(0,0,0,0) 14%,rgba(0,0,0,0) 30%,rgba(8,8,10,.9) 47%,#0b0b0e 60%)}}
+.sfoca{{position:absolute;left:-60px;top:-60px;width:{W + 120}px;height:{H + 120}px;background-size:cover;background-position:center 20%;filter:blur(38px) brightness(.5)}}
+.larga{{position:absolute;left:0;top:150px;width:{W}px;height:800px;object-fit:cover;object-position:center 10%;display:block;-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 14%,#000 72%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0%,#000 14%,#000 72%,transparent 100%)}}
 .pill{{position:absolute;left:70px;font:700 34px Oswald;letter-spacing:.08em;padding:3px 20px;border-radius:8px;text-transform:uppercase}}
 .cred{{position:absolute;left:70px;right:70px;font:500 24px Inter;color:#8a8a96}}
 .url{{position:absolute;left:0;right:0;top:1700px;text-align:center;font:700 64px Oswald;letter-spacing:.04em}}
 .avviso{{position:absolute;left:70px;right:70px;top:1835px;text-align:center;font:500 22px Inter;color:#6d6d78}}"""
 
+def _larga(foto):
+    """True se la foto NON è un ritratto alto e stretto (testa in alto): a tutto schermo il viso finirebbe sotto il testo o fuori inquadratura."""
+    from PIL import Image
+    w, h = Image.open(foto_file(foto)).size
+    return h / w < 1.35
+
 def cornice(corpo, colore, foto=None, cred=True):
-    sfondo = f"<div class=foto style=\"background-image:url(data:image/jpeg;base64,{b64(foto_file(foto))})\"></div><div class=vel></div>" if foto and foto_file(foto).exists() else ""
+    sfondo = ""
+    if foto and foto_file(foto).exists():
+        d = f"data:image/jpeg;base64,{b64(foto_file(foto))}"
+        if _larga(foto):   # foto a tutto schermo con sfondo sfocato e la foto intera in alto
+            sfondo = f"<div class=sfoca style=\"background-image:url({d})\"></div><img class=larga src=\"{d}\"><div class=vel></div>"
+        else:
+            sfondo = f"<div class=foto style=\"background-image:url({d});background-position:{foto.get('pos', 'center 6%')}\"></div><div class=vel></div>"
     c = f"<div class=cred style='top:1640px'>Foto: {esc(foto.get('autore',''))} · {esc(foto.get('licenza',''))} · via Wikimedia Commons</div>" if foto and cred else ""
     return (f"<!doctype html><meta charset=utf-8><style>{CSS}.url{{color:{colore}}}</style><div class=logo><img src='data:image/png;base64,{b64(SITO / 'img/logo-wide-scuro.png')}'></div>"
             f"{sfondo}{corpo}{c}<div class=url>gpoggi.it</div><div class=avviso>Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team</div>")
@@ -157,7 +171,14 @@ def studio_pole(chiave):
     return ordine, ordine[0][0]
 
 
+# chi ha una foto alternativa libera, più grande e diversa dalla solita (docs/data/foto-extra.json): chiave della foto da usare nei video
+ALTERNATIVE = {"Marc Marquez": "ritratto"}
+
 def foto_per_nome(nome, chiave):
+    alt = ALTERNATIVE.get(nome)
+    if alt:
+        extra = json.load(open(DATA / "foto-extra.json")).get(nome, {}).get(alt)
+        if extra and foto_file(extra).exists(): return {**extra, "pos": "center 0%"}
     if chiave == "f1":
         return next((p.get("foto") for p in json.load(open(DATA / "roster.json")) if p["nome"] == nome), None)
     return json.load(open(DATA / "foto-motogp.json")).get("nome:" + nome)

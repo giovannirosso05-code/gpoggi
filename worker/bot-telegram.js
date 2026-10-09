@@ -24,7 +24,7 @@ const REPO_BASE = "giovannirosso05-code/gpoggi";
 const CHAT_BASE = "559225883";          // la tua chat privata (la stessa del bot di MMA Oggi: un id utente vale per tutti i bot)
 const BOT_BASE = "Gpoggibot";
 const RAMO = "main";
-const VERSIONE = "radar-notizia-2 2026-10-09";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
+const VERSIONE = "radar-notizia-2 sessioni 2026-10-09";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
 const ETA_MASSIMA_SECONDI = 600;        // un comando più vecchio di 10 minuti non si esegue (Telegram può ripetere gli invii dopo un guasto)
 
 // comando -> [file del workflow, input del workflow o null, descrizione]
@@ -38,6 +38,8 @@ const COMANDI = {
 };
 
 const elenco = () => [
+  "/sessione · Prossima sessione di F1 e MotoGP: quando e cosa c'è",
+  "/sessionerisultati · Ultimi risultati di F1 e MotoGP",
   "/radar · Tutte le ultime notizie: poi scrivi /notizia e la prima parola per averne il video (per esempio /notizia norris)",
   ...Object.entries(COMANDI).map(([c, [, , d]]) => `${c} · ${d}`),
 ].join("\n");
@@ -191,6 +193,118 @@ async function eseguiLancio(env, chat, file, inputs, descrizione) {
     : `✅ Lanciato: ${descrizione}. Arriva tra qualche minuto.`);
 }
 
+// ---------- /sessione e /sessionerisultati: orari e risultati letti dai dati del sito ----------
+const DATI_BASE = "https://gpoggi.it/data";
+const FUSO = "Europe/Rome";
+const ORE4 = 4 * 3600 * 1000;
+
+async function dato(env, nome) {
+  const r = await fetch(`${env.DATI_URL || DATI_BASE}/${nome}`, { headers: { "User-Agent": "gpoggi-bot" }, cf: { cacheTtl: 60 } });
+  if (!r.ok) throw new Error(`dato ${nome}: ${r.status}`);
+  return r.json();
+}
+
+function quando(ms) {
+  const p = Object.fromEntries(new Intl.DateTimeFormat("it-IT", { timeZone: FUSO, weekday: "long", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit", hourCycle: "h23" })
+    .formatToParts(new Date(ms)).map((x) => [x.type, x.value]));
+  return `${p.weekday} ${p.day} ${p.month} alle ${p.hour}:${p.minute}`;
+}
+const soloOra = (ms) => new Intl.DateTimeFormat("it-IT", { timeZone: FUSO, hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).format(new Date(ms));
+function fra(ms) {
+  const m = Math.max(1, Math.round(ms / 60000));
+  if (m < 60) return `tra ${m} min`;
+  const h = Math.floor(m / 60);
+  if (h < 24) return `tra ${h} h${m % 60 ? ` ${m % 60} min` : ""}`;
+  return `tra ${Math.floor(h / 24)} g${h % 24 ? ` ${h % 24} h` : ""}`;
+}
+
+// sessioni normalizzate di un weekend: durata di 45 minuti se la fonte non indica la fine (sprint e gara della MotoGP)
+const normSess = (w) => (w.sessioni || []).map((x) => { const i = Date.parse(x.inizio), f = Date.parse(x.fine); return { nome: x.nome, i, f: f > i ? f : i + 45 * 60000 }; }).sort((a, b) => a.i - b.i);
+
+function bloccoSessione(icona, serie, weekend, adesso) {
+  // il primo weekend che ha ancora una sessione non finita
+  const w = weekend.map((x) => ({ nome: x.nome, sess: normSess(x) })).sort((a, b) => (a.sess[0]?.i || 0) - (b.sess[0]?.i || 0)).find((x) => x.sess.some((s) => s.f > adesso));
+  if (!w) return `${icona} ${serie}\nNessuna sessione in programma.`;
+  const righe = [`${icona} ${serie} · ${w.nome}`];
+  const corso = w.sess.find((s) => s.i <= adesso && adesso < s.f);
+  const prossime = w.sess.filter((s) => s.i > adesso);
+  if (corso) righe.push(`🔴 In corso: ${corso.nome} (finisce alle ${soloOra(corso.f)})`);
+  if (prossime.length) {
+    righe.push(`▶ Prossima: ${prossime[0].nome}, ${quando(prossime[0].i)} (${fra(prossime[0].i - adesso)})`);
+    if (prossime.length > 1) righe.push("Poi:", ...prossime.slice(1).map((s) => `• ${s.nome}, ${quando(s.i)}`));
+  }
+  return righe.join("\n");
+}
+
+async function comandoSessione(env, chat) {
+  const adesso = Date.now();
+  const [ev, mg] = await Promise.all([dato(env, "events.json"), dato(env, "motogp.json")]);
+  await rispondi(env, chat, `${bloccoSessione("🏎", "FORMULA 1", ev, adesso)}\n\n${bloccoSessione("🏍", "MOTOGP", mg.weekend || [], adesso)}\n\nOrari italiani.`);
+}
+
+const TEMPO = (r, primo) => (primo ? r.tempo : (r.distacco && r.distacco !== "0.000" ? (String(r.distacco).startsWith("+") ? r.distacco : `+${r.distacco}`) : r.tempo)) || r.stato || "";
+const riga = (r, primo) => `${r.pos}. ${r.nome}${TEMPO(r, primo) ? ` · ${TEMPO(r, primo)}` : ""}`;
+const podio = (rows) => (rows || []).slice(0, 3).map((r) => `${r.pos}. ${r.nome}`).join(" · ");
+
+async function risultatiF1(env, adesso) {
+  const ev = (await dato(env, "events.json")).slice().sort((a, b) => Date.parse(a.inizio) - Date.parse(b.inizio)).filter((e) => Date.parse(e.inizio) <= adesso);
+  let sessione = null, gp = "", senza = [], ultimaGara = null;
+  for (let k = ev.length - 1; k >= 0 && k >= ev.length - 4; k--) {
+    const d = await dato(env, `gare/${ev[k].id}.json`);
+    const fatte = (d.sessioni || []).filter((x) => Date.parse(x.fine) <= adesso).sort((a, b) => Date.parse(b.fine) - Date.parse(a.fine));
+    if (!sessione) {
+      const c = fatte.find((x) => (x.risultati || []).length);
+      if (c) { sessione = c; gp = d.nome; senza = fatte.filter((x) => !(x.risultati || []).length && Date.parse(x.fine) > Date.parse(c.fine) && adesso - Date.parse(x.fine) < ORE4); }
+      else { gp = gp || d.nome; senza = senza.concat(fatte.filter((x) => adesso - Date.parse(x.fine) < ORE4)); }
+    }
+    const gara = fatte.find((x) => x.nome === "Gara" && (x.risultati || []).length);
+    if (gara && !ultimaGara) ultimaGara = { gp: d.nome, rows: gara.risultati };
+    if (sessione && ultimaGara) break;
+  }
+  return { sessione, gp, senza, ultimaGara };
+}
+
+async function comandoRisultati(env, chat) {
+  const adesso = Date.now();
+  const righe = [];
+  const f1 = await risultatiF1(env, adesso);
+  righe.push(`🏎 FORMULA 1${f1.gp ? ` · ${f1.gp}` : ""}`);
+  if (f1.sessione) righe.push(`Ultima sessione con risultati: ${f1.sessione.nome}`, ...f1.sessione.risultati.slice(0, 5).map((r, i) => riga(r, i === 0)));
+  else righe.push("Nessun risultato disponibile per questo weekend.");
+  let aggiorna = false;
+  for (const x of f1.senza) { righe.push(`⏳ ${x.nome}: finita alle ${soloOra(Date.parse(x.fine))}, risultati non ancora pubblicati dalla fonte.`); aggiorna = true; }
+  if (f1.ultimaGara && !(f1.sessione && f1.sessione.nome === "Gara")) righe.push(`🏁 Ultima gara: ${f1.ultimaGara.gp} · ${podio(f1.ultimaGara.rows)}`);
+  if (aggiorna) {
+    const coda = await codaDi(env, "risultati-weekend.yml").catch(() => null);
+    if (coda && (coda.inLavoro || coda.inAttesa)) righe.push("🔄 L'aggiornamento dei risultati è già in corso: riscrivi il comando tra qualche minuto.");
+    else {
+      const e = await lancia(env, "risultati-weekend.yml", null);
+      righe.push(e.ok ? "🔄 Ho lanciato l'aggiornamento dei risultati: riscrivi il comando tra 5-6 minuti." : `⚠️ Non sono riuscito a lanciare l'aggiornamento (GitHub ${e.stato}).`);
+    }
+  }
+  // MotoGP: l'ultimo GP con classifiche, più il weekend in corso
+  const [mg, mgc] = await Promise.all([dato(env, "motogp-gare.json"), dato(env, "motogp.json").catch(() => ({ weekend: [] }))]);
+  const gareM = Object.values(mg).filter((g) => g.classifiche && (g.classifiche.MotoGP || []).length).sort((a, b) => String(b.data).localeCompare(String(a.data)));
+  righe.push("");
+  if (gareM.length) {
+    const g = gareM[0], cl = g.classifiche, tutti = [...(cl.MotoGP || []), ...(cl["MotoGP sprint"] || [])];
+    const per = (num) => (tutti.find((r) => r.numero === num) || {}).nome;
+    const [aa, mm, gg] = String(g.data).split("-").map(Number);
+    const dataIt = new Intl.DateTimeFormat("it-IT", { timeZone: "UTC", day: "numeric", month: "long" }).format(new Date(Date.UTC(aa, mm - 1, gg)));
+    righe.push(`🏍 MOTOGP · ultimo GP: ${g.nome} (${dataIt})`, "Gara", ...(cl.MotoGP || []).slice(0, 5).map((r, i) => riga(r, i === 0)));
+    if ((cl["MotoGP sprint"] || []).length) righe.push(`Sprint: ${podio(cl["MotoGP sprint"])}`);
+    if (per(g.pole)) righe.push(`Pole: ${per(g.pole)}`);
+    if (per(g.giro_veloce)) righe.push(`Giro veloce: ${per(g.giro_veloce)}`);
+  } else righe.push("🏍 MOTOGP\nNessun risultato disponibile.");
+  const corrente = (mgc.weekend || []).map((x) => ({ nome: x.nome, sess: normSess(x) })).find((x) => x.sess.some((s) => s.i <= adesso) && x.sess.some((s) => s.f > adesso));
+  if (corrente) {
+    const fatte = corrente.sess.filter((s) => s.f <= adesso).map((s) => s.nome);
+    if (fatte.length) righe.push(`ℹ️ ${corrente.nome}: già disputate ${fatte.join(" e ")}. I risultati di queste sessioni non sono ancora sul sito.`);
+  }
+  righe.push("", "Classifiche complete su gpoggi.it");
+  await rispondi(env, chat, righe.join("\n"));
+}
+
 const testo = (s, stato = 200) => new Response(s, { status: stato, headers: { "Content-Type": "text/plain; charset=utf-8" } });
 
 // /stato e /attiva: servono a te, per accendere il bot senza mai scrivere il token da nessuna parte
@@ -265,6 +379,8 @@ export default {
       if (Date.now() / 1000 - (msg.date || 0) > ETA_MASSIMA_SECONDI) return;
       const t = msg.text.trim();
       const comando = t.startsWith("/") ? t.split(/\s+/)[0].toLowerCase().split("@")[0] : "";
+      if (comando === "/sessione") { await comandoSessione(env, msg.chat.id); return; }
+      if (comando === "/sessionerisultati") { await comandoRisultati(env, msg.chat.id); return; }
       if (comando === "/radar" || comando === "/notizie" || comando === "/scegli") { await mostraLista(env, msg.chat.id); return; }
       const nv = comando.match(/^\/(?:notizia|video)(?:_(.*))?$/);   // /notizia norris, /notizia_norris (toccabile); /video resta come alias
       if (nv) {

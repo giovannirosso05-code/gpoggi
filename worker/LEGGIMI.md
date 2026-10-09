@@ -6,6 +6,8 @@ Niente più attese. È gratis.
 ## I comandi
 | Comando | Cosa fa |
 |---|---|
+| `/sessione` | La prossima sessione di F1 e MotoGP: che cos'è, quando (ora italiana) e quanto manca, più le sessioni che seguono nel weekend |
+| `/sessionerisultati` | Gli ultimi risultati di F1 (ultima sessione con risultati, primi 5, e podio dell'ultima gara) e di MotoGP (ultimo GP: gara, sprint, pole, giro veloce). Se una sessione F1 è finita da meno di 4 ore e il risultato non c'è ancora, lancia da solo l'aggiornamento |
 | `/radar` | Ti manda tutte le ultime notizie (ultime 24 ore, fino a 20), ognuna con il suo comando |
 | `/notizia` + la prima parola | Fa il video su quella notizia. Esempio: `/notizia norris`. Sotto ogni notizia c'è già il comando da toccare (per esempio `/notizia_norris`) e in fondo i pulsanti con i numeri. Se due notizie iniziano con la stessa parola, il bot ti fa scegliere |
 | `/duevideo` | Due video di notizie scelte dal sistema, subito |

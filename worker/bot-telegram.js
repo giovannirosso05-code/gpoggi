@@ -24,7 +24,7 @@ const REPO_BASE = "giovannirosso05-code/gpoggi";
 const CHAT_BASE = "559225883";          // la tua chat privata (la stessa del bot di MMA Oggi: un id utente vale per tutti i bot)
 const BOT_BASE = "Gpoggibot";
 const RAMO = "main";
-const VERSIONE = "radar-notizia-2 sessioni 2026-10-09";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
+const VERSIONE = "radar-notizia-2 sessioni-2 2026-10-09";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
 const ETA_MASSIMA_SECONDI = 600;        // un comando più vecchio di 10 minuti non si esegue (Telegram può ripetere gli invii dopo un guasto)
 
 // comando -> [file del workflow, input del workflow o null, descrizione]
@@ -243,7 +243,12 @@ async function comandoSessione(env, chat) {
 }
 
 const TEMPO = (r, primo) => (primo ? r.tempo : (r.distacco && r.distacco !== "0.000" ? (String(r.distacco).startsWith("+") ? r.distacco : `+${r.distacco}`) : r.tempo)) || r.stato || "";
-const riga = (r, primo) => `${r.pos}. ${r.nome}${TEMPO(r, primo) ? ` · ${TEMPO(r, primo)}` : ""}`;
+// una riga di classifica: chi non ha posizione è ritirato; chi ha fatto meno giri del vincitore è doppiato
+const riga = (r, primo, giriVincitore) => {
+  if (r.pos == null) return `– ${r.nome} · ritirato${r.giri ? ` dopo ${r.giri} ${r.giri === 1 ? "giro" : "giri"}` : " al primo giro"}`;
+  const indietro = giriVincitore && r.giri && r.giri < giriVincitore ? ` · -${giriVincitore - r.giri} ${giriVincitore - r.giri === 1 ? "giro" : "giri"}` : "";
+  return `${r.pos}. ${r.nome}${indietro || (TEMPO(r, primo) ? ` · ${TEMPO(r, primo)}` : "")}`;
+};
 const podio = (rows) => (rows || []).slice(0, 3).map((r) => `${r.pos}. ${r.nome}`).join(" · ");
 
 async function risultatiF1(env, adesso) {
@@ -269,7 +274,7 @@ async function comandoRisultati(env, chat) {
   const righe = [];
   const f1 = await risultatiF1(env, adesso);
   righe.push(`🏎 FORMULA 1${f1.gp ? ` · ${f1.gp}` : ""}`);
-  if (f1.sessione) righe.push(`Ultima sessione con risultati: ${f1.sessione.nome}`, ...f1.sessione.risultati.slice(0, 5).map((r, i) => riga(r, i === 0)));
+  if (f1.sessione) righe.push(`Ultima sessione con risultati: ${f1.sessione.nome}`, ...f1.sessione.risultati.map((r, i) => riga(r, i === 0, f1.sessione.nome === "Gara" || f1.sessione.nome === "Sprint" ? (f1.sessione.risultati[0] || {}).giri : 0)));
   else righe.push("Nessun risultato disponibile per questo weekend.");
   let aggiorna = false;
   for (const x of f1.senza) { righe.push(`⏳ ${x.nome}: finita alle ${soloOra(Date.parse(x.fine))}, risultati non ancora pubblicati dalla fonte.`); aggiorna = true; }
@@ -282,17 +287,18 @@ async function comandoRisultati(env, chat) {
       righe.push(e.ok ? "🔄 Ho lanciato l'aggiornamento dei risultati: riscrivi il comando tra 5-6 minuti." : `⚠️ Non sono riuscito a lanciare l'aggiornamento (GitHub ${e.stato}).`);
     }
   }
+  await invia(env, chat, righe.join("\n"));
+  righe.length = 0;
   // MotoGP: l'ultimo GP con classifiche, più il weekend in corso
   const [mg, mgc] = await Promise.all([dato(env, "motogp-gare.json"), dato(env, "motogp.json").catch(() => ({ weekend: [] }))]);
   const gareM = Object.values(mg).filter((g) => g.classifiche && (g.classifiche.MotoGP || []).length).sort((a, b) => String(b.data).localeCompare(String(a.data)));
-  righe.push("");
   if (gareM.length) {
     const g = gareM[0], cl = g.classifiche, tutti = [...(cl.MotoGP || []), ...(cl["MotoGP sprint"] || [])];
     const per = (num) => (tutti.find((r) => r.numero === num) || {}).nome;
     const [aa, mm, gg] = String(g.data).split("-").map(Number);
     const dataIt = new Intl.DateTimeFormat("it-IT", { timeZone: "UTC", day: "numeric", month: "long" }).format(new Date(Date.UTC(aa, mm - 1, gg)));
-    righe.push(`🏍 MOTOGP · ultimo GP: ${g.nome} (${dataIt})`, "Gara", ...(cl.MotoGP || []).slice(0, 5).map((r, i) => riga(r, i === 0)));
-    if ((cl["MotoGP sprint"] || []).length) righe.push(`Sprint: ${podio(cl["MotoGP sprint"])}`);
+    righe.push(`🏍 MOTOGP · ultimo GP: ${g.nome} (${dataIt})`, "Gara", ...(cl.MotoGP || []).map((r, i) => riga(r, i === 0, (cl.MotoGP[0] || {}).giri)));
+    if ((cl["MotoGP sprint"] || []).length) righe.push("", "Sprint", ...cl["MotoGP sprint"].map((r) => (r.pos == null ? `– ${r.nome} · ritirato` : `${r.pos}. ${r.nome}`)));
     if (per(g.pole)) righe.push(`Pole: ${per(g.pole)}`);
     if (per(g.giro_veloce)) righe.push(`Giro veloce: ${per(g.giro_veloce)}`);
   } else righe.push("🏍 MOTOGP\nNessun risultato disponibile.");
@@ -302,7 +308,17 @@ async function comandoRisultati(env, chat) {
     if (fatte.length) righe.push(`ℹ️ ${corrente.nome}: già disputate ${fatte.join(" e ")}. I risultati di queste sessioni non sono ancora sul sito.`);
   }
   righe.push("", "Classifiche complete su gpoggi.it");
-  await rispondi(env, chat, righe.join("\n"));
+  await invia(env, chat, righe.join("\n"));
+}
+
+// manda un testo lungo in più messaggi, spezzando sulle righe (Telegram accetta al massimo 4096 caratteri per messaggio)
+async function invia(env, chat, testoLungo) {
+  let blocco = "";
+  for (const r of testoLungo.split("\n")) {
+    if (blocco.length + r.length + 1 > 3800) { await rispondi(env, chat, blocco); blocco = ""; }
+    blocco += (blocco ? "\n" : "") + r;
+  }
+  if (blocco.trim()) await rispondi(env, chat, blocco);
 }
 
 const testo = (s, stato = 200) => new Response(s, { status: stato, headers: { "Content-Type": "text/plain; charset=utf-8" } });
@@ -395,7 +411,7 @@ export default {
       await eseguiLancio(env, msg.chat.id, file, inputs, descrizione);
     })();
     // Risponde subito a Telegram e finisce il lavoro in coda: Telegram non aspetta e non ripete l'invio.
-    ctx.waitUntil(lavoro.catch((e) => { console.error(e); return rispondi(env, msg.chat.id, "⚠️ Qualcosa non ha funzionato: riprova tra poco."); }));
+    ctx.waitUntil(lavoro.catch((e) => { console.error(e); return rispondi(env, msg.chat.id, `⚠️ Qualcosa non ha funzionato: riprova tra poco.\n(${String(e && e.message || e).slice(0, 200)})`); }));
     return testo("ok");
   },
 };

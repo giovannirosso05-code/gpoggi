@@ -189,6 +189,10 @@ def valida(j, a, testo, nomi, predefiniti):
         rot = [p["nome"] for p in json.load(open(DATA / "roster.json")) if p.get("foto") and p.get("nome") in nomi]
     else:
         rot = [n for n in ROTAZIONE.get(a["serie"], []) if n in nomi]
+    # Mai volti di piloti non citati: se l'articolo cita qualcuno, si ruota solo tra i citati (le foto diverse dello stesso pilota
+    # le sceglie notizia_sub); i predefiniti servono solo quando nessun pilota è citato.
+    if citati:
+        rot = [n for n in rot if n in citati] or sorted(citati)
     rot = rot or list(predefiniti)
     giro = datetime.now(timezone.utc).toordinal()
     usate = []
@@ -201,7 +205,14 @@ def valida(j, a, testo, nomi, predefiniti):
                 if c != (usate[-1] if usate else None):
                     f = c
                     break
+            else:
+                f = rot[0]  # un solo pilota disponibile: resta lui (stessa persona, mai un altro volto)
         sc["foto"] = f
+        # il nome sotto il volto compare sempre quando la faccia cambia: mai un volto senza etichetta sotto un titolo su un altro pilota
+        if not usate or usate[-1] != f:
+            sc["nome"] = f
+        elif "nome" in sc:
+            del sc["nome"]
         usate.append(f)
     hv = re.sub(r"[*\[\]]", "", str(j.get("hook_voce", ""))).strip()
     ht = re.sub(r"[*\[\]]", "", str(j.get("hook_titolo", ""))).strip()

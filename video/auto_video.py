@@ -62,7 +62,7 @@ CSS = f"""@font-face{{font-family:Oswald;font-weight:700;src:url(data:font/woff2
 *{{box-sizing:border-box}} html,body{{margin:0;width:{W}px;height:{H}px;background:#0b0b0e;color:#fff;font-family:Inter,sans-serif;overflow:hidden}}
 .logo{{position:absolute;left:0;right:0;top:34px;text-align:center;z-index:5}} .logo img{{width:300px}}
 .foto{{position:absolute;left:0;top:0;width:{W}px;height:{H}px;background-size:cover;background-position:center 6%;background-repeat:no-repeat}}
-.vel{{position:absolute;left:0;top:0;width:{W}px;height:{H}px;background:linear-gradient(180deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.5) 5%,rgba(0,0,0,0) 14%,rgba(0,0,0,0) 30%,rgba(8,8,10,.9) 47%,#0b0b0e 60%)}}
+.vel{{position:absolute;left:0;top:0;width:{W}px;height:{H}px;background:linear-gradient(180deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.5) 5%,rgba(0,0,0,0) 14%,rgba(0,0,0,0) 36%,rgba(8,8,10,.9) 53%,#0b0b0e 64%)}}
 .sfoca{{position:absolute;left:-60px;top:-60px;width:{W + 120}px;height:{H + 120}px;background-size:cover;background-position:center 20%;filter:blur(38px) brightness(.5)}}
 .larga{{position:absolute;left:0;top:150px;width:{W}px;height:800px;object-fit:cover;object-position:center 10%;display:block;-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 14%,#000 72%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0%,#000 14%,#000 72%,transparent 100%)}}
 .pill{{position:absolute;left:70px;font:700 34px Oswald;letter-spacing:.08em;padding:3px 20px;border-radius:8px;text-transform:uppercase}}
@@ -70,11 +70,13 @@ CSS = f"""@font-face{{font-family:Oswald;font-weight:700;src:url(data:font/woff2
 .url{{position:absolute;left:0;right:0;top:1700px;text-align:center;font:700 64px Oswald;letter-spacing:.04em}}
 .avviso{{position:absolute;left:70px;right:70px;top:1835px;text-align:center;font:500 22px Inter;color:#6d6d78}}"""
 
+SPOSTA = 150   # il testo scende di tanto, così i visi delle foto a tutto schermo restano liberi
+
 def _larga(foto):
-    """True se la foto NON è un ritratto alto e stretto (testa in alto): a tutto schermo il viso finirebbe sotto il testo o fuori inquadratura."""
+    """True solo se la foto è orizzontale: a tutto schermo in verticale si vedrebbe solo una striscia centrale."""
     from PIL import Image
     w, h = Image.open(foto_file(foto)).size
-    return h / w < 1.35
+    return h / w < 1.0
 
 def cornice(corpo, colore, foto=None, cred=True):
     sfondo = ""
@@ -86,7 +88,7 @@ def cornice(corpo, colore, foto=None, cred=True):
             sfondo = f"<div class=foto style=\"background-image:url({d});background-position:{foto.get('pos', 'center 6%')}\"></div><div class=vel></div>"
     c = f"<div class=cred style='top:1640px'>Foto: {esc(foto.get('autore',''))} · {esc(foto.get('licenza',''))} · via Wikimedia Commons</div>" if foto and cred else ""
     return (f"<!doctype html><meta charset=utf-8><style>{CSS}.url{{color:{colore}}}</style><div class=logo><img src='data:image/png;base64,{b64(SITO / 'img/logo-wide-scuro.png')}'></div>"
-            f"{sfondo}{corpo}{c}<div class=url>gpoggi.it</div><div class=avviso>Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team</div>")
+            f"{sfondo}<div style='position:absolute;left:0;top:{SPOSTA}px;width:{W}px;height:{H - SPOSTA}px'>{corpo}</div>{c}<div class=url>gpoggi.it</div><div class=avviso>Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team</div>")
 
 def pagina_notizia(a, foto):
     colore = BLU if a.get("serie") == "MotoGP" else ROSSO
@@ -276,7 +278,7 @@ def scene_previsione(chiave):
     if tip or pole_nota:
         fav_pole = pole_nota.get("favorito") or tip
         occhio = pole_nota.get("occhio") if pole_nota else None
-        righe3 = "".join(f"<div style='display:flex;justify-content:space-between;font:700 48px Oswald;text-transform:uppercase;padding:12px 0;border-bottom:2px solid #26262e'><span>{esc(nm)}</span><span style='color:{colore}'>{c} pole</span></div>" for nm, c in ordine[:4])
+        righe3 = "".join(f"<div style='display:flex;justify-content:space-between;font:700 48px Oswald;text-transform:uppercase;padding:12px 0;border-bottom:2px solid #26262e'><span>{esc(nm)}</span><span style='color:{colore}'>{c} pole</span></div>" for nm, c in ordine[:3])
         if occhio:
             c_o = conta_pole.get(occhio, 0)
             frase = (("una pole" if c_o == 1 else f"{it(c_o)} pole") + " nelle ultime cinque qualifiche") if c_o else "in crescita"
@@ -291,7 +293,7 @@ def scene_previsione(chiave):
               f"<h1 style='position:absolute;left:70px;right:70px;top:850px;margin:0;font:700 90px/1 Oswald;text-transform:uppercase'>{esc(fav_pole)}</h1>"
               f"<div style='position:absolute;left:70px;right:70px;top:970px;font:500 34px Inter;color:#c9c9d2'>{sotto}</div>"
               f"<div style='position:absolute;left:70px;right:70px;top:1050px'>{righe3}</div>"
-              f"<div style='position:absolute;left:70px;right:70px;top:1500px;font:500 26px Inter;color:#8a8a96'>Studio di GP Oggi sulle ultime 5 qualifiche</div>")
+              f"<div style='position:absolute;left:70px;right:70px;top:1385px;font:500 26px Inter;color:#8a8a96'>Studio di GP Oggi sulle ultime 5 qualifiche</div>")
         scene.append((cornice(c3, colore, foto_per_nome(fav_pole, chiave)), voce3))
     # --- scena 4: tu che dici? vai a votare
     quando_v, quando_s = chiusura_voti(p, chiave)

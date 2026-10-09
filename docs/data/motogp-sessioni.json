@@ -1,0 +1,2097 @@
+{
+ "generato_il": "2026-10-09T17:19:02+00:00",
+ "weekend": [
+  {
+   "nome": "GP Giappone",
+   "stato": "FINISHED",
+   "sessioni": [
+    {
+     "nome": "Prove libere 1",
+     "codice": "FP1",
+     "inizio": null,
+     "risultati": [
+      {
+       "pos": 1,
+       "nome": "Marc Marquez",
+       "numero": 93,
+       "team": "Ducati Lenovo Team",
+       "tempo": "1:44.073",
+       "distacco": "0.000",
+       "giri": 10,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 2,
+       "nome": "Jorge Martin",
+       "numero": 89,
+       "team": "Aprilia Racing",
+       "tempo": "1:44.172",
+       "distacco": "0.099",
+       "giri": 14,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 3,
+       "nome": "Marco Bezzecchi",
+       "numero": 72,
+       "team": "Aprilia Racing",
+       "tempo": "1:44.206",
+       "distacco": "0.133",
+       "giri": 13,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 4,
+       "nome": "Alex Marquez",
+       "numero": 73,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "1:44.334",
+       "distacco": "0.261",
+       "giri": 14,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 5,
+       "nome": "Johann Zarco",
+       "numero": 5,
+       "team": "Castrol Honda LCR",
+       "tempo": "1:44.412",
+       "distacco": "0.339",
+       "giri": 14,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 6,
+       "nome": "Fabio Quartararo",
+       "numero": 20,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "1:44.504",
+       "distacco": "0.431",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 7,
+       "nome": "Raul Fernandez",
+       "numero": 25,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:44.662",
+       "distacco": "0.589",
+       "giri": 14,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 8,
+       "nome": "Francesco Bagnaia",
+       "numero": 63,
+       "team": "Ducati Lenovo Team",
+       "tempo": "1:44.686",
+       "distacco": "0.613",
+       "giri": 13,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 9,
+       "nome": "Fabio Di Giannantonio",
+       "numero": 49,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "1:44.756",
+       "distacco": "0.683",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 10,
+       "nome": "Pedro Acosta",
+       "numero": 37,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "1:44.784",
+       "distacco": "0.711",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 11,
+       "nome": "Diogo Moreira",
+       "numero": 11,
+       "team": "Pro Honda LCR",
+       "tempo": "1:44.865",
+       "distacco": "0.792",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 12,
+       "nome": "Franco Morbidelli",
+       "numero": 21,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "1:45.075",
+       "distacco": "1.002",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 13,
+       "nome": "Ai Ogura",
+       "numero": 79,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:45.082",
+       "distacco": "1.009",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 14,
+       "nome": "Somkiat Chantra",
+       "numero": 15,
+       "team": "Honda HRC Castrol",
+       "tempo": "1:45.219",
+       "distacco": "1.146",
+       "giri": 21,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 15,
+       "nome": "Fermin Aldeguer",
+       "numero": 54,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "1:45.355",
+       "distacco": "1.282",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 16,
+       "nome": "Toprak Razgatlioglu",
+       "numero": 7,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "1:45.360",
+       "distacco": "1.287",
+       "giri": 19,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 17,
+       "nome": "Brad Binder",
+       "numero": 33,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "1:45.420",
+       "distacco": "1.347",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 18,
+       "nome": "Maverick Viñales",
+       "numero": 12,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "1:45.515",
+       "distacco": "1.442",
+       "giri": 13,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 19,
+       "nome": "Enea Bastianini",
+       "numero": 23,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "1:45.541",
+       "distacco": "1.468",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 20,
+       "nome": "Luca Marini",
+       "numero": 10,
+       "team": "Honda HRC Castrol",
+       "tempo": "1:45.575",
+       "distacco": "1.502",
+       "giri": 10,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 21,
+       "nome": "Alex Rins",
+       "numero": 42,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "1:45.873",
+       "distacco": "1.800",
+       "giri": 10,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 22,
+       "nome": "Jack Miller",
+       "numero": 43,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "1:45.975",
+       "distacco": "1.902",
+       "giri": 15,
+       "stato": "INSTND"
+      },
+      {
+       "pos": null,
+       "nome": "Takaaki Nakagami",
+       "numero": 30,
+       "team": "Honda HRC",
+       "tempo": "",
+       "distacco": "0.000",
+       "giri": 0,
+       "stato": "OUTSTND"
+      }
+     ]
+    },
+    {
+     "nome": "Practice",
+     "codice": "PR",
+     "inizio": null,
+     "risultati": [
+      {
+       "pos": 1,
+       "nome": "Alex Marquez",
+       "numero": 73,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "1:42.811",
+       "distacco": "0.000",
+       "giri": 25,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 2,
+       "nome": "Pedro Acosta",
+       "numero": 37,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "1:42.887",
+       "distacco": "0.076",
+       "giri": 25,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 3,
+       "nome": "Marc Marquez",
+       "numero": 93,
+       "team": "Ducati Lenovo Team",
+       "tempo": "1:42.911",
+       "distacco": "0.100",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 4,
+       "nome": "Marco Bezzecchi",
+       "numero": 72,
+       "team": "Aprilia Racing",
+       "tempo": "1:43.029",
+       "distacco": "0.218",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 5,
+       "nome": "Enea Bastianini",
+       "numero": 23,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "1:43.160",
+       "distacco": "0.349",
+       "giri": 23,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 6,
+       "nome": "Fabio Di Giannantonio",
+       "numero": 49,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "1:43.197",
+       "distacco": "0.386",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 7,
+       "nome": "Fabio Quartararo",
+       "numero": 20,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "1:43.230",
+       "distacco": "0.419",
+       "giri": 25,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 8,
+       "nome": "Jorge Martin",
+       "numero": 89,
+       "team": "Aprilia Racing",
+       "tempo": "1:43.275",
+       "distacco": "0.464",
+       "giri": 23,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 9,
+       "nome": "Diogo Moreira",
+       "numero": 11,
+       "team": "Pro Honda LCR",
+       "tempo": "1:43.306",
+       "distacco": "0.495",
+       "giri": 22,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 10,
+       "nome": "Johann Zarco",
+       "numero": 5,
+       "team": "Castrol Honda LCR",
+       "tempo": "1:43.385",
+       "distacco": "0.574",
+       "giri": 22,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 11,
+       "nome": "Fermin Aldeguer",
+       "numero": 54,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "1:43.389",
+       "distacco": "0.578",
+       "giri": 22,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 12,
+       "nome": "Brad Binder",
+       "numero": 33,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "1:43.429",
+       "distacco": "0.618",
+       "giri": 23,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 13,
+       "nome": "Raul Fernandez",
+       "numero": 25,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:43.485",
+       "distacco": "0.674",
+       "giri": 25,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 14,
+       "nome": "Franco Morbidelli",
+       "numero": 21,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "1:43.527",
+       "distacco": "0.716",
+       "giri": 23,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 15,
+       "nome": "Ai Ogura",
+       "numero": 79,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:43.579",
+       "distacco": "0.768",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 16,
+       "nome": "Francesco Bagnaia",
+       "numero": 63,
+       "team": "Ducati Lenovo Team",
+       "tempo": "1:43.586",
+       "distacco": "0.775",
+       "giri": 21,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 17,
+       "nome": "Luca Marini",
+       "numero": 10,
+       "team": "Honda HRC Castrol",
+       "tempo": "1:43.688",
+       "distacco": "0.877",
+       "giri": 22,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 18,
+       "nome": "Jack Miller",
+       "numero": 43,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "1:43.728",
+       "distacco": "0.917",
+       "giri": 23,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 19,
+       "nome": "Somkiat Chantra",
+       "numero": 15,
+       "team": "Honda HRC Castrol",
+       "tempo": "1:43.896",
+       "distacco": "1.085",
+       "giri": 25,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 20,
+       "nome": "Alex Rins",
+       "numero": 42,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "1:44.304",
+       "distacco": "1.493",
+       "giri": 22,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 21,
+       "nome": "Toprak Razgatlioglu",
+       "numero": 7,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "1:44.411",
+       "distacco": "1.600",
+       "giri": 23,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 22,
+       "nome": "Maverick Viñales",
+       "numero": 12,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "1:44.836",
+       "distacco": "2.025",
+       "giri": 22,
+       "stato": "INSTND"
+      }
+     ]
+    },
+    {
+     "nome": "Prove libere 2",
+     "codice": "FP2",
+     "inizio": null,
+     "risultati": [
+      {
+       "pos": 1,
+       "nome": "Marco Bezzecchi",
+       "numero": 72,
+       "team": "Aprilia Racing",
+       "tempo": "1:43.321",
+       "distacco": "0.000",
+       "giri": 16,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 2,
+       "nome": "Jorge Martin",
+       "numero": 89,
+       "team": "Aprilia Racing",
+       "tempo": "1:43.401",
+       "distacco": "0.080",
+       "giri": 14,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 3,
+       "nome": "Pedro Acosta",
+       "numero": 37,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "1:43.501",
+       "distacco": "0.180",
+       "giri": 16,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 4,
+       "nome": "Marc Marquez",
+       "numero": 93,
+       "team": "Ducati Lenovo Team",
+       "tempo": "1:43.564",
+       "distacco": "0.243",
+       "giri": 14,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 5,
+       "nome": "Fabio Di Giannantonio",
+       "numero": 49,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "1:43.590",
+       "distacco": "0.269",
+       "giri": 14,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 6,
+       "nome": "Brad Binder",
+       "numero": 33,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "1:43.646",
+       "distacco": "0.325",
+       "giri": 15,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 7,
+       "nome": "Enea Bastianini",
+       "numero": 23,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "1:43.691",
+       "distacco": "0.370",
+       "giri": 14,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 8,
+       "nome": "Alex Marquez",
+       "numero": 73,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "1:43.718",
+       "distacco": "0.397",
+       "giri": 14,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 9,
+       "nome": "Raul Fernandez",
+       "numero": 25,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:43.748",
+       "distacco": "0.427",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 10,
+       "nome": "Fabio Quartararo",
+       "numero": 20,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "1:43.749",
+       "distacco": "0.428",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 11,
+       "nome": "Ai Ogura",
+       "numero": 79,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:43.787",
+       "distacco": "0.466",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 12,
+       "nome": "Francesco Bagnaia",
+       "numero": 63,
+       "team": "Ducati Lenovo Team",
+       "tempo": "1:43.800",
+       "distacco": "0.479",
+       "giri": 9,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 13,
+       "nome": "Johann Zarco",
+       "numero": 5,
+       "team": "Castrol Honda LCR",
+       "tempo": "1:43.805",
+       "distacco": "0.484",
+       "giri": 15,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 14,
+       "nome": "Diogo Moreira",
+       "numero": 11,
+       "team": "Pro Honda LCR",
+       "tempo": "1:43.862",
+       "distacco": "0.541",
+       "giri": 15,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 15,
+       "nome": "Luca Marini",
+       "numero": 10,
+       "team": "Honda HRC Castrol",
+       "tempo": "1:44.012",
+       "distacco": "0.691",
+       "giri": 14,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 16,
+       "nome": "Franco Morbidelli",
+       "numero": 21,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "1:44.190",
+       "distacco": "0.869",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 17,
+       "nome": "Maverick Viñales",
+       "numero": 12,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "1:44.334",
+       "distacco": "1.013",
+       "giri": 15,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 18,
+       "nome": "Fermin Aldeguer",
+       "numero": 54,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "1:44.489",
+       "distacco": "1.168",
+       "giri": 10,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 19,
+       "nome": "Jack Miller",
+       "numero": 43,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "1:44.515",
+       "distacco": "1.194",
+       "giri": 14,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 20,
+       "nome": "Somkiat Chantra",
+       "numero": 15,
+       "team": "Honda HRC Castrol",
+       "tempo": "1:44.524",
+       "distacco": "1.203",
+       "giri": 9,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 21,
+       "nome": "Alex Rins",
+       "numero": 42,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "1:44.883",
+       "distacco": "1.562",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 22,
+       "nome": "Toprak Razgatlioglu",
+       "numero": 7,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "1:44.910",
+       "distacco": "1.589",
+       "giri": 14,
+       "stato": "INSTND"
+      }
+     ]
+    },
+    {
+     "nome": "Qualifiche 1",
+     "codice": "Q1",
+     "inizio": null,
+     "risultati": [
+      {
+       "pos": 1,
+       "nome": "Ai Ogura",
+       "numero": 79,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:42.883",
+       "distacco": "0.000",
+       "giri": 5,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 2,
+       "nome": "Raul Fernandez",
+       "numero": 25,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:42.884",
+       "distacco": "0.001",
+       "giri": 7,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 3,
+       "nome": "Francesco Bagnaia",
+       "numero": 63,
+       "team": "Ducati Lenovo Team",
+       "tempo": "1:43.007",
+       "distacco": "0.124",
+       "giri": 7,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 4,
+       "nome": "Franco Morbidelli",
+       "numero": 21,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "1:43.136",
+       "distacco": "0.253",
+       "giri": 8,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 5,
+       "nome": "Somkiat Chantra",
+       "numero": 15,
+       "team": "Honda HRC Castrol",
+       "tempo": "1:43.196",
+       "distacco": "0.313",
+       "giri": 8,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 6,
+       "nome": "Luca Marini",
+       "numero": 10,
+       "team": "Honda HRC Castrol",
+       "tempo": "1:43.278",
+       "distacco": "0.395",
+       "giri": 8,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 7,
+       "nome": "Brad Binder",
+       "numero": 33,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "1:43.399",
+       "distacco": "0.516",
+       "giri": 4,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 8,
+       "nome": "Fermin Aldeguer",
+       "numero": 54,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "1:43.419",
+       "distacco": "0.536",
+       "giri": 7,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 9,
+       "nome": "Maverick Viñales",
+       "numero": 12,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "1:43.605",
+       "distacco": "0.722",
+       "giri": 7,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 10,
+       "nome": "Jack Miller",
+       "numero": 43,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "1:43.811",
+       "distacco": "0.928",
+       "giri": 6,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 11,
+       "nome": "Alex Rins",
+       "numero": 42,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "1:43.896",
+       "distacco": "1.013",
+       "giri": 8,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 12,
+       "nome": "Toprak Razgatlioglu",
+       "numero": 7,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "1:44.031",
+       "distacco": "1.148",
+       "giri": 7,
+       "stato": "INSTND"
+      }
+     ]
+    },
+    {
+     "nome": "Qualifiche 2",
+     "codice": "Q2",
+     "inizio": null,
+     "risultati": [
+      {
+       "pos": 1,
+       "nome": "Jorge Martin",
+       "numero": 89,
+       "team": "Aprilia Racing",
+       "tempo": "1:42.371",
+       "distacco": "0.000",
+       "giri": 8,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 2,
+       "nome": "Marc Marquez",
+       "numero": 93,
+       "team": "Ducati Lenovo Team",
+       "tempo": "1:42.481",
+       "distacco": "0.110",
+       "giri": 7,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 3,
+       "nome": "Pedro Acosta",
+       "numero": 37,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "1:42.493",
+       "distacco": "0.122",
+       "giri": 8,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 4,
+       "nome": "Marco Bezzecchi",
+       "numero": 72,
+       "team": "Aprilia Racing",
+       "tempo": "1:42.530",
+       "distacco": "0.159",
+       "giri": 8,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 5,
+       "nome": "Alex Marquez",
+       "numero": 73,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "1:42.546",
+       "distacco": "0.175",
+       "giri": 8,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 6,
+       "nome": "Fabio Di Giannantonio",
+       "numero": 49,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "1:42.628",
+       "distacco": "0.257",
+       "giri": 8,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 7,
+       "nome": "Enea Bastianini",
+       "numero": 23,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "1:42.669",
+       "distacco": "0.298",
+       "giri": 8,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 8,
+       "nome": "Raul Fernandez",
+       "numero": 25,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:42.741",
+       "distacco": "0.370",
+       "giri": 8,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 9,
+       "nome": "Diogo Moreira",
+       "numero": 11,
+       "team": "Pro Honda LCR",
+       "tempo": "1:42.916",
+       "distacco": "0.545",
+       "giri": 7,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 10,
+       "nome": "Johann Zarco",
+       "numero": 5,
+       "team": "Castrol Honda LCR",
+       "tempo": "1:42.918",
+       "distacco": "0.547",
+       "giri": 6,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 11,
+       "nome": "Ai Ogura",
+       "numero": 79,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:42.933",
+       "distacco": "0.562",
+       "giri": 4,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 12,
+       "nome": "Fabio Quartararo",
+       "numero": 20,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "1:43.059",
+       "distacco": "0.688",
+       "giri": 8,
+       "stato": "INSTND"
+      }
+     ]
+    },
+    {
+     "nome": "Sprint",
+     "codice": "SPR",
+     "inizio": null,
+     "risultati": [
+      {
+       "pos": 1,
+       "nome": "Marc Marquez",
+       "numero": 93,
+       "team": "Ducati Lenovo Team",
+       "tempo": "20:50.376",
+       "distacco": "0.000",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 2,
+       "nome": "Diogo Moreira",
+       "numero": 11,
+       "team": "Pro Honda LCR",
+       "tempo": "20:53.130",
+       "distacco": "2.754",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 3,
+       "nome": "Jorge Martin",
+       "numero": 89,
+       "team": "Aprilia Racing",
+       "tempo": "20:52.842",
+       "distacco": "2.466",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 4,
+       "nome": "Enea Bastianini",
+       "numero": 23,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "20:52.884",
+       "distacco": "2.508",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 5,
+       "nome": "Ai Ogura",
+       "numero": 79,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "20:56.368",
+       "distacco": "5.992",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 6,
+       "nome": "Marco Bezzecchi",
+       "numero": 72,
+       "team": "Aprilia Racing",
+       "tempo": "20:57.360",
+       "distacco": "6.984",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 7,
+       "nome": "Johann Zarco",
+       "numero": 5,
+       "team": "Castrol Honda LCR",
+       "tempo": "20:58.464",
+       "distacco": "8.088",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 8,
+       "nome": "Raul Fernandez",
+       "numero": 25,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "20:59.193",
+       "distacco": "8.817",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 9,
+       "nome": "Fabio Quartararo",
+       "numero": 20,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "21:00.962",
+       "distacco": "10.586",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 10,
+       "nome": "Fermin Aldeguer",
+       "numero": 54,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "21:01.505",
+       "distacco": "11.129",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 11,
+       "nome": "Luca Marini",
+       "numero": 10,
+       "team": "Honda HRC Castrol",
+       "tempo": "21:04.008",
+       "distacco": "13.632",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 12,
+       "nome": "Franco Morbidelli",
+       "numero": 21,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "21:05.585",
+       "distacco": "15.209",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 13,
+       "nome": "Alex Rins",
+       "numero": 42,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "21:10.249",
+       "distacco": "19.873",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 14,
+       "nome": "Somkiat Chantra",
+       "numero": 15,
+       "team": "Honda HRC Castrol",
+       "tempo": "21:10.359",
+       "distacco": "19.983",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 15,
+       "nome": "Maverick Viñales",
+       "numero": 12,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "21:10.845",
+       "distacco": "20.469",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 16,
+       "nome": "Jack Miller",
+       "numero": 43,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "21:12.270",
+       "distacco": "21.894",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 17,
+       "nome": "Toprak Razgatlioglu",
+       "numero": 7,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "21:28.818",
+       "distacco": "38.442",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 18,
+       "nome": "Brad Binder",
+       "numero": 33,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "21:31.660",
+       "distacco": "41.284",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": null,
+       "nome": "Francesco Bagnaia",
+       "numero": 63,
+       "team": "Ducati Lenovo Team",
+       "tempo": "19:20.309",
+       "distacco": "0.000",
+       "giri": 11,
+       "stato": "OUTSTND"
+      },
+      {
+       "pos": null,
+       "nome": "Pedro Acosta",
+       "numero": 37,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "",
+       "distacco": "0.000",
+       "giri": 0,
+       "stato": "NOTFINISHFIRST"
+      },
+      {
+       "pos": null,
+       "nome": "Alex Marquez",
+       "numero": 73,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "",
+       "distacco": "0.000",
+       "giri": 0,
+       "stato": "NOTFINISHFIRST"
+      },
+      {
+       "pos": null,
+       "nome": "Fabio Di Giannantonio",
+       "numero": 49,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "",
+       "distacco": "0.000",
+       "giri": 0,
+       "stato": "NOTFINISHFIRST"
+      }
+     ]
+    },
+    {
+     "nome": "Warm up",
+     "codice": "WUP",
+     "inizio": null,
+     "risultati": [
+      {
+       "pos": 1,
+       "nome": "Marc Marquez",
+       "numero": 93,
+       "team": "Ducati Lenovo Team",
+       "tempo": "1:42.957",
+       "distacco": "0.000",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 2,
+       "nome": "Marco Bezzecchi",
+       "numero": 72,
+       "team": "Aprilia Racing",
+       "tempo": "1:43.409",
+       "distacco": "0.452",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 3,
+       "nome": "Jorge Martin",
+       "numero": 89,
+       "team": "Aprilia Racing",
+       "tempo": "1:43.447",
+       "distacco": "0.490",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 4,
+       "nome": "Fabio Quartararo",
+       "numero": 20,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "1:43.618",
+       "distacco": "0.661",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 5,
+       "nome": "Ai Ogura",
+       "numero": 79,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:43.668",
+       "distacco": "0.711",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 6,
+       "nome": "Luca Marini",
+       "numero": 10,
+       "team": "Honda HRC Castrol",
+       "tempo": "1:43.771",
+       "distacco": "0.814",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 7,
+       "nome": "Raul Fernandez",
+       "numero": 25,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:43.803",
+       "distacco": "0.846",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 8,
+       "nome": "Enea Bastianini",
+       "numero": 23,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "1:43.845",
+       "distacco": "0.888",
+       "giri": 10,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 9,
+       "nome": "Diogo Moreira",
+       "numero": 11,
+       "team": "Pro Honda LCR",
+       "tempo": "1:43.851",
+       "distacco": "0.894",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 10,
+       "nome": "Pedro Acosta",
+       "numero": 37,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "1:43.875",
+       "distacco": "0.918",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 11,
+       "nome": "Francesco Bagnaia",
+       "numero": 63,
+       "team": "Ducati Lenovo Team",
+       "tempo": "1:43.882",
+       "distacco": "0.925",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 12,
+       "nome": "Johann Zarco",
+       "numero": 5,
+       "team": "Castrol Honda LCR",
+       "tempo": "1:43.919",
+       "distacco": "0.962",
+       "giri": 10,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 13,
+       "nome": "Brad Binder",
+       "numero": 33,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "1:44.150",
+       "distacco": "1.193",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 14,
+       "nome": "Jack Miller",
+       "numero": 43,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "1:44.177",
+       "distacco": "1.220",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 15,
+       "nome": "Alex Marquez",
+       "numero": 73,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "1:44.253",
+       "distacco": "1.296",
+       "giri": 10,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 16,
+       "nome": "Maverick Viñales",
+       "numero": 12,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "1:44.364",
+       "distacco": "1.407",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 17,
+       "nome": "Franco Morbidelli",
+       "numero": 21,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "1:44.366",
+       "distacco": "1.409",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 18,
+       "nome": "Alex Rins",
+       "numero": 42,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "1:44.403",
+       "distacco": "1.446",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 19,
+       "nome": "Somkiat Chantra",
+       "numero": 15,
+       "team": "Honda HRC Castrol",
+       "tempo": "1:44.530",
+       "distacco": "1.573",
+       "giri": 11,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 20,
+       "nome": "Fermin Aldeguer",
+       "numero": 54,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "1:44.575",
+       "distacco": "1.618",
+       "giri": 10,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 21,
+       "nome": "Toprak Razgatlioglu",
+       "numero": 7,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "1:44.744",
+       "distacco": "1.787",
+       "giri": 12,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 22,
+       "nome": "Fabio Di Giannantonio",
+       "numero": 49,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "1:44.905",
+       "distacco": "1.948",
+       "giri": 11,
+       "stato": "INSTND"
+      }
+     ]
+    },
+    {
+     "nome": "Gara",
+     "codice": "RAC",
+     "inizio": null,
+     "risultati": [
+      {
+       "pos": 1,
+       "nome": "Marc Marquez",
+       "numero": 93,
+       "team": "Ducati Lenovo Team",
+       "tempo": "41:31.467",
+       "distacco": "0.000",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 2,
+       "nome": "Jorge Martin",
+       "numero": 89,
+       "team": "Aprilia Racing",
+       "tempo": "41:32.830",
+       "distacco": "1.363",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 3,
+       "nome": "Marco Bezzecchi",
+       "numero": 72,
+       "team": "Aprilia Racing",
+       "tempo": "41:33.719",
+       "distacco": "2.252",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 4,
+       "nome": "Enea Bastianini",
+       "numero": 23,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "41:33.797",
+       "distacco": "2.330",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 5,
+       "nome": "Raul Fernandez",
+       "numero": 25,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "41:46.282",
+       "distacco": "14.815",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 6,
+       "nome": "Ai Ogura",
+       "numero": 79,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "41:46.677",
+       "distacco": "15.210",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 7,
+       "nome": "Pedro Acosta",
+       "numero": 37,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "41:48.395",
+       "distacco": "16.928",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 8,
+       "nome": "Francesco Bagnaia",
+       "numero": 63,
+       "team": "Ducati Lenovo Team",
+       "tempo": "41:51.800",
+       "distacco": "20.333",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 9,
+       "nome": "Fermin Aldeguer",
+       "numero": 54,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "41:55.012",
+       "distacco": "23.545",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 10,
+       "nome": "Luca Marini",
+       "numero": 10,
+       "team": "Honda HRC Castrol",
+       "tempo": "41:57.144",
+       "distacco": "25.677",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 11,
+       "nome": "Brad Binder",
+       "numero": 33,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "41:57.320",
+       "distacco": "25.853",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 12,
+       "nome": "Fabio Quartararo",
+       "numero": 20,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "42:02.334",
+       "distacco": "30.867",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 13,
+       "nome": "Somkiat Chantra",
+       "numero": 15,
+       "team": "Honda HRC Castrol",
+       "tempo": "42:02.800",
+       "distacco": "31.333",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 14,
+       "nome": "Maverick Viñales",
+       "numero": 12,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "42:05.462",
+       "distacco": "33.995",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 15,
+       "nome": "Franco Morbidelli",
+       "numero": 21,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "42:06.057",
+       "distacco": "34.590",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 16,
+       "nome": "Alex Rins",
+       "numero": 42,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "42:10.695",
+       "distacco": "39.228",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 17,
+       "nome": "Toprak Razgatlioglu",
+       "numero": 7,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "42:11.029",
+       "distacco": "39.562",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 18,
+       "nome": "Fabio Di Giannantonio",
+       "numero": 49,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "42:22.283",
+       "distacco": "50.816",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 19,
+       "nome": "Jack Miller",
+       "numero": 43,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "42:42.594",
+       "distacco": "71.127",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 20,
+       "nome": "Johann Zarco",
+       "numero": 5,
+       "team": "Castrol Honda LCR",
+       "tempo": "41:38.339",
+       "distacco": "0.000",
+       "giri": 22,
+       "stato": "INSTND"
+      },
+      {
+       "pos": null,
+       "nome": "Alex Marquez",
+       "numero": 73,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "31:23.842",
+       "distacco": "0.000",
+       "giri": 18,
+       "stato": "OUTSTND"
+      },
+      {
+       "pos": null,
+       "nome": "Diogo Moreira",
+       "numero": 11,
+       "team": "Pro Honda LCR",
+       "tempo": "14:02.516",
+       "distacco": "0.000",
+       "giri": 8,
+       "stato": "OUTSTND"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "GP Indonesia",
+   "stato": "CURRENT",
+   "sessioni": [
+    {
+     "nome": "Prove libere 1",
+     "codice": "FP1",
+     "inizio": "2026-10-09T02:45:00+00:00",
+     "risultati": [
+      {
+       "pos": 1,
+       "nome": "Marco Bezzecchi",
+       "numero": 72,
+       "team": "Aprilia Racing",
+       "tempo": "1:30.132",
+       "distacco": "0.000",
+       "giri": 20,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 2,
+       "nome": "Marc Marquez",
+       "numero": 93,
+       "team": "Ducati Lenovo Team",
+       "tempo": "1:30.369",
+       "distacco": "0.237",
+       "giri": 18,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 3,
+       "nome": "Jorge Martin",
+       "numero": 89,
+       "team": "Aprilia Racing",
+       "tempo": "1:30.398",
+       "distacco": "0.266",
+       "giri": 21,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 4,
+       "nome": "Pedro Acosta",
+       "numero": 37,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "1:30.426",
+       "distacco": "0.294",
+       "giri": 21,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 5,
+       "nome": "Raul Fernandez",
+       "numero": 25,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:30.534",
+       "distacco": "0.402",
+       "giri": 20,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 6,
+       "nome": "Franco Morbidelli",
+       "numero": 21,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "1:30.703",
+       "distacco": "0.571",
+       "giri": 20,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 7,
+       "nome": "Fabio Di Giannantonio",
+       "numero": 49,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "1:30.763",
+       "distacco": "0.631",
+       "giri": 20,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 8,
+       "nome": "Fabio Quartararo",
+       "numero": 20,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "1:30.783",
+       "distacco": "0.651",
+       "giri": 21,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 9,
+       "nome": "Fermin Aldeguer",
+       "numero": 54,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "1:30.790",
+       "distacco": "0.658",
+       "giri": 14,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 10,
+       "nome": "Alex Marquez",
+       "numero": 73,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "1:30.852",
+       "distacco": "0.720",
+       "giri": 18,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 11,
+       "nome": "Alex Rins",
+       "numero": 42,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "1:30.967",
+       "distacco": "0.835",
+       "giri": 22,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 12,
+       "nome": "Enea Bastianini",
+       "numero": 23,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "1:31.090",
+       "distacco": "0.958",
+       "giri": 20,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 13,
+       "nome": "Francesco Bagnaia",
+       "numero": 63,
+       "team": "Ducati Lenovo Team",
+       "tempo": "1:31.127",
+       "distacco": "0.995",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 14,
+       "nome": "Johann Zarco",
+       "numero": 5,
+       "team": "Castrol Honda LCR",
+       "tempo": "1:31.300",
+       "distacco": "1.168",
+       "giri": 19,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 15,
+       "nome": "Toprak Razgatlioglu",
+       "numero": 7,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "1:31.372",
+       "distacco": "1.240",
+       "giri": 20,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 16,
+       "nome": "Brad Binder",
+       "numero": 33,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "1:31.536",
+       "distacco": "1.404",
+       "giri": 20,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 17,
+       "nome": "Jack Miller",
+       "numero": 43,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "1:31.610",
+       "distacco": "1.478",
+       "giri": 21,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 18,
+       "nome": "Luca Marini",
+       "numero": 10,
+       "team": "Honda HRC Castrol",
+       "tempo": "1:31.712",
+       "distacco": "1.580",
+       "giri": 18,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 19,
+       "nome": "Maverick Viñales",
+       "numero": 12,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "1:31.738",
+       "distacco": "1.606",
+       "giri": 20,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 20,
+       "nome": "Diogo Moreira",
+       "numero": 11,
+       "team": "Pro Honda LCR",
+       "tempo": "1:31.767",
+       "distacco": "1.635",
+       "giri": 17,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 21,
+       "nome": "Ai Ogura",
+       "numero": 79,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:31.879",
+       "distacco": "1.747",
+       "giri": 10,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 22,
+       "nome": "Aleix Espargaro",
+       "numero": 41,
+       "team": "Honda HRC Castrol",
+       "tempo": "1:32.909",
+       "distacco": "2.777",
+       "giri": 19,
+       "stato": "INSTND"
+      }
+     ]
+    },
+    {
+     "nome": "Practice",
+     "codice": "PR",
+     "inizio": "2026-10-09T07:35:00+00:00",
+     "risultati": [
+      {
+       "pos": 1,
+       "nome": "Raul Fernandez",
+       "numero": 25,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:28.725",
+       "distacco": "0.000",
+       "giri": 22,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 2,
+       "nome": "Marco Bezzecchi",
+       "numero": 72,
+       "team": "Aprilia Racing",
+       "tempo": "1:28.944",
+       "distacco": "0.219",
+       "giri": 28,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 3,
+       "nome": "Jorge Martin",
+       "numero": 89,
+       "team": "Aprilia Racing",
+       "tempo": "1:29.206",
+       "distacco": "0.481",
+       "giri": 27,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 4,
+       "nome": "Pedro Acosta",
+       "numero": 37,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "1:29.394",
+       "distacco": "0.669",
+       "giri": 26,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 5,
+       "nome": "Marc Marquez",
+       "numero": 93,
+       "team": "Ducati Lenovo Team",
+       "tempo": "1:29.426",
+       "distacco": "0.701",
+       "giri": 25,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 6,
+       "nome": "Fabio Di Giannantonio",
+       "numero": 49,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "1:29.430",
+       "distacco": "0.705",
+       "giri": 24,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 7,
+       "nome": "Fabio Quartararo",
+       "numero": 20,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "1:29.558",
+       "distacco": "0.833",
+       "giri": 21,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 8,
+       "nome": "Alex Marquez",
+       "numero": 73,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "1:29.572",
+       "distacco": "0.847",
+       "giri": 21,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 9,
+       "nome": "Franco Morbidelli",
+       "numero": 21,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "1:29.693",
+       "distacco": "0.968",
+       "giri": 23,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 10,
+       "nome": "Francesco Bagnaia",
+       "numero": 63,
+       "team": "Ducati Lenovo Team",
+       "tempo": "1:29.786",
+       "distacco": "1.061",
+       "giri": 25,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 11,
+       "nome": "Alex Rins",
+       "numero": 42,
+       "team": "Monster Energy Yamaha MotoGP Team",
+       "tempo": "1:29.876",
+       "distacco": "1.151",
+       "giri": 25,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 12,
+       "nome": "Jack Miller",
+       "numero": 43,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "1:29.883",
+       "distacco": "1.158",
+       "giri": 25,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 13,
+       "nome": "Ai Ogura",
+       "numero": 79,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:29.954",
+       "distacco": "1.229",
+       "giri": 25,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 14,
+       "nome": "Luca Marini",
+       "numero": 10,
+       "team": "Honda HRC Castrol",
+       "tempo": "1:30.037",
+       "distacco": "1.312",
+       "giri": 25,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 15,
+       "nome": "Fermin Aldeguer",
+       "numero": 54,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "1:30.151",
+       "distacco": "1.426",
+       "giri": 19,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 16,
+       "nome": "Toprak Razgatlioglu",
+       "numero": 7,
+       "team": "Prima Pramac Yamaha MotoGP",
+       "tempo": "1:30.152",
+       "distacco": "1.427",
+       "giri": 22,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 17,
+       "nome": "Brad Binder",
+       "numero": 33,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "1:30.247",
+       "distacco": "1.522",
+       "giri": 25,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 18,
+       "nome": "Johann Zarco",
+       "numero": 5,
+       "team": "Castrol Honda LCR",
+       "tempo": "1:30.314",
+       "distacco": "1.589",
+       "giri": 23,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 19,
+       "nome": "Diogo Moreira",
+       "numero": 11,
+       "team": "Pro Honda LCR",
+       "tempo": "1:30.401",
+       "distacco": "1.676",
+       "giri": 19,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 20,
+       "nome": "Maverick Viñales",
+       "numero": 12,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "1:30.666",
+       "distacco": "1.941",
+       "giri": 26,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 21,
+       "nome": "Enea Bastianini",
+       "numero": 23,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "1:30.668",
+       "distacco": "1.943",
+       "giri": 20,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 22,
+       "nome": "Aleix Espargaro",
+       "numero": 41,
+       "team": "Honda HRC Castrol",
+       "tempo": "1:31.694",
+       "distacco": "2.969",
+       "giri": 18,
+       "stato": "INSTND"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

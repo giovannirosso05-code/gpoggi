@@ -26,7 +26,9 @@ jobs:
       - name: Rassegna stampa F1
         run: python build_news.py
       - name: Calendario MotoGP
-        run: python build_motogp.py
+        run: |
+          python build_motogp.py
+          python build_motogp_sessioni.py || true
       - name: Ora di partenza delle gare (per chiudere i voti del pronostico)
         run: python build_orari_gara.py
       - name: Schede carriera e biografie (riprende da dove era arrivato; prima delle foto, che si fidano dei dati verificati qui)

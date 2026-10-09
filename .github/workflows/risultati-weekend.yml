@@ -52,6 +52,7 @@ jobs:
         if: steps.gara.outputs.attivo == 'si'
         run: |
           python build_motogp.py
+          python build_motogp_sessioni.py || true
           python build_orari_gara.py
           python build_report_moto.py
           python build_cronaca.py || true

@@ -24,7 +24,7 @@ const REPO_BASE = "giovannirosso05-code/gpoggi";
 const CHAT_BASE = "559225883";          // la tua chat privata (la stessa del bot di MMA Oggi: un id utente vale per tutti i bot)
 const BOT_BASE = "Gpoggibot";
 const RAMO = "main";
-const VERSIONE = "radar-notizia-2 sessioni-3 2026-10-09";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
+const VERSIONE = "radar-notizia-2 sessioni-4 2026-10-09";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
 const ETA_MASSIMA_SECONDI = 600;        // un comando più vecchio di 10 minuti non si esegue (Telegram può ripetere gli invii dopo un guasto)
 
 // comando -> [file del workflow, input del workflow o null, descrizione]
@@ -219,7 +219,7 @@ function fra(ms) {
 }
 
 // sessioni normalizzate di un weekend: durata di 45 minuti se la fonte non indica la fine (sprint e gara della MotoGP)
-const normSess = (w) => (w.sessioni || []).map((x) => { const i = Date.parse(x.inizio), f = Date.parse(x.fine); return { nome: x.nome, i, f: f > i ? f : i + 45 * 60000 }; }).sort((a, b) => a.i - b.i);
+const normSess = (w) => (w.sessioni || []).map((x) => { const i = Date.parse(x.inizio), f = Date.parse(x.fine); return { nome: x.codice === "PR" ? "Practice" : x.nome, codice: x.codice, i, f: f > i ? f : i + 45 * 60000 }; }).sort((a, b) => a.i - b.i);
 
 function bloccoSessione(icona, serie, weekend, adesso) {
   // il primo weekend che ha ancora una sessione non finita
@@ -271,45 +271,59 @@ async function risultatiF1(env, adesso) {
 
 async function comandoRisultati(env, chat) {
   const adesso = Date.now();
-  const righe = [];
+  let attesa = false;
+  // ---------- Formula 1: ultima sessione con risultati (tutti i piloti) e podio dell'ultima gara
   const f1 = await risultatiF1(env, adesso);
-  righe.push(`🏎 FORMULA 1${f1.gp ? ` · ${f1.gp}` : ""}`);
-  if (f1.sessione) righe.push(`Ultima sessione con risultati: ${f1.sessione.nome}`, ...f1.sessione.risultati.map((r, i) => riga(r, i === 0, f1.sessione.nome === "Gara" || f1.sessione.nome === "Sprint" ? (f1.sessione.risultati[0] || {}).giri : 0)));
-  else righe.push("Nessun risultato disponibile per questo weekend.");
-  let aggiorna = false;
-  for (const x of f1.senza) { righe.push(`⏳ ${x.nome}: finita alle ${soloOra(Date.parse(x.fine))}, risultati non ancora pubblicati dalla fonte.`); aggiorna = true; }
-  if (f1.ultimaGara && !(f1.sessione && f1.sessione.nome === "Gara")) righe.push(`🏁 Ultima gara: ${f1.ultimaGara.gp} · ${podio(f1.ultimaGara.rows)}`);
-  if (aggiorna) {
-    const coda = await codaDi(env, "risultati-weekend.yml").catch(() => null);
-    if (coda && (coda.inLavoro || coda.inAttesa)) righe.push("🔄 L'aggiornamento dei risultati è già in corso: riscrivi il comando tra qualche minuto.");
-    else {
-      const e = await lancia(env, "risultati-weekend.yml", null);
-      righe.push(e.ok ? "🔄 Ho lanciato l'aggiornamento dei risultati: riscrivi il comando tra 5-6 minuti." : `⚠️ Non sono riuscito a lanciare l'aggiornamento (GitHub ${e.stato}).`);
+  const a = [`🏎 FORMULA 1${f1.gp ? ` · ${f1.gp}` : ""}`];
+  if (f1.sessione) a.push(`Ultima sessione con risultati: ${f1.sessione.nome}`, ...f1.sessione.risultati.map((r, i) => riga(r, i === 0, f1.sessione.nome === "Gara" || f1.sessione.nome === "Sprint" ? (f1.sessione.risultati[0] || {}).giri : 0)));
+  else a.push("Nessun risultato disponibile per questo weekend.");
+  for (const x of f1.senza) { a.push(`⏳ ${x.nome}: finita alle ${soloOra(Date.parse(x.fine))}, risultati non ancora pubblicati dalla fonte.`); attesa = true; }
+  if (f1.ultimaGara && !(f1.sessione && f1.sessione.nome === "Gara")) a.push(`🏁 Ultima gara: ${f1.ultimaGara.gp} · ${podio(f1.ultimaGara.rows)}`);
+
+  // ---------- MotoGP: ultima sessione del weekend in corso (se ce n'è) e ultimo GP concluso
+  const [mg, cal, ms] = await Promise.all([dato(env, "motogp-gare.json"), dato(env, "motogp.json").catch(() => ({ weekend: [] })), dato(env, "motogp-sessioni.json").catch(() => null)]);
+  const b = [];
+  const corrente = (cal.weekend || []).map((x) => ({ nome: x.nome, sess: (x.sessioni || []).map((q) => ({ ...q, ...normSess({ sessioni: [q] })[0] })) }))
+    .find((x) => x.sess.some((q) => q.i <= adesso) && x.sess.some((q) => q.f > adesso));
+  if (corrente) {
+    const dati = ms && (ms.weekend || []).find((w) => w.nome === corrente.nome);
+    const conRis = (dati && dati.sessioni) || [];
+    const ultima = conRis[conRis.length - 1];
+    b.push(`🏍 MOTOGP · ${corrente.nome}`);
+    if (ultima) b.push(`Ultima sessione con risultati: ${ultima.nome}`, ...ultima.risultati.map((r, i) => riga(r, i === 0, ultima.codice === "RAC" || ultima.codice === "SPR" ? (ultima.risultati[0] || {}).giri : 0)));
+    else b.push("Nessuna sessione di questo weekend ha ancora risultati.");
+    for (const q of corrente.sess) {
+      if (q.f <= adesso && adesso - q.f < ORE4 && !conRis.some((x) => x.codice === q.codice)) { b.push(`⏳ ${NOME_MOTO[q.codice] || q.nome}: finita alle ${soloOra(q.f)}, risultati non ancora pubblicati dalla fonte.`); attesa = true; }
     }
+    b.push("");
   }
-  await invia(env, chat, righe.join("\n"));
-  righe.length = 0;
-  // MotoGP: l'ultimo GP con classifiche, più il weekend in corso
-  const [mg, mgc] = await Promise.all([dato(env, "motogp-gare.json"), dato(env, "motogp.json").catch(() => ({ weekend: [] }))]);
-  const gareM = Object.values(mg).filter((g) => g.classifiche && (g.classifiche.MotoGP || []).length).sort((a, b) => String(b.data).localeCompare(String(a.data)));
+  const gareM = Object.values(mg).filter((g) => g.classifiche && (g.classifiche.MotoGP || []).length).sort((x, y) => String(y.data).localeCompare(String(x.data)));
   if (gareM.length) {
     const g = gareM[0], cl = g.classifiche, tutti = [...(cl.MotoGP || []), ...(cl["MotoGP sprint"] || [])];
     const per = (num) => (tutti.find((r) => r.numero === num) || {}).nome;
     const [aa, mm, gg] = String(g.data).split("-").map(Number);
     const dataIt = new Intl.DateTimeFormat("it-IT", { timeZone: "UTC", day: "numeric", month: "long" }).format(new Date(Date.UTC(aa, mm - 1, gg)));
-    righe.push(`🏍 MOTOGP · ultimo GP: ${g.nome} (${dataIt})`, "Gara", ...(cl.MotoGP || []).map((r, i) => riga(r, i === 0, (cl.MotoGP[0] || {}).giri)));
-    if ((cl["MotoGP sprint"] || []).length) righe.push("", "Sprint", ...cl["MotoGP sprint"].map((r) => (r.pos == null ? `– ${r.nome} · ritirato` : `${r.pos}. ${r.nome}`)));
-    if (per(g.pole)) righe.push(`Pole: ${per(g.pole)}`);
-    if (per(g.giro_veloce)) righe.push(`Giro veloce: ${per(g.giro_veloce)}`);
-  } else righe.push("🏍 MOTOGP\nNessun risultato disponibile.");
-  const corrente = (mgc.weekend || []).map((x) => ({ nome: x.nome, sess: normSess(x) })).find((x) => x.sess.some((s) => s.i <= adesso) && x.sess.some((s) => s.f > adesso));
-  if (corrente) {
-    const fatte = corrente.sess.filter((s) => s.f <= adesso).map((s) => s.nome);
-    if (fatte.length) righe.push(`ℹ️ ${corrente.nome}: già disputate ${fatte.join(" e ")}. I risultati di queste sessioni non sono ancora sul sito.`);
+    b.push(`🏁 MotoGP · ultimo GP: ${g.nome} (${dataIt})`, "Gara", ...(cl.MotoGP || []).map((r, i) => riga(r, i === 0, (cl.MotoGP[0] || {}).giri)));
+    if ((cl["MotoGP sprint"] || []).length) b.push("", "Sprint", ...cl["MotoGP sprint"].map((r) => (r.pos == null ? `– ${r.nome} · ritirato` : `${r.pos}. ${r.nome}`)));
+    if (per(g.pole)) b.push("", `Pole: ${per(g.pole)}`);
+    if (per(g.giro_veloce)) b.push(`Giro veloce: ${per(g.giro_veloce)}`);
+  } else if (!corrente) b.push("🏍 MOTOGP\nNessun risultato disponibile.");
+
+  // ---------- se manca il risultato di una sessione finita da poco, si lancia l'aggiornamento (una volta sola)
+  if (attesa) {
+    const coda = await codaDi(env, "risultati-weekend.yml").catch(() => null);
+    if (coda && (coda.inLavoro || coda.inAttesa)) b.push("", "🔄 L'aggiornamento dei risultati è già in corso: riscrivi il comando tra qualche minuto.");
+    else {
+      const e = await lancia(env, "risultati-weekend.yml", null);
+      b.push("", e.ok ? "🔄 Ho lanciato l'aggiornamento dei risultati: riscrivi il comando tra 5-6 minuti." : `⚠️ Non sono riuscito a lanciare l'aggiornamento (GitHub ${e.stato}).`);
+    }
   }
-  righe.push("", "Classifiche complete su gpoggi.it");
-  await invia(env, chat, righe.join("\n"));
+  b.push("", "Classifiche complete su gpoggi.it");
+  await invia(env, chat, a.join("\n"));
+  await invia(env, chat, b.join("\n"));
 }
+
+const NOME_MOTO = { FP1: "Prove libere 1", PR: "Practice", FP2: "Prove libere 2", Q1: "Qualifiche 1", Q2: "Qualifiche 2", SPR: "Sprint", WUP: "Warm up", RAC: "Gara" };
 
 // manda un testo lungo in più messaggi, spezzando sulle righe (Telegram accetta al massimo 4096 caratteri per messaggio)
 async function invia(env, chat, testoLungo) {

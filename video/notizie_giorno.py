@@ -130,12 +130,13 @@ Regole:
 Rispondi SOLO con un oggetto JSON valido con le chiavi: hook_voce, hook_titolo, titolo_breve, scene, domanda, social."""
 
 
-def chiedi_modello(a, testo, nomi, predefiniti):
+def chiedi_modello(a, testo, nomi, predefiniti, correzione=""):
     chiave = (os.environ.get("ANTHROPIC_API_KEY") or "").strip()
     if not chiave:
         raise RuntimeError("ANTHROPIC_API_KEY mancante")
     utente = (f"Serie: {a['serie']}\nFonte: {a['fonte']}\nTitolo: {a['titolo']}\n\nTesto dell'articolo:\n{testo}\n\n"
-              f"Piloti di cui abbiamo la foto (scegli solo da qui): {', '.join(sorted(nomi))}\nPredefiniti se nessun pilota è citato: {', '.join(predefiniti)}")
+              f"Piloti di cui abbiamo la foto (scegli solo da qui): {', '.join(sorted(nomi))}\nPredefiniti se nessun pilota è citato: {', '.join(predefiniti)}"
+              + (f"\n\nATTENZIONE: {correzione}" if correzione else ""))
     r = requests.post("https://api.anthropic.com/v1/messages", timeout=120, verify=CA,
                       headers={"x-api-key": chiave, "anthropic-version": "2023-06-01", "content-type": "application/json"},
                       json={"model": MODELLO, "max_tokens": 2000, "system": SISTEMA, "messages": [{"role": "user", "content": utente}]})
@@ -231,6 +232,31 @@ def valida(j, a, testo, nomi, predefiniti):
             "finale": {"foto": out[-1]["foto"], "domanda": dom}}, social
 
 
+def racconta(art, testo, nomi, predef, risposta_file=None, tentativi=3):
+    """Chiede il racconto al modello; se la verifica lo scarta (per esempio perché copia l'articolo) lo richiede dicendo cosa correggere."""
+    correzione = ""
+    for k in range(tentativi):
+        j = json.load(open(risposta_file)) if risposta_file else chiedi_modello(art, testo, nomi, predef, correzione)
+        try:
+            return valida(j, art, testo, nomi, predef)
+        except ValueError as e:
+            if risposta_file or k == tentativi - 1:
+                raise
+            print(f"  tentativo {k + 1} scartato ({e}): riprovo")
+            correzione = (f"la versione precedente è stata scartata perché: {e}. Riscrivi tutto con parole TUE: in nessuna scena, nel gancio e nella domanda "
+                          "devono comparire 6 parole di fila uguali all'articolo. Cambia l'ordine, usa sinonimi e frasi più brevi, e rispetta tutte le altre regole.")
+
+
+def avviso(testo):
+    tok = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN")
+    chat = os.environ.get("TELEGRAM_CANALE") or os.environ.get("TELEGRAM_CHAT_ID")
+    if tok and chat:
+        try:
+            requests.post(f"https://api.telegram.org/bot{tok}/sendMessage", data={"chat_id": chat, "text": testo, "disable_notification": "true"}, timeout=30, verify=CA)
+        except requests.RequestException:
+            pass
+
+
 def telegram(video, didascalia, social):
     tok = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN")
     chat = os.environ.get("TELEGRAM_CANALE") or os.environ.get("TELEGRAM_CHAT_ID")
@@ -251,6 +277,7 @@ def main():
     ap.add_argument("--n", type=int, default=2)
     ap.add_argument("--risposta-modello")
     ap.add_argument("--url", help="racconta proprio questo articolo della rassegna")
+    ap.add_argument("--avvisa", action="store_true", help="se un video non riesce, lo scrive su Telegram (per i comandi dati a mano)")
     ap.add_argument("--una-volta-al-giorno", action="store_true", help="esce subito se oggi (ora italiana) i video sono già stati fatti")
     a = ap.parse_args()
     nomi = nomi_con_foto()
@@ -278,8 +305,7 @@ def main():
             testo = testo_articolo(art["url"])
             if len(testo) < 500:
                 raise RuntimeError("articolo illeggibile o troppo corto")
-            j = json.load(open(a.risposta_modello)) if a.risposta_modello else chiedi_modello(art, testo, nomi, predef[art["serie"]])
-            spec, social = valida(j, art, testo, nomi, predef[art["serie"]])
+            spec, social = racconta(art, testo, nomi, predef[art["serie"]], a.risposta_modello)
             asyncio.run(NS.genera(spec, uscita))
             did = f"📰 {spec['titolo_breve']} · Fonte: {art['fonte'].strip()}\n{art['url'].split('?')[0]}"
             if not a.prova:
@@ -289,6 +315,8 @@ def main():
             fatti += 1
         except (Exception, SystemExit) as e:   # ripiego: video semplice (titolo e fonte), così il video esce comunque
             print(f"  racconto non riuscito ({type(e).__name__}: {e}); nessun video: meglio niente di uno brutto")
+            if a.avvisa and not a.prova:   # comando dato a mano: meglio dirlo che restare in silenzio
+                avviso(f"⚠️ Non sono riuscito a fare il video su «{art['titolo'][:80]}»: {e}. Riprova, oppure scegli un'altra notizia con /radar.")
     stato["storie"] = stato.get("storie", [])[:400]
     if not a.prova:
         # "oggi i video sono fatti" si segna solo per il giro automatico: un video chiesto a mano (bot Telegram) non deve spegnere quello delle 12

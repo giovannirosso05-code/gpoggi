@@ -1,21 +1,213 @@
 {
- "generato_il": "2026-10-09T04:04:13+00:00",
+ "generato_il": "2026-10-09T12:23:59+00:00",
  "articoli": [
   {
-   "titolo": "Ombre nere sul Gp di Singapore",
-   "estratto": "Fumi tossici aleggiano sulla pista. Ma si correrà in ogni caso, al massimo si limiteranno gli eventi di contorno. Si può respirare male e tuttavia assistere a una corsa; si può invece decidere che…",
+   "titolo": "F1 GP Singapore 2026, Sprint Qualifying: si lotta per la mini-pole, si parte alle 14.30 – DIRETTA",
+   "estratto": "La cronaca live minuto per minuto della prima sessione di qualifiche del fine settimana di Marina Bay, che decide la griglia di partenza della Sprint Race",
    "fonte": "FormulaPassion",
    "serie": "F1",
-   "url": "https://www.formulapassion.it/editoriale/ombre-nere-sul-gp-di-singapore",
-   "pubblicato": "2026-10-09T03:04:00+00:00"
+   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-singapore-2026-marina-bay-qualifiche-sprint-aggiornamenti-ferrari-leclerc-hamilton-verstappen",
+   "pubblicato": "2026-10-09T12:15:00+00:00"
   },
   {
-   "titolo": "MINI, 25 anni di storia moderna e non sentirli",
-   "estratto": "Un brand che è sempre stato in grado di adeguarsi ai tempi e anzi anticiparli, rimanendo tuttavia sempre fedele a sé stesso",
+   "titolo": "Volkswagen ID. Tiguan, il bestseller diventa elettrico",
+   "estratto": "Il nuovo SUV elettrico sarà disponibile negli allestimenti Trend, Life, Style e R-Line, con prezzi a partire da 42.695 euro",
    "fonte": "FormulaPassion",
    "serie": "F1",
-   "url": "https://www.formulapassion.it/auto/auto-news/mini-storia-anniversario-edizioni-speciali-gamma",
-   "pubblicato": "2026-10-08T17:45:00+00:00"
+   "url": "https://www.formulapassion.it/auto/auto-elettriche/volkswagen-id-tiguan-suv-elettrico-autonomia-prezzi-2",
+   "pubblicato": "2026-10-09T11:45:00+00:00"
+  },
+  {
+   "titolo": "MotoGP | A Mandalika la ghiaia delle vie di fuga fa ancora discutere, Quartararo: \"Devono fare qualcosa\"",
+   "estratto": "Le vie di fuga di Mandalika sono tornate nuovamente al centro dell’attenzione dopo che Fabio Quartararo si è infortunato cadendo durante le prove libere del Gran Premio d’Indonesia. Il \"gradino\" tra…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-a-mandalika-la-ghiaia-delle-vie-di-fuga-fa-ancora-discutere-quartararo-devono-fare-qualcosa/10863388/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-09T11:43:51+00:00"
+  },
+  {
+   "titolo": "Bagnaia ritorna in Q2: “Feeling migliore in curva, ma mi manca ancora grip”",
+   "estratto": "Francesco Bagnaia torna direttamente in Q2 a distanza di oltre tre mesi. Il ducatista strappa il decimo tempo nelle Prove in Indonesia",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/bagnaia-ritorna-in-q2-feeling-migliore-in-curva-ma-mi-manca-ancora-grip-ducati-prove-indonesia",
+   "pubblicato": "2026-10-09T11:32:00+00:00"
+  },
+  {
+   "titolo": "MotoGP | Bastianini minimizza le cadute: \"Una colpa mia, l'altra no. Ma stavo andando bene e si può migliorare\"",
+   "estratto": "Dalle stelle alle stalle? Probabilmente è presto per dirlo e sappiamo benissimo che le somme su un weekend di gara non si possono tirare già al venerdì, ma la prima giornata di lavori per il GP…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-bastianini-minimizza-le-cadute-una-colpa-mia-laltra-no-ma-stavo-andando-bene-e-si-puo-miglio/10863330/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-09T11:27:50+00:00"
+  },
+  {
+   "titolo": "MotoGP | Marquez: \"Sono più vicino di quanto mi aspettassi, ma non si può camuffare l'ovvio\"",
+   "estratto": "Questa volta, i pronostici di Marc Marquez si sono avverati in modo piuttosto approssimativo, anche se le sensazioni con cui è rientrato in hotel questo venerdì gli hanno dato un leggero sollievo…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-marquez-sono-piu-vicino-di-quanto-mi-aspettassi-ma-non-si-puo-camuffare-lovvio/10863371/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-09T11:12:00+00:00"
+  },
+  {
+   "titolo": "Martin: “Aiuti dalle altre Aprilia? Siamo tutti rivali. E Marquez ha un passo migliore del mio”",
+   "estratto": "Il leader del mondiale ha terminato il venerdì di Mandalika al terzo posto, distante quasi mezzo secondo da Raul Fernandez",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/martin-aiuti-aprilia-siamo-tutti-rivali-marquez-passo-migliore-mandalika",
+   "pubblicato": "2026-10-09T11:00:38+00:00"
+  },
+  {
+   "titolo": "MotoGP | Bezzecchi convinto: \"Ritroverò la scintilla, devo solo continuare ad avere fiducia in me stesso\"",
+   "estratto": "Marco Bezzecchi è arrivato a Mandalika con i galloni di favorito, perché lo scorso anno aveva fatto davvero la differenza in sella alla sua Aprilia sul veloce tracciato dell'isola di Lombok, anche se…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-bezzecchi-convinto-ritrovero-la-scintilla-devo-solo-continuare-ad-avere-fiducia-in-me-stesso/10863334/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-09T10:53:38+00:00"
+  },
+  {
+   "titolo": "A Singapore grande equilibrio. Ferrari c’è, ma la qualifica sarà combattuta",
+   "estratto": "Gli indizi che la sessione di prove libere di Singapore ha fornito: dalla telemetria emerge grande equilibrio tra Mercedes, McLaren e Ferrari",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/a-singapore-grande-equilibrio-ferrari-ce-ma-la-qualifica-sara-combattuta-telemetria-prove-mercedes-antonelli-mclaren-red-bull",
+   "pubblicato": "2026-10-09T10:52:20+00:00"
+  },
+  {
+   "titolo": "Mercedes ripensa l’ala mobile, ma gli sviluppi restano sotto esame",
+   "estratto": "A Singapore la Mercedes passa all’ala a doppio profilo mobile, ma l’intero pacchetto evolutivo è messo in discussione",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/mercedes-ripensa-ala-mobile-ma-svliuppi-restano-sotto-esame",
+   "pubblicato": "2026-10-09T10:46:32+00:00"
+  },
+  {
+   "titolo": "Marquez: “Meglio del previsto, ma se deve vincere un’Aprilia speriamo sia Fernandez”",
+   "estratto": "Quinto posto per lo spagnolo della Ducati al termine del venerdì dell'Indonesia",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/marquez-meglio-previsto-se-vince-aprilia-speriamo-fernandez-ducati-mandalika",
+   "pubblicato": "2026-10-09T10:44:23+00:00"
+  },
+  {
+   "titolo": "MotoGP | Martín: \"Qualcosa non quadra e Márquez ha un ritmo migliore. Me l'aspettavo\"",
+   "estratto": "Jorge Martín ha fatto registrare un ottimo inizio di weekend in Indonesia, approfittando del netto dominio dell’Aprilia sul circuito di Mandalika, pista in cui fa il suo ritorno la gomma posteriore…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-martin-qualcosa-non-quadra-e-marquez-ha-un-ritmo-migliore-me-laspettavo/10863333/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-09T10:38:21+00:00"
+  },
+  {
+   "titolo": "MotoGP | Bagnaia ritrova la Q2 diretta: \"Siamo migliorati in staccata ed inserimento, domani punto alla top 8\"",
+   "estratto": "Ormai è diventato veramente complicato fare delle previsioni su quello che può accadere a Pecco Bagnaia all'inizio di un weekend di gara. Lo scorso anno, il Gran Premio d'Indonesia di MotoGP è stato…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-bagnaia-ritrova-la-q2-diretta-siamo-migliorati-in-staccata-ed-inserimento-domani-punto-alla-/10863328/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-09T10:20:43+00:00"
+  },
+  {
+   "titolo": "Lancia Gamma, al volante della nuova ammiraglia",
+   "estratto": "Più che impressionare con i numeri, la nuova ammiraglia della casa torinese convince per come si guida. E' ibrida, ma anche tutta elettrica",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/auto/prove-strada/lancia-gamma-test-drive-consumi-autonomia",
+   "pubblicato": "2026-10-09T10:01:00+00:00"
+  },
+  {
+   "titolo": "F1 | Singapore, Libere 1: Russell parte subito davanti, poi Leclerc e Norris a 2 decimi",
+   "estratto": "Più che indicativa nello stabilire i valori della griglia in termini assoluti, sebbene il miglior tempo di George Russell con circa due decimi di vantaggio sulla concorrenza abbia un suo peso, la…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-singapore-libere-1-russell-parte-subito-davanti-poi-leclerc-e-norris-a-2-decimi/10863318/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-09T09:49:02+00:00"
+  },
+  {
+   "titolo": "GP Singapore 2026 – Classifica FP1: Russell subito avanti, poi Leclerc. Antonelli 7° ma con gomme medie",
+   "estratto": "L'inglese, reduce dal ritiro in Malesia, ha ottenuto il miglior crono durante le FP1 di Marina Bay, precedendo Leclerc e Norris",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-risultati/gp-singapore-2026-classifica-fp1-russell-subito-avanti-poi-leclerc-antonelli-7-ma-con-gomme-medie",
+   "pubblicato": "2026-10-09T09:38:13+00:00"
+  },
+  {
+   "titolo": "F1 GP Singapore 2026, Marina Bay: la cronaca delle FP1, minuto per minuto",
+   "estratto": "La cronaca live minuto per minuto della prima e unica sessione di prove del fine settimana a Marina Bay",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-singapore-2026-marina-bay-prove-libere-1-fp1-aggiornamenti-ferrari-leclerc-hamilton-antonelli",
+   "pubblicato": "2026-10-09T09:30:00+00:00"
+  },
+  {
+   "titolo": "F1 | Pirelli: ecco le mescole per i GP di Stati Uniti, Messico e Brasile",
+   "estratto": "In questo fine settimana si concluderà la tripletta asiatica della seconda parte della stagione 2026 di Formula 1, ma tra 2 settimane scatterà quella americana. Pirelli, fornitrice unica di…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-pirelli-ecco-le-mescole-per-i-gp-di-stati-uniti-messico-e-brasile/10863292/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-09T09:19:18+00:00"
+  },
+  {
+   "titolo": "Ufficiale, Russell scatta dal fondo a Singapore",
+   "estratto": "La penalità scatta per la sostituzione della power unit e vale solo per il GP",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/penalita-power-unit-ufficiale-russell-scatta-dal-fondo-a-singapore-mercedes",
+   "pubblicato": "2026-10-09T09:08:00+00:00"
+  },
+  {
+   "titolo": "MotoGP | Mandalika, Prove: Raul Fernandez firma il record nella tripletta Aprilia, Marquez è 5°",
+   "estratto": "Un problema con il sistema di cronometraggio avvenuto durante la sessione della Moto2 ha ritardato di 35 minuti la sessione pomeridiana del venerdì del Gran Premio d'Indonesia di MotoGP, che ha…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-mandalika-libere-2-raul-fernandez-firma-il-record-nella-tripletta-aprilia-marquez-e-5/10863298/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-09T09:03:56+00:00"
+  },
+  {
+   "titolo": "GP Indonesia 2026 – Classifica Prove: Aprilia padrona, è già tripletta. Marquez 5°, in Q2 anche Bagnaia",
+   "estratto": "Raul Fernandez ha siglato il miglior tempo nelle pre-qualifiche di Mandalika, realizzando anche il nuovo record della pista",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-risultati/gp-indonesia-2026-classifica-prove-aprilia-padrona-e-gia-tripletta-marquez-5-in-q2-anche-bagnaia",
+   "pubblicato": "2026-10-09T08:45:00+00:00"
+  },
+  {
+   "titolo": "MotoGP | Vinales: \"Penso ogni notte al futuro, non sono ancora pronto a smettere di essere un pilota\"",
+   "estratto": "Maverick Vinales sta passando ogni notte a pensare a cosa vuole fare nella sua carriera, e ha ammesso che diventare collaudatore in MotoGP non è un qualcosa che lo attira particolarmente. Il 10 volte…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-vinales-penso-ogni-notte-al-futuro-non-sono-ancora-pronto-a-smettere-di-essere-un-pilota/10863066/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-09T08:37:13+00:00"
+  },
+  {
+   "titolo": "F1 | McLaren: presa dei freni più grande e l'ala posteriore non è la H-wing perché pesa di più",
+   "estratto": "La McLaren ha risolto il problema che ha condizionato le prestazioni della power unit di Lando Norris negli ultimi due Gran Premi (Baku e Sepang): il campione del mondo, infatti, non riusciva a…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-mclaren-presa-dei-freni-piu-grande-e-lala-posteriore-non-e-la-h-wing-perche-pesa-di-piu/10863258/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-09T08:21:22+00:00"
+  },
+  {
+   "titolo": "La MotoGP risponde alle critiche per non aver consultato i piloti sul nuovo format: \"Avevamo chiesto ai team di farlo\"",
+   "estratto": "I vertici della MotoGP hanno spiegato di aver incoraggiato i team a consultare i propri piloti sul nuovo format dei weekend che sarà introdotto nella stagione 2027, ed insistono sul fatto che restano…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/la-motogp-risponde-alle-critiche-per-non-aver-consultato-i-piloti-sul-nuovo-format-avevamo-chiesto-/10863232/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-09T07:20:10+00:00"
+  },
+  {
+   "titolo": "MotoGP | Il GP del Qatar resta confermato, con i piloti rassegnati e il Mondiale in attesa di garanzie sulla sicurezza",
+   "estratto": "Il Gran Premio del Qatar, uno dei più iconici del campionato del mondo e, dal 2008, il primo ed unico che si disputa di notte, è stato condizionato questa stagione dal conflitto bellico in corso…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-il-gp-del-qatar-resta-confermato-con-i-piloti-rassegnati-e-il-mondiale-in-attesa-di-garanzie/10863228/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-09T07:00:06+00:00"
+  },
+  {
+   "titolo": "MotoGP | Mandalika, Libere 1: Bezzecchi e l'Aprilia sugli scudi, ma Marquez è 2° davanti a Martin",
+   "estratto": "Mandalika era indicata da tutti come una pista Aprilia ed in effetti c'è una RS-GP al comando della prima sessione di prove libere del Gran Premio d'Indonesia di MotoGP con Marco Bezzecchi. Oltre…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-mandalika-libere-1-bezzecchi-e-laprilia-sugli-scudi-ma-marquez-e-2-davanti-a-martin/10863192/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-09T03:58:53+00:00"
   },
   {
    "titolo": "F1 | Rebus Mercedes: perché a Singapore cerca una cura che va oltre i dubbi sul nuovo pacchetto",
@@ -42,14 +234,6 @@
    "pubblicato": "2026-10-08T15:59:02+00:00"
   },
   {
-   "titolo": "Un milione di trasmissioni eDCT prodotte a Mirafiori",
-   "estratto": "L'impianto eDCT di Mirafiori è stato inaugurato il 10 aprile 2024 e conta oltre 850 dipendenti impegnati su 20 turni settimanali",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/auto/auto-news/mirafiori-record-produzione-trasmissioni-edct-stellantis",
-   "pubblicato": "2026-10-08T15:45:00+00:00"
-  },
-  {
    "titolo": "F1 | Norris: “Guido meglio dell'anno scorso, ma oggi anche un quinto posto sembra una vittoria”",
    "estratto": "Lando Norris non ha perso la fiducia nella McLaren, ma è consapevole che il momento richiede qualcosa di più delle semplici aspettative. Dopo due weekend difficili, nei quali ha raccolto appena due…",
    "fonte": "Motorsport.com",
@@ -66,92 +250,12 @@
    "pubblicato": "2026-10-08T15:19:40+00:00"
   },
   {
-   "titolo": "Verstappen: “Siamo qui per vincere, ma ci sono tanti team molto veloci sulle piste cittadine”",
-   "estratto": "L'olandese ha un conto in sospeso con il GP di Singapore",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/gp-singapore-verstappen-qui-per-vincere-redbull-no-garanzie-tanti-team-veloci-piste-cittardine",
-   "pubblicato": "2026-10-08T15:15:00+00:00"
-  },
-  {
-   "titolo": "Antonelli: “Cerchiamo risposte sul nuovo pacchetto di aggiornamenti”",
-   "estratto": "Il leader del mondiale sarà in pista con la Mercedes W17 aggiornata",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/antonelli-cerchiamo-risposte-nuovo-pacchetto-aggiornamenti-mercedes-singapore",
-   "pubblicato": "2026-10-08T15:14:31+00:00"
-  },
-  {
-   "titolo": "Hamilton: “Siamo qui per attaccare, voglio rifare il giro da pole del 2018”",
-   "estratto": "Il pilota della Ferrari crede che possa essere un weekend favorevole per la Scuderia di Maranello",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/ferrari-gp-singapore-2026-hamilton-attaccheremo-voglio-rifare-giro-pole-position-2018",
-   "pubblicato": "2026-10-08T15:00:00+00:00"
-  },
-  {
-   "titolo": "MotoGP | Rivola: \"Battere Marquez e Ducati la sfida più dura che potremmo avere. E' la miglior coppia degli ultimi anni\"",
-   "estratto": "Ducati contro Aprilia. Marc Marquez contro Jorge Martin e contro Marco Bezzecchi. La lotta finale per i titoli iridati di MotoGP entra ancora di più nella fase calda, quella finale della stagione…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-rivola-battere-marquez-e-ducati-la-sfida-piu-dura-che-potremmo-avere-e-la-miglior-coppia-deg/10862958/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-08T14:57:52+00:00"
-  },
-  {
-   "titolo": "Russell: “Al pacchetto di novità mancava l’ala anteriore che Antonelli avrà qui, io son contento di girare con la vettura di Baku”",
-   "estratto": "Il pilota inglese domenica partirà dal fondo della griglia di partenza",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/russell-rivela-mercedes-asso-far-funzionare-aggiornamenti-mancava-ala-anteriore-antonelli-gp-singapore",
-   "pubblicato": "2026-10-08T14:55:00+00:00"
-  },
-  {
-   "titolo": "Leclerc: “Correlazione molto forte tra simulatore e pista. Ma la prestazione pura degli ultimi GP è stata deludente”",
-   "estratto": "Il pilota monegasco ha parlato nel giovedì di Singapore",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/leclerc-correlazione-forte-simulatore-pista-aiuta-essere-competitivi-ferrari",
-   "pubblicato": "2026-10-08T14:44:26+00:00"
-  },
-  {
-   "titolo": "Piero Taruffi, che mostra a Roma",
-   "estratto": "Esposti cimeli, prototipi, modellini: rivive la leggenda della Volpe Argenta",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/auto/auto-news/piero-taruffi-che-mostra-a-roma",
-   "pubblicato": "2026-10-08T14:38:41+00:00"
-  },
-  {
    "titolo": "F1 | Max ha un conto in sospeso con Singapore: ora la RB22 è più prevedibile e crede di poter sfatare il tabù",
    "estratto": "Sei podi nelle ultime sette gare, inclusa la tanto attesa prima vittoria della stagione in Malesia. Sebbene certe circostanze abbiano certamente aiutato, non si può negare come da diversi mesi Max…",
    "fonte": "Motorsport.com",
    "serie": "F1",
    "url": "https://it.motorsport.com/f1/news/-f1-max-ha-un-conto-in-sospeso-con-singapore-ora-la-rb22-e-prevedibile-e-red-bull-crede-di-poter-sf/10863095/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-08T14:35:29+00:00"
-  },
-  {
-   "titolo": "MAK compie 35 anni e rilancia sul Made in Italy",
-   "estratto": "Il trentacinquesimo anniversario diventa così l’occasione per ribadire una traiettoria industriale precisa: design, produzione interamente italiana, presenza commerciale più diretta sui mercati…",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/auto/auto-news/mak-compie-35-anni-e-rilancia-sul-made-in-italy",
-   "pubblicato": "2026-10-08T14:16:32+00:00"
-  },
-  {
-   "titolo": "BMW iX4, nuovo capitolo della Neue Klasse",
-   "estratto": "Al momento del lancio, previsto per marzo del prossimo anno, il SUV elettrico della casa tedesca sarà proposto in due varianti",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/auto/auto-elettriche/bmw-ix4-suv-elettrico-autonomia-neue-klasse-design",
-   "pubblicato": "2026-10-08T14:07:59+00:00"
-  },
-  {
-   "titolo": "Ufficiale il calendario 2027: il Rally d’Italia si sposta a Roma, entrano USA e Scozia",
-   "estratto": "Tutte le novità del prossimo mondiale, a cominciare dalle tappe in programma nel nostro Paese, che dalla Sardegna si svolgeranno nel Lazio",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/wrc/wrc-news/ufficiale-calendario-2027-rally-italia-si-sposta-a-roa-entrano-usa-e-scozia",
-   "pubblicato": "2026-10-08T14:05:38+00:00"
   },
   {
    "titolo": "F1 | Leclerc: “Ferrari, il problema è la prestazione pura. Gli altri hanno qualcosa in più”",
@@ -170,28 +274,12 @@
    "pubblicato": "2026-10-08T13:45:07+00:00"
   },
   {
-   "titolo": "Bezzecchi: \"Il nuovo format mi piace. Ha pro e contro, ma è fatto per il bene della MotoGP\"",
-   "estratto": "Con 49 punti da recuperare e solo sei Gran Premi da disputare, le speranze di laurearsi campione del mondo sono sempre minori per Marco Bezzecchi che, dopo un inizio di stagione stellare, con quattro…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bezzecchi--10862936/10862936/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-08T13:27:34+00:00"
-  },
-  {
    "titolo": "F1 | Ceccarelli: \"Max che condivide la vittoria di Sepang è un segno importante per Red Bull\"",
    "estratto": "Quando si parla di Sepang è normale associare la pista malese alla pioggia scrosciante. I rovesci sono monsonici e durano poco per quanto siano dei diluvi. La partenza del GP del Bahrain è stata…",
    "fonte": "Motorsport.com",
    "serie": "F1",
    "url": "https://it.motorsport.com/f1/news/f1-ceccarelli-max-che-condivide-la-vittoria-di-sepang-e-un-segno-importante-per-red-bull/10862992/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-08T10:47:37+00:00"
-  },
-  {
-   "titolo": "Marquez è convinto che i piloti di MotoGP finiranno per unirsi in un'associazione, come quelli di Formula 1",
-   "estratto": "L'organizzazione del campionato, insieme alla Federazione Internazionale di Motociclismo (FIM), ha confermato questo mercoledì il cambio di format del fine settimana dei Gran Premi di MotoGP, in…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/marquez-e-convinto-che-i-piloti-di-motogp-finiranno-per-unirsi-in-unassociazione-come-quelli-di-for/10862982/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-08T10:21:55+00:00"
   },
   {
    "titolo": "F1 | Simulazione MegaRide: a Singapore si lotta contro il surriscaldamento delle gomme posteriori",
@@ -202,123 +290,35 @@
    "pubblicato": "2026-10-08T10:00:31+00:00"
   },
   {
-   "titolo": "MotoGP | Martin: \"Firmerei subito per vincere il Mondiale con una sola vittoria\"",
-   "estratto": "Jorge Martin ha perso la leadership della classifica generale del campionato a Misano, finendo a pari punti con Marc Marquez, ma l’ha recuperata una settimana dopo in Austria e l’ha mantenuta, seppur…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-martin-firmerei-subito-per-vincere-il-mondiale-con-una-sola-vittoria/10862953/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-08T09:46:09+00:00"
-  },
-  {
-   "titolo": "F1 | Mercedes cerca subito risposte: Antonelli con l'ultimo pacchetto, Russell con quello vecchio",
-   "estratto": "“Il fine settimana in Malesia è stato ovviamente molto difficile per noi. Da allora abbiamo lavorato intensamente per individuare i motivi per cui le nostre prestazioni non sono state all'altezza…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-mercedes-cerca-subito-risposte-antonelli-con-lultimo-pacchetto-russell-con-quello-vecchio/10862937/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-08T09:31:10+00:00"
-  },
-  {
-   "titolo": "MotoGP | Il cambio di format per il 2027 divide la griglia",
-   "estratto": "L'introduzione di un nuovo format del weekend in MotoGP è stata il tema principale nelle conversazioni con i piloti alla vigilia del Gran Premio d'Indonesia. Proprio il giorno prima, la MotoGP ha…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-il-cambio-di-format-per-il-2027-divide-la-griglia-/10862891/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-08T09:15:25+00:00"
-  },
-  {
-   "titolo": "F1 | Il curioso viaggio di Bottas tra i serpenti: ha percorso in bici 420 km da Sepang a Singapore",
-   "estratto": "Un viaggio da Sepang fino a Singapore. Non ci sarebbe nulla di curioso, molti lo hanno fatto in aero, altri hanno usato la macchina, ma c’è chi lo ha scelto un mezzo ancora più particolare, ossia…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-il-curioso-viaggio-di-bottas-tra-i-serpenti-ha-percorso-in-bici-420-km-da-sepang-a-singapo/10862926/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-08T09:01:01+00:00"
-  },
-  {
-   "titolo": "MotoGP | Di Giannantonio: \"Il nuovo format? Il tema vero è l'ambiguità di come ci arriveremo ad affrontarlo\"",
-   "estratto": "Il nuovo format dei fine settimana di gara che la MotoGP adotterà a partire dal 2027 ha inevitabilmente tenuto banco nel giovedì di Mandalika, sede del Gran Premio d'Indonesia. Fabio Di Giannantonio…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-di-giannantonio-il-nuovo-format-tema-ambiguita/10862880/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-08T08:45:17+00:00"
-  },
-  {
-   "titolo": "F1 | La FIA chiarisce le cause del caos di Sepang: arriverà un nuovo software per Austin",
-   "estratto": "La FIA ha completato l'indagine su quanto accaduto domenica scorsa a Sepang, quando i problemi accusati da diverse monoposto durante i giri di formazione avevano costretto la direzione gara a…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-la-fia-chiarisce-le-cause-del-caos-di-sepang-arrivera-un-nuovo-software-per-austin/10862895/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-08T08:30:04+00:00"
-  },
-  {
-   "titolo": "MotoGP | Bagnaia: \"Sul nuovo format eravamo d'accordo in Safety Commission, ma eravamo solo in 4...\"",
-   "estratto": "Lo scorso anno, il weekend del Gran Premio d'Indonesia è stato probabilmente uno dei più complicati per Pecco Bagnaia. E' normale quindi che per il pilota della Ducati le aspettative non siano alle…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bagnaia-sul-nuovo-format-eravamo-daccordo-in-safety-commission-ma-eravamo-solo-in-4/10862871/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-08T08:16:44+00:00"
-  },
-  {
-   "titolo": "MotoGP | Ezpeleta spiega: “Il cambio di format è un'iniziativa dei team, credono possa essere migliorato\"",
-   "estratto": "La FIM ha confermato mercoledì un ulteriore cambiamento al formato del fine settimana del Gran Premio di MotoGP. Come anticipato da Motorsport.com durante il Gran Premio d'Austria, la programmazione…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-ezpeleta-il-cambio-di-format-e-uniniziativa-dei-team-credono-possa-essere-migliorato/10862758/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-08T07:06:36+00:00"
-  },
-  {
-   "titolo": "MotoGP | Le Aprilia di Trackhouse tornano in livrea Gulf per Indonesia e Malesia",
-   "estratto": "Gulf e il Team Trackhouse MotoGP hanno presentato la loro ultima livrea per la MotoGP realizzata in collaborazione, che verrà sfoggiata nei Gran Premi di Indonesia (9-11 ottobre) e Malesia (30…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-le-aprilia-di-trackhouse-tornano-in-livrea-gulf-per-indonesia-e-malesia/10862726/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-07T14:20:44+00:00"
-  },
-  {
-   "titolo": "MotoGP | Michelin porta la carcassa posteriore rinforzata anche in Indonesia, ma è quella della Thailandia",
-   "estratto": "Dopo un Gran Premio del Giappone nel quale le gomme hanno giocato un ruolo importante, soprattutto nella Sprint, la MotoGP è già partita alla volta dell'isola di Lombok, in Indonesia, dove questo…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-michelin-porta-la-carcassa-posteriore-rinforzata-anche-in-indonesia-ma-e-quella-della-thaila/10862568/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-07T13:48:08+00:00"
-  },
-  {
-   "titolo": "La MotoGP annuncia il nuovo format: dal 2027 ci saranno due qualifiche ogni weekend, in stile F1",
-   "estratto": "Dal 2027 si cambia ed affiancare la sprint race, ormai stabilmente nel campionato da diversi anni, ci saranno anche due sessioni di qualifica durante il weekend che andranno a definire la griglia…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/la-motogp-annuncia-il-nuovo-format-dal-2027-ci-saranno-due-qualifiche-ogni-weekend-in-stile-f1-/10862626/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-07T11:01:46+00:00"
-  },
-  {
-   "titolo": "Bulega: \"The new MotoGP format won't give rookies time to learn and improve\"",
-   "estratto": "“It’ll be challenging and stressful, especially for newcomers like me, because you won’t have any time and you’ll have to be at the top of your game right away. Morbidelli will be able to reach his…",
+   "titolo": "Marc Marquez: \"Right now, I can't even aim for the podium\"",
+   "estratto": "\"The feeling is better than it was a year ago, but Fernandez is half a second faster in terms of pace. My biggest problem, though, is the time attack.\"",
    "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/08/wsbk/bulega-the-new-motogp-format-wont-give-rookies-time-to-learn-and-improve.html",
+   "serie": "MotoGP",
+   "url": "https://www.gpone.com/en/2026/10/09/motogp/marc-marquez-right-now-i-cant-even-aim-for-the-podium.html",
    "pubblicato": null
   },
   {
-   "titolo": "Another tyre with a reinforced carcass from Michelin for Mandalika",
-   "estratto": "It is not exactly the same tyre used at Motegi, which had not been used in practice but proved fantastic in the Grand Prix.",
+   "titolo": "Fernandez: \"If I had to design the ideal track for Aprilia, it would be Mandalika\"",
+   "estratto": "\"I think it'll be tough for the other manufacturers to catch up here. I'm even happier with my race pace. I don't want to get in the way of Jorge and Marco, but I want to enjoy this great…",
    "fonte": "GPone",
    "serie": "MotoGP",
-   "url": "https://www.gpone.com/en/2026/10/08/motogp/another-tyre-with-a-reinforced-carcass-from-michelin-for-mandalika.html",
+   "url": "https://www.gpone.com/en/2026/10/09/motogp/fernandez-if-i-had-to-design-the-ideal-track-for-aprilia-it-would-be-mandalika.html",
    "pubblicato": null
   },
   {
-   "titolo": "Petrucci: “Go Eleven asked me if I was available: I don’t know what my future holds”",
-   "estratto": "“2027 isn’t up to me: I’m waiting for news, and I know I’m in a runoff with another rider both here and in MotoAmerica. I have no regrets, and I’m even willing to call it quits.”",
+   "titolo": "Bezzecchi: \"Riding my Aprilia is a joy, here as everywhere else\"",
+   "estratto": "\"I like the track, but to be honest, I like them all. It was a good day, but Raul is a step ahead of everyone else, so we need to keep working. Having three RS-GP bikes up front means we're all doing…",
    "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/08/wsbk/petrucci-go-eleven-asked-me-if-i-was-available-i-dont-know-what-my-future-holds.html",
+   "serie": "MotoGP",
+   "url": "https://www.gpone.com/en/2026/10/09/motogp/bezzecchi-riding-my-aprilia-is-a-joy-here-as-everywhere-else.html",
    "pubblicato": null
   },
   {
-   "titolo": "LIVE - Live coverage of FP1 at the Indonesian Grand Prix in Mandalika",
-   "estratto": "Martín arrives in Indonesia with just a 2-point lead over Márquez. Bezzecchi is looking for redemption at the track where he crashed in 2025, while Acosta is ready to join the fight.",
+   "titolo": "Acosta: \"I'm the best of the rest, but the Aprilias are incredible\"",
+   "estratto": "\"In the second sector, I lose four-tenths over three turns. Keeping up with them isn't easy. Did the team explain the new format to me? I was only informed.\"",
    "fonte": "GPone",
    "serie": "MotoGP",
-   "url": "https://www.gpone.com/en/2026/10/08/motogp/live-live-coverage-of-fp1-at-the-indonesian-grand-prix-in-mandalika.html",
+   "url": "https://www.gpone.com/en/2026/10/09/motogp/acosta-im-the-best-of-the-rest-but-the-aprilias-are-incredible.html",
    "pubblicato": null
   }
  ]

@@ -28,7 +28,7 @@ const ETA_MASSIMA_SECONDI = 600;        // un comando più vecchio di 10 minuti 
 
 // comando -> [file del workflow, input del workflow o null, descrizione]
 const COMANDI = {
-  "/notizie": ["video-automatici.yml", { cosa: "notizie-ora" }, "Due video di notizie raccontate, subito"],
+  "/duevideo": ["video-automatici.yml", { cosa: "notizie-ora" }, "Due video di notizie scelte dal sistema, subito"],
   "/previsioni": ["video-automatici.yml", { cosa: "previsioni" }, "Video delle previsioni dei prossimi Gran Premi (F1 e MotoGP)"],
   "/venerdi": ["video-venerdi.yml", null, "Video del venerdì: ricorda di votare il podio"],
   "/maratona": ["video-maratona.yml", null, "Tre video di notizie (la maratona, attiva fino all'11 ottobre)"],
@@ -36,10 +36,13 @@ const COMANDI = {
   "/dati": ["update-data.yml", null, "Aggiorna tutti i dati del sito e rimanda i riepiloghi"],
 };
 
-const elenco = () => ["/scegli · Scegli tu la notizia per il video (con i pulsanti)", ...Object.entries(COMANDI).map(([c, [, , d]]) => `${c} · ${d}`)].join("\n");
+const elenco = () => [
+  "/radar · Tutte le ultime notizie: poi scrivi /notizia e la prima parola per averne il video (per esempio /notizia norris)",
+  ...Object.entries(COMANDI).map(([c, [, , d]]) => `${c} · ${d}`),
+].join("\n");
 
 const RASSEGNA_BASE = "https://gpoggi.it/data/rassegna.json";
-const QUANTE = 8;                         // notizie mostrate da /scegli
+const QUANTE = 20;                        // notizie mostrate da /radar
 const ETA_PULSANTI_SECONDI = 6 * 3600;    // i pulsanti restano buoni 6 ore (la lista cambia, la notizia si ritrova dal suo codice)
 
 // codice breve di una notizia (i pulsanti di Telegram portano al massimo 64 caratteri)
@@ -55,6 +58,80 @@ async function notizie(env) {
 }
 
 const pulito = (t) => String(t || "").replace(/[|\n\r]+/g, " ").replace(/\s+/g, " ").trim();
+
+// "F1 | Rebus Mercedes: ..." -> "Rebus Mercedes: ..." (il prefisso F1/MotoGP non conta come prima parola)
+const senzaPrefisso = (t) => pulito(String(t || "").replace(/^\s*(f1|formula 1|motogp|moto ?gp)\s*[|:–-]\s*/i, ""));
+const norm = (t) => String(t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
+const parole = (a) => norm(senzaPrefisso(a.titolo)).split(" ").filter(Boolean);
+const primaParola = (a) => parole(a)[0] || "";
+
+const ORE24 = 24 * 3600 * 1000;
+const dataArt = (a) => Date.parse(a.pubblicato) || 0;
+const piuRecentiPrima = (l) => l.slice().sort((x, y) => dataArt(y) - dataArt(x));
+const delGiorno = (l) => piuRecentiPrima(l).filter((a) => Date.now() - dataArt(a) < ORE24);
+
+// notizie che corrispondono alla parola scritta: prima la prima parola del titolo (tra quelle del giorno), poi la prima parola tra tutte, poi una parola qualsiasi
+function cerca(tutte, arg) {
+  const p = norm(arg).split(" ")[0];
+  if (!p) return [];
+  const giorno = delGiorno(tutte), ord = piuRecentiPrima(tutte);
+  const livelli = [
+    giorno.filter((a) => primaParola(a) === p),
+    ord.filter((a) => primaParola(a) === p),
+    ord.filter((a) => parole(a).includes(p) || (p.length >= 4 && parole(a).some((w) => w.startsWith(p)))),
+  ];
+  return livelli.find((l) => l.length) || [];
+}
+
+async function lanciaNotizia(env, chat, art) {
+  const esito = await lancia(env, "video-automatici.yml", {
+    cosa: "notizia-scelta",
+    url: [art.url, senzaPrefisso(art.titolo), pulito(art.fonte), art.serie === "MotoGP" ? "MotoGP" : "F1"].join("|"),
+  });
+  await rispondi(env, chat, esito.ok
+    ? `✅ Lanciato: video su "${senzaPrefisso(art.titolo).slice(0, 90)}". Arriva tra qualche minuto.`
+    : `⚠️ Non sono riuscito a lanciare il video (GitHub ${esito.stato}).\n${esito.dettaglio}`);
+}
+
+async function tastieraDi(lista) {
+  const righe = await Promise.all(lista.map(async (a, i) => ({ n: i + 1, c: await codice(a.url) })));
+  const tastiera = [];
+  for (let i = 0; i < righe.length; i += 5) tastiera.push(righe.slice(i, i + 5).map(({ n, c }) => ({ text: String(n), callback_data: `n:${c}` })));
+  return tastiera;
+}
+
+async function mostraLista(env, chat) {
+  const tutte = await notizie(env);
+  let lista = delGiorno(tutte), intestazione = "📰 Le ultime notizie (ultime 24 ore)";
+  if (!lista.length) { lista = piuRecentiPrima(tutte); intestazione = "📰 Niente di nuovo nelle ultime 24 ore: ecco le più recenti"; }
+  lista = lista.slice(0, QUANTE);
+  if (!lista.length) { await rispondi(env, chat, "Non trovo notizie al momento. Riprova tra poco."); return; }
+  const righe = lista.map((a, i) => `${i + 1}. [${a.serie}] ${senzaPrefisso(a.titolo).slice(0, 90)} (${pulito(a.fonte)})\n   ▶ /notizia_${primaParola(a) || "x"}`);
+  const PEZZO = 8;   // notizie per messaggio (Telegram taglia i messaggi lunghi)
+  for (let i = 0; i < righe.length; i += PEZZO) {
+    const primo = i === 0, ultimo = i + PEZZO >= righe.length;
+    await tg(env, "sendMessage", {
+      chat_id: chat,
+      text: `${primo ? intestazione + "\n\n" : ""}${righe.slice(i, i + PEZZO).join("\n\n")}${ultimo ? `\n\nPer il video tocca il comando sotto la notizia, oppure scrivi /notizia e la prima parola (per esempio /notizia ${primaParola(lista[0]) || "norris"}). Puoi anche toccare un numero qui sotto.` : ""}`,
+      ...(ultimo ? { reply_markup: { inline_keyboard: await tastieraDi(lista) } } : {}),
+      disable_web_page_preview: true,
+    });
+  }
+}
+
+async function videoDa(env, chat, arg) {
+  if (!norm(arg)) { await rispondi(env, chat, "Scrivi /notizia e la prima parola della notizia, per esempio /notizia norris. Per vedere le notizie scrivi /radar."); return; }
+  const trovate = cerca(await notizie(env), arg);
+  if (!trovate.length) { await rispondi(env, chat, `Non trovo nessuna notizia con «${norm(arg).split(" ")[0]}». Scrivi /radar per vedere l'elenco.`); return; }
+  if (trovate.length === 1) { await lanciaNotizia(env, chat, trovate[0]); return; }
+  const lista = trovate.slice(0, 5);
+  await tg(env, "sendMessage", {
+    chat_id: chat,
+    text: `Ci sono più notizie con «${norm(arg).split(" ")[0]}». Tocca il numero giusto:\n\n${lista.map((a, i) => `${i + 1}. [${a.serie}] ${senzaPrefisso(a.titolo).slice(0, 90)} (${pulito(a.fonte)})`).join("\n")}`,
+    reply_markup: { inline_keyboard: await tastieraDi(lista) },
+    disable_web_page_preview: true,
+  });
+}
 
 // confronto che non si ferma al primo carattere diverso (la parola segreta non si indovina dai tempi)
 function uguali(a, b) {
@@ -121,28 +198,22 @@ async function servizio(req, env, u) {
   return testo(r.ok ? `${righe.join("\n")}\n\nFatto: webhook attivato su ${mio}\nOra scrivi /start al bot.` : `Telegram ha rifiutato: ${r.description || "errore sconosciuto"}`, r.ok ? 200 : 502);
 }
 
-// tocco di un numero in /scegli: ritrova la notizia dal codice e lancia il video su quella
+// tocco di un numero in /radar: ritrova la notizia dal codice e lancia il video su quella
 function pulsante(cb, env, ctx) {
   const chat = cb.message && cb.message.chat && cb.message.chat.id;
   if (String(chat) !== String(env.CHAT_ID || CHAT_BASE)) return testo("ok");   // altri: ignorati in silenzio
   if (!String(cb.data || "").startsWith("n:")) return testo("ok");             // pulsanti di altri messaggi (es. "vota_"): non sono nostri
   const lavoro = (async () => {
     if (Date.now() / 1000 - (cb.message.date || 0) > ETA_PULSANTI_SECONDI) {
-      await tg(env, "answerCallbackQuery", { callback_query_id: cb.id, text: "Lista vecchia: scrivi di nuovo /scegli" });
+      await tg(env, "answerCallbackQuery", { callback_query_id: cb.id, text: "Lista vecchia: scrivi di nuovo /radar" });
       return;
     }
     await tg(env, "answerCallbackQuery", { callback_query_id: cb.id, text: "Lancio…" });
     const cod = cb.data.slice(2);
     let trovata = null;
     for (const a of await notizie(env)) if ((await codice(a.url)) === cod) { trovata = a; break; }
-    if (!trovata) { await rispondi(env, chat, "Quella notizia non è più nella lista. Scrivi di nuovo /scegli."); return; }
-    const esito = await lancia(env, "video-automatici.yml", {
-      cosa: "notizia-scelta",
-      url: [trovata.url, pulito(trovata.titolo), pulito(trovata.fonte), trovata.serie === "MotoGP" ? "MotoGP" : "F1"].join("|"),
-    });
-    await rispondi(env, chat, esito.ok
-      ? `✅ Lanciato: video su "${pulito(trovata.titolo).slice(0, 90)}". Arriva tra qualche minuto.`
-      : `⚠️ Non sono riuscito a lanciare il video (GitHub ${esito.stato}).\n${esito.dettaglio}`);
+    if (!trovata) { await rispondi(env, chat, "Quella notizia non è più nella lista. Scrivi di nuovo /radar."); return; }
+    await lanciaNotizia(env, chat, trovata);
   })();
   ctx.waitUntil(lavoro.catch((e) => console.error(e)));
   return testo("ok");
@@ -168,14 +239,10 @@ export default {
       if (Date.now() / 1000 - (msg.date || 0) > ETA_MASSIMA_SECONDI) return;
       const t = msg.text.trim();
       const comando = t.startsWith("/") ? t.split(/\s+/)[0].toLowerCase().split("@")[0] : "";
-      if (comando === "/scegli") {
-        const lista = (await notizie(env)).slice(0, QUANTE);
-        if (!lista.length) { await rispondi(env, msg.chat.id, "Non trovo notizie al momento. Riprova tra poco."); return; }
-        const righe = await Promise.all(lista.map(async (a, i) => ({ n: i + 1, c: await codice(a.url), a })));
-        const testoLista = righe.map(({ n, a }) => `${n}. [${a.serie}] ${pulito(a.titolo).slice(0, 90)} (${pulito(a.fonte)})`).join("\n");
-        const tastiera = [];
-        for (let i = 0; i < righe.length; i += 4) tastiera.push(righe.slice(i, i + 4).map(({ n, c }) => ({ text: String(n), callback_data: `n:${c}` })));
-        await tg(env, "sendMessage", { chat_id: msg.chat.id, text: `Su quale notizia faccio il video? Tocca il numero.\n\n${testoLista}`, reply_markup: { inline_keyboard: tastiera }, disable_web_page_preview: true });
+      if (comando === "/radar" || comando === "/notizie" || comando === "/scegli") { await mostraLista(env, msg.chat.id); return; }
+      const nv = comando.match(/^\/(?:notizia|video)(?:_(.*))?$/);   // /notizia norris, /notizia_norris (toccabile); /video resta come alias
+      if (nv) {
+        await videoDa(env, msg.chat.id, nv[1] !== undefined ? nv[1].replace(/_/g, " ") : t.split(/\s+/).slice(1).join(" "));
         return;
       }
       if (!COMANDI[comando]) {
@@ -193,7 +260,7 @@ export default {
       );
     })();
     // Risponde subito a Telegram e finisce il lavoro in coda: Telegram non aspetta e non ripete l'invio.
-    ctx.waitUntil(lavoro.catch((e) => console.error(e)));
+    ctx.waitUntil(lavoro.catch((e) => { console.error(e); return rispondi(env, msg.chat.id, "⚠️ Qualcosa non ha funzionato: riprova tra poco."); }));
     return testo("ok");
   },
 };

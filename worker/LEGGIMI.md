@@ -6,14 +6,18 @@ Niente più attese. È gratis.
 ## I comandi
 | Comando | Cosa fa |
 |---|---|
-| `/scegli` | Ti mostra le 8 notizie più recenti con i numeri: tocchi il numero e il bot fa il video su quella |
-| `/notizie` | Due video di notizie raccontate, scelte dal sistema, subito |
+| `/radar` | Ti manda tutte le ultime notizie (ultime 24 ore, fino a 20), ognuna con il suo comando |
+| `/notizia` + la prima parola | Fa il video su quella notizia. Esempio: `/notizia norris`. Sotto ogni notizia c'è già il comando da toccare (per esempio `/notizia_norris`) e in fondo i pulsanti con i numeri. Se due notizie iniziano con la stessa parola, il bot ti fa scegliere |
+| `/duevideo` | Due video di notizie scelte dal sistema, subito |
 | `/previsioni` | Video delle previsioni dei prossimi Gran Premi (F1 e MotoGP) |
 | `/venerdi` | Video del venerdì: ricorda di votare il podio |
 | `/maratona` | Tre video di notizie (la maratona, attiva fino all'11 ottobre) |
 | `/risultati` | Risultati del weekend: escono appena la sessione è finita, fino a 4 ore dopo (oltre le 4 ore si chiede a Claude) |
 | `/dati` | Aggiorna tutti i dati del sito e rimanda i riepiloghi |
 | `/start` o `/aiuto` | Mostra questo elenco |
+
+Vecchi nomi che funzionano ancora: `/notizie` e `/scegli` (come `/radar`), `/video` (come `/notizia`).
+L'elenco di `/radar` viene dalla rassegna del sito, che si aggiorna ogni 6 ore circa. Per forzare l'aggiornamento: `/dati`.
 
 ## Regola d'oro
 **Mai scrivere token o password in chat con me.** Li incolli solo nei campi di Cloudflare e di GitHub.

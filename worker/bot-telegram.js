@@ -24,6 +24,7 @@ const REPO_BASE = "giovannirosso05-code/gpoggi";
 const CHAT_BASE = "559225883";          // la tua chat privata (la stessa del bot di MMA Oggi: un id utente vale per tutti i bot)
 const BOT_BASE = "Gpoggibot";
 const RAMO = "main";
+const VERSIONE = "radar-notizia 2026-10-09";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
 const ETA_MASSIMA_SECONDI = 600;        // un comando più vecchio di 10 minuti non si esegue (Telegram può ripetere gli invii dopo un guasto)
 
 // comando -> [file del workflow, input del workflow o null, descrizione]
@@ -224,7 +225,7 @@ export default {
     const u = new URL(req.url);
     if (req.method === "GET") {
       if (u.pathname === "/stato" || u.pathname === "/attiva") return servizio(req, env, u);
-      return testo("GP Oggi bot: ok");
+      return testo(`GP Oggi bot: ok · versione ${VERSIONE}`);
     }
     if (req.method !== "POST") return testo("non consentito", 405);
     // Solo Telegram, che conosce la parola segreta, può farci eseguire qualcosa.

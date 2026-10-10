@@ -229,153 +229,6 @@
   "pole": 4,
   "giri_veloci": 12
  },
- "moto:5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b": {
-  "nascita": "1998-01-29",
-  "luogo": "Madrid, Spain",
-  "altezza": 168,
-  "peso": 63,
-  "debutto": 2015,
-  "carriera": [
-   {
-    "anno": 2015,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "MAPFRE Team MAHINDRA",
-      "numero": 88
-     }
-    ]
-   },
-   {
-    "anno": 2016,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Pull & Bear Aspar Mahindra Team",
-      "numero": 88
-     }
-    ]
-   },
-   {
-    "anno": 2017,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Del Conca Gresini Moto3",
-      "numero": 88
-     }
-    ]
-   },
-   {
-    "anno": 2018,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Red Bull KTM Ajo",
-      "numero": 0
-     }
-    ]
-   },
-   {
-    "anno": 2019,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Red Bull KTM Ajo",
-      "numero": 88
-     }
-    ]
-   },
-   {
-    "anno": 2020,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Red Bull KTM Ajo",
-      "numero": 88
-     }
-    ]
-   },
-   {
-    "anno": 2021,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Prima Pramac Racing",
-      "numero": 89
-     }
-    ]
-   },
-   {
-    "anno": 2022,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Prima Pramac Racing",
-      "numero": 89
-     }
-    ]
-   },
-   {
-    "anno": 2023,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Prima Pramac Racing",
-      "numero": 89
-     }
-    ]
-   },
-   {
-    "anno": 2024,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Prima Pramac Racing",
-      "numero": 89
-     }
-    ]
-   },
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Aprilia Racing",
-      "numero": 1
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Aprilia Racing",
-      "numero": 89
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 194,
-   "vittorie": 19,
-   "podi": 67,
-   "pole": 43,
-   "giri_veloci": 14,
-   "titoli": 2,
-   "motogp": {
-    "gare": 95,
-    "vittorie": 9,
-    "podi": 39,
-    "pole": 22,
-    "giri_veloci": 6,
-    "titoli": 1
-   },
-   "immagine": "Jorge Martin at the 2026 Spanish Grand Prix.jpg",
-   "fonte": "https://en.wikipedia.org/wiki/Jorge_Martin"
-  }
- },
  "moto:f55b433d-38b8-4d1d-bb3a-a709c82a0260": {
   "nascita": "1993-02-17",
   "luogo": "Cervera, Spain",
@@ -591,6 +444,153 @@
    },
    "immagine": "Marc Marquez at the 2026 Spanish Grand Prix (cropped).jpg",
    "fonte": "https://en.wikipedia.org/wiki/Marc_Marquez"
+  }
+ },
+ "moto:5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b": {
+  "nascita": "1998-01-29",
+  "luogo": "Madrid, Spain",
+  "altezza": 168,
+  "peso": 63,
+  "debutto": 2015,
+  "carriera": [
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "MAPFRE Team MAHINDRA",
+      "numero": 88
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Pull & Bear Aspar Mahindra Team",
+      "numero": 88
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Del Conca Gresini Moto3",
+      "numero": 88
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 88
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 88
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 89
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 89
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 89
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 89
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 1
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 89
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 194,
+   "vittorie": 19,
+   "podi": 67,
+   "pole": 43,
+   "giri_veloci": 14,
+   "titoli": 2,
+   "motogp": {
+    "gare": 95,
+    "vittorie": 9,
+    "podi": 39,
+    "pole": 22,
+    "giri_veloci": 6,
+    "titoli": 1
+   },
+   "immagine": "Jorge Martin at the 2026 Spanish Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Jorge_Martin"
   }
  },
  "moto:ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd": {
@@ -5034,6 +5034,268 @@
    },
    "immagine": "Michele_Pirro_at_the_2025_Malaysian_Grand_Prix.jpg",
    "fonte": "https://en.wikipedia.org/wiki/Michele_Pirro"
+  }
+ },
+ "moto:4cff2dfb-2feb-4264-9a17-8a67189c204c": {
+  "nascita": "1989-07-30",
+  "luogo": "Granollers, Spain",
+  "altezza": 180,
+  "peso": 66,
+  "debutto": 2004,
+  "carriera": [
+   {
+    "anno": 2004,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Repsol Honda 125cc",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2005,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Wurth Honda BQR",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2006,
+    "classi": [
+     {
+      "categoria": "250cc",
+      "team": "Honda HRC Castrol",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2007,
+    "classi": [
+     {
+      "categoria": "250cc",
+      "team": "Blusens Aprilia",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2008,
+    "classi": [
+     {
+      "categoria": "250cc",
+      "team": "Lotus Aprilia",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2009,
+    "classi": [
+     {
+      "categoria": "250cc",
+      "team": "Lotus Aprilia",
+      "numero": 0
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Lotus Aprilia",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2010,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Pramac Racing Team",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2011,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Pramac Racing Team",
+      "numero": 40
+     }
+    ]
+   },
+   {
+    "anno": 2012,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Pramac Racing Team",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2013,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Pramac Racing Team",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "NGM Forward Racing",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing Team Gresini",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing Team Gresini",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing Team Gresini",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing Team Gresini",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing Team Gresini",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "HRC Test Team",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 41
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 344,
+   "vittorie": 3,
+   "podi": 12,
+   "pole": 7,
+   "giri_veloci": 5,
+   "titoli": 0,
+   "motogp": {
+    "gare": 260,
+    "vittorie": 3,
+    "podi": 11,
+    "pole": 7,
+    "giri_veloci": 5,
+    "titoli": 0
+   },
+   "immagine": "Aleix Espargaro at the 2022 San Marino Grand Prix at Misano.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Aleix_Espargaro"
   }
  },
  "moto:9a6bd0ef-1531-4efa-9806-4b6435e75ba4": {
@@ -10322,15 +10584,15 @@
   "descrizione": "pilota automobilistico giapponese",
   "pagina": "https://it.wikipedia.org/wiki/Y%C5%ABji_Ide"
  },
- "nome:Jorge Martin": {
-  "testo": "Jorge Martín Almoguera è un pilota motociclistico spagnolo, vincitore della Red Bull Rookies Cup nel 2014, campione del mondo Moto3 nel 2018 e MotoGP nel 2024.",
-  "descrizione": "pilota motociclistico spagnolo (1998-)",
-  "pagina": "https://it.wikipedia.org/wiki/Jorge_Mart%C3%ADn"
- },
  "nome:Marc Marquez": {
   "testo": "Marc Márquez Alentà è un pilota motociclistico spagnolo, campione del mondo classe 125 nel 2010; Moto2 nel 2012 e MotoGP nel 2013, 2014, 2016, 2017, 2018, 2019 e 2025.",
   "descrizione": "pilota motociclistico spagnolo",
   "pagina": "https://it.wikipedia.org/wiki/Marc_M%C3%A1rquez"
+ },
+ "nome:Jorge Martin": {
+  "testo": "Jorge Martín Almoguera è un pilota motociclistico spagnolo, vincitore della Red Bull Rookies Cup nel 2014, campione del mondo Moto3 nel 2018 e MotoGP nel 2024.",
+  "descrizione": "pilota motociclistico spagnolo (1998-)",
+  "pagina": "https://it.wikipedia.org/wiki/Jorge_Mart%C3%ADn"
  },
  "nome:Marco Bezzecchi": {
   "testo": "Marco Bezzecchi è un pilota motociclistico italiano, campione italiano Moto3 nel 2015.",
@@ -10466,6 +10728,11 @@
   "testo": "Michele Pio Pirro è un pilota motociclistico italiano, campione europeo della classe 125 nel 2004 e dieci volte Campione Italiano: due in Superstock 1000, uno in Supersport 600 (2009) e sette in Superbike nel 2015, 2017, 2018, 2019, 2021, \n2022 e 2024.",
   "descrizione": "pilota motociclistico italiano",
   "pagina": "https://it.wikipedia.org/wiki/Michele_Pirro"
+ },
+ "nome:Aleix Espargaro": {
+  "testo": "Aleix Espargaró Villà è un pilota motociclistico e ciclista spagnolo.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Aleix_Espargar%C3%B3"
  },
  "nome:Izan Guevara": {
   "testo": "Izan Guevara Bonnin è un pilota motociclistico spagnolo, vincitore della European Talent Cup nel 2019 e campione mondiale Moto3 nel 2022.",
@@ -10606,11 +10873,6 @@
   "testo": "Miguel Ângelo Falcão de Oliveira è un pilota motociclistico portoghese.",
   "descrizione": "pilota motociclistico portoghese",
   "pagina": "https://it.wikipedia.org/wiki/Miguel_Oliveira"
- },
- "nome:Aleix Espargaro": {
-  "testo": "Aleix Espargaró Villà è un pilota motociclistico e ciclista spagnolo.",
-  "descrizione": "pilota motociclistico spagnolo",
-  "pagina": "https://it.wikipedia.org/wiki/Aleix_Espargar%C3%B3"
  },
  "nome:Daniel Pedrosa": {
   "testo": "Daniel Pedrosa Ramal, detto Dani, è un ex pilota motociclistico spagnolo, campione mondiale classe 125 (2003) e 250.",

@@ -204,8 +204,8 @@ async def genera(spec, uscita):
             if lavoro and s.get("attacca"):
                 prec = lavoro[-1]; prec["dur"] = min(prec["dur"], prec["tempi"][-1][2] + 0.02) if prec["tempi"] else prec["dur"]
                 t = prec["ini"] + prec["dur"]; prec["gap"] = 0.0
-            lavoro.append(dict(s=s, tok=tok, tempi=tempi, ini=t, dur=d, mp3=mp3, gap=0.22))
-            t += d + 0.22
+            lavoro.append(dict(s=s, tok=tok, tempi=tempi, ini=t, dur=d, mp3=mp3, gap=0.1))
+            t += d + 0.1
         totale = t
         fotos = {}
         for s in lavoro:

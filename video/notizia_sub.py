@@ -191,8 +191,20 @@ async def genera(spec, uscita):
             tok = token(s["testo"]); parlato = " ".join(w for w, _ in tok)
             mp3 = tmp / f"v{i}.mp3"
             tempi = await voce(parlato, vel, mp3, grido=bool(s.get("grido")))
+            lead = (tempi[0][1] + 0.03) if tempi else 0
+            if lead > 0.05 and not s.get("grido"):   # anche il silenzio iniziale si toglie
+                tagliato = mp3.with_suffix(".t.mp3")
+                subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{lead:.3f}", "-i", str(mp3), str(tagliato)], check=True)
+                tagliato.replace(mp3); tempi = [(w, a - lead, b - lead) for w, a, b in tempi]
             d = durata(mp3)
-            lavoro.append(dict(s=s, tok=tok, tempi=tempi, ini=t, dur=d, mp3=mp3))
+            # il file della voce finisce con un silenzio: si taglia dopo l'ultima parola.
+            # "attacca": true sulla scena successiva = nessuna pausa, la frase continua di seguito
+            if tempi and not s.get("finale"):
+                d = min(d, tempi[-1][2] + 0.15)
+            if lavoro and s.get("attacca"):
+                prec = lavoro[-1]; prec["dur"] = min(prec["dur"], prec["tempi"][-1][2] + 0.02) if prec["tempi"] else prec["dur"]
+                t = prec["ini"] + prec["dur"]; prec["gap"] = 0.0
+            lavoro.append(dict(s=s, tok=tok, tempi=tempi, ini=t, dur=d, mp3=mp3, gap=0.22))
             t += d + 0.22
         totale = t
         fotos = {}
@@ -216,7 +228,7 @@ async def genera(spec, uscita):
                 await pg.screenshot(path=str(f)); return f
             for idx, s in enumerate(lavoro):
                 fb, cred = fotos[f"{s['s']['foto']}|{s['s'].get('alt', '')}|{s['s'].get('foto_file', '')}"]
-                fine_scena = s["ini"] + s["dur"] + (0.22 if idx < len(lavoro) - 1 else 0.6)
+                fine_scena = (lavoro[idx + 1]["ini"] if idx < len(lavoro) - 1 else s["ini"] + s["dur"] + 0.6)
                 if s["s"].get("finale"):
                     f = await scatta(pagina(spec, s["s"], fb, cred, 1.0, finale=s["s"]["domanda"]))
                     quadri.append((f, s["ini"], fine_scena)); continue

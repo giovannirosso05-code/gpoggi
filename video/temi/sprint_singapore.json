@@ -23,16 +23,17 @@
   {
    "foto": "Lewis Hamilton",
    "nome": "Lewis Hamilton",
-   "testo": "Le *Ferrari* tornano sul *podio*, tutte e due: secondo [Hamilton]...",
+   "testo": "Le *Ferrari* tornano sul *podio*, tutte e due: secondo [Hamilton]",
    "alt": "pista_suzuka",
    "pista": true
   },
   {
    "foto": "Charles Leclerc",
    "nome": "Charles Leclerc",
-   "testo": "...e terzo [Leclerc].",
+   "testo": "e terzo [Leclerc].",
    "alt": "pista_cina",
-   "pista": true
+   "pista": true,
+   "attacca": true
   },
   {
    "foto": "George Russell",

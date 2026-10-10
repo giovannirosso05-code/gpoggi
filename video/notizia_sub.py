@@ -152,9 +152,16 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
 .cuci{{position:absolute;left:0;right:0;top:874px;height:12px;background:{col}}}
 .velo2{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.5) 0%,rgba(0,0,0,0) 22%,rgba(0,0,0,0) 62%,rgba(0,0,0,.55) 82%,rgba(0,0,0,.8) 100%)}}
 .diviso .nome{{top:790px}} .diviso .sub{{top:1430px}}
+.gri{{position:absolute;left:40px;right:40px;top:440px;height:1300px;overflow:hidden;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 40px,#000 1220px,transparent 1300px)}}
+.gri .l{{position:absolute;left:0;right:0;top:{40 - scena.get('_scroll', 0)}px}}
+.gri h3{{margin:0 0 18px;font:700 44px Oswald;text-transform:uppercase;color:{GIALLO};text-align:center}}
+.gri .r{{display:flex;align-items:center;gap:16px;width:600px;margin:0 0 14px;background:rgba(11,11,14,.85);border-radius:14px;padding:12px 18px;font:600 38px Oswald;text-transform:uppercase}}
+.gri .r.pari{{margin-left:auto}} .gri .p{{width:56px;color:{GIALLO};font-weight:700}} .gri .b{{width:10px;height:46px;border-radius:4px}}
+.gri .n{{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}} .gri .x{{font:600 24px Inter;color:#ff8a80;text-transform:none}}
+.gri .nota{{text-align:center;font:500 26px Inter;color:rgba(255,255,255,.75);margin-top:10px}}
 .pista .bg{{inset:-60px;filter:blur(36px) brightness(.45)}}
 .cred{{position:absolute;right:40px;bottom:36px;font:500 20px Inter;color:rgba(255,255,255,.75);max-width:600px;text-align:right}}
-</style>""" + ('<div class=alto></div><div class=basso></div><div class=velo2></div><div class=cuci></div><div class=diviso>' if scena.get("_volto") else '') + ('' if scena.get("_volto") else '<div class=pista><div class=bg></div></div><div class=velo></div>' + ('' if scena.get("classifica") else '<div class=fg></div>') if scena.get("pista") or scena.get("classifica") else '<div class=bg></div><div class=velo></div>') + """<div class=prog></div>"""
+</style>""" + ('<div class=alto></div><div class=basso></div><div class=velo2></div><div class=cuci></div><div class=diviso>' if scena.get("_volto") else '') + ('' if scena.get("_volto") else '<div class=pista><div class=bg></div></div><div class=velo></div>' + ('' if scena.get("classifica") or scena.get("griglia") else '<div class=fg></div>') if scena.get("pista") or scena.get("classifica") or scena.get("griglia") else '<div class=bg></div><div class=velo></div>') + """<div class=prog></div>"""
     if finale:
         return (f"""<!doctype html><meta charset=utf-8><style>{CSS_FONT}
 *{{box-sizing:border-box}} html,body{{margin:0;width:{W}px;height:{H}px;background:#0b0b0e;color:#fff;overflow:hidden;position:relative}}
@@ -180,6 +187,11 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
         corpo += f'<div class=cla><h3>{esc(c["titolo"])}</h3>' + "".join(
             f'<div class=r><span class=p>{r["pos"]}</span><span class=b style="background:#{r["colore"]}"></span><span class=n>{esc(r["nome"])}</span>'
             f'<span class=pt>{r["punti"]}</span><span class="d{"" if r["piu"] else " z"}">+{r["piu"]}</span></div>' for r in c["righe"]) + '</div>'
+    if scena.get("griglia"):
+        g = scena["griglia"]
+        corpo += f'<div class=gri><div class=l><h3>{esc(g["titolo"])}</h3>' + "".join(
+            f'<div class="r{" pari" if i % 2 else ""}"><span class=p>{r["pos"]}</span><span class=b style="background:#{r["colore"]}"></span><span class=n>{esc(r["nome"])}</span>'
+            + (f'<span class=x>{esc(r["nota"])}</span>' if r.get("nota") else "") + '</div>' for i, r in enumerate(g["righe"])) + (f'<div class=nota>{esc(g["nota"])}</div>' if g.get("nota") else "") + '</div></div>'
     corpo += f'<div class=cred>{esc(credito)}</div>'
     return base + corpo
 
@@ -209,6 +221,7 @@ async def genera(spec, uscita):
             if lavoro and s.get("attacca"):
                 prec = lavoro[-1]; prec["dur"] = min(prec["dur"], prec["tempi"][-1][2] + 0.02) if prec["tempi"] else prec["dur"]
                 t = prec["ini"] + prec["dur"]; prec["gap"] = 0.0
+            d = max(d, s.get("durata_min", 0))
             lavoro.append(dict(s=s, tok=tok, tempi=tempi, ini=t, dur=d, mp3=mp3, gap=0.1))
             t += d + 0.1
         totale = t
@@ -245,6 +258,19 @@ async def genera(spec, uscita):
                 if s["s"].get("hook"):
                     f = await scatta(pagina(spec, s["s"], fb, cred, s["ini"] / totale, hook=True))
                     quadri.append((f, s["ini"], fine_scena)); continue
+                if s["s"].get("griglia"):
+                    fps, ferma_ini, ferma_fine = 15, 1.0, 1.2
+                    corsa = s["s"]["griglia"].get("scorri", 1300)
+                    durata_sc = fine_scena - s["ini"]
+                    nq = max(2, int(durata_sc * fps))
+                    for q in range(nq):
+                        t_rel = q / fps
+                        x = min(1, max(0, (t_rel - ferma_ini) / max(0.1, durata_sc - ferma_ini - ferma_fine)))
+                        x = x * x * (3 - 2 * x)   # parte e si ferma morbida
+                        s["s"]["_scroll"] = int(corsa * x)
+                        f = await scatta(pagina(spec, s["s"], fb, cred, (s["ini"] + t_rel) / totale))
+                        quadri.append((f, s["ini"] + t_rel, min(fine_scena, s["ini"] + (q + 1) / fps) if q < nq - 1 else fine_scena))
+                    continue
                 gruppi = pezzi(s["tok"], s["tempi"])
                 for gi, (ids, t0) in enumerate(gruppi):
                     ini = s["ini"] + (0 if gi == 0 else t0)

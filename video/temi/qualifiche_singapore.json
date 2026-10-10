@@ -1,0 +1,184 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Singapore: Verstappen in pole, Leclerc secondo",
+ "fonte": "Classifica qualifiche (ESPN) · Autosport · GPblog · Formula1.com",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto": "Max Verstappen",
+   "alt": "pista_cina",
+   "pista": true,
+   "hook": true,
+   "grido": true,
+   "hook_titolo": "Super Max, pole!",
+   "testo": "Super *MAX*!"
+  },
+  {
+   "foto": "Max Verstappen",
+   "nome": "Max Verstappen",
+   "testo": "[Verstappen] fa la *pole* a Singapore, anche se alla radio si lamentava delle *cambiate*."
+  },
+  {
+   "foto": "Charles Leclerc",
+   "alt": "pista_cina",
+   "pista": true,
+   "volto_alt": "ferrari",
+   "nome": "Charles Leclerc",
+   "testo": "Ottimo [Leclerc]: *secondo*, in *prima fila*."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "nome": "Lewis Hamilton",
+   "testo": "Terzo [Hamilton]."
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "nome": "Kimi Antonelli",
+   "testo": "[Antonelli] è *quarto*, con un giro *cancellato* per i limiti della pista."
+  },
+  {
+   "foto": "George Russell",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "nome": "George Russell",
+   "testo": "[Russell] chiude *sesto*, ma domani parte dal *fondo*: ha cambiato il *motore*."
+  },
+  {
+   "foto": "Isack Hadjar",
+   "nome": "Isack Hadjar",
+   "testo": "[Hadjar] è fuori subito in *Q1*: il motore si *spegne*, poi un problema al *cambio*."
+  },
+  {
+   "foto": "Max Verstappen",
+   "griglia": {
+    "titolo": "Griglia di partenza",
+    "righe": [
+     {
+      "pos": 1,
+      "nome": "Verstappen",
+      "colore": "4781D7"
+     },
+     {
+      "pos": 2,
+      "nome": "Leclerc",
+      "colore": "ED1131"
+     },
+     {
+      "pos": 3,
+      "nome": "Hamilton",
+      "colore": "ED1131"
+     },
+     {
+      "pos": 4,
+      "nome": "Antonelli",
+      "colore": "00D7B6"
+     },
+     {
+      "pos": 5,
+      "nome": "Norris",
+      "colore": "F47600"
+     },
+     {
+      "pos": 6,
+      "nome": "Piastri",
+      "colore": "F47600"
+     },
+     {
+      "pos": 7,
+      "nome": "Gasly",
+      "colore": "00A1E8"
+     },
+     {
+      "pos": 8,
+      "nome": "Lawson",
+      "colore": "6C98FF"
+     },
+     {
+      "pos": 9,
+      "nome": "Lindblad",
+      "colore": "6C98FF"
+     },
+     {
+      "pos": 10,
+      "nome": "Hulkenberg",
+      "colore": "F50537"
+     },
+     {
+      "pos": 11,
+      "nome": "Bearman",
+      "colore": "9C9FA2"
+     },
+     {
+      "pos": 12,
+      "nome": "Ocon",
+      "colore": "9C9FA2"
+     },
+     {
+      "pos": 13,
+      "nome": "Sainz",
+      "colore": "1868DB"
+     },
+     {
+      "pos": 14,
+      "nome": "Bortoleto",
+      "colore": "F50537"
+     },
+     {
+      "pos": 15,
+      "nome": "Colapinto",
+      "colore": "00A1E8"
+     },
+     {
+      "pos": 16,
+      "nome": "Alonso",
+      "colore": "229971"
+     },
+     {
+      "pos": 17,
+      "nome": "Albon",
+      "colore": "1868DB"
+     },
+     {
+      "pos": 18,
+      "nome": "Stroll",
+      "colore": "229971"
+     },
+     {
+      "pos": 19,
+      "nome": "Perez",
+      "colore": "909090"
+     },
+     {
+      "pos": 20,
+      "nome": "Bottas",
+      "colore": "909090"
+     },
+     {
+      "pos": "21",
+      "nome": "Hadjar",
+      "colore": "4781D7",
+      "nota": "Q1"
+     },
+     {
+      "pos": "22",
+      "nome": "Russell",
+      "colore": "00D7B6",
+      "nota": "motore"
+     }
+    ],
+    "nota": "Provvisoria, in attesa della FIA",
+    "scorri": 1180
+   },
+   "durata_min": 9,
+   "testo": "Ecco la *griglia* di domani. Il via alle *14*."
+  }
+ ],
+ "finale": {
+  "foto": "Max Verstappen",
+  "domanda": "Verstappen vince anche domani?"
+ }
+}

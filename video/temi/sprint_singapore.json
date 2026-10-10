@@ -51,7 +51,7 @@
   {
    "foto": "Lando Norris",
    "nome": "Lando Norris",
-   "testo": "[Norris] chiude *ottavo*, [Piastri] solo *quattordicesimo*.",
+   "testo": "[Norris] riparte e chiude *ottavo*. [Piastri] invece si *ritira*.",
    "alt": "pista_suzuka",
    "pista": true
   },
@@ -64,9 +64,54 @@
   },
   {
    "foto": "Kimi Antonelli",
-   "testo": "In classifica sale a *325*, e su [Russell] ora ha *89 punti* di vantaggio.",
-   "alt": "pista_bahrain",
-   "pista": true
+   "classifica": {
+    "titolo": "Classifica piloti dopo la sprint",
+    "righe": [
+     {
+      "nome": "Kimi Antonelli",
+      "colore": "00D7B6",
+      "punti": 325,
+      "piu": 5,
+      "pos": 1
+     },
+     {
+      "nome": "George Russell",
+      "colore": "00D7B6",
+      "punti": 236,
+      "piu": 0,
+      "pos": 2
+     },
+     {
+      "nome": "Lewis Hamilton",
+      "colore": "ED1131",
+      "punti": 221,
+      "piu": 7,
+      "pos": 3
+     },
+     {
+      "nome": "Charles Leclerc",
+      "colore": "ED1131",
+      "punti": 197,
+      "piu": 6,
+      "pos": 4
+     },
+     {
+      "nome": "Max Verstappen",
+      "colore": "4781D7",
+      "punti": 196,
+      "piu": 8,
+      "pos": 5
+     },
+     {
+      "nome": "Lando Norris",
+      "colore": "F47600",
+      "punti": 189,
+      "piu": 1,
+      "pos": 6
+     }
+    ]
+   },
+   "testo": "In classifica sale a *325*, e su [Russell] ora ha *89 punti* di vantaggio."
   },
   {
    "foto": "Kimi Antonelli",

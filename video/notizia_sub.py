@@ -142,9 +142,14 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
 .sub{{position:absolute;left:90px;width:780px;top:{spec.get('sub_top', 1180)}px;text-align:center;font:700 62px/1.18 Oswald;text-transform:uppercase;word-spacing:.18em;-webkit-text-stroke:2px #000;paint-order:stroke fill;text-shadow:0 4px 18px rgba(0,0,0,.7)}}
 .sub .g{{color:{GIALLO}}} .sub .s{{color:{nom}}}
 .fg{{position:absolute;left:0;width:1080px;top:400px;height:760px;background:url(data:image/jpeg;base64,{foto_b64}) center/contain no-repeat;filter:drop-shadow(0 30px 60px rgba(0,0,0,.6))}}
+.cla{{position:absolute;left:60px;right:60px;top:450px;background:rgba(11,11,14,.82);border-radius:22px;padding:26px 30px;box-shadow:0 30px 80px rgba(0,0,0,.6)}}
+.cla h3{{margin:0 0 14px;font:700 40px Oswald;text-transform:uppercase;letter-spacing:.04em;color:{GIALLO}}}
+.cla .r{{display:flex;align-items:center;gap:20px;padding:13px 0;border-top:1px solid rgba(255,255,255,.12);font:600 40px Oswald;text-transform:uppercase}}
+.cla .p{{width:44px;text-align:right;color:rgba(255,255,255,.7)}} .cla .b{{width:12px;height:44px;border-radius:4px}}
+.cla .n{{flex:1}} .cla .pt{{font-variant-numeric:tabular-nums}} .cla .d{{width:110px;text-align:right;color:#4ade80;font-size:32px}} .cla .d.z{{color:rgba(255,255,255,.45)}}
 .pista .bg{{inset:-60px;filter:blur(36px) brightness(.45)}}
 .cred{{position:absolute;right:40px;bottom:36px;font:500 20px Inter;color:rgba(255,255,255,.75);max-width:600px;text-align:right}}
-</style>""" + ('<div class=pista><div class=bg></div></div><div class=velo></div><div class=fg></div>' if scena.get("pista") else '<div class=bg></div><div class=velo></div>') + """<div class=prog></div>"""
+</style>""" + ('<div class=pista><div class=bg></div></div><div class=velo></div>' + ('' if scena.get("classifica") else '<div class=fg></div>') if scena.get("pista") or scena.get("classifica") else '<div class=bg></div><div class=velo></div>') + """<div class=prog></div>"""
     if finale:
         return (f"""<!doctype html><meta charset=utf-8><style>{CSS_FONT}
 *{{box-sizing:border-box}} html,body{{margin:0;width:{W}px;height:{H}px;background:#0b0b0e;color:#fff;overflow:hidden;position:relative}}
@@ -165,6 +170,11 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
             corpo += f'<div class=nome>{esc(scena["nome"])}</div>'
         if sub:
             corpo += '<div class=sub>' + " ".join(f'<span class="{fl}">{esc(w)}</span>' for w, fl in sub) + '</div>'
+    if scena.get("classifica"):
+        c = scena["classifica"]
+        corpo += f'<div class=cla><h3>{esc(c["titolo"])}</h3>' + "".join(
+            f'<div class=r><span class=p>{r["pos"]}</span><span class=b style="background:#{r["colore"]}"></span><span class=n>{esc(r["nome"])}</span>'
+            f'<span class=pt>{r["punti"]}</span><span class="d{"" if r["piu"] else " z"}">+{r["piu"]}</span></div>' for r in c["righe"]) + '</div>'
     corpo += f'<div class=cred>{esc(credito)}</div>'
     return base + corpo
 

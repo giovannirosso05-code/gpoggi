@@ -53,6 +53,15 @@ def file_foto(f):
     raise SystemExit("file foto mancante")
 
 
+# Come la voce deve dire alcuni nomi (i sottotitoli restano scritti giusti)
+PRONUNCIA = {"Hadjar": "Adgiàr"}
+
+
+def pronuncia(parola):
+    nuda = parola.strip(".,:;!?'\"…")
+    return parola.replace(nuda, PRONUNCIA[nuda]) if nuda in PRONUNCIA else parola
+
+
 def token(testo):
     """[(parola, 'g'|'s'|'')] da un testo con *gialle* e [nomi]; il testo da pronunciare è senza segni."""
     out = []
@@ -205,7 +214,7 @@ async def genera(spec, uscita):
         # audio e tempi
         t = 0.0; lavoro = []
         for i, s in enumerate(scene + [dict(finale, testo=finale["domanda"], finale=True)]):
-            tok = token(s["testo"]); parlato = " ".join(w for w, _ in tok)
+            tok = token(s["testo"]); parlato = " ".join(pronuncia(w) for w, _ in tok)
             mp3 = tmp / f"v{i}.mp3"
             tempi = await voce(parlato, vel, mp3, grido=bool(s.get("grido")))
             lead = (tempi[0][1] + 0.03) if tempi else 0

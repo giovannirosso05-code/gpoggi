@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-10T03:52:15+00:00",
+ "aggiornato": "2026-10-10T09:00:24+00:00",
  "metodo": "Indice da 0 a 100 calcolato da GP Oggi: 45% forma nelle ultime 5 gare, 35% classifica del campionato, 20% risultato sullo stesso circuito l'anno scorso. È un'opinione basata sui numeri, non una previsione ufficiale né una certezza.",
  "f1": {
   "gp": "Gran Premio di Singapore",
@@ -74,17 +74,17 @@
     "indice": 100,
     "motivi": [
      "3 vittorie nelle ultime 5 gare",
-     "2° nel campionato (331 punti)"
+     "1° nel campionato (343 punti)"
     ]
    },
    {
     "id": "a6108385-dd4c-490d-b02e-542ed0275f79",
     "nome": "Pedro Acosta",
     "team": "Red Bull KTM Factory Racing",
-    "indice": 93,
+    "indice": 90,
     "motivi": [
      "1 vittoria nelle ultime 5 gare",
-     "4° nel campionato (243 punti)",
+     "4° nel campionato (247 punti)",
      "GP Indonesia 2025: 2°"
     ]
    },
@@ -92,31 +92,30 @@
     "id": "5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b",
     "nome": "Jorge Martin",
     "team": "Aprilia Racing",
-    "indice": 92,
+    "indice": 84,
     "motivi": [
-     "3 podi nelle ultime 5 gare",
-     "1° nel campionato (333 punti)"
+     "2 podi nelle ultime 5 gare",
+     "2° nel campionato (339 punti)"
     ]
    },
    {
     "id": "ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd",
     "nome": "Marco Bezzecchi",
     "team": "Aprilia Racing",
-    "indice": 77,
+    "indice": 71,
     "motivi": [
-     "4 podi nelle ultime 5 gare",
+     "3 podi nelle ultime 5 gare",
      "3° nel campionato (284 punti)"
     ]
    },
    {
-    "id": "58448742-f520-466a-a1a1-bf3286cce9c3",
-    "nome": "Raul Fernandez",
-    "team": "SuperFile Trackhouse MotoGP Team",
-    "indice": 62,
+    "id": "2614e0f6-7e02-4076-a746-50f43fe3143c",
+    "nome": "Fermin Aldeguer",
+    "team": "BK8 Gresini Racing MotoGP",
+    "indice": 61,
     "motivi": [
-     "1 vittoria nelle ultime 5 gare",
-     "7° nel campionato (216 punti)",
-     "GP Indonesia 2025: 6°"
+     "10° nel campionato (125 punti)",
+     "GP Indonesia 2025: 1°"
     ]
    }
   ]

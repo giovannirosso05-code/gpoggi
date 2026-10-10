@@ -1,14 +1,80 @@
-{"serie": "F1", "titolo_breve": "Sprint Singapore: vince Verstappen, Antonelli allunga", "fonte": "Classifica sprint (PlanetF1) · Autosport", "velocita": "+38%",
+{
+ "serie": "F1",
+ "titolo_breve": "Sprint Singapore: vince Verstappen, Antonelli allunga",
+ "fonte": "Classifica sprint (PlanetF1) · Autosport",
+ "velocita": "+38%",
  "scene": [
-  {"foto": "Kimi Antonelli", "hook": true, "grido": true, "hook_titolo": "Tutto gira per Kimi!", "testo": "Tutto *gira* per [Kimi]!"},
-  {"foto": "Max Verstappen", "nome": "Max Verstappen", "testo": "La sprint di Singapore la *vince* [Verstappen]."},
-  {"foto": "Lewis Hamilton", "nome": "Lewis Hamilton", "testo": "Le *Ferrari* tornano sul *podio*, tutte e due: secondo [Hamilton]..."},
-  {"foto": "Charles Leclerc", "alt": "ferrari", "nome": "Charles Leclerc", "testo": "...e terzo [Leclerc]."},
-  {"foto": "George Russell", "nome": "George Russell", "testo": "[Russell] parte bene e passa *davanti*, ma nei *primi giri* esce all'ultima curva, sull'asfalto *umido*, e si *ritira*."},
-  {"foto": "Oscar Piastri", "nome": "Oscar Piastri", "testo": "All'*ultimo giro* le due *McLaren* si toccano: [Norris] attacca [Piastri] all'interno e girano *tutti e due*."},
-  {"foto": "Lando Norris", "nome": "Lando Norris", "testo": "[Norris] chiude *ottavo*, [Piastri] solo *quattordicesimo*."},
-  {"foto": "Kimi Antonelli", "nome": "Kimi Antonelli", "testo": "Così [Antonelli] arriva *quarto* e prende *5 punti*."},
-  {"foto": "Kimi Antonelli", "testo": "In classifica sale a *325*, e su [Russell] ora ha *89 punti* di vantaggio."},
-  {"foto": "Kimi Antonelli", "testo": "Il Gran Premio è *domani alle 14*."}
+  {
+   "foto": "Kimi Antonelli",
+   "hook": true,
+   "grido": true,
+   "hook_titolo": "Tutto gira per Kimi!",
+   "testo": "Tutto *gira* per [Kimi]!",
+   "alt": "pista_cina",
+   "pista": true
+  },
+  {
+   "foto": "Max Verstappen",
+   "nome": "Max Verstappen",
+   "testo": "La sprint di Singapore la *vince* [Verstappen].",
+   "alt": "pista_cina",
+   "pista": true
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "nome": "Lewis Hamilton",
+   "testo": "Le *Ferrari* tornano sul *podio*, tutte e due: secondo [Hamilton]...",
+   "alt": "pista_suzuka",
+   "pista": true
+  },
+  {
+   "foto": "Charles Leclerc",
+   "nome": "Charles Leclerc",
+   "testo": "...e terzo [Leclerc].",
+   "alt": "pista_cina",
+   "pista": true
+  },
+  {
+   "foto": "George Russell",
+   "nome": "George Russell",
+   "testo": "[Russell] parte bene e passa *davanti*, ma nei *primi giri* esce all'ultima curva, sull'asfalto *umido*, e si *ritira*.",
+   "alt": "pista_suzuka",
+   "pista": true
+  },
+  {
+   "foto": "Oscar Piastri",
+   "nome": "Oscar Piastri",
+   "testo": "All'*ultimo giro* le due *McLaren* si toccano: [Norris] attacca [Piastri] all'interno e girano *tutti e due*.",
+   "alt": "pista_suzuka",
+   "pista": true
+  },
+  {
+   "foto": "Lando Norris",
+   "nome": "Lando Norris",
+   "testo": "[Norris] chiude *ottavo*, [Piastri] solo *quattordicesimo*.",
+   "alt": "pista_suzuka",
+   "pista": true
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "nome": "Kimi Antonelli",
+   "testo": "Così [Antonelli] arriva *quarto* e prende *5 punti*.",
+   "alt": "pista_suzuka",
+   "pista": true
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "testo": "In classifica sale a *325*, e su [Russell] ora ha *89 punti* di vantaggio.",
+   "alt": "pista_bahrain",
+   "pista": true
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "testo": "Il Gran Premio è *domani alle 14*."
+  }
  ],
- "finale": {"foto": "Kimi Antonelli", "domanda": "Antonelli vince anche domenica?"}}
+ "finale": {
+  "foto": "Kimi Antonelli",
+  "domanda": "Antonelli vince anche domenica?"
+ }
+}

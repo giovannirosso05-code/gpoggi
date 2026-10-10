@@ -141,8 +141,10 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
 .nome{{position:absolute;left:60px;top:{spec.get('nome_top', 930)}px;background:#000;font:700 38px Oswald;text-transform:uppercase;letter-spacing:.04em;padding:6px 18px}}
 .sub{{position:absolute;left:90px;width:780px;top:{spec.get('sub_top', 1180)}px;text-align:center;font:700 62px/1.18 Oswald;text-transform:uppercase;word-spacing:.18em;-webkit-text-stroke:2px #000;paint-order:stroke fill;text-shadow:0 4px 18px rgba(0,0,0,.7)}}
 .sub .g{{color:{GIALLO}}} .sub .s{{color:{nom}}}
+.fg{{position:absolute;left:0;width:1080px;top:400px;height:760px;background:url(data:image/jpeg;base64,{foto_b64}) center/contain no-repeat;filter:drop-shadow(0 30px 60px rgba(0,0,0,.6))}}
+.pista .bg{{inset:-60px;filter:blur(36px) brightness(.45)}}
 .cred{{position:absolute;right:40px;bottom:36px;font:500 20px Inter;color:rgba(255,255,255,.75);max-width:600px;text-align:right}}
-</style><div class=bg></div><div class=velo></div><div class=prog></div>"""
+</style>""" + ('<div class=pista><div class=bg></div></div><div class=velo></div><div class=fg></div>' if scena.get("pista") else '<div class=bg></div><div class=velo></div>') + """<div class=prog></div>"""
     if finale:
         return (f"""<!doctype html><meta charset=utf-8><style>{CSS_FONT}
 *{{box-sizing:border-box}} html,body{{margin:0;width:{W}px;height:{H}px;background:#0b0b0e;color:#fff;overflow:hidden;position:relative}}

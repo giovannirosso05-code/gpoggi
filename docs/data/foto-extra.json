@@ -38,6 +38,13 @@
    "licenza": "CC BY 4.0",
    "pagina": "https://commons.wikimedia.org/w/index.php?curid=186405409",
    "titolo": "2026 Chinese GP - Ferrari - Lewis Hamilton - Qualifying"
+  },
+  "pista_suzuka": {
+   "file": "img/foto-extra/lewis_hamilton_pista_suzuka.jpg",
+   "autore": "Martin Lee",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Ferrari_SF-26_-_Lewis_Hamilton_exits_the_final_chicane_at_Suzuka_during_the_2026_Japanese_GP_%2855195432409%29.jpg",
+   "titolo": "Ferrari SF-26 - Lewis Hamilton exits the final chicane at Suzuka during the 2026 Japanese GP (55195432409).jpg"
   }
  },
  "Charles Leclerc": {
@@ -47,6 +54,72 @@
    "licenza": "CC BY-SA 4.0",
    "pagina": "https://commons.wikimedia.org/wiki/File:Charles-Leclerc.jpg",
    "titolo": "Charles-Leclerc.jpg"
+  },
+  "pista_cina": {
+   "file": "img/foto-extra/charles_leclerc_pista_cina.jpg",
+   "autore": "Liauzh",
+   "licenza": "CC BY 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Ferrari_-_Charles_Leclerc_-_Qualifying.jpg",
+   "titolo": "2026 Chinese GP - Ferrari - Charles Leclerc - Qualifying.jpg"
+  }
+ },
+ "Kimi Antonelli": {
+  "pista_bahrain": {
+   "file": "img/foto-extra/kimi_antonelli_pista_bahrain.jpg",
+   "autore": "Liauzh",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:2026_Bahrain_GP_-_Mercedes_-_Kimi_Antonelli_-_Race.jpg",
+   "titolo": "2026 Bahrain GP - Mercedes - Kimi Antonelli - Race.jpg"
+  },
+  "pista_suzuka": {
+   "file": "img/foto-extra/kimi_antonelli_pista_suzuka.jpg",
+   "autore": "Martin Lee",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Mercedes_W17_-_Kimi_Antonelli_approaches_Spoon_Curve_at_Suzuka_during_the_2026_Japanese_GP_%2855194289192%29.jpg",
+   "titolo": "Mercedes W17 - Kimi Antonelli approaches Spoon Curve at Suzuka during the 2026 Japanese GP (55194289192).jpg"
+  },
+  "pista_cina": {
+   "file": "img/foto-extra/kimi_antonelli_pista_cina.jpg",
+   "autore": "Liauzh",
+   "licenza": "CC BY 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Mercedes_-_Kimi_Antonelli_-_Qualifying.jpg",
+   "titolo": "2026 Chinese GP - Mercedes - Kimi Antonelli - Qualifying.jpg"
+  }
+ },
+ "Max Verstappen": {
+  "pista_cina": {
+   "file": "img/foto-extra/max_verstappen_pista_cina.jpg",
+   "autore": "Liauzh",
+   "licenza": "CC BY 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Red_Bull_-_Max_Verstappen_-_Qualifying.jpg",
+   "titolo": "2026 Chinese GP - Red Bull - Max Verstappen - Qualifying.jpg"
+  }
+ },
+ "George Russell": {
+  "pista_suzuka": {
+   "file": "img/foto-extra/george_russell_pista_suzuka.jpg",
+   "autore": "Martin Lee",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Mercedes_W17_-_George_Russell_exits_the_final_chicane_at_Suzuka_during_the_2026_Japanese_GP_%2855195432314%29.jpg",
+   "titolo": "Mercedes W17 - George Russell exits the final chicane at Suzuka during the 2026 Japanese GP (55195432314).jpg"
+  }
+ },
+ "Lando Norris": {
+  "pista_suzuka": {
+   "file": "img/foto-extra/lando_norris_pista_suzuka.jpg",
+   "autore": "Martin Lee",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Mclaren_MCL40_-_Lando_Norris_approaches_Spoon_Curve_at_Suzuka_during_the_2026_Japanese_GP_%2855195326398%29.jpg",
+   "titolo": "Mclaren MCL40 - Lando Norris approaches Spoon Curve at Suzuka during the 2026 Japanese GP (55195326398).jpg"
+  }
+ },
+ "Oscar Piastri": {
+  "pista_suzuka": {
+   "file": "img/foto-extra/oscar_piastri_pista_suzuka.jpg",
+   "autore": "Martin Lee",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Mclaren_MCL40_-_Oscar_Piastri_enters_the_Nissin_Brake_Hairpin_at_Suzuka_during_the_2026_Japanese_GP_%2855195174246%29.jpg",
+   "titolo": "Mclaren MCL40 - Oscar Piastri enters the Nissin Brake Hairpin at Suzuka during the 2026 Japanese GP (55195174246).jpg"
   }
  }
 }

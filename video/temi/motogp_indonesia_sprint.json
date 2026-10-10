@@ -1,0 +1,13 @@
+{"serie": "MotoGP", "titolo_breve": "MotoGP Indonesia: Marquez vince lo sprint", "fonte": "Cronometraggio ufficiale MotoGP · Crash.net", "velocita": "+38%",
+ "scene": [
+  {"foto": "Marc Marquez", "alt": "sorriso", "hook": true, "grido": true, "hook_titolo": "Marquez vince lo sprint!", "testo": "[Marquez] *VINCE*!"},
+  {"foto": "Marco Bezzecchi", "nome": "Marco Bezzecchi", "testo": "Alla *prima curva* cadono i due Aprilia: [Fernandez] in *pole* e [Bezzecchi] secondo in griglia."},
+  {"foto": "Jorge Martin", "nome": "Jorge Martin", "testo": "[Martin] prende la *testa* e supera il *secondo* di vantaggio."},
+  {"foto": "Marc Marquez", "alt": "ritratto", "nome": "Marc Marquez", "testo": "A *cinque giri* dalla fine [Martin] rallenta e [Marquez] passa *davanti*."},
+  {"foto": "Jorge Martin", "testo": "A *due giri* dalla fine [Martin] sbaglia e finisce *quarto*."},
+  {"foto": "Ai Ogura", "nome": "Ai Ogura", "testo": "Secondo [Ogura], a *mezzo secondo*."},
+  {"foto": "Fabio Di Giannantonio", "nome": "Fabio Di Giannantonio", "testo": "Terzo è [Di Giannantonio]."},
+  {"foto": "Marc Marquez", "alt": "sorriso", "nome": "Marc Marquez", "testo": "In classifica [Marquez] torna *davanti* a [Martin] di *4 punti*."},
+  {"foto": "Marc Marquez", "alt": "ritratto", "testo": "La gara è *domani alle 9*."}
+ ],
+ "finale": {"foto": "Marc Marquez", "alt": "sorriso", "domanda": "Marquez vince anche la gara?"}}

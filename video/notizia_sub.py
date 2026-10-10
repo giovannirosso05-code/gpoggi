@@ -147,9 +147,14 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
 .cla .r{{display:flex;align-items:center;gap:20px;padding:13px 0;border-top:1px solid rgba(255,255,255,.12);font:600 40px Oswald;text-transform:uppercase}}
 .cla .p{{width:44px;text-align:right;color:rgba(255,255,255,.7)}} .cla .b{{width:12px;height:44px;border-radius:4px}}
 .cla .n{{flex:1}} .cla .pt{{font-variant-numeric:tabular-nums}} .cla .d{{width:110px;text-align:right;color:#4ade80;font-size:32px}} .cla .d.z{{color:rgba(255,255,255,.45)}}
+.alto{{position:absolute;left:0;right:0;top:0;height:880px;background:url(data:image/jpeg;base64,{foto_b64}) {scena.get('pos_pista', 'center')}/cover no-repeat}}
+.basso{{position:absolute;left:0;right:0;top:880px;bottom:0;background:url(data:image/jpeg;base64,{scena.get('_volto', '')}) center {scena.get('pos_volto', '12%')}/cover no-repeat}}
+.cuci{{position:absolute;left:0;right:0;top:874px;height:12px;background:{col}}}
+.velo2{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.5) 0%,rgba(0,0,0,0) 22%,rgba(0,0,0,0) 62%,rgba(0,0,0,.55) 82%,rgba(0,0,0,.8) 100%)}}
+.diviso .nome{{top:790px}} .diviso .sub{{top:1430px}}
 .pista .bg{{inset:-60px;filter:blur(36px) brightness(.45)}}
 .cred{{position:absolute;right:40px;bottom:36px;font:500 20px Inter;color:rgba(255,255,255,.75);max-width:600px;text-align:right}}
-</style>""" + ('<div class=pista><div class=bg></div></div><div class=velo></div>' + ('' if scena.get("classifica") else '<div class=fg></div>') if scena.get("pista") or scena.get("classifica") else '<div class=bg></div><div class=velo></div>') + """<div class=prog></div>"""
+</style>""" + ('<div class=alto></div><div class=basso></div><div class=velo2></div><div class=cuci></div><div class=diviso>' if scena.get("_volto") else '') + ('' if scena.get("_volto") else '<div class=pista><div class=bg></div></div><div class=velo></div>' + ('' if scena.get("classifica") else '<div class=fg></div>') if scena.get("pista") or scena.get("classifica") else '<div class=bg></div><div class=velo></div>') + """<div class=prog></div>"""
     if finale:
         return (f"""<!doctype html><meta charset=utf-8><style>{CSS_FONT}
 *{{box-sizing:border-box}} html,body{{margin:0;width:{W}px;height:{H}px;background:#0b0b0e;color:#fff;overflow:hidden;position:relative}}
@@ -228,6 +233,11 @@ async def genera(spec, uscita):
                 await pg.screenshot(path=str(f)); return f
             for idx, s in enumerate(lavoro):
                 fb, cred = fotos[f"{s['s']['foto']}|{s['s'].get('alt', '')}|{s['s'].get('foto_file', '')}"]
+                if s["s"].get("pista") and not s["s"].get("classifica") and not s["s"].get("finale") and s["s"].get("volto", True):
+                    # schermo diviso: sopra la macchina in pista, sotto il volto del pilota (niente spazio vuoto)
+                    v = trova_foto(s["s"]["foto"], s["s"].get("volto_alt"))
+                    s["s"]["_volto"] = b64(file_foto(v))
+                    cred = cred.replace(" · Wikimedia Commons", "") + " / " + re.sub(r"Original:\s*", "", v["autore"]) + f" · {v['licenza']} · Wikimedia Commons"
                 fine_scena = (lavoro[idx + 1]["ini"] if idx < len(lavoro) - 1 else s["ini"] + s["dur"] + 0.6)
                 if s["s"].get("finale"):
                     f = await scatta(pagina(spec, s["s"], fb, cred, 1.0, finale=s["s"]["domanda"]))

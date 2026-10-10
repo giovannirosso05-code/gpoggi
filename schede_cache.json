@@ -11084,5 +11084,267 @@
  "wikistat:a14ea48a-578d-45a6-9e95-1007032024e9": null,
  "wikistat:eb622674-1751-486a-b97f-e252353ed7a9": null,
  "wikistat:513193e6-6725-48f0-b62f-c5eb6bc0f740": null,
- "wikistat:67d13fd3-1b88-4557-b547-ca0e6e4f5535": null
+ "wikistat:67d13fd3-1b88-4557-b547-ca0e6e4f5535": null,
+ "moto:4cff2dfb-2feb-4264-9a17-8a67189c204c": {
+  "nascita": "1989-07-30",
+  "luogo": "Granollers, Spain",
+  "altezza": 180,
+  "peso": 66,
+  "debutto": 2004,
+  "carriera": [
+   {
+    "anno": 2004,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Repsol Honda 125cc",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2005,
+    "classi": [
+     {
+      "categoria": "125cc",
+      "team": "Wurth Honda BQR",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2006,
+    "classi": [
+     {
+      "categoria": "250cc",
+      "team": "Honda HRC Castrol",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2007,
+    "classi": [
+     {
+      "categoria": "250cc",
+      "team": "Blusens Aprilia",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2008,
+    "classi": [
+     {
+      "categoria": "250cc",
+      "team": "Lotus Aprilia",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2009,
+    "classi": [
+     {
+      "categoria": "250cc",
+      "team": "Lotus Aprilia",
+      "numero": 0
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Lotus Aprilia",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2010,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Pramac Racing Team",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2011,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Pramac Racing Team",
+      "numero": 40
+     }
+    ]
+   },
+   {
+    "anno": 2012,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Pramac Racing Team",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2013,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Pramac Racing Team",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "NGM Forward Racing",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing Team Gresini",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing Team Gresini",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing Team Gresini",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing Team Gresini",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing Team Gresini",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "HRC Test Team",
+      "numero": 41
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 41
+     }
+    ]
+   }
+  ]
+ },
+ "wikistat:4cff2dfb-2feb-4264-9a17-8a67189c204c": {
+  "gare": 344,
+  "vittorie": 3,
+  "podi": 12,
+  "pole": 7,
+  "giri_veloci": 5,
+  "titoli": 0,
+  "motogp": {
+   "gare": 260,
+   "vittorie": 3,
+   "podi": 11,
+   "pole": 7,
+   "giri_veloci": 5,
+   "titoli": 0
+  },
+  "immagine": "Aleix Espargaro at the 2022 San Marino Grand Prix at Misano.jpg",
+  "fonte": "https://en.wikipedia.org/wiki/Aleix_Espargaro"
+ }
 }

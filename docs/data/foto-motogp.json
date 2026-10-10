@@ -1,22 +1,4 @@
 {
- "5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b": {
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg/500px-Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
-  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg/1280px-Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
-  "autore": "Denkmit",
-  "licenza": "CC BY-SA 4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
-  "file": "img/foto/8b4d02d756fd1790.jpg",
-  "file_grande": "img/foto/20b0c46301066831.jpg"
- },
- "nome:Jorge Martin": {
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg/500px-Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
-  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg/1280px-Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
-  "autore": "Denkmit",
-  "licenza": "CC BY-SA 4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
-  "file": "img/foto/8b4d02d756fd1790.jpg",
-  "file_grande": "img/foto/20b0c46301066831.jpg"
- },
  "f55b433d-38b8-4d1d-bb3a-a709c82a0260": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Marc_Marquez_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg/500px-Marc_Marquez_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg",
   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Marc_Marquez_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg/1280px-Marc_Marquez_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg",
@@ -34,6 +16,24 @@
   "pagina": "https://commons.wikimedia.org/wiki/File:Marc_Marquez_at_the_2026_Spanish_Grand_Prix_(cropped).jpg",
   "file": "img/foto/9e1cbe00926a901a.jpg",
   "file_grande": "img/foto/6cf588f48e4c0d46.jpg"
+ },
+ "5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg/500px-Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg/1280px-Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
+  "autore": "Denkmit",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
+  "file": "img/foto/8b4d02d756fd1790.jpg",
+  "file_grande": "img/foto/20b0c46301066831.jpg"
+ },
+ "nome:Jorge Martin": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg/500px-Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg/1280px-Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
+  "autore": "Denkmit",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
+  "file": "img/foto/8b4d02d756fd1790.jpg",
+  "file_grande": "img/foto/20b0c46301066831.jpg"
  },
  "ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Marco_Bezzecchi_at_the_2025_Malaysian_motorcycle_Grand_Prix.jpg/500px-Marco_Bezzecchi_at_the_2025_Malaysian_motorcycle_Grand_Prix.jpg",
@@ -506,6 +506,22 @@
   "licenza": "CC BY-SA 4.0",
   "pagina": "https://commons.wikimedia.org/wiki/File:Michele_Pirro_at_the_2025_Malaysian_Grand_Prix.jpg",
   "file": "img/foto/ee963a448b767572.jpg"
+ },
+ "4cff2dfb-2feb-4264-9a17-8a67189c204c": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Aleix_Espargaro_at_the_2022_San_Marino_Grand_Prix_at_Misano.jpg/500px-Aleix_Espargaro_at_the_2022_San_Marino_Grand_Prix_at_Misano.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Aleix_Espargaro_at_the_2022_San_Marino_Grand_Prix_at_Misano.jpg/1280px-Aleix_Espargaro_at_the_2022_San_Marino_Grand_Prix_at_Misano.jpg",
+  "autore": "Simon Patterson",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Aleix_Espargaro_at_the_2022_San_Marino_Grand_Prix_at_Misano.jpg",
+  "file": "img/foto/37d086a0d547c136.jpg"
+ },
+ "nome:Aleix Espargaro": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Aleix_Espargaro_at_the_2022_San_Marino_Grand_Prix_at_Misano.jpg/500px-Aleix_Espargaro_at_the_2022_San_Marino_Grand_Prix_at_Misano.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Aleix_Espargaro_at_the_2022_San_Marino_Grand_Prix_at_Misano.jpg/1280px-Aleix_Espargaro_at_the_2022_San_Marino_Grand_Prix_at_Misano.jpg",
+  "autore": "Simon Patterson",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Aleix_Espargaro_at_the_2022_San_Marino_Grand_Prix_at_Misano.jpg",
+  "file": "img/foto/37d086a0d547c136.jpg"
  },
  "9a6bd0ef-1531-4efa-9806-4b6435e75ba4": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/FIMCEVRepsol_2017_Albacete02_%28cropped%29.jpg/500px-FIMCEVRepsol_2017_Albacete02_%28cropped%29.jpg",

@@ -1,0 +1,12 @@
+{"serie": "MotoGP", "titolo_breve": "MotoGP Indonesia: pole Fernandez", "fonte": "Cronometraggio ufficiale MotoGP", "velocita": "+38%",
+ "scene": [
+  {"foto": "Raul Fernandez", "hook": true, "grido": true, "hook_titolo": "Fernandez, POLE!", "testo": "[Fernandez] *POLE*!"},
+  {"foto": "Raul Fernandez", "nome": "Raul Fernandez", "testo": "Pole in Indonesia con *un minuto, 28 secondi* e *852 millesimi*."},
+  {"foto": "Marco Bezzecchi", "nome": "Marco Bezzecchi", "testo": "Secondo è [Bezzecchi]."},
+  {"foto": "Fabio Di Giannantonio", "nome": "Fabio Di Giannantonio", "testo": "Terzo è [Di Giannantonio]."},
+  {"foto": "Marc Marquez", "alt": "ritratto", "nome": "Marc Marquez", "testo": "Quarto [Marquez]."},
+  {"foto": "Jorge Martin", "nome": "Jorge Martin", "testo": "Quinto [Martin]: in classifica i due sono divisi da *2 punti*."},
+  {"foto": "Francesco Bagnaia", "nome": "Francesco Bagnaia", "testo": "[Bagnaia] solo *decimo* in qualifica."},
+  {"foto": "Raul Fernandez", "nome": "Raul Fernandez", "testo": "La sprint è *oggi alle 9*."}
+ ],
+ "finale": {"foto": "Raul Fernandez", "domanda": "Chi vince la sprint?"}}

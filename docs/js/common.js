@@ -85,7 +85,7 @@ async function renderCountdown() {
       const diff = new Date(sess.inizio).getTime() - Date.now();
       el.classList.remove("muted");
       el.innerHTML = `<b>${esc(sess.nome)}</b> · ${esc(sess.gp)} · ${formattaDataOra(sess.inizio)} · ` +
-        (diff > 0 ? `<span class="cd-tempo">${testoConto(diff)}</span>` : `<span class="cd-tempo live">In corso</span>`);
+        (diff > 0 ? `<span class="cd-tempo">${testoConto(diff)}</span>` : `<a class="cd-tempo live" href="live.html?serie=${id === "cd-moto" ? "moto" : "f1"}"><i class="live-dot"></i>In corso</a>`);
     }
   };
   tick();
@@ -126,6 +126,7 @@ export function renderHeader(paginaAttuale) {
   const voci = [
     ["home", "index.html", "Home"],
     ["f1", "f1.html", "Formula 1"],
+    ["live", "live.html", '<i class="live-dot"></i>Live'],
     ["motogp", "motogp.html", "MotoGP"],
     ["piloti", "piloti.html", "Piloti"],
     ["classifiche", "classifiche.html", "Classifiche"],

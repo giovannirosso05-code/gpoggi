@@ -24,7 +24,7 @@ const REPO_BASE = "giovannirosso05-code/gpoggi";
 const CHAT_BASE = "559225883";          // la tua chat privata (la stessa del bot di MMA Oggi: un id utente vale per tutti i bot)
 const BOT_BASE = "Gpoggibot";
 const RAMO = "main";
-const VERSIONE = "radar-notizia-2 sessioni-4 2026-10-09";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
+const VERSIONE = "radar-notizia-2 live-1 2026-10-10";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
 const ETA_MASSIMA_SECONDI = 600;        // un comando più vecchio di 10 minuti non si esegue (Telegram può ripetere gli invii dopo un guasto)
 
 // comando -> [file del workflow, input del workflow o null, descrizione]
@@ -389,10 +389,39 @@ function pulsante(cb, env, ctx) {
   return testo("ok");
 }
 
+// Tempi dal vivo della MotoGP per la scheda Live del sito: il Worker li legge dalla fonte ufficiale e li ripassa con CORS aperto.
+// Lo schema non è documentato: si restituisce in forma difensiva; con ?raw=1 si vede il testo originale.
+const LIVE_MOTO = "https://api.motogp.pulselive.com/motogp/v1/timing-gateway/livetiming-lite";
+async function liveMoto(u) {
+  const CORS = { "Access-Control-Allow-Origin": "*", "Cache-Control": "public, max-age=3" };
+  try {
+    const r = await fetch(LIVE_MOTO, { headers: { Accept: "application/json" } });
+    const t = await r.text();
+    if (u.searchParams.get("raw")) return new Response(t, { status: r.status, headers: { ...CORS, "Content-Type": "application/json; charset=utf-8" } });
+    if (!r.ok) return new Response(JSON.stringify({ ok: false, stato: r.status }), { headers: { ...CORS, "Content-Type": "application/json" } });
+    let d; try { d = JSON.parse(t); } catch { d = null; }
+    const grezzo = d && (d.lead_riders || d.riders || d.classification || d.rider_list || d.data || d);
+    const lista = Array.isArray(grezzo) ? grezzo : (grezzo && typeof grezzo === "object" ? Object.values(grezzo) : []);
+    const piloti = lista.filter((x) => x && typeof x === "object").map((x, i) => ({
+      pos: Number(x.pos ?? x.position ?? x.rider_position ?? i + 1) || i + 1,
+      numero: x.rider_number ?? x.number ?? x.num ?? null,
+      nome: x.rider_name ? [x.rider_name, x.rider_surname].filter(Boolean).join(" ") : (x.name ?? x.rider ?? null),
+      team: x.team_name ?? x.team ?? null,
+      tempo: x.lap_time ?? x.last_lap_time ?? x.best_lap_time ?? x.time ?? null,
+      distacco: x.gap_first ?? x.gap ?? x.gap_to_leader ?? null,
+    }));
+    const testa = (d && typeof d === "object" && !Array.isArray(d)) ? d : {};
+    return new Response(JSON.stringify({ ok: piloti.length > 0, sessione: testa.session_name ?? testa.session ?? testa.category ?? null, giri: testa.lap ?? testa.current_lap ?? null, bandiera: testa.flag ?? testa.session_status ?? null, piloti }), { headers: { ...CORS, "Content-Type": "application/json; charset=utf-8" } });
+  } catch (e) {
+    return new Response(JSON.stringify({ ok: false, errore: String(e && e.message || e).slice(0, 120) }), { headers: { ...CORS, "Content-Type": "application/json" } });
+  }
+}
+
 export default {
   async fetch(req, env, ctx) {
     const u = new URL(req.url);
     if (req.method === "GET") {
+      if (u.pathname === "/live/motogp") return liveMoto(u);
       if (u.pathname === "/stato" || u.pathname === "/attiva") return servizio(req, env, u);
       return testo(`GP Oggi bot: ok · versione ${VERSIONE}`);
     }

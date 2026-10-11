@@ -1196,28 +1196,6 @@
     },
     {
      "pos": null,
-     "numero": 43,
-     "acronimo": "COL",
-     "nome": "Franco Colapinto",
-     "team": "Alpine",
-     "giri": 36,
-     "stato": "RIT",
-     "tempo": null,
-     "distacco": null
-    },
-    {
-     "pos": null,
-     "numero": 10,
-     "acronimo": "GAS",
-     "nome": "Pierre Gasly",
-     "team": "Alpine",
-     "giri": 35,
-     "stato": "RIT",
-     "tempo": null,
-     "distacco": null
-    },
-    {
-     "pos": null,
      "numero": 1,
      "acronimo": "NOR",
      "nome": "Lando Norris",
@@ -1229,11 +1207,11 @@
     },
     {
      "pos": null,
-     "numero": 23,
-     "acronimo": "ALB",
-     "nome": "Alexander Albon",
-     "team": "Williams",
-     "giri": 29,
+     "numero": 10,
+     "acronimo": "GAS",
+     "nome": "Pierre Gasly",
+     "team": "Alpine",
+     "giri": 35,
      "stato": "RIT",
      "tempo": null,
      "distacco": null
@@ -1256,6 +1234,28 @@
      "nome": "Lance Stroll",
      "team": "Aston Martin",
      "giri": 7,
+     "stato": "RIT",
+     "tempo": null,
+     "distacco": null
+    },
+    {
+     "pos": null,
+     "numero": 23,
+     "acronimo": "ALB",
+     "nome": "Alexander Albon",
+     "team": "Williams",
+     "giri": 29,
+     "stato": "RIT",
+     "tempo": null,
+     "distacco": null
+    },
+    {
+     "pos": null,
+     "numero": 43,
+     "acronimo": "COL",
+     "nome": "Franco Colapinto",
+     "team": "Alpine",
+     "giri": 36,
      "stato": "RIT",
      "tempo": null,
      "distacco": null

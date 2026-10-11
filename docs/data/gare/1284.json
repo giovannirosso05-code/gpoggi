@@ -716,6 +716,17 @@
     },
     {
      "pos": null,
+     "numero": 5,
+     "acronimo": "BOR",
+     "nome": "Gabriel Bortoleto",
+     "team": "Audi",
+     "giri": null,
+     "stato": "SQ",
+     "tempo": null,
+     "distacco": null
+    },
+    {
+     "pos": null,
      "numero": 27,
      "acronimo": "HUL",
      "nome": "Nico Hulkenberg",
@@ -733,17 +744,6 @@
      "team": "Racing Bulls",
      "giri": 0,
      "stato": "NP",
-     "tempo": null,
-     "distacco": null
-    },
-    {
-     "pos": null,
-     "numero": 5,
-     "acronimo": "BOR",
-     "nome": "Gabriel Bortoleto",
-     "team": "Audi",
-     "giri": null,
-     "stato": "SQ",
      "tempo": null,
      "distacco": null
     }
@@ -1207,22 +1207,11 @@
     },
     {
      "pos": null,
-     "numero": 27,
-     "acronimo": "HUL",
-     "nome": "Nico Hulkenberg",
-     "team": "Audi",
-     "giri": 7,
-     "stato": "RIT",
-     "tempo": null,
-     "distacco": null
-    },
-    {
-     "pos": null,
-     "numero": 30,
-     "acronimo": "LAW",
-     "nome": "Liam Lawson",
-     "team": "Racing Bulls",
-     "giri": 6,
+     "numero": 6,
+     "acronimo": "HAD",
+     "nome": "Isack Hadjar",
+     "team": "Red Bull Racing",
+     "giri": 4,
      "stato": "RIT",
      "tempo": null,
      "distacco": null
@@ -1240,11 +1229,22 @@
     },
     {
      "pos": null,
-     "numero": 6,
-     "acronimo": "HAD",
-     "nome": "Isack Hadjar",
-     "team": "Red Bull Racing",
-     "giri": 4,
+     "numero": 27,
+     "acronimo": "HUL",
+     "nome": "Nico Hulkenberg",
+     "team": "Audi",
+     "giri": 7,
+     "stato": "RIT",
+     "tempo": null,
+     "distacco": null
+    },
+    {
+     "pos": null,
+     "numero": 30,
+     "acronimo": "LAW",
+     "nome": "Liam Lawson",
+     "team": "Racing Bulls",
+     "giri": 6,
      "stato": "RIT",
      "tempo": null,
      "distacco": null

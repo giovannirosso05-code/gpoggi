@@ -4,8 +4,8 @@
  "nome": "Max Verstappen",
  "team": "Red Bull Racing",
  "colore": "4781D7",
- "posizione": 6,
- "punti": 188.0,
+ "posizione": 4,
+ "punti": 221.0,
  "foto": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg/500px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg",
   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg/1280px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg",
@@ -255,17 +255,23 @@
    "id": 1296,
    "nome": "Gran Premio di Singapore",
    "inizio": "2026-10-09T08:30:00+00:00",
-   "qualifiche": null,
+   "qualifiche": {
+    "pos": 1,
+    "stato": null
+   },
    "sprint": {
     "pos": 1,
     "stato": null
    },
-   "gara": null
+   "gara": {
+    "pos": 1,
+    "stato": null
+   }
   }
  ],
- "vittorie": 1,
- "podi": 8,
- "pole": 1,
+ "vittorie": 2,
+ "podi": 9,
+ "pole": 2,
  "miglior_arrivo": 1,
  "ritiri": 4
 }

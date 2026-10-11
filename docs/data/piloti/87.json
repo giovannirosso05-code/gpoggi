@@ -5,7 +5,7 @@
  "team": "Haas F1 Team",
  "colore": "9C9FA2",
  "posizione": 13,
- "punti": 20.0,
+ "punti": 23.0,
  "foto": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/2025_Japan_GP_-_Haas_-_Oliver_Bearman_-_Thursday_%28cropped%29.jpg/500px-2025_Japan_GP_-_Haas_-_Oliver_Bearman_-_Thursday_%28cropped%29.jpg",
   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/2025_Japan_GP_-_Haas_-_Oliver_Bearman_-_Thursday_%28cropped%29.jpg/1280px-2025_Japan_GP_-_Haas_-_Oliver_Bearman_-_Thursday_%28cropped%29.jpg",
@@ -255,12 +255,18 @@
    "id": 1296,
    "nome": "Gran Premio di Singapore",
    "inizio": "2026-10-09T08:30:00+00:00",
-   "qualifiche": null,
+   "qualifiche": {
+    "pos": 12,
+    "stato": null
+   },
    "sprint": {
     "pos": 6,
     "stato": null
    },
-   "gara": null
+   "gara": {
+    "pos": 12,
+    "stato": null
+   }
   }
  ],
  "vittorie": 0,

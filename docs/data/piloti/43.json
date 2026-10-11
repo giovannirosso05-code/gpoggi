@@ -258,17 +258,23 @@
    "id": 1296,
    "nome": "Gran Premio di Singapore",
    "inizio": "2026-10-09T08:30:00+00:00",
-   "qualifiche": null,
+   "qualifiche": {
+    "pos": 16,
+    "stato": null
+   },
    "sprint": {
     "pos": null,
     "stato": "RIT"
    },
-   "gara": null
+   "gara": {
+    "pos": null,
+    "stato": "RIT"
+   }
   }
  ],
  "vittorie": 0,
  "podi": 0,
  "pole": 0,
  "miglior_arrivo": 6,
- "ritiri": 1
+ "ritiri": 2
 }

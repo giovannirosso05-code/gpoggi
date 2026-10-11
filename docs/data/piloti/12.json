@@ -5,7 +5,7 @@
  "team": "Mercedes",
  "colore": "00D7B6",
  "posizione": 1,
- "punti": 320.0,
+ "punti": 340.0,
  "foto": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Kimi_Antonelli_at_the_2025_US_Grand_Prix_in_Austin%2C_TX_%28cropped%29.jpg/500px-Kimi_Antonelli_at_the_2025_US_Grand_Prix_in_Austin%2C_TX_%28cropped%29.jpg",
   "grande": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Kimi_Antonelli_at_the_2025_US_Grand_Prix_in_Austin%2C_TX_%28cropped%29.jpg",
@@ -259,16 +259,22 @@
    "id": 1296,
    "nome": "Gran Premio di Singapore",
    "inizio": "2026-10-09T08:30:00+00:00",
-   "qualifiche": null,
+   "qualifiche": {
+    "pos": 4,
+    "stato": null
+   },
    "sprint": {
     "pos": 4,
     "stato": null
    },
-   "gara": null
+   "gara": {
+    "pos": 3,
+    "stato": null
+   }
   }
  ],
  "vittorie": 8,
- "podi": 13,
+ "podi": 14,
  "pole": 6,
  "miglior_arrivo": 1,
  "ritiri": 1

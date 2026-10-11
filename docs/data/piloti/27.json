@@ -4,8 +4,8 @@
  "nome": "Nico Hulkenberg",
  "team": "Audi",
  "colore": "F50537",
- "posizione": 15,
- "punti": 7.0,
+ "posizione": 14,
+ "punti": 13.0,
  "foto": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/2019_Formula_One_tests_Barcelona%2C_Hulkenberg_%2840287128313%29.jpg/500px-2019_Formula_One_tests_Barcelona%2C_Hulkenberg_%2840287128313%29.jpg",
   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/2019_Formula_One_tests_Barcelona%2C_Hulkenberg_%2840287128313%29.jpg/1280px-2019_Formula_One_tests_Barcelona%2C_Hulkenberg_%2840287128313%29.jpg",
@@ -258,12 +258,18 @@
    "id": 1296,
    "nome": "Gran Premio di Singapore",
    "inizio": "2026-10-09T08:30:00+00:00",
-   "qualifiche": null,
+   "qualifiche": {
+    "pos": 11,
+    "stato": null
+   },
    "sprint": {
     "pos": 7,
     "stato": null
    },
-   "gara": null
+   "gara": {
+    "pos": 8,
+    "stato": null
+   }
   }
  ],
  "vittorie": 0,

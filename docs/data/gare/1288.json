@@ -1218,6 +1218,17 @@
     },
     {
      "pos": null,
+     "numero": 11,
+     "acronimo": "PER",
+     "nome": "Sergio Perez",
+     "team": "Cadillac",
+     "giri": 4,
+     "stato": "RIT",
+     "tempo": null,
+     "distacco": null
+    },
+    {
+     "pos": null,
      "numero": 18,
      "acronimo": "STR",
      "nome": "Lance Stroll",
@@ -1234,17 +1245,6 @@
      "nome": "Carlos Sainz",
      "team": "Williams",
      "giri": 23,
-     "stato": "RIT",
-     "tempo": null,
-     "distacco": null
-    },
-    {
-     "pos": null,
-     "numero": 11,
-     "acronimo": "PER",
-     "nome": "Sergio Perez",
-     "team": "Cadillac",
-     "giri": 4,
      "stato": "RIT",
      "tempo": null,
      "distacco": null

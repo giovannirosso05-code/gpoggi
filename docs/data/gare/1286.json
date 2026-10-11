@@ -1196,6 +1196,28 @@
     },
     {
      "pos": null,
+     "numero": 1,
+     "acronimo": "NOR",
+     "nome": "Lando Norris",
+     "team": "McLaren",
+     "giri": 43,
+     "stato": "RIT",
+     "tempo": null,
+     "distacco": null
+    },
+    {
+     "pos": null,
+     "numero": 3,
+     "acronimo": "VER",
+     "nome": "Max Verstappen",
+     "team": "Red Bull Racing",
+     "giri": 0,
+     "stato": "RIT",
+     "tempo": null,
+     "distacco": null
+    },
+    {
+     "pos": null,
      "numero": 16,
      "acronimo": "LEC",
      "nome": "Charles Leclerc",
@@ -1218,28 +1240,6 @@
     },
     {
      "pos": null,
-     "numero": 1,
-     "acronimo": "NOR",
-     "nome": "Lando Norris",
-     "team": "McLaren",
-     "giri": 43,
-     "stato": "RIT",
-     "tempo": null,
-     "distacco": null
-    },
-    {
-     "pos": null,
-     "numero": 87,
-     "acronimo": "BEA",
-     "nome": "Oliver Bearman",
-     "team": "Haas F1 Team",
-     "giri": 27,
-     "stato": "RIT",
-     "tempo": null,
-     "distacco": null
-    },
-    {
-     "pos": null,
      "numero": 77,
      "acronimo": "BOT",
      "nome": "Valtteri Bottas",
@@ -1251,11 +1251,11 @@
     },
     {
      "pos": null,
-     "numero": 3,
-     "acronimo": "VER",
-     "nome": "Max Verstappen",
-     "team": "Red Bull Racing",
-     "giri": 0,
+     "numero": 87,
+     "acronimo": "BEA",
+     "nome": "Oliver Bearman",
+     "team": "Haas F1 Team",
+     "giri": 27,
      "stato": "RIT",
      "tempo": null,
      "distacco": null

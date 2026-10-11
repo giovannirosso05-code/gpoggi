@@ -1218,17 +1218,6 @@
     },
     {
      "pos": null,
-     "numero": 81,
-     "acronimo": "PIA",
-     "nome": "Oscar Piastri",
-     "team": "McLaren",
-     "giri": 55,
-     "stato": "RIT",
-     "tempo": null,
-     "distacco": null
-    },
-    {
-     "pos": null,
      "numero": 11,
      "acronimo": "PER",
      "nome": "Sergio Perez",
@@ -1245,6 +1234,17 @@
      "nome": "Valtteri Bottas",
      "team": "Cadillac",
      "giri": 13,
+     "stato": "RIT",
+     "tempo": null,
+     "distacco": null
+    },
+    {
+     "pos": null,
+     "numero": 81,
+     "acronimo": "PIA",
+     "nome": "Oscar Piastri",
+     "team": "McLaren",
+     "giri": 55,
      "stato": "RIT",
      "tempo": null,
      "distacco": null

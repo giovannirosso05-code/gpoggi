@@ -1,5 +1,19 @@
 [
  {
+  "id": 1296,
+  "nome": "Gran Premio di Singapore",
+  "circuito": "Singapore",
+  "paese": "Singapore",
+  "data": "2026-10-11T14:00:00+00:00",
+  "titolo": "Max Verstappen vince il Gran Premio di Singapore",
+  "paragrafi": [
+   "Max Verstappen (Red Bull Racing) vince il Gran Premio di Singapore in 1:42:00.785, davanti a Charles Leclerc (+7.335) e a Kimi Antonelli (+24.573).",
+   "La pole position era stata di Max Verstappen con 1:31.373.",
+   "Si sono ritirati 4 piloti: Alexander Albon, Gabriel Bortoleto, Lance Stroll, Franco Colapinto.",
+   "Dopo la gara guida il campionato piloti Kimi Antonelli con 340 punti; tra i costruttori è primo Mercedes con 578."
+  ]
+ },
+ {
   "id": 1308,
   "nome": "Gran Premio del Bahrain",
   "circuito": "Sepang International Circuit",

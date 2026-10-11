@@ -152,12 +152,17 @@ def fmt_distacco(v):
 def risultati_sessione(sessione, piloti):
     righe = get("session_result", {"session_key": sessione["session_key"]}, definitivo=True)
     out = []
-    for r in sorted(righe, key=lambda x: (x.get("position") is None, x.get("position") or 0)):
+    # a volte la posizione e' una sigla ("RT" = ritirato senza tempo, ecc.): va in fondo e non fa fermare l'aggiornamento
+    def _pos(x):
+        v = x.get("position")
+        return v if isinstance(v, int) else None
+    for r in sorted(righe, key=lambda x: (_pos(x) is None, _pos(x) or 0, x.get("driver_number") or 0)):
         p = piloti.get(r["driver_number"], {})
-        stato = "RIT" if r.get("dnf") else "NP" if r.get("dns") else "SQ" if r.get("dsq") else None
+        sigla = r.get("position") if isinstance(r.get("position"), str) else None
+        stato = "RIT" if r.get("dnf") or sigla == "RT" else "NP" if r.get("dns") else "SQ" if r.get("dsq") else sigla
         durata = ultimo_valore(r.get("duration"))
         out.append({
-            "pos": r.get("position"),
+            "pos": _pos(r),
             "numero": r["driver_number"],
             "acronimo": p.get("acronimo"),
             "nome": p.get("nome"),

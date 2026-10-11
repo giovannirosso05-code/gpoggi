@@ -4,7 +4,7 @@
  "nome": "Gabriel Bortoleto",
  "team": "Audi",
  "colore": "F50537",
- "posizione": 14,
+ "posizione": 15,
  "punti": 10.0,
  "foto": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Gabriel_Bortoleto_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8581%29_cropped.jpg/500px-Gabriel_Bortoleto_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8581%29_cropped.jpg",
@@ -258,17 +258,23 @@
    "id": 1296,
    "nome": "Gran Premio di Singapore",
    "inizio": "2026-10-09T08:30:00+00:00",
-   "qualifiche": null,
+   "qualifiche": {
+    "pos": 15,
+    "stato": null
+   },
    "sprint": {
     "pos": null,
     "stato": "RIT"
    },
-   "gara": null
+   "gara": {
+    "pos": null,
+    "stato": "RIT"
+   }
   }
  ],
  "vittorie": 0,
  "podi": 0,
  "pole": 0,
  "miglior_arrivo": 8,
- "ritiri": 0
+ "ritiri": 1
 }

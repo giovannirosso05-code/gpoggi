@@ -1196,17 +1196,6 @@
     },
     {
      "pos": null,
-     "numero": 55,
-     "acronimo": "SAI",
-     "nome": "Carlos Sainz",
-     "team": "Williams",
-     "giri": 43,
-     "stato": "RIT",
-     "tempo": null,
-     "distacco": null
-    },
-    {
-     "pos": null,
      "numero": 11,
      "acronimo": "PER",
      "nome": "Sergio Perez",
@@ -1234,6 +1223,17 @@
      "nome": "Lewis Hamilton",
      "team": "Ferrari",
      "giri": 6,
+     "stato": "RIT",
+     "tempo": null,
+     "distacco": null
+    },
+    {
+     "pos": null,
+     "numero": 55,
+     "acronimo": "SAI",
+     "nome": "Carlos Sainz",
+     "team": "Williams",
+     "giri": 43,
      "stato": "RIT",
      "tempo": null,
      "distacco": null

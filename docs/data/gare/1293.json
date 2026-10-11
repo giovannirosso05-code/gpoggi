@@ -1229,17 +1229,6 @@
     },
     {
      "pos": null,
-     "numero": 18,
-     "acronimo": "STR",
-     "nome": "Lance Stroll",
-     "team": "Aston Martin",
-     "giri": 26,
-     "stato": "RIT",
-     "tempo": null,
-     "distacco": null
-    },
-    {
-     "pos": null,
      "numero": 14,
      "acronimo": "ALO",
      "nome": "Fernando Alonso",
@@ -1256,6 +1245,17 @@
      "nome": "Charles Leclerc",
      "team": "Ferrari",
      "giri": 1,
+     "stato": "RIT",
+     "tempo": null,
+     "distacco": null
+    },
+    {
+     "pos": null,
+     "numero": 18,
+     "acronimo": "STR",
+     "nome": "Lance Stroll",
+     "team": "Aston Martin",
+     "giri": 26,
      "stato": "RIT",
      "tempo": null,
      "distacco": null

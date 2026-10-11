@@ -1196,17 +1196,6 @@
     },
     {
      "pos": null,
-     "numero": 23,
-     "acronimo": "ALB",
-     "nome": "Alexander Albon",
-     "team": "Williams",
-     "giri": 55,
-     "stato": null,
-     "tempo": null,
-     "distacco": "+11 LAPS"
-    },
-    {
-     "pos": null,
      "numero": 14,
      "acronimo": "ALO",
      "nome": "Fernando Alonso",
@@ -1215,6 +1204,28 @@
      "stato": "RIT",
      "tempo": null,
      "distacco": null
+    },
+    {
+     "pos": null,
+     "numero": 18,
+     "acronimo": "STR",
+     "nome": "Lance Stroll",
+     "team": "Aston Martin",
+     "giri": 5,
+     "stato": "RIT",
+     "tempo": null,
+     "distacco": null
+    },
+    {
+     "pos": null,
+     "numero": 23,
+     "acronimo": "ALB",
+     "nome": "Alexander Albon",
+     "team": "Williams",
+     "giri": 55,
+     "stato": null,
+     "tempo": null,
+     "distacco": "+11 LAPS"
     },
     {
      "pos": null,
@@ -1234,17 +1245,6 @@
      "nome": "Valtteri Bottas",
      "team": "Cadillac",
      "giri": 15,
-     "stato": "RIT",
-     "tempo": null,
-     "distacco": null
-    },
-    {
-     "pos": null,
-     "numero": 18,
-     "acronimo": "STR",
-     "nome": "Lance Stroll",
-     "team": "Aston Martin",
-     "giri": 5,
      "stato": "RIT",
      "tempo": null,
      "distacco": null

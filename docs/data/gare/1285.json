@@ -1174,17 +1174,6 @@
     },
     {
      "pos": null,
-     "numero": 11,
-     "acronimo": "PER",
-     "nome": "Sergio Perez",
-     "team": "Cadillac",
-     "giri": 39,
-     "stato": "RIT",
-     "tempo": null,
-     "distacco": null
-    },
-    {
-     "pos": null,
      "numero": 1,
      "acronimo": "NOR",
      "nome": "Lando Norris",
@@ -1196,11 +1185,11 @@
     },
     {
      "pos": null,
-     "numero": 63,
-     "acronimo": "RUS",
-     "nome": "George Russell",
-     "team": "Mercedes",
-     "giri": 29,
+     "numero": 11,
+     "acronimo": "PER",
+     "nome": "Sergio Perez",
+     "team": "Cadillac",
+     "giri": 39,
      "stato": "RIT",
      "tempo": null,
      "distacco": null
@@ -1235,6 +1224,17 @@
      "team": "Racing Bulls",
      "giri": 0,
      "stato": "NP",
+     "tempo": null,
+     "distacco": null
+    },
+    {
+     "pos": null,
+     "numero": 63,
+     "acronimo": "RUS",
+     "nome": "George Russell",
+     "team": "Mercedes",
+     "giri": 29,
+     "stato": "RIT",
      "tempo": null,
      "distacco": null
     }

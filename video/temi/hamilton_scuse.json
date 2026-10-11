@@ -1,0 +1,57 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Hamilton: «È stata colpa mia»",
+ "fonte": "Sky Sports · Autosport · Motorsport.com · Formula1.com",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto": "Lewis Hamilton",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "hook": true,
+   "grido": true,
+   "hook_titolo": "Hamilton: «Colpa mia»",
+   "testo": "[Hamilton] *AMMETTE*: *colpa mia*!"
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "nome": "Lewis Hamilton",
+   "testo": "Al giro *trentanove*, con la *virtual safety car*, la Ferrari chiama [Hamilton] ai box. Lui *resta fuori*: dice di aver *mancato l'ingresso*."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "nome": "Lewis Hamilton",
+   "testo": "Le gomme *finiscono*, [Antonelli], [Norris] e [Piastri] lo passano. Chiude *sesto*, a *111 punti* da [Antonelli]."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "nome": "Lewis Hamilton",
+   "testo": "Alla radio dice: *scusate ragazzi, vi ho deluso*. E poi: *una lezione dolorosa, mi prendo ogni responsabilità*."
+  },
+  {
+   "foto": "Frédéric Vasseur",
+   "alt": "ritratto",
+   "nome": "Frédéric Vasseur",
+   "testo": "[Vasseur] parla di *errore*, ma dice: *non date la colpa alla squadra*."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "nome": "Lewis Hamilton",
+   "testo": "[Button] lo *rispetta* per aver chiesto scusa. [Schiff] dice che forse ha fatto la *scelta sbagliata*."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "Ogni giorno la *rassegna* qui, su *GP Oggi*."
+  }
+ ],
+ "finale": {
+  "foto": "Lewis Hamilton",
+  "domanda": "Errore di Hamilton o della Ferrari?"
+ }
+}

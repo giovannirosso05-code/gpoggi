@@ -21,8 +21,8 @@ def html_copertina(pilota, righe, serie="MotoGP", alt=None, pos="center 12%"):
 html,body{{margin:0;width:{n.W}px;height:{n.H}px;overflow:hidden;position:relative;background:#0b0b0e;font-family:Inter,sans-serif}}
 .bg{{position:absolute;inset:0;background:url(data:image/jpeg;base64,{n.b64(n.file_foto(f))}) {pos}/cover no-repeat}}
 .velo{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 22%,rgba(0,0,0,0) 45%,rgba(8,8,10,.92) 78%,#0b0b0e 100%)}}
-.logo{{position:absolute;left:50px;top:150px;width:190px}}
-.tag{{position:absolute;left:265px;top:172px;font:700 30px Oswald;letter-spacing:.06em;text-transform:uppercase;background:{col};color:#fff;padding:4px 16px;border-radius:6px}}
+.logo{{position:absolute;left:50px;top:250px;width:190px}}
+.tag{{position:absolute;left:265px;top:272px;font:700 30px Oswald;letter-spacing:.06em;text-transform:uppercase;background:{col};color:#fff;padding:4px 16px;border-radius:6px}}
 .t{{position:absolute;left:60px;top:1040px;font:700 150px/1.04 Oswald;text-transform:uppercase;color:#fff;-webkit-text-stroke:2px #000;paint-order:stroke fill}}
 .cred{{position:absolute;right:40px;bottom:36px;font:500 20px Inter;color:rgba(255,255,255,.75);max-width:600px;text-align:right}}
 </style><div class=bg></div><div class=velo></div><img class=logo src="data:image/png;base64,{logo}"><div class=tag>Ultim'ora</div><div class=t>{strisce}</div><div class=cred>{n.esc(cred)}</div>"""

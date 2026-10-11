@@ -13,6 +13,13 @@
    "licenza": "CC BY 2.0",
    "pagina": "https://commons.wikimedia.org/wiki/File:Marc_M%C3%A1rquez_2014_Catalunya_2.jpeg",
    "titolo": "Marc Márquez 2014 Catalunya 2.jpeg"
+  },
+  "pista": {
+   "file": "img/foto-extra/marc_marquez_pista.jpg",
+   "autore": "Pavel21kriz",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Marc_M%C3%A1rquez_at_Czech_Motorcycle_Grand_Prix_at_Brno_2025.jpg",
+   "titolo": "Marc Márquez at Czech Motorcycle Grand Prix at Brno 2025.jpg"
   }
  },
  "Frédéric Vasseur": {
@@ -120,6 +127,69 @@
    "licenza": "CC BY-SA 4.0",
    "pagina": "https://commons.wikimedia.org/wiki/File:Mclaren_MCL40_-_Oscar_Piastri_enters_the_Nissin_Brake_Hairpin_at_Suzuka_during_the_2026_Japanese_GP_%2855195174246%29.jpg",
    "titolo": "Mclaren MCL40 - Oscar Piastri enters the Nissin Brake Hairpin at Suzuka during the 2026 Japanese GP (55195174246).jpg"
+  }
+ },
+ "Marco Bezzecchi": {
+  "pista": {
+   "file": "img/foto-extra/marco_bezzecchi_pista.jpg",
+   "autore": "Liauzh",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:MotoGP_2025_Malaysian_Grand_Prix_-_Aprilia_Racing_-_Marco_Bezzecchi.jpg",
+   "titolo": "MotoGP 2025 Malaysian Grand Prix - Aprilia Racing - Marco Bezzecchi.jpg"
+  }
+ },
+ "Ai Ogura": {
+  "pista": {
+   "file": "img/foto-extra/ai_ogura_pista.jpg",
+   "autore": "Liauzh",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:MotoGP_2025_Malaysian_Grand_Prix_-_Trackhouse_Racing_-_Ai_Ogura.jpg",
+   "titolo": "MotoGP 2025 Malaysian Grand Prix - Trackhouse Racing - Ai Ogura.jpg"
+  }
+ },
+ "Fabio Di Giannantonio": {
+  "pista": {
+   "file": "img/foto-extra/fabio_di_giannantonio_pista.jpg",
+   "autore": "Liauzh",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:MotoGP_2025_Malaysian_Grand_Prix_-_VR46_Racing_Team_-_Fabio_Di_Giannantonio.jpg",
+   "titolo": "MotoGP 2025 Malaysian Grand Prix - VR46 Racing Team - Fabio Di Giannantonio.jpg"
+  }
+ },
+ "Raul Fernandez": {
+  "pista": {
+   "file": "img/foto-extra/raul_fernandez_pista.jpg",
+   "autore": "Liauzh",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:MotoGP_2025_Malaysian_Grand_Prix_-_Trackhouse_Racing_-_Ra%C3%BAl_Fern%C3%A1ndez.jpg",
+   "titolo": "MotoGP 2025 Malaysian Grand Prix - Trackhouse Racing - Raúl Fernández.jpg"
+  }
+ },
+ "Pedro Acosta": {
+  "pista": {
+   "file": "img/foto-extra/pedro_acosta_pista.jpg",
+   "autore": "Liauzh",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:MotoGP_2025_Malaysian_Grand_Prix_-_KTM_Factory_Racing_-_Pedro_Acosta.jpg",
+   "titolo": "MotoGP 2025 Malaysian Grand Prix - KTM Factory Racing - Pedro Acosta.jpg"
+  }
+ },
+ "Francesco Bagnaia": {
+  "pista": {
+   "file": "img/foto-extra/francesco_bagnaia_pista.jpg",
+   "autore": "Liauzh",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:MotoGP_2025_Malaysian_Grand_Prix_-_Ducati_Lenovo_-_Francesco_Bagnaia.jpg",
+   "titolo": "MotoGP 2025 Malaysian Grand Prix - Ducati Lenovo - Francesco Bagnaia.jpg"
+  }
+ },
+ "Alex Marquez": {
+  "pista": {
+   "file": "img/foto-extra/alex_marquez_pista.jpg",
+   "autore": "Liauzh",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:MotoGP_2025_Malaysian_Grand_Prix_-_Gresini_Racing_-_%C3%81lex_M%C3%A1rquez.jpg",
+   "titolo": "MotoGP 2025 Malaysian Grand Prix - Gresini Racing - Álex Márquez.jpg"
   }
  }
 }

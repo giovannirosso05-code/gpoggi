@@ -1,0 +1,140 @@
+{
+ "giri": 62,
+ "griglia": {
+  "3": 1,
+  "16": 2,
+  "44": 3,
+  "12": 4,
+  "1": 5,
+  "81": 6,
+  "10": 7,
+  "30": 8,
+  "41": 9,
+  "27": 10,
+  "87": 11,
+  "31": 12,
+  "55": 13,
+  "5": 14,
+  "43": 15,
+  "23": 16,
+  "11": 17,
+  "77": 18,
+  "63": 19,
+  "14": 20,
+  "18": 21,
+  "6": 22
+ },
+ "giro_veloce": 16,
+ "voci": [
+  {
+   "giro": 1,
+   "tipo": "via",
+   "testo": "Parte la gara alle 14:03 (ora italiana); rischio pioggia indicato al 5%."
+  },
+  {
+   "giro": 1,
+   "tipo": "sorpasso",
+   "testo": "Primo giro: Sainz risale dal 13° al 10° posto."
+  },
+  {
+   "giro": 8,
+   "tipo": "safety",
+   "testo": "**Virtual safety car.**"
+  },
+  {
+   "giro": 8,
+   "tipo": "ritiro",
+   "testo": "**Gabriel Bortoleto si ritira** (7 giri completati su 62)."
+  },
+  {
+   "giro": 9,
+   "tipo": "safety",
+   "testo": "Termina la virtual safety car."
+  },
+  {
+   "giro": 18,
+   "tipo": "pit",
+   "testo": "Ai box: Hamilton."
+  },
+  {
+   "giro": 23,
+   "tipo": "pit",
+   "testo": "Ai box: Antonelli."
+  },
+  {
+   "giro": 24,
+   "tipo": "pit",
+   "testo": "Ai box: Leclerc."
+  },
+  {
+   "giro": 30,
+   "tipo": "ritiro",
+   "testo": "**Franco Colapinto si ritira** (29 giri completati su 62)."
+  },
+  {
+   "giro": 32,
+   "tipo": "pit",
+   "testo": "Ai box: Verstappen, Norris."
+  },
+  {
+   "giro": 33,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 33,
+   "tipo": "pit",
+   "testo": "Ai box: Piastri."
+  },
+  {
+   "giro": 37,
+   "tipo": "ritiro",
+   "testo": "**Lance Stroll si ritira** (36 giri completati su 62)."
+  },
+  {
+   "giro": 39,
+   "tipo": "safety",
+   "testo": "**Virtual safety car.**"
+  },
+  {
+   "giro": 39,
+   "tipo": "pit",
+   "testo": "Ai box: Leclerc, Antonelli."
+  },
+  {
+   "giro": 40,
+   "tipo": "safety",
+   "testo": "Termina la virtual safety car."
+  },
+  {
+   "giro": 41,
+   "tipo": "pit",
+   "testo": "Ai box: Piastri."
+  },
+  {
+   "giro": 46,
+   "tipo": "sorpasso",
+   "testo": "**Leclerc supera Hamilton** e sale al 2° posto."
+  },
+  {
+   "giro": 54,
+   "tipo": "sorpasso",
+   "testo": "**Hamilton supera Norris** e sale al 3° posto."
+  },
+  {
+   "giro": 54,
+   "tipo": "sorpasso",
+   "testo": "**Antonelli supera Norris** e sale al 4° posto."
+  },
+  {
+   "giro": 60,
+   "tipo": "ritiro",
+   "testo": "**Alexander Albon si ritira** (59 giri completati su 62)."
+  },
+  {
+   "giro": 62,
+   "tipo": "arrivo",
+   "testo": "**Bandiera a scacchi: vince Max Verstappen** (Red Bull Racing), davanti a Charles Leclerc e Kimi Antonelli."
+  }
+ ]
+}

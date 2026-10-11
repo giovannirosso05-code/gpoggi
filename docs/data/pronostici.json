@@ -1,10 +1,10 @@
 {
- "aggiornato": "2026-10-11T11:58:23+00:00",
+ "aggiornato": "2026-10-11T21:25:33+00:00",
  "metodo": "Indice da 0 a 100 calcolato da GP Oggi: 45% forma nelle ultime 5 gare, 35% classifica del campionato, 20% risultato sullo stesso circuito l'anno scorso. È un'opinione basata sui numeri, non una previsione ufficiale né una certezza.",
  "f1": {
-  "gp": "Gran Premio di Singapore",
-  "circuito": "Singapore",
-  "gara": "2026-10-11T12:00:00+00:00",
+  "gp": "Gran Premio degli Stati Uniti",
+  "circuito": "Austin",
+  "gara": "2026-10-25T20:00:00+00:00",
   "favoriti": [
    {
     "numero": 12,
@@ -13,51 +13,47 @@
     "indice": 100,
     "motivi": [
      "2 vittorie nelle ultime 5 gare",
-     "1° nel campionato (320 punti)",
-     "Singapore 2025: 5°"
-    ]
-   },
-   {
-    "numero": 63,
-    "nome": "George Russell",
-    "team": "Mercedes",
-    "indice": 91,
-    "motivi": [
-     "1 vittoria nelle ultime 5 gare",
-     "2° nel campionato (236 punti)",
-     "Singapore 2025: 1°"
+     "1° nel campionato (340 punti)"
     ]
    },
    {
     "numero": 3,
     "nome": "Max Verstappen",
     "team": "Red Bull Racing",
-    "indice": 80,
+    "indice": 87,
     "motivi": [
-     "1 vittoria nelle ultime 5 gare",
-     "6° nel campionato (188 punti)",
-     "Singapore 2025: 2°"
+     "2 vittorie nelle ultime 5 gare",
+     "4° nel campionato (221 punti)"
     ]
    },
    {
-    "numero": 1,
-    "nome": "Lando Norris",
-    "team": "McLaren",
+    "numero": 63,
+    "nome": "George Russell",
+    "team": "Mercedes",
     "indice": 67,
     "motivi": [
      "1 vittoria nelle ultime 5 gare",
-     "5° nel campionato (188 punti)",
-     "Singapore 2025: 3°"
+     "2° nel campionato (238 punti)"
     ]
    },
    {
     "numero": 16,
     "nome": "Charles Leclerc",
     "team": "Ferrari",
+    "indice": 63,
+    "motivi": [
+     "1 podio nelle ultime 5 gare",
+     "5° nel campionato (215 punti)"
+    ]
+   },
+   {
+    "numero": 44,
+    "nome": "Lewis Hamilton",
+    "team": "Ferrari",
     "indice": 57,
     "motivi": [
-     "4° nel campionato (191 punti)",
-     "Singapore 2025: 6°"
+     "1 podio nelle ultime 5 gare",
+     "3° nel campionato (229 punti)"
     ]
    }
   ]

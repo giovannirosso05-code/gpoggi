@@ -29,6 +29,16 @@
   "pole": 118,
   "giri_veloci": 69
  },
+ "f1:3": {
+  "nascita": "1997-09-30",
+  "nazionalita": "Dutch",
+  "titoli": 4,
+  "gare": 249,
+  "vittorie": 72,
+  "podi": 135,
+  "pole": 66,
+  "giri_veloci": 38
+ },
  "f1:16": {
   "nascita": "1997-10-16",
   "nazionalita": "Monegasque",
@@ -48,16 +58,6 @@
   "podi": 49,
   "pole": 33,
   "giri_veloci": 20
- },
- "f1:3": {
-  "nascita": "1997-09-30",
-  "nazionalita": "Dutch",
-  "titoli": 4,
-  "gare": 249,
-  "vittorie": 72,
-  "podi": 135,
-  "pole": 66,
-  "giri_veloci": 38
  },
  "f1:81": {
   "nascita": "2001-04-06",
@@ -129,16 +129,6 @@
   "pole": 0,
   "giri_veloci": 0
  },
- "f1:5": {
-  "nascita": "2004-10-14",
-  "nazionalita": "Brazilian",
-  "titoli": 0,
-  "gare": 40,
-  "vittorie": 0,
-  "podi": 0,
-  "pole": 0,
-  "giri_veloci": 0
- },
  "f1:27": {
   "nascita": "1987-08-19",
   "nazionalita": "German",
@@ -148,6 +138,16 @@
   "podi": 1,
   "pole": 1,
   "giri_veloci": 2
+ },
+ "f1:5": {
+  "nascita": "2004-10-14",
+  "nazionalita": "Brazilian",
+  "titoli": 0,
+  "gare": 40,
+  "vittorie": 0,
+  "podi": 0,
+  "pole": 0,
+  "giri_veloci": 0
  },
  "f1:31": {
   "nascita": "1996-09-17",
@@ -10069,6 +10069,11 @@
   "descrizione": "pilota automobilistico britannico (1985-)",
   "pagina": "https://it.wikipedia.org/wiki/Lewis_Hamilton"
  },
+ "nome:Max Verstappen": {
+  "testo": "Max Emilian Verstappen /maks emiliˈaːn ʋərˈstɑpən/ è un pilota automobilistico olandese con cittadinanza belga, attivo in Formula 1 con la Red Bull Racing, scuderia con la quale è diventato campione del mondo per 4 volte consecutive.",
+  "descrizione": "pilota automobilistico olandese con cittadinanza belga (1997-)",
+  "pagina": "https://it.wikipedia.org/wiki/Max_Verstappen"
+ },
  "nome:Charles Leclerc": {
   "testo": "Charles Marc Hervé Perceval Leclerc è un pilota automobilistico monegasco, attivo in Formula 1 con la Ferrari.",
   "descrizione": "pilota automobilistico e imprenditore monegasco (1997-)",
@@ -10078,11 +10083,6 @@
   "testo": "Lando Norris è un pilota automobilistico britannico con cittadinanza belga, attivo in Formula 1 con la McLaren, scuderia con la quale è diventato campione del mondo nel 2025.",
   "descrizione": "pilota automobilistico britannico (1999-)",
   "pagina": "https://it.wikipedia.org/wiki/Lando_Norris"
- },
- "nome:Max Verstappen": {
-  "testo": "Max Emilian Verstappen /maks emiliˈaːn ʋərˈstɑpən/ è un pilota automobilistico olandese con cittadinanza belga, attivo in Formula 1 con la Red Bull Racing, scuderia con la quale è diventato campione del mondo per 4 volte consecutive.",
-  "descrizione": "pilota automobilistico olandese con cittadinanza belga (1997-)",
-  "pagina": "https://it.wikipedia.org/wiki/Max_Verstappen"
  },
  "nome:Oscar Piastri": {
   "testo": "Oscar Jack Piastri è un pilota automobilistico australiano, attivo in Formula 1 con la McLaren.",
@@ -10119,15 +10119,15 @@
   "descrizione": "pilota automobilistico britannico (2005-)",
   "pagina": "https://it.wikipedia.org/wiki/Oliver_Bearman"
  },
- "nome:Gabriel Bortoleto": {
-  "testo": "Gabriel Bortoleto è un pilota automobilistico brasiliano, attivo in Formula 1 con l'Audi.",
-  "descrizione": "pilota automobilistico brasiliano (2004-)",
-  "pagina": "https://it.wikipedia.org/wiki/Gabriel_Bortoleto"
- },
  "nome:Nico Hulkenberg": {
   "testo": "Nicolas Hülkenberg, detto Nico, è un pilota automobilistico tedesco, attivo in Formula 1 con l'Audi.",
   "descrizione": "pilota automobilistico tedesco (1987-)",
   "pagina": "https://it.wikipedia.org/wiki/Nico_H%C3%BClkenberg"
+ },
+ "nome:Gabriel Bortoleto": {
+  "testo": "Gabriel Bortoleto è un pilota automobilistico brasiliano, attivo in Formula 1 con l'Audi.",
+  "descrizione": "pilota automobilistico brasiliano (2004-)",
+  "pagina": "https://it.wikipedia.org/wiki/Gabriel_Bortoleto"
  },
  "nome:Esteban Ocon": {
   "testo": "Esteban José Jean-Pierre Ocon-Khelfane è un pilota automobilistico francese, attivo in Formula 1 con la Haas.",

@@ -1,0 +1,58 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Rassegna stampa: F1 e MotoGP",
+ "fonte": "Formula1.com · PlanetF1 · FIA · Speedweek · Motorsport.com · Crash.net",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto": "Kimi Antonelli",
+   "alt": "pista_cina",
+   "pista": true,
+   "hook": true,
+   "grido": true,
+   "hook_titolo": "Antonelli campione ad Austin?",
+   "testo": "[Antonelli] *CAMPIONE*?!"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "nome": "F1 · Kimi Antonelli",
+   "testo": "Dopo il podio gli dicono che può chiudere il mondiale *ad Austin*. [Antonelli] risponde: *davvero?* E dice di *non pensarci*."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "nome": "F1 · Lewis Hamilton",
+   "testo": "[Hamilton] e [Norris] escono di pista insieme alla *curva uno*. Per i commissari *nessuna penalità*, e [Antonelli] li passa *tutti e due*."
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "alt": "pista",
+   "pista": true,
+   "nome": "MotoGP · Marco Bezzecchi",
+   "testo": "Ieri [Bezzecchi] disse: *il mio mondo è crollato*. Oggi *vince*, e dedica tutto alla *squadra*."
+  },
+  {
+   "foto": "Raul Fernandez",
+   "alt": "pista",
+   "pista": true,
+   "nome": "MotoGP · Raul Fernandez",
+   "testo": "[Fernandez] ha corso con *due dita rotte* dopo la caduta di ieri, scrive *Speedweek*. E ha guidato per *diciotto giri*."
+  },
+  {
+   "foto": "Jorge Martin",
+   "nome": "MotoGP · Jorge Martin",
+   "testo": "[Martin] torna *primo* nel mondiale: *355 punti* contro i *353* di [Marquez]."
+  },
+  {
+   "foto": "Jorge Martin",
+   "testo": "Ogni giorno la *rassegna* qui, su *GP Oggi*."
+  }
+ ],
+ "finale": {
+  "foto": "Kimi Antonelli",
+  "domanda": "Chi è campione per primo: Antonelli o Martin?"
+ }
+}

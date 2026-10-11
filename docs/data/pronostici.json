@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-10T11:47:59+00:00",
+ "aggiornato": "2026-10-11T11:58:23+00:00",
  "metodo": "Indice da 0 a 100 calcolato da GP Oggi: 45% forma nelle ultime 5 gare, 35% classifica del campionato, 20% risultato sullo stesso circuito l'anno scorso. È un'opinione basata sui numeri, non una previsione ufficiale né una certezza.",
  "f1": {
   "gp": "Gran Premio di Singapore",
@@ -63,9 +63,9 @@
   ]
  },
  "motogp": {
-  "gp": "GP Indonesia",
-  "circuito": "Pertamina Mandalika International Circuit",
-  "gara": "2026-10-11T07:00:00+00:00",
+  "gp": "GP Australia",
+  "circuito": "Phillip Island",
+  "gara": "2026-10-25T03:00:00+00:00",
   "favoriti": [
    {
     "id": "f55b433d-38b8-4d1d-bb3a-a709c82a0260",
@@ -74,48 +74,50 @@
     "indice": 100,
     "motivi": [
      "3 vittorie nelle ultime 5 gare",
-     "1° nel campionato (343 punti)"
-    ]
-   },
-   {
-    "id": "a6108385-dd4c-490d-b02e-542ed0275f79",
-    "nome": "Pedro Acosta",
-    "team": "Red Bull KTM Factory Racing",
-    "indice": 90,
-    "motivi": [
-     "1 vittoria nelle ultime 5 gare",
-     "4° nel campionato (247 punti)",
-     "GP Indonesia 2025: 2°"
-    ]
-   },
-   {
-    "id": "5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b",
-    "nome": "Jorge Martin",
-    "team": "Aprilia Racing",
-    "indice": 84,
-    "motivi": [
-     "2 podi nelle ultime 5 gare",
-     "2° nel campionato (339 punti)"
+     "2° nel campionato (353 punti)"
     ]
    },
    {
     "id": "ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd",
     "nome": "Marco Bezzecchi",
     "team": "Aprilia Racing",
-    "indice": 71,
+    "indice": 94,
     "motivi": [
-     "3 podi nelle ultime 5 gare",
-     "3° nel campionato (284 punti)"
+     "1 vittoria nelle ultime 5 gare",
+     "3° nel campionato (309 punti)",
+     "GP Australia 2025: 3°"
     ]
    },
    {
-    "id": "2614e0f6-7e02-4076-a746-50f43fe3143c",
-    "nome": "Fermin Aldeguer",
-    "team": "BK8 Gresini Racing MotoGP",
-    "indice": 61,
+    "id": "5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b",
+    "nome": "Jorge Martin",
+    "team": "Aprilia Racing",
+    "indice": 89,
     "motivi": [
-     "10° nel campionato (125 punti)",
-     "GP Indonesia 2025: 1°"
+     "3 podi nelle ultime 5 gare",
+     "1° nel campionato (355 punti)"
+    ]
+   },
+   {
+    "id": "a6108385-dd4c-490d-b02e-542ed0275f79",
+    "nome": "Pedro Acosta",
+    "team": "Red Bull KTM Factory Racing",
+    "indice": 83,
+    "motivi": [
+     "1 vittoria nelle ultime 5 gare",
+     "5° nel campionato (258 punti)",
+     "GP Australia 2025: 5°"
+    ]
+   },
+   {
+    "id": "58448742-f520-466a-a1a1-bf3286cce9c3",
+    "nome": "Raul Fernandez",
+    "team": "SuperFile Trackhouse MotoGP Team",
+    "indice": 78,
+    "motivi": [
+     "1 podio nelle ultime 5 gare",
+     "7° nel campionato (236 punti)",
+     "GP Australia 2025: 1°"
     ]
    }
   ]

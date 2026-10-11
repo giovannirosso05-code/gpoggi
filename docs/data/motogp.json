@@ -1,61 +1,6 @@
 {
- "generato_il": "2026-10-10T11:45:27+00:00",
+ "generato_il": "2026-10-11T11:55:47+00:00",
  "weekend": [
-  {
-   "nome": "GP Indonesia",
-   "circuito": "Pertamina Mandalika International Circuit",
-   "paese": "Indonesia",
-   "sessioni": [
-    {
-     "nome": "Prove libere 1",
-     "codice": "FP1",
-     "inizio": "2026-10-09T02:45:00+00:00",
-     "fine": "2026-10-09T03:30:00+00:00"
-    },
-    {
-     "nome": "Prove libere",
-     "codice": "PR",
-     "inizio": "2026-10-09T07:35:00+00:00",
-     "fine": "2026-10-09T08:35:00+00:00"
-    },
-    {
-     "nome": "Prove libere 2",
-     "codice": "FP2",
-     "inizio": "2026-10-10T02:10:00+00:00",
-     "fine": "2026-10-10T02:43:00+00:00"
-    },
-    {
-     "nome": "Qualifiche 1",
-     "codice": "Q1",
-     "inizio": "2026-10-10T02:55:00+00:00",
-     "fine": "2026-10-10T03:10:00+00:00"
-    },
-    {
-     "nome": "Qualifiche 2",
-     "codice": "Q2",
-     "inizio": "2026-10-10T03:20:00+00:00",
-     "fine": "2026-10-10T03:35:00+00:00"
-    },
-    {
-     "nome": "Sprint",
-     "codice": "SPR",
-     "inizio": "2026-10-10T07:00:00+00:00",
-     "fine": "2026-10-10T07:00:00+00:00"
-    },
-    {
-     "nome": "Warm up",
-     "codice": "WUP",
-     "inizio": "2026-10-11T02:40:00+00:00",
-     "fine": "2026-10-11T02:50:00+00:00"
-    },
-    {
-     "nome": "Gara",
-     "codice": "RAC",
-     "inizio": "2026-10-11T07:00:00+00:00",
-     "fine": "2026-10-11T07:00:00+00:00"
-    }
-   ]
-  },
   {
    "nome": "GP Australia",
    "circuito": "Phillip Island",

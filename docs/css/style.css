@@ -1384,3 +1384,7 @@ a.cd-tempo.live:hover { text-decoration: underline; }
 .live-tab-ris .dx { text-align: right; font-variant-numeric: tabular-nums; }
 .live-tab-ris .pos { width: 40px; font-weight: 700; }
 .live-nota { font-size: 13px; }
+
+.live-vuoto { margin: 0 0 12px; color: var(--text-muted, #6b6b73); }
+.live-ultima { display: inline-block; font-weight: 600; color: var(--accent, #1f5fd1); text-decoration: none; }
+.live-ultima:hover { text-decoration: underline; }

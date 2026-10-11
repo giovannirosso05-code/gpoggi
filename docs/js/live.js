@@ -33,6 +33,7 @@ async function caricaF1() {
   if (!attiva) { box.innerHTML = `<p class="muted">Nessuna sessione disponibile.</p>`; return false; }
   const sigla = attiva.type && attiva.type.abbreviation;
   const live = stato(attiva) === "in";
+  if (!live) { await nessunaLive("f1"); return false; }
   const finita = stato(attiva) === "post";
   const righe = (attiva.competitors || []).slice().sort((a, b) => a.order - b.order).map((c) => {
     const nome = c.athlete && (c.athlete.displayName || c.athlete.fullName) || "—";
@@ -47,15 +48,32 @@ async function caricaF1() {
   return live;
 }
 
+// Quando non c'è niente dal vivo: invece di un messaggio d'errore, si porta alla pagina dell'ultima gara
+async function ultimaGara(serie) {
+  try {
+    if (serie === "moto") {
+      const u = await fetchJSON("data/motogp-ultima.json");
+      return u && u.nome ? { nome: u.nome, href: `gara-moto.html?gp=${encodeURIComponent(u.nome)}` } : null;
+    }
+    const ev = await fetchJSON("data/events.json");
+    const finiti = ev.filter((g) => new Date(g.fine).getTime() < Date.now()).sort((a, b) => new Date(b.inizio) - new Date(a.inizio));
+    return finiti[0] ? { nome: finiti[0].nome, href: `gara.html?id=${finiti[0].id}` } : null;
+  } catch (e) { return null; }
+}
+
+async function nessunaLive(serie) {
+  const g = await ultimaGara(serie);
+  nota.textContent = "";
+  box.innerHTML = `<p class="live-vuoto">Al momento non c'è nessuna sessione dal vivo.</p>` +
+    (g ? `<a class="live-ultima" href="${g.href}">Vuoi vedere l'ultima gara? ${esc(g.nome)} →</a>` : "");
+}
+
 async function caricaMoto() {
-  nota.innerHTML = "Fonte: MotoGP.com (non ufficiale qui, può avere ritardo). <a class='accent' href='https://www.motogp.com/en/live-timing' target='_blank' rel='noopener'>Apri il live timing ufficiale →</a>";
-  if (!WORKER) { box.innerHTML = `<p class="muted">I tempi dal vivo MotoGP non sono ancora collegati.</p>`; return false; }
+  if (!WORKER) { await nessunaLive("moto"); return false; }
   let d = null;
   try { d = await (await fetch(WORKER + "/live/motogp", { cache: "no-store" })).json(); } catch (e) {}
-  if (!d || !d.ok || !d.piloti.length) {
-    box.innerHTML = `<p class="muted">Nessuna sessione MotoGP in corso, o i tempi dal vivo non sono disponibili in questo momento. Controlla il <a class="accent" href="https://www.motogp.com/en/live-timing" target="_blank" rel="noopener">live timing ufficiale</a>.</p>`;
-    return false;
-  }
+  if (!d || !d.ok || !d.piloti.length) { await nessunaLive("moto"); return false; }
+  nota.innerHTML = "Fonte: MotoGP.com (non ufficiale qui, può avere ritardo). <a class='accent' href='https://www.motogp.com/en/live-timing' target='_blank' rel='noopener'>Apri il live timing ufficiale →</a>";
   const righe = d.piloti.sort((a, b) => a.pos - b.pos).map((p) => ({ pos: p.pos, nome: p.nome || ("#" + p.numero), info: [p.tempo, p.distacco].filter(Boolean).join(" · ") }));
   box.innerHTML = `<div class="live-testa"><h2><i class="live-dot"></i>${esc(d.sessione || "MotoGP")}</h2><span class="muted">${d.giri ? "giro " + esc(d.giri) : ""}</span></div>` + tabella(righe, "");
   return true;

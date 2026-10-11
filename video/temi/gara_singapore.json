@@ -109,6 +109,13 @@
   },
   {
    "foto": "Kimi Antonelli",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "nome": "Kimi Antonelli",
+   "testo": "Negli Stati Uniti ha un *match point*: se *vince* e [Russell] e [Hamilton] non vanno a *punti*, è *campione del mondo*."
+  },
+  {
+   "foto": "Kimi Antonelli",
    "alt": "pista_bahrain",
    "pista": true,
    "testo": "Ogni gara il *riassunto* qui, su *GP Oggi*."
@@ -116,6 +123,6 @@
  ],
  "finale": {
   "foto": "Kimi Antonelli",
-  "domanda": "Antonelli vince il mondiale?"
+  "domanda": "Antonelli campione già negli Stati Uniti?"
  }
 }

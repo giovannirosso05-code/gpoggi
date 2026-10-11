@@ -4,8 +4,9 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 
 ## Didascalie
 - Sempre in un riquadro di codice, con le righe a capo, pronte da incollare.
-- Sempre la riga del sito prima degli hashtag: `🌐 Classifiche, calendario e risultati su gpoggi.it (link in bio)`.
-- Una frase forte in apertura, una domanda in chiusura, hashtag alla fine (#gpoggi sempre).
+- Sempre la riga del sito prima degli hashtag: `🔗 gpoggi.it` (stessa riga delle didascalie automatiche; il link non è cliccabile, quello cliccabile sta nella bio). Vedi anche `video/didascalie.md`.
+- Massimo 5 hashtag, `#gpoggi` per primo.
+- Una frase forte in apertura, una domanda in chiusura, hashtag alla fine.
 - Nessuna parola su premi o soldi.
 
 ## Copertine

@@ -40,6 +40,16 @@ jobs:
                   i, f = t(s["inizio"]), t(s["fine"])
                   fine.append(f if f > i else i + dt.timedelta(minutes=45))   # il calendario MotoGP non ha la fine di alcune sessioni
           recenti = [f for f in fine if dt.timedelta(0) <= ora - f <= dt.timedelta(hours=4)]
+          # recupero: una sessione F1 finita da meno di 3 giorni ma ancora senza risultati salvati (la fonte era bloccata o il giro e' saltato) va ritentata
+          import glob
+          for fp in glob.glob("docs/data/gare/*.json"):
+              try:
+                  for s in json.load(open(fp)).get("sessioni", []):
+                      f = t(s["fine"])
+                      if s.get("risultati") is None and dt.timedelta(0) <= ora - f <= dt.timedelta(days=3):
+                          recenti.append(f)
+              except Exception:
+                  pass
           forza = os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch"
           print("attivo=" + ("si" if recenti or forza else "no"))
           PY

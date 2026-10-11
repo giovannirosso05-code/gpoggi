@@ -1,0 +1,114 @@
+{
+ "serie": "MotoGP",
+ "titolo_breve": "Indonesia: vince Bezzecchi, Martin torna primo",
+ "fonte": "Classifica gara (Motorsport.com, Crash.net) · Speedweek",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto": "Marco Bezzecchi",
+   "alt": "pista",
+   "pista": true,
+   "hook": true,
+   "grido": true,
+   "hook_titolo": "Bezzecchi vince!",
+   "testo": "[Bezzecchi] *VINCE*!"
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "nome": "Marco Bezzecchi",
+   "testo": "A Mandalika è festa *Aprilia*: le prime *quattro* moto sono tutte sue."
+  },
+  {
+   "foto": "Raul Fernandez",
+   "alt": "pista",
+   "pista": true,
+   "nome": "Raul Fernandez",
+   "testo": "[Fernandez] parte dalla *pole* e resta davanti per *oltre metà gara*."
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "alt": "pista",
+   "pista": true,
+   "nome": "Marco Bezzecchi",
+   "testo": "Poi [Bezzecchi] lo passa alla *curva uno* e vince con *4 secondi* di vantaggio."
+  },
+  {
+   "foto": "Raul Fernandez",
+   "testo": "Ieri i due erano caduti *insieme* alla prima curva della sprint. Oggi sono *primo* e *secondo*."
+  },
+  {
+   "foto": "Jorge Martin",
+   "nome": "Jorge Martin",
+   "testo": "Terzo [Martin], che stamattina era caduto nel *warm up*."
+  },
+  {
+   "foto": "Ai Ogura",
+   "alt": "pista",
+   "pista": true,
+   "nome": "Ai Ogura",
+   "testo": "Quarto [Ogura], che nel finale passa [Marquez]."
+  },
+  {
+   "foto": "Marc Marquez",
+   "alt": "pista",
+   "pista": true,
+   "nome": "Marc Marquez",
+   "testo": "[Marquez] chiude solo *sesto*. [Bagnaia] invece cade nei *primi giri*."
+  },
+  {
+   "foto": "Jorge Martin",
+   "classifica": {
+    "titolo": "Mondiale MotoGP dopo l'Indonesia",
+    "righe": [
+     {
+      "nome": "Jorge Martin",
+      "colore": "7b2c8f",
+      "punti": 355,
+      "piu": 16,
+      "pos": 1
+     },
+     {
+      "nome": "Marc Marquez",
+      "colore": "e1251b",
+      "punti": 353,
+      "piu": 10,
+      "pos": 2
+     },
+     {
+      "nome": "Marco Bezzecchi",
+      "colore": "7b2c8f",
+      "punti": 309,
+      "piu": 25,
+      "pos": 3
+     },
+     {
+      "nome": "Ai Ogura",
+      "colore": "7b2c8f",
+      "punti": 259,
+      "piu": 13,
+      "pos": 4
+     },
+     {
+      "nome": "Pedro Acosta",
+      "colore": "f26a1b",
+      "punti": 258,
+      "piu": 11,
+      "pos": 5
+     },
+     {
+      "nome": "Fabio Di Giannantonio",
+      "colore": "e1251b",
+      "punti": 245,
+      "piu": 8,
+      "pos": 6
+     }
+    ]
+   },
+   "testo": "E il mondiale *cambia ancora*: [Martin] torna *primo*, con *2 punti* su [Marquez]."
+  }
+ ],
+ "finale": {
+  "foto": "Jorge Martin",
+  "domanda": "Chi vince il mondiale?"
+ }
+}

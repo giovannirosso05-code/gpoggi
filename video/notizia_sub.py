@@ -54,7 +54,7 @@ def file_foto(f):
 
 
 # Come la voce deve dire alcuni nomi (i sottotitoli restano scritti giusti)
-PRONUNCIA = {"Hadjar": "Adgiàr"}
+PRONUNCIA = {"Hadjar": "Adgiàr", "Martin": "Martìn"}
 
 
 def pronuncia(parola):

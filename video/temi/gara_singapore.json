@@ -1,0 +1,121 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Singapore: vince Verstappen, Antonelli sul podio",
+ "fonte": "Classifica gara (ESPN, Autosport, PlanetF1, Total Motorsport) · FIA",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto": "Kimi Antonelli",
+   "alt": "pista_cina",
+   "pista": true,
+   "hook": true,
+   "grido": true,
+   "hook_titolo": "Antonelli sul podio!",
+   "testo": "[Antonelli] sul *PODIO*!"
+  },
+  {
+   "foto": "Max Verstappen",
+   "alt": "pista_cina",
+   "pista": true,
+   "nome": "Max Verstappen",
+   "testo": "A Singapore *vince* [Verstappen], dal *primo all'ultimo* giro."
+  },
+  {
+   "foto": "Charles Leclerc",
+   "alt": "pista_cina",
+   "pista": true,
+   "volto_alt": "ferrari",
+   "nome": "Charles Leclerc",
+   "testo": "Secondo [Leclerc], a *sette secondi*."
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "nome": "Kimi Antonelli",
+   "testo": "Terzo [Antonelli]: a *dieci giri* dalla fine passa [Hamilton] *senza gomme*."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "nome": "Lewis Hamilton",
+   "testo": "[Hamilton] scivola *sesto*, dopo una strategia *a rischio*."
+  },
+  {
+   "foto": "Oscar Piastri",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "nome": "Oscar Piastri",
+   "testo": "[Norris] è quarto. [Piastri], con una *foratura lenta*, è quinto."
+  },
+  {
+   "foto": "George Russell",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "nome": "George Russell",
+   "testo": "[Russell] parte *diciannovesimo* e chiude *nono*."
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "classifica": {
+    "titolo": "Mondiale F1 dopo Singapore",
+    "righe": [
+     {
+      "pos": 1,
+      "nome": "Kimi Antonelli",
+      "colore": "00D7B6",
+      "punti": 340,
+      "piu": 20
+     },
+     {
+      "pos": 2,
+      "nome": "George Russell",
+      "colore": "00D7B6",
+      "punti": 238,
+      "piu": 2
+     },
+     {
+      "pos": 3,
+      "nome": "Lewis Hamilton",
+      "colore": "ED1131",
+      "punti": 229,
+      "piu": 15
+     },
+     {
+      "pos": 4,
+      "nome": "Max Verstappen",
+      "colore": "4781D7",
+      "punti": 221,
+      "piu": 33
+     },
+     {
+      "pos": 5,
+      "nome": "Charles Leclerc",
+      "colore": "ED1131",
+      "punti": 215,
+      "piu": 24
+     },
+     {
+      "pos": 6,
+      "nome": "Lando Norris",
+      "colore": "F47600",
+      "punti": 201,
+      "piu": 13
+     }
+    ]
+   },
+   "testo": "[Antonelli] allunga: *340 punti*, e *102* su [Russell]."
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "alt": "pista_bahrain",
+   "pista": true,
+   "testo": "Ogni gara il *riassunto* qui, su *GP Oggi*."
+  }
+ ],
+ "finale": {
+  "foto": "Kimi Antonelli",
+  "domanda": "Antonelli vince il mondiale?"
+ }
+}

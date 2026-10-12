@@ -7,8 +7,8 @@
   {
    "foto": "Max Verstappen",
    "hook": true,
-   "hook_titolo": "La pagella di Singapore",
-   "testo": "La [pagella] di Singapore, *studiata da noi*. Qualifica, sprint e gara."
+   "hook_titolo": "Verstappen 10, Hamilton 6",
+   "testo": "[Verstappen] dieci, [Hamilton] sei. La nostra *pagella* di Singapore non piacerà a tutti."
   },
   {
    "foto": "Isack Hadjar",
@@ -19,12 +19,6 @@
    "alt": "pista_suzuka",
    "pista": true,
    "testo": "[Hamilton]: terzo in qualifica, secondo nella sprint, poi in gara *perde tre posizioni* e chiude sesto. Pesa anche l'errore che ha ammesso. Voto *sei*."
-  },
-  {
-   "foto": "Oscar Piastri",
-   "alt": "pista_suzuka",
-   "pista": true,
-   "testo": "[Piastri] si ritira nella sprint dopo il contatto con Norris. In gara chiude *quinto*, un posto meglio della partenza. Giornata da dimenticare, riscattata a metà. Voto *sei e mezzo*."
   },
   {
    "foto": "George Russell",

@@ -86,6 +86,37 @@ def token(testo):
 VOCE_PIPER = "it_IT-riccardo-x_low"   # voce di riserva (maschile, gira sul computer, senza internet) se Microsoft rifiuta la connessione
 
 
+def _tempi_stimati(testo, uscita):
+    """Le voci di riserva non danno i tempi delle parole: si stimano in proporzione alla lunghezza."""
+    tot = durata(uscita)
+    parole = testo.split()
+    pesi = [len(w) + (4 if w[-1:] in ",.;:!?" else 0) + 1 for w in parole]
+    t, out = 0.0, []
+    for w, pe in zip(parole, pesi):
+        d = tot * pe / sum(pesi)
+        out.append((w, t, t + d)); t += d
+    return out
+
+
+def voce_kokoro(testo, velocita, uscita, grido=False):
+    """Prima riserva: Kokoro (modello neurale che gira sul computer, voce maschile italiana 'nicola'), molto piu' naturale di Piper."""
+    import urllib.request
+    import soundfile as sf
+    from kokoro_onnx import Kokoro
+    cart = QUI / "_cache" / "voci"; cart.mkdir(parents=True, exist_ok=True)
+    for nome in ("kokoro-v1.0.int8.onnx", "voices-v1.0.bin"):
+        if not (cart / nome).exists():
+            urllib.request.urlretrieve(f"https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/{nome}", cart / nome)
+    k = Kokoro(str(cart / "kokoro-v1.0.int8.onnx"), str(cart / "voices-v1.0.bin"))
+    pct = 55 if grido else int(re.sub(r"[^\d-]", "", str(velocita)) or 0)
+    campioni, sr = k.create(testo, voice="im_nicola", speed=min(2.0, 1 + pct / 100), lang="it")
+    wav = Path(uscita).with_suffix(".wav")
+    sf.write(str(wav), campioni, sr)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(wav), "-ar", "24000", str(uscita)], check=True)
+    wav.unlink()
+    return _tempi_stimati(testo, uscita)
+
+
 def voce_piper(testo, velocita, uscita, grido=False):
     """Riserva quando edge-tts da' errore 403: voce Piper. Non da' i tempi delle parole: si stimano in proporzione alla lunghezza."""
     import urllib.request, wave
@@ -102,14 +133,7 @@ def voce_piper(testo, velocita, uscita, grido=False):
         v.synthesize_wav(testo, w, SynthesisConfig(length_scale=1 / (1 + pct / 100)))
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(wav), "-ar", "24000", str(uscita)], check=True)
     wav.unlink()
-    tot = durata(uscita)
-    parole = testo.split()
-    pesi = [len(w) + (4 if w[-1:] in ",.;:!?" else 0) + 1 for w in parole]
-    t, out = 0.0, []
-    for w, pe in zip(parole, pesi):
-        d = tot * pe / sum(pesi)
-        out.append((w, t, t + d)); t += d
-    return out
+    return _tempi_stimati(testo, uscita)
 
 
 async def voce(testo, velocita, uscita, grido=False):
@@ -129,8 +153,12 @@ async def voce(testo, velocita, uscita, grido=False):
             raise RuntimeError("nessun audio")
         Path(uscita).write_bytes(audio)
     except Exception as e:
-        print("edge-tts non risponde (%s): voce di riserva Piper" % str(e)[:80], flush=True)
-        parole = voce_piper(testo, velocita, uscita, grido)
+        print("edge-tts non risponde (%s): voce di riserva" % str(e)[:80], flush=True)
+        try:
+            parole = voce_kokoro(testo, velocita, uscita, grido)
+        except Exception as e2:
+            print("Kokoro non disponibile (%s): voce Piper" % str(e2)[:80], flush=True)
+            parole = voce_piper(testo, velocita, uscita, grido)
     if grido:   # ancora più volume, senza distorcere (limitatore)
         grezzo = Path(uscita).with_suffix(".raw.mp3")
         Path(uscita).replace(grezzo)

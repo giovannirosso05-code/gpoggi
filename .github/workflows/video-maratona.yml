@@ -32,7 +32,7 @@ jobs:
         with:
           python-version: '3.12'
       - if: steps.sc.outputs.attivo == 'si'
-        run: pip install -r requirements.txt edge-tts piper-tts playwright
+        run: pip install -r requirements.txt edge-tts piper-tts kokoro-onnx soundfile playwright
       - if: steps.sc.outputs.attivo == 'si'
         run: python -m playwright install --with-deps chromium
       - if: steps.sc.outputs.attivo == 'si'

@@ -8,8 +8,8 @@
    "foto": "Marco Bezzecchi",
    "alt": "sorriso",
    "hook": true,
-   "hook_titolo": "La pagella dell'Indonesia",
-   "testo": "La [pagella] del Gran Premio d'Indonesia, *studiata da noi*. Qualifica, sprint e gara."
+   "hook_titolo": "Bagnaia 4, Bezzecchi 8,5",
+   "testo": "[Bagnaia] quattro, [Bezzecchi] otto e mezzo. La nostra *pagella* dell'Indonesia non fa sconti a nessuno."
   },
   {
    "foto": "Francesco Bagnaia",
@@ -28,12 +28,6 @@
    "alt": "pista",
    "pista": true,
    "testo": "[Marc Marquez] *vince la sprint*, ma in gara parte quarto e chiude sesto, nonostante tre sorpassi. La sprint tiene alto il voto: *sette e mezzo*."
-  },
-  {
-   "foto": "Ai Ogura",
-   "alt": "pista",
-   "pista": true,
-   "testo": "[Ogura]: settimo in qualifica, secondo nella sprint, *quarto in gara*. Tre posizioni guadagnate e due sorpassi. Voto *sette e mezzo*."
   },
   {
    "foto": "Raul Fernandez",

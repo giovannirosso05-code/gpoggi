@@ -45,6 +45,22 @@ def griglia(sess):
     return {rid: i + 1 for i, rid in enumerate(ordine)}
 
 
+def qualifiche(sess):
+    """Ordine delle qualifiche: prima la Q2 (12 piloti), poi chi si e' fermato in Q1 (dal 3° in giù). Tempo e distacco sono quelli della sessione in cui si è fermato."""
+    out, visti = [], set()
+    for numero in (2, 1):
+        q = next((x for x in sess if x["type"] == "Q" and x.get("number") == numero), None)
+        if not q:
+            continue
+        for x in sorted((y for y in classifica(q["id"])["classification"] if y.get("position")), key=lambda y: y["position"]):
+            if x["rider"]["id"] in visti:
+                continue
+            visti.add(x["rider"]["id"])
+            out.append({"griglia": None, "pos": len(out) + 1, "nome": x["rider"]["full_name"], "numero": x["rider"].get("number"), "team": x["team"]["name"], "moto": x["constructor"]["name"],
+                        "tempo": tempo_giro((x.get("best_lap") or {}).get("time")), "distacco": (x.get("gap") or {}).get("first"), "giri": x.get("total_laps"), "stato": f"Q{numero}", "punti": None})
+    return out
+
+
 def lap_chart(rac):
     """Ordine dei piloti giro per giro dal 'Lap chart' del campionato (PDF pubblico): {giro: [numeri in ordine]} e la griglia."""
     url = ((rac.get("session_files") or {}).get("lap_chart") or {}).get("url")
@@ -128,6 +144,13 @@ def classifiche_evento(e, cat_ids):
                     out[chiave] = righe(classifica(q["id"]), griglia(sess) if tipo == "RAC" else None)
                 except Exception:
                     pass
+        if c == "MotoGP":
+            try:
+                qq = qualifiche(sess)
+                if qq:
+                    out["MotoGP qualifiche"] = qq
+            except Exception:
+                pass
     return out
 
 

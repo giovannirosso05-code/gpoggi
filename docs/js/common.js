@@ -125,8 +125,8 @@ function fissaTestata() {
 export function renderHeader(paginaAttuale) {
   const voci = [
     ["home", "index.html", "Home"],
-    ["f1", "f1.html", "Formula 1"],
     ["live", "live.html", '<i class="live-dot"></i>Live'],
+    ["f1", "f1.html", "Formula 1"],
     ["motogp", "motogp.html", "MotoGP"],
     ["piloti", "piloti.html", "Piloti"],
     ["classifiche", "classifiche.html", "Classifiche"],

@@ -44,11 +44,11 @@ try {
   const chiavi = Object.keys(g.classifiche);
   box.innerHTML = `
     ${testata("" + formattaData(g.data), gp, g.circuito || "", mappa, g.circuito, "")}
-    ${r ? `<h3 class="section-title">Com'è andata</h3><article class="report-card">${r.paragrafi.map((p) => `<p>${esc(p)}</p>`).join("")}</article>` : ""}
+    ${r ? `<h3 class="section-title">Com'è andata</h3><article class="report-card">${r.paragrafi.map((p) => `<p>${esc(p)}</p>`).join("")}${g.cronaca ? `<p><a class="vai-cronaca" href="#cronaca">Per vedere la cronaca giro per giro ↓</a></p>` : ""}</article>` : ""}
     <h3 class="section-title">Risultati</h3>
-    <div class="category-pills" id="gm-cat" style="margin-bottom:12px">${chiavi.map((k, i) => `<button class="pill ${i === 0 ? "active" : ""}" data-k="${esc(k)}">${esc(k.replace(" sprint", " · sprint"))}</button>`).join("")}</div>
+    <div class="category-pills" id="gm-cat" style="margin-bottom:12px">${chiavi.map((k, i) => `<button class="pill ${i === 0 ? "active" : ""}" data-k="${esc(k)}">${esc(k.replace(" sprint", " · sprint").replace(" qualifiche", " · qualifiche"))}</button>`).join("")}</div>
     <div id="gm-tab"></div>
-    ${g.cronaca ? `<h3 class="section-title">Cronaca giro per giro</h3><div id="cronaca-box"></div>` : ""}
+    ${g.cronaca ? `<h3 class="section-title" id="cronaca">Cronaca giro per giro</h3><div id="cronaca-box"></div>` : ""}
     <p class="muted" style="margin-top:18px;font-size:13px"><a class="accent" href="calendario.html${tema ? "?" + tema.slice(1) : ""}">← Torna al calendario</a></p>`;
   const mostra = (k) => {
     document.querySelectorAll("#gm-cat .pill").forEach((b) => b.classList.toggle("active", b.dataset.k === k));

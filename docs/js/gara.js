@@ -44,13 +44,13 @@ try {
       <div>${g.mappa ? img(g.mappa, "Tracciato di " + g.circuito, "mappa") + `<p class="credito center">${credito(g.mappa, "Mappa")}</p>` : ""}</div>
     </section>
     ${haRisultati ? programmaHtml(g.sessioni) : ""}
-    ${rep ? `<h3 class="section-title">Com'è andata</h3><article class="report-card"><h3 style="margin-top:0">${esc(rep.titolo)}</h3>${rep.paragrafi.map((p) => `<p>${esc(p)}</p>`).join("")}</article>` : ""}
+    ${rep ? `<h3 class="section-title">Com'è andata</h3><article class="report-card"><h3 style="margin-top:0">${esc(rep.titolo)}</h3>${rep.paragrafi.map((p) => `<p>${esc(p)}</p>`).join("")}<p><a class="vai-cronaca" href="#cronaca">Per vedere la cronaca giro per giro ↓</a></p></article>` : ""}
     ${haRisultati ? "" : `<p class="muted">I risultati di ogni sessione compariranno qui man mano che si disputano.</p>`}
     <div id="tabs" class="category-pills" style="margin-bottom:8px" ${haRisultati ? "" : "hidden"}>
       ${sessioni.map((s) => `<button class="pill ${s.key === predefinita.key ? "active" : ""}" data-key="${s.key}">${esc(s.nome)}</button>`).join("")}
     </div>
     <div id="sessione"></div>
-    <h3 class="section-title">Cronaca giro per giro</h3><div id="cronaca-box"><p class="muted">${haRisultati ? "Cronaca non disponibile per questa gara." : "Cronaca disponibile dopo la gara: compare qui poche ore dopo l'arrivo."}</p></div>`;
+    <h3 class="section-title" id="cronaca">Cronaca giro per giro</h3><div id="cronaca-box"><p class="muted">${haRisultati ? "Cronaca non disponibile per questa gara." : "Cronaca disponibile dopo la gara: compare qui poche ore dopo l'arrivo."}</p></div>`;
 
   let griglia = null, sessioneCorrente = null;
   const mostra = (key) => {

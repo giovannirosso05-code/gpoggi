@@ -1388,3 +1388,11 @@ a.cd-tempo.live:hover { text-decoration: underline; }
 .live-vuoto { margin: 0 0 12px; color: var(--text-muted, #6b6b73); }
 .live-ultima { display: inline-block; font-weight: 600; color: var(--accent, #1f5fd1); text-decoration: none; }
 .live-ultima:hover { text-decoration: underline; }
+
+/* Link "vai alla cronaca" in fondo al racconto di gara: evidenziato, sottolineato, nel colore della serie */
+html { scroll-behavior: smooth; }
+#cronaca { scroll-margin-top: calc(var(--hh, 0px) + 16px); }
+.vai-cronaca { display: inline-block; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; color: var(--accent, #e8352f); background: rgba(232,53,47,.12); padding: 6px 12px; border-radius: 8px; }
+.serie-moto .vai-cronaca { background: rgba(31,95,209,.14); }
+:root[data-theme="dark"] .vai-cronaca { background: rgba(232,53,47,.22); }
+:root[data-theme="dark"] .serie-moto .vai-cronaca { background: rgba(91,155,255,.22); }

@@ -38,6 +38,7 @@ jobs:
           python build_report_moto.py
           python build_cronaca.py || true
           python build_pagella.py || true
+          python build_statistiche.py || true
           python foto_motogp.py || true
           python foto_circuiti_moto.py || true
           python build_pronostici.py

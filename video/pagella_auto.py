@@ -65,6 +65,12 @@ def frase_sessioni_breve(r, sprint):
     return "costante dalla qualifica alla gara" if "è stato costante in tutte le sessioni" in r.get("perche", []) else "con punti pesanti"
 
 
+def tripletta(r, sprint):
+    if r["q"] == 1 and r["g"] == 1 and (not sprint or r["s"] == 1):
+        return "Pole, sprint e gara: una tripletta." if sprint else "Pole e vittoria: un weekend perfetto."
+    return ""
+
+
 def scena(r, sprint, alt):
     resto = [x for x in r.get("perche", []) if x not in GENERICHE]
     if not r["g"]:
@@ -74,6 +80,32 @@ def scena(r, sprint, alt):
         extra += " " + r["motivo"][0].upper() + r["motivo"][1:] + "."
     testo = f"[{cognome(r)}]: {frase_sessioni(r, sprint)}. {extra} Voto *{voto_parole(r['voto'])}*.".replace("  ", " ")
     return {"foto": r["nome"], **alt, "testo": testo}
+
+
+def vittorie_di_fila(serie, w, nome):
+    """Quante gare consecutive ha vinto il pilota fino a questo weekend (dai risultati sul sito)."""
+    vinc = []
+    try:
+        if serie == "f1":
+            for f in (DATA / "gare").glob("*.json"):
+                g = json.load(open(f))
+                gara = next((x for x in g["sessioni"] if x["tipo"] == "Race" and x.get("risultati")), None)
+                if gara:
+                    vinc.append((gara["inizio"], gara["risultati"][0]["nome"]))
+        else:
+            for g in json.load(open(DATA / "motogp-gare.json")).values():
+                c = g["classifiche"].get("MotoGP")
+                if c:
+                    vinc.append((g["data"], c[0]["nome"]))
+    except Exception:
+        return 0
+    vinc.sort()
+    n = 0
+    for _, v in reversed([x for x in vinc if x[0][:10] <= w["data"][:10]]):
+        if v != nome:
+            break
+        n += 1
+    return n
 
 
 def prominenza(serie):
@@ -122,12 +154,12 @@ def costruisci(serie, w):
     for r in (*protagonisti, *righe[1:3], basso, prot, neg, noto, sale[0] if sale and sale[0]["griglia"] - sale[0]["g"] >= 6 else None,
               perde if perde and perde["griglia"] - perde["g"] <= -3 else None, *[x for x in righe if x.get("correzione")], *righe[1:3]):
         aggiungi(r)
-    scelti = sorted(scelti[:6], key=lambda r: r["voto_esatto"])
+    scelti = sorted(scelti[:5], key=lambda r: r["voto_esatto"])
     ferrari = max((r for r in righe if r.get("team") == "Ferrari" and r["voto"] >= 8), key=lambda r: r["voto_esatto"], default=None) if serie == "f1" else None
     if ferrari:   # in Italia la Ferrari attira: si apre elogiando il suo migliore (mai il migliore assoluto della pagella)
         prot = ferrari
         aggiungi(ferrari)
-        scelti = sorted(([ferrari] + [r for r in scelti if r is not ferrari])[:6], key=lambda r: r["voto_esatto"])
+        scelti = sorted(([ferrari] + [r for r in scelti if r is not ferrari])[:5], key=lambda r: r["voto_esatto"])
         compagno = next((r for r in righe if r.get("team") == "Ferrari" and r is not ferrari and r["voto"] <= 6.5), None)
         gara = f"{ordinale(ferrari['g'])} in gara" + (f", partendo {ordinale(ferrari['griglia'])}" if ferrari.get("griglia") and ferrari["griglia"] != ferrari["g"] else "")
         gancio = (f"[{cognome(ferrari)}] {voto_parole(ferrari['voto'])} in pagella: {gara}, {frase_sessioni_breve(ferrari, sprint)}."
@@ -147,10 +179,16 @@ def costruisci(serie, w):
     scene = [{"foto": prot["nome"], "hook": True, "hook_titolo": hook_titolo, "testo": gancio}]
     for r in scelti:
         scene.append(scena(r, sprint, foto_pista(serie, r["nome"])))
-    top = scena(migliore, sprint, {})
-    top["testo"] = f"E poi il migliore: [{cognome(migliore)}]. {frase_sessioni(migliore, sprint)[0].upper() + frase_sessioni(migliore, sprint)[1:]}. Voto *{voto_parole(migliore['voto'])}*, è l'uomo del weekend."
-    top.update({"pista": True, "classifica": tab, "sub_top": 1360})
+    fila = vittorie_di_fila(serie, w, migliore["nome"])
+    ripetuta = {2: "Seconda vittoria di fila", 3: "Terza vittoria di fila"}.get(fila, f"{fila}ª vittoria di fila" if fila > 3 else "")
+    lode = f" {ripetuta}: una prova da applausi." if ripetuta else " Una prova da applausi."
+    pista = foto_pista(serie, migliore["nome"])
+    if migliore["nome"] == "Marco Bezzecchi":
+        pista["volto_alt"] = "sorriso"
+    top = {"foto": migliore["nome"], **pista,
+           "testo": f"E poi il migliore: [{cognome(migliore)}]. {tripletta(migliore, sprint) or (frase_sessioni(migliore, sprint)[0].upper() + frase_sessioni(migliore, sprint)[1:] + '.')}{lode} Voto *{voto_parole(migliore['voto'])}*."}
     scene.append(top)
+    scene.append({"foto": migliore["nome"], "pista": True, "classifica": tab, "sub_top": 1360, "testo": f"Ecco la pagella completa, con [{cognome(migliore)}] in fondo."})
     ser = "F1" if serie == "f1" else "MotoGP"
     return {"serie": ser, "titolo_breve": f"{gp}: la pagella", "fonte": "risultati ufficiali, calcolo GP Oggi", "velocita": "+30%", "scene": scene,
             "finale": {"foto": migliore["nome"], "domanda": f"Che voto dai tu a {gp}?"}}, migliore, gp, basso

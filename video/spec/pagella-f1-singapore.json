@@ -15,10 +15,6 @@
    "testo": "[Stroll]: diciannovesimo in qualifica, fuori nella sprint e ritirato al giro 37. Il ritiro pesa sul voto complessivo del weekend. Voto *tre*."
   },
   {
-   "foto": "Arvid Lindblad",
-   "testo": "[Lindblad]: decimo in qualifica, tredicesimo nella sprint e quindicesimo in gara, partendo nono. Ha perso 6 posizioni rispetto alla griglia. Voto *quattro e mezzo*."
-  },
-  {
    "foto": "Lewis Hamilton",
    "alt": "pista_suzuka",
    "pista": true,
@@ -44,7 +40,12 @@
   },
   {
    "foto": "Max Verstappen",
-   "testo": "E poi il migliore: [Verstappen]. Primo in qualifica, primo nella sprint e primo in gara. Voto *dieci*, è l'uomo del weekend.",
+   "alt": "pista_cina",
+   "pista": true,
+   "testo": "E poi il migliore: [Verstappen]. Pole, sprint e gara: una tripletta. Seconda vittoria di fila: una prova da applausi. Voto *dieci*."
+  },
+  {
+   "foto": "Max Verstappen",
    "pista": true,
    "classifica": {
     "titolo": "Pagella: Singapore",
@@ -58,41 +59,34 @@
      },
      {
       "pos": 2,
-      "colore": "6C98FF",
-      "nome": "Lindblad",
-      "voto": "4,5",
-      "nota": " "
-     },
-     {
-      "pos": 3,
       "colore": "ED1131",
       "nome": "Hamilton",
       "voto": "6",
       "nota": " "
      },
      {
-      "pos": 4,
+      "pos": 3,
       "colore": "00D7B6",
       "nome": "Russell",
       "voto": "6,5",
       "nota": " "
      },
      {
-      "pos": 5,
+      "pos": 4,
       "colore": "00D7B6",
       "nome": "Antonelli",
       "voto": "8",
       "nota": " "
      },
      {
-      "pos": 6,
+      "pos": 5,
       "colore": "ED1131",
       "nome": "Leclerc",
       "voto": "8,5",
       "nota": " "
      },
      {
-      "pos": 7,
+      "pos": 6,
       "colore": "4781D7",
       "nome": "Verstappen",
       "voto": "10",
@@ -100,7 +94,8 @@
      }
     ]
    },
-   "sub_top": 1360
+   "sub_top": 1360,
+   "testo": "Ecco la pagella completa, con [Verstappen] in fondo."
   }
  ],
  "finale": {

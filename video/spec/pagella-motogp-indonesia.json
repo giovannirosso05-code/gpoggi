@@ -1,0 +1,115 @@
+{
+ "serie": "MotoGP",
+ "titolo_breve": "Indonesia: la pagella",
+ "fonte": "risultati ufficiali, calcolo GP Oggi",
+ "velocita": "+30%",
+ "scene": [
+  {
+   "foto": "Marco Bezzecchi",
+   "alt": "sorriso",
+   "hook": true,
+   "hook_titolo": "La pagella dell'Indonesia",
+   "testo": "La [pagella] del Gran Premio d'Indonesia, *studiata da noi*. Qualifica, sprint e gara."
+  },
+  {
+   "foto": "Francesco Bagnaia",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Bagnaia] decimo in qualifica, ottavo nella sprint e *ritirato in gara*. Voto *quattro*."
+  },
+  {
+   "foto": "Pedro Acosta",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Acosta] nono in qualifica, sesto nella sprint e *quinto in gara*. Voto *sette*."
+  },
+  {
+   "foto": "Marc Marquez",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Marc Marquez] vince la *sprint*, ma in gara parte quarto e chiude sesto. Voto *sette e mezzo*."
+  },
+  {
+   "foto": "Ai Ogura",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Ogura] settimo in qualifica, secondo nella sprint e *quarto in gara*. Voto *sette e mezzo*."
+  },
+  {
+   "foto": "Raul Fernandez",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Fernandez] *pole*, ma niente traguardo nella sprint. In gara chiude secondo. Voto *sette e mezzo*."
+  },
+  {
+   "foto": "Jorge Martin",
+   "testo": "[Martin] quinto in qualifica, quarto nella sprint e *terzo in gara*. Voto *otto*."
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "alt": "sorriso",
+   "pista": true,
+   "classifica": {
+    "titolo": "Pagella dell'Indonesia",
+    "righe": [
+     {
+      "pos": 1,
+      "colore": "e1251b",
+      "nome": "Bagnaia",
+      "voto": "4",
+      "nota": " "
+     },
+     {
+      "pos": 2,
+      "colore": "f26a1b",
+      "nome": "Acosta",
+      "voto": "7",
+      "nota": " "
+     },
+     {
+      "pos": 3,
+      "colore": "e1251b",
+      "nome": "M. Marquez",
+      "voto": "7,5",
+      "nota": " "
+     },
+     {
+      "pos": 4,
+      "colore": "7b2c8f",
+      "nome": "Ogura",
+      "voto": "7,5",
+      "nota": " "
+     },
+     {
+      "pos": 5,
+      "colore": "7b2c8f",
+      "nome": "Fernandez",
+      "voto": "7,5",
+      "nota": " "
+     },
+     {
+      "pos": 6,
+      "colore": "7b2c8f",
+      "nome": "Martin",
+      "voto": "8",
+      "nota": " "
+     },
+     {
+      "pos": 7,
+      "colore": "7b2c8f",
+      "nome": "Bezzecchi",
+      "voto": "8,5",
+      "nota": " "
+     }
+    ]
+   },
+   "sub_top": 1360,
+   "testo": "E la gara la vince lui: [Bezzecchi], secondo in qualifica, voto *otto e mezzo*. È l'uomo del weekend."
+  }
+ ],
+ "finale": {
+  "foto": "Marco Bezzecchi",
+  "alt": "sorriso",
+  "domanda": "Che voto dai tu all'Indonesia?"
+ }
+}

@@ -1,7 +1,7 @@
 {
  "serie": "F1",
  "titolo_breve": "Singapore: la pagella",
- "fonte": "risultati ufficiali, elaborazione GP Oggi",
+ "fonte": "risultati ufficiali, calcolo GP Oggi",
  "velocita": "+30%",
  "scene": [
   {
@@ -12,25 +12,25 @@
   },
   {
    "foto": "Isack Hadjar",
-   "testo": "[Hadjar] parte ventiduesimo e chiude *decimo*. Dodici posizioni recuperate. Voto *sette*."
+   "testo": "[Hadjar] parte ventiduesimo e chiude *decimo*, ma fuori in qualifica e nella sprint. Voto *cinque e mezzo*."
   },
   {
    "foto": "George Russell",
    "alt": "pista_suzuka",
    "pista": true,
-   "testo": "[Russell] fuori nella sprint, ma in gara risale dal *diciannovesimo* al nono posto. Voto *sei e mezzo*."
+   "testo": "[Russell] fuori nella sprint, ma in gara risale dal *diciannovesimo* al nono posto. Voto *sei*."
   },
   {
    "foto": "Oscar Piastri",
    "alt": "pista_suzuka",
    "pista": true,
-   "testo": "[Piastri] si ritira nella sprint dopo il contatto con Norris, poi è *quinto* in gara. Voto *cinque*."
+   "testo": "[Piastri] si ritira nella sprint dopo il contatto con Norris, poi è *quinto* in gara. Voto *sei e mezzo*."
   },
   {
    "foto": "Lewis Hamilton",
    "alt": "pista_suzuka",
    "pista": true,
-   "testo": "[Hamilton] terzo in qualifica e secondo nella sprint, ma in gara *scivola dal terzo al sesto posto*. Voto *sei*."
+   "testo": "[Hamilton] terzo in qualifica e secondo nella sprint, ma in gara *scivola al sesto posto*. Voto *sette*."
   },
   {
    "foto": "Kimi Antonelli",
@@ -42,7 +42,7 @@
    "foto": "Charles Leclerc",
    "alt": "pista_cina",
    "pista": true,
-   "testo": "[Leclerc] secondo in qualifica e in gara, terzo nella sprint. Voto *otto*."
+   "testo": "[Leclerc] secondo in qualifica e in gara, terzo nella sprint. Voto *otto e mezzo*."
   },
   {
    "foto": "Max Verstappen",
@@ -52,36 +52,36 @@
     "righe": [
      {
       "pos": 1,
-      "colore": "F47600",
-      "nome": "Piastri",
-      "voto": "5",
+      "colore": "4781D7",
+      "nome": "Hadjar",
+      "voto": "5,5",
       "nota": " "
      },
      {
       "pos": 2,
-      "colore": "F47600",
-      "nome": "Norris",
+      "colore": "00D7B6",
+      "nome": "Russell",
       "voto": "6",
       "nota": " "
      },
      {
       "pos": 3,
-      "colore": "ED1131",
-      "nome": "Hamilton",
-      "voto": "6",
-      "nota": " "
-     },
-     {
-      "pos": 4,
-      "colore": "00D7B6",
-      "nome": "Russell",
+      "colore": "F47600",
+      "nome": "Piastri",
       "voto": "6,5",
       "nota": " "
      },
      {
+      "pos": 4,
+      "colore": "ED1131",
+      "nome": "Hamilton",
+      "voto": "7",
+      "nota": " "
+     },
+     {
       "pos": 5,
-      "colore": "4781D7",
-      "nome": "Hadjar",
+      "colore": "F47600",
+      "nome": "Norris",
       "voto": "7",
       "nota": " "
      },
@@ -96,7 +96,7 @@
       "pos": 7,
       "colore": "ED1131",
       "nome": "Leclerc",
-      "voto": "8",
+      "voto": "8,5",
       "nota": " "
      },
      {
@@ -108,8 +108,8 @@
      }
     ]
    },
-   "testo": "E poi lui: pole, sprint e gara. [Verstappen], voto *dieci*. È l'uomo del weekend.",
-   "sub_top": 1360
+   "sub_top": 1360,
+   "testo": "E poi lui: pole, sprint e gara. [Verstappen], voto *dieci*. È l'uomo del weekend."
   }
  ],
  "finale": {

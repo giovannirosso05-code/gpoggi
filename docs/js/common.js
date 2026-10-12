@@ -130,6 +130,7 @@ export function renderHeader(paginaAttuale) {
     ["motogp", "motogp.html", "MotoGP"],
     ["piloti", "piloti.html", "Piloti"],
     ["classifiche", "classifiche.html", "Classifiche"],
+    ["pagella", "pagella.html", "Pagella"],
     ["gare", "calendario.html", "Calendario"],
     ["notizie", "notizie.html", "Notizie"],
     ["giochi", "giochi.html", "Giochi"],

@@ -66,6 +66,7 @@ jobs:
           python build_orari_gara.py
           python build_report_moto.py
           python build_cronaca.py || true
+          python build_pagella.py || true
           python build_pronostici.py
       - name: Commit se ci sono novità
         if: steps.gara.outputs.attivo == 'si'

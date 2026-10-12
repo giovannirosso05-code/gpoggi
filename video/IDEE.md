@@ -28,3 +28,10 @@ autore e licenza. I percorsi nello script puntano alla cartella di lavoro e vann
 - F1: logo con circuito di Monza e sola monoposto (`auto-gp-scuro.svg`).
 - MotoGP: logo con circuito del Mugello e sola moto (`moto-gp-scuro.svg`).
 - `anteprima.py` e `notizia.py` scelgono il logo dall'argomento `f1|moto`.
+
+## Video animati (da fare, senza problemi di licenza)
+Il problema delle licenze è solo per foto e riprese altrui. Animazioni fatte con i nostri dati non ne hanno:
+- **Replay della gara in grafica**: le posizioni giro per giro (cronaca e griglia già in `docs/data/`) disegnate come puntini colorati che si sorpassano su una linea o sul tracciato; nessuna ripresa, nessuna foto.
+- **Grafici che si animano**: classifica mondiale che cresce gara dopo gara, barre dei voti della pagella che salgono, rimonta dalla griglia all'arrivo.
+- **Pagella animata**: i voti compaiono uno alla volta, ultimo il migliore (stessa pagina del sito, registrata).
+Tecnica: stesse pagine HTML di `notizia_sub.py`, con più fotogrammi per scena (come la griglia che scorre) invece di una schermata fissa.

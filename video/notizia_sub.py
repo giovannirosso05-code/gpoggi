@@ -278,7 +278,8 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
 .u{{margin-top:50px;font:700 56px Oswald;color:{nom};letter-spacing:.04em}} .n{{position:absolute;left:60px;right:60px;bottom:90px;text-align:center;font:500 22px Inter;color:rgba(255,255,255,.7)}}
 </style><div class=bg></div><div class=prog></div><div class=c><img src="data:image/png;base64,{logo}"><div class=q>{esc(finale)}</div><div class=cm>Dimmi la tua nei commenti</div><div class=u>gpoggi.it</div></div>
 <div class=n>Fonte: {esc(spec['fonte'])} · Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team. Eventuali voti: a scopo divertente, senza offendere nessuno</div>""")
-    corpo = f'<img class=logo src="data:image/png;base64,{logo}"><div class=tag>{esc(spec.get("etichetta", "Ultim\'ora"))}</div>'
+    etichetta = esc(spec.get("etichetta", "Ultim'ora"))
+    corpo = f'<img class=logo src="data:image/png;base64,{logo}"><div class=tag>{etichetta}</div>'
     if hook:
         righe = "".join(f'<span style="display:inline-block;background:{col};padding:4px 16px;margin:4px 0">{esc(r)}</span><br>' for r in re.findall(r".{1,16}(?:\s|$)", spec["scene"][0]["hook_titolo"].upper()))
         corpo += f'<div style="position:absolute;left:60px;right:60px;top:860px;font:700 82px/1.12 Oswald;text-transform:uppercase;-webkit-text-stroke:2px #000;paint-order:stroke fill">{righe}</div>'

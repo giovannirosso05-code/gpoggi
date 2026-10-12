@@ -1,0 +1,16 @@
+{
+ "_nota": "Correzioni della redazione al voto calcolato, per weekend (id evento F1 o nome GP MotoGP). Si scrivono qui con il motivo: la pagina del sito le mostra sempre come correzione dichiarata.",
+ "f1": {
+  "1296": {
+   "Lewis Hamilton": {
+    "correzione": -1,
+    "motivo": "errore ammesso dal pilota"
+   },
+   "George Russell": {
+    "correzione": 0.5,
+    "motivo": "rimonta dalla 19ª alla 9ª posizione dopo la penalità"
+   }
+  }
+ },
+ "motogp": {}
+}

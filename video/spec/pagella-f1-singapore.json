@@ -15,10 +15,10 @@
    "testo": "[Hadjar] parte ventiduesimo e chiude *decimo*, ma fuori in qualifica e nella sprint. Voto *cinque e mezzo*."
   },
   {
-   "foto": "George Russell",
+   "foto": "Lewis Hamilton",
    "alt": "pista_suzuka",
    "pista": true,
-   "testo": "[Russell] fuori nella sprint, ma in gara risale dal *diciannovesimo* al nono posto. Voto *sei*."
+   "testo": "[Hamilton] terzo in qualifica e secondo nella sprint, ma in gara *scivola al sesto posto*. Pesa l'errore che ha ammesso. Voto *sei*."
   },
   {
    "foto": "Oscar Piastri",
@@ -27,10 +27,10 @@
    "testo": "[Piastri] si ritira nella sprint dopo il contatto con Norris, poi è *quinto* in gara. Voto *sei e mezzo*."
   },
   {
-   "foto": "Lewis Hamilton",
+   "foto": "George Russell",
    "alt": "pista_suzuka",
    "pista": true,
-   "testo": "[Hamilton] terzo in qualifica e secondo nella sprint, ma in gara *scivola al sesto posto*. Voto *sette*."
+   "testo": "[Russell] fuori nella sprint, ma in gara risale dal *diciannovesimo* al nono posto. Voto *sei e mezzo*."
   },
   {
    "foto": "Kimi Antonelli",
@@ -59,23 +59,23 @@
      },
      {
       "pos": 2,
-      "colore": "00D7B6",
-      "nome": "Russell",
+      "colore": "ED1131",
+      "nome": "Hamilton",
       "voto": "6",
       "nota": " "
      },
      {
       "pos": 3,
-      "colore": "F47600",
-      "nome": "Piastri",
+      "colore": "00D7B6",
+      "nome": "Russell",
       "voto": "6,5",
       "nota": " "
      },
      {
       "pos": 4,
-      "colore": "ED1131",
-      "nome": "Hamilton",
-      "voto": "7",
+      "colore": "F47600",
+      "nome": "Piastri",
+      "voto": "6,5",
       "nota": " "
      },
      {

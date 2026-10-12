@@ -5,6 +5,7 @@ Il voto e' un calcolo di GP Oggi sui risultati ufficiali, senza opinioni. Metodo
 - in gara si aggiungono 0,1 per ogni posizione guadagnata sulla griglia di partenza ufficiale (da -1 a +1,5, mai sopra 10);
 - chi si ritira, o non ha un tempo, prende 3 in quella sessione;
 - peso: qualifica 20%, sprint 20%, gara 60%. Arrotondato al mezzo voto.
+- la redazione puo' correggere un voto con un motivo scritto (docs/data/pagella-correzioni.json): la pagina del sito la mostra sempre.
 Prova:  python build_pagella.py
 """
 import json
@@ -44,6 +45,26 @@ def calcola(piloti):
     return righe
 
 
+def correggi(righe, corr):
+    """Applica le correzioni della redazione (docs/data/pagella-correzioni.json): il voto cambia ma resta scritto quanto e perche'."""
+    for r in righe:
+        c = corr.get(r["nome"])
+        if c:
+            r["voto_calcolato"] = r["voto"]
+            r["correzione"], r["motivo"] = c["correzione"], c["motivo"]
+            r["voto_esatto"] = round(r["voto_esatto"] + c["correzione"], 2)
+            r["voto"] = mezzo(min(10, r["voto_esatto"]))
+    righe.sort(key=lambda r: (-r["voto_esatto"], r["g"] is None, r["g"] or 99))
+    return righe
+
+
+def correzioni(serie, chiave):
+    try:
+        return json.load(open(D / "pagella-correzioni.json")).get(serie, {}).get(str(chiave), {})
+    except Exception:
+        return {}
+
+
 def f1():
     ultimo = None
     for f in D.glob("gare/*.json"):
@@ -77,6 +98,7 @@ def f1():
             tot = 0.25 * voto_sessione(x["q"]) + 0.75 * voto_sessione(x["g"], x.get("griglia"))
             x["voto"], x["voto_esatto"] = mezzo(tot), round(tot, 2)
         righe.sort(key=lambda x: -x["voto_esatto"])
+    righe = correggi(righe, correzioni("f1", id_))
     return {"nome": g["nome"], "id": id_, "data": gara["inizio"], "sprint": hanno_sprint, "righe": righe}
 
 
@@ -101,6 +123,7 @@ def motogp():
             tot = 0.25 * voto_sessione(x["q"]) + 0.75 * voto_sessione(x["g"], x.get("griglia"))
             x["voto"], x["voto_esatto"] = mezzo(tot), round(tot, 2)
         righe.sort(key=lambda x: -x["voto_esatto"])
+    righe = correggi(righe, correzioni("motogp", nome))
     return {"nome": nome, "data": g["data"], "sprint": hanno_sprint, "righe": righe}
 
 

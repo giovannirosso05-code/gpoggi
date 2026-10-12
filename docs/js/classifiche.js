@@ -16,7 +16,7 @@ const SERIE = {
 const dati = {};
 const carica = async (k, url) => dati[k] || (dati[k] = await fetchJSON(url));
 const colonne = (a, b) => `<div class="two-col"><div><h3 class="section-title" style="margin-top:0">${a.titolo}</h3>${a.html}</div><div><h3 class="section-title" style="margin-top:0">${b.titolo}</h3>${b.html}</div></div>`;
-const tab = (intest, righe) => `<div class="table-wrap"><table class="results"><thead><tr>${intest.map((x) => `<th>${x}</th>`).join("")}</tr></thead><tbody>${righe}</tbody></table></div>`;
+const tab = (intest, righe, cls = "") => `<div class="table-wrap ${cls}"><table class="results"><thead><tr>${intest.map((x) => `<th>${x}</th>`).join("")}</tr></thead><tbody>${righe}</tbody></table></div>`;
 
 async function f1() {
   const [s, roster] = await Promise.all([carica("f1", "data/standings.json"), carica("roster", "data/roster.json")]);
@@ -48,8 +48,8 @@ async function moto(cat) {
     html: colonne(
       { titolo: "Piloti", html: tab(["Pos", "Pilota", "Team", "Punti"], piloti.map((p) => `<tr class="${p.pos <= 3 ? "podio" : ""}"><td>${p.pos}</td>
         <td><a class="cella-pilota" href="pilota-moto.html?id=${esc(p.id)}${tema}">${FM["nome:" + p.nome] ? img(FM["nome:" + p.nome], p.nome, "foto-mini") : iniz(p.nome)}<strong>${esc(p.nome)}</strong></a></td>
-        <td><span class="cella-team">${stemmaMoto(p.moto)}${esc(p.team)}</span></td><td><strong>${punti(p.punti)}</strong></td></tr>`).join("")) },
-      { titolo: "Team", html: tab(["Pos", "Team", "Punti"], squadre.map((t, i) => `<tr class="${i < 3 ? "podio" : ""}"><td>${i + 1}</td><td><span class="cella-team">${stemmaMoto(t.moto)}<strong>${esc(t.team)}</strong></span></td><td><strong>${punti(t.punti)}</strong></td></tr>`).join("")) + `<p class="muted" style="font-size:12px;margin-top:8px">Punti dei team: somma dei punti dei loro piloti.</p>` }),
+        <td><span class="cella-team">${stemmaMoto(p.moto)}${esc(p.team)}</span></td><td><strong>${punti(p.punti)}</strong></td></tr>`).join(""), "cl-moto") },
+      { titolo: "Team", html: tab(["Pos", "Team", "Punti"], squadre.map((t, i) => `<tr class="${i < 3 ? "podio" : ""}"><td>${i + 1}</td><td><span class="cella-team">${stemmaMoto(t.moto)}<strong>${esc(t.team)}</strong></span></td><td><strong>${punti(t.punti)}</strong></td></tr>`).join(""), "cl-moto") + `<p class="muted" style="font-size:12px;margin-top:8px">Punti dei team: somma dei punti dei loro piloti.</p>` }),
   };
 }
 

@@ -18,7 +18,7 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 ## Video (`video/notizia_sub.py`)
 - 25-35 s, gancio nel primo secondo (risultato forte, nome di un italiano se pertinente), schermo diviso (foto in pista sopra, volto sotto), pause corte.
 - Pronunce: Hadjar = Adgiàr, Martin = Martìn (`PRONUNCIA` in notizia_sub.py).
-- Chiudere con la riga sul canale e una domanda.
+- Chiudere con la riga sul canale e una domanda, seguita da "Dimmi la tua nei commenti" (detta dalla voce e scritta nella schermata finale). Anche in didascalia l'ultima riga prima del sito è la domanda + "Dimmi la tua nei commenti 👇".
 
 ## Fatti (regola più importante)
 - Mai errori su griglie, risultati, punti. Prima i documenti ufficiali FIA / API MotoGP, poi almeno due fonti.

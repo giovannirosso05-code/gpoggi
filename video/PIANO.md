@@ -14,8 +14,9 @@ Si basa sui numeri di TikTok e Instagram dell'11 ottobre (report incollato dal p
 2. **Gancio:** la frase che apre dice cosa è cambiato, non solo chi ha vinto. Nome di un italiano quando c'entra (Antonelli, Bezzecchi, Bagnaia, Di Giannantonio).
 3. **Voce:** da provare +20% al posto di +38% su un video, per un pubblico adulto. Si confronta tempo medio di visione e % che arriva in fondo (schermate di TikTok).
 4. **Motivo per seguirti:** ogni video chiude con "Ogni gara il riassunto qui, su GP Oggi" e una domanda; video migliore fissato in alto; bio che dice cosa si trova ogni giorno.
-5. **Sito:** non contarci come arrivo dei social finché i follower non crescono. La riga `🔗 gpoggi.it` resta in ogni didascalia.
-6. **Orario di pubblicazione:** provare la sera tardi (22-23), vicino al picco notturno, sui video non legati a una gara.
+5. **Commenti:** in ogni video e in ogni didascalia, dopo la domanda, "Dimmi la tua nei commenti" (oggi i commenti sono pochissimi: 64 su TikTok in 7 giorni).
+6. **Sito:** non contarci come arrivo dei social finché i follower non crescono. La riga `🔗 gpoggi.it` resta in ogni didascalia.
+7. **Orario di pubblicazione:** provare la sera tardi (22-23), vicino al picco notturno, sui video non legati a una gara.
 
 ## Calendario (da controllare in ora italiana prima di scrivere date)
 - **Questa settimana (nessuna gara):** 2-3 video "ma" sulle storie aperte: il match point di Antonelli, Hamilton e la Ferrari, Martin e Marquez a 2 punti, le regole 2027. Una rassegna stampa a metà settimana.

@@ -178,8 +178,9 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
 .prog{{position:absolute;left:0;top:0;height:10px;width:100%;background:{col}}}
 .c{{position:absolute;left:0;right:0;top:560px;text-align:center}} .c img{{width:420px}}
 .q{{margin:70px 100px 0;font:700 80px/1.08 Oswald;text-transform:uppercase;-webkit-text-stroke:2px #000;paint-order:stroke fill}}
+.cm{{margin:34px 100px 0;font:600 50px/1.1 Oswald;text-transform:uppercase;color:{GIALLO};letter-spacing:.03em}}
 .u{{margin-top:50px;font:700 56px Oswald;color:{nom};letter-spacing:.04em}} .n{{position:absolute;left:60px;right:60px;bottom:90px;text-align:center;font:500 22px Inter;color:rgba(255,255,255,.7)}}
-</style><div class=bg></div><div class=prog></div><div class=c><img src="data:image/png;base64,{logo}"><div class=q>{esc(finale)}</div><div class=u>gpoggi.it</div></div>
+</style><div class=bg></div><div class=prog></div><div class=c><img src="data:image/png;base64,{logo}"><div class=q>{esc(finale)}</div><div class=cm>Dimmi la tua nei commenti</div><div class=u>gpoggi.it</div></div>
 <div class=n>Fonte: {esc(spec['fonte'])} · Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team</div>""")
     corpo = f'<img class=logo src="data:image/png;base64,{logo}"><div class=tag>Ultim\'ora</div>'
     if hook:
@@ -213,7 +214,7 @@ async def genera(spec, uscita):
         finale = spec["finale"]
         # audio e tempi
         t = 0.0; lavoro = []
-        for i, s in enumerate(scene + [dict(finale, testo=finale["domanda"], finale=True)]):
+        for i, s in enumerate(scene + [dict(finale, testo=finale["domanda"] + " Dimmi la tua nei commenti.", finale=True)]):
             tok = token(s["testo"]); parlato = " ".join(pronuncia(w) for w, _ in tok)
             mp3 = tmp / f"v{i}.mp3"
             tempi = await voce(parlato, vel, mp3, grido=bool(s.get("grido")))

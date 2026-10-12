@@ -46,7 +46,8 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 - Se edge-tts dà 403 (succede anche su GitHub), `notizia_sub.py` passa da solo alla voce di riserva Piper (maschile, tempi delle parole stimati).
 
 ## Pagella automatica del lunedì
-- `video/pagella_auto.py` costruisce da solo scaletta, copertina e didascalia dai voti (`docs/data/pagella.json`). Il workflow "Video da spec" parte ogni lunedì alle 13:07 UTC (15:07 italiane in estate), aggiorna i voti, prepara F1 e MotoGP dell'ultimo weekend e li manda sul Telegram. I weekend già fatti sono in `video/pagella_fatte.json`.
+- `video/pagella_auto.py` costruisce da solo scaletta, copertina e didascalia dai voti (`docs/data/pagella.json`). Il workflow "Video da spec" parte ogni lunedì alle 09:07 UTC (11:07 italiane in estate): i video sono pronti per essere postati alle 13 (MotoGP) e alle 18 (F1), aggiorna i voti, prepara F1 e MotoGP dell'ultimo weekend e li manda sul Telegram. I weekend già fatti sono in `video/pagella_fatte.json`.
 - Il gancio non parte mai dal migliore: parte da chi ha un voto molto basso o una correzione pesante in negativo (il più famoso), poi si va dai voti bassi ai più alti, il migliore per ultimo. I ritiri si commentano come ritiro (mai la causa, se non c'è una fonte).
 - Le correzioni dichiarate si scrivono in `docs/data/pagella-correzioni.json`.
 - Voce: se nei segreti del repository ci sono `AZURE_SPEECH_KEY` e `AZURE_SPEECH_REGION` si usa la voce ufficiale Azure (la stessa Diego di edge-tts, con i tempi veri); altrimenti edge-tts, poi le riserve Piper e Kokoro.
+- Nei video si dice: "Ogni lunedì alle 13 la pagella della MotoGP, tornate sul profilo alle 18 per quella della F1" (e viceversa nel video F1); lo stesso orario è in didascalia.

@@ -2,10 +2,10 @@ name: Video da spec
 
 # Quando in video/spec/ arriva un file .json (la scaletta di un video fatto a mano), il video si genera qui
 # (la voce funziona su GitHub) e parte sul Telegram insieme alla copertina (.png) e alla didascalia (.txt) con lo stesso nome.
-# Ogni lunedi' pomeriggio (15:07 italiane in orario estivo) prepara da solo la pagella del weekend di F1 e MotoGP e la manda sul Telegram.
+# Ogni lunedi' mattina (11:07 italiane in orario estivo, cosi' i video sono pronti per le 13 e le 18) prepara da solo la pagella del weekend di F1 e MotoGP e la manda sul Telegram.
 on:
   schedule:
-    - cron: '7 13 * * 1'
+    - cron: '7 9 * * 1'
   push:
     branches: [main]
     paths:

@@ -41,7 +41,7 @@ jobs:
         if: steps.sc.outputs.attivo == 'si'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
-          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID || '559225883' }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           if [ -s video/richiesta.txt ]; then
@@ -58,3 +58,10 @@ jobs:
           git add video_stato.json 2>/dev/null || true
           git add -u video/richiesta.txt 2>/dev/null || true
           git diff --cached --quiet || (git commit -m "video: stato" && git pull --rebase --autostash -X theirs origin main && git push)
+      - name: Avvisa su Telegram se il video non è riuscito
+        if: failure()
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID || '559225883' }}
+        run: |
+          [ -n "$TOKEN" ] && curl -s -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" -d chat_id="$CHAT" --data-urlencode "text=⚠️ Il video non è riuscito. Dettagli: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" > /dev/null || true

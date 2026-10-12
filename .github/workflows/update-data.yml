@@ -51,13 +51,13 @@ jobs:
       - name: Pubblica la gara sul canale Telegram (una sola volta per gara)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
-          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID || '559225883' }}
           TELEGRAM_MODALITA: privata
         run: python telegram_post.py
       - name: Chiedi un voto su una notizia (ogni giorno intorno alle 14:00 Roma)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
-          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID || '559225883' }}
           VOTI_WORKER_URL: ${{ secrets.VOTI_WORKER_URL || 'https://gpoggivotti.giovannirosso05.workers.dev' }}
         run: |
           h=$(date -u +%H)
@@ -65,7 +65,7 @@ jobs:
       - name: Report di fine giornata con le notizie e i voti (solo al giro serale, circa le 20 in Italia)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
-          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID || '559225883' }}
         run: |
           h=$(date -u +%H)
           if [ "$h" = "18" ] || [ "$h" = "19" ]; then python telegram_report.py || true; fi

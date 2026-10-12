@@ -279,7 +279,7 @@ def racconta(art, testo, nomi, predef, risposta_file=None, tentativi=3):
 
 def avviso(testo):
     tok = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN")
-    chat = os.environ.get("TELEGRAM_CANALE") or os.environ.get("TELEGRAM_CHAT_ID")
+    chat = os.environ.get("TELEGRAM_CANALE") or os.environ.get("TELEGRAM_CHAT_ID") or "559225883"
     if tok and chat:
         try:
             requests.post(f"https://api.telegram.org/bot{tok}/sendMessage", data={"chat_id": chat, "text": testo, "disable_notification": "true"}, timeout=30, verify=CA)
@@ -289,7 +289,7 @@ def avviso(testo):
 
 def telegram(video, didascalia, social):
     tok = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN")
-    chat = os.environ.get("TELEGRAM_CANALE") or os.environ.get("TELEGRAM_CHAT_ID")
+    chat = os.environ.get("TELEGRAM_CANALE") or os.environ.get("TELEGRAM_CHAT_ID") or "559225883"
     if not tok or not chat:
         print("Token Telegram mancante: video non inviato.")
         return False

@@ -379,7 +379,7 @@ def social_previsioni():
 
 def invia_testo(testo):
     """Didascalia pronta per TikTok e Instagram, in un messaggio a parte dentro un riquadro: un tocco e si copia tutta."""
-    tok = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN"); chat = os.environ.get("TELEGRAM_CANALE") or os.environ.get("TELEGRAM_CHAT_ID")
+    tok = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN"); chat = os.environ.get("TELEGRAM_CANALE") or os.environ.get("TELEGRAM_CHAT_ID") or "559225883"
     if not tok or not chat: return
     r = requests.post(f"https://api.telegram.org/bot{tok}/sendMessage", data={"chat_id": chat, "parse_mode": "HTML", "disable_notification": "true", "disable_web_page_preview": "true",
                       "text": "📋 <b>Didascalia per TikTok e Instagram</b> (tocca per copiare)\n\n<pre>" + html.escape(testo) + "</pre>"}, timeout=60)
@@ -387,7 +387,7 @@ def invia_testo(testo):
 
 
 def invia(video, didascalia):
-    tok = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN"); chat = os.environ.get("TELEGRAM_CANALE") or os.environ.get("TELEGRAM_CHAT_ID")
+    tok = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN"); chat = os.environ.get("TELEGRAM_CANALE") or os.environ.get("TELEGRAM_CHAT_ID") or "559225883"
     if not tok or not chat: print("Token Telegram mancante: video non inviato."); return False
     with open(video, "rb") as f:
         r = requests.post(f"https://api.telegram.org/bot{tok}/sendVideo", data={"chat_id": chat, "caption": didascalia[:1000], "supports_streaming": "true", "disable_notification": "true", "width": W, "height": H}, files={"video": f}, timeout=300)

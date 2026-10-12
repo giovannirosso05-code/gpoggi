@@ -31,3 +31,8 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 
 ## Segreti
 - Mai chiedere né scrivere token in chat o nel repository.
+
+## Consegna su Telegram
+- Ogni video, copertina e didascalia fatti a mano vanno anche in `invio/` (es. `invio/nome.mp4`, `invio/nome.png`, `invio/nome.txt` con la didascalia): il workflow "Invio su Telegram" parte al push e li manda sul Telegram del proprietario, come fa il bot di MMA Oggi. I già inviati sono in `video/inviati.json`.
+- Anche in chat si mandano con SendUserFile, ma la consegna su Telegram è quella che conta.
+- I workflow dei video automatici avvisano su Telegram se falliscono. La chat è `559225883` (non è un segreto); il token è nei secret del repository (`TELEGRAM_BOT_TOKEN` o `TELEGRAM_TOKEN`), mai in chiaro.

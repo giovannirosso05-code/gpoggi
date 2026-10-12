@@ -9,17 +9,21 @@
    "alt": "ferrari",
    "hook": true,
    "hook_titolo": "Un ottimo Leclerc",
-   "testo": "Un ottimo [Leclerc] fa felice una Ferrari non troppo sorridente: otto e mezzo a lui, sei a [Hamilton]."
-  },
-  {
-   "foto": "Lance Stroll",
-   "testo": "[Stroll]: diciannovesimo in qualifica, fuori nella sprint e ritirato al giro 37. Il ritiro pesa sul voto complessivo del weekend. Voto *tre*."
+   "testo": "Un ottimo [Leclerc] fa felice una Ferrari non troppo sorridente."
   },
   {
    "foto": "Lewis Hamilton",
    "alt": "pista_suzuka",
    "pista": true,
    "testo": "[Hamilton]: terzo in qualifica, secondo nella sprint e sesto in gara, partendo terzo. Ha perso 3 posizioni rispetto alla griglia. Pesa l'errore che ha ammesso. Voto *sei*."
+  },
+  {
+   "foto": "Lance Stroll",
+   "testo": "[Stroll]: diciannovesimo in qualifica, fuori nella sprint e ritirato al giro 37. La causa del ritiro non è ancora chiara. Voto *tre*."
+  },
+  {
+   "foto": "Arvid Lindblad",
+   "testo": "[Lindblad]: decimo in qualifica, tredicesimo nella sprint e quindicesimo in gara, partendo nono. Ha perso 6 posizioni rispetto alla griglia. Voto *quattro e mezzo*."
   },
   {
    "foto": "George Russell",
@@ -53,44 +57,51 @@
     "righe": [
      {
       "pos": 1,
-      "colore": "229971",
-      "nome": "Stroll",
-      "voto": "3",
+      "colore": "4781D7",
+      "nome": "Verstappen",
+      "voto": "10",
       "nota": " "
      },
      {
       "pos": 2,
-      "colore": "ED1131",
-      "nome": "Hamilton",
-      "voto": "6",
-      "nota": " "
-     },
-     {
-      "pos": 3,
-      "colore": "00D7B6",
-      "nome": "Russell",
-      "voto": "6,5",
-      "nota": " "
-     },
-     {
-      "pos": 4,
-      "colore": "00D7B6",
-      "nome": "Antonelli",
-      "voto": "8",
-      "nota": " "
-     },
-     {
-      "pos": 5,
       "colore": "ED1131",
       "nome": "Leclerc",
       "voto": "8,5",
       "nota": " "
      },
      {
+      "pos": 3,
+      "colore": "00D7B6",
+      "nome": "Antonelli",
+      "voto": "8",
+      "nota": " "
+     },
+     {
+      "pos": 4,
+      "colore": "00D7B6",
+      "nome": "Russell",
+      "voto": "6,5",
+      "nota": " "
+     },
+     {
+      "pos": 5,
+      "colore": "ED1131",
+      "nome": "Hamilton",
+      "voto": "6",
+      "nota": " "
+     },
+     {
       "pos": 6,
-      "colore": "4781D7",
-      "nome": "Verstappen",
-      "voto": "10",
+      "colore": "6C98FF",
+      "nome": "Lindblad",
+      "voto": "4,5",
+      "nota": " "
+     },
+     {
+      "pos": 7,
+      "colore": "229971",
+      "nome": "Stroll",
+      "voto": "3",
       "nota": " "
      }
     ]

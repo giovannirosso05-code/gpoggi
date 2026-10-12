@@ -75,7 +75,7 @@ def scena(r, sprint, alt):
     resto = [x for x in r.get("perche", []) if x not in GENERICHE]
     if not r["g"]:
         resto = []   # il ritiro e' gia' nella frase delle sessioni
-    extra = (resto[0][0].upper() + resto[0][1:] + ".") if resto else ("Il ritiro pesa sul voto complessivo del weekend." if not r["g"] else "")
+    extra = (resto[0][0].upper() + resto[0][1:] + ".") if resto else (frase_ritiro(r) if not r["g"] else "")
     if r.get("correzione"):
         extra += " " + r["motivo"][0].upper() + r["motivo"][1:] + "."
     testo = f"[{cognome(r)}]: {frase_sessioni(r, sprint)}. {extra} Voto *{voto_parole(r['voto'])}*.".replace("  ", " ")
@@ -134,6 +134,23 @@ def vittorie_di_fila(serie, w, nome):
     return n
 
 
+def causa_ritiro(serie, gp_nome, nome):
+    """'caduta', 'tecnico' o 'sconosciuta' (default): si scrive a mano in docs/data/pagella-note.json solo se c'e' una fonte."""
+    try:
+        return json.load(open(DATA / "pagella-note.json")).get(serie, {}).get(gp_nome, {}).get(nome, "sconosciuta")
+    except Exception:
+        return "sconosciuta"
+
+
+def frase_ritiro(r):
+    c = r.get("causa", "sconosciuta")
+    if c == "caduta":
+        return "È caduto: il ritiro pesa sul voto."
+    if c == "tecnico":
+        return "Problema tecnico: il voto va diviso tra lui e il team."
+    return "La causa del ritiro non è ancora chiara."
+
+
 def prominenza(serie):
     try:
         if serie == "f1":
@@ -159,6 +176,8 @@ def costruisci(serie, w):
     gp = w["nome"].replace("Gran Premio d'", "").replace("Gran Premio di ", "").replace("Gran Premio del ", "").replace("Gran Premio dell'", "").replace("GP ", "")
     gp_art = w["nome"].replace("Gran Premio", "Gran Premio").replace("GP ", "GP ")
     punti = prominenza(serie)
+    for r in righe:
+        r["causa"] = causa_ritiro(serie, w["nome"], r["nome"])
     asc = sorted(righe, key=lambda r: (r["voto_esatto"], -(punti.get(r["nome"], 0))))
     migliore = righe[0]
     scelti = []
@@ -177,43 +196,39 @@ def costruisci(serie, w):
     cand = [r for r in (neg, noto) if r]
     prot = max(cand, key=lambda r: punti.get(r["nome"], 0)) if cand else basso
     protagonisti = sorted((r for r in righe if r is not migliore), key=lambda r: -punti.get(r["nome"], 0))[:2]
-    for r in (*protagonisti, *righe[1:3], basso, prot, neg, noto, sale[0] if sale and sale[0]["griglia"] - sale[0]["g"] >= 6 else None,
+    rosse = [r for r in righe if serie == "f1" and r.get("team") == "Ferrari" and r is not migliore]   # le due Ferrari si citano sempre: portano pubblico
+    for r in (*rosse, *protagonisti, *righe[1:3], basso, prot, neg, noto, sale[0] if sale and sale[0]["griglia"] - sale[0]["g"] >= 6 else None,
               perde if perde and perde["griglia"] - perde["g"] <= -3 else None, *[x for x in righe if x.get("correzione")], *righe[1:3]):
         aggiungi(r)
-    scelti = sorted(scelti[:5], key=lambda r: r["voto_esatto"])
+    scelti = sorted(scelti[:6], key=lambda r: r["voto_esatto"])
     ferrari = max((r for r in righe if r.get("team") == "Ferrari" and r["voto"] >= 8), key=lambda r: r["voto_esatto"], default=None) if serie == "f1" else None
     if ferrari:   # in Italia la Ferrari attira: si apre elogiando il suo migliore (mai il migliore assoluto della pagella)
         prot = ferrari
         aggiungi(ferrari)
-        scelti = sorted(([ferrari] + [r for r in scelti if r is not ferrari])[:5], key=lambda r: r["voto_esatto"])
+        scelti = sorted(([ferrari] + [r for r in scelti if r is not ferrari])[:6], key=lambda r: r["voto_esatto"])
         compagno = next((r for r in righe if r.get("team") == "Ferrari" and r is not ferrari and r["voto"] <= 6.5), None)
         gara = f"{ordinale(ferrari['g'])} in gara" + (f", partendo {ordinale(ferrari['griglia'])}" if ferrari.get("griglia") and ferrari["griglia"] != ferrari["g"] else "")
-        gancio = (f"Un ottimo [{cognome(ferrari)}] fa felice una Ferrari non troppo sorridente: {voto_parole(ferrari['voto'])} a lui, {voto_parole(compagno['voto'])} a [{cognome(compagno)}]."
-                  if compagno else f"Un ottimo [{cognome(ferrari)}] fa felice la Ferrari: {voto_parole(ferrari['voto'])} in pagella.")
+        gancio = (f"Un ottimo [{cognome(ferrari)}] fa felice una Ferrari non troppo sorridente." if compagno else f"Un ottimo [{cognome(ferrari)}] fa felice la Ferrari.")
         hook_titolo = f"Un ottimo {breve(ferrari)}"
-    elif serie == "motogp" and migliore.get("moto") and any(r.get("moto") and r["moto"] != migliore["moto"] for r in righe):
-        # gancio sulle case: il migliore fa felice la sua, e la rivale piu' forte del mondiale no
-        tot = marche_moto()
-        rivali = sorted({r["moto"] for r in righe if r.get("moto") and r["moto"] != migliore["moto"]}, key=lambda m: -tot.get(m, 0))
-        rivale = rivali[0]
-        miglior_rivale = min((r["g"] for r in righe if r.get("moto") == rivale and r["g"]), default=None)
-        prot = migliore
-        coda = (f", e {art(rivale)} non sorride: il suo migliore in gara è {ordinale(miglior_rivale)}" if miglior_rivale and miglior_rivale >= 4 else "")
-        gancio = f"Un ottimo [{cognome(migliore)}] fa felice {art(migliore['moto'])}{coda}."
-        hook_titolo = f"Un ottimo {breve(migliore)}"
     elif prot is neg:
         gancio = f"[{cognome(prot)}] {voto_parole(prot['voto'])} in pagella. {neg['motivo'][0].upper() + neg['motivo'][1:]}. Ma il voto più basso del weekend è un altro."
     else:
+        if prot is migliore:
+            prot = basso
         ragione = f"si è ritirato al giro {prot['ritiro_giro']}" if (not prot["g"] and prot.get("ritiro_giro")) else next((x for x in prot.get("perche", []) if x not in GENERICHE), "")
-        gancio = f"[{cognome(prot)}] {voto_parole(prot['voto'])} in pagella" + (f": {ragione}" if ragione else "") + ". " + (
-            "Ma c'è chi ha preso ancora meno." if prot is not basso else "Nessuno ha fatto peggio.")
+        gancio = f"[{cognome(prot)}] tra i peggiori del weekend" + (f": {ragione}" if ragione else "") + "." + (f" {frase_ritiro(prot)}" if not prot["g"] else "")
+        hook_titolo = f"{breve(prot)} tra i peggiori"
     hook_titolo = locals().get("hook_titolo") or f"{breve(prot)} {fmt(prot['voto'])} in pagella"
     righe_tab = [r for r in asc if r in scelti or r is migliore]
     for r in sorted(righe[:4], key=lambda r: -r["voto_esatto"]):
         pass
     coloreriga = lambda r: r.get("colore") or MOTO.get(r.get("moto"), "888888")
-    tab = {"titolo": f"Pagella: {gp}", "righe": [{"pos": i + 1, "colore": coloreriga(r), "nome": breve(r), "voto": fmt(r["voto"]), "nota": " "} for i, r in enumerate(sorted(set(map(id, righe_tab)) and righe_tab, key=lambda r: r["voto_esatto"]))]}
+    tab = {"titolo": f"Pagella: {gp}", "righe": [{"pos": i + 1, "colore": coloreriga(r), "nome": breve(r), "voto": fmt(r["voto"]), "nota": " "} for i, r in enumerate(sorted(set(map(id, righe_tab)) and righe_tab, key=lambda r: -r["voto_esatto"]))]}
     scene = [{"foto": prot["nome"], **foto_gancio(prot["nome"]), "hook": True, "hook_titolo": hook_titolo, "testo": gancio}]
+    if ferrari:   # dopo il gancio si parla subito dell'altra Ferrari
+        c2 = next((r for r in scelti if r.get("team") == "Ferrari" and r is not ferrari), None)
+        if c2:
+            scelti = [c2] + [r for r in scelti if r is not c2]
     for r in scelti:
         scene.append(scena(r, sprint, foto_pista(serie, r["nome"])))
     fila = vittorie_di_fila(serie, w, migliore["nome"])

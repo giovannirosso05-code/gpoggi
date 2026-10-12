@@ -51,3 +51,9 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 - Le correzioni dichiarate si scrivono in `docs/data/pagella-correzioni.json`.
 - Voce: se nei segreti del repository ci sono `AZURE_SPEECH_KEY` e `AZURE_SPEECH_REGION` si usa la voce ufficiale Azure (la stessa Diego di edge-tts, con i tempi veri); altrimenti edge-tts, poi le riserve Piper e Kokoro.
 - Nei video si dice: "Ogni lunedì alle 13 la pagella della MotoGP, tornate sul profilo alle 18 per quella della F1" (e viceversa nel video F1); lo stesso orario è in didascalia.
+
+## Pagella: regole del gancio e dell'ordine (ripetute dal proprietario)
+- Il gancio non dice i voti e non parte mai dal pilota uomo della giornata (è già in copertina). In F1 si apre con Leclerc ("Un ottimo Leclerc fa felice una Ferrari non troppo sorridente") e subito dopo si parla di Hamilton: le due Ferrari si citano sempre, portano pubblico.
+- In MotoGP il gancio è su chi ha preso un voto molto basso (es. "Bagnaia tra i peggiori del weekend"). Per i ritiri: se è una caduta, si dice caduto; se è un problema tecnico, "il voto va diviso tra lui e il team"; se la causa non è verificata si dice "la causa non è ancora chiara". Le cause confermate si scrivono in `docs/data/pagella-note.json` (serie → gara → pilota → "caduta" | "tecnico").
+- Le tabelle dei voti (copertina e schermata finale del video) vanno dal migliore a scendere; il video racconta dal voto più basso al più alto, il migliore per ultimo.
+- Si dice sempre che i voti sono a scopo divertente e non vogliono offendere nessuno.

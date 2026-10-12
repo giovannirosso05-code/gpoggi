@@ -82,6 +82,32 @@ def scena(r, sprint, alt):
     return {"foto": r["nome"], **alt, "testo": testo}
 
 
+def art(marca):
+    return ("l'" if marca[0].upper() in "AEIOU" else "la ") + marca
+
+
+def foto_gancio(nome):
+    """Per il gancio una foto diversa dal solito: in tuta/maglia della squadra se c'e', altrimenti sorridente."""
+    try:
+        extra = json.load(open(DATA / "foto-extra.json")).get(nome, {})
+    except Exception:
+        return {}
+    for k in ("ferrari", "tuta", "sorriso"):
+        if k in extra:
+            return {"alt": k}
+    return {}
+
+
+def marche_moto():
+    try:
+        tot = {}
+        for p in json.load(open(DATA / "motogp-classifica.json"))["categorie"]["MotoGP"]:
+            tot[p["moto"]] = tot.get(p["moto"], 0) + p["punti"]
+        return tot
+    except Exception:
+        return {}
+
+
 def vittorie_di_fila(serie, w, nome):
     """Quante gare consecutive ha vinto il pilota fino a questo weekend (dai risultati sul sito)."""
     vinc = []
@@ -162,21 +188,32 @@ def costruisci(serie, w):
         scelti = sorted(([ferrari] + [r for r in scelti if r is not ferrari])[:5], key=lambda r: r["voto_esatto"])
         compagno = next((r for r in righe if r.get("team") == "Ferrari" and r is not ferrari and r["voto"] <= 6.5), None)
         gara = f"{ordinale(ferrari['g'])} in gara" + (f", partendo {ordinale(ferrari['griglia'])}" if ferrari.get("griglia") and ferrari["griglia"] != ferrari["g"] else "")
-        gancio = (f"[{cognome(ferrari)}] {voto_parole(ferrari['voto'])} in pagella: {gara}, {frase_sessioni_breve(ferrari, sprint)}."
-                  + (" La Ferrari sorride, ma non per tutti." if compagno else " Un weekend da applausi."))
+        gancio = (f"Un ottimo [{cognome(ferrari)}] fa felice una Ferrari non troppo sorridente: {voto_parole(ferrari['voto'])} a lui, {voto_parole(compagno['voto'])} a [{cognome(compagno)}]."
+                  if compagno else f"Un ottimo [{cognome(ferrari)}] fa felice la Ferrari: {voto_parole(ferrari['voto'])} in pagella.")
+        hook_titolo = f"Un ottimo {breve(ferrari)}"
+    elif serie == "motogp" and migliore.get("moto") and any(r.get("moto") and r["moto"] != migliore["moto"] for r in righe):
+        # gancio sulle case: il migliore fa felice la sua, e la rivale piu' forte del mondiale no
+        tot = marche_moto()
+        rivali = sorted({r["moto"] for r in righe if r.get("moto") and r["moto"] != migliore["moto"]}, key=lambda m: -tot.get(m, 0))
+        rivale = rivali[0]
+        miglior_rivale = min((r["g"] for r in righe if r.get("moto") == rivale and r["g"]), default=None)
+        prot = migliore
+        coda = (f", e {art(rivale)} non sorride: il suo migliore in gara è {ordinale(miglior_rivale)}" if miglior_rivale and miglior_rivale >= 4 else "")
+        gancio = f"Un ottimo [{cognome(migliore)}] fa felice {art(migliore['moto'])}{coda}."
+        hook_titolo = f"Un ottimo {breve(migliore)}"
     elif prot is neg:
         gancio = f"[{cognome(prot)}] {voto_parole(prot['voto'])} in pagella. {neg['motivo'][0].upper() + neg['motivo'][1:]}. Ma il voto più basso del weekend è un altro."
     else:
         ragione = f"si è ritirato al giro {prot['ritiro_giro']}" if (not prot["g"] and prot.get("ritiro_giro")) else next((x for x in prot.get("perche", []) if x not in GENERICHE), "")
         gancio = f"[{cognome(prot)}] {voto_parole(prot['voto'])} in pagella" + (f": {ragione}" if ragione else "") + ". " + (
             "Ma c'è chi ha preso ancora meno." if prot is not basso else "Nessuno ha fatto peggio.")
-    hook_titolo = f"{breve(prot)} {fmt(prot['voto'])} in pagella"
+    hook_titolo = locals().get("hook_titolo") or f"{breve(prot)} {fmt(prot['voto'])} in pagella"
     righe_tab = [r for r in asc if r in scelti or r is migliore]
     for r in sorted(righe[:4], key=lambda r: -r["voto_esatto"]):
         pass
     coloreriga = lambda r: r.get("colore") or MOTO.get(r.get("moto"), "888888")
     tab = {"titolo": f"Pagella: {gp}", "righe": [{"pos": i + 1, "colore": coloreriga(r), "nome": breve(r), "voto": fmt(r["voto"]), "nota": " "} for i, r in enumerate(sorted(set(map(id, righe_tab)) and righe_tab, key=lambda r: r["voto_esatto"]))]}
-    scene = [{"foto": prot["nome"], "hook": True, "hook_titolo": hook_titolo, "testo": gancio}]
+    scene = [{"foto": prot["nome"], **foto_gancio(prot["nome"]), "hook": True, "hook_titolo": hook_titolo, "testo": gancio}]
     for r in scelti:
         scene.append(scena(r, sprint, foto_pista(serie, r["nome"])))
     fila = vittorie_di_fila(serie, w, migliore["nome"])
@@ -188,16 +225,16 @@ def costruisci(serie, w):
     top = {"foto": migliore["nome"], **pista,
            "testo": f"E poi il migliore: [{cognome(migliore)}]. {tripletta(migliore, sprint) or (frase_sessioni(migliore, sprint)[0].upper() + frase_sessioni(migliore, sprint)[1:] + '.')}{lode} Voto *{voto_parole(migliore['voto'])}*."}
     scene.append(top)
-    scene.append({"foto": migliore["nome"], "pista": True, "classifica": tab, "sub_top": 1360, "testo": f"Ecco la pagella completa, con [{cognome(migliore)}] in fondo."})
+    scene.append({"foto": migliore["nome"], "pista": True, "classifica": tab, "sub_top": 1360, "testo": f"Ecco la pagella completa, con [{cognome(migliore)}] in fondo. Voti a scopo divertente: nessuno si offenda."})
     ser = "F1" if serie == "f1" else "MotoGP"
-    return {"serie": ser, "titolo_breve": f"{gp}: la pagella", "fonte": "risultati ufficiali, calcolo GP Oggi", "velocita": "+30%", "scene": scene,
+    return {"serie": ser, "titolo_breve": f"{gp}: la pagella", "fonte": "risultati ufficiali, calcolo GP Oggi", "velocita": "+38%", "scene": scene,
             "finale": {"foto": migliore["nome"], "domanda": f"Che voto dai tu a {gp}?"}}, migliore, gp, basso
 
 
 def didascalia(serie, gp, migliore, basso, prot_nome):
     tag = "#f1" if serie == "f1" else "#motogp"
     return (f"La pagella di {gp}, studiata da noi 📝\n\n{migliore['nome']} {fmt(migliore['voto'])} è l'uomo del weekend, ma il voto più basso è {basso['nome']} ({fmt(basso['voto'])}).\n\n"
-            f"Sei d'accordo coi nostri voti? Dimmi la tua nei commenti 👇\n\n🔗 gpoggi.it\n\n#gpoggi {tag} #{''.join(c for c in gp.lower() if c.isalnum())} #pagella")
+            f"Voti a scopo divertente, senza offendere nessuno. Sei d'accordo? Dimmi la tua nei commenti 👇\n\n🔗 gpoggi.it\n\n#gpoggi {tag} #{''.join(c for c in gp.lower() if c.isalnum())} #pagella")
 
 
 def main():

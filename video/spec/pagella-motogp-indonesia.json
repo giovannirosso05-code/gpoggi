@@ -2,13 +2,14 @@
  "serie": "MotoGP",
  "titolo_breve": "Indonesia: la pagella",
  "fonte": "risultati ufficiali, calcolo GP Oggi",
- "velocita": "+30%",
+ "velocita": "+38%",
  "scene": [
   {
-   "foto": "Francesco Bagnaia",
+   "foto": "Marco Bezzecchi",
+   "alt": "sorriso",
    "hook": true,
-   "hook_titolo": "Bagnaia 4 in pagella",
-   "testo": "[Bagnaia] quattro in pagella: si è ritirato al giro 6. Ma c'è chi ha preso ancora meno."
+   "hook_titolo": "Un ottimo Bezzecchi",
+   "testo": "Un ottimo [Bezzecchi] fa felice l'Aprilia, e la Ducati non sorride: il suo migliore in gara è sesto."
   },
   {
    "foto": "Toprak Razgatlioglu",
@@ -94,7 +95,7 @@
     ]
    },
    "sub_top": 1360,
-   "testo": "Ecco la pagella completa, con [Bezzecchi] in fondo."
+   "testo": "Ecco la pagella completa, con [Bezzecchi] in fondo. Voti a scopo divertente: nessuno si offenda."
   }
  ],
  "finale": {

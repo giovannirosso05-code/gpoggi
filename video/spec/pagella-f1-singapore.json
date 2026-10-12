@@ -2,13 +2,14 @@
  "serie": "F1",
  "titolo_breve": "Singapore: la pagella",
  "fonte": "risultati ufficiali, calcolo GP Oggi",
- "velocita": "+30%",
+ "velocita": "+38%",
  "scene": [
   {
    "foto": "Charles Leclerc",
+   "alt": "ferrari",
    "hook": true,
-   "hook_titolo": "Leclerc 8,5 in pagella",
-   "testo": "[Leclerc] otto e mezzo in pagella: secondo in gara, con un sorpasso. La Ferrari sorride, ma non per tutti."
+   "hook_titolo": "Un ottimo Leclerc",
+   "testo": "Un ottimo [Leclerc] fa felice una Ferrari non troppo sorridente: otto e mezzo a lui, sei a [Hamilton]."
   },
   {
    "foto": "Lance Stroll",
@@ -95,7 +96,7 @@
     ]
    },
    "sub_top": 1360,
-   "testo": "Ecco la pagella completa, con [Verstappen] in fondo."
+   "testo": "Ecco la pagella completa, con [Verstappen] in fondo. Voti a scopo divertente: nessuno si offenda."
   }
  ],
  "finale": {

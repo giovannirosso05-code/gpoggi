@@ -46,7 +46,7 @@ def registra(S, r, gara_nome, punti_fino, griglia, extra):
     return p
 
 
-def testa_a_testa(H, per_team, colori):
+def testa_a_testa(H, per_team, colori, marche=None):
     """per_team: {team: [(nome, q, g), ...]} di una gara: confronta i due compagni."""
     for team, lista in per_team.items():
         if len(lista) != 2:
@@ -56,6 +56,8 @@ def testa_a_testa(H, per_team, colori):
         k = f"{a[0]}|{b[0]}"
         h = H.setdefault(k, {"team": team, "colore": colori.get(team), "a": a[0], "b": b[0], "q_a": 0, "q_b": 0, "g_a": 0, "g_b": 0})
         h["team"] = team
+        if marche and marche.get(team):
+            h["moto"] = marche[team]
         for ok, (x, y) in (("q", (a[1], b[1])), ("g", (a[2], b[2]))):
             if x is not None and (y is None or x < y):
                 h[ok + "_a"] += 1
@@ -113,7 +115,7 @@ def motogp():
             if g.get("giro_veloce") is not None and g["giro_veloce"] == r.get("numero"):
                 p["giri_veloci"] += 1
             per_team.setdefault(r["team"], []).append((r["nome"], q.get(r["nome"]), r.get("pos")))
-        testa_a_testa(H, per_team, {})
+        testa_a_testa(H, per_team, {}, {r["team"]: r["moto"] for r in c["MotoGP"]})
     return {"gare": n_gare, "piloti": sorted(S.values(), key=lambda p: (-p["vittorie"], -p["podi"], p["nome"])), "compagni": list(H.values())}
 
 

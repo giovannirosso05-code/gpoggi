@@ -44,10 +44,11 @@ function tabella(S, moto, chiave, dir) {
     ${cols.slice(1).map(([k]) => `<td class="n">${k === "media" ? (p.classificati ? n1(p.somma_pos / p.classificati) : "–") : k === "guadagno" ? (p.gare_griglia ? segno(p.guadagno) : "–") : p[k]}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
 }
 
-function compagni(S) {
+const cogn = (n) => { const p = n.split(" "); return p[p.length - 1] === "Marquez" ? p[0][0] + ". Marquez" : p[p.length - 1]; };
+function compagni(S, moto) {
   const H = S.compagni.filter((h) => h.q_a + h.q_b + h.g_a + h.g_b > 0).sort((a, b) => a.team.localeCompare(b.team));
   const cella = (x, y) => `<span class="${x > y ? "st-vinc" : ""}">${x}</span> – <span class="${y > x ? "st-vinc" : ""}">${y}</span>`;
-  return `<div class="table-wrap"><table class="results st-h2h"><thead><tr><th>Squadra</th><th>Compagni</th><th class="n">Qualifica</th><th class="n">Gara</th></tr></thead><tbody>${H.map((h) => `<tr><td>${esc(h.team)}</td><td><strong>${esc(h.a)}</strong> – <strong>${esc(h.b)}</strong></td><td class="n">${cella(h.q_a, h.q_b)}</td><td class="n">${cella(h.g_a, h.g_b)}</td></tr>`).join("")}</tbody></table></div>`;
+  return `<div class="table-wrap"><table class="results st-h2h"><thead><tr><th>Team</th><th>Compagni</th><th class="n">Qualifica</th><th class="n">Gara</th></tr></thead><tbody>${H.map((h) => `<tr><td><span class="cella-team">${moto ? stemmaMoto(h.moto) : stemma(h.team, h.colore)}</span></td><td><strong>${esc(cogn(h.a))}</strong> – <strong>${esc(cogn(h.b))}</strong></td><td class="n">${cella(h.q_a, h.q_b)}</td><td class="n">${cella(h.g_a, h.g_b)}</td></tr>`).join("")}</tbody></table></div>`;
 }
 
 try {
@@ -72,7 +73,7 @@ try {
       <h3 class="section-title">${moto ? "MotoGP" : "Formula 1"} <span class="count">· ${S.gare} gare</span></h3>
       ${carte(S, moto)}
       <h3 class="section-title">Tutti i piloti</h3><div id="st-tab">${tabella(S, moto, chiave, dir)}</div>
-      <h3 class="section-title" style="margin-top:26px">Testa a testa tra compagni</h3>${compagni(S)}</div>`;
+      <h3 class="section-title" style="margin-top:26px">Testa a testa tra compagni</h3>${compagni(S, moto)}</div>`;
     document.querySelector("#st-tab").addEventListener("click", (e) => {
       const th = e.target.closest("th[data-k]"); if (!th) return;
       const k = th.dataset.k; dir = k === chiave ? -dir : (k === "nome" || k === "ritiri" && false ? 1 : -1); if (k === "media") dir = 1; chiave = k;

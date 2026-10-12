@@ -44,7 +44,7 @@ html,body{{margin:0;width:{n.W}px;height:{n.H}px;overflow:hidden;position:relati
 <div class=carta><div class=tit>Pagella</div><div class=gp>{n.esc(gp)}</div>
 <div class=foto></div><div class=sigillo>{voto(eroe)}</div>
 <div class=elenco>{rr}</div>
-<div class=nota><b>Uomo del weekend: {n.esc(eroe["nome"].upper())}.</b> Voti calcolati da GP Oggi sui risultati ufficiali.</div></div>
+<div class=nota><b>Uomo del weekend: {n.esc(eroe["nome"].upper())}.</b> I nostri voti, calcolati sui risultati ufficiali.</div></div>
 <div class=cred>{n.esc(cred)}</div>"""
 
 

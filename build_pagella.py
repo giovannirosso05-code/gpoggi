@@ -1,6 +1,6 @@
 """La pagella del weekend: voto a ogni pilota dell'ultimo weekend concluso di F1 e di MotoGP -> docs/data/pagella.json.
 
-Il voto e' un calcolo di GP Oggi sui risultati ufficiali, senza opinioni. Metodo (scritto anche nella pagina del sito):
+Il voto e' di GP Oggi: parte da un calcolo sui risultati ufficiali, che la redazione puo' correggere dichiarandolo. Metodo (scritto anche nella pagina del sito):
 - ogni sessione vale un voto da posizione: 1° = 10, 2° = 8,5, 3° = 8, 4° = 7,5, 5° = 7, 6° = 6,5, poi si scende (7° 6,2 ... 10° 5,6, poi -0,15 a posizione, minimo 4);
 - in gara si aggiungono 0,1 per ogni posizione guadagnata sulla griglia di partenza ufficiale (da -1 a +1,5, mai sopra 10);
 - chi si ritira, o non ha un tempo, prende 3 in quella sessione;
@@ -43,6 +43,50 @@ def calcola(piloti):
         righe.append({**p, "voto": mezzo(tot), "voto_esatto": round(tot, 2)})
     righe.sort(key=lambda r: (-r["voto_esatto"], r["g"] is None, r["g"] or 99))
     return righe
+
+
+import re
+
+
+def fatti_cronaca(righe, voci):
+    """Dalla cronaca giro per giro: sorpassi fatti e giro del ritiro di ogni pilota (solo quello che c'e' scritto)."""
+    def trova(tok):
+        m = [r for r in righe if r["nome"] == tok] or [r for r in righe if r["nome"].split()[-1] == tok]
+        return m[0] if len(m) == 1 else None
+    for r in righe:
+        r["sorpassi"], r["ritiro_giro"] = 0, None
+    for v in voci or []:
+        t = v.get("testo", "")
+        m = re.match(r"\*\*(.+?) supera ", t)
+        if v.get("tipo") == "sorpasso" and m and trova(m.group(1)):
+            trova(m.group(1))["sorpassi"] += 1
+        m = re.match(r"\*\*(.+?) si ritira", t)
+        if v.get("tipo") == "ritiro" and m and trova(m.group(1)):
+            trova(m.group(1))["ritiro_giro"] = v.get("giro")
+
+
+def perche(r, sprint):
+    """Le ragioni del voto, solo da fatti verificabili nei dati (posizioni, griglia, cronaca). Frasi brevi, da dire a voce."""
+    out = []
+    g, q, s, gr = r["g"], r["q"], r["s"], r.get("griglia")
+    if g is None:
+        out.append(f"si è ritirato al giro {r['ritiro_giro']}" if r.get("ritiro_giro") else "non ha visto la bandiera a scacchi")
+    else:
+        guad = (gr - g) if gr else 0
+        if guad >= 8: out.append(f"ha recuperato {guad} posizioni sulla griglia")
+        elif guad >= 3: out.append(f"ha guadagnato {guad} posizioni sulla griglia")
+        elif guad <= -3: out.append(f"ha perso {-guad} posizioni rispetto alla griglia")
+        pos = [x for x in (q, s if sprint else None, g) if x is not None]
+        if len(pos) == 3 and max(pos) - min(pos) <= 2 and guad > -3: out.append("è stato costante in tutte le sessioni")
+        if r.get("sorpassi", 0) >= 2: out.append(f"ha fatto {r['sorpassi']} sorpassi")
+        if sprint and s is None: out.append("è uscito nella sprint")
+        if q is None: out.append("non ha firmato un tempo in qualifica")
+        if g == 1 and q == 1 and (not sprint or s == 1): out.append("ha vinto tutto, dalla qualifica alla gara")
+        elif g == 1: out.append("ha vinto la gara")
+        elif g <= 3: out.append("è salito sul podio")
+    if not out:
+        out.append(("ha chiuso dove era partito" if r["g"] == r.get("griglia") else "ha chiuso a un passo dalla posizione di partenza") if r["g"] is not None else "weekend senza punti")
+    return out[:2]
 
 
 def correggi(righe, corr):
@@ -98,6 +142,8 @@ def f1():
             tot = 0.25 * voto_sessione(x["q"]) + 0.75 * voto_sessione(x["g"], x.get("griglia"))
             x["voto"], x["voto_esatto"] = mezzo(tot), round(tot, 2)
         righe.sort(key=lambda x: -x["voto_esatto"])
+    fatti_cronaca(righe, json.load(open(D / "cronaca" / f"{id_}.json")).get("voci") if (D / "cronaca" / f"{id_}.json").exists() else [])
+    for x in righe: x["perche"] = perche(x, hanno_sprint)
     righe = correggi(righe, correzioni("f1", id_))
     return {"nome": g["nome"], "id": id_, "data": gara["inizio"], "sprint": hanno_sprint, "righe": righe}
 
@@ -123,6 +169,8 @@ def motogp():
             tot = 0.25 * voto_sessione(x["q"]) + 0.75 * voto_sessione(x["g"], x.get("griglia"))
             x["voto"], x["voto_esatto"] = mezzo(tot), round(tot, 2)
         righe.sort(key=lambda x: -x["voto_esatto"])
+    fatti_cronaca(righe, g.get("cronaca"))
+    for x in righe: x["perche"] = perche(x, hanno_sprint)
     righe = correggi(righe, correzioni("motogp", nome))
     return {"nome": nome, "data": g["data"], "sprint": hanno_sprint, "righe": righe}
 

@@ -8,41 +8,41 @@
    "foto": "Max Verstappen",
    "hook": true,
    "hook_titolo": "La pagella di Singapore",
-   "testo": "La [pagella] di Singapore, *studiata da noi*. Qualifica, sprint e gara."
+   "testo": "La [pagella] di Singapore, *studiata da noi*. Qualifica, sprint e gara: ti spiego ogni voto."
   },
   {
    "foto": "Isack Hadjar",
-   "testo": "[Hadjar] parte ventiduesimo e chiude *decimo*, ma fuori in qualifica e nella sprint. Voto *cinque e mezzo*."
+   "testo": "[Hadjar]: fuori in qualifica e nella sprint. In gara parte ventiduesimo e chiude *decimo*, dodici posizioni recuperate, ma il resto del weekend pesa. Voto *cinque e mezzo*."
   },
   {
    "foto": "Lewis Hamilton",
    "alt": "pista_suzuka",
    "pista": true,
-   "testo": "[Hamilton] terzo in qualifica e secondo nella sprint, ma in gara *scivola al sesto posto*. Pesa l'errore che ha ammesso. Voto *sei*."
+   "testo": "[Hamilton]: terzo in qualifica, secondo nella sprint, poi in gara *perde tre posizioni* e chiude sesto. Pesa anche l'errore che ha ammesso. Voto *sei*."
   },
   {
    "foto": "Oscar Piastri",
    "alt": "pista_suzuka",
    "pista": true,
-   "testo": "[Piastri] si ritira nella sprint dopo il contatto con Norris, poi è *quinto* in gara. Voto *sei e mezzo*."
+   "testo": "[Piastri] si ritira nella sprint dopo il contatto con Norris. In gara chiude *quinto*, un posto meglio della partenza. Giornata da dimenticare, riscattata a metà. Voto *sei e mezzo*."
   },
   {
    "foto": "George Russell",
    "alt": "pista_suzuka",
    "pista": true,
-   "testo": "[Russell] fuori nella sprint, ma in gara risale dal *diciannovesimo* al nono posto. Voto *sei e mezzo*."
+   "testo": "[Russell] fuori nella sprint, ma in gara risale dal *diciannovesimo* al nono posto: dieci posizioni recuperate dopo la penalità. Voto *sei e mezzo*."
   },
   {
    "foto": "Kimi Antonelli",
    "alt": "pista_cina",
    "pista": true,
-   "testo": "[Antonelli] quarto in qualifica e sprint, *terzo in gara*. Punti pesanti per il mondiale. Voto *otto*."
+   "testo": "[Antonelli]: quarto in qualifica, quarto nella sprint e *terzo in gara*. Costante, e porta a casa punti pesanti per il mondiale. Voto *otto*."
   },
   {
    "foto": "Charles Leclerc",
    "alt": "pista_cina",
    "pista": true,
-   "testo": "[Leclerc] secondo in qualifica e in gara, terzo nella sprint. Voto *otto e mezzo*."
+   "testo": "[Leclerc]: secondo in qualifica e in gara, terzo nella sprint. Nel finale *supera Hamilton* e si prende il secondo posto. Voto *otto e mezzo*."
   },
   {
    "foto": "Max Verstappen",
@@ -109,7 +109,7 @@
     ]
    },
    "sub_top": 1360,
-   "testo": "E poi lui: pole, sprint e gara. [Verstappen], voto *dieci*. È l'uomo del weekend."
+   "testo": "E poi lui: *pole, sprint e gara*. Una tripletta a Singapore. [Verstappen], voto *dieci*. È l'uomo del weekend."
   }
  ],
  "finale": {

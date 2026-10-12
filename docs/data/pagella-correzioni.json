@@ -12,5 +12,12 @@
    }
   }
  },
- "motogp": {}
+ "motogp": {
+  "GP Indonesia": {
+   "Pedro Acosta": {
+    "correzione": -0.5,
+    "motivo": "quinto a 9,5 secondi dal vincitore, senza podio"
+   }
+  }
+ }
 }

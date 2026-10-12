@@ -1,4 +1,5 @@
 import { renderHeader, renderFooter, fetchJSON, esc, img, credito, stemma, ND, formattaDataOra, intervalloWeekend, erroreCaricamento, montaCronaca, programmaHtml } from "./common.js";
+import { votiGpOggi } from "./voti-gp.js";
 
 renderHeader("gare");
 renderFooter();
@@ -23,7 +24,7 @@ function tabella(risultati, foto, colori, griglia) {
 
 try {
   if (!/^\d+$/.test(id || "")) throw new Error("id non valido");
-  const [g, roster, st, reports] = await Promise.all([fetchJSON(`data/gare/${id}.json`), fetchJSON("data/roster.json"), fetchJSON("data/standings.json"), fetchJSON("data/report.json").catch(() => [])]);
+  const [g, roster, st, reports, pagelle] = await Promise.all([fetchJSON(`data/gare/${id}.json`), fetchJSON("data/roster.json"), fetchJSON("data/standings.json"), fetchJSON("data/report.json").catch(() => []), fetchJSON("data/pagelle.json").catch(() => ({}))]);
   const rep = reports.find((r) => String(r.id) === String(id));
   const colori = Object.fromEntries(st.costruttori.map((c) => [c.team, c.colore]));
   const foto = Object.fromEntries(roster.filter((p) => p.foto).map((p) => [p.numero, p.foto]));
@@ -46,10 +47,14 @@ try {
     ${haRisultati ? programmaHtml(g.sessioni) : ""}
     ${rep ? `<h3 class="section-title">Com'è andata</h3><article class="report-card"><h3 style="margin-top:0">${esc(rep.titolo)}</h3>${rep.paragrafi.map((p) => `<p>${esc(p)}</p>`).join("")}<p><a class="vai-cronaca" href="#cronaca">Per vedere la cronaca giro per giro ↓</a></p></article>` : ""}
     ${haRisultati ? "" : `<p class="muted">I risultati di ogni sessione compariranno qui man mano che si disputano.</p>`}
+    <div class="gara-ris">
+    ${haRisultati ? votiGpOggi(((pagelle || {}).f1 || {})[String(id)]) : ""}
+    <div class="gara-ris-main">
     <div id="tabs" class="category-pills" style="margin-bottom:8px" ${haRisultati ? "" : "hidden"}>
       ${sessioni.map((s) => `<button class="pill ${s.key === predefinita.key ? "active" : ""}" data-key="${s.key}">${esc(s.nome)}</button>`).join("")}
     </div>
     <div id="sessione"></div>
+    </div></div>
     <h3 class="section-title" id="cronaca">Cronaca giro per giro</h3><div id="cronaca-box"><p class="muted">${haRisultati ? "Cronaca non disponibile per questa gara." : "Cronaca disponibile dopo la gara: compare qui poche ore dopo l'arrivo."}</p></div>`;
 
   let griglia = null, sessioneCorrente = null;

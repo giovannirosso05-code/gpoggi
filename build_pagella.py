@@ -109,21 +109,29 @@ def correzioni(serie, chiave):
         return {}
 
 
-def f1():
-    ultimo = None
-    for f in D.glob("gare/*.json"):
-        g = json.load(open(f))
-        gara = next((s for s in g["sessioni"] if s["tipo"] == "Race" and s.get("risultati")), None)
-        if gara and (ultimo is None or gara["inizio"] > ultimo[1]["inizio"]):
-            ultimo = (g, gara, f.stem)
-    if not ultimo:
-        return None
-    g, gara, id_ = ultimo
-    sess = {s["tipo"]: s for s in g["sessioni"] if s.get("risultati")}
+def ordinale_corto(n):
+    return f"{n}°"
+
+
+def note_ritiri():
     try:
-        griglia = json.load(open(D / "cronaca" / f"{id_}.json")).get("griglia") or {}
+        return json.load(open(D / "pagella-note.json"))
     except Exception:
-        griglia = {}
+        return {}
+
+
+def pesa_senza_sprint(righe):
+    for x in righe:   # senza sprint il peso passa a qualifica e gara
+        tot = 0.25 * voto_sessione(x["q"]) + 0.75 * voto_sessione(x["g"], x.get("griglia"))
+        x["voto"], x["voto_esatto"] = mezzo(tot), round(tot, 2)
+    righe.sort(key=lambda x: -x["voto_esatto"])
+
+
+def f1_evento(g, gara, id_):
+    sess = {s["tipo"]: s for s in g["sessioni"] if s.get("risultati")}
+    cron = D / "cronaca" / f"{id_}.json"
+    cj = json.load(open(cron)) if cron.exists() else {}
+    griglia = cj.get("griglia") or {}
     colori = {c["team"]: c["colore"] for c in json.load(open(D / "standings.json"))["costruttori"]}
 
     def pos(tipo):
@@ -137,25 +145,29 @@ def f1():
                      "q": q.get(n), "s": s.get(n) if hanno_sprint else None, "g": r.get(n),
                      "griglia": griglia.get(str(n))}
     righe = calcola(piloti)
-    if not hanno_sprint:   # senza sprint il peso passa a qualifica e gara
-        for x in righe:
-            tot = 0.25 * voto_sessione(x["q"]) + 0.75 * voto_sessione(x["g"], x.get("griglia"))
-            x["voto"], x["voto_esatto"] = mezzo(tot), round(tot, 2)
-        righe.sort(key=lambda x: -x["voto_esatto"])
-    fatti_cronaca(righe, json.load(open(D / "cronaca" / f"{id_}.json")).get("voci") if (D / "cronaca" / f"{id_}.json").exists() else [])
-    for x in righe: x["perche"] = perche(x, hanno_sprint)
+    if not hanno_sprint:
+        pesa_senza_sprint(righe)
+    fatti_cronaca(righe, cj.get("voci") or [])
+    cause = note_ritiri().get("f1", {}).get(g["nome"], {})
+    for x in righe:
+        x["perche"] = perche(x, hanno_sprint)
+        x["causa"] = cause.get(x["nome"], "sconosciuta")
     righe = correggi(righe, correzioni("f1", id_))
     return {"nome": g["nome"], "id": id_, "data": gara["inizio"], "sprint": hanno_sprint, "righe": righe}
 
 
-def motogp():
-    gare = json.load(open(D / "motogp-gare.json"))
-    if not gare:
-        return None
-    nome, g = max(gare.items(), key=lambda kv: kv[1]["data"])
+def f1_tutti():
+    out = []
+    for f in D.glob("gare/*.json"):
+        g = json.load(open(f))
+        gara = next((s for s in g["sessioni"] if s["tipo"] == "Race" and s.get("risultati")), None)
+        if gara:
+            out.append(f1_evento(g, gara, f.stem))
+    return sorted(out, key=lambda e: e["data"])
+
+
+def moto_evento(nome, g):
     c = g["classifiche"]
-    if not c.get("MotoGP"):
-        return None
     hanno_sprint = bool(c.get("MotoGP sprint"))
     q = {x["nome"]: x["pos"] for x in c.get("MotoGP qualifiche", [])}
     s = {x["nome"]: x["pos"] for x in c.get("MotoGP sprint", [])}
@@ -165,22 +177,94 @@ def motogp():
                              "s": s.get(x["nome"]) if hanno_sprint else None, "g": x["pos"], "griglia": x.get("griglia")}
     righe = calcola(piloti)
     if not hanno_sprint:
-        for x in righe:
-            tot = 0.25 * voto_sessione(x["q"]) + 0.75 * voto_sessione(x["g"], x.get("griglia"))
-            x["voto"], x["voto_esatto"] = mezzo(tot), round(tot, 2)
-        righe.sort(key=lambda x: -x["voto_esatto"])
+        pesa_senza_sprint(righe)
     fatti_cronaca(righe, g.get("cronaca"))
-    for x in righe: x["perche"] = perche(x, hanno_sprint)
+    cause = note_ritiri().get("motogp", {}).get(nome, {})
+    for x in righe:
+        x["perche"] = perche(x, hanno_sprint)
+        x["causa"] = cause.get(x["nome"], "sconosciuta")
     righe = correggi(righe, correzioni("motogp", nome))
     return {"nome": nome, "data": g["data"], "sprint": hanno_sprint, "righe": righe}
 
 
+def moto_tutti():
+    out = []
+    for nome, g in json.load(open(D / "motogp-gare.json")).items():
+        if g.get("classifiche", {}).get("MotoGP"):
+            out.append(moto_evento(nome, g))
+    return sorted(out, key=lambda e: e["data"])
+
+
+def f1():
+    t = f1_tutti()
+    return t[-1] if t else None
+
+
+def motogp():
+    t = moto_tutti()
+    return t[-1] if t else None
+
+
+def motivo(r, sprint):
+    """Una frase breve col perche' del voto, solo da fatti nei dati (posizioni, griglia, cronaca, correzioni dichiarate)."""
+    g, q, s, gr = r["g"], r["q"], r["s"], r.get("griglia")
+    if g is None:
+        giro = f" al giro {r['ritiro_giro']}" if r.get("ritiro_giro") else ""
+        base = ("Caduto" if r.get("causa") == "caduta" else "Ritirato") + giro
+        if r.get("causa") == "fisico":
+            base += " per il dolore alla spalla"
+        elif r.get("causa") == "tecnico":
+            base += " per un problema tecnico: voto da dividere con il team"
+        return base
+    if g == 1 and q == 1 and (not sprint or s == 1):
+        t = "Pole, sprint e gara" if sprint else "Pole e vittoria"
+    elif g == 1:
+        t = f"Vince partendo {ordinale_corto(gr)}" if gr and gr > 1 else "Vince la gara"
+    elif gr and gr - g >= 3:
+        t = f"Dal {ordinale_corto(gr)} al {ordinale_corto(g)} in gara"
+    elif gr and g - gr >= 3:
+        t = f"Perde {g - gr} posizioni: dal {ordinale_corto(gr)} al {ordinale_corto(g)}"
+    elif g <= 3:
+        t = f"{ordinale_corto(g)} in gara" + (f" dopo il {ordinale_corto(q)} in qualifica" if q and q != g else "")
+    else:
+        t = f"{ordinale_corto(g)} in gara" + (f", {ordinale_corto(q)} in qualifica" if q else "")
+    if r.get("sorpassi", 0) >= 2:
+        t += f", {r['sorpassi']} sorpassi"
+    if r.get("correzione"):
+        t += f" ({r['motivo']})"
+    return t
+
+
+def riepilogo(e):
+    """Per la scheda 'Voti GP Oggi' di ogni gara: top 3 (il primo e' l'MVP), flop 3 e sorpresa, ognuno con la sua frase."""
+    righe, sprint = e["righe"], e["sprint"]
+    voce = lambda r: {"nome": r["nome"], "team": r.get("team"), "colore": r.get("colore"), "moto": r.get("moto"), "voto": r["voto"], "perche": motivo(r, sprint)}
+    top = [voce(r) for r in righe[:3]]
+    # flop: i tre voti piu' bassi, a parita' prima chi parte piu' avanti (piu' strano che sia andata male)
+    flop = [voce(r) for r in sorted(righe, key=lambda r: (r["voto_esatto"], r.get("griglia") or 99))[:3]]
+    limite = 10 if "sorpassi" in righe[0] and e.get("id") else 15   # a punti: 10 in F1, 15 in MotoGP
+    cand = [r for r in righe[1:] if r["g"] and r.get("griglia") and r["g"] <= limite and r["griglia"] - r["g"] >= 5]
+    sorpresa = None
+    if cand:
+        r = max(cand, key=lambda r: (r["griglia"] - r["g"], r["voto_esatto"]))
+        v = voce(r)
+        v["perche"] = f"Dal {ordinale_corto(r['griglia'])} al {ordinale_corto(r['g'])}: {r['griglia'] - r['g']} posizioni guadagnate"
+        sorpresa = v
+    return {"top": top, "flop": flop, "sorpresa": sorpresa}
+
+
 def main():
-    out = {"generato_il": datetime.now(timezone.utc).isoformat(timespec="seconds"), "f1": f1(), "motogp": motogp()}
+    f1_all, moto_all = f1_tutti(), moto_tutti()
+    out = {"generato_il": datetime.now(timezone.utc).isoformat(timespec="seconds"), "f1": f1_all[-1] if f1_all else None, "motogp": moto_all[-1] if moto_all else None}
     (D / "pagella.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")))
+    # un riepilogo per ogni gara (le schede 'Voti GP Oggi' delle pagine gara)
+    tutte = {"generato_il": out["generato_il"], "f1": {e["id"]: {"gp": e["nome"], **riepilogo(e)} for e in f1_all},
+             "motogp": {e["nome"]: riepilogo(e) for e in moto_all}}
+    (D / "pagelle.json").write_text(json.dumps(tutte, ensure_ascii=False, separators=(",", ":")))
     for k in ("f1", "motogp"):
         if out[k]:
             print(out[k]["nome"], [(r["nome"].split()[-1], r["voto"]) for r in out[k]["righe"]][:25])
+    print("pagelle:", len(tutte["f1"]), "gare F1,", len(tutte["motogp"]), "gare MotoGP")
 
 
 if __name__ == "__main__":

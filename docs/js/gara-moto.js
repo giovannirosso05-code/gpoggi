@@ -1,4 +1,5 @@
 import { iniz, renderHeader, renderFooter, fetchJSON, esc, img, credito, stemma, stemmaMoto, ND, formattaData, punti, erroreCaricamento, fotoMotoMap, mappeMotoMap, montaCronaca, programmaHtml, intervalloWeekend } from "./common.js";
+import { votiGpOggi } from "./voti-gp.js";
 
 renderHeader("gare");
 renderFooter();
@@ -23,7 +24,7 @@ function tabella(righe, FM) {
 }
 
 try {
-  const [gare, rep, FM, MAPPE] = await Promise.all([fetchJSON("data/motogp-gare.json"), fetchJSON("data/motogp-report.json").catch(() => []), fotoMotoMap(), mappeMotoMap()]);
+  const [gare, rep, FM, MAPPE, pagelle] = await Promise.all([fetchJSON("data/motogp-gare.json"), fetchJSON("data/motogp-report.json").catch(() => []), fotoMotoMap(), mappeMotoMap(), fetchJSON("data/pagelle.json").catch(() => ({}))]);
   const g = gare[gp];
   if (!g) {
     // weekend non ancora disputato: intestazione, mappa e programma con gli orari
@@ -46,8 +47,12 @@ try {
     ${testata("" + formattaData(g.data), gp, g.circuito || "", mappa, g.circuito, "")}
     ${r ? `<h3 class="section-title">Com'è andata</h3><article class="report-card">${r.paragrafi.map((p) => `<p>${esc(p)}</p>`).join("")}${g.cronaca ? `<p><a class="vai-cronaca" href="#cronaca">Per vedere la cronaca giro per giro ↓</a></p>` : ""}</article>` : ""}
     <h3 class="section-title">Risultati</h3>
+    <div class="gara-ris">
+    ${votiGpOggi(((pagelle || {}).motogp || {})[gp])}
+    <div class="gara-ris-main">
     <div class="category-pills" id="gm-cat" style="margin-bottom:12px">${chiavi.map((k, i) => `<button class="pill ${i === 0 ? "active" : ""}" data-k="${esc(k)}">${esc(k.replace(" sprint", " · sprint").replace(" qualifiche", " · qualifiche"))}</button>`).join("")}</div>
     <div id="gm-tab"></div>
+    </div></div>
     ${g.cronaca ? `<h3 class="section-title" id="cronaca">Cronaca giro per giro</h3><div id="cronaca-box"></div>` : ""}
     <p class="muted" style="margin-top:18px;font-size:13px"><a class="accent" href="calendario.html${tema ? "?" + tema.slice(1) : ""}">← Torna al calendario</a></p>`;
   const mostra = (k) => {

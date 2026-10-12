@@ -1396,3 +1396,60 @@ html { scroll-behavior: smooth; }
 .serie-moto .vai-cronaca { background: rgba(31,95,209,.14); }
 :root[data-theme="dark"] .vai-cronaca { background: rgba(232,53,47,.22); }
 :root[data-theme="dark"] .serie-moto .vai-cronaca { background: rgba(91,155,255,.22); }
+
+/* ---- Home pulita da telefono (ottobre 2026): meno scorrimento, solo l'essenziale ---- */
+@media (max-width: 640px) {
+  /* i due prossimi GP uno accanto all'altro, compatti */
+  .hero2 { grid-template-columns: 1fr 1fr !important; gap: 10px !important; margin-top: 14px; }
+  .hero2-lato { min-height: 210px !important; padding: 12px 12px 14px !important; border-radius: 14px !important; gap: 3px !important; }
+  .hero2-lato .cd-sigla { top: 10px !important; left: 12px !important; font-size: 11px; }
+  .hero2-kicker, .hero2-lato .pross-circ, .hero2-fav, .hero2-credito { display: none !important; }
+  .hero2-lato .pross-gp { font-size: 17px !important; line-height: 1.08 !important; }
+  .hero2-lato .pross-sess { font-size: 11.5px !important; line-height: 1.25; }
+  .hero2-lato .pross-timer { font-size: 17px !important; margin-top: 2px !important; }
+  .hero2.uno { grid-template-columns: 1fr !important; }
+  .hero2.uno .hero2-lato { min-height: 240px !important; }
+  /* pronostico: un solo favorito per serie + il pulsante */
+  .prono.blocco { padding: 14px 14px 12px; }
+  .prono-griglia { gap: 12px !important; }
+  .prono-col { padding: 10px 12px; }
+  .prono-col .prono-riga ~ .prono-riga, .prono-nota, .prono-col .prono-ind-nota { display: none; }
+  /* ultima gara: podio piu' basso */
+  .ultime-gare { gap: 10px; }
+  .podio-home img { width: 52px !important; height: 52px !important; }
+  /* classifica piloti senza colonna team (la tabella usciva dallo schermo) */
+  #top-classifica th:nth-child(3), #top-classifica td:nth-child(3) { display: none; }
+  /* news e weekend: solo i primi tre, senza miniature */
+  #ultime-notizie > a:nth-of-type(n+4), #prossimi-mini > a:nth-of-type(n+4) { display: none; }
+  #prossimi-mini .evento-widget-mini img { display: none; }
+  .blocco, .evento-widget { padding-top: 14px; padding-bottom: 14px; }
+  .home-layout { margin: 14px 0; gap: 16px; }
+  .blocco .section-title, .prono .section-title { font-size: 19px !important; margin-bottom: 10px !important; }
+  .prono-col .muted[style*="text-align:center"] { display: none; }
+  .ultima-gara-testa { padding: 12px 14px; }
+  .ultima-gara-testa h3 { font-size: 17px; }
+  .podio-home a { padding: 10px 6px; }
+  .podio-home .posto { font-size: 24px; }
+}
+
+/* ---- Scheda "Voti GP Oggi" nelle pagine gara: in alto a destra accanto ai risultati, sopra su telefono ---- */
+.gara-ris { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 20px; align-items: start; margin-top: 8px; }
+.gara-ris-main { grid-column: 1; grid-row: 1; min-width: 0; }
+.gara-ris .voti-gp { grid-column: 2; grid-row: 1; }
+.voti-gp { background: var(--bg-elevated); border: 1px solid var(--border); border-top: 4px solid var(--accent); border-radius: 14px; padding: 12px 14px; box-shadow: var(--shadow-card); }
+.voti-gp-titolo { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; font-family: var(--font-display); font-weight: 700; font-size: 18px; text-transform: uppercase; letter-spacing: .03em; margin-bottom: 4px; }
+.voti-gp-titolo a { font: 600 12px var(--font-body, Inter, sans-serif); text-transform: none; letter-spacing: 0; color: var(--accent); white-space: nowrap; }
+.vg-gruppo h4 { margin: 10px 0 4px; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--text-secondary); font-family: var(--font-display); }
+.vg-gruppo ul { list-style: none; margin: 0; padding: 0; }
+.vg-gruppo li { display: flex; gap: 10px; align-items: flex-start; padding: 6px 0; border-top: 1px solid var(--border-soft, var(--border)); }
+.vg-voto { flex: none; min-width: 36px; text-align: center; font-family: var(--font-display); font-weight: 700; font-size: 20px; color: var(--accent); line-height: 1.1; padding-top: 1px; }
+.vg-testo { min-width: 0; font-size: 14px; line-height: 1.25; }
+.vg-testo small { display: block; font-size: 12px; color: var(--text-secondary); margin-top: 1px; }
+.vg-chip { font-style: normal; font-size: 10px; font-weight: 700; letter-spacing: .08em; background: var(--accent); color: #fff; border-radius: 4px; padding: 1px 5px; vertical-align: 1px; }
+.vg-nota { margin: 8px 0 0; font-size: 11px; color: var(--text-secondary); }
+@media (max-width: 900px) {
+  .gara-ris { grid-template-columns: 1fr; gap: 12px; }
+  .gara-ris-main, .gara-ris .voti-gp { grid-column: 1; }
+  .gara-ris .voti-gp { grid-row: 1; }
+  .gara-ris-main { grid-row: 2; }
+}

@@ -52,7 +52,7 @@ def frase_sessioni(r, sprint):
             g += f", partendo {ordinale(r['griglia'])}"
         parti.append(g)
     else:
-        parti.append(f"ritirato al giro {r['ritiro_giro']}" if r.get("ritiro_giro") else "ritirato in gara")
+        parti.append(f"{verbo_ritiro(r)} al giro {r['ritiro_giro']}" if r.get("ritiro_giro") else f"{verbo_ritiro(r)} in gara")
     return ", ".join(parti[:-1]) + " e " + parti[-1]
 
 
@@ -71,14 +71,17 @@ def tripletta(r, sprint):
     return ""
 
 
-def scena(r, sprint, alt):
+CHIUSURE = ["Voto *{v}*.", "Per lui oggi *{v}*.", "Si prende *{v}*.", "Gli diamo *{v}*.", "Voto *{v}*.", "Per lui oggi *{v}*."]
+
+
+def scena(r, sprint, alt, i=0):
     resto = [x for x in r.get("perche", []) if x not in GENERICHE]
     if not r["g"]:
         resto = []   # il ritiro e' gia' nella frase delle sessioni
     extra = (resto[0][0].upper() + resto[0][1:] + ".") if resto else (frase_ritiro(r) if not r["g"] else "")
     if r.get("correzione"):
         extra += " " + r["motivo"][0].upper() + r["motivo"][1:] + "."
-    testo = f"[{cognome(r)}]: {frase_sessioni(r, sprint)}. {extra} Voto *{voto_parole(r['voto'])}*.".replace("  ", " ")
+    testo = f"[{cognome(r)}]: {frase_sessioni(r, sprint)}. {extra} {CHIUSURE[i % len(CHIUSURE)].format(v=voto_parole(r['voto']))}".replace("  ", " ")
     return {"foto": r["nome"], **alt, "testo": testo}
 
 
@@ -143,12 +146,17 @@ def causa_ritiro(serie, gp_nome, nome):
 
 
 def frase_ritiro(r):
+    """Frase sul ritiro solo se la causa e' verificata (pagella-note.json); altrimenti non si dice niente."""
     c = r.get("causa", "sconosciuta")
-    if c == "caduta":
-        return "È caduto: il ritiro pesa sul voto."
     if c == "tecnico":
         return "Problema tecnico: il voto va diviso tra lui e il team."
-    return "La causa del ritiro non è ancora chiara."
+    if c == "fisico":
+        return "Si ritira per il dolore alla spalla."
+    return ""
+
+
+def verbo_ritiro(r):
+    return "caduto" if r.get("causa") == "caduta" else "ritirato"
 
 
 def prominenza(serie):
@@ -215,8 +223,8 @@ def costruisci(serie, w):
     else:
         if prot is migliore:
             prot = basso
-        ragione = f"si è ritirato al giro {prot['ritiro_giro']}" if (not prot["g"] and prot.get("ritiro_giro")) else next((x for x in prot.get("perche", []) if x not in GENERICHE), "")
-        gancio = f"[{cognome(prot)}] tra i peggiori del weekend" + (f": {ragione}" if ragione else "") + "." + (f" {frase_ritiro(prot)}" if not prot["g"] else "")
+        ragione = f"{'è caduto' if prot.get('causa') == 'caduta' else 'si è ritirato'} al giro {prot['ritiro_giro']}" if (not prot["g"] and prot.get("ritiro_giro")) else next((x for x in prot.get("perche", []) if x not in GENERICHE), "")
+        gancio = f"[{cognome(prot)}] tra i peggiori del weekend" + (f": {ragione}" if ragione else "") + "." + ((" " + frase_ritiro(prot)) if (not prot["g"] and frase_ritiro(prot)) else "")
         hook_titolo = f"{breve(prot)} tra i peggiori"
     hook_titolo = locals().get("hook_titolo") or f"{breve(prot)} {fmt(prot['voto'])} in pagella"
     righe_tab = [r for r in asc if r in scelti or r is migliore]
@@ -230,7 +238,7 @@ def costruisci(serie, w):
         if c2:
             scelti = [c2] + [r for r in scelti if r is not c2]
     for r in scelti:
-        scene.append(scena(r, sprint, foto_pista(serie, r["nome"])))
+        scene.append(scena(r, sprint, foto_pista(serie, r["nome"]), len(scene) - 1))
     fila = vittorie_di_fila(serie, w, migliore["nome"])
     ripetuta = {2: "Seconda vittoria di fila", 3: "Terza vittoria di fila"}.get(fila, f"{fila}ª vittoria di fila" if fila > 3 else "")
     lode = f" {ripetuta}: una prova da applausi." if ripetuta else " Una prova da applausi."

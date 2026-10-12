@@ -54,6 +54,7 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 
 ## Pagella: regole del gancio e dell'ordine (ripetute dal proprietario)
 - Il gancio non dice i voti e non parte mai dal pilota uomo della giornata (è già in copertina). In F1 si apre con Leclerc ("Un ottimo Leclerc fa felice una Ferrari non troppo sorridente") e subito dopo si parla di Hamilton: le due Ferrari si citano sempre, portano pubblico.
-- In MotoGP il gancio è su chi ha preso un voto molto basso (es. "Bagnaia tra i peggiori del weekend"). Per i ritiri: se è una caduta, si dice caduto; se è un problema tecnico, "il voto va diviso tra lui e il team"; se la causa non è verificata si dice "la causa non è ancora chiara". Le cause confermate si scrivono in `docs/data/pagella-note.json` (serie → gara → pilota → "caduta" | "tecnico").
+- In MotoGP il gancio è su chi ha preso un voto molto basso (es. "Bagnaia tra i peggiori del weekend"). Per i ritiri: se è una caduta, si dice caduto; se è un problema tecnico, "il voto va diviso tra lui e il team"; se la causa non è verificata non si dice niente sulla causa (mai "la causa non è chiara"). Le cause confermate si scrivono in `docs/data/pagella-note.json` (serie → gara → pilota → "caduta" | "tecnico").
 - Le tabelle dei voti (copertina e schermata finale del video) vanno dal migliore a scendere; il video racconta dal voto più basso al più alto, il migliore per ultimo.
 - Si dice sempre che i voti sono a scopo divertente e non vogliono offendere nessuno.
+- Le chiusure dei voti si alternano ("Voto sette", "Per lui oggi sette e mezzo", "Si prende sei", "Gli diamo otto"): non ripetere sempre "voto".

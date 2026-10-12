@@ -8,27 +8,27 @@
    "foto": "Francesco Bagnaia",
    "hook": true,
    "hook_titolo": "Bagnaia tra i peggiori",
-   "testo": "[Bagnaia] tra i peggiori del weekend: si è ritirato al giro 6. La causa del ritiro non è ancora chiara."
+   "testo": "[Bagnaia] tra i peggiori del weekend: è caduto al giro 6."
   },
   {
    "foto": "Toprak Razgatlioglu",
-   "testo": "[Razgatlioglu]: diciannovesimo in qualifica, diciannovesimo nella sprint e ritirato al giro 9. La causa del ritiro non è ancora chiara. Voto *tre e mezzo*."
+   "testo": "[Razgatlioglu]: diciannovesimo in qualifica, diciannovesimo nella sprint e ritirato al giro 9. Si ritira per il dolore alla spalla. Voto *tre e mezzo*."
   },
   {
    "foto": "Francesco Bagnaia",
    "alt": "pista",
    "pista": true,
-   "testo": "[Bagnaia]: decimo in qualifica, ottavo nella sprint e ritirato al giro 6. La causa del ritiro non è ancora chiara. Voto *quattro*."
+   "testo": "[Bagnaia]: decimo in qualifica, ottavo nella sprint e caduto al giro 6. Per lui oggi *quattro*."
   },
   {
    "foto": "Johann Zarco",
-   "testo": "[Zarco]: ventesimo in qualifica, dodicesimo nella sprint e tredicesimo in gara, partendo ventesimo. Ha guadagnato 7 posizioni sulla griglia. Voto *cinque e mezzo*."
+   "testo": "[Zarco]: ventesimo in qualifica, dodicesimo nella sprint e tredicesimo in gara, partendo ventesimo. Ha guadagnato 7 posizioni sulla griglia. Si prende *cinque e mezzo*."
   },
   {
    "foto": "Marc Marquez",
    "alt": "pista",
    "pista": true,
-   "testo": "[Marc Marquez]: quarto in qualifica, primo nella sprint e sesto in gara. Ha fatto 3 sorpassi. Voto *sette e mezzo*."
+   "testo": "[Marc Marquez]: quarto in qualifica, primo nella sprint e sesto in gara. Ha fatto 3 sorpassi. Gli diamo *sette e mezzo*."
   },
   {
    "foto": "Raul Fernandez",
@@ -38,7 +38,7 @@
   },
   {
    "foto": "Jorge Martin",
-   "testo": "[Martin]: quinto in qualifica, quarto nella sprint e terzo in gara. È stato costante in tutte le sessioni. Voto *otto*."
+   "testo": "[Martin]: quinto in qualifica, quarto nella sprint e terzo in gara. È stato costante in tutte le sessioni. Per lui oggi *otto*."
   },
   {
    "foto": "Marco Bezzecchi",

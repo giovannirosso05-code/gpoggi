@@ -1,5 +1,13 @@
 {
  "_nota": "Cause dei ritiri verificate su una fonte: serie -> nome della gara -> pilota -> 'caduta' o 'tecnico'. Se manca, nel video si dice che la causa non e' ancora chiara.",
  "f1": {},
- "motogp": {}
+ "motogp": {
+  "GP Indonesia": {
+   "Francesco Bagnaia": "caduta",
+   "Jack Miller": "caduta",
+   "Fermin Aldeguer": "caduta",
+   "Toprak Razgatlioglu": "fisico"
+  }
+ },
+ "_fonti": "Corsedimoto, 11 ottobre 2026 (Bagnaia, Miller e Aldeguer caduti; Razgatlioglu ritirato per dolore alla spalla dopo la caduta di venerdi'); Crash.net conferma i quattro ritiri senza causa."
 }

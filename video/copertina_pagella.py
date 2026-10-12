@@ -28,7 +28,7 @@ def html_pagella(serie, alt=None, quante=5):
     return f"""<!doctype html><meta charset=utf-8><style>{n.CSS_FONT}
 html,body{{margin:0;width:{n.W}px;height:{n.H}px;overflow:hidden;position:relative;background:#0b0b0e;font-family:Inter,sans-serif}}
 .bg{{position:absolute;inset:-80px;background:url(data:image/jpeg;base64,{foto}) center 15%/cover no-repeat;filter:blur(30px) brightness(.35)}}
-.logo{{position:absolute;right:30px;top:60px;width:470px}}
+.logo{{position:absolute;right:24px;top:14px;width:400px;z-index:5}}
 .carta{{position:absolute;left:90px;top:330px;width:900px;height:1300px;background:#f6f1e3;transform:rotate(-2.2deg);box-shadow:0 40px 90px rgba(0,0,0,.65);
  background-image:repeating-linear-gradient(180deg,transparent 0 69px,rgba(60,90,180,.25) 69px 71px);border-radius:6px}}
 .carta:before{{content:"";position:absolute;left:70px;top:0;bottom:0;width:3px;background:rgba(220,60,60,.45)}}

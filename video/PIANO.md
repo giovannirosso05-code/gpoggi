@@ -16,7 +16,9 @@ Si basa sui numeri di TikTok e Instagram dell'11 ottobre (report incollato dal p
 4. **Motivo per seguirti:** ogni video chiude con "Ogni gara il riassunto qui, su GP Oggi" e una domanda; video migliore fissato in alto; bio che dice cosa si trova ogni giorno.
 5. **Commenti:** in ogni video e in ogni didascalia, dopo la domanda, "Dimmi la tua nei commenti" (oggi i commenti sono pochissimi: 64 su TikTok in 7 giorni).
 6. **Sito:** non contarci come arrivo dei social finché i follower non crescono. La riga `🔗 gpoggi.it` resta in ogni didascalia.
-7. **Orario di pubblicazione:** provare la sera tardi (22-23), vicino al picco notturno, sui video non legati a una gara.
+7. **Distanza tra i post:** almeno 4 ore tra un video e l'altro, e dopo un video forte (sopra 5.000) aspettare il giorno dopo prima di pubblicarne un altro. Ipotesi del proprietario, non ancora provata: due video usciti subito dopo la sprint da 13.378 hanno fatto 508 e 213.
+8. **Registro:** ogni video si annota con data e ora di pubblicazione in `video/pubblicazioni.csv` (data_ora, titolo, serie); dopo 2 settimane si confronta orario e distanza con le visualizzazioni.
+9. **Orario di pubblicazione:** provare la sera tardi (22-23), vicino al picco notturno, sui video non legati a una gara.
 
 ## Calendario (da controllare in ora italiana prima di scrivere date)
 - **Questa settimana (nessuna gara):** 2-3 video "ma" sulle storie aperte: il match point di Antonelli, Hamilton e la Ferrari, Martin e Marquez a 2 punti, le regole 2027. Una rassegna stampa a metà settimana.

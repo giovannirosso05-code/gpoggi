@@ -83,18 +83,54 @@ def token(testo):
     return res
 
 
+VOCE_PIPER = "it_IT-riccardo-x_low"   # voce di riserva (maschile, gira sul computer, senza internet) se Microsoft rifiuta la connessione
+
+
+def voce_piper(testo, velocita, uscita, grido=False):
+    """Riserva quando edge-tts da' errore 403: voce Piper. Non da' i tempi delle parole: si stimano in proporzione alla lunghezza."""
+    import urllib.request, wave
+    from piper import PiperVoice, SynthesisConfig
+    cart = QUI / "_cache" / "voci"; cart.mkdir(parents=True, exist_ok=True)
+    for est in ("onnx", "onnx.json"):
+        f = cart / f"{VOCE_PIPER}.{est}"
+        if not f.exists():
+            urllib.request.urlretrieve(f"https://huggingface.co/rhasspy/piper-voices/resolve/main/it/it_IT/riccardo/x_low/{VOCE_PIPER}.{est}", f)
+    v = PiperVoice.load(str(cart / f"{VOCE_PIPER}.onnx"))
+    pct = 55 if grido else int(re.sub(r"[^\d-]", "", str(velocita)) or 0)
+    wav = Path(uscita).with_suffix(".wav")
+    with wave.open(str(wav), "wb") as w:
+        v.synthesize_wav(testo, w, SynthesisConfig(length_scale=1 / (1 + pct / 100)))
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(wav), "-ar", "24000", str(uscita)], check=True)
+    wav.unlink()
+    tot = durata(uscita)
+    parole = testo.split()
+    pesi = [len(w) + (4 if w[-1:] in ",.;:!?" else 0) + 1 for w in parole]
+    t, out = 0.0, []
+    for w, pe in zip(parole, pesi):
+        d = tot * pe / sum(pesi)
+        out.append((w, t, t + d)); t += d
+    return out
+
+
 async def voce(testo, velocita, uscita, grido=False):
     """Scrive l'audio e restituisce [(parola, inizio, fine)] in secondi.
-    Con grido=True la voce è la stessa di sempre (stesso tono) ma molto più forte e più veloce, come un urlo di esultanza."""
+    Con grido=True la voce è la stessa di sempre (stesso tono) ma molto più forte e più veloce, come un urlo di esultanza.
+    Se la voce Microsoft (edge-tts) rifiuta la connessione, si usa la voce di riserva Piper."""
     extra = dict(rate="+55%", volume="+100%") if grido else dict(rate=velocita)
-    c = edge_tts.Communicate(testo, VOCE, boundary="WordBoundary", **extra)
     parole, audio = [], b""
-    async for ch in c.stream():
-        if ch["type"] == "audio":
-            audio += ch["data"]
-        elif ch["type"] == "WordBoundary":
-            parole.append((ch["text"], ch["offset"] / 1e7, (ch["offset"] + ch["duration"]) / 1e7))
-    Path(uscita).write_bytes(audio)
+    try:
+        c = edge_tts.Communicate(testo, VOCE, boundary="WordBoundary", **extra)
+        async for ch in c.stream():
+            if ch["type"] == "audio":
+                audio += ch["data"]
+            elif ch["type"] == "WordBoundary":
+                parole.append((ch["text"], ch["offset"] / 1e7, (ch["offset"] + ch["duration"]) / 1e7))
+        if not audio:
+            raise RuntimeError("nessun audio")
+        Path(uscita).write_bytes(audio)
+    except Exception as e:
+        print("edge-tts non risponde (%s): voce di riserva Piper" % str(e)[:80], flush=True)
+        parole = voce_piper(testo, velocita, uscita, grido)
     if grido:   # ancora più volume, senza distorcere (limitatore)
         grezzo = Path(uscita).with_suffix(".raw.mp3")
         Path(uscita).replace(grezzo)

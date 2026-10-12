@@ -15,7 +15,7 @@ def html_pagella(serie, alt=None, quante=5):
     moto = serie == "motogp"
     col = "#1f5fd1" if moto else "#e8352f"
     righe = d["righe"]
-    eroe, altri = righe[0], list(reversed(righe[1:1 + quante]))
+    eroe, altri = righe[0], righe[1:1 + quante]   # dal migliore in giu: il secondo subito sotto il primo
     f = n.trova_foto(eroe["nome"], alt)
     autore = re.sub(r"Original:\s*", "", f["autore"])
     cred = f"Foto: {autore} · {f['licenza']} · Wikimedia Commons"

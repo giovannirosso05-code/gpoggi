@@ -40,3 +40,7 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 ## Video fatti a mano: generarli su GitHub
 - La voce (edge-tts) dalla sandbox dà errore 403: i video a mano si generano su GitHub. Si mettono scaletta (`video/spec/nome.json`), copertina (`nome.png`) e didascalia (`nome.txt`) in `video/spec/`: il workflow "Video da spec" crea il video, lo copia in `invio/` con copertina e didascalia e li manda sul Telegram.
 - Scena con tabella: `classifica.righe` accetta anche `voto` (al posto dei punti) e `nota`; `sub_top` per scena sposta i sottotitoli.
+
+## Pagella (copertina)
+- Sulla copertina il migliore è nel sigillo col voto grande; sotto, i voti in ordine decrescente: il secondo subito dopo il primo, poi gli altri a scendere (mai in ordine crescente). Nel video invece Verstappen/il migliore è l'ultimo.
+- Se edge-tts dà 403 (succede anche su GitHub), `notizia_sub.py` passa da solo alla voce di riserva Piper (maschile, tempi delle parole stimati).

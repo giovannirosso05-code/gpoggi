@@ -1,0 +1,60 @@
+name: Rassegna della sera
+
+# Ogni sera alle 21:30 italiane: video con i titoli del giorno (ognuno con la sua fonte), mandato sul Telegram.
+# Due orari UTC (ora legale e ora solare): parte solo quello che cade nella finestra 21:00-22:15 a Roma, una volta al giorno. Nessun modello di linguaggio.
+on:
+  schedule:
+    - cron: '30 19 * * *'
+    - cron: '30 20 * * *'
+  workflow_dispatch:
+    inputs:
+      forza:
+        description: 'si = invia subito, ignorando orario e "già fatta oggi"'
+        default: 'no'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rassegna-sera
+  cancel-in-progress: false
+
+jobs:
+  rassegna:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Serve il video?
+        id: ora
+        run: |
+          H=$(TZ=Europe/Rome date +%H)
+          if [ "${{ github.event.inputs.forza }}" = "si" ] || [ "$H" = "21" ] || [ "$H" = "22" ]; then echo "vai=si" >> $GITHUB_OUTPUT; else echo "vai=no" >> $GITHUB_OUTPUT; fi
+      - if: steps.ora.outputs.vai == 'si'
+        run: pip install -r requirements.txt edge-tts piper-tts kokoro-onnx soundfile azure-cognitiveservices-speech playwright
+      - if: steps.ora.outputs.vai == 'si'
+        run: python -m playwright install --with-deps chromium
+      - name: Installa ffmpeg
+        if: steps.ora.outputs.vai == 'si'
+        run: |
+          for i in 1 2 3; do timeout 150 sudo apt-get update -qq && timeout 200 sudo apt-get install -y -qq ffmpeg && break; sleep 5; done
+      - name: Aggiorna le notizie e prepara il video
+        if: steps.ora.outputs.vai == 'si'
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID || '559225883' }}
+        run: |
+          python build_news.py || echo "notizie non aggiornate: uso quelle già salvate"
+          if [ "${{ github.event.inputs.forza }}" = "si" ]; then python video/rassegna_giornaliera.py --forza; else python video/rassegna_giornaliera.py; fi
+      - name: Salva il segno "fatta oggi"
+        if: always() && steps.ora.outputs.vai == 'si'
+        run: |
+          git config user.name "gpoggi-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add video_stato.json docs/data/rassegna.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "rassegna della sera: inviata" && git pull --rebase --autostash -X theirs origin main && git push)

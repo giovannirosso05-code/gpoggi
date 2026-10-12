@@ -2,7 +2,10 @@ name: Video da spec
 
 # Quando in video/spec/ arriva un file .json (la scaletta di un video fatto a mano), il video si genera qui
 # (la voce funziona su GitHub) e parte sul Telegram insieme alla copertina (.png) e alla didascalia (.txt) con lo stesso nome.
+# Ogni lunedi' pomeriggio (15:07 italiane in orario estivo) prepara da solo la pagella del weekend di F1 e MotoGP e la manda sul Telegram.
 on:
+  schedule:
+    - cron: '7 13 * * 1'
   push:
     branches: [main]
     paths:
@@ -25,10 +28,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install -r requirements.txt edge-tts piper-tts kokoro-onnx soundfile playwright
+      - run: pip install -r requirements.txt edge-tts piper-tts kokoro-onnx soundfile azure-cognitiveservices-speech playwright
       - run: python -m playwright install --with-deps chromium
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Pagella del lunedì (solo da orologio)
+        if: github.event_name == 'schedule'
+        run: |
+          git pull -q origin main
+          python build_pagella.py
+          python video/pagella_auto.py
       - name: Genera i video nuovi
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
         run: |
           mkdir -p invio
           for s in video/spec/*.json; do
@@ -47,7 +59,7 @@ jobs:
         run: |
           git config user.name "gpoggi-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add video/inviati.json invio 2>/dev/null || true
+          git add video/inviati.json video/pagella_fatte.json video/spec invio 2>/dev/null || true
           git diff --cached --quiet || (git commit -m "video da spec: inviati" && git pull --rebase --autostash -X theirs origin main && git push)
       - name: Avvisa su Telegram se il video non è riuscito
         if: failure()

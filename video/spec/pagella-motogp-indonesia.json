@@ -5,91 +5,81 @@
  "velocita": "+30%",
  "scene": [
   {
-   "foto": "Marco Bezzecchi",
-   "alt": "sorriso",
+   "foto": "Francesco Bagnaia",
    "hook": true,
-   "hook_titolo": "Bagnaia 4, Bezzecchi 8,5",
-   "testo": "[Bagnaia] quattro, [Bezzecchi] otto e mezzo. La nostra *pagella* dell'Indonesia non fa sconti a nessuno."
+   "hook_titolo": "Bagnaia 4 in pagella",
+   "testo": "[Bagnaia] quattro in pagella: si è ritirato al giro 6. Ma c'è chi ha preso ancora meno."
+  },
+  {
+   "foto": "Toprak Razgatlioglu",
+   "testo": "[Razgatlioglu]: diciannovesimo in qualifica, diciannovesimo nella sprint e ritirato al giro 9. Il ritiro pesa sul voto complessivo del weekend. Voto *tre e mezzo*."
   },
   {
    "foto": "Francesco Bagnaia",
    "alt": "pista",
    "pista": true,
-   "testo": "[Bagnaia]: decimo in qualifica, ottavo nella sprint e in gara si *ritira al giro sei*. Un weekend da dimenticare. Voto *quattro*."
+   "testo": "[Bagnaia]: decimo in qualifica, ottavo nella sprint e ritirato al giro 6. Il ritiro pesa sul voto complessivo del weekend. Voto *quattro*."
+  },
+  {
+   "foto": "Johann Zarco",
+   "testo": "[Zarco]: ventesimo in qualifica, dodicesimo nella sprint e tredicesimo in gara, partendo ventesimo. Ha guadagnato 7 posizioni sulla griglia. Voto *cinque e mezzo*."
   },
   {
    "foto": "Pedro Acosta",
    "alt": "pista",
    "pista": true,
-   "testo": "[Acosta]: nono in qualifica, sesto nella sprint, quinto in gara con *quattro sorpassi*. Ma resta a nove secondi e mezzo dal vincitore, senza podio. Voto *sei e mezzo*."
+   "testo": "[Acosta]: nono in qualifica, sesto nella sprint e quinto in gara, partendo nono. Ha guadagnato 4 posizioni sulla griglia. Quinto a 9,5 secondi dal vincitore, senza podio. Voto *sei e mezzo*."
   },
   {
-   "foto": "Marc Marquez",
+   "foto": "Fabio Di Giannantonio",
    "alt": "pista",
    "pista": true,
-   "testo": "[Marc Marquez] *vince la sprint*, ma in gara parte quarto e chiude sesto, nonostante tre sorpassi. La sprint tiene alto il voto: *sette e mezzo*."
-  },
-  {
-   "foto": "Raul Fernandez",
-   "alt": "pista",
-   "pista": true,
-   "testo": "[Fernandez]: *pole*, ma niente traguardo nella sprint. In gara chiude secondo: la pole e il podio compensano la sprint persa. Voto *sette e mezzo*."
-  },
-  {
-   "foto": "Jorge Martin",
-   "testo": "[Martin]: quinto in qualifica, quarto nella sprint, *terzo in gara* con due sorpassi. Costante in tutte le sessioni. Voto *otto*."
+   "testo": "[Giannantonio]: terzo in qualifica, terzo nella sprint e ottavo in gara, partendo terzo. Ha perso 5 posizioni rispetto alla griglia. Voto *sei e mezzo*."
   },
   {
    "foto": "Marco Bezzecchi",
-   "alt": "sorriso",
+   "testo": "E poi il migliore: [Bezzecchi]. Secondo in qualifica, fuori nella sprint e primo in gara. Voto *otto e mezzo*, è l'uomo del weekend.",
    "pista": true,
    "classifica": {
-    "titolo": "Pagella dell'Indonesia",
+    "titolo": "Pagella: Indonesia",
     "righe": [
      {
       "pos": 1,
+      "colore": "1d4fa3",
+      "nome": "Razgatlioglu",
+      "voto": "3,5",
+      "nota": " "
+     },
+     {
+      "pos": 2,
       "colore": "e1251b",
       "nome": "Bagnaia",
       "voto": "4",
       "nota": " "
      },
      {
-      "pos": 2,
+      "pos": 3,
+      "colore": "dcdce2",
+      "nome": "Zarco",
+      "voto": "5,5",
+      "nota": " "
+     },
+     {
+      "pos": 4,
       "colore": "f26a1b",
       "nome": "Acosta",
       "voto": "6,5",
       "nota": " "
      },
      {
-      "pos": 3,
-      "colore": "e1251b",
-      "nome": "M. Marquez",
-      "voto": "7,5",
-      "nota": " "
-     },
-     {
-      "pos": 4,
-      "colore": "7b2c8f",
-      "nome": "Ogura",
-      "voto": "7,5",
-      "nota": " "
-     },
-     {
       "pos": 5,
-      "colore": "7b2c8f",
-      "nome": "Fernandez",
-      "voto": "7,5",
+      "colore": "e1251b",
+      "nome": "Giannantonio",
+      "voto": "6,5",
       "nota": " "
      },
      {
       "pos": 6,
-      "colore": "7b2c8f",
-      "nome": "Martin",
-      "voto": "8",
-      "nota": " "
-     },
-     {
-      "pos": 7,
       "colore": "7b2c8f",
       "nome": "Bezzecchi",
       "voto": "8,5",
@@ -97,13 +87,11 @@
      }
     ]
    },
-   "sub_top": 1360,
-   "testo": "E la gara la vince lui: [Bezzecchi]. Secondo in qualifica e fuori nella sprint, ma domenica parte secondo e *vince*. Voto *otto e mezzo*, uomo del weekend."
+   "sub_top": 1360
   }
  ],
  "finale": {
   "foto": "Marco Bezzecchi",
-  "alt": "sorriso",
-  "domanda": "Che voto dai tu all'Indonesia?"
+  "domanda": "Che voto dai tu a Indonesia?"
  }
 }

@@ -98,6 +98,27 @@ def _tempi_stimati(testo, uscita):
     return out
 
 
+def voce_azure(testo, velocita, uscita, grido=False):
+    """Voce ufficiale Azure (la stessa it-IT-DiegoNeural di sempre, con i tempi veri delle parole). Serve la chiave gratuita in due segreti:
+    AZURE_SPEECH_KEY e AZURE_SPEECH_REGION (impostazioni del repository su GitHub, mai scritte nei file)."""
+    import azure.cognitiveservices.speech as sdk
+    chiave, regione = os.environ["AZURE_SPEECH_KEY"].strip(), os.environ["AZURE_SPEECH_REGION"].strip()
+    cfg = sdk.SpeechConfig(subscription=chiave, region=regione)
+    cfg.speech_synthesis_voice_name = VOCE
+    cfg.set_speech_synthesis_output_format(sdk.SpeechSynthesisOutputFormat.Audio24Khz96KBitRateMonoMp3)
+    sint = sdk.SpeechSynthesizer(speech_config=cfg, audio_config=sdk.audio.AudioOutputConfig(filename=str(uscita)))
+    parole = []
+    sint.synthesis_word_boundary.connect(lambda e: parole.append((e.text, e.audio_offset / 1e7, e.audio_offset / 1e7 + e.duration.total_seconds())))
+    rate, vol = ("+55%", "+100%") if grido else (velocita, "+0%")
+    ssml = (f'<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="it-IT"><voice name="{VOCE}">'
+            f'<prosody rate="{rate}" volume="{vol}">{esc(testo)}</prosody></voice></speak>')
+    r = sint.speak_ssml_async(ssml).get()
+    if r.reason != sdk.ResultReason.SynthesizingAudioCompleted:
+        raise RuntimeError(f"Azure: {r.reason}")
+    del sint
+    return parole
+
+
 def voce_kokoro(testo, velocita, uscita, grido=False):
     """Prima riserva: Kokoro (modello neurale che gira sul computer, voce maschile italiana 'nicola'), molto piu' naturale di Piper."""
     import urllib.request
@@ -140,8 +161,15 @@ async def voce(testo, velocita, uscita, grido=False):
     """Scrive l'audio e restituisce [(parola, inizio, fine)] in secondi.
     Con grido=True la voce è la stessa di sempre (stesso tono) ma molto più forte e più veloce, come un urlo di esultanza.
     Se la voce Microsoft (edge-tts) rifiuta la connessione, si usa la voce di riserva Piper."""
-    extra = dict(rate="+55%", volume="+100%") if grido else dict(rate=velocita)
     parole, audio = [], b""
+    if os.environ.get("AZURE_SPEECH_KEY") and os.environ.get("AZURE_SPEECH_REGION"):
+        try:
+            parole = voce_azure(testo, velocita, uscita, grido)
+            if parole:
+                return _dopo_grido(uscita, grido, parole)
+        except Exception as e:
+            print("Azure non risponde (%s): provo le altre voci" % str(e)[:80], flush=True)
+    extra = dict(rate="+55%", volume="+100%") if grido else dict(rate=velocita)
     try:
         c = edge_tts.Communicate(testo, VOCE, boundary="WordBoundary", **extra)
         async for ch in c.stream():
@@ -155,10 +183,14 @@ async def voce(testo, velocita, uscita, grido=False):
     except Exception as e:
         print("edge-tts non risponde (%s): voce di riserva" % str(e)[:80], flush=True)
         try:
-            parole = voce_kokoro(testo, velocita, uscita, grido)
-        except Exception as e2:
-            print("Kokoro non disponibile (%s): voce Piper" % str(e2)[:80], flush=True)
             parole = voce_piper(testo, velocita, uscita, grido)
+        except Exception as e2:
+            print("Piper non disponibile (%s): voce Kokoro" % str(e2)[:80], flush=True)
+            parole = voce_kokoro(testo, velocita, uscita, grido)
+    return _dopo_grido(uscita, grido, parole)
+
+
+def _dopo_grido(uscita, grido, parole):
     if grido:   # ancora più volume, senza distorcere (limitatore)
         grezzo = Path(uscita).with_suffix(".raw.mp3")
         Path(uscita).replace(grezzo)

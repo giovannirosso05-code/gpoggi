@@ -56,6 +56,15 @@ def frase_sessioni(r, sprint):
     return ", ".join(parti[:-1]) + " e " + parti[-1]
 
 
+def frase_sessioni_breve(r, sprint):
+    if r["q"] == 1 and (not sprint or r["s"] == 1) and r["g"] == 1:
+        return "ha vinto tutto"
+    sorp = r.get("sorpassi", 0)
+    if sorp >= 1:
+        return f"con {'un sorpasso' if sorp == 1 else str(sorp) + ' sorpassi'} in gara"
+    return "costante dalla qualifica alla gara" if "è stato costante in tutte le sessioni" in r.get("perche", []) else "con punti pesanti"
+
+
 def scena(r, sprint, alt):
     resto = [x for x in r.get("perche", []) if x not in GENERICHE]
     if not r["g"]:
@@ -113,7 +122,16 @@ def costruisci(serie, w):
               perde if perde and perde["griglia"] - perde["g"] <= -3 else None, *[x for x in righe if x.get("correzione")], *righe[1:3]):
         aggiungi(r)
     scelti = sorted(scelti[:5], key=lambda r: r["voto_esatto"])
-    if prot is neg:
+    ferrari = max((r for r in righe if r.get("team") == "Ferrari" and r["voto"] >= 8), key=lambda r: r["voto_esatto"], default=None) if serie == "f1" else None
+    if ferrari:   # in Italia la Ferrari attira: si apre elogiando il suo migliore (mai il migliore assoluto della pagella)
+        prot = ferrari
+        aggiungi(ferrari)
+        scelti = sorted(([ferrari] + [r for r in scelti if r is not ferrari])[:5], key=lambda r: r["voto_esatto"])
+        compagno = next((r for r in righe if r.get("team") == "Ferrari" and r is not ferrari and r["voto"] <= 6.5), None)
+        gara = f"{ordinale(ferrari['g'])} in gara" + (f", partendo {ordinale(ferrari['griglia'])}" if ferrari.get("griglia") and ferrari["griglia"] != ferrari["g"] else "")
+        gancio = (f"[{cognome(ferrari)}] {voto_parole(ferrari['voto'])} in pagella: {gara}, {frase_sessioni_breve(ferrari, sprint)}."
+                  + (" La Ferrari sorride, ma non per tutti." if compagno else " Un weekend da applausi."))
+    elif prot is neg:
         gancio = f"[{cognome(prot)}] {voto_parole(prot['voto'])} in pagella. {neg['motivo'][0].upper() + neg['motivo'][1:]}. Ma il voto più basso del weekend è un altro."
     else:
         ragione = f"si è ritirato al giro {prot['ritiro_giro']}" if (not prot["g"] and prot.get("ritiro_giro")) else next((x for x in prot.get("perche", []) if x not in GENERICHE), "")

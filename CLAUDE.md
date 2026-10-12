@@ -58,3 +58,4 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 - Le tabelle dei voti (copertina e schermata finale del video) vanno dal migliore a scendere; il video racconta dal voto più basso al più alto, il migliore per ultimo.
 - Si dice sempre che i voti sono a scopo divertente e non vogliono offendere nessuno.
 - Le chiusure dei voti si alternano ("Voto sette", "Per lui oggi sette e mezzo", "Si prende sei", "Gli diamo otto"): non ripetere sempre "voto".
+- Non essere ridondante: niente frasi che ripetono posizioni o griglia già dette, niente avviso "a scopo divertente" a voce (resta scritto in didascalia, sito e schermata finale), niente "in fondo" per il migliore. Nelle tabelle niente numeri di posizione (sembrerebbe la classifica del mondiale) e si parla sempre di "pagella", mai di "classifica".

@@ -291,7 +291,7 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
     if scena.get("classifica"):
         c = scena["classifica"]
         corpo += f'<div class=cla><h3>{esc(c["titolo"])}</h3>' + "".join(
-            f'<div class=r><span class=p>{r["pos"]}</span><span class=b style="background:#{r["colore"]}"></span><span class=n>{esc(r["nome"])}</span>'
+            f'<div class=r>{"<span class=p>" + str(r["pos"]) + "</span>" if r["pos"] != "" else ""}<span class=b style="background:#{r["colore"]}"></span><span class=n>{esc(r["nome"])}</span>'
             f'<span class=pt>{r.get("voto", r.get("punti"))}</span><span class="d{"" if r.get("piu", 1) else " z"}">{esc(r["nota"]) if r.get("nota") else "+" + str(r["piu"])}</span></div>' for r in c["righe"]) + '</div>'
     if scena.get("griglia"):
         g = scena["griglia"]

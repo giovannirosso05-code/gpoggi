@@ -17,6 +17,7 @@ ORD = ["", "primo", "secondo", "terzo", "quarto", "quinto", "sesto", "settimo", 
 NUM = ["zero", "uno", "due", "tre", "quattro", "cinque", "sei", "sette", "otto", "nove", "dieci"]
 MOTO = {"Ducati": "e1251b", "Aprilia": "7b2c8f", "KTM": "f26a1b", "Yamaha": "1d4fa3", "Honda": "dcdce2"}
 GENERICHE = ("ha chiuso dove era partito", "ha chiuso a un passo dalla posizione di partenza")
+RIDONDANTI = ("ha recuperato", "ha guadagnato", "ha perso", "è stato costante", "è uscito nella sprint", "è mancato nella sprint", "non ha firmato", "ha vinto", "è salito sul podio")
 
 
 def ordinale(n):
@@ -75,7 +76,7 @@ CHIUSURE = ["Voto *{v}*.", "Per lui oggi *{v}*.", "Si prende *{v}*.", "Gli diamo
 
 
 def scena(r, sprint, alt, i=0):
-    resto = [x for x in r.get("perche", []) if x not in GENERICHE]
+    resto = [x for x in r.get("perche", []) if x not in GENERICHE and not x.startswith(RIDONDANTI)]
     if not r["g"]:
         resto = []   # il ritiro e' gia' nella frase delle sessioni
     extra = (resto[0][0].upper() + resto[0][1:] + ".") if resto else (frase_ritiro(r) if not r["g"] else "")
@@ -231,7 +232,7 @@ def costruisci(serie, w):
     for r in sorted(righe[:4], key=lambda r: -r["voto_esatto"]):
         pass
     coloreriga = lambda r: r.get("colore") or MOTO.get(r.get("moto"), "888888")
-    tab = {"titolo": f"Pagella: {gp}", "righe": [{"pos": i + 1, "colore": coloreriga(r), "nome": breve(r), "voto": fmt(r["voto"]), "nota": " "} for i, r in enumerate(sorted(set(map(id, righe_tab)) and righe_tab, key=lambda r: -r["voto_esatto"]))]}
+    tab = {"titolo": "I nostri voti", "righe": [{"pos": "", "colore": coloreriga(r), "nome": breve(r), "voto": fmt(r["voto"]), "nota": " "} for i, r in enumerate(sorted(set(map(id, righe_tab)) and righe_tab, key=lambda r: -r["voto_esatto"]))]}
     scene = [{"foto": prot["nome"], **foto_gancio(prot["nome"]), "hook": True, "hook_titolo": hook_titolo, "testo": gancio}]
     if ferrari:   # dopo il gancio si parla subito dell'altra Ferrari
         c2 = next((r for r in scelti if r.get("team") == "Ferrari" and r is not ferrari), None)
@@ -248,7 +249,7 @@ def costruisci(serie, w):
     top = {"foto": migliore["nome"], **pista,
            "testo": f"E poi il migliore: [{cognome(migliore)}]. {tripletta(migliore, sprint) or (frase_sessioni(migliore, sprint)[0].upper() + frase_sessioni(migliore, sprint)[1:] + '.')}{lode} Voto *{voto_parole(migliore['voto'])}*."}
     scene.append(top)
-    scene.append({"foto": migliore["nome"], "pista": True, "classifica": tab, "sub_top": 1360, "testo": f"Ecco la pagella completa, con [{cognome(migliore)}] in fondo. Voti a scopo divertente: nessuno si offenda. " + ("Ogni lunedì alle tredici la pagella della MotoGP: tornate sul profilo alle diciotto per quella della F1." if serie == "motogp" else "Ogni lunedì alle tredici le pagelle della MotoGP, alle diciotto quelle della F1.")})
+    scene.append({"foto": migliore["nome"], "pista": True, "classifica": tab, "sub_top": 1360, "testo": "Ecco la pagella completa. " + ("Ogni lunedì alle tredici la pagella della MotoGP: tornate sul profilo alle diciotto per quella della F1." if serie == "motogp" else "Ogni lunedì alle tredici le pagelle della MotoGP, alle diciotto quelle della F1.")})
     ser = "F1" if serie == "f1" else "MotoGP"
     return {"serie": ser, "titolo_breve": f"{gp}: la pagella", "fonte": "risultati ufficiali, calcolo GP Oggi", "velocita": "+38%", "scene": scene,
             "finale": {"foto": migliore["nome"], "domanda": f"Che voto dai tu a {gp}?"}}, migliore, gp, basso

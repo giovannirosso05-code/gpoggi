@@ -15,7 +15,7 @@
    "foto": "Lewis Hamilton",
    "alt": "pista_suzuka",
    "pista": true,
-   "testo": "[Hamilton]: terzo in qualifica, secondo nella sprint e sesto in gara, partendo terzo. Ha perso 3 posizioni rispetto alla griglia. Pesa l'errore che ha ammesso. Voto *sei*."
+   "testo": "[Hamilton]: terzo in qualifica, secondo nella sprint e sesto in gara, partendo terzo. Pesa l'errore che ha ammesso. Voto *sei*."
   },
   {
    "foto": "Lance Stroll",
@@ -23,25 +23,25 @@
   },
   {
    "foto": "Arvid Lindblad",
-   "testo": "[Lindblad]: decimo in qualifica, tredicesimo nella sprint e quindicesimo in gara, partendo nono. Ha perso 6 posizioni rispetto alla griglia. Si prende *quattro e mezzo*."
+   "testo": "[Lindblad]: decimo in qualifica, tredicesimo nella sprint e quindicesimo in gara, partendo nono. Si prende *quattro e mezzo*."
   },
   {
    "foto": "George Russell",
    "alt": "pista_suzuka",
    "pista": true,
-   "testo": "[Russell]: sesto in qualifica, fuori nella sprint e nono in gara, partendo diciannovesimo. Ha recuperato 10 posizioni sulla griglia. Rimonta dalla 19ª alla 9ª posizione dopo la penalità. Gli diamo *sei e mezzo*."
+   "testo": "[Russell]: sesto in qualifica, fuori nella sprint e nono in gara, partendo diciannovesimo. Rimonta dopo la penalità in griglia. Gli diamo *sei e mezzo*."
   },
   {
    "foto": "Kimi Antonelli",
    "alt": "pista_suzuka",
    "pista": true,
-   "testo": "[Antonelli]: quarto in qualifica, quarto nella sprint e terzo in gara. È stato costante in tutte le sessioni. Voto *otto*."
+   "testo": "[Antonelli]: quarto in qualifica, quarto nella sprint e terzo in gara. Voto *otto*."
   },
   {
    "foto": "Charles Leclerc",
    "alt": "pista_cina",
    "pista": true,
-   "testo": "[Leclerc]: secondo in qualifica, terzo nella sprint e secondo in gara. È stato costante in tutte le sessioni. Per lui oggi *otto e mezzo*."
+   "testo": "[Leclerc]: secondo in qualifica, terzo nella sprint e secondo in gara. Per lui oggi *otto e mezzo*."
   },
   {
    "foto": "Max Verstappen",
@@ -53,52 +53,52 @@
    "foto": "Max Verstappen",
    "pista": true,
    "classifica": {
-    "titolo": "Pagella: Singapore",
+    "titolo": "I nostri voti",
     "righe": [
      {
-      "pos": 1,
+      "pos": "",
       "colore": "4781D7",
       "nome": "Verstappen",
       "voto": "10",
       "nota": " "
      },
      {
-      "pos": 2,
+      "pos": "",
       "colore": "ED1131",
       "nome": "Leclerc",
       "voto": "8,5",
       "nota": " "
      },
      {
-      "pos": 3,
+      "pos": "",
       "colore": "00D7B6",
       "nome": "Antonelli",
       "voto": "8",
       "nota": " "
      },
      {
-      "pos": 4,
+      "pos": "",
       "colore": "00D7B6",
       "nome": "Russell",
       "voto": "6,5",
       "nota": " "
      },
      {
-      "pos": 5,
+      "pos": "",
       "colore": "ED1131",
       "nome": "Hamilton",
       "voto": "6",
       "nota": " "
      },
      {
-      "pos": 6,
+      "pos": "",
       "colore": "6C98FF",
       "nome": "Lindblad",
       "voto": "4,5",
       "nota": " "
      },
      {
-      "pos": 7,
+      "pos": "",
       "colore": "229971",
       "nome": "Stroll",
       "voto": "3",
@@ -107,7 +107,7 @@
     ]
    },
    "sub_top": 1360,
-   "testo": "Ecco la pagella completa, con [Verstappen] in fondo. Voti a scopo divertente: nessuno si offenda. Ogni lunedì alle tredici le pagelle della MotoGP, alle diciotto quelle della F1."
+   "testo": "Ecco la pagella completa. Ogni lunedì alle tredici le pagelle della MotoGP, alle diciotto quelle della F1."
   }
  ],
  "finale": {

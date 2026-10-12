@@ -22,7 +22,7 @@
   },
   {
    "foto": "Johann Zarco",
-   "testo": "[Zarco]: ventesimo in qualifica, dodicesimo nella sprint e tredicesimo in gara, partendo ventesimo. Ha guadagnato 7 posizioni sulla griglia. Si prende *cinque e mezzo*."
+   "testo": "[Zarco]: ventesimo in qualifica, dodicesimo nella sprint e tredicesimo in gara, partendo ventesimo. Si prende *cinque e mezzo*."
   },
   {
    "foto": "Marc Marquez",
@@ -34,11 +34,11 @@
    "foto": "Raul Fernandez",
    "alt": "pista",
    "pista": true,
-   "testo": "[Fernandez]: primo in qualifica, fuori nella sprint e secondo in gara. È uscito nella sprint. Voto *sette e mezzo*."
+   "testo": "[Fernandez]: primo in qualifica, fuori nella sprint e secondo in gara. Voto *sette e mezzo*."
   },
   {
    "foto": "Jorge Martin",
-   "testo": "[Martin]: quinto in qualifica, quarto nella sprint e terzo in gara. È stato costante in tutte le sessioni. Per lui oggi *otto*."
+   "testo": "[Martin]: quinto in qualifica, quarto nella sprint e terzo in gara. Ha fatto 2 sorpassi. Per lui oggi *otto*."
   },
   {
    "foto": "Marco Bezzecchi",
@@ -51,52 +51,52 @@
    "foto": "Marco Bezzecchi",
    "pista": true,
    "classifica": {
-    "titolo": "Pagella: Indonesia",
+    "titolo": "I nostri voti",
     "righe": [
      {
-      "pos": 1,
+      "pos": "",
       "colore": "7b2c8f",
       "nome": "Bezzecchi",
       "voto": "8,5",
       "nota": " "
      },
      {
-      "pos": 2,
+      "pos": "",
       "colore": "7b2c8f",
       "nome": "Martin",
       "voto": "8",
       "nota": " "
      },
      {
-      "pos": 3,
+      "pos": "",
       "colore": "7b2c8f",
       "nome": "Fernandez",
       "voto": "7,5",
       "nota": " "
      },
      {
-      "pos": 4,
+      "pos": "",
       "colore": "e1251b",
       "nome": "M. Marquez",
       "voto": "7,5",
       "nota": " "
      },
      {
-      "pos": 5,
+      "pos": "",
       "colore": "dcdce2",
       "nome": "Zarco",
       "voto": "5,5",
       "nota": " "
      },
      {
-      "pos": 6,
+      "pos": "",
       "colore": "e1251b",
       "nome": "Bagnaia",
       "voto": "4",
       "nota": " "
      },
      {
-      "pos": 7,
+      "pos": "",
       "colore": "1d4fa3",
       "nome": "Razgatlioglu",
       "voto": "3,5",
@@ -105,7 +105,7 @@
     ]
    },
    "sub_top": 1360,
-   "testo": "Ecco la pagella completa, con [Bezzecchi] in fondo. Voti a scopo divertente: nessuno si offenda. Ogni lunedì alle tredici la pagella della MotoGP: tornate sul profilo alle diciotto per quella della F1."
+   "testo": "Ecco la pagella completa. Ogni lunedì alle tredici la pagella della MotoGP: tornate sul profilo alle diciotto per quella della F1."
   }
  ],
  "finale": {

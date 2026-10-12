@@ -25,16 +25,20 @@
    "testo": "[Zarco]: ventesimo in qualifica, dodicesimo nella sprint e tredicesimo in gara, partendo ventesimo. Ha guadagnato 7 posizioni sulla griglia. Voto *cinque e mezzo*."
   },
   {
-   "foto": "Pedro Acosta",
+   "foto": "Marc Marquez",
    "alt": "pista",
    "pista": true,
-   "testo": "[Acosta]: nono in qualifica, sesto nella sprint e quinto in gara, partendo nono. Ha guadagnato 4 posizioni sulla griglia. Quinto a 9,5 secondi dal vincitore, senza podio. Voto *sei e mezzo*."
+   "testo": "[Marc Marquez]: quarto in qualifica, primo nella sprint e sesto in gara. Ha fatto 3 sorpassi. Voto *sette e mezzo*."
   },
   {
-   "foto": "Fabio Di Giannantonio",
+   "foto": "Raul Fernandez",
    "alt": "pista",
    "pista": true,
-   "testo": "[Giannantonio]: terzo in qualifica, terzo nella sprint e ottavo in gara, partendo terzo. Ha perso 5 posizioni rispetto alla griglia. Voto *sei e mezzo*."
+   "testo": "[Fernandez]: primo in qualifica, fuori nella sprint e secondo in gara. È uscito nella sprint. Voto *sette e mezzo*."
+  },
+  {
+   "foto": "Jorge Martin",
+   "testo": "[Martin]: quinto in qualifica, quarto nella sprint e terzo in gara. È stato costante in tutte le sessioni. Voto *otto*."
   },
   {
    "foto": "Marco Bezzecchi",
@@ -66,20 +70,27 @@
      },
      {
       "pos": 4,
-      "colore": "f26a1b",
-      "nome": "Acosta",
-      "voto": "6,5",
+      "colore": "e1251b",
+      "nome": "M. Marquez",
+      "voto": "7,5",
       "nota": " "
      },
      {
       "pos": 5,
-      "colore": "e1251b",
-      "nome": "Giannantonio",
-      "voto": "6,5",
+      "colore": "7b2c8f",
+      "nome": "Fernandez",
+      "voto": "7,5",
       "nota": " "
      },
      {
       "pos": 6,
+      "colore": "7b2c8f",
+      "nome": "Martin",
+      "voto": "8",
+      "nota": " "
+     },
+     {
+      "pos": 7,
       "colore": "7b2c8f",
       "nome": "Bezzecchi",
       "voto": "8,5",

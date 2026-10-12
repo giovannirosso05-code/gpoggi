@@ -8,7 +8,7 @@
    "foto": "Charles Leclerc",
    "hook": true,
    "hook_titolo": "Leclerc 8,5 in pagella",
-   "testo": "[Leclerc] otto e mezzo in pagella: secondo in gara, con un sorpasso in gara. La Ferrari sorride, ma non per tutti."
+   "testo": "[Leclerc] otto e mezzo in pagella: secondo in gara, con un sorpasso. La Ferrari sorride, ma non per tutti."
   },
   {
    "foto": "Lance Stroll",
@@ -19,14 +19,22 @@
    "testo": "[Lindblad]: decimo in qualifica, tredicesimo nella sprint e quindicesimo in gara, partendo nono. Ha perso 6 posizioni rispetto alla griglia. Voto *quattro e mezzo*."
   },
   {
-   "foto": "Isack Hadjar",
-   "testo": "[Hadjar]: senza tempo in qualifica, fuori nella sprint e decimo in gara, partendo ventiduesimo. Ha recuperato 12 posizioni sulla griglia. Voto *cinque e mezzo*."
-  },
-  {
    "foto": "Lewis Hamilton",
    "alt": "pista_suzuka",
    "pista": true,
    "testo": "[Hamilton]: terzo in qualifica, secondo nella sprint e sesto in gara, partendo terzo. Ha perso 3 posizioni rispetto alla griglia. Pesa l'errore che ha ammesso. Voto *sei*."
+  },
+  {
+   "foto": "George Russell",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Russell]: sesto in qualifica, fuori nella sprint e nono in gara, partendo diciannovesimo. Ha recuperato 10 posizioni sulla griglia. Rimonta dalla 19ª alla 9ª posizione dopo la penalità. Voto *sei e mezzo*."
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Antonelli]: quarto in qualifica, quarto nella sprint e terzo in gara. È stato costante in tutte le sessioni. Voto *otto*."
   },
   {
    "foto": "Charles Leclerc",
@@ -57,27 +65,34 @@
      },
      {
       "pos": 3,
-      "colore": "4781D7",
-      "nome": "Hadjar",
-      "voto": "5,5",
-      "nota": " "
-     },
-     {
-      "pos": 4,
       "colore": "ED1131",
       "nome": "Hamilton",
       "voto": "6",
       "nota": " "
      },
      {
+      "pos": 4,
+      "colore": "00D7B6",
+      "nome": "Russell",
+      "voto": "6,5",
+      "nota": " "
+     },
+     {
       "pos": 5,
+      "colore": "00D7B6",
+      "nome": "Antonelli",
+      "voto": "8",
+      "nota": " "
+     },
+     {
+      "pos": 6,
       "colore": "ED1131",
       "nome": "Leclerc",
       "voto": "8,5",
       "nota": " "
      },
      {
-      "pos": 6,
+      "pos": 7,
       "colore": "4781D7",
       "nome": "Verstappen",
       "voto": "10",

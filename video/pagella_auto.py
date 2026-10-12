@@ -61,7 +61,7 @@ def frase_sessioni_breve(r, sprint):
         return "ha vinto tutto"
     sorp = r.get("sorpassi", 0)
     if sorp >= 1:
-        return f"con {'un sorpasso' if sorp == 1 else str(sorp) + ' sorpassi'} in gara"
+        return f"con {'un sorpasso' if sorp == 1 else str(sorp) + ' sorpassi'}"
     return "costante dalla qualifica alla gara" if "è stato costante in tutte le sessioni" in r.get("perche", []) else "con punti pesanti"
 
 
@@ -118,15 +118,16 @@ def costruisci(serie, w):
     # chi sceglie il gancio: il piu' famoso tra chi ha un voto molto basso o una correzione pesante in negativo (mai il migliore)
     cand = [r for r in (neg, noto) if r]
     prot = max(cand, key=lambda r: punti.get(r["nome"], 0)) if cand else basso
-    for r in (basso, prot, neg, noto, sale[0] if sale and sale[0]["griglia"] - sale[0]["g"] >= 6 else None,
+    protagonisti = sorted((r for r in righe if r is not migliore), key=lambda r: -punti.get(r["nome"], 0))[:2]
+    for r in (*protagonisti, *righe[1:3], basso, prot, neg, noto, sale[0] if sale and sale[0]["griglia"] - sale[0]["g"] >= 6 else None,
               perde if perde and perde["griglia"] - perde["g"] <= -3 else None, *[x for x in righe if x.get("correzione")], *righe[1:3]):
         aggiungi(r)
-    scelti = sorted(scelti[:5], key=lambda r: r["voto_esatto"])
+    scelti = sorted(scelti[:6], key=lambda r: r["voto_esatto"])
     ferrari = max((r for r in righe if r.get("team") == "Ferrari" and r["voto"] >= 8), key=lambda r: r["voto_esatto"], default=None) if serie == "f1" else None
     if ferrari:   # in Italia la Ferrari attira: si apre elogiando il suo migliore (mai il migliore assoluto della pagella)
         prot = ferrari
         aggiungi(ferrari)
-        scelti = sorted(([ferrari] + [r for r in scelti if r is not ferrari])[:5], key=lambda r: r["voto_esatto"])
+        scelti = sorted(([ferrari] + [r for r in scelti if r is not ferrari])[:6], key=lambda r: r["voto_esatto"])
         compagno = next((r for r in righe if r.get("team") == "Ferrari" and r is not ferrari and r["voto"] <= 6.5), None)
         gara = f"{ordinale(ferrari['g'])} in gara" + (f", partendo {ordinale(ferrari['griglia'])}" if ferrari.get("griglia") and ferrari["griglia"] != ferrari["g"] else "")
         gancio = (f"[{cognome(ferrari)}] {voto_parole(ferrari['voto'])} in pagella: {gara}, {frase_sessioni_breve(ferrari, sprint)}."

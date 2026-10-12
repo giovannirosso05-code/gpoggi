@@ -148,7 +148,7 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
 .tag{{position:absolute;left:265px;top:172px;font:700 30px Oswald;letter-spacing:.06em;text-transform:uppercase;background:{col};padding:4px 16px;border-radius:6px}}
 .strip{{position:absolute;left:40px;top:300px;max-width:900px;background:{col};font:700 44px/1.1 Oswald;text-transform:uppercase;padding:10px 18px}}
 .nome{{position:absolute;left:60px;top:{spec.get('nome_top', 930)}px;background:#000;font:700 38px Oswald;text-transform:uppercase;letter-spacing:.04em;padding:6px 18px}}
-.sub{{position:absolute;left:90px;width:780px;top:{spec.get('sub_top', 1180)}px;text-align:center;font:700 62px/1.18 Oswald;text-transform:uppercase;word-spacing:.18em;-webkit-text-stroke:2px #000;paint-order:stroke fill;text-shadow:0 4px 18px rgba(0,0,0,.7)}}
+.sub{{position:absolute;left:90px;width:780px;top:{scena.get('sub_top', spec.get('sub_top', 1180))}px;text-align:center;font:700 62px/1.18 Oswald;text-transform:uppercase;word-spacing:.18em;-webkit-text-stroke:2px #000;paint-order:stroke fill;text-shadow:0 4px 18px rgba(0,0,0,.7)}}
 .sub .g{{color:{GIALLO}}} .sub .s{{color:{nom}}}
 .fg{{position:absolute;left:0;width:1080px;top:400px;height:760px;background:url(data:image/jpeg;base64,{foto_b64}) center/contain no-repeat;filter:drop-shadow(0 30px 60px rgba(0,0,0,.6))}}
 .cla{{position:absolute;left:60px;right:60px;top:450px;background:rgba(11,11,14,.82);border-radius:22px;padding:26px 30px;box-shadow:0 30px 80px rgba(0,0,0,.6)}}
@@ -196,7 +196,7 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
         c = scena["classifica"]
         corpo += f'<div class=cla><h3>{esc(c["titolo"])}</h3>' + "".join(
             f'<div class=r><span class=p>{r["pos"]}</span><span class=b style="background:#{r["colore"]}"></span><span class=n>{esc(r["nome"])}</span>'
-            f'<span class=pt>{r["punti"]}</span><span class="d{"" if r["piu"] else " z"}">+{r["piu"]}</span></div>' for r in c["righe"]) + '</div>'
+            f'<span class=pt>{r.get("voto", r.get("punti"))}</span><span class="d{"" if r.get("piu", 1) else " z"}">{esc(r["nota"]) if r.get("nota") else "+" + str(r["piu"])}</span></div>' for r in c["righe"]) + '</div>'
     if scena.get("griglia"):
         g = scena["griglia"]
         corpo += f'<div class=gri><div class=l><h3>{esc(g["titolo"])}</h3>' + "".join(

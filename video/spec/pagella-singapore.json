@@ -1,0 +1,119 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Singapore: la pagella",
+ "fonte": "risultati ufficiali, elaborazione GP Oggi",
+ "velocita": "+30%",
+ "scene": [
+  {
+   "foto": "Max Verstappen",
+   "hook": true,
+   "hook_titolo": "La pagella di Singapore",
+   "testo": "La [pagella] di Singapore, *studiata da noi*. Qualifica, sprint e gara."
+  },
+  {
+   "foto": "Isack Hadjar",
+   "testo": "[Hadjar] parte ventiduesimo e chiude *decimo*. Dodici posizioni recuperate. Voto *sette*."
+  },
+  {
+   "foto": "George Russell",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Russell] fuori nella sprint, ma in gara risale dal *diciannovesimo* al nono posto. Voto *sei e mezzo*."
+  },
+  {
+   "foto": "Oscar Piastri",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Piastri] si ritira nella sprint dopo il contatto con Norris, poi è *quinto* in gara. Voto *cinque*."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Hamilton] terzo in qualifica e secondo nella sprint, ma in gara *scivola dal terzo al sesto posto*. Voto *sei*."
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "alt": "pista_cina",
+   "pista": true,
+   "testo": "[Antonelli] quarto in qualifica e sprint, *terzo in gara*. Punti pesanti per il mondiale. Voto *otto*."
+  },
+  {
+   "foto": "Charles Leclerc",
+   "alt": "pista_cina",
+   "pista": true,
+   "testo": "[Leclerc] secondo in qualifica e in gara, terzo nella sprint. Voto *otto*."
+  },
+  {
+   "foto": "Max Verstappen",
+   "pista": true,
+   "classifica": {
+    "titolo": "Pagella di Singapore",
+    "righe": [
+     {
+      "pos": 1,
+      "colore": "F47600",
+      "nome": "Piastri",
+      "voto": "5",
+      "nota": " "
+     },
+     {
+      "pos": 2,
+      "colore": "F47600",
+      "nome": "Norris",
+      "voto": "6",
+      "nota": " "
+     },
+     {
+      "pos": 3,
+      "colore": "ED1131",
+      "nome": "Hamilton",
+      "voto": "6",
+      "nota": " "
+     },
+     {
+      "pos": 4,
+      "colore": "00D7B6",
+      "nome": "Russell",
+      "voto": "6,5",
+      "nota": " "
+     },
+     {
+      "pos": 5,
+      "colore": "4781D7",
+      "nome": "Hadjar",
+      "voto": "7",
+      "nota": " "
+     },
+     {
+      "pos": 6,
+      "colore": "00D7B6",
+      "nome": "Antonelli",
+      "voto": "8",
+      "nota": " "
+     },
+     {
+      "pos": 7,
+      "colore": "ED1131",
+      "nome": "Leclerc",
+      "voto": "8",
+      "nota": " "
+     },
+     {
+      "pos": 8,
+      "colore": "4781D7",
+      "nome": "Verstappen",
+      "voto": "10",
+      "nota": " "
+     }
+    ]
+   },
+   "testo": "E poi lui: pole, sprint e gara. [Verstappen], voto *dieci*. È l'uomo del weekend.",
+   "sub_top": 1360
+  }
+ ],
+ "finale": {
+  "foto": "Max Verstappen",
+  "domanda": "Che voto dai tu a Singapore?"
+ }
+}

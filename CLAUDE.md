@@ -36,3 +36,7 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 - Ogni video, copertina e didascalia fatti a mano vanno anche in `invio/` (es. `invio/nome.mp4`, `invio/nome.png`, `invio/nome.txt` con la didascalia): il workflow "Invio su Telegram" parte al push e li manda sul Telegram del proprietario, come fa il bot di MMA Oggi. I già inviati sono in `video/inviati.json`.
 - Anche in chat si mandano con SendUserFile, ma la consegna su Telegram è quella che conta.
 - I workflow dei video automatici avvisano su Telegram se falliscono. La chat è `559225883` (non è un segreto); il token è nei secret del repository (`TELEGRAM_BOT_TOKEN` o `TELEGRAM_TOKEN`), mai in chiaro.
+
+## Video fatti a mano: generarli su GitHub
+- La voce (edge-tts) dalla sandbox dà errore 403: i video a mano si generano su GitHub. Si mettono scaletta (`video/spec/nome.json`), copertina (`nome.png`) e didascalia (`nome.txt`) in `video/spec/`: il workflow "Video da spec" crea il video, lo copia in `invio/` con copertina e didascalia e li manda sul Telegram.
+- Scena con tabella: `classifica.righe` accetta anche `voto` (al posto dei punti) e `nota`; `sub_top` per scena sposta i sottotitoli.

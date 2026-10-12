@@ -251,7 +251,7 @@ def costruisci(serie, w):
     scene.append(top)
     scene.append({"foto": migliore["nome"], "pista": True, "classifica": tab, "sub_top": 1360, "testo": "Ecco la pagella completa. " + ("Ogni lunedì alle tredici la pagella della MotoGP: tornate sul profilo alle diciotto per quella della F1." if serie == "motogp" else "Ogni lunedì alle tredici le pagelle della MotoGP, alle diciotto quelle della F1.")})
     ser = "F1" if serie == "f1" else "MotoGP"
-    return {"serie": ser, "titolo_breve": f"{gp}: la pagella", "fonte": "risultati ufficiali, calcolo GP Oggi", "velocita": "+38%", "scene": scene,
+    return {"serie": ser, "titolo_breve": f"{gp}: la pagella", "fonte": "risultati ufficiali, calcolo GP Oggi", "velocita": "+31%", "scene": scene,
             "finale": {"foto": migliore["nome"], "domanda": f"Che voto dai tu a {gp}?"}}, migliore, gp, basso
 
 

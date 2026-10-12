@@ -2,7 +2,7 @@
  "serie": "MotoGP",
  "titolo_breve": "Indonesia: la pagella",
  "fonte": "risultati ufficiali, calcolo GP Oggi",
- "velocita": "+38%",
+ "velocita": "+31%",
  "scene": [
   {
    "foto": "Francesco Bagnaia",
@@ -28,7 +28,7 @@
    "foto": "Marc Marquez",
    "alt": "pista",
    "pista": true,
-   "testo": "[Marc Marquez]: quarto in qualifica, primo nella sprint e sesto in gara. Ha fatto 3 sorpassi. Gli diamo *sette e mezzo*."
+   "testo": "[Marc Marquez]: quarto in qualifica, primo nella sprint e sesto in gara. Gli diamo *sette e mezzo*."
   },
   {
    "foto": "Raul Fernandez",
@@ -38,7 +38,7 @@
   },
   {
    "foto": "Jorge Martin",
-   "testo": "[Martin]: quinto in qualifica, quarto nella sprint e terzo in gara. Ha fatto 2 sorpassi. Per lui oggi *otto*."
+   "testo": "[Martin]: quinto in qualifica, quarto nella sprint e terzo in gara. Per lui oggi *otto*."
   },
   {
    "foto": "Marco Bezzecchi",

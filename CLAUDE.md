@@ -59,3 +59,4 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 - Si dice sempre che i voti sono a scopo divertente e non vogliono offendere nessuno.
 - Le chiusure dei voti si alternano ("Voto sette", "Per lui oggi sette e mezzo", "Si prende sei", "Gli diamo otto"): non ripetere sempre "voto".
 - Non essere ridondante: niente frasi che ripetono posizioni o griglia già dette, niente avviso "a scopo divertente" a voce (resta scritto in didascalia, sito e schermata finale), niente "in fondo" per il migliore. Nelle tabelle niente numeri di posizione (sembrerebbe la classifica del mondiale) e si parla sempre di "pagella", mai di "classifica".
+- Velocità della voce nei video pagella: +31% (5% più lenta di prima, su richiesta del proprietario).

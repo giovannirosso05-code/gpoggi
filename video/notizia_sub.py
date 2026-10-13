@@ -349,13 +349,13 @@ async def genera(spec, uscita):
         # subito dopo il gancio (la fine del video non la ascolta nessuno): invito a seguire il canale; "segui": false nella scaletta lo toglie
         if spec.get("segui", True) and scene and scene[0].get("hook") and not any("Seguici" in x.get("testo", "") for x in scene):
             scene.insert(1, {**{k: v for k, v in scene[0].items() if k in ("foto", "alt", "pista", "volto_alt", "foto_file", "credito", "pos")},
-                             "testo": "*Seguici* per altri contenuti come questo.", "pausa": 0.1})
+                             "testo": "*Seguici* per altri contenuti come questo.", "velocita": "+20%"})
         # audio e tempi
         t = 0.0; lavoro = []
         for i, s in enumerate(scene + [dict(finale, testo=finale["domanda"] + " Dimmi la tua nei commenti.", finale=True)]):
             tok = token(s["testo"]); parlato = " ".join(pronuncia(w) for w, _ in tok)
             mp3 = tmp / f"v{i}.mp3"
-            tempi = await voce(parlato, vel, mp3, grido=bool(s.get("grido")))
+            tempi = await voce(parlato, s.get("velocita", vel), mp3, grido=bool(s.get("grido")))
             lead = (tempi[0][1] + 0.03) if tempi else 0
             if lead > 0.05 and not s.get("grido"):   # anche il silenzio iniziale si toglie
                 tagliato = mp3.with_suffix(".t.mp3")

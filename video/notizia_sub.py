@@ -349,7 +349,7 @@ async def genera(spec, uscita):
         # subito dopo il gancio (la fine del video non la ascolta nessuno): invito a seguire il canale; "segui": false nella scaletta lo toglie
         if spec.get("segui", True) and scene and scene[0].get("hook") and not any("Seguici" in x.get("testo", "") for x in scene):
             scene.insert(1, {**{k: v for k, v in scene[0].items() if k in ("foto", "alt", "pista", "volto_alt", "foto_file", "credito", "pos")},
-                             "testo": "*Seguici* per altri contenuti come questo.", "pausa": 0.2})
+                             "testo": "*Seguici* per altri contenuti come questo.", "pausa": 0.1})
         # audio e tempi
         t = 0.0; lavoro = []
         for i, s in enumerate(scene + [dict(finale, testo=finale["domanda"] + " Dimmi la tua nei commenti.", finale=True)]):

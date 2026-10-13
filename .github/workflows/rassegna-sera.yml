@@ -1,11 +1,16 @@
 name: Rassegna della sera
 
 # Ogni sera alle 21:30 italiane: video con i titoli del giorno (ognuno con la sua fonte), mandato sul Telegram.
-# Due orari UTC (ora legale e ora solare): parte solo quello che cade nella finestra 21:00-22:15 a Roma, una volta al giorno. Nessun modello di linguaggio.
+# Due orari UTC (ora legale e ora solare): parte solo quello che cade nella finestra 21:00-22:45 a Roma, una volta al giorno. Nessun modello di linguaggio.
 on:
   schedule:
-    - cron: '30 19 * * *'
-    - cron: '30 20 * * *'
+    # GitHub a volte salta o ritarda gli orari: si riprova più volte; il segno "già fatta oggi" evita i doppioni
+    - cron: '23 19 * * *'
+    - cron: '38 19 * * *'
+    - cron: '53 19 * * *'
+    - cron: '23 20 * * *'
+    - cron: '38 20 * * *'
+    - cron: '53 20 * * *'
   workflow_dispatch:
     inputs:
       forza:

@@ -101,7 +101,7 @@ def main():
     oggi = adesso.strftime("%Y-%m-%d")
     stato = NG.stato_leggi()
     if not a.forza:
-        if not (21 * 60 <= adesso.hour * 60 + adesso.minute <= 22 * 60 + 15):
+        if not (21 * 60 <= adesso.hour * 60 + adesso.minute <= 22 * 60 + 45):
             print(f"Sono le {adesso:%H:%M} a Roma: non è l'ora della rassegna.")
             return
         if stato.get("giorno_rassegna") == oggi:

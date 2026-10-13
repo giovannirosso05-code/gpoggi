@@ -26,6 +26,13 @@ import edge_tts.communicate as C
 import requests
 from playwright.async_api import async_playwright
 
+
+async def _voce_comune(testo, vel, uscita):
+    """Stessa voce di tutti gli altri video: Azure se ci sono le chiavi, poi le riserve (vedi notizia_sub.voce)."""
+    import notizia_sub as NS
+    await NS.voce(testo, vel, Path(uscita))
+
+
 _CA = "/root/.ccr/ca-bundle.crt" if os.path.exists("/root/.ccr/ca-bundle.crt") else True
 if _CA is not True:
     C._SSL_CTX = ssl.create_default_context(cafile=_CA)
@@ -366,7 +373,7 @@ def _durata(f):
 
 
 async def _voce(testo, uscita):
-    await edge_tts.Communicate(testo, VOCE, rate=VELOCITA).save(str(uscita))
+    await _voce_comune(testo, VELOCITA, uscita)
 
 
 def _encoder(uscita, ingresso="mjpeg"):

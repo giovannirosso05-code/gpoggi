@@ -15,6 +15,13 @@ import edge_tts, edge_tts.communicate as C
 from PIL import Image, ImageFilter
 from playwright.async_api import async_playwright
 
+
+async def _voce_comune(testo, vel, uscita):
+    """Stessa voce di tutti gli altri video: Azure se ci sono le chiavi, poi le riserve (vedi notizia_sub.voce)."""
+    import notizia_sub as NS
+    await NS.voce(testo, vel, Path(uscita))
+
+
 if os.path.exists("/root/.ccr/ca-bundle.crt"):
     C._SSL_CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
 QUI = Path(__file__).parent; SITO = QUI.parent / "docs"; DATA = SITO / "data"; FONT = QUI / "logo" / "font"
@@ -137,7 +144,7 @@ def pagina(col, titolo, sotto, img64, indizi_visibili, avanz, credito, finale, c
 
 
 async def voce(testo, uscita):
-    await edge_tts.Communicate(testo, VOCE, rate=VEL).save(str(uscita))
+    await _voce_comune(testo, VEL, uscita)
     return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(uscita)], capture_output=True, text=True).stdout)
 
 

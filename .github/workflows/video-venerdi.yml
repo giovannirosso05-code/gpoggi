@@ -28,6 +28,9 @@ jobs:
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: Crea il video
         id: crea
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
         run: |
           set +e
           python video/pronostico_breve.py --uscita "$RUNNER_TEMP/pronostico.mp4"

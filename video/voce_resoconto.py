@@ -25,6 +25,13 @@ SEG=[
 ]
 
 import re as _re
+
+
+async def _voce_comune(testo, vel, uscita):
+    """Stessa voce di tutti gli altri video: Azure se ci sono le chiavi, poi le riserve (vedi notizia_sub.voce)."""
+    import notizia_sub as NS
+    await NS.voce(testo, vel, Path(uscita))
+
 ROSTER={p["numero"]:p for p in json.load(open(DATA/"roster.json"))}
 def faccia(n,px,cls="faccia"):
     d=base64.b64encode((D/"volti"/f"{n}.jpg").read_bytes()).decode()
@@ -102,7 +109,7 @@ def pagina(corpo,cred=None):
     c=f"<div class='cred'>{crediti(cred)}</div>" if cred else ""
     return f"<html><head>{CSS}</head><body><div class='barra'></div><div class='logo'>{car}</div><div class='centro'>{corpo}</div>{c}<div class='piede'>GP OGGI · sito non ufficiale · dati OpenF1</div></body></html>"
 async def tts(i,t):
-    await edge_tts.Communicate(t,"it-IT-DiegoNeural",rate=RATE).save(str(D/f"v{i}.mp3"))
+    await _voce_comune(t, RATE, D/f"v{i}.mp3")
 async def tutte(): 
     for i,s in enumerate(SEG): await tts(i,s["testo"])
 asyncio.run(tutte())

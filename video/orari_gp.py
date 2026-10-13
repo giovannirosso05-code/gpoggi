@@ -18,6 +18,13 @@ import edge_tts
 import edge_tts.communicate as C
 from playwright.async_api import async_playwright
 
+
+async def _voce_comune(testo, vel, uscita):
+    """Stessa voce di tutti gli altri video: Azure se ci sono le chiavi, poi le riserve (vedi notizia_sub.voce)."""
+    import notizia_sub as NS
+    await NS.voce(testo, vel, Path(uscita))
+
+
 C._SSL_CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
 QUI = Path(__file__).parent
 SITO = QUI.parent / "docs"
@@ -182,7 +189,7 @@ async def main(args):
     print("VOCE:", testo)
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
-        await edge_tts.Communicate(testo, VOCE, rate=VELOCITA).save(str(tmp / "voce.mp3"))
+        await _voce_comune(testo, VELOCITA, tmp / "voce.mp3")
         async with async_playwright() as p:
             b = await p.chromium.launch(executable_path=CHROMIUM)
             pg = await b.new_page(viewport={"width": W, "height": H})

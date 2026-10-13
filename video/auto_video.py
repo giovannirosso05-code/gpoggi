@@ -15,6 +15,13 @@ import edge_tts, edge_tts.communicate as C
 import requests
 from playwright.async_api import async_playwright
 
+
+async def _voce_comune(testo, vel, uscita):
+    """Stessa voce di tutti gli altri video: Azure se ci sono le chiavi, poi le riserve (vedi notizia_sub.voce)."""
+    import notizia_sub as NS
+    await NS.voce(testo, vel, Path(uscita))
+
+
 CA = "/root/.ccr/ca-bundle.crt"
 if os.path.exists(CA):
     C._SSL_CTX = ssl.create_default_context(cafile=CA)
@@ -333,7 +340,7 @@ async def componi(scene, uscita, velocita=None, rapido=False):
             b = await p.chromium.launch(**({"executable_path": CHROMIUM} if CHROMIUM else {}), args=["--no-sandbox"])
             pg = await b.new_page(viewport={"width": W, "height": H})
             for i, (h, t) in enumerate(scene):
-                await edge_tts.Communicate(t, VOCE, rate=velocita or VELOCITA).save(str(tmp / f"v{i}.mp3"))
+                await _voce_comune(t, velocita or VELOCITA, tmp / f"v{i}.mp3")
                 await pg.set_content(h); await pg.wait_for_timeout(500); await pg.screenshot(path=str(tmp / f"s{i}.png"))
             await b.close()
         for i in range(len(scene)):

@@ -24,13 +24,16 @@ const REPO_BASE = "giovannirosso05-code/gpoggi";
 const CHAT_BASE = "559225883";          // la tua chat privata (la stessa del bot di MMA Oggi: un id utente vale per tutti i bot)
 const BOT_BASE = "Gpoggibot";
 const RAMO = "main";
-const VERSIONE = "radar-notizia-2 live-1 2026-10-10";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
+const VERSIONE = "radar-notizia-2 live-1 gara-1 2026-10-13";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
 const ETA_MASSIMA_SECONDI = 600;        // un comando più vecchio di 10 minuti non si esegue (Telegram può ripetere gli invii dopo un guasto)
 
 // comando -> [file del workflow, input del workflow o null, descrizione]
 const COMANDI = {
   "/duevideo": ["video-automatici.yml", { cosa: "notizie-ora" }, "Due video di notizie scelte dal sistema, subito"],
   "/previsioni": ["video-automatici.yml", { cosa: "previsioni" }, "Video delle previsioni dei prossimi Gran Premi (F1 e MotoGP)"],
+  "/gara": ["anteprima-gara.yml", { serie: "auto" }, "Video sulla prossima gara: orario, circuito, chi può vincere e le ultime notizie (la prima in calendario tra F1 e MotoGP)"],
+  "/garaf1": ["anteprima-gara.yml", { serie: "f1" }, "Come /gara, ma per il prossimo Gran Premio di F1"],
+  "/garamoto": ["anteprima-gara.yml", { serie: "motogp" }, "Come /gara, ma per la prossima gara MotoGP"],
   "/venerdi": ["video-venerdi.yml", null, "Video del venerdì: ricorda di votare il podio"],
   "/maratona": ["video-maratona.yml", null, "Tre video di notizie (la maratona, attiva fino all'11 ottobre)"],
   "/risultati": ["risultati-weekend.yml", null, "Risultati del weekend (escono appena la sessione è finita, fino a 4 ore dopo)"],

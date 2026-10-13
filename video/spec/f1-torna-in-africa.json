@@ -1,0 +1,48 @@
+{
+ "serie": "F1",
+ "titolo_breve": "La F1 torna in Africa",
+ "fonte": "Formula1.com, Sky Sport",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto": "Lewis Hamilton",
+   "testo": "La Formula 1 *torna in Africa*!",
+   "hook": true,
+   "hook_titolo": "La F1 torna in Africa!"
+  },
+  {
+   "foto": "Charles Leclerc",
+   "testo": "Lo ha annunciato la F1: ci sarà un *Gran Premio in Ruanda*, con un accordo di *dieci anni*.",
+   "nome": "CHARLES LECLERC"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "testo": "Si correrà dall'inizio degli anni *Trenta*, appena sarà pronto il nuovo circuito.",
+   "nome": "KIMI ANTONELLI"
+  },
+  {
+   "foto": "Max Verstappen",
+   "testo": "La pista nascerà a *Bugesera*, a circa *40 chilometri* da Kigali, vicino al nuovo aeroporto.",
+   "nome": "MAX VERSTAPPEN"
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "testo": "In Africa la F1 non corre dal *1993*, quando si gareggiò a Kyalami, in Sudafrica.",
+   "nome": "LEWIS HAMILTON"
+  },
+  {
+   "foto": "Charles Leclerc",
+   "testo": "Sempre secondo la F1, nel continente ci sono più di *100 milioni* di appassionati.",
+   "nome": "CHARLES LECLERC"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "testo": "La data della prima gara e i dettagli del weekend *non sono ancora stati annunciati*.",
+   "nome": "KIMI ANTONELLI"
+  }
+ ],
+ "finale": {
+  "foto": "Lewis Hamilton",
+  "domanda": "Ti piacerebbe vedere un Gran Premio in Africa?"
+ }
+}

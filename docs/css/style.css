@@ -1399,14 +1399,15 @@ html { scroll-behavior: smooth; }
 
 /* ---- Home pulita da telefono (ottobre 2026): meno scorrimento, solo l'essenziale ---- */
 @media (max-width: 640px) {
-  /* i due prossimi GP uno accanto all'altro, compatti */
-  .hero2 { grid-template-columns: 1fr 1fr !important; gap: 10px !important; margin-top: 14px; }
-  .hero2-lato { min-height: 210px !important; padding: 12px 12px 14px !important; border-radius: 14px !important; gap: 3px !important; }
-  .hero2-lato .cd-sigla { top: 10px !important; left: 12px !important; font-size: 11px; }
+  /* i due prossimi GP: una riga ciascuno a tutta larghezza, stessa altezza, testo allineato in basso (titolo, sessione, conto alla rovescia sempre sulle stesse righe) */
+  .hero2 { grid-template-columns: 1fr !important; gap: 12px !important; margin-top: 14px; }
+  .hero2-lato { min-height: 230px !important; padding: 14px 16px 16px !important; border-radius: 14px !important; gap: 4px !important; justify-content: flex-end !important; }
+  .hero2-lato .cd-sigla { position: absolute !important; top: 12px !important; left: 16px !important; margin: 0 !important; font-size: 12px; }
   .hero2-kicker, .hero2-lato .pross-circ, .hero2-fav, .hero2-credito { display: none !important; }
-  .hero2-lato .pross-gp { font-size: 17px !important; line-height: 1.08 !important; }
-  .hero2-lato .pross-sess { font-size: 11.5px !important; line-height: 1.25; }
-  .hero2-lato .pross-timer { font-size: 17px !important; margin-top: 2px !important; }
+  .hero2-lato .pross-gp, .hero2-lato .pross-sess { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+  .hero2-lato .pross-gp { font-size: 20px !important; line-height: 1.1 !important; }
+  .hero2-lato .pross-sess { font-size: 13px !important; line-height: 1.3; }
+  .hero2-lato .pross-timer { font-size: 22px !important; margin-top: 4px !important; white-space: nowrap; }
   .hero2.uno { grid-template-columns: 1fr !important; }
   .hero2.uno .hero2-lato { min-height: 240px !important; }
   /* pronostico: un solo favorito per serie + il pulsante */
@@ -1453,3 +1454,6 @@ html { scroll-behavior: smooth; }
   .gara-ris .voti-gp { grid-row: 1; }
   .gara-ris-main { grid-row: 2; }
 }
+
+/* ordine geometrico: nel podio nome su 1 o 2 righe occupa sempre lo spazio di 2, cosi' sigle squadra e tempi stanno sulla stessa riga */
+.podio-home strong { min-height: 2.6em; display: flex; align-items: center; justify-content: center; }

@@ -5,6 +5,7 @@ Le foto sono i piloti citati nel titolo (foto libere con credito). Una volta al 
 Uso:  python3 rassegna_giornaliera.py [--prova] [--forza] [--n 5]
 """
 import argparse, asyncio, json, re, sys
+import requests
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -67,10 +68,43 @@ def scegli_rassegna(n, nomi):
     return scelte
 
 
+def foto_espn_f1():
+    """[(titolo in minuscolo senza accenti, indirizzo foto)] dalle notizie di ESPN sulla F1 (foto orizzontali 1296x729). Vuoto se ESPN non risponde."""
+    try:
+        r = requests.get("https://site.api.espn.com/apis/site/v2/sports/racing/f1/news?limit=50", headers=NG.UA, timeout=30, verify=NG.CA)
+        r.raise_for_status()
+    except requests.RequestException as e:
+        print("  foto ESPN non disponibili:", e)
+        return []
+    out, viste = [], set()
+    for a in r.json().get("articles", []):
+        t = NG.norm(a.get("headline", ""))
+        if any(k in t for k in ("kardashian", "nba", "nfl", "owners")):
+            continue
+        for i in a.get("images", []):
+            u = i.get("url", "")
+            if i.get("width") == 1296 and "/photo/" in u and u not in viste:
+                viste.add(u); out.append((t, u)); break
+    return out
+
+
 def costruisci(scelte, nomi, oggi):
     cognome = lambda n: NG.norm(n).split()[-1]
     rot_f1 = [p["nome"] for p in json.load(open(DATA / "roster.json")) if p.get("foto") and p.get("nome") in nomi]
     rot = {"F1": rot_f1, "MotoGP": [n for n in NG.ROTAZIONE["MotoGP"] if n in nomi]}
+    pool = foto_espn_f1()
+    usate_url = set()
+
+    def espn(cogn=None):
+        """Foto ESPN non ancora usata: prima una il cui titolo parla del pilota, poi la prima libera."""
+        for t, u in pool:
+            if u not in usate_url and cogn and cogn in t.split():
+                usate_url.add(u); return u
+        for t, u in pool:
+            if u not in usate_url and not any(c in t for c in ("hamilton",)):
+                usate_url.add(u); return u
+        return None
+
     scene, usate = [], []
     for k, a in enumerate(scelte):
         t = pulisci(a["titolo"])
@@ -78,13 +112,38 @@ def costruisci(scelte, nomi, oggi):
         citati = [n for n in nomi if len(cognome(n)) > 3 and cognome(n) in parole and nomi[n] == a["serie"]]
         f = citati[0] if citati else next((n for n in rot[a["serie"]][k:] + rot[a["serie"]] if n not in usate[-1:]), rot[a["serie"]][0])
         fonte = a["fonte"].strip()
-        scene.append({"foto": f, "nome": fonte, "testo": f"Secondo {fonte}: {t}"})
+        sc = {"foto": f, "nome": fonte, "testo": f"Secondo {fonte}: {t}"}
+        if a["serie"] == "F1":
+            rit = None
+            if citati:   # il pilota citato: ritratto ESPN (la persona giusta) sul colore della sua squadra
+                try:
+                    import ritratti_espn as RE
+                    col = next((p["colore"] for p in json.load(open(DATA / "roster.json")) if p["nome"] == f), "e8352f")
+                    rit = RE.ritratto(f, tuple(int(col[i:i + 2], 16) for i in (0, 2, 4)))
+                except Exception as e:
+                    print(f"  ritratto ESPN di {f} non disponibile ({type(e).__name__}): uso la foto libera")
+            if rit:
+                sc = {"foto": f, "foto_file": str(rit), "credito": "Foto: ESPN", "nome": fonte, "testo": sc["testo"]}
+            elif not citati:   # nessun pilota nel titolo: macchine, box e circuiti dalle foto ESPN delle notizie
+                u = espn()
+                if u:
+                    sc = {"foto_url": u, "nome": fonte, "testo": sc["testo"]}
+        elif f in (json.load(open(DATA / "foto-extra.json")) or {}) and "pista" in json.load(open(DATA / "foto-extra.json"))[f]:
+            sc["alt"] = "pista"   # moto in pista invece del ritratto
+        scene.append(sc)
         usate.append(f)
     data = f"{oggi.day} {MESI[oggi.month - 1]}"
     hook = f"Rassegna stampa di GP Oggi: {len(scene)} titoli da non perdere."
+    hook_img = espn()
+    if hook_img:
+        scene_hook = {"foto_url": hook_img, "hook": True, "hook_titolo": f"Rassegna stampa del {data}", "testo": hook}
+    else:
+        scene_hook = {"foto": scene[0]["foto"], "hook": True, "hook_titolo": f"Rassegna stampa del {data}", "testo": hook}
+    fin_img = espn()
+    finale = {"foto_url": fin_img, "domanda": CHIUSURE[oggi.toordinal() % len(CHIUSURE)]} if fin_img else {"foto": scene[-1].get("foto", "ESPN") if scene[-1].get("foto") else usate[-1], "domanda": CHIUSURE[oggi.toordinal() % len(CHIUSURE)]}
     spec = {"serie": "F1", "titolo_breve": f"Rassegna stampa {data}", "fonte": "testate citate nel video", "velocita": "+38%", "etichetta": "Rassegna",
-            "scene": [{"foto": scene[0]["foto"], "hook": True, "hook_titolo": f"Rassegna stampa del {data}", "testo": hook}] + scene,
-            "finale": {"foto": scene[-1]["foto"], "domanda": CHIUSURE[oggi.toordinal() % len(CHIUSURE)]}}
+            "scene": [scene_hook] + scene,
+            "finale": finale}
     righe = [f"📰 Rassegna stampa del {data}", ""] + [f"• {pulisci(a['titolo'])} — {a['fonte'].strip()}" for a in scelte]
     tag = "#gpoggi #f1 #motogp #rassegnastampa #notizie"
     social = "\n".join(righe) + f"\n\n{spec['finale']['domanda']} 👇\n\nTitoli e link originali nelle fonti.\n🔗 gpoggi.it\n\n{tag}"

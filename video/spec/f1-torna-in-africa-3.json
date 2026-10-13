@@ -1,0 +1,42 @@
+{
+ "serie": "F1",
+ "titolo_breve": "La F1 torna in Africa",
+ "fonte": "Formula1.com, Sky Sport",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1012/r1729765_1296x729_16-9.jpg",
+   "testo": "La Formula 1 *torna in Africa*!",
+   "hook": true,
+   "hook_titolo": "La F1 torna in Africa!"
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729119_1296x729_16-9.jpg",
+   "testo": "Lo ha annunciato la F1: ci sarà un *Gran Premio in Ruanda*, con un accordo di *dieci anni*."
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729286_1296x729_16-9.jpg",
+   "testo": "Si correrà dall'inizio degli anni *Trenta*, appena sarà pronto il nuovo circuito."
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1010/r1728651_1296x729_16-9.jpg",
+   "testo": "La pista nascerà a *Bugesera*, a circa *40 chilometri* da Kigali, vicino al nuovo aeroporto."
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1012/r1729764_1296x729_16-9.jpg",
+   "testo": "In Africa la F1 non corre dal *1993*: a Kyalami, in Sudafrica, vinse *Alain Prost* con la Williams."
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1004/r1725645_1296x729_16-9.jpg",
+   "testo": "Sempre secondo la F1, nel continente ci sono più di *100 milioni* di appassionati."
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729144_1296x729_16-9.jpg",
+   "testo": "La data della prima gara e i dettagli del weekend *non sono ancora stati annunciati*."
+  }
+ ],
+ "finale": {
+  "foto_url": "https://a.espncdn.com/photo/2026/1010/r1728678_1296x729_16-9.jpg",
+  "domanda": "Ti piacerebbe vedere un Gran Premio in Africa?"
+ }
+}

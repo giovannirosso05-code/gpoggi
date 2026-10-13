@@ -181,7 +181,7 @@ def voce_piper(testo, velocita, uscita, grido=False):
     return _tempi_stimati(testo, uscita)
 
 
-RALLENTA = 0.985   # tutte le voci 1,5% più lente (3% era troppo, dimezzato su richiesta del gestore, 13 ottobre 2026)
+RALLENTA = 0.97   # tutte le voci 3% più lente (richiesta del gestore, 13 ottobre 2026: la voce va bene così)
 
 
 def rallenta(velocita):

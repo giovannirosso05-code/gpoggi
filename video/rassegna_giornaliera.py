@@ -55,6 +55,9 @@ def frase_estratto(a, titolo):
             return None
         for i in tagli:   # l'ultimo punto o la virgola più avanti possibile, purché le virgolette siano chiuse e la frase non sia cortissima
             cand = t[:i + 1] if t[i] != "," else t[:i]
+            ultima = re.sub(r"[^\wàèéìòù]", "", cand.split()[-1].lower()) if cand.split() else ""
+            if ultima in ("perché", "che", "e", "ma", "di", "da", "se", "dove", "come", "con", "per", "il", "la", "lo", "un", "una", "a", "in", "o", "quando", "mentre", "anche", "non", "più", "del", "della", "dei", "delle", "nel", "nella", "al", "alla"):
+                continue   # frase lasciata a metà
             if i >= 40 and equilibrate(cand):
                 t = cand
                 break
@@ -63,7 +66,7 @@ def frase_estratto(a, titolo):
     t = t.strip()
     ok = ("VSC", "FIA", "DRS")
     sigle = [x for x in SIGLE.findall(re.sub(r"\bF1\b", "", t)) if x not in ok]
-    if len(t) < 40 or sigle or "|" in t:
+    if len(t) < 40 or sigle or "|" in t or t.endswith("?"):
         return None
     pt, pe = set(NG.norm(titolo).split()), set(NG.norm(t).split())
     if pt and len(pt & pe) / len(pt) > 0.7:
@@ -84,8 +87,8 @@ def scegli_rassegna(n, nomi):
         except Exception:
             continue
         t = pulisci(a["titolo"])
-        if "|" in t or SIGLE.search(re.sub(r"\bF1\b", "", t)) or not 25 <= len(t) <= 125:
-            continue
+        if "|" in t or SIGLE.search(re.sub(r"\bF1\b", "", t)) or not 25 <= len(t) <= 125 or t.endswith("?"):
+            continue   # i titoli-domanda (\"perché non è stato penalizzato?\") senza risposta nel video non hanno senso: si saltano
         p = NG.punteggio(a, nomi) + (4 if any(k in NG.norm(t) for k in FERRARI) else 0)
         if p > 0:
             buone.append((p, a))

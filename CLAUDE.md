@@ -29,6 +29,9 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 - Niente colpe senza una fonte; le dichiarazioni si attribuiscono e si riscrivono con parole nostre.
 - Punti del mondiale ricalcolati da noi vanno dichiarati come tali.
 
+## Rassegna della sera
+- Mai titoli-domanda senza risposta ("perché X non è stato penalizzato?"): se la risposta esiste (come i freni di Antonelli a Singapore) il video senza risposta non ha senso. `rassegna_giornaliera.py` salta i titoli che finiscono con "?" e le frasi di estratto lasciate a metà. Notizie incrociate F1 / MotoGP; la fonte si scrive, non si dice.
+
 ## Foto
 - Solo foto libere (Wikimedia Commons CC BY / CC BY-SA, o altre CC verificate). Credito in ogni scena. Niente "NC", niente foto di agenzia.
 

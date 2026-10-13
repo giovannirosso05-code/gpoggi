@@ -1,6 +1,86 @@
 {
- "generato_il": "2026-10-12T14:09:17+00:00",
+ "generato_il": "2026-10-13T00:04:29+00:00",
  "articoli": [
+  {
+   "titolo": "Leclerc, team radio preoccupante al 46esimo giro: “La macchina ha frenato da sola, se capita di nuovo finisco a muro”",
+   "estratto": "Il pilota della Ferrari si è preso un bello spavento",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/paura-brivido-leclerc-macchina-iniziato-frenare-da-sola-che-accidenti-successo-ferrari-gp-singapore-bozzi",
+   "pubblicato": "2026-10-12T19:00:00+00:00"
+  },
+  {
+   "titolo": "Horner: “Ferrari il lavoro dei sogni? Parole estrapolate dal contesto, torno in F1 solo da azionista e a Maranello non vendono quote”",
+   "estratto": "Il manager britannico ha fatto retromarcia in merito alla prospettiva di prendere le redini del Cavallino Rampante",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/horner-ritira-offerta-ferrari-frasi-decontestualizzate-voglio-quote-azionista-maranello-non-vende-vasseur",
+   "pubblicato": "2026-10-12T18:45:00+00:00"
+  },
+  {
+   "titolo": "Ritorno al Futuro: l’analisi di Singapore | “I Doppiati” F1 Podcast",
+   "estratto": "Sventolate le bandiere blu, I Doppiati sono in diretta su YouTube, Spotify e Apple Podcast per commentare il GP di Singapore di F1",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/video/ritorno-al-futuro-analisi-singapore-i-doppiati-f1-podcast-ferrari-hamilton-leclerc-antonelli-verstappen",
+   "pubblicato": "2026-10-12T18:00:00+00:00"
+  },
+  {
+   "titolo": "F1 | Red Bull, Mekies avverte: \"Possiamo vincere ovunque, ma gli altri continueranno a sviluppare\"",
+   "estratto": "La Red Bull è tornata. Non è più soltanto una sensazione alimentata dalle ultime vittorie di Max Verstappen, ma una valutazione che trova riscontro nelle prestazioni mostrate dalla monoposto di…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-red-bull-mekies-avverte-possiamo-vincere-ovunque-ma-gli-altri-continueranno-a-sviluppare/10864762/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-12T17:07:13+00:00"
+  },
+  {
+   "titolo": "Geely E2: l’utilitaria elettrica più venduta in Cina arriva a da noi a 20.900 euro",
+   "estratto": "Sarà una delle protagoniste del segmento più accessibile, in un contesto di forte concorrenza cinese sul mercato europeo delle elettriche di piccole dimensioni",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/auto/auto-news/geely-e2-lutilitaria-elettrica-piu-venduta-in-cina-arriva-a-da-noi-a-20-900-euro",
+   "pubblicato": "2026-10-12T16:39:11+00:00"
+  },
+  {
+   "titolo": "Herbert: “Antonelli straordinario, non è arrogante, una ventata di freschezza molto diversa da quelle di Hamilton e Verstappen”",
+   "estratto": "L'ex pilota è stregato dal futuro campione del mondo",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/herbert-pazzo-kimi-antonelli-umile-non-arrogante-ventata-freschezza-diversa-verstappen-hamilton",
+   "pubblicato": "2026-10-12T16:00:00+00:00"
+  },
+  {
+   "titolo": "MotoGP | Tardozzi: \"Non è assolutamente vero che Marquez si è fatto la Ducati per lui, sono discorsi da bar\"",
+   "estratto": "L'Aprilia ha lasciato Mandalika al termine di una giornata storica, che le ha visto piazzare per la prima volta quattro RS-GP davanti a tutti nella gara lunga. Tuttavia, il Gran Premio d'Indonesia di…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-tardozzi-non-e-assolutamente-vero-che-marquez-si-e-fatto-la-ducati-per-lui-sono-discorsi-da-/10864719/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-12T15:25:24+00:00"
+  },
+  {
+   "titolo": "Jerez 2026: programma e orari TV",
+   "estratto": "Tutte le prove dell'ultimo appuntamento della stagione 2026",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/superbike/superbike-news/jerez-2026-programma-orari-tv",
+   "pubblicato": "2026-10-12T15:00:00+00:00"
+  },
+  {
+   "titolo": "F1 | Antonelli, 4 track limit ma niente penalità: la FIA ha scagionato Kimi perché c'era un guasto ai freni",
+   "estratto": "C’è stato un momento della corsa in cui Andrea Kimi Antonelli sembrava destinato a dover scontare una penalità di cinque secondi per aver superato i track limit in quattro occasioni differenti, al…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-antonelli-4-track-limit-ma-niente-penalita-ecco-perche-la-fia-ha-assolto-kimi/10864731/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-12T14:31:17+00:00"
+  },
+  {
+   "titolo": "Singapore 2026, l’altro podio",
+   "estratto": "Le pagelle dei promossi e dei bocciati del GP Singapore, 17esimo appuntamento del Mondiale",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/pagelle-singapore-2026-altro-podio-ferrari-antonelli-verstappen-hamilton-leclerc",
+   "pubblicato": "2026-10-12T14:30:00+00:00"
+  },
   {
    "titolo": "6 Ore di Barcellona 2026: le dirette e gli orari TV",
    "estratto": "Il programma completo del penultimo appuntamento del mondiale, il primo in assoluto sul circuito di Montmelò",
@@ -58,38 +138,6 @@
    "pubblicato": "2026-10-12T12:00:00+00:00"
   },
   {
-   "titolo": "Hamilton: “Mi prendo tutte le responsabilità per aver sbagliato strategia, ho provato qualcosa di diverso dove non si passa”",
-   "estratto": "Il pilota della Ferrari ha ammesso di aver preso la decisione errata non ascoltando il muretto",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/dopo-malore-hamilton-prende-colpa-sbagliato-strategia-muretto-ferrari-gp-singapore",
-   "pubblicato": "2026-10-12T11:50:00+00:00"
-  },
-  {
-   "titolo": "Da Pagani a Bezzecchi: le 300 vittorie dei piloti italiani in MotoGP",
-   "estratto": "Il successo di Bezzecchi a Mandalika è stato il numero 300 dei piloti italiani nella classe regina del Motomondiale",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/da-pagani-a-bezzecchi-300-vittorie-piloti-italiani-in-motogp",
-   "pubblicato": "2026-10-12T11:45:54+00:00"
-  },
-  {
-   "titolo": "Peugeot E-T16 Concept, la più potente di sempre",
-   "estratto": "I tre motori elettrici erogano una potenza combinata di 816 CV e garantiscono uno scatto da 0 a 300 km/h in 16 secondi",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/auto/auto-news/peugeot-et16-concept-design-potenza-elettrica",
-   "pubblicato": "2026-10-12T11:45:00+00:00"
-  },
-  {
-   "titolo": "BYD non si ferma più: debutta l’ATTO 8, il SUV elettrico a sette posti",
-   "estratto": "Il nuovo modello alto di gamma propone una ricarica in 9 minuti e fino a 653 km di autonomia",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/auto/auto-news/byd-non-si-ferma-piu-debutta-latto-8-il-suv-elettrico-a-sette-posti",
-   "pubblicato": "2026-10-12T11:35:29+00:00"
-  },
-  {
    "titolo": "MotoGP | Ecco perché Jorge Martin non è stato sanzionato per partenza anticipata in Indonesia",
    "estratto": "Jorge Martin è riuscito a dare una svolta al suo fine settimana nel Gran Premio d'Indonesia di MotoGP. Il pilota spagnolo ha perso la leadership della classifica generale sabato, quando un errore…",
    "fonte": "Motorsport.com",
@@ -98,36 +146,12 @@
    "pubblicato": "2026-10-12T11:02:55+00:00"
   },
   {
-   "titolo": "Mekies: “La vettura potrà essere competitiva anche su altre piste, ma non è mai scontato”",
-   "estratto": "La soddisfazione del team principal della Red Bull dopo la seconda vittoria consecutiva di Verstappen, anche se per la squadra non ci saranno più aggiornamenti",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/mekies-vettura-potra-essere-competitiva-anche-su-altre-piste-ma-non-e-mai-scontato",
-   "pubblicato": "2026-10-12T11:00:00+00:00"
-  },
-  {
    "titolo": "F1 | Leclerc: la chance mancata non è stata al via, ma quando non ha attaccato Max in difficoltà con la PU",
    "estratto": "Pole e vittoria nella Sprint, pole e successo anche nel Gran Premio della domenica. A Singapore il verdetto della pista ha assunto contorni piuttosto chiari, soprattutto nel primo stint, quando da un…",
    "fonte": "Motorsport.com",
    "serie": "F1",
    "url": "https://it.motorsport.com/f1/news/f1-leclerc-la-chance-mancata-non-e-stata-al-via-ma-quando-non-ha-sfruttato-i-problemi-alla-pu-di-max/10864628/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-12T10:42:56+00:00"
-  },
-  {
-   "titolo": "Norris: “Al momento siamo chiaramente la quarta forza del campionato”",
-   "estratto": "Per il campione del mondo in carica il 4° posto di Marina Bay era il massimo risultato che avrebbe potuto ottenere davanti al compagno di squadra",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/norris-al-momento-siamo-chiaramente-quarta-forza-del-campionato",
-   "pubblicato": "2026-10-12T10:00:00+00:00"
-  },
-  {
-   "titolo": "Chi ‘buca’ gli eventi della MotoGP rischierà sanzioni sportive (se recidivo). Marquez replica: “Ci sono dei limiti”",
-   "estratto": "Continua la 'guerra fredda' tra la MotoGP Sports Entertainment Group e Marc Marquez",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/chi-buca-eventi-motogp-rischiera-anche-sanzioni-sportive-marquez-replica-ci-sono-dei-limiti",
-   "pubblicato": "2026-10-12T09:57:16+00:00"
   },
   {
    "titolo": "MotoGP | I piloti si oppongono alla multa per mancata presenza agli eventi coi tifosi",
@@ -210,14 +234,6 @@
    "pubblicato": "2026-10-11T14:38:53+00:00"
   },
   {
-   "titolo": "F1 | Verstappen re a Singapore: vince ancora davanti a Leclerc e Antonelli. Russell nono",
-   "estratto": "Max Verstappen ce l'ha fatta ancora. A Marina Bay ha rotto il tabù, quello che non lo aveva ancora visto vincere a Singapore andando a trionfare per il secondo fine settimana consecutivo e firmando…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1--10864304/10864304/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T13:59:32+00:00"
-  },
-  {
    "titolo": "MotoGP | Bagnaia cade a Mandalika: \"Dovevo tenere su la pressione della gomma davanti e ho chiesto troppo alla moto\"",
    "estratto": "Il weekend di Mandalika era parso un passettino nella direzione giusta per Pecco Bagnaia, che finalmente era riuscito a centrare l'accesso diretto alla Q2 e nella Sprint aveva chiuso ottavo…",
    "fonte": "Motorsport.com",
@@ -258,14 +274,6 @@
    "pubblicato": "2026-10-11T10:10:34+00:00"
   },
   {
-   "titolo": "F1 | Caos SQ1: i piloti non avevano piena potenza per un pop-up ignorato su un PC. La FIA si scusa e cerca soluzioni",
-   "estratto": "Alle volte serve fare un passo indietro per farne uno avanti e, in questo caso, è importante tornare fino a venerdì, alle qualifiche valide per definire l’ordine di partenza della sprint. Dopo che le…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-caos-sq1-i-piloti-non-avevano-piena-potenza-per-un-pop-up-ignorato-su-un-pc-la-fia-si-scusa-e-ce/10864189/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T09:53:06+00:00"
-  },
-  {
    "titolo": "MotoGP | Acosta: \"La regola sulle pressioni gomme va cambiata, così ci fa sembrare degli asini\"",
    "estratto": "Pedro Acosta ha criticato aspramente le tanto contestate regole sulla pressione degli pneumatici in MotoGP, affermando che i piloti sono stati fatti passare per “asini” nel Gran Premio d’Indonesia…",
    "fonte": "Motorsport.com",
@@ -282,43 +290,35 @@
    "pubblicato": "2026-10-11T09:04:30+00:00"
   },
   {
-   "titolo": "MotoGP | Martín: \"Raúl e Bez superiori oggi, ma ho tenuto duro: solo così posso lottare con Márquez\"",
-   "estratto": "Nel grande dominio Aprilia andato in scena al GP d'Indonesia, Jorge Martín compie un altro bel passo verso il suo secondo titolo in MotoGP. Fin dalla partenza, il portacolori ufficiale della Casa di…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-martin-raul-e-bez-superiori-oggi-ma-ho-tenuto-duro-solo-cosi-posso-lottare-con-marquez/10864188/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T08:52:16+00:00"
-  },
-  {
-   "titolo": "Controversy over Martín's start at Mandalika sparked by a video from Laura Espargaró",
-   "estratto": "Aleix's wife filmed the start on her smartphone and, in the video, Jorge can be seen moving, but the lights cannot be seen",
+   "titolo": "Michele Pirro: \"Viñales as Ducati test rider? It's not a priority\"",
+   "estratto": "“Now we need stability, not internal competition. I rate Maverick highly as a rider, but being a test rider is a different job. It requires dedication. You have to work for others, not for yourself.”",
    "fonte": "GPone",
    "serie": "MotoGP",
-   "url": "https://www.gpone.com/en/2026/10/12/motogp/controversy-over-martins-start-at-mandalika-sparked-by-a-video-from-laura-espargaro.html",
+   "url": "https://www.gpone.com/en/2026/10/12/motogp/michele-pirro-vinales-as-ducati-test-rider-its-not-a-priority.html",
    "pubblicato": null
   },
   {
-   "titolo": "Red Bull to sponsor Adelaide’s new Australian street GP for two years",
-   "estratto": "The event will replace Phillip Island and will be held on a temporary circuit in the green space in the city centre. The inaugural edition is set to be the penultimate round of next season",
+   "titolo": "Fast By Prosecco Mandalika, Pernat: “Ducati, it’s time to unite: it’s now Márquez against everyone”",
+   "estratto": "VIDEO - After Mandalika, Carlo discusses the Desmosedici's difficulties and Aprilia's superiority over a glass of Prosecco DOC, as it secures a result Italian motorsport can be proud of",
    "fonte": "GPone",
    "serie": "MotoGP",
-   "url": "https://www.gpone.com/en/2026/10/12/motogp/red-bull-to-sponsor-adelaides-new-australian-street-gp-for-two-years.html",
+   "url": "https://www.gpone.com/en/2026/10/12/motogp/fast-by-prosecco-mandalika-pernat-ducati-its-time-to-unite-its-now-marquez-against-everyone.html",
    "pubblicato": null
   },
   {
-   "titolo": "China poaches Yamaha: after ZX-Moto, Ten Kate also says goodbye!",
-   "estratto": "A year ago it was the team led by Fabio Evangelista that parted ways with the Japanese manufacturer; now it is Ronald Ten Kate’s Dutch outfit, which will start again with QJ. The Chinese company’s…",
+   "titolo": "Tardozzi: \"Team orders? For Ducati, sport comes before business\"",
+   "estratto": "Aprilia considers a joint strategy in the title race, Ducati reiterates its stance: “We have shown fair play towards the satellite teams. They are free to do whatever they want”",
+   "fonte": "GPone",
+   "serie": "MotoGP",
+   "url": "https://www.gpone.com/en/2026/10/12/motogp/tardozzi-team-orders-for-ducati-sport-comes-before-business.html",
+   "pubblicato": null
+  },
+  {
+   "titolo": "BMW GS dream: a guide to buying the best used model for every budget",
+   "estratto": "From the R 1150 to the new 1300, via the 1200 and 1250: used prices, mileage, Adventure versions and advice on buying the right GS without breaking the bank",
    "fonte": "GPone",
    "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/12/wsbk/china-poaches-yamaha-after-zx-moto-ten-kate-also-says-goodbye.html",
-   "pubblicato": null
-  },
-  {
-   "titolo": "Marc VDS go for the big move: a second Ducati with Albert Arenas!",
-   "estratto": "The Spanish rider will not remain in Supersport and has already turned down offers from Yamaha and ZX-Moto for 2027. The team led by Marina Rossi is therefore aiming to double up",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/12/wsbk/marc-vds-go-for-the-big-move-a-second-ducati-with-albert-arenas.html",
+   "url": "https://www.gpone.com/en/2026/10/12/moto-news/bmw-gs-dream-a-guide-to-buying-the-best-used-model-for-every-budget.html",
    "pubblicato": null
   }
  ]

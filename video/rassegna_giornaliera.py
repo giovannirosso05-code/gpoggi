@@ -39,6 +39,40 @@ def pulisci(t):
     return re.sub(r"\s+", " ", t).strip()
 
 
+def frase_estratto(a, titolo):
+    """Seconda frase della notizia, dall'estratto che la testata stessa pubblica nel suo feed: così si capisce di cosa parla. None se è troncato male,
+    troppo simile al titolo o difficile da leggere ad alta voce."""
+    t = pulisci(a.get("estratto", "")).replace("Hamiltn", "Hamilton")
+    if not t:
+        return None
+    troncato = t.endswith("…") or t.endswith("...")
+    t = t.rstrip("….").strip()
+    equilibrate = lambda x: x.count("«") == x.count("»")
+    if troncato or len(t) > 200:
+        limite = len(t) if troncato else 200
+        tagli = sorted((i for sep in (". ", "? ", "! ", ", ") for i in [m.start() for m in re.finditer(re.escape(sep), t[:limite])]), reverse=True)
+        if troncato and not tagli:
+            return None
+        for i in tagli:   # l'ultimo punto o la virgola più avanti possibile, purché le virgolette siano chiuse e la frase non sia cortissima
+            cand = t[:i + 1] if t[i] != "," else t[:i]
+            if i >= 40 and equilibrate(cand):
+                t = cand
+                break
+        else:
+            return None
+    t = t.strip()
+    ok = ("VSC", "FIA", "DRS")
+    sigle = [x for x in SIGLE.findall(re.sub(r"\bF1\b", "", t)) if x not in ok]
+    if len(t) < 40 or sigle or "|" in t:
+        return None
+    pt, pe = set(NG.norm(titolo).split()), set(NG.norm(t).split())
+    if pt and len(pt & pe) / len(pt) > 0.7:
+        return None
+    if t[-1] not in ".?!»":
+        t += "."
+    return t
+
+
 def scegli_rassegna(n, nomi):
     arts = json.load(open(DATA / "rassegna.json"))["articoli"]
     ora = datetime.now(timezone.utc)
@@ -56,15 +90,19 @@ def scegli_rassegna(n, nomi):
         if p > 0:
             buone.append((p, a))
     buone.sort(key=lambda x: -x[0])
-    scelte = []
-    for _, a in buone:
-        if len(scelte) >= n:
-            break
-        if any(a["url"] in NG.simili(b, [a]) or b["url"] in NG.simili(a, [b]) for b in scelte):
-            continue
-        if sum(b["serie"] == a["serie"] for b in scelte) >= n - 1:
-            continue   # mai tutte della stessa serie
-        scelte.append(a)
+    per_serie = {"F1": [], "MotoGP": []}
+    for _, x in buone:
+        lista = per_serie.setdefault(x["serie"], [])
+        if not any(x["url"] in NG.simili(y, [x]) or y["url"] in NG.simili(x, [y]) for y in lista):
+            lista.append(x)
+    # una F1, una MotoGP, di nuovo F1, di nuovo MotoGP (incrociate); se una serie finisce si continua con l'altra
+    scelte, turno = [], ["F1", "MotoGP"]
+    k = 0
+    while len(scelte) < n and (per_serie["F1"] or per_serie["MotoGP"]):
+        serie = turno[k % 2]
+        k += 1
+        if per_serie.get(serie):
+            scelte.append(per_serie[serie].pop(0))
     return scelte
 
 
@@ -112,7 +150,7 @@ def costruisci(scelte, nomi, oggi):
         citati = [n for n in nomi if len(cognome(n)) > 3 and cognome(n) in parole and nomi[n] == a["serie"]]
         f = citati[0] if citati else next((n for n in rot[a["serie"]][k:] + rot[a["serie"]] if n not in usate[-1:]), rot[a["serie"]][0])
         fonte = a["fonte"].strip()
-        sc = {"foto": f, "nome": fonte, "testo": f"Secondo {fonte}: {t}"}
+        sc = {"foto": f, "nome": fonte, "testo": t, "pausa": 0.5 if k else 0.3}
         if a["serie"] == "F1":
             rit = None
             if citati:   # il pilota citato: ritratto ESPN (la persona giusta) sul colore della sua squadra
@@ -123,17 +161,20 @@ def costruisci(scelte, nomi, oggi):
                 except Exception as e:
                     print(f"  ritratto ESPN di {f} non disponibile ({type(e).__name__}): uso la foto libera")
             if rit:
-                sc = {"foto": f, "foto_file": str(rit), "credito": "Foto: ESPN", "nome": fonte, "testo": sc["testo"]}
+                sc = {"foto": f, "foto_file": str(rit), "credito": "Foto: ESPN", "nome": fonte, "testo": sc["testo"], "pausa": sc["pausa"]}
             elif not citati:   # nessun pilota nel titolo: macchine, box e circuiti dalle foto ESPN delle notizie
                 u = espn()
                 if u:
-                    sc = {"foto_url": u, "nome": fonte, "testo": sc["testo"]}
+                    sc = {"foto_url": u, "nome": fonte, "testo": sc["testo"], "pausa": sc["pausa"]}
         elif f in (json.load(open(DATA / "foto-extra.json")) or {}) and "pista" in json.load(open(DATA / "foto-extra.json"))[f]:
             sc["alt"] = "pista"   # moto in pista invece del ritratto
         scene.append(sc)
+        ex = frase_estratto(a, t)
+        if ex:
+            scene.append({**{k2: v for k2, v in sc.items() if k2 not in ("testo", "pausa")}, "testo": ex})   # stessa foto, un po' di più sull'argomento
         usate.append(f)
     data = f"{oggi.day} {MESI[oggi.month - 1]}"
-    hook = f"Rassegna stampa di GP Oggi: {len(scene)} titoli da non perdere."
+    hook = f"Rassegna stampa di GP Oggi: {len(scelte)} notizie da non perdere."
     hook_img = espn()
     if hook_img:
         scene_hook = {"foto_url": hook_img, "hook": True, "hook_titolo": f"Rassegna stampa del {data}", "testo": hook}
@@ -150,11 +191,36 @@ def costruisci(scelte, nomi, oggi):
     return spec, social
 
 
+def crea_copertina(spec, data, uscita):
+    """Copertina 1080x1920: ritratto o foto ESPN a tutto schermo e «RASSEGNA STAMPA» con la data, come le altre copertine di GP Oggi."""
+    import copertina as C
+    ritratti = [sc for sc in spec["scene"] if sc.get("foto_file") and sc.get("foto") not in (None, "ESPN") and not sc.get("hook")]
+    sfondo = next((sc["foto_file"] for sc in ritratti if sc.get("foto") != "Lewis Hamilton"), ritratti[0]["foto_file"] if ritratti else None)
+    if not sfondo:
+        url = next((sc["foto_url"] for sc in spec["scene"] if sc.get("foto_url")), None)
+        sfondo = NS.foto_da_url(url)[0] if url else None
+    if not sfondo:
+        return None
+    html = C.html_copertina("x", ["RASSEGNA", "STAMPA", data.upper()], "F1", None, "center 12%", sfondo, 1040, "Foto: ESPN")
+    asyncio.run(C.scatta(html, str(uscita)))
+    return uscita
+
+
+def telegram_foto(percorso, didascalia):
+    tok = __import__("os").environ.get("TELEGRAM_BOT_TOKEN") or __import__("os").environ.get("TELEGRAM_TOKEN")
+    chat = __import__("os").environ.get("TELEGRAM_CANALE") or __import__("os").environ.get("TELEGRAM_CHAT_ID") or "559225883"
+    if not tok:
+        return
+    with open(percorso, "rb") as f:
+        requests.post(f"https://api.telegram.org/bot{tok}/sendPhoto", data={"chat_id": chat, "caption": didascalia[:1000], "disable_notification": "true"},
+                      files={"photo": f}, timeout=120, verify=NG.CA).raise_for_status()
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--prova", action="store_true")
     ap.add_argument("--forza", action="store_true", help="ignora l'orario e il segno 'già fatta oggi'")
-    ap.add_argument("--n", type=int, default=5)
+    ap.add_argument("--n", type=int, default=4)
     a = ap.parse_args()
     adesso = ora_roma()
     oggi = adesso.strftime("%Y-%m-%d")
@@ -175,7 +241,15 @@ def main():
         spec, social = costruisci(scelte, nomi, adesso)
         uscita = Path("/tmp/rassegna_sera.mp4")
         asyncio.run(NS.genera(spec, uscita))
+        data = f"{adesso.day} {MESI[adesso.month - 1]}"
+        copertina = None
+        try:
+            copertina = crea_copertina(spec, data, Path("/tmp/rassegna_copertina.png"))
+        except Exception as e:
+            print(f"  copertina non riuscita ({type(e).__name__}: {e}): il video parte lo stesso")
         if not a.prova:
+            if copertina:
+                telegram_foto(copertina, f"🖼 Copertina · Rassegna stampa del {data}")
             NG.telegram(uscita, f"📰 {spec['titolo_breve']} · titoli e fonti nella didascalia", social)
             STATO.write_text(json.dumps({**NG.stato_leggi(), "giorno_rassegna": oggi}, ensure_ascii=False, indent=1))
     except (Exception, SystemExit) as e:

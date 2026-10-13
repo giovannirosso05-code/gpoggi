@@ -340,7 +340,7 @@ async def genera(spec, uscita):
         # subito dopo il gancio (la fine del video non la ascolta nessuno): invito a seguire il canale; "segui": false nella scaletta lo toglie
         if spec.get("segui", True) and scene and scene[0].get("hook") and not any("Seguici" in x.get("testo", "") for x in scene):
             scene.insert(1, {**{k: v for k, v in scene[0].items() if k in ("foto", "alt", "pista", "volto_alt", "foto_file", "credito", "pos")},
-                             "testo": "*Seguici* per altri contenuti come questo.", "attacca": True})
+                             "testo": "*Seguici* per altri contenuti come questo.", "pausa": 2.0})
         # audio e tempi
         t = 0.0; lavoro = []
         for i, s in enumerate(scene + [dict(finale, testo=finale["domanda"] + " Dimmi la tua nei commenti.", finale=True)]):
@@ -361,6 +361,8 @@ async def genera(spec, uscita):
                 prec = lavoro[-1]; prec["dur"] = min(prec["dur"], prec["tempi"][-1][2] + 0.02) if prec["tempi"] else prec["dur"]
                 t = prec["ini"] + prec["dur"]; prec["gap"] = 0.0
             d = max(d, s.get("durata_min", 0))
+            if lavoro and s.get("pausa"):
+                t += s["pausa"]   # silenzio tra il gancio e la scena seguente (l'immagine resta quella di prima)
             lavoro.append(dict(s=s, tok=tok, tempi=tempi, ini=t, dur=d, mp3=mp3, gap=0.1))
             t += d + 0.1
         totale = t

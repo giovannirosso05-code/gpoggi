@@ -5,44 +5,38 @@
  "velocita": "+38%",
  "scene": [
   {
-   "foto": "Lewis Hamilton",
+   "foto_url": "https://a.espncdn.com/photo/2026/1012/r1729765_1296x729_16-9.jpg",
    "testo": "La Formula 1 *torna in Africa*!",
    "hook": true,
    "hook_titolo": "La F1 torna in Africa!"
   },
   {
-   "foto": "Charles Leclerc",
-   "testo": "Lo ha annunciato la F1: ci sarà un *Gran Premio in Ruanda*, con un accordo di *dieci anni*.",
-   "nome": "CHARLES LECLERC"
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729119_1296x729_16-9.jpg",
+   "testo": "Lo ha annunciato la F1: ci sarà un *Gran Premio in Ruanda*, con un accordo di *dieci anni*."
   },
   {
-   "foto": "Kimi Antonelli",
-   "testo": "Si correrà dall'inizio degli anni *Trenta*, appena sarà pronto il nuovo circuito.",
-   "nome": "KIMI ANTONELLI"
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729286_1296x729_16-9.jpg",
+   "testo": "Si correrà dall'inizio degli anni *Trenta*, appena sarà pronto il nuovo circuito."
   },
   {
-   "foto": "Max Verstappen",
-   "testo": "La pista nascerà a *Bugesera*, a circa *40 chilometri* da Kigali, vicino al nuovo aeroporto.",
-   "nome": "MAX VERSTAPPEN"
+   "foto_url": "https://a.espncdn.com/photo/2026/1010/r1728651_1296x729_16-9.jpg",
+   "testo": "La pista nascerà a *Bugesera*, a circa *40 chilometri* da Kigali, vicino al nuovo aeroporto."
   },
   {
-   "foto": "Lewis Hamilton",
-   "testo": "In Africa la F1 non corre dal *1993*, quando si gareggiò a Kyalami, in Sudafrica.",
-   "nome": "LEWIS HAMILTON"
+   "foto_url": "https://a.espncdn.com/photo/2026/1012/r1729764_1296x729_16-9.jpg",
+   "testo": "In Africa la F1 non corre dal *1993*, quando si gareggiò a Kyalami, in Sudafrica."
   },
   {
-   "foto": "Charles Leclerc",
-   "testo": "Sempre secondo la F1, nel continente ci sono più di *100 milioni* di appassionati.",
-   "nome": "CHARLES LECLERC"
+   "foto_url": "https://a.espncdn.com/photo/2026/1004/r1725645_1296x729_16-9.jpg",
+   "testo": "Sempre secondo la F1, nel continente ci sono più di *100 milioni* di appassionati."
   },
   {
-   "foto": "Kimi Antonelli",
-   "testo": "La data della prima gara e i dettagli del weekend *non sono ancora stati annunciati*.",
-   "nome": "KIMI ANTONELLI"
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729144_1296x729_16-9.jpg",
+   "testo": "La data della prima gara e i dettagli del weekend *non sono ancora stati annunciati*."
   }
  ],
  "finale": {
-  "foto": "Lewis Hamilton",
+  "foto_url": "https://a.espncdn.com/photo/2026/1010/r1728678_1296x729_16-9.jpg",
   "domanda": "Ti piacerebbe vedere un Gran Premio in Africa?"
  }
 }

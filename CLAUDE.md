@@ -30,6 +30,9 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 ## Foto
 - Solo foto libere (Wikimedia Commons CC BY / CC BY-SA, o altre CC verificate). Credito in ogni scena. Niente "NC", niente foto di agenzia.
 
+## Foto da ESPN (scelta di rischio del gestore)
+- Per mostrare macchine, circuiti e momenti di gara si possono usare foto di ESPN (il gestore lo ha deciso, 13 ottobre 2026). Nella scena: `"foto_url": "https://a.espncdn.com/photo/…_1296x729_16-9.jpg"` (si trovano con `site.api.espn.com/apis/site/v2/sports/racing/f1/news`): `notizia_sub.py` le scarica al momento in `video/_cache/` (mai nel repository né nel sito) e scrive "Foto: ESPN". Alternare volti, macchine e circuiti, non solo piloti.
+
 ## Segreti
 - Mai chiedere né scrivere token in chat o nel repository.
 

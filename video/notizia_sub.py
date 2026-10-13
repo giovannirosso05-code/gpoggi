@@ -46,6 +46,30 @@ def trova_foto(nome, alt=None):
     raise SystemExit(f"Nessuna foto libera per {nome}")
 
 
+def foto_da_url(url, credito="Foto: ESPN"):
+    """Foto orizzontale scaricata al momento (mai nel repository) e portata a 1080x1920: sfondo sfocato e la foto a tutta larghezza al centro.
+    Serve per mostrare macchine e circuiti; la scena ha "foto_url" e il credito scritto nel video."""
+    import hashlib, requests
+    from PIL import Image, ImageFilter
+    cache = QUI / "_cache" / "url"; cache.mkdir(parents=True, exist_ok=True)
+    f = cache / (hashlib.sha1(url.encode()).hexdigest()[:16] + ".jpg")
+    if not f.exists():
+        r = requests.get(url, headers={"User-Agent": "GPOggiBot/0.1 (sito non ufficiale; giovannirosso05@gmail.com)"}, timeout=40,
+                         verify="/root/.ccr/ca-bundle.crt" if os.path.exists("/root/.ccr/ca-bundle.crt") else True)
+        r.raise_for_status()
+        f.write_bytes(r.content)
+    im = Image.open(f).convert("RGB")
+    sfondo = im.resize((int(H * im.width / im.height), H)).filter(ImageFilter.GaussianBlur(40))
+    sfondo = sfondo.crop(((sfondo.width - W) // 2, 0, (sfondo.width - W) // 2 + W, H))
+    sfondo = Image.eval(sfondo, lambda v: int(v * 0.45))
+    alto = 880   # la foto riempie la fascia centrale (ritagliata al centro), sopra i sottotitoli
+    fg = im.resize((int(alto * im.width / im.height), alto))
+    x0 = max(0, (fg.width - W) // 2)
+    sfondo.paste(fg.crop((x0, 0, x0 + W, alto)), (0, 330))
+    out = f.with_suffix(".1080.png"); sfondo.save(out)
+    return out, credito
+
+
 def file_foto(f):
     for k in ("file_grande", "file"):
         if f.get(k) and (SITO / f[k]).exists():
@@ -309,6 +333,10 @@ async def genera(spec, uscita):
         tmp = Path(tmp)
         scene = list(spec["scene"])
         finale = spec["finale"]
+        for sc in scene + [finale]:
+            if sc.get("foto_url"):
+                sc["foto_file"], sc["credito"] = foto_da_url(sc["foto_url"], sc.get("credito", "Foto: ESPN"))
+                sc.setdefault("foto", "ESPN")
         # subito dopo il gancio (la fine del video non la ascolta nessuno): invito a seguire il canale; "segui": false nella scaletta lo toglie
         if spec.get("segui", True) and scene and scene[0].get("hook") and not any("Seguici" in x.get("testo", "") for x in scene):
             scene.insert(1, {**{k: v for k, v in scene[0].items() if k in ("foto", "alt", "pista", "volto_alt", "foto_file", "credito", "pos")},

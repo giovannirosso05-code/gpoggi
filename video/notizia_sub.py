@@ -181,11 +181,20 @@ def voce_piper(testo, velocita, uscita, grido=False):
     return _tempi_stimati(testo, uscita)
 
 
+RALLENTA = 0.97   # tutte le voci 3% più lente (richiesta del gestore, 13 ottobre 2026): vale per ogni video, qualunque sia la velocità della scaletta
+
+
+def rallenta(velocita):
+    pct = int(re.sub(r"[^\d-]", "", str(velocita)) or 0)
+    return f"{round((1 + pct / 100) * RALLENTA * 100 - 100):+d}%"
+
+
 async def voce(testo, velocita, uscita, grido=False):
     """Scrive l'audio e restituisce [(parola, inizio, fine)] in secondi.
     Con grido=True la voce è la stessa di sempre (stesso tono) ma molto più forte e più veloce, come un urlo di esultanza.
     Se la voce Microsoft (edge-tts) rifiuta la connessione, si usa la voce di riserva Piper."""
     parole, audio = [], b""
+    velocita = rallenta(velocita)
     if os.environ.get("AZURE_SPEECH_KEY") and os.environ.get("AZURE_SPEECH_REGION"):
         try:
             parole = voce_azure(testo, velocita, uscita, grido)

@@ -21,6 +21,8 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 - Subito dopo il gancio (non solo alla fine: la fine non la ascolta nessuno) c'è "Seguici per altri contenuti come questo" (aggiunto da notizia_sub.py; "segui": false lo toglie).
 - Chiudere con la riga sul canale e una domanda, seguita da "Dimmi la tua nei commenti" (detta dalla voce e scritta nella schermata finale). Anche in didascalia l'ultima riga prima del sito è la domanda + "Dimmi la tua nei commenti 👇".
 
+- Velocità voce: ogni voce è 3% più lenta di quella scritta nella scaletta (`RALLENTA` in notizia_sub.py, richiesta del gestore). Pausa di circa 1 secondo tra il gancio e "Seguici".
+
 ## Fatti (regola più importante)
 - Mai errori su griglie, risultati, punti. Prima i documenti ufficiali FIA / API MotoGP, poi almeno due fonti.
 - Una griglia di partenza si dà solo dopo il documento "Final Starting Grid" della FIA (penalità e partenze dalla pit lane arrivano dopo le qualifiche).

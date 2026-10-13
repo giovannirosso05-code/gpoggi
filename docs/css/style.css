@@ -1457,3 +1457,11 @@ html { scroll-behavior: smooth; }
 
 /* ordine geometrico: nel podio nome su 1 o 2 righe occupa sempre lo spazio di 2, cosi' sigle squadra e tempi stanno sulla stessa riga */
 .podio-home strong { min-height: 2.6em; display: flex; align-items: center; justify-content: center; }
+/* ordine geometrico: schede pilota con nome sempre su 2 righe di spazio, squadra e punti sulla stessa riga in ogni scheda della riga */
+.driver-card { display: flex; flex-direction: column; }
+.driver-card-info { flex: 1; display: flex; flex-direction: column; }
+.driver-card .name { min-height: 2.4em; }
+.driver-card .numero { margin-top: auto; padding-top: 6px; }
+@media (max-width: 640px) {
+  .hero2-lato .pross-gp { white-space: normal !important; font-size: 19px !important; }
+}

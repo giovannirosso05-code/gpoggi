@@ -908,7 +908,7 @@ a.ag-risultati { display: inline-block; text-decoration: none; text-align: cente
   .hero2 { gap: 14px; box-shadow: none; border-radius: 0; overflow: visible; }
   .hero2-lato { border-radius: 16px; overflow: hidden; box-shadow: 0 8px 26px rgba(0, 0, 0, .28); border-left: 0 !important; border-top: 0 !important; min-height: 280px; }
   .hero2-lato.f1 { border-bottom: 5px solid #e8352f; }
-  .hero2-lato.moto { border-bottom: 5px solid #fff; }
+  .hero2-lato.moto { border-bottom: 5px solid var(--moto-blu, #1f5fd1); }
   .hero2.uno { gap: 0; }
   .hero2.uno .hero2-lato { min-height: 470px; }
   .prono-griglia { gap: 22px; }

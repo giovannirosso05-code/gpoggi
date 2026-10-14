@@ -25,6 +25,10 @@ JS = r"""
     const r = e.getBoundingClientRect(); const cs = getComputedStyle(e);
     if (!r.width || !r.height || cs.visibility === 'hidden' || cs.display === 'none') return;
     if (e.closest('nav, .nav, .menu, .pills, .tabella-scroll, table, .scroll-x, [data-scroll], .gara-tabs, .tabs, .filtri, header')) return;
+    // contenuti dentro un contenitore che scorre di lato di proposito (carosello di schede): non sono fuori schermo
+    let sc = e.parentElement, inScorrimento = false;
+    while (sc && sc !== document.body) { const o = getComputedStyle(sc).overflowX; if ((o === 'auto' || o === 'scroll') && sc.scrollWidth > sc.clientWidth + 1) { inScorrimento = true; break; } sc = sc.parentElement; }
+    if (inScorrimento) return;
     if (r.right < -500) return;   // elementi nascosti di proposito fuori schermo (campi per l'accessibilità)
     if ((r.right > W + 1 || r.left < -1) && cs.position !== 'fixed' && !e.closest('[style*="overflow"]')) out.push(['fuori-schermo', nome(e) + ` ${Math.round(r.left)}→${Math.round(r.right)}`]);
     if (cs.textOverflow === 'ellipsis' && e.scrollWidth > e.clientWidth + 1) out.push(['testo-tagliato', nome(e) + ' «' + e.textContent.trim().slice(0, 40) + '»']);

@@ -11,6 +11,8 @@ on:
     - cron: '23 20 * * *'
     - cron: '38 20 * * *'
     - cron: '53 20 * * *'
+    - cron: '23 21 * * *'
+    - cron: '53 21 * * *'
   workflow_dispatch:
     inputs:
       forza:
@@ -37,7 +39,7 @@ jobs:
         id: ora
         run: |
           H=$(TZ=Europe/Rome date +%H)
-          if [ "${{ github.event.inputs.forza }}" = "si" ] || [ "$H" = "21" ] || [ "$H" = "22" ]; then echo "vai=si" >> $GITHUB_OUTPUT; else echo "vai=no" >> $GITHUB_OUTPUT; fi
+          if [ "${{ github.event.inputs.forza }}" = "si" ] || [ "$H" = "21" ] || [ "$H" = "22" ] || [ "$H" = "23" ]; then echo "vai=si" >> $GITHUB_OUTPUT; else echo "vai=no" >> $GITHUB_OUTPUT; fi
       - if: steps.ora.outputs.vai == 'si'
         run: pip install -r requirements.txt edge-tts piper-tts kokoro-onnx soundfile azure-cognitiveservices-speech playwright
       - if: steps.ora.outputs.vai == 'si'

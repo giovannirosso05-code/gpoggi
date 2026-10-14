@@ -2,9 +2,9 @@ name: Video del venerdì
 
 # Ogni venerdì mattina un video che ricorda di votare il podio dei Gran Premi della settimana (F1 e MotoGP, se c'è la gara).
 # Arriva sul Telegram con la didascalia già scritta, pronto da pubblicare su TikTok. Nelle settimane senza gara non parte.
+# SPENTO il 14 ottobre 2026: promuove il gioco del pronostico (TikTok ha rimosso un video per «Servizi e beni regolamentati»).
+# Per riaccenderlo rimettere sotto 'on:' la riga:  schedule: [{cron: '23 7 * * 5'}]
 on:
-  schedule:
-    - cron: '23 7 * * 5'
   workflow_dispatch:
 
 permissions:

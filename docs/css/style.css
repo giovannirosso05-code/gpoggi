@@ -1165,7 +1165,7 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 }
 
 /* Tablet e computer stretti (601-1479 px): nome, lingua, social e tema sopra, le schede su una riga a parte che scorre di lato con la sbarretta */
-@media (min-width: 601px) and (max-width: 1479px) {
+@media (min-width: 601px) and (max-width: 1599px) {
   .site-header .nav { height: auto; flex-wrap: wrap; padding: 10px 20px; gap: 6px; justify-content: flex-start; }
   .site-header .nav-destra { display: contents; }
   .site-header .nav .lingua { margin-left: auto; }
@@ -1474,13 +1474,12 @@ html { scroll-behavior: smooth; }
 .footer-social .fs-link b { font-weight: 800; }
 @media (max-width: 480px) { .footer-social .fs-link { flex: 1 1 100%; justify-content: center; } }
 
-/* social in alto, nella testata di ogni pagina: due pulsanti rotondi della stessa misura del pulsante del tema */
-.soc-testata { display: inline-flex; align-items: center; gap: 8px; flex: none; }
-.soc-btn { width: 38px; height: 38px; flex: none; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--border); border-radius: 50%; background: var(--bg-elevated); color: var(--text); transition: border-color .15s, background .15s, color .15s; }
-.soc-btn:hover { background: var(--accent, #e8352f); border-color: var(--accent, #e8352f); color: #fff; }
-:root[data-theme="dark"] .site-header .soc-btn { background: #1f1f26; border-color: #34343d; color: #f2f1ee; }
-@media (max-width: 600px) { .nav .soc-testata { order: 2; gap: 6px; } .soc-btn { width: 34px; height: 34px; } .soc-btn svg { width: 16px; height: 16px; } }
-@media (min-width: 601px) and (max-width: 1479px) { .site-header .nav .soc-testata { order: 2; } }
-@media (max-width: 600px) { .nav .brand-nome { font-size: 14px; } .nav .lingua select { width: 82px; } .nav .soc-testata { gap: 4px; } .nav .soc-btn, .nav .tema-btn { width: 32px; height: 32px; } .soc-btn svg { width: 15px; height: 15px; } }
-@media (min-width: 1480px) and (max-width: 1560px) { .nav-destra { gap: 12px; } .nav-links { gap: 14px; } .nav-links a { font-size: 12px; letter-spacing: 0; } .soc-testata { gap: 6px; } .soc-btn, .tema-btn { width: 34px; height: 34px; } }
 @media (max-width: 340px) { .nav .brand-nome { display: none; } }
+
+/* striscia social in cima a ogni pagina: la prima cosa che si vede, prima del menu (non resta fissa) */
+.top-social { display: flex; align-items: center; justify-content: center; gap: 8px 22px; flex-wrap: nowrap; min-height: 38px; padding: 6px 12px; background: #16161b; color: #fff; font-size: 13px; line-height: 1.2; }
+.top-social .ts-testo { font-family: var(--font-display); text-transform: uppercase; letter-spacing: .12em; font-size: 13px; color: #b9b8c0; }
+.top-social a { display: inline-flex; align-items: center; gap: 7px; color: #fff; text-decoration: none; white-space: nowrap; }
+.top-social a b { font-weight: 800; }
+.top-social a:hover { color: var(--accent, #e8352f); }
+@media (max-width: 420px) { .top-social { gap: 6px 14px; font-size: 12px; padding: 6px 8px; } .top-social .ts-testo { display: none; } }

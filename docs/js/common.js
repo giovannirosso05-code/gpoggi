@@ -222,6 +222,15 @@ export function renderFooter() {
         </ul>
       </div>
     </div>
+    <div class="footer-social" aria-label="I nostri social">
+      <span class="fs-titolo">Seguici sui social</span>
+      <a class="fs-link fs-ig" href="https://www.instagram.com/gp.oggi/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
+        <span>Instagram <b>@gp.oggi</b></span></a>
+      <a class="fs-link fs-tt" href="https://www.tiktok.com/@gp.oggi" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M14 3v11.2a3.4 3.4 0 1 1-3.4-3.4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M14 3c.4 2.6 2.1 4.2 4.8 4.4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <span>TikTok <b>@gp.oggi</b></span></a>
+    </div>
     <div class="footer-bottom">
       <p>Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team. Foto e mappe da Wikimedia Commons con licenze libere.<br>
       <small>Formula 1 è un marchio di Formula One Licensing B.V.; MotoGP è un marchio di Dorna Sports. Nomi usati solo per descrivere i contenuti.</small></p>

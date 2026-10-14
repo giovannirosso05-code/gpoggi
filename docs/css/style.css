@@ -1465,3 +1465,11 @@ html { scroll-behavior: smooth; }
 @media (max-width: 640px) {
   .hero2-lato .pross-gp { white-space: normal !important; font-size: 19px !important; }
 }
+
+/* social in fondo a ogni pagina (barra a tutta larghezza, prima delle note legali) */
+.footer-social { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 14px; margin: 26px 0 6px; padding: 18px 16px; border-top: 1px solid rgba(255, 255, 255, .12); border-bottom: 1px solid rgba(255, 255, 255, .12); }
+.footer-social .fs-titolo { width: 100%; text-align: center; font-family: var(--font-display); text-transform: uppercase; letter-spacing: .12em; font-size: 14px; color: #fff; }
+.footer-social .fs-link { display: inline-flex; align-items: center; gap: 10px; padding: 11px 18px; border-radius: 999px; background: rgba(255, 255, 255, .1); color: #fff; text-decoration: none; font-size: 15px; font-weight: 600; transition: background .15s, transform .15s; }
+.footer-social .fs-link:hover { background: var(--accent, #e8352f); transform: translateY(-1px); }
+.footer-social .fs-link b { font-weight: 800; }
+@media (max-width: 480px) { .footer-social .fs-link { flex: 1 1 100%; justify-content: center; } }

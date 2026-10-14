@@ -1,0 +1,41 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Antonelli campione?",
+ "etichetta": "Mondiale",
+ "fonte": "calcolo GP Oggi",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729226_1296x729_16-9.jpg",
+   "hook": true,
+   "hook_titolo": "Antonelli campione già ad Austin?",
+   "testo": "*Antonelli* può diventare campione del mondo già ad *Austin*?"
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1008/r1727846_1296x729_16-9.jpg",
+   "testo": "Ha *102 punti* di vantaggio su *Russell*, e restano sei gare."
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1008/r1727840_1296x729_16-9.jpg",
+   "testo": "In palio ci sono *150 punti*: venticinque a gara per chi vince."
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1012/r1729617_1296x729_16-9.jpg",
+   "testo": "Ad Austin è *possibile*, ma servono la *vittoria* e un *Russell* quasi a secco di punti."
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729261_1296x729_16-9.jpg",
+   "testo": "Sono *calcoli nostri*, sui punti di oggi e sul calendario del sito."
+  },
+  {
+   "foto_file": "video/ia/pronostico-sito.png",
+   "credito": "Schermata di gpoggi.it",
+   "foto": "GP Oggi",
+   "testo": "Intanto fai il tuo *pronostico* per Austin sul nostro sito: è *gratis*, il link è in bio."
+  }
+ ],
+ "finale": {
+  "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729226_1296x729_16-9.jpg",
+  "domanda": "In che Gran Premio lo vedi campione? Scrivi Austin, Messico o San Paolo"
+ }
+}

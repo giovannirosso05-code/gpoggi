@@ -304,11 +304,11 @@ def scene_previsione(chiave):
         scene.append((cornice(c3, colore, foto_per_nome(fav_pole, chiave)), voce3))
     # --- scena 4: tu che dici? vai a votare
     quando_v, quando_s = chiusura_voti(p, chiave)
-    voce4 = "E tu che dici, chi sale sul podio? Scrivilo nei commenti e vai a votare il tuo pronostico su G P Oggi punto it, prima delle qualifiche."
+    voce4 = "E tu che dici, chi sale sul podio? Scrivilo nei commenti."
     c4 = (f"<div style='position:absolute;left:70px;right:70px;top:480px;text-align:center;font:700 150px/1 Oswald;text-transform:uppercase'>Tu che<br><span style='color:{colore}'>dici?</span></div>"
           f"<div style='position:absolute;left:70px;right:70px;top:900px;text-align:center;font:500 46px Inter;color:#e8e8ee'>Scrivilo nei commenti 👇</div>"
-          f"<div style='position:absolute;left:90px;right:90px;top:1060px;text-align:center;background:{colore};border-radius:28px;padding:34px 20px;font:700 62px/1.1 Oswald;text-transform:uppercase'>Vota il tuo pronostico<br>su gpoggi.it</div>"
-          + (f"<div style='position:absolute;left:70px;right:70px;top:1330px;text-align:center;font:500 38px Inter;color:#ffd21f'>Si vota fino alle qualifiche<br><b>{esc(quando_s)}</b></div>" if quando_s else ""))
+          f"<div style='position:absolute;left:90px;right:90px;top:1060px;text-align:center;background:{colore};border-radius:28px;padding:34px 20px;font:700 62px/1.1 Oswald;text-transform:uppercase'>Dimmi la tua<br>nei commenti</div>"
+          + (f"<div style='position:absolute;left:70px;right:70px;top:1330px;text-align:center;font:500 38px Inter;color:#ffd21f'>Si vota fino alle qualifiche<br><b>{esc(quando_s)}</b></div>" if False else ""))
     scene.append((cornice(c4, colore, None), voce4))
     return scene
 
@@ -325,8 +325,7 @@ def social_serie(chiave):
             f"👑 Il nostro favorito: {f0}\n{pole}\n"
             f"🗳️ E tu che dici?\n"
             f"✍️ Scrivilo nei commenti 👇\n"
-            f"📲 Vota il tuo pronostico su gpoggi.it PRIMA delle qualifiche!\n\n"
-            f"🔗 gpoggi.it → Giochi\n"
+                        f"🔗 gpoggi.it → Giochi\n"
             f"👥 Segui @gp.oggi\n\n"
             f"ℹ️ Opinione basata sui numeri, non una certezza.\n\n"
             f"#gpoggi {tag} #previsioni #podio #pole")
@@ -381,7 +380,7 @@ def social_previsioni():
         p = pron.get(chiave)
         if p and p.get("favoriti"):
             righe.append(f"{icona} {p['gp']}\n" + "\n".join(f"{i}. {f['nome']}" for i, f in enumerate(p["favoriti"][:3], 1)))
-    return "Il pronostico di GP Oggi 🔮\n\n" + "\n\n".join(righe) + "\n\nÈ un'opinione basata sui numeri, non una certezza.\n\nTu che dici? 👇\n\n🔗 gpoggi.it\n\n#gpoggi #f1 #motogp #pronostici #previsioni"
+    return "La previsione di GP Oggi 🔮\n\n" + "\n\n".join(righe) + "\n\nÈ un'opinione basata sui numeri, non una certezza.\n\nTu che dici? 👇\n\n🔗 gpoggi.it\n\n#gpoggi #f1 #motogp #previsioni"
 
 
 def invia_testo(testo):
@@ -422,7 +421,7 @@ def main():
             if not scene: continue
             uscita = a.uscita.with_name(f"{a.uscita.stem}-{chiave}{a.uscita.suffix}")
             social = social_serie(chiave)
-            did = social.split("\n\n")[0] + "\n\nVota il tuo pronostico: https://gpoggi.it/giochi.html?gioco=pronostico" + ("&serie=moto" if chiave == "motogp" else "") + "\n\n#gpoggi " + ("#MotoGP" if chiave == "motogp" else "#F1")
+            did = social.split("\n\n")[0]  + "\n\n#gpoggi " + ("#MotoGP" if chiave == "motogp" else "#F1")
             asyncio.run(componi(scene, uscita, VELOCITA_NOTIZIE, rapido=True)); print("Video:", uscita)
             if a.invia and invia(uscita, did): invia_testo(social); fatti += 1
         if a.invia and fatti:

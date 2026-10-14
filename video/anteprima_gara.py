@@ -145,9 +145,9 @@ def costruisci(serie, p, nomi):
     righe += [f"{i}. {f['nome']}" for i, f in enumerate(fav[:3], 1)]
     if ult:
         righe += ["", f"Lo scorso anno ha vinto {ult[0]}."]
-    righe += ["", "Il pronostico è un'opinione basata sui numeri, non una certezza.", ""]
+    righe += ["", "La previsione è un'opinione basata sui numeri, non una certezza.", ""]
     righe += [f"• {t} — {a['fonte'].strip()}" for a, t in notizie] + ([""] if notizie else [])
-    social = "\n".join(righe) + f"{domanda} Dimmi la tua nei commenti 👇\n\n🔗 gpoggi.it\n\n#gpoggi #{'f1' if serie == 'f1' else 'motogp'} #pronostici #granpremio"
+    social = "\n".join(righe) + f"{domanda} Dimmi la tua nei commenti 👇\n\n🔗 gpoggi.it\n\n#gpoggi #{'f1' if serie == 'f1' else 'motogp'} #previsioni #granpremio"
     return spec, social
 
 
@@ -164,7 +164,7 @@ def main():
         uscita = Path("/tmp/anteprima_gara.mp4")
         asyncio.run(NS.genera(spec, uscita))
         if not a.prova:
-            NG.telegram(uscita, f"🏁 {p['gp']}: chi vince? · pronostico di GP Oggi", social)
+            NG.telegram(uscita, f"🏁 {p['gp']}: chi vince? · previsione di GP Oggi", social)
     except (Exception, SystemExit) as e:
         print(f"Anteprima non riuscita: {type(e).__name__}: {e}")
         if a.avvisa and not a.prova:

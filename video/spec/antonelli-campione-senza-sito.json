@@ -1,0 +1,57 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Antonelli campione?",
+ "etichetta": "Mondiale",
+ "fonte": "calcolo GP Oggi",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1012/r1729617_1296x729_16-9.jpg",
+   "testo": "*Antonelli campione del mondo*? Ecco come può succedere.",
+   "hook": true,
+   "hook_titolo": "Antonelli campione?"
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729226_1296x729_16-9.jpg",
+   "testo": "Oggi guida il Mondiale, e restano *sei gare*."
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1008/r1727840_1296x729_16-9.jpg",
+   "testo": "Dietro di lui possono ancora sperarci in cinque: *Russell*, *Hamilton*, *Verstappen*, *Leclerc* e *Norris*.",
+   "pausa": 0.2
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1008/r1727846_1296x729_16-9.jpg",
+   "testo": "Tutti gli altri, *Piastri* compreso, sono già *fuori dalla corsa*."
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729261_1296x729_16-9.jpg",
+   "testo": "Può farcela già ad *Austin*: deve *vincere*, con Russell *fuori dai primi nove* e Hamilton *fuori dai primi quattro*.",
+   "pausa": 0.3
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729202_1296x729_16-9.jpg",
+   "testo": "Se non basta, a *Città del Messico* gli serve restare *alla pari con Russell* nelle due gare.",
+   "pausa": 0.3
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729286_1296x729_16-9.jpg",
+   "testo": "A *San Paolo* può permettersi anche un *weekend storto*, e così via, gara dopo gara.",
+   "pausa": 0.3
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729226_1296x729_16-9.jpg",
+   "testo": "E all'ultima, ad *Abu Dhabi*, gli basta *restare davanti* in classifica.",
+   "pausa": 0.3
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1008/r1727846_1296x729_16-9.jpg",
+   "testo": "Sono *calcoli nostri*, sui punti di oggi.",
+   "pausa": 0.2
+  }
+ ],
+ "finale": {
+  "foto_url": "https://a.espncdn.com/photo/2026/1012/r1729617_1296x729_16-9.jpg",
+  "domanda": "In che Gran Premio lo vedi campione? Scrivi il nome della gara"
+ }
+}

@@ -35,6 +35,11 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 - I social (Instagram e TikTok @gp.oggi) stanno in alto nella testata e in fondo a ogni pagina.
 - Per i social: copertine e video nella zona sicura (testi tra y=230 e y=1650), titoli mai sopra il volto, stessa grafica per la stessa rubrica.
 
+## TikTok: parole e contenuti da evitare (rimozione del 14 ottobre 2026 per «Servizi e beni regolamentati»)
+- Mai «pronostico», «pronostici», «scommesse», «quote», «vota il tuo pronostico», premi, soldi, né la schermata del gioco del pronostico (ha il premio) in video, copertine, didascalie e hashtag. Usare «previsione» e le domande ai commenti.
+- Non promuovere sui social il gioco «Pronostico del podio» del sito: per i giochi usare «Chi è il pilota?» e gli altri, senza premi.
+- Se un video viene rimosso, presentare ricorso (180 giorni) e rifare la versione senza il contenuto sospetto.
+
 ## Rassegna della sera
 - Mai titoli-domanda senza risposta ("perché X non è stato penalizzato?"): se la risposta esiste (come i freni di Antonelli a Singapore) il video senza risposta non ha senso. `rassegna_giornaliera.py` salta i titoli che finiscono con "?" e le frasi di estratto lasciate a metà. Notizie incrociate F1 / MotoGP; la fonte si scrive, non si dice.
 

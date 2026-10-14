@@ -1,0 +1,70 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Come vince Antonelli",
+ "etichetta": "Mondiale",
+ "fonte": "calcolo GP Oggi",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729226_1296x729_16-9.jpg",
+   "testo": "Come può diventare campione del mondo *Antonelli*? Tutte le strade, gara per gara.",
+   "hook": true,
+   "hook_titolo": "Come vince Antonelli il Mondiale?"
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1008/r1727846_1296x729_16-9.jpg",
+   "testo": "Oggi ha *102 punti* su Russell, *111* su Hamilton e *119* su Verstappen.",
+   "pausa": 0.2
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1008/r1727840_1296x729_16-9.jpg",
+   "testo": "Restano *sei gare*: venticinque punti a gara, quindi *150* in palio."
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1012/r1729617_1296x729_16-9.jpg",
+   "testo": "A *Austin* serve la *vittoria*, con Russell *fuori dai primi nove* e Hamilton *fuori dai primi quattro*.",
+   "pausa": 0.3
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729261_1296x729_16-9.jpg",
+   "testo": "A *Città del Messico*, dopo due gare, può perdere al massimo *1 punto* da Russell e *10* da Hamilton.",
+   "pausa": 0.3
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729202_1296x729_16-9.jpg",
+   "testo": "A *San Paolo*, dopo tre gare, può perdere fino a *26 punti* da Russell e *35* da Hamilton.",
+   "pausa": 0.3
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729286_1296x729_16-9.jpg",
+   "testo": "A *Las Vegas*, dopo quattro gare, fino a *51 punti* da Russell e *60* da Hamilton.",
+   "pausa": 0.3
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1010/r1728664_1296x729_16-9.jpg",
+   "testo": "In *Qatar*, dopo cinque gare, può perderne fino a *76* da Russell e *85* da Hamilton.",
+   "pausa": 0.3
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729226_1296x729_16-9.jpg",
+   "testo": "E all'ultima, ad *Abu Dhabi*, gli basta *chiudere davanti*: può perdere fino a *101 punti* da Russell.",
+   "pausa": 0.3
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1008/r1727846_1296x729_16-9.jpg",
+   "testo": "Sono *calcoli nostri* sui punti di oggi, senza sprint e senza contare i pareggi.",
+   "pausa": 0.2
+  },
+  {
+   "foto_file": "video/ia/pronostico-sito.png",
+   "credito": "Schermata di gpoggi.it",
+   "foto": "GP Oggi",
+   "testo": "Intanto fai il tuo *pronostico* per Austin sul nostro sito: è *gratis*, il link è in bio.",
+   "pausa": 0.3
+  }
+ ],
+ "finale": {
+  "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729226_1296x729_16-9.jpg",
+  "domanda": "In che Gran Premio lo vedi campione? Scrivi il nome della gara"
+ }
+}

@@ -29,6 +29,12 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 - Niente colpe senza una fonte; le dichiarazioni si attribuiscono e si riscrivono con parole nostre.
 - Punti del mondiale ricalcolati da noi vanno dichiarati come tali.
 
+## Rigore geometrico (sito e pagine social): nessun errore ammesso
+- Prima di ogni pubblicazione del sito: `python3 tools/controllo_geometria.py` (apre ogni pagina a 360, 390, 768 e 1280 px e segnala scorrimento orizzontale, testi tagliati, immagini rotte, schede della stessa riga con altezze o allineamenti diversi, elementi sovrapposti). Deve dire 0 segnalazioni.
+- Ogni elemento ripetuto (schede, podi, card, tabelle) ha la stessa misura e gli stessi allineamenti; niente testo che va a capo in modo diverso tra schede vicine (usare altezze minime).
+- I social (Instagram e TikTok @gp.oggi) stanno in alto nella testata e in fondo a ogni pagina.
+- Per i social: copertine e video nella zona sicura (testi tra y=230 e y=1650), titoli mai sopra il volto, stessa grafica per la stessa rubrica.
+
 ## Rassegna della sera
 - Mai titoli-domanda senza risposta ("perché X non è stato penalizzato?"): se la risposta esiste (come i freni di Antonelli a Singapore) il video senza risposta non ha senso. `rassegna_giornaliera.py` salta i titoli che finiscono con "?" e le frasi di estratto lasciate a metà. Notizie incrociate F1 / MotoGP; la fonte si scrive, non si dice.
 

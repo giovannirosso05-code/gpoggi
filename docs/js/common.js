@@ -146,6 +146,7 @@ export function renderHeader(paginaAttuale) {
           ${voci.map(([id, href, label]) => `<a href="${href}" class="${id === "giochi" ? "nav-giochi " : ""}${id === paginaAttuale ? "active" : ""}">${label}</a>`).join("")}
         </div>
         ${selettoreLingua()}
+        <span class="soc-testata"><a class="soc-btn" href="https://www.instagram.com/gp.oggi/" target="_blank" rel="noopener" aria-label="Instagram @gp.oggi" title="Instagram @gp.oggi"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></a><a class="soc-btn" href="https://www.tiktok.com/@gp.oggi" target="_blank" rel="noopener" aria-label="TikTok @gp.oggi" title="TikTok @gp.oggi"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M14 3v11.2a3.4 3.4 0 1 1-3.4-3.4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M14 3c.4 2.6 2.1 4.2 4.8 4.4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></a></span>
         <button type="button" class="tema-btn" id="tema-btn" aria-label="Cambia tema chiaro o scuro">${ICONA_LUNA}${ICONA_SOLE}</button>
       </div>
     </nav>`;

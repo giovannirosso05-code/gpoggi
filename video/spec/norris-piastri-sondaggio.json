@@ -1,0 +1,38 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Norris–Piastri",
+ "etichetta": "Sprint Singapore",
+ "fonte": "commissari FIA, McLaren",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1010/r1728732_1296x729_16-9.jpg",
+   "testo": "*Norris* e *Piastri* si toccano all'ultimo giro. Chi ha sbagliato?",
+   "hook": true,
+   "hook_titolo": "Norris–Piastri, chi ha sbagliato?"
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1010/r1728649_1296x729_16-9.jpg",
+   "testo": "Succede nella *sprint di Singapore*, all'ultimo giro, alla *curva cinque*, tra i due piloti della *McLaren*."
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729250_1296x729_16-9.jpg",
+   "testo": "Norris *tocca* la macchina di Piastri. I commissari *non assegnano nessuna penalità*, parlando di *colpa condivisa*.",
+   "pausa": 0.3
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1010/r1728658_1296x729_16-9.jpg",
+   "testo": "Il team principal *Andrea Stella* dice che quel contatto *non è accettabile*.",
+   "pausa": 0.3
+  },
+  {
+   "foto_url": "https://a.espncdn.com/photo/2026/1011/r1729250_1296x729_16-9.jpg",
+   "testo": "Norris all'inizio dice di *avere il diritto* di lottare. Poi ammette di *aver deluso la squadra*.",
+   "pausa": 0.3
+  }
+ ],
+ "finale": {
+  "foto_url": "https://a.espncdn.com/photo/2026/1010/r1728732_1296x729_16-9.jpg",
+  "domanda": "Chi ha sbagliato? Scrivi uno per Norris, due per Piastri, tre per colpa di tutti e due"
+ }
+}

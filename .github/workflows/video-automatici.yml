@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
     inputs:
       cosa:
-        description: 'notizie (due raccontate, una volta al giorno), notizia-scelta (la notizia scelta con url), notizie-ora (due raccontate subito), notizia (una semplice), previsioni oppure gioco'
+        description: 'notizie (due raccontate, una volta al giorno), notizia-scelta (la notizia scelta con url), notizie-ora (due raccontate subito), notizia (una semplice), previsioni, gioco oppure gioco-virale (Chi guida il Mondiale?)'
         default: 'notizie'
       url:
         description: 'solo per cosa=notizia-scelta: "indirizzo|titolo|fonte|serie" della notizia da raccontare'
@@ -65,6 +65,7 @@ jobs:
         run: |
           case "${{ steps.quale.outputs.cosa }}" in
             gioco) python video/gioco.py giorno --invia --uscita "$RUNNER_TEMP/gioco.mp4" ;;
+            gioco-virale) python video/gioco_virale.py --invia --uscita "$RUNNER_TEMP/gioco_virale.mp4" ;;
             notizie) python video/notizie_giorno.py --una-volta-al-giorno ;;
             notizie-ora) python video/notizie_giorno.py --avvisa ;;
             notizia-scelta) python video/notizie_giorno.py --url "$URL_SCELTA" --avvisa ;;

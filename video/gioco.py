@@ -116,13 +116,13 @@ CSS_FONT = (f"@font-face{{font-family:Oswald;font-weight:700;src:url(data:font/w
             f"@font-face{{font-family:Inter;font-weight:500;src:url(data:font/woff2;base64,{b64(FONT / 'inter-latin-500-normal.woff2')})}}")
 
 
-def pagina(col, titolo, sotto, img64, indizi_visibili, avanz, credito, finale, chi):
+def pagina(col, titolo, sotto, img64, indizi_visibili, avanz, credito, finale, chi, piede=None):
     logo = b64(SITO / "img/logo-wide-scuro.png")
     righe = "".join(f'<div class=r><span>{e}</span><b>{v}</b></div>' for e, v in indizi_visibili)
     fin = ""
     if finale:
         fin = (f'<div class=dim></div><div class=pan><div class=a>SCRIVI {chi}</div><div class=b>NEI COMMENTI</div><div class=btn>SEGUI {PROFILO.upper()}</div>'
-               f'<div class=p>Un {"pilota" if "pilota" in sotto.lower() else "circuito"} nuovo ogni giorno</div></div>')
+               f'<div class=p>{piede or "Un " + ("pilota" if "pilota" in sotto.lower() else "circuito") + " nuovo ogni giorno"}</div></div>')
     return f"""<!doctype html><meta charset=utf-8><style>{CSS_FONT}
 *{{box-sizing:border-box}} html,body{{margin:0;width:{W}px;height:{H}px;background:#0b0b0e;color:#fff;font-family:Inter,sans-serif;overflow:hidden;position:relative}}
 .top{{position:absolute;inset:0;background:linear-gradient(180deg,{col} 0%,rgba(11,11,14,0) 38%)}} .top{{opacity:.55}}
@@ -148,14 +148,14 @@ async def voce(testo, uscita):
     return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(uscita)], capture_output=True, text=True).stdout)
 
 
-async def monta(col, titolo, sotto, livelli, indizi, finale_chi, credito, intro, uscita, minimo=3.8, chi_video=None):
+async def monta(col, titolo, sotto, livelli, indizi, finale_chi, credito, intro, uscita, minimo=3.8, chi_video=None, fine_extra="", piede=None):
     """indizi = [(etichetta, valore a video, frase a voce)]; livelli = immagini dalla più sgranata alla più chiara."""
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
-        seg = [("intro", intro, None)] + [(f"i{k}", ind[2], k) for k, ind in enumerate(indizi)] + [("fine", f"Scrivi {finale_chi} nei commenti!", None)]
+        seg = [("intro", intro, None)] + [(f"i{k}", ind[2], k) for k, ind in enumerate(indizi)] + [("fine", f"Scrivi {finale_chi} nei commenti!" + fine_extra, None)]
         t = 0.0; tempi = []
         for n, (nome, testo, k) in enumerate(seg):
-            f = tmp / f"v{n}.mp3"; d = await voce(testo, f); dur = max(d + 0.5, minimo if nome != "fine" else 4.2)
+            f = tmp / f"v{n}.mp3"; d = await voce(testo, f); dur = max(d + 0.5, minimo if nome != "fine" else (4.2 if not fine_extra else d + 0.8))
             tempi.append((t, dur, f)); t += dur
         tot = t
         quadri = []
@@ -169,7 +169,7 @@ async def monta(col, titolo, sotto, livelli, indizi, finale_chi, credito, intro,
                     t0 = ini + dur * q / passi; t1 = ini + dur * (q + 1) / passi
                     lv = livelli[min(len(livelli) - 1, int(((t0 + t1) / 2) / (tot - tempi[-1][1]) * len(livelli))) if not fine_ else len(livelli) - 1]
                     vis = [(e, v) for e, v, _ in indizi[:(k + 1 if k is not None else (len(indizi) if fine_ else 0))]]
-                    await pg.set_content(pagina(col, titolo, sotto, png64(lv), vis, t0 / tot, credito, fine_, (chi_video or finale_chi).upper())); await pg.wait_for_timeout(100)
+                    await pg.set_content(pagina(col, titolo, sotto, png64(lv), vis, t0 / tot, credito, fine_, (chi_video or finale_chi).upper(), piede)); await pg.wait_for_timeout(100)
                     f = tmp / f"q{n_img}.png"; n_img += 1; await pg.screenshot(path=str(f)); quadri.append((f, t1 - t0))
             await b.close()
         (tmp / "l.txt").write_text("\n".join(f"file '{f}'\nduration {d:.3f}" for f, d in quadri) + f"\nfile '{quadri[-1][0]}'")

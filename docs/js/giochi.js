@@ -123,11 +123,28 @@ function partitaQuiz(chiave, qs) {
   mostra();
 }
 
+// «Sfida un amico»: il testo con il risultato vero, condiviso col menu del telefono (WhatsApp compreso) o copiato
+async function condividiRisultato(chiave, punti, su) {
+  const nome = (GIOCHI[chiave] || {}).titolo || "Giochi";
+  const testo = `🏎️ GP Oggi · ${nome}\nHo fatto ${punti}${su ? "/" + su : " di fila"}. Riesci a fare meglio?\n👉 https://gpoggi.it/giochi.html`;
+  const esito = document.getElementById("sfida-esito");
+  try {
+    if (navigator.share) { await navigator.share({ text: testo }); return; }
+    await navigator.clipboard.writeText(testo);
+    if (esito) esito.textContent = "Risultato copiato: incollalo dove vuoi.";
+  } catch (e) {
+    if (e && e.name === "AbortError") return;   // l'utente ha chiuso il menu di condivisione
+    window.open("https://wa.me/?text=" + encodeURIComponent(testo), "_blank", "noopener");
+  }
+}
+
 function schermataFine(chiave, punti, su, prec, ancora, extra = "") {
   box.innerHTML = `<div class="quiz-fine"><div class="quiz-punteggio">${punti}${su ? `<span>/${su}</span>` : ""}</div>
     <p>${su && punti === su ? "Perfetto!" : punti >= (su || 8) * 0.7 ? "Ottimo risultato." : punti >= (su || 8) * 0.4 ? "Non male, riprova." : "Si può fare meglio: riprova."}</p>${extra}
     <p class="muted">Record personale: <b>${Math.max(prec, punti)}</b>${su ? "/" + su : ""}</p>
-    <div class="quiz-azioni"><button class="quiz-avanti" id="ancora">Rigioca</button><button class="quiz-avanti secondario" id="menu">Cambia gioco</button></div></div>`;
+    <div class="quiz-azioni"><button class="quiz-avanti" id="ancora">Rigioca</button><button class="quiz-avanti secondario" id="menu">Cambia gioco</button></div>
+    <div class="quiz-azioni"><button class="quiz-avanti secondario" id="sfida">📲 Sfida un amico</button></div><p class="muted" id="sfida-esito" style="margin:8px 0 0;min-height:1.4em"></p></div>`;
+  document.getElementById("sfida").addEventListener("click", () => condividiRisultato(chiave, punti, su));
   document.getElementById("ancora").addEventListener("click", ancora);
   document.getElementById("menu").addEventListener("click", tornaMenu);
 }

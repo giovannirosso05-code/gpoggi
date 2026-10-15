@@ -76,16 +76,33 @@ def frase_estratto(a, titolo):
     return t
 
 
-def scegli_rassegna(n, nomi):
-    arts = json.load(open(DATA / "rassegna.json"))["articoli"]
+def scegli_rassegna(n, nomi, stato=None):
+    """Le notizie di OGGI (dalla mezzanotte italiana) mai usate in una rassegna precedente né raccontate in un video; se sono troppo poche si allarga a 30 ore,
+    ma le notizie già usate restano escluse (e anche quelle che parlano della stessa storia)."""
+    stato = stato or {}
+    arts_tutti = json.load(open(DATA / "rassegna.json"))["articoli"]
     ora = datetime.now(timezone.utc)
+    mezzanotte = ora_roma(ora).replace(hour=0, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
+    gia = set(stato.get("rassegna_usate", [])) | set(stato.get("storie", [])) | set(stato.get("notizie", []))
+    usate = [x for x in arts_tutti if x["url"] in gia]   # per scartare anche le versioni della stessa storia di altre testate
+
+    def candidati(da):
+        out = []
+        for a in arts_tutti:
+            try:
+                if datetime.fromisoformat(a["pubblicato"]) < da:
+                    continue
+            except Exception:
+                continue
+            if a["url"] in gia or any(a["url"] in NG.simili(u, [a]) or u["url"] in NG.simili(a, [u]) for u in usate):
+                continue
+            out.append(a)
+        return out
+    arts = candidati(mezzanotte)
+    if len(arts) < n + 2:
+        arts = candidati(ora - timedelta(hours=30))
     buone = []
     for a in arts:
-        try:
-            if (ora - datetime.fromisoformat(a["pubblicato"])).total_seconds() > 30 * 3600:
-                continue
-        except Exception:
-            continue
         t = pulisci(a["titolo"])
         if "|" in t or SIGLE.search(re.sub(r"\bF1\b", "", t)) or not 25 <= len(t) <= 125 or t.endswith("?"):
             continue   # i titoli-domanda (\"perché non è stato penalizzato?\") senza risposta nel video non hanno senso: si saltano
@@ -292,7 +309,7 @@ def main():
         scelte = articoli_da_url(a.scelte.split())
         gancio = bool(scelte)
     else:
-        scelte = scegli_rassegna(a.n, nomi)
+        scelte = scegli_rassegna(a.n, nomi, stato)
         if forz and forz.get("gancio_url"):   # per oggi un articolo deve aprire la rassegna
             art = next(iter(articoli_da_url([forz["gancio_url"]])), None)
             if not art and forz.get("gancio_articolo_titolo"):   # l'articolo non è più nel feed: si usano i dati salvati
@@ -323,8 +340,10 @@ def main():
             for etichetta, c in copertine:
                 telegram_foto(c, f"🖼 Copertina {etichetta} · Rassegna stampa del {data}")
             NG.telegram(uscita, f"📰 {spec['titolo_breve']} · titoli e fonti nella didascalia", social)
-            if not a.forza and not a.scelte:   # una rassegna chiesta a mano non spegne quella automatica delle 21:30
-                STATO.write_text(json.dumps({**NG.stato_leggi(), "giorno_rassegna": oggi}, ensure_ascii=False, indent=1))
+            if not a.forza and not a.scelte:   # una rassegna chiesta a mano non spegne quella automatica delle 21:30 e non "consuma" le notizie
+                nuovo_stato = NG.stato_leggi()
+                nuovo_stato["rassegna_usate"] = ([x["url"] for x in scelte] + nuovo_stato.get("rassegna_usate", []))[:80]   # domani non si rimettono
+                STATO.write_text(json.dumps({**nuovo_stato, "giorno_rassegna": oggi}, ensure_ascii=False, indent=1))
     except (Exception, SystemExit) as e:
         print(f"Rassegna non riuscita: {type(e).__name__}: {e}")
         if not a.prova:

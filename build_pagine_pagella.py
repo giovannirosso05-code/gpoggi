@@ -45,6 +45,8 @@ def tabella(w):
 def costruisci(w, serie):
     etichetta = "F1" if serie == "f1" else "MotoGP"
     nome = breve(w["nome"], serie)
+    if str(w.get("id")) == "1308":
+        nome += " (in Malesia)"   # il GP del Bahrain 2026 si è corso a Sepang
     testo_data, d = data_it(w["data"])
     anno = d.year
     file = f"pagella-{serie}-{paese_chiave(w['nome'])}-{anno}.html"

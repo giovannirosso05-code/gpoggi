@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, img, intervalloWeekend, erroreCaricamento } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, img, intervalloWeekend, erroreCaricamento, nomeGp } from "./common.js";
 
 renderHeader("gare");
 renderFooter();
@@ -9,7 +9,7 @@ function card(g, passata) {
     <div class="event-map">${g.mappa ? img(g.mappa, "Tracciato di " + g.circuito) : `<span class="senza-mappa">${esc(g.circuito)}</span>`}</div>
     <div class="event-body">
       <div class="event-date">${intervalloWeekend(g)}</div>
-      <div class="event-name">${esc(g.nome)}</div>
+      <div class="event-name">${esc(nomeGp(g))}</div>
       <div class="event-location">${esc(g.circuito)}, ${esc(g.paese)}</div>
       <span class="event-status ${passata ? "passato" : ""}">${passata ? "Disputata" : sprint ? "Weekend con sprint" : "In programma"}</span>
     </div>

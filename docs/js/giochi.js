@@ -3,18 +3,26 @@ import { renderHeader, renderFooter, fetchJSON, esc, credito, erroreCaricamento,
 renderHeader("giochi");
 renderFooter();
 
-const N = 10;
+let N = 10;
 const scelta = document.getElementById("scelta");
 const box = document.getElementById("partita");
 
-const mescola = (a) => { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
-const scelgo = (a) => a[Math.floor(Math.random() * a.length)];
+let rng = Math.random;   // per la sfida del giorno diventa un generatore con seme: stesse domande per tutti
+const mescola = (a) => { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(rng() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
+const scelgo = (a) => a[Math.floor(rng() * a.length)];
+// ---- Sfida del giorno: 5 domande uguali per tutti (il seme è la data italiana)
+const giornoRoma = () => new Intl.DateTimeFormat("sv-SE", { timeZone: "Europe/Rome" }).format(new Date());   // 2026-10-15
+const numeroSfida = (g) => Math.round((Date.parse(g) - Date.parse("2026-10-15")) / 864e5) + 1;
+const seme = (t) => { let h = 2166136261; for (const c of t) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; };
+const conSeme = (a) => () => { a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+let giornoSfida = null;
 const leggi = (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } };
 const scrivi = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
 const record = (g) => Number(leggi("record-" + g)) || 0;
 const salvaRecord = (g, v) => { if (v > record(g)) scrivi("record-" + g, String(v)); };
 
 const GIOCHI = {
+  sfida: { titolo: "Sfida del giorno", testo: "5 domande, le stesse per tutti ogni giorno: confronta il risultato con gli amici." },
   pronostico: { titolo: "Pronostico del podio", testo: "Scegli il podio di F1 e MotoGP, scegli il tuo nickname ed entra in classifica: a fine anno chi è primo vince 50 € in carta Amazon.", speciale: true },
   circuito: { titolo: "Indovina il circuito", testo: "Ti mostro il tracciato, tu scegli il Gran Premio." },
   pilota: { titolo: "Chi è il pilota?", testo: "Una foto, quattro nomi: piloti di oggi e leggende del passato, F1 e MotoGP." },
@@ -100,6 +108,7 @@ const GEN = {
 
 function partitaQuiz(chiave, qs) {
   let i = 0, punti = 0;
+  const esiti = [];
   scelta.classList.add("hidden"); box.classList.remove("hidden");
   const mostra = () => {
     const q = qs[i];
@@ -110,6 +119,7 @@ function partitaQuiz(chiave, qs) {
   };
   const rispondi = (k) => {
     const q = qs[i], ok = q.opzioni[k] === q.giusto;
+    esiti.push(ok);
     if (ok) punti++;
     box.querySelectorAll(".quiz-opz").forEach((b, idx) => { b.disabled = true; if (q.opzioni[idx] === q.giusto) b.classList.add("giusta"); else if (idx === k) b.classList.add("sbagliata"); });
     document.getElementById("esito").innerHTML = `<span class="esito-testo"><b>${ok ? "Giusto!" : "Sbagliato."}</b> ${ok ? "" : "Era " + (/^Gran Premio/.test(q.giusto) ? "il " : "") + esc(q.giusto) + "."}</span>
@@ -117,16 +127,45 @@ function partitaQuiz(chiave, qs) {
     document.getElementById("avanti").addEventListener("click", () => { i++; i < qs.length ? mostra() : fine(); });
   };
   const fine = () => {
+    if (chiave === "sfida") { scrivi("sfida-" + giornoSfida, JSON.stringify({ punti, esiti })); return fineSfida(punti, esiti); }
     const prec = record(chiave); salvaRecord(chiave, punti);
     schermataFine(chiave, punti, qs.length, prec, () => avvia(chiave));
   };
   mostra();
 }
 
+async function partitaSfida() {
+  giornoSfida = giornoRoma();
+  box.classList.remove("hidden"); scelta.classList.add("hidden");
+  const fatta = leggi("sfida-" + giornoSfida);
+  if (fatta) { try { const r = JSON.parse(fatta); return fineSfida(r.punti, r.esiti); } catch (e) {} }
+  box.innerHTML = `<p class="muted">Preparo la sfida di oggi…</p>`;
+  const prima = [rng, N];
+  rng = conSeme(seme("gpoggi-" + giornoSfida)); N = 1;
+  const qs = [];
+  try { for (const k of ["pilota", "numero", "campioni", "vincitore", "moto"]) { const r = await Promise.resolve().then(() => GEN[k]("tutti")).catch(() => []); if (r[0]) qs.push(r[0]); } }
+  finally { [rng, N] = prima; }
+  if (qs.length < 3) { box.innerHTML = `<p class="muted">Non ci sono abbastanza dati per la sfida di oggi: riprova più tardi.</p>`; return; }
+  partitaQuiz("sfida", qs);
+}
+
+function fineSfida(punti, esiti) {
+  const su = esiti.length, g = giornoSfida || giornoRoma();
+  box.innerHTML = `<div class="quiz-fine"><span class="kicker">Sfida del giorno #${numeroSfida(g)}</span><div class="quiz-punteggio">${punti}<span>/${su}</span></div>
+    <p style="font-size:26px;margin:4px 0 8px">${esiti.map((e) => (e ? "🟩" : "🟥")).join("")}</p>
+    <p>${punti === su ? "Perfetto!" : punti >= su * 0.6 ? "Ottimo risultato." : "Si può fare meglio: domani ne trovi una nuova."}</p>
+    <p class="muted">Le domande sono uguali per tutti: sfida un amico e confrontate il risultato. Domani una nuova sfida.</p>
+    <div class="quiz-azioni"><button class="quiz-avanti" id="sfida">📲 Sfida un amico</button><button class="quiz-avanti secondario" id="menu">Altri giochi</button></div><p class="muted" id="sfida-esito" style="margin:8px 0 0;min-height:1.4em"></p></div>`;
+  document.getElementById("sfida").addEventListener("click", () => condividiRisultato("sfida", punti, su, esiti));
+  document.getElementById("menu").addEventListener("click", tornaMenu);
+}
+
 // «Sfida un amico»: il testo con il risultato vero, condiviso col menu del telefono (WhatsApp compreso) o copiato
-async function condividiRisultato(chiave, punti, su) {
+async function condividiRisultato(chiave, punti, su, esiti = []) {
   const nome = (GIOCHI[chiave] || {}).titolo || "Giochi";
-  const testo = `🏎️ GP Oggi · ${nome}\nHo fatto ${punti}${su ? "/" + su : " di fila"}. Riesci a fare meglio?\n👉 https://gpoggi.it/giochi.html`;
+  const testo = chiave === "sfida"
+    ? `🏎️ GP Oggi · Sfida del giorno #${numeroSfida(giornoSfida || giornoRoma())}\n${punti}/${su} ${esiti.map((e) => (e ? "🟩" : "🟥")).join("")}\nLe domande sono uguali per tutti: riesci a fare meglio?\n👉 https://gpoggi.it/giochi.html?sfida=1`
+    : `🏎️ GP Oggi · ${nome}\nHo fatto ${punti}${su ? "/" + su : " di fila"}. Riesci a fare meglio?\n👉 https://gpoggi.it/giochi.html`;
   const esito = document.getElementById("sfida-esito");
   try {
     if (navigator.share) { await navigator.share({ text: testo }); return; }
@@ -484,6 +523,7 @@ async function partitaPronostico(serie = "f1", vista = "voto") {
 function tornaMenu() { urlGioco(); box.classList.add("hidden"); scelta.classList.remove("hidden"); aggiornaRecord(); }
 
 async function avvia(chiave) {
+  if (chiave === "sfida") return partitaSfida();
   const g = GIOCHI[chiave];
   if (g.speciale) return partitaPronostico();
   if (g.serie) return partitaPunti();
@@ -576,6 +616,7 @@ try {
   aggiornaRecord();
   scelta.addEventListener("click", (e) => { const b = e.target.closest(".gioco-card"); if (b) avvia(b.dataset.gioco); });
   const q = new URLSearchParams(location.search);
+  if (q.get("sfida")) partitaSfida();
   if (q.get("gioco") === "pronostico") partitaPronostico(q.get("serie") === "moto" ? "moto" : "f1", q.get("vista") === "classifica" ? "classifica" : "voto");
 } catch (e) {
   erroreCaricamento(scelta);

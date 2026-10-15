@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, img, credito, stemma, ND, formattaDataOra, intervalloWeekend, erroreCaricamento, montaCronaca, programmaHtml } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, img, credito, stemma, ND, formattaDataOra, intervalloWeekend, erroreCaricamento, montaCronaca, programmaHtml, nomeGp } from "./common.js";
 import { votiGpOggi } from "./voti-gp.js";
 
 renderHeader("gare");
@@ -38,7 +38,7 @@ try {
     <section class="gara-testata">
       <div>
         <span class="kicker">${intervalloWeekend(g)}</span>
-        <h1>${esc(g.nome)}</h1>
+        <h1>${esc(nomeGp(g))}</h1>
         <p class="muted" style="margin:0">${esc(g.circuito)} · ${esc(g.localita)}, ${esc(g.paese)}</p>
         ${haRisultati ? "" : `<div style="margin-top:16px">${programmaHtml(g.sessioni)}</div>`}
       </div>

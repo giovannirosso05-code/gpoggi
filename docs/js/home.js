@@ -1,4 +1,4 @@
-import { iniz, renderHeader, renderFooter, fetchJSON, esc, img, credito, intervalloWeekend, formattaDataOra, punti, stemma, stemmaMoto, coloreMoto, ND, mischia, fotoMotoMap, mappeMotoMap } from "./common.js";
+import { iniz, renderHeader, renderFooter, fetchJSON, esc, img, credito, intervalloWeekend, formattaDataOra, punti, stemma, stemmaMoto, coloreMoto, ND, mischia, fotoMotoMap, mappeMotoMap, nomeGp } from "./common.js";
 
 import { montaPronostico, colonnaF1, colonnaMoto } from "./prono.js";
 
@@ -30,7 +30,7 @@ function riquadro(id, sigla, classe, trovata, link, foto, favorito) {
   if (f) el.style.setProperty("--foto", `url("${new URL(f, document.baseURI).href}")`);
   el.innerHTML = `<span class="cd-sigla ${classe}">${sigla}</span>
     <span class="hero2-kicker">Prossimo GP</span>
-    <strong class="pross-gp">${esc(g.nome)}</strong>
+    <strong class="pross-gp">${esc(nomeGp(g))}</strong>
     <span class="pross-circ">${esc(g.circuito)}</span>
     <span class="pross-sess">${esc(s.nome)} · ${formattaDataOra(s.inizio)}</span>
     <span class="pross-timer cd-tempo"></span>
@@ -51,7 +51,7 @@ function podioF1(g, foto) {
   const sess = [...g.sessioni].reverse().find((s) => s.tipo === "Race" && s.risultati && s.risultati.length);
   if (!sess) return "";
   const top = sess.risultati.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos);
-  return blocco("F1", "", g.nome, `${g.circuito}, ${g.paese}`, `gara.html?id=${g.id}${tema}`, top.map((r) => `<a href="pilota.html?n=${r.numero}${tema}" style="--team:#${esc(coloreTeam[r.team] || "8b8a92")}">
+  return blocco("F1", "", nomeGp(g), `${g.circuito}, ${g.paese}`, `gara.html?id=${g.id}${tema}`, top.map((r) => `<a href="pilota.html?n=${r.numero}${tema}" style="--team:#${esc(coloreTeam[r.team] || "8b8a92")}">
       <div class="posto">${r.pos}°</div>${foto[r.numero] ? img(foto[r.numero], r.nome || "") : '<span class="vuota"></span>'}
       <strong>${esc(r.nome || "Pilota #" + r.numero)}</strong><div>${stemma(r.team, coloreTeam[r.team])}</div><div class="tempo">${r.tempo ? esc(r.tempo) : ND}</div></a>`).join(""));
 }
@@ -145,7 +145,7 @@ const MAPPE = await mappeMotoMap();
 document.getElementById("prossimi-mini").innerHTML = prossimi.length ? prossimi.map((g) => `
   <a class="evento-widget-mini" href="${g.link}">
     ${g.serie === "F1" ? (g.mappa ? img(g.mappa, "Tracciato di " + g.circuito) : "") : (MAPPE[g.circuito] ? img(MAPPE[g.circuito], "Tracciato di " + g.circuito) : "")}
-    <div><div class="evento-widget-mini-nome"><span class="cd-sigla ${g.serie === "MotoGP" ? "moto" : ""}">${g.serie}</span> ${esc(g.nome)}</div>
+    <div><div class="evento-widget-mini-nome"><span class="cd-sigla ${g.serie === "MotoGP" ? "moto" : ""}">${g.serie}</span> ${esc(nomeGp(g))}</div>
     <div class="evento-widget-mini-data">${esc(g.circuito)} · ${intervalloWeekend(g)}</div></div>
   </a>`).join("") : `<p class="muted" style="font-size:12px">Nessun weekend in programma.</p>`;
 

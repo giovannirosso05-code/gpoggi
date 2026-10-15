@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, img, credito, intervalloWeekend, formattaDataOra, punti, stemma, mischia, erroreCaricamento } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, img, credito, intervalloWeekend, formattaDataOra, punti, stemma, mischia, erroreCaricamento, nomeGp } from "./common.js";
 import { montaPronostico, colonnaF1 } from "./prono.js";
 
 renderHeader("f1");
@@ -16,7 +16,7 @@ function card(g, passata, prossima) {
     <div class="event-map">${g.mappa ? img(g.mappa, "Tracciato di " + g.circuito) : `<span class="senza-mappa">${esc(g.circuito)}</span>`}</div>
     <div class="event-body">
       <div class="event-date">${intervalloWeekend(g)}</div>
-      <div class="event-name">${esc(g.nome)}</div>
+      <div class="event-name">${esc(nomeGp(g))}</div>
       <div class="event-location">${esc(g.circuito)}, ${esc(g.paese)}</div>
       <span class="event-status ${passata ? "passato" : ""}">${passata ? "Vai ai risultati →" : prossima ? (sprint ? "Prossima · weekend con sprint" : "Prossima gara") : "In programma"}</span>
     </div>
@@ -37,7 +37,7 @@ try {
     el.href = `gara.html?id=${gp.id}${tema}`;
     const f = leader && leader.foto && (leader.foto.file_grande || leader.foto.file);
     if (f) el.style.setProperty("--foto", `url("${new URL(f, document.baseURI).href}")`);
-    el.innerHTML = `<span class="cd-sigla">F1</span><span class="hero2-kicker">Prossimo GP</span><strong class="pross-gp">${esc(gp.nome)}</strong><span class="pross-circ">${esc(gp.circuito)}, ${esc(gp.paese)}</span>
+    el.innerHTML = `<span class="cd-sigla">F1</span><span class="hero2-kicker">Prossimo GP</span><strong class="pross-gp">${esc(nomeGp(gp))}</strong><span class="pross-circ">${esc(gp.circuito)}, ${esc(gp.paese)}</span>
       <span class="pross-sess">${esc(s.nome)} · ${formattaDataOra(s.inizio)}</span><span class="pross-timer cd-tempo"></span>
       ${prono && prono.f1 ? `<span class="hero2-fav">Favorito: <b>${esc(prono.f1.favoriti[0].nome)}</b></span>` : ""}${leader && leader.foto ? `<span class="hero2-credito">${credito(leader.foto)}</span>` : ""}`;
     const t = el.querySelector(".pross-timer");

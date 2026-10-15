@@ -7,6 +7,12 @@ export async function fetchJSON(path) {
 }
 
 const ENT = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
+// Il GP del Bahrain 2026 si è corso in Malesia (nome ufficiale «Bahrain Grand Prix in Malaysia»): il nome resta quello ufficiale, con la sede accanto
+export function nomeGp(g) {
+  const n = (g && g.nome) || "";
+  return /Bahrain/i.test(n) && g.paese === "Malesia" && !/Malesia/.test(n) ? `${n} (in Malesia)` : n;
+}
+
 export function esc(v) {
   return String(v ?? "").replace(/[&<>"']/g, (c) => ENT[c]);
 }

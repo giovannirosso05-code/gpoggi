@@ -24,7 +24,7 @@ const REPO_BASE = "giovannirosso05-code/gpoggi";
 const CHAT_BASE = "559225883";          // la tua chat privata (la stessa del bot di MMA Oggi: un id utente vale per tutti i bot)
 const BOT_BASE = "Gpoggibot";
 const RAMO = "main";
-const VERSIONE = "radar-notizia-2 live-1 gara-1 2026-10-13";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
+const VERSIONE = "radar-citazioni-1 live-1 gara-1 2026-10-15";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
 const ETA_MASSIMA_SECONDI = 600;        // un comando più vecchio di 10 minuti non si esegue (Telegram può ripetere gli invii dopo un guasto)
 
 // comando -> [file del workflow, input del workflow o null, descrizione]
@@ -75,6 +75,10 @@ const ORE24 = 24 * 3600 * 1000;
 const dataArt = (a) => Date.parse(a.pubblicato) || 0;
 const piuRecentiPrima = (l) => l.slice().sort((x, y) => dataArt(y) - dataArt(x));
 const delGiorno = (l) => piuRecentiPrima(l).filter((a) => Date.now() - dataArt(a) < ORE24);
+// dichiarazioni dei piloti: in cima al /radar (stesso criterio di build_news.py)
+const CITAZ = /[“”"«»]|\b(dice|dicono|ammette|rivela|spiega|racconta|intervista|parla|svela|confessa|promette|avverte|attacca|risponde|sottolinea|difende|chiarisce|ricorda)\b/i;
+const èCitazione = (a) => a.citazione === true || (a.citazione === undefined && CITAZ.test(a.titolo || ""));
+const citazioniPrima = (l) => [...l.filter(èCitazione), ...l.filter((a) => !èCitazione(a))];
 
 // notizie che corrispondono alla parola scritta: prima la prima parola del titolo (tra quelle del giorno), poi la prima parola tra tutte, poi una parola qualsiasi
 function cerca(tutte, arg) {
@@ -105,11 +109,11 @@ async function tastieraDi(lista) {
 
 async function mostraLista(env, chat) {
   const tutte = await notizie(env);
-  let lista = delGiorno(tutte), intestazione = "📰 Le ultime notizie (ultime 24 ore)";
+  let lista = delGiorno(tutte), intestazione = "📰 Le ultime notizie (ultime 24 ore) · 💬 = parole dei protagonisti, in cima";
   if (!lista.length) { lista = piuRecentiPrima(tutte); intestazione = "📰 Niente di nuovo nelle ultime 24 ore: ecco le più recenti"; }
-  lista = lista.slice(0, QUANTE);
+  lista = citazioniPrima(lista).slice(0, QUANTE);
   if (!lista.length) { await rispondi(env, chat, "Non trovo notizie al momento. Riprova tra poco."); return; }
-  const righe = lista.map((a, i) => `${i + 1}. [${a.serie}] ${senzaPrefisso(a.titolo).slice(0, 90)} (${pulito(a.fonte)})\n   ▶ /notizia_${primaParola(a) || "x"}`);
+  const righe = lista.map((a, i) => `${i + 1}. ${èCitazione(a) ? "💬 " : ""}[${a.serie}] ${senzaPrefisso(a.titolo).slice(0, 90)} (${pulito(a.fonte)})\n   ▶ /notizia_${primaParola(a) || "x"}`);
   const PEZZO = 8;   // notizie per messaggio (Telegram taglia i messaggi lunghi)
   for (let i = 0; i < righe.length; i += PEZZO) {
     const primo = i === 0, ultimo = i + PEZZO >= righe.length;
@@ -130,7 +134,7 @@ async function videoDa(env, chat, arg) {
   const lista = trovate.slice(0, 5);
   await tg(env, "sendMessage", {
     chat_id: chat,
-    text: `Ci sono più notizie con «${norm(arg).split(" ")[0]}». Tocca il numero giusto:\n\n${lista.map((a, i) => `${i + 1}. [${a.serie}] ${senzaPrefisso(a.titolo).slice(0, 90)} (${pulito(a.fonte)})`).join("\n")}`,
+    text: `Ci sono più notizie con «${norm(arg).split(" ")[0]}». Tocca il numero giusto:\n\n${lista.map((a, i) => `${i + 1}. ${èCitazione(a) ? "💬 " : ""}[${a.serie}] ${senzaPrefisso(a.titolo).slice(0, 90)} (${pulito(a.fonte)})`).join("\n")}`,
     reply_markup: { inline_keyboard: await tastieraDi(lista) },
     disable_web_page_preview: true,
   });

@@ -31,8 +31,12 @@ FEEDS = {  # nome della fonte: (indirizzo del feed, serie)
     "GPone": ("https://www.gpone.com/rss.xml", "F1"),
     "Motorsport.com ": ("https://it.motorsport.com/rss/motogp/news/", "MotoGP"),
 }
-MAX_PER_FEED = 12
-MAX_TOTALE = 40
+MAX_PER_FEED = 30
+MAX_TOTALE = 80
+# titolo con una dichiarazione di pilota/team principal/tecnico: virgolette o verbi del "dire" (il radar le mette in evidenza)
+CITAZIONE = re.compile(r"[“”\"«»]|\b(dice|dicono|ammette|rivela|spiega|racconta|intervista|parla|svela|confessa|promette|avverte|attacca|risponde|sottolinea|difende|chiarisce|ricorda)\b", re.I)
+# sezioni di FormulaPassion che non c'entrano con F1 e MotoGP (auto, codice della strada...): si scartano
+SOLO_CORSE = ("/f1/", "/formula-1/", "/motogp/", "/moto2/", "/moto3/", "/motorsport/", "/wec/", "/formula-e/", "/podcast/")
 ESTRATTO_MAX = 200
 HEADERS = "GPOggiBot/1.0 (+https://gpoggi.it; progetto non commerciale, rassegna con link alle fonti)"
 FILE = Path(__file__).parent / "docs" / "data" / "rassegna.json"
@@ -80,13 +84,16 @@ def main():
             titolo, link = testo(e["title"]), e["link"]
             if not titolo or not link.startswith("http"):
                 continue
-            articoli.append({"titolo": titolo, "estratto": estratto(e["summary"]), "fonte": fonte.strip(), "serie": serie_da_indirizzo(link, serie), "url": link, "pubblicato": data_iso(e["data"])})
+            if fonte == "FormulaPassion" and not any(k in link.lower() for k in SOLO_CORSE) and not re.search(r"f1|motogp|gp|pilot|ferrari|mercedes|ducati", titolo, re.I):
+                continue
+            articoli.append({"titolo": titolo, "estratto": estratto(e["summary"]), "fonte": fonte.strip(), "serie": serie_da_indirizzo(link, serie), "url": link, "pubblicato": data_iso(e["data"]), "citazione": bool(CITAZIONE.search(titolo))})
         print(f"  {fonte}: {min(len(voci), MAX_PER_FEED)} articoli")
     if not articoli:
         print("Nessun feed raggiungibile: si lascia il file com'e'.")
         return
     articoli.sort(key=lambda a: a["pubblicato"] or "", reverse=True)
     articoli = articoli[:MAX_TOTALE]
+    print(f"  di cui con dichiarazioni: {sum(a['citazione'] for a in articoli)}")
     if "--prova" in sys.argv:
         for a in articoli[:5]:
             print(f"- {a['titolo']} [{a['fonte']}]\n  {a['estratto']}\n  {a['url']}")

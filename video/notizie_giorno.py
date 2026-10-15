@@ -493,16 +493,23 @@ def foglio_foto(note, uscita):
 
 
 def titolo_copertina(titolo):
-    """Titolo corto per la copertina: senza prefisso F1/MotoGP, virgolette e punto interrogativo; al massimo 6 parole e 34 caratteri, mai chiuso da una parolina (in, di, il...)."""
-    t = re.sub(r"^\s*(F1|MotoGP|Formula 1)\s*[|:–-]\s*", "", titolo)
-    t = re.sub(r"[“”\"«»?]", "", t).strip()
-    out = []
-    for w in t.split():
-        if len(out) >= 6 or len(" ".join(out + [w])) > 34:
+    """Titolo corto per la copertina: senza prefisso F1/MotoGP, virgolette e punto interrogativo. Si ferma alla prima frase («Horner: Il licenziamento in Red Bull»,
+    «Verstappen ammette di aver pensato al ritiro»); se è troppo lunga (44 caratteri, 4 righe corte) si taglia a una parola che non sia una parolina."""
+    t = re.sub(r"^\s*(F1|MotoGP|Formula 1)\s*[|:–-]\s*", "", titolo).strip()
+    # la prima frase: fino a ? ! . , ; oppure fino ai due punti se prima ci sono almeno 3 parole («Verstappen ammette di aver pensato al ritiro: «…»)
+    prima = t
+    for m in re.finditer(r"[?!.,;:]", t):
+        if m.group() == ":" and len(t[:m.start()].split()) < 3:
+            continue
+        if len(t[:m.start()].split()) >= 2:
+            prima = t[:m.start()]
             break
-        out.append(w)
-    piccole = {"il", "lo", "la", "i", "gli", "le", "un", "una", "in", "di", "a", "da", "su", "per", "con", "e", "che", "del", "della", "dei", "al", "alla", "nel", "nella"}
-    while len(out) > 2 and out[-1].lower().rstrip(",:") in piccole:
+    out = re.sub(r"[“”\"«»]", "", prima).split()
+    piccole = {"il", "lo", "la", "i", "gli", "le", "un", "una", "in", "di", "a", "da", "su", "per", "con", "e", "che", "del", "della", "dei", "al", "alla", "nel", "nella", "è", "ha", "ho", "sono", "noi", "fare", "essere"}
+    def ok(parole):
+        r = righe_titolo(" ".join(parole))
+        return len(" ".join(parole)) <= 44 and len(r) <= 4 and all(len(x) <= 14 for x in r)
+    while len(out) > 2 and (not ok(out) or out[-1].lower().rstrip(",:") in piccole):
         out.pop()
     return " ".join(out) or " ".join(t.split()[:3])
 

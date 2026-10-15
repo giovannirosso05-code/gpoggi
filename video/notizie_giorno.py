@@ -287,6 +287,50 @@ def avviso(testo):
             pass
 
 
+def righe_titolo(t, massimo=3, larghezza=13):
+    """Spezza il titolo in righe corte per la copertina (maiuscolo, niente parole tagliate)."""
+    righe, cur = [], ""
+    for w in re.sub(r"\s+", " ", t).strip().split(" "):
+        if cur and len(cur) + 1 + len(w) > larghezza:
+            righe.append(cur)
+            cur = w
+        else:
+            cur = (cur + " " + w).strip()
+    righe.append(cur)
+    if len(righe) > massimo:
+        righe = righe[:massimo - 1] + [" ".join(righe[massimo - 1:])]
+    return righe
+
+
+def crea_copertina(spec, serie, uscita):
+    """Copertina 1080x1920 come le altre di GP Oggi: foto grande (ritratto o ESPN) e titolo su righe. None se non c'è una foto."""
+    import copertina as C
+    sc_f = next((sc for sc in spec["scene"] if sc.get("foto_file") and not sc.get("hook")), None)
+    sfondo = sc_f["foto_file"] if sc_f else None
+    cred = "Foto: ESPN"
+    if not sfondo:
+        url = next((sc["foto_url"] for sc in spec["scene"] if sc.get("foto_url")), None)
+        sfondo = NS.foto_da_url(url)[0] if url else None
+    else:
+        cred = sc_f.get("credito") or "Foto: Wikimedia Commons"
+    if not sfondo:
+        return None
+    titolo = next((sc.get("hook_titolo") for sc in spec["scene"] if sc.get("hook_titolo")), None) or spec.get("titolo_breve", "")
+    html_c = C.html_copertina("x", righe_titolo(titolo), serie, None, "center 12%", str(sfondo), 1000, cred, 130)
+    asyncio.run(C.scatta(html_c, str(uscita)))
+    return uscita
+
+
+def telegram_foto(percorso, didascalia):
+    tok = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN")
+    chat = os.environ.get("TELEGRAM_CANALE") or os.environ.get("TELEGRAM_CHAT_ID") or "559225883"
+    if not tok:
+        return
+    with open(percorso, "rb") as f:
+        requests.post(f"https://api.telegram.org/bot{tok}/sendPhoto", data={"chat_id": chat, "caption": didascalia[:1000], "disable_notification": "true"},
+                      files={"photo": f}, timeout=120, verify=CA).raise_for_status()
+
+
 def telegram(video, didascalia, social):
     tok = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN")
     chat = os.environ.get("TELEGRAM_CANALE") or os.environ.get("TELEGRAM_CHAT_ID") or "559225883"
@@ -339,6 +383,12 @@ def main():
             asyncio.run(NS.genera(spec, uscita))
             did = f"📰 {spec['titolo_breve']} · Fonte: {art['fonte'].strip()}\n{art['url'].split('?')[0]}"
             if not a.prova:
+                try:   # copertina (foto grande + titolo): se non riesce il video parte lo stesso
+                    cop = crea_copertina(spec, art["serie"], Path(f"/tmp/notizia_{k}.png"))
+                    if cop:
+                        telegram_foto(cop, "🖼 Copertina")
+                except (Exception, SystemExit) as e:
+                    print(f"  copertina non riuscita ({type(e).__name__}: {e})")
                 telegram(uscita, did, social)
             stato.setdefault("storie", []).insert(0, art["url"])
             stato["storie"] = simili(art, json.load(open(DATA / "rassegna.json"))["articoli"]) + stato["storie"]

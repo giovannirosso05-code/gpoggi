@@ -195,6 +195,7 @@ export function renderFooter() {
           <li><a href="motogp.html">MotoGP</a></li>
           <li><a href="motogp-archivio.html">Archivio MotoGP</a></li>
           <li><a href="orari-gp.html">Orari dei GP</a></li>
+          <li><a href="pagelle-gp.html">Pagelle di ogni GP</a></li>
           <li><a href="calendario.html">Aggiungi al calendario</a></li>
           <li><a href="notizie.html">Notizie</a></li>
           <li><a href="confronto.html">Confronto piloti</a></li>

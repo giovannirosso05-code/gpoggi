@@ -166,10 +166,12 @@ def pagina_gp(ev, serie):
     if p:
         corpo += [f'    <h2>Podio del {esc(nome)} {anno}</h2>',
                   '    <ol>' + "".join(f'<li><strong>{esc(r["nome"])}</strong> ({esc(r["team"])}){(", " + esc(r["tempo"])) if r.get("tempo") and r["pos"] == 1 else ""}</li>' for r in p) + '</ol>']
+    pag = f"pagella-{serie}-{paese_chiave(ev['nome'])}-{anno}.html"
+    link_pag = pag if (DOCS / pag).exists() else "pagella.html"   # la pagella di quel GP, se c'è già (si genera prima, vedi update-data.yml)
     if serie == "f1":
-        corpo.append(f'    <p><a class="accent" href="gara.html?id={ev["id"]}">Risultati completi e programma del weekend →</a> · <a class="accent" href="pagella.html">Pagella dei piloti →</a> · <a class="accent" href="orari-gp.html">Tutti gli orari →</a></p>')
+        corpo.append(f'    <p><a class="accent" href="gara.html?id={ev["id"]}">Risultati completi e programma del weekend →</a> · <a class="accent" href="{link_pag}">Pagella dei piloti →</a> · <a class="accent" href="orari-gp.html">Tutti gli orari →</a></p>')
     else:
-        corpo.append('    <p><a class="accent" href="motogp.html">Classifica e risultati MotoGP →</a> · <a class="accent" href="pagella.html">Pagella dei piloti →</a> · <a class="accent" href="orari-gp.html">Tutti gli orari →</a></p>')
+        corpo.append(f'    <p><a class="accent" href="motogp.html">Classifica e risultati MotoGP →</a> · <a class="accent" href="{link_pag}">Pagella dei piloti →</a> · <a class="accent" href="orari-gp.html">Tutti gli orari →</a></p>')
     ld = {"@context": "https://schema.org", "@type": "SportsEvent", "name": f"{nome} {anno} ({etichetta})", "startDate": sess[0]["inizio"], "endDate": gara.get("fine") or gara["inizio"],
           "location": {"@type": "Place", "name": luogo or localita, "address": ev.get("paese") or localita}, "sport": "Motorsport", "url": f"{SITO}/{file}"}
     h1 = f"{etichetta} {nome} {anno}: orari italiani"

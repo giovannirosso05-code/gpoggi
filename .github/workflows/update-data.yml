@@ -50,6 +50,8 @@ jobs:
         run: if [ "$(date +%u)" = "1" ]; then python build_archivio.py && python build_motogp_archivio.py; fi
       - name: Calendari scaricabili
         run: python build_calendari.py
+      - name: Pagine statiche con la pagella di ogni weekend (per Google e per le IA)
+        run: python build_pagine_pagella.py || true
       - name: Pagine statiche con gli orari italiani di ogni GP (per Google)
         run: python build_pagine_gp.py || true
       - name: Pubblica la gara sul canale Telegram (una sola volta per gara)
@@ -78,7 +80,7 @@ jobs:
           git config user.name "gpoggi-bot"
           git config user.email "actions@users.noreply.github.com"
           # ogni percorso si aggiunge da solo: se uno manca (per esempio il file dei sondaggi la prima volta) gli altri entrano comunque
-          git add docs/data docs/calendario docs/img/foto docs/img/storici docs/orari-*.html docs/sitemap.xml
+          git add docs/data docs/calendario docs/img/foto docs/img/storici docs/orari-*.html docs/pagella-*.html docs/pagelle-gp.html docs/sitemap.xml
           for f in foto_storici_cache.json foto_cache.json foto_motogp_cache.json foto_motogp_cache_v2.json foto_circuiti_moto_cache.json schede_cache.json telegram_stato.json telegram_voti.json video/scelta.json; do
             [ -e "$f" ] && git add "$f" || true
           done

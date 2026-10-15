@@ -1,6 +1,33 @@
 {
- "generato_il": "2026-10-15T15:31:10+00:00",
+ "generato_il": "2026-10-15T16:09:14+00:00",
  "articoli": [
+  {
+   "titolo": "Kubica ricorda il suo ritorno: “Schierarmi in griglia è stata la vittoria più grande”",
+   "estratto": "Robert Kubica ricorda l’anno del suo ritorno in Formula 1 con Williams, condizionato dalle gravi difficoltà del team",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/kubica-ricorda-suo-ritorno-schierarmi-griglia-vittoria-piu-grande",
+   "pubblicato": "2026-10-15T16:00:00+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "F1 | Haas, Komatsu rivela: \"Senza il test di Portimao forse non avremmo scelto Camara\"",
+   "estratto": "Il futuro di Rafael Camara in Formula 1 si è deciso nell'arco di due giornate sul circuito di Portimao. È questo il retroscena più significativo emerso dalle parole di Ayao Komatsu, team principal…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-haas-komatsu-rivela-senza-il-test-di-portimao-forse-non-avremmo-scelto-camara/10865446/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-15T15:57:34+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "F1 | Qatar e Abu Dhabi non si fermano nonostante i missili in Arabia Saudita, ma Imola è all'erta",
+   "estratto": "Primo: i GP del Qatar e di Abu Dhabi sono confermati. Secondo: Imola prosegue l’allestimento dell’Enzo e Dino Ferrari affinché, eventualmente, possa essere pronto ad accogliere l’ultimo appuntamento…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-qatar-e-adu-dhabi-non-si-fermano-nonostante-i-missili-in-arabia-saudita-ma-imola-e-allerta/10865437/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-15T15:31:55+00:00",
+   "citazione": false
+  },
   {
    "titolo": "MotoGP | Rivola risponde alle preoccupazioni sulla velocità delle 850cc: \"Quel che è fatto è fatto\"",
    "estratto": "I responsabili MotoGP di Aprilia e Ducati mantengono una linea diplomatica, seppur poco convincente, di fronte alle suggestioni secondo cui il costoso passaggio ai motori 850cc per il 2027 avrebbe…",
@@ -160,15 +187,6 @@
    "fonte": "FormulaPassion",
    "serie": "F1",
    "url": "https://www.formulapassion.it/f1/f1-news/russell-demolito-antonelli-herbert-deve-rialzarsi-mercedes-2027-anche-se-f1-non-e-sempre-giusta",
-   "pubblicato": "2026-10-15T06:00:00+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "Verstappen inarrestabile, Antonelli ammette: “Se in classifica fosse più vicino sarebbe preoccupante”",
-   "estratto": "L'italiano ha riconosciuto che una rimonta di Verstappen in campionato come quella del 2025 lo preoccuperebbe molto",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/verstappen-inarrestabile-antonelli-ammette-se-in-classifica-fosse-piu-vicino-sarebbe-preoccupante",
    "pubblicato": "2026-10-15T06:00:00+00:00",
    "citazione": true
   },
@@ -506,24 +524,6 @@
    "citazione": true
   },
   {
-   "titolo": "F1 | Leclerc non ha dubbi: \"Ho fatto bene a non rischiare con Max, altrimenti saremmo finiti a muro\"",
-   "estratto": "Charles Leclerc tiene alto l'onore della Ferrari portando a casa il secondo posto al Gran Premio di Singapore dopo una gara con il coltello tra i denti. Il pilota monegasco, però, ha anche avuto modo…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-leclerc-non-ha-dubbi-ho-fatto-bene-a-non-rischiare-con-max-altrimenti-saremmo-finiti-a-muro/10864367/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T15:02:47+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "F1 | Vasseur: \"Il pit era per entrambi, ma Lewis ha mancato l'entrata. Dovremo parlarci. Oggi la prestazione c'era\"",
-   "estratto": "La Ferrari torna a casa dalla tripletta asiatica con il doppio podio nella Sprint di Singapore e il podio nella gara lunga firmato da Charles Leclerc, sempre dietro l'imprendibile accoppiata Max…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-vasseur-il-pit-era-per-entrambi-ma-lewis-ha-mancato-lentrata-dovremo-parlarci-oggi-la-prestazion/10864348/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T14:38:53+00:00",
-   "citazione": true
-  },
-  {
    "titolo": "MotoGP | Bagnaia cade a Mandalika: \"Dovevo tenere su la pressione della gomma davanti e ho chiesto troppo alla moto\"",
    "estratto": "Il weekend di Mandalika era parso un passettino nella direzione giusta per Pecco Bagnaia, che finalmente era riuscito a centrare l'accesso diretto alla Q2 e nella Sprint aveva chiuso ottavo…",
    "fonte": "Motorsport.com",
@@ -641,6 +641,15 @@
    "citazione": false
   },
   {
+   "titolo": "Petrucci: “Go Eleven should let me do a test, I give more in non-factory teams!”",
+   "estratto": "“I’ve always been supportive when I’ve seen commitment. This year I’ve often gone above and beyond, only to be met with crashes and poor results. Yamaha? I’m pleased they approached me about…",
+   "fonte": "GPone",
+   "serie": "F1",
+   "url": "https://www.gpone.com/en/2026/10/15/wsbk/petrucci-go-eleven-should-let-me-do-a-test-i-give-more-in-non-factory-teams.html",
+   "pubblicato": null,
+   "citazione": true
+  },
+  {
    "titolo": "Ducati Panigale V4 2027: the benchmark evolves once again",
    "estratto": "Power rises to 218 hp and the electronics become even more sophisticated. Here is the new red Superbike... and more besides!",
    "fonte": "GPone",
@@ -684,15 +693,6 @@
    "url": "https://www.gpone.com/en/2026/10/15/civ/delbianco-at-a-crossroads-go-eleven-i-have-to-think-about-what-a-30-year-old-needs.html",
    "pubblicato": null,
    "citazione": true
-  },
-  {
-   "titolo": "SUV compatto o city car? Quale scegliere per città, parcheggi e viaggi fuori porta",
-   "estratto": "Il criterio, alla fine, sta in una domanda che puoi porti stasera: quante volte al mese esci dalla città",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/15/auto-news/suv-compatto-o-city-car-quale-scegliere-per-citta-parcheggi-e-viaggi-fuori-porta.html",
-   "pubblicato": null,
-   "citazione": false
   },
   {
    "titolo": "Trackhouse Racing welcomes a new minority shareholder: 1936.",

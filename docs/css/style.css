@@ -1061,7 +1061,7 @@ td .giu { color: #e8352f; font-weight: 700; font-size: 12px; }
 .ag-includi { display: block; font-size: 12px; margin-top: 6px; }
 
 /* Pronostico del podio in rosso, punti e classifica */
-.gioco-card[data-gioco="pronostico"] { background: #e8352f; color: #fff; border-color: #b9211c; box-shadow: 0 3px 0 #9d1f1a; }
+.gioco-card[data-gioco="pronostico"] { background: #1f5fd1; color: #fff; border-color: #174aa3; box-shadow: 0 3px 0 #123a85; }
 .gioco-card[data-gioco="pronostico"] span, .gioco-card[data-gioco="pronostico"] small, .gioco-card[data-gioco="pronostico"] b { color: #fff; }
 .pron-testa { background: #e8352f; color: #fff; border-radius: 10px; padding: 10px 14px; }
 .pron-testa b { color: #fff; }
@@ -1500,3 +1500,10 @@ html { scroll-behavior: smooth; }
 @keyframes sfida-pulsa { 0% { box-shadow: 0 0 0 0 rgba(255, 212, 0, .75); } 70% { box-shadow: 0 0 0 16px rgba(255, 212, 0, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 212, 0, 0); } }
 @media (prefers-reduced-motion: reduce) { .sfida-bandiera, .sfida-nuova, .sfida-home .quiz-avanti { animation: none; } }
 @media (max-width: 600px) { .sfida-home { padding: 28px 18px 20px; } .sfida-home-titolo { font-size: 28px; } .sfida-home .quiz-avanti { flex: 1 1 100%; } }
+
+/* Giochi: la sfida del giorno ha la stessa grafica del riquadro in Home (rosso acceso e bandiera a scacchi) */
+.gioco-card[data-gioco="sfida"] { position: relative; overflow: hidden; color: #fff; border: 0; padding-top: 34px; background: linear-gradient(115deg, #e8352f 0%, #b3151a 58%, #2a0d12 100%); box-shadow: 0 8px 26px rgba(232, 53, 47, .38); }
+.gioco-card[data-gioco="sfida"]::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 12px; background: repeating-conic-gradient(#fff 0 25%, #111 0 50%) 0 0 / 24px 24px; animation: sfida-scorri 1.4s linear infinite; }
+.gioco-card[data-gioco="sfida"] b, .gioco-card[data-gioco="sfida"] span, .gioco-card[data-gioco="sfida"] small { color: #fff; }
+.gioco-card[data-gioco="sfida"] b { text-shadow: 0 2px 0 rgba(0, 0, 0, .25); }
+@media (prefers-reduced-motion: reduce) { .gioco-card[data-gioco="sfida"]::before { animation: none; } }

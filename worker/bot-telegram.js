@@ -24,7 +24,7 @@ const REPO_BASE = "giovannirosso05-code/gpoggi";
 const CHAT_BASE = "559225883";          // la tua chat privata (la stessa del bot di MMA Oggi: un id utente vale per tutti i bot)
 const BOT_BASE = "Gpoggibot";
 const RAMO = "main";
-const VERSIONE = "radar-citazioni-1 live-1 gara-1 2026-10-15";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
+const VERSIONE = "radar-diretto-1 live-1 gara-1 2026-10-15";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
 const ETA_MASSIMA_SECONDI = 600;        // un comando più vecchio di 10 minuti non si esegue (Telegram può ripetere gli invii dopo un guasto)
 
 // comando -> [file del workflow, input del workflow o null, descrizione]
@@ -113,13 +113,14 @@ async function mostraLista(env, chat) {
   if (!lista.length) { lista = piuRecentiPrima(tutte); intestazione = "📰 Niente di nuovo nelle ultime 24 ore: ecco le più recenti"; }
   lista = citazioniPrima(lista).slice(0, QUANTE);
   if (!lista.length) { await rispondi(env, chat, "Non trovo notizie al momento. Riprova tra poco."); return; }
-  const righe = lista.map((a, i) => `${i + 1}. ${èCitazione(a) ? "💬 " : ""}[${a.serie}] ${senzaPrefisso(a.titolo).slice(0, 90)} (${pulito(a.fonte)})\n   ▶ /notizia_${primaParola(a) || "x"}`);
+  const cod = await Promise.all(lista.map((a) => codice(a.url)));
+  const righe = lista.map((a, i) => `${i + 1}. ${èCitazione(a) ? "💬 " : ""}[${a.serie}] ${senzaPrefisso(a.titolo).slice(0, 90)} (${pulito(a.fonte)})\n   ▶ /n_${cod[i]}`);
   const PEZZO = 8;   // notizie per messaggio (Telegram taglia i messaggi lunghi)
   for (let i = 0; i < righe.length; i += PEZZO) {
     const primo = i === 0, ultimo = i + PEZZO >= righe.length;
     await tg(env, "sendMessage", {
       chat_id: chat,
-      text: `${primo ? intestazione + "\n\n" : ""}${righe.slice(i, i + PEZZO).join("\n\n")}${ultimo ? `\n\nPer il video tocca il comando sotto la notizia, oppure scrivi /notizia e la prima parola (per esempio /notizia ${primaParola(lista[0]) || "norris"}). Puoi anche toccare un numero qui sotto.` : ""}`,
+      text: `${primo ? intestazione + "\n\n" : ""}${righe.slice(i, i + PEZZO).join("\n\n")}${ultimo ? `\n\nPer il video tocca il comando ▶ sotto la notizia: parte subito, proprio su quella. Oppure scrivi /notizia e una parola (per esempio /notizia ${primaParola(lista[0]) || "norris"}).` : ""}`,
       ...(ultimo ? { reply_markup: { inline_keyboard: await tastieraDi(lista) } } : {}),
       disable_web_page_preview: true,
     });
@@ -130,14 +131,23 @@ async function videoDa(env, chat, arg) {
   if (!norm(arg)) { await rispondi(env, chat, "Scrivi /notizia e la prima parola della notizia, per esempio /notizia norris. Per vedere le notizie scrivi /radar."); return; }
   const trovate = cerca(await notizie(env), arg);
   if (!trovate.length) { await rispondi(env, chat, `Non trovo nessuna notizia con «${norm(arg).split(" ")[0]}». Scrivi /radar per vedere l'elenco.`); return; }
-  if (trovate.length === 1) { await lanciaNotizia(env, chat, trovate[0]); return; }
-  const lista = trovate.slice(0, 5);
-  await tg(env, "sendMessage", {
-    chat_id: chat,
-    text: `Ci sono più notizie con «${norm(arg).split(" ")[0]}». Tocca il numero giusto:\n\n${lista.map((a, i) => `${i + 1}. ${èCitazione(a) ? "💬 " : ""}[${a.serie}] ${senzaPrefisso(a.titolo).slice(0, 90)} (${pulito(a.fonte)})`).join("\n")}`,
-    reply_markup: { inline_keyboard: await tastieraDi(lista) },
-    disable_web_page_preview: true,
-  });
+  // più notizie con la stessa parola: parte subito la prima (la più recente) e le altre si possono lanciare col loro comando
+  await lanciaNotizia(env, chat, trovate[0]);
+  const altre = trovate.slice(1, 5);
+  if (altre.length) {
+    const cod = await Promise.all(altre.map((a) => codice(a.url)));
+    await tg(env, "sendMessage", {
+      chat_id: chat,
+      text: `Altre notizie con «${norm(arg).split(" ")[0]}» (tocca il comando per averne il video):\n\n${altre.map((a, i) => `${èCitazione(a) ? "💬 " : ""}[${a.serie}] ${senzaPrefisso(a.titolo).slice(0, 90)} (${pulito(a.fonte)})\n▶ /n_${cod[i]}`).join("\n\n")}`,
+      disable_web_page_preview: true,
+    });
+  }
+}
+
+// /n_<codice>: video proprio su quella notizia (il codice viene da /radar)
+async function videoDaCodice(env, chat, cod) {
+  for (const a of await notizie(env)) if ((await codice(a.url)) === cod) { await lanciaNotizia(env, chat, a); return; }
+  await rispondi(env, chat, "Quella notizia non è più nella lista. Scrivi di nuovo /radar.");
 }
 
 // confronto che non si ferma al primo carattere diverso (la parola segreta non si indovina dai tempi)
@@ -450,6 +460,8 @@ export default {
       if (ses === "/sessione") { await comandoSessione(env, msg.chat.id); return; }
       if (ses === "/sessionerisultati") { await comandoRisultati(env, msg.chat.id); return; }
       if (comando === "/radar" || comando === "/notizie" || comando === "/scegli") { await mostraLista(env, msg.chat.id); return; }
+      const nc = comando.match(/^\/n_([0-9a-f]{10})$/);
+      if (nc) { await videoDaCodice(env, msg.chat.id, nc[1]); return; }
       const nv = comando.match(/^\/(?:notizia|video)(?:_(.*))?$/);   // /notizia norris, /notizia_norris (toccabile); /video resta come alias
       if (nv) {
         await videoDa(env, msg.chat.id, nv[1] !== undefined ? nv[1].replace(/_/g, " ") : t.split(/\s+/).slice(1).join(" "));

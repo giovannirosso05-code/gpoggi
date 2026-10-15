@@ -307,20 +307,167 @@ def crea_copertina(spec, serie, uscita):
     import copertina as C
     titolo = next((sc.get("hook_titolo") for sc in spec["scene"] if sc.get("hook_titolo")), None) or spec.get("titolo_breve", "")
     righe = righe_titolo(titolo)
-    pilota = next((sc["foto"] for sc in spec["scene"] if sc.get("foto")), None)   # le scene dei racconti indicano il pilota col nome
-    if pilota:
-        html_c = C.html_copertina(pilota, righe, serie, None, "center 12%", None, 1000)   # foto libera del sito, credito Wikimedia scritto da copertina.py
+    gancio = spec["scene"][0]   # la copertina mostra ciò che mostra il gancio (volto del pilota citato, oppure foto ESPN della notizia)
+    if gancio.get("foto_url"):
+        html_c = C.html_copertina("x", righe, serie, None, "center 12%", str(NS.foto_da_url(gancio["foto_url"])[0]), 1000, "Foto: ESPN", 130)
+    elif gancio.get("foto_file"):
+        html_c = C.html_copertina("x", righe, serie, None, "center 12%", str(gancio["foto_file"]), 1000, gancio.get("credito") or "Foto: ESPN", 130)
+    elif gancio.get("foto"):
+        html_c = C.html_copertina(gancio["foto"], righe, serie, None, "center 12%", None, 1000)   # foto libera del sito, credito Wikimedia scritto da copertina.py
     else:
-        sc_f = next((sc for sc in spec["scene"] if sc.get("foto_file") and not sc.get("hook")), None)
-        if sc_f:
-            sfondo, cred = sc_f["foto_file"], sc_f.get("credito") or "Foto: Wikimedia Commons"
-        else:
-            url = next((sc["foto_url"] for sc in spec["scene"] if sc.get("foto_url")), None)
-            if not url:
-                raise RuntimeError("nessuna foto per la copertina")
-            sfondo, cred = NS.foto_da_url(url)[0], "Foto: ESPN"
-        html_c = C.html_copertina("x", righe, serie, None, "center 12%", str(sfondo), 1000, cred, 130)
+        raise RuntimeError("nessuna foto per la copertina")
     asyncio.run(C.scatta(html_c, str(uscita)))
+    return uscita
+
+
+STOP = set("della delle dello degli dopo come cosa sono viene perche quindi anche essere stato stata questo questa quello quella sulla nelle nello nella hanno dalla dalle fatto fare molto ancora altro altri altre loro suo sua suoi sue tutti tutto verso sotto prima quando dove mentre contro senza tra fra gran premio gara gare".split())
+
+
+def espn_pool():
+    """[(titolo normalizzato, indirizzo foto 1296 px)] dalle notizie ESPN sulla F1; vuoto se ESPN non risponde."""
+    try:
+        r = requests.get("https://site.api.espn.com/apis/site/v2/sports/racing/f1/news?limit=50", headers=UA, timeout=30, verify=CA)
+        r.raise_for_status()
+    except requests.RequestException as e:
+        print("  foto ESPN non disponibili:", e)
+        return []
+    out, viste = [], set()
+    for a in r.json().get("articles", []):
+        t = norm(a.get("headline", ""))
+        if any(k in t for k in ("kardashian", "nba", "nfl", "owners")):
+            continue
+        for i in a.get("images", []):
+            u = i.get("url", "")
+            if i.get("width") == 1296 and "/photo/" in u and u not in viste:
+                viste.add(u)
+                out.append((t, u))
+                TITOLI_ESPN[u] = a.get("headline", "")
+                break
+    return out
+
+
+TITOLI_ESPN = {}   # indirizzo foto -> titolo originale dell'articolo ESPN (si mostra nel foglio di controllo su Telegram)
+
+
+def foto_pertinenti(spec, art, nomi, testo_art=""):
+    """Ogni scena mostra ciò di cui parla: il pilota se il suo cognome è nel testo della scena (F1: ritratto ESPN), altrimenti una foto ESPN
+    scelta sul titolo e sul testo (mai volti di piloti a caso: la notizia può riguardare un team principal, un team, una regola)."""
+    serie = art["serie"]
+    cogn = {n: norm(n).split()[-1] for n, sr in nomi.items() if sr == serie and len(norm(n).split()[-1]) > 3}
+    tutti_cogn = {norm(n).split()[-1] for n in nomi if len(norm(n).split()[-1]) > 3}
+    pool = espn_pool() if serie == "F1" else []
+    usate = set()
+    colori = {p["nome"]: p.get("colore") for p in json.load(open(DATA / "roster.json"))}
+
+    def citato(testo):
+        parole = norm(testo).split()
+        trovati = [(parole.index(c), n) for n, c in cogn.items() if c in parole]
+        return min(trovati)[1] if trovati else None
+
+    tok_titolo = {w for w in norm(art["titolo"]).split() if len(w) > 3 and w not in STOP}
+    # solo foto ESPN il cui titolo parla di QUESTA notizia (parole del titolo in comune); mai foto a caso
+    della_notizia = [u for pt, _, u in sorted(((len(tok_titolo & set(t.split())), -i, u) for i, (t, u) in enumerate(pool)), reverse=True) if pt > 0]
+    # pilota di ripiego: quello nel titolo, altrimenti il più nominato nell'articolo
+    parole_art = norm(art["titolo"] + " " + testo_art).split()
+    conta = sorted(((parole_art.count(c), n) for n, c in cogn.items() if parole_art.count(c) > 0), reverse=True)
+    in_titolo = [n for n, c in cogn.items() if c in norm(art["titolo"]).split()]
+    ripiego = in_titolo[0] if in_titolo else (conta[0][1] if conta else None)
+    giro = [0]
+    note = []
+
+    def url_scena():
+        nuove = [u for u in della_notizia if u not in usate]
+        if nuove:
+            u = nuove[0]
+            usate.add(u)
+        elif della_notizia:   # finite le foto giuste si riprendono dall'inizio: meglio la stessa foto giusta che un volto a caso
+            u = della_notizia[giro[0] % len(della_notizia)]
+            giro[0] += 1
+        else:
+            return None
+        return u
+
+    def ritratto(n):
+        try:
+            import ritratti_espn as RE
+            col = colori.get(n) or "e8352f"
+            return str(RE.ritratto(n, tuple(int(col[i:i + 2], 16) for i in (0, 2, 4))))
+        except (Exception, SystemExit) as e:
+            print(f"  ritratto ESPN di {n} non disponibile ({type(e).__name__}): uso la foto libera")
+            return None
+
+    def con_pilota(sc, n):
+        sc["foto"] = n
+        sc["nome"] = n
+        if serie == "F1":
+            rit = ritratto(n)
+            if rit:
+                sc["foto_file"] = rit
+                sc["credito"] = "Foto: ESPN"
+        note.append((sc.get("testo", ""), "pilota", n, sc.get("foto_file")))
+
+    for sc in spec["scene"]:
+        n = citato(sc.get("testo", ""))
+        if n:
+            con_pilota(sc, n)
+            continue
+        u = url_scena() if serie == "F1" else None
+        if u:
+            for k in ("foto", "nome", "foto_file", "credito"):
+                sc.pop(k, None)
+            sc["foto_url"] = u
+            note.append((sc.get("testo", ""), "espn", TITOLI_ESPN.get(u, ""), u))
+        elif ripiego:
+            con_pilota(sc, ripiego)
+        else:
+            raise RuntimeError("nessuna foto pertinente a questa notizia: meglio nessun video che un video con foto a caso")
+    fin = spec["finale"]
+    ultima = spec["scene"][-1]
+    for k in ("foto", "foto_url", "foto_file"):
+        fin.pop(k, None)
+    if ultima.get("foto_url"):
+        fin["foto_url"] = ultima["foto_url"]
+    else:
+        fin["foto"] = ultima.get("foto")
+        if ultima.get("foto_file"):
+            fin["foto_file"] = ultima["foto_file"]
+    return spec, note
+
+
+def foglio_foto(note, uscita):
+    """Un'immagine con tutte le foto usate nel video, una per scena, con il titolo ESPN o il nome del pilota: serve a controllarle prima di postare."""
+    from PIL import Image, ImageDraw, ImageFont
+    import notizia_sub as N
+    W_, H_, TXT = 440, 248, 64
+    cols = 3
+    righe = (len(note) + cols - 1) // cols
+    foglio = Image.new("RGB", (W_ * cols, (H_ + TXT) * righe), "white")
+    d = ImageDraw.Draw(foglio)
+    try:
+        font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 15)
+    except OSError:
+        font = ImageFont.load_default()
+    for k, (testo, tipo, nome, extra) in enumerate(note):
+        x, y = (k % cols) * W_, (k // cols) * (H_ + TXT)
+        try:
+            if tipo == "espn":
+                import io
+                im = Image.open(io.BytesIO(requests.get(extra, headers=UA, timeout=40, verify=CA).content))
+                etichetta = f"ESPN: {nome}"
+            elif extra:
+                im = Image.open(extra)
+                etichetta = f"Ritratto ESPN: {nome}"
+            else:
+                im = Image.open(N.file_foto(N.trova_foto(nome)))
+                etichetta = f"Foto libera: {nome}"
+            im = im.convert("RGB")
+            im.thumbnail((W_ - 6, H_ - 6))
+            foglio.paste(im, (x + 3 + (W_ - 6 - im.width) // 2, y + 3))
+        except Exception as e:
+            etichetta = f"(foto non mostrabile: {type(e).__name__})"
+        d.text((x + 6, y + H_ + 2), (f"{k + 1}. {etichetta}"[:46] + ("…" if len(etichetta) > 42 else "")), fill="black", font=font)
+        d.text((x + 6, y + H_ + 22), f"«{testo[:40]}…»", fill=(90, 90, 90), font=font)
+    foglio.save(uscita)
     return uscita
 
 
@@ -383,6 +530,12 @@ def main():
             if len(testo) < 500:
                 raise RuntimeError("articolo illeggibile o troppo corto")
             spec, social = racconta(art, testo, nomi, predef[art["serie"]], a.risposta_modello)
+            spec, note_foto = foto_pertinenti(spec, art, nomi, testo)
+            if not a.prova:   # le foto usate, una per scena, sul Telegram: si controllano prima di postare
+                try:
+                    telegram_foto(foglio_foto(note_foto, Path(f"/tmp/foto_{k}.png")), "🔍 Foto usate nel video, scena per scena (ESPN e ritratti). Controlla che c'entrino con la notizia.")
+                except (Exception, SystemExit) as e:
+                    print(f"  foglio foto non riuscito ({type(e).__name__}: {e})")
             asyncio.run(NS.genera(spec, uscita))
             did = f"📰 {spec['titolo_breve']} · Fonte: {art['fonte'].strip()}\n{art['url'].split('?')[0]}"
             if not a.prova:

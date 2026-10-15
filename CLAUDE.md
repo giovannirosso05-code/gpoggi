@@ -80,3 +80,7 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 - Le chiusure dei voti si alternano ("Voto sette", "Per lui oggi sette e mezzo", "Si prende sei", "Gli diamo otto"): non ripetere sempre "voto".
 - Non essere ridondante: niente frasi che ripetono posizioni o griglia già dette, niente avviso "a scopo divertente" a voce (resta scritto in didascalia, sito e schermata finale), niente "in fondo" per il migliore. Nelle tabelle niente numeri di posizione (sembrerebbe la classifica del mondiale) e si parla sempre di "pagella", mai di "classifica".
 - Velocità della voce nei video pagella: +31% (5% più lenta di prima, su richiesta del proprietario).
+
+## Foto dei video notizia: solo pertinenti, sempre controllabili
+- Ogni scena mostra ciò di cui parla il suo testo: il pilota se il cognome è nella scena (F1: ritratto ESPN), altrimenti una foto ESPN il cui titolo ha parole del titolo della notizia, altrimenti il pilota più nominato nell'articolo. Mai volti a caso (un video su Horner con le foto di Sainz e Albon era sbagliato). Se non c'è nessuna foto pertinente il video non si fa (e arriva l'avviso).
+- Prima della copertina e del video, su Telegram arriva un foglio con tutte le foto usate, una per scena, col titolo ESPN o il nome del pilota: si controlla prima di postare.

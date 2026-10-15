@@ -195,7 +195,7 @@ def costruisci(scelte, nomi, oggi):
 
 
 def crea_copertina(spec, data, uscita):
-    """Copertina 1080x1920: ritratto o foto ESPN a tutto schermo e «RASSEGNA STAMPA» con la data, come le altre copertine di GP Oggi."""
+    """Copertina F1 1080x1920: ritratto o foto ESPN a tutto schermo e «RASSEGNA STAMPA» con la data, come le altre copertine di GP Oggi."""
     import copertina as C
     ritratti = [sc for sc in spec["scene"] if sc.get("foto_file") and sc.get("foto") not in (None, "ESPN") and not sc.get("hook")]
     sfondo = next((sc["foto_file"] for sc in ritratti if sc.get("foto") != "Lewis Hamilton"), ritratti[0]["foto_file"] if ritratti else None)
@@ -205,6 +205,22 @@ def crea_copertina(spec, data, uscita):
     if not sfondo:
         return None
     html = C.html_copertina("x", ["RASSEGNA", "STAMPA", data.upper()], "F1", None, "center 12%", sfondo, 1040, "Foto: ESPN")
+    asyncio.run(C.scatta(html, str(uscita)))
+    return uscita
+
+
+def crea_copertina_moto(scelte, nomi, data, uscita):
+    """Copertina MotoGP (blu) con un pilota di MotoGP: quello citato nelle notizie MotoGP di oggi, altrimenti uno a rotazione. Foto libera del sito."""
+    import copertina as C
+    citati = []
+    for a in scelte:
+        if a["serie"] == "MotoGP":
+            n = NG.pilota_citato(pulisci(a["titolo"]), nomi, "MotoGP")
+            if n and n not in citati:
+                citati.append(n)
+    rot = [n for n in NG.ROTAZIONE["MotoGP"] if n in nomi]
+    pilota = citati[0] if citati else rot[datetime.now().toordinal() % len(rot)]
+    html = C.html_copertina(pilota, ["RASSEGNA", "STAMPA", data.upper()], "MotoGP", None, "center 12%")
     asyncio.run(C.scatta(html, str(uscita)))
     return uscita
 
@@ -245,14 +261,18 @@ def main():
         uscita = Path("/tmp/rassegna_sera.mp4")
         asyncio.run(NS.genera(spec, uscita))
         data = f"{adesso.day} {MESI[adesso.month - 1]}"
-        copertina = None
-        try:
-            copertina = crea_copertina(spec, data, Path("/tmp/rassegna_copertina.png"))
-        except Exception as e:
-            print(f"  copertina non riuscita ({type(e).__name__}: {e}): il video parte lo stesso")
+        copertine = []   # una copertina con un pilota di F1 e una con un pilota di MotoGP: si sceglie quella che piace
+        for etichetta, fai in (("F1", lambda: crea_copertina(spec, data, Path("/tmp/rassegna_copertina_f1.png"))),
+                               ("MotoGP", lambda: crea_copertina_moto(scelte, nomi, data, Path("/tmp/rassegna_copertina_moto.png")))):
+            try:
+                c = fai()
+                if c:
+                    copertine.append((etichetta, c))
+            except (Exception, SystemExit) as e:
+                print(f"  copertina {etichetta} non riuscita ({type(e).__name__}: {e}): il video parte lo stesso")
         if not a.prova:
-            if copertina:
-                telegram_foto(copertina, f"🖼 Copertina · Rassegna stampa del {data}")
+            for etichetta, c in copertine:
+                telegram_foto(c, f"🖼 Copertina {etichetta} · Rassegna stampa del {data}")
             NG.telegram(uscita, f"📰 {spec['titolo_breve']} · titoli e fonti nella didascalia", social)
             STATO.write_text(json.dumps({**NG.stato_leggi(), "giorno_rassegna": oggi}, ensure_ascii=False, indent=1))
     except (Exception, SystemExit) as e:

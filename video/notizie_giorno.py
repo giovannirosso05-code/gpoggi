@@ -320,6 +320,29 @@ def crea_copertina(spec, serie, uscita):
     return uscita
 
 
+def pilota_citato(testo, nomi, serie):
+    """Il pilota (di quella serie) nominato per primo nel testo, o None. Se due piloti hanno lo stesso cognome (Marc e Alex Marquez) vale solo il nome completo:
+    «Marquez» da solo è ambiguo e non si sceglie a caso."""
+    t = norm(testo)
+    parole = t.split()
+    per_cognome = {}
+    for n, sr in nomi.items():
+        c = norm(n).split()[-1]
+        if sr == serie and len(c) > 3:
+            per_cognome.setdefault(c, []).append(n)
+    trovati = []
+    for c, ns in per_cognome.items():
+        if c not in parole:
+            continue
+        if len(ns) == 1:
+            trovati.append((parole.index(c), ns[0]))
+        else:
+            for n in ns:
+                if norm(n).strip() in t:
+                    trovati.append((t.find(norm(n).strip()), n))
+    return min(trovati)[1] if trovati else None
+
+
 STOP = set("della delle dello degli dopo come cosa sono viene perche quindi anche essere stato stata questo questa quello quella sulla nelle nello nella hanno dalla dalle fatto fare molto ancora altro altri altre loro suo sua suoi sue tutti tutto verso sotto prima quando dove mentre contro senza tra fra gran premio gara gare".split())
 
 
@@ -360,9 +383,7 @@ def foto_pertinenti(spec, art, nomi, testo_art=""):
     colori = {p["nome"]: p.get("colore") for p in json.load(open(DATA / "roster.json"))}
 
     def citato(testo):
-        parole = norm(testo).split()
-        trovati = [(parole.index(c), n) for n, c in cogn.items() if c in parole]
-        return min(trovati)[1] if trovati else None
+        return pilota_citato(testo, nomi, serie)
 
     tok_titolo = {w for w in norm(art["titolo"]).split() if len(w) > 3 and w not in STOP}
     # solo foto ESPN il cui titolo parla di QUESTA notizia (parole del titolo in comune); mai foto a caso
@@ -471,6 +492,80 @@ def foglio_foto(note, uscita):
     return uscita
 
 
+def titolo_copertina(titolo):
+    """Titolo corto per la copertina: senza prefisso F1/MotoGP, virgolette e punto interrogativo; al massimo 6 parole e 34 caratteri, mai chiuso da una parolina (in, di, il...)."""
+    t = re.sub(r"^\s*(F1|MotoGP|Formula 1)\s*[|:–-]\s*", "", titolo)
+    t = re.sub(r"[“”\"«»?]", "", t).strip()
+    out = []
+    for w in t.split():
+        if len(out) >= 6 or len(" ".join(out + [w])) > 34:
+            break
+        out.append(w)
+    piccole = {"il", "lo", "la", "i", "gli", "le", "un", "una", "in", "di", "a", "da", "su", "per", "con", "e", "che", "del", "della", "dei", "al", "alla", "nel", "nella"}
+    while len(out) > 2 and out[-1].lower().rstrip(",:") in piccole:
+        out.pop()
+    return " ".join(out) or " ".join(t.split()[:3])
+
+
+def ritratto_f1(n):
+    try:
+        import ritratti_espn as RE
+        col = next((p.get("colore") for p in json.load(open(DATA / "roster.json")) if p["nome"] == n), None) or "e8352f"
+        return str(RE.ritratto(n, tuple(int(col[i:i + 2], 16) for i in (0, 2, 4))))
+    except (Exception, SystemExit) as e:
+        print(f"  ritratto ESPN di {n} non disponibile ({type(e).__name__})")
+        return None
+
+
+def opzioni_copertina(art, righe, nomi):
+    """Possibili copertine per la notizia, tutte pertinenti: ritratto ESPN del pilota citato, foto ESPN il cui titolo parla della notizia, foto libere del pilota."""
+    import copertina as C
+    serie = art["serie"]
+    opz = []
+    n = pilota_citato(art["titolo"], nomi, serie)
+    if n and serie == "F1":
+        rit = ritratto_f1(n)
+        if rit:
+            opz.append((f"ritratto ESPN di {n}", lambda: C.html_copertina("x", righe, serie, None, "center 12%", rit, 1000, "Foto: ESPN", 130)))
+    if serie == "F1":
+        pool = espn_pool()
+        tok = {w for w in norm(art["titolo"]).split() if len(w) > 3 and w not in STOP}
+        for pt, _, u in sorted(((len(tok & set(t.split())), -i, u) for i, (t, u) in enumerate(pool)), reverse=True):
+            if pt > 0:
+                opz.append((f"foto ESPN: {TITOLI_ESPN.get(u, '')[:60]}", lambda u=u: C.html_copertina("x", righe, serie, None, "center 12%", str(NS.foto_da_url(u)[0]), 1000, "Foto: ESPN", 130)))
+    if n:
+        extra = (json.load(open(DATA / "foto-extra.json")) or {}).get(n, {})
+        for alt in [None] + list(extra):
+            opz.append((f"foto libera di {n}" + (f" ({alt})" if alt else ""), lambda alt=alt: C.html_copertina(n, righe, serie, alt, "center 12%", None, 1000)))
+    return opz
+
+
+def copertina_su_richiesta(a, nomi, stato):
+    """/copertina: una nuova copertina per l'ultimo video (o per la notizia indicata), diversa a ogni richiesta."""
+    import copertina as C
+    articoli = json.load(open(DATA / "rassegna.json"))["articoli"]
+    if a.url:
+        u, *r = [x.strip() for x in a.url.split("|")]
+    else:
+        u, r = (stato.get("storie") or [None])[0], []
+    art = next((x for x in articoli if x["url"] == u), None) if u else None
+    if not art and u and r:
+        art = {"url": u, "titolo": r[0], "fonte": r[1] if len(r) > 1 else "", "serie": r[2] if len(r) > 2 else "F1"}
+    if not art:
+        avviso("⚠️ Non trovo la notizia dell'ultimo video: scrivi /copertina e una parola della notizia (per esempio /copertina horner).")
+        return
+    righe = righe_titolo(titolo_copertina(art["titolo"]))
+    opz = opzioni_copertina(art, righe, nomi)
+    if not opz:
+        avviso(f"⚠️ Per «{art['titolo'][:70]}» non ho una foto pertinente per la copertina: meglio nessuna copertina che una foto a caso.")
+        return
+    k = int(stato.get("copertina_n", 0)) % len(opz)
+    desc, html_fn = opz[k]
+    asyncio.run(C.scatta(html_fn(), "/tmp/copertina_richiesta.png"))
+    telegram_foto("/tmp/copertina_richiesta.png", f"🖼 Copertina {k + 1} di {len(opz)}: {desc}. Non ti piace? Riscrivi /copertina per la prossima.")
+    STATO.write_text(json.dumps({**stato_leggi(), "copertina_n": int(stato.get("copertina_n", 0)) + 1}, ensure_ascii=False, indent=1))
+
+
 def telegram_foto(percorso, didascalia):
     tok = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN")
     chat = os.environ.get("TELEGRAM_CANALE") or os.environ.get("TELEGRAM_CHAT_ID") or "559225883"
@@ -502,10 +597,14 @@ def main():
     ap.add_argument("--risposta-modello")
     ap.add_argument("--url", help="racconta proprio questo articolo della rassegna")
     ap.add_argument("--avvisa", action="store_true", help="se un video non riesce, lo scrive su Telegram (per i comandi dati a mano)")
+    ap.add_argument("--copertina", action="store_true", help="solo una nuova copertina (per l'ultimo video o per --url), senza fare il video")
     ap.add_argument("--una-volta-al-giorno", action="store_true", help="esce subito se oggi (ora italiana) i video sono già stati fatti")
     a = ap.parse_args()
     nomi = nomi_con_foto()
     stato = stato_leggi()
+    if a.copertina:
+        copertina_su_richiesta(a, nomi, stato)
+        return
     oggi = datetime.now(timezone(timedelta(hours=2 if 3 < datetime.now(timezone.utc).month < 11 else 1))).strftime("%Y-%m-%d")
     if a.una_volta_al_giorno and stato.get("giorno_notizie") == oggi:
         print("Video di oggi già fatti.")

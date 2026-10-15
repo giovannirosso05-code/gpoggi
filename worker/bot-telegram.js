@@ -24,7 +24,7 @@ const REPO_BASE = "giovannirosso05-code/gpoggi";
 const CHAT_BASE = "559225883";          // la tua chat privata (la stessa del bot di MMA Oggi: un id utente vale per tutti i bot)
 const BOT_BASE = "Gpoggibot";
 const RAMO = "main";
-const VERSIONE = "radar-diretto-2 live-1 gara-1 2026-10-15";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
+const VERSIONE = "radar-copertina-1 live-1 gara-1 2026-10-15";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
 const ETA_MASSIMA_SECONDI = 600;        // un comando più vecchio di 10 minuti non si esegue (Telegram può ripetere gli invii dopo un guasto)
 
 // comando -> [file del workflow, input del workflow o null, descrizione]
@@ -43,6 +43,7 @@ const COMANDI = {
 const elenco = () => [
   "/sessione · Prossima sessione di F1 e MotoGP: quando e cosa c'è",
   "/sessionerisultati · Ultimi risultati di F1 e MotoGP",
+  "/copertina · Una nuova copertina per l'ultimo video (a ogni richiesta una foto diversa); oppure /copertina e una parola per scegliere la notizia",
   "/radar · Tutte le ultime notizie: poi scrivi /notizia e la prima parola per averne il video (per esempio /notizia norris)",
   ...Object.entries(COMANDI).map(([c, [, , d]]) => `${c} · ${d}`),
 ].join("\n");
@@ -132,6 +133,18 @@ async function videoDa(env, chat, arg) {
   if (!trovate.length) { await rispondi(env, chat, `Non trovo nessuna notizia con «${norm(arg).split(" ")[0]}». Scrivi /radar per vedere l'elenco.`); return; }
   // la parola è solo una scorciatoia: parte la notizia più recente. Per sceglierne una precisa si tocca il suo comando ▶ nel /radar.
   await lanciaNotizia(env, chat, trovate[0]);
+}
+
+// /copertina [parola]: nuova copertina per l'ultimo video (o per la notizia con quella parola); il workflow ne propone una diversa a ogni richiesta
+async function copertinaDa(env, chat, arg) {
+  let url = "";
+  if (norm(arg)) {
+    const t = cerca(await notizie(env), arg);
+    if (!t.length) { await rispondi(env, chat, `Non trovo nessuna notizia con «${norm(arg).split(" ")[0]}». Scrivi /radar per vedere l'elenco.`); return; }
+    const a = t[0];
+    url = [a.url, senzaPrefisso(a.titolo), pulito(a.fonte), a.serie === "MotoGP" ? "MotoGP" : "F1"].join("|");
+  }
+  await eseguiLancio(env, chat, "video-automatici.yml", { cosa: "copertina", url }, url ? "una nuova copertina per quella notizia" : "una nuova copertina per l'ultimo video");
 }
 
 // /n_<codice>: video proprio su quella notizia (il codice viene da /radar)
@@ -450,6 +463,8 @@ export default {
       if (ses === "/sessione") { await comandoSessione(env, msg.chat.id); return; }
       if (ses === "/sessionerisultati") { await comandoRisultati(env, msg.chat.id); return; }
       if (comando === "/radar" || comando === "/notizie" || comando === "/scegli") { await mostraLista(env, msg.chat.id); return; }
+      const cp = comando.match(/^\/copertina(?:_(.*))?$/);
+      if (cp) { await copertinaDa(env, msg.chat.id, cp[1] !== undefined ? cp[1].replace(/_/g, " ") : t.split(/\s+/).slice(1).join(" ")); return; }
       const nc = comando.match(/^\/n_([0-9a-f]{10})$/);
       if (nc) { await videoDaCodice(env, msg.chat.id, nc[1]); return; }
       const nv = comando.match(/^\/(?:notizia|video)(?:_(.*))?$/);   // /notizia norris, /notizia_norris (toccabile); /video resta come alias

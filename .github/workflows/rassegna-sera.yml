@@ -18,6 +18,14 @@ on:
       forza:
         description: 'si = invia subito, ignorando orario e "già fatta oggi"'
         default: 'no'
+      scelte:
+        description: 'indirizzi (separati da spazio) degli articoli scelti: il primo è il gancio; vuoto = scelta automatica'
+        required: false
+        default: ''
+      gancio:
+        description: 'titolo grande del gancio (vuoto = dal titolo del primo articolo)'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -55,9 +63,14 @@ jobs:
           AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID || '559225883' }}
+          SCELTE: ${{ github.event.inputs.scelte }}
+          GANCIO: ${{ github.event.inputs.gancio }}
         run: |
           python build_news.py || echo "notizie non aggiornate: uso quelle già salvate"
-          if [ "${{ github.event.inputs.forza }}" = "si" ]; then python video/rassegna_giornaliera.py --forza; else python video/rassegna_giornaliera.py; fi
+          args=()
+          [ -n "$SCELTE" ] && args+=(--scelte "$SCELTE")
+          [ -n "$GANCIO" ] && args+=(--gancio-titolo "$GANCIO")
+          if [ "${{ github.event.inputs.forza }}" = "si" ]; then python video/rassegna_giornaliera.py --forza "${args[@]}"; else python video/rassegna_giornaliera.py "${args[@]}"; fi
       - name: Salva il segno "fatta oggi"
         if: always() && steps.ora.outputs.vai == 'si'
         run: |

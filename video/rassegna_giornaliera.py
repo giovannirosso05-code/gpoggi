@@ -109,6 +109,27 @@ def scegli_rassegna(n, nomi):
     return scelte
 
 
+def articoli_da_url(urls):
+    """Gli articoli della rassegna con questi indirizzi (nell'ordine dato; la query dopo «?» non conta)."""
+    arts = json.load(open(DATA / "rassegna.json"))["articoli"]
+    chiave = lambda u: u.split("?")[0].rstrip("/")
+    out = []
+    for u in urls:
+        a = next((x for x in arts if chiave(x["url"]) == chiave(u)), None)
+        if a and a not in out:
+            out.append(a)
+    return out
+
+
+def leggi_forzata(giorno):
+    """video/rassegna_forzata.json: per un giorno preciso, un articolo che deve aprire la rassegna (gancio) con un titolo scelto da noi."""
+    try:
+        f = json.load(open(Path(__file__).parent / "rassegna_forzata.json"))
+        return f if f.get("giorno") == giorno else None
+    except (OSError, ValueError):
+        return None
+
+
 def foto_espn_f1():
     """[(titolo in minuscolo senza accenti, indirizzo foto)] dalle notizie di ESPN sulla F1 (foto orizzontali 1296x729). Vuoto se ESPN non risponde."""
     try:
@@ -129,7 +150,7 @@ def foto_espn_f1():
     return out
 
 
-def costruisci(scelte, nomi, oggi):
+def costruisci(scelte, nomi, oggi, gancio=False, gancio_titolo=None):
     cognome = lambda n: NG.norm(n).split()[-1]
     rot_f1 = [p["nome"] for p in json.load(open(DATA / "roster.json")) if p.get("foto") and p.get("nome") in nomi]
     rot = {"F1": rot_f1, "MotoGP": [n for n in NG.ROTAZIONE["MotoGP"] if n in nomi]}
@@ -150,7 +171,8 @@ def costruisci(scelte, nomi, oggi):
     for k, a in enumerate(scelte):
         t = pulisci(a["titolo"])
         parole = set(NG.norm(t).split())
-        citati = [n for n in nomi if len(cognome(n)) > 3 and cognome(n) in parole and nomi[n] == a["serie"]]
+        n_c = NG.pilota_citato(t, nomi, a["serie"])   # «Marquez» da solo è ambiguo (Marc / Alex): vale solo il nome completo
+        citati = [n_c] if n_c else []
         f = citati[0] if citati else next((n for n in rot[a["serie"]][k:] + rot[a["serie"]] if n not in usate[-1:]), rot[a["serie"]][0])
         fonte = a["fonte"].strip()
         sc = {"foto": f, "nome": fonte, "testo": t, "pausa": 0.5 if k else 0.3}
@@ -175,11 +197,21 @@ def costruisci(scelte, nomi, oggi):
         ex = frase_estratto(a, t)
         if ex:
             scene.append({**{k2: v for k2, v in sc.items() if k2 not in ("testo", "pausa")}, "testo": ex})   # stessa foto, un po' di più sull'argomento
+        if k == 0:
+            n_prima = len(scene)   # le scene della prima notizia (titolo, e la frase in più se c'è): servono se è il gancio
         usate.append(f)
     data = f"{oggi.day} {MESI[oggi.month - 1]}"
     hook = f"Rassegna stampa di GP Oggi: {len(scelte)} notizie da non perdere."
     hook_img = espn()
-    if hook_img:
+    if gancio:
+        # la prima notizia è il gancio: la sua scena diventa l'apertura (titolo grande) e subito dopo si dice che è la rassegna di oggi
+        s0 = scene.pop(0)
+        scene_hook = {**{k2: v for k2, v in s0.items() if k2 not in ("pausa", "nome")}, "hook": True,
+                      "hook_titolo": gancio_titolo or NG.titolo_copertina(pulisci(scelte[0]["titolo"])), "testo": s0["testo"]}
+        trans = {"foto_url": hook_img, "testo": f"Questa e altre {len(scelte) - 1} notizie nella rassegna stampa di GP Oggi.", "pausa": 0.4} if hook_img else \
+                {**{k2: v for k2, v in s0.items() if k2 not in ("pausa", "nome", "testo")}, "testo": f"Questa e altre {len(scelte) - 1} notizie nella rassegna stampa di GP Oggi.", "pausa": 0.4}
+        scene.insert(n_prima - 1, trans)
+    elif hook_img:
         scene_hook = {"foto_url": hook_img, "hook": True, "hook_titolo": f"Rassegna stampa del {data}", "testo": hook}
     else:
         scene_hook = {"foto": scene[0]["foto"], "hook": True, "hook_titolo": f"Rassegna stampa del {data}", "testo": hook}
@@ -240,11 +272,13 @@ def main():
     ap.add_argument("--prova", action="store_true")
     ap.add_argument("--forza", action="store_true", help="ignora l'orario e il segno 'già fatta oggi'")
     ap.add_argument("--n", type=int, default=4)
+    ap.add_argument("--scelte", default="", help="indirizzi (separati da spazio) degli articoli scelti da te: il primo è il gancio")
+    ap.add_argument("--gancio-titolo", default="", help="titolo grande del gancio (se manca si ricava dal titolo dell'articolo)")
     a = ap.parse_args()
     adesso = ora_roma()
     oggi = adesso.strftime("%Y-%m-%d")
     stato = NG.stato_leggi()
-    if not a.forza:
+    if not a.forza and not a.scelte:
         if not (21 * 60 <= adesso.hour * 60 + adesso.minute <= 22 * 60 + 45):
             print(f"Sono le {adesso:%H:%M} a Roma: non è l'ora della rassegna.")
             return
@@ -252,12 +286,27 @@ def main():
             print("Rassegna di oggi già inviata.")
             return
     nomi = NG.nomi_con_foto()
-    scelte = scegli_rassegna(a.n, nomi)
+    gancio, gancio_titolo = False, a.gancio_titolo or None
+    forz = leggi_forzata(oggi)
+    if a.scelte:   # articoli scelti da te (comando /rassegna): il primo è il gancio
+        scelte = articoli_da_url(a.scelte.split())
+        gancio = bool(scelte)
+    else:
+        scelte = scegli_rassegna(a.n, nomi)
+        if forz and forz.get("gancio_url"):   # per oggi un articolo deve aprire la rassegna
+            art = next(iter(articoli_da_url([forz["gancio_url"]])), None)
+            if not art and forz.get("gancio_articolo_titolo"):   # l'articolo non è più nel feed: si usano i dati salvati
+                art = {"url": forz["gancio_url"], "titolo": forz["gancio_articolo_titolo"], "estratto": "", "fonte": forz.get("gancio_fonte", ""), "serie": "F1",
+                       "pubblicato": datetime.now(timezone.utc).isoformat()}
+            if art:
+                altre = [x for x in scelte if x["url"] != art["url"] and x["url"] not in NG.simili(art, [x]) and art["url"] not in NG.simili(x, [art])]
+                scelte = ([art] + altre)[:a.n]
+                gancio, gancio_titolo = True, gancio_titolo or forz.get("gancio_titolo")
     print("Scelte:", [x["titolo"][:60] for x in scelte])
     try:
-        if len(scelte) < 3:
+        if len(scelte) < (2 if a.scelte else 3):
             raise RuntimeError(f"oggi ci sono troppo poche notizie adatte ({len(scelte)})")
-        spec, social = costruisci(scelte, nomi, adesso)
+        spec, social = costruisci(scelte, nomi, adesso, gancio, gancio_titolo)
         uscita = Path("/tmp/rassegna_sera.mp4")
         asyncio.run(NS.genera(spec, uscita))
         data = f"{adesso.day} {MESI[adesso.month - 1]}"
@@ -274,7 +323,8 @@ def main():
             for etichetta, c in copertine:
                 telegram_foto(c, f"🖼 Copertina {etichetta} · Rassegna stampa del {data}")
             NG.telegram(uscita, f"📰 {spec['titolo_breve']} · titoli e fonti nella didascalia", social)
-            STATO.write_text(json.dumps({**NG.stato_leggi(), "giorno_rassegna": oggi}, ensure_ascii=False, indent=1))
+            if not a.forza and not a.scelte:   # una rassegna chiesta a mano non spegne quella automatica delle 21:30
+                STATO.write_text(json.dumps({**NG.stato_leggi(), "giorno_rassegna": oggi}, ensure_ascii=False, indent=1))
     except (Exception, SystemExit) as e:
         print(f"Rassegna non riuscita: {type(e).__name__}: {e}")
         if not a.prova:

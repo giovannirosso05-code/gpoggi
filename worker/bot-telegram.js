@@ -24,7 +24,7 @@ const REPO_BASE = "giovannirosso05-code/gpoggi";
 const CHAT_BASE = "559225883";          // la tua chat privata (la stessa del bot di MMA Oggi: un id utente vale per tutti i bot)
 const BOT_BASE = "Gpoggibot";
 const RAMO = "main";
-const VERSIONE = "radar-copertina-1 live-1 gara-1 2026-10-15";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
+const VERSIONE = "radar-rassegna-1 live-1 gara-1 2026-10-15";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
 const ETA_MASSIMA_SECONDI = 600;        // un comando più vecchio di 10 minuti non si esegue (Telegram può ripetere gli invii dopo un guasto)
 
 // comando -> [file del workflow, input del workflow o null, descrizione]
@@ -44,6 +44,7 @@ const elenco = () => [
   "/sessione · Prossima sessione di F1 e MotoGP: quando e cosa c'è",
   "/sessionerisultati · Ultimi risultati di F1 e MotoGP",
   "/copertina · Una nuova copertina per l'ultimo video (a ogni richiesta una foto diversa); oppure /copertina e una parola per scegliere la notizia",
+  "/rassegna · Rassegna stampa subito, scelta in automatico; oppure /rassegna e 2-6 parole (o codici /n_…) per sceglierla tu: la prima notizia è il gancio (per esempio /rassegna minardi norris ferrari horner)",
   "/radar · Tutte le ultime notizie: poi scrivi /notizia e la prima parola per averne il video (per esempio /notizia norris)",
   ...Object.entries(COMANDI).map(([c, [, , d]]) => `${c} · ${d}`),
 ].join("\n");
@@ -145,6 +146,27 @@ async function copertinaDa(env, chat, arg) {
     url = [a.url, senzaPrefisso(a.titolo), pulito(a.fonte), a.serie === "MotoGP" ? "MotoGP" : "F1"].join("|");
   }
   await eseguiLancio(env, chat, "video-automatici.yml", { cosa: "copertina", url }, url ? "una nuova copertina per quella notizia" : "una nuova copertina per l'ultimo video");
+}
+
+// /rassegna [parole o codici]: la rassegna stampa subito. Senza parole la scelta è automatica; con le parole (o i codici /n_… del /radar) gli articoli li scegli tu e il primo è il gancio.
+async function rassegnaDa(env, chat, arg) {
+  const parole = String(arg || "").trim().split(/\s+/).filter(Boolean);
+  const scelte = [];
+  if (parole.length) {
+    const tutte = await notizie(env);
+    for (const p of parole) {
+      const m = p.match(/^\/?n_([0-9a-f]{10})$/i);
+      let a = null;
+      if (m) { for (const x of tutte) if ((await codice(x.url)) === m[1].toLowerCase()) { a = x; break; } }
+      else a = cerca(tutte, p)[0];
+      if (!a) { await rispondi(env, chat, `Non trovo nessuna notizia con «${p}». Scrivi /radar per vedere l'elenco.`); return; }
+      if (!scelte.some((s) => s.url === a.url)) scelte.push(a);
+    }
+    if (scelte.length < 2) { await rispondi(env, chat, "Per la rassegna scelta servono almeno 2 notizie diverse (o nessuna parola per la scelta automatica)."); return; }
+    if (scelte.length > 6) scelte.length = 6;
+  }
+  await eseguiLancio(env, chat, "rassegna-sera.yml", { forza: "si", scelte: scelte.map((a) => a.url).join(" "), gancio: "" },
+    scelte.length ? `rassegna con le ${scelte.length} notizie scelte (gancio: «${senzaPrefisso(scelte[0].titolo).slice(0, 60)}»)` : "rassegna stampa con scelta automatica");
 }
 
 // /n_<codice>: video proprio su quella notizia (il codice viene da /radar)
@@ -463,6 +485,8 @@ export default {
       if (ses === "/sessione") { await comandoSessione(env, msg.chat.id); return; }
       if (ses === "/sessionerisultati") { await comandoRisultati(env, msg.chat.id); return; }
       if (comando === "/radar" || comando === "/notizie" || comando === "/scegli") { await mostraLista(env, msg.chat.id); return; }
+      const rs = comando.match(/^\/rassegna(?:_(.*))?$/);
+      if (rs) { await rassegnaDa(env, msg.chat.id, rs[1] !== undefined ? rs[1].replace(/_/g, " ") : t.split(/\s+/).slice(1).join(" ")); return; }
       const cp = comando.match(/^\/copertina(?:_(.*))?$/);
       if (cp) { await copertinaDa(env, msg.chat.id, cp[1] !== undefined ? cp[1].replace(/_/g, " ") : t.split(/\s+/).slice(1).join(" ")); return; }
       const nc = comando.match(/^\/n_([0-9a-f]{10})$/);

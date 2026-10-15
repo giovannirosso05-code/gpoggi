@@ -1,6 +1,69 @@
 {
- "generato_il": "2026-10-15T07:55:36+00:00",
+ "generato_il": "2026-10-15T10:43:25+00:00",
  "articoli": [
+  {
+   "titolo": "Ferrari e Red Bull: verso il 2027 con due filosofie opposte",
+   "estratto": "Ferrari e Red Bull sono portatrici di due filosofie tecniche molto diverse, ma non vi è certezza su quale concetto possa essere il migliore l’anno prossimo.",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/video/video-f1/ferrari-red-bull-verso-2027-con-due-filosofie-opposte-video",
+   "pubblicato": "2026-10-15T10:00:00+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Racing Spirit lancia la collezione ufficiale James Hunt 1976",
+   "estratto": "Racing Spirit, il brand di abbigliamento tecnico premium di Racing Force Group, è orgoglioso di annunciare il lancio della collezione ufficiale James Hunt 1976 che celebra il 50° anniversario della…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/general/news/racing-spirit-lancia-la-collezione-ufficiale-james-hunt-1976-/10853854/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-15T09:59:15+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Ultimo pacchetto di aggiornamenti Ferrari: fondo e pance nuovi, l’ala non cambia",
+   "estratto": "Negli Stati Uniti verrà completato lo sviluppo della SF-26",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/tutti-dettagli-ultimo-pacchetto-aggiornamenti-ferrari-sf26-gp-stati-uniti-fondo-pance-ala-resta-uguale",
+   "pubblicato": "2026-10-15T09:50:00+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Pavesio: \"Un addetto ai lavori di MotoGP parla di sport, uno di F1 di business, ma l'evoluzione non deve spaventarci\"",
+   "estratto": "La MotoGP sta attaversando una fase di grande cambiamento. L'anno prossimo toccheremo con mano quello più rilevante in pista, con l'arrivo della nuova generazione di prototipi da 850cc, che oltre ad…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/pavesio-un-addetto-ai-lavori-di-motogp-parla-di-sport-uno-di-f1-di-business-ma-levoluzione-non-deve/10865300/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-15T09:34:24+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "F1 | Christian Horner voleva Fernando Alonso e Charles Leclerc alla Red Bull",
+   "estratto": "Il sedile in Red Bull per il 2025 sarebbe potuto andare a Fernando Alonso o a Charles Leclerc e, secondo Christian Horner, avrebbe voluto entrambi allo stesso modo. Nel suo prossimo libro, Drive…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/christian-horner-wanted-fernando-alonso-and-charles-leclerc-at-red-bull/10865308/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-15T09:03:42+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Casey Stoner intende \"lottare\" per riportare Phillip Island nel calendario della MotoGP",
+   "estratto": "Casey Stoner non si arrende e ha detto senza mezzi termini che \"lotterà\" per vedere Phillip Island tornare nel calendario della MotoGP, nonostante i piani per spostare il Gran Premio d'Australia ad…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/casey-stoner-intende-lottare-per-riportare-phillip-island-nel-calendario-della-motogp/10863133/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-15T08:29:01+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Ecco come una conversazione con Prost ha aiutato Toto Wolff a gestire un team di vertice in F1",
+   "estratto": "Mercedes si sta avviando a vincere altri due titoli iridati dopo quelli dell'epopea durata dal 2014 al 2021 grazie ad Andrea Kimi Antonelli - in testa alla classifica Piloti - e anche all'apporto di…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/ecco-come-una-conversazione-con-prost-ha-aiutato-toto-wolff-a-gestire-un-team-di-vertice-in-f1/10864761/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-15T07:59:57+00:00",
+   "citazione": false
+  },
   {
    "titolo": "Residenza Antonelli, papà Marco allontana Monte Carlo: “Non so chi abbia messo in giro questa voce”",
    "estratto": "Il pilota italiano resterà cittadino di San Marino, garantisce il padre Marco",
@@ -38,11 +101,11 @@
    "citazione": true
   },
   {
-   "titolo": "Verstappen inarrestabile, Antonelli ammette: “Se in classifica fosse più vicino sarebbe preoccupante”",
-   "estratto": "L'italiano ha riconosciuto che una rimonta di Verstappen in campionato come quella del 2025 lo preoccuperebbe molto",
+   "titolo": "Horner: “Il licenziamento in Red Bull? Penso si fosse diffusa la sensazione che avessi troppo potere nelle mie mani”",
+   "estratto": "Il manager britannico ha spiegato quali sono state le motivazioni che hanno spinto la dirigenza a sollevarlo dall'incarico",
    "fonte": "FormulaPassion",
    "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/verstappen-inarrestabile-antonelli-ammette-se-in-classifica-fosse-piu-vicino-sarebbe-preoccupante",
+   "url": "https://www.formulapassion.it/f1/f1-news/horner-licenziamento-redbull-cacciato-troppo-potere-assistente-no-liquidata",
    "pubblicato": "2026-10-15T06:00:00+00:00",
    "citazione": true
   },
@@ -65,11 +128,11 @@
    "citazione": true
   },
   {
-   "titolo": "Horner: “Il licenziamento in Red Bull? Penso si fosse diffusa la sensazione che avessi troppo potere nelle mie mani”",
-   "estratto": "Il manager britannico ha spiegato quali sono state le motivazioni che hanno spinto la dirigenza a sollevarlo dall'incarico",
+   "titolo": "Verstappen inarrestabile, Antonelli ammette: “Se in classifica fosse più vicino sarebbe preoccupante”",
+   "estratto": "L'italiano ha riconosciuto che una rimonta di Verstappen in campionato come quella del 2025 lo preoccuperebbe molto",
    "fonte": "FormulaPassion",
    "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/horner-licenziamento-redbull-cacciato-troppo-potere-assistente-no-liquidata",
+   "url": "https://www.formulapassion.it/f1/f1-news/verstappen-inarrestabile-antonelli-ammette-se-in-classifica-fosse-piu-vicino-sarebbe-preoccupante",
    "pubblicato": "2026-10-15T06:00:00+00:00",
    "citazione": true
   },
@@ -110,15 +173,6 @@
    "citazione": false
   },
   {
-   "titolo": "Red Bull blinda Mekies: ufficiale il rinnovo sino al 2031",
-   "estratto": "Prolungamento di cinque anni per il manager francese, arrivato lo scorso anno a sostituire Christian Horner",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/red-bull-blinda-mekies-ufficiale-il-rinnovo-sino-al-2031",
-   "pubblicato": "2026-10-14T16:27:14+00:00",
-   "citazione": false
-  },
-  {
    "titolo": "MotoGP | Trackhouse annuncia un nuovo azionista: la piattaforma d'investimento 1936",
    "estratto": "La stagione 2026 è stata fin qui ricca di soddisfazione per il Trackhouse Racing, che ha già ottenuto due vittorie domenicali, una ciascuno per Raul Fernandez ed Ai Ogura, ed altrettante nelle…",
    "fonte": "Motorsport.com",
@@ -134,15 +188,6 @@
    "serie": "MotoGP",
    "url": "https://it.motorsport.com/motogp/news/motogp-inside-ducati-il-lato-piu-umano-di-marquez-a-mandalika-tra-dubbi-battute-e-sollievo-finale/10865170/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-14T15:00:40+00:00",
-   "citazione": false
-  },
-  {
-   "titolo": "Russell, altra penalità motore in arrivo",
-   "estratto": "Il pilota inglese della Mercedes ha rivelato che probabilmente affronterà un nuovo arretramento in griglia a Las Vegas",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/russell-mercedes-altra-penalita-motore-in-arrivo-las-vegas",
-   "pubblicato": "2026-10-14T15:00:00+00:00",
    "citazione": false
   },
   {
@@ -173,30 +218,12 @@
    "citazione": false
   },
   {
-   "titolo": "Marquez: “Martin grandissimo talento. Ma senza moto, nemmeno lui potrà fare nulla nel 2027”",
-   "estratto": "Marc Marquez ritiene Jorge Martin, sfidante più diretto per il titolo MotoGP, un talento enorme. Ma lo ha avvisato per il 2027",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/marquez-martin-grandissimo-talento-ma-senza-moto-nemmeno-lui-potra-fare-nulla-nel-2027",
-   "pubblicato": "2026-10-14T13:00:00+00:00",
-   "citazione": true
-  },
-  {
    "titolo": "MotoGP | Alex Marquez: \"Arrivano circuiti in cui Marc dovrà fare i suoi giochi di prestigio\"",
    "estratto": "Marc Marquez ha tagliato il traguardo del GP d'Indonesia sesto, a 10\"7 dal vincitore, Marco Bezzecchi dell'Aprilia, il costruttore italiano che ha piazzato, per la prima volta nella sua storia…",
    "fonte": "Motorsport.com",
    "serie": "MotoGP",
    "url": "https://it.motorsport.com/motogp/news/motogp-alex-marquez-arrivano-circuiti-in-cui-marc-dovra-fare-i-suoi-giochi-di-prestigio/10865096/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-14T10:31:30+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "Horner: “Io ferito dalla Red Bull, nessuno mi porterà via 124 vittorie e 14 titoli”",
-   "estratto": "Di fronte ai recenti successi della Red Bull, Christian Horner gonfia il petto per aver creduto per primo nella power unit fatta in casa",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/horner-io-ferito-dalla-red-bull-nessuno-mi-portera-via-124-vittorie-e-14-titoli",
-   "pubblicato": "2026-10-14T10:00:00+00:00",
    "citazione": true
   },
   {
@@ -542,15 +569,6 @@
    "citazione": true
   },
   {
-   "titolo": "F1 | GP di Singapore, strategie: singola sosta obbligatoria con le Soft protagoniste. Ma attenzione alla pioggia",
-   "estratto": "Marina Bay, sede del Gran Premio di Singapore, ha spesso presentato poca varietà di scelta per ciò che riguarda le strategie in gara e anche quest'anno il filone rimarrà il medesimo. Eppure le…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-gp-di-singapore-strategie-singola-sosta-obbligatoria-con-le-soft-protagoniste-ma-attenzione-alla/10864173/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T09:21:54+00:00",
-   "citazione": false
-  },
-  {
    "titolo": "MotoGP | Bezzecchi: \"Il Mondiale è più perso che vinto, bisogna prendersi qualche rischio. Oggi ha pagato\"",
    "estratto": "Marco Bezzecchi deve essersi tolto un peso veramente enorme dalle spalle oggi a Mandalika. Dopo la domenica trionfale del Mugello, ci sono voluti oltre quattro mesi per tornare ad assaporare la gioia…",
    "fonte": "Motorsport.com",
@@ -566,15 +584,6 @@
    "serie": "MotoGP",
    "url": "https://it.motorsport.com/motogp/news/motogp-martin-raul-e-bez-superiori-oggi-ma-ho-tenuto-duro-solo-cosi-posso-lottare-con-marquez/10864188/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-11T08:52:16+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "F1 | McLaren, Stella durissimo dopo il contatto nella Sprint: \"Il bicchiere è vuoto\"",
-   "estratto": "Andrea Stella non ha cercato attenuanti. L'incidente tra Lando Norris e Oscar Piastri nella Sprint di Singapore ha provocato un danno che va oltre i punti persi, riportando al centro dell'attenzione…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-mclaren-stella-duro-dopo-il-contatto-nella-sprint-il-bicchiere-e-vuoto/10864183/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T08:35:57+00:00",
    "citazione": true
   },
   {
@@ -614,15 +623,6 @@
    "citazione": false
   },
   {
-   "titolo": "F1 | Verstappen: è l'occasione migliore per rompere il tabù Singapore, ma la trappola è nei primi 300 metri",
-   "estratto": "Pole nella sprint, vittoria nella gara breve e di nuovo la prima casella per la corsa di domenica, ma con un dubbio. Fino a questo momento, Singapore sta sorridendo a Max Verstappen e alla Red Bull…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-verstappen-e-loccasione-migliore-per-rompere-il-tabu-singapore-ma-la-trappola-e-nei-primi-300-me/10864045/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-10T17:36:39+00:00",
-   "citazione": false
-  },
-  {
    "titolo": "MotoGP | Marquez sfrutta i regali dell'Aprilia, ma se vince anche a Mandalika si fa durissima per Martin",
    "estratto": "La Sprint del Gran Premio d'Indonesia di MotoGP ha decisamente sovvertito i pronostici e in questo c'è sicuramente tanto merito di Marc Marquez, ma è innegabile che l'Aprilia gli abbia dato una…",
    "fonte": "Motorsport.com",
@@ -641,21 +641,12 @@
    "citazione": true
   },
   {
-   "titolo": "MotoGP | Fernández accusa Bezzecchi: \"Ha pensato solo a spingermi fuori!\"",
-   "estratto": "Il sabato del GP d'Indonesia era iniziato nel miglior modo possibile per Raul Fernández, a conquistare la sua prima pole in MotoGP, per poi trasformarsi in un vero dramma in seguito alla caduta al…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-fernandez-accusa-bezzecchi-ha-pensato-solo-a-spingermi-fuori/10863759/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-10T09:50:29+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "MotoGP | Bezzecchi: \"Mi spiace se Raul è arrabbiato, ma è un incidente di gara. Ora pensiamo a domani\"",
-   "estratto": "Marco Bezzecchi sembra essere stato colpito da una sorta di maledizione. Dopo il Mugello, ogni volta che sembrava poter avere la chance di tornare a conquistare una vittoria le sue gare sono finite…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bezzecchi-mi-spiace-se-raul-e-arrabbiato-ma-e-un-incidente-di-gara-ora-pensiamo-a-domani/10863753/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-10T09:32:43+00:00",
+   "titolo": "Delbianco at a crossroads: “Go Eleven? I have to think about what a 30-year-old needs”",
+   "estratto": "“I won’t make my choice based on passion alone. Why didn’t Yamaha bring me into the world championship? There are bigger interests at play than we think. The title? A release. It was the toughest…",
+   "fonte": "GPone",
+   "serie": "F1",
+   "url": "https://www.gpone.com/en/2026/10/15/civ/delbianco-at-a-crossroads-go-eleven-i-have-to-think-about-what-a-30-year-old-needs.html",
+   "pubblicato": null,
    "citazione": true
   },
   {
@@ -718,6 +709,15 @@
    "fonte": "GPone",
    "serie": "F1",
    "url": "https://www.gpone.com/en/2026/10/13/wsbk/yamaha-is-targeting-danilo-petrucci-for-a-motoamerica-campaign-in-2027.html",
+   "pubblicato": null,
+   "citazione": false
+  },
+  {
+   "titolo": "Lorenzo Baldassarri and the GO Eleven team will remain together through 2027.",
+   "estratto": "The Marche-born rider will again be on a Ducati. “I was coming off a difficult period; I lacked confidence and results, but this team believed in me.”",
+   "fonte": "GPone",
+   "serie": "F1",
+   "url": "https://www.gpone.com/en/2026/10/13/wsbk/lorenzo-baldassarri-and-the-go-eleven-team-will-remain-together-through-2027.html",
    "pubblicato": null,
    "citazione": false
   }

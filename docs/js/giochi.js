@@ -16,6 +16,18 @@ const numeroSfida = (g) => Math.round((Date.parse(g) - Date.parse("2026-10-15"))
 const seme = (t) => { let h = 2166136261; for (const c of t) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; };
 const conSeme = (a) => () => { a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
 let giornoSfida = null;
+// ---- Serie di giorni di fila (sullo stesso dispositivo): si conta quando si finisce la sfida del giorno
+const ieri = (g) => new Date(Date.parse(g) - 864e5).toISOString().slice(0, 10);
+const leggiSerie = () => { try { return JSON.parse(leggi("sfida-serie") || "null") || { ultimo: null, serie: 0, migliore: 0 }; } catch (e) { return { ultimo: null, serie: 0, migliore: 0 }; } };
+function aggiornaSerie(g) {
+  const s = leggiSerie();
+  if (s.ultimo === g) return s;
+  s.serie = s.ultimo === ieri(g) ? (s.serie || 0) + 1 : 1;
+  s.ultimo = g; s.migliore = Math.max(s.migliore || 0, s.serie);
+  scrivi("sfida-serie", JSON.stringify(s));
+  return s;
+}
+const giorniDiFila = (n) => `${n} ${n === 1 ? "giorno" : "giorni"} di fila`;
 const leggi = (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } };
 const scrivi = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
 const record = (g) => Number(leggi("record-" + g)) || 0;
@@ -37,10 +49,10 @@ const GIOCHI = {
 let dati = null;
 async function carica() {
   if (dati) return dati;
-  const [eventi, roster, moto, indice, motoArch, storiche] = await Promise.all([
+  const [eventi, roster, moto, indice, motoArch, storiche, tp] = await Promise.all([
     fetchJSON("data/events.json"), fetchJSON("data/roster.json"),
-    fetchJSON("data/motogp-classifica.json").catch(() => null), fetchJSON("data/archivio/indice.json").catch(() => []), fetchJSON("data/motogp-archivio.json").catch(() => null), fetchJSON("data/foto-storici.json").catch(() => [])]);
-  dati = { eventi, roster, moto: moto ? moto.piloti : [], indice, motoArch: motoArch ? motoArch.anni : [], storiche };
+    fetchJSON("data/motogp-classifica.json").catch(() => null), fetchJSON("data/archivio/indice.json").catch(() => []), fetchJSON("data/motogp-archivio.json").catch(() => null), fetchJSON("data/foto-storici.json").catch(() => []), fetchJSON("data/team-principal.json").catch(() => null)]);
+  dati = { eventi, roster, moto: moto ? moto.piloti : [], indice, motoArch: motoArch ? motoArch.anni : [], storiche, tp };
   return dati;
 }
 
@@ -81,22 +93,42 @@ const GEN = {
     return mescola(dati.moto).slice(0, N).map((p) => ({ titolo: "Che moto guida questo pilota?", img: `<div class="quiz-img foto-quiz" style="padding:28px"><div class="quiz-pilota"><b>${esc(p.nome)}</b><span>${esc(p.team)}</span></div></div>`,
       ...quattro(p.moto, marche), cred: "" }));
   },
-  numero() {
+  numero(modo) {
     const tutti = [...dati.roster.filter((p) => p.numero != null).map((p) => ({ nome: p.nome, n: String(p.numero), serie: "Formula 1", sub: p.team })),
-      ...dati.moto.filter((p) => p.numero != null).map((p) => ({ nome: p.nome, n: String(p.numero), serie: "MotoGP", sub: p.team }))];
-    return mescola(tutti).slice(0, N).map((p) => ({ titolo: "Che numero di gara ha questo pilota?", img: `<div class="quiz-img foto-quiz" style="padding:28px"><div class="quiz-pilota"><b>${esc(p.nome)}</b><span>${esc(p.serie)} · ${esc(p.sub || "")}</span></div></div>`,
+      ...(modo === "f1" ? [] : dati.moto.filter((p) => p.numero != null).map((p) => ({ nome: p.nome, n: String(p.numero), serie: "MotoGP", sub: p.team })))];
+    return mescola(tutti).slice(0, N).map((p) => ({ titolo: `Che numero ha ${p.nome} ${p.serie === "MotoGP" ? "sulla moto" : "sulla macchina"}?`, img: `<div class="quiz-img foto-quiz" style="padding:28px"><div class="quiz-pilota"><b>${esc(p.nome)}</b><span>${esc(p.serie)} · ${esc(p.sub || "")}</span></div></div>`,
       ...quattro(p.n, tutti.filter((x) => x.serie === p.serie).map((x) => x.n)), cred: "" }));
   },
-  campioni() {
+  campioni(modo) {
     const f1 = dati.indice.filter((x) => x.campione).map((x) => ({ anno: x.anno, nome: x.campione, serie: "Formula 1" }));
+    if (modo === "recenti") {   // solo la F1 degli ultimi 10 anni; le alternative sono altri campioni F1 di ogni epoca
+      const da = new Date().getFullYear() - 10;
+      return mescola(f1.filter((x) => x.anno >= da)).slice(0, N).map((c) => ({ titolo: `Chi vinse il mondiale di Formula 1 nel ${c.anno}?`,
+        img: `<div class="quiz-img foto-quiz" style="padding:24px"><div class="quiz-pilota"><b>${c.anno}</b><span>Formula 1</span></div></div>`,
+        ...quattro(c.nome, f1.map((x) => x.nome)), cred: "" }));
+    }
     const mg = dati.motoArch.map((s) => ({ anno: s.anno, nome: (s.classifica.find((p) => p.pos === 1) || {}).nome, serie: "MotoGP" })).filter((x) => x.nome);
     const pool = [...f1, ...mg];
     return mescola(pool).slice(0, N).map((c) => ({ titolo: `Chi vinse il mondiale ${c.serie === "Formula 1" ? "di Formula 1" : "della classe regina MotoGP"} nel ${c.anno}?`,
       img: `<div class="quiz-img foto-quiz" style="padding:24px"><div class="quiz-pilota"><b>${c.anno}</b><span>${esc(c.serie)}</span></div></div>`,
       ...quattro(c.nome, pool.filter((x) => x.serie === c.serie).map((x) => x.nome)), cred: "" }));
   },
-  async vincitore() {
-    const anni = mescola(Array.from({ length: 2025 - 1980 + 1 }, (_, i) => 1980 + i)).slice(0, N);
+  tp() {   // team principal dei team con un nome unico e stabile (data/team-principal.json, fonte formula1.com)
+    const tp = dati.tp ? dati.tp.team : {};
+    return mescola(Object.keys(tp)).slice(0, N).map((t) => ({ titolo: `Chi è il team principal di ${t}?`,
+      img: `<div class="quiz-img foto-quiz" style="padding:28px"><div class="quiz-pilota"><b>${esc(t)}</b><span>Team principal</span></div></div>`,
+      ...quattro(tp[t], Object.values(tp)), cred: "Fonte: formula1.com" }));
+  },
+  team() {
+    const piloti = dati.roster.filter((p) => p.team && p.nome);
+    const squadre = [...new Set(piloti.map((p) => p.team))];
+    return mescola(piloti).slice(0, N).map((p) => ({ titolo: `Per quale team guida ${p.nome} quest'anno?`,
+      img: `<div class="quiz-img foto-quiz" style="padding:28px"><div class="quiz-pilota"><b>${esc(p.nome)}</b><span>Formula 1</span></div></div>`,
+      ...quattro(p.team, squadre), cred: "" }));
+  },
+  async vincitore(modo) {
+    const da = modo === "recenti" ? new Date().getFullYear() - 10 : 1980;   // «recenti»: gli ultimi 10 anni (2016-2025), quelli che si ricordano
+    const anni = mescola(Array.from({ length: 2025 - da + 1 }, (_, i) => da + i)).slice(0, N);
     const stagioni = await Promise.all(anni.map((a) => fetchJSON(`data/archivio/${a}.json`).catch(() => null)));
     return stagioni.filter(Boolean).map((s) => {
       const g = scelgo(s.gare);
@@ -127,7 +159,7 @@ function partitaQuiz(chiave, qs) {
     document.getElementById("avanti").addEventListener("click", () => { i++; i < qs.length ? mostra() : fine(); });
   };
   const fine = () => {
-    if (chiave === "sfida") { scrivi("sfida-" + giornoSfida, JSON.stringify({ punti, esiti })); return fineSfida(punti, esiti); }
+    if (chiave === "sfida") { scrivi("sfida-" + giornoSfida, JSON.stringify({ punti, esiti })); aggiornaSerie(giornoSfida); return fineSfida(punti, esiti); }
     const prec = record(chiave); salvaRecord(chiave, punti);
     schermataFine(chiave, punti, qs.length, prec, () => avvia(chiave));
   };
@@ -143,16 +175,19 @@ async function partitaSfida() {
   const prima = [rng, N];
   rng = conSeme(seme("gpoggi-" + giornoSfida)); N = 1;
   const qs = [];
-  try { for (const k of ["pilota", "numero", "campioni", "vincitore", "moto"]) { const r = await Promise.resolve().then(() => GEN[k]("tutti")).catch(() => []); if (r[0]) qs.push(r[0]); } }
+  // cultura generale degli ultimi anni: chi vinse un GP recente, il team principal di un team, il numero di un pilota; poi due a rotazione
+  const piano = [["vincitore", "recenti"], ["tp"], ["numero", "f1"], ...mescola([["campioni", "recenti"], ["team"], ["pilota", "oggi"]]).slice(0, 2)];
+  try { for (const [k, modo] of piano) { const r = await Promise.resolve().then(() => GEN[k](modo)).catch(() => []); if (r[0]) qs.push(r[0]); } }
   finally { [rng, N] = prima; }
   if (qs.length < 3) { box.innerHTML = `<p class="muted">Non ci sono abbastanza dati per la sfida di oggi: riprova più tardi.</p>`; return; }
   partitaQuiz("sfida", qs);
 }
 
 function fineSfida(punti, esiti) {
-  const su = esiti.length, g = giornoSfida || giornoRoma();
+  const su = esiti.length, g = giornoSfida || giornoRoma(), ser = leggiSerie();
   box.innerHTML = `<div class="quiz-fine"><span class="kicker">Sfida del giorno #${numeroSfida(g)}</span><div class="quiz-punteggio">${punti}<span>/${su}</span></div>
     <p style="font-size:26px;margin:4px 0 8px">${esiti.map((e) => (e ? "🟩" : "🟥")).join("")}</p>
+    ${ser.ultimo === g && ser.serie ? `<p class="sfida-serie">🔥 <b>${giorniDiFila(ser.serie)}</b>${ser.migliore > ser.serie ? ` · record ${ser.migliore}` : ""}</p>` : ""}
     <p>${punti === su ? "Perfetto!" : punti >= su * 0.6 ? "Ottimo risultato." : "Si può fare meglio: domani ne trovi una nuova."}</p>
     <p class="muted">Le domande sono uguali per tutti: sfida un amico e confrontate il risultato. Domani una nuova sfida.</p>
     <div class="quiz-azioni"><button class="quiz-avanti" id="sfida">📲 Sfida un amico</button><button class="quiz-avanti secondario" id="menu">Altri giochi</button></div><p class="muted" id="sfida-esito" style="margin:8px 0 0;min-height:1.4em"></p></div>`;
@@ -164,7 +199,7 @@ function fineSfida(punti, esiti) {
 async function condividiRisultato(chiave, punti, su, esiti = []) {
   const nome = (GIOCHI[chiave] || {}).titolo || "Giochi";
   const testo = chiave === "sfida"
-    ? `🏎️ GP Oggi · Sfida del giorno #${numeroSfida(giornoSfida || giornoRoma())}\n${punti}/${su} ${esiti.map((e) => (e ? "🟩" : "🟥")).join("")}\nLe domande sono uguali per tutti: riesci a fare meglio?\n👉 https://gpoggi.it/giochi.html?sfida=1`
+    ? `🏎️ GP Oggi · Sfida del giorno #${numeroSfida(giornoSfida || giornoRoma())}\n${punti}/${su} ${esiti.map((e) => (e ? "🟩" : "🟥")).join("")}${leggiSerie().serie >= 2 ? `\n🔥 ${giorniDiFila(leggiSerie().serie)}` : ""}\nLe domande sono uguali per tutti: riesci a fare meglio?\n👉 https://gpoggi.it/giochi.html?sfida=1`
     : `🏎️ GP Oggi · ${nome}\nHo fatto ${punti}${su ? "/" + su : " di fila"}. Riesci a fare meglio?\n👉 https://gpoggi.it/giochi.html`;
   const esito = document.getElementById("sfida-esito");
   try {

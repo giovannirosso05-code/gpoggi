@@ -1507,3 +1507,4 @@ html { scroll-behavior: smooth; }
 .gioco-card[data-gioco="sfida"] b, .gioco-card[data-gioco="sfida"] span, .gioco-card[data-gioco="sfida"] small { color: #fff; }
 .gioco-card[data-gioco="sfida"] b { text-shadow: 0 2px 0 rgba(0, 0, 0, .25); }
 @media (prefers-reduced-motion: reduce) { .gioco-card[data-gioco="sfida"]::before { animation: none; } }
+.sfida-serie { font-size: 20px; margin: 4px 0 8px; } .sfida-serie b { color: var(--accent); }

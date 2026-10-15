@@ -1,0 +1,15 @@
+{
+ "verificato": "2026-10-15",
+ "fonte": "https://www.formula1.com/en/latest/article/who-are-the-2026-team-principals.2Jrw5LEJbEoX2gM5OtFL8K",
+ "nota": "Solo i team con un team principal unico e stabile: Audi, Alpine e Cadillac non ci sono (ruolo condiviso o cambiato in corsa). I nomi dei team sono quelli di roster.json. Da riverificare a ogni cambio.",
+ "team": {
+  "McLaren": "Andrea Stella",
+  "Mercedes": "Toto Wolff",
+  "Red Bull Racing": "Laurent Mekies",
+  "Ferrari": "Fred Vasseur",
+  "Williams": "James Vowles",
+  "Racing Bulls": "Alan Permane",
+  "Aston Martin": "Adrian Newey",
+  "Haas F1 Team": "Ayao Komatsu"
+ }
+}

@@ -24,7 +24,7 @@ const REPO_BASE = "giovannirosso05-code/gpoggi";
 const CHAT_BASE = "559225883";          // la tua chat privata (la stessa del bot di MMA Oggi: un id utente vale per tutti i bot)
 const BOT_BASE = "Gpoggibot";
 const RAMO = "main";
-const VERSIONE = "radar-diretto-1 live-1 gara-1 2026-10-15";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
+const VERSIONE = "radar-diretto-2 live-1 gara-1 2026-10-15";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
 const ETA_MASSIMA_SECONDI = 600;        // un comando più vecchio di 10 minuti non si esegue (Telegram può ripetere gli invii dopo un guasto)
 
 // comando -> [file del workflow, input del workflow o null, descrizione]
@@ -121,7 +121,6 @@ async function mostraLista(env, chat) {
     await tg(env, "sendMessage", {
       chat_id: chat,
       text: `${primo ? intestazione + "\n\n" : ""}${righe.slice(i, i + PEZZO).join("\n\n")}${ultimo ? `\n\nPer il video tocca il comando ▶ sotto la notizia: parte subito, proprio su quella. Oppure scrivi /notizia e una parola (per esempio /notizia ${primaParola(lista[0]) || "norris"}).` : ""}`,
-      ...(ultimo ? { reply_markup: { inline_keyboard: await tastieraDi(lista) } } : {}),
       disable_web_page_preview: true,
     });
   }
@@ -131,17 +130,8 @@ async function videoDa(env, chat, arg) {
   if (!norm(arg)) { await rispondi(env, chat, "Scrivi /notizia e la prima parola della notizia, per esempio /notizia norris. Per vedere le notizie scrivi /radar."); return; }
   const trovate = cerca(await notizie(env), arg);
   if (!trovate.length) { await rispondi(env, chat, `Non trovo nessuna notizia con «${norm(arg).split(" ")[0]}». Scrivi /radar per vedere l'elenco.`); return; }
-  // più notizie con la stessa parola: parte subito la prima (la più recente) e le altre si possono lanciare col loro comando
+  // la parola è solo una scorciatoia: parte la notizia più recente. Per sceglierne una precisa si tocca il suo comando ▶ nel /radar.
   await lanciaNotizia(env, chat, trovate[0]);
-  const altre = trovate.slice(1, 5);
-  if (altre.length) {
-    const cod = await Promise.all(altre.map((a) => codice(a.url)));
-    await tg(env, "sendMessage", {
-      chat_id: chat,
-      text: `Altre notizie con «${norm(arg).split(" ")[0]}» (tocca il comando per averne il video):\n\n${altre.map((a, i) => `${èCitazione(a) ? "💬 " : ""}[${a.serie}] ${senzaPrefisso(a.titolo).slice(0, 90)} (${pulito(a.fonte)})\n▶ /n_${cod[i]}`).join("\n\n")}`,
-      disable_web_page_preview: true,
-    });
-  }
 }
 
 // /n_<codice>: video proprio su quella notizia (il codice viene da /radar)

@@ -287,7 +287,7 @@ def avviso(testo):
             pass
 
 
-def righe_titolo(t, massimo=3, larghezza=12):
+def righe_titolo(t, massimo=4, larghezza=12):
     """Spezza il titolo in righe corte per la copertina (maiuscolo, niente parole tagliate)."""
     righe, cur = [], ""
     for w in re.sub(r"\s+", " ", t).strip().split(" "):

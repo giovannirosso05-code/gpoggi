@@ -1,6 +1,87 @@
 {
- "generato_il": "2026-10-16T10:31:18+00:00",
+ "generato_il": "2026-10-16T15:57:14+00:00",
  "articoli": [
+  {
+   "titolo": "MotoGP | Gresini: le nuove regole non aumenteranno il gap tra team ufficiali e satellite",
+   "estratto": "In casa Gresini Racing c'è fiducia riguardo al fatto che il livello di competitività tra team ufficiali e satelliti rimarrà \"più o meno\" invariato nel 2027, quando la MotoGP entrerà nella nuova era…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-gresini-le-nuove-regole-non-aumenteranno-il-gap-tra-team-ufficiali-e-satellite-/10865534/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-16T15:26:59+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Il Sudafrica non si arrende, McKenzie: “Guardiamo al 2028 o al 2029”",
+   "estratto": "Dopo l'ufficialità del GP d'Africa in Ruanda, il Ministro dello Sport sudafricano punta a un'altra candidatura entro la fine di questo decennio",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/sudafrica-non-si-arrende-mckenzie-guardiamo-al-2028-2029-rwanda-2030",
+   "pubblicato": "2026-10-16T15:00:00+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Max Verstappen a Portimao in Mercedes GT3: i dettagli del weekend e la diretta delle qualifiche",
+   "estratto": "Tutti i dettagli per seguire live il fine settimana del GT World Challenge in cui Max e Valentino Rossi potrebbero finire a duellare ruota a ruota",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/max-verstappen-a-portimao-in-mercedes-gt3-i-dettagli-del-weekend-e-la-diretta-delle-qualifiche",
+   "pubblicato": "2026-10-16T14:45:00+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Piastri: “Ora la Red Bull vale la Mercedes in termini di competività",
+   "estratto": "Secondo l'australiano della McLaren, gli aggiornamenti portati dal team di Milton Keynes hanno consentito alla squadra di colmare il divario dalla Mercedes",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/red-bull-pari-di-mercedes-opinioni-condivisa-da-piastri",
+   "pubblicato": "2026-10-16T14:00:00+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Mercedes e NVIDIA, la guida autonoma non aspetta",
+   "estratto": "Le due aziende ampliano la partnership strategica con l'obiettivo di accelerare lo sviluppo dei veicoli automatizzati",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/auto/tech/mercedes-nvidia-guida-autonoma-partnership-strategia",
+   "pubblicato": "2026-10-16T13:45:00+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "F1 | Mercedes: il nuovo pacchetto ha un anteriore più forte del previsto e ha sbilanciato la W17",
+   "estratto": "Se dopo la Malesia in casa Mercedes c'erano più interrogativi che certezze, il weekend di Singapore ha iniziato a fornire le prime risposte di cui erano alla ricerca i tecnici della Stella sul nuovo…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-mercedes-il-nuovo-pacchetto-ha-un-anteriore-piu-forte-del-previsto-e-ha-sbilanciato-la-w17/10865634/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-16T13:00:03+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Yuki Tsunoda: possibile test in IndyCar a fine ottobre",
+   "estratto": "La prova, non ancora confermata, potrebbe aprire una possibilità al pilota giapponese per approdare nel campionato americano",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/yuki-tsunoda-possibile-test-indycar-fine-ottobre",
+   "pubblicato": "2026-10-16T13:00:00+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Ferrari Driver Academy: definiti i programmi 2027, tre nuovi ingressi, completano il percorso Camara e Beganovic",
+   "estratto": "La Scuderia di Maranello ha ufficializzato il vivaio per la prossima stagione agonistica",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/ferrari-driver-academy-definito-programma-2027-entrano-3-escono-2-camara-beganovic",
+   "pubblicato": "2026-10-16T12:00:00+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "MotoGP | Ogura resta con l'amaro in bocca, mancando il podio per una posizione a Mandalika",
+   "estratto": "Ai Ogura non ha vissuto un weekend lineare in Indonesia. Ha dapprima incontrato difficoltà nelle prove, al punto da dover passare dalla Q1 per centrare la Q2. Ma dopo aver infine conquistato il…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-ogura-resta-con-lamaro-in-bocca-mancando-il-podio-per-una-posizione/10865196/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-16T10:40:00+00:00",
+   "citazione": false
+  },
   {
    "titolo": "La Ferrari Driver Academy annuncia i suoi programmi 2027: 3 i nuovi talenti aggregati",
    "estratto": "La Scuderia Ferrari Driver Academy ha definito i programmi sportivi per la stagione 2027, che vedrà otto giovani talenti del vivaio di Maranello impegnati nelle competizioni che vanno dal karting…",
@@ -137,15 +218,6 @@
    "citazione": true
   },
   {
-   "titolo": "Kubica ricorda il suo ritorno: “Schierarmi in griglia è stata la vittoria più grande”",
-   "estratto": "Robert Kubica ricorda l’anno del suo ritorno in Formula 1 con Williams, condizionato dalle gravi difficoltà del team",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/kubica-ricorda-suo-ritorno-schierarmi-griglia-vittoria-piu-grande",
-   "pubblicato": "2026-10-15T16:00:00+00:00",
-   "citazione": true
-  },
-  {
    "titolo": "F1 | Haas, Komatsu rivela: \"Senza il test di Portimao forse non avremmo scelto Camara\"",
    "estratto": "Il futuro di Rafael Camara in Formula 1 si è deciso nell'arco di due giornate sul circuito di Portimao. È questo il retroscena più significativo emerso dalle parole di Ayao Komatsu, team principal…",
    "fonte": "Motorsport.com",
@@ -173,15 +245,6 @@
    "citazione": true
   },
   {
-   "titolo": "Ufficiale, Rafael Camara correrà in Haas. Sarà coppia tutta FDA con Bearman",
-   "estratto": "Il brasiliano, campione della F3 e leader della F2, esordirà il prossimo anno al volante del team statunitense",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/ufficiale-rafael-camara-correra-in-haas-sara-coppia-tutta-fda-con-bearman",
-   "pubblicato": "2026-10-15T14:22:57+00:00",
-   "citazione": false
-  },
-  {
    "titolo": "Ufficiale: Rafael Câmara debutta in F1 nel 2027 con la Haas",
    "estratto": "Rafael Câmara sarà un pilota della Haas a partire dalla stagione 2027. La squadra americana ha ufficializzato l'ingaggio del ventunenne brasiliano, che ha firmato un contratto pluriennale e farà il…",
    "fonte": "Motorsport.com",
@@ -197,15 +260,6 @@
    "serie": "F1",
    "url": "https://it.motorsport.com/f1/news/f1-audi-e-ohlins-la-partnership-sugli-ammortizzatori-di-inizio-stagione-entra-nella-fase-calda/10865355/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-15T11:03:27+00:00",
-   "citazione": false
-  },
-  {
-   "titolo": "Ferrari e Red Bull: verso il 2027 con due filosofie opposte",
-   "estratto": "Ferrari e Red Bull sono portatrici di due filosofie tecniche molto diverse, ma non vi è certezza su quale concetto possa essere il migliore l’anno prossimo.",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/video/video-f1/ferrari-red-bull-verso-2027-con-due-filosofie-opposte-video",
-   "pubblicato": "2026-10-15T10:00:00+00:00",
    "citazione": false
   },
   {
@@ -506,15 +560,6 @@
    "citazione": false
   },
   {
-   "titolo": "F1 | Leclerc: la chance mancata non è stata al via, ma quando non ha attaccato Max in difficoltà con la PU",
-   "estratto": "Pole e vittoria nella Sprint, pole e successo anche nel Gran Premio della domenica. A Singapore il verdetto della pista ha assunto contorni piuttosto chiari, soprattutto nel primo stint, quando da un…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-leclerc-la-chance-mancata-non-e-stata-al-via-ma-quando-non-ha-sfruttato-i-problemi-alla-pu-di-max/10864628/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-12T10:42:56+00:00",
-   "citazione": false
-  },
-  {
    "titolo": "MotoGP | I piloti si oppongono alla multa per mancata presenza agli eventi coi tifosi",
    "estratto": "Durante il fine settimana della MotoGP in Indonesia, gli organizzatori del campionato hanno comunicato alle squadre che infliggeranno una multa di €5.000 ai piloti che non parteciperanno ad un numero…",
    "fonte": "Motorsport.com",
@@ -632,21 +677,30 @@
    "citazione": false
   },
   {
-   "titolo": "MotoGP | Aleix Espargaró rinuncia al GP dell'Indonesia, si concentrerà sui test in Malesia con la 850cc",
-   "estratto": "Aleix Espargaró non prenderà parte al GP d'Indonesia di MotoGP e si concentrerà sui prossimi test che avranno luogo a Sepang. Il 37enne, ritiratosi alla fine del 2024, era stato convocato dalla Honda…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-aleix-espargaro-rinuncia-gp-indonesia-si-concentrera-sui-test-in-malesia/10864122/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T05:01:01+00:00",
+   "titolo": "Mario Almondo: “Carbon-ceramic brakes will change the way Superbikes brake. And costs won’t go up.”",
+   "estratto": "Answers to all the questions regarding the introduction of this new technology—already widely used in supercars—to the world of motorcycle racing.",
+   "fonte": "GPone",
+   "serie": "F1",
+   "url": "https://www.gpone.com/en/2026/10/16/wsbk/mario-almondo-carbon-ceramic-brakes-will-change-the-way-superbikes-brake-and-costs-wont-go-up.html",
+   "pubblicato": null,
+   "citazione": true
+  },
+  {
+   "titolo": "Brembo revolution in 2027: Introducing Hyction, the carbon-ceramic brake system that’s causing a stir",
+   "estratto": "Starting in 2027, SBK will switch to new Brembo carbon-ceramic brake rotors, which are lighter and more durable than steel units. Although this technology is already employed on supercars, its…",
+   "fonte": "GPone",
+   "serie": "F1",
+   "url": "https://www.gpone.com/en/2026/10/16/wsbk/brembo-revolution-in-2027-introducing-hyction-the-carbon-ceramic-brake-system-thats-causing-a-stir.html",
+   "pubblicato": null,
    "citazione": false
   },
   {
-   "titolo": "MotoGP | Marquez sfrutta i regali dell'Aprilia, ma se vince anche a Mandalika si fa durissima per Martin",
-   "estratto": "La Sprint del Gran Premio d'Indonesia di MotoGP ha decisamente sovvertito i pronostici e in questo c'è sicuramente tanto merito di Marc Marquez, ma è innegabile che l'Aprilia gli abbia dato una…",
-   "fonte": "Motorsport.com",
+   "titolo": "Did you know that the Dutch driver was christened Max in honour of the four-time 250cc World Champion Max Biaggi.",
+   "estratto": "The four-time F1 world champion named it in honour of 'The Roman Emperor', at the request of his father, Jos, a huge motorcycle racing fan.",
+   "fonte": "GPone",
    "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-marquez-sfrutta-i-regali-dellaprilia-ma-se-vince-anche-a-mandalika-si-fa-durissima-per-martin/10863829/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-10T11:15:11+00:00",
+   "url": "https://www.gpone.com/en/2026/10/16/motogp/did-you-know-that-the-dutch-driver-was-christened-max-in-honour-of-the-four-time-250cc-world.html",
+   "pubblicato": null,
    "citazione": false
   },
   {
@@ -666,60 +720,6 @@
    "url": "https://www.gpone.com/en/2026/10/16/wsbk/non-stop-winter-here-is-the-2027-superbike-test-calendar.html",
    "pubblicato": null,
    "citazione": false
-  },
-  {
-   "titolo": "Adelaide in Trouble: City Council Opposes New Street Circuit",
-   "estratto": "Eight formal objections submitted to the federal government, 377 trees set to be removed, and a legal challenge seeking to halt construction. Problems are mounting for the circuit that is due to…",
-   "fonte": "GPone",
-   "serie": "MotoGP",
-   "url": "https://www.gpone.com/en/2026/10/16/motogp/adelaide-in-trouble-city-council-opposes-new-street-circuit.html",
-   "pubblicato": null,
-   "citazione": false
-  },
-  {
-   "titolo": "Sensational: the CAI rules in favour of Leopard Racing, Adrián Fernández's disqualifications overturned",
-   "estratto": "More than four months later, the FIM International Court of Appeal has upheld Leopard Team’s appeal, overturning the disqualifications handed to Adrián Fernández over the alleged tampering of two…",
-   "fonte": "GPone",
-   "serie": "MotoGP",
-   "url": "https://www.gpone.com/en/2026/10/15/moto3/sensational-the-cai-rules-in-favour-of-leopard-racing-adrian-fernandezs-disqualifications-overturned.html",
-   "pubblicato": null,
-   "citazione": false
-  },
-  {
-   "titolo": "Dainese Smart GO: the airbag that works with your smartphone and turns into a backpack",
-   "estratto": "It weighs under 800 grams and costs less than €350: the protection revolution is (also) coming through the mobile phone",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/15/moto-news/dainese-smart-go-the-airbag-that-works-with-your-smartphone-and-turns-into-a-backpack.html",
-   "pubblicato": null,
-   "citazione": false
-  },
-  {
-   "titolo": "Bautista: “I don’t have anything tangible lined up for 2027, but it won’t be a farewell.”",
-   "estratto": "“Unfortunately, there’s no room for me, but I know what to do. This regulation has discriminated against me, but I still want to keep racing.”",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/15/wsbk/bautista-i-dont-have-anything-tangible-lined-up-for-2027-but-it-wont-be-a-farewell.html",
-   "pubblicato": null,
-   "citazione": true
-  },
-  {
-   "titolo": "Bulega: “Rossi wrote to me two years ago: ‘Come back!’ Marquez doesn’t need to play games with me.”",
-   "estratto": "VIDEO - “If I hadn’t gone to Ducati, it would have been KTM. This journey in Superbike has changed me: it’s like the film Benvenuti al Sud, where you cry twice”",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/15/wsbk/bulega-rossi-wrote-to-me-two-years-ago-come-back-marquez-doesnt-need-to-play-games-with-me.html",
-   "pubblicato": null,
-   "citazione": true
-  },
-  {
-   "titolo": "Petrucci: “Go Eleven should let me do a test, I give more in non-factory teams!”",
-   "estratto": "“I’ve always been supportive when I’ve seen commitment. This year I’ve often gone above and beyond, only to be met with crashes and poor results. Yamaha? I’m pleased they approached me about…",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/15/wsbk/petrucci-go-eleven-should-let-me-do-a-test-i-give-more-in-non-factory-teams.html",
-   "pubblicato": null,
-   "citazione": true
   }
  ]
 }

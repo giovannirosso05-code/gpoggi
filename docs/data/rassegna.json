@@ -1,5 +1,5 @@
 {
- "generato_il": "2026-10-15T20:52:27+00:00",
+ "generato_il": "2026-10-16T02:41:14+00:00",
  "articoli": [
   {
    "titolo": "F1 | Test Pirelli: Mercedes completa oltre 600 km con Vesti a Magny-Cours alla ricerca del punto di crossover",
@@ -632,6 +632,15 @@
    "citazione": false
   },
   {
+   "titolo": "Sensational: the CAI rules in favour of Leopard Racing, Adrián Fernández's disqualifications overturned",
+   "estratto": "More than four months later, the FIM International Court of Appeal has upheld Leopard Team’s appeal, overturning the disqualifications handed to Adrián Fernández over the alleged tampering of two…",
+   "fonte": "GPone",
+   "serie": "MotoGP",
+   "url": "https://www.gpone.com/en/2026/10/15/moto3/sensational-the-cai-rules-in-favour-of-leopard-racing-adrian-fernandezs-disqualifications-overturned.html",
+   "pubblicato": null,
+   "citazione": false
+  },
+  {
    "titolo": "Dainese Smart GO: the airbag that works with your smartphone and turns into a backpack",
    "estratto": "It weighs under 800 grams and costs less than €350: the protection revolution is (also) coming through the mobile phone",
    "fonte": "GPone",
@@ -711,15 +720,6 @@
    "url": "https://www.gpone.com/en/2026/10/15/civ/delbianco-at-a-crossroads-go-eleven-i-have-to-think-about-what-a-30-year-old-needs.html",
    "pubblicato": null,
    "citazione": true
-  },
-  {
-   "titolo": "Trackhouse Racing welcomes a new minority shareholder: 1936.",
-   "estratto": "The sports and entertainment investment platform has announced its entry into Justin Marks’ team.",
-   "fonte": "GPone",
-   "serie": "MotoGP",
-   "url": "https://www.gpone.com/en/2026/10/14/motogp/trackhouse-racing-welcomes-a-new-minority-shareholder-1936.html",
-   "pubblicato": null,
-   "citazione": false
   }
  ]
 }

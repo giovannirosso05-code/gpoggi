@@ -10,15 +10,15 @@ on:
     - cron: '7 17 * * 4'
     # - cron: '0 6 * * *'   # gioco del giorno in video: spento, mostrava un gioco che sul sito non c'è (si può lanciare a mano con cosa=gioco)
   workflow_dispatch:
-    inputs:
-      cosa:
-        description: 'notizie (due raccontate, una volta al giorno), notizia-scelta (la notizia scelta con url), copertina (nuova copertina dell'ultimo video, o della notizia indicata con url), notizie-ora (due raccontate subito), notizia (una semplice), previsioni, gioco oppure gioco-virale (Chi guida il Mondiale?)'
-        default: 'notizie'
-      url:
-        description: 'solo per cosa=notizia-scelta: "indirizzo|titolo|fonte|serie" della notizia da raccontare'
-        required: false
-        default: ''
-
+   inputs:
+        cosa:
+          description: "notizie (due raccontate, una volta al giorno), notizia-scelta (la notizia scelta con url), copertina (nuova copertina dell'ultimo video, o della notizia indicata con url), notizie-ora (due raccontate subito), notizia (una semplice), previsioni, gioco oppure gioco-virale"
+          default: 'notizie'
+        url:
+          description: 'solo per cosa=notizia-scelta: "indirizzo|titolo|fonte|serie" della notizia da raccontare'
+          required: false
+          default: ''
+          
 permissions:
   contents: write
 

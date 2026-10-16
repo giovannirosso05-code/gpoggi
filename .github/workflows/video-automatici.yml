@@ -64,6 +64,7 @@ jobs:
           URL_SCELTA: ${{ github.event.inputs.url }}
         run: |
           case "${{ steps.quale.outputs.cosa }}" in
+          rassegna) python video/rassegna_giornaliera.py --forza ;;
             gioco) python video/gioco.py giorno --invia --uscita "$RUNNER_TEMP/gioco.mp4" ;;
             gioco-virale) python video/gioco_virale.py --invia --uscita "$RUNNER_TEMP/gioco_virale.mp4" ;;
             notizie) python video/notizie_giorno.py --una-volta-al-giorno ;;

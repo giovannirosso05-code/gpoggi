@@ -1,8 +1,17 @@
 {
- "generato_il": "2026-10-16T20:25:38+00:00",
+ "generato_il": "2026-10-17T02:33:14+00:00",
  "articoli": [
   {
-   "titolo": "Calado a Barcellona: «Usura gomme e meteo le incognite. Campionato? Matematica difficile»",
+   "titolo": "Molina a casa con la Ferrari: “Un weekend speciale a Barcellona, lotteremo con la giusta strategia”",
+   "estratto": "Dal legame speciale con il circuito di casa al lavoro di squadra per trovare il miglior assetto: l'analisi del pilota spagnolo del Cavallino Rampante",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/wec/wec-news/molina-a-casa-con-la-ferrari-un-weekend-speciale-a-barcellona-6-ore-lotteremo-con-la-giusta-strategia",
+   "pubblicato": "2026-10-16T22:02:35+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Calado a Barcellona: “Usura gomme e meteo le incognite. Campionato? Matematica difficile”",
    "estratto": "Il pilota britannico promuove il nuovo layout del tracciato catalano ma mette in guardia sul degrado gomme e la pioggia. Sulla rincorsa iridata: \"Probabilità sottili, ma il nostro spirito non cambia\"",
    "fonte": "FormulaPassion",
    "serie": "F1",
@@ -179,15 +188,6 @@
    "serie": "F1",
    "url": "https://it.motorsport.com/f1/news/f1-camara-il-sogno-nato-a-recife-papa-il-vero-matto-eri-tu/10865532/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-16T07:39:29+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "Alex Marquez: “Marc dovrà fare magie in Australia, Qatar e Portimao dove le Aprilia andranno fortissimo”",
-   "estratto": "Il pilota Gresini ha sottolineato che il compito dell'illustrissimo fratello sarà tutt'altro che semplice",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/alex-marquez-marc-fare-magie-australia-qatar-portimao-perche-aprilia-fortissime-ordini-scuderia",
-   "pubblicato": "2026-10-16T07:30:00+00:00",
    "citazione": true
   },
   {
@@ -668,6 +668,15 @@
    "citazione": false
   },
   {
+   "titolo": "Bautista: “There might be new places on the grid, but I don’t know what my options are.”",
+   "estratto": "“I know there’s a new manufacturer that wants to join the championship. I don’t want to think about the future—I just want to enjoy the weekend. The crash? I was lucky the bike didn’t hit me.”",
+   "fonte": "GPone",
+   "serie": "F1",
+   "url": "https://www.gpone.com/en/2026/10/16/wsbk/bautista-there-might-be-new-places-on-the-grid-but-i-dont-know-what-my-options-are.html",
+   "pubblicato": null,
+   "citazione": true
+  },
+  {
    "titolo": "Lecuona: “It’s unfair to punish a manufacturer that’s working to help those who’ve done nothing wrong.”",
    "estratto": "\"If there are companies that talk a lot but have kept the same bike for 18 years, that’s not our fault. Returning to the MotoGP? I’m happy in the SBK. Ducati and I have a long road ahead of us…",
    "fonte": "GPone",
@@ -709,15 +718,6 @@
    "fonte": "GPone",
    "serie": "F1",
    "url": "https://www.gpone.com/en/2026/10/16/wsbk/everyone-against-bulega-at-jerez-i-battled-a-wasp-but-im-still-alive.html",
-   "pubblicato": null,
-   "citazione": true
-  },
-  {
-   "titolo": "Mario Almondo: “Carbon-ceramic brakes will change the way Superbikes brake. And costs won’t go up.”",
-   "estratto": "Answers to all the questions regarding the introduction of this new technology—already widely used in supercars—to the world of motorcycle racing.",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/16/wsbk/mario-almondo-carbon-ceramic-brakes-will-change-the-way-superbikes-brake-and-costs-wont-go-up.html",
    "pubblicato": null,
    "citazione": true
   }

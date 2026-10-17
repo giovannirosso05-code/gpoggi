@@ -1,6 +1,78 @@
 {
- "generato_il": "2026-10-17T10:01:25+00:00",
+ "generato_il": "2026-10-17T14:50:18+00:00",
  "articoli": [
+  {
+   "titolo": "MotoGP | Cecchinello non ritiene il nuovo format più pericoloso e pone l'accento sulle strategie",
+   "estratto": "Il team principal del team LCR, Lucio Cecchinello, ritiene che con la decisione di limitare gli pneumatici a disposizione, il rinnovato format delle qualifiche della MotoGP non sarà pericoloso come…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-cecchinello-non-ritiene-il-nuovo-format-piu-pericoloso-e-pone-laccento-sulle-strategie/10865570/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-17T13:19:50+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Coletta: “A Barcellona ce la possiamo giocare, poi a Monza per il gran finale”",
+   "estratto": "Il Global Head of Endurance e Corse Clienti Ferrari traccia le prospettive del Cavallino alla vigilia della gara spagnola. Tra sfide tecniche, gestione delle incognite e la visione per il futuro…",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/wec/wec-news/coletta-a-barcellona-se-la-possiamo-giocare-poi-a-monza-per-il-gran-finale-ferrari-endurance",
+   "pubblicato": "2026-10-17T13:10:07+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Nuovo test in F1 per Gabriele Minì con l’Alpine",
+   "estratto": "Il pilota siciliano è sceso in pista al Paul Ricard per una sessione del programma TPC al volante dell'A525",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/nuovo-test-f1-per-gabriele-mini-con-alpine",
+   "pubblicato": "2026-10-17T12:59:55+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Antonelli Mondiale ad Austin? Mercedes ‘smonta’ il sogno: “Ha chance minime, assurdo chiamarlo match-point”",
+   "estratto": "Le chance di Kimi di vincere il Mondiale in America sono minime, sempre che si corra regolarmente in Qatar e Abu Dhabi. Altrimenti...",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/antonelli-mondiale-ad-austin-mercedes-smonta-il-sogno-ha-chance-minime-assurdo-chiamarlo-match-point",
+   "pubblicato": "2026-10-17T12:46:16+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Lynn in McLaren nel 2027. Cadillac ufficializza Da Costa e Taylor",
+   "estratto": "Il britannico lascerà proprio la Cadillac per unirsi al team di Woking, ma la Casa statunitense ha rimpiazzato la sua partenza, e quella di Bourdais, con due nuovi piloti",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/wec/wec-news/lynn-mclaren-2027-cadillac-ufficializza-da-costa-taylor",
+   "pubblicato": "2026-10-17T11:09:05+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "6 ore di Barcellona 2026, Qualifiche LMGT3: Pole alla McLaren #10, Ferrari #21 terza",
+   "estratto": "Thomas Fleming su McLaren conquista la sua seconda pole position della stagione",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/wec/wec-risultati/6-ore-di-barcellona-2026-qualifiche-lmgt3-pole-alla-mclaren-10-ferrari-21-terza",
+   "pubblicato": "2026-10-17T10:39:13+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "La Ferrari non ha piste favorevoli",
+   "estratto": "La Ferrari non riesce più vincere, con una macchina che anche sulle piste dove il motore conta meno soffre un altro punto debole.",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/video/ferrari-non-ha-piste-favorevoli",
+   "pubblicato": "2026-10-17T10:30:00+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "F1 | Watanabe esclusivo: Aston Martin e Honda faticano. Che cosa sta succedendo esattamente?",
+   "estratto": "L’Aston Martin Honda sta affrontando una stagione difficile. Era naturale che le aspettative crescessero molto, con una monoposto sviluppata sotto la guida di Adrian Newey, una nuova factory e una…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-watanabe-esclusivo-aston-martin-e-honda-faticano-che-cosa-sta-succedendo-esattamente-/10865782/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-17T10:20:55+00:00",
+   "citazione": false
+  },
   {
    "titolo": "Kubica, il retroscena della vittoria a Le Mans: “Dissi che era l’ultima chance”",
    "estratto": "Robert Kubica racconta un retroscena della vittoria a Le Mans nel 2025, riscattando il ritiro all’ultimo giro nel 2021",
@@ -47,29 +119,11 @@
    "citazione": false
   },
   {
-   "titolo": "3h Portimao 2026: la diretta streaming della gara GT3 con Max Verstappen e Valentino Rossi",
+   "titolo": "3h Portimao 2026: la diretta streaming della gara GT3 con Max Verstappen e Valentino Rossi: via alle 18",
    "estratto": "Tutti i dettagli per seguire in diretta la 3 Ore di Portimao che chiude la stagione 2026 del GT World Challenge Europe",
    "fonte": "FormulaPassion",
    "serie": "F1",
    "url": "https://www.formulapassion.it/f1/f1-news/3h-portimao-2026-diretta-streaming-gara-gt3-max-verstappen-valentino-rossi-live",
-   "pubblicato": "2026-10-17T06:00:00+00:00",
-   "citazione": false
-  },
-  {
-   "titolo": "GP Stati Uniti 2026: orari Sky/Now e TV8",
-   "estratto": "I dettagli della programmazione televisiva dell'appuntamento ad Austin in Texas sul circuito del COTA",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-stati-uniti-2026-austin-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-aggiornamenti-match-point-antonelli",
-   "pubblicato": "2026-10-17T06:00:00+00:00",
-   "citazione": false
-  },
-  {
-   "titolo": "GP Australia 2026: orari Sky/Now e TV8",
-   "estratto": "Il duello tra Martin e Marquez si sposta a Phillip Island",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-orari/orari-tv-gp-australia-2026-phillip-island-last-dance-televisione-diretta-sky-differita-tv8-programmazione-dove-vederla-marquez-martin-bezzecchi-ducati-aprilia",
    "pubblicato": "2026-10-17T06:00:00+00:00",
    "citazione": false
   },
@@ -83,13 +137,13 @@
    "citazione": false
   },
   {
-   "titolo": "Volata Mondiale, per Pernat è Marquez contro tutti: “Ma nel 2025 saltò le ultime gare, può essere uno svantaggio”",
-   "estratto": "Secondo il manager genovese, intervistato da FormulaPassion.it, la differenza di prestazioni tra Aprilia e Ducati non sarà decisiva",
+   "titolo": "GP Stati Uniti 2026: orari Sky/Now e TV8",
+   "estratto": "I dettagli della programmazione televisiva dell'appuntamento ad Austin in Texas sul circuito del COTA",
    "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/volata-mondiale-per-pernat-e-marquez-contro-tutti-ma-lui-nel-2025-salto-le-ultime-gare-puo-essere-uno-svantaggio",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-stati-uniti-2026-austin-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-aggiornamenti-match-point-antonelli",
    "pubblicato": "2026-10-17T06:00:00+00:00",
-   "citazione": true
+   "citazione": false
   },
   {
    "titolo": "Fittipaldi: “Antonelli la fortuna se l’è creata”",
@@ -101,40 +155,13 @@
    "citazione": true
   },
   {
-   "titolo": "F1 in Rwanda, polemiche infinite",
-   "estratto": "“Sportwashing” come sostiene Amnesty International o reale sviluppo? Il dubbio resta",
+   "titolo": "GP Australia 2026: orari Sky/Now e TV8",
+   "estratto": "Il duello tra Martin e Marquez si sposta a Phillip Island",
    "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/editoriale/f1-in-rwanda-polemiche-infinite",
-   "pubblicato": "2026-10-17T03:10:00+00:00",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-orari/orari-tv-gp-australia-2026-phillip-island-last-dance-televisione-diretta-sky-differita-tv8-programmazione-dove-vederla-marquez-martin-bezzecchi-ducati-aprilia",
+   "pubblicato": "2026-10-17T06:00:00+00:00",
    "citazione": false
-  },
-  {
-   "titolo": "Molina a casa con la Ferrari: “Un weekend speciale a Barcellona, lotteremo con la giusta strategia”",
-   "estratto": "Dal legame speciale con il circuito di casa al lavoro di squadra per trovare il miglior assetto: l'analisi del pilota spagnolo del Cavallino Rampante",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/wec/wec-news/molina-a-casa-con-la-ferrari-un-weekend-speciale-a-barcellona-6-ore-lotteremo-con-la-giusta-strategia",
-   "pubblicato": "2026-10-16T22:02:35+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "Calado a Barcellona: “Usura gomme e meteo le incognite. Campionato? Matematica difficile”",
-   "estratto": "Il pilota britannico promuove il nuovo layout del tracciato catalano ma mette in guardia sul degrado gomme e la pioggia. Sulla rincorsa iridata: \"Probabilità sottili, ma il nostro spirito non cambia\"",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/wec/wec-news/calado-6-ore-barcellona-usura-gomme-e-meteo-le-incognite-campionato-matematica-difficile",
-   "pubblicato": "2026-10-16T17:34:20+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "6 ore di Barcellona, Pier Guidi ammette: “Mondiale complicato, troppi rivali davanti”",
-   "estratto": "Il pilota Ferrari analizza le residue chance iridate alla vigilia della 6 Ore spagnola, tra i rimpianti per la sfortuna del COTA e le incognite tecniche di un asfalto vecchio e abrasivo",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/wec/wec-news/6-ore-di-barcellona-pier-guidi-ammette-mondiale-complicato-troppi-rivali-davanti",
-   "pubblicato": "2026-10-16T17:03:30+00:00",
-   "citazione": true
   },
   {
    "titolo": "F1 | La Haas torna 'mostruosa': ad Austin riecco la livrea dedicata a Godzilla",
@@ -146,15 +173,6 @@
    "citazione": false
   },
   {
-   "titolo": "Wolff: “All’inizio della mia carriera chiesi a Prost come gestire le rivalità interne”",
-   "estratto": "Il team principal della Mercedes ha raccontato di aver compreso alcuni elementi validi per la gestione della squadra dopo un incontro con il 'Professore'",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/wolff-conversazione-con-prost-che-lo-ha-aiutato-a-gestire-il-team-e-tensioni",
-   "pubblicato": "2026-10-16T16:00:00+00:00",
-   "citazione": true
-  },
-  {
    "titolo": "MotoGP | Gresini: le nuove regole non aumenteranno il gap tra team ufficiali e satellite",
    "estratto": "In casa Gresini Racing c'è fiducia riguardo al fatto che il livello di competitività tra team ufficiali e satelliti rimarrà \"più o meno\" invariato nel 2027, quando la MotoGP entrerà nella nuova era…",
    "fonte": "Motorsport.com",
@@ -162,15 +180,6 @@
    "url": "https://it.motorsport.com/motogp/news/motogp-gresini-le-nuove-regole-non-aumenteranno-il-gap-tra-team-ufficiali-e-satellite-/10865534/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-16T15:26:59+00:00",
    "citazione": false
-  },
-  {
-   "titolo": "Il Sudafrica non si arrende, McKenzie: “Guardiamo al 2028 o al 2029”",
-   "estratto": "Dopo l'ufficialità del GP d'Africa in Ruanda, il Ministro dello Sport sudafricano punta a un'altra candidatura entro la fine di questo decennio",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/sudafrica-non-si-arrende-mckenzie-guardiamo-al-2028-2029-rwanda-2030",
-   "pubblicato": "2026-10-16T15:00:00+00:00",
-   "citazione": true
   },
   {
    "titolo": "F1 | Mercedes: il nuovo pacchetto ha un anteriore più forte del previsto e ha sbilanciato la W17",
@@ -515,15 +524,6 @@
    "citazione": true
   },
   {
-   "titolo": "F1 | Red Bull ha scavalcato Mercedes? Ora la RB22 sembra il nuovo riferimento del Circus",
-   "estratto": "Chi andava sostenendo che gli sviluppi nell’arco della stagione 2026 sarebbero stati determinanti nel risultato finale, non si è sbagliato di molto. Kimi Antonelli nel GP degli Stati Uniti ad Austin…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-red-bull-ha-scavalcato-mercedes-ora-la-rb22-sembra-il-nuovo-riferimento-del-circus/10864824/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-13T07:59:26+00:00",
-   "citazione": false
-  },
-  {
    "titolo": "MotoGP | Di Giannantonio: \"C'era un buco nella gomma anteriore, sono stato fortunato a finire\"",
    "estratto": "Il fine settimana di Mandalika era stato probabilmente uno dei migliori dopo la pausa estiva per Fabio Di Giannantonio. Per la prima volta dal Gran Premio di Germania, l'ultimo prima del break, il…",
    "fonte": "Motorsport.com",
@@ -668,13 +668,13 @@
    "citazione": false
   },
   {
-   "titolo": "La MotoGP multerà di € 5.000 i piloti che non parteciperanno agli eventi promozionali",
-   "estratto": "MotoGP Sports Entertainment Group ritiene che la presenza dei piloti agli eventi e alle iniziative promozionali del campionato sia fondamentale per l’immagine di questo sport, e la mancanza di…",
-   "fonte": "Motorsport.com",
+   "titolo": "Paolo Simoncelli: “Valentino told me that sometimes he dreams about Marco; it happens to me, too.”",
+   "estratto": "“They were friends, and Marco learned a great deal from him. My wife and I have no regrets. The controversy with Bagnaia? I care about him; I simply advised him to not give a damn.”",
+   "fonte": "GPone",
    "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/la-motogp-multera-di-5000-i-piloti-che-non-parteciperanno-agli-eventi-promozionali/10864133/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T06:13:14+00:00",
-   "citazione": false
+   "url": "https://www.gpone.com/en/2026/10/17/motogp/paolo-simoncelli-valentino-told-me-that-sometimes-he-dreams-about-marco-it-happens-to-me-too.html",
+   "pubblicato": null,
+   "citazione": true
   },
   {
    "titolo": "Gonschor: “The BMW isn’t like Stoner’s Ducati: Toprak wasn’t the only one who was fast”",

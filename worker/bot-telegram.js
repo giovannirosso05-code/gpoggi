@@ -1,59 +1,40 @@
 /**
  * Bot Telegram di GP Oggi (Gpoggibot), sempre sveglio: Cloudflare Worker (gratuito).
- *
- * Telegram chiama questo indirizzo appena scrivi un comando (webhook); il Worker lancia al volo
- * il workflow giusto su GitHub e risponde subito in chat. Stesso schema del bot di MMA Oggi.
- * È un Worker separato dagli altri (gpoggivotti, gpoggi-orologio): non ne usa le variabili.
- *
- * Variabili da impostare su Cloudflare (Settings -> Variables and Secrets), tipo "Secret":
- *   TELEGRAM_TOKEN   token del bot Gpoggibot (BotFather)
- *   GITHUB_TOKEN     token GitHub "fine-grained", solo repository gpoggi, permesso Actions: Read and write
- *   WEBHOOK_SECRET   una parola lunga a caso inventata da te (Telegram la rimanda a ogni messaggio)
- * Variabili di testo (non segrete, hanno già un valore di base):
- *   CHAT_ID          chat autorizzata: chiunque altro viene ignorato in silenzio
- *   REPO             repository dei workflow (di base giovannirosso05-code/gpoggi)
- *   BOT_USERNAME     nome del bot che questo Worker può attivare (di base Gpoggibot): protegge dal token sbagliato
- *
- * Pagine di servizio (per te, con la parola segreta; i token non compaiono mai):
- *   /stato?k=PAROLA     dice di che bot si tratta e che webhook c'è adesso (non cambia niente)
- *   /attiva?k=PAROLA    imposta (o aggiorna) il webhook, solo se il bot è Gpoggibot e non c'è già un webhook di altri
- *                       (con &forza=1 sostituisce un webhook esistente: solo se sai cosa c'è)
  */
 
 const REPO_BASE = "giovannirosso05-code/gpoggi";
-const CHAT_BASE = "559225883";          // la tua chat privata (la stessa del bot di MMA Oggi: un id utente vale per tutti i bot)
+const CHAT_BASE = "559225883";
 const BOT_BASE = "Gpoggibot";
 const RAMO = "main";
-const VERSIONE = "radar-rassegna-1 live-1 gara-1 2026-10-15";   // si legge aprendo l'indirizzo del Worker: serve a controllare che il codice pubblicato sia l'ultimo
-const ETA_MASSIMA_SECONDI = 600;        // un comando più vecchio di 10 minuti non si esegue (Telegram può ripetere gli invii dopo un guasto)
+const VERSIONE = "definitivo-assoluto 2026-10-18";
+const ETA_MASSIMA_SECONDI = 600;
 
-// comando -> [file del workflow, input del workflow o null, descrizione]
 const COMANDI = {
   "/duevideo": ["video-automatici.yml", { cosa: "notizie-ora" }, "Due video di notizie scelte dal sistema, subito"],
   "/previsioni": ["video-automatici.yml", { cosa: "previsioni" }, "Video delle previsioni dei prossimi Gran Premi (F1 e MotoGP)"],
-  "/gara": ["anteprima-gara.yml", { serie: "auto" }, "Video sulla prossima gara: orario, circuito, chi può vincere e le ultime notizie (la prima in calendario tra F1 e MotoGP)"],
+  "/gara": ["anteprima-gara.yml", { serie: "auto" }, "Video sulla prossima gara: orario, circuito, chi può vincere e le ultime notizie"],
   "/garaf1": ["anteprima-gara.yml", { serie: "f1" }, "Come /gara, ma per il prossimo Gran Premio di F1"],
   "/garamoto": ["anteprima-gara.yml", { serie: "motogp" }, "Come /gara, ma per la prossima gara MotoGP"],
   "/venerdi": ["video-venerdi.yml", null, "Video del venerdì: ricorda di votare il podio"],
-  "/maratona": ["video-maratona.yml", null, "Tre video di notizie (la maratona, attiva fino all'11 ottobre)"],
-  "/risultati": ["risultati-weekend.yml", null, "Risultati del weekend (escono appena la sessione è finita, fino a 4 ore dopo)"],
+  "/maratona": ["video-maratona.yml", null, "Tre video di notizie (la maratona)"],
+  "/risultati": ["risultati-weekend.yml", null, "Risultati del weekend"],
   "/dati": ["update-data.yml", null, "Aggiorna tutti i dati del sito e rimanda i riepiloghi"],
 };
 
 const elenco = () => [
-  "/sessione · Prossima sessione di F1 e MotoGP: quando e cosa c'è",
+  "/sessione · Prossima sessione di F1 e MotoGP",
   "/sessionerisultati · Ultimi risultati di F1 e MotoGP",
-  "/copertina · Una nuova copertina per l'ultimo video (a ogni richiesta una foto diversa); oppure /copertina e una parola per scegliere la notizia",
+  "/copertina · Una nuova copertina per l'ultimo video (o /copertina parola)",
+  "/radar · Notizie divise per Formula 1 e MotoGP (interviste e dichiarazioni in cima)",
   "/rassegna · Rassegna stampa subito, scelta in automatico; oppure /rassegna e 2-6 parole (o codici /n_…) per sceglierla tu: la prima notizia è il gancio (per esempio /rassegna minardi norris ferrari horner)",
-  "/radar · Tutte le ultime notizie: poi scrivi /notizia e la prima parola per averne il video (per esempio /notizia norris)",
+  "/coda · Controlla lo stato dei video in lavorazione o in coda su GitHub",
   ...Object.entries(COMANDI).map(([c, [, , d]]) => `${c} · ${d}`),
 ].join("\n");
 
 const RASSEGNA_BASE = "https://gpoggi.it/data/rassegna.json";
-const QUANTE = 20;                        // notizie mostrate da /radar
-const ETA_PULSANTI_SECONDI = 6 * 3600;    // i pulsanti restano buoni 6 ore (la lista cambia, la notizia si ritrova dal suo codice)
+const QUANTE_PER_SERIE = 10;
+const ETA_PULSANTI_SECONDI = 6 * 3600;
 
-// codice breve di una notizia (i pulsanti di Telegram portano al massimo 64 caratteri)
 async function codice(url) {
   const h = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(url));
   return [...new Uint8Array(h)].slice(0, 5).map((b) => b.toString(16).padStart(2, "0")).join("");
@@ -66,23 +47,48 @@ async function notizie(env) {
 }
 
 const pulito = (t) => String(t || "").replace(/[|\n\r]+/g, " ").replace(/\s+/g, " ").trim();
-
-// "F1 | Rebus Mercedes: ..." -> "Rebus Mercedes: ..." (il prefisso F1/MotoGP non conta come prima parola)
 const senzaPrefisso = (t) => pulito(String(t || "").replace(/^\s*(f1|formula 1|motogp|moto ?gp)\s*[|:–-]\s*/i, ""));
-const norm = (t) => String(t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
+const norm = (t) => String(t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
 const parole = (a) => norm(senzaPrefisso(a.titolo)).split(" ").filter(Boolean);
 const primaParola = (a) => parole(a)[0] || "";
 
 const ORE24 = 24 * 3600 * 1000;
+const ORE72 = 72 * 3600 * 1000;
 const dataArt = (a) => Date.parse(a.pubblicato) || 0;
 const piuRecentiPrima = (l) => l.slice().sort((x, y) => dataArt(y) - dataArt(x));
 const delGiorno = (l) => piuRecentiPrima(l).filter((a) => Date.now() - dataArt(a) < ORE24);
-// dichiarazioni dei piloti: in cima al /radar (stesso criterio di build_news.py)
+const ultime72 = (l) => piuRecentiPrima(l).filter((a) => Date.now() - dataArt(a) < ORE72);
+
 const CITAZ = /[“”"«»]|\b(dice|dicono|ammette|rivela|spiega|racconta|intervista|parla|svela|confessa|promette|avverte|attacca|risponde|sottolinea|difende|chiarisce|ricorda)\b/i;
 const èCitazione = (a) => a.citazione === true || (a.citazione === undefined && CITAZ.test(a.titolo || ""));
-const citazioniPrima = (l) => [...l.filter(èCitazione), ...l.filter((a) => !èCitazione(a))];
+const èMotoGP = (a) => /motogp|moto ?gp|moto2|moto3/i.test(String(a.serie || ""));
+// 🎤 interviste, 📱 post sui social, 💬 altre dichiarazioni (il campo "tipo" lo scrive build_news.py)
+const icona = (a) => (a.tipo === "social" ? "📱 " : a.tipo === "intervista" ? "🎤 " : èCitazione(a) ? "💬 " : "");
 
-// notizie che corrispondono alla parola scritta: prima la prima parola del titolo (tra quelle del giorno), poi la prima parola tra tutte, poi una parola qualsiasi
+function importanza(a) {
+  let punti = 0;
+  if (èCitazione(a)) punti += 50;
+  if (a.tipo === "social") punti += 15;
+  else if (a.tipo === "intervista") punti += 10;
+  punti += Math.max(0, 24 - (Date.now() - dataArt(a)) / 3600000);
+  return punti;
+}
+
+const perImportanza = (l) => l.slice().sort((x, y) => importanza(y) - importanza(x) || dataArt(y) - dataArt(x));
+
+// Le notizie di una serie: quelle delle ultime 72 ore per importanza (dichiarazioni in cima); se sono meno di QUANTE_PER_SERIE
+// (per esempio la MotoGP in un weekend senza gara) si completa con le più recenti disponibili, mai una lista quasi vuota.
+const NON_NOTIZIA = /\borari\b|\bpodcast\b/i;   // «GP Australia: orari Sky/Now e TV8», «WarmUp F1 Podcast»: non sono notizie su cui fare un video
+function sceltaPerSerie(tutte, filtro) {
+  const serie = tutte.filter((a) => filtro(a) && !NON_NOTIZIA.test(a.titolo || ""));
+  let lista = perImportanza(ultime72(serie)).slice(0, QUANTE_PER_SERIE);
+  if (lista.length < QUANTE_PER_SERIE) {
+    const gia = new Set(lista.map((a) => a.url));
+    lista = lista.concat(piuRecentiPrima(serie).filter((a) => !gia.has(a.url)).slice(0, QUANTE_PER_SERIE - lista.length));
+  }
+  return lista;
+}
+
 function cerca(tutte, arg) {
   const p = norm(arg).split(" ")[0];
   if (!p) return [];
@@ -98,63 +104,79 @@ function cerca(tutte, arg) {
 async function lanciaNotizia(env, chat, art) {
   await eseguiLancio(env, chat, "video-automatici.yml", {
     cosa: "notizia-scelta",
-    url: [art.url, senzaPrefisso(art.titolo), pulito(art.fonte), art.serie === "MotoGP" ? "MotoGP" : "F1"].join("|"),
+    url: [art.url, senzaPrefisso(art.titolo), pulito(art.fonte), èMotoGP(art) ? "MotoGP" : "F1"].join("|"),
   }, `video su "${senzaPrefisso(art.titolo).slice(0, 90)}"`);
 }
 
-async function tastieraDi(lista) {
-  const righe = await Promise.all(lista.map(async (a, i) => ({ n: i + 1, c: await codice(a.url) })));
-  const tastiera = [];
-  for (let i = 0; i < righe.length; i += 5) tastiera.push(righe.slice(i, i + 5).map(({ n, c }) => ({ text: String(n), callback_data: `n:${c}` })));
-  return tastiera;
+async function comandoCoda(env, chat) {
+  const r = await fetch(`https://api.github.com/repos/${env.REPO || REPO_BASE}/actions/runs?per_page=5`, {
+    headers: { Authorization: `Bearer ${env.GITHUB_TOKEN}`, Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "gpoggi-bot" },
+  });
+  if (!r.ok) {
+    await rispondi(env, chat, "⚠️ Non riesco a leggere lo stato della coda da GitHub al momento.");
+    return;
+  }
+  const dati = await r.json();
+  const esecuzioni = (dati.workflow_runs || []).slice(0, 4);
+  if (!esecuzioni.length) {
+    await rispondi(env, chat, "📭 Nessun lavoro recente su GitHub.");
+    return;
+  }
+  const righe = esecuzioni.map(x => {
+    const statoEmoji = x.status === "in_progress" ? "🔴 In corso" : x.status === "queued" ? "⏳ In coda" : x.conclusion === "success" ? "✅ Completato" : "❌ Fallito";
+    return `${statoEmoji} · ${x.name} (${x.head_branch})`;
+  });
+  await rispondi(env, chat, `📊 Stato code GitHub:\n\n${righe.join("\n")}`);
+}
+
+async function formattaBlocco(titoloSezione, lista) {
+  if (!lista.length) return `${titoloSezione}\nNessuna notizia recente.`;
+  const cod = await Promise.all(lista.map((a) => codice(a.url)));
+  const righe = lista.map((a, i) => `${i + 1}. ${icona(a)}${senzaPrefisso(a.titolo).slice(0, 90)} (${pulito(a.fonte)})\n   ▶ /n_${cod[i]}`);
+  return `${titoloSezione}\n\n${righe.join("\n\n")}`;
 }
 
 async function mostraLista(env, chat) {
   const tutte = await notizie(env);
-  let lista = delGiorno(tutte), intestazione = "📰 Le ultime notizie (ultime 24 ore) · 💬 = parole dei protagonisti, in cima";
-  if (!lista.length) { lista = piuRecentiPrima(tutte); intestazione = "📰 Niente di nuovo nelle ultime 24 ore: ecco le più recenti"; }
-  lista = citazioniPrima(lista).slice(0, QUANTE);
-  if (!lista.length) { await rispondi(env, chat, "Non trovo notizie al momento. Riprova tra poco."); return; }
-  const cod = await Promise.all(lista.map((a) => codice(a.url)));
-  const righe = lista.map((a, i) => `${i + 1}. ${èCitazione(a) ? "💬 " : ""}[${a.serie}] ${senzaPrefisso(a.titolo).slice(0, 90)} (${pulito(a.fonte)})\n   ▶ /n_${cod[i]}`);
-  const PEZZO = 8;   // notizie per messaggio (Telegram taglia i messaggi lunghi)
-  for (let i = 0; i < righe.length; i += PEZZO) {
-    const primo = i === 0, ultimo = i + PEZZO >= righe.length;
-    await tg(env, "sendMessage", {
-      chat_id: chat,
-      text: `${primo ? intestazione + "\n\n" : ""}${righe.slice(i, i + PEZZO).join("\n\n")}${ultimo ? `\n\nPer il video tocca il comando ▶ sotto la notizia: parte subito, proprio su quella. Oppure scrivi /notizia e una parola (per esempio /notizia ${primaParola(lista[0]) || "norris"}).` : ""}`,
-      disable_web_page_preview: true,
-    });
-  }
+  if (!tutte.length) { await rispondi(env, chat, "Non trovo notizie al momento. Riprova tra poco."); return; }
+
+  const listaF1 = sceltaPerSerie(tutte, (a) => !èMotoGP(a));
+  const listaMoto = sceltaPerSerie(tutte, (a) => èMotoGP(a));
+
+  const bloccoF1 = await formattaBlocco("🏎 FORMULA 1 · Ultime notizie (dichiarazioni e interviste in cima)", listaF1);
+  const bloccoMoto = await formattaBlocco("🏍 MOTOGP · Ultime notizie (dichiarazioni e interviste in cima)", listaMoto);
+  const istruzioni = "\n\n🎤 = intervista · 📱 = social · 💬 = dichiarazioni\n• Tocca ▶ sotto la notizia per il video singolo\n• Scrivi /rassegna per la rassegna stampa subito, oppure /rassegna e 2-6 parole per sceglierla tu (la prima notizia è il gancio)\n• Scrivi /coda per controllare lo stato dei video.";
+
+  await invia(env, chat, bloccoF1);
+  await invia(env, chat, bloccoMoto + istruzioni);
 }
 
 async function videoDa(env, chat, arg) {
   if (!norm(arg)) { await rispondi(env, chat, "Scrivi /notizia e la prima parola della notizia, per esempio /notizia norris. Per vedere le notizie scrivi /radar."); return; }
   const trovate = cerca(await notizie(env), arg);
   if (!trovate.length) { await rispondi(env, chat, `Non trovo nessuna notizia con «${norm(arg).split(" ")[0]}». Scrivi /radar per vedere l'elenco.`); return; }
-  // la parola è solo una scorciatoia: parte la notizia più recente. Per sceglierne una precisa si tocca il suo comando ▶ nel /radar.
   await lanciaNotizia(env, chat, trovate[0]);
 }
 
-// /copertina [parola]: nuova copertina per l'ultimo video (o per la notizia con quella parola); il workflow ne propone una diversa a ogni richiesta
 async function copertinaDa(env, chat, arg) {
   let url = "";
   if (norm(arg)) {
     const t = cerca(await notizie(env), arg);
     if (!t.length) { await rispondi(env, chat, `Non trovo nessuna notizia con «${norm(arg).split(" ")[0]}». Scrivi /radar per vedere l'elenco.`); return; }
     const a = t[0];
-    url = [a.url, senzaPrefisso(a.titolo), pulito(a.fonte), a.serie === "MotoGP" ? "MotoGP" : "F1"].join("|");
+    url = [a.url, senzaPrefisso(a.titolo), pulito(a.fonte), èMotoGP(a) ? "MotoGP" : "F1"].join("|");
   }
   await eseguiLancio(env, chat, "video-automatici.yml", { cosa: "copertina", url }, url ? "una nuova copertina per quella notizia" : "una nuova copertina per l'ultimo video");
 }
 
-// /rassegna [parole o codici]: la rassegna stampa subito. Senza parole la scelta è automatica; con le parole (o i codici /n_… del /radar) gli articoli li scegli tu e il primo è il gancio.
+// /rassegna [parole o codici]: la rassegna stampa subito. Senza parole la scelta è automatica; con le parole (o i codici /n_… del /radar)
+// gli articoli li scegli tu (da 2 a 6) e il primo è il gancio.
 async function rassegnaDa(env, chat, arg) {
-  const parole = String(arg || "").trim().split(/\s+/).filter(Boolean);
+  const token = String(arg || "").trim().split(/\s+/).filter(Boolean);
   const scelte = [];
-  if (parole.length) {
+  if (token.length) {
     const tutte = await notizie(env);
-    for (const p of parole) {
+    for (const p of token) {
       const m = p.match(/^\/?n_([0-9a-f]{10})$/i);
       let a = null;
       if (m) { for (const x of tutte) if ((await codice(x.url)) === m[1].toLowerCase()) { a = x; break; } }
@@ -169,13 +191,11 @@ async function rassegnaDa(env, chat, arg) {
     scelte.length ? `rassegna con le ${scelte.length} notizie scelte (gancio: «${senzaPrefisso(scelte[0].titolo).slice(0, 60)}»)` : "rassegna stampa con scelta automatica");
 }
 
-// /n_<codice>: video proprio su quella notizia (il codice viene da /radar)
 async function videoDaCodice(env, chat, cod) {
   for (const a of await notizie(env)) if ((await codice(a.url)) === cod) { await lanciaNotizia(env, chat, a); return; }
   await rispondi(env, chat, "Quella notizia non è più nella lista. Scrivi di nuovo /radar.");
 }
 
-// confronto che non si ferma al primo carattere diverso (la parola segreta non si indovina dai tempi)
 function uguali(a, b) {
   a = String(a ?? ""); b = String(b ?? "");
   let d = a.length ^ b.length;
@@ -207,35 +227,31 @@ async function lancia(env, file, inputs) {
   return { ok: r.status === 204, stato: r.status, dettaglio: r.status === 204 ? "" : (await r.text()).slice(0, 200) };
 }
 
-// Quanti lavori di questo flusso sono in corso o in attesa. GitHub tiene un solo lavoro in corso e uno solo in attesa:
-// un terzo cancellerebbe quello in attesa, e il bot direbbe "Lanciato" per un video che non esce mai.
 async function codaDi(env, file) {
   const r = await fetch(`https://api.github.com/repos/${env.REPO || REPO_BASE}/actions/workflows/${file}/runs?per_page=10`, {
     headers: { Authorization: `Bearer ${env.GITHUB_TOKEN}`, Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "gpoggi-bot" },
   });
-  if (!r.ok) return null;   // non riesco a controllare: si lancia lo stesso
+  if (!r.ok) return null;
   const attivi = ((await r.json()).workflow_runs || []).filter((x) => ["in_progress", "queued", "pending", "waiting", "requested"].includes(x.status));
   return { inLavoro: attivi.filter((x) => x.status === "in_progress").length, inAttesa: attivi.filter((x) => x.status !== "in_progress").length };
 }
 
-// lancia il flusso e risponde in chat con l'esito vero (anche "in coda" o "occupato")
 async function eseguiLancio(env, chat, file, inputs, descrizione) {
   let coda = null;
   if (file === "video-automatici.yml") {
     coda = await codaDi(env, file).catch(() => null);
     if (coda && coda.inAttesa >= 1) {
-      await rispondi(env, chat, `⏳ Non lancio "${descrizione}": c'è già un video in lavorazione e uno in coda. Riscrivi il comando tra qualche minuto, altrimenti andrebbe perso.`);
+      await rispondi(env, chat, `⏳ Non lancio "${descrizione}": c'è già un video in lavorazione e uno in coda. Riscrivi il comando tra qualche minuto.`);
       return;
     }
   }
   const esito = await lancia(env, file, inputs);
   if (!esito.ok) { await rispondi(env, chat, `⚠️ Non sono riuscito a lanciare "${descrizione}" (GitHub ${esito.stato}).\n${esito.dettaglio}`); return; }
   await rispondi(env, chat, coda && coda.inLavoro >= 1
-    ? `🕓 In coda: ${descrizione}. C'è un altro video in lavorazione: parte appena finisce, poi arriva tra qualche minuto.`
+    ? `🕓 In coda: ${descrizione}. C'è un altro video in lavorazione: parte appena finisce.`
     : `✅ Lanciato: ${descrizione}. Arriva tra qualche minuto.`);
 }
 
-// ---------- /sessione e /sessionerisultati: orari e risultati letti dai dati del sito ----------
 const DATI_BASE = "https://gpoggi.it/data";
 const FUSO = "Europe/Rome";
 const ORE4 = 4 * 3600 * 1000;
@@ -260,11 +276,9 @@ function fra(ms) {
   return `tra ${Math.floor(h / 24)} g${h % 24 ? ` ${h % 24} h` : ""}`;
 }
 
-// sessioni normalizzate di un weekend: durata di 45 minuti se la fonte non indica la fine (sprint e gara della MotoGP)
 const normSess = (w) => (w.sessioni || []).map((x) => { const i = Date.parse(x.inizio), f = Date.parse(x.fine); return { nome: x.codice === "PR" ? "Practice" : x.nome, codice: x.codice, i, f: f > i ? f : i + 45 * 60000 }; }).sort((a, b) => a.i - b.i);
 
 function bloccoSessione(icona, serie, weekend, adesso) {
-  // il primo weekend che ha ancora una sessione non finita
   const w = weekend.map((x) => ({ nome: x.nome, sess: normSess(x) })).sort((a, b) => (a.sess[0]?.i || 0) - (b.sess[0]?.i || 0)).find((x) => x.sess.some((s) => s.f > adesso));
   if (!w) return `${icona} ${serie}\nNessuna sessione in programma.`;
   const righe = [`${icona} ${serie} · ${w.nome}`];
@@ -285,9 +299,8 @@ async function comandoSessione(env, chat) {
 }
 
 const TEMPO = (r, primo) => (primo ? r.tempo : (r.distacco && r.distacco !== "0.000" ? (String(r.distacco).startsWith("+") ? r.distacco : `+${r.distacco}`) : r.tempo)) || r.stato || "";
-// una riga di classifica: chi non ha posizione è ritirato; chi ha fatto meno giri del vincitore è doppiato
 const riga = (r, primo, giriVincitore) => {
-  if (r.pos == null) return `– ${r.nome} · ritirato${r.giri ? ` dopo ${r.giri} ${r.giri === 1 ? "giro" : "giri"}` : " al primo giro"}`;
+  if (r.pos == null) return `– ${r.nome} · ritirato${r.giri ? ` dopo ${r.giri}${r.giri === 1 ? "giro" : "giri"}` : " al primo giro"}`;
   const indietro = giriVincitore && r.giri && r.giri < giriVincitore ? ` · -${giriVincitore - r.giri} ${giriVincitore - r.giri === 1 ? "giro" : "giri"}` : "";
   return `${r.pos}. ${r.nome}${indietro || (TEMPO(r, primo) ? ` · ${TEMPO(r, primo)}` : "")}`;
 };
@@ -314,7 +327,6 @@ async function risultatiF1(env, adesso) {
 async function comandoRisultati(env, chat) {
   const adesso = Date.now();
   let attesa = false;
-  // ---------- Formula 1: ultima sessione con risultati (tutti i piloti) e podio dell'ultima gara
   const f1 = await risultatiF1(env, adesso);
   const a = [`🏎 FORMULA 1${f1.gp ? ` · ${f1.gp}` : ""}`];
   if (f1.sessione) a.push(`Ultima sessione con risultati: ${f1.sessione.nome}`, ...f1.sessione.risultati.map((r, i) => riga(r, i === 0, f1.sessione.nome === "Gara" || f1.sessione.nome === "Sprint" ? (f1.sessione.risultati[0] || {}).giri : 0)));
@@ -322,7 +334,6 @@ async function comandoRisultati(env, chat) {
   for (const x of f1.senza) { a.push(`⏳ ${x.nome}: finita alle ${soloOra(Date.parse(x.fine))}, risultati non ancora pubblicati dalla fonte.`); attesa = true; }
   if (f1.ultimaGara && !(f1.sessione && f1.sessione.nome === "Gara")) a.push(`🏁 Ultima gara: ${f1.ultimaGara.gp} · ${podio(f1.ultimaGara.rows)}`);
 
-  // ---------- MotoGP: ultima sessione del weekend in corso (se ce n'è) e ultimo GP concluso
   const [mg, cal, ms] = await Promise.all([dato(env, "motogp-gare.json"), dato(env, "motogp.json").catch(() => ({ weekend: [] })), dato(env, "motogp-sessioni.json").catch(() => null)]);
   const b = [];
   const corrente = (cal.weekend || []).map((x) => ({ nome: x.nome, sess: (x.sessioni || []).map((q) => ({ ...q, ...normSess({ sessioni: [q] })[0] })) }))
@@ -351,7 +362,6 @@ async function comandoRisultati(env, chat) {
     if (per(g.giro_veloce)) b.push(`Giro veloce: ${per(g.giro_veloce)}`);
   } else if (!corrente) b.push("🏍 MOTOGP\nNessun risultato disponibile.");
 
-  // ---------- se manca il risultato di una sessione finita da poco, si lancia l'aggiornamento (una volta sola)
   if (attesa) {
     const coda = await codaDi(env, "risultati-weekend.yml").catch(() => null);
     if (coda && (coda.inLavoro || coda.inAttesa)) b.push("", "🔄 L'aggiornamento dei risultati è già in corso: riscrivi il comando tra qualche minuto.");
@@ -367,7 +377,6 @@ async function comandoRisultati(env, chat) {
 
 const NOME_MOTO = { FP1: "Prove libere 1", PR: "Practice", FP2: "Prove libere 2", Q1: "Qualifiche 1", Q2: "Qualifiche 2", SPR: "Sprint", WUP: "Warm up", RAC: "Gara" };
 
-// manda un testo lungo in più messaggi, spezzando sulle righe (Telegram accetta al massimo 4096 caratteri per messaggio)
 async function invia(env, chat, testoLungo) {
   let blocco = "";
   for (const r of testoLungo.split("\n")) {
@@ -379,7 +388,6 @@ async function invia(env, chat, testoLungo) {
 
 const testo = (s, stato = 200) => new Response(s, { status: stato, headers: { "Content-Type": "text/plain; charset=utf-8" } });
 
-// /stato e /attiva: servono a te, per accendere il bot senza mai scrivere il token da nessuna parte
 async function servizio(req, env, u) {
   if (!env.WEBHOOK_SECRET || !uguali(u.searchParams.get("k"), env.WEBHOOK_SECRET)) return testo("non autorizzato", 401);
   if (!env.TELEGRAM_TOKEN) return testo("Manca la variabile TELEGRAM_TOKEN sul Worker.", 500);
@@ -398,7 +406,6 @@ async function servizio(req, env, u) {
   ];
   if (u.pathname === "/stato") return testo(righe.join("\n"));
 
-  // /attiva
   if (String(nome).toLowerCase() !== String(atteso).toLowerCase()) {
     return testo(`${righe.join("\n")}\n\nFERMO: il token non è del bot @${atteso}. Non ho cambiato niente.`, 409);
   }
@@ -410,100 +417,54 @@ async function servizio(req, env, u) {
   return testo(r.ok ? `${righe.join("\n")}\n\nFatto: webhook attivato su ${mio}\nOra scrivi /start al bot.` : `Telegram ha rifiutato: ${r.description || "errore sconosciuto"}`, r.ok ? 200 : 502);
 }
 
-// tocco di un numero in /radar: ritrova la notizia dal codice e lancia il video su quella
-function pulsante(cb, env, ctx) {
-  const chat = cb.message && cb.message.chat && cb.message.chat.id;
-  if (String(chat) !== String(env.CHAT_ID || CHAT_BASE)) return testo("ok");   // altri: ignorati in silenzio
-  if (!String(cb.data || "").startsWith("n:")) return testo("ok");             // pulsanti di altri messaggi (es. "vota_"): non sono nostri
-  const lavoro = (async () => {
-    if (Date.now() / 1000 - (cb.message.date || 0) > ETA_PULSANTI_SECONDI) {
-      await tg(env, "answerCallbackQuery", { callback_query_id: cb.id, text: "Lista vecchia: scrivi di nuovo /radar" });
-      return;
-    }
-    await tg(env, "answerCallbackQuery", { callback_query_id: cb.id, text: "Lancio…" });
-    const cod = cb.data.slice(2);
-    let trovata = null;
-    for (const a of await notizie(env)) if ((await codice(a.url)) === cod) { trovata = a; break; }
-    if (!trovata) { await rispondi(env, chat, "Quella notizia non è più nella lista. Scrivi di nuovo /radar."); return; }
-    await lanciaNotizia(env, chat, trovata);
-  })();
-  ctx.waitUntil(lavoro.catch((e) => console.error(e)));
-  return testo("ok");
-}
-
-// Tempi dal vivo della MotoGP per la scheda Live del sito: il Worker li legge dalla fonte ufficiale e li ripassa con CORS aperto.
-// Lo schema non è documentato: si restituisce in forma difensiva; con ?raw=1 si vede il testo originale.
-const LIVE_MOTO = "https://api.motogp.pulselive.com/motogp/v1/timing-gateway/livetiming-lite";
-async function liveMoto(u) {
-  const CORS = { "Access-Control-Allow-Origin": "*", "Cache-Control": "public, max-age=3" };
-  try {
-    const r = await fetch(LIVE_MOTO, { headers: { Accept: "application/json" } });
-    const t = await r.text();
-    if (u.searchParams.get("raw")) return new Response(t, { status: r.status, headers: { ...CORS, "Content-Type": "application/json; charset=utf-8" } });
-    if (!r.ok) return new Response(JSON.stringify({ ok: false, stato: r.status }), { headers: { ...CORS, "Content-Type": "application/json" } });
-    let d; try { d = JSON.parse(t); } catch { d = null; }
-    const grezzo = d && (d.lead_riders || d.riders || d.classification || d.rider_list || d.data || d);
-    const lista = Array.isArray(grezzo) ? grezzo : (grezzo && typeof grezzo === "object" ? Object.values(grezzo) : []);
-    const piloti = lista.filter((x) => x && typeof x === "object").map((x, i) => ({
-      pos: Number(x.pos ?? x.position ?? x.rider_position ?? i + 1) || i + 1,
-      numero: x.rider_number ?? x.number ?? x.num ?? null,
-      nome: x.rider_name ? [x.rider_name, x.rider_surname].filter(Boolean).join(" ") : (x.name ?? x.rider ?? null),
-      team: x.team_name ?? x.team ?? null,
-      tempo: x.lap_time ?? x.last_lap_time ?? x.best_lap_time ?? x.time ?? null,
-      distacco: x.gap_first ?? x.gap ?? x.gap_to_leader ?? null,
-    }));
-    const testa = (d && typeof d === "object" && !Array.isArray(d)) ? d : {};
-    return new Response(JSON.stringify({ ok: piloti.length > 0, sessione: testa.session_name ?? testa.session ?? testa.category ?? null, giri: testa.lap ?? testa.current_lap ?? null, bandiera: testa.flag ?? testa.session_status ?? null, piloti }), { headers: { ...CORS, "Content-Type": "application/json; charset=utf-8" } });
-  } catch (e) {
-    return new Response(JSON.stringify({ ok: false, errore: String(e && e.message || e).slice(0, 120) }), { headers: { ...CORS, "Content-Type": "application/json" } });
-  }
-}
-
 export default {
   async fetch(req, env, ctx) {
     const u = new URL(req.url);
     if (req.method === "GET") {
-      if (u.pathname === "/live/motogp") return liveMoto(u);
       if (u.pathname === "/stato" || u.pathname === "/attiva") return servizio(req, env, u);
       return testo(`GP Oggi bot: ok · versione ${VERSIONE}`);
     }
     if (req.method !== "POST") return testo("non consentito", 405);
-    // Solo Telegram, che conosce la parola segreta, può farci eseguire qualcosa.
     if (!env.WEBHOOK_SECRET || !uguali(req.headers.get("X-Telegram-Bot-Api-Secret-Token"), env.WEBHOOK_SECRET)) return testo("non autorizzato", 401);
     const update = await req.json().catch(() => ({}));
-    if (update.callback_query) return pulsante(update.callback_query, env, ctx);
     const msg = update.message;
     if (!msg || !msg.text) return testo("ok");
-    if (String(msg.chat && msg.chat.id) !== String(env.CHAT_ID || CHAT_BASE)) return testo("ok"); // chiunque altro: ignorato in silenzio
+    if (String(msg.chat && msg.chat.id) !== String(env.CHAT_ID || CHAT_BASE)) return testo("ok");
 
     const lavoro = (async () => {
       if (Date.now() / 1000 - (msg.date || 0) > ETA_MASSIMA_SECONDI) return;
       const t = msg.text.trim();
       const comando = t.startsWith("/") ? t.split(/\s+/)[0].toLowerCase().split("@")[0] : "";
-      // /sessione, /sessioni, /sessionerisultati, /sessionirisultati, /sessione_risultati: stessi due comandi, con o senza plurale
+
       const ses = comando.replace(/^\/sessioni/, "/sessione").replace(/^\/sessione_/, "/sessione");
       if (ses === "/sessione") { await comandoSessione(env, msg.chat.id); return; }
       if (ses === "/sessionerisultati") { await comandoRisultati(env, msg.chat.id); return; }
       if (comando === "/radar" || comando === "/notizie" || comando === "/scegli") { await mostraLista(env, msg.chat.id); return; }
+
+      if (COMANDI[comando]) {
+        const [file, inputs, descrizione] = COMANDI[comando];
+        await eseguiLancio(env, msg.chat.id, file, inputs, descrizione);
+        return;
+      }
+
+      if (comando === "/coda") {
+        await comandoCoda(env, msg.chat.id);
+        return;
+      }
+
       const rs = comando.match(/^\/rassegna(?:_(.*))?$/);
       if (rs) { await rassegnaDa(env, msg.chat.id, rs[1] !== undefined ? rs[1].replace(/_/g, " ") : t.split(/\s+/).slice(1).join(" ")); return; }
       const cp = comando.match(/^\/copertina(?:_(.*))?$/);
       if (cp) { await copertinaDa(env, msg.chat.id, cp[1] !== undefined ? cp[1].replace(/_/g, " ") : t.split(/\s+/).slice(1).join(" ")); return; }
       const nc = comando.match(/^\/n_([0-9a-f]{10})$/);
       if (nc) { await videoDaCodice(env, msg.chat.id, nc[1]); return; }
-      const nv = comando.match(/^\/(?:notizia|video)(?:_(.*))?$/);   // /notizia norris, /notizia_norris (toccabile); /video resta come alias
+      const nv = comando.match(/^\/(?:notizia|video)(?:_(.*))?$/);
       if (nv) {
         await videoDa(env, msg.chat.id, nv[1] !== undefined ? nv[1].replace(/_/g, " ") : t.split(/\s+/).slice(1).join(" "));
         return;
       }
-      if (!COMANDI[comando]) {
-        await rispondi(env, msg.chat.id, `Sono sveglio. Scrivi uno di questi comandi:\n${elenco()}\n\n/aiuto · mostra questo elenco`);
-        return;
-      }
-      const [file, inputs, descrizione] = COMANDI[comando];
-      await eseguiLancio(env, msg.chat.id, file, inputs, descrizione);
+      await rispondi(env, msg.chat.id, `Sono sveglio. Comandi:\n${elenco()}`);
     })();
-    // Risponde subito a Telegram e finisce il lavoro in coda: Telegram non aspetta e non ripete l'invio.
     ctx.waitUntil(lavoro.catch((e) => { console.error(e); return rispondi(env, msg.chat.id, `⚠️ Qualcosa non ha funzionato: riprova tra poco.\n(${String(e && e.message || e).slice(0, 200)})`); }));
     return testo("ok");
   },

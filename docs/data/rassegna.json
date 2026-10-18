@@ -1,5 +1,5 @@
 {
- "generato_il": "2026-10-18T10:15:25+00:00",
+ "generato_il": "2026-10-18T10:37:23+00:00",
  "articoli": [
   {
    "titolo": "MotoGP | KTM vede il 2027 come un nuovo inizio: \"Finalmente possiamo far confluire 10 anni d'esperienza nella 850cc\"",
@@ -9,15 +9,6 @@
    "url": "https://it.motorsport.com/motogp/news/motogp-ktm-vede-il-2027-come-un-nuovo-inizio-finalmente-possiamo-far-confluire-10-anni-desperienza-/10866005/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-18T10:02:43+00:00",
    "citazione": true
-  },
-  {
-   "titolo": "Mercedes-AMG GT SUV, quanta potenza elettrica",
-   "estratto": "La versione di punta raggiunge una potenza massima fino a 860 kW (1.169 CV), per uno scatto da 0 a 100 km/h in 2,5 secondi",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/auto/auto-elettriche/mercedes-amg-gt-suv-potenza-gamma-aerodinamica",
-   "pubblicato": "2026-10-18T09:45:00+00:00",
-   "citazione": false
   },
   {
    "titolo": "Emozioni e sorpassi, ma niente champagne: Verstappen dà spettacolo a Portimao, ma chiude 9°",
@@ -65,13 +56,22 @@
    "citazione": true
   },
   {
-   "titolo": "La Tesla che vola e il brevetto Ferrari",
-   "estratto": "Nel 2018 la casa di Maranello aveva depositato l’idea di un sistema a serbatoi di aria compressa e ugelli, orizzontali e verticali, capaci di spingere oltre il limite delle gomme, di generare…",
+   "titolo": "GP Stati Uniti 2026: orari Sky/Now e TV8",
+   "estratto": "I dettagli della programmazione televisiva dell'appuntamento ad Austin in Texas sul circuito del COTA",
    "fonte": "FormulaPassion",
    "serie": "F1",
-   "url": "https://www.formulapassion.it/auto/auto-news/la-tesla-che-vola-e-il-brevetto-ferrari",
-   "pubblicato": "2026-10-18T07:15:51+00:00",
+   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-stati-uniti-2026-austin-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-aggiornamenti-match-point-antonelli",
+   "pubblicato": "2026-10-18T06:00:00+00:00",
    "citazione": false
+  },
+  {
+   "titolo": "Retroscena Mercedes: “A Singapore avevamo meccanici che non facevano un pit-stop da 15 anni”",
+   "estratto": "Il team di Brackley ha effettuato un turnover rilevante a Marina Bay nella crew dei pit-stop, ma nonostante questo le soste sono state veloci",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/retroscena-mercedes-a-singapore-avevamo-meccanici-che-non-facevano-un-pit-stop-da-15-anni",
+   "pubblicato": "2026-10-18T06:00:00+00:00",
+   "citazione": true
   },
   {
    "titolo": "Fittipaldi: “Alla Mercedes è andata bene che la Red Bull si sia ‘svegliata’ troppo tardi”",
@@ -79,6 +79,15 @@
    "fonte": "FormulaPassion",
    "serie": "F1",
    "url": "https://www.formulapassion.it/f1/f1-news/fittipaldi-antonelli-mercedes-andata-bene-redbull-svegliata-tardi-verstappen",
+   "pubblicato": "2026-10-18T06:00:00+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Horner: “Budget cap da ripensare, le squadre spendono già 600 milioni di dollari”",
+   "estratto": "Per Christian Horner il budget cap deve essere rivisto dalla F1, in quanto i team spendono comunque cifre stratosferiche",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/horner-budget-cap-da-ripensare-le-squadre-spendono-gia-600-milioni-di-dollari",
    "pubblicato": "2026-10-18T06:00:00+00:00",
    "citazione": true
   },
@@ -110,66 +119,12 @@
    "citazione": true
   },
   {
-   "titolo": "Horner: “Budget cap da ripensare, le squadre spendono già 600 milioni di dollari”",
-   "estratto": "Per Christian Horner il budget cap deve essere rivisto dalla F1, in quanto i team spendono comunque cifre stratosferiche",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/horner-budget-cap-da-ripensare-le-squadre-spendono-gia-600-milioni-di-dollari",
-   "pubblicato": "2026-10-18T06:00:00+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "Retroscena Mercedes: “A Singapore avevamo meccanici che non facevano un pit-stop da 15 anni”",
-   "estratto": "Il team di Brackley ha effettuato un turnover rilevante a Marina Bay nella crew dei pit-stop, ma nonostante questo le soste sono state veloci",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/retroscena-mercedes-a-singapore-avevamo-meccanici-che-non-facevano-un-pit-stop-da-15-anni",
-   "pubblicato": "2026-10-18T06:00:00+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "GP Stati Uniti 2026: orari Sky/Now e TV8",
-   "estratto": "I dettagli della programmazione televisiva dell'appuntamento ad Austin in Texas sul circuito del COTA",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-stati-uniti-2026-austin-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-aggiornamenti-match-point-antonelli",
-   "pubblicato": "2026-10-18T06:00:00+00:00",
-   "citazione": false
-  },
-  {
-   "titolo": "Perché alla Ferrari manca sempre qualcosa per vincere",
-   "estratto": "Anche a Singapore alla Ferrari è mancato qualcosa per vincere: se prima c'era Mercedes, ora anche Red Bull...",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/video/perche-alla-ferrari-manca-sempre-qualcosa-per-vincere-analisi-tecnica-gp-singapore-podcast",
-   "pubblicato": "2026-10-17T18:00:00+00:00",
-   "citazione": false
-  },
-  {
-   "titolo": "Kubica e Fuoco, qualifiche difficili ma domani si punta alla gestione gomme per risalire",
-   "estratto": "I commenti dei ferraristi a valle di una qualifica ostica per le hypercar di Maranello",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/wec/wec-news/kubica-e-fuoco-qualifiche-difficili-ma-domani-si-punta-alla-gestione-gomme-per-risalire",
-   "pubblicato": "2026-10-17T16:02:29+00:00",
-   "citazione": false
-  },
-  {
    "titolo": "F1 | Meno drag, ma anche meno carico: Mercedes ha studiato l'ala ribaltabile, ma è un compromesso che (per ora) non paga",
    "estratto": "L'innovazione più importante del 2026 dal punto di vista aerodinamico per ciò che riguarda la Formula 1 è stata certamente l'ala ribaltabile. La prima a farla esordire in pista e, successivamente, a…",
    "fonte": "Motorsport.com",
    "serie": "F1",
    "url": "https://it.motorsport.com/f1/news/f1-meno-drag-ma-anche-meno-carico-mercedes-ha-studiato-lala-ribaltabile-ma-e-un-compromesso-che-per/10865592/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-17T15:18:29+00:00",
-   "citazione": false
-  },
-  {
-   "titolo": "6 ore Barcellona 2026, Qualifiche Hypercar: Prima pole per Genesis. Miglior Ferrari la #83 in P6",
-   "estratto": "Prima storica pole per il costruttore coreano che piazza in P3 la sua seconda macchina. Migliore Ferrari la #83 di Kubica in P6, Fuoco P8 e Giovinazzi solo P13",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/wec/wec-risultati/6-ore-barcellona-2026-qualifiche-hypercar-prima-pole-per-genesis-miglior-ferrari-la-83-in-p6",
-   "pubblicato": "2026-10-17T14:56:25+00:00",
    "citazione": false
   },
   {
@@ -182,12 +137,39 @@
    "citazione": false
   },
   {
+   "titolo": "Nuovo test in F1 per Gabriele Minì con l’Alpine",
+   "estratto": "Il pilota siciliano è sceso in pista al Paul Ricard per una sessione del programma TPC al volante dell'A525",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/nuovo-test-f1-per-gabriele-mini-con-alpine",
+   "pubblicato": "2026-10-17T12:59:55+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Antonelli Mondiale ad Austin? Mercedes ‘smonta’ il sogno: “Ha chance minime, assurdo chiamarlo match-point”",
+   "estratto": "Le chance di Kimi di vincere il Mondiale in America sono minime, sempre che si corra regolarmente in Qatar e Abu Dhabi. Altrimenti...",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/antonelli-mondiale-ad-austin-mercedes-smonta-il-sogno-ha-chance-minime-assurdo-chiamarlo-match-point",
+   "pubblicato": "2026-10-17T12:46:16+00:00",
+   "citazione": true
+  },
+  {
    "titolo": "F1 | Watanabe esclusivo: Aston Martin e Honda faticano. Che cosa sta succedendo esattamente?",
    "estratto": "L’Aston Martin Honda sta affrontando una stagione difficile. Era naturale che le aspettative crescessero molto, con una monoposto sviluppata sotto la guida di Adrian Newey, una nuova factory e una…",
    "fonte": "Motorsport.com",
    "serie": "F1",
    "url": "https://it.motorsport.com/f1/news/f1-watanabe-esclusivo-aston-martin-e-honda-faticano-che-cosa-sta-succedendo-esattamente-/10865782/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-17T10:20:55+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Alonso-Dakar, spuntano altri indizi: test con Pro Drive in Marocco",
+   "estratto": "Lo spagnolo aveva escluso la sua partecipazione nel 2027 al mitico rally raid, ma in realtà si è già cimentato in alcuni test",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/alonso-dakar-spuntano-altri-indizi-test-con-pro-drive-in-marocco",
+   "pubblicato": "2026-10-17T08:50:58+00:00",
    "citazione": false
   },
   {
@@ -200,6 +182,15 @@
    "citazione": false
   },
   {
+   "titolo": "Hamilton-Ferrari, c’è un problema di fiducia: “Serve un confronto schietto”",
+   "estratto": "Le recenti 'insubordinazioni' di Hamilton alla strategie suggerite dal team evidenziano un rapporto complicato con la squadra",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/hamilton-ferrari-ce-un-problema-di-fiducia-serve-un-confronto-schietto",
+   "pubblicato": "2026-10-17T08:06:50+00:00",
+   "citazione": true
+  },
+  {
    "titolo": "F1 | Gabriele Miní torna al volante dell'Alpine: ha girato al Paul Ricard in un'altra sessione di test TPC",
    "estratto": "Prosegue il percorso di crescita di Gabriele Miní con Alpine, che continua a investire sul pilota siciliano attraverso un intenso programma di test TPC con una vettura dello scorso ciclo tecnico…",
    "fonte": "Motorsport.com",
@@ -207,6 +198,42 @@
    "url": "https://it.motorsport.com/f1/news/f1-gabriele-mini-torna-al-volante-dellalpine-ha-girato-al-paul-ricard-in-unaltra-sessione-di-test-t/10865744/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-17T07:43:25+00:00",
    "citazione": false
+  },
+  {
+   "titolo": "3h Portimao 2026: la diretta streaming della gara GT3 con Max Verstappen e Valentino Rossi: via alle 18",
+   "estratto": "Tutti i dettagli per seguire in diretta la 3 Ore di Portimao che chiude la stagione 2026 del GT World Challenge Europe",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/3h-portimao-2026-diretta-streaming-gara-gt3-max-verstappen-valentino-rossi-live",
+   "pubblicato": "2026-10-17T06:00:00+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Mercedes ci riprova: ad Austin ancora con gli aggiornamenti",
+   "estratto": "Il vicedirettore tecnico Simone Resta conferma che la Mercedes correrà in Texas con la W17 aggiornata per venire a capo dei problemi di assetto",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/mercedes-ci-riprova-austin-ancora-aggiornamenti",
+   "pubblicato": "2026-10-17T06:00:00+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Fittipaldi: “Antonelli la fortuna se l’è creata”",
+   "estratto": "Il due volte iridato ha sottolineato che quello di Kimi sarà un titolo meritatissimo",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/fittipaldi-antonelli-kimi-fortunato-no-fortuna-creata-ferrari-tifosi-impazziranno",
+   "pubblicato": "2026-10-17T06:00:00+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Volata Mondiale, per Pernat è Marquez contro tutti: “Ma nel 2025 saltò le ultime gare, può essere uno svantaggio”",
+   "estratto": "Secondo il manager genovese, intervistato da FormulaPassion.it, la differenza di prestazioni tra Aprilia e Ducati non sarà decisiva",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/volata-mondiale-per-pernat-e-marquez-contro-tutti-ma-lui-nel-2025-salto-le-ultime-gare-puo-essere-uno-svantaggio",
+   "pubblicato": "2026-10-17T06:00:00+00:00",
+   "citazione": true
   },
   {
    "titolo": "F1 | La Haas torna 'mostruosa': ad Austin riecco la livrea dedicata a Godzilla",
@@ -218,6 +245,15 @@
    "citazione": false
   },
   {
+   "titolo": "Wolff: “All’inizio della mia carriera chiesi a Prost come gestire le rivalità interne”",
+   "estratto": "Il team principal della Mercedes ha raccontato di aver compreso alcuni elementi validi per la gestione della squadra dopo un incontro con il 'Professore'",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/wolff-conversazione-con-prost-che-lo-ha-aiutato-a-gestire-il-team-e-tensioni",
+   "pubblicato": "2026-10-16T16:00:00+00:00",
+   "citazione": true
+  },
+  {
    "titolo": "MotoGP | Gresini: le nuove regole non aumenteranno il gap tra team ufficiali e satellite",
    "estratto": "In casa Gresini Racing c'è fiducia riguardo al fatto che il livello di competitività tra team ufficiali e satelliti rimarrà \"più o meno\" invariato nel 2027, quando la MotoGP entrerà nella nuova era…",
    "fonte": "Motorsport.com",
@@ -227,12 +263,48 @@
    "citazione": false
   },
   {
+   "titolo": "Il Sudafrica non si arrende, McKenzie: “Guardiamo al 2028 o al 2029”",
+   "estratto": "Dopo l'ufficialità del GP d'Africa in Ruanda, il Ministro dello Sport sudafricano punta a un'altra candidatura entro la fine di questo decennio",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/sudafrica-non-si-arrende-mckenzie-guardiamo-al-2028-2029-rwanda-2030",
+   "pubblicato": "2026-10-16T15:00:00+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Max Verstappen a Portimao in Mercedes GT3: i dettagli del weekend e la diretta delle qualifiche",
+   "estratto": "Tutti i dettagli per seguire live il fine settimana del GT World Challenge in cui Max e Valentino Rossi potrebbero finire a duellare ruota a ruota",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/max-verstappen-a-portimao-in-mercedes-gt3-i-dettagli-del-weekend-e-la-diretta-delle-qualifiche",
+   "pubblicato": "2026-10-16T14:45:00+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Piastri: “Ora la Red Bull vale la Mercedes in termini di competività",
+   "estratto": "Secondo l'australiano della McLaren, gli aggiornamenti portati dal team di Milton Keynes hanno consentito alla squadra di colmare il divario dalla Mercedes",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/red-bull-pari-di-mercedes-opinioni-condivisa-da-piastri",
+   "pubblicato": "2026-10-16T14:00:00+00:00",
+   "citazione": true
+  },
+  {
    "titolo": "F1 | Mercedes: il nuovo pacchetto ha un anteriore più forte del previsto e ha sbilanciato la W17",
    "estratto": "Se dopo la Malesia in casa Mercedes c'erano più interrogativi che certezze, il weekend di Singapore ha iniziato a fornire le prime risposte di cui erano alla ricerca i tecnici della Stella sul nuovo…",
    "fonte": "Motorsport.com",
    "serie": "F1",
    "url": "https://it.motorsport.com/f1/news/f1-mercedes-il-nuovo-pacchetto-ha-un-anteriore-piu-forte-del-previsto-e-ha-sbilanciato-la-w17/10865634/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-16T13:00:03+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Yuki Tsunoda: possibile test in IndyCar a fine ottobre",
+   "estratto": "La prova, non ancora confermata, potrebbe aprire una possibilità al pilota giapponese per approdare nel campionato americano",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/yuki-tsunoda-possibile-test-indycar-fine-ottobre",
+   "pubblicato": "2026-10-16T13:00:00+00:00",
    "citazione": false
   },
   {
@@ -263,12 +335,48 @@
    "citazione": true
   },
   {
+   "titolo": "Diserzione di attività promozionali, Miller: “Nessuno è al di sopra delle regole”",
+   "estratto": "L'australiano ritiene che i piloti dovrebbero essere pagati di più nel momento in cui vengono obbligati a un impegno maggiore",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/diserzione-assenteismo-attivita-promozionali-gara-kart-miller-contro-marquez-nessuno-sorpa-regole",
+   "pubblicato": "2026-10-16T08:30:00+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Simoncelli aggiusta il tiro su Bagnaia: “Gli voglio bene. Nei momenti brutti deve sbattersene”",
+   "estratto": "Il team manager italiano ha voluto chiarire le parole di un mese fa sul ducatista",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/simoncelli-aggiusta-tiro-bagnaia-gli-voglio-bene-deve-sbattersene-coglioni",
+   "pubblicato": "2026-10-16T08:09:24+00:00",
+   "citazione": true
+  },
+  {
    "titolo": "F1 | Camara, il sogno nato a Recife: “Papà, il vero matto eri tu”",
    "estratto": "Quando Rafael Câmara ha saputo che nel 2027 sarebbe diventato un pilota di Formula 1, la prima reazione è stata di incredulità. “Sei sicuro?”. È stata questa la domanda rivolta Ayao Komatsu, pochi…",
    "fonte": "Motorsport.com",
    "serie": "F1",
    "url": "https://it.motorsport.com/f1/news/f1-camara-il-sogno-nato-a-recife-papa-il-vero-matto-eri-tu/10865532/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-16T07:39:29+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Alex Marquez: “Marc dovrà fare magie in Australia, Qatar e Portimao dove le Aprilia andranno fortissimo”",
+   "estratto": "Il pilota Gresini ha sottolineato che il compito dell'illustrissimo fratello sarà tutt'altro che semplice",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/alex-marquez-marc-fare-magie-australia-qatar-portimao-perche-aprilia-fortissime-ordini-scuderia",
+   "pubblicato": "2026-10-16T07:30:00+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Pernat stronca il nuovo format: “Ridicolo, sarà la fiera delle ambulanze. Marquez, Acosta e Bagnaia sono gli unici che si arrabbiano”",
+   "estratto": "In una chiacchierata esclusiva con FormulaPassion.it lo storico manager genovese ha criticato senza pietà il nuovo format studiato dalla MotoGP",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/pernat-stronca-nuovo-format-ridicolo-sara-fiera-ambulanze-marquez-acosta-bagnaia-unici-che-si-incazzano",
+   "pubblicato": "2026-10-16T06:00:00+00:00",
    "citazione": true
   },
   {
@@ -461,6 +569,15 @@
    "citazione": false
   },
   {
+   "titolo": "Marquez: “Martin grandissimo talento. Ma senza moto, nemmeno lui potrà fare nulla nel 2027”",
+   "estratto": "Marc Marquez ritiene Jorge Martin, sfidante più diretto per il titolo MotoGP, un talento enorme. Ma lo ha avvisato per il 2027",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/marquez-martin-grandissimo-talento-ma-senza-moto-nemmeno-lui-potra-fare-nulla-nel-2027",
+   "pubblicato": "2026-10-14T13:00:00+00:00",
+   "citazione": true
+  },
+  {
    "titolo": "MotoGP | Alex Marquez: \"Arrivano circuiti in cui Marc dovrà fare i suoi giochi di prestigio\"",
    "estratto": "Marc Marquez ha tagliato il traguardo del GP d'Indonesia sesto, a 10\"7 dal vincitore, Marco Bezzecchi dell'Aprilia, il costruttore italiano che ha piazzato, per la prima volta nella sua storia…",
    "fonte": "Motorsport.com",
@@ -476,6 +593,15 @@
    "serie": "F1",
    "url": "https://it.motorsport.com/f1/news/f1-ceccarelli-leconomia-mentale-e-la-forza-di-kimi-hamilton-sbaglia-a-fare-di-testa-sua/10865104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-14T09:32:12+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Dall’Igna: “Abbiamo stretto i denti, c’è il genio di Marquez dietro il risultato di Mandalika”",
+   "estratto": "Il direttore generale di Ducati Corse rende merito al suo pilota dopo l'Indonesia",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/dalligna-ducati-stretto-denti-genio-marquez-indonesia-madalika",
+   "pubblicato": "2026-10-14T09:24:07+00:00",
    "citazione": true
   },
   {
@@ -513,6 +639,24 @@
    "url": "https://it.motorsport.com/motogp/news/motogp-fermin-aldeguer-e-stato-operato-alla-mano-destra-da-capire-i-tempi-di-recupero/10865094/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-14T07:40:36+00:00",
    "citazione": false
+  },
+  {
+   "titolo": "Bezzecchi, quanti rimpianti: senza Sprint sarebbe a -1 da Martin. Gli ‘zeri’ al sabato costano almeno 30 punti",
+   "estratto": "Il riminese è tornato al successo, ma le sue chance di titolo sono frenate dai troppi errori commessi nelle gare brevi",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/bezzecchi-quanti-rimpianti-senza-le-sprint-sarebbe-a-1-da-martin-gli-zeri-al-sabato-costano-carissimo",
+   "pubblicato": "2026-10-14T06:00:00+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Tardozzi: “Team order Aprilia? Giusto darli, lo farei anche io”",
+   "estratto": "Il team manager della Ducati non è stranito dalla possibilità che da Noale inizino a impartire ordini ai propri piloti",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/tardozzi-team-order-aprilia-giusto-darli-lo-farei-anche-io",
+   "pubblicato": "2026-10-14T06:00:00+00:00",
+   "citazione": true
   },
   {
    "titolo": "F1 | \"Si è vista la sua intelligenza\": come Hulkenberg ha tenuto dietro Russell",
@@ -560,166 +704,22 @@
    "citazione": true
   },
   {
-   "titolo": "MotoGP | Tardozzi: \"Non è assolutamente vero che Marquez si è fatto la Ducati per lui, sono discorsi da bar\"",
-   "estratto": "L'Aprilia ha lasciato Mandalika al termine di una giornata storica, che le ha visto piazzare per la prima volta quattro RS-GP davanti a tutti nella gara lunga. Tuttavia, il Gran Premio d'Indonesia di…",
-   "fonte": "Motorsport.com",
+   "titolo": "Aprilia apre ai team order, Sterlacchini: “Ancora 1-2 gare, poi dovremo darli”",
+   "estratto": "La Casa di Noale ha ancora due piloti in lizza per il campionato, ma Martin ha 46 punti di vantaggio su Bezzecchi",
+   "fonte": "FormulaPassion",
    "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-tardozzi-non-e-assolutamente-vero-che-marquez-si-e-fatto-la-ducati-per-lui-sono-discorsi-da-/10864719/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-12T15:25:24+00:00",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/aprilia-apre-ai-team-order-sterlacchini-ancora-1-2-gare-poi-dovremo-darli",
+   "pubblicato": "2026-10-13T06:00:00+00:00",
    "citazione": true
   },
   {
-   "titolo": "MotoGP | Razgatlioglu si sottoporrà ad un controllo alla spalla: \"Spero di non dovermi operare\"",
-   "estratto": "Toprak Razgatlioglu si sottoporrà lunedì ad una risonanza magnetica alla spalla destra per stabilire se abbia bisogno di un intervento chirurgico, dopo una brutta caduta durante il weekend del Gran…",
-   "fonte": "Motorsport.com",
+   "titolo": "Ducati ‘su misura’ di Marquez? Tardozzi sbotta: “Discorsi da bar. Abbiamo soluzioni specifiche per ogni pilota”",
+   "estratto": "Il team manager della Ducati non gradisce che si dica che a Borgo Panigale si fanno moto adatte solo al #93",
+   "fonte": "FormulaPassion",
    "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-razgatlioglu-si-sottoporra-ad-un-controllo-alla-spalla-spero-di-non-dovermi-operare/10864627/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-12T13:58:04+00:00",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/ducati-su-misura-di-marquez-tardozzi-sbotta-discorsi-da-bar-abbiamo-soluzioni-specifiche-per-ogni-pilota",
+   "pubblicato": "2026-10-13T06:00:00+00:00",
    "citazione": true
-  },
-  {
-   "titolo": "MotoGP | Ecco perché Jorge Martin non è stato sanzionato per partenza anticipata in Indonesia",
-   "estratto": "Jorge Martin è riuscito a dare una svolta al suo fine settimana nel Gran Premio d'Indonesia di MotoGP. Il pilota spagnolo ha perso la leadership della classifica generale sabato, quando un errore…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-ecco-perche-jorge-martin-non-e-stato-sanzionato-per-partenza-anticipata-in-indonesia/10864655/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-12T11:02:55+00:00",
-   "citazione": false
-  },
-  {
-   "titolo": "MotoGP | I piloti si oppongono alla multa per mancata presenza agli eventi coi tifosi",
-   "estratto": "Durante il fine settimana della MotoGP in Indonesia, gli organizzatori del campionato hanno comunicato alle squadre che infliggeranno una multa di €5.000 ai piloti che non parteciperanno ad un numero…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-i-piloti-si-oppongono-alla-multa-per-mancata-presenza-agli-eventi-coi-tifosi/10864295/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-12T09:30:36+00:00",
-   "citazione": false
-  },
-  {
-   "titolo": "MotoGP | Aprilia apre agli ordini di scuderia: \"Ad un certo punto bisogna dare un peso agli obiettivi\"",
-   "estratto": "Dopo un sabato complicato, con la vittoria della Sprint sfumata per un errore di valutazione legato alla pressione della gomma anteriore di Jorge Martin e per l'incidente al via tra Marco Bezzecchi e…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-aprilia-apre-agli-ordini-di-scuderia-ad-un-certo-punto-bisogna-dare-un-peso-agli-obiettivi/10864574/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-12T08:41:12+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "MotoGP | Bagnaia cade a Mandalika: \"Dovevo tenere su la pressione della gomma davanti e ho chiesto troppo alla moto\"",
-   "estratto": "Il weekend di Mandalika era parso un passettino nella direzione giusta per Pecco Bagnaia, che finalmente era riuscito a centrare l'accesso diretto alla Q2 e nella Sprint aveva chiuso ottavo…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bagnaia-cade-a-mandalika-dovevo-tenere-su-la-pressione-della-gomma-davanti-e-chiesto-troppo-/10864202/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T11:10:01+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "MotoGP | Finalmente Bezzecchi rompe la maledizione, ma forse è tardi: sarà solo l'arbitro tra Martin e Marquez?",
-   "estratto": "133 giorni, oltre un terzo di un anno. E' questo il tempo che è servito a Marco Bezzecchi per mettersi finalmente alle spalle la maledizione che pareva averlo colpito nella parte centrale della…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-finalmente-bezzecchi-rompe-la-maledizione-ma-forse-e-tardi-sara-solo-larbitro-tra-martin-e-m/10864233/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T10:55:06+00:00",
-   "citazione": false
-  },
-  {
-   "titolo": "MotoGP | Aldeguer ha una frattura alla mano destra, verrà operato a Barcellona",
-   "estratto": "Continuano le brutte notizie per Fermín Aldeguer dopo un Gran Premio d’Indonesia estremamente complicato. Il pilota di Murcia era già arrivato a Mandalika un po’ provato fisicamente - come si era già…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-aldeguer-ha-una-frattura-alla-mano-destra-verra-operato-a-barcellona/10864227/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T10:39:03+00:00",
-   "citazione": false
-  },
-  {
-   "titolo": "MotoGP | Fernández eroico, le dita rotte erano due: \"A 14 giri dalla fine non ce la facevo più\"",
-   "estratto": "Raúl Fernández ha superato a pieni voti la dura sfida che lo attendeva questa domenica in Indonesia. Il pilota spagnolo era uno dei grandi favoriti a Mandalika, grazie al livello dimostrato fin da…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-fernandez-eroico-le-dita-rotte-erano-due-a-14-giri-dalla-fine-non-ce-la-facevo-piu/10864209/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T10:24:26+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "MotoGP | Márquez soddisfatto: \"È stato un weekend perfetto\"",
-   "estratto": "Marc Marquez ha l'abitudine di analizzare minuziosamente le tappe del calendario di MotoGP che lo attendono, per farsi un'idea di dove passare all'attacco e dove cercare di parare i colpi dei suoi…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-marquez-soddisfatto-e-stato-un-weekend-perfetto/10864213/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T10:10:34+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "MotoGP | Acosta: \"La regola sulle pressioni gomme va cambiata, così ci fa sembrare degli asini\"",
-   "estratto": "Pedro Acosta ha criticato aspramente le tanto contestate regole sulla pressione degli pneumatici in MotoGP, affermando che i piloti sono stati fatti passare per “asini” nel Gran Premio d’Indonesia…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-acosta-la-regola-sulle-pressioni-gomme-va-cambiata-cosi-ci-fa-sembrare-degli-asini/10864207/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T09:37:32+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "MotoGP | Bezzecchi: \"Il Mondiale è più perso che vinto, bisogna prendersi qualche rischio. Oggi ha pagato\"",
-   "estratto": "Marco Bezzecchi deve essersi tolto un peso veramente enorme dalle spalle oggi a Mandalika. Dopo la domenica trionfale del Mugello, ci sono voluti oltre quattro mesi per tornare ad assaporare la gioia…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bezzecchi-il-mondiale-e-piu-perso-che-vinto-bisogna-prendersi-qualche-rischio-oggi-ha-pagato-/10864193/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T09:04:30+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "MotoGP | Martín: \"Raúl e Bez superiori oggi, ma ho tenuto duro: solo così posso lottare con Márquez\"",
-   "estratto": "Nel grande dominio Aprilia andato in scena al GP d'Indonesia, Jorge Martín compie un altro bel passo verso il suo secondo titolo in MotoGP. Fin dalla partenza, il portacolori ufficiale della Casa di…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-martin-raul-e-bez-superiori-oggi-ma-ho-tenuto-duro-solo-cosi-posso-lottare-con-marquez/10864188/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T08:52:16+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "Bulega not letting Superpole at Jerez slip away: Lecuona finishes 2nd",
-   "estratto": "Four Ducatis led the pack, with Sam Lowes in third, followed by Montella. Alex Lowes came in fifth, followed by Bautista, Baldassarri, Surra and Vierge. Bassani was 12th and Petrucci 19th.",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/18/wsbk/bulega-not-letting-superpole-at-jerez-slip-away-lecuona-finishes-2nd.html",
-   "pubblicato": null,
-   "citazione": false
-  },
-  {
-   "titolo": "GT3 Portimão: Verstappen steals the show, climbs 12 positions to finish 9th. Rossi retires",
-   "estratto": "The four-time F1 world champion starred in a spectacular finish in the Mercedes-AMG GT3. Valentino Rossi fought his way back from the back of the grid in his BMW but retired.",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/18/formula-1/gt3-portimao-verstappen-steals-the-show-climbs-12-positions-to-finish-9th-rossi-retires.html",
-   "pubblicato": null,
-   "citazione": false
-  },
-  {
-   "titolo": "Maria Herrera makes history: World Championship in fight against cancer",
-   "estratto": "The GRT rider has been crowned champion for the second consecutive year. A fifth-place finish in Race 1 at Jerez was enough to secure the title. Ramos claimed victory, with Neila finishing second…",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/18/wsbk/maria-herrera-makes-history-world-championship-in-fight-against-cancer.html",
-   "pubblicato": null,
-   "citazione": false
-  },
-  {
-   "titolo": "No Australia: Aldeguer aims for a comeback at Sepang",
-   "estratto": "Iker Lecuona is primed to step in at Phillip Island, although Fermin is determined to grit his teeth and return for the Malaysian round.",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/17/wsbk/no-australia-aldeguer-aims-for-a-comeback-at-sepang.html",
-   "pubblicato": null,
-   "citazione": false
-  },
-  {
-   "titolo": "Delbianco on standby as Arenas makes last-ditch push for Go Eleven Ducati seat.",
-   "estratto": "The latest developments suggest that Marc VDS won't field a second bike, making the Spaniard an attractive option for the Piedmont-based outfit once more. Albert could therefore secure the Panigale…",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/17/wsbk/delbianco-on-standby-as-arenas-makes-last-ditch-push-for-go-eleven-ducati-seat.html",
-   "pubblicato": null,
-   "citazione": false
   }
  ]
 }

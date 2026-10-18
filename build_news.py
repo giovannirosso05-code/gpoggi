@@ -25,11 +25,11 @@ def serie_da_indirizzo(link, predefinita):
     return predefinita
 
 
-FEEDS = {  # nome della fonte: (indirizzo del feed, serie)
+FEEDS = {  # nome della fonte: (indirizzo del feed, serie). Solo feed dedicati a F1 o MotoGP: quello generale di FormulaPassion mescolava auto, WEC, Formula E (le "6 ore di Barcellona" comparivano come notizie F1) e GPone è in inglese e mescola WSBK e GT3.
     "Motorsport.com": ("https://it.motorsport.com/rss/f1/news/", "F1"),
-    "FormulaPassion": ("https://www.formulapassion.it/feed", "F1"),
-    "GPone": ("https://www.gpone.com/rss.xml", "F1"),
+    "FormulaPassion": ("https://www.formulapassion.it/f1/feed", "F1"),
     "Motorsport.com ": ("https://it.motorsport.com/rss/motogp/news/", "MotoGP"),
+    "FormulaPassion ": ("https://www.formulapassion.it/motogp/feed", "MotoGP"),
 }
 MAX_PER_FEED = 30
 MAX_TOTALE = 80
@@ -83,8 +83,6 @@ def main():
         for e in voci[:MAX_PER_FEED]:
             titolo, link = testo(e["title"]), e["link"]
             if not titolo or not link.startswith("http"):
-                continue
-            if fonte == "FormulaPassion" and not any(k in link.lower() for k in SOLO_CORSE) and not re.search(r"f1|motogp|gp|pilot|ferrari|mercedes|ducati", titolo, re.I):
                 continue
             articoli.append({"titolo": titolo, "estratto": estratto(e["summary"]), "fonte": fonte.strip(), "serie": serie_da_indirizzo(link, serie), "url": link, "pubblicato": data_iso(e["data"]), "citazione": bool(CITAZIONE.search(titolo))})
         print(f"  {fonte}: {min(len(voci), MAX_PER_FEED)} articoli")

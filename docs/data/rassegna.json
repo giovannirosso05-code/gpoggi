@@ -1,23 +1,95 @@
 {
- "generato_il": "2026-10-18T02:33:17+00:00",
+ "generato_il": "2026-10-18T10:15:25+00:00",
  "articoli": [
   {
-   "titolo": "Perché alla Ferrari manca sempre qualcosa per vincere",
-   "estratto": "Anche a Singapore alla Ferrari è mancato qualcosa per vincere: se prima c'era Mercedes, ora anche Red Bull...",
+   "titolo": "MotoGP | KTM vede il 2027 come un nuovo inizio: \"Finalmente possiamo far confluire 10 anni d'esperienza nella 850cc\"",
+   "estratto": "La KTM è al via in MotoGP dal 2017. Da allora il marchio austriaco ha conquistato otto Gran Premi. Miguel Oliveira ha vinto cinque volte, Brad Binder due volte e Pedro Acosta una volta. A questi si…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-ktm-vede-il-2027-come-un-nuovo-inizio-finalmente-possiamo-far-confluire-10-anni-desperienza-/10866005/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-18T10:02:43+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Mercedes-AMG GT SUV, quanta potenza elettrica",
+   "estratto": "La versione di punta raggiunge una potenza massima fino a 860 kW (1.169 CV), per uno scatto da 0 a 100 km/h in 2,5 secondi",
    "fonte": "FormulaPassion",
    "serie": "F1",
-   "url": "https://www.formulapassion.it/video/perche-alla-ferrari-manca-sempre-qualcosa-per-vincere-analisi-tecnica-gp-singapore-podcast",
-   "pubblicato": "2026-10-17T18:00:00+00:00",
+   "url": "https://www.formulapassion.it/auto/auto-elettriche/mercedes-amg-gt-suv-potenza-gamma-aerodinamica",
+   "pubblicato": "2026-10-18T09:45:00+00:00",
    "citazione": false
   },
   {
-   "titolo": "GP Stati Uniti 2026: orari Sky/Now e TV8",
-   "estratto": "I dettagli della programmazione televisiva dell'appuntamento ad Austin in Texas sul circuito del COTA",
+   "titolo": "Emozioni e sorpassi, ma niente champagne: Verstappen dà spettacolo a Portimao, ma chiude 9°",
+   "estratto": "Il campione fa il suo solito show e rimonta dal 24° al 9° posto dopo la penalità inflitta al compagno Chris Lulham",
    "fonte": "FormulaPassion",
    "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-stati-uniti-2026-austin-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-aggiornamenti-match-point-antonelli",
-   "pubblicato": "2026-10-17T17:00:00+00:00",
+   "url": "https://www.formulapassion.it/f1/f1-news/emozioni-sorpassi-niente-champagne-max-verstappen-show-portimao-ma-solo-9",
+   "pubblicato": "2026-10-18T09:05:00+00:00",
    "citazione": false
+  },
+  {
+   "titolo": "MotoGP | I piloti credono che le 850cc saranno meno impegnative fisicamente e più divertenti da guidare",
+   "estratto": "I piloti della MotoGP affermano che le moto di nuova generazione, le 850cc che debutteranno nella prossima stagione, sono più leggere e meno impegnative fisicamente rispetto agli attuali prototipi da…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-i-piloti-credono-che-850cc-saranno-meno-impegnative-fisicamente-e-piu-divertenti-da-guidare/10865999/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-18T08:31:28+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Camara ha già scelto il suo nuovo numero: “Correrò con il 50”. In passato ci vinsero Fangio e Baghetti",
+   "estratto": "Il brasiliano è uno dei talenti più attesi della nuova generazione",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/camara-ha-gia-scelto-il-suo-nuovo-numero-correro-con-il-50-in-passato-ci-vinsero-fangio-e-baghetti",
+   "pubblicato": "2026-10-18T08:23:48+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Autoscontro Norris-Piastri, il consiglio di Szafnauer a McLaren: “Serve una clausola nel contratto”",
+   "estratto": "L'incidente tra le due McLaren occorso nella Sprint di Singapore fa ancora discutere gli addetti ai lavori",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/autoscontro-norris-piastri-il-consiglio-di-szafnauer-a-mclaren-serve-una-clausola-nel-contratto",
+   "pubblicato": "2026-10-18T07:44:00+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Il \"rollercoaster\" della F1 con il record di 197 metri di dislivello: ecco come la pista del Ruanda vuole essere unica",
+   "estratto": "Il caso del Ruanda è quasi più unico che raro. C’è un contratto siglato di dieci anni, ma senza sapere in che stagione il Gran Premio debutterà nel calendario, seppur l’obiettivo sia quello di…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/il-rollercoaster-della-f1-con-il-record-di-197-metri-di-dislivello-ecco-come-la-pista-del-ruanda-vu/10865708/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-18T07:33:38+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "La Tesla che vola e il brevetto Ferrari",
+   "estratto": "Nel 2018 la casa di Maranello aveva depositato l’idea di un sistema a serbatoi di aria compressa e ugelli, orizzontali e verticali, capaci di spingere oltre il limite delle gomme, di generare…",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/auto/auto-news/la-tesla-che-vola-e-il-brevetto-ferrari",
+   "pubblicato": "2026-10-18T07:15:51+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Fittipaldi: “Alla Mercedes è andata bene che la Red Bull si sia ‘svegliata’ troppo tardi”",
+   "estratto": "Secondo il due volte iridato la scuderia di Milton Keynes può farla da padrone in questo finale di stagione",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/fittipaldi-antonelli-mercedes-andata-bene-redbull-svegliata-tardi-verstappen",
+   "pubblicato": "2026-10-18T06:00:00+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "GP in Ruanda, la RD Congo non ci sta: “Scelta moralmente indifendibile. F1 migliora l’immagine di un leader autoritario”",
+   "estratto": "La ministra degli Esteri della Repubblica Democratica del Congo ha criticato duramente la scelta del Ruanda come sede del GP d'Africa",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/gp-in-ruanda-la-rd-congo-non-ci-sta-scelta-moralmente-indifendibile-f1-migliora-limmagine-di-un-leader-autoritario",
+   "pubblicato": "2026-10-18T06:00:00+00:00",
+   "citazione": true
   },
   {
    "titolo": "GP Australia 2026: orari Sky/Now e TV8",
@@ -25,7 +97,52 @@
    "fonte": "FormulaPassion",
    "serie": "MotoGP",
    "url": "https://www.formulapassion.it/motogp/motogp-orari/orari-tv-gp-australia-2026-phillip-island-last-dance-televisione-diretta-sky-differita-tv8-programmazione-dove-vederla-marquez-martin-bezzecchi-ducati-aprilia",
-   "pubblicato": "2026-10-17T17:00:00+00:00",
+   "pubblicato": "2026-10-18T06:00:00+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Team order Aprilia, Pernat: “Sterlacchini ha sbagliato a parlarne pubblicamente”",
+   "estratto": "Ai microfoni di FormulaPassion.it Carlo Pernat ha commentato la delicata situazione che sta vivendo la casa di Noale",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/team-order-aprilia-pernat-sterlacchini-ha-sbagliato-a-parlarne-pubblicamente",
+   "pubblicato": "2026-10-18T06:00:00+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Horner: “Budget cap da ripensare, le squadre spendono già 600 milioni di dollari”",
+   "estratto": "Per Christian Horner il budget cap deve essere rivisto dalla F1, in quanto i team spendono comunque cifre stratosferiche",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/horner-budget-cap-da-ripensare-le-squadre-spendono-gia-600-milioni-di-dollari",
+   "pubblicato": "2026-10-18T06:00:00+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "Retroscena Mercedes: “A Singapore avevamo meccanici che non facevano un pit-stop da 15 anni”",
+   "estratto": "Il team di Brackley ha effettuato un turnover rilevante a Marina Bay nella crew dei pit-stop, ma nonostante questo le soste sono state veloci",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/retroscena-mercedes-a-singapore-avevamo-meccanici-che-non-facevano-un-pit-stop-da-15-anni",
+   "pubblicato": "2026-10-18T06:00:00+00:00",
+   "citazione": true
+  },
+  {
+   "titolo": "GP Stati Uniti 2026: orari Sky/Now e TV8",
+   "estratto": "I dettagli della programmazione televisiva dell'appuntamento ad Austin in Texas sul circuito del COTA",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-stati-uniti-2026-austin-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-aggiornamenti-match-point-antonelli",
+   "pubblicato": "2026-10-18T06:00:00+00:00",
+   "citazione": false
+  },
+  {
+   "titolo": "Perché alla Ferrari manca sempre qualcosa per vincere",
+   "estratto": "Anche a Singapore alla Ferrari è mancato qualcosa per vincere: se prima c'era Mercedes, ora anche Red Bull...",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/video/perche-alla-ferrari-manca-sempre-qualcosa-per-vincere-analisi-tecnica-gp-singapore-podcast",
+   "pubblicato": "2026-10-17T18:00:00+00:00",
    "citazione": false
   },
   {
@@ -65,84 +182,12 @@
    "citazione": false
   },
   {
-   "titolo": "Coletta: “A Barcellona ce la possiamo giocare, poi a Monza per il gran finale”",
-   "estratto": "Il Global Head of Endurance e Corse Clienti Ferrari traccia le prospettive del Cavallino alla vigilia della gara spagnola. Tra sfide tecniche, gestione delle incognite e la visione per il futuro…",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/wec/wec-news/coletta-a-barcellona-se-la-possiamo-giocare-poi-a-monza-per-il-gran-finale-ferrari-endurance",
-   "pubblicato": "2026-10-17T13:10:07+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "Nuovo test in F1 per Gabriele Minì con l’Alpine",
-   "estratto": "Il pilota siciliano è sceso in pista al Paul Ricard per una sessione del programma TPC al volante dell'A525",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/nuovo-test-f1-per-gabriele-mini-con-alpine",
-   "pubblicato": "2026-10-17T12:59:55+00:00",
-   "citazione": false
-  },
-  {
-   "titolo": "Antonelli Mondiale ad Austin? Mercedes ‘smonta’ il sogno: “Ha chance minime, assurdo chiamarlo match-point”",
-   "estratto": "Le chance di Kimi di vincere il Mondiale in America sono minime, sempre che si corra regolarmente in Qatar e Abu Dhabi. Altrimenti...",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/antonelli-mondiale-ad-austin-mercedes-smonta-il-sogno-ha-chance-minime-assurdo-chiamarlo-match-point",
-   "pubblicato": "2026-10-17T12:46:16+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "Lynn in McLaren nel 2027. Cadillac ufficializza Da Costa e Taylor",
-   "estratto": "Il britannico lascerà proprio la Cadillac per unirsi al team di Woking, ma la Casa statunitense ha rimpiazzato la sua partenza, e quella di Bourdais, con due nuovi piloti",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/wec/wec-news/lynn-mclaren-2027-cadillac-ufficializza-da-costa-taylor",
-   "pubblicato": "2026-10-17T11:09:05+00:00",
-   "citazione": false
-  },
-  {
-   "titolo": "6 ore di Barcellona 2026, Qualifiche LMGT3: Pole alla McLaren #10, Ferrari #21 terza",
-   "estratto": "Thomas Fleming su McLaren conquista la sua seconda pole position della stagione",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/wec/wec-risultati/6-ore-di-barcellona-2026-qualifiche-lmgt3-pole-alla-mclaren-10-ferrari-21-terza",
-   "pubblicato": "2026-10-17T10:39:13+00:00",
-   "citazione": false
-  },
-  {
-   "titolo": "La Ferrari non ha piste favorevoli",
-   "estratto": "La Ferrari non riesce più vincere, con una macchina che anche sulle piste dove il motore conta meno soffre un altro punto debole.",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/video/ferrari-non-ha-piste-favorevoli",
-   "pubblicato": "2026-10-17T10:30:00+00:00",
-   "citazione": false
-  },
-  {
    "titolo": "F1 | Watanabe esclusivo: Aston Martin e Honda faticano. Che cosa sta succedendo esattamente?",
    "estratto": "L’Aston Martin Honda sta affrontando una stagione difficile. Era naturale che le aspettative crescessero molto, con una monoposto sviluppata sotto la guida di Adrian Newey, una nuova factory e una…",
    "fonte": "Motorsport.com",
    "serie": "F1",
    "url": "https://it.motorsport.com/f1/news/f1-watanabe-esclusivo-aston-martin-e-honda-faticano-che-cosa-sta-succedendo-esattamente-/10865782/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-17T10:20:55+00:00",
-   "citazione": false
-  },
-  {
-   "titolo": "Kubica, il retroscena della vittoria a Le Mans: “Dissi che era l’ultima chance”",
-   "estratto": "Robert Kubica racconta un retroscena della vittoria a Le Mans nel 2025, riscattando il ritiro all’ultimo giro nel 2021",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/wec/wec-news/kubica-retroscena-vittoria-le-mans-dissi-era-ultima-chance",
-   "pubblicato": "2026-10-17T10:00:00+00:00",
-   "citazione": true
-  },
-  {
-   "titolo": "Alonso-Dakar, spuntano altri indizi: test con Pro Drive in Marocco",
-   "estratto": "Lo spagnolo aveva escluso la sua partecipazione nel 2027 al mitico rally raid, ma in realtà si è già cimentato in alcuni test",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/alonso-dakar-spuntano-altri-indizi-test-con-pro-drive-in-marocco",
-   "pubblicato": "2026-10-17T08:50:58+00:00",
    "citazione": false
   },
   {
@@ -488,15 +533,6 @@
    "citazione": true
   },
   {
-   "titolo": "F1 | Mercedes conferma: sia Antonelli che Russell useranno il nuovo pacchetto di aggiornamenti ad Austin",
-   "estratto": "Toto Wolff e Andrea Kimi Antonelli lo avevano già detto nel post gara di Singapore: ad Austin, quasi certamente, entrambe le W17 verranno equipaggiate dal nuovo pacchetto introdotto da Mercedes a…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-mercedes-conferma-sia-antonelli-che-russell-useranno-il-nuovo-pacchetto-di-aggiornamenti-ad-aust/10864896/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-13T13:45:40+00:00",
-   "citazione": false
-  },
-  {
    "titolo": "MotoGP | Pressioni gomme: Acosta propone una soluzione, secondo Pirelli non ci saranno problemi in futuro",
    "estratto": "Nel 2023 la MotoGP ha introdotto una modifica al regolamento tecnico, obbligando i piloti a mantenere una pressione superiore a un determinato valore per un tempo minimo durante la gara. Attualmente…",
    "fonte": "Motorsport.com",
@@ -641,21 +677,30 @@
    "citazione": true
   },
   {
-   "titolo": "MotoGP | Mondiale: Martin mantiene 2 punti su Marquez, Bezzecchi torna a -46",
-   "estratto": "Mondiale Piloti Pos Pilota Punti 1 J. Martin Aprilia Racing Team 355 18 27 32 13 37 - 29 4 12 21 15 32 16 18 32 27 22 - - - - - 2 M. Marquez Ducati Team ... Continua a leggere",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-mondiale-martin-mantiene-2-punti-su-marquez-bezzecchi-torna-a-46/10864179/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T08:20:27+00:00",
+   "titolo": "Bulega not letting Superpole at Jerez slip away: Lecuona finishes 2nd",
+   "estratto": "Four Ducatis led the pack, with Sam Lowes in third, followed by Montella. Alex Lowes came in fifth, followed by Bautista, Baldassarri, Surra and Vierge. Bassani was 12th and Petrucci 19th.",
+   "fonte": "GPone",
+   "serie": "F1",
+   "url": "https://www.gpone.com/en/2026/10/18/wsbk/bulega-not-letting-superpole-at-jerez-slip-away-lecuona-finishes-2nd.html",
+   "pubblicato": null,
    "citazione": false
   },
   {
-   "titolo": "MotoGP | Bezzecchi ritrova la vittoria nel poker Aprilia di Mandalika, Martin 3° torna leader",
-   "estratto": "La maledizione è finita per Marco Bezzecchi. Quella vittoria che aspettava da fine maggio, dalla domenica trionfale del Mugello, è finalmente arrivata a Mandalika. Il pilota riminese si è imposto in…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bezzecchi-ritrova-la-vittoria-nel-poker-aprilia-di-mandalika-martin-3-torna-leader/10864150/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T08:05:28+00:00",
+   "titolo": "GT3 Portimão: Verstappen steals the show, climbs 12 positions to finish 9th. Rossi retires",
+   "estratto": "The four-time F1 world champion starred in a spectacular finish in the Mercedes-AMG GT3. Valentino Rossi fought his way back from the back of the grid in his BMW but retired.",
+   "fonte": "GPone",
+   "serie": "F1",
+   "url": "https://www.gpone.com/en/2026/10/18/formula-1/gt3-portimao-verstappen-steals-the-show-climbs-12-positions-to-finish-9th-rossi-retires.html",
+   "pubblicato": null,
+   "citazione": false
+  },
+  {
+   "titolo": "Maria Herrera makes history: World Championship in fight against cancer",
+   "estratto": "The GRT rider has been crowned champion for the second consecutive year. A fifth-place finish in Race 1 at Jerez was enough to secure the title. Ramos claimed victory, with Neila finishing second…",
+   "fonte": "GPone",
+   "serie": "F1",
+   "url": "https://www.gpone.com/en/2026/10/18/wsbk/maria-herrera-makes-history-world-championship-in-fight-against-cancer.html",
+   "pubblicato": null,
    "citazione": false
   },
   {
@@ -673,51 +718,6 @@
    "fonte": "GPone",
    "serie": "F1",
    "url": "https://www.gpone.com/en/2026/10/17/wsbk/delbianco-on-standby-as-arenas-makes-last-ditch-push-for-go-eleven-ducati-seat.html",
-   "pubblicato": null,
-   "citazione": false
-  },
-  {
-   "titolo": "Vierge’s Yamaha catches fire at Jerez: “More dramatic than it actually was”",
-   "estratto": "Denning: “Nothing happened that we hadn’t seen before : the engine broke, oil spilled onto the exhaust pipe, and it caught fire. This race depressed me more than others, but I’m not referring to…",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/17/wsbk/vierges-yamaha-catches-fire-at-jerez-more-dramatic-than-it-actually-was.html",
-   "pubblicato": null,
-   "citazione": true
-  },
-  {
-   "titolo": "Bulega hits 50 and has Bayliss in his sights: “It’s incredible to be so close to one of my idols”",
-   "estratto": "“I’m happy to have set this record. My last weekend in SBK? I won’t be happy tomorrow—I’m moving to MotoGP to fulfill my dream—but this paddock has given me so much; it’ll be a bit of a sad day.”",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/17/wsbk/bulega-hits-50-and-has-bayliss-in-his-sights-its-incredible-to-be-so-close-to-one-of-my-idols.html",
-   "pubblicato": null,
-   "citazione": true
-  },
-  {
-   "titolo": "Lecuona: “I’m frustrated: I don’t understand what’s going on with my bike.”",
-   "estratto": "“I struggled at the start of the race but not at the end; at Estoril, it was the opposite. On the 4th lap, I almost crashed. My tyres were worn out, and I don’t know why. The problem is different…",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/17/wsbk/lecuona-im-frustrated-i-dont-understand-whats-going-on-with-my-bike.html",
-   "pubblicato": null,
-   "citazione": true
-  },
-  {
-   "titolo": "The Liberty Media effect: Bulega brings MotoGP to Austin alongside Formula 1",
-   "estratto": "Nicolò will lead a MotoGP parade ahead of next week’s Grand Prix of the Americas. Dani Pedrosa will join him on his KTM.",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/17/wsbk/the-liberty-media-effect-bulega-brings-motogp-to-austin-alongside-formula-1.html",
-   "pubblicato": null,
-   "citazione": false
-  },
-  {
-   "titolo": "A scare for Xavi Vierge as his Yamaha caught fire on the straight.",
-   "estratto": "VIDEO – The incident involving the Spanish rider was dramatic: a sudden combustion was quickly followed by flames engulfing his R1 on the main straight.",
-   "fonte": "GPone",
-   "serie": "F1",
-   "url": "https://www.gpone.com/en/2026/10/17/wsbk/a-scare-for-xavi-vierge-as-his-yamaha-caught-fire-on-the-straight.html",
    "pubblicato": null,
    "citazione": false
   }

@@ -1,6 +1,36 @@
 {
- "generato_il": "2026-10-18T10:43:16+00:00",
+ "generato_il": "2026-10-18T15:15:26+00:00",
  "articoli": [
+  {
+   "titolo": "MotoGP | Marquez valorizza il livello del suo rivale per il titolo: \"Martin è un vero talento\"",
+   "estratto": "Il campione del mondo MotoGP 2025 ha dominato nel suo anno di debutto con il team ufficiale Ducati, una stagione in cui ha vinto 11 dei primi 17 Gran Premi disputati, e 14 delle prime 17 Sprint, per…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-marquez-valorizza-il-livello-del-suo-rivale-per-il-titolo-martin-e-un-vero-talento/10866043/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-18T15:00:42+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true
+  },
+  {
+   "titolo": "F1 | Alpine meglio in qualifica che in gara: i problemi di degrado gomma dipendono anche dai cerchi",
+   "estratto": "Pierre Gasly ha sfiorato la zona punti a Singapore, chiudendo in undicesima posizione proprio alle spalle di Isack Hadjar, partito dal fondo dopo i problemi accusati in qualifica al cambio…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-alpine-meglio-in-qualifica-che-in-gara-i-problemi-di-degrado-gomma-dipendono-anche-dai-cerchi/10866048/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-18T13:00:46+00:00",
+   "tipo": null,
+   "citazione": false
+  },
+  {
+   "titolo": "Verstappen condanna i messaggi d’odio a Lulham dopo Portimão",
+   "estratto": "L'olandese ha ritenuto \"inaccettabili\" gli attacchi personali ricevuti dal compagno di squadra dopo l'errore commesso in gara",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/verstappen-condanna-messaggi-odio-lulham-dopo-portimao",
+   "pubblicato": "2026-10-18T12:39:40+00:00",
+   "tipo": null,
+   "citazione": false
+  },
   {
    "titolo": "MotoGP | KTM vede il 2027 come un nuovo inizio: \"Finalmente possiamo far confluire 10 anni d'esperienza nella 850cc\"",
    "estratto": "La KTM è al via in MotoGP dal 2017. Da allora il marchio austriaco ha conquistato otto Gran Premi. Miguel Oliveira ha vinto cinque volte, Brad Binder due volte e Pedro Acosta una volta. A questi si…",
@@ -242,16 +272,6 @@
    "citazione": false
   },
   {
-   "titolo": "Mercedes ci riprova: ad Austin ancora con gli aggiornamenti",
-   "estratto": "Il vicedirettore tecnico Simone Resta conferma che la Mercedes correrà in Texas con la W17 aggiornata per venire a capo dei problemi di assetto",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/mercedes-ci-riprova-austin-ancora-aggiornamenti",
-   "pubblicato": "2026-10-17T06:00:00+00:00",
-   "tipo": null,
-   "citazione": false
-  },
-  {
    "titolo": "Fittipaldi: “Antonelli la fortuna se l’è creata”",
    "estratto": "Il due volte iridato ha sottolineato che quello di Kimi sarà un titolo meritatissimo",
    "fonte": "FormulaPassion",
@@ -260,6 +280,16 @@
    "pubblicato": "2026-10-17T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true
+  },
+  {
+   "titolo": "Mercedes ci riprova: ad Austin ancora con gli aggiornamenti",
+   "estratto": "Il vicedirettore tecnico Simone Resta conferma che la Mercedes correrà in Texas con la W17 aggiornata per venire a capo dei problemi di assetto",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/mercedes-ci-riprova-austin-ancora-aggiornamenti",
+   "pubblicato": "2026-10-17T06:00:00+00:00",
+   "tipo": null,
+   "citazione": false
   },
   {
    "titolo": "Volata Mondiale, per Pernat è Marquez contro tutti: “Ma nel 2025 saltò le ultime gare, può essere uno svantaggio”",
@@ -348,16 +378,6 @@
    "serie": "F1",
    "url": "https://it.motorsport.com/f1/news/f1-mercedes-il-nuovo-pacchetto-ha-un-anteriore-piu-forte-del-previsto-e-ha-sbilanciato-la-w17/10865634/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-16T13:00:03+00:00",
-   "tipo": null,
-   "citazione": false
-  },
-  {
-   "titolo": "Yuki Tsunoda: possibile test in IndyCar a fine ottobre",
-   "estratto": "La prova, non ancora confermata, potrebbe aprire una possibilità al pilota giapponese per approdare nel campionato americano",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/yuki-tsunoda-possibile-test-indycar-fine-ottobre",
-   "pubblicato": "2026-10-16T13:00:00+00:00",
    "tipo": null,
    "citazione": false
   },
@@ -872,16 +892,6 @@
    "citazione": true
   },
   {
-   "titolo": "F1 | Hamilton: \"Ho mancato l'ingresso dei box\" è il segno che Lewis aveva già il malessere?",
-   "estratto": "“Ho mancato l’ingresso”. La chiamata radio di Lewis Hamiltn è stata lapidaria, come l’ordine che il muretto del Cavallino aveva impartito ai due piloti: “Ragazzi, fermatevi ai box durante la VSC”…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-hamilton-ho-mancato-lingresso-dei-box-e-il-segno-che-hamilton-aveva-gia-il-malessere/10864977/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-13T15:36:20+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true
-  },
-  {
    "titolo": "La F1 tornerà in Africa! Annunciato un nuovo Gran Premio: lungo impegno in un Paese emergente",
    "estratto": "La F1 tornerà a correre in Africa a oltre trent’anni di distanza dall’ultima apparizione nel Continente: dopo l’esperienza in Sudafrica, sul circuito di Kyalami nel 1993, la massima categoria…",
    "fonte": "OA Sport",
@@ -1189,16 +1199,6 @@
    "url": "https://www.oasport.it/2026/10/f1-verstappen-e-tornato-red-bull-vola-a-singapore-e-prepara-lassalto-al-2027/",
    "pubblicato": "2026-10-12T07:19:06+00:00",
    "tipo": "intervista",
-   "citazione": true
-  },
-  {
-   "titolo": "MotoGP, Martin grande sconfitto di Mandalika. Marquez si rafforza e Bezzecchi risponde ai ‘criticoni’",
-   "estratto": "Alla fine della fiera vince sempre lui, Marc Marquez. Anche il Gran Premio di Indonesia ha rappresento una tappa favorevole al Tuono di Cervera nella rincorsa al titolo mondiale 2026. Come previsto…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/10/motogp-martin-grande-sconfitto-di-mandalika-marquez-si-rafforza-e-bezzecchi-risponde-ai-criticoni/",
-   "pubblicato": "2026-10-12T07:00:32+00:00",
-   "tipo": "dichiarazione",
    "citazione": true
   }
  ]

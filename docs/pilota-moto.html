@@ -12,7 +12,8 @@
 <meta name="theme-color" content="#f5f4f0">
 <title>Pilota MotoGP — GP Oggi</title>
 <meta name="description" content="Scheda di un pilota di MotoGP, Moto2 o Moto3: classifica, punti, vittorie e risultati gara per gara. Sito non ufficiale.">
-<link rel="canonical" href="https://gpoggi.it/pilota-moto.html">
+<link rel="canonical" href="https://gpoggi.it/pilota-moto.html" id="canon">
+<script>(function(){var p=new URLSearchParams(location.search).get("id");var l=document.getElementById("canon");if(p){l.href="https://gpoggi.it/pilota-moto.html?id="+encodeURIComponent(p);fetch("data/slug-piloti.json").then(function(r){return r.json()}).then(function(m){var f=m.moto&&m.moto[p];if(f)l.href="https://gpoggi.it/"+f}).catch(function(){})}})()</script>
 <meta property="og:url" content="https://gpoggi.it/pilota-moto.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GP Oggi">

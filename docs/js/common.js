@@ -200,6 +200,13 @@ export function renderFooter() {
           <li><a href="f1.html">Formula 1</a></li>
           <li><a href="motogp.html">MotoGP</a></li>
           <li><a href="motogp-archivio.html">Archivio MotoGP</a></li>
+          <li><a href="giochi-f1-online.html">Giochi F1</a></li>
+          <li><a href="giochi-motogp-online.html">Giochi MotoGP</a></li>
+          <li><a href="classifica-f1-2026.html">Classifica F1 2026</a></li>
+          <li><a href="classifica-motogp-2026.html">Classifica MotoGP 2026</a></li>
+          <li><a href="calendario-f1-2026.html">Calendario F1 2026</a></li>
+          <li><a href="calendario-motogp-2026.html">Calendario MotoGP 2026</a></li>
+          <li><a href="piloti-2026.html">Tutti i piloti 2026</a></li>
           <li><a href="orari-gp.html">Orari dei GP</a></li>
           <li><a href="pagelle-gp.html">Pagelle di ogni GP</a></li>
           <li><a href="calendario.html">Aggiungi al calendario</a></li>

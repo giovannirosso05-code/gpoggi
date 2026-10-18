@@ -24,7 +24,7 @@
 <!-- Statistiche senza cookie, Plausible -->
 <script async src="https://plausible.io/js/pa-ZWqatc_5BB5FuQLCJYeLj.js"></script>
 <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
-<script>(function(){var p=new URLSearchParams(location.search).get("n");var l=document.createElement("link");l.rel="canonical";l.href="https://gpoggi.it/pilota.html"+(p?"?n="+encodeURIComponent(p):"");document.head.appendChild(l)})()</script>
+<script>(function(){var p=new URLSearchParams(location.search).get("n");var l=document.createElement("link");l.rel="canonical";l.href="https://gpoggi.it/pilota.html"+(p?"?n="+encodeURIComponent(p):"");document.head.appendChild(l);if(p)fetch("data/slug-piloti.json").then(function(r){return r.json()}).then(function(m){var f=m.f1&&m.f1[p];if(f)l.href="https://gpoggi.it/"+f}).catch(function(){})})()</script>
 </head>
 <body>
 

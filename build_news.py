@@ -41,7 +41,7 @@ ESTRATTO_MAX = 200
 # titolo con una dichiarazione di pilota/team principal/tecnico: virgolette o verbi del "dire" (il radar le mette in evidenza)
 CITAZIONE = re.compile(r"[“”\"«»]|\b(dice|dicono|ammette|rivela|spiega|racconta|intervista|parla|svela|confessa|promette|avverte|attacca|risponde|sottolinea|difende|chiarisce|ricorda)\b", re.I)
 # tipo di dichiarazione, letto da titolo ed estratto: social (post, storie, messaggi sui social), intervista (interviste, conferenze stampa, podcast), dichiarazione (virgolette o verbi del "dire" nel titolo)
-SOCIAL = re.compile(r"\b(sui social|sui suoi social|sui propri social|su instagram|su tiktok|su twitter|su facebook|nelle storie|nelle sue storie|storia su|messaggio sui social|un post|nuovo post|il post|post su|tweet|cinguett\w*)\b", re.I)
+SOCIAL = re.compile(r"\b(sui social|sui suoi social|sui propri social|su instagram|su tiktok|su twitter|su facebook|nelle storie|nelle sue storie|storia su|messaggio sui social|un post|nuovo post|il post|post su|tweet|cinguett\w*|social network|sui social media|ha postato|ha pubblicato (?:una |un |su )|ha condiviso|su x|su ig|reel|stories|storie su)\b", re.I)
 INTERVISTA = re.compile(r"\b(intervista|intervistato|intervistata|ai microfoni|conferenza stampa|ha raccontato|racconta|podcast|ospite a|a colloquio)\b", re.I)
 
 

@@ -1,5 +1,5 @@
 {
- "generato_il": "2026-10-18T21:52:37+00:00",
+ "generato_il": "2026-10-18T21:57:05+00:00",
  "articoli": [
   {
    "titolo": "MotoGP | Marquez valorizza il livello del suo rivale per il titolo: \"Martin è un vero talento\"",
@@ -272,16 +272,6 @@
    "citazione": false
   },
   {
-   "titolo": "Fittipaldi: “Antonelli la fortuna se l’è creata”",
-   "estratto": "Il due volte iridato ha sottolineato che quello di Kimi sarà un titolo meritatissimo",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/fittipaldi-antonelli-kimi-fortunato-no-fortuna-creata-ferrari-tifosi-impazziranno",
-   "pubblicato": "2026-10-17T06:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true
-  },
-  {
    "titolo": "Mercedes ci riprova: ad Austin ancora con gli aggiornamenti",
    "estratto": "Il vicedirettore tecnico Simone Resta conferma che la Mercedes correrà in Texas con la W17 aggiornata per venire a capo dei problemi di assetto",
    "fonte": "FormulaPassion",
@@ -290,6 +280,16 @@
    "pubblicato": "2026-10-17T06:00:00+00:00",
    "tipo": null,
    "citazione": false
+  },
+  {
+   "titolo": "Fittipaldi: “Antonelli la fortuna se l’è creata”",
+   "estratto": "Il due volte iridato ha sottolineato che quello di Kimi sarà un titolo meritatissimo",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/fittipaldi-antonelli-kimi-fortunato-no-fortuna-creata-ferrari-tifosi-impazziranno",
+   "pubblicato": "2026-10-17T06:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true
   },
   {
    "titolo": "Volata Mondiale, per Pernat è Marquez contro tutti: “Ma nel 2025 saltò le ultime gare, può essere uno svantaggio”",
@@ -362,6 +362,16 @@
    "citazione": true
   },
   {
+   "titolo": "Nuova Ferrari SF-26 ad Austin: tutte le novità del pacchetto aerodinamico",
+   "estratto": "L’ultima cartuccia è pronta. Ad Austin, dal 23 al 25 ottobre, la Ferrari giocherà la sua ultima grande carta sulla SF-26, e lo farà con un pacchetto che, stando a quanto riferisce Autoracer, toccherà…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/nuova-ferrari-sf-26-ad-austin-tutte-le-novita-del-pacchetto-aerodinamico/",
+   "pubblicato": "2026-10-16T13:59:58+00:00",
+   "tipo": null,
+   "citazione": false
+  },
+  {
    "titolo": "F1 | Mercedes: il nuovo pacchetto ha un anteriore più forte del previsto e ha sbilanciato la W17",
    "estratto": "Se dopo la Malesia in casa Mercedes c'erano più interrogativi che certezze, il weekend di Singapore ha iniziato a fornire le prime risposte di cui erano alla ricerca i tecnici della Stella sul nuovo…",
    "fonte": "Motorsport.com",
@@ -390,6 +400,16 @@
    "pubblicato": "2026-10-16T10:20:25+00:00",
    "tipo": null,
    "citazione": false
+  },
+  {
+   "titolo": "Piola: “Ricordo Jochen Mass che piangeva: si sentiva responsabile per l’incidente di Gilles Villeneuve”",
+   "estratto": "Ci sono piloti che rimangono nella storia per le vittorie, altri per il talento e altri ancora per ciò che hanno lasciato nelle persone che li hanno conosciuti. Jochen Mass appartiene a quest’ultima…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/piola-ricordo-jochen-mass-che-piangeva-si-sentiva-responsabile-per-lincidente-di-gilles-villeneuve/",
+   "pubblicato": "2026-10-16T09:30:57+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true
   },
   {
    "titolo": "Horner lancia una frecciatina a Guenther Steiner: \"Non ha mai conquistato un podio in F1\"",
@@ -460,6 +480,36 @@
    "pubblicato": "2026-10-16T04:15:00+00:00",
    "tipo": null,
    "citazione": false
+  },
+  {
+   "titolo": "George Russell, un’altra penalità all’orizzonte: il britannico potrebbe pagare ancora…",
+   "estratto": "La corona mondiale si allontana, mentre i problemi tecnici continuano a complicare i piani. George Russell lascia Singapore con un sesto posto conquistato rimontando dalla 19ª posizione, ma il…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/george-russell-unaltra-penalita-allorizzonte-il-britannico-potrebbe-pagare-ancora/",
+   "pubblicato": "2026-10-15T20:06:48+00:00",
+   "tipo": null,
+   "citazione": false
+  },
+  {
+   "titolo": "Herbert difende Russell: “Antonelli più fortunato”",
+   "estratto": "Il divario tra Kimi Antonelli e George Russell non si spiega soltanto attraverso il rendimento in pista. Secondo Johnny Herbert, ex pilota britannico e oggi commentatore tecnico televisivo, anche la…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/herbert-difende-russell-antonelli-piu-fortunato/",
+   "pubblicato": "2026-10-15T19:05:55+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true
+  },
+  {
+   "titolo": "F1: Qatar e Abu Dhabi restano in calendario, ma “l’ombra di Imola” rimane presente",
+   "estratto": "La parte finale del calendario del Mondiale 2026 di F1 sta diventando sempre di più un rebus. Da una parte le rassicurazioni sulla disputa regolare dei GP del Qatar del Qatar (29 novembre) e di Abu…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/f1-qatar-e-abu-dhabi-restano-in-calendario-ma-lombra-di-imola-rimane-presente/",
+   "pubblicato": "2026-10-15T17:47:20+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true
   },
   {
    "titolo": "F1 | Test Pirelli: Mercedes completa oltre 600 km con Vesti a Magny-Cours alla ricerca del punto di crossover",
@@ -538,6 +588,26 @@
    "serie": "F1",
    "url": "https://it.motorsport.com/f1/news/ufficiale-rafael-camara-debutta-in-f1-nel-2027-con-la-haas/10865227/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-15T14:02:32+00:00",
+   "tipo": null,
+   "citazione": false
+  },
+  {
+   "titolo": "Kimi Antonelli finisce in tribunale: causa con tanti milioni in ballo",
+   "estratto": "Kimi Antonelli si sta rendendo protagonista di una stagione stellare ed è lanciato verso la conquista del Mondiale F1: il ventenne può fare affidamento su un vantaggio di 102 punti nei confronti del…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/kimi-antonelli-finisce-in-tribunale-causa-con-tanti-milioni-in-ballo/",
+   "pubblicato": "2026-10-15T11:08:33+00:00",
+   "tipo": null,
+   "citazione": false
+  },
+  {
+   "titolo": "MotoGP, per il momento il GP del Qatar è confermato. I piloti, però, vogliono certezze importanti",
+   "estratto": "Mancano 22 giorni al via ufficiale del fine settimana del Gran Premio del Qatar, ventesimo e terzultimo appuntamento del Motomondiale 2026 ma, al momento, nulla è ancora sicuro e definito. Oppure…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-per-il-momento-il-gp-del-qatar-e-confermato-i-piloti-pero-vogliono-certezze-importanti/",
+   "pubblicato": "2026-10-15T11:07:50+00:00",
    "tipo": null,
    "citazione": false
   },
@@ -802,6 +872,16 @@
    "citazione": true
   },
   {
+   "titolo": "La MotoGP rischia di trovarsi in Qatar durante nuovi raid militari. La data è la peggiore possibile per via delle elezioni USA",
+   "estratto": "La MotoGP aveva indicato la metà di settembre come il momento del “rien ne va plus” legato al Gran Premio del Qatar, ossia il termine ultimo per decidere se correre o meno a Lusail nel weekend del…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/la-motogp-rischia-di-trovarsi-in-qatar-durante-nuovi-raid-militari-la-data-e-la-peggiore-possibile-per-via-delle-elezioni-usa/",
+   "pubblicato": "2026-10-14T04:32:44+00:00",
+   "tipo": null,
+   "citazione": false
+  },
+  {
    "titolo": "F1 | \"Si è vista la sua intelligenza\": come Hulkenberg ha tenuto dietro Russell",
    "estratto": "Singapore era una di quelle tappe cerchiate in rosso sul calendario di Audi perché, nonostante una certa carenza di performance della Power Unit nelle gare disputate in condizioni di grande caldo…",
    "fonte": "Motorsport.com",
@@ -810,6 +890,16 @@
    "pubblicato": "2026-10-13T16:34:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true
+  },
+  {
+   "titolo": "La F1 tornerà in Africa! Annunciato un nuovo Gran Premio: lungo impegno in un Paese emergente",
+   "estratto": "La F1 tornerà a correre in Africa a oltre trent’anni di distanza dall’ultima apparizione nel Continente: dopo l’esperienza in Sudafrica, sul circuito di Kyalami nel 1993, la massima categoria…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/la-f1-tornera-in-africa-annunciato-un-nuovo-gran-premio-lungo-impegno-in-un-paese-emergente/",
+   "pubblicato": "2026-10-13T10:30:18+00:00",
+   "tipo": null,
+   "citazione": false
   },
   {
    "titolo": "MotoGP | Pressioni gomme: Acosta propone una soluzione, secondo Pirelli non ci saranno problemi in futuro",
@@ -828,6 +918,16 @@
    "serie": "F1",
    "url": "https://www.tuttosport.com/news/formula-1/2026/10/13-151860050/gp_in_africa_dal_2030_tutte_le_novit_domenicali_annuncia_momento_storico_per_la_formula_1/",
    "pubblicato": "2026-10-13T09:52:47+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true
+  },
+  {
+   "titolo": "Jorge Martin: “Dopo Mandalika mi sento più competitivo. Posso essere veloce su tutte le piste”",
+   "estratto": "Superato lo “scoglio” del Gp d’Indonesia, a Mandalika, con la vetta del Mondiale 2026 di MotoGp ancora in tasca (355 punti contro i 353 di Marc Marquez), Jorge Martin è pronto a guardare alla volata…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-jorge-martin-dopo-mandalika-mi-sento-piu-competitivo-posso-essere-veloce-su-tutte-le-piste/",
+   "pubblicato": "2026-10-13T09:42:33+00:00",
    "tipo": "dichiarazione",
    "citazione": true
   },
@@ -892,6 +992,26 @@
    "citazione": true
   },
   {
+   "titolo": "Kimi Antonelli non ha dubbi: “Continuerò con la macchina aggiornata, ha un gran potenziale”",
+   "estratto": "Kimi Antonelli ha chiuso in terza posizione il Gran Premio di Singapore 2026, valevole come diciassettesimo round del Mondiale di Formula Uno. Si tratta del podio n.14 in stagione per il ventenne…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/kimi-antonelli-non-ha-dubbi-continuero-con-la-macchina-aggiornata-ha-un-gran-potenziale/",
+   "pubblicato": "2026-10-12T18:27:05+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true
+  },
+  {
+   "titolo": "Jorge Martin e il “caso” della falsa partenza. Cos’è successo a Mandalika e perchè non è stato sanzionato",
+   "estratto": "Jorge Martin chiude il fine settimana del Gran Premio di Indonesia, diciassettesimo appuntamento del Mondiale di MotoGP 2026 senza vittorie sul tracciato di Mandalika, ma di nuovo con la vetta della…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/jorge-martin-e-il-caso-della-falsa-partenza-cose-successo-a-mandalika-e-perche-non-e-stato-sanzionato/",
+   "pubblicato": "2026-10-12T15:27:28+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true
+  },
+  {
    "titolo": "MotoGP | Tardozzi: \"Non è assolutamente vero che Marquez si è fatto la Ducati per lui, sono discorsi da bar\"",
    "estratto": "L'Aprilia ha lasciato Mandalika al termine di una giornata storica, che le ha visto piazzare per la prima volta quattro RS-GP davanti a tutti nella gara lunga. Tuttavia, il Gran Premio d'Indonesia di…",
    "fonte": "Motorsport.com",
@@ -912,12 +1032,52 @@
    "citazione": false
   },
   {
+   "titolo": "MotoGP, Aprilia non chiude la porta agli ordini di scuderia: “Ad un certo punto dovremo prendere una decisione”",
+   "estratto": "Il Gran Premio d’Indonesia 2026 è stato caratterizzato dall’inedito poker Aprilia, che ha monopolizzato la top4 di una gara di MotoGP per la prima volta nella sua storia. Sulla pista di Mandalika è…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-aprilia-non-chiude-la-porta-agli-ordini-di-scuderia-ad-un-certo-punto-dovremo-prendere-una-decisione/",
+   "pubblicato": "2026-10-12T14:23:54+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true
+  },
+  {
+   "titolo": "Giancarlo Minardi: “Resta aperta l’ipotesi di una gara ad Imola. La F4 italiana oggi è un fiore all’occhiello nel mondo”",
+   "estratto": "Giancarlo Minardi è una figura storica e di altri tempi per il mondo della Formula 1. Un nome che subito riporta la mente ad epoche passate, ad una Formula 1 che non tornerà mai più. Una carriera…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/giancarlo-minardi-resta-aperta-lipotesi-di-una-gara-ad-imola-la-f4-italiana-oggi-e-un-fiore-allocchiello-nel-mondo/",
+   "pubblicato": "2026-10-12T14:00:06+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true
+  },
+  {
    "titolo": "MotoGP | Razgatlioglu si sottoporrà ad un controllo alla spalla: \"Spero di non dovermi operare\"",
    "estratto": "Toprak Razgatlioglu si sottoporrà lunedì ad una risonanza magnetica alla spalla destra per stabilire se abbia bisogno di un intervento chirurgico, dopo una brutta caduta durante il weekend del Gran…",
    "fonte": "Motorsport.com",
    "serie": "MotoGP",
    "url": "https://it.motorsport.com/motogp/news/motogp-razgatlioglu-si-sottoporra-ad-un-controllo-alla-spalla-spero-di-non-dovermi-operare/10864627/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-12T13:58:04+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true
+  },
+  {
+   "titolo": "Laurent Mekies chiarisce: “In Red Bull non introdurremo nuovi sviluppi per il 2026”",
+   "estratto": "Dal Gran Premio di Monza in avanti, la Red Bull sembra aver cambiato passo, ritrovando una competitività che fino a poche settimane prima appariva tutt’altro che scontata. Nelle ultime cinque tappe…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/laurent-mekies-chiarisce-in-red-bull-non-introdurremo-nuovi-sviluppi-per-il-2026/",
+   "pubblicato": "2026-10-12T13:32:28+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true
+  },
+  {
+   "titolo": "Maglienti: “Fiducia in Ferrari nella gestione sportiva: qualche settimana fa non era così…”",
+   "estratto": "Il Gran Premio di Singapore, diciassettesimo appuntamento del Mondiale 2026 di F1, ha confermato la crescita della Red Bull e restituito indicazioni incoraggianti alla Ferrari, ancora alla ricerca…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/maglienti-fiducia-in-ferrari-nella-gestione-sportiva-qualche-settimana-fa-non-era-cosi/",
+   "pubblicato": "2026-10-12T12:00:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true
   },
@@ -940,6 +1100,36 @@
    "pubblicato": "2026-10-12T11:02:55+00:00",
    "tipo": null,
    "citazione": false
+  },
+  {
+   "titolo": "Niccolò Perico vince la Coppa del Mondo kart: la Mercedes si coccola il nuovo talento italiano",
+   "estratto": "Il futuro del Motorsport italiano continua a parlare la lingua della stella a tre punte. A Viterbo, Niccolò Perico ha vinto la Coppa del Mondo FIA Karting OK-N Junior. Undici anni, classe 2014, di…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/niccolo-perico-vince-la-coppa-del-mondo-kart-la-mercedes-si-coccola-il-nuovo-talento-italiano/",
+   "pubblicato": "2026-10-12T10:54:26+00:00",
+   "tipo": null,
+   "citazione": false
+  },
+  {
+   "titolo": "Antonelli e i track limits a Singapore, Wolff ironizza via radio: “Serve un cuscino”",
+   "estratto": "È stato un GP intenso e complicato quello vissuto da Kimi Antonelli a Marina Bay. Nel 17° appuntamento del Mondiale 2026 di F1, il giovane pilota bolognese della Mercedes ha conquistato un podio…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/antonelli-e-i-track-limits-a-singapore-wolff-ironizza-via-radio-serve-un-cuscino/",
+   "pubblicato": "2026-10-12T10:25:46+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true
+  },
+  {
+   "titolo": "Piola: “Le novità portate dalla Ferrari sono state copiate dagli altri. Antonelli più smaliziato di Norris”",
+   "estratto": "Il Gran Premio di Singapore, diciassettesimo appuntamento del Mondiale 2026 di F1, consegna a Max Verstappen una vittoria che completa il suo personale percorso su tutti i circuiti affrontati in…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/piola-le-novita-portate-dalla-ferrari-sono-state-copiate-dagli-altri-antonelli-piu-smaliziato-di-norris/",
+   "pubblicato": "2026-10-12T10:00:02+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true
   },
   {
    "titolo": "Chi ‘buca’ gli eventi della MotoGP rischierà sanzioni sportive (se recidivo). Marquez replica: “Ci sono dei limiti”",
@@ -1002,203 +1192,13 @@
    "citazione": false
   },
   {
-   "titolo": "Verstappen domina a Singapore, Leclerc secondo: perché Antonelli può vincere il titolo ad Austin",
-   "estratto": "L'olandese bissa il successo di Sepang con una gara perfetta, precedendo il monegasco. Kimi da manuale, altri punti guadagnati su Russell",
-   "fonte": "Tuttosport",
+   "titolo": "F1, Verstappen è tornato: Red Bull vola a Singapore e prepara l’assalto al 2027",
+   "estratto": "Il segnale arrivato da Singapore va oltre il risultato. La vittoria di Max Verstappen racconta una trasformazione che, gara dopo gara, sta restituendo competitività alla Red Bull dopo una prima parte…",
+   "fonte": "OA Sport",
    "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/11-151809051/verstappen_domina_a_singapore_leclerc_secondo_perch_antonelli_pu_vincere_il_titolo_ad_austin/",
-   "pubblicato": "2026-10-11T14:11:06+00:00",
-   "tipo": null,
-   "citazione": false
-  },
-  {
-   "titolo": "MotoGP | Bagnaia cade a Mandalika: \"Dovevo tenere su la pressione della gomma davanti e ho chiesto troppo alla moto\"",
-   "estratto": "Il weekend di Mandalika era parso un passettino nella direzione giusta per Pecco Bagnaia, che finalmente era riuscito a centrare l'accesso diretto alla Q2 e nella Sprint aveva chiuso ottavo…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bagnaia-cade-a-mandalika-dovevo-tenere-su-la-pressione-della-gomma-davanti-e-chiesto-troppo-/10864202/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T11:10:01+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true
-  },
-  {
-   "titolo": "MotoGP | Finalmente Bezzecchi rompe la maledizione, ma forse è tardi: sarà solo l'arbitro tra Martin e Marquez?",
-   "estratto": "133 giorni, oltre un terzo di un anno. E' questo il tempo che è servito a Marco Bezzecchi per mettersi finalmente alle spalle la maledizione che pareva averlo colpito nella parte centrale della…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-finalmente-bezzecchi-rompe-la-maledizione-ma-forse-e-tardi-sara-solo-larbitro-tra-martin-e-m/10864233/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T10:55:06+00:00",
-   "tipo": null,
-   "citazione": false
-  },
-  {
-   "titolo": "MotoGP | Aldeguer ha una frattura alla mano destra, verrà operato a Barcellona",
-   "estratto": "Continuano le brutte notizie per Fermín Aldeguer dopo un Gran Premio d’Indonesia estremamente complicato. Il pilota di Murcia era già arrivato a Mandalika un po’ provato fisicamente - come si era già…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-aldeguer-ha-una-frattura-alla-mano-destra-verra-operato-a-barcellona/10864227/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T10:39:03+00:00",
-   "tipo": null,
-   "citazione": false
-  },
-  {
-   "titolo": "MotoGP | Fernández eroico, le dita rotte erano due: \"A 14 giri dalla fine non ce la facevo più\"",
-   "estratto": "Raúl Fernández ha superato a pieni voti la dura sfida che lo attendeva questa domenica in Indonesia. Il pilota spagnolo era uno dei grandi favoriti a Mandalika, grazie al livello dimostrato fin da…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-fernandez-eroico-le-dita-rotte-erano-due-a-14-giri-dalla-fine-non-ce-la-facevo-piu/10864209/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T10:24:26+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true
-  },
-  {
-   "titolo": "MotoGP | Márquez soddisfatto: \"È stato un weekend perfetto\"",
-   "estratto": "Marc Marquez ha l'abitudine di analizzare minuziosamente le tappe del calendario di MotoGP che lo attendono, per farsi un'idea di dove passare all'attacco e dove cercare di parare i colpi dei suoi…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-marquez-soddisfatto-e-stato-un-weekend-perfetto/10864213/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T10:10:34+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true
-  },
-  {
-   "titolo": "Aldeguer, frattura alla mano destra: torna a casa e si opererà",
-   "estratto": "Ennesimo infortunio stagionale per Fermin Aldeguer, che si è fratturato la mano destra nella caduta del GP di Indonesia",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/aldeguer-frattura-alla-mano-destra-torna-a-casa-e-si-operera-infortunio",
-   "pubblicato": "2026-10-11T10:00:00+00:00",
-   "tipo": null,
-   "citazione": false
-  },
-  {
-   "titolo": "MotoGP | Acosta: \"La regola sulle pressioni gomme va cambiata, così ci fa sembrare degli asini\"",
-   "estratto": "Pedro Acosta ha criticato aspramente le tanto contestate regole sulla pressione degli pneumatici in MotoGP, affermando che i piloti sono stati fatti passare per “asini” nel Gran Premio d’Indonesia…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-acosta-la-regola-sulle-pressioni-gomme-va-cambiata-cosi-ci-fa-sembrare-degli-asini/10864207/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T09:37:32+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true
-  },
-  {
-   "titolo": "Marquez: “Nessun problema di pressioni. Mi sento vincitore perché non ho perso punti da Martin”",
-   "estratto": "Sesta posizione al traguardo per lo spagnolo della Ducati, che perde la leadership iridata",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/marquez-nessun-problema-pressioni-mi-sento-vincitore-martin-ducati-mandalika",
-   "pubblicato": "2026-10-11T09:15:07+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true
-  },
-  {
-   "titolo": "MotoGP | Bezzecchi: \"Il Mondiale è più perso che vinto, bisogna prendersi qualche rischio. Oggi ha pagato\"",
-   "estratto": "Marco Bezzecchi deve essersi tolto un peso veramente enorme dalle spalle oggi a Mandalika. Dopo la domenica trionfale del Mugello, ci sono voluti oltre quattro mesi per tornare ad assaporare la gioia…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bezzecchi-il-mondiale-e-piu-perso-che-vinto-bisogna-prendersi-qualche-rischio-oggi-ha-pagato-/10864193/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-11T09:04:30+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true
-  },
-  {
-   "titolo": "Di Giannantonio choc, si staccano pezzi di gomma: “Fortunato a stare in piedi”",
-   "estratto": "Il romano della VR46 è stato vittima di un serio e preoccupante problema durante il GP d'Indonesia di oggi",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/di-giannantonio-choc-si-staccano-pezzi-di-gomma-fortunato-a-stare-in-piedi",
-   "pubblicato": "2026-10-11T09:02:04+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true
-  },
-  {
-   "titolo": "Bezzecchi interrompe il digiuno: “Periodo duro, grazie Aprilia. Il Mondiale è più perso che vinto, dovevo rischiare”",
-   "estratto": "Marco Bezzecchi ha commentato la gara in Indonesia, che lo ha visto tornare al successo dopo quattro mesi e mezzo",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/bezzecchi-interrompe-il-digiuno-periodo-duro-grazie-aprilia-il-mondiale-e-piu-perso-che-vinto-dovevo-rischiare",
-   "pubblicato": "2026-10-11T09:00:29+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true
-  },
-  {
-   "titolo": "Bagnaia, ottavo ritiro del 2026: “Il passo indietro Ducati qua si accusa molto”",
-   "estratto": "Un altro deludente fine settimana per il pilota italiano, con il GP durato appena 5 giri",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/bagnaia-ottavo-ritiro-2026-passo-indietro-ducati-si-accusa-molto-ducati",
-   "pubblicato": "2026-10-11T08:53:29+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true
-  },
-  {
-   "titolo": "GP Singapore, Il leone Verstappen e la trappola Ferrari: le Rosse a caccia della terza vittoria stagionale",
-   "estratto": "Doppio podio e un'ottima qualifica. Messaggio Hamilton: \"Giochiamo di squadra, possiamo vincere noi\"",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/11-151795195/gp_singapore_il_leone_verstappen_e_la_trappola_ferrari_le_rosse_a_caccia_della_terza_vittoria_stagionale/",
-   "pubblicato": "2026-10-11T07:43:41+00:00",
-   "tipo": null,
-   "citazione": false
-  },
-  {
-   "titolo": "Verstappen, Leclerc, Hamilton: Gp Singapore, Pole e Ferrari",
-   "estratto": "Le due Rosse ottengono i tempi migliori dopo il pilota olandese. Al quarto posto si piazza la Mercedes di Kimi Antonelli",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/10-151780178/verstappen_leclerc_hamilton_gp_singapore_pole_e_ferrari/",
-   "pubblicato": "2026-10-10T15:42:52+00:00",
-   "tipo": null,
-   "citazione": false
-  },
-  {
-   "titolo": "Hamilton-Leclerc, doppio podio Ferrari nella Sprint di Singapore! Russell a muro, disastro McLaren",
-   "estratto": "Le due Rosse chiudono dietro solo a Verstappen. Antonelli quarto ringrazia compagno di squadra, Piastri e Norris",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/10-151771017/hamilton-leclerc_doppio_podio_ferrari_nella_sprint_di_singapore_russell_a_muro_disastro_mclaren/",
-   "pubblicato": "2026-10-10T10:21:46+00:00",
-   "tipo": null,
-   "citazione": false
-  },
-  {
-   "titolo": "Leclerc terzo, Hamilton e Antonelli indietro: Verstappen in pole per la Sprint di Singapore",
-   "estratto": "Il monegasco si prende la seconda fila dietro Russell e Max. Ecco la griglia per la gara breve a Marina Bay",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/09-151758040/leclerc_terzo_hamilton_e_antonelli_indietro_verstappen_in_pole_per_la_sprint_di_singapore/",
-   "pubblicato": "2026-10-09T15:50:10+00:00",
-   "tipo": null,
-   "citazione": false
-  },
-  {
-   "titolo": "Hamilton, carica Ferrari verso il Gp Singapore: “Qui per attaccare”. Leclerc ammette: “In Malesia...\"",
-   "estratto": "I due piloti della Rossa hanno parlato alla vigilia del Gran Premio che si terrà in Asia. E Antonelli...",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/08-151744713/hamilton_carica_ferrari_verso_il_gp_singapore_qui_per_attaccare_leclerc_ammette_in_malesia_/",
-   "pubblicato": "2026-10-08T15:24:05+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true
-  },
-  {
-   "titolo": "Vasseur e il Santo Graal Ferrari: perché a Singapore c'è una doppia occasione",
-   "estratto": "Il team principal carica la Rossa, Verstappen la snobba: \"Che senso ha andarci per arrivare quinto?\"",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/ferrari/2026/10/08-151736398/vasseur_e_il_santo_graal_ferrari_perch_a_singapore_c_una_doppia_occasione/",
-   "pubblicato": "2026-10-08T09:26:00+00:00",
-   "tipo": null,
-   "citazione": false
-  },
-  {
-   "titolo": "Verstappen, schiaffo alla Ferrari: “Io lì? Lottare per il quinto o sesto posto non ha senso”",
-   "estratto": "Il quattro volte campione del mondo parla così di un possibile futuro sulla Rossa: \"La RedBull è una seconda famiglia\"",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/07-151730471/verstappen_schiaffo_alla_ferrari_io_l_lottare_per_il_quinto_o_sesto_posto_non_ha_senso/",
-   "pubblicato": "2026-10-07T18:36:20+00:00",
-   "tipo": "dichiarazione",
+   "url": "https://www.oasport.it/2026/10/f1-verstappen-e-tornato-red-bull-vola-a-singapore-e-prepara-lassalto-al-2027/",
+   "pubblicato": "2026-10-12T07:19:06+00:00",
+   "tipo": "intervista",
    "citazione": true
   }
  ]

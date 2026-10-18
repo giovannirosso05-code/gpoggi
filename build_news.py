@@ -30,14 +30,31 @@ FEEDS = {  # nome della fonte: (indirizzo del feed, serie). Solo feed dedicati a
     "FormulaPassion": ("https://www.formulapassion.it/f1/feed", "F1"),
     "Motorsport.com ": ("https://it.motorsport.com/rss/motogp/news/", "MotoGP"),
     "FormulaPassion ": ("https://www.formulapassion.it/motogp/feed", "MotoGP"),
+    # fonti ricche di interviste e dichiarazioni (le più viste sui social)
+    "OA Sport": ("https://www.oasport.it/category/formula-1/feed/", "F1"),
+    "OA Sport ": ("https://www.oasport.it/category/motogp/feed/", "MotoGP"),
+    "Tuttosport": ("https://www.tuttosport.com/rss/formula-1", "F1"),
 }
 MAX_PER_FEED = 30
-MAX_TOTALE = 80
+MAX_TOTALE = 120
+ESTRATTO_MAX = 200
 # titolo con una dichiarazione di pilota/team principal/tecnico: virgolette o verbi del "dire" (il radar le mette in evidenza)
 CITAZIONE = re.compile(r"[“”\"«»]|\b(dice|dicono|ammette|rivela|spiega|racconta|intervista|parla|svela|confessa|promette|avverte|attacca|risponde|sottolinea|difende|chiarisce|ricorda)\b", re.I)
-# sezioni di FormulaPassion che non c'entrano con F1 e MotoGP (auto, codice della strada...): si scartano
-SOLO_CORSE = ("/f1/", "/formula-1/", "/motogp/", "/moto2/", "/moto3/", "/motorsport/", "/wec/", "/formula-e/", "/podcast/")
-ESTRATTO_MAX = 200
+# tipo di dichiarazione, letto da titolo ed estratto: social (post, storie, messaggi sui social), intervista (interviste, conferenze stampa, podcast), dichiarazione (virgolette o verbi del "dire" nel titolo)
+SOCIAL = re.compile(r"\b(sui social|sui suoi social|sui propri social|su instagram|su tiktok|su twitter|su facebook|nelle storie|nelle sue storie|storia su|messaggio sui social|un post|nuovo post|il post|post su|tweet|cinguett\w*)\b", re.I)
+INTERVISTA = re.compile(r"\b(intervista|intervistato|intervistata|ai microfoni|conferenza stampa|ha raccontato|racconta|podcast|ospite a|a colloquio)\b", re.I)
+
+
+def tipo_dichiarazione(titolo, estratto=""):
+    if SOCIAL.search(titolo + " " + estratto):
+        return "social"
+    if INTERVISTA.search(titolo + " " + estratto):
+        return "intervista"
+    if CITAZIONE.search(titolo):
+        return "dichiarazione"
+    return None
+
+
 HEADERS = "GPOggiBot/1.0 (+https://gpoggi.it; progetto non commerciale, rassegna con link alle fonti)"
 FILE = Path(__file__).parent / "docs" / "data" / "rassegna.json"
 
@@ -84,14 +101,14 @@ def main():
             titolo, link = testo(e["title"]), e["link"]
             if not titolo or not link.startswith("http"):
                 continue
-            articoli.append({"titolo": titolo, "estratto": estratto(e["summary"]), "fonte": fonte.strip(), "serie": serie_da_indirizzo(link, serie), "url": link, "pubblicato": data_iso(e["data"]), "citazione": bool(CITAZIONE.search(titolo))})
+            articoli.append({"titolo": titolo, "estratto": estratto(e["summary"]), "fonte": fonte.strip(), "serie": serie_da_indirizzo(link, serie), "url": link, "pubblicato": data_iso(e["data"]), "tipo": tipo_dichiarazione(titolo, estratto(e["summary"])), "citazione": bool(tipo_dichiarazione(titolo, estratto(e["summary"])))})
         print(f"  {fonte}: {min(len(voci), MAX_PER_FEED)} articoli")
     if not articoli:
         print("Nessun feed raggiungibile: si lascia il file com'e'.")
         return
     articoli.sort(key=lambda a: a["pubblicato"] or "", reverse=True)
     articoli = articoli[:MAX_TOTALE]
-    print(f"  di cui con dichiarazioni: {sum(a['citazione'] for a in articoli)}")
+    print(f"  di cui con dichiarazioni: {sum(a['citazione'] for a in articoli)} (social {sum(a['tipo'] == 'social' for a in articoli)}, interviste {sum(a['tipo'] == 'intervista' for a in articoli)})")
     if "--prova" in sys.argv:
         for a in articoli[:5]:
             print(f"- {a['titolo']} [{a['fonte']}]\n  {a['estratto']}\n  {a['url']}")

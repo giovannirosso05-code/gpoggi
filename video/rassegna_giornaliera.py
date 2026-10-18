@@ -106,7 +106,7 @@ def scegli_rassegna(n, nomi, stato=None):
         t = pulisci(a["titolo"])
         if "|" in t or SIGLE.search(re.sub(r"\bF1\b", "", t)) or not 25 <= len(t) <= 125 or t.endswith("?"):
             continue   # i titoli-domanda (\"perché non è stato penalizzato?\") senza risposta nel video non hanno senso: si saltano
-        p = NG.punteggio(a, nomi) + (4 if any(k in NG.norm(t) for k in FERRARI) else 0) + (3 if a.get("citazione") else 0)   # le dichiarazioni dei piloti hanno la precedenza
+        p = NG.punteggio(a, nomi) + (4 if any(k in NG.norm(t) for k in FERRARI) else 0) + (3 if a.get("citazione") else 0) + (1 if a.get("tipo") in ("social", "intervista") else 0)   # le dichiarazioni dei piloti hanno la precedenza
         if p > 0:
             buone.append((p, a))
     buone.sort(key=lambda x: -x[0])

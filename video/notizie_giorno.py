@@ -320,6 +320,69 @@ def crea_copertina(spec, serie, uscita):
     return uscita
 
 
+def correlati(art, arts, massimo=3, min_comuni=2):
+    """Altre notizie della rassegna sulla stessa storia (almeno 2 parole significative in comune con il titolo): servono per allungare un articolo corto e per trovare una foto."""
+    pa = {w for w in norm(art["titolo"]).split() if len(w) > 3 and w not in STOP}
+    punt = []
+    for b in arts:
+        if b["url"] == art["url"]:
+            continue
+        pb = {w for w in norm(b["titolo"]).split() if len(w) > 3 and w not in STOP}
+        n = len(pa & pb)
+        if n >= min_comuni:
+            punt.append((n, b))
+    punt.sort(key=lambda x: -x[0])
+    return [b for _, b in punt[:massimo]]
+
+
+def testo_esteso(art, arts):
+    """Testo su cui scrivere il video: l'articolo e, se è corto o illeggibile, l'estratto del feed e gli articoli delle altre testate sulla stessa storia."""
+    t = testo_articolo(art["url"])
+    if len(t) >= 500:
+        return t
+    parti = [t] if t else []
+    if art.get("estratto") and art["estratto"] not in t:
+        parti.append(art["estratto"])
+    for b in correlati(art, arts):
+        tb = testo_articolo(b["url"]) or b.get("estratto", "")
+        if tb:
+            parti.append(f"[Un'altra testata, {b['fonte']}, scrive:] {tb}")
+        if sum(len(x) for x in parti) >= 1800:
+            break
+    return "\n\n".join(parti)
+
+
+def immagine_articolo(url):
+    """Indirizzo della foto principale della pagina (og:image), o None se non c'è, è un logo, è troppo piccola o non si scarica."""
+    from urllib.parse import urljoin
+    try:
+        r = requests.get(url, headers=UA, timeout=30, verify=CA)
+        r.raise_for_status()
+    except requests.RequestException:
+        return None
+    cand = []
+    for m in re.finditer(r"<meta[^>]+>", r.text):
+        tag = m.group(0)
+        if re.search(r"""(?:property|name)=["'](?:og:image|twitter:image)(?::secure_url)?["']""", tag):
+            c = re.search(r"""content=["']([^"']+)["']""", tag)
+            if c:
+                cand.append(urljoin(url, html.unescape(c.group(1))))
+    for u in cand:
+        if re.search(r"logo|placeholder|default|favicon|\.svg", u, re.I):
+            continue
+        try:
+            import io
+            from PIL import Image
+            ir = requests.get(u, headers=UA, timeout=30, verify=CA)
+            ir.raise_for_status()
+            im = Image.open(io.BytesIO(ir.content))
+            if im.width >= 700 and im.width >= im.height * 0.9:
+                return u
+        except Exception:
+            continue
+    return None
+
+
 def pilota_citato(testo, nomi, serie):
     """Il pilota (di quella serie) nominato per primo nel testo, o None. Se due piloti hanno lo stesso cognome (Marc e Alex Marquez) vale solo il nome completo:
     «Marquez» da solo è ambiguo e non si sceglie a caso."""
@@ -372,7 +435,7 @@ def espn_pool():
 TITOLI_ESPN = {}   # indirizzo foto -> titolo originale dell'articolo ESPN (si mostra nel foglio di controllo su Telegram)
 
 
-def foto_pertinenti(spec, art, nomi, testo_art=""):
+def foto_pertinenti(spec, art, nomi, testo_art="", altri=()):
     """Ogni scena mostra ciò di cui parla: il pilota se il suo cognome è nel testo della scena (F1: ritratto ESPN), altrimenti una foto ESPN
     scelta sul titolo e sul testo (mai volti di piloti a caso: la notizia può riguardare un team principal, un team, una regola)."""
     serie = art["serie"]
@@ -395,6 +458,15 @@ def foto_pertinenti(spec, art, nomi, testo_art=""):
     ripiego = in_titolo[0] if in_titolo else (conta[0][1] if conta else None)
     giro = [0]
     note = []
+    foto_art = []   # foto dell'articolo (e delle altre testate sulla stessa storia): (indirizzo, testata); si cercano solo se servono
+
+    def cerca_foto_articolo():
+        if not foto_art:
+            for b in [art, *altri]:
+                u = immagine_articolo(b["url"])
+                if u and u not in [x[0] for x in foto_art]:
+                    foto_art.append((u, b.get("fonte", "").strip()))
+        return foto_art
 
     def url_scena():
         nuove = [u for u in della_notizia if u not in usate]
@@ -438,16 +510,30 @@ def foto_pertinenti(spec, art, nomi, testo_art=""):
                 sc.pop(k, None)
             sc["foto_url"] = u
             note.append((sc.get("testo", ""), "espn", TITOLI_ESPN.get(u, ""), u))
+            continue
+        # nessuna foto ESPN che parli della notizia: la foto dell'articolo stesso (e delle altre testate), alternata al ritratto del pilota più nominato
+        fa = cerca_foto_articolo()
+        usa_articolo = fa and (not ripiego or len(note) % 2 == 0)
+        if usa_articolo:
+            ind, fonte_f = fa[giro[0] % len(fa)]
+            giro[0] += 1
+            for k in ("foto", "nome", "foto_file"):
+                sc.pop(k, None)
+            sc["foto_url"] = ind
+            sc["credito"] = f"Foto: {fonte_f}" if fonte_f else "Foto: dall'articolo"
+            note.append((sc.get("testo", ""), "articolo", f"foto dell'articolo ({fonte_f})", ind))
         elif ripiego:
             con_pilota(sc, ripiego)
         else:
-            raise RuntimeError("nessuna foto pertinente a questa notizia: meglio nessun video che un video con foto a caso")
+            raise RuntimeError("nessuna foto pertinente: né ESPN, né la foto dell'articolo o delle altre testate, né un pilota citato. Meglio nessun video che un video con foto a caso")
     fin = spec["finale"]
     ultima = spec["scene"][-1]
     for k in ("foto", "foto_url", "foto_file"):
         fin.pop(k, None)
     if ultima.get("foto_url"):
         fin["foto_url"] = ultima["foto_url"]
+        if ultima.get("credito"):
+            fin["credito"] = ultima["credito"]
     else:
         fin["foto"] = ultima.get("foto")
         if ultima.get("foto_file"):
@@ -471,10 +557,10 @@ def foglio_foto(note, uscita):
     for k, (testo, tipo, nome, extra) in enumerate(note):
         x, y = (k % cols) * W_, (k // cols) * (H_ + TXT)
         try:
-            if tipo == "espn":
+            if tipo in ("espn", "articolo"):
                 import io
                 im = Image.open(io.BytesIO(requests.get(extra, headers=UA, timeout=40, verify=CA).content))
-                etichetta = f"ESPN: {nome}"
+                etichetta = f"ESPN: {nome}" if tipo == "espn" else nome[0].upper() + nome[1:]
             elif extra:
                 im = Image.open(extra)
                 etichetta = f"Ritratto ESPN: {nome}"
@@ -540,6 +626,12 @@ def opzioni_copertina(art, righe, nomi):
         for pt, _, u in sorted(((len(tok & set(t.split())), -i, u) for i, (t, u) in enumerate(pool)), reverse=True):
             if pt > 0:
                 opz.append((f"foto ESPN: {TITOLI_ESPN.get(u, '')[:60]}", lambda u=u: C.html_copertina("x", righe, serie, None, "center 12%", str(NS.foto_da_url(u)[0]), 1000, "Foto: ESPN", 130)))
+    arts_r = json.load(open(DATA / "rassegna.json"))["articoli"]
+    for b in [art, *correlati(art, arts_r, 2, 3)]:
+        u = immagine_articolo(b["url"])
+        if u:
+            fonte_b = b.get("fonte", "").strip()
+            opz.append((f"foto dell'articolo ({fonte_b})", lambda u=u, f=fonte_b: C.html_copertina("x", righe, serie, None, "center 12%", str(NS.foto_da_url(u, f"Foto: {f}")[0]), 1000, f"Foto: {f}", 130)))
     if n:
         extra = (json.load(open(DATA / "foto-extra.json")) or {}).get(n, {})
         for alt in [None] + list(extra):
@@ -632,11 +724,12 @@ def main():
     for k, art in enumerate(scelte):
         uscita = Path(f"/tmp/notizia_{k}.mp4")
         try:
-            testo = testo_articolo(art["url"])
-            if len(testo) < 500:
-                raise RuntimeError("articolo illeggibile o troppo corto")
+            tutti_gli_articoli = json.load(open(DATA / "rassegna.json"))["articoli"]
+            testo = testo_esteso(art, tutti_gli_articoli)   # articolo corto: si aggiungono estratto e altre testate sulla stessa storia
+            if len(testo) < 350:
+                raise RuntimeError("articolo illeggibile o troppo corto, e nessun'altra testata ne parla: troppo poco materiale per un video fedele")
             spec, social = racconta(art, testo, nomi, predef[art["serie"]], a.risposta_modello)
-            spec, note_foto = foto_pertinenti(spec, art, nomi, testo)
+            spec, note_foto = foto_pertinenti(spec, art, nomi, testo, correlati(art, tutti_gli_articoli, 3, 3))
             if not a.prova:   # le foto usate, una per scena, sul Telegram: si controllano prima di postare
                 try:
                     telegram_foto(foglio_foto(note_foto, Path(f"/tmp/foto_{k}.png")), "🔍 Foto usate nel video, scena per scena (ESPN e ritratti). Controlla che c'entrino con la notizia.")

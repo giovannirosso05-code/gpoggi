@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
    inputs:
         cosa:
-          description: "notizie (due raccontate, una volta al giorno), notizia-scelta (la notizia scelta con url), copertina (nuova copertina dell'ultimo video, o della notizia indicata con url), notizie-ora (due raccontate subito), notizia (una semplice), previsioni, gioco oppure gioco-virale"
+          description: "notizie (due raccontate, una volta al giorno), notizia-scelta (la notizia scelta con url), social (video dal testo di un post social, nel campo url), copertina (nuova copertina dell'ultimo video, o della notizia indicata con url), notizie-ora (due raccontate subito), notizia (una semplice), previsioni, gioco oppure gioco-virale"
           default: 'notizie'
         url:
           description: 'solo per cosa=notizia-scelta: "indirizzo|titolo|fonte|serie" della notizia da raccontare'
@@ -70,6 +70,7 @@ jobs:
             notizie) python video/notizie_giorno.py --una-volta-al-giorno ;;
             notizie-ora) python video/notizie_giorno.py --avvisa ;;
             notizia-scelta) python video/notizie_giorno.py --url "$URL_SCELTA" --avvisa ;;
+            social) python video/notizie_giorno.py --post "$URL_SCELTA" --avvisa ;;
             copertina) python video/notizie_giorno.py --copertina --url "$URL_SCELTA" ;;
             *) python video/auto_video.py ${{ steps.quale.outputs.cosa }} --invia --uscita "$RUNNER_TEMP/video.mp4" ;;
           esac

@@ -6,7 +6,7 @@ const REPO_BASE = "giovannirosso05-code/gpoggi";
 const CHAT_BASE = "559225883";
 const BOT_BASE = "Gpoggibot";
 const RAMO = "main";
-const VERSIONE = "definitivo-assoluto 2026-10-18";
+const VERSIONE = "social 2026-10-19";
 const ETA_MASSIMA_SECONDI = 600;
 
 const COMANDI = {
@@ -27,6 +27,7 @@ const elenco = () => [
   "/copertina · Una nuova copertina per l'ultimo video (o /copertina parola)",
   "/radar · Notizie divise per Formula 1 e MotoGP (interviste e dichiarazioni in cima)",
   "/rassegna · Rassegna stampa subito, scelta in automatico; oppure /rassegna e 2-6 parole (o codici /n_…) per sceglierla tu: la prima notizia è il gancio (per esempio /rassegna minardi norris ferrari horner)",
+  "/social · Video da un post social: scrivi /social e il testo del post con il nome del pilota (per esempio /social Leclerc: Grazie a tutti per il supporto…)",
   "/coda · Controlla lo stato dei video in lavorazione o in coda su GitHub",
   ...Object.entries(COMANDI).map(([c, [, , d]]) => `${c} · ${d}`),
 ].join("\n");
@@ -439,6 +440,12 @@ export default {
       const ses = comando.replace(/^\/sessioni/, "/sessione").replace(/^\/sessione_/, "/sessione");
       if (ses === "/sessione") { await comandoSessione(env, msg.chat.id); return; }
       if (ses === "/sessionerisultati") { await comandoRisultati(env, msg.chat.id); return; }
+      if (comando === "/social") {
+        const post = t.slice(t.indexOf("/social") + 7).replace(/^@\S+/, "").trim();
+        if (post.length < 20) { await rispondi(env, msg.chat.id, "Scrivi /social e subito dopo il testo del post con il nome del pilota, per esempio:\n/social Leclerc su Instagram: Grazie a tutti per il supporto, a Singapore abbiamo dato tutto."); return; }
+        await eseguiLancio(env, msg.chat.id, "video-automatici.yml", { cosa: "social", url: post.slice(0, 3000) }, `video dal post social di «${post.slice(0, 60)}…»`);
+        return;
+      }
       if (comando === "/radar" || comando === "/notizie" || comando === "/scegli") { await mostraLista(env, msg.chat.id); return; }
 
       if (COMANDI[comando]) {

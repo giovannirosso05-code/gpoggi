@@ -38,6 +38,8 @@ def stato_leggi():
 
 
 def testo_articolo(url):
+    if url.startswith("social:"):   # post scritto a mano: niente da scaricare
+        return ""
     """Testo dell'articolo (JSON-LD o paragrafi). Vuoto se la pagina non si apre o non c'è abbastanza testo."""
     try:
         r = requests.get(url, headers=UA, timeout=30, verify=CA)
@@ -136,7 +138,10 @@ def chiedi_modello(a, testo, nomi, predefiniti, correzione=""):
         raise RuntimeError("ANTHROPIC_API_KEY mancante")
     utente = (f"Serie: {a['serie']}\nFonte: {a['fonte']}\nTitolo: {a['titolo']}\n\nTesto dell'articolo:\n{testo}\n\n"
               f"Piloti di cui abbiamo la foto (scegli solo da qui): {', '.join(sorted(nomi))}\nPredefiniti se nessun pilota è citato: {', '.join(predefiniti)}"
-              + (f"\n\nATTENZIONE: {correzione}" if correzione else ""))
+              + (f"\n\nATTENZIONE: {correzione}" if correzione else "")
+              + ("\n\nQuesto NON è un articolo ma un POST SOCIAL scritto dal pilota o dal team (testo incollato dal gestore). Attribuiscilo con chiarezza "
+                 "(«ha scritto sui social», «nel suo post»), racconta solo ciò che c'è nel post, non aggiungere fatti, motivi o retroscena che non vi compaiono "
+                 "e non presentare come certo ciò che è solo una sua opinione." if a.get("manuale") else ""))
     # Il risultato arriva come "strumento" con una struttura obbligatoria: niente JSON scritto a mano dal modello, quindi niente virgole o virgolette sbagliate.
     strumento = {"name": "racconto", "description": "Consegna il testo del video che racconta la notizia.",
                  "input_schema": {"type": "object", "required": ["hook_voce", "hook_titolo", "titolo_breve", "scene", "domanda", "social"],
@@ -353,6 +358,8 @@ def testo_esteso(art, arts):
 
 
 def immagine_articolo(url):
+    if url.startswith("social:"):
+        return None
     """Indirizzo della foto principale della pagina (og:image), o None se non c'è, è un logo, è troppo piccola o non si scarica."""
     from urllib.parse import urljoin
     try:
@@ -695,6 +702,7 @@ def main():
     ap.add_argument("--n", type=int, default=2)
     ap.add_argument("--risposta-modello")
     ap.add_argument("--url", help="racconta proprio questo articolo della rassegna")
+    ap.add_argument("--post", help="racconta il testo di un post social incollato a mano (con il nome del pilota dentro o prima dei due punti)")
     ap.add_argument("--avvisa", action="store_true", help="se un video non riesce, lo scrive su Telegram (per i comandi dati a mano)")
     ap.add_argument("--copertina", action="store_true", help="solo una nuova copertina (per l'ultimo video o per --url), senza fare il video")
     ap.add_argument("--una-volta-al-giorno", action="store_true", help="esce subito se oggi (ora italiana) i video sono già stati fatti")
@@ -713,7 +721,17 @@ def main():
     prima = json.load(open(DATA / "roster.json"))
     if prima and prima[0].get("nome") in nomi:
         predef["F1"] = [prima[0]["nome"]]
-    if a.url:
+    if a.post:
+        post = re.sub(r"\s+", " ", a.post).strip()
+        serie = next((sr for sr in ("F1", "MotoGP") if pilota_citato(post, nomi, sr)), None)
+        if not serie:
+            avviso("⚠️ Nel testo del post non trovo il nome di un pilota di F1 o MotoGP. Riscrivi /social con il nome (per esempio: /social Leclerc: testo del post).")
+            return
+        pil = pilota_citato(post, nomi, serie)
+        import hashlib
+        scelte = [{"url": "social:" + hashlib.sha256(post.encode()).hexdigest()[:10], "titolo": post[:90] if norm(pil).split()[-1] in norm(post).split() else f"{pil}: {post[:80]}", "fonte": f"Post social di {pil}", "serie": serie,
+                   "estratto": post, "manuale": True, "pubblicato": datetime.now(timezone.utc).isoformat()}]
+    elif a.url:
         u, *r = [x.strip() for x in a.url.split("|")]   # "url|titolo|fonte|serie" se l'articolo non è più nella rassegna
         scelte = [x for x in json.load(open(DATA / "rassegna.json"))["articoli"] if x["url"] == u][:1] or [
             {"url": u, "titolo": r[0] if r else u, "fonte": r[1] if len(r) > 1 else "", "serie": r[2] if len(r) > 2 else "F1", "pubblicato": datetime.now(timezone.utc).isoformat()}]
@@ -725,18 +743,18 @@ def main():
         uscita = Path(f"/tmp/notizia_{k}.mp4")
         try:
             tutti_gli_articoli = json.load(open(DATA / "rassegna.json"))["articoli"]
-            testo = testo_esteso(art, tutti_gli_articoli)   # articolo corto: si aggiungono estratto e altre testate sulla stessa storia
-            if len(testo) < 350:
+            testo = post if art.get("manuale") else testo_esteso(art, tutti_gli_articoli)   # articolo corto: si aggiungono estratto e altre testate sulla stessa storia
+            if len(testo) < (40 if art.get("manuale") else 350):
                 raise RuntimeError("articolo illeggibile o troppo corto, e nessun'altra testata ne parla: troppo poco materiale per un video fedele")
             spec, social = racconta(art, testo, nomi, predef[art["serie"]], a.risposta_modello)
-            spec, note_foto = foto_pertinenti(spec, art, nomi, testo, correlati(art, tutti_gli_articoli, 3, 3))
+            spec, note_foto = foto_pertinenti(spec, art, nomi, testo, [] if art.get("manuale") else correlati(art, tutti_gli_articoli, 3, 3))
             if not a.prova:   # le foto usate, una per scena, sul Telegram: si controllano prima di postare
                 try:
                     telegram_foto(foglio_foto(note_foto, Path(f"/tmp/foto_{k}.png")), "🔍 Foto usate nel video, scena per scena (ESPN e ritratti). Controlla che c'entrino con la notizia.")
                 except (Exception, SystemExit) as e:
                     print(f"  foglio foto non riuscito ({type(e).__name__}: {e})")
             asyncio.run(NS.genera(spec, uscita))
-            did = f"📰 {spec['titolo_breve']} · Fonte: {art['fonte'].strip()}\n{art['url'].split('?')[0]}"
+            did = f"📰 {spec['titolo_breve']} · Fonte: {art['fonte'].strip()}" + ("" if art.get("manuale") else f"\n{art['url'].split('?')[0]}")
             if not a.prova:
                 try:   # copertina (foto grande + titolo): se non riesce il video parte lo stesso
                     cop = crea_copertina(spec, art["serie"], Path(f"/tmp/notizia_{k}.png"))

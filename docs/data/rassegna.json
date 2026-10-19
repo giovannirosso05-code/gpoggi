@@ -1,6 +1,42 @@
 {
- "generato_il": "2026-10-19T09:55:45+00:00",
+ "generato_il": "2026-10-19T11:50:15+00:00",
  "articoli": [
+  {
+   "titolo": "MotoGP, Fermin Aldeguer salta il GP d’Australia per infortunio: già annunciato il sostituto",
+   "estratto": "Il team Gresini Racing ha annunciato che Fermin Aldeguer non prenderà parte al Gran Premio d’Australia 2026, diciottesimo appuntamento stagionale del Mondiale MotoGP che si terrà sulla mitica pista…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-fermin-aldeguer-salta-il-gp-daustralia-per-infortunio-gia-annunciato-il-sostituto/",
+   "pubblicato": "2026-10-19T11:33:26+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 21.9,
+   "testate": 2
+  },
+  {
+   "titolo": "McLaren, Fornaroli resta in F1 e raddoppia: nel 2027 correrà anche nel WEC",
+   "estratto": "La McLaren rinnova la fiducia a Leonardo Fornaroli e rilancia. Il pilota italiano è stato confermato nel ruolo di terzo pilota e riserva della squadra di Formula 1 anche per la stagione 2027, ma il…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/mclaren-fornaroli-resta-in-f1-e-raddoppia-nel-2027-correra-anche-nel-wec/10866211/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-19T11:01:02+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.8,
+   "testate": 1
+  },
+  {
+   "titolo": "McLaren punta ancora su Fornaroli: test completati al Paul Ricard, sarà in pista nelle FP1 di Messico e Brasile",
+   "estratto": "Il team campione del mondo sembra voler continuare a supportare la crescita del giovane italiano",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/mclaren-punta-ancora-su-fornaroli-test-completati-al-paul-ricard-sara-in-pista-nelle-fp1-di-messico-e-brasile",
+   "pubblicato": "2026-10-19T11:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 13.8,
+   "testate": 2
+  },
   {
    "titolo": "MotoGP | Gresini: Aldeguer non correrà a Phillip Island, lo sostituirà Lecuona",
    "estratto": "Fermin Aldeguer salterà di nuovo un appuntamento della MotoGP 2026. Il pilota spagnolo non sarà presente all'addio del mitico circuito di Phillip Island come sede del Gran Premio d'Australia di…",
@@ -10,7 +46,7 @@
    "pubblicato": "2026-10-19T09:27:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.9,
+   "punteggio": 21.4,
    "testate": 2
   },
   {
@@ -22,7 +58,7 @@
    "pubblicato": "2026-10-19T09:15:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.8,
+   "punteggio": 21.4,
    "testate": 2
   },
   {
@@ -34,7 +70,7 @@
    "pubblicato": "2026-10-19T08:44:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.7,
+   "punteggio": 31.2,
    "testate": 3
   },
   {
@@ -46,7 +82,7 @@
    "pubblicato": "2026-10-19T08:30:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.6,
+   "punteggio": 21.2,
    "testate": 2
   },
   {
@@ -58,7 +94,7 @@
    "pubblicato": "2026-10-19T08:20:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.6,
+   "punteggio": 11.1,
    "testate": 1
   },
   {
@@ -70,7 +106,7 @@
    "pubblicato": "2026-10-19T08:05:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.5,
+   "punteggio": 8.1,
    "testate": 1
   },
   {
@@ -82,7 +118,7 @@
    "pubblicato": "2026-10-19T07:44:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.5,
+   "punteggio": 1.0,
    "testate": 2
   },
   {
@@ -94,19 +130,19 @@
    "pubblicato": "2026-10-19T07:37:09+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.4,
+   "punteggio": 30.9,
    "testate": 3
   },
   {
    "titolo": "Horner: “Essere associato alla Ferrari è un onore, ma non sto cercando di ottenere quel posto”",
-   "estratto": "Il manager inglese nell'ennesima intervista legata al lancio del proprio libero, ha parlato nuovamente di Maranello",
+   "estratto": "Il manager inglese nell'ennesima intervista legata al lancio del proprio libro, ha parlato nuovamente di Maranello",
    "fonte": "FormulaPassion",
    "serie": "F1",
    "url": "https://www.formulapassion.it/f1/f1-news/horner-essere-associato-ferrari-onore-non-sto-cercando-quel-posto",
    "pubblicato": "2026-10-19T07:29:47+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 17.4,
+   "punteggio": 16.9,
    "testate": 1
   },
   {
@@ -118,7 +154,7 @@
    "pubblicato": "2026-10-19T07:19:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.3,
+   "punteggio": 0.9,
    "testate": 2
   },
   {
@@ -130,7 +166,7 @@
    "pubblicato": "2026-10-19T07:00:35+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.3,
+   "punteggio": 2.8,
    "testate": 1
   },
   {
@@ -142,7 +178,7 @@
    "pubblicato": "2026-10-19T06:45:24+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.2,
+   "punteggio": 2.7,
    "testate": 1
   },
   {
@@ -154,7 +190,7 @@
    "pubblicato": "2026-10-19T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.0,
+   "punteggio": 2.5,
    "testate": 1
   },
   {
@@ -166,7 +202,7 @@
    "pubblicato": "2026-10-19T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.0,
+   "punteggio": 2.5,
    "testate": 1
   },
   {
@@ -178,7 +214,7 @@
    "pubblicato": "2026-10-19T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.0,
+   "punteggio": 17.5,
    "testate": 2
   },
   {
@@ -190,7 +226,7 @@
    "pubblicato": "2026-10-19T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.0,
+   "punteggio": 0.5,
    "testate": 2
   },
   {
@@ -202,7 +238,7 @@
    "pubblicato": "2026-10-19T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.0,
+   "punteggio": 17.5,
    "testate": 2
   },
   {
@@ -214,7 +250,7 @@
    "pubblicato": "2026-10-19T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.0,
+   "punteggio": 0.5,
    "testate": 2
   },
   {
@@ -226,7 +262,7 @@
    "pubblicato": "2026-10-19T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.0,
+   "punteggio": 7.5,
    "testate": 1
   },
   {
@@ -238,7 +274,7 @@
    "pubblicato": "2026-10-19T04:00:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.5,
+   "punteggio": 2.0,
    "testate": 1
   },
   {
@@ -250,7 +286,7 @@
    "pubblicato": "2026-10-19T03:10:44+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.3,
+   "punteggio": 9.8,
    "testate": 3
   },
   {
@@ -262,7 +298,7 @@
    "pubblicato": "2026-10-19T03:05:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.7,
+   "punteggio": -10.2,
    "testate": 1
   },
   {
@@ -274,7 +310,7 @@
    "pubblicato": "2026-10-18T15:00:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.3,
+   "punteggio": 21.8,
    "testate": 2
   },
   {
@@ -286,7 +322,7 @@
    "pubblicato": "2026-10-18T13:00:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.2,
+   "punteggio": -1.7,
    "testate": 1
   },
   {
@@ -298,7 +334,7 @@
    "pubblicato": "2026-10-18T12:39:40+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.3,
+   "punteggio": -1.8,
    "testate": 1
   },
   {
@@ -310,7 +346,7 @@
    "pubblicato": "2026-10-18T10:02:43+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.0,
+   "punteggio": 2.6,
    "testate": 1
   },
   {
@@ -322,7 +358,7 @@
    "pubblicato": "2026-10-18T09:05:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.2,
+   "punteggio": -2.7,
    "testate": 1
   },
   {
@@ -334,7 +370,7 @@
    "pubblicato": "2026-10-18T08:31:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.4,
+   "punteggio": -2.8,
    "testate": 1
   },
   {
@@ -346,8 +382,8 @@
    "pubblicato": "2026-10-18T08:28:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 40.6,
-   "testate": 4
+   "punteggio": 30.2,
+   "testate": 3
   },
   {
    "titolo": "Camara ha già scelto il suo nuovo numero: “Correrò con il 50”. In passato ci vinsero Fangio e Baghetti",
@@ -358,7 +394,7 @@
    "pubblicato": "2026-10-18T08:23:48+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.6,
+   "punteggio": 2.1,
    "testate": 1
   },
   {
@@ -370,7 +406,7 @@
    "pubblicato": "2026-10-18T07:44:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.5,
+   "punteggio": 2.0,
    "testate": 1
   },
   {
@@ -382,7 +418,7 @@
    "pubblicato": "2026-10-18T07:33:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.4,
+   "punteggio": 1.9,
    "testate": 1
   },
   {
@@ -394,7 +430,7 @@
    "pubblicato": "2026-10-18T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.0,
+   "punteggio": 1.5,
    "testate": 1
   },
   {
@@ -406,7 +442,7 @@
    "pubblicato": "2026-10-18T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.0,
+   "punteggio": 1.5,
    "testate": 1
   },
   {
@@ -418,7 +454,7 @@
    "pubblicato": "2026-10-18T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.0,
+   "punteggio": 1.5,
    "testate": 1
   },
   {
@@ -430,7 +466,7 @@
    "pubblicato": "2026-10-18T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.0,
+   "punteggio": 1.5,
    "testate": 1
   },
   {
@@ -442,7 +478,7 @@
    "pubblicato": "2026-10-18T06:00:00+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 3.0,
+   "punteggio": 2.5,
    "testate": 1
   },
   {
@@ -454,7 +490,7 @@
    "pubblicato": "2026-10-17T15:18:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.7,
+   "punteggio": -7.1,
    "testate": 1
   },
   {
@@ -466,7 +502,7 @@
    "pubblicato": "2026-10-17T13:19:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.1,
+   "punteggio": -7.6,
    "testate": 1
   },
   {
@@ -478,7 +514,7 @@
    "pubblicato": "2026-10-17T12:59:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.8,
+   "punteggio": 2.3,
    "testate": 2
   },
   {
@@ -490,7 +526,7 @@
    "pubblicato": "2026-10-17T12:46:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.7,
+   "punteggio": 25.2,
    "testate": 3
   },
   {
@@ -502,7 +538,7 @@
    "pubblicato": "2026-10-17T10:20:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.9,
+   "punteggio": -8.4,
    "testate": 1
   },
   {
@@ -514,7 +550,7 @@
    "pubblicato": "2026-10-17T08:50:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.3,
+   "punteggio": -8.7,
    "testate": 1
   },
   {
@@ -526,19 +562,7 @@
    "pubblicato": "2026-10-17T08:45:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.7,
-   "testate": 2
-  },
-  {
-   "titolo": "Hamilton-Ferrari, c’è un problema di fiducia: “Serve un confronto schietto”",
-   "estratto": "Le recenti 'insubordinazioni' di Hamilton alla strategie suggerite dal team evidenziano un rapporto complicato con la squadra",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/hamilton-ferrari-ce-un-problema-di-fiducia-serve-un-confronto-schietto",
-   "pubblicato": "2026-10-17T08:06:50+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 14.5,
+   "punteggio": 9.2,
    "testate": 2
   },
   {
@@ -550,7 +574,7 @@
    "pubblicato": "2026-10-17T07:43:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.4,
+   "punteggio": 1.0,
    "testate": 2
   },
   {
@@ -562,7 +586,7 @@
    "pubblicato": "2026-10-17T06:00:00+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 5.0,
+   "punteggio": 4.5,
    "testate": 1
   },
   {
@@ -574,7 +598,7 @@
    "pubblicato": "2026-10-16T16:29:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.4,
+   "punteggio": -12.8,
    "testate": 1
   },
   {
@@ -586,7 +610,7 @@
    "pubblicato": "2026-10-16T15:26:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.6,
+   "punteggio": -13.1,
    "testate": 1
   },
   {
@@ -598,7 +622,7 @@
    "pubblicato": "2026-10-16T13:59:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.0,
+   "punteggio": -5.5,
    "testate": 1
   },
   {
@@ -610,7 +634,7 @@
    "pubblicato": "2026-10-16T13:00:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.2,
+   "punteggio": -13.7,
    "testate": 1
   },
   {
@@ -622,7 +646,7 @@
    "pubblicato": "2026-10-16T10:40:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.8,
+   "punteggio": -14.3,
    "testate": 1
   },
   {
@@ -634,7 +658,7 @@
    "pubblicato": "2026-10-16T10:20:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.9,
+   "punteggio": -6.4,
    "testate": 1
   },
   {
@@ -646,7 +670,7 @@
    "pubblicato": "2026-10-16T09:30:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -9.1,
+   "punteggio": -9.6,
    "testate": 1
   },
   {
@@ -658,7 +682,7 @@
    "pubblicato": "2026-10-16T08:40:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -9.3,
+   "punteggio": -9.8,
    "testate": 1
   },
   {
@@ -670,7 +694,7 @@
    "pubblicato": "2026-10-16T08:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -9.4,
+   "punteggio": -9.8,
    "testate": 1
   },
   {
@@ -682,7 +706,7 @@
    "pubblicato": "2026-10-16T08:09:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.4,
+   "punteggio": -1.9,
    "testate": 1
   },
   {
@@ -694,7 +718,7 @@
    "pubblicato": "2026-10-16T07:39:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -9.6,
+   "punteggio": -10.0,
    "testate": 1
   },
   {
@@ -706,7 +730,7 @@
    "pubblicato": "2026-10-16T07:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.4,
+   "punteggio": -0.1,
    "testate": 2
   },
   {
@@ -718,7 +742,7 @@
    "pubblicato": "2026-10-16T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.0,
+   "punteggio": -2.5,
    "testate": 1
   },
   {
@@ -730,7 +754,7 @@
    "pubblicato": "2026-10-16T04:15:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.4,
+   "punteggio": -7.9,
    "testate": 1
   },
   {
@@ -742,7 +766,7 @@
    "pubblicato": "2026-10-15T20:06:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.5,
+   "punteggio": -11.9,
    "testate": 2
   },
   {
@@ -754,7 +778,7 @@
    "pubblicato": "2026-10-15T19:05:55+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -8.7,
+   "punteggio": -9.2,
    "testate": 1
   },
   {
@@ -766,7 +790,7 @@
    "pubblicato": "2026-10-15T17:47:20+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.0,
+   "punteggio": 0.5,
    "testate": 2
   },
   {
@@ -778,7 +802,7 @@
    "pubblicato": "2026-10-15T17:00:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -22.2,
+   "punteggio": -22.7,
    "testate": 1
   },
   {
@@ -790,7 +814,7 @@
    "pubblicato": "2026-10-15T16:41:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -22.3,
+   "punteggio": -22.8,
    "testate": 1
   },
   {
@@ -802,7 +826,7 @@
    "pubblicato": "2026-10-15T16:19:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -7.4,
+   "punteggio": -7.9,
    "testate": 2
   },
   {
@@ -814,7 +838,7 @@
    "pubblicato": "2026-10-15T15:57:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -17.5,
+   "punteggio": -18.0,
    "testate": 1
   },
   {
@@ -826,7 +850,7 @@
    "pubblicato": "2026-10-15T15:31:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.6,
+   "punteggio": -5.1,
    "testate": 2
   },
   {
@@ -838,7 +862,7 @@
    "pubblicato": "2026-10-15T14:56:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -9.7,
+   "punteggio": -10.2,
    "testate": 1
   },
   {
@@ -850,7 +874,7 @@
    "pubblicato": "2026-10-15T14:54:27+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -9.8,
+   "punteggio": -10.2,
    "testate": 1
   },
   {
@@ -862,7 +886,7 @@
    "pubblicato": "2026-10-15T14:02:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -23.0,
+   "punteggio": -23.4,
    "testate": 1
   },
   {
@@ -874,7 +898,7 @@
    "pubblicato": "2026-10-15T11:08:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -15.7,
+   "punteggio": -16.2,
    "testate": 1
   },
   {
@@ -886,7 +910,7 @@
    "pubblicato": "2026-10-15T11:07:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.7,
+   "punteggio": -14.2,
    "testate": 2
   },
   {
@@ -898,7 +922,7 @@
    "pubblicato": "2026-10-15T11:03:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -23.7,
+   "punteggio": -24.2,
    "testate": 1
   },
   {
@@ -910,7 +934,7 @@
    "pubblicato": "2026-10-15T09:59:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -24.0,
+   "punteggio": -24.5,
    "testate": 1
   },
   {
@@ -922,7 +946,7 @@
    "pubblicato": "2026-10-15T09:41:05+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -11.1,
+   "punteggio": -11.5,
    "testate": 1
   },
   {
@@ -934,7 +958,7 @@
    "pubblicato": "2026-10-15T09:34:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -19.1,
+   "punteggio": -19.6,
    "testate": 1
   },
   {
@@ -946,7 +970,7 @@
    "pubblicato": "2026-10-15T09:03:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -24.2,
+   "punteggio": -24.7,
    "testate": 1
   },
   {
@@ -958,7 +982,7 @@
    "pubblicato": "2026-10-15T08:29:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -19.4,
+   "punteggio": -19.8,
    "testate": 1
   },
   {
@@ -970,7 +994,7 @@
    "pubblicato": "2026-10-15T07:59:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -16.5,
+   "punteggio": -17.0,
    "testate": 1
   },
   {
@@ -982,7 +1006,7 @@
    "pubblicato": "2026-10-14T18:00:22+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -18.0,
+   "punteggio": -18.5,
    "testate": 2
   },
   {
@@ -994,7 +1018,7 @@
    "pubblicato": "2026-10-14T17:06:07+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -28.2,
+   "punteggio": -28.7,
    "testate": 1
   },
   {
@@ -1006,7 +1030,7 @@
    "pubblicato": "2026-10-14T16:41:34+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -18.3,
+   "punteggio": -18.8,
    "testate": 2
   },
   {
@@ -1018,7 +1042,7 @@
    "pubblicato": "2026-10-14T16:01:18+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -28.5,
+   "punteggio": -29.0,
    "testate": 1
   },
   {
@@ -1030,7 +1054,7 @@
    "pubblicato": "2026-10-14T15:00:40+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -20.7,
+   "punteggio": -21.2,
    "testate": 1
   },
   {
@@ -1042,7 +1066,7 @@
    "pubblicato": "2026-10-14T14:30:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -18.9,
+   "punteggio": -19.3,
    "testate": 2
   },
   {
@@ -1054,7 +1078,7 @@
    "pubblicato": "2026-10-14T14:01:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -24.0,
+   "punteggio": -24.5,
    "testate": 1
   },
   {
@@ -1066,8 +1090,8 @@
    "pubblicato": "2026-10-14T13:12:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.2,
-   "testate": 2
+   "punteggio": -21.7,
+   "testate": 1
   },
   {
    "titolo": "Marquez: “Martin grandissimo talento. Ma senza moto, nemmeno lui potrà fare nulla nel 2027”",
@@ -1078,7 +1102,7 @@
    "pubblicato": "2026-10-14T13:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -14.2,
+   "punteggio": -14.7,
    "testate": 2
   },
   {
@@ -1090,7 +1114,7 @@
    "pubblicato": "2026-10-14T11:43:09+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": -23.6,
+   "punteggio": -24,
    "testate": 1
   },
   {
@@ -1102,7 +1126,7 @@
    "pubblicato": "2026-10-14T10:31:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -6.9,
+   "punteggio": -7,
    "testate": 2
   },
   {
@@ -1142,18 +1166,6 @@
    "testate": 2
   },
   {
-   "titolo": "F1 | Antonelli vede il titolo iridato: diverrà campione ad Austin se... Ecco tutte le possibilità",
-   "estratto": "Il titolo è ormai davanti a lui e ora è questione di quando riuscirà ad afferrarlo. Andrea Kimi Antonelli si appresta ad avere il primo match point al Gran Premio degli Stati Uniti, che si terrà al…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-antonelli-le-possibilita-di-titolo-al-gp-degli-usa/10864730/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-14T08:32:18+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -12,
-   "testate": 2
-  },
-  {
    "titolo": "MotoGP | Fermin Aldeguer è stato operato alla mano destra, da capire i tempi di recupero",
    "estratto": "Fermin Aldeguer è stato operato martedì a Barcellona. L'intervento fa seguito alla sua caduta nelle primissime fasi del Gran Premio d'Indonesia di MotoGP, domenica a Mandalika. Il pilota del Gresini…",
    "fonte": "Motorsport.com",
@@ -1162,8 +1174,8 @@
    "pubblicato": "2026-10-14T07:40:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -34,
-   "testate": 1
+   "punteggio": -24,
+   "testate": 2
   },
   {
    "titolo": "Bezzecchi, quanti rimpianti: senza Sprint sarebbe a -1 da Martin. Gli ‘zeri’ al sabato costano almeno 30 punti",
@@ -1427,18 +1439,6 @@
    "tipo": "dichiarazione",
    "citazione": true,
    "punteggio": -13,
-   "testate": 1
-  },
-  {
-   "titolo": "Da Pagani a Bezzecchi: le 300 vittorie dei piloti italiani in MotoGP",
-   "estratto": "Il successo di Bezzecchi a Mandalika è stato il numero 300 dei piloti italiani nella classe regina del Motomondiale",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/da-pagani-a-bezzecchi-300-vittorie-piloti-italiani-in-motogp",
-   "pubblicato": "2026-10-12T11:45:54+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -18,
    "testate": 1
   }
  ]

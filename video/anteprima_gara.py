@@ -127,7 +127,7 @@ def costruisci(serie, p, nomi):
     motivo = (top.get("motivi") or [""])[0].replace("nelle ultime 5 gare", "nelle ultime cinque gare")
     tab = {"titolo": "Favoriti di GP Oggi", "righe": [{"pos": "", "colore": colore(serie, f), "nome": cognome(f["nome"]).upper(), "voto": f["indice"], "nota": " "} for f in fav]}
     scene.append({"foto": top["nome"], "nome": top["nome"], "pista": True, "classifica": tab, "sub_top": 1360,
-                  "testo": f"Per i nostri numeri il favorito è *{cognome(top['nome'])}*" + (f": {motivo}." if motivo else ".") + f" Poi {cognome(fav[1]['nome'])} e {cognome(fav[2]['nome'])}. È un'opinione basata sui numeri, non una certezza."})
+                  "testo": f"Per i nostri numeri il favorito è *{cognome(top['nome'])}*" + (f": {motivo}." if motivo else ".") + f" Poi {cognome(fav[1]['nome'])} e {cognome(fav[2]['nome'])}."})
     if serie == "f1":
         for pil in ("Charles Leclerc", "Lewis Hamilton"):
             f = next((x for x in p["favoriti"] if x["nome"] == pil), None)
@@ -138,7 +138,7 @@ def costruisci(serie, p, nomi):
     for a, t in notizie:
         cit = [n for n in nomi if len(norm(cognome(n))) > 3 and norm(cognome(n)) in norm(t).split() and nomi[n] == S]
         f = cit[0] if cit else fav[len(scene) % len(fav)]["nome"]
-        scene.append({"foto": f, "nome": a["fonte"].strip(), "testo": f"Secondo {a['fonte'].strip()}: {t}"})
+        scene.append({"foto": f, "fonte_alto": a["fonte"].strip(), "testo": t})
     domanda = f"Chi vince secondo te il {p['gp']}?"
     spec = {"serie": S, "titolo_breve": p["gp"], "etichetta": "Prossima gara", "fonte": "dati GP Oggi", "velocita": "+38%", "scene": scene, "finale": {"foto": fav[0]["nome"], "domanda": domanda}}
     righe = [f"🏁 {p['gp']}: chi vince?", "", f"📍 {luogo}", f"🕒 Gara {giorno_gara}", ""]

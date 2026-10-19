@@ -23,6 +23,10 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 
 - Velocità voce: ogni voce è 3% più lenta di quella scritta nella scaletta (`RALLENTA` in notizia_sub.py, richiesta del gestore). Tra il gancio e "Seguici" nessuna pausa extra (come la frase subito successiva) e "Seguici" detto più lento del resto (+20%).
 
+## Parlato: cosa non si dice mai a voce (richiesta del proprietario, 19 ottobre 2026)
+- Mai la frase «è un'opinione/una valutazione basata sui numeri, non una certezza» detta dopo il favorito: chi ascolta non vuole saperlo. Resta solo scritta in didascalia (e in schermata finale se serve).
+- Mai citare la fonte a voce («secondo Motorsport.com…»): chi ascolta lo trova brutto. La fonte si scrive in alto sullo schermo (`"fonte_alto": "Motorsport.com"` nella scena di `notizia_sub.py`, sotto la zona sicura y≥230) e in didascalia.
+
 ## Fatti (regola più importante)
 - Mai errori su griglie, risultati, punti. Prima i documenti ufficiali FIA / API MotoGP, poi almeno due fonti.
 - Una griglia di partenza si dà solo dopo il documento "Final Starting Grid" della FIA (penalità e partenze dalla pit lane arrivano dopo le qualifiche).

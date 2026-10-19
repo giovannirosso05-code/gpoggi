@@ -276,6 +276,7 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
 .logo{{position:absolute;left:50px;top:150px;width:190px}}
 .tag{{position:absolute;left:265px;top:172px;font:700 30px Oswald;letter-spacing:.06em;text-transform:uppercase;background:{col};padding:4px 16px;border-radius:6px}}
 .strip{{position:absolute;left:40px;top:300px;max-width:900px;background:{col};font:700 44px/1.1 Oswald;text-transform:uppercase;padding:10px 18px}}
+.fonte-alto{{position:absolute;right:40px;top:240px;background:rgba(0,0,0,.65);font:600 28px Inter;color:rgba(255,255,255,.9);padding:6px 16px;border-radius:6px}}
 .nome{{position:absolute;left:60px;top:{spec.get('nome_top', 930)}px;background:#000;font:700 38px Oswald;text-transform:uppercase;letter-spacing:.04em;padding:6px 18px}}
 .sub{{position:absolute;left:90px;width:780px;top:{scena.get('sub_top', spec.get('sub_top', 1180))}px;text-align:center;font:700 62px/1.18 Oswald;text-transform:uppercase;word-spacing:.18em;-webkit-text-stroke:2px #000;paint-order:stroke fill;text-shadow:0 4px 18px rgba(0,0,0,.7)}}
 .sub .g{{color:{GIALLO}}} .sub .s{{color:{nom}}}
@@ -320,6 +321,8 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
         corpo += f'<div class=strip>{esc(spec["titolo_breve"])}</div>'
         if nome and scena.get("nome"):
             corpo += f'<div class=nome>{esc(scena["nome"])}</div>'
+        if scena.get("fonte_alto"):
+            corpo += f'<div class=fonte-alto>Fonte: {esc(scena["fonte_alto"])}</div>'
         if sub:
             corpo += '<div class=sub>' + " ".join(f'<span class="{fl}">{esc(w)}</span>' for w, fl in sub) + '</div>'
     if scena.get("classifica"):

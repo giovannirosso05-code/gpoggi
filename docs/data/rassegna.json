@@ -1,5 +1,5 @@
 {
- "generato_il": "2026-10-18T15:15:26+00:00",
+ "generato_il": "2026-10-19T02:47:28+00:00",
  "articoli": [
   {
    "titolo": "MotoGP | Marquez valorizza il livello del suo rivale per il titolo: \"Martin è un vero talento\"",
@@ -272,16 +272,6 @@
    "citazione": false
   },
   {
-   "titolo": "Fittipaldi: “Antonelli la fortuna se l’è creata”",
-   "estratto": "Il due volte iridato ha sottolineato che quello di Kimi sarà un titolo meritatissimo",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/fittipaldi-antonelli-kimi-fortunato-no-fortuna-creata-ferrari-tifosi-impazziranno",
-   "pubblicato": "2026-10-17T06:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true
-  },
-  {
    "titolo": "Mercedes ci riprova: ad Austin ancora con gli aggiornamenti",
    "estratto": "Il vicedirettore tecnico Simone Resta conferma che la Mercedes correrà in Texas con la W17 aggiornata per venire a capo dei problemi di assetto",
    "fonte": "FormulaPassion",
@@ -290,6 +280,16 @@
    "pubblicato": "2026-10-17T06:00:00+00:00",
    "tipo": null,
    "citazione": false
+  },
+  {
+   "titolo": "Fittipaldi: “Antonelli la fortuna se l’è creata”",
+   "estratto": "Il due volte iridato ha sottolineato che quello di Kimi sarà un titolo meritatissimo",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/fittipaldi-antonelli-kimi-fortunato-no-fortuna-creata-ferrari-tifosi-impazziranno",
+   "pubblicato": "2026-10-17T06:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true
   },
   {
    "titolo": "Volata Mondiale, per Pernat è Marquez contro tutti: “Ma nel 2025 saltò le ultime gare, può essere uno svantaggio”",
@@ -838,7 +838,7 @@
    "serie": "F1",
    "url": "https://it.motorsport.com/f1/news/f1-gabriel-bortoleto-audi-intervista-esclusiva/10864963/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-14T08:00:29+00:00",
-   "tipo": "dichiarazione",
+   "tipo": "social",
    "citazione": true
   },
   {

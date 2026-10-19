@@ -57,20 +57,22 @@ def a_voce(h, m):
     return ore + ("" if m == 0 else " e " + numero(m))
 
 
-def carica(serie):
+def carica(serie, pos=None):
+    """pos = quale dei primi tre favoriti mostrare; di base ruota con la settimana, così la foto cambia ogni volta."""
+    pos = datetime.now(ROMA).isocalendar()[1] % 3 if pos is None else pos
     pron = json.load(open(SITO / "data/pronostici.json"))
     if serie == "f1":
         ev = json.load(open(SITO / "data/events.json"))
         gara = pron["f1"]["gara"]
         w = next(x for x in ev if any(s["nome"] == "Gara" and datetime.fromisoformat(s["inizio"]) == datetime.fromisoformat(gara) for s in x["sessioni"]))
         ro = json.load(open(SITO / "data/roster.json"))
-        fav = pron["f1"]["favoriti"][0]["nome"]
+        fav = pron["f1"]["favoriti"][pos]["nome"]
         foto = next(p for p in ro if p["nome"] == fav)["foto"]
         return dict(sigla="F1", colore="#e8352f", titolo=w["nome"], luogo=w["paese"] or w["circuito"], fav=fav, foto=foto, sessioni=w["sessioni"], motogp=False)
     mg = json.load(open(SITO / "data/motogp.json"))["weekend"]
     gara = pron["motogp"]["gara"]
     w = next(x for x in mg if any(s["nome"] == "Gara" and datetime.fromisoformat(s["inizio"]) == datetime.fromisoformat(gara) for s in x["sessioni"]))
-    fav = pron["motogp"]["favoriti"][0]
+    fav = pron["motogp"]["favoriti"][pos]
     fm = json.load(open(SITO / "data/foto-motogp.json"))
     return dict(sigla="MotoGP", colore="#1f5fd1", titolo=w["nome"], luogo=w["circuito"], fav=fav["nome"], foto=fm[fav["id"]], sessioni=w["sessioni"], motogp=True)
 
@@ -97,7 +99,7 @@ def copione(d, gruppi):
         parti = [f"{n.lower().replace('warm up', 'warm up').replace('qualifiche 1', 'qualifiche uno').replace('qualifiche 2', 'qualifiche due').replace('prove libere 1', 'prove libere uno').replace('prove libere 2', 'prove libere due').replace('prove libere 3', 'prove libere tre')} {a_voce(h, m)}" for n, _, h, m in sess]
         parti[-1] = parti[-1].replace("gara ", "la gara ", 1) if parti[-1].startswith("gara") else parti[-1]
         t.append(f"{giorno[0].upper() + giorno[1:]}: " + ", ".join(parti) + ".")
-    t.append(f"Il nostro favorito è {d['fav']}.")
+    t.append(f"Tra i favoriti c'è {d['fav']}.")
     t.append("Tutto su G P Oggi punto it.")
     return " ".join(t)
 
@@ -173,16 +175,16 @@ def pagina(d, gruppi):
             for g, n, o in qual) + "</div>"
     return f"""<!doctype html><meta charset=utf-8><style>{font}
 *{{box-sizing:border-box}} html,body{{margin:0;width:{W}px;height:{H}px;background:#0b0b0e;color:#fff;font-family:Inter,sans-serif;overflow:hidden}}
-/* zona sicura: i pulsanti di TikTok e Instagram stanno a destra (circa 160 px) e in alto, la didascalia in basso */
+/* zona sicura: blocco centrato (120 px per lato); i pulsanti di TikTok e Instagram stanno a destra (da circa 950 px) e in alto, la didascalia in basso */
 .logo{{position:absolute;left:0;right:0;top:135px;text-align:center}} .logo img{{width:210px}}
 .foto{{position:absolute;left:0;top:260px;width:{W}px;height:600px;background:url(data:image/jpeg;base64,{b64(foto)}) center {'-175' if d['motogp'] else '-85'}px/{W}px auto no-repeat}}
 .vel{{position:absolute;left:0;top:260px;width:{W}px;height:600px;background:linear-gradient(180deg,#0b0b0e 0%,rgba(11,11,14,0) 16%,rgba(11,11,14,0) 62%,#0b0b0e 100%)}}
-.testata{{position:absolute;left:60px;width:860px;top:825px}}
+.testata{{position:absolute;left:120px;width:840px;top:825px}}
 .pill{{display:inline-block;font:700 28px Oswald;letter-spacing:.1em;background:{colore};padding:3px 16px;border-radius:8px;text-transform:uppercase;vertical-align:middle}}
 .ora-it{{float:right;font:700 24px Oswald;letter-spacing:.1em;text-transform:uppercase;color:#c9c9d2;margin-top:6px}}
-h1{{margin:12px 0 0;font:700 64px/1 Oswald;text-transform:uppercase;white-space:nowrap}}
+h1{{margin:12px 0 0;font:700 60px/1 Oswald;text-transform:uppercase;white-space:nowrap}}
 .sotto{{font:500 28px Inter;color:#c9c9d2;margin-top:8px;white-space:nowrap}} .sotto b{{color:#fff}}
-.blocco{{position:absolute;left:60px;width:860px;top:1050px}}
+.blocco{{position:absolute;left:120px;width:840px;top:1050px}}
 .carta{{position:relative;overflow:hidden;display:flex;justify-content:space-between;align-items:center;border-radius:20px;padding:0 30px;margin-bottom:16px}}
 .carta .et{{font:700 38px Oswald;letter-spacing:.1em;text-transform:uppercase}} .carta .gg{{font:500 26px Inter;opacity:.85;text-transform:capitalize;margin-top:2px}}
 .carta .ora{{font-family:Oswald;font-weight:700;line-height:1;letter-spacing:.01em}}
@@ -202,7 +204,7 @@ h1{{margin:12px 0 0;font:700 64px/1 Oswald;text-transform:uppercase;white-space:
 <div class=logo><img src="data:image/png;base64,{b64(SITO / 'img/logo-wide-scuro.png')}"></div>
 <div class=foto></div><div class=vel></div>
 <div class=testata><span class=pill>{d['sigla']}</span><span class=ora-it>Orari in ora italiana</span><h1>{d['titolo']}</h1>
-<div class=sotto>{d['luogo'][:34]}</div><div class=sotto style='margin-top:2px'>Il nostro favorito: <b>{d['fav']}</b></div></div>
+<div class=sotto>{d['luogo'][:34]}</div><div class=sotto style='margin-top:2px'>Tra i favoriti: <b>{d['fav']}</b></div></div>
 <div class=blocco>{carte}{chips}
 <div class=piede><div class=url>gpoggi.it</div><div class=piccolo>Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team</div>
 <div class=piccolo>Foto: {d['foto'].get('autore', '')} · {d['foto'].get('licenza', '')} · via Wikimedia Commons</div></div></div>"""
@@ -211,7 +213,7 @@ h1{{margin:12px 0 0;font:700 64px/1 Oswald;text-transform:uppercase;white-space:
 async def main(args):
     if args.serie == "auto":
         args.serie = serie_prossima()
-    d = carica(args.serie)
+    d = carica(args.serie, args.favorito)
     gruppi = righe(d)
     testo = copione(d, gruppi)
     print("VOCE:", testo)
@@ -240,6 +242,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("serie", choices=["f1", "moto", "motogp", "auto"])
     ap.add_argument("--uscita", type=Path, default=None)
+    ap.add_argument("--favorito", type=int, choices=[0, 1, 2], default=None, help="quale dei primi tre favoriti mostrare (di base ruota con la settimana)")
     ap.add_argument("--invia", action="store_true", help="manda il video e la didascalia su Telegram")
     ap.add_argument("--avvisa", action="store_true", help="se qualcosa non va, lo scrive su Telegram")
     a = ap.parse_args()

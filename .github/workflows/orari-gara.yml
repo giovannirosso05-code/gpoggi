@@ -9,7 +9,7 @@ on:
         default: 'auto'
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: orari-gara
@@ -37,4 +37,11 @@ jobs:
           TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID || '559225883' }}
           SERIE: ${{ github.event.inputs.serie }}
         run: |
-          python video/orari_gp.py "${SERIE:-auto}" --invia --avvisa
+          mkdir -p video/pronti
+          python video/orari_gp.py "${SERIE:-auto}" --invia --avvisa --uscita "video/pronti/orari-$(date +%Y%m%d-%H%M)-${SERIE:-auto}.mp4"
+      - name: Tiene una copia del video nel repository (per riaverlo in chat)
+        run: |
+          git config user.name "gpoggi-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add video/pronti
+          git diff --cached --quiet || (git commit -m "video orari: copia" && git pull --rebase --autostash -X theirs origin main && git push)

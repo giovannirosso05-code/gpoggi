@@ -249,7 +249,7 @@ def costruisci(serie, w):
     top = {"foto": migliore["nome"], **pista,
            "testo": f"E poi il migliore: [{cognome(migliore)}]. {tripletta(migliore, sprint) or (frase_sessioni(migliore, sprint)[0].upper() + frase_sessioni(migliore, sprint)[1:] + '.')}{lode} Voto *{voto_parole(migliore['voto'])}*."}
     scene.append(top)
-    scene.append({"foto": migliore["nome"], "pista": True, "classifica": tab, "sub_top": 1360, "testo": "Ecco la pagella completa. " + ("Ogni lunedì alle tredici la pagella della MotoGP: tornate sul profilo alle diciotto per quella della F1." if serie == "motogp" else "Ogni lunedì alle tredici le pagelle della MotoGP, alle diciotto quelle della F1.")})
+    scene.append({"foto": migliore["nome"], "pista": True, "classifica": tab, "sub_top": 1360, "testo": "Ecco la pagella completa."})
     ser = "F1" if serie == "f1" else "MotoGP"
     return {"serie": ser, "titolo_breve": f"{gp}: la pagella", "fonte": "risultati ufficiali, calcolo GP Oggi", "velocita": "+31%", "scene": scene,
             "finale": {"foto": migliore["nome"], "domanda": f"Che voto dai tu a {gp}?"}}, migliore, gp, basso
@@ -258,7 +258,7 @@ def costruisci(serie, w):
 def didascalia(serie, gp, migliore, basso, prot_nome):
     tag = "#f1" if serie == "f1" else "#motogp"
     return (f"La pagella di {gp}, studiata da noi 📝\n\n{migliore['nome']} {fmt(migliore['voto'])} è l'uomo del weekend, ma il voto più basso è {basso['nome']} ({fmt(basso['voto'])}).\n\n"
-            f"Voti a scopo divertente, senza offendere nessuno. Sei d'accordo? Dimmi la tua nei commenti 👇\n\n🕐 Ogni lunedì: MotoGP alle 13, F1 alle 18\n🔗 gpoggi.it\n\n#gpoggi {tag} #{''.join(c for c in gp.lower() if c.isalnum())} #pagella")
+            f"Voti a scopo divertente, senza offendere nessuno. Sei d'accordo? Dimmi la tua nei commenti 👇\n\n🔗 gpoggi.it\n\n#gpoggi {tag} #{''.join(c for c in gp.lower() if c.isalnum())} #pagella")
 
 
 def main():

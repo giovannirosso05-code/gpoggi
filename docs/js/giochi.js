@@ -94,7 +94,7 @@ const GEN = {
       ...quattro(p.moto, marche), cred: "" }));
   },
   numero(modo) {
-    const tutti = [...dati.roster.filter((p) => p.numero != null).map((p) => ({ nome: p.nome, n: String(p.numero), serie: "Formula 1", sub: p.team })),
+    const tutti = [...(modo === "moto" ? [] : dati.roster.filter((p) => p.numero != null).map((p) => ({ nome: p.nome, n: String(p.numero), serie: "Formula 1", sub: p.team }))),
       ...(modo === "f1" ? [] : dati.moto.filter((p) => p.numero != null).map((p) => ({ nome: p.nome, n: String(p.numero), serie: "MotoGP", sub: p.team })))];
     return mescola(tutti).slice(0, N).map((p) => ({ titolo: `Che numero ha ${p.nome} ${p.serie === "MotoGP" ? "sulla moto" : "sulla macchina"}?`, img: `<div class="quiz-img foto-quiz" style="padding:28px"><div class="quiz-pilota"><b>${esc(p.nome)}</b><span>${esc(p.serie)} · ${esc(p.sub || "")}</span></div></div>`,
       ...quattro(p.n, tutti.filter((x) => x.serie === p.serie).map((x) => x.n)), cred: "" }));
@@ -106,6 +106,14 @@ const GEN = {
       return mescola(f1.filter((x) => x.anno >= da)).slice(0, N).map((c) => ({ titolo: `Chi vinse il mondiale di Formula 1 nel ${c.anno}?`,
         img: `<div class="quiz-img foto-quiz" style="padding:24px"><div class="quiz-pilota"><b>${c.anno}</b><span>Formula 1</span></div></div>`,
         ...quattro(c.nome, f1.map((x) => x.nome)), cred: "" }));
+    }
+    if (modo === "motorecenti") {   // MotoGP degli ultimi 10 anni
+      const da = new Date().getFullYear() - 10;
+      const rec = dati.motoArch.map((s) => ({ anno: s.anno, nome: (s.classifica.find((p) => p.pos === 1) || {}).nome })).filter((x) => x.nome && x.anno >= da);
+      const tuttiMg = dati.motoArch.map((s) => (s.classifica.find((p) => p.pos === 1) || {}).nome).filter(Boolean);
+      return mescola(rec).slice(0, N).map((c) => ({ titolo: `Chi vinse il mondiale della classe regina MotoGP nel ${c.anno}?`,
+        img: `<div class="quiz-img foto-quiz" style="padding:24px"><div class="quiz-pilota"><b>${c.anno}</b><span>MotoGP</span></div></div>`,
+        ...quattro(c.nome, tuttiMg), cred: "" }));
     }
     const mg = dati.motoArch.map((s) => ({ anno: s.anno, nome: (s.classifica.find((p) => p.pos === 1) || {}).nome, serie: "MotoGP" })).filter((x) => x.nome);
     const pool = [...f1, ...mg];
@@ -176,7 +184,8 @@ async function partitaSfida() {
   rng = conSeme(seme("gpoggi-" + giornoSfida)); N = 1;
   const qs = [];
   // cultura generale degli ultimi anni: chi vinse un GP recente, il team principal di un team, il numero di un pilota; poi due a rotazione
-  const piano = [["vincitore", "recenti"], ["tp"], ["numero", "f1"], ...mescola([["campioni", "recenti"], ["team"], ["pilota", "oggi"]]).slice(0, 2)];
+  // 3 domande di F1 e 2 di MotoGP (il seme è la data: stesse domande per tutti)
+  const piano = [["vincitore", "recenti"], ...mescola([["tp"], ["team"], ["campioni", "recenti"]]).slice(0, 2), ["campioni", "motorecenti"], ...mescola([["numero", "moto"], ["moto"]]).slice(0, 1)];
   try { for (const [k, modo] of piano) { const r = await Promise.resolve().then(() => GEN[k](modo)).catch(() => []); if (r[0]) qs.push(r[0]); } }
   finally { [rng, N] = prima; }
   if (qs.length < 3) { box.innerHTML = `<p class="muted">Non ci sono abbastanza dati per la sfida di oggi: riprova più tardi.</p>`; return; }

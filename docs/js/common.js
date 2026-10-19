@@ -298,12 +298,14 @@ export function credito(foto, cosa = "Foto") {
 }
 
 // Mescola due serie in ordine di data, alternando quando possibile: nessuna delle due sommerge l'altra.
-export function mischia(articoli, n) {
-  const per = (s) => articoli.filter((a) => a.serie === s).sort((a, b) => new Date(b.pubblicato || 0) - new Date(a.pubblicato || 0));
+// Con interesse=true l'ordine e' quello del punteggio (campo "punteggio" di rassegna.json), a parita' la data.
+export function mischia(articoli, n, interesse = false) {
+  const valore = (a) => (interesse ? a.punteggio ?? -999 : new Date(a.pubblicato || 0).getTime());
+  const per = (s) => articoli.filter((a) => a.serie === s).sort((a, b) => valore(b) - valore(a) || new Date(b.pubblicato || 0) - new Date(a.pubblicato || 0));
   const f1 = per("F1"), moto = per("MotoGP"), altri = articoli.filter((a) => a.serie !== "F1" && a.serie !== "MotoGP");
   const out = [];
   while ((f1.length || moto.length) && out.length < n) {
-    const prima = (new Date(f1[0]?.pubblicato || 0) >= new Date(moto[0]?.pubblicato || 0)) ? [f1, moto] : [moto, f1];
+    const prima = ((f1[0] ? valore(f1[0]) : -Infinity) >= (moto[0] ? valore(moto[0]) : -Infinity)) ? [f1, moto] : [moto, f1];
     for (const l of prima) if (l.length && out.length < n) out.push(l.shift());
   }
   return [...out, ...altri].slice(0, n);

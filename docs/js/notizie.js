@@ -21,7 +21,7 @@ try {
 
   const ras = document.getElementById("rassegna");
   const disegnaRassegna = () => {
-  const lista = serie === "tutte" ? mischia(rassegna.articoli, 16) : rassegna.articoli.filter((a) => a.serie === serie).slice(0, 16);
+  const lista = serie === "tutte" ? mischia(rassegna.articoli, 16, true) : rassegna.articoli.filter((a) => a.serie === serie).sort((a, b) => (b.punteggio ?? -999) - (a.punteggio ?? -999) || new Date(b.pubblicato || 0) - new Date(a.pubblicato || 0)).slice(0, 16);
   ras.innerHTML = lista.length ? lista.map((a, i) => `
     <article class="rassegna-voce ${a.serie === "MotoGP" ? "moto" : "f1"}${i === 0 ? " grande" : ""}">
       <div class="rv-testa"><span class="rv-tag">${esc(a.serie || "F1")}</span><span class="rv-meta">${esc(a.fonte)}${a.pubblicato ? " · " + formattaDataOra(a.pubblicato) : ""}</span></div>

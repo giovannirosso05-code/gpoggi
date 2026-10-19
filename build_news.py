@@ -55,6 +55,41 @@ def tipo_dichiarazione(titolo, estratto=""):
     return None
 
 
+# punteggio di interesse (campo "punteggio" in rassegna.json): il file resta in ordine di data, e' la pagina a ordinare per punteggio
+ITALIANI = re.compile(r"\b(ferrari|antonelli|bagnaia|bezzecchi|marini|morbidelli|di giannantonio|dovizioso|rossi|vale|pecco|marco bezzecchi|aldeguer|fabio di giannantonio|ducati|monza|imola|mugello)\b", re.I)
+ROUTINE = re.compile(r"\b(orari|programma|diretta tv|in tv|streaming|dove vedere|come vedere|palinsesto|ordine d'arrivo|classifica|risultati|griglia di partenza|tempi|prove libere|meteo|previsioni)\b", re.I)
+PAROLE_VUOTE = {"della", "delle", "degli", "dello", "nella", "nelle", "sulla", "sulle", "dopo", "prima", "gran", "premio", "come", "sono", "senza", "tutti", "tutto", "anche", "questo", "questa", "essere", "dove", "cosa", "quando", "perche", "contro", "verso", "ancora", "nuovo", "nuova"}
+
+
+def parole(titolo):
+    return {w for w in re.findall(r"[a-zàèéìòù0-9]{4,}", titolo.lower()) if w not in PAROLE_VUOTE}
+
+
+def assegna_punteggi(articoli, adesso=None):
+    """Interesse: stessa storia su piu' testate (almeno 3 parole del titolo in comune), Ferrari/italiani, dichiarazioni, weekend di gara (ven-lun); meno per orari/programmi/risultati; calo con l'eta'."""
+    adesso = adesso or datetime.now(timezone.utc)
+    pw = [parole(a["titolo"]) for a in articoli]
+    for i, a in enumerate(articoli):
+        fonti = {a["fonte"]} | {b["fonte"] for j, b in enumerate(articoli) if j != i and len(pw[i] & pw[j]) >= 3}
+        testo_a = a["titolo"] + " " + a["estratto"]
+        punti = 10 * (len(fonti) - 1)
+        if ITALIANI.search(testo_a):
+            punti += 8
+        if a["tipo"]:
+            punti += {"social": 8, "intervista": 6, "dichiarazione": 5}[a["tipo"]]
+        if ROUTINE.search(a["titolo"]):
+            punti -= 12
+        try:
+            d = datetime.fromisoformat(a["pubblicato"])
+            if d.weekday() in (4, 5, 6, 0):
+                punti += 4
+            punti -= min(30, (adesso - d).total_seconds() / 3600 / 4)
+        except (TypeError, ValueError):
+            punti -= 30
+        a["punteggio"] = round(punti, 1)
+        a["testate"] = len(fonti)
+
+
 HEADERS = "GPOggiBot/1.0 (+https://gpoggi.it; progetto non commerciale, rassegna con link alle fonti)"
 FILE = Path(__file__).parent / "docs" / "data" / "rassegna.json"
 
@@ -108,10 +143,11 @@ def main():
         return
     articoli.sort(key=lambda a: a["pubblicato"] or "", reverse=True)
     articoli = articoli[:MAX_TOTALE]
+    assegna_punteggi(articoli)
     print(f"  di cui con dichiarazioni: {sum(a['citazione'] for a in articoli)} (social {sum(a['tipo'] == 'social' for a in articoli)}, interviste {sum(a['tipo'] == 'intervista' for a in articoli)})")
     if "--prova" in sys.argv:
-        for a in articoli[:5]:
-            print(f"- {a['titolo']} [{a['fonte']}]\n  {a['estratto']}\n  {a['url']}")
+        for a in sorted(articoli, key=lambda x: -x["punteggio"])[:8]:
+            print(f"- [{a['punteggio']}] {a['titolo']} [{a['fonte']}, {a['testate']} testate]\n  {a['estratto']}\n  {a['url']}")
         return
     FILE.write_text(json.dumps({"generato_il": datetime.now(timezone.utc).isoformat(timespec="seconds"), "articoli": articoli},
                                ensure_ascii=False, indent=1))

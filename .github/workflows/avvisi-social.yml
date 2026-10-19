@@ -1,10 +1,11 @@
 name: Avvisi dichiarazioni social
 
-# Ogni mezz'ora: se un pilota importante scrive o dice qualcosa sui social (riportato dalle testate) arriva un avviso su Telegram
+# Ogni 15 minuti nei weekend di gara (ven-lun), ogni mezz'ora negli altri giorni: se un pilota importante scrive o dice qualcosa sui social (riportato dalle testate) arriva un avviso su Telegram
 # con il comando per fare subito il video. Niente modelli di linguaggio.
 on:
   schedule:
-    - cron: '7,37 5-22 * * *'
+    - cron: '7,22,37,52 5-22 * * 5,6,0,1'
+    - cron: '7,37 5-22 * * 2,3,4'
   workflow_dispatch:
 
 permissions:

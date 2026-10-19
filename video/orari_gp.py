@@ -123,13 +123,13 @@ def pagina(d, gruppi):
     sigla_g = lambda g: g.split()[0][:3].upper() + " " + g.split()[1]
     font = (f"@font-face{{font-family:Oswald;font-weight:700;src:url(data:font/woff2;base64,{b64(FONT / 'oswald-latin-700-normal.woff2')})}}"
             f"@font-face{{font-family:Inter;font-weight:500;src:url(data:font/woff2;base64,{b64(FONT / 'inter-latin-500-normal.woff2')})}}")
-    # ordine dall'alto in basso: domenica, sabato, venerdì (e dentro ogni giorno la sessione più tarda per prima)
+    # ordine dall'alto in basso: domenica, sabato, venerdì (dentro ogni giorno da sinistra a destra in ordine di orario)
     def blocco_chips(giorno_testo=None, escludi=None):
         out = ""
         for g, sess in reversed(gruppi):
             if (giorno_testo is not None and g != giorno_testo) or (escludi is not None and g == escludi):
                 continue
-            voci = [(g, n, o) for n, o, _, _ in reversed(sess) if tipo_sessione(n) == "altro"]
+            voci = [(g, n, o) for n, o, _, _ in sess if tipo_sessione(n) == "altro"]
             if voci:
                 out += '<div class="chips">' + "".join(f'<div class="chip"><span class="cg">{sigla_g(gg)}</span><span class="cn">{n}</span><b>{o}</b></div>' for gg, n, o in voci) + "</div>"
         return out

@@ -8,6 +8,7 @@ import asyncio
 import base64
 import json
 import ssl
+import os
 import subprocess
 import tempfile
 from datetime import datetime
@@ -25,7 +26,8 @@ async def _voce_comune(testo, vel, uscita):
     await NS.voce(testo, vel, Path(uscita))
 
 
-C._SSL_CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
+if os.path.exists("/root/.ccr/ca-bundle.crt"):
+    C._SSL_CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
 QUI = Path(__file__).parent
 SITO = QUI.parent / "docs"
 FONT = QUI / "logo" / "font"
@@ -92,12 +94,36 @@ def copione(d, gruppi):
     if d["motogp"]:
         t.append("Attenzione: le sessioni sono di prima mattina.")
     for giorno, sess in gruppi:
-        parti = [f"{n.lower().replace('warm up', 'warm up').replace('qualifiche 1', 'qualifiche uno').replace('qualifiche 2', 'qualifiche due').replace('prove libere 1', 'prove libere uno').replace('prove libere 2', 'prove libere due')} {a_voce(h, m)}" for n, _, h, m in sess]
+        parti = [f"{n.lower().replace('warm up', 'warm up').replace('qualifiche 1', 'qualifiche uno').replace('qualifiche 2', 'qualifiche due').replace('prove libere 1', 'prove libere uno').replace('prove libere 2', 'prove libere due').replace('prove libere 3', 'prove libere tre')} {a_voce(h, m)}" for n, _, h, m in sess]
         parti[-1] = parti[-1].replace("gara ", "la gara ", 1) if parti[-1].startswith("gara") else parti[-1]
         t.append(f"{giorno[0].upper() + giorno[1:]}: " + ", ".join(parti) + ".")
     t.append(f"Il nostro favorito è {d['fav']}.")
     t.append("Tutto su G P Oggi punto it.")
     return " ".join(t)
+
+
+def didascalia(d, gruppi):
+    """Didascalia pronta da incollare (regole di CLAUDE.md): frase d'apertura, orari principali, domanda, sito, hashtag."""
+    orari = []
+    for giorno, sess in gruppi:
+        for n, o, _, _ in sess:
+            t = tipo_sessione(n)
+            if t in ("gara", "qualifica"):
+                orari.append(f"{'🏁' if t == 'gara' else '⏱️'} {n} · {giorno} · {o}")
+    orari.sort(key=lambda r: r.startswith("🏁"), reverse=True)
+    tag = "motogp" if d["motogp"] else "f1"
+    return (f"{d['titolo']}: ecco tutti gli orari in ora italiana ⏰\n\n" + "\n".join(orari) + "\n\n"
+            f"Chi vince secondo te? Dimmi la tua nei commenti 👇\n\n🔗 gpoggi.it\n\n#gpoggi #{tag} #granpremio #orari")
+
+
+def serie_prossima():
+    """La prima gara in calendario tra F1 e MotoGP (quella che parte prima)."""
+    pron = json.load(open(SITO / "data/pronostici.json"))
+    ora = datetime.now(ZoneInfo("UTC"))
+    cand = {k: pron[v]["gara"] for k, v in (("f1", "f1"), ("moto", "motogp")) if pron.get(v) and datetime.fromisoformat(pron[v]["gara"]) > ora}
+    if not cand:
+        raise RuntimeError("nessuna gara in programma")
+    return min(cand, key=cand.get)
 
 
 def b64(p):
@@ -183,6 +209,8 @@ h1{{margin:12px 0 0;font:700 64px/1 Oswald;text-transform:uppercase;white-space:
 
 
 async def main(args):
+    if args.serie == "auto":
+        args.serie = serie_prossima()
     d = carica(args.serie)
     gruppi = righe(d)
     testo = copione(d, gruppi)
@@ -191,7 +219,7 @@ async def main(args):
         tmp = Path(tmp)
         await _voce_comune(testo, VELOCITA, tmp / "voce.mp3")
         async with async_playwright() as p:
-            b = await p.chromium.launch(executable_path=CHROMIUM)
+            b = await p.chromium.launch(**({"executable_path": CHROMIUM} if Path(CHROMIUM).exists() else {}), args=["--no-sandbox"])
             pg = await b.new_page(viewport={"width": W, "height": H})
             await pg.set_content(pagina(d, gruppi))
             await pg.wait_for_timeout(600)
@@ -203,12 +231,25 @@ async def main(args):
                         "-af", "adelay=500:all=1,apad=pad_dur=1.2,loudnorm=I=-14:TP=-1.5:LRA=9", "-t", f"{dur + 1.9:.2f}", "-c:v", "libx264", "-tune", "stillimage",
                         "-crf", "20", "-pix_fmt", "yuv420p", "-r", "30", "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-movflags", "+faststart", str(args.uscita)], check=True)
         print(f"Fatto: {args.uscita} ({dur + 1.9:.1f}s)")
+        if args.invia:
+            import notizie_giorno as NG
+            NG.telegram(args.uscita, f"🏁 {d['titolo']}: orari in ora italiana", didascalia(d, gruppi))
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("serie", choices=["f1", "moto"])
+    ap.add_argument("serie", choices=["f1", "moto", "motogp", "auto"])
     ap.add_argument("--uscita", type=Path, default=None)
+    ap.add_argument("--invia", action="store_true", help="manda il video e la didascalia su Telegram")
+    ap.add_argument("--avvisa", action="store_true", help="se qualcosa non va, lo scrive su Telegram")
     a = ap.parse_args()
+    a.serie = "moto" if a.serie == "motogp" else a.serie
     a.uscita = a.uscita or QUI / f"orari-{a.serie}.mp4"
-    asyncio.run(main(a))
+    try:
+        asyncio.run(main(a))
+    except (Exception, SystemExit) as e:
+        print(f"Video orari non riuscito: {type(e).__name__}: {e}")
+        if a.avvisa:
+            import notizie_giorno as NG
+            NG.avviso(f"⚠️ Non sono riuscito a fare il video degli orari: {e}")
+        raise SystemExit(1)

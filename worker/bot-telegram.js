@@ -6,15 +6,18 @@ const REPO_BASE = "giovannirosso05-code/gpoggi";
 const CHAT_BASE = "559225883";
 const BOT_BASE = "Gpoggibot";
 const RAMO = "main";
-const VERSIONE = "social 2026-10-19";
+const VERSIONE = "gara-orari 2026-10-19";
 const ETA_MASSIMA_SECONDI = 600;
 
 const COMANDI = {
   "/duevideo": ["video-automatici.yml", { cosa: "notizie-ora" }, "Due video di notizie scelte dal sistema, subito"],
   "/previsioni": ["video-automatici.yml", { cosa: "previsioni" }, "Video delle previsioni dei prossimi Gran Premi (F1 e MotoGP)"],
-  "/gara": ["anteprima-gara.yml", { serie: "auto" }, "Video sulla prossima gara: orario, circuito, chi può vincere e le ultime notizie"],
-  "/garaf1": ["anteprima-gara.yml", { serie: "f1" }, "Come /gara, ma per il prossimo Gran Premio di F1"],
-  "/garamoto": ["anteprima-gara.yml", { serie: "motogp" }, "Come /gara, ma per la prossima gara MotoGP"],
+  "/gara": ["orari-gara.yml", { serie: "auto" }, "Video con tutti gli orari della prossima gara (F1 o MotoGP, la prima in calendario): restano a schermo e la voce li legge"],
+  "/garaf1": ["orari-gara.yml", { serie: "f1" }, "Come /gara, ma per il prossimo Gran Premio di F1"],
+  "/garamoto": ["orari-gara.yml", { serie: "motogp" }, "Come /gara, ma per la prossima gara MotoGP"],
+  "/anteprima": ["anteprima-gara.yml", { serie: "auto" }, "Il vecchio video sulla prossima gara: circuito, chi può vincere e le ultime notizie"],
+  "/anteprimaf1": ["anteprima-gara.yml", { serie: "f1" }, "Come /anteprima, per la F1"],
+  "/anteprimamoto": ["anteprima-gara.yml", { serie: "motogp" }, "Come /anteprima, per la MotoGP"],
   "/venerdi": ["video-venerdi.yml", null, "Video del venerdì: ricorda di votare il podio"],
   "/maratona": ["video-maratona.yml", null, "Tre video di notizie (la maratona)"],
   "/risultati": ["risultati-weekend.yml", null, "Risultati del weekend"],

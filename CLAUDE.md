@@ -27,6 +27,9 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 - Mai la frase «è un'opinione/una valutazione basata sui numeri, non una certezza» detta dopo il favorito: chi ascolta non vuole saperlo. Resta solo scritta in didascalia (e in schermata finale se serve).
 - Mai citare la fonte a voce («secondo Motorsport.com…»): chi ascolta lo trova brutto. La fonte si scrive in alto sullo schermo (`"fonte_alto": "Motorsport.com"` nella scena di `notizia_sub.py`, sotto la zona sicura y≥230) e in didascalia.
 
+## Comando /gara (Telegram)
+- `/gara` (e `/garaf1`, `/garamoto`) fa il video degli orari: tutti gli orari restano fermi a schermo, la voce li legge e dice il favorito (`video/orari_gp.py`, workflow «Orari prossima gara»), poi manda video e didascalia sul Telegram. Il vecchio video con circuito e notizie ora è `/anteprima`. Dopo ogni modifica a `worker/bot-telegram.js` il Worker su Cloudflare va ripubblicato a mano (vedi `worker/LEGGIMI.md`).
+
 ## Fatti (regola più importante)
 - Mai errori su griglie, risultati, punti. Prima i documenti ufficiali FIA / API MotoGP, poi almeno due fonti.
 - Una griglia di partenza si dà solo dopo il documento "Final Starting Grid" della FIA (penalità e partenze dalla pit lane arrivano dopo le qualifiche).

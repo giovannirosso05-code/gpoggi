@@ -167,19 +167,19 @@ function partitaQuiz(chiave, qs) {
     document.getElementById("avanti").addEventListener("click", () => { i++; i < qs.length ? mostra() : fine(); });
   };
   const fine = () => {
-    if (chiave === "sfida") { scrivi("sfida-" + giornoSfida, JSON.stringify({ punti, esiti })); aggiornaSerie(giornoSfida); return fineSfida(punti, esiti); }
+    if (chiave === "sfida") { scrivi("sfida-" + giornoSfida, JSON.stringify({ punti, esiti })); if (giornoSfida === giornoRoma()) aggiornaSerie(giornoSfida); return fineSfida(punti, esiti); }
     const prec = record(chiave); salvaRecord(chiave, punti);
     schermataFine(chiave, punti, qs.length, prec, () => avvia(chiave));
   };
   mostra();
 }
 
-async function partitaSfida() {
-  giornoSfida = giornoRoma();
+async function partitaSfida(giorno) {
+  giornoSfida = giorno || giornoRoma();
   box.classList.remove("hidden"); scelta.classList.add("hidden");
   const fatta = leggi("sfida-" + giornoSfida);
   if (fatta) { try { const r = JSON.parse(fatta); return fineSfida(r.punti, r.esiti); } catch (e) {} }
-  box.innerHTML = `<p class="muted">Preparo la sfida di oggi…</p>`;
+  box.innerHTML = `<p class="muted">Preparo la sfida${giornoSfida === giornoRoma() ? " di oggi" : " del " + etichettaGiorno(giornoSfida)}…</p>`;
   const prima = [rng, N];
   rng = conSeme(seme("gpoggi-" + giornoSfida)); N = 1;
   const qs = [];
@@ -192,16 +192,28 @@ async function partitaSfida() {
   partitaQuiz("sfida", qs);
 }
 
+const etichettaGiorno = (g) => new Date(g + "T12:00:00").toLocaleDateString("it-IT", { day: "numeric", month: "long" });
+// le sfide dei giorni scorsi (fino a 7), per chi le ha perse: non contano per la serie di giorni di fila
+function sfidePassate() {
+  const oggi = giornoRoma(), voci = [];
+  for (let k = 1, g = ieri(oggi); k <= 7 && numeroSfida(g) >= 1; k++, g = ieri(g)) {
+    let r = null; try { r = JSON.parse(leggi("sfida-" + g) || "null"); } catch (e) {}
+    voci.push(`<button class="gioco-card sfida-passata" data-giorno="${g}"><b>Sfida #${numeroSfida(g)} · ${etichettaGiorno(g)}</b><span>${r ? `Fatta: ${r.punti}/${r.esiti.length} ${r.esiti.map((e) => (e ? "🟩" : "🟥")).join("")}` : "Non l'hai ancora fatta: gioca ora"}</span></button>`);
+  }
+  return voci.length ? `<h3 style="margin:22px 0 8px">Le sfide dei giorni scorsi</h3><p class="muted" style="margin:0 0 10px">Te ne sei persa qualcuna? Recuperala qui. Non contano per i giorni di fila.</p><div class="gioco-scelta" id="sfide-passate">${voci.join("")}</div>` : "";
+}
+
 function fineSfida(punti, esiti) {
   const su = esiti.length, g = giornoSfida || giornoRoma(), ser = leggiSerie();
-  box.innerHTML = `<div class="quiz-fine"><span class="kicker">Sfida del giorno #${numeroSfida(g)}</span><div class="quiz-punteggio">${punti}<span>/${su}</span></div>
+  box.innerHTML = `<div class="quiz-fine"><span class="kicker">Sfida del giorno #${numeroSfida(g)}${g !== giornoRoma() ? " · " + etichettaGiorno(g) : ""}</span><div class="quiz-punteggio">${punti}<span>/${su}</span></div>
     <p style="font-size:26px;margin:4px 0 8px">${esiti.map((e) => (e ? "🟩" : "🟥")).join("")}</p>
     ${ser.ultimo === g && ser.serie ? `<p class="sfida-serie">🔥 <b>${giorniDiFila(ser.serie)}</b>${ser.migliore > ser.serie ? ` · record ${ser.migliore}` : ""}</p>` : ""}
     <p>${punti === su ? "Perfetto!" : punti >= su * 0.6 ? "Ottimo risultato." : "Si può fare meglio: domani ne trovi una nuova."}</p>
     <p class="muted">Le domande sono uguali per tutti: sfida un amico e confrontate il risultato. Domani una nuova sfida.</p>
-    <div class="quiz-azioni"><button class="quiz-avanti" id="sfida">📲 Sfida un amico</button><button class="quiz-avanti secondario" id="menu">Altri giochi</button></div><p class="muted" id="sfida-esito" style="margin:8px 0 0;min-height:1.4em"></p></div>`;
+    <div class="quiz-azioni"><button class="quiz-avanti" id="sfida">📲 Sfida un amico</button><button class="quiz-avanti secondario" id="menu">Altri giochi</button></div><p class="muted" id="sfida-esito" style="margin:8px 0 0;min-height:1.4em"></p></div>${sfidePassate()}`;
   document.getElementById("sfida").addEventListener("click", () => condividiRisultato("sfida", punti, su, esiti));
   document.getElementById("menu").addEventListener("click", tornaMenu);
+  box.querySelectorAll(".sfida-passata").forEach((b) => b.addEventListener("click", () => partitaSfida(b.dataset.giorno)));
 }
 
 // «Sfida un amico»: il testo con il risultato vero, condiviso col menu del telefono (WhatsApp compreso) o copiato

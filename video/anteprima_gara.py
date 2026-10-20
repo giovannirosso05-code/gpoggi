@@ -44,6 +44,27 @@ def scegli_serie(serie):
     return k, cand[k]
 
 
+def vincitore_anno_scorso_moto(circuito):
+    """Podio della gara MotoGP dello scorso anno sullo stesso circuito (dati ufficiali del campionato). None se non si trova: allora la scena non c'è."""
+    try:
+        import build_motogp as bm
+        anno = datetime.now(timezone.utc).year - 1
+        stagione = next(x for x in bm.api("results/seasons") if x["year"] == anno)["id"]
+        cat = next(x["id"] for x in bm.api("results/categories", seasonUuid=stagione) if x["name"].replace("™", "") == "MotoGP")
+        ev = next((e for e in bm.api("results/events", seasonUuid=stagione, isFinished="true")
+                   if not e.get("test") and norm((e.get("circuit") or {}).get("name")) == norm(circuito)), None)
+        if not ev:
+            return None
+        rac = next(q for q in bm.api_cache("results/sessions", eventUuid=ev["id"], categoryUuid=cat) if q["type"] == "RAC")
+        cl = [x for x in bm.api_cache(f"results/session/{rac['id']}/classification", test="false")["classification"] if x.get("position")]
+        cl.sort(key=lambda x: x["position"])
+        top = [x["rider"]["full_name"] for x in cl[:3]]
+        return top if len(top) == 3 else None
+    except Exception as e:
+        print("  podio dell'anno scorso (MotoGP) non disponibile:", e)
+        return None
+
+
 def paese_e_orari(serie, p):
     if serie == "f1":
         gp = next(x for x in json.load(open(DATA / "events.json")) if x["circuito"] == p["circuito"] and x["fine"] > datetime.now(timezone.utc).isoformat())
@@ -136,10 +157,13 @@ def costruisci(serie, p, nomi):
     tr = scheda_tracciato(serie, p, gp, t_gara)
     if tr:
         scene.append({"foto": fav[2]["nome"], "pista": True, "tracciato": tr, "sub_top": 1440, "testo": f"Ecco il tracciato di *{p['circuito']}*."})
-    ult = vincitore_anno_scorso(gp["paese"], gp.get("circuito", ""), gp.get("localita", "")) if serie == "f1" else None
+    ult = vincitore_anno_scorso(gp["paese"], gp.get("circuito", ""), gp.get("localita", "")) if serie == "f1" else vincitore_anno_scorso_moto(gp.get("circuito"))
     if ult:
-        scene.append({"foto": ult[0] if ult[0] in nomi else fav[0]["nome"], "nome": ult[0] if ult[0] in nomi else None,
-                      "testo": f"Lo scorso anno qui ha vinto *{ult[0]}*, davanti a {ult[1]} e {ult[2]}."})
+        # la foto è di uno del podio nominato nella frase (prima il vincitore); mai il volto di un altro
+        con_foto = next((k for u in ult for k in nomi if norm(k) == norm(u)), None)
+        if con_foto:
+            scene.append({"foto": con_foto, "nome": con_foto,
+                          "testo": f"Lo scorso anno qui ha vinto *{ult[0]}*, davanti a {ult[1]} e {ult[2]}."})
     top = fav[0]
     motivo = (top.get("motivi") or [""])[0].replace("nelle ultime 5 gare", "nelle ultime cinque gare")
     tab = {"titolo": "Favoriti di GP Oggi", "righe": [{"pos": "", "colore": colore(serie, f), "nome": cognome(f["nome"]).upper(), "voto": f["indice"], "nota": " "} for f in fav]}

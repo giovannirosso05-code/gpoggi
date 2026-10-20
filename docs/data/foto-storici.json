@@ -377,6 +377,19 @@
   }
  },
  {
+  "nome": "Mike Hawthorn",
+  "serie": "Formula 1",
+  "anni": "1952–1958",
+  "foto": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Mike_Hawthorn_1958_Argentine_GP.jpg",
+   "grande": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Mike_Hawthorn_1958_Argentine_GP.jpg",
+   "autore": "Autore sconosciuto",
+   "licenza": "Public domain",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Mike_Hawthorn_1958_Argentine_GP.jpg",
+   "file": "img/storici/d365f863c33dda02.jpg"
+  }
+ },
+ {
   "nome": "Phil Hill",
   "serie": "Formula 1",
   "anni": "1958–1964",
@@ -546,6 +559,19 @@
   }
  },
  {
+  "nome": "Gilles Villeneuve",
+  "serie": "Formula 1",
+  "anni": "1977–1982",
+  "foto": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Gilles_Villeneuve_1979_Imola.jpg/500px-Gilles_Villeneuve_1979_Imola.jpg",
+   "grande": "https://upload.wikimedia.org/wikipedia/commons/9/98/Gilles_Villeneuve_1979_Imola.jpg",
+   "autore": "ideogibs",
+   "licenza": "CC BY-SA 2.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Gilles_Villeneuve_1979_Imola.jpg",
+   "file": "img/storici/2f4f2fb6dcc9cce7.jpg"
+  }
+ },
+ {
   "nome": "Jacques Laffite",
   "serie": "Formula 1",
   "anni": "1974–1986",
@@ -595,6 +621,19 @@
    "licenza": "CC BY-SA 4.0",
    "pagina": "https://commons.wikimedia.org/wiki/File:Sergio_P%C3%A9rez_2019_(cropped).jpg",
    "file": "img/storici/40763485e6eb2b4f.jpg"
+  }
+ },
+ {
+  "nome": "Tony Brooks",
+  "serie": "Formula 1",
+  "anni": "1956–1961",
+  "foto": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/1957_Aston_Martin_Tony_Brooks_Hotel_de_France.jpg/500px-1957_Aston_Martin_Tony_Brooks_Hotel_de_France.jpg",
+   "grande": "https://upload.wikimedia.org/wikipedia/commons/c/cc/1957_Aston_Martin_Tony_Brooks_Hotel_de_France.jpg",
+   "autore": "Hotel de France",
+   "licenza": "Public domain",
+   "pagina": "https://commons.wikimedia.org/wiki/File:1957_Aston_Martin_Tony_Brooks_Hotel_de_France.jpg",
+   "file": "img/storici/baf00bddfa268d6a.jpg"
   }
  },
  {
@@ -728,6 +767,19 @@
   }
  },
  {
+  "nome": "Peter Collins",
+  "serie": "Formula 1",
+  "anni": "1952–1958",
+  "foto": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Peter_Collins.jpg/500px-Peter_Collins.jpg",
+   "grande": "https://upload.wikimedia.org/wikipedia/commons/8/80/Peter_Collins.jpg",
+   "autore": "Lawson Speedway",
+   "licenza": "Public domain",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Peter_Collins.jpg",
+   "file": "img/storici/4318e978b038242b.jpg"
+  }
+ },
+ {
   "nome": "Thierry Boutsen",
   "serie": "Formula 1",
   "anni": "1983–1993",
@@ -738,6 +790,19 @@
    "licenza": "CC BY-SA 4.0",
    "pagina": "https://commons.wikimedia.org/wiki/File:Thierry_Boutsen_at_the_2026_Adelaide_Motorsport_Festival_(028A6498).jpg",
    "file": "img/storici/b4cad2ede341bb95.jpg"
+  }
+ },
+ {
+  "nome": "Heikki Kovalainen",
+  "serie": "Formula 1",
+  "anni": "2007–2013",
+  "foto": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Heikki_Kovalainen_2010_Malaysia.jpg/500px-Heikki_Kovalainen_2010_Malaysia.jpg",
+   "grande": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Heikki_Kovalainen_2010_Malaysia.jpg",
+   "autore": "Morio",
+   "licenza": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Heikki_Kovalainen_2010_Malaysia.jpg",
+   "file": "img/storici/2fc8a58e65ebc9e5.jpg"
   }
  },
  {
@@ -764,6 +829,19 @@
    "licenza": "CC BY-SA 4.0",
    "pagina": "https://commons.wikimedia.org/wiki/File:Pastor_Maldonado_2015_Malaysia.jpg",
    "file": "img/storici/7bdc8b4e05788017.jpg"
+  }
+ },
+ {
+  "nome": "Robert Kubica",
+  "serie": "Formula 1",
+  "anni": "2006–2021",
+  "foto": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Robert_Kubica_at_Monza_2023.jpg/500px-Robert_Kubica_at_Monza_2023.jpg",
+   "grande": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Robert_Kubica_at_Monza_2023.jpg",
+   "autore": "bonebeast",
+   "licenza": "CC BY 2.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Robert_Kubica_at_Monza_2023.jpg",
+   "file": "img/storici/a05e236228ec634b.jpg"
   }
  },
  {
@@ -1453,6 +1531,19 @@
    "licenza": "CC BY-SA 4.0",
    "pagina": "https://commons.wikimedia.org/wiki/File:Scott_Speed_at_the_2025_Adelaide_Grand_Final_-_04.jpg",
    "file": "img/storici/d6c169c84113fc39.jpg"
+  }
+ },
+ {
+  "nome": "Sergey Sirotkin",
+  "serie": "Formula 1",
+  "anni": "2018–2018",
+  "foto": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Sergey_Sirotkin_SMP_Racing.jpg/500px-Sergey_Sirotkin_SMP_Racing.jpg",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Sergey_Sirotkin_SMP_Racing.jpg/1280px-Sergey_Sirotkin_SMP_Racing.jpg",
+   "autore": "SMP Racing",
+   "licenza": "CC0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Sergey_Sirotkin_SMP_Racing.jpg",
+   "file": "img/storici/244dc0db5e4525b2.jpg"
   }
  },
  {

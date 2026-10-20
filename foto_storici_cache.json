@@ -1213,5 +1213,60 @@
   "autore": "Unknown",
   "licenza": "Public domain",
   "pagina": "https://commons.wikimedia.org/wiki/File:Leslie_Graham.jpg"
+ },
+ "ricerca2:Mike Hawthorn": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Mike_Hawthorn_1958_Argentine_GP.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Mike_Hawthorn_1958_Argentine_GP.jpg",
+  "autore": "Autore sconosciuto",
+  "licenza": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Mike_Hawthorn_1958_Argentine_GP.jpg",
+  "file": "img/storici/d365f863c33dda02.jpg"
+ },
+ "ricerca2:Gilles Villeneuve": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Gilles_Villeneuve_1979_Imola.jpg/500px-Gilles_Villeneuve_1979_Imola.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/9/98/Gilles_Villeneuve_1979_Imola.jpg",
+  "autore": "ideogibs",
+  "licenza": "CC BY-SA 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Gilles_Villeneuve_1979_Imola.jpg",
+  "file": "img/storici/2f4f2fb6dcc9cce7.jpg"
+ },
+ "ricerca2:Tony Brooks": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/1957_Aston_Martin_Tony_Brooks_Hotel_de_France.jpg/500px-1957_Aston_Martin_Tony_Brooks_Hotel_de_France.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/c/cc/1957_Aston_Martin_Tony_Brooks_Hotel_de_France.jpg",
+  "autore": "Hotel de France",
+  "licenza": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:1957_Aston_Martin_Tony_Brooks_Hotel_de_France.jpg",
+  "file": "img/storici/baf00bddfa268d6a.jpg"
+ },
+ "ricerca2:Peter Collins": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Peter_Collins.jpg/500px-Peter_Collins.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/8/80/Peter_Collins.jpg",
+  "autore": "Lawson Speedway",
+  "licenza": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Peter_Collins.jpg",
+  "file": "img/storici/4318e978b038242b.jpg"
+ },
+ "ricerca2:Heikki Kovalainen": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Heikki_Kovalainen_2010_Malaysia.jpg/500px-Heikki_Kovalainen_2010_Malaysia.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Heikki_Kovalainen_2010_Malaysia.jpg",
+  "autore": "Morio",
+  "licenza": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Heikki_Kovalainen_2010_Malaysia.jpg",
+  "file": "img/storici/2fc8a58e65ebc9e5.jpg"
+ },
+ "ricerca2:Robert Kubica": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Robert_Kubica_at_Monza_2023.jpg/500px-Robert_Kubica_at_Monza_2023.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Robert_Kubica_at_Monza_2023.jpg",
+  "autore": "bonebeast",
+  "licenza": "CC BY 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Robert_Kubica_at_Monza_2023.jpg",
+  "file": "img/storici/a05e236228ec634b.jpg"
+ },
+ "ricerca2:Sergey Sirotkin": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Sergey_Sirotkin_SMP_Racing.jpg/500px-Sergey_Sirotkin_SMP_Racing.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Sergey_Sirotkin_SMP_Racing.jpg/1280px-Sergey_Sirotkin_SMP_Racing.jpg",
+  "autore": "SMP Racing",
+  "licenza": "CC0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Sergey_Sirotkin_SMP_Racing.jpg"
  }
 }

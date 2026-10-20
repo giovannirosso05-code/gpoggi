@@ -299,8 +299,12 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
 .gri .n{{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}} .gri .x{{font:600 24px Inter;color:#ff8a80;text-transform:none}}
 .gri .nota{{text-align:center;font:500 26px Inter;color:rgba(255,255,255,.75);margin-top:10px}}
 .pista .bg{{inset:-60px;filter:blur(36px) brightness(.45)}}
+.trac-t{{position:absolute;left:40px;top:300px;background:{col};font:700 44px/1.1 Oswald;text-transform:uppercase;padding:10px 18px;letter-spacing:.04em}}
+.trac-m{{position:absolute;left:40px;right:40px;top:400px;height:720px;background:#fff;border-radius:18px;display:flex;align-items:center;justify-content:center;box-shadow:0 20px 60px rgba(0,0,0,.5)}} .trac-m img{{max-width:96%;max-height:94%}}
+.trac-b{{position:absolute;left:40px;right:40px;top:1150px;display:flex;gap:16px}} .trac-b div{{flex:1;height:170px;background:rgba(255,255,255,.08);border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}}
+.trac-b b{{font:700 64px/1 Oswald;color:{col}}} .trac-b span{{font:500 30px Inter;color:#e6e6ee;margin-top:6px}}
 .cred{{position:absolute;right:40px;bottom:36px;font:500 20px Inter;color:rgba(255,255,255,.75);max-width:600px;text-align:right}}
-</style>""" + ('<div class=alto></div><div class=basso></div><div class=velo2></div><div class=cuci></div><div class=diviso>' if scena.get("_volto") else '') + ('' if scena.get("_volto") else '<div class=pista><div class=bg></div></div><div class=velo></div>' + ('' if scena.get("classifica") or scena.get("griglia") else '<div class=fg></div>') if scena.get("pista") or scena.get("classifica") or scena.get("griglia") else '<div class=bg></div><div class=velo></div>') + """<div class=prog></div>"""
+</style>""" + ('<div class=alto></div><div class=basso></div><div class=velo2></div><div class=cuci></div><div class=diviso>' if scena.get("_volto") else '') + ('' if scena.get("_volto") else '<div class=pista><div class=bg></div></div><div class=velo></div>' + ('' if scena.get("classifica") or scena.get("griglia") or scena.get("tracciato") else '<div class=fg></div>') if scena.get("pista") or scena.get("classifica") or scena.get("griglia") or scena.get("tracciato") else '<div class=bg></div><div class=velo></div>') + """<div class=prog></div>"""
     if finale:
         return (f"""<!doctype html><meta charset=utf-8><style>{CSS_FONT}
 *{{box-sizing:border-box}} html,body{{margin:0;width:{W}px;height:{H}px;background:#0b0b0e;color:#fff;overflow:hidden;position:relative}}
@@ -318,7 +322,8 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
         righe = "".join(f'<span style="display:inline-block;background:{col};padding:4px 16px;margin:4px 0">{esc(r)}</span><br>' for r in re.findall(r".{1,16}(?:\s|$)", spec["scene"][0]["hook_titolo"].upper()))
         corpo += f'<div style="position:absolute;left:60px;right:60px;top:860px;font:700 82px/1.12 Oswald;text-transform:uppercase;-webkit-text-stroke:2px #000;paint-order:stroke fill">{righe}</div>'
     else:
-        corpo += f'<div class=strip>{esc(spec["titolo_breve"])}</div>'
+        if not scena.get("tracciato"):
+            corpo += f'<div class=strip>{esc(spec["titolo_breve"])}</div>'
         if nome and scena.get("nome"):
             corpo += f'<div class=nome>{esc(scena["nome"])}</div>'
         if scena.get("fonte_alto"):
@@ -330,6 +335,10 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
         corpo += f'<div class=cla><h3>{esc(c["titolo"])}</h3>' + "".join(
             f'<div class=r>{"<span class=p>" + str(r["pos"]) + "</span>" if r["pos"] != "" else ""}<span class=b style="background:#{r["colore"]}"></span><span class=n>{esc(r["nome"])}</span>'
             f'<span class=pt>{r.get("voto", r.get("punti"))}</span><span class="d{"" if r.get("piu", 1) else " z"}">{esc(r["nota"]) if r.get("nota") else "+" + str(r["piu"])}</span></div>' for r in c["righe"]) + '</div>'
+    if scena.get("tracciato"):
+        tr = scena["tracciato"]
+        corpo += (f'<div class=trac-t>{esc(tr.get("titolo", "Il tracciato"))}</div><div class=trac-m><img src="data:{tr["mime"]};base64,{tr["b64"]}"></div>'
+                  '<div class=trac-b>' + "".join(f'<div><b>{esc(v)}</b><span>{esc(e)}</span></div>' for v, e in tr.get("box", [])) + '</div>')
     if scena.get("griglia"):
         g = scena["griglia"]
         corpo += f'<div class=gri><div class=l><h3>{esc(g["titolo"])}</h3>' + "".join(
@@ -399,7 +408,12 @@ async def genera(spec, uscita):
                 await pg.screenshot(path=str(f)); return f
             for idx, s in enumerate(lavoro):
                 fb, cred = fotos[f"{s['s']['foto']}|{s['s'].get('alt', '')}|{s['s'].get('foto_file', '')}"]
-                if s["s"].get("pista") and not s["s"].get("classifica") and not s["s"].get("finale") and s["s"].get("volto", True):
+                if s["s"].get("tracciato") and s["s"]["tracciato"].get("file"):
+                    mp = SITO / s["s"]["tracciato"]["file"]
+                    s["s"]["tracciato"]["b64"] = b64(mp)
+                    s["s"]["tracciato"]["mime"] = "image/svg+xml" if mp.suffix == ".svg" else ("image/png" if mp.suffix == ".png" else "image/jpeg")
+                    cred = s["s"]["tracciato"].get("credito", cred)
+                if s["s"].get("pista") and not s["s"].get("classifica") and not s["s"].get("tracciato") and not s["s"].get("finale") and s["s"].get("volto", True):
                     # schermo diviso: sopra la macchina in pista, sotto il volto del pilota (niente spazio vuoto)
                     v = trova_foto(s["s"]["foto"], s["s"].get("volto_alt"))
                     s["s"]["_volto"] = b64(file_foto(v))

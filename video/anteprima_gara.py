@@ -109,6 +109,17 @@ def notizie_circuito(serie, p, favoriti, nomi, n=2):
     return out
 
 
+def scheda_tracciato(serie, p, gp, t_gara):
+    """Scena 'Il tracciato': la mappa del circuito (Wikimedia Commons, solo licenze libere) e due riquadri con dati certi (ora della gara e luogo). None se la mappa non c'è."""
+    mappa = gp.get("mappa") if serie == "f1" else json.load(open(DATA / "mappe-motogp.json")).get(gp.get("circuito"))
+    if not mappa or not mappa.get("file") or not (NS.SITO / mappa["file"]).exists():
+        return None
+    autore = re.split(r"Own work|This |\n|derivative work", re.sub(r"^.*\.(?:svg|png|jpg):\s*|Original:\s*", "", mappa.get("autore", "")))[0].strip(" :")
+    return {"titolo": "Il tracciato", "file": mappa["file"], "credito": f"Mappa: {autore} · {mappa.get('licenza', '')} · Wikimedia Commons",
+            "box": [[f"{t_gara.hour:02d}:{t_gara.minute:02d}", f"gara · {GIORNI[t_gara.weekday()]} {t_gara.day} {MESI[t_gara.month - 1]}"],
+                    [p["circuito"], gp.get("paese") or ""]]}
+
+
 def costruisci(serie, p, nomi):
     S = "F1" if serie == "f1" else "MotoGP"
     gp = paese_e_orari(serie, p)
@@ -119,6 +130,9 @@ def costruisci(serie, p, nomi):
     luogo = f"{p['circuito']}" + (f", {gp['paese']}" if gp.get("paese") and norm(gp["paese"]) != norm(p["circuito"]) else "")
     scene = [{"foto": fav[0]["nome"], "hook": True, "hook_titolo": f"{p['gp']}: chi vince?", "testo": f"Si avvicina il {p['gp']}. Chi può vincere?"},
              {"foto": fav[1]["nome"], "nome": fav[1]["nome"], "testo": f"Si corre a *{luogo}*. La gara parte *{giorno_gara}*, ora italiana."}]
+    tr = scheda_tracciato(serie, p, gp, t_gara)
+    if tr:
+        scene.append({"foto": fav[2]["nome"], "pista": True, "tracciato": tr, "sub_top": 1440, "testo": f"Ecco il tracciato di *{p['circuito']}*."})
     ult = vincitore_anno_scorso(gp["paese"]) if serie == "f1" else None
     if ult:
         scene.append({"foto": ult[0] if ult[0] in nomi else fav[0]["nome"], "nome": ult[0] if ult[0] in nomi else None,

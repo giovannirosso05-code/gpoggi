@@ -52,13 +52,16 @@ def paese_e_orari(serie, p):
     return gp
 
 
-def vincitore_anno_scorso(paese):
-    """Chi ha vinto lo stesso Gran Premio nel 2025 (Jolpica, solo F1). None se non si trova: allora la scena non c'è."""
+def vincitore_anno_scorso(paese, circuito="", localita=""):
+    """Chi ha vinto lo stesso Gran Premio nel 2025 (Jolpica, solo F1). None se non si trova: allora la scena non c'è.
+    Si cerca per città o nome del circuito (Jolpica scrive "USA", "UK", "UAE": il solo paese non basta)."""
     try:
         H = {"User-Agent": "GPOggiBot/1.0 (+https://gpoggi.it)"}
         gare = requests.get("https://api.jolpi.ca/ergast/f1/2025/races/?limit=30", headers=H, timeout=30).json()["MRData"]["RaceTable"]["Races"]
         import scraper_f1 as sf
-        r = next((x for x in gare if sf.PAESI_IT.get(x["Circuit"]["Location"]["country"], x["Circuit"]["Location"]["country"]) == paese), None)
+        luoghi = {norm(x) for x in (circuito, localita) if x}
+        # stessa città o stesso nome del circuito; mai il solo paese (Madrid 2026 non è Barcellona, gli Stati Uniti hanno tre gare)
+        r = next((x for x in gare if norm(x["Circuit"]["Location"]["locality"]) in luoghi or norm(x["Circuit"]["circuitName"]) in luoghi), None)
         if not r:
             return None
         ris = requests.get(f"https://api.jolpi.ca/ergast/f1/2025/{r['round']}/results/", headers=H, timeout=30).json()["MRData"]["RaceTable"]["Races"][0]["Results"]
@@ -133,7 +136,7 @@ def costruisci(serie, p, nomi):
     tr = scheda_tracciato(serie, p, gp, t_gara)
     if tr:
         scene.append({"foto": fav[2]["nome"], "pista": True, "tracciato": tr, "sub_top": 1440, "testo": f"Ecco il tracciato di *{p['circuito']}*."})
-    ult = vincitore_anno_scorso(gp["paese"]) if serie == "f1" else None
+    ult = vincitore_anno_scorso(gp["paese"], gp.get("circuito", ""), gp.get("localita", "")) if serie == "f1" else None
     if ult:
         scene.append({"foto": ult[0] if ult[0] in nomi else fav[0]["nome"], "nome": ult[0] if ult[0] in nomi else None,
                       "testo": f"Lo scorso anno qui ha vinto *{ult[0]}*, davanti a {ult[1]} e {ult[2]}."})

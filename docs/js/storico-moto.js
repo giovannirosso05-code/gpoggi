@@ -1,4 +1,4 @@
-import { renderHeader, renderFooter, fetchJSON, esc, punti, erroreCaricamento, schedeMap, bioHtml } from "./common.js";
+import { renderHeader, renderFooter, fetchJSON, esc, punti, erroreCaricamento, schedeMap, bioHtml, fotoStorica, testataStorica } from "./common.js";
 
 renderHeader("piloti");
 renderFooter();
@@ -18,17 +18,12 @@ try {
   const vittCompleto = righe.every((r) => r.vittorie != null);
   const vitt = vittCompleto ? righe.reduce((t, r) => t + r.vittorie, 0) : "n.d.";
   const migliore = Math.min(...righe.map((r) => r.pos || 99));
+  const foto = await fotoStorica(nome);
   const bio = (await schedeMap())[`nome:${nome}`];
   document.title = `${nome} — GP Oggi`;
   box.innerHTML = `
-    <section class="campione" style="margin-top:32px"><span class="kicker">${esc(righe[righe.length - 1].paese || "Pilota storico")} · classe regina</span><h1>${esc(nome)}</h1>
-      <p class="muted" style="margin:0">${righe.length} ${righe.length === 1 ? "stagione" : "stagioni"} in classifica (${righe[0].anno}${righe.length > 1 ? "–" + righe[righe.length - 1].anno : ""})</p></section>
-    <div class="stat-strip">
-      <div class="stat"><div class="stat-number">${titoli}</div><div class="stat-label">Titoli in classe regina</div></div>
-      <div class="stat"><div class="stat-number">${vitt}</div><div class="stat-label">${vittCompleto ? "Vittorie" : "Vittorie (dato non disponibile)"}</div></div>
-      <div class="stat"><div class="stat-number">${righe.length}</div><div class="stat-label">Stagioni</div></div>
-      <div class="stat"><div class="stat-number">${migliore}°</div><div class="stat-label">Miglior piazzamento</div></div>
-    </div>
+    ${testataStorica({ nome, kicker: `${righe[righe.length - 1].paese || "Pilota storico"} · classe regina`, sotto: `${righe.length} ${righe.length === 1 ? "stagione" : "stagioni"} in classifica (${righe[0].anno}${righe.length > 1 ? "–" + righe[righe.length - 1].anno : ""})`,
+      stat: [[titoli, "Titoli in classe regina"], [vitt, vittCompleto ? "Vittorie" : "Vittorie (dato non disponibile)"], [righe.length, "Stagioni"], [`${migliore}°`, "Miglior piazzamento"]], foto })}
     ${bioHtml(bio)}
     <h3 class="section-title">Stagioni</h3>
     <div class="table-wrap"><table class="results"><thead><tr><th>Anno</th><th>Classe</th><th>Pos</th><th>Team</th><th>Moto</th><th>Punti</th><th>Vitt.</th></tr></thead><tbody>${

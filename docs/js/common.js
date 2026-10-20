@@ -433,6 +433,38 @@ export function montaCronaca(el, voci, giriTot) {
   disegna("");
 }
 
+// Foto libera di un pilota del passato (foto-storici.json, cercata per nome senza accenti), oppure null.
+let _fotoStorici;
+const _norm = (t) => String(t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
+export async function fotoStorica(nome) {
+  _fotoStorici ||= fetchJSON("data/foto-storici.json").catch(() => []);
+  const k = _norm(nome);
+  const trovata = (await _fotoStorici).find((f) => _norm(f.nome) === k)?.foto;
+  if (trovata) return trovata;
+  // i piloti in pista oggi non stanno in foto-storici.json: la loro foto è nel roster (F1) o nelle foto MotoGP
+  const roster = await fetchJSON("data/roster.json").catch(() => []);
+  const f1 = roster.find((p) => _norm(p.nome) === k)?.foto;
+  if (f1) return f1;
+  const [moto, foto] = await Promise.all([fetchJSON("data/motogp-piloti.json").catch(() => ({})), fotoMotoMap()]);
+  const id = Object.keys(moto).find((i) => _norm(moto[i].nome) === k);
+  return (id && foto[id]) || null;
+}
+
+// Testata di un pilota del passato: foto libera con credito, oppure le iniziali sul fondo colorato se non c'è una foto libera.
+export function testataStorica({ nome, kicker, sotto, stat, foto }) {
+  const ini = (nome || "").split(/\s+/).filter(Boolean).map((w) => w[0]).slice(0, 2).join("").toUpperCase();
+  return `<section class="pilota-testata" style="margin-top:32px;--team:var(--accent)">
+      <div class="pilota-foto">${foto ? img(foto, nome) : `<span class="pilota-ini" aria-hidden="true">${esc(ini)}</span>`}</div>
+      <div class="pilota-dati">
+        <span class="kicker">${esc(kicker)}</span>
+        <h1>${esc(nome)}</h1>
+        <p class="muted" style="margin:0;font-size:16px">${esc(sotto)}</p>
+        <div class="stat-strip">${stat.map(([v, l]) => `<div class="stat"><div class="stat-number">${v}</div><div class="stat-label">${l}</div></div>`).join("")}</div>
+        ${foto ? `<p class="credito">${credito(foto)}</p>` : ""}
+      </div>
+    </section>`;
+}
+
 // Cerchio con le iniziali, al posto della foto quando non ce n'è una libera.
 export const iniz = (nome) => `<span class="foto-mini ini" aria-hidden="true">${esc((nome || "").split(/\s+/).filter(Boolean).map((w) => w[0]).slice(0, 2).join("").toUpperCase())}</span>`;
 

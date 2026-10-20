@@ -6,6 +6,7 @@ foto_storici_cache.json: le ricerche gia' fatte non si ripetono.
 """
 import json
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -25,6 +26,33 @@ def foto_motociclista(nome):
         d = descrizione.lower()
         if file and ("motorcycle" in d or "motorcyclist" in d or "grand prix" in d):
             return fw._info_file(file, 500)
+    return None
+
+
+def _ascii(t):
+    import unicodedata
+    return unicodedata.normalize("NFD", t).encode("ascii", "ignore").decode().lower()
+
+
+def foto_ricerca_commons(nome):
+    """Seconda possibilità per chi non ha una foto sulla propria pagina di Wikipedia: ricerca diretta dei file su Wikimedia Commons.
+    Si accetta solo un file con nome e cognome nel titolo (così non è un altro pilota) e con licenza libera (la controlla _info_file)."""
+    parti = _ascii(nome).replace(".", "").split()
+    for q in (f'"{nome}"', f"{nome} Formula One", f"{nome} racing driver"):
+        for tentativo in range(6):
+            time.sleep(1 + 5 * tentativo)
+            r = requests.get(fw.COMMONS, params={"action": "query", "format": "json", "list": "search", "srsearch": q, "srnamespace": 6, "srlimit": 15},
+                             headers=fw.HEADERS, timeout=30)
+            if r.status_code != 429:
+                break
+        r.raise_for_status()
+        for hit in r.json().get("query", {}).get("search", []):
+            titolo = hit["title"]
+            t = _ascii(titolo)
+            if t.endswith((".jpg", ".jpeg", ".png")) and all(x in t for x in (parti[0], parti[-1])):
+                info = fw._info_file(titolo.split(":", 1)[1], 500)
+                if info:
+                    return info
     return None
 
 
@@ -53,6 +81,16 @@ def main():
                 continue
             CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1))
         foto = cache[chiave]
+        if not foto and serie == "Formula 1":
+            seconda = f"ricerca2:{nome}"   # ricerca diretta su Commons, fatta una volta sola per pilota
+            if seconda not in cache:
+                try:
+                    cache[seconda] = foto_ricerca_commons(nome)
+                except requests.RequestException as e:
+                    print(f"  {nome}: ricerca su Commons non riuscita ({e}), riprovo alla prossima esecuzione")
+                else:
+                    CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1))
+            foto = cache.get(seconda)
         if not foto:
             print(f"[{i}/{len(lavoro)}] {nome}: nessuna foto libera")
             continue

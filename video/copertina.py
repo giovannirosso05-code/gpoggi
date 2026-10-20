@@ -10,7 +10,7 @@ from playwright.async_api import async_playwright
 import notizia_sub as n
 
 
-def html_copertina(pilota, righe, serie="MotoGP", alt=None, pos="center 12%", sfondo=None, titolo_top=1040, credito=None, titolo_px=150):
+def html_copertina(pilota, righe, serie="MotoGP", alt=None, pos="center 12%", sfondo=None, titolo_top=1040, credito=None, titolo_px=150, etichetta="Ultim'ora"):
     """sfondo = immagine creata con IA (file): al posto della foto del pilota; il titolo si può alzare con titolo_top."""
     f = None if sfondo else n.trova_foto(pilota, alt)
     col = "#1f5fd1" if serie == "MotoGP" else "#e8352f"
@@ -28,7 +28,7 @@ html,body{{margin:0;width:{n.W}px;height:{n.H}px;overflow:hidden;position:relati
 .tag{{position:absolute;left:265px;top:272px;font:700 30px Oswald;letter-spacing:.06em;text-transform:uppercase;background:{col};color:#fff;padding:4px 16px;border-radius:6px}}
 .t{{position:absolute;left:60px;top:{titolo_top}px;font:700 {titolo_px}px/1.04 Oswald;text-transform:uppercase;color:#fff;-webkit-text-stroke:2px #000;paint-order:stroke fill}}
 .cred{{position:absolute;right:40px;bottom:36px;font:500 20px Inter;color:rgba(255,255,255,.75);max-width:600px;text-align:right}}
-</style><div class=bg></div><div class=velo></div><img class=logo src="data:image/png;base64,{logo}"><div class=tag>Ultim'ora</div><div class=t>{strisce}</div><div class=cred>{n.esc(cred)}</div>"""
+</style><div class=bg></div><div class=velo></div><img class=logo src="data:image/png;base64,{logo}"><div class=tag>{n.esc(etichetta)}</div><div class=t>{strisce}</div><div class=cred>{n.esc(cred)}</div>"""
 
 
 async def scatta(html, uscita):
@@ -44,7 +44,7 @@ async def scatta(html, uscita):
 if __name__ == "__main__":
     a = argparse.ArgumentParser()
     a.add_argument("pilota"); a.add_argument("riga1"); a.add_argument("riga2"); a.add_argument("uscita")
-    a.add_argument("--serie", default="MotoGP"); a.add_argument("--alt"); a.add_argument("--pos", default="center 12%"); a.add_argument("--sfondo"); a.add_argument("--titolo-top", type=int, default=1040)
+    a.add_argument("--serie", default="MotoGP"); a.add_argument("--alt"); a.add_argument("--pos", default="center 12%"); a.add_argument("--sfondo"); a.add_argument("--titolo-top", type=int, default=1040); a.add_argument("--etichetta", default="Ultim'ora")
     x = a.parse_args()
-    asyncio.run(scatta(html_copertina(x.pilota, [x.riga1, x.riga2], x.serie, x.alt, x.pos, x.sfondo, x.titolo_top), x.uscita))
+    asyncio.run(scatta(html_copertina(x.pilota, [x.riga1, x.riga2], x.serie, x.alt, x.pos, x.sfondo, x.titolo_top, etichetta=x.etichetta), x.uscita))
     print("Fatto:", x.uscita)

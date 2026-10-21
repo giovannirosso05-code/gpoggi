@@ -1,6 +1,66 @@
 {
- "generato_il": "2026-10-21T15:05:43+00:00",
+ "generato_il": "2026-10-21T16:28:29+00:00",
  "articoli": [
+  {
+   "titolo": "Verso Austin: Ferrari per ripetere Silverstone, Antonelli guarda al 2027",
+   "estratto": "La Ferrari punta sul serpentone per aiutare la power unit e spera negli aggiornamenti, mentre la Mercedes vuole venire a capo dei suoi problemi",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/austin-ferrari-ripetere-silverstone-antonelli-guarda-2027",
+   "pubblicato": "2026-10-21T16:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 7.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Frederic Vasseur: “Austin una delle piste più impegnative del calendario. Puntiamo ad una prestazione solida”",
+   "estratto": "Da venerdì 23 a domenica 25 ottobre il COTA di Austin ospiterà il Gran Premio degli Stati Uniti 2026, valevole come diciottesimo appuntamento stagionale del Mondiale di Formula Uno. La Ferrari è…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/f1-frederic-vasseur-austin-una-delle-piste-piu-impegnative-del-calendario-puntiamo-ad-una-prestazione-solida/",
+   "pubblicato": "2026-10-21T15:57:31+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 22.9,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 | OMP: dietro le livree speciali c'è più tecnologia di quanto sembri con tute ultra-leggere",
+   "estratto": "Ferrari, Mercedes, Red Bull e anche altri team. Durante questo fine settimana ad Austin diverse squadre si presenteranno con una livrea o delle tute rinnovate per celebrare uno dei tre appuntamenti…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/omp-tuta-leggera-livree-speciali-tecnologia/10866745/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-21T15:32:08+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 7.8,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP, Joan Mir salta anche il GP d’Australia: si prolunga la misteriosa assenza dell’ex campione mondiale",
+   "estratto": "Si prolunga ulteriormente la preoccupante assenza dalle competizioni di Joan Mir, che ha dato forfait anche per la trasferta di Phillip Island e non prenderà parte al Gran Premio d’Australia 2026…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-joan-mir-salta-anche-il-gp-daustralia-si-prolunga-lassenza-misteriosa-dellex-campione-mondiale/",
+   "pubblicato": "2026-10-21T15:28:22+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -0.3,
+   "testate": 1
+  },
+  {
+   "titolo": "Vasseur: “Ad Austin vogliamo un’altra prestazione solida, sfruttiamo al massimo la SF-26”",
+   "estratto": "Le parole del team principal Frederic Vasseur in vista del GP di Austin, pista sulla quale la Ferrari centrò la sua ultima doppietta in F1",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/vasseur-ferrari-austin-vogliamo-prestazione-solida-sfruttare-massimo-sf-26",
+   "pubblicato": "2026-10-21T15:06:37+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 22.7,
+   "testate": 2
+  },
   {
    "titolo": "Hockenheim in trattativa con la F1 nonostante finanziamenti pubblici \"praticamente pari a zero\"",
    "estratto": "Hockenheim è \"in trattativa\" con la Formula 1 riguardo ad un possibile ritorno sul circuito tedesco, ma il progetto resta \"in gran parte teorico\" in questa fase. Gli amministratori delegati…",
@@ -10,7 +70,7 @@
    "pubblicato": "2026-10-21T15:00:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.0,
+   "punteggio": 4.6,
    "testate": 1
   },
   {
@@ -22,7 +82,7 @@
    "pubblicato": "2026-10-21T15:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 33.0,
+   "punteggio": 32.6,
    "testate": 3
   },
   {
@@ -34,7 +94,7 @@
    "pubblicato": "2026-10-21T14:30:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.1,
+   "punteggio": -0.5,
    "testate": 1
   },
   {
@@ -46,7 +106,7 @@
    "pubblicato": "2026-10-21T14:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.8,
+   "punteggio": 4.4,
    "testate": 1
   },
   {
@@ -58,7 +118,7 @@
    "pubblicato": "2026-10-21T14:00:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.7,
+   "punteggio": 12.4,
    "testate": 1
   },
   {
@@ -70,7 +130,7 @@
    "pubblicato": "2026-10-21T14:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.3,
+   "punteggio": -0.6,
    "testate": 1
   },
   {
@@ -82,7 +142,7 @@
    "pubblicato": "2026-10-21T13:57:14+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.7,
+   "punteggio": 4.4,
    "testate": 1
   },
   {
@@ -94,7 +154,7 @@
    "pubblicato": "2026-10-21T13:31:31+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.4,
+   "punteggio": -0.7,
    "testate": 1
   },
   {
@@ -106,7 +166,7 @@
    "pubblicato": "2026-10-21T13:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.5,
+   "punteggio": 7.1,
    "testate": 1
   },
   {
@@ -118,7 +178,7 @@
    "pubblicato": "2026-10-21T12:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.2,
+   "punteggio": 6.9,
    "testate": 1
   },
   {
@@ -130,7 +190,7 @@
    "pubblicato": "2026-10-21T11:02:37+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.0,
+   "punteggio": 26.6,
    "testate": 3
   },
   {
@@ -142,7 +202,7 @@
    "pubblicato": "2026-10-21T11:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.0,
+   "punteggio": -1.4,
    "testate": 1
   },
   {
@@ -154,7 +214,7 @@
    "pubblicato": "2026-10-21T10:29:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.9,
+   "punteggio": 11.5,
    "testate": 1
   },
   {
@@ -166,7 +226,7 @@
    "pubblicato": "2026-10-21T10:00:07+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.7,
+   "punteggio": 3.4,
    "testate": 1
   },
   {
@@ -178,7 +238,7 @@
    "pubblicato": "2026-10-21T09:29:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.6,
+   "punteggio": 13.3,
    "testate": 2
   },
   {
@@ -190,7 +250,7 @@
    "pubblicato": "2026-10-21T09:26:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.6,
+   "punteggio": 6.2,
    "testate": 1
   },
   {
@@ -202,7 +262,7 @@
    "pubblicato": "2026-10-21T09:25:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.6,
+   "punteggio": 13.2,
    "testate": 2
   },
   {
@@ -214,7 +274,7 @@
    "pubblicato": "2026-10-21T09:08:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.5,
+   "punteggio": -1.8,
    "testate": 1
   },
   {
@@ -226,7 +286,7 @@
    "pubblicato": "2026-10-21T09:00:44+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.5,
+   "punteggio": 16.1,
    "testate": 2
   },
   {
@@ -238,7 +298,7 @@
    "pubblicato": "2026-10-21T09:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.5,
+   "punteggio": 3.1,
    "testate": 1
   },
   {
@@ -250,7 +310,7 @@
    "pubblicato": "2026-10-21T08:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.6,
+   "punteggio": -14.0,
    "testate": 1
   },
   {
@@ -262,7 +322,7 @@
    "pubblicato": "2026-10-21T08:25:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.3,
+   "punteggio": 13.0,
    "testate": 2
   },
   {
@@ -274,7 +334,7 @@
    "pubblicato": "2026-10-21T08:00:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.8,
+   "punteggio": -2.1,
    "testate": 1
   },
   {
@@ -286,7 +346,7 @@
    "pubblicato": "2026-10-21T07:57:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.2,
+   "punteggio": 12.9,
    "testate": 2
   },
   {
@@ -298,7 +358,7 @@
    "pubblicato": "2026-10-21T07:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.1,
+   "punteggio": 12.8,
    "testate": 2
   },
   {
@@ -310,7 +370,7 @@
    "pubblicato": "2026-10-21T07:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.1,
+   "punteggio": 10.8,
    "testate": 1
   },
   {
@@ -322,7 +382,7 @@
    "pubblicato": "2026-10-21T07:15:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.0,
+   "punteggio": 7.7,
    "testate": 2
   },
   {
@@ -334,7 +394,7 @@
    "pubblicato": "2026-10-21T07:12:31+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.0,
+   "punteggio": 20.7,
    "testate": 2
   },
   {
@@ -346,7 +406,7 @@
    "pubblicato": "2026-10-21T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.0,
+   "punteggio": -2.4,
    "testate": 1
   },
   {
@@ -358,7 +418,7 @@
    "pubblicato": "2026-10-21T06:10:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.8,
+   "punteggio": 22.4,
    "testate": 3
   },
   {
@@ -370,7 +430,7 @@
    "pubblicato": "2026-10-21T06:10:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.8,
+   "punteggio": 22.4,
    "testate": 3
   },
   {
@@ -382,43 +442,7 @@
    "pubblicato": "2026-10-21T06:00:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.3,
-   "testate": 1
-  },
-  {
-   "titolo": "Ralf Schumacher: “Hamilton in Ferrari vuole fare il capo mettendo tutti in ombra. Deve smetterla”",
-   "estratto": "L'ex pilota tedesco ha criticato aspramente l'atteggiamento del sette volte campione del mondo",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/ralf-schumacher-hamilton-ferrari-vuole-fare-capo-mette-tutti-ombra-deve-smetterla",
-   "pubblicato": "2026-10-21T06:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 20.7,
-   "testate": 2
-  },
-  {
-   "titolo": "GP Stati Uniti 2026: orari Sky/Now e TV8",
-   "estratto": "I dettagli della programmazione televisiva dell'appuntamento ad Austin in Texas sul circuito del COTA",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-stati-uniti-2026-austin-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-aggiornamenti-match-point-antonelli",
-   "pubblicato": "2026-10-21T06:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -4.3,
-   "testate": 2
-  },
-  {
-   "titolo": "Il retroscena: Horner e la trattativa segreta con Lauda per diventare il team principal Mercedes",
-   "estratto": "L'ex boss della Red Bull racconta del suo contatto con il compianto pilota austriaco per andare in Mercedes nel 2013 (al posto o al fianco di Toto Wolff)",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/retroscena-christian-horner-trattativa-segreta-niki-lauda-team-principal-mercedes-toto-wolff",
-   "pubblicato": "2026-10-21T06:00:00+00:00",
-   "tipo": "intervista",
-   "citazione": true,
-   "punteggio": 3.7,
+   "punteggio": -2.6,
    "testate": 1
   },
   {
@@ -430,8 +454,44 @@
    "pubblicato": "2026-10-21T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.3,
+   "punteggio": -2.6,
    "testate": 1
+  },
+  {
+   "titolo": "Ralf Schumacher: “Hamilton in Ferrari vuole fare il capo mettendo tutti in ombra. Deve smetterla”",
+   "estratto": "L'ex pilota tedesco ha criticato aspramente l'atteggiamento del sette volte campione del mondo",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/ralf-schumacher-hamilton-ferrari-vuole-fare-capo-mette-tutti-ombra-deve-smetterla",
+   "pubblicato": "2026-10-21T06:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 20.4,
+   "testate": 2
+  },
+  {
+   "titolo": "Il retroscena: Horner e la trattativa segreta con Lauda per diventare il team principal Mercedes",
+   "estratto": "L'ex boss della Red Bull racconta del suo contatto con il compianto pilota austriaco per andare in Mercedes nel 2013 (al posto o al fianco di Toto Wolff)",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/retroscena-christian-horner-trattativa-segreta-niki-lauda-team-principal-mercedes-toto-wolff",
+   "pubblicato": "2026-10-21T06:00:00+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 3.4,
+   "testate": 1
+  },
+  {
+   "titolo": "GP Stati Uniti 2026: orari Sky/Now e TV8",
+   "estratto": "I dettagli della programmazione televisiva dell'appuntamento ad Austin in Texas sul circuito del COTA",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-stati-uniti-2026-austin-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-aggiornamenti-match-point-antonelli",
+   "pubblicato": "2026-10-21T06:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -4.6,
+   "testate": 2
   },
   {
    "titolo": "GP Australia 2026: orari Sky/Now e TV8",
@@ -442,7 +502,7 @@
    "pubblicato": "2026-10-21T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.3,
+   "punteggio": -4.6,
    "testate": 2
   },
   {
@@ -454,7 +514,7 @@
    "pubblicato": "2026-10-21T04:00:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.2,
+   "punteggio": 4.9,
    "testate": 1
   },
   {
@@ -466,7 +526,7 @@
    "pubblicato": "2026-10-20T21:38:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.6,
+   "punteggio": 8.3,
    "testate": 1
   },
   {
@@ -478,7 +538,7 @@
    "pubblicato": "2026-10-20T18:51:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.9,
+   "punteggio": 4.6,
    "testate": 2
   },
   {
@@ -490,7 +550,7 @@
    "pubblicato": "2026-10-20T18:22:35+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.8,
+   "punteggio": 7.5,
    "testate": 3
   },
   {
@@ -502,7 +562,7 @@
    "pubblicato": "2026-10-20T17:57:14+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 27.7,
+   "punteggio": 27.4,
    "testate": 3
   },
   {
@@ -514,7 +574,7 @@
    "pubblicato": "2026-10-20T16:27:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.3,
+   "punteggio": 2.0,
    "testate": 1
   },
   {
@@ -526,7 +586,7 @@
    "pubblicato": "2026-10-20T16:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.2,
+   "punteggio": 16.9,
    "testate": 2
   },
   {
@@ -538,7 +598,7 @@
    "pubblicato": "2026-10-20T15:41:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.9,
+   "punteggio": -6.2,
    "testate": 1
   },
   {
@@ -550,7 +610,7 @@
    "pubblicato": "2026-10-20T15:16:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.0,
+   "punteggio": 1.7,
    "testate": 1
   },
   {
@@ -562,7 +622,7 @@
    "pubblicato": "2026-10-20T15:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.0,
+   "punteggio": 16.6,
    "testate": 2
   },
   {
@@ -574,7 +634,7 @@
    "pubblicato": "2026-10-20T14:00:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.3,
+   "punteggio": -1.6,
    "testate": 1
   },
   {
@@ -586,7 +646,7 @@
    "pubblicato": "2026-10-20T13:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.5,
+   "punteggio": -1.9,
    "testate": 1
   },
   {
@@ -598,7 +658,7 @@
    "pubblicato": "2026-10-20T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.8,
+   "punteggio": -2.1,
    "testate": 1
   },
   {
@@ -610,7 +670,7 @@
    "pubblicato": "2026-10-20T11:23:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.9,
+   "punteggio": -7.3,
    "testate": 1
   },
   {
@@ -622,7 +682,7 @@
    "pubblicato": "2026-10-20T11:15:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.0,
+   "punteggio": 12.7,
    "testate": 3
   },
   {
@@ -634,20 +694,8 @@
    "pubblicato": "2026-10-20T10:42:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.9,
+   "punteggio": 5.6,
    "testate": 1
-  },
-  {
-   "titolo": "Ferrari, strappato Sacha Fenestraz alla Mercedes come pilota del simulatore: farà un test TPC nel 2027",
-   "estratto": "Il 27enne pilota francese guiderà una delle Rosse delle scorse stagioni per migliorare il lavoro al sim",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/ferrari-strappato-sacha-fenestraz-mercedes-pilota-simulatore-test-tpc-nel-2027",
-   "pubblicato": "2026-10-20T10:15:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 10.8,
-   "testate": 2
   },
   {
    "titolo": "Tegola Razgatlıoğlu, stagione finita: lunedì dovrà operarsi alla spalla destra",
@@ -658,7 +706,7 @@
    "pubblicato": "2026-10-20T09:51:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.7,
+   "punteggio": 2.3,
    "testate": 2
   },
   {
@@ -670,7 +718,7 @@
    "pubblicato": "2026-10-20T09:28:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.6,
+   "punteggio": 0.2,
    "testate": 1
   },
   {
@@ -682,7 +730,7 @@
    "pubblicato": "2026-10-20T09:26:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.6,
+   "punteggio": 15.2,
    "testate": 2
   },
   {
@@ -694,7 +742,7 @@
    "pubblicato": "2026-10-20T09:22:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.6,
+   "punteggio": 2.2,
    "testate": 2
   },
   {
@@ -706,7 +754,7 @@
    "pubblicato": "2026-10-20T09:20:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.6,
+   "punteggio": 12.2,
    "testate": 3
   },
   {
@@ -718,20 +766,8 @@
    "pubblicato": "2026-10-20T09:05:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.5,
+   "punteggio": 7.2,
    "testate": 2
-  },
-  {
-   "titolo": "La FIA interviene per annullare gli scambi di informazioni tra personale F1 ed extra F1 dei team",
-   "estratto": "La Federazione ha ratificato una modifica regolamentare in ottica 2027",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/fia-interviene-annullare-scambi-informazioni-personale-team-f1-non-f1",
-   "pubblicato": "2026-10-20T08:30:46+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -7.6,
-   "testate": 1
   },
   {
    "titolo": "F1, i precedenti della Ferrari ad Austin. Solo 2 vittorie del Cavallino Rampante in Texas",
@@ -742,7 +778,7 @@
    "pubblicato": "2026-10-20T08:00:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.2,
+   "punteggio": -0.1,
    "testate": 1
   },
   {
@@ -754,7 +790,7 @@
    "pubblicato": "2026-10-20T07:54:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.8,
+   "punteggio": -8.1,
    "testate": 1
   },
   {
@@ -766,7 +802,7 @@
    "pubblicato": "2026-10-20T07:47:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.2,
+   "punteggio": 1.8,
    "testate": 2
   },
   {
@@ -778,7 +814,7 @@
    "pubblicato": "2026-10-20T07:16:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.0,
+   "punteggio": 1.7,
    "testate": 2
   },
   {
@@ -790,7 +826,7 @@
    "pubblicato": "2026-10-20T07:00:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.0,
+   "punteggio": -8.4,
    "testate": 1
   },
   {
@@ -802,7 +838,7 @@
    "pubblicato": "2026-10-20T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.7,
+   "punteggio": 4.4,
    "testate": 1
   },
   {
@@ -814,7 +850,7 @@
    "pubblicato": "2026-10-19T16:30:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.6,
+   "punteggio": -3.0,
    "testate": 1
   },
   {
@@ -826,7 +862,7 @@
    "pubblicato": "2026-10-19T16:20:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.3,
+   "punteggio": 5.0,
    "testate": 1
   },
   {
@@ -838,7 +874,7 @@
    "pubblicato": "2026-10-19T15:03:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.0,
+   "punteggio": -8.4,
    "testate": 1
   },
   {
@@ -850,7 +886,7 @@
    "pubblicato": "2026-10-19T15:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.0,
+   "punteggio": -8.4,
    "testate": 1
   },
   {
@@ -862,7 +898,7 @@
    "pubblicato": "2026-10-19T13:58:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.7,
+   "punteggio": 9.4,
    "testate": 2
   },
   {
@@ -874,7 +910,7 @@
    "pubblicato": "2026-10-19T13:47:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.7,
+   "punteggio": 4.3,
    "testate": 1
   },
   {
@@ -886,7 +922,7 @@
    "pubblicato": "2026-10-19T13:31:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.4,
+   "punteggio": -8.7,
    "testate": 1
   },
   {
@@ -898,7 +934,7 @@
    "pubblicato": "2026-10-19T12:10:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.3,
+   "punteggio": 0.9,
    "testate": 2
   },
   {
@@ -910,7 +946,7 @@
    "pubblicato": "2026-10-19T11:33:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.9,
+   "punteggio": -1.2,
    "testate": 1
   },
   {
@@ -922,7 +958,7 @@
    "pubblicato": "2026-10-19T11:01:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.0,
+   "punteggio": -9.4,
    "testate": 1
   },
   {
@@ -934,7 +970,7 @@
    "pubblicato": "2026-10-19T09:27:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.6,
+   "punteggio": 18.2,
    "testate": 3
   },
   {
@@ -946,7 +982,7 @@
    "pubblicato": "2026-10-19T08:44:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.4,
+   "punteggio": 8.1,
    "testate": 2
   },
   {
@@ -958,7 +994,7 @@
    "pubblicato": "2026-10-19T08:30:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.4,
+   "punteggio": 8.0,
    "testate": 2
   },
   {
@@ -970,7 +1006,7 @@
    "pubblicato": "2026-10-19T08:20:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.3,
+   "punteggio": 8.0,
    "testate": 2
   },
   {
@@ -982,7 +1018,7 @@
    "pubblicato": "2026-10-19T08:05:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -4.8,
+   "punteggio": -5.1,
    "testate": 1
   },
   {
@@ -994,7 +1030,7 @@
    "pubblicato": "2026-10-19T07:44:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.8,
+   "punteggio": -12.2,
    "testate": 2
   },
   {
@@ -1006,7 +1042,7 @@
    "pubblicato": "2026-10-19T07:37:09+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.1,
+   "punteggio": 17.8,
    "testate": 3
   },
   {
@@ -1018,7 +1054,7 @@
    "pubblicato": "2026-10-19T07:19:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.9,
+   "punteggio": -12.3,
    "testate": 2
   },
   {
@@ -1030,7 +1066,7 @@
    "pubblicato": "2026-10-19T07:00:35+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.0,
+   "punteggio": -10.4,
    "testate": 1
   },
   {
@@ -1042,7 +1078,7 @@
    "pubblicato": "2026-10-19T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -5.3,
+   "punteggio": -5.6,
    "testate": 1
   },
   {
@@ -1054,7 +1090,7 @@
    "pubblicato": "2026-10-19T04:00:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.8,
+   "punteggio": -11.1,
    "testate": 1
   },
   {
@@ -1066,7 +1102,7 @@
    "pubblicato": "2026-10-19T03:10:44+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.0,
+   "punteggio": -3.3,
    "testate": 3
   },
   {
@@ -1078,7 +1114,7 @@
    "pubblicato": "2026-10-19T03:05:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -23.0,
+   "punteggio": -23.3,
    "testate": 1
   },
   {
@@ -1090,7 +1126,7 @@
    "pubblicato": "2026-10-18T15:00:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.0,
+   "punteggio": 8.6,
    "testate": 2
   },
   {
@@ -1102,7 +1138,7 @@
    "pubblicato": "2026-10-18T13:00:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -14.5,
+   "punteggio": -14.9,
    "testate": 1
   },
   {
@@ -1114,7 +1150,7 @@
    "pubblicato": "2026-10-18T10:02:43+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -10.3,
+   "punteggio": -10.6,
    "testate": 1
   },
   {
@@ -1126,7 +1162,7 @@
    "pubblicato": "2026-10-18T08:31:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -15.6,
+   "punteggio": -16.0,
    "testate": 1
   },
   {
@@ -1138,7 +1174,7 @@
    "pubblicato": "2026-10-18T08:28:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.3,
+   "punteggio": 7.0,
    "testate": 2
   },
   {
@@ -1150,7 +1186,7 @@
    "pubblicato": "2026-10-18T07:33:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -10.9,
+   "punteggio": -11.2,
    "testate": 1
   },
   {
@@ -1162,7 +1198,7 @@
    "pubblicato": "2026-10-18T06:00:00+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": -10.3,
+   "punteggio": -10.6,
    "testate": 1
   },
   {
@@ -1174,7 +1210,7 @@
    "pubblicato": "2026-10-17T15:18:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -19.9,
+   "punteggio": -20.3,
    "testate": 1
   },
   {
@@ -1186,7 +1222,7 @@
    "pubblicato": "2026-10-17T13:19:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -20.4,
+   "punteggio": -20.8,
    "testate": 1
   },
   {
@@ -1198,7 +1234,7 @@
    "pubblicato": "2026-10-17T10:20:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -21.2,
+   "punteggio": -21.5,
    "testate": 1
   },
   {
@@ -1210,7 +1246,7 @@
    "pubblicato": "2026-10-17T08:45:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.6,
+   "punteggio": -13.9,
    "testate": 1
   },
   {
@@ -1222,7 +1258,7 @@
    "pubblicato": "2026-10-17T07:43:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -21.8,
+   "punteggio": -22.2,
    "testate": 1
   },
   {
@@ -1234,7 +1270,7 @@
    "pubblicato": "2026-10-17T06:00:00+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": -8.3,
+   "punteggio": -8.6,
    "testate": 1
   },
   {
@@ -1246,7 +1282,7 @@
    "pubblicato": "2026-10-16T16:29:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -25.7,
+   "punteggio": -26.0,
    "testate": 1
   },
   {
@@ -1258,7 +1294,7 @@
    "pubblicato": "2026-10-16T15:26:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -25.9,
+   "punteggio": -26,
    "testate": 1
   },
   {
@@ -1403,42 +1439,6 @@
    "tipo": "dichiarazione",
    "citazione": true,
    "punteggio": -17,
-   "testate": 1
-  },
-  {
-   "titolo": "F1: Qatar e Abu Dhabi restano in calendario, ma “l’ombra di Imola” rimane presente",
-   "estratto": "La parte finale del calendario del Mondiale 2026 di F1 sta diventando sempre di più un rebus. Da una parte le rassicurazioni sulla disputa regolare dei GP del Qatar del Qatar (29 novembre) e di Abu…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/f1-qatar-e-abu-dhabi-restano-in-calendario-ma-lombra-di-imola-rimane-presente/",
-   "pubblicato": "2026-10-15T17:47:20+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -17,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Test Pirelli: Mercedes completa oltre 600 km con Vesti a Magny-Cours alla ricerca del punto di crossover",
-   "estratto": "Si è conclusa con ancora Frederik Vesti al volante la seconda giornata di test organizzata da Pirelli sul circuito di Magny-Cours. Il terzo pilota Mercedes ha completato oggi 138 giri per un totale…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-test-pirelli-mercedes-completa-oltre-600-km-con-vesti-a-magny-cours-alla-ricerca-del-punto-di-cr/10865456/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-15T17:00:28+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -20,
-   "testate": 2
-  },
-  {
-   "titolo": "F1 | Williams salta una numerazione nel telaio per festeggiare con la FW50 il mezzo secolo di storia",
-   "estratto": "La Williams dà un segno di vita e con una sola immagine ci regala due informazioni: la prossima monoposto salterà una cifra nella tradizionale denominazione delle sue macchine visto che la squadra di…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-williams-salta-una-numerazione-nel-telaio-per-festeggiare-con-la-fw50-il-mezzo-secolo-di-storia/10865455/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-15T16:41:21+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -30,
    "testate": 1
   }
  ]

@@ -8667,6 +8667,108 @@
    "fonte": "https://en.wikipedia.org/wiki/Alvaro_Carpe"
   }
  },
+ "moto:16332a3a-5c77-4f28-b58f-1381711cd452": {
+  "nascita": "2004-01-31",
+  "luogo": "Madrid, Spain",
+  "altezza": 168,
+  "peso": 60,
+  "debutto": 2020,
+  "carriera": [
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Kopron Rivacold Snipers Team",
+      "numero": 31
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Kopron Rivacold Snipers Team",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Sterilgarda Husqvarna Max",
+      "numero": 31
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Tech3",
+      "numero": 31
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 31
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 31
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 31
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 31
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 101,
+   "vittorie": 1,
+   "podi": 7,
+   "pole": 3,
+   "giri_veloci": 2,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Adrian Fernandez 2019.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Adri%C3%A1n_Fern%C3%A1ndez_(motorcyclist)"
+  }
+ },
  "moto:eff84411-d39e-49c1-8447-a42160daf173": {
   "nascita": "2007-07-03",
   "luogo": "Barcelona, Argentina",
@@ -8798,6 +8900,58 @@
    "fonte": "https://en.wikipedia.org/wiki/Veda_Pratama"
   }
  },
+ "moto:b187512c-fb56-46b1-b00d-62b46a7c65aa": {
+  "nascita": "2007-07-30",
+  "luogo": "Terengganu, Malaysia",
+  "altezza": 159,
+  "peso": 59,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "AEON Credit - MT Helmets - MSI",
+      "numero": 13
+     },
+     {
+      "categoria": "Moto3",
+      "team": "AEON CREDIT SIC Racing MSI",
+      "numero": 13
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "AEON Credit - MT Helmets - MSI",
+      "numero": 13
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 18,
+   "vittorie": 1,
+   "podi": 2,
+   "pole": 0,
+   "giri_veloci": 1,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Hakim Danish at the 2026 San Marino and Rimini Riviera motorcycle Grand Prix (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Hakim_Danish_(motorcyclist)"
+  }
+ },
  "moto:760c8192-f5d5-4f96-a032-36dde524ea62": {
   "nascita": "2004-02-18",
   "luogo": "Monselice, Italy",
@@ -8871,58 +9025,6 @@
     ]
    }
   ]
- },
- "moto:b187512c-fb56-46b1-b00d-62b46a7c65aa": {
-  "nascita": "2007-07-30",
-  "luogo": "Terengganu, Malaysia",
-  "altezza": 159,
-  "peso": 59,
-  "debutto": 2025,
-  "carriera": [
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "AEON Credit - MT Helmets - MSI",
-      "numero": 13
-     },
-     {
-      "categoria": "Moto3",
-      "team": "AEON CREDIT SIC Racing MSI",
-      "numero": 13
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "AEON Credit - MT Helmets - MSI",
-      "numero": 13
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 18,
-   "vittorie": 1,
-   "podi": 2,
-   "pole": 0,
-   "giri_veloci": 1,
-   "titoli": 0,
-   "motogp": {
-    "gare": 0,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": "Hakim Danish at the 2026 San Marino and Rimini Riviera motorcycle Grand Prix (cropped).jpg",
-   "fonte": "https://en.wikipedia.org/wiki/Hakim_Danish_(motorcyclist)"
-  }
  },
  "moto:f3dd914c-72cf-446a-a135-12c05a0eebde": {
   "nascita": "2008-02-14",
@@ -9107,108 +9209,6 @@
    },
    "immagine": null,
    "fonte": "https://en.wikipedia.org/wiki/Joel_Esteban"
-  }
- },
- "moto:16332a3a-5c77-4f28-b58f-1381711cd452": {
-  "nascita": "2004-01-31",
-  "luogo": "Madrid, Spain",
-  "altezza": 168,
-  "peso": 60,
-  "debutto": 2020,
-  "carriera": [
-   {
-    "anno": 2020,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Kopron Rivacold Snipers Team",
-      "numero": 31
-     },
-     {
-      "categoria": "Moto3",
-      "team": "Kopron Rivacold Snipers Team",
-      "numero": 0
-     }
-    ]
-   },
-   {
-    "anno": 2021,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Sterilgarda Husqvarna Max",
-      "numero": 31
-     }
-    ]
-   },
-   {
-    "anno": 2022,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Red Bull KTM Tech3",
-      "numero": 31
-     }
-    ]
-   },
-   {
-    "anno": 2023,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Leopard Racing",
-      "numero": 31
-     }
-    ]
-   },
-   {
-    "anno": 2024,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Leopard Racing",
-      "numero": 31
-     }
-    ]
-   },
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Leopard Racing",
-      "numero": 31
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Leopard Racing",
-      "numero": 31
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 101,
-   "vittorie": 1,
-   "podi": 7,
-   "pole": 3,
-   "giri_veloci": 2,
-   "titoli": 0,
-   "motogp": {
-    "gare": 0,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": "Adrian Fernandez 2019.jpg",
-   "fonte": "https://en.wikipedia.org/wiki/Adri%C3%A1n_Fern%C3%A1ndez_(motorcyclist)"
   }
  },
  "moto:b2ad206f-7eb7-4ecf-b53f-8be998663b23": {
@@ -9841,6 +9841,30 @@
    }
   ]
  },
+ "moto:055c69fa-ccac-4086-9ba8-28de9fb3e59f": {
+  "nascita": "2005-09-05",
+  "luogo": "Chanthaburi, Thailand",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2026,
+  "carriera": [
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 85
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Rivacold Snipers Team",
+      "numero": 85
+     }
+    ]
+   }
+  ]
+ },
  "moto:9aad8146-4002-4852-9857-e1edb47543ea": {
   "nascita": "2007-03-27",
   "luogo": "Ibaraki, Japan",
@@ -9904,11 +9928,11 @@
    }
   ]
  },
- "moto:055c69fa-ccac-4086-9ba8-28de9fb3e59f": {
-  "nascita": "2005-09-05",
-  "luogo": "Chanthaburi, Thailand",
-  "altezza": null,
-  "peso": null,
+ "moto:eb622674-1751-486a-b97f-e252353ed7a9": {
+  "nascita": "2008-09-07",
+  "luogo": "Kawagoe, Japan",
+  "altezza": 162,
+  "peso": 45,
   "debutto": 2026,
   "carriera": [
    {
@@ -9916,13 +9940,8 @@
     "classi": [
      {
       "categoria": "Moto3",
-      "team": "Honda Team Asia",
-      "numero": 85
-     },
-     {
-      "categoria": "Moto3",
-      "team": "Rivacold Snipers Team",
-      "numero": 85
+      "team": "CODE Motorsports",
+      "numero": 79
      }
     ]
    }
@@ -9982,25 +10001,6 @@
       "categoria": "Moto3",
       "team": "Rivacold Snipers Team",
       "numero": 10
-     }
-    ]
-   }
-  ]
- },
- "moto:eb622674-1751-486a-b97f-e252353ed7a9": {
-  "nascita": "2008-09-07",
-  "luogo": "Kawagoe, Japan",
-  "altezza": 162,
-  "peso": 45,
-  "debutto": 2026,
-  "carriera": [
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "CODE Motorsports",
-      "numero": 79
      }
     ]
    }

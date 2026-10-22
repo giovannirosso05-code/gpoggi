@@ -14,6 +14,7 @@ import auto_video as A  # noqa: E402
 import notizia_sub as NS  # noqa: E402
 import notizie_giorno as NG  # noqa: E402
 import anteprima_gara as AG  # noqa: E402
+import studio_gara as SG  # noqa: E402
 
 
 def serie_prossima():
@@ -26,12 +27,18 @@ def serie_prossima():
 
 
 def costruisci(chiave):
-    if not A.scene_previsione(chiave):
-        raise SystemExit("nessuna previsione disponibile")
-    d = A.DATI_PREV[chiave]
+    """Scene del video dallo studio di GP Oggi (studio_gara.py): gara e pole non solo dalle ultime 5 gare, ma anche dal circuito, dalla moto/macchina e da chi ha vinto l'anno scorso."""
+    st = SG.studio(chiave)
     S = "F1" if chiave == "f1" else "MotoGP"
-    luogo = re.sub(r"^(Gran Premio (degli|di|del|dello|della|d')\s*|GP )", "", d["gp"]).strip()
-    nome_f, chips_f, voce1 = d["fav"]
+    pron = json.load(open(A.DATA / "pronostici.json"))[chiave]
+    nomi = NG.nomi_con_foto()
+    gara = [r for r in st["gara"] if r["nome"] in nomi][:3]
+    pole = [r for r in st["pole"] if r["nome"] in nomi]
+    if len(gara) < 3 or not pole:
+        raise SystemExit("meno di tre piloti con foto libera")
+    luogo = re.sub(r"^(Gran Premio (degli|di|del|dello|della|d')\s*|GP )", "", pron["gp"]).strip()
+    cogn = lambda n: n.split()[-1]
+    a_ = lambda c: ("ad " if c[0] in "AEIOU" else "a ") + c
     extra = json.load(open(A.DATA / "foto-extra.json"))
     usate = {}
 
@@ -42,37 +49,56 @@ def costruisci(chiave):
             return {}
         usate[n] = usate.get(n, -1) + 1
         return {"alt": chiavi[usate[n]]} if usate[n] < len(chiavi) else {}   # finite le foto in pista, si torna al volto
+
+    chips = lambda r, k, n=3: [(m[0], m[1]) for m in r["motivi_" + k]][:n]
+    voci = lambda r, k, n=2: [m[2] for m in r["motivi_" + k] if m[0] == "si"][:n]
+    f0 = gara[0]
     titolo = f"{luogo}: chi sale sul podio?"
-    scene = [{"foto": nome_f, "hook": True, "hook_titolo": titolo, "testo": titolo}]
-    pron = json.load(open(A.DATA / "pronostici.json"))[chiave]
+    scene = [{"foto": f0["nome"], "hook": True, "hook_titolo": titolo, "testo": titolo}]
+    # prima statica: il tracciato, con chi ha vinto l'anno scorso
     gp = AG.paese_e_orari(chiave, pron)
     _, t_gara = AG.quando(pron["gara"])
     tr = AG.scheda_tracciato(chiave, pron, gp, t_gara)
-    if tr:   # prima statica: la mappa del circuito
-        scene.append({"foto": nome_f, "pista": True, "tracciato": tr, "sub_top": 1440, "testo": f"Ecco il tracciato di *{pron['circuito']}*."})
-    scene.append({"foto": nome_f, "nome": nome_f, "chips": chips_f, "sub_top": 1440, "testo": voce1.split("? ", 1)[-1]})
-    for nome, motivi, voce in d["rivali"]:
-        scene.append({"foto": nome, "nome": nome, "chips": [("info", m) for m in motivi], "sub_top": 1440, "testo": voce, **alt(nome)})
-    pole = d.get("pole")
-    if pole:
-        fav_pole, occhio, ordine, voce3 = pole
-        scene.append({"foto": fav_pole, "nome": f"Pole: {fav_pole}", "chips": [("info", f"{n}: {c} pole nelle ultime 5 qualifiche") for n, c in ordine[:3]], "sub_top": 1440,
-                      "testo": voce3, **alt(fav_pole)})
+    sc = st["scorso"]
+    if tr:
+        voce_tr = f"Ecco il tracciato di *{pron['circuito']}*."
+        if sc.get("vincitore"):
+            tr["box"][1] = [cogn(sc["vincitore"]), f"ha vinto qui nel {sc['anno']}"]
+            voce_tr += f" L'anno scorso qui ha vinto *{sc['vincitore']}*."
+        scene.append({"foto": f0["nome"], "pista": True, "tracciato": tr, "sub_top": 1440, "testo": voce_tr})
+    # favorito
+    no = next((m for m in f0["motivi_gara"] if m[0] == "no"), None)
+    ch = [m for m in chips(f0, "gara") if m[0] == "si"][:3] + ([("no", no[1])] if no else [])
+    voce = f"Per noi il favorito è *{cogn(f0['nome'])}*: " + ", ".join(voci(f0, "gara")) + "." + (f" Il dubbio: {no[2]}." if no else "")
+    scene.append({"foto": f0["nome"], "nome": f0["nome"], "chips": ch, "sub_top": 1440, "testo": voce})
+    # i due da tenere d'occhio
+    for k, r in enumerate(gara[1:3]):
+        v = voci(r, "gara")
+        if not r["motivi_gara"] or not v:
+            continue
+        scene.append({"foto": r["nome"], "nome": r["nome"], "chips": chips(r, "gara"), "sub_top": 1440, "testo": (f"Occhio {a_(cogn(r['nome']))}: " if k == 0 else f"E {a_(cogn(r['nome']))}: ") + ", ".join(v) + ".", **alt(r["nome"])})
+    # la pole, con chi l'ha presa l'anno scorso
+    p0 = pole[0]
+    ch_p = [(m[0], m[1]) for m in p0["motivi_pole"]][:3]
+    pole_gia_detta = sc.get("pole") == p0["nome"]   # se è lui, il motivo c'è già
+    if sc.get("pole") and not pole_gia_detta:
+        ch_p.append(("info", f"Pole {sc['anno']}: {sc['pole']}"))
+    vp = voci(p0, "pole")
+    voce_p = f"E la pole? Per noi *{cogn(p0['nome'])}*" + (": " + ", ".join(vp) if vp else "") + "." + (f" L'anno scorso è stata di {cogn(sc['pole'])}." if sc.get("pole") and not pole_gia_detta else "")
+    scene.append({"foto": p0["nome"], "nome": f"Pole: {p0['nome']}", "chips": ch_p[:4], "sub_top": 1440, "testo": voce_p, **alt(p0["nome"])})
     # seconda statica: il podio dei favoriti, disegnato (anche come immagine da pubblicare)
-    top3 = [f for f in pron["favoriti"] if f["nome"] in NG.nomi_con_foto()][:3]
-    podio = None
-    if len(top3) == 3:
-        podio = {"titolo": "Il podio dei favoriti", "sotto": pron["gp"],
-                 "righe": [{"pos": i + 1, "nome": f["nome"], "cognome": f["nome"].split()[-1], "nota": f"indice {f['indice']}"} for i, f in enumerate(top3)]}
-        scene.append({"foto": top3[0]["nome"], "pista": True, "podio": podio, "sub_top": 1450,
-                      "testo": f"Ecco il podio dei nostri favoriti: primo {top3[0]['nome'].split()[-1]}, secondo {top3[1]['nome'].split()[-1]}, terzo {top3[2]['nome'].split()[-1]}."})
-    spec = {"serie": S, "titolo_breve": luogo, "etichetta": "Chi sale sul podio", "fonte": "dati GP Oggi", "velocita": "+38%", "scene": scene,
-            "finale": {"foto": nome_f, "domanda": "Chi sale sul podio secondo te?"}}
+    podio = {"titolo": "Il podio dei favoriti", "sotto": pron["gp"],
+             "righe": [{"pos": i + 1, "nome": r["nome"], "cognome": cogn(r["nome"]), "nota": r["costruttore"]} for i, r in enumerate(gara)]}
+    scena_podio = {"foto": f0["nome"], "pista": True, "podio": podio, "sub_top": 1450,
+                   "testo": f"Ecco il podio dei nostri favoriti: primo {cogn(gara[0]['nome'])}, secondo {cogn(gara[1]['nome'])}, terzo {cogn(gara[2]['nome'])}."}
+    scene.append(scena_podio)
+    spec = {"serie": S, "titolo_breve": luogo, "etichetta": "Chi sale sul podio", "fonte": "studio GP Oggi", "velocita": "+38%", "scene": scene,
+            "finale": {"foto": f0["nome"], "domanda": "Chi sale sul podio secondo te?"}}
     icona, tag = ("🏁", "#f1 #formula1") if chiave == "f1" else ("🏍️", "#motogp")
-    pole_riga = (f"🎯 Pole? Per noi {pole[0]}" + (f", ma occhio a {pole[1]}" if pole[1] else "") + "\n") if pole else ""
-    social = (f"{icona} {luogo}: chi sale sul podio? {icona}\n\n👑 Il nostro favorito: {nome_f}\n{pole_riga}\n"
-              f"E tu che dici? Dimmi la tua nei commenti 👇\n\n🔗 gpoggi.it\n\nOpinione basata sui numeri, non una certezza.\n\n#gpoggi {tag} #podio #previsioni")
-    return spec, social, d, (scene[-1] if podio else None)
+    social = (f"{icona} {luogo}: chi sale sul podio? {icona}\n\n👑 Il nostro favorito: {f0['nome']}\n🎯 Pole? Per noi {p0['nome']}\n"
+              + (f"🏆 L'anno scorso qui: vittoria di {sc['vincitore']}, pole di {sc['pole']}\n" if sc.get("vincitore") and sc.get("pole") else "")
+              + f"\nLo studio guarda forma, circuito, {'macchina' if chiave == 'f1' else 'moto'} e risultati dell'anno scorso.\nE tu che dici? Dimmi la tua nei commenti 👇\n\n🔗 gpoggi.it\n\nOpinione basata sui numeri, non una certezza.\n\n#gpoggi {tag} #podio #previsioni")
+    return spec, social, {"gp": pron["gp"]}, scena_podio
 
 
 async def png_podio(spec, scena, uscita):

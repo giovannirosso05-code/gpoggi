@@ -223,15 +223,17 @@ def studio(chiave):
             mg.append(("no", f"Qui {anno - 1}: {pos_g[1]}°", f"qui l'anno scorso ha chiuso solo {f_ord(pos_g[1])}", 6))
         sh = breve(p["costruttore"])
         art = ("l'" if sh[0] in "AEIOU" else "la ") + sh
-        vitt_c = sum(1 for s_ in stor if s_["gara"] and s_["gara"][0]["cost"] == p["cost"])
-        anni_pod = sum(1 for s_ in stor if any(r["cost"] == p["cost"] for r in s_["gara"][:3]))
-        if n3 >= 2:
+        volte = lambda k: "una volta" if k == 1 else f"{UN[k]} volte"
+        m_ = len(pos_g)                                   # edizioni (tra le ultime 3) in cui ha corso qui
+        pod_p = sum(1 for x in pos_g.values() if x <= 3)  # volte sul podio qui
+        if m_ >= 2 and pod_p >= 1:
+            mg.append(("si", f"Qui è salito sul podio {pod_p} {'volta' if pod_p == 1 else 'volte'} in {m_} anni", f"qui è salito sul podio {volte(pod_p)} negli ultimi {UN[m_]} anni", 8))
+        elif m_ >= 2 and pod_p == 0:
+            mg.append(("no", f"Qui mai sul podio negli ultimi {m_} anni", f"qui non è mai salito sul podio negli ultimi {UN[m_]} anni", 5))
+        elif m_ == 0 and n3 >= 2:   # non ha mai corso qui (o cambia squadra): si dice cosa ha fatto la sua squadra
+            vitt_c = sum(1 for s_ in stor if s_["gara"] and s_["gara"][0]["cost"] == p["cost"])
             if vitt_c >= 2:
-                mg.append(("si", f"Qui ha vinto {art} {UN[vitt_c]} volte su {UN[n3]}", f"qui negli ultimi {UN[n3]} anni ha vinto {art} {UN[vitt_c]} volte su {UN[n3]}", 8))
-            elif anni_pod == n3 and podi >= 4:
-                mg.append(("si", f"{art[0].upper() + art[1:]} è sempre sul podio qui ({n3} anni su {n3})", f"{art} è salita sul podio qui in tutte le ultime {UN[n3]} edizioni", 7))
-            elif anni_pod == 0:
-                mg.append(("no", f"Qui {art} non è salita sul podio in {n3} anni", f"qui {art} non è salita sul podio negli ultimi {UN[n3]} anni", 5))
+                mg.append(("si", f"Qui ha vinto {art} {UN[vitt_c]} volte su {UN[n3]}", f"qui negli ultimi {UN[n3]} anni ha vinto {art} {UN[vitt_c]} volte su {UN[n3]}", 6))
         if vitt:
             mg.append(("si", f"{vitt} {'vittoria' if vitt == 1 else 'vittorie'} nelle ultime {n} gare", f"{'una vittoria' if vitt == 1 else UN[vitt] + ' vittorie'} nelle ultime {UN[n]}", 6))
         elif pod:
@@ -242,9 +244,9 @@ def studio(chiave):
             mq.append(("si", "Ha preso la pole qui l'anno scorso", "ha preso la pole qui l'anno scorso", 9))
         elif 1 in pos_q and pos_q[1] <= 3:
             mq.append(("si", f"Qualifica qui {anno - 1}: {pos_q[1]}°", f"qui l'anno scorso è partito {f_ord(pos_q[1])}", 7))
-        pole_c = sum(1 for s_ in stor if s_["quali"] and s_["quali"][0]["cost"] == p["cost"])
-        if n3 >= 2 and pole_c >= 2:
-            mq.append(("si", f"Qui ha preso la pole {art} {UN[pole_c]} volte su {UN[n3]}", f"qui negli ultimi {UN[n3]} anni ha preso la pole {art} {UN[pole_c]} volte su {UN[n3]}", 8))
+        poles_p = sum(1 for x in pos_q.values() if x == 1)
+        if poles_p >= 2 or (poles_p == 1 and not pole_scorso):
+            mq.append(("si", f"Qui ha preso la pole {poles_p} {'volta' if poles_p == 1 else 'volte'} in {len(pos_q)} anni", f"qui ha preso la pole {volte(poles_p)} negli ultimi {UN[len(pos_q)]} anni", 8))
         if poles:
             mq.append(("si", f"{poles} {'pole' if poles == 1 else 'pole'} nelle ultime {n} qualifiche", f"{'una pole' if poles == 1 else UN[poles] + ' pole'} nelle ultime {UN[n]} qualifiche", 6))
         risultati.append({"nome": p["nome"], "costruttore": p["costruttore"], "gara": sg, "pole": sq, "motivi_gara": sorted(mg, key=lambda m: -m[3]), "motivi_pole": sorted(mq, key=lambda m: -m[3])})

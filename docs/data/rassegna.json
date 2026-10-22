@@ -1,6 +1,642 @@
 {
- "generato_il": "2026-10-20T14:58:12+00:00",
+ "generato_il": "2026-10-22T02:52:22+00:00",
  "articoli": [
+  {
+   "titolo": "F1 | Vasseur: \"La Ferrari deve mettere insieme un'altra prestazione solida in ogni ambito\"",
+   "estratto": "La Ferrari gioca il suo jolly nel GP degli Stati Uniti: la Scuderia, infatti, porta ad Austin il quarto e ultimo pacchetto di aggiornamento della stagione con il chiaro intento di difendere i 105…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-vasseur-la-ferrari-deve-mettere-insieme-unaltra-prestazione-solida-in-ogni-ambito/10866769/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-21T16:44:05+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 30.5,
+   "testate": 3
+  },
+  {
+   "titolo": "Verso Austin: Ferrari per ripetere Silverstone, Antonelli guarda al 2027",
+   "estratto": "La Ferrari punta sul serpentone per aiutare la power unit e spera negli aggiornamenti, mentre la Mercedes vuole venire a capo dei suoi problemi",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/austin-ferrari-ripetere-silverstone-antonelli-guarda-2027",
+   "pubblicato": "2026-10-21T16:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 5.3,
+   "testate": 1
+  },
+  {
+   "titolo": "Frederic Vasseur: “Austin una delle piste più impegnative del calendario. Puntiamo ad una prestazione solida”",
+   "estratto": "Da venerdì 23 a domenica 25 ottobre il COTA di Austin ospiterà il Gran Premio degli Stati Uniti 2026, valevole come diciottesimo appuntamento stagionale del Mondiale di Formula Uno. La Ferrari è…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/f1-frederic-vasseur-austin-una-delle-piste-piu-impegnative-del-calendario-puntiamo-ad-una-prestazione-solida/",
+   "pubblicato": "2026-10-21T15:57:31+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 30.3,
+   "testate": 3
+  },
+  {
+   "titolo": "F1 | OMP: dietro le livree speciali c'è più tecnologia di quanto sembri con tute ultra-leggere",
+   "estratto": "Ferrari, Mercedes, Red Bull e anche altri team. Durante questo fine settimana ad Austin diverse squadre si presenteranno con una livrea o delle tute rinnovate per celebrare uno dei tre appuntamenti…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/omp-tuta-leggera-livree-speciali-tecnologia/10866745/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-21T15:32:08+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 5.2,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP, Joan Mir salta anche il GP d’Australia: si prolunga la misteriosa assenza dell’ex campione mondiale",
+   "estratto": "Si prolunga ulteriormente la preoccupante assenza dalle competizioni di Joan Mir, che ha dato forfait anche per la trasferta di Phillip Island e non prenderà parte al Gran Premio d’Australia 2026…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-joan-mir-salta-anche-il-gp-daustralia-si-prolunga-lassenza-misteriosa-dellex-campione-mondiale/",
+   "pubblicato": "2026-10-21T15:28:22+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -2.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Vasseur: “Ad Austin vogliamo un’altra prestazione solida, sfruttiamo al massimo la SF-26”",
+   "estratto": "Le parole del team principal Frederic Vasseur in vista del GP di Austin, pista sulla quale la Ferrari centrò la sua ultima doppietta in F1",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/vasseur-ferrari-austin-vogliamo-prestazione-solida-sfruttare-massimo-sf-26",
+   "pubblicato": "2026-10-21T15:06:37+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 30.1,
+   "testate": 3
+  },
+  {
+   "titolo": "Hockenheim in trattativa con la F1 nonostante finanziamenti pubblici \"praticamente pari a zero\"",
+   "estratto": "Hockenheim è \"in trattativa\" con la Formula 1 riguardo ad un possibile ritorno sul circuito tedesco, ma il progetto resta \"in gran parte teorico\" in questa fase. Gli amministratori delegati…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/hockenheim-in-trattativa-con-la-f1-nonostante-finanziamenti-pubblici-praticamente-pari-a-zero/10866734/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-21T15:00:59+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 2.0,
+   "testate": 1
+  },
+  {
+   "titolo": "Honda, Mir ancora out. A Phillip Island corre solo Marini: “Pista che non ha eguali nel calendario”",
+   "estratto": "La Honda è in emergenza piloti per Phillip Island: correrà solo Luca Marini. Joan Mir, Aleix Espargaro e Takaaki Nakagami sono infortunati",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/honda-mir-ancora-out-a-phillip-island-corre-solo-marini-pista-che-non-ha-eguali-nel-calendario",
+   "pubblicato": "2026-10-21T15:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 30.0,
+   "testate": 3
+  },
+  {
+   "titolo": "F1 | Simulazione MegaRide: ad Austin è fondamentale gestire l’elevato stress laterale delle gomme",
+   "estratto": "Dopo una settimana di pausa, la Formula 1 cambia continente e apre la tournée americana. Primo appuntamento il Gran Premio degli Stati Uniti, sul Circuit of the Americas di Austin, uno dei tracciati…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-simulazione-megaride-ad-austin-e-fondamentale-gestire-lelevato-stress-laterale-delle-gomme/10866668/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-21T14:30:19+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -3.1,
+   "testate": 1
+  },
+  {
+   "titolo": "Verstappen: “Fieri di queste vittorie. Austin è sempre una pista divertente”",
+   "estratto": "Ad Austin, Max Verstappen cerca la terza vittoria consecutiva in F1 dopo i trionfi nei GP di Sepang e di Singapore",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/verstappen-fieri-di-queste-vittorie-austin-e-sempre-una-pista-divertente",
+   "pubblicato": "2026-10-21T14:15:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 1.8,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Watanabe: \"Ecco perché Honda ruota i propri tecnici cambiandone spesso le mansioni\"",
+   "estratto": "L'approccio di Honda allo sviluppo delle power unit di Formula 1 è molto diverso da quello degli altri costruttori presenti in griglia. Ferrari, Mercedes, Audi e Red Bull dispongono di strutture…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-watanabe-ecco-perche-honda-ruota-i-propri-tecnici-cambiandone-spesso-le-mansioni/10866731/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-21T14:00:54+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 9.8,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP, nasce la Academy per i giovani piloti",
+   "estratto": "La MotoGP ha annunciato il lancio del programma Academy: una rete di scuole e centri di formazione dove crescere i talenti del futuro",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/motogp-nasce-la-academy-per-i-giovani-piloti",
+   "pubblicato": "2026-10-21T14:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -3.2,
+   "testate": 1
+  },
+  {
+   "titolo": "F1, Toto Wolff verso Austin: “Porteremo l’ultimo pacchetto di aggiornamenti su entrambe le macchine”",
+   "estratto": "La Mercedes si presenta al Circuit of the Americas con l’obiettivo di tornare ad essere il punto di riferimento a livello prestazionale dopo il calo evidenziato nelle ultime gare nonostante…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/f1-toto-wolff-verso-austin-porteremo-lultimo-pacchetto-di-aggiornamenti-su-entrambe-le-macchine/",
+   "pubblicato": "2026-10-21T13:57:14+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 1.8,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Mercedes: l’ala nuova non è stata bocciata e verrà usata ad Austin. È importante per il 2027",
+   "estratto": "Il nuovo pacchetto di aggiornamenti che ha debuttato a Sepang ha sì aggiunto carico aerodinamico, ma ha anche cambiato la finestra operativa della W17 in maniera inaspettata, spostando il…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-mercedes-lala-nuova-non-e-stata-bocciata-e-verra-usata-ad-austin-e-importante-per-il-2027/10866669/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-21T13:31:31+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -3.3,
+   "testate": 1
+  },
+  {
+   "titolo": "Bezzecchi, ecco i numeri che servono per la rimonta impossibile: vincere sempre può non bastare",
+   "estratto": "Nonostante il successo di Mandalika, l'italiano è spalle al muro: serve qualche passo falso di chi lo precede in classifica",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/bezzecchi-ecco-i-numeri-che-servono-per-la-rimonta-impossibile-vincere-sempre-puo-non-bastare",
+   "pubblicato": "2026-10-21T13:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 4.5,
+   "testate": 1
+  },
+  {
+   "titolo": "Che equilibrio dietro il binomio Kimi-Mercedes: Ferrari, 2° posto nel Costruttori blindato, ma occhio a Verstappen…",
+   "estratto": "Dietro ad Antonelli la battaglia è accesissima per il secondo posto in campionato",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/equilibrio-dietro-binomio-kimi-mercedes-ferrari-2-posto-costruttori-blindato-ma-occhio-a-verstappen",
+   "pubblicato": "2026-10-21T12:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 4.3,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Joan Mir dà ancora forfait, la Honda corre solo con Marini a Phillip Island",
+   "estratto": "Joan Mir non correrà neppure in Australia. Dopo essersi ritirato dal Gran Premio di San Marino e della Riviera di Rimini di MotoGP a causa di un malessere fisico, il pilota della Honda non ha più…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-joan-mir-da-ancora-forfait-la-honda-corre-solo-con-marini-a-phillip-island/10866673/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-21T11:02:37+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 24.0,
+   "testate": 3
+  },
+  {
+   "titolo": "La MotoGP organizza uno show di alta velocità nel weekend di Austin",
+   "estratto": "Quattro piloti si esibiranno sul circuito texano prima delle FP3, e ben tre di questi saranno italiani",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/motogp-organizza-uno-show-di-alta-velocita-ad-austin",
+   "pubblicato": "2026-10-21T11:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -4.0,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Dovizioso preoccupato per Bagnaia: \"Non ho mai vissuto una cosa del genere\"",
+   "estratto": "La persistente crisi di forma di Francesco Bagnaia ora preoccupa anche alcuni suoi ex rivali in MotoGP. Andrea Dovizioso, che è proprio colui che lo aveva preceduto nel team ufficiale Ducati, usa…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-dovizioso-preoccupato-per-bagnaia-non-ho-mai-vissuto-una-cosa-del-genere/10866659/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-21T10:29:52+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.9,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Proposta Ceccarelli: \"Perché non controllare la temperatura dei piloti per studiare i GP caldi?\"",
+   "estratto": "Sepang e Singapore sono stati GP molto caldi, con molta umidità che ha reso la traspirazione dei piloti più difficile. Lewis Hamilton a Marina Bay a gara conclusa si è accasciato per un malore, pur…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-proposta-ceccarelli-perche-non-controllare-la-temperatura-dei-piloti-per-studiare-i-gp-caldi/10866660/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-21T10:00:07+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 0.8,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Taramasso: \"Phillip Island impone le anteriori asimmetriche, ma occhio alla pioggia...\"",
+   "estratto": "La Michelin si appresta ad entrare nelle ultime cinque gare della sua avventura in MotoGP, chiusura di un ciclo durato una decade ed iniziato nell'ormai lontano 2016. La cosa curiosa è che questo…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-taramasso-phillipp-island-impone-le-anteriori-asimmetriche-ma-occhio-alla-pioggia/10866652/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-21T09:29:11+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 10.7,
+   "testate": 2
+  },
+  {
+   "titolo": "Antonelli negli Usa accende la scintilla: anche l'Nba ai piedi di Kimi. Certo, con Wembanyama...",
+   "estratto": "Quanto affetto dai giganti di San Antonio con in testa la superstar Wemby tra selfie e in bocca al lupo",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/10/21-152038748/antonelli_negli_usa_accende_la_scintilla_anche_l_nba_ai_piedi_di_kimi_certo_con_wembanyama_/",
+   "pubblicato": "2026-10-21T09:26:11+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.6,
+   "testate": 1
+  },
+  {
+   "titolo": "Marc Marquez lancia la sfida: “Siamo pronti a lottare per le posizioni che contano a Phillip Island”",
+   "estratto": "Il Mondiale MotoGP entra in una fase decisiva e Marc Márquez si prepara ad affrontare il GP d’Australia con un obiettivo preciso: restare agganciato alla vetta e giocarsi le proprie possibilità…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/marc-marquez-lancia-la-sfida-siamo-pronti-a-lottare-per-le-posizioni-che-contano/",
+   "pubblicato": "2026-10-21T09:25:30+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 10.6,
+   "testate": 2
+  },
+  {
+   "titolo": "La Cadillac presenta la sua livrea cowboy per il GP degli Stati Uniti",
+   "estratto": "In occasione del proprio appuntamento di casa, il team americano ha svelato una livrea speciale che richiama lo stile Far West",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/cadillac-presenta-livrea-cowboy-per-gp-degli-stati-uniti",
+   "pubblicato": "2026-10-21T09:08:01+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -4.4,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP, GP Australia 2026. Numeri, statistiche e curiosità. Stoner e Rossi resteranno ineguagliati a Phillip Island",
+   "estratto": "Il Motomondiale è pronto per recitare in uno dei teatri più belli, sontuosi e gratificanti del proprio calendario iridato. Difatti, il quart’ultimo round dell’annata 2026 si terrà a Phillip Island…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-gp-australia-2026-numeri-statistiche-e-curiosita-stoner-e-rossi-resteranno-ineguagliati-a-phillip-island/",
+   "pubblicato": "2026-10-21T09:00:44+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 13.5,
+   "testate": 2
+  },
+  {
+   "titolo": "Wolff: “In Texas con entrambe le Mercedes aggiornate, i rivali stanno crescendo non possiamo restare fermi”",
+   "estratto": "Il team principal della Mercedes ha presentato così il fine settimana di Austin",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/basta-esperimenti-mercedes-toto-wolff-texas-entrambe-w17-aggiornate-rivali-crescono",
+   "pubblicato": "2026-10-21T09:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 0.5,
+   "testate": 1
+  },
+  {
+   "titolo": "La Mercedes in Texas si tinge di blu in onore del programma di personalizzazione Manufaktur",
+   "estratto": "Livrea speciale ad Austin per il team di Brackley",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/mercedes-antonelli-tinge-blu-texas-gp-stati-uniti-russell-livrea-manufaktur",
+   "pubblicato": "2026-10-21T08:30:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -16.6,
+   "testate": 1
+  },
+  {
+   "titolo": "Marc Marquez: “Phillip Island lascia senza fiato, pronto a lottare fin da subito per le posizioni che contano”",
+   "estratto": "I commenti del nove volte iridato alla vigilia del GP d'Australia, l'ultimo che si svolgerà su questa pista",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/marc-marquez-phillip-island-ho-vinto-una-mie-prime-gare-con-ducati-senza-fiato-bagnaia",
+   "pubblicato": "2026-10-21T08:25:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 10.4,
+   "testate": 2
+  },
+  {
+   "titolo": "F1, GP USA 2026. Numeri, statistiche e curiosità. Hamilton ritroverà la magia del passato al COTA?",
+   "estratto": "L’autodromo di Austin è pronto per ospitare il Gran Premio degli Usa di F1 per la quattordicesima volta. Il Circuit of the Americas è entrato in calendario nel 2012 senza più uscirne. Missione…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/f1-gp-usa-2026-numeri-statistiche-e-curiosita-hamilton-al-cota-ritrovera-la-magia-del-passato/",
+   "pubblicato": "2026-10-21T08:00:11+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -4.7,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | La FIA rassicura che si correrà in Qatar e ad Abu Dhabi: \"Oggi la situazione è tranquilla\"",
+   "estratto": "Il presidente della FIA, Mohammed Ben Sulayem, si è detto fiducioso sul regolare svolgimento dei Gran Premi di Formula 1 in Qatar e ad Abu Dhabi, nonostante le crescenti tensioni in Medio Oriente. A…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-la-fia-rassicura-che-si-correra-in-qatar-e-ad-abu-dhabi-oggi-la-situazione-e-tranquilla/10866640/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-21T07:57:38+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 10.3,
+   "testate": 2
+  },
+  {
+   "titolo": "Ben Sulayem conferma i GP in Qatar e ad Abu Dhabi: “I miei figli sono negli Emirati Arabi Uniti, non metto nessuno in pericolo”",
+   "estratto": "Nonostante il conflitto in Medio Oriente, il Presidente della FIA ha voluto rassicurare team e piloti sulla situazione nelle due nazioni: \"Ho i miei figli lì, li lascerei in pericolo?",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/ben-sulayem-conferma-gp-in-qatar-e-abu-dhabi-no-pericolo-ho-i-figli-li",
+   "pubblicato": "2026-10-21T07:30:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 10.2,
+   "testate": 2
+  },
+  {
+   "titolo": "Marko: “Russell è stato surclassato da Antonelli, Kimi fa volare la macchina e si gode i successi”",
+   "estratto": "L'austriaco ha sottolineato il superlativo campionato dell'ormai prossimo campione del mondo",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/kimi-antonelli-strega-marko-surclassato-russell-batosta-mercedes-titolo-mondiale",
+   "pubblicato": "2026-10-21T07:30:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.2,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP, per gli italiani è l’ultima occasione di riconciliarsi con Phillip Island. Il tracciato è maledetto per i centauri tricolore!",
+   "estratto": "Domenica 25 ottobre assisteremo all’ultimo Gran Premio d’Australia di MotoGP a disputarsi nel magnifico contesto di Phillip Island. Dopodiché, dal 2027, la gara traslocherà ad Adelaide, abbandonando…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-per-gli-italiani-e-lultima-occasione-di-riconciliarsi-con-phillip-island-il-tracciato-e-maledetto-per-i-centauri-tricolore/",
+   "pubblicato": "2026-10-21T07:15:05+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 5.1,
+   "testate": 2
+  },
+  {
+   "titolo": "Ralf Schumacher attacca Hamilton: “Vuole fare il capo in Ferrari e mettere tutti in ombra”",
+   "estratto": "Quanto accaduto a Singapore, a ben vedere, non è un episodio isolato. Lewis Hamilton ha scelto di non seguire la strategia indicata dal muretto e di fare l’esatto opposto, nel tentativo di precedere…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/ralf-schumacher-attacca-hamilton-vuole-fare-il-capo-in-ferrari-e-mettere-tutti-in-ombra/",
+   "pubblicato": "2026-10-21T07:12:31+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 18.1,
+   "testate": 2
+  },
+  {
+   "titolo": "La FIA si è impegnata a tornare ai GP da 305 km: il 2027 dovrà essere solo una ‘parentesi’",
+   "estratto": "La Federazione vuole che il 2027 sia l'eccezione e non la nuova regola",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/gp-piu-corti-2027-eccezione-non-nuova-regola-fia-consiglio-mondiale-serbatoi-piu-grandi",
+   "pubblicato": "2026-10-21T07:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -5.0,
+   "testate": 1
+  },
+  {
+   "titolo": "Ben Sulayem rassicura sui GP in Qatar e Abu Dhabi: “Ho i miei figli lì, vi sembra che li lascerei in pericolo?”",
+   "estratto": "La guerra scuote il Medio Oriente, gli eventi sportivi cambiano calendario e la sicurezza torna a essere una priorità imprescindibile. Eppure, per la F1, l’ipotesi di rinunciare agli appuntamenti in…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/ben-sulayem-rassicura-sui-gp-in-qatar-e-abu-dhabi-ho-i-miei-figli-li-vi-sembra-che-li-lascerei-in-pericolo/",
+   "pubblicato": "2026-10-21T06:10:40+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 19.8,
+   "testate": 3
+  },
+  {
+   "titolo": "Ben Sulayem rassicura sui GP in Qatar e Abu Dhabi: “Ho i miei figli lì, vi sembra che li lascerei in pericolo?”",
+   "estratto": "La guerra scuote il Medio Oriente, gli eventi sportivi cambiano calendario e la sicurezza torna a essere una priorità imprescindibile. Eppure, per la F1, l’ipotesi di rinunciare agli appuntamenti in…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/ben-sulayem-rassicura-sui-gp-in-qatar-e-abu-dhabi-ho-i-miei-figli-li-vi-sembra-che-li-lascerei-in-pericolo/",
+   "pubblicato": "2026-10-21T06:10:40+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 19.8,
+   "testate": 3
+  },
+  {
+   "titolo": "GP Malesia, pensiero stupendo del governo: Sepang rientra nel calendario F1 alternandosi con altre piste?",
+   "estratto": "Le Istituzioni stanno ragionando se e come possa funzionare un modello in stile Spa e Barcellona",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/gp-malesia-pensiero-stupendo-del-governo-sepang-rientra-nel-calendario-f1-alternandosi-con-altre-piste",
+   "pubblicato": "2026-10-21T06:00:28+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -5.2,
+   "testate": 1
+  },
+  {
+   "titolo": "Rischio sorpassi in calo con i motori 2027: le contromisure della FIA",
+   "estratto": "Le modifiche alle power unit per il prossimo anno miglioreranno la gestione dell’energia, ma potrebbero complicare i sorpassi. La FIA ha già pronto un piano",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/rischio-sorpassi-calo-motori-2027-contromisure-fia",
+   "pubblicato": "2026-10-21T06:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -5.2,
+   "testate": 1
+  },
+  {
+   "titolo": "Ralf Schumacher: “Hamilton in Ferrari vuole fare il capo mettendo tutti in ombra. Deve smetterla”",
+   "estratto": "L'ex pilota tedesco ha criticato aspramente l'atteggiamento del sette volte campione del mondo",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/ralf-schumacher-hamilton-ferrari-vuole-fare-capo-mette-tutti-ombra-deve-smetterla",
+   "pubblicato": "2026-10-21T06:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 17.8,
+   "testate": 2
+  },
+  {
+   "titolo": "Il retroscena: Horner e la trattativa segreta con Lauda per diventare il team principal Mercedes",
+   "estratto": "L'ex boss della Red Bull racconta del suo contatto con il compianto pilota austriaco per andare in Mercedes nel 2013 (al posto o al fianco di Toto Wolff)",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/retroscena-christian-horner-trattativa-segreta-niki-lauda-team-principal-mercedes-toto-wolff",
+   "pubblicato": "2026-10-21T06:00:00+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 0.8,
+   "testate": 1
+  },
+  {
+   "titolo": "GP Stati Uniti 2026: orari Sky/Now e TV8",
+   "estratto": "I dettagli della programmazione televisiva dell'appuntamento ad Austin in Texas sul circuito del COTA",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-stati-uniti-2026-austin-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-aggiornamenti-match-point-antonelli",
+   "pubblicato": "2026-10-21T06:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -7.2,
+   "testate": 2
+  },
+  {
+   "titolo": "GP Australia 2026: orari Sky/Now e TV8",
+   "estratto": "Il duello tra Martin e Marquez si sposta a Phillip Island",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-orari/orari-tv-gp-australia-2026-phillip-island-last-dance-televisione-diretta-sky-differita-tv8-programmazione-dove-vederla-marquez-martin-bezzecchi-ducati-aprilia",
+   "pubblicato": "2026-10-21T06:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -7.2,
+   "testate": 2
+  },
+  {
+   "titolo": "F1, per Ferrari siamo a 19 anni dal titolo di Kimi Räikkönen. Intanto vincono sempre gli altri. Come è possibile?",
+   "estratto": "Oggi, 21 ottobre 2026, rappresenta il 19° compleanno del titolo mondiale di F1 conquistato da Kimi Räikkönen, ossia l’ultimo vinto dalla Ferrari. A Maranello, solamente un Iride ha avuto vita più…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/f1-per-ferrari-siamo-a-19-anni-dal-titolo-di-kimi-raikkonen-intanto-vincono-sempre-gli-altri-come-e-possibile/",
+   "pubblicato": "2026-10-21T04:00:06+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 2.3,
+   "testate": 1
+  },
+  {
+   "titolo": "Riccardo Patrese sulle frizioni in Ferrari: “Non fa una buona impressione parlare in pubblico dei problemi”",
+   "estratto": "È un periodo complicato e buio quello che la Ferrari sta vivendo in questa parte del Mondiale F1. Dopo un digiuno di cinque gare, a Singapore la scuderia di Maranello è tornata sul podio con Charles…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/riccardo-patrese-sulle-frizioni-in-ferrari-non-fa-una-buona-impressione-parlare-in-pubblico-dei-problemi/",
+   "pubblicato": "2026-10-20T21:38:12+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 5.7,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP, Toprak Razgatlioglu si opera alla spalla infortunata e dà appuntamento al 2027",
+   "estratto": "Finisce in anticipo la stagione d’esordio in MotoGP di Toprak Razgatlioglu, costretto a saltare le ultime tappe del Mondiale 2026 per un infortunio alla spalla rimediato in seguito ad un highside nel…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-toprak-razgatlioglu-si-opera-alla-spalla-infortunata-e-da-appuntamento-al-2027/",
+   "pubblicato": "2026-10-20T18:51:48+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 2.0,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP, Jorge Martin: “Distacchi ridotti in classifica, sarà la mia prima volta a Phillip Island con l’Aprilia”",
+   "estratto": "Jorge Martin arriva a Phillip Island (che dal 2027 cederà il posto ad Adelaide) da leader della generale in vista del Gran Premio d’Australia 2026, diciottesimo round stagionale del Mondiale MotoGP…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-jorge-martin-distacchi-ridotti-in-classifica-sara-la-mia-prima-volta-a-phillip-island-con-laprilia/",
+   "pubblicato": "2026-10-20T18:22:35+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 4.9,
+   "testate": 3
+  },
+  {
+   "titolo": "MotoGP, Marco Bezzecchi: “Sono molto contento di andare a Phillip Island, anche se per l’ultima volta”",
+   "estratto": "Reduce dalla vittoria in Indonesia che ha messo fine ad un lungo digiuno, Marco Bezzecchi spera di rimanere in corsa per il titolo e si presenterà tra pochi giorni sulla mitica pista di Phillip…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-marco-bezzecchi-sono-molto-contento-di-andare-a-phillip-island-anche-se-per-lultima-volta/",
+   "pubblicato": "2026-10-20T17:57:14+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 24.8,
+   "testate": 3
+  },
+  {
+   "titolo": "F1 | McLaren: Austin pista adatta alla MCL40 e arrivano delle novità al fondo per tornare in alto",
+   "estratto": "La McLaren vuole invertire la tendenza negativa degli ultimi GP che gli ha fatto perdere la scia della Ferrari per il secondo posto nel mondiale Costruttori, mentre diventa minacciosa la presenza…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-mclaren-austin-pista-adatta-alla-mcl40-e-arriva-delle-piccole-novita-al-fondo-per-tornare-in-alto/10866543/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-20T16:27:32+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -0.6,
+   "testate": 1
+  },
+  {
+   "titolo": "Piero Ferrari: “Antonelli, maturo come il primo Lauda. Verstappen faceva più errori di Kimi all’inizio”",
+   "estratto": "Il vicepresidente del Cavallino ha lodato il pilota italiano della Mercedes, ad un passo dal titolo mondiale",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/piero-ferrari-antonelli-maturo-primo-lauda-verstappen-faceva-piu-errori",
+   "pubblicato": "2026-10-20T16:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 14.3,
+   "testate": 2
+  },
+  {
+   "titolo": "La MotoGP sarà protagonista di un'esibizione durante il GP degli Stati Uniti di Formula 1",
+   "estratto": "Come anticipato da Motorsport.com lo scorso 29 luglio, il GP degli Stati Uniti di F1 avrà un'esibizione di MotoGP, per cercare di far conoscere il campionato delle due ruote a un maggior numero di…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/la-motogp-sara-protagonista-di-unesibizione-durante-il-gp-degli-stati-uniti-di-formula-1/10866518/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-20T15:41:20+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -8.8,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Pirelli: ad Austin hanno riasfaltato da curva 9 alla 11, ma la sfida è combattere con l'usura",
+   "estratto": "Il GP degli Stati Uniti può rappresentare il primo match point per Kimi Antonelli che potrebbe laurearsi campione del mondo con la Mercedes, mentre Ferrari e McLaren porteranno importanti pacchetti…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-pirelli-ad-austin-hanno-riasfaltato-da-curva-9-alla-11-ma-la-lotta-e-combattere-con-lusura/10866449/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-20T15:16:39+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -0.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Di Giannantonio saluta Phillip Island: “Sono molto affezionato a questa pista”",
+   "estratto": "In attesa del GP d'Australia su questo circuito, il pilota romano si è detto dispiaciuto di dover correre qui per l'ultima volta",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/di-giannantonio-saluta-phillip-island-sono-molto-affezionato-a-questa-pista",
+   "pubblicato": "2026-10-20T15:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 14.0,
+   "testate": 2
+  },
   {
    "titolo": "Hülkenberg: “Austin è un circuito fantastico. Ci aspettano altre tre settimane intense”",
    "estratto": "Nei weekend consecutivi in programma in America, l'Audi darà il massimo per superare la Haas in classifica Costruttori, a cominciare dalla gara in Texas",
@@ -10,7 +646,7 @@
    "pubblicato": "2026-10-20T14:00:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.8,
+   "punteggio": -4.2,
    "testate": 1
   },
   {
@@ -22,7 +658,7 @@
    "pubblicato": "2026-10-20T13:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.5,
+   "punteggio": -4.5,
    "testate": 1
   },
   {
@@ -34,7 +670,7 @@
    "pubblicato": "2026-10-20T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.3,
+   "punteggio": -4.7,
    "testate": 1
   },
   {
@@ -46,7 +682,7 @@
    "pubblicato": "2026-10-20T11:23:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.9,
+   "punteggio": -9.9,
    "testate": 1
   },
   {
@@ -58,7 +694,7 @@
    "pubblicato": "2026-10-20T11:15:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.1,
+   "punteggio": 10.1,
    "testate": 3
   },
   {
@@ -70,20 +706,8 @@
    "pubblicato": "2026-10-20T10:42:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.9,
+   "punteggio": 3.0,
    "testate": 1
-  },
-  {
-   "titolo": "Ferrari, strappato Sacha Fenestraz alla Mercedes come pilota del simulatore: farà un test TPC nel 2027",
-   "estratto": "Il 27enne pilota francese guiderà una delle Rosse delle scorse stagioni per migliorare il lavoro al sim",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/ferrari-strappato-sacha-fenestraz-mercedes-pilota-simulatore-test-tpc-nel-2027",
-   "pubblicato": "2026-10-20T10:15:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 16.8,
-   "testate": 2
   },
   {
    "titolo": "Tegola Razgatlıoğlu, stagione finita: lunedì dovrà operarsi alla spalla destra",
@@ -94,7 +718,7 @@
    "pubblicato": "2026-10-20T09:51:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.7,
+   "punteggio": -0.3,
    "testate": 2
   },
   {
@@ -106,7 +730,7 @@
    "pubblicato": "2026-10-20T09:28:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.6,
+   "punteggio": -2.4,
    "testate": 1
   },
   {
@@ -118,7 +742,7 @@
    "pubblicato": "2026-10-20T09:26:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.6,
+   "punteggio": 12.6,
    "testate": 2
   },
   {
@@ -130,7 +754,7 @@
    "pubblicato": "2026-10-20T09:22:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.6,
+   "punteggio": -0.4,
    "testate": 2
   },
   {
@@ -142,8 +766,8 @@
    "pubblicato": "2026-10-20T09:20:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.6,
-   "testate": 2
+   "punteggio": 9.6,
+   "testate": 3
   },
   {
    "titolo": "Martin, prima volta in Aprilia a Phillip Island: “È corsa a tre per il titolo, ho fiducia nel team”",
@@ -154,20 +778,8 @@
    "pubblicato": "2026-10-20T09:05:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.5,
+   "punteggio": 4.6,
    "testate": 2
-  },
-  {
-   "titolo": "La FIA interviene per annullare gli scambi di informazioni tra personale F1 ed extra F1 dei team",
-   "estratto": "La Federazione ha ratificato una modifica regolamentare in ottica 2027",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/fia-interviene-annullare-scambi-informazioni-personale-team-f1-non-f1",
-   "pubblicato": "2026-10-20T08:30:46+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -1.6,
-   "testate": 1
   },
   {
    "titolo": "F1, i precedenti della Ferrari ad Austin. Solo 2 vittorie del Cavallino Rampante in Texas",
@@ -178,19 +790,7 @@
    "pubblicato": "2026-10-20T08:00:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.3,
-   "testate": 1
-  },
-  {
-   "titolo": "Antonelli: “In Cina vincendo ho svoltato e a Monaco ci ho messo del mio per una vittoria fondamentale per me e la Mercedes”",
-   "estratto": "Il pilota italiano ha raccontato le tappe chiave dietro a un 2026 a dir poco memorabile",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/antonelli-cina-svoltato-monaco-sorpreso-tutti-vittoria-fondamentale-per-me-mercedes-titolo-mondiale",
-   "pubblicato": "2026-10-20T08:00:00+00:00",
-   "tipo": "intervista",
-   "citazione": true,
-   "punteggio": 12.3,
+   "punteggio": -2.7,
    "testate": 1
   },
   {
@@ -202,7 +802,7 @@
    "pubblicato": "2026-10-20T07:54:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.8,
+   "punteggio": -10.7,
    "testate": 1
   },
   {
@@ -214,7 +814,7 @@
    "pubblicato": "2026-10-20T07:47:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.2,
+   "punteggio": -0.8,
    "testate": 2
   },
   {
@@ -226,19 +826,7 @@
    "pubblicato": "2026-10-20T07:16:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.1,
-   "testate": 2
-  },
-  {
-   "titolo": "Piero Ferrari: “Alla Scuderia servono fatti, non chiacchiere”",
-   "estratto": "Il vicepresidente del Cavallino Rampante ha analizzato la stagione 2026",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/piero-ferrari-alla-scuderia-servono-fatti-non-chiacchiere",
-   "pubblicato": "2026-10-20T07:11:22+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 21.1,
+   "punteggio": -0.9,
    "testate": 2
   },
   {
@@ -250,79 +838,7 @@
    "pubblicato": "2026-10-20T07:00:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.0,
-   "testate": 1
-  },
-  {
-   "titolo": "Vasseur-Hamilton, Patrese: “Se fossi il team principal chiederei ai piloti di non parlare in pubblico di ciò che non va nella squadra”",
-   "estratto": "L'ex pilota non condivide la politica del sette volte iridato",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/ferrari-frizioni-hamilton-vasseur-patrese-se-fossi-fred-chiedere-lewis-di-non-parlare-pubblico",
-   "pubblicato": "2026-10-20T07:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 3.0,
-   "testate": 1
-  },
-  {
-   "titolo": "Verstappen, la svolta 2026 è diversa rispetto al passato: “Sviluppi fondamentali, nel 2025 invece…”",
-   "estratto": "Il campione di casa Red Bull spiega perché secondo lui non si può proprio fare un paragone tra questa stagione e quella della (fallita) rimonta finale su Lando Norris",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/verstappen-la-svolta-2026-e-diversa-rispetto-al-passato-sviluppi-fondamentali-nel-2025-invece",
-   "pubblicato": "2026-10-20T06:00:07+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 2.8,
-   "testate": 1
-  },
-  {
-   "titolo": "Camara in Haas, ma non per volere Ferrari: “Ha quella velocità innata che non si può insegnare”",
-   "estratto": "Il team principal Ayao Komatsu nega che ci sia lo zampino (o la richiesta) della Ferrari dietro alla sua scelta di affiancare a Ollie Bearman il giovane talento brasiliano",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/rafael-camara-haas-non-volere-ferrari-velocita-innata-non-si-puo-insegnare-komatsu",
-   "pubblicato": "2026-10-20T06:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 20.8,
-   "testate": 2
-  },
-  {
-   "titolo": "Horner su Marko: “Zero rapporti, ha lavorato per cacciarmi mentre la mia ex moglie moriva. Mekies, sei fortunato…”",
-   "estratto": "Chris Horner ha ammesso di non sentire più Helmut Marko, accusandolo di aver agito alle spalle in un momento complesso a livello personale",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/horner-su-marko-zero-rapporti-ha-lavorato-per-cacciarmi-mentre-la-mia-ex-moglie-moriva-mekies-sei-fortunato",
-   "pubblicato": "2026-10-20T06:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 2.8,
-   "testate": 1
-  },
-  {
-   "titolo": "GP Stati Uniti 2026: orari Sky/Now e TV8",
-   "estratto": "I dettagli della programmazione televisiva dell'appuntamento ad Austin in Texas sul circuito del COTA",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-stati-uniti-2026-austin-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-aggiornamenti-match-point-antonelli",
-   "pubblicato": "2026-10-20T06:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -4.2,
-   "testate": 2
-  },
-  {
-   "titolo": "Red Bull rinata, Wolff: “Dobbiamo toglierci il cappello. Adesso Max è chiaramente dominante”",
-   "estratto": "Toto Wolff ha applaudito i rivali della Red Bull, tornati al successo nelle ultime settimane con Max Verstappen",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/red-bull-rinata-wolff-dobbiamo-toglierci-il-cappello-adesso-max-e-chiaramente-dominante",
-   "pubblicato": "2026-10-20T06:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 2.8,
+   "punteggio": -11.0,
    "testate": 1
   },
   {
@@ -334,31 +850,7 @@
    "pubblicato": "2026-10-20T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.8,
-   "testate": 1
-  },
-  {
-   "titolo": "GP Australia 2026: orari Sky/Now e TV8",
-   "estratto": "Il duello tra Martin e Marquez si sposta a Phillip Island",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-orari/orari-tv-gp-australia-2026-phillip-island-last-dance-televisione-diretta-sky-differita-tv8-programmazione-dove-vederla-marquez-martin-bezzecchi-ducati-aprilia",
-   "pubblicato": "2026-10-20T06:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -4.2,
-   "testate": 2
-  },
-  {
-   "titolo": "Disastro Honda, le ragioni del flop: “Con l’ADUO-2 più potenza, ma meno guidabilità. Ritardo di 2 anni”",
-   "estratto": "Koji Watanabe, grande capo dimissionario del reparto corse HRC, racconta come mai la power unit è così problematica",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/disastro-honda-ragioni-flop-aduo-2-potenza-meno-guidabilita-ritardo-2-anni",
-   "pubblicato": "2026-10-19T17:00:00+00:00",
-   "tipo": "intervista",
-   "citazione": true,
-   "punteggio": 4.5,
+   "punteggio": 1.8,
    "testate": 1
   },
   {
@@ -370,7 +862,7 @@
    "pubblicato": "2026-10-19T16:30:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.4,
+   "punteggio": -5.6,
    "testate": 1
   },
   {
@@ -382,20 +874,8 @@
    "pubblicato": "2026-10-19T16:20:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 31.3,
-   "testate": 3
-  },
-  {
-   "titolo": "Rosberg: “Verstappen è il migliore in griglia, ma Antonelli ha guidato a livelli da Michael Schumacher”",
-   "estratto": "Secondo il campione del mondo nel 2016 il pilota italiano si è stra-meritato il titolo ormai imminente",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/rosberg-kimi-antonelli-guidato-livelli-michael-schumacher-verstappen-resta-migliore-griglia",
-   "pubblicato": "2026-10-19T15:30:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 31.1,
-   "testate": 3
+   "punteggio": 2.4,
+   "testate": 1
   },
   {
    "titolo": "MotoGP | Ecco perché Alex Marquez non è riuscito a replicare nel 2026 lo stato di forma del 2025",
@@ -406,7 +886,7 @@
    "pubblicato": "2026-10-19T15:03:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.0,
+   "punteggio": -11.0,
    "testate": 1
   },
   {
@@ -418,7 +898,7 @@
    "pubblicato": "2026-10-19T15:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.0,
+   "punteggio": -11.0,
    "testate": 1
   },
   {
@@ -430,7 +910,7 @@
    "pubblicato": "2026-10-19T13:58:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.8,
+   "punteggio": 6.8,
    "testate": 2
   },
   {
@@ -442,20 +922,8 @@
    "pubblicato": "2026-10-19T13:47:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.7,
+   "punteggio": 1.7,
    "testate": 1
-  },
-  {
-   "titolo": "La Haas torna con la livrea Godzilla per il suo GP di casa",
-   "estratto": "Il team ha svelato un look dedicato a Godzilla, simile a quello che aveva adottato in occasione del GP del Giappone",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/la-haas-torna-con-la-livrea-godzilla-per-il-suo-gp-di-casa",
-   "pubblicato": "2026-10-19T13:35:48+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 7.7,
-   "testate": 2
   },
   {
    "titolo": "F1 | Mercedes: a Singapore ha debuttato la tuta traspirante di nuova generazione sviluppata da OMP",
@@ -466,19 +934,7 @@
    "pubblicato": "2026-10-19T13:31:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.4,
-   "testate": 1
-  },
-  {
-   "titolo": "Bruno Michel: “Tsolov è pronto per il salto in Formula 1”",
-   "estratto": "Il CEO della Formula 2 ritiene che il pilota bulgaro abbia tutte le carte in regola per approdare nella massima serie dopo Camara",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/bruno-michel-tsolov-pronto-per-salto-in-f1",
-   "pubblicato": "2026-10-19T13:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 2.5,
+   "punteggio": -11.3,
    "testate": 1
   },
   {
@@ -490,20 +946,8 @@
    "pubblicato": "2026-10-19T12:10:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.3,
+   "punteggio": -1.7,
    "testate": 2
-  },
-  {
-   "titolo": "Antonelli vicino al ‘sogno americano’. Chi si è laureato campione negli Stati Uniti?",
-   "estratto": "Tutti i piloti vincitori del titolo mondiale in occasione del GP degli Stati Uniti",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-storia/antonelli-vicino-sogno-americano-chi-si-e-laureato-campione-negli-usa",
-   "pubblicato": "2026-10-19T12:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 5.3,
-   "testate": 1
   },
   {
    "titolo": "MotoGP, Fermin Aldeguer salta il GP d’Australia per infortunio: già annunciato il sostituto",
@@ -514,8 +958,8 @@
    "pubblicato": "2026-10-19T11:33:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.1,
-   "testate": 2
+   "punteggio": -3.8,
+   "testate": 1
   },
   {
    "titolo": "McLaren, Fornaroli resta in F1 e raddoppia: nel 2027 correrà anche nel WEC",
@@ -526,20 +970,8 @@
    "pubblicato": "2026-10-19T11:01:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.0,
+   "punteggio": -12.0,
    "testate": 1
-  },
-  {
-   "titolo": "McLaren punta ancora su Fornaroli: test completati al Paul Ricard, sarà in pista nelle FP1 di Messico e Brasile",
-   "estratto": "Il team campione del mondo sembra voler continuare a supportare la crescita del giovane italiano",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/mclaren-punta-ancora-su-fornaroli-test-completati-al-paul-ricard-sara-in-pista-nelle-fp1-di-messico-e-brasile",
-   "pubblicato": "2026-10-19T11:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 7.0,
-   "testate": 2
   },
   {
    "titolo": "MotoGP | Gresini: Aldeguer non correrà a Phillip Island, lo sostituirà Lecuona",
@@ -550,20 +982,8 @@
    "pubblicato": "2026-10-19T09:27:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 24.6,
+   "punteggio": 15.6,
    "testate": 3
-  },
-  {
-   "titolo": "Ferrari, occhio al look: tute speciali ad Austin per Leclerc e Hamilton – FOTO",
-   "estratto": "La scuderia di Maranello ha svelato le tute speciali che saranno utilizzate dai due piloti durante il weekend texano",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/ferrari-occhio-al-look-tute-speciali-ad-austin-per-leclerc-e-hamilton-foto",
-   "pubblicato": "2026-10-19T09:15:32+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 14.6,
-   "testate": 2
   },
   {
    "titolo": "Russell, la penalità diventa un caso Mercedes: Antonelli vede il Mondiale, George prende tempo",
@@ -574,7 +994,7 @@
    "pubblicato": "2026-10-19T08:44:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.4,
+   "punteggio": 5.5,
    "testate": 2
   },
   {
@@ -586,7 +1006,7 @@
    "pubblicato": "2026-10-19T08:30:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.4,
+   "punteggio": 5.4,
    "testate": 2
   },
   {
@@ -598,8 +1018,8 @@
    "pubblicato": "2026-10-19T08:20:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.3,
-   "testate": 1
+   "punteggio": 5.4,
+   "testate": 2
   },
   {
    "titolo": "F1 | Horner svela il problema del secondo pilota Red Bull: “Contro Max era una missione impossibile”",
@@ -610,7 +1030,7 @@
    "pubblicato": "2026-10-19T08:05:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.3,
+   "punteggio": -7.7,
    "testate": 1
   },
   {
@@ -622,7 +1042,7 @@
    "pubblicato": "2026-10-19T07:44:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.8,
+   "punteggio": -14.8,
    "testate": 2
   },
   {
@@ -634,8 +1054,8 @@
    "pubblicato": "2026-10-19T07:37:09+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.2,
-   "testate": 2
+   "punteggio": 15.2,
+   "testate": 3
   },
   {
    "titolo": "F1 2026 | Ecco gli orari TV di Sky, Now e TV8 del Gran Premio degli Stati Uniti",
@@ -646,7 +1066,7 @@
    "pubblicato": "2026-10-19T07:19:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.9,
+   "punteggio": -14.9,
    "testate": 2
   },
   {
@@ -658,7 +1078,7 @@
    "pubblicato": "2026-10-19T07:00:35+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.0,
+   "punteggio": -13.0,
    "testate": 1
   },
   {
@@ -670,7 +1090,7 @@
    "pubblicato": "2026-10-19T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.8,
+   "punteggio": -8.2,
    "testate": 1
   },
   {
@@ -682,7 +1102,7 @@
    "pubblicato": "2026-10-19T04:00:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.7,
+   "punteggio": -13.7,
    "testate": 1
   },
   {
@@ -694,7 +1114,7 @@
    "pubblicato": "2026-10-19T03:10:44+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.1,
+   "punteggio": -5.9,
    "testate": 3
   },
   {
@@ -706,7 +1126,7 @@
    "pubblicato": "2026-10-19T03:05:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -17.0,
+   "punteggio": -25.9,
    "testate": 1
   },
   {
@@ -718,8 +1138,8 @@
    "pubblicato": "2026-10-18T15:00:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.0,
-   "testate": 3
+   "punteggio": 6.0,
+   "testate": 2
   },
   {
    "titolo": "F1 | Alpine meglio in qualifica che in gara: i problemi di degrado gomma dipendono anche dai cerchi",
@@ -730,7 +1150,7 @@
    "pubblicato": "2026-10-18T13:00:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.5,
+   "punteggio": -17.5,
    "testate": 1
   },
   {
@@ -742,7 +1162,7 @@
    "pubblicato": "2026-10-18T10:02:43+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -4.2,
+   "punteggio": -13.2,
    "testate": 1
   },
   {
@@ -754,7 +1174,7 @@
    "pubblicato": "2026-10-18T08:31:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.6,
+   "punteggio": -18.6,
    "testate": 1
   },
   {
@@ -766,7 +1186,7 @@
    "pubblicato": "2026-10-18T08:28:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.4,
+   "punteggio": 4.4,
    "testate": 2
   },
   {
@@ -778,7 +1198,7 @@
    "pubblicato": "2026-10-18T07:33:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -4.9,
+   "punteggio": -13.8,
    "testate": 1
   },
   {
@@ -790,7 +1210,7 @@
    "pubblicato": "2026-10-18T06:00:00+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": -4.2,
+   "punteggio": -13.2,
    "testate": 1
   },
   {
@@ -802,7 +1222,7 @@
    "pubblicato": "2026-10-17T15:18:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.9,
+   "punteggio": -22.9,
    "testate": 1
   },
   {
@@ -814,7 +1234,7 @@
    "pubblicato": "2026-10-17T13:19:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -14.4,
+   "punteggio": -23.4,
    "testate": 1
   },
   {
@@ -826,7 +1246,7 @@
    "pubblicato": "2026-10-17T10:20:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -15.2,
+   "punteggio": -24.1,
    "testate": 1
   },
   {
@@ -838,8 +1258,8 @@
    "pubblicato": "2026-10-17T08:45:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.4,
-   "testate": 2
+   "punteggio": -16.5,
+   "testate": 1
   },
   {
    "titolo": "F1 | Gabriele Miní torna al volante dell'Alpine: ha girato al Paul Ricard in un'altra sessione di test TPC",
@@ -850,8 +1270,8 @@
    "pubblicato": "2026-10-17T07:43:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.8,
-   "testate": 2
+   "punteggio": -24.8,
+   "testate": 1
   },
   {
    "titolo": "Volata Mondiale, per Pernat è Marquez contro tutti: “Ma nel 2025 saltò le ultime gare, può essere uno svantaggio”",
@@ -862,7 +1282,7 @@
    "pubblicato": "2026-10-17T06:00:00+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": -2.2,
+   "punteggio": -11.2,
    "testate": 1
   },
   {
@@ -874,8 +1294,8 @@
    "pubblicato": "2026-10-16T16:29:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.6,
-   "testate": 2
+   "punteggio": -26,
+   "testate": 1
   },
   {
    "titolo": "MotoGP | Gresini: le nuove regole non aumenteranno il gap tra team ufficiali e satellite",
@@ -886,7 +1306,7 @@
    "pubblicato": "2026-10-16T15:26:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -19.9,
+   "punteggio": -26,
    "testate": 1
   },
   {
@@ -898,7 +1318,7 @@
    "pubblicato": "2026-10-16T13:59:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.2,
+   "punteggio": -8,
    "testate": 2
   },
   {
@@ -910,7 +1330,7 @@
    "pubblicato": "2026-10-16T13:00:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -20.5,
+   "punteggio": -26,
    "testate": 1
   },
   {
@@ -922,7 +1342,7 @@
    "pubblicato": "2026-10-16T10:40:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -21.1,
+   "punteggio": -26,
    "testate": 1
   },
   {
@@ -934,7 +1354,7 @@
    "pubblicato": "2026-10-16T10:20:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.2,
+   "punteggio": -18,
    "testate": 1
   },
   {
@@ -946,7 +1366,7 @@
    "pubblicato": "2026-10-16T09:30:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -16.4,
+   "punteggio": -21,
    "testate": 1
   },
   {
@@ -958,7 +1378,7 @@
    "pubblicato": "2026-10-16T08:40:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -16.6,
+   "punteggio": -21,
    "testate": 1
   },
   {
@@ -970,7 +1390,7 @@
    "pubblicato": "2026-10-16T08:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -16.6,
+   "punteggio": -21,
    "testate": 1
   },
   {
@@ -982,7 +1402,7 @@
    "pubblicato": "2026-10-16T08:09:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -8.7,
+   "punteggio": -13,
    "testate": 1
   },
   {
@@ -994,31 +1414,7 @@
    "pubblicato": "2026-10-16T07:39:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -16.8,
-   "testate": 1
-  },
-  {
-   "titolo": "Alex Marquez: “Marc dovrà fare magie in Australia, Qatar e Portimao dove le Aprilia andranno fortissimo”",
-   "estratto": "Il pilota Gresini ha sottolineato che il compito dell'illustrissimo fratello sarà tutt'altro che semplice",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/alex-marquez-marc-fare-magie-australia-qatar-portimao-perche-aprilia-fortissime-ordini-scuderia",
-   "pubblicato": "2026-10-16T07:30:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -6.9,
-   "testate": 2
-  },
-  {
-   "titolo": "Pernat stronca il nuovo format: “Ridicolo, sarà la fiera delle ambulanze. Marquez, Acosta e Bagnaia sono gli unici che si arrabbiano”",
-   "estratto": "In una chiacchierata esclusiva con FormulaPassion.it lo storico manager genovese ha criticato senza pietà il nuovo format studiato dalla MotoGP",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/pernat-stronca-nuovo-format-ridicolo-sara-fiera-ambulanze-marquez-acosta-bagnaia-unici-che-si-incazzano",
-   "pubblicato": "2026-10-16T06:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -9.2,
+   "punteggio": -21,
    "testate": 1
   },
   {
@@ -1030,7 +1426,7 @@
    "pubblicato": "2026-10-16T04:15:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -14.7,
+   "punteggio": -18,
    "testate": 1
   },
   {
@@ -1042,404 +1438,8 @@
    "pubblicato": "2026-10-15T20:06:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -18.7,
-   "testate": 2
-  },
-  {
-   "titolo": "Herbert difende Russell: “Antonelli più fortunato”",
-   "estratto": "Il divario tra Kimi Antonelli e George Russell non si spiega soltanto attraverso il rendimento in pista. Secondo Johnny Herbert, ex pilota britannico e oggi commentatore tecnico televisivo, anche la…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/herbert-difende-russell-antonelli-piu-fortunato/",
-   "pubblicato": "2026-10-15T19:05:55+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -16.0,
-   "testate": 1
-  },
-  {
-   "titolo": "F1: Qatar e Abu Dhabi restano in calendario, ma “l’ombra di Imola” rimane presente",
-   "estratto": "La parte finale del calendario del Mondiale 2026 di F1 sta diventando sempre di più un rebus. Da una parte le rassicurazioni sulla disputa regolare dei GP del Qatar del Qatar (29 novembre) e di Abu…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/f1-qatar-e-abu-dhabi-restano-in-calendario-ma-lombra-di-imola-rimane-presente/",
-   "pubblicato": "2026-10-15T17:47:20+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -6.3,
-   "testate": 2
-  },
-  {
-   "titolo": "F1 | Test Pirelli: Mercedes completa oltre 600 km con Vesti a Magny-Cours alla ricerca del punto di crossover",
-   "estratto": "Si è conclusa con ancora Frederik Vesti al volante la seconda giornata di test organizzata da Pirelli sul circuito di Magny-Cours. Il terzo pilota Mercedes ha completato oggi 138 giri per un totale…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-test-pirelli-mercedes-completa-oltre-600-km-con-vesti-a-magny-cours-alla-ricerca-del-punto-di-cr/10865456/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-15T17:00:28+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -19.5,
-   "testate": 2
-  },
-  {
-   "titolo": "F1 | Williams salta una numerazione nel telaio per festeggiare con la FW50 il mezzo secolo di storia",
-   "estratto": "La Williams dà un segno di vita e con una sola immagine ci regala due informazioni: la prossima monoposto salterà una cifra nella tradizionale denominazione delle sue macchine visto che la squadra di…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-williams-salta-una-numerazione-nel-telaio-per-festeggiare-con-la-fw50-il-mezzo-secolo-di-storia/10865455/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-15T16:41:21+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -29.6,
-   "testate": 1
-  },
-  {
-   "titolo": "Christian Horner ammette che la rivalità in F1 con Toto Wolff è diventata \"teatro\"",
-   "estratto": "Christian Horner ha ammesso che la sua lunga rivalità con il suo omologo in Formula 1, Toto Wolff, è diventata «più simile a uno spettacolo teatrale», pur assicurando che fosse comunque \"autentica\"…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/christian-horner-ammette-che-la-rivalita-in-f1-con-toto-wolff-e-diventata-teatro/10865205/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-15T16:19:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -24.7,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Haas, Komatsu rivela: \"Senza il test di Portimao forse non avremmo scelto Camara\"",
-   "estratto": "Il futuro di Rafael Camara in Formula 1 si è deciso nell'arco di due giornate sul circuito di Portimao. È questo il retroscena più significativo emerso dalle parole di Ayao Komatsu, team principal…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-haas-komatsu-rivela-senza-il-test-di-portimao-forse-non-avremmo-scelto-camara/10865446/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-15T15:57:34+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -24.8,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Qatar e Abu Dhabi non si fermano nonostante i missili in Arabia Saudita, ma Imola è all'erta",
-   "estratto": "Primo: i GP del Qatar e di Abu Dhabi sono confermati. Secondo: Imola prosegue l’allestimento dell’Enzo e Dino Ferrari affinché, eventualmente, possa essere pronto ad accogliere l’ultimo appuntamento…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-qatar-e-adu-dhabi-non-si-fermano-nonostante-i-missili-in-arabia-saudita-ma-imola-e-allerta/10865437/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-15T15:31:55+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -11.9,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Rivola risponde alle preoccupazioni sulla velocità delle 850cc: \"Quel che è fatto è fatto\"",
-   "estratto": "I responsabili MotoGP di Aprilia e Ducati mantengono una linea diplomatica, seppur poco convincente, di fronte alle suggestioni secondo cui il costoso passaggio ai motori 850cc per il 2027 avrebbe…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-rivola-risponde-alle-preoccupazioni-sulla-velocita-delle-850cc-quel-che-e-fatto-e-fatto/10865320/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-15T14:56:52+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -17,
-   "testate": 1
-  },
-  {
-   "titolo": "Rafa Camara alla Haas: \"Grato alla Scuderia Ferrari per il sostegno e per la mia crescita\"",
-   "estratto": "Il pilota brasiliano, leader del Mondiale di Formula 2, ha siglato un accordo pluriennale con il team statunitense",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/15-151912914/rafa_camara_alla_haas_grato_alla_scuderia_ferrari_per_il_sostegno_e_per_la_mia_crescita/",
-   "pubblicato": "2026-10-15T14:54:27+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -7,
-   "testate": 2
-  },
-  {
-   "titolo": "Ufficiale: Rafael Câmara debutta in F1 nel 2027 con la Haas",
-   "estratto": "Rafael Câmara sarà un pilota della Haas a partire dalla stagione 2027. La squadra americana ha ufficializzato l'ingaggio del ventunenne brasiliano, che ha firmato un contratto pluriennale e farà il…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/ufficiale-rafael-camara-debutta-in-f1-nel-2027-con-la-haas/10865227/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-15T14:02:32+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -30,
-   "testate": 1
-  },
-  {
-   "titolo": "Kimi Antonelli finisce in tribunale: causa con tanti milioni in ballo",
-   "estratto": "Kimi Antonelli si sta rendendo protagonista di una stagione stellare ed è lanciato verso la conquista del Mondiale F1: il ventenne può fare affidamento su un vantaggio di 102 punti nei confronti del…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/kimi-antonelli-finisce-in-tribunale-causa-con-tanti-milioni-in-ballo/",
-   "pubblicato": "2026-10-15T11:08:33+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -22,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP, per il momento il GP del Qatar è confermato. I piloti, però, vogliono certezze importanti",
-   "estratto": "Mancano 22 giorni al via ufficiale del fine settimana del Gran Premio del Qatar, ventesimo e terzultimo appuntamento del Motomondiale 2026 ma, al momento, nulla è ancora sicuro e definito. Oppure…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/10/motogp-per-il-momento-il-gp-del-qatar-e-confermato-i-piloti-pero-vogliono-certezze-importanti/",
-   "pubblicato": "2026-10-15T11:07:50+00:00",
-   "tipo": null,
-   "citazione": false,
    "punteggio": -20,
    "testate": 2
-  },
-  {
-   "titolo": "F1 | Audi e Öhlins: la partnership sugli ammortizzatori di inizio stagione entra nella fase calda",
-   "estratto": "Si intensifica la collaborazione di Audi con Öhlins: è stata ufficializzata mercoledì 15 ottobre la partnership della Casa dei quattro anelli con il leader globale nelle soluzioni di sospensione ad…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-audi-e-ohlins-la-partnership-sugli-ammortizzatori-di-inizio-stagione-entra-nella-fase-calda/10865355/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-15T11:03:27+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -30,
-   "testate": 1
-  },
-  {
-   "titolo": "Racing Spirit lancia la collezione ufficiale James Hunt 1976",
-   "estratto": "Racing Spirit, il brand di abbigliamento tecnico premium di Racing Force Group, è orgoglioso di annunciare il lancio della collezione ufficiale James Hunt 1976 che celebra il 50° anniversario della…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/general/news/racing-spirit-lancia-la-collezione-ufficiale-james-hunt-1976-/10853854/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-15T09:59:15+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -30,
-   "testate": 1
-  },
-  {
-   "titolo": "\"Antonelli come Senna, Schumacher e Verstappen\": il paragone e il motivo, \"un dono innato\"",
-   "estratto": "Il dr. Ceccarelli esalta il bolognese per la gestione delle difficoltà e spiega il segreto dell'ascesa del pilota italiano",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/15-151907488/antonelli_come_senna_schumacher_e_verstappen_il_paragone_e_il_motivo_un_dono_innato/",
-   "pubblicato": "2026-10-15T09:41:05+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 3,
-   "testate": 3
-  },
-  {
-   "titolo": "Pavesio: \"Un addetto ai lavori di MotoGP parla di sport, uno di F1 di business, ma l'evoluzione non deve spaventarci\"",
-   "estratto": "La MotoGP sta attaversando una fase di grande cambiamento. L'anno prossimo toccheremo con mano quello più rilevante in pista, con l'arrivo della nuova generazione di prototipi da 850cc, che oltre ad…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/pavesio-un-addetto-ai-lavori-di-motogp-parla-di-sport-uno-di-f1-di-business-ma-levoluzione-non-deve/10865300/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-15T09:34:24+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -25,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Christian Horner voleva Fernando Alonso e Charles Leclerc alla Red Bull",
-   "estratto": "Il sedile in Red Bull per il 2025 sarebbe potuto andare a Fernando Alonso o a Charles Leclerc e, secondo Christian Horner, avrebbe voluto entrambi allo stesso modo. Nel suo prossimo libro, Drive…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/christian-horner-wanted-fernando-alonso-and-charles-leclerc-at-red-bull/10865308/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-15T09:03:42+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -30,
-   "testate": 1
-  },
-  {
-   "titolo": "Casey Stoner intende \"lottare\" per riportare Phillip Island nel calendario della MotoGP",
-   "estratto": "Casey Stoner non si arrende e ha detto senza mezzi termini che \"lotterà\" per vedere Phillip Island tornare nel calendario della MotoGP, nonostante i piani per spostare il Gran Premio d'Australia ad…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/casey-stoner-intende-lottare-per-riportare-phillip-island-nel-calendario-della-motogp/10863133/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-15T08:29:01+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -15,
-   "testate": 2
-  },
-  {
-   "titolo": "Ecco come una conversazione con Prost ha aiutato Toto Wolff a gestire un team di vertice in F1",
-   "estratto": "Mercedes si sta avviando a vincere altri due titoli iridati dopo quelli dell'epopea durata dal 2014 al 2021 grazie ad Andrea Kimi Antonelli - in testa alla classifica Piloti - e anche all'apporto di…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/ecco-come-una-conversazione-con-prost-ha-aiutato-toto-wolff-a-gestire-un-team-di-vertice-in-f1/10864761/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-15T07:59:57+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -22,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Perché Horner ha vietato il nome Mercedes mentre Red Bull costruiva il proprio motore",
-   "estratto": "L'ex CEO e team principal della Red Bull, Christian Horner, ha rivelato perché vietò ai dipendenti della divisione powertrains della squadra di usare il nome degli acerrimi rivali, ovvero la…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-perche-horner-ha-vietato-il-nome-mercedes-mentre-red-bull-costruiva-il-proprio-motore/10865172/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-14T18:00:22+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -30,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Test Pirelli: Mercedes completa 125 giri a Magny-Cours con le intermedie per il 2027",
-   "estratto": "Ha contribuito anche la pioggia reale a completare la giornata di test organizzata da Pirelli a Magny-Cours per lo sviluppo dei pneumatici da bagnato della prossima stagione. Frederik Vesti, terzo…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-test-pirelli-mercedes-completa-125-giri-a-magny-cours-con-le-intermedie-per-il-2027/10865236/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-14T17:06:07+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -20,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Trackhouse annuncia un nuovo azionista: la piattaforma d'investimento 1936",
-   "estratto": "La stagione 2026 è stata fin qui ricca di soddisfazione per il Trackhouse Racing, che ha già ottenuto due vittorie domenicali, una ciascuno per Raul Fernandez ed Ai Ogura, ed altrettante nelle…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-trackhouse-annuncia-un-nuovo-azionista-la-piattaforma-dinvestimento-1936/10865206/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-14T16:01:18+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -30,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Inside Ducati: il lato più umano di Marquez a Mandalika tra dubbi, battute e sollievo finale",
-   "estratto": "Ancora una volta, la Ducati ci ha regalato i migliori momenti del team dietro le quinte con un \"Inside Ducati\" in cui è ancora più evidente che Marc Marquez ha ottenuto nel GP d'Indonesia un…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-inside-ducati-il-lato-piu-umano-di-marquez-a-mandalika-tra-dubbi-battute-e-sollievo-finale/10865170/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-14T15:00:40+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -22,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | I piloti guardano con sospetto al viaggio in Medio Oriente per disputare il GP del Qatar",
-   "estratto": "Passano le settimane e MotoGP Sports Entertainment Group (MGPSEG), la società promotrice del campionato del mondo, mantiene nel calendario di questa stagione il Gran Premio del Qatar. Inizialmente…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-i-piloti-guardano-con-sospetto-al-viaggio-in-medio-oriente-per-disputare-il-gp-del-qatar/10865127/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-14T14:30:01+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -20,
-   "testate": 2
-  },
-  {
-   "titolo": "Marquez: “Martin grandissimo talento. Ma senza moto, nemmeno lui potrà fare nulla nel 2027”",
-   "estratto": "Marc Marquez ritiene Jorge Martin, sfidante più diretto per il titolo MotoGP, un talento enorme. Ma lo ha avvisato per il 2027",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/marquez-martin-grandissimo-talento-ma-senza-moto-nemmeno-lui-potra-fare-nulla-nel-2027",
-   "pubblicato": "2026-10-14T13:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -15,
-   "testate": 2
-  },
-  {
-   "titolo": "Benetton e la Formula 1: \"Schumacher dava il massimo, dopo Senna mi sono chiesto...\"",
-   "estratto": "L'imprenditore italiano ricorda l'avventura nel circus ospite del podcast britannico High Performance: ecco le sue parole",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/14-151887109/benetton_e_la_formula_1_schumacher_dava_il_massimo_dopo_senna_mi_sono_chiesto_/",
-   "pubblicato": "2026-10-14T11:43:09+00:00",
-   "tipo": "intervista",
-   "citazione": true,
-   "punteggio": -24,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Alex Marquez: \"Arrivano circuiti in cui Marc dovrà fare i suoi giochi di prestigio\"",
-   "estratto": "Marc Marquez ha tagliato il traguardo del GP d'Indonesia sesto, a 10\"7 dal vincitore, Marco Bezzecchi dell'Aprilia, il costruttore italiano che ha piazzato, per la prima volta nella sua storia…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-alex-marquez-arrivano-circuiti-in-cui-marc-dovra-fare-i-suoi-giochi-di-prestigio/10865096/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-14T10:31:30+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -7,
-   "testate": 2
-  },
-  {
-   "titolo": "Dall’Igna: “Abbiamo stretto i denti, c’è il genio di Marquez dietro il risultato di Mandalika”",
-   "estratto": "Il direttore generale di Ducati Corse rende merito al suo pilota dopo l'Indonesia",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/dalligna-ducati-stretto-denti-genio-marquez-indonesia-madalika",
-   "pubblicato": "2026-10-14T09:24:07+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -7,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Dall'Igna: \"Abbiamo superato un ostacolo importante senza subire danni, ora ci sentiamo più forti\"",
-   "estratto": "Mandalika doveva essere un ostacolo importante per la Ducati e lo è stata, ma probabilmente meno del previsto. Se è vero che nella gara lunga nessuna delle Desmosedici GP è riuscita ad infilarsi…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-dalligna-abbiamo-superato-un-ostacolo-importante-senza-subire-danni-ora-ci-sentiamo-piu-fort/10865101/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-14T09:06:48+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -7,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Fermin Aldeguer è stato operato alla mano destra, da capire i tempi di recupero",
-   "estratto": "Fermin Aldeguer è stato operato martedì a Barcellona. L'intervento fa seguito alla sua caduta nelle primissime fasi del Gran Premio d'Indonesia di MotoGP, domenica a Mandalika. Il pilota del Gresini…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-fermin-aldeguer-e-stato-operato-alla-mano-destra-da-capire-i-tempi-di-recupero/10865094/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-14T07:40:36+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -24,
-   "testate": 2
-  },
-  {
-   "titolo": "Bezzecchi, quanti rimpianti: senza Sprint sarebbe a -1 da Martin. Gli ‘zeri’ al sabato costano almeno 30 punti",
-   "estratto": "Il riminese è tornato al successo, ma le sue chance di titolo sono frenate dai troppi errori commessi nelle gare brevi",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/bezzecchi-quanti-rimpianti-senza-le-sprint-sarebbe-a-1-da-martin-gli-zeri-al-sabato-costano-carissimo",
-   "pubblicato": "2026-10-14T06:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -22,
-   "testate": 1
-  },
-  {
-   "titolo": "La MotoGP rischia di trovarsi in Qatar durante nuovi raid militari. La data è la peggiore possibile per via delle elezioni USA",
-   "estratto": "La MotoGP aveva indicato la metà di settembre come il momento del “rien ne va plus” legato al Gran Premio del Qatar, ossia il termine ultimo per decidere se correre o meno a Lusail nel weekend del…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/10/la-motogp-rischia-di-trovarsi-in-qatar-durante-nuovi-raid-militari-la-data-e-la-peggiore-possibile-per-via-delle-elezioni-usa/",
-   "pubblicato": "2026-10-14T04:32:44+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -30,
-   "testate": 1
-  },
-  {
-   "titolo": "La F1 tornerà in Africa! Annunciato un nuovo Gran Premio: lungo impegno in un Paese emergente",
-   "estratto": "La F1 tornerà a correre in Africa a oltre trent’anni di distanza dall’ultima apparizione nel Continente: dopo l’esperienza in Sudafrica, sul circuito di Kyalami nel 1993, la massima categoria…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/la-f1-tornera-in-africa-annunciato-un-nuovo-gran-premio-lungo-impegno-in-un-paese-emergente/",
-   "pubblicato": "2026-10-13T10:30:18+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -30,
-   "testate": 1
   }
  ]
 }

@@ -1,16 +1,64 @@
 {
- "generato_il": "2026-10-22T19:12:31+00:00",
+ "generato_il": "2026-10-22T21:07:33+00:00",
  "articoli": [
   {
-   "titolo": "LIVE MotoGP, GP Australia 2026 in DIRETTA: si accende la bagarre a Phillip Island",
+   "titolo": "Antonelli, il sogno mondiale a un passo: cosa deve succedere a Austin, \"manca un po' di strada...\"",
+   "estratto": "Ecco i tasselli per il trionfo dell'italiano già in Texas: \"Dovrebbe accadere qualcosa di catastrofico per gli altri\"",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/10/22-152078501/antonelli_il_sogno_mondiale_a_un_passo_cosa_deve_succedere_a_austin_manca_un_po_di_strada_/",
+   "pubblicato": "2026-10-22T20:37:37+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 12.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Rossi: “Antonelli ha la situazione sotto controllo, non ha bisogno dei miei consigli”",
+   "estratto": "Valentino Rossi ha commentato la grandiosa stagione di Andrea Kimi Antonelli in F1 alla vigilia del primo match point di Austin",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/rossi-antonelli-ha-la-situazione-sotto-controllo-non-ha-bisogno-dei-miei-consigli",
+   "pubblicato": "2026-10-22T20:21:57+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 22.8,
+   "testate": 2
+  },
+  {
+   "titolo": "Lewis Hamilton: “Antonelli merita il titolo, Red Bull è il riferimento. Singapore? Si impara da queste esperienze”",
+   "estratto": "Lewis Hamilton arriva al GP degli Stati Uniti, ad Austin, con la voglia di voltare pagina dopo quanto accaduto a Singapore. Il fine settimana texano si preannuncia particolarmente interessante anche…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/lewis-hamilton-antonelli-merita-il-titolo-red-bull-e-il-riferimento-singapore-si-impara-da-queste-esperienze/",
+   "pubblicato": "2026-10-22T19:54:58+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 12.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Kimi Antonelli: “E’ tutto incredibile, ma al titolo preferisco non pensarci”",
+   "estratto": "Kimi Antonelli si presenta al 18° appuntamento del Mondiale 2026 di F1 con la prima opportunità di conquistare matematicamente il titolo. Il pilota bolognese della Mercedes si appresta ad affrontare…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/kimi-antonelli-e-tutto-incredibile-ma-al-titolo-preferisco-non-pensarci/",
+   "pubblicato": "2026-10-22T19:42:33+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 12.6,
+   "testate": 1
+  },
+  {
+   "titolo": "LIVE MotoGP, GP Australia 2026 in DIRETTA: nella notte le prove libere a Phillip Island",
    "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE Buongiorno amiche e amici di OA Sport e benvenuti alla DIRETTA LIVE del venerdì del Gran Premio di Australia, diciottesimo e quintultimo appuntamento del…",
    "fonte": "OA Sport",
    "serie": "MotoGP",
    "url": "https://www.oasport.it/2026/10/live-motogp-gp-australia-2026-in-diretta-si-accende-la-bagarre-a-phillip-island/",
-   "pubblicato": "2026-10-22T17:30:32+00:00",
+   "pubblicato": "2026-10-22T19:19:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.6,
+   "punteggio": -2.5,
    "testate": 2
   },
   {
@@ -22,7 +70,7 @@
    "pubblicato": "2026-10-22T17:23:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.5,
+   "punteggio": 0.1,
    "testate": 1
   },
   {
@@ -34,7 +82,7 @@
    "pubblicato": "2026-10-22T17:01:27+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.5,
+   "punteggio": 4.0,
    "testate": 1
   },
   {
@@ -46,7 +94,7 @@
    "pubblicato": "2026-10-22T16:40:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.4,
+   "punteggio": 23.9,
    "testate": 3
   },
   {
@@ -58,7 +106,7 @@
    "pubblicato": "2026-10-22T16:32:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.3,
+   "punteggio": 3.9,
    "testate": 1
   },
   {
@@ -70,7 +118,7 @@
    "pubblicato": "2026-10-22T16:06:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.8,
+   "punteggio": -1.3,
    "testate": 1
   },
   {
@@ -82,7 +130,7 @@
    "pubblicato": "2026-10-22T15:50:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.2,
+   "punteggio": 8.7,
    "testate": 2
   },
   {
@@ -94,7 +142,7 @@
    "pubblicato": "2026-10-22T15:36:32+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.1,
+   "punteggio": 3.6,
    "testate": 1
   },
   {
@@ -106,7 +154,7 @@
    "pubblicato": "2026-10-22T15:05:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.0,
+   "punteggio": -1.5,
    "testate": 1
   },
   {
@@ -118,7 +166,7 @@
    "pubblicato": "2026-10-22T14:44:17+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.9,
+   "punteggio": 23.4,
    "testate": 3
   },
   {
@@ -130,7 +178,7 @@
    "pubblicato": "2026-10-22T14:20:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.8,
+   "punteggio": 13.3,
    "testate": 2
   },
   {
@@ -142,7 +190,7 @@
    "pubblicato": "2026-10-22T14:02:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -8.3,
+   "punteggio": -8.8,
    "testate": 1
   },
   {
@@ -154,7 +202,7 @@
    "pubblicato": "2026-10-22T13:40:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.6,
+   "punteggio": 6.1,
    "testate": 1
   },
   {
@@ -166,7 +214,7 @@
    "pubblicato": "2026-10-22T13:35:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.6,
+   "punteggio": 13.1,
    "testate": 2
   },
   {
@@ -178,7 +226,7 @@
    "pubblicato": "2026-10-22T13:00:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.6,
+   "punteggio": -2.0,
    "testate": 1
   },
   {
@@ -190,7 +238,7 @@
    "pubblicato": "2026-10-22T13:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.4,
+   "punteggio": 18.0,
    "testate": 3
   },
   {
@@ -202,7 +250,7 @@
    "pubblicato": "2026-10-22T12:15:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.3,
+   "punteggio": 5.8,
    "testate": 1
   },
   {
@@ -214,7 +262,7 @@
    "pubblicato": "2026-10-22T12:00:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.2,
+   "punteggio": 7.7,
    "testate": 2
   },
   {
@@ -226,7 +274,7 @@
    "pubblicato": "2026-10-22T12:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.8,
+   "punteggio": -2.3,
    "testate": 1
   },
   {
@@ -238,8 +286,8 @@
    "pubblicato": "2026-10-22T11:30:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.1,
-   "testate": 3
+   "punteggio": -4.4,
+   "testate": 2
   },
   {
    "titolo": "Barcellona senza la F1 nel 2027: possibile arrivo della IndyCar per colmare il vuoto",
@@ -250,7 +298,7 @@
    "pubblicato": "2026-10-22T11:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.1,
+   "punteggio": -2.5,
    "testate": 1
   },
   {
@@ -262,7 +310,7 @@
    "pubblicato": "2026-10-22T10:29:35+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 30.8,
+   "punteggio": 30.3,
    "testate": 3
   },
   {
@@ -274,7 +322,7 @@
    "pubblicato": "2026-10-22T10:02:53+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.7,
+   "punteggio": 22.2,
    "testate": 3
   },
   {
@@ -286,7 +334,7 @@
    "pubblicato": "2026-10-22T09:43:02+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.6,
+   "punteggio": 22.1,
    "testate": 3
   },
   {
@@ -298,7 +346,7 @@
    "pubblicato": "2026-10-22T09:21:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.5,
+   "punteggio": 2.1,
    "testate": 1
   },
   {
@@ -310,7 +358,7 @@
    "pubblicato": "2026-10-22T09:09:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 25.5,
+   "punteggio": 25.0,
    "testate": 3
   },
   {
@@ -322,7 +370,7 @@
    "pubblicato": "2026-10-22T09:00:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.4,
+   "punteggio": 17.0,
    "testate": 3
   },
   {
@@ -334,7 +382,7 @@
    "pubblicato": "2026-10-22T08:58:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 20.4,
+   "punteggio": 20.0,
    "testate": 2
   },
   {
@@ -346,7 +394,7 @@
    "pubblicato": "2026-10-22T08:49:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.4,
+   "punteggio": 14.9,
    "testate": 2
   },
   {
@@ -358,7 +406,7 @@
    "pubblicato": "2026-10-22T08:36:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.4,
+   "punteggio": 21.9,
    "testate": 3
   },
   {
@@ -370,7 +418,7 @@
    "pubblicato": "2026-10-22T08:32:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 20.3,
+   "punteggio": 19.9,
    "testate": 2
   },
   {
@@ -382,7 +430,7 @@
    "pubblicato": "2026-10-22T08:04:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.2,
+   "punteggio": 11.7,
    "testate": 2
   },
   {
@@ -394,7 +442,7 @@
    "pubblicato": "2026-10-22T08:00:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.2,
+   "punteggio": 4.7,
    "testate": 1
   },
   {
@@ -406,7 +454,7 @@
    "pubblicato": "2026-10-22T07:43:53+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.1,
+   "punteggio": 14.7,
    "testate": 2
   },
   {
@@ -418,7 +466,7 @@
    "pubblicato": "2026-10-22T07:34:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 20.1,
+   "punteggio": 19.6,
    "testate": 2
   },
   {
@@ -430,7 +478,7 @@
    "pubblicato": "2026-10-22T07:27:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.1,
+   "punteggio": 11.6,
    "testate": 2
   },
   {
@@ -442,8 +490,8 @@
    "pubblicato": "2026-10-22T06:35:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.8,
-   "testate": 3
+   "punteggio": -5.6,
+   "testate": 2
   },
   {
    "titolo": "F1, GP USA 2026: gli orari del fine settimana dalle prove libere alla gara. Guida Sky e TV8",
@@ -454,7 +502,7 @@
    "pubblicato": "2026-10-22T06:30:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -15.2,
+   "punteggio": -15.7,
    "testate": 1
   },
   {
@@ -466,8 +514,8 @@
    "pubblicato": "2026-10-22T06:08:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.7,
-   "testate": 2
+   "punteggio": 29.3,
+   "testate": 3
   },
   {
    "titolo": "GP Stati Uniti 2026: orari Sky/Now e TV8",
@@ -478,7 +526,7 @@
    "pubblicato": "2026-10-22T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -15.3,
+   "punteggio": -15.8,
    "testate": 1
   },
   {
@@ -490,7 +538,7 @@
    "pubblicato": "2026-10-22T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.3,
+   "punteggio": -5.8,
    "testate": 2
   },
   {
@@ -502,7 +550,7 @@
    "pubblicato": "2026-10-22T05:44:47+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 30.6,
+   "punteggio": 30.2,
    "testate": 3
   },
   {
@@ -514,7 +562,7 @@
    "pubblicato": "2026-10-22T05:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.4,
+   "punteggio": 1.0,
    "testate": 1
   },
   {
@@ -526,7 +574,7 @@
    "pubblicato": "2026-10-22T05:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.4,
+   "punteggio": 1.0,
    "testate": 1
   },
   {
@@ -538,7 +586,7 @@
    "pubblicato": "2026-10-22T05:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.4,
+   "punteggio": 19.0,
    "testate": 2
   },
   {
@@ -550,8 +598,8 @@
    "pubblicato": "2026-10-22T03:10:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.0,
-   "testate": 3
+   "punteggio": -6.5,
+   "testate": 2
   },
   {
    "titolo": "F1, GP USA 2026 su TV8: orari in chiaro fine settimana, qualifiche e gara",
@@ -562,7 +610,7 @@
    "pubblicato": "2026-10-22T03:05:12+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -16.0,
+   "punteggio": -16.5,
    "testate": 1
   },
   {
@@ -574,7 +622,7 @@
    "pubblicato": "2026-10-21T16:44:05+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.4,
+   "punteggio": 25.9,
    "testate": 3
   },
   {
@@ -586,7 +634,7 @@
    "pubblicato": "2026-10-21T16:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.2,
+   "punteggio": 0.7,
    "testate": 1
   },
   {
@@ -598,7 +646,7 @@
    "pubblicato": "2026-10-21T15:57:31+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.2,
+   "punteggio": 25.7,
    "testate": 3
   },
   {
@@ -610,7 +658,7 @@
    "pubblicato": "2026-10-21T15:32:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.1,
+   "punteggio": 0.6,
    "testate": 1
   },
   {
@@ -622,7 +670,7 @@
    "pubblicato": "2026-10-21T15:28:22+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.9,
+   "punteggio": -7.4,
    "testate": 1
   },
   {
@@ -634,7 +682,7 @@
    "pubblicato": "2026-10-21T15:06:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.0,
+   "punteggio": 25.5,
    "testate": 3
   },
   {
@@ -646,7 +694,7 @@
    "pubblicato": "2026-10-21T15:00:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.0,
+   "punteggio": -2.5,
    "testate": 1
   },
   {
@@ -658,7 +706,7 @@
    "pubblicato": "2026-10-21T15:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.9,
+   "punteggio": 25.5,
    "testate": 3
   },
   {
@@ -670,7 +718,7 @@
    "pubblicato": "2026-10-21T14:30:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.2,
+   "punteggio": -7.7,
    "testate": 1
   },
   {
@@ -682,7 +730,7 @@
    "pubblicato": "2026-10-21T14:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.2,
+   "punteggio": -2.7,
    "testate": 1
   },
   {
@@ -694,7 +742,7 @@
    "pubblicato": "2026-10-21T14:00:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.7,
+   "punteggio": 5.2,
    "testate": 1
   },
   {
@@ -706,7 +754,7 @@
    "pubblicato": "2026-10-21T14:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.3,
+   "punteggio": -7.8,
    "testate": 1
   },
   {
@@ -718,7 +766,7 @@
    "pubblicato": "2026-10-21T13:57:14+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.3,
+   "punteggio": -2.8,
    "testate": 1
   },
   {
@@ -730,7 +778,7 @@
    "pubblicato": "2026-10-21T13:31:31+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.4,
+   "punteggio": -7.9,
    "testate": 1
   },
   {
@@ -742,7 +790,7 @@
    "pubblicato": "2026-10-21T13:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.4,
+   "punteggio": -0.0,
    "testate": 1
   },
   {
@@ -754,7 +802,7 @@
    "pubblicato": "2026-10-21T12:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.2,
+   "punteggio": -0.3,
    "testate": 1
   },
   {
@@ -766,7 +814,7 @@
    "pubblicato": "2026-10-21T11:02:37+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.0,
+   "punteggio": 19.5,
    "testate": 3
   },
   {
@@ -778,7 +826,7 @@
    "pubblicato": "2026-10-21T11:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.1,
+   "punteggio": -8.5,
    "testate": 1
   },
   {
@@ -790,7 +838,7 @@
    "pubblicato": "2026-10-21T10:29:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.8,
+   "punteggio": 4.3,
    "testate": 1
   },
   {
@@ -802,7 +850,7 @@
    "pubblicato": "2026-10-21T10:00:07+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -3.3,
+   "punteggio": -3.8,
    "testate": 1
   },
   {
@@ -814,7 +862,7 @@
    "pubblicato": "2026-10-21T09:29:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.6,
+   "punteggio": 16.1,
    "testate": 3
   },
   {
@@ -826,7 +874,7 @@
    "pubblicato": "2026-10-21T09:26:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.4,
+   "punteggio": -0.9,
    "testate": 1
   },
   {
@@ -838,7 +886,7 @@
    "pubblicato": "2026-10-21T09:25:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.6,
+   "punteggio": 6.1,
    "testate": 2
   },
   {
@@ -850,7 +898,7 @@
    "pubblicato": "2026-10-21T09:08:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.5,
+   "punteggio": -9.0,
    "testate": 1
   },
   {
@@ -862,7 +910,7 @@
    "pubblicato": "2026-10-21T09:00:44+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.5,
+   "punteggio": 9.0,
    "testate": 2
   },
   {
@@ -874,7 +922,7 @@
    "pubblicato": "2026-10-21T09:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -3.6,
+   "punteggio": -4.0,
    "testate": 1
   },
   {
@@ -886,7 +934,7 @@
    "pubblicato": "2026-10-21T08:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -20.7,
+   "punteggio": -21.2,
    "testate": 1
   },
   {
@@ -898,7 +946,7 @@
    "pubblicato": "2026-10-21T08:25:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.3,
+   "punteggio": 5.8,
    "testate": 2
   },
   {
@@ -910,7 +958,7 @@
    "pubblicato": "2026-10-21T08:00:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.8,
+   "punteggio": -9.3,
    "testate": 1
   },
   {
@@ -922,7 +970,7 @@
    "pubblicato": "2026-10-21T07:57:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.2,
+   "punteggio": 5.7,
    "testate": 2
   },
   {
@@ -934,7 +982,7 @@
    "pubblicato": "2026-10-21T07:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.1,
+   "punteggio": 5.6,
    "testate": 2
   },
   {
@@ -946,7 +994,7 @@
    "pubblicato": "2026-10-21T07:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.1,
+   "punteggio": 13.6,
    "testate": 2
   },
   {
@@ -958,7 +1006,7 @@
    "pubblicato": "2026-10-21T07:15:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.0,
+   "punteggio": 0.5,
    "testate": 2
   },
   {
@@ -970,7 +1018,7 @@
    "pubblicato": "2026-10-21T07:12:31+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.0,
+   "punteggio": 3.5,
    "testate": 1
   },
   {
@@ -982,7 +1030,7 @@
    "pubblicato": "2026-10-21T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.1,
+   "punteggio": -9.5,
    "testate": 1
   },
   {
@@ -994,7 +1042,7 @@
    "pubblicato": "2026-10-21T06:10:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.7,
+   "punteggio": 15.3,
    "testate": 3
   },
   {
@@ -1006,7 +1054,7 @@
    "pubblicato": "2026-10-21T06:10:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.7,
+   "punteggio": 15.3,
    "testate": 3
   },
   {
@@ -1018,19 +1066,7 @@
    "pubblicato": "2026-10-21T06:00:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.3,
-   "testate": 1
-  },
-  {
-   "titolo": "Rischio sorpassi in calo con i motori 2027: le contromisure della FIA",
-   "estratto": "Le modifiche alle power unit per il prossimo anno miglioreranno la gestione dell’energia, ma potrebbero complicare i sorpassi. La FIA ha già pronto un piano",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/rischio-sorpassi-calo-motori-2027-contromisure-fia",
-   "pubblicato": "2026-10-21T06:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -9.3,
+   "punteggio": -9.8,
    "testate": 1
   },
   {
@@ -1042,7 +1078,7 @@
    "pubblicato": "2026-10-21T04:00:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.8,
+   "punteggio": -2.3,
    "testate": 1
   },
   {
@@ -1054,7 +1090,7 @@
    "pubblicato": "2026-10-20T21:38:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.6,
+   "punteggio": 1.1,
    "testate": 1
   },
   {
@@ -1066,7 +1102,7 @@
    "pubblicato": "2026-10-20T18:51:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.1,
+   "punteggio": -2.6,
    "testate": 2
   },
   {
@@ -1078,7 +1114,7 @@
    "pubblicato": "2026-10-20T16:27:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.7,
+   "punteggio": -5.2,
    "testate": 1
   },
   {
@@ -1090,7 +1126,7 @@
    "pubblicato": "2026-10-20T15:41:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.9,
+   "punteggio": -13.4,
    "testate": 1
   },
   {
@@ -1102,7 +1138,7 @@
    "pubblicato": "2026-10-20T15:16:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.0,
+   "punteggio": -5.5,
    "testate": 1
   },
   {
@@ -1114,7 +1150,7 @@
    "pubblicato": "2026-10-20T15:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.9,
+   "punteggio": 9.5,
    "testate": 2
   },
   {
@@ -1126,7 +1162,7 @@
    "pubblicato": "2026-10-20T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -8.8,
+   "punteggio": -9.3,
    "testate": 1
   },
   {
@@ -1138,7 +1174,7 @@
    "pubblicato": "2026-10-20T11:23:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -14.0,
+   "punteggio": -14.4,
    "testate": 1
   },
   {
@@ -1150,7 +1186,7 @@
    "pubblicato": "2026-10-20T09:51:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.3,
+   "punteggio": -4.8,
    "testate": 2
   },
   {
@@ -1162,7 +1198,7 @@
    "pubblicato": "2026-10-20T09:28:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.4,
+   "punteggio": -6.9,
    "testate": 1
   },
   {
@@ -1174,7 +1210,7 @@
    "pubblicato": "2026-10-20T09:26:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.6,
+   "punteggio": 18.1,
    "testate": 3
   },
   {
@@ -1186,7 +1222,7 @@
    "pubblicato": "2026-10-20T09:22:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.5,
+   "punteggio": -4.9,
    "testate": 2
   },
   {
@@ -1198,7 +1234,7 @@
    "pubblicato": "2026-10-20T09:20:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.5,
+   "punteggio": 5.1,
    "testate": 3
   },
   {
@@ -1210,7 +1246,7 @@
    "pubblicato": "2026-10-20T09:05:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.5,
+   "punteggio": -0.0,
    "testate": 2
   },
   {
@@ -1222,7 +1258,7 @@
    "pubblicato": "2026-10-20T08:00:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.8,
+   "punteggio": -7.3,
    "testate": 1
   },
   {
@@ -1234,7 +1270,7 @@
    "pubblicato": "2026-10-20T07:54:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -14.8,
+   "punteggio": -15.3,
    "testate": 1
   },
   {
@@ -1246,7 +1282,7 @@
    "pubblicato": "2026-10-20T07:47:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.1,
+   "punteggio": 4.7,
    "testate": 3
   },
   {
@@ -1258,7 +1294,7 @@
    "pubblicato": "2026-10-20T07:16:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.0,
+   "punteggio": 4.5,
    "testate": 3
   },
   {
@@ -1270,7 +1306,7 @@
    "pubblicato": "2026-10-20T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.7,
+   "punteggio": 7.2,
    "testate": 2
   },
   {
@@ -1282,7 +1318,7 @@
    "pubblicato": "2026-10-19T16:30:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -9.7,
+   "punteggio": -10.2,
    "testate": 1
   },
   {
@@ -1294,7 +1330,7 @@
    "pubblicato": "2026-10-19T16:20:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.7,
+   "punteggio": -2.2,
    "testate": 1
   },
   {
@@ -1306,7 +1342,7 @@
    "pubblicato": "2026-10-19T15:03:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.0,
+   "punteggio": -5.5,
    "testate": 2
   },
   {
@@ -1318,7 +1354,7 @@
    "pubblicato": "2026-10-19T15:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -15.1,
+   "punteggio": -15.5,
    "testate": 1
   },
   {
@@ -1330,7 +1366,7 @@
    "pubblicato": "2026-10-19T13:58:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.3,
+   "punteggio": -7.8,
    "testate": 1
   },
   {
@@ -1342,7 +1378,7 @@
    "pubblicato": "2026-10-19T13:47:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.6,
+   "punteggio": 7.2,
    "testate": 2
   },
   {
@@ -1354,7 +1390,7 @@
    "pubblicato": "2026-10-19T13:31:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -15.4,
+   "punteggio": -15.9,
    "testate": 1
   },
   {
@@ -1366,7 +1402,7 @@
    "pubblicato": "2026-10-19T11:01:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -16.0,
+   "punteggio": -16.5,
    "testate": 1
   },
   {
@@ -1378,7 +1414,7 @@
    "pubblicato": "2026-10-19T09:27:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.6,
+   "punteggio": 11.1,
    "testate": 3
   },
   {
@@ -1390,7 +1426,7 @@
    "pubblicato": "2026-10-19T08:44:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.6,
+   "punteggio": -9.1,
    "testate": 1
   },
   {
@@ -1402,43 +1438,7 @@
    "pubblicato": "2026-10-19T08:30:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.3,
-   "testate": 2
-  },
-  {
-   "titolo": "F1, il duello Antonelli – Verstappen tema caldo del finale di stagione? Kimi meglio di Max anche dopo l’evoluzione Red Bull",
-   "estratto": "Uno dei temi forti del finale di stagione del Mondiale di F1 2026 può essere rappresentato dallo scontro diretto fra Kimi Antonelli e Max Verstappen. Si tratta di una sfida puramente teorica, ma che…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/f1-il-duello-antonelli-verstappen-tema-caldo-del-finale-di-stagione-kimi-meglio-di-max-anche-dopo-levoluzione-red-bull/",
-   "pubblicato": "2026-10-19T08:20:01+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -8.7,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Horner svela il problema del secondo pilota Red Bull: “Contro Max era una missione impossibile”",
-   "estratto": "Per anni è stata una delle questioni più discusse nel paddock di Formula 1: perché piloti considerati di grande talento, una volta approdati in Red Bull, sembravano improvvisamente perdere…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-horner-svela-il-problema-del-secondo-pilota-red-bull-contro-max-era-una-missione-impossibile/10866183/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-19T08:05:11+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -11.8,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Ecco gli orari TV di Sky, Now e TV8 del Gran Premio d'Australia",
-   "estratto": "Pensare che questa sarà l'ultima volta che la MotoGP farà tappa a Phillip Island fa veramente strano, perché parliamo di una pista che ha scritto pagine indelebili nella storia dello sport che…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-ecco-gli-orari-tv-di-sky-now-e-tv8-del-gran-premio-daustralia-10866022/10866022/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-19T07:44:26+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -18.9,
+   "punteggio": 0.8,
    "testate": 2
   }
  ]

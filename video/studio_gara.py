@@ -261,7 +261,8 @@ def studio(chiave):
             mq.append(("si", f"Qui ha preso la pole {poles_p} {'volta' if poles_p == 1 else 'volte'} in {len(pos_q)} anni", f"qui ha preso la pole {volte(poles_p)} negli ultimi {UN[len(pos_q)]} anni", 8))
         if poles:
             mq.append(("si", f"{poles} {'pole' if poles == 1 else 'pole'} nelle ultime {n} qualifiche", f"{'una pole' if poles == 1 else UN[poles] + ' pole'} nelle ultime {UN[n]} qualifiche", 6))
-        risultati.append({"nome": p["nome"], "costruttore": p["costruttore"], "gara": sg, "pole": sq, "motivi_gara": sorted(mg, key=lambda m: -m[3]), "motivi_pole": sorted(mq, key=lambda m: -m[3])})
+        risultati.append({"nome": p["nome"], "costruttore": p["costruttore"], "gara": sg, "pole": sq, "motivi_gara": sorted(mg, key=lambda m: -m[3]), "motivi_pole": sorted(mq, key=lambda m: -m[3]),
+                          "dati": {"poles": poles, "n": n, "pole_scorso": bool(pole_scorso), "forma_q": forma_q, "forma_g": forma_g}})
     scorso = {}
     if stor and stor[0]["anno"] == anno - 1:
         scorso = {"anno": anno - 1, "vincitore": stor[0]["gara"][0]["nome"] if stor[0]["gara"] else None, "pole": stor[0]["quali"][0]["nome"] if stor[0]["quali"] else None,

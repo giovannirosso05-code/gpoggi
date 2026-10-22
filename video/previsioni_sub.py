@@ -96,8 +96,22 @@ def costruisci(chiave):
     pole_gia_detta = sc.get("pole") == p0["nome"]   # se è lui, il motivo c'è già
     if sc.get("pole") and not pole_gia_detta:
         ch_p.append(("info", f"Pole {sc['anno']}: {sc['pole']}"))
-    vp = voci(p0, "pole")
-    voce_p = f"E la pole? Per noi *{cogn(p0['nome'])}*" + (": " + ", ".join(vp) if vp else "") + "." + (f" L'anno scorso è stata di {cogn(sc['pole'])}." if sc.get("pole") and not pole_gia_detta else "")
+    # voce della pole: «ha preso la pole in due delle ultime cinque qualifiche, l'ha fatta anche qui l'anno scorso e lo vediamo in grande forma»
+    d0 = p0["dati"]
+    ordine_forma = sorted((r["dati"]["forma_q"] for r in st["pole"]), reverse=True)
+    in_forma = d0["forma_q"] > 0 and d0["forma_q"] >= ordine_forma[min(2, len(ordine_forma) - 1)]   # tra i tre migliori in qualifica di questa stagione
+    parti = []
+    if d0["poles"]:
+        parti.append(f"ha preso la pole in {'una' if d0['poles'] == 1 else SG.UN[d0['poles']]} delle ultime {SG.UN[d0['n']]} qualifiche")
+    if d0["pole_scorso"]:
+        parti.append("l'ha fatta anche qui l'anno scorso" if parti else "ha preso la pole qui l'anno scorso")
+    if parti:
+        voce_p = f"E la pole? Per noi *{cogn(p0['nome'])}*: " + ", ".join(parti) + (" e lo vediamo in grande forma" if in_forma else "") + "."
+    else:
+        vp = voci(p0, "pole")
+        voce_p = f"E la pole? Per noi *{cogn(p0['nome'])}*" + (": " + ", ".join(vp) if vp else "") + "."
+    if sc.get("pole") and not pole_gia_detta:
+        voce_p += f" L'anno scorso è stata di {cogn(sc['pole'])}."
     scene.append({"foto": p0["nome"], "nome": f"Pole: {p0['nome']}", "chips": ch_p[:4], "sub_top": 1440, "testo": voce_p, **(alt(p0["nome"]) or espn(p0["nome"]))})
     def avatar(n):
         """Volto tondo del podio: ritratto ESPN ritagliato sul gradiente del team (F1), altrimenti la foto libera."""

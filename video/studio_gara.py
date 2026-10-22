@@ -219,9 +219,9 @@ def studio(chiave):
         if n3 and cost_g is not None:
             tot = 3 * n3
             if podi >= max(3, tot // 3):
-                mg.append(("si", f"La sua {nomi_veicolo} qui: {podi} podi su {tot}", f"la sua {nomi_veicolo} qui è salita sul podio {UN[podi] if podi < len(UN) else podi} volte su {UN[tot] if tot < len(UN) else tot} negli ultimi {UN[n3]} anni", 8))
+                mg.append(("si", f"Sua {nomi_veicolo}: {podi} dei {tot} podi qui in {n3} anni", f"negli ultimi {UN[n3]} anni {UN[podi] if podi < len(UN) else podi} dei {UN[tot] if tot < len(UN) else tot} posti sul podio qui sono stati della sua {nomi_veicolo}", 8))
             elif podi <= 1:
-                mg.append(("no", f"La sua {nomi_veicolo} qui: {podi} podi su {tot}", f"la sua {nomi_veicolo} qui è salita sul podio {'una sola volta' if podi == 1 else 'mai'} negli ultimi {UN[n3]} anni", 5))
+                mg.append(("no", f"Sua {nomi_veicolo}: {podi} dei {tot} podi qui in {n3} anni", f"negli ultimi {UN[n3]} anni solo {UN[podi]} dei {UN[tot] if tot < len(UN) else tot} posti sul podio qui {'è stato' if podi == 1 else 'è stato'} della sua {nomi_veicolo}" if podi == 1 else f"negli ultimi {UN[n3]} anni nessuno dei {UN[tot] if tot < len(UN) else tot} posti sul podio qui è stato della sua {nomi_veicolo}", 5))
         if vitt:
             mg.append(("si", f"{vitt} {'vittoria' if vitt == 1 else 'vittorie'} nelle ultime {n} gare", f"{'una vittoria' if vitt == 1 else UN[vitt] + ' vittorie'} nelle ultime {UN[n]}", 6))
         elif pod:
@@ -233,7 +233,7 @@ def studio(chiave):
         elif 1 in pos_q and pos_q[1] <= 3:
             mq.append(("si", f"Qualifica qui {anno - 1}: {pos_q[1]}°", f"qui l'anno scorso è partito {f_ord(pos_q[1])}", 7))
         if n3 and cost_q is not None and file1 >= max(3, 3 * n3 // 3):
-            mq.append(("si", f"La sua {nomi_veicolo} in prima fila qui: {file1} su {3 * n3}", f"la sua {nomi_veicolo} qui ha occupato la prima fila {UN[file1] if file1 < len(UN) else file1} volte su {UN[3 * n3] if 3 * n3 < len(UN) else 3 * n3} negli ultimi {UN[n3]} anni", 8))
+            mq.append(("si", f"Sua {nomi_veicolo}: {file1} dei {3 * n3} primi 3 in griglia in {n3} anni", f"negli ultimi {UN[n3]} anni {UN[file1] if file1 < len(UN) else file1} dei {UN[3 * n3] if 3 * n3 < len(UN) else 3 * n3} primi posti in griglia qui sono stati della sua {nomi_veicolo}", 8))
         if poles:
             mq.append(("si", f"{poles} {'pole' if poles == 1 else 'pole'} nelle ultime {n} qualifiche", f"{'una pole' if poles == 1 else UN[poles] + ' pole'} nelle ultime {UN[n]} qualifiche", 6))
         risultati.append({"nome": p["nome"], "costruttore": p["costruttore"], "gara": sg, "pole": sq, "motivi_gara": sorted(mg, key=lambda m: -m[3]), "motivi_pole": sorted(mq, key=lambda m: -m[3])})

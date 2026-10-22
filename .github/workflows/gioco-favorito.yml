@@ -1,0 +1,47 @@
+name: Gioco Chi è sul favorito
+
+# Video "Chi è?" sul favorito per il podio del prossimo Gran Premio (si lancia a mano). Copia del video in video/pronti per riaverla in chat.
+on:
+  workflow_dispatch:
+    inputs:
+      serie:
+        description: 'auto (la prima in calendario), f1 oppure motogp'
+        default: 'auto'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gioco-favorito
+  cancel-in-progress: false
+
+jobs:
+  video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt edge-tts piper-tts kokoro-onnx soundfile azure-cognitiveservices-speech playwright
+      - run: python -m playwright install --with-deps chromium
+      - name: Installa ffmpeg
+        run: |
+          for i in 1 2 3; do timeout 150 sudo apt-get update -qq && timeout 200 sudo apt-get install -y -qq ffmpeg && break; sleep 5; done
+      - name: Prepara e invia il video
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID || '559225883' }}
+          SERIE: ${{ github.event.inputs.serie }}
+        run: |
+          mkdir -p video/pronti
+          python video/gioco_favorito.py "${SERIE:-auto}" --invia --uscita "video/pronti/chi-e-favorito-$(date +%Y%m%d-%H%M)-${SERIE:-auto}.mp4"
+      - name: Tiene una copia del video nel repository (per riaverlo in chat)
+        run: |
+          git config user.name "gpoggi-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add video/pronti
+          git diff --cached --quiet || (git commit -m "gioco favorito: copia del video" && git pull --rebase --autostash -X theirs origin main && git push)

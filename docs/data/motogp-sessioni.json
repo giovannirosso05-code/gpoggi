@@ -1,5 +1,5 @@
 {
- "generato_il": "2026-10-22T02:53:39+00:00",
+ "generato_il": "2026-10-22T11:02:16+00:00",
  "weekend": [
   {
    "nome": "GP Indonesia",
@@ -1385,6 +1385,11 @@
      ]
     }
    ]
+  },
+  {
+   "nome": "GP Australia",
+   "stato": "CURRENT",
+   "sessioni": []
   }
  ]
 }

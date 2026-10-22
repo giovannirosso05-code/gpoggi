@@ -1,11 +1,12 @@
 """Studio di GP Oggi su chi può vincere la gara e chi può prendere la pole: non solo le ultime cinque gare.
 
 Per ogni pilota si mettono insieme, con pesi dichiarati:
-  - la forma (punti virtuali delle ultime 5 gare, oppure delle ultime 5 qualifiche)
-  - come è andato lui sullo stesso circuito negli ultimi 3 anni (più peso all'anno scorso)
-  - quanto la sua moto/macchina è adatta al circuito: i podi (o le prime file) del suo costruttore lì negli ultimi 3 anni
-  - la classifica del campionato
-  - chi ha vinto (o preso la pole) lì l'anno scorso
+  - la forma del pilota (ultime 5 gare, oppure ultime 5 qualifiche): 30%
+  - la classifica del campionato: 15% (per la pole: la forma in gara)
+  - la forza di oggi della sua squadra (punti delle ultime 5 gare/qualifiche): 15%
+  - come è andato lui sullo stesso circuito negli ultimi 3 anni (più peso all'anno scorso): 15%
+  - quanto la sua moto/macchina va bene su quel circuito: podi (o primi 3 in griglia) del suo costruttore lì in 3 anni: 15%
+  - chi ha vinto (o preso la pole) lì l'anno scorso: 10%
 Dati: Jolpica (F1) e servizio pubblico MotoGP; nessun modello di linguaggio. I numeri a schermo e a voce sono quelli veri dello studio.
 
 Prova:  python3 studio_gara.py f1|motogp     (stampa le classifiche con i motivi)
@@ -188,6 +189,13 @@ def studio(chiave):
     n3 = len(stor)
     anni_fa = lambda y: anno - y
     maxp = max((p["punti"] for p in piloti), default=1) or 1
+    # forza attuale delle squadre: punti virtuali delle ultime gare/qualifiche dei loro piloti (una squadra dominante oggi conta più di quello che faceva qui anni fa)
+    tf_g, tf_q = {}, {}
+    for p in piloti:
+        tf_g[p["cost"]] = tf_g.get(p["cost"], 0) + sum(pp(x) for x in fg.get(p["nome"], [])) / (n or 1)
+        tf_q[p["cost"]] = tf_q.get(p["cost"], 0) + sum(pp(x) for x in fq.get(p["nome"], [])) / (n or 1)
+    max_tg, max_tq = max(tf_g.values(), default=1) or 1, max(tf_q.values(), default=1) or 1
+    prima_sq = max(tf_g, key=tf_g.get) if tf_g else None
     risultati = []
     for p in piloti:
         pid = chiave_id(p)
@@ -211,8 +219,10 @@ def studio(chiave):
         vinto = stor and any(r["pos"] == 1 and id_riga(r) == pid for r in stor[0]["gara"]) if stor and stor[0]["anno"] == anno - 1 else False
         pole_scorso = stor and any(r["pos"] == 1 and id_riga(r) == pid for r in stor[0]["quali"]) if stor and stor[0]["anno"] == anno - 1 else False
         bonus_g = 1.0 if vinto else 0.0; bonus_q = 1.0 if pole_scorso else 0.0
-        sg = 0.30 * forma_g + 0.25 * (NEUTRO if circ_g is None else circ_g) + 0.25 * (NEUTRO if cost_g is None else cost_g) + 0.10 * camp + 0.10 * bonus_g
-        sq = 0.30 * forma_q + 0.25 * (NEUTRO if circ_q is None else circ_q) + 0.25 * (NEUTRO if cost_q is None else cost_q) + 0.10 * forma_g + 0.10 * bonus_q
+        sg = (0.30 * forma_g + 0.15 * camp + 0.15 * tf_g[p["cost"]] / max_tg + 0.15 * (NEUTRO if circ_g is None else circ_g)
+              + 0.15 * (NEUTRO if cost_g is None else cost_g) + 0.10 * bonus_g)
+        sq = (0.30 * forma_q + 0.15 * (NEUTRO if circ_q is None else circ_q) + 0.15 * (NEUTRO if cost_q is None else cost_q)
+              + 0.15 * tf_q[p["cost"]] / max_tq + 0.15 * forma_g + 0.10 * bonus_q)
         # --- motivi con i numeri veri: (esito, testo a schermo, testo a voce, forza)
         mg, mq = [], []
         if vinto:
@@ -234,6 +244,8 @@ def studio(chiave):
             vitt_c = sum(1 for s_ in stor if s_["gara"] and s_["gara"][0]["cost"] == p["cost"])
             if vitt_c >= 2:
                 mg.append(("si", f"Qui ha vinto {art} {UN[vitt_c]} volte su {UN[n3]}", f"qui negli ultimi {UN[n3]} anni ha vinto {art} {UN[vitt_c]} volte su {UN[n3]}", 6))
+        if prima_sq and p["cost"] == prima_sq:
+            mg.append(("si", f"{art[0].upper() + art[1:]} è la squadra più forte delle ultime {n} gare", f"{art} è la squadra più forte delle ultime {UN[n]} gare", 7))
         if vitt:
             mg.append(("si", f"{vitt} {'vittoria' if vitt == 1 else 'vittorie'} nelle ultime {n} gare", f"{'una vittoria' if vitt == 1 else UN[vitt] + ' vittorie'} nelle ultime {UN[n]}", 6))
         elif pod:

@@ -207,6 +207,10 @@ def chiusura_voti(p, chiave):
     return f"{GIORNI[d.weekday()]} {ora}", f"{GIORNI[d.weekday()]} {d:%H:%M}".upper()
 
 
+# dati della previsione in forma strutturata (li legge previsioni_sub.py per il video in stile moderno)
+DATI_PREV = {}
+
+
 def scene_previsione(chiave):
     pron = json.load(open(DATA / "pronostici.json")); p = pron.get(chiave)
     if not p or not p.get("favoriti"): return []
@@ -247,6 +251,8 @@ def scene_previsione(chiave):
     # --- scena 2: gli altri due
     # notizie del weekend che non stanno nei dati del sito (penalità in griglia ecc.): video/note_weekend.json
     nf = QUI / "note_weekend.json"; note = (json.load(open(nf)).get(chiave) or {}) if nf.exists() else {}
+    if note.get("gp") != p["gp"]:   # le note a mano valgono solo per il Gran Premio scritto in "gp": quelle di un weekend passato non si usano mai
+        note = {}
     penal = note.get("penalizzati") or {}
     ordine, tip = studio_pole(chiave); conta_pole = dict(ordine)
 
@@ -279,6 +285,13 @@ def scene_previsione(chiave):
     foto1 = foto_per_nome(rivali[0][1]["nome"], chiave)
     c2 = (f"<span class=pill style='top:790px;background:{colore}'>{sigla} · occhio a loro</span>"
           f"<div style='position:absolute;left:70px;right:70px;top:880px'>{''.join(blocco(f, n) for n, f in rivali)}{avvisi}</div>")
+    voci_r = []
+    for k_, (_, f) in enumerate(rivali):
+        mv = motivi_rivale(f)
+        if mv:
+            voci_r.append((f["nome"], [sc for _, sc in mv], f"Occhio {a_(cognome(f['nome']))}: {', '.join(v for v, _ in mv)}." if not voci_r else f"E {a_(cognome(f['nome']))}: {', '.join(v for v, _ in mv)}."))
+    DATI_PREV[chiave] = {"gp": p["gp"], "luogo": luogo, "fav": (f0["nome"], [("si", x[1]) for x in si[:2]] + ([("no", no_schermo)] if no_schermo else []), voce1),
+                         "rivali": voci_r, "penal": penal}
     scene = [(cornice(c1, colore, foto0), voce1), (cornice(c2, colore, foto1), voce2)]
     # --- scena 3: la pole, dallo studio di GP Oggi
     pole_nota = note.get("pole") or {}
@@ -302,6 +315,7 @@ def scene_previsione(chiave):
               f"<div style='position:absolute;left:70px;right:70px;top:1050px'>{righe3}</div>"
               f"<div style='position:absolute;left:70px;right:70px;top:1385px;font:500 26px Inter;color:#8a8a96'>Studio di GP Oggi sulle ultime 5 qualifiche</div>")
         scene.append((cornice(c3, colore, foto_per_nome(fav_pole, chiave)), voce3))
+        DATI_PREV[chiave]["pole"] = (fav_pole, occhio, ordine, voce3)
     # --- scena 4: tu che dici? vai a votare
     quando_v, quando_s = chiusura_voti(p, chiave)
     voce4 = "E tu che dici, chi sale sul podio? Scrivilo nei commenti."
@@ -319,6 +333,8 @@ def social_serie(chiave):
     luogo = re.sub(r"^(Gran Premio (di|del|dello|della|d')\s*|GP )", "", p["gp"]).strip(); f0 = p["favoriti"][0]["nome"]
     _, tip = studio_pole(chiave); icona, tag = ("🏁", "#f1 #formula1") if chiave == "f1" else ("🏍️", "#motogp")
     nf = QUI / "note_weekend.json"; pn = ((json.load(open(nf)).get(chiave) or {}).get("pole") or {}) if nf.exists() else {}
+    if pn and (json.load(open(nf)).get(chiave) or {}).get("gp") != p["gp"]:
+        pn = {}
     if pn: pole = f"🎯 Pole? Per noi sempre {pn['favorito']}, ma occhio a {pn['occhio']}\n"
     else: pole = f"🎯 Pole? Dal nostro studio sulle ultime 5 qualifiche occhio a {tip}\n" if tip else ""
     return (f"{icona} {luogo}: chi sale sul PODIO? {icona}\n\n"

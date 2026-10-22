@@ -299,6 +299,9 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
 .gri .n{{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}} .gri .x{{font:600 24px Inter;color:#ff8a80;text-transform:none}}
 .gri .nota{{text-align:center;font:500 26px Inter;color:rgba(255,255,255,.75);margin-top:10px}}
 .pista .bg{{inset:-60px;filter:blur(36px) brightness(.45)}}
+.chips2{{position:absolute;left:50px;right:50px;top:1000px;display:flex;flex-direction:column;gap:10px}}
+.c2{{display:flex;gap:18px;align-items:center;background:rgba(11,11,14,.78);border-radius:16px;padding:14px 20px;font:600 38px/1.15 Inter}}
+.c2 b{{font:700 34px Oswald;letter-spacing:.06em;min-width:76px;color:#35d07f}} .c2.no b{{color:#ff5a52}} .c2.info b{{color:{col};filter:brightness(1.5)}}
 .trac-t{{position:absolute;left:40px;top:300px;background:{col};font:700 44px/1.1 Oswald;text-transform:uppercase;padding:10px 18px;letter-spacing:.04em}}
 .trac-m{{position:absolute;left:40px;right:40px;top:400px;height:720px;background:#fff;border-radius:18px;display:flex;align-items:center;justify-content:center;box-shadow:0 20px 60px rgba(0,0,0,.5)}} .trac-m img{{max-width:96%;max-height:94%}}
 .trac-b{{position:absolute;left:40px;right:40px;top:1150px;display:flex;gap:16px}} .trac-b div{{flex:1;height:170px;background:rgba(255,255,255,.08);border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}}
@@ -335,6 +338,8 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
         corpo += f'<div class=cla><h3>{esc(c["titolo"])}</h3>' + "".join(
             f'<div class=r>{"<span class=p>" + str(r["pos"]) + "</span>" if r["pos"] != "" else ""}<span class=b style="background:#{r["colore"]}"></span><span class=n>{esc(r["nome"])}</span>'
             f'<span class=pt>{r.get("voto", r.get("punti"))}</span><span class="d{"" if r.get("piu", 1) else " z"}">{esc(r["nota"]) if r.get("nota") else "+" + str(r["piu"])}</span></div>' for r in c["righe"]) + '</div>'
+    if scena.get("chips"):
+        corpo += '<div class=chips2>' + "".join(f'<div class="c2 {k}"><b>{ {"si": "SÌ", "no": "NO", "info": "•"}.get(k, "•") }</b><span>{esc(t)}</span></div>' for k, t in scena["chips"]) + '</div>'
     if scena.get("tracciato"):
         tr = scena["tracciato"]
         corpo += (f'<div class=trac-t>{esc(tr.get("titolo", "Il tracciato"))}</div><div class=trac-m><img src="data:{tr["mime"]};base64,{tr["b64"]}"></div>'

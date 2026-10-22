@@ -15,6 +15,7 @@ import notizia_sub as NS  # noqa: E402
 import notizie_giorno as NG  # noqa: E402
 import anteprima_gara as AG  # noqa: E402
 import studio_gara as SG  # noqa: E402
+import ritratti_espn as R  # noqa: E402
 
 
 def serie_prossima():
@@ -50,11 +51,23 @@ def costruisci(chiave):
         usate[n] = usate.get(n, -1) + 1
         return {"alt": chiavi[usate[n]]} if usate[n] < len(chiavi) else {}   # finite le foto in pista, si torna al volto
 
+    colori = {p["nome"]: tuple(int(p["colore"][i:i + 2], 16) for i in (0, 2, 4)) for p in json.load(open(A.DATA / "roster.json")) if p.get("colore")}
+
+    def espn(n):
+        """Ritratto ESPN del pilota (solo F1) sul gradiente del suo team, pronto 1080x1920; {} se non c'è. Non va nel repository: si scarica al momento in video/_cache/."""
+        if chiave != "f1":
+            return {}
+        try:
+            return {"foto_file": str(R.ritratto(n, colori.get(n, (232, 53, 47)))), "credito": "Foto: ESPN"}
+        except (SystemExit, Exception) as e:
+            print(f"  ritratto ESPN non disponibile per {n}: {e}")
+            return {}
+
     chips = lambda r, k, n=3: [(m[0], m[1]) for m in r["motivi_" + k]][:n]
     voci = lambda r, k, n=2: [m[2] for m in r["motivi_" + k] if m[0] == "si"][:n]
     f0 = gara[0]
     titolo = f"{luogo}: chi sale sul podio?"
-    scene = [{"foto": f0["nome"], "hook": True, "hook_titolo": titolo, "testo": titolo}]
+    scene = [{"foto": f0["nome"], "hook": True, "hook_titolo": titolo, "testo": titolo, **espn(f0["nome"])}]
     # prima statica: il tracciato, con chi ha vinto l'anno scorso
     gp = AG.paese_e_orari(chiave, pron)
     _, t_gara = AG.quando(pron["gara"])
@@ -65,18 +78,18 @@ def costruisci(chiave):
         if sc.get("vincitore"):
             tr["box"][1] = [cogn(sc["vincitore"]), f"ha vinto qui nel {sc['anno']}"]
             voce_tr += f" L'anno scorso qui ha vinto *{sc['vincitore']}*."
-        scene.append({"foto": f0["nome"], "pista": True, "tracciato": tr, "sub_top": 1440, "testo": voce_tr})
+        scene.append({"foto": f0["nome"], "pista": True, "tracciato": tr, **espn(f0["nome"]), "sub_top": 1440, "testo": voce_tr})
     # favorito
     no = next((m for m in f0["motivi_gara"] if m[0] == "no"), None)
     ch = [m for m in chips(f0, "gara") if m[0] == "si"][:3] + ([("no", no[1])] if no else [])
     voce = f"Per noi il favorito è *{cogn(f0['nome'])}*: " + ", ".join(voci(f0, "gara")) + "." + (f" Il dubbio: {no[2]}." if no else "")
-    scene.append({"foto": f0["nome"], "nome": f0["nome"], "chips": ch, "sub_top": 1440, "testo": voce})
+    scene.append({"foto": f0["nome"], "nome": f0["nome"], "chips": ch, "sub_top": 1440, "testo": voce, **espn(f0["nome"])})
     # i due da tenere d'occhio
     for k, r in enumerate(gara[1:3]):
         v = voci(r, "gara")
         if not r["motivi_gara"] or not v:
             continue
-        scene.append({"foto": r["nome"], "nome": r["nome"], "chips": chips(r, "gara"), "sub_top": 1440, "testo": (f"Occhio {a_(cogn(r['nome']))}: " if k == 0 else f"E {a_(cogn(r['nome']))}: ") + ", ".join(v) + ".", **alt(r["nome"])})
+        scene.append({"foto": r["nome"], "nome": r["nome"], "chips": chips(r, "gara"), "sub_top": 1440, "testo": (f"Occhio {a_(cogn(r['nome']))}: " if k == 0 else f"E {a_(cogn(r['nome']))}: ") + ", ".join(v) + ".", **(alt(r["nome"]) or espn(r["nome"]))})
     # la pole, con chi l'ha presa l'anno scorso
     p0 = pole[0]
     ch_p = [(m[0], m[1]) for m in p0["motivi_pole"]][:3]
@@ -85,10 +98,23 @@ def costruisci(chiave):
         ch_p.append(("info", f"Pole {sc['anno']}: {sc['pole']}"))
     vp = voci(p0, "pole")
     voce_p = f"E la pole? Per noi *{cogn(p0['nome'])}*" + (": " + ", ".join(vp) if vp else "") + "." + (f" L'anno scorso è stata di {cogn(sc['pole'])}." if sc.get("pole") and not pole_gia_detta else "")
-    scene.append({"foto": p0["nome"], "nome": f"Pole: {p0['nome']}", "chips": ch_p[:4], "sub_top": 1440, "testo": voce_p, **alt(p0["nome"])})
+    scene.append({"foto": p0["nome"], "nome": f"Pole: {p0['nome']}", "chips": ch_p[:4], "sub_top": 1440, "testo": voce_p, **(alt(p0["nome"]) or espn(p0["nome"]))})
+    def avatar(n):
+        """Volto tondo del podio: ritratto ESPN ritagliato sul gradiente del team (F1), altrimenti la foto libera."""
+        e = espn(n)
+        if not e:
+            return {}
+        from PIL import Image
+        im = Image.open(e["foto_file"]).convert("RGB")
+        w, h = im.size
+        quadro = im.crop((int(w * 0.12), 90, int(w * 0.88), 90 + int(w * 0.76))).resize((600, 600))
+        f = Path(e["foto_file"]).with_name(Path(e["foto_file"]).stem + "_tondo.jpg")
+        quadro.save(f, "JPEG", quality=90)
+        return {"file": str(f), "credito": "ESPN"}
+
     # seconda statica: il podio dei favoriti, disegnato (anche come immagine da pubblicare)
     podio = {"titolo": "Il podio dei favoriti", "sotto": pron["gp"],
-             "righe": [{"pos": i + 1, "nome": r["nome"], "cognome": cogn(r["nome"]), "nota": r["costruttore"]} for i, r in enumerate(gara)]}
+             "righe": [{"pos": i + 1, "nome": r["nome"], "cognome": cogn(r["nome"]), "nota": r["costruttore"], **avatar(r["nome"])} for i, r in enumerate(gara)]}
     scena_podio = {"foto": f0["nome"], "pista": True, "podio": podio, "sub_top": 1450,
                    "testo": f"Ecco il podio dei nostri favoriti: primo {cogn(gara[0]['nome'])}, secondo {cogn(gara[1]['nome'])}, terzo {cogn(gara[2]['nome'])}."}
     scene.append(scena_podio)

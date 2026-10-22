@@ -278,12 +278,16 @@ def prepara_scena(sc):
     if pd and not pd.get("pronto"):
         autori = []
         for r in pd["righe"]:
+            if r.get("file"):   # immagine già pronta (per esempio il ritratto ESPN) con il suo credito
+                r["img64"] = b64(r["file"])
+                autori.append(r.get("credito", "ESPN"))
+                continue
             f = trova_foto(r["nome"], r.get("alt"))
             r["img64"] = b64(file_foto(f))
             aut = re.sub(r"Original:\s*", "", f["autore"])
             autori.append(f"{aut} ({f['licenza']})")
         pd["pronto"] = True
-        pd["credito"] = "Foto: " + " · ".join(autori) + " · Wikimedia Commons"
+        pd["credito"] = "Foto: " + " · ".join(dict.fromkeys(autori)) + (" · Wikimedia Commons" if any(r.get("file") is None for r in pd["righe"]) else "")
     if pd:
         cred = pd["credito"]
     return cred

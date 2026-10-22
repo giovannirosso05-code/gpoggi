@@ -1,0 +1,43 @@
+name: Foto alternative dei piloti
+
+# A mano: "cerca" scarica da Wikimedia Commons (solo licenze libere) le foto candidate dei piloti con un foglio contatti numerato in foto_extra_lavoro/;
+# "scegli" copia nel sito le foto scelte (per esempio: scegli "Marc Marquez" 3:gara1 7:gara2).
+on:
+  workflow_dispatch:
+    inputs:
+      comando:
+        description: 'cerca oppure scegli'
+        default: 'cerca'
+      argomenti:
+        description: 'cerca: nomi tra virgolette separati da spazio; scegli: "Nome" indice:etichetta ...'
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: foto-extra
+  cancel-in-progress: false
+
+jobs:
+  foto:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Esegui
+        env:
+          COMANDO: ${{ github.event.inputs.comando }}
+          ARGOMENTI: ${{ github.event.inputs.argomenti }}
+        run: |
+          eval "python foto_extra.py $COMANDO $ARGOMENTI"
+      - name: Salva
+        run: |
+          git config user.name "gpoggi-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add foto_extra_lavoro docs/img/foto-extra docs/data/foto-extra.json
+          git diff --cached --quiet || (git commit -m "foto extra: ${{ github.event.inputs.comando }}" && git pull --rebase --autostash -X theirs origin main && git push)

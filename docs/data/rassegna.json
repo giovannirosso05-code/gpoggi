@@ -1,6 +1,90 @@
 {
- "generato_il": "2026-10-22T22:42:31+00:00",
+ "generato_il": "2026-10-23T02:55:36+00:00",
  "articoli": [
+  {
+   "titolo": "MotoGP, peggiorano le condizioni meteo al GP di Australia. Rumors su un possibile cambio di programma",
+   "estratto": "Il meteo potrebbe essere un fattore in occasione dei turni che contano del GP di Australia, diciottesimo appuntamento valido per il Campionato Mondiale 2026 di MotoGP in scena questo fine settimana a…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-peggiorano-le-condizioni-meteo-rumors-su-un-possibile-cambio-di-programma/",
+   "pubblicato": "2026-10-23T02:03:42+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 1.8,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP, GP Australia 2026: risultati e classifica FP1. Marquez davanti a tutti, top 4 per Bezzecchi",
+   "estratto": "Marc Marquez ha messo il timbro sulla prima sessione di prove libere valida per il GP di Australia, atto numero diciotto del Mondiale 2026 di MotoGP in fase di svolgimento questo weekend presso la…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-gp-australia-2026-risultati-e-classifica-fp1-marquez-davanti-a-tutti-top-4-per-bezzecchi/",
+   "pubblicato": "2026-10-23T01:26:58+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 9.6,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP, Marquez detta legge nel primo turno di libere a Phillip Island, Bezzecchi e Martin costretti ad inseguire",
+   "estratto": "Slancio di Marc Marquez in occasione del primo turno di prove libere valido per il GP di Australia, atto diciottesimo del Motomondiale 2026 di MotoGP in scena questo fine settimana presso il circuito…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-marquez-detta-legge-nel-primo-turno-di-libere-a-phillip-island-bezzecchi-e-martin-costretti-ad-inseguire/",
+   "pubblicato": "2026-10-23T01:01:23+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 31.5,
+   "testate": 3
+  },
+  {
+   "titolo": "MotoGP | Phillip Island, Libere 1: Marquez subito in spolvero davanti a Raul Fernandez, solo 7° Martin",
+   "estratto": "Splende il sole su Phillip Island, ma potrebbe essere anche solo una breve parentesi, perché per domani e soprattutto per domenica le previsioni meteo sembrano profilare scenari di pioggia per il…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-phillip-island-libere-1-marquez-subito-in-spolvero-davanti-a-raul-fernandez-solo-7-martin/10867212/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-23T00:51:43+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 23.5,
+   "testate": 3
+  },
+  {
+   "titolo": "LIVE MotoGP, GP Australia 2026 in DIRETTA: Marquez svetta nella prima sessione di libere, le Aprilia inseguono. Alle 6:00 le pre-qualifiche",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE 2.39 E tutto al momento, Amici di OA Sport. Appuntamento alle 6:00 per le pre-qualifiche. Grazie per averci seguito. 2.37 Vedremo adesso se le informazioni…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/live-motogp-gp-australia-2026-in-diretta-si-accende-la-bagarre-a-phillip-island/",
+   "pubblicato": "2026-10-23T00:15:32+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 23.3,
+   "testate": 3
+  },
+  {
+   "titolo": "Moto2, Huertas sorprende nel primo turno di libere al GP di Australia. Vicini Guevara e Gonzalez",
+   "estratto": "Comincia quasi con un pari merito il fine settimana di Izan Guevara e Manuel Gonzalez, ovvero i due pretendenti al titolo per quanto riguarda la Moto2. I centauri si sono infatti accomodati…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/moto2-huertas-sorprende-nel-primo-turno-di-libere-al-gp-di-australia-vicini-guevara-e-gonzalez/",
+   "pubblicato": "2026-10-22T23:43:07+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -0.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Moto3, Maximo Quiles si prende la scena nel primo turno di libere a Phillip Island. Lontani gli italiani",
+   "estratto": "Comincia nel segno marcato di Maximo Quiles il weekend relativo al GP di Australia, diciottesimo atto del Campionato Mondiale 2026 di Moto3 in scena per l’ultima volta sul celeberrimo tracciato di…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/moto3-maximo-quiles-si-prende-la-scena-nel-primo-turno-di-libere-a-phillip-island-lontani-gli-italiani/",
+   "pubblicato": "2026-10-22T23:22:10+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 9.1,
+   "testate": 2
+  },
   {
    "titolo": "F1, George Russell: “Questa stagione semplicemente non doveva andare. Antonelli più efficace con le nuove macchine”",
    "estratto": "George Russell sarà uno dei protagonisti più attesi in Texas per il Gran Premio degli Stati Uniti 2026, valevole come diciottesimo capitolo stagionale del Mondiale di Formula Uno. Il britannico della…",
@@ -10,7 +94,7 @@
    "pubblicato": "2026-10-22T22:40:17+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.0,
+   "punteggio": 11.9,
    "testate": 1
   },
   {
@@ -22,7 +106,7 @@
    "pubblicato": "2026-10-22T22:01:34+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.2,
+   "punteggio": -13.2,
    "testate": 1
   },
   {
@@ -34,7 +118,7 @@
    "pubblicato": "2026-10-22T22:01:34+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.2,
+   "punteggio": -13.2,
    "testate": 1
   },
   {
@@ -46,7 +130,7 @@
    "pubblicato": "2026-10-22T21:46:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.8,
+   "punteggio": 11.7,
    "testate": 1
   },
   {
@@ -58,7 +142,7 @@
    "pubblicato": "2026-10-22T21:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.7,
+   "punteggio": 8.6,
    "testate": 2
   },
   {
@@ -70,7 +154,7 @@
    "pubblicato": "2026-10-22T21:06:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.6,
+   "punteggio": 11.5,
    "testate": 1
   },
   {
@@ -82,7 +166,7 @@
    "pubblicato": "2026-10-22T21:00:00+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 13.6,
+   "punteggio": 12.5,
    "testate": 1
   },
   {
@@ -94,7 +178,7 @@
    "pubblicato": "2026-10-22T21:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.6,
+   "punteggio": 3.5,
    "testate": 1
   },
   {
@@ -106,7 +190,7 @@
    "pubblicato": "2026-10-22T20:37:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.5,
+   "punteggio": 11.4,
    "testate": 1
   },
   {
@@ -118,7 +202,7 @@
    "pubblicato": "2026-10-22T20:21:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.4,
+   "punteggio": 21.4,
    "testate": 2
   },
   {
@@ -130,7 +214,7 @@
    "pubblicato": "2026-10-22T19:54:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.3,
+   "punteggio": 11.2,
    "testate": 1
   },
   {
@@ -142,20 +226,8 @@
    "pubblicato": "2026-10-22T19:42:33+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.3,
+   "punteggio": 11.2,
    "testate": 1
-  },
-  {
-   "titolo": "LIVE MotoGP, GP Australia 2026 in DIRETTA: nella notte le prove libere a Phillip Island",
-   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE Buongiorno amiche e amici di OA Sport e benvenuti alla DIRETTA LIVE del venerdì del Gran Premio di Australia, diciottesimo e quintultimo appuntamento del…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/10/live-motogp-gp-australia-2026-in-diretta-si-accende-la-bagarre-a-phillip-island/",
-   "pubblicato": "2026-10-22T19:19:32+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 7.2,
-   "testate": 3
   },
   {
    "titolo": "MotoGP, Francesco Bagnaia: “Sarà un weekend divertente con il meteo, ma spero nell’asciutto”",
@@ -166,7 +238,7 @@
    "pubblicato": "2026-10-22T17:23:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.3,
+   "punteggio": -1.4,
    "testate": 1
   },
   {
@@ -178,7 +250,7 @@
    "pubblicato": "2026-10-22T17:01:27+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.6,
+   "punteggio": 2.5,
    "testate": 1
   },
   {
@@ -190,7 +262,7 @@
    "pubblicato": "2026-10-22T16:40:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.5,
+   "punteggio": 22.4,
    "testate": 3
   },
   {
@@ -202,7 +274,7 @@
    "pubblicato": "2026-10-22T16:32:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.5,
+   "punteggio": 2.4,
    "testate": 1
   },
   {
@@ -214,7 +286,7 @@
    "pubblicato": "2026-10-22T16:06:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.7,
+   "punteggio": -2.7,
    "testate": 1
   },
   {
@@ -226,7 +298,7 @@
    "pubblicato": "2026-10-22T15:50:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.3,
+   "punteggio": 7.2,
    "testate": 2
   },
   {
@@ -238,7 +310,7 @@
    "pubblicato": "2026-10-22T15:36:32+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.2,
+   "punteggio": 2.2,
    "testate": 1
   },
   {
@@ -250,7 +322,7 @@
    "pubblicato": "2026-10-22T15:05:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.9,
+   "punteggio": -3.0,
    "testate": 1
   },
   {
@@ -262,7 +334,7 @@
    "pubblicato": "2026-10-22T14:44:17+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.0,
+   "punteggio": 22.0,
    "testate": 3
   },
   {
@@ -274,7 +346,7 @@
    "pubblicato": "2026-10-22T14:20:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.9,
+   "punteggio": 11.9,
    "testate": 2
   },
   {
@@ -286,7 +358,7 @@
    "pubblicato": "2026-10-22T14:02:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -9.2,
+   "punteggio": -10.2,
    "testate": 1
   },
   {
@@ -298,7 +370,7 @@
    "pubblicato": "2026-10-22T13:40:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.7,
+   "punteggio": 4.7,
    "testate": 1
   },
   {
@@ -310,7 +382,7 @@
    "pubblicato": "2026-10-22T13:35:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.7,
+   "punteggio": 11.7,
    "testate": 2
   },
   {
@@ -322,7 +394,7 @@
    "pubblicato": "2026-10-22T13:00:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.4,
+   "punteggio": -3.5,
    "testate": 1
   },
   {
@@ -334,7 +406,7 @@
    "pubblicato": "2026-10-22T13:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.6,
+   "punteggio": 16.5,
    "testate": 3
   },
   {
@@ -346,7 +418,7 @@
    "pubblicato": "2026-10-22T12:15:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.4,
+   "punteggio": 4.3,
    "testate": 1
   },
   {
@@ -358,7 +430,7 @@
    "pubblicato": "2026-10-22T12:00:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.3,
+   "punteggio": 6.3,
    "testate": 2
   },
   {
@@ -370,7 +442,7 @@
    "pubblicato": "2026-10-22T12:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.7,
+   "punteggio": -3.7,
    "testate": 1
   },
   {
@@ -382,7 +454,7 @@
    "pubblicato": "2026-10-22T11:30:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.8,
+   "punteggio": -5.9,
    "testate": 2
   },
   {
@@ -394,7 +466,7 @@
    "pubblicato": "2026-10-22T11:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.9,
+   "punteggio": -4.0,
    "testate": 1
   },
   {
@@ -406,7 +478,7 @@
    "pubblicato": "2026-10-22T10:29:35+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 29.9,
+   "punteggio": 28.9,
    "testate": 3
   },
   {
@@ -418,7 +490,7 @@
    "pubblicato": "2026-10-22T10:02:53+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.8,
+   "punteggio": 20.8,
    "testate": 3
   },
   {
@@ -430,7 +502,7 @@
    "pubblicato": "2026-10-22T09:43:02+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.8,
+   "punteggio": 20.7,
    "testate": 3
   },
   {
@@ -442,7 +514,7 @@
    "pubblicato": "2026-10-22T09:21:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.7,
+   "punteggio": 0.6,
    "testate": 1
   },
   {
@@ -454,7 +526,7 @@
    "pubblicato": "2026-10-22T09:09:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 24.6,
+   "punteggio": 23.6,
    "testate": 3
   },
   {
@@ -466,7 +538,7 @@
    "pubblicato": "2026-10-22T09:00:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.6,
+   "punteggio": 15.5,
    "testate": 3
   },
   {
@@ -478,7 +550,7 @@
    "pubblicato": "2026-10-22T08:58:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.6,
+   "punteggio": 18.5,
    "testate": 2
   },
   {
@@ -490,7 +562,7 @@
    "pubblicato": "2026-10-22T08:49:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.5,
+   "punteggio": 13.5,
    "testate": 2
   },
   {
@@ -502,7 +574,7 @@
    "pubblicato": "2026-10-22T08:36:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.5,
+   "punteggio": 20.4,
    "testate": 3
   },
   {
@@ -514,7 +586,7 @@
    "pubblicato": "2026-10-22T08:32:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.5,
+   "punteggio": 18.4,
    "testate": 2
   },
   {
@@ -526,7 +598,7 @@
    "pubblicato": "2026-10-22T08:04:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.3,
+   "punteggio": 10.3,
    "testate": 2
   },
   {
@@ -538,7 +610,7 @@
    "pubblicato": "2026-10-22T08:00:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.3,
+   "punteggio": 3.3,
    "testate": 1
   },
   {
@@ -550,7 +622,7 @@
    "pubblicato": "2026-10-22T07:43:53+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.3,
+   "punteggio": 13.2,
    "testate": 2
   },
   {
@@ -562,7 +634,7 @@
    "pubblicato": "2026-10-22T07:34:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.2,
+   "punteggio": 18.2,
    "testate": 2
   },
   {
@@ -574,7 +646,7 @@
    "pubblicato": "2026-10-22T07:27:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.2,
+   "punteggio": 10.1,
    "testate": 2
   },
   {
@@ -586,7 +658,7 @@
    "pubblicato": "2026-10-22T06:35:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.0,
+   "punteggio": -7.1,
    "testate": 2
   },
   {
@@ -598,7 +670,7 @@
    "pubblicato": "2026-10-22T06:30:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -16.0,
+   "punteggio": -17.1,
    "testate": 1
   },
   {
@@ -610,7 +682,7 @@
    "pubblicato": "2026-10-22T06:08:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 28.9,
+   "punteggio": 27.8,
    "testate": 3
   },
   {
@@ -622,7 +694,7 @@
    "pubblicato": "2026-10-22T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -16.2,
+   "punteggio": -17.2,
    "testate": 1
   },
   {
@@ -634,7 +706,7 @@
    "pubblicato": "2026-10-22T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.2,
+   "punteggio": -7.2,
    "testate": 2
   },
   {
@@ -646,7 +718,7 @@
    "pubblicato": "2026-10-22T05:44:47+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 29.8,
+   "punteggio": 28.7,
    "testate": 3
   },
   {
@@ -658,7 +730,7 @@
    "pubblicato": "2026-10-22T05:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.6,
+   "punteggio": 7.5,
    "testate": 1
   },
   {
@@ -670,7 +742,7 @@
    "pubblicato": "2026-10-22T05:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.6,
+   "punteggio": -0.5,
    "testate": 1
   },
   {
@@ -682,7 +754,7 @@
    "pubblicato": "2026-10-22T05:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.6,
+   "punteggio": -0.5,
    "testate": 1
   },
   {
@@ -694,7 +766,7 @@
    "pubblicato": "2026-10-22T03:10:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.9,
+   "punteggio": -7.9,
    "testate": 2
   },
   {
@@ -706,7 +778,7 @@
    "pubblicato": "2026-10-22T03:05:12+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -16.9,
+   "punteggio": -18.0,
    "testate": 1
   },
   {
@@ -718,7 +790,7 @@
    "pubblicato": "2026-10-21T16:44:05+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.5,
+   "punteggio": 24.5,
    "testate": 3
   },
   {
@@ -730,7 +802,7 @@
    "pubblicato": "2026-10-21T16:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.3,
+   "punteggio": -0.7,
    "testate": 1
   },
   {
@@ -742,7 +814,7 @@
    "pubblicato": "2026-10-21T15:57:31+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.3,
+   "punteggio": 24.3,
    "testate": 3
   },
   {
@@ -754,19 +826,7 @@
    "pubblicato": "2026-10-21T15:32:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.2,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP, Joan Mir salta anche il GP d’Australia: si prolunga la misteriosa assenza dell’ex campione mondiale",
-   "estratto": "Si prolunga ulteriormente la preoccupante assenza dalle competizioni di Joan Mir, che ha dato forfait anche per la trasferta di Phillip Island e non prenderà parte al Gran Premio d’Australia 2026…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/10/motogp-joan-mir-salta-anche-il-gp-daustralia-si-prolunga-lassenza-misteriosa-dellex-campione-mondiale/",
-   "pubblicato": "2026-10-21T15:28:22+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -7.8,
+   "punteggio": -0.8,
    "testate": 1
   },
   {
@@ -778,7 +838,7 @@
    "pubblicato": "2026-10-21T15:06:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.1,
+   "punteggio": 24.0,
    "testate": 3
   },
   {
@@ -790,7 +850,7 @@
    "pubblicato": "2026-10-21T15:00:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.9,
+   "punteggio": -4.0,
    "testate": 1
   },
   {
@@ -802,7 +862,7 @@
    "pubblicato": "2026-10-21T15:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.1,
+   "punteggio": 24.0,
    "testate": 3
   },
   {
@@ -814,7 +874,7 @@
    "pubblicato": "2026-10-21T14:30:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.1,
+   "punteggio": -9.1,
    "testate": 1
   },
   {
@@ -826,7 +886,7 @@
    "pubblicato": "2026-10-21T14:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -3.1,
+   "punteggio": -4.2,
    "testate": 1
   },
   {
@@ -838,7 +898,7 @@
    "pubblicato": "2026-10-21T14:00:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.8,
+   "punteggio": 3.8,
    "testate": 1
   },
   {
@@ -850,7 +910,7 @@
    "pubblicato": "2026-10-21T14:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.2,
+   "punteggio": -9.2,
    "testate": 1
   },
   {
@@ -862,7 +922,7 @@
    "pubblicato": "2026-10-21T13:57:14+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -3.2,
+   "punteggio": -4.2,
    "testate": 1
   },
   {
@@ -874,7 +934,7 @@
    "pubblicato": "2026-10-21T13:31:31+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.3,
+   "punteggio": -9.4,
    "testate": 1
   },
   {
@@ -886,7 +946,7 @@
    "pubblicato": "2026-10-21T13:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.4,
+   "punteggio": -1.5,
    "testate": 1
   },
   {
@@ -898,7 +958,7 @@
    "pubblicato": "2026-10-21T12:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.7,
+   "punteggio": -1.7,
    "testate": 1
   },
   {
@@ -910,7 +970,7 @@
    "pubblicato": "2026-10-21T11:02:37+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.1,
+   "punteggio": 18.0,
    "testate": 3
   },
   {
@@ -922,7 +982,7 @@
    "pubblicato": "2026-10-21T11:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.9,
+   "punteggio": -10.0,
    "testate": 1
   },
   {
@@ -934,7 +994,7 @@
    "pubblicato": "2026-10-21T10:29:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.9,
+   "punteggio": 2.9,
    "testate": 1
   },
   {
@@ -946,7 +1006,7 @@
    "pubblicato": "2026-10-21T10:00:07+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -4.2,
+   "punteggio": -5.2,
    "testate": 1
   },
   {
@@ -958,7 +1018,7 @@
    "pubblicato": "2026-10-21T09:29:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.7,
+   "punteggio": 14.6,
    "testate": 3
   },
   {
@@ -970,20 +1030,8 @@
    "pubblicato": "2026-10-21T09:26:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.3,
+   "punteggio": -2.4,
    "testate": 1
-  },
-  {
-   "titolo": "Marc Marquez lancia la sfida: “Siamo pronti a lottare per le posizioni che contano a Phillip Island”",
-   "estratto": "Il Mondiale MotoGP entra in una fase decisiva e Marc Márquez si prepara ad affrontare il GP d’Australia con un obiettivo preciso: restare agganciato alla vetta e giocarsi le proprie possibilità…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/10/marc-marquez-lancia-la-sfida-siamo-pronti-a-lottare-per-le-posizioni-che-contano/",
-   "pubblicato": "2026-10-21T09:25:30+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 5.7,
-   "testate": 2
   },
   {
    "titolo": "La Cadillac presenta la sua livrea cowboy per il GP degli Stati Uniti",
@@ -994,20 +1042,8 @@
    "pubblicato": "2026-10-21T09:08:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.4,
+   "punteggio": -10.4,
    "testate": 1
-  },
-  {
-   "titolo": "MotoGP, GP Australia 2026. Numeri, statistiche e curiosità. Stoner e Rossi resteranno ineguagliati a Phillip Island",
-   "estratto": "Il Motomondiale è pronto per recitare in uno dei teatri più belli, sontuosi e gratificanti del proprio calendario iridato. Difatti, il quart’ultimo round dell’annata 2026 si terrà a Phillip Island…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/10/motogp-gp-australia-2026-numeri-statistiche-e-curiosita-stoner-e-rossi-resteranno-ineguagliati-a-phillip-island/",
-   "pubblicato": "2026-10-21T09:00:44+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 8.6,
-   "testate": 2
   },
   {
    "titolo": "Wolff: “In Texas con entrambe le Mercedes aggiornate, i rivali stanno crescendo non possiamo restare fermi”",
@@ -1018,7 +1054,7 @@
    "pubblicato": "2026-10-21T09:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -4.4,
+   "punteggio": -5.5,
    "testate": 1
   },
   {
@@ -1030,7 +1066,7 @@
    "pubblicato": "2026-10-21T08:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -21.6,
+   "punteggio": -22.6,
    "testate": 1
   },
   {
@@ -1042,8 +1078,8 @@
    "pubblicato": "2026-10-21T08:25:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.4,
-   "testate": 2
+   "punteggio": 14.4,
+   "testate": 3
   },
   {
    "titolo": "F1, GP USA 2026. Numeri, statistiche e curiosità. Hamilton ritroverà la magia del passato al COTA?",
@@ -1054,7 +1090,7 @@
    "pubblicato": "2026-10-21T08:00:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.7,
+   "punteggio": -10.7,
    "testate": 1
   },
   {
@@ -1066,7 +1102,7 @@
    "pubblicato": "2026-10-21T07:57:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.3,
+   "punteggio": 4.3,
    "testate": 2
   },
   {
@@ -1078,7 +1114,7 @@
    "pubblicato": "2026-10-21T07:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.2,
+   "punteggio": 4.1,
    "testate": 2
   },
   {
@@ -1090,19 +1126,7 @@
    "pubblicato": "2026-10-21T07:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.2,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP, per gli italiani è l’ultima occasione di riconciliarsi con Phillip Island. Il tracciato è maledetto per i centauri tricolore!",
-   "estratto": "Domenica 25 ottobre assisteremo all’ultimo Gran Premio d’Australia di MotoGP a disputarsi nel magnifico contesto di Phillip Island. Dopodiché, dal 2027, la gara traslocherà ad Adelaide, abbandonando…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/10/motogp-per-gli-italiani-e-lultima-occasione-di-riconciliarsi-con-phillip-island-il-tracciato-e-maledetto-per-i-centauri-tricolore/",
-   "pubblicato": "2026-10-21T07:15:05+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 0.1,
+   "punteggio": 12.1,
    "testate": 2
   },
   {
@@ -1114,7 +1138,7 @@
    "pubblicato": "2026-10-21T07:12:31+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.1,
+   "punteggio": 2.1,
    "testate": 1
   },
   {
@@ -1126,19 +1150,7 @@
    "pubblicato": "2026-10-21T06:10:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.9,
-   "testate": 3
-  },
-  {
-   "titolo": "Ben Sulayem rassicura sui GP in Qatar e Abu Dhabi: “Ho i miei figli lì, vi sembra che li lascerei in pericolo?”",
-   "estratto": "La guerra scuote il Medio Oriente, gli eventi sportivi cambiano calendario e la sicurezza torna a essere una priorità imprescindibile. Eppure, per la F1, l’ipotesi di rinunciare agli appuntamenti in…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/10/ben-sulayem-rassicura-sui-gp-in-qatar-e-abu-dhabi-ho-i-miei-figli-li-vi-sembra-che-li-lascerei-in-pericolo/",
-   "pubblicato": "2026-10-21T06:10:40+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 14.9,
+   "punteggio": 13.8,
    "testate": 3
   },
   {
@@ -1150,7 +1162,7 @@
    "pubblicato": "2026-10-21T04:00:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.7,
+   "punteggio": -3.7,
    "testate": 1
   },
   {
@@ -1162,7 +1174,7 @@
    "pubblicato": "2026-10-20T21:38:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.7,
+   "punteggio": -0.3,
    "testate": 1
   },
   {
@@ -1174,7 +1186,7 @@
    "pubblicato": "2026-10-20T16:27:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.6,
+   "punteggio": -6.6,
    "testate": 1
   },
   {
@@ -1186,7 +1198,7 @@
    "pubblicato": "2026-10-20T15:41:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.8,
+   "punteggio": -14.8,
    "testate": 1
   },
   {
@@ -1198,7 +1210,7 @@
    "pubblicato": "2026-10-20T15:16:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.9,
+   "punteggio": -6.9,
    "testate": 1
   },
   {
@@ -1210,7 +1222,7 @@
    "pubblicato": "2026-10-20T15:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.1,
+   "punteggio": 8.0,
    "testate": 2
   },
   {
@@ -1222,8 +1234,8 @@
    "pubblicato": "2026-10-20T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -9.7,
-   "testate": 1
+   "punteggio": -0.7,
+   "testate": 2
   },
   {
    "titolo": "La FIA separa i team di F1 dagli altri progetti per vietare scambi informativi: ci sarà il gardening in azienda?",
@@ -1234,7 +1246,7 @@
    "pubblicato": "2026-10-20T11:23:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -14.8,
+   "punteggio": -15.9,
    "testate": 1
   },
   {
@@ -1246,7 +1258,7 @@
    "pubblicato": "2026-10-20T09:51:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.2,
+   "punteggio": -6.3,
    "testate": 2
   },
   {
@@ -1258,7 +1270,7 @@
    "pubblicato": "2026-10-20T09:28:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.3,
+   "punteggio": -8.4,
    "testate": 1
   },
   {
@@ -1270,7 +1282,7 @@
    "pubblicato": "2026-10-20T09:26:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.7,
+   "punteggio": 16.6,
    "testate": 3
   },
   {
@@ -1282,7 +1294,7 @@
    "pubblicato": "2026-10-20T09:22:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.3,
+   "punteggio": -6.4,
    "testate": 2
   },
   {
@@ -1294,7 +1306,7 @@
    "pubblicato": "2026-10-20T09:20:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.3,
+   "punteggio": -6.4,
    "testate": 2
   },
   {
@@ -1306,8 +1318,8 @@
    "pubblicato": "2026-10-20T09:05:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.4,
-   "testate": 2
+   "punteggio": 8.5,
+   "testate": 3
   },
   {
    "titolo": "F1, i precedenti della Ferrari ad Austin. Solo 2 vittorie del Cavallino Rampante in Texas",
@@ -1318,7 +1330,7 @@
    "pubblicato": "2026-10-20T08:00:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.7,
+   "punteggio": -8.7,
    "testate": 1
   },
   {
@@ -1330,7 +1342,7 @@
    "pubblicato": "2026-10-20T07:54:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -15.7,
+   "punteggio": -16.8,
    "testate": 1
   },
   {
@@ -1342,7 +1354,7 @@
    "pubblicato": "2026-10-20T07:47:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.3,
+   "punteggio": 3.2,
    "testate": 3
   },
   {
@@ -1354,7 +1366,7 @@
    "pubblicato": "2026-10-20T07:16:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.1,
+   "punteggio": 3.1,
    "testate": 3
   },
   {
@@ -1366,7 +1378,7 @@
    "pubblicato": "2026-10-20T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.8,
+   "punteggio": 5.8,
    "testate": 2
   },
   {
@@ -1378,7 +1390,7 @@
    "pubblicato": "2026-10-19T16:30:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -10.6,
+   "punteggio": -11.6,
    "testate": 1
   },
   {
@@ -1390,7 +1402,7 @@
    "pubblicato": "2026-10-19T16:20:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.6,
+   "punteggio": -3.6,
    "testate": 1
   },
   {
@@ -1402,7 +1414,7 @@
    "pubblicato": "2026-10-19T15:03:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.9,
+   "punteggio": -7.0,
    "testate": 2
   },
   {
@@ -1414,7 +1426,7 @@
    "pubblicato": "2026-10-19T15:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -15.9,
+   "punteggio": -17.0,
    "testate": 1
   },
   {
@@ -1426,19 +1438,7 @@
    "pubblicato": "2026-10-19T13:58:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.2,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Mercedes: a Singapore ha debuttato la tuta traspirante di nuova generazione sviluppata da OMP",
-   "estratto": "Singapore è uno degli appuntamenti più impegnativi della stagione dal punto di vista fisico, soprattutto per il forte caldo tipico di queste zone. Infatti, pur correndo in notturna, temperature e…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-mercedes-a-singapore-ha-debuttato-tuta-di-nuova-generazione-di-omp/10866210/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-19T13:31:46+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -16.3,
+   "punteggio": -9.2,
    "testate": 1
   }
  ]

@@ -271,11 +271,22 @@
     "pos": 3,
     "stato": null
    }
+  },
+  {
+   "id": 1297,
+   "nome": "Gran Premio degli Stati Uniti",
+   "inizio": "2026-10-23T17:30:00+00:00",
+   "qualifiche": {
+    "pos": 1,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": null
   }
  ],
  "vittorie": 8,
  "podi": 14,
- "pole": 6,
+ "pole": 7,
  "miglior_arrivo": 1,
  "ritiri": 1
 }

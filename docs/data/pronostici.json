@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-24T02:54:56+00:00",
+ "aggiornato": "2026-10-24T07:35:49+00:00",
  "metodo": "Indice da 0 a 100 calcolato da GP Oggi: 45% forma nelle ultime 5 gare, 35% classifica del campionato, 20% risultato sullo stesso circuito l'anno scorso. È un'opinione basata sui numeri, non una previsione ufficiale né una certezza.",
  "f1": {
   "gp": "Gran Premio degli Stati Uniti",
@@ -69,18 +69,18 @@
     "team": "Ducati Lenovo Team",
     "indice": 100,
     "motivi": [
-     "3 vittorie nelle ultime 5 gare",
-     "2° nel campionato (353 punti)"
+     "2 vittorie nelle ultime 5 gare",
+     "1° nel campionato (365 punti)"
     ]
    },
    {
     "id": "ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd",
     "nome": "Marco Bezzecchi",
     "team": "Aprilia Racing",
-    "indice": 94,
+    "indice": 98,
     "motivi": [
      "1 vittoria nelle ultime 5 gare",
-     "3° nel campionato (309 punti)",
+     "3° nel campionato (315 punti)",
      "GP Australia 2025: 3°"
     ]
    },
@@ -88,32 +88,32 @@
     "id": "5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b",
     "nome": "Jorge Martin",
     "team": "Aprilia Racing",
-    "indice": 89,
+    "indice": 95,
     "motivi": [
      "3 podi nelle ultime 5 gare",
-     "1° nel campionato (355 punti)"
-    ]
-   },
-   {
-    "id": "a6108385-dd4c-490d-b02e-542ed0275f79",
-    "nome": "Pedro Acosta",
-    "team": "Red Bull KTM Factory Racing",
-    "indice": 83,
-    "motivi": [
-     "1 vittoria nelle ultime 5 gare",
-     "5° nel campionato (258 punti)",
-     "GP Australia 2025: 5°"
+     "2° nel campionato (355 punti)"
     ]
    },
    {
     "id": "58448742-f520-466a-a1a1-bf3286cce9c3",
     "nome": "Raul Fernandez",
     "team": "SuperFile Trackhouse MotoGP Team",
-    "indice": 78,
+    "indice": 88,
     "motivi": [
      "1 podio nelle ultime 5 gare",
      "7° nel campionato (236 punti)",
      "GP Australia 2025: 1°"
+    ]
+   },
+   {
+    "id": "a6108385-dd4c-490d-b02e-542ed0275f79",
+    "nome": "Pedro Acosta",
+    "team": "Red Bull KTM Factory Racing",
+    "indice": 84,
+    "motivi": [
+     "1 vittoria nelle ultime 5 gare",
+     "4° nel campionato (263 punti)",
+     "GP Australia 2025: 5°"
     ]
    }
   ]

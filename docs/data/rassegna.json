@@ -1,41 +1,245 @@
 {
- "generato_il": "2026-10-24T21:58:46+00:00",
+ "generato_il": "2026-10-24T23:49:24+00:00",
  "articoli": [
   {
-   "titolo": "LIVE F1, GP USA 2026 in DIRETTA: Leclerc davanti ad Antonelli in Q2, ma il favorito è Verstappen",
-   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE LA GRIGLIA DI PARTENZA 23.51 ANTONELLI AL COMANDO! 1’34″035, Verstappen a 0.179, Hadjar a 0.215, Leclerc a 3 decimi. 23.51 Al secondo rilevamento Antonelli…",
+   "titolo": "F1 | Leclerc deluso: \"Ancora problemi nel Q3, mi fa arrabbiare. Così guidiamo sul filo del rasoio\"",
+   "estratto": "Non è un segreto che negli ultimi anni la qualifica sia stata un po' il tallone d'Achille della Ferrari, ancor più quest'anno, perché quando i team salgono di mappatura si amplia quel gap di motore…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-leclerc-deluso-ancora-problemi-nel-q3-mi-fa-arrabbiare-cosi-guidiamo-sul-filo-del-rasoio/10868039/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-24T23:37:18+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Fred Vasseur :”Charles ha commesso un piccolo errore nelle ultime curve, dobbiamo pensare a noi stessi”",
+   "estratto": "Una prestazione deludente per la Ferrari in occasione delle qualifiche del GP degli Stati Uniti, appuntamento numero diciotto del Mondiale 2026 di Formula 1 in programma questo fine settimana presso…",
    "fonte": "OA Sport",
    "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/live-f1-gp-usa-2026-in-diretta-antonelli-sfida-verstappen-e-russell-per-la-pole/",
-   "pubblicato": "2026-10-24T21:41:41+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 31.9,
+   "url": "https://www.oasport.it/2026/10/fred-vasseur-charles-ha-commesso-un-piccolo-errore-nelle-ultime-curve-dobbiamo-pensare-a-noi-stessi/",
+   "pubblicato": "2026-10-24T23:23:58+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Antonelli festeggia la sua pole ad Austin: “Tanta roba!”",
+   "estratto": "La felicità del pilota della Mercedes dopo la settima pole position stagionale",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/antonelli-festeggia-pole-austin-tanta-roba",
+   "pubblicato": "2026-10-24T23:23:06+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 36.9,
    "testate": 3
   },
   {
-   "titolo": "Griglia di partenza F1, GP USA 2026: risultati e classifica qualifiche",
+   "titolo": "F1 | Vasseur: \"Siamo a mezzo decimo dalla prima fila, ma in gara possiamo fare molto meglio\"",
+   "estratto": "Quella della Ferrari sembra una maledizione: la SF-26 non riesce a conquistare una pole position in questa stagione e, puntualmente, dopo aver dominato i tre turni di prove libere e aver svettato con…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-vasseur-siamo-a-mezzo-decimo-dalla-prima-fila-ma-in-gara-possiamo-fare-molto-meglio/10868028/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-24T23:20:54+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Ferrari in seconda e terza fila, Vasseur non drammatizza: “Il degrado sarà importante e noi…”",
+   "estratto": "Il team principal punta il dito sulla sbavatura che ha compromesso la Q3 di Leclerc e però già pensa alla gara, e al degrado gomme che potrebbe aiutare le SF-26",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/ferrari-in-seconda-e-terza-fila-vasseur-non-drammatizza-il-degrado-sara-importante-e-noi",
+   "pubblicato": "2026-10-24T23:20:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 26.9,
+   "testate": 2
+  },
+  {
+   "titolo": "Hamilton controcorrente: “Aggiornamento Mercedes fa la differenza. 4°-5° posto? Non ideale, ma io sono ancora ottimista”",
+   "estratto": "Lewis Hamilton ha chiuso solo al quinto posto le qualifiche del GP degli Stati Uniti, dopo essere stato il più veloce di tutti in FP3",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/hamilton-controcorrente-aggiornamento-mercedes-fa-la-differenza-4-5-posto-non-ideale-ma-io-sono-ancora-ottimista",
+   "pubblicato": "2026-10-24T23:17:59+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.9,
+   "testate": 1
+  },
+  {
+   "titolo": "La pioggia cambia il programma a Phillip Island: slitta l’inizio del warm-up. Il nuovo orario",
+   "estratto": "AGGIORNAMENTO 1:45 A causa della visibilità limitata, la giornata non comincerà prima delle ore 2:00 italiane. Si tratta di un ulteriore slittamento di quindici minuti rispetto alla prima decisone…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/la-pioggia-cambia-il-programma-a-phillip-island-slitta-linizio-del-warm-up-il-nuovo-orario/",
+   "pubblicato": "2026-10-24T23:00:54+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -8.2,
+   "testate": 1
+  },
+  {
+   "titolo": "Wolff stregato da Antonelli: “Giro magico, mi ha lasciato senza parole”",
+   "estratto": "Il team principal della Mercedes è rimasto impressionato dal giro realizzato in Q3 da Antonelli e che gli è valso la pole position",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/wolff-stregato-da-antonelli-giro-magico-mi-ha-lasciato-senza-parole",
+   "pubblicato": "2026-10-24T22:58:05+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Isack Hadjar: “Felice del terzo posto, chiedo scusa al mio team. Potevamo fare la pole”",
+   "estratto": "Isack Hadjar partirà dalla seconda fila in occasione del GP degli Stati Uniti, atto numero diciotto del Mondiale 2026 di Formula 1 in scena questo weekend ad Austin, precisamente presso il circuito…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/isack-hadjar-felice-del-terzo-posto-chiedo-scusa-al-mio-team-potevamo-fare-la-pole/",
+   "pubblicato": "2026-10-24T22:40:44+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Furia Leclerc, team radio al vetriolo: “L’ala anteriore è troppo carica, ca**o! È una m***a”",
+   "estratto": "Il monegasco dalla Ferrari via radio ha espresso tutta la sua delusione e frustrazione per non aver centrato neanche la prima fila",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/furia-leclerc-team-radio-al-vetriolo-lala-anteriore-e-troppo-carica-cao-e-una-ma",
+   "pubblicato": "2026-10-24T22:34:47+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Max Verstappen: “Il mio Q3 non è stato buono, la macchina scivolava. Contento della prima fila”",
+   "estratto": "Max Verstappen ha strappato la seconda posizione in occasione del GP degli Stati Uniti, atto numero diciotto del Mondiale 2026 di Formula 1 in fase di svolgimento questo fine settimana presso il…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/max-verstappen-il-mio-q3-non-e-stato-buono-la-macchina-scivolava-contento-della-prima-fila/",
+   "pubblicato": "2026-10-24T22:29:40+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Kimi Antonelli entusiasta e deciso: “L’obiettivo è vincere, sarà una gara molto combattuta ad Austin”",
+   "estratto": "Kimi Antonelli conquista la pole position nelle qualifiche del Gran Premio degli Stati Uniti, ad Austin, e si prepara ad affrontare una gara che potrebbe rivelarsi decisiva nella corsa al titolo…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/kimi-antonelli-entusiasta-e-deciso-lobiettivo-e-vincere-sara-una-gara-molto-combattuta-ad-austin/",
+   "pubblicato": "2026-10-24T22:22:02+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 26.6,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 | Antonelli magico ad Austin: batte Verstappen e si prende la pole. Leclerc 4°",
+   "estratto": "Dopo due weekend difficili come in Malesia e a Singapore, Mercedes era chiamata a dare una risposta sulla bontà del nuovo pacchetto e su una pista che racchiude di tutto, dalle curve lente e a quelle…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-antonelli-magico-ad-austin-batte-verstappen-e-si-prende-la-pole-leclerc-4/10867991/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-24T22:21:58+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 31.6,
+   "testate": 3
+  },
+  {
+   "titolo": "GP Stati Uniti 2026, griglia di partenza: Antonelli magico! Batte Verstappen e si prende la pole. Ferrari si spegne: 4°e 5°",
+   "estratto": "L'italiano firma una delle migliori qualifiche dell'anno e riesce a mettersi davanti al quattro volte iridato. Russell sprofonda in P7",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-risultati/gp-stati-uniti-2026-griglia-di-partenza-antonelli-magico-batte-verstappen-e-si-prende-la-pole-ferrari-si-spegne-4e-5",
+   "pubblicato": "2026-10-24T22:16:03+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 19.6,
+   "testate": 3
+  },
+  {
+   "titolo": "Griglia di partenza F1, GP USA 2026: Kimi Antonelli batte Verstappen ed è in pole! Ferrari fumosa, Russell in terza fila",
    "estratto": "Calato il sipario sulle qualifiche del GP degli USA, undicesima tappa del Mondiale 2026 di F1. Sul circuito di Austin, il time-attack ha decretato il poleman sul Luna Park del Texas. Una pista per…",
    "fonte": "OA Sport",
    "serie": "F1",
    "url": "https://www.oasport.it/2026/10/griglia-di-partenza-f1-gp-usa-2026-risultati-e-classifica-qualifiche/",
-   "pubblicato": "2026-10-24T21:20:33+00:00",
+   "pubblicato": "2026-10-24T22:15:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.8,
+   "punteggio": 19.6,
+   "testate": 3
+  },
+  {
+   "titolo": "F1, Kimi Antonelli brucia Verstappen e si prende la pole ad Austin! Incubo Russell, Ferrari si scioglie",
+   "estratto": "Kimi Antonelli mette fine ad un digiuno lungo sette qualifiche e si aggiudica la pole position per il Gran Premio degli Stati Uniti 2026, valevole come diciottesimo capitolo stagionale del Mondiale…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/kimi-antonelli-fa-una-magia-ed-e-in-pole-position-ad-austin-prima-fila-di-lusso-con-verstappen-delude-la-ferrari/",
+   "pubblicato": "2026-10-24T22:10:58+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 41.6,
+   "testate": 4
+  },
+  {
+   "titolo": "LIVE F1, GP USA 2026 in DIRETTA: fantastica pole di Antonelli! Smacco Russell, ‘solita’ Ferrari. La griglia di partenza",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE LA GRIGLIA DI PARTENZA 0.09 Grazie per averci seguito, amici di OA Sport, e buona notte. Un saluto sportivo. 0.08 La gara si svolgerà oggi (domenica 25…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/live-f1-gp-usa-2026-in-diretta-antonelli-sfida-verstappen-e-russell-per-la-pole/",
+   "pubblicato": "2026-10-24T22:08:41+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 9.6,
    "testate": 2
   },
   {
-   "titolo": "F1 GP Stati Uniti 2026, qualifiche: Norris davanti a Leclerc e Verstappen in Q1 – DIRETTA",
+   "titolo": "Quando MotoGP e F1 oggi (25 ottobre): orari gare, programma TV8 e Sky",
+   "estratto": "Oggi domenica 25 ottobre si conclude il lungo weekend riservato ai motori, arriviamo al momento clou dell’intenso fine settimana. Spazio alle gare: GP degli USA per quanto riguarda la F1 e GP…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/quando-motogp-e-f1-oggi-25-ottobre-orari-gare-programma-tv8-e-sky/",
+   "pubblicato": "2026-10-24T22:01:13+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -8.5,
+   "testate": 1
+  },
+  {
+   "titolo": "Quando MotoGP e F1 oggi (25 ottobre): orari gare, programma TV8 e Sky",
+   "estratto": "Oggi domenica 25 ottobre si conclude il lungo weekend riservato ai motori, arriviamo al momento clou dell’intenso fine settimana. Spazio alle gare: GP degli USA per quanto riguarda la F1 e GP…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/quando-motogp-e-f1-oggi-25-ottobre-orari-gare-programma-tv8-e-sky/",
+   "pubblicato": "2026-10-24T22:01:13+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -8.5,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 GP Stati Uniti 2026, Austin: la cronaca delle qualifiche, minuto per minuto",
    "estratto": "La cronaca live minuto per minuto delle prove ufficiali che decidono la griglia di partenza del fine settimana a Austin",
    "fonte": "FormulaPassion",
    "serie": "F1",
    "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-usa-stati-uniti-2026-austin-qualifiche-q1-q2-q3-pole-aggiornamenti-ferrari-leclerc-hamilton-verstappen",
-   "pubblicato": "2026-10-24T20:45:00+00:00",
+   "pubblicato": "2026-10-24T22:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.7,
-   "testate": 2
+   "punteggio": 3.5,
+   "testate": 1
   },
   {
    "titolo": "Austin, telemetria FP3: Ferrari impressiona e sfida Verstappen e Antonelli per la pole",
@@ -46,7 +250,7 @@
    "pubblicato": "2026-10-24T19:51:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.5,
+   "punteggio": 31.0,
    "testate": 3
   },
   {
@@ -58,7 +262,7 @@
    "pubblicato": "2026-10-24T19:18:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.3,
+   "punteggio": 2.9,
    "testate": 1
   },
   {
@@ -70,8 +274,8 @@
    "pubblicato": "2026-10-24T18:58:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.2,
-   "testate": 3
+   "punteggio": 20.8,
+   "testate": 2
   },
   {
    "titolo": "F1, GP USA 2026: risultati e classifica FP3. Hamilton il migliore, Verstappen in scia. Antonelli non brilla",
@@ -82,7 +286,7 @@
    "pubblicato": "2026-10-24T18:46:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.2,
+   "punteggio": 8.7,
    "testate": 2
   },
   {
@@ -94,7 +298,7 @@
    "pubblicato": "2026-10-24T18:42:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.2,
+   "punteggio": 30.7,
    "testate": 3
   },
   {
@@ -106,7 +310,7 @@
    "pubblicato": "2026-10-24T18:36:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.2,
+   "punteggio": 18.7,
    "testate": 3
   },
   {
@@ -118,7 +322,7 @@
    "pubblicato": "2026-10-24T18:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.1,
+   "punteggio": 2.7,
    "testate": 1
   },
   {
@@ -130,7 +334,7 @@
    "pubblicato": "2026-10-24T17:30:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.9,
+   "punteggio": 12.4,
    "testate": 2
   },
   {
@@ -142,7 +346,7 @@
    "pubblicato": "2026-10-24T16:35:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.7,
+   "punteggio": 10.2,
    "testate": 3
   },
   {
@@ -154,7 +358,7 @@
    "pubblicato": "2026-10-24T16:14:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.6,
+   "punteggio": 7.1,
    "testate": 1
   },
   {
@@ -166,7 +370,7 @@
    "pubblicato": "2026-10-24T15:47:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.5,
+   "punteggio": 17.0,
    "testate": 2
   },
   {
@@ -178,7 +382,7 @@
    "pubblicato": "2026-10-24T14:53:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.2,
+   "punteggio": 1.8,
    "testate": 1
   },
   {
@@ -190,7 +394,7 @@
    "pubblicato": "2026-10-24T14:21:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.1,
+   "punteggio": 6.6,
    "testate": 1
   },
   {
@@ -202,7 +406,7 @@
    "pubblicato": "2026-10-24T13:31:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.9,
+   "punteggio": 6.4,
    "testate": 1
   },
   {
@@ -214,7 +418,7 @@
    "pubblicato": "2026-10-24T12:58:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.7,
+   "punteggio": 6.3,
    "testate": 1
   },
   {
@@ -226,7 +430,7 @@
    "pubblicato": "2026-10-24T12:38:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.7,
+   "punteggio": 14.2,
    "testate": 1
   },
   {
@@ -238,7 +442,7 @@
    "pubblicato": "2026-10-24T10:20:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.1,
+   "punteggio": 15.6,
    "testate": 2
   },
   {
@@ -250,7 +454,7 @@
    "pubblicato": "2026-10-24T09:30:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.9,
+   "punteggio": 8.4,
    "testate": 3
   },
   {
@@ -262,7 +466,7 @@
    "pubblicato": "2026-10-24T08:56:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.7,
+   "punteggio": 13.3,
    "testate": 1
   },
   {
@@ -274,7 +478,7 @@
    "pubblicato": "2026-10-24T08:53:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.7,
+   "punteggio": 18.3,
    "testate": 2
   },
   {
@@ -286,7 +490,7 @@
    "pubblicato": "2026-10-24T08:52:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.7,
+   "punteggio": 15.3,
    "testate": 2
   },
   {
@@ -298,7 +502,7 @@
    "pubblicato": "2026-10-24T08:36:32+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.7,
+   "punteggio": 5.2,
    "testate": 1
   },
   {
@@ -310,7 +514,7 @@
    "pubblicato": "2026-10-24T08:30:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.4,
+   "punteggio": -11.8,
    "testate": 1
   },
   {
@@ -322,7 +526,7 @@
    "pubblicato": "2026-10-24T08:21:53+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.6,
+   "punteggio": 13.1,
    "testate": 1
   },
   {
@@ -334,7 +538,7 @@
    "pubblicato": "2026-10-24T08:18:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.6,
+   "punteggio": 23.1,
    "testate": 2
   },
   {
@@ -346,7 +550,7 @@
    "pubblicato": "2026-10-24T08:13:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.6,
+   "punteggio": 18.1,
    "testate": 2
   },
   {
@@ -358,7 +562,7 @@
    "pubblicato": "2026-10-24T07:58:21+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.5,
+   "punteggio": 23.0,
    "testate": 2
   },
   {
@@ -370,7 +574,7 @@
    "pubblicato": "2026-10-24T07:55:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.5,
+   "punteggio": 15.0,
    "testate": 2
   },
   {
@@ -382,7 +586,7 @@
    "pubblicato": "2026-10-24T07:53:50+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.5,
+   "punteggio": 13.0,
    "testate": 1
   },
   {
@@ -394,8 +598,8 @@
    "pubblicato": "2026-10-24T07:37:37+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.4,
-   "testate": 2
+   "punteggio": 8.0,
+   "testate": 1
   },
   {
    "titolo": "Non solo Martin: anche Raul Fernandez dichiarato unfit per il GP d’Australia",
@@ -406,7 +610,7 @@
    "pubblicato": "2026-10-24T07:32:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.4,
+   "punteggio": 9.9,
    "testate": 2
   },
   {
@@ -418,7 +622,7 @@
    "pubblicato": "2026-10-24T07:24:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.4,
+   "punteggio": 4.9,
    "testate": 1
   },
   {
@@ -430,7 +634,7 @@
    "pubblicato": "2026-10-24T07:16:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.3,
+   "punteggio": 22.9,
    "testate": 2
   },
   {
@@ -442,7 +646,7 @@
    "pubblicato": "2026-10-24T06:49:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.2,
+   "punteggio": 7.7,
    "testate": 1
   },
   {
@@ -454,7 +658,7 @@
    "pubblicato": "2026-10-24T06:42:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.2,
+   "punteggio": 24.7,
    "testate": 3
   },
   {
@@ -466,7 +670,7 @@
    "pubblicato": "2026-10-24T06:38:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.2,
+   "punteggio": 4.7,
    "testate": 1
   },
   {
@@ -478,7 +682,7 @@
    "pubblicato": "2026-10-24T06:27:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.1,
+   "punteggio": 22.7,
    "testate": 2
   },
   {
@@ -490,7 +694,19 @@
    "pubblicato": "2026-10-24T06:13:17+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.1,
+   "punteggio": 4.6,
+   "testate": 1
+  },
+  {
+   "titolo": "GP Stati Uniti 2026: orari Sky/Now e TV8",
+   "estratto": "I dettagli della programmazione televisiva dell'appuntamento ad Austin in Texas sul circuito del COTA",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-stati-uniti-2026-austin-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-aggiornamenti-match-point-antonelli",
+   "pubblicato": "2026-10-24T06:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -12.5,
    "testate": 1
   },
   {
@@ -502,20 +718,8 @@
    "pubblicato": "2026-10-24T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.0,
+   "punteggio": 17.5,
    "testate": 2
-  },
-  {
-   "titolo": "GP Stati Uniti 2026: orari Sky/Now e TV8",
-   "estratto": "I dettagli della programmazione televisiva dell'appuntamento ad Austin in Texas sul circuito del COTA",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-stati-uniti-2026-austin-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-aggiornamenti-match-point-antonelli",
-   "pubblicato": "2026-10-24T06:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -12.0,
-   "testate": 1
   },
   {
    "titolo": "Martin, il bollettino medico: frattura del radio e possibile frattura dell’ulna, è dichiarato non idoneo a correre per il resto del weekend",
@@ -526,7 +730,7 @@
    "pubblicato": "2026-10-24T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.0,
+   "punteggio": -0.5,
    "testate": 1
   },
   {
@@ -538,7 +742,7 @@
    "pubblicato": "2026-10-24T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.0,
+   "punteggio": -12.5,
    "testate": 1
   },
   {
@@ -550,7 +754,7 @@
    "pubblicato": "2026-10-24T05:56:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.0,
+   "punteggio": 19.5,
    "testate": 3
   },
   {
@@ -562,7 +766,7 @@
    "pubblicato": "2026-10-24T05:50:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.0,
+   "punteggio": 9.5,
    "testate": 2
   },
   {
@@ -574,7 +778,7 @@
    "pubblicato": "2026-10-24T05:31:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.9,
+   "punteggio": 27.4,
    "testate": 3
   },
   {
@@ -586,7 +790,7 @@
    "pubblicato": "2026-10-24T05:31:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.1,
+   "punteggio": -12.6,
    "testate": 1
   },
   {
@@ -598,7 +802,7 @@
    "pubblicato": "2026-10-24T05:31:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.1,
+   "punteggio": -12.6,
    "testate": 1
   },
   {
@@ -610,7 +814,7 @@
    "pubblicato": "2026-10-24T05:29:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.1,
+   "punteggio": -12.6,
    "testate": 1
   },
   {
@@ -622,7 +826,7 @@
    "pubblicato": "2026-10-24T05:28:48+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.9,
+   "punteggio": 22.4,
    "testate": 2
   },
   {
@@ -634,7 +838,7 @@
    "pubblicato": "2026-10-24T05:27:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.9,
+   "punteggio": 14.4,
    "testate": 2
   },
   {
@@ -646,7 +850,7 @@
    "pubblicato": "2026-10-24T05:20:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.8,
+   "punteggio": 14.4,
    "testate": 2
   },
   {
@@ -658,7 +862,7 @@
    "pubblicato": "2026-10-24T05:20:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.8,
+   "punteggio": 24.4,
    "testate": 3
   },
   {
@@ -670,7 +874,7 @@
    "pubblicato": "2026-10-24T05:03:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.8,
+   "punteggio": 12.3,
    "testate": 1
   },
   {
@@ -682,7 +886,7 @@
    "pubblicato": "2026-10-24T05:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.8,
+   "punteggio": 22.3,
    "testate": 2
   },
   {
@@ -694,7 +898,7 @@
    "pubblicato": "2026-10-24T04:52:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.7,
+   "punteggio": 7.3,
    "testate": 3
   },
   {
@@ -706,7 +910,7 @@
    "pubblicato": "2026-10-24T04:50:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.7,
+   "punteggio": 19.3,
    "testate": 3
   },
   {
@@ -718,7 +922,7 @@
    "pubblicato": "2026-10-24T04:46:07+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.7,
+   "punteggio": 19.2,
    "testate": 3
   },
   {
@@ -730,7 +934,7 @@
    "pubblicato": "2026-10-24T04:45:12+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.7,
+   "punteggio": 7.2,
    "testate": 3
   },
   {
@@ -742,7 +946,7 @@
    "pubblicato": "2026-10-24T04:40:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.7,
+   "punteggio": 17.2,
    "testate": 2
   },
   {
@@ -754,7 +958,7 @@
    "pubblicato": "2026-10-24T04:39:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.7,
+   "punteggio": 15.2,
    "testate": 3
   },
   {
@@ -766,7 +970,7 @@
    "pubblicato": "2026-10-24T04:39:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 32.7,
+   "punteggio": 32.2,
    "testate": 3
   },
   {
@@ -778,7 +982,7 @@
    "pubblicato": "2026-10-24T04:38:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.7,
+   "punteggio": 4.2,
    "testate": 1
   },
   {
@@ -790,7 +994,7 @@
    "pubblicato": "2026-10-24T04:35:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.7,
+   "punteggio": 9.2,
    "testate": 2
   },
   {
@@ -802,7 +1006,7 @@
    "pubblicato": "2026-10-24T04:30:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.6,
+   "punteggio": 19.2,
    "testate": 3
   },
   {
@@ -814,7 +1018,7 @@
    "pubblicato": "2026-10-24T04:25:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.6,
+   "punteggio": 19.1,
    "testate": 3
   },
   {
@@ -826,7 +1030,7 @@
    "pubblicato": "2026-10-24T04:05:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.5,
+   "punteggio": -12.9,
    "testate": 1
   },
   {
@@ -838,7 +1042,7 @@
    "pubblicato": "2026-10-24T04:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.5,
+   "punteggio": 9.0,
    "testate": 2
   },
   {
@@ -850,7 +1054,7 @@
    "pubblicato": "2026-10-24T04:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.5,
+   "punteggio": 15.0,
    "testate": 3
   },
   {
@@ -862,7 +1066,7 @@
    "pubblicato": "2026-10-24T03:28:22+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.4,
+   "punteggio": 8.9,
    "testate": 2
   },
   {
@@ -874,31 +1078,7 @@
    "pubblicato": "2026-10-24T02:35:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.8,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP, Johann Zarco sincero: “Nella Sprint Race potrò essere competitivo solo in caso di pioggia”",
-   "estratto": "Quando arriva la pioggia, il vecchio leone francese non tradisce mai. Johann Zarco è stato grande protagonista ed è decisamente soddisfatto dopo aver messo a segno il terzo tempo al termine delle…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/10/motogp-johann-zarco-sincero-nella-sprint-race-potro-essere-competitivo-solo-in-casa-di-pioggia/",
-   "pubblicato": "2026-10-24T02:13:55+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 4.1,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP, Alex Marquez: “Secondo posto sorprendente in queste condizioni. Voglio fare bene nella Sprint”",
-   "estratto": "Alex Marquez sorride in maniera convinta dopo aver messo a segno il secondo tempo al termine delle qualifiche del Gran Premio di Australia, diciottesimo appuntamento del Mondiale di MotoGP 2026…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/10/motogp-alex-marquez-secondo-posto-sorprendente-in-queste-condizioni-voglio-fare-bene-nella-sprint/",
-   "pubblicato": "2026-10-24T02:06:01+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 14.0,
+   "punteggio": -3.3,
    "testate": 2
   },
   {
@@ -910,7 +1090,7 @@
    "pubblicato": "2026-10-24T01:38:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.9,
+   "punteggio": 13.5,
    "testate": 2
   },
   {
@@ -922,7 +1102,7 @@
    "pubblicato": "2026-10-24T00:51:55+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 31.7,
+   "punteggio": 31.3,
    "testate": 3
   },
   {
@@ -934,7 +1114,7 @@
    "pubblicato": "2026-10-24T00:00:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.5,
+   "punteggio": -2.0,
    "testate": 1
   },
   {
@@ -946,7 +1126,7 @@
    "pubblicato": "2026-10-24T00:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.5,
+   "punteggio": -2.0,
    "testate": 1
   },
   {
@@ -958,7 +1138,7 @@
    "pubblicato": "2026-10-23T23:47:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.5,
+   "punteggio": 6.0,
    "testate": 1
   },
   {
@@ -970,7 +1150,7 @@
    "pubblicato": "2026-10-23T23:33:35+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.4,
+   "punteggio": 5.9,
    "testate": 1
   },
   {
@@ -982,7 +1162,7 @@
    "pubblicato": "2026-10-23T23:27:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.4,
+   "punteggio": 5.9,
    "testate": 1
   },
   {
@@ -994,7 +1174,7 @@
    "pubblicato": "2026-10-23T22:30:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.1,
+   "punteggio": 3.7,
    "testate": 2
   },
   {
@@ -1006,7 +1186,7 @@
    "pubblicato": "2026-10-23T22:19:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 26.1,
+   "punteggio": 25.6,
    "testate": 3
   },
   {
@@ -1018,7 +1198,7 @@
    "pubblicato": "2026-10-23T22:04:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.0,
+   "punteggio": 13.6,
    "testate": 3
   },
   {
@@ -1030,7 +1210,7 @@
    "pubblicato": "2026-10-23T22:00:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 26.0,
+   "punteggio": 25.5,
    "testate": 3
   },
   {
@@ -1042,44 +1222,8 @@
    "pubblicato": "2026-10-23T22:00:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 26.0,
+   "punteggio": 25.5,
    "testate": 3
-  },
-  {
-   "titolo": "F1 GP Stati Uniti 2026, Austin: la cronaca delle FP2, minuto per minuto",
-   "estratto": "La cronaca live minuto per minuto della seconda sessione di prove del fine settimana a Austin",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-usa-stati-uniti-2026-austin-prove-libere-2-fp2-aggiornamenti-ferrari-leclerc-hamilton-antonelli",
-   "pubblicato": "2026-10-23T22:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -2.0,
-   "testate": 1
-  },
-  {
-   "titolo": "Red Bull non si ferma: ancora novità sulla RB22",
-   "estratto": "Dopo Singapore, anche ad Austin la Red Bull ritocca l’ala anteriore e conferma un approccio agli antipodi dalla Mercedes",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/red-bull-non-si-ferma-ancora-novita-rb22",
-   "pubblicato": "2026-10-23T21:01:43+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -2.2,
-   "testate": 1
-  },
-  {
-   "titolo": "Austin indizi FP1: Ferrari guadagna carico ma soffre tanto sul dritto. Verstappen è già il riferimento",
-   "estratto": "La sfida tra le rosse e l'olandese, dominatore degli ultimi GP, è già iniziata. Mercedes invece è (per ora) più indietro",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/austin-indizi-fp1-ferrari-guadagna-carico-ma-soffre-tanto-sul-dritto-verstappen-e-gia-il-riferimento",
-   "pubblicato": "2026-10-23T20:21:42+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 15.6,
-   "testate": 2
   },
   {
    "titolo": "F1 | Test a 35 km/h: come la FIA sta lavorando per evitare che si ripeta il bug di Sepang",
@@ -1090,43 +1234,7 @@
    "pubblicato": "2026-10-23T20:11:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.4,
-   "testate": 1
-  },
-  {
-   "titolo": "Ferrari spinge, ecco gli aggiornamenti: cosa è cambiato",
-   "estratto": "La Ferrari porta in pista l’ultimo pacchetto di aggiornamenti per la SF-26. Cosa è cambiato e quali sono gli obiettivi",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/austin-ferrari-spinge-ecco-aggiornamenti-cosa-cambiato",
-   "pubblicato": "2026-10-23T19:55:27+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 5.5,
-   "testate": 1
-  },
-  {
-   "titolo": "La Mercedes aggiornata è ‘nervosa’, anche Wolff è preoccupato: “Abbiamo sbagliato e non sappiamo dove”",
-   "estratto": "Il team principal Mercedes ha commentato le difficoltà che stanno riscontrando i suoi due piloti dopo gli ultimi aggiornamenti",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/la-mercedes-aggiornata-e-nervosa-anche-wolff-e-preoccupato-abbiamo-sbagliato-e-non-sappiamo-dove",
-   "pubblicato": "2026-10-23T19:28:26+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 2.4,
-   "testate": 1
-  },
-  {
-   "titolo": "Austin: penalità in griglia per Bortoleto, Colapinto e Lindblad",
-   "estratto": "Tutte le posizioni che dovranno scontare in vista del GP degli Stati Uniti",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/austin-penalita-griglia-per-bortoleto-lindblad-colapinto",
-   "pubblicato": "2026-10-23T19:18:12+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -2.7,
+   "punteggio": -2.9,
    "testate": 1
   },
   {
@@ -1138,7 +1246,7 @@
    "pubblicato": "2026-10-23T19:05:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.3,
+   "punteggio": 12.8,
    "testate": 3
   },
   {
@@ -1150,20 +1258,8 @@
    "pubblicato": "2026-10-23T18:50:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.2,
-   "testate": 2
-  },
-  {
-   "titolo": "F1, Charles Leclerc svetta in FP1 ad Austin con la Ferrari. Verstappen impressiona, Antonelli in top5",
-   "estratto": "Va in archivio con la miglior prestazione assoluta di Charles Leclerc la prima sessione di prove libere del Gran Premio degli Stati Uniti 2026, valevole come diciottesimo round stagionale del…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/f1-charles-leclerc-svetta-in-fp1-ad-austin-con-la-ferrari-verstappen-impressiona-antonelli-in-top5/",
-   "pubblicato": "2026-10-23T18:42:24+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 25.2,
-   "testate": 3
+   "punteggio": 4.8,
+   "testate": 1
   },
   {
    "titolo": "Marquez: “Al 70% mi ritiro entro tre anni”",
@@ -1174,19 +1270,7 @@
    "pubblicato": "2026-10-23T16:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.5,
-   "testate": 1
-  },
-  {
-   "titolo": "F1, Toto Wolff guarda al futuro: “Sto già pensando al mio successore, Mercedes non sarà la stessa senza di me”",
-   "estratto": "Toto Wolff rappresenta da ormai più di un decennio uno dei volti di riferimento della F1. L’imprenditore austriaco ha a che fare con la F1 dal lontano 2009 quando acquistò delle quote dell’allora…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/f1-toto-wolff-guarda-al-futuro-sto-gia-pensando-al-mio-successore-mercedes-non-sara-la-stessa-senza-di-me/",
-   "pubblicato": "2026-10-23T14:49:09+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 1.2,
+   "punteggio": 1.0,
    "testate": 1
   },
   {
@@ -1198,7 +1282,7 @@
    "pubblicato": "2026-10-23T14:31:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.1,
+   "punteggio": 10.7,
    "testate": 2
   },
   {
@@ -1210,19 +1294,7 @@
    "pubblicato": "2026-10-23T14:00:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.0,
-   "testate": 2
-  },
-  {
-   "titolo": "F1, l’asfalto di Austin preoccupa ancora. Verstappen e Norris denunciano i problemi",
-   "estratto": "Si aprirà ufficialmente tra poche ore il weekend del Gran Premio degli Stati Uniti, diciottesimo appuntamento del Mondiale F1. Il tracciato di Austin, uno dei più apprezzati dai piloti nel…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/f1-lasfalto-di-austin-preoccupa-ancora-verstappen-e-norris-denunciano-i-problemi/",
-   "pubblicato": "2026-10-23T13:53:01+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 6.0,
+   "punteggio": 5.5,
    "testate": 2
   },
   {
@@ -1234,7 +1306,7 @@
    "pubblicato": "2026-10-23T13:40:28+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 19.9,
+   "punteggio": 19.5,
    "testate": 2
   },
   {
@@ -1246,7 +1318,7 @@
    "pubblicato": "2026-10-23T13:25:44+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.9,
+   "punteggio": 0.4,
    "testate": 1
   },
   {
@@ -1258,19 +1330,7 @@
    "pubblicato": "2026-10-23T13:04:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.8,
-   "testate": 1
-  },
-  {
-   "titolo": "Piola: “Nel 2018 la Ferrari era la macchina migliore. Vettel aveva una leva in più sul volante rispetto a Raikkonen”",
-   "estratto": "Sebastian Vettel è il protagonista della nuova puntata storica di Motor News, rubrica in onda sul canale YouTube di OA Sport. Giorgio Piola racconta la carriera dell’indimenticato pilota tedesco…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/piola-nel-2018-la-ferrari-era-la-macchina-migliore-vettel-aveva-una-leva-in-piu-sul-volante-rispetto-a-raikkonen/",
-   "pubblicato": "2026-10-23T12:01:15+00:00",
-   "tipo": "intervista",
-   "citazione": true,
-   "punteggio": 9.5,
+   "punteggio": 8.3,
    "testate": 1
   },
   {
@@ -1282,7 +1342,7 @@
    "pubblicato": "2026-10-23T11:35:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.4,
+   "punteggio": 17.9,
    "testate": 2
   },
   {
@@ -1294,7 +1354,7 @@
    "pubblicato": "2026-10-23T11:01:37+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.3,
+   "punteggio": 4.8,
    "testate": 2
   },
   {
@@ -1306,7 +1366,7 @@
    "pubblicato": "2026-10-23T10:30:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.1,
+   "punteggio": 7.7,
    "testate": 1
   },
   {
@@ -1318,7 +1378,7 @@
    "pubblicato": "2026-10-23T09:29:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 27.9,
+   "punteggio": 27.4,
    "testate": 3
   },
   {
@@ -1330,7 +1390,7 @@
    "pubblicato": "2026-10-23T09:25:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.9,
+   "punteggio": 17.4,
    "testate": 2
   },
   {
@@ -1342,8 +1402,8 @@
    "pubblicato": "2026-10-23T08:54:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 27.7,
-   "testate": 3
+   "punteggio": 17.3,
+   "testate": 2
   },
   {
    "titolo": "MotoGP | Bagnaia: \"L'unità dei piloti è importante per tutelarci un po' di più ed avere voce su certe decisioni\"",
@@ -1354,7 +1414,7 @@
    "pubblicato": "2026-10-23T08:35:14+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.7,
+   "punteggio": 17.2,
    "testate": 2
   },
   {
@@ -1366,7 +1426,7 @@
    "pubblicato": "2026-10-23T08:15:43+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.6,
+   "punteggio": 7.1,
    "testate": 1
   },
   {
@@ -1378,68 +1438,8 @@
    "pubblicato": "2026-10-23T07:57:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.5,
+   "punteggio": 7.0,
    "testate": 1
-  },
-  {
-   "titolo": "F1 | Leclerc frena sugli aggiornamenti Ferrari per Austin: “Non sono così importanti come si dice”",
-   "estratto": "La Ferrari arriva ad Austin con novità tecniche, ma Charles Leclerc preferisce ridimensionare le aspettative. Nelle ultime settimane si è parlato molto degli aggiornamenti programmati dalla Scuderia…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-leclerc-frena-sugli-aggiornamenti-ferrari-per-austin-non-sono-cosi-importanti-come-si-dice/10867276/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-23T07:35:24+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 17.4,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Bezzecchi: \"Sarebbe bastato stare nei dieci, ma essere 1° è meglio. Col bagnato si ripartirebbe da zero però\"",
-   "estratto": "Dopo il ritorno alla vittoria di Mandalika, Marco Bezzecchi ha iniziato con il piede giusto anche il weekend di Phillip Island, chiudendo la giornata di venerdì davanti a tutti, in una classifica che…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bezzecchi-sarebbe-bastato-stare-nei-dieci-ma-essere-1-e-meglio-col-bagnato-si-ripartirebbe-d/10867258/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-23T07:14:51+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 7.3,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Marquez: \"Sapevamo che le Aprilia sarebbe andate molto forte, ma siamo lì\"",
-   "estratto": "Marc Marquez ha iniziato il Gran Premio d'Australia di MotoGP con buone sensazioni. Almeno, è quanto emerge dalla prima giornata di prove a Phillip Island. Il campione del mondo in carica e…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-marquez-sapevamo-che-le-aprilia-sarebbe-andate-molto-forte-ma-siamo-li/10867260/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-23T06:52:34+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -0.8,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Marini fermato da un virus nel venerdì di Phillip Island, Mir potrebbe rientrare a Sepang",
-   "estratto": "La Honda continua ad accumulare problemi nel Gran Premio d'Australia di MotoGP. Se il team ufficiale della Casa dell'ala dorata ha potuto presentarsi a Phillip Island con un solo pilota, per…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-marini-fermato-da-un-virus-nel-venerdi-di-phillip-island-mir-potrebbe-rientrare-a-sepang/10867253/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-23T06:04:30+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 2.0,
-   "testate": 1
-  },
-  {
-   "titolo": "F1, prende il via il weekend di Austin. Kimi Antonelli può già diventare campione del mondo",
-   "estratto": "Ci siamo! Sta per prendere il via il fine settimana del Gran Premio degli Stati Uniti, diciottesimo appuntamento del Mondiale di Formula Uno 2026. Ci troviamo di fronte ad un momento che potrebbe…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/f1-prende-il-via-il-weekend-di-austin-kimi-antonelli-puo-gia-diventare-campione-del-mondo/",
-   "pubblicato": "2026-10-23T06:00:54+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 12.0,
-   "testate": 2
   }
  ]
 }

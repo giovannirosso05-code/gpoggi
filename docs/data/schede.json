@@ -229,153 +229,6 @@
   "pole": 4,
   "giri_veloci": 12
  },
- "moto:5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b": {
-  "nascita": "1998-01-29",
-  "luogo": "Madrid, Spain",
-  "altezza": 168,
-  "peso": 63,
-  "debutto": 2015,
-  "carriera": [
-   {
-    "anno": 2015,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "MAPFRE Team MAHINDRA",
-      "numero": 88
-     }
-    ]
-   },
-   {
-    "anno": 2016,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Pull & Bear Aspar Mahindra Team",
-      "numero": 88
-     }
-    ]
-   },
-   {
-    "anno": 2017,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Del Conca Gresini Moto3",
-      "numero": 88
-     }
-    ]
-   },
-   {
-    "anno": 2018,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Red Bull KTM Ajo",
-      "numero": 0
-     }
-    ]
-   },
-   {
-    "anno": 2019,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Red Bull KTM Ajo",
-      "numero": 88
-     }
-    ]
-   },
-   {
-    "anno": 2020,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Red Bull KTM Ajo",
-      "numero": 88
-     }
-    ]
-   },
-   {
-    "anno": 2021,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Prima Pramac Racing",
-      "numero": 89
-     }
-    ]
-   },
-   {
-    "anno": 2022,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Prima Pramac Racing",
-      "numero": 89
-     }
-    ]
-   },
-   {
-    "anno": 2023,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Prima Pramac Racing",
-      "numero": 89
-     }
-    ]
-   },
-   {
-    "anno": 2024,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Prima Pramac Racing",
-      "numero": 89
-     }
-    ]
-   },
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Aprilia Racing",
-      "numero": 1
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Aprilia Racing",
-      "numero": 89
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 194,
-   "vittorie": 19,
-   "podi": 67,
-   "pole": 43,
-   "giri_veloci": 14,
-   "titoli": 2,
-   "motogp": {
-    "gare": 95,
-    "vittorie": 9,
-    "podi": 39,
-    "pole": 22,
-    "giri_veloci": 6,
-    "titoli": 1
-   },
-   "immagine": "Jorge Martin at the 2026 Spanish Grand Prix.jpg",
-   "fonte": "https://en.wikipedia.org/wiki/Jorge_Martin"
-  }
- },
  "moto:f55b433d-38b8-4d1d-bb3a-a709c82a0260": {
   "nascita": "1993-02-17",
   "luogo": "Cervera, Spain",
@@ -593,6 +446,153 @@
    "fonte": "https://en.wikipedia.org/wiki/Marc_Marquez"
   }
  },
+ "moto:5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b": {
+  "nascita": "1998-01-29",
+  "luogo": "Madrid, Spain",
+  "altezza": 168,
+  "peso": 63,
+  "debutto": 2015,
+  "carriera": [
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "MAPFRE Team MAHINDRA",
+      "numero": 88
+     }
+    ]
+   },
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Pull & Bear Aspar Mahindra Team",
+      "numero": 88
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Del Conca Gresini Moto3",
+      "numero": 88
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 88
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 88
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 89
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 89
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 89
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Prima Pramac Racing",
+      "numero": 89
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 1
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Aprilia Racing",
+      "numero": 89
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 194,
+   "vittorie": 19,
+   "podi": 67,
+   "pole": 43,
+   "giri_veloci": 14,
+   "titoli": 2,
+   "motogp": {
+    "gare": 95,
+    "vittorie": 9,
+    "podi": 39,
+    "pole": 22,
+    "giri_veloci": 6,
+    "titoli": 1
+   },
+   "immagine": "Jorge Martin at the 2026 Spanish Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Jorge_Martin"
+  }
+ },
  "moto:ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd": {
   "nascita": "1998-11-12",
   "luogo": "Rimini, Italy",
@@ -735,6 +735,103 @@
    "fonte": "https://en.wikipedia.org/wiki/Marco_Bezzecchi"
   }
  },
+ "moto:a6108385-dd4c-490d-b02e-542ed0275f79": {
+  "nascita": "2004-05-25",
+  "luogo": "Murcia, Spain",
+  "altezza": 171,
+  "peso": 63,
+  "debutto": 2020,
+  "carriera": [
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 37
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 37
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull GASGAS Tech3",
+      "numero": 31
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 37
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Red Bull KTM Factory Racing",
+      "numero": 37
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 113,
+   "vittorie": 17,
+   "podi": 43,
+   "pole": 7,
+   "giri_veloci": 14,
+   "titoli": 2,
+   "motogp": {
+    "gare": 57,
+    "vittorie": 1,
+    "podi": 16,
+    "pole": 2,
+    "giri_veloci": 4,
+    "titoli": 0
+   },
+   "immagine": "Pedro Acosta at the 2025 Italian motorcycle Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Pedro_Acosta_(motorcyclist)"
+  }
+ },
  "moto:eb47c439-e136-40ff-9534-5c612853f529": {
   "nascita": "2001-01-26",
   "luogo": "Kiyose, Japan",
@@ -850,103 +947,6 @@
    },
    "immagine": "Ai Ogura at the 2026 Spanish Grand Prix (cropped).jpg",
    "fonte": "https://en.wikipedia.org/wiki/Ai_Ogura"
-  }
- },
- "moto:a6108385-dd4c-490d-b02e-542ed0275f79": {
-  "nascita": "2004-05-25",
-  "luogo": "Murcia, Spain",
-  "altezza": 171,
-  "peso": 63,
-  "debutto": 2020,
-  "carriera": [
-   {
-    "anno": 2020,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Red Bull KTM Ajo",
-      "numero": 0
-     }
-    ]
-   },
-   {
-    "anno": 2021,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Red Bull KTM Ajo",
-      "numero": 37
-     }
-    ]
-   },
-   {
-    "anno": 2022,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Red Bull KTM Ajo",
-      "numero": 51
-     }
-    ]
-   },
-   {
-    "anno": 2023,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Red Bull KTM Ajo",
-      "numero": 37
-     }
-    ]
-   },
-   {
-    "anno": 2024,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Red Bull GASGAS Tech3",
-      "numero": 31
-     }
-    ]
-   },
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Red Bull KTM Factory Racing",
-      "numero": 37
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Red Bull KTM Factory Racing",
-      "numero": 37
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 113,
-   "vittorie": 17,
-   "podi": 43,
-   "pole": 7,
-   "giri_veloci": 14,
-   "titoli": 2,
-   "motogp": {
-    "gare": 57,
-    "vittorie": 1,
-    "podi": 16,
-    "pole": 2,
-    "giri_veloci": 4,
-    "titoli": 0
-   },
-   "immagine": "Pedro Acosta at the 2025 Italian motorcycle Grand Prix.jpg",
-   "fonte": "https://en.wikipedia.org/wiki/Pedro_Acosta_(motorcyclist)"
   }
  },
  "moto:6c33de41-f014-4f17-8dc9-e6f36e61026a": {
@@ -2135,6 +2135,83 @@
    "fonte": "https://en.wikipedia.org/wiki/Brad_Binder"
   }
  },
+ "moto:3c7598e5-12ec-4e19-9311-1c0e9a017cbe": {
+  "nascita": "2004-04-23",
+  "luogo": "São Paulo",
+  "altezza": 169,
+  "peso": 60,
+  "debutto": 2022,
+  "carriera": [
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "AEON Credit - MT Helmets - MSI",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "AEON Credit - MT Helmets - MSI",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 10
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 11
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 81,
+   "vittorie": 5,
+   "podi": 13,
+   "pole": 9,
+   "giri_veloci": 3,
+   "titoli": 1,
+   "motogp": {
+    "gare": 2,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Diogo Moreira at the 2025 Italian motorcycle Grand Prix (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Diogo_Moreira"
+  }
+ },
  "moto:fcdd5500-a769-4ff4-8b9e-080d1849ff42": {
   "nascita": "1999-04-20",
   "luogo": "Nice, France",
@@ -2280,83 +2357,6 @@
    },
    "immagine": "Fabio Quartararo at the 2026 German motorcycle Grand Prix (cropped).jpg",
    "fonte": "https://en.wikipedia.org/wiki/Fabio_Quartararo"
-  }
- },
- "moto:3c7598e5-12ec-4e19-9311-1c0e9a017cbe": {
-  "nascita": "2004-04-23",
-  "luogo": "São Paulo",
-  "altezza": 169,
-  "peso": 60,
-  "debutto": 2022,
-  "carriera": [
-   {
-    "anno": 2022,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "AEON Credit - MT Helmets - MSI",
-      "numero": 10
-     }
-    ]
-   },
-   {
-    "anno": 2023,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "AEON Credit - MT Helmets - MSI",
-      "numero": 10
-     }
-    ]
-   },
-   {
-    "anno": 2024,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Italtrans Racing Team",
-      "numero": 10
-     }
-    ]
-   },
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Italtrans Racing Team",
-      "numero": 10
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Honda LCR",
-      "numero": 11
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 81,
-   "vittorie": 5,
-   "podi": 13,
-   "pole": 9,
-   "giri_veloci": 3,
-   "titoli": 1,
-   "motogp": {
-    "gare": 2,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": "Diogo Moreira at the 2025 Italian motorcycle Grand Prix (cropped).jpg",
-   "fonte": "https://en.wikipedia.org/wiki/Diogo_Moreira"
   }
  },
  "moto:a73f8ef2-784f-4f52-8511-1d315fd3a459": {
@@ -10584,30 +10584,30 @@
   "descrizione": "pilota automobilistico giapponese",
   "pagina": "https://it.wikipedia.org/wiki/Y%C5%ABji_Ide"
  },
- "nome:Jorge Martin": {
-  "testo": "Jorge Martín Almoguera è un pilota motociclistico spagnolo, vincitore della Red Bull Rookies Cup nel 2014, campione del mondo Moto3 nel 2018 e MotoGP nel 2024.",
-  "descrizione": "pilota motociclistico spagnolo (1998-)",
-  "pagina": "https://it.wikipedia.org/wiki/Jorge_Mart%C3%ADn"
- },
  "nome:Marc Marquez": {
   "testo": "Marc Márquez Alentà è un pilota motociclistico spagnolo, campione del mondo classe 125 nel 2010; Moto2 nel 2012 e MotoGP nel 2013, 2014, 2016, 2017, 2018, 2019 e 2025.",
   "descrizione": "pilota motociclistico spagnolo",
   "pagina": "https://it.wikipedia.org/wiki/Marc_M%C3%A1rquez"
+ },
+ "nome:Jorge Martin": {
+  "testo": "Jorge Martín Almoguera è un pilota motociclistico spagnolo, vincitore della Red Bull Rookies Cup nel 2014, campione del mondo Moto3 nel 2018 e MotoGP nel 2024.",
+  "descrizione": "pilota motociclistico spagnolo (1998-)",
+  "pagina": "https://it.wikipedia.org/wiki/Jorge_Mart%C3%ADn"
  },
  "nome:Marco Bezzecchi": {
   "testo": "Marco Bezzecchi è un pilota motociclistico italiano, campione italiano Moto3 nel 2015.",
   "descrizione": "pilota motociclistico italiano (1998-)",
   "pagina": "https://it.wikipedia.org/wiki/Marco_Bezzecchi"
  },
- "nome:Ai Ogura": {
-  "testo": "Ai Ogura è un pilota motociclistico giapponese, campione del mondo Moto2 nel 2024.",
-  "descrizione": "pilota motociclistico giapponese (2001-)",
-  "pagina": "https://it.wikipedia.org/wiki/Ai_Ogura"
- },
  "nome:Pedro Acosta": {
   "testo": "Pedro Acosta Sánchez è un pilota motociclistico spagnolo, vincitore della MotoGP Rookies Cup nel 2020, campione mondiale Moto3 nel 2021 e Moto2 nel 2023.",
   "descrizione": "pilota motociclistico spagnolo (2004-)",
   "pagina": "https://it.wikipedia.org/wiki/Pedro_Acosta"
+ },
+ "nome:Ai Ogura": {
+  "testo": "Ai Ogura è un pilota motociclistico giapponese, campione del mondo Moto2 nel 2024.",
+  "descrizione": "pilota motociclistico giapponese (2001-)",
+  "pagina": "https://it.wikipedia.org/wiki/Ai_Ogura"
  },
  "nome:Fabio Di Giannantonio": {
   "testo": "Fabio Di Giannantonio è un pilota motociclistico italiano.",
@@ -10639,15 +10639,15 @@
   "descrizione": "pilota motociclistico sudafricano",
   "pagina": "https://it.wikipedia.org/wiki/Brad_Binder"
  },
- "nome:Fabio Quartararo": {
-  "testo": "Fabio Quartararo è un pilota motociclistico francese, campione del mondo MotoGP nel 2021.",
-  "descrizione": "pilota motociclistico francese",
-  "pagina": "https://it.wikipedia.org/wiki/Fabio_Quartararo"
- },
  "nome:Diogo Moreira": {
   "testo": "Diogo Moreira Nascimento è un pilota motociclistico brasiliano, campione del mondo Moto2 nel 2025.",
   "descrizione": "pilota motociclistico brasiliano (2004-)",
   "pagina": "https://it.wikipedia.org/wiki/Diogo_Moreira"
+ },
+ "nome:Fabio Quartararo": {
+  "testo": "Fabio Quartararo è un pilota motociclistico francese, campione del mondo MotoGP nel 2021.",
+  "descrizione": "pilota motociclistico francese",
+  "pagina": "https://it.wikipedia.org/wiki/Fabio_Quartararo"
  },
  "nome:Franco Morbidelli": {
   "testo": "Franco Morbidelli è un pilota motociclistico italiano con cittadinanza brasiliana, campione europeo Superstock 600 nel 2013 e campione mondiale Moto2 nel 2017.",

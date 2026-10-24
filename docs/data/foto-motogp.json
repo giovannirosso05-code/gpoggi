@@ -1,22 +1,4 @@
 {
- "5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b": {
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg/500px-Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
-  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg/1280px-Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
-  "autore": "Denkmit",
-  "licenza": "CC BY-SA 4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
-  "file": "img/foto/8b4d02d756fd1790.jpg",
-  "file_grande": "img/foto/20b0c46301066831.jpg"
- },
- "nome:Jorge Martin": {
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg/500px-Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
-  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg/1280px-Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
-  "autore": "Denkmit",
-  "licenza": "CC BY-SA 4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
-  "file": "img/foto/8b4d02d756fd1790.jpg",
-  "file_grande": "img/foto/20b0c46301066831.jpg"
- },
  "f55b433d-38b8-4d1d-bb3a-a709c82a0260": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Marc_Marquez_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg/500px-Marc_Marquez_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg",
   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Marc_Marquez_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg/1280px-Marc_Marquez_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg",
@@ -34,6 +16,24 @@
   "pagina": "https://commons.wikimedia.org/wiki/File:Marc_Marquez_at_the_2026_Spanish_Grand_Prix_(cropped).jpg",
   "file": "img/foto/9e1cbe00926a901a.jpg",
   "file_grande": "img/foto/6cf588f48e4c0d46.jpg"
+ },
+ "5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg/500px-Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg/1280px-Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
+  "autore": "Denkmit",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
+  "file": "img/foto/8b4d02d756fd1790.jpg",
+  "file_grande": "img/foto/20b0c46301066831.jpg"
+ },
+ "nome:Jorge Martin": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg/500px-Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg/1280px-Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
+  "autore": "Denkmit",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Jorge_Martin_at_the_2026_Spanish_Grand_Prix.jpg",
+  "file": "img/foto/8b4d02d756fd1790.jpg",
+  "file_grande": "img/foto/20b0c46301066831.jpg"
  },
  "ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Marco_Bezzecchi_at_the_2025_Malaysian_motorcycle_Grand_Prix.jpg/500px-Marco_Bezzecchi_at_the_2025_Malaysian_motorcycle_Grand_Prix.jpg",
@@ -53,24 +53,6 @@
   "file": "img/foto/05aff815930dcfc1.jpg",
   "file_grande": "img/foto/b8493dbb5d4082b8.jpg"
  },
- "eb47c439-e136-40ff-9534-5c612853f529": {
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg/500px-Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg",
-  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg/1280px-Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg",
-  "autore": "Denkmit",
-  "licenza": "CC BY-SA 4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Ai_Ogura_at_the_2026_Spanish_Grand_Prix_(cropped).jpg",
-  "file": "img/foto/2c0d1d0e96f74fbf.jpg",
-  "file_grande": "img/foto/d72d98e46df30932.jpg"
- },
- "nome:Ai Ogura": {
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg/500px-Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg",
-  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg/1280px-Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg",
-  "autore": "Denkmit",
-  "licenza": "CC BY-SA 4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Ai_Ogura_at_the_2026_Spanish_Grand_Prix_(cropped).jpg",
-  "file": "img/foto/2c0d1d0e96f74fbf.jpg",
-  "file_grande": "img/foto/d72d98e46df30932.jpg"
- },
  "a6108385-dd4c-490d-b02e-542ed0275f79": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Pedro_Acosta_at_the_2025_Italian_motorcycle_Grand_Prix.jpg/500px-Pedro_Acosta_at_the_2025_Italian_motorcycle_Grand_Prix.jpg",
   "grande": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Pedro_Acosta_at_the_2025_Italian_motorcycle_Grand_Prix.jpg",
@@ -88,6 +70,24 @@
   "pagina": "https://commons.wikimedia.org/wiki/File:Pedro_Acosta_at_the_2025_Italian_motorcycle_Grand_Prix.jpg",
   "file": "img/foto/e284102f23f067a5.jpg",
   "file_grande": "img/foto/d9a312fd682c6a8e.jpg"
+ },
+ "eb47c439-e136-40ff-9534-5c612853f529": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg/500px-Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg/1280px-Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg",
+  "autore": "Denkmit",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Ai_Ogura_at_the_2026_Spanish_Grand_Prix_(cropped).jpg",
+  "file": "img/foto/2c0d1d0e96f74fbf.jpg",
+  "file_grande": "img/foto/d72d98e46df30932.jpg"
+ },
+ "nome:Ai Ogura": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg/500px-Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg",
+  "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg/1280px-Ai_Ogura_at_the_2026_Spanish_Grand_Prix_%28cropped%29.jpg",
+  "autore": "Denkmit",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Ai_Ogura_at_the_2026_Spanish_Grand_Prix_(cropped).jpg",
+  "file": "img/foto/2c0d1d0e96f74fbf.jpg",
+  "file_grande": "img/foto/d72d98e46df30932.jpg"
  },
  "6c33de41-f014-4f17-8dc9-e6f36e61026a": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Fabio_Di_Giannantonio_at_the_2025_Malaysian_motorcycle_Grand_Prix.jpg/500px-Fabio_Di_Giannantonio_at_the_2025_Malaysian_motorcycle_Grand_Prix.jpg",
@@ -219,22 +219,6 @@
   "pagina": "https://commons.wikimedia.org/wiki/File:Brad_Binder_at_the_2023_Japanese_motorcycle_Grand_Prix.jpg",
   "file": "img/foto/fc15395a0fba0407.jpg"
  },
- "fcdd5500-a769-4ff4-8b9e-080d1849ff42": {
-  "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Fabio_Quartararo_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg",
-  "grande": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Fabio_Quartararo_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg",
-  "autore": "TeamEG00",
-  "licenza": "Public domain",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Fabio_Quartararo_at_the_2026_German_motorcycle_Grand_Prix_(cropped).jpg",
-  "file": "img/foto/3c0e7fc5791ddad7.jpg"
- },
- "nome:Fabio Quartararo": {
-  "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Fabio_Quartararo_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg",
-  "grande": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Fabio_Quartararo_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg",
-  "autore": "TeamEG00",
-  "licenza": "Public domain",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Fabio_Quartararo_at_the_2026_German_motorcycle_Grand_Prix_(cropped).jpg",
-  "file": "img/foto/3c0e7fc5791ddad7.jpg"
- },
  "3c7598e5-12ec-4e19-9311-1c0e9a017cbe": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Diogo_Moreira_at_the_2025_Italian_motorcycle_Grand_Prix_%28cropped%29.jpg/500px-Diogo_Moreira_at_the_2025_Italian_motorcycle_Grand_Prix_%28cropped%29.jpg",
   "grande": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Diogo_Moreira_at_the_2025_Italian_motorcycle_Grand_Prix_%28cropped%29.jpg",
@@ -250,6 +234,22 @@
   "licenza": "Public domain",
   "pagina": "https://commons.wikimedia.org/wiki/File:Diogo_Moreira_at_the_2025_Italian_motorcycle_Grand_Prix_(cropped).jpg",
   "file": "img/foto/ebe5dbeda290dd8a.jpg"
+ },
+ "fcdd5500-a769-4ff4-8b9e-080d1849ff42": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Fabio_Quartararo_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Fabio_Quartararo_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg",
+  "autore": "TeamEG00",
+  "licenza": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Fabio_Quartararo_at_the_2026_German_motorcycle_Grand_Prix_(cropped).jpg",
+  "file": "img/foto/3c0e7fc5791ddad7.jpg"
+ },
+ "nome:Fabio Quartararo": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Fabio_Quartararo_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Fabio_Quartararo_at_the_2026_German_motorcycle_Grand_Prix_%28cropped%29.jpg",
+  "autore": "TeamEG00",
+  "licenza": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Fabio_Quartararo_at_the_2026_German_motorcycle_Grand_Prix_(cropped).jpg",
+  "file": "img/foto/3c0e7fc5791ddad7.jpg"
  },
  "a73f8ef2-784f-4f52-8511-1d315fd3a459": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Franco_Morbidelli_at_the_2025_Malaysian_Grand_Prix.jpg/500px-Franco_Morbidelli_at_the_2025_Malaysian_Grand_Prix.jpg",

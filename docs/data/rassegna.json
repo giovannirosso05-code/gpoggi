@@ -1,16 +1,112 @@
 {
- "generato_il": "2026-10-24T16:55:32+00:00",
+ "generato_il": "2026-10-24T19:25:10+00:00",
  "articoli": [
   {
-   "titolo": "LIVE F1, GP USA 2026 in DIRETTA: alle 19.30 la FP3, Antonelli prepara l’assalto alla pole",
-   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE 18.55 Alle 19.30 comincerà la FP3 al COTA di Austin, con i piloti che avranno a disposizione gli ultimi 60 minuti di attività in pista per preparare la…",
+   "titolo": "McLaren non molla: ecco gli aggiornamenti di Austin",
+   "estratto": "In Texas la McLaren porta novità al diffusore e non solo: l’obiettivo è ritrovare la guidabilità persa con il pacchetto precedente",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/mclaren-non-molla-ecco-aggiornamenti-austin",
+   "pubblicato": "2026-10-24T19:18:33+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 4.0,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 GP Stati Uniti 2026, qualifiche: la Ferrari sogna di tornare in pole dopo le libere, la Q1 inizia alle 23.00 – DIRETTA",
+   "estratto": "La cronaca live minuto per minuto delle prove ufficiali che decidono la griglia di partenza del fine settimana a Austin",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-usa-stati-uniti-2026-austin-qualifiche-q1-q2-q3-pole-aggiornamenti-ferrari-leclerc-hamilton-verstappen",
+   "pubblicato": "2026-10-24T19:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 21.9,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 | Austin, Libere 3: Hamilton fa sognare la Ferrari con Max vicino, poi Leclerc e le due Mercedes",
+   "estratto": "Ferrari e sempre Ferrari. Anche nel terzo turno di prove libere del GP degli Stati Uniti c'è la rossa davanti a tutti. La novità è che questa volta la prestazione è firmata da Lewis Hamilton che con…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-austin-libere-3-hamilton-fa-sognare-la-ferrari-con-max-vicino-poi-leclerc-e-le-due-mercedes/10867899/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-24T18:58:25+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 31.9,
+   "testate": 3
+  },
+  {
+   "titolo": "F1, GP USA 2026: risultati e classifica FP3. Hamilton il migliore, Verstappen in scia. Antonelli non brilla",
+   "estratto": "Calato il sipario sulla terza sessione di prove libere del GP degli USA, diciottesimo appuntamento del Mondiale 2026 di F1. Sul tracciato di Austin, le scuderie hanno lavorato per trovare gli ultimi…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/f1-gp-usa-2026-risultati-e-classifica-fp3-hamilton-il-migliore-verstappen-in-scia-antonelli-non-brilla/",
+   "pubblicato": "2026-10-24T18:46:50+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 9.8,
+   "testate": 2
+  },
+  {
+   "titolo": "Lewis Hamilton svetta nella FP3 ad Austin, davanti a Verstappen. Antonelli ‘litiga’ coi track-limits",
+   "estratto": "Le prove libere continuano a parlare Ferrari ad Austin (USA). Dopo che, nel venerdì del diciottesimo appuntamento del Mondiale 2026 di F1, il monegasco Charles Leclerc aveva dominato FP1 e FP2, la…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/lewis-hamilton-svetta-nella-fp3-davanti-a-verstappen-ad-austin-antonelli-litiga-coi-track-limits/",
+   "pubblicato": "2026-10-24T18:42:15+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 31.8,
+   "testate": 3
+  },
+  {
+   "titolo": "GP Stati Uniti 2026 – Classifica FP3: Ferrari padrona (per ora): Hamilton 1°, Leclerc 3°. In mezzo c’è sempre Verstappen",
+   "estratto": "Continua la supremazia ferrarista nelle prove libere di Austin. Antonelli è quarto davanti a Russell",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-risultati/gp-stati-uniti-2026-classifica-fp3-ferrari-padrona-per-ora-hamilton-1-leclerc-3-in-mezzo-ce-sempre-verstappen",
+   "pubblicato": "2026-10-24T18:36:46+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 19.8,
+   "testate": 3
+  },
+  {
+   "titolo": "LIVE F1, GP USA 2026 in DIRETTA: la Ferrari brilla anche in FP3. Alle 23.00 le qualifiche",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE 20.36 La nostra diretta si ferma qui per il momento, ma vi diamo appuntamento a più tardi per le qualifiche di Austin. 20.34 Ferrari si conferma in grande…",
    "fonte": "OA Sport",
    "serie": "F1",
    "url": "https://www.oasport.it/2026/10/live-f1-gp-usa-2026-in-diretta-antonelli-sfida-verstappen-e-russell-per-la-pole/",
-   "pubblicato": "2026-10-24T16:48:41+00:00",
+   "pubblicato": "2026-10-24T18:32:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.0,
+   "punteggio": 21.8,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 GP Stati Uniti 2026, Austin: la cronaca delle FP3, minuto per minuto",
+   "estratto": "La cronaca live minuto per minuto della terza e ultima sessione di prove del fine settimana a Austin",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-usa-stati-uniti-2026-austin-prove-libere-3-fp3-aggiornamenti-ferrari-leclerc-hamilton-verstappen",
+   "pubblicato": "2026-10-24T18:30:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.8,
+   "testate": 1
+  },
+  {
+   "titolo": "LIVE MotoGP, GP Australia 2026 in DIRETTA: Marquez per la spallata decisiva al Mondiale",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE Buongiorno e bentrovati alla DIRETTA LIVE del GP d’Australia, diciottesimo appuntamento del Mondiale 2026 di MotoGP. Sul tracciato di Phillip Island, il…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/live-motogp-gp-australia-2026-in-diretta-marquez-per-la-spallata-decisiva-al-mondiale/",
+   "pubblicato": "2026-10-24T17:30:49+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 13.5,
    "testate": 2
   },
   {
@@ -22,7 +118,7 @@
    "pubblicato": "2026-10-24T16:35:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.9,
+   "punteggio": 11.3,
    "testate": 3
   },
   {
@@ -34,7 +130,7 @@
    "pubblicato": "2026-10-24T16:14:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.8,
+   "punteggio": 8.2,
    "testate": 1
   },
   {
@@ -46,7 +142,7 @@
    "pubblicato": "2026-10-24T15:47:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.7,
+   "punteggio": 18.1,
    "testate": 2
   },
   {
@@ -58,20 +154,8 @@
    "pubblicato": "2026-10-24T14:53:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.5,
+   "punteggio": 2.9,
    "testate": 1
-  },
-  {
-   "titolo": "F1 GP Stati Uniti 2026, FP3: l’ultima sessione di libere del weekend di Austin inizia alle 19.30 – DIRETTA",
-   "estratto": "La cronaca live minuto per minuto della terza e ultima sessione di prove del fine settimana a Austin",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-usa-stati-uniti-2026-austin-prove-libere-3-fp3-aggiornamenti-ferrari-leclerc-hamilton-verstappen",
-   "pubblicato": "2026-10-24T14:40:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 13.4,
-   "testate": 2
   },
   {
    "titolo": "MotoGP | Marquez: \"Le domeniche della prima metà della stagione volevo solo sdraiarmi sul divano\"",
@@ -82,7 +166,7 @@
    "pubblicato": "2026-10-24T14:21:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.4,
+   "punteggio": 7.7,
    "testate": 1
   },
   {
@@ -94,7 +178,7 @@
    "pubblicato": "2026-10-24T13:31:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.2,
+   "punteggio": 7.5,
    "testate": 1
   },
   {
@@ -106,7 +190,7 @@
    "pubblicato": "2026-10-24T12:58:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.0,
+   "punteggio": 7.4,
    "testate": 1
   },
   {
@@ -118,7 +202,7 @@
    "pubblicato": "2026-10-24T12:38:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.9,
+   "punteggio": 15.3,
    "testate": 1
   },
   {
@@ -130,7 +214,7 @@
    "pubblicato": "2026-10-24T10:20:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.4,
+   "punteggio": 16.7,
    "testate": 2
   },
   {
@@ -142,7 +226,7 @@
    "pubblicato": "2026-10-24T09:30:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.1,
+   "punteggio": 9.5,
    "testate": 3
   },
   {
@@ -154,7 +238,7 @@
    "pubblicato": "2026-10-24T08:56:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.0,
+   "punteggio": 14.4,
    "testate": 1
   },
   {
@@ -166,7 +250,7 @@
    "pubblicato": "2026-10-24T08:53:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.0,
+   "punteggio": 19.4,
    "testate": 2
   },
   {
@@ -178,7 +262,7 @@
    "pubblicato": "2026-10-24T08:52:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.0,
+   "punteggio": 16.4,
    "testate": 2
   },
   {
@@ -190,7 +274,7 @@
    "pubblicato": "2026-10-24T08:36:32+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.9,
+   "punteggio": 6.3,
    "testate": 1
   },
   {
@@ -202,7 +286,7 @@
    "pubblicato": "2026-10-24T08:30:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.1,
+   "punteggio": -10.7,
    "testate": 1
   },
   {
@@ -214,7 +298,7 @@
    "pubblicato": "2026-10-24T08:21:53+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.9,
+   "punteggio": 14.2,
    "testate": 1
   },
   {
@@ -226,7 +310,7 @@
    "pubblicato": "2026-10-24T08:18:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.8,
+   "punteggio": 24.2,
    "testate": 2
   },
   {
@@ -238,7 +322,7 @@
    "pubblicato": "2026-10-24T08:13:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.8,
+   "punteggio": 9.2,
    "testate": 1
   },
   {
@@ -250,7 +334,7 @@
    "pubblicato": "2026-10-24T07:58:21+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.8,
+   "punteggio": 24.1,
    "testate": 2
   },
   {
@@ -262,7 +346,7 @@
    "pubblicato": "2026-10-24T07:55:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.8,
+   "punteggio": 16.1,
    "testate": 2
   },
   {
@@ -274,7 +358,7 @@
    "pubblicato": "2026-10-24T07:53:50+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.7,
+   "punteggio": 14.1,
    "testate": 1
   },
   {
@@ -286,7 +370,7 @@
    "pubblicato": "2026-10-24T07:37:37+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.7,
+   "punteggio": 19.1,
    "testate": 2
   },
   {
@@ -298,7 +382,7 @@
    "pubblicato": "2026-10-24T07:32:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.7,
+   "punteggio": 11.0,
    "testate": 2
   },
   {
@@ -310,7 +394,7 @@
    "pubblicato": "2026-10-24T07:24:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.6,
+   "punteggio": 6.0,
    "testate": 1
   },
   {
@@ -322,7 +406,7 @@
    "pubblicato": "2026-10-24T07:16:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.6,
+   "punteggio": 24.0,
    "testate": 2
   },
   {
@@ -334,7 +418,7 @@
    "pubblicato": "2026-10-24T06:49:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.5,
+   "punteggio": 8.9,
    "testate": 1
   },
   {
@@ -346,7 +430,7 @@
    "pubblicato": "2026-10-24T06:42:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.4,
+   "punteggio": 25.8,
    "testate": 3
   },
   {
@@ -358,7 +442,7 @@
    "pubblicato": "2026-10-24T06:38:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.4,
+   "punteggio": 5.8,
    "testate": 1
   },
   {
@@ -370,7 +454,7 @@
    "pubblicato": "2026-10-24T06:27:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.4,
+   "punteggio": 23.8,
    "testate": 2
   },
   {
@@ -382,19 +466,7 @@
    "pubblicato": "2026-10-24T06:13:17+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.3,
-   "testate": 1
-  },
-  {
-   "titolo": "GP Stati Uniti 2026: orari Sky/Now e TV8",
-   "estratto": "I dettagli della programmazione televisiva dell'appuntamento ad Austin in Texas sul circuito del COTA",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-stati-uniti-2026-austin-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-aggiornamenti-match-point-antonelli",
-   "pubblicato": "2026-10-24T06:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -10.7,
+   "punteggio": 5.7,
    "testate": 1
   },
   {
@@ -406,8 +478,20 @@
    "pubblicato": "2026-10-24T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.3,
+   "punteggio": 18.6,
    "testate": 2
+  },
+  {
+   "titolo": "GP Stati Uniti 2026: orari Sky/Now e TV8",
+   "estratto": "I dettagli della programmazione televisiva dell'appuntamento ad Austin in Texas sul circuito del COTA",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-stati-uniti-2026-austin-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-aggiornamenti-match-point-antonelli",
+   "pubblicato": "2026-10-24T06:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -11.4,
+   "testate": 1
   },
   {
    "titolo": "Martin, il bollettino medico: frattura del radio e possibile frattura dell’ulna, è dichiarato non idoneo a correre per il resto del weekend",
@@ -418,7 +502,7 @@
    "pubblicato": "2026-10-24T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.3,
+   "punteggio": 0.6,
    "testate": 1
   },
   {
@@ -430,7 +514,7 @@
    "pubblicato": "2026-10-24T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.7,
+   "punteggio": -11.4,
    "testate": 1
   },
   {
@@ -442,7 +526,7 @@
    "pubblicato": "2026-10-24T05:56:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.3,
+   "punteggio": 20.6,
    "testate": 3
   },
   {
@@ -454,7 +538,7 @@
    "pubblicato": "2026-10-24T05:50:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.2,
+   "punteggio": 10.6,
    "testate": 2
   },
   {
@@ -466,7 +550,7 @@
    "pubblicato": "2026-10-24T05:31:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.2,
+   "punteggio": 28.5,
    "testate": 3
   },
   {
@@ -478,7 +562,7 @@
    "pubblicato": "2026-10-24T05:31:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.9,
+   "punteggio": -11.5,
    "testate": 1
   },
   {
@@ -490,7 +574,7 @@
    "pubblicato": "2026-10-24T05:31:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.9,
+   "punteggio": -11.5,
    "testate": 1
   },
   {
@@ -502,7 +586,7 @@
    "pubblicato": "2026-10-24T05:29:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.9,
+   "punteggio": -11.5,
    "testate": 1
   },
   {
@@ -514,7 +598,7 @@
    "pubblicato": "2026-10-24T05:28:48+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.1,
+   "punteggio": 23.5,
    "testate": 2
   },
   {
@@ -526,8 +610,8 @@
    "pubblicato": "2026-10-24T05:27:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.1,
-   "testate": 3
+   "punteggio": 15.5,
+   "testate": 2
   },
   {
    "titolo": "Marc Marquez sportivo: “Il primo pensiero va a Martin: mi ha portato al limite, meritava anche lui il titolo”",
@@ -538,7 +622,7 @@
    "pubblicato": "2026-10-24T05:20:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.1,
+   "punteggio": 15.5,
    "testate": 2
   },
   {
@@ -550,7 +634,7 @@
    "pubblicato": "2026-10-24T05:20:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.1,
+   "punteggio": 25.5,
    "testate": 3
   },
   {
@@ -562,7 +646,7 @@
    "pubblicato": "2026-10-24T05:03:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.0,
+   "punteggio": 13.4,
    "testate": 1
   },
   {
@@ -574,7 +658,7 @@
    "pubblicato": "2026-10-24T05:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.0,
+   "punteggio": 23.4,
    "testate": 2
   },
   {
@@ -586,7 +670,7 @@
    "pubblicato": "2026-10-24T04:52:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.0,
+   "punteggio": 8.4,
    "testate": 3
   },
   {
@@ -598,7 +682,7 @@
    "pubblicato": "2026-10-24T04:50:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.0,
+   "punteggio": 20.4,
    "testate": 3
   },
   {
@@ -610,7 +694,7 @@
    "pubblicato": "2026-10-24T04:46:07+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.0,
+   "punteggio": 20.3,
    "testate": 3
   },
   {
@@ -622,7 +706,7 @@
    "pubblicato": "2026-10-24T04:45:12+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.0,
+   "punteggio": 8.3,
    "testate": 3
   },
   {
@@ -634,7 +718,7 @@
    "pubblicato": "2026-10-24T04:40:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.9,
+   "punteggio": 18.3,
    "testate": 2
   },
   {
@@ -646,7 +730,7 @@
    "pubblicato": "2026-10-24T04:39:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.9,
+   "punteggio": 16.3,
    "testate": 3
   },
   {
@@ -658,7 +742,7 @@
    "pubblicato": "2026-10-24T04:39:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 33.9,
+   "punteggio": 33.3,
    "testate": 3
   },
   {
@@ -670,7 +754,7 @@
    "pubblicato": "2026-10-24T04:38:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.9,
+   "punteggio": 5.3,
    "testate": 1
   },
   {
@@ -682,7 +766,7 @@
    "pubblicato": "2026-10-24T04:35:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.9,
+   "punteggio": 10.3,
    "testate": 2
   },
   {
@@ -694,7 +778,7 @@
    "pubblicato": "2026-10-24T04:30:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.9,
+   "punteggio": 20.3,
    "testate": 3
   },
   {
@@ -706,7 +790,7 @@
    "pubblicato": "2026-10-24T04:25:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.9,
+   "punteggio": 20.2,
    "testate": 3
   },
   {
@@ -718,7 +802,7 @@
    "pubblicato": "2026-10-24T04:05:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.2,
+   "punteggio": -11.8,
    "testate": 1
   },
   {
@@ -730,7 +814,7 @@
    "pubblicato": "2026-10-24T04:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.8,
+   "punteggio": 10.1,
    "testate": 2
   },
   {
@@ -742,7 +826,7 @@
    "pubblicato": "2026-10-24T04:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.8,
+   "punteggio": 16.1,
    "testate": 3
   },
   {
@@ -754,7 +838,7 @@
    "pubblicato": "2026-10-24T03:28:22+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.6,
+   "punteggio": 10.0,
    "testate": 2
   },
   {
@@ -766,7 +850,7 @@
    "pubblicato": "2026-10-24T02:35:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.6,
+   "punteggio": -2.2,
    "testate": 2
   },
   {
@@ -778,7 +862,7 @@
    "pubblicato": "2026-10-24T02:13:55+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.3,
+   "punteggio": 4.7,
    "testate": 1
   },
   {
@@ -790,7 +874,7 @@
    "pubblicato": "2026-10-24T02:06:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.3,
+   "punteggio": 14.7,
    "testate": 2
   },
   {
@@ -802,20 +886,8 @@
    "pubblicato": "2026-10-24T01:38:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.2,
+   "punteggio": 14.6,
    "testate": 2
-  },
-  {
-   "titolo": "Marc Marquez soddisfatto dopo la pole: “Ho avuto buone sensazioni. Sprint? Potrebbe non piovere”",
-   "estratto": "Non può che essere soddisfatto Marc Marquez al termine delle qualifiche valide per il GP di Australia, appuntamento numero diciotto del Mondiale 2026 di MotoGP in fase di svolgimento presso il…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/10/marc-marquez-soddisfatto-dopo-la-pole-ho-avuto-buone-sensazioni-sprint-potrebbe-non-piovere/",
-   "pubblicato": "2026-10-24T01:00:11+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 5.0,
-   "testate": 1
   },
   {
    "titolo": "MotoGP | Marquez cade, ma poi va in pole a Phillip Island rifilando 1\"5 a tutti sul bagnato!",
@@ -826,7 +898,7 @@
    "pubblicato": "2026-10-24T00:51:55+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 33.0,
+   "punteggio": 32.4,
    "testate": 3
   },
   {
@@ -838,7 +910,7 @@
    "pubblicato": "2026-10-24T00:00:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.2,
+   "punteggio": -0.9,
    "testate": 1
   },
   {
@@ -850,7 +922,7 @@
    "pubblicato": "2026-10-24T00:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.2,
+   "punteggio": -0.9,
    "testate": 1
   },
   {
@@ -862,7 +934,7 @@
    "pubblicato": "2026-10-23T23:47:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.7,
+   "punteggio": 7.1,
    "testate": 1
   },
   {
@@ -874,7 +946,7 @@
    "pubblicato": "2026-10-23T23:33:35+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.7,
+   "punteggio": 7.0,
    "testate": 1
   },
   {
@@ -886,7 +958,7 @@
    "pubblicato": "2026-10-23T23:27:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.6,
+   "punteggio": 7.0,
    "testate": 1
   },
   {
@@ -898,7 +970,7 @@
    "pubblicato": "2026-10-23T22:30:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.4,
+   "punteggio": 4.8,
    "testate": 2
   },
   {
@@ -910,7 +982,7 @@
    "pubblicato": "2026-10-23T22:19:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.3,
+   "punteggio": 26.7,
    "testate": 3
   },
   {
@@ -922,7 +994,7 @@
    "pubblicato": "2026-10-23T22:04:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.3,
+   "punteggio": 14.7,
    "testate": 3
   },
   {
@@ -934,7 +1006,7 @@
    "pubblicato": "2026-10-23T22:00:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.3,
+   "punteggio": 26.6,
    "testate": 3
   },
   {
@@ -946,7 +1018,7 @@
    "pubblicato": "2026-10-23T22:00:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.3,
+   "punteggio": 26.6,
    "testate": 3
   },
   {
@@ -958,7 +1030,7 @@
    "pubblicato": "2026-10-23T22:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.7,
+   "punteggio": -1.4,
    "testate": 1
   },
   {
@@ -970,7 +1042,7 @@
    "pubblicato": "2026-10-23T21:01:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.0,
+   "punteggio": -1.6,
    "testate": 1
   },
   {
@@ -982,7 +1054,7 @@
    "pubblicato": "2026-10-23T20:21:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.9,
+   "punteggio": 16.2,
    "testate": 2
   },
   {
@@ -994,7 +1066,7 @@
    "pubblicato": "2026-10-23T20:11:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.2,
+   "punteggio": -1.8,
    "testate": 1
   },
   {
@@ -1006,7 +1078,7 @@
    "pubblicato": "2026-10-23T19:55:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.7,
+   "punteggio": 6.1,
    "testate": 1
   },
   {
@@ -1018,7 +1090,7 @@
    "pubblicato": "2026-10-23T19:28:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.6,
+   "punteggio": 3.0,
    "testate": 1
   },
   {
@@ -1030,7 +1102,7 @@
    "pubblicato": "2026-10-23T19:18:12+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.4,
+   "punteggio": -2.0,
    "testate": 1
   },
   {
@@ -1042,7 +1114,7 @@
    "pubblicato": "2026-10-23T19:05:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.5,
+   "punteggio": 13.9,
    "testate": 3
   },
   {
@@ -1054,7 +1126,7 @@
    "pubblicato": "2026-10-23T18:50:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.5,
+   "punteggio": 15.9,
    "testate": 2
   },
   {
@@ -1066,7 +1138,7 @@
    "pubblicato": "2026-10-23T18:42:24+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 26.4,
+   "punteggio": 25.8,
    "testate": 3
   },
   {
@@ -1078,20 +1150,8 @@
    "pubblicato": "2026-10-23T18:33:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.4,
+   "punteggio": 3.8,
    "testate": 2
-  },
-  {
-   "titolo": "F1 GP Stati Uniti 2026, Austin: la cronaca delle FP1, minuto per minuto",
-   "estratto": "La cronaca live minuto per minuto della prima sessione di prove del fine settimana a Austin",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-usa-stati-uniti-2026-austin-prove-libere-1-fp1-aggiornamenti-ferrari-leclerc-hamilton-antonelli",
-   "pubblicato": "2026-10-23T18:30:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -1.6,
-   "testate": 1
   },
   {
    "titolo": "Marquez: “Al 70% mi ritiro entro tre anni”",
@@ -1102,19 +1162,7 @@
    "pubblicato": "2026-10-23T16:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.8,
-   "testate": 1
-  },
-  {
-   "titolo": "Marko risponde a Horner: “Che imbarazzo l’autobiografia. Una serie di bugie di basso livello”",
-   "estratto": "Helmut Marko ha criticato Chris Horner per il contenuto e il tempismo di uscita della sua autobiografia \"Drive\"",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/marko-risponde-a-horner-che-imbarazzo-lautobiografia-una-serie-di-bugie-di-basso-livello",
-   "pubblicato": "2026-10-23T15:00:30+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 2.5,
+   "punteggio": 2.1,
    "testate": 1
   },
   {
@@ -1126,7 +1174,7 @@
    "pubblicato": "2026-10-23T14:49:09+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.5,
+   "punteggio": 1.8,
    "testate": 1
   },
   {
@@ -1138,7 +1186,7 @@
    "pubblicato": "2026-10-23T14:31:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.4,
+   "punteggio": 11.8,
    "testate": 2
   },
   {
@@ -1150,20 +1198,8 @@
    "pubblicato": "2026-10-23T14:00:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.3,
+   "punteggio": 6.6,
    "testate": 2
-  },
-  {
-   "titolo": "Freddie Slater nelle FP1 dei GP del Messico e Brasile con Audi",
-   "estratto": "Il britannico, vice-campione di F3 e futuro pilota di F2, farà il suo esordio nel Circus",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/freddie-slater-fp1-dei-gp-messico-brasile",
-   "pubblicato": "2026-10-23T14:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -2.7,
-   "testate": 1
   },
   {
    "titolo": "F1, l’asfalto di Austin preoccupa ancora. Verstappen e Norris denunciano i problemi",
@@ -1174,7 +1210,7 @@
    "pubblicato": "2026-10-23T13:53:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.2,
+   "punteggio": 6.6,
    "testate": 2
   },
   {
@@ -1186,7 +1222,7 @@
    "pubblicato": "2026-10-23T13:40:28+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 21.2,
+   "punteggio": 20.6,
    "testate": 2
   },
   {
@@ -1198,7 +1234,7 @@
    "pubblicato": "2026-10-23T13:25:44+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.1,
+   "punteggio": 1.5,
    "testate": 1
   },
   {
@@ -1210,7 +1246,7 @@
    "pubblicato": "2026-10-23T13:04:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.0,
+   "punteggio": 9.4,
    "testate": 1
   },
   {
@@ -1222,7 +1258,7 @@
    "pubblicato": "2026-10-23T12:01:15+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 10.8,
+   "punteggio": 10.2,
    "testate": 1
   },
   {
@@ -1234,7 +1270,7 @@
    "pubblicato": "2026-10-23T11:35:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.7,
+   "punteggio": 19.0,
    "testate": 2
   },
   {
@@ -1246,7 +1282,7 @@
    "pubblicato": "2026-10-23T11:01:37+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.5,
+   "punteggio": 5.9,
    "testate": 2
   },
   {
@@ -1258,7 +1294,7 @@
    "pubblicato": "2026-10-23T10:30:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.4,
+   "punteggio": 8.8,
    "testate": 1
   },
   {
@@ -1270,7 +1306,7 @@
    "pubblicato": "2026-10-23T09:29:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 29.1,
+   "punteggio": 28.5,
    "testate": 3
   },
   {
@@ -1282,7 +1318,7 @@
    "pubblicato": "2026-10-23T09:25:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.1,
+   "punteggio": 18.5,
    "testate": 2
   },
   {
@@ -1294,8 +1330,8 @@
    "pubblicato": "2026-10-23T08:54:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.0,
-   "testate": 2
+   "punteggio": 28.4,
+   "testate": 3
   },
   {
    "titolo": "MotoGP | Bagnaia: \"L'unità dei piloti è importante per tutelarci un po' di più ed avere voce su certe decisioni\"",
@@ -1306,7 +1342,7 @@
    "pubblicato": "2026-10-23T08:35:14+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.9,
+   "punteggio": 18.3,
    "testate": 2
   },
   {
@@ -1318,7 +1354,7 @@
    "pubblicato": "2026-10-23T08:15:43+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.8,
+   "punteggio": 8.2,
    "testate": 1
   },
   {
@@ -1330,7 +1366,7 @@
    "pubblicato": "2026-10-23T07:57:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.8,
+   "punteggio": 8.1,
    "testate": 1
   },
   {
@@ -1342,7 +1378,7 @@
    "pubblicato": "2026-10-23T07:35:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.7,
+   "punteggio": 18.0,
    "testate": 2
   },
   {
@@ -1354,7 +1390,7 @@
    "pubblicato": "2026-10-23T07:14:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.6,
+   "punteggio": 8.0,
    "testate": 1
   },
   {
@@ -1366,7 +1402,7 @@
    "pubblicato": "2026-10-23T06:52:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.5,
+   "punteggio": -0.1,
    "testate": 1
   },
   {
@@ -1378,7 +1414,7 @@
    "pubblicato": "2026-10-23T06:04:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.3,
+   "punteggio": 2.7,
    "testate": 1
   },
   {
@@ -1390,7 +1426,7 @@
    "pubblicato": "2026-10-23T06:00:54+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.3,
+   "punteggio": 12.6,
    "testate": 2
   },
   {
@@ -1402,44 +1438,8 @@
    "pubblicato": "2026-10-23T05:33:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.2,
+   "punteggio": 12.5,
    "testate": 2
-  },
-  {
-   "titolo": "F1 oggi in tv, GP USA 2026: orari prove prove libere, streaming, programma Sky e TV8",
-   "estratto": "Oggi, venerdì 23 ottobre, prende il via la diciottesima tappa del Mondiale 2026 di F1. Sul circuito di Austin, negli USA, si prevede un fine-settimana piuttosto intenso dove le scuderie dovranno fare…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/f1-oggi-in-tv-gp-usa-2026-orari-prove-prove-libere-streaming-programma-sky-e-tv8/",
-   "pubblicato": "2026-10-23T05:15:55+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -16.9,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Phillip Island, Libere 1: Marquez subito in spolvero davanti a Raul Fernandez, solo 7° Martin",
-   "estratto": "Splende il sole su Phillip Island, ma potrebbe essere anche solo una breve parentesi, perché per domani e soprattutto per domenica le previsioni meteo sembrano profilare scenari di pioggia per il…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-phillip-island-libere-1-marquez-subito-in-spolvero-davanti-a-raul-fernandez-solo-7-martin/10867212/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-23T00:51:43+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 14.0,
-   "testate": 3
-  },
-  {
-   "titolo": "F1, George Russell: “Questa stagione semplicemente non doveva andare. Antonelli più efficace con le nuove macchine”",
-   "estratto": "George Russell sarà uno dei protagonisti più attesi in Texas per il Gran Premio degli Stati Uniti 2026, valevole come diciottesimo capitolo stagionale del Mondiale di Formula Uno. Il britannico della…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/f1-george-russell-questa-stagione-semplicemente-non-doveva-andare-antonelli-piu-efficace-con-le-nuove-macchine/",
-   "pubblicato": "2026-10-22T22:40:17+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 2.4,
-   "testate": 1
   }
  ]
 }

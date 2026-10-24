@@ -1,6 +1,18 @@
 {
- "generato_il": "2026-10-24T21:50:35+00:00",
+ "generato_il": "2026-10-24T21:52:48+00:00",
  "articoli": [
+  {
+   "titolo": "LIVE F1, GP USA 2026 in DIRETTA: Leclerc davanti ad Antonelli in Q2, ma il favorito è Verstappen",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE LA GRIGLIA DI PARTENZA 23.49 In pista Antonelli e Russell con gomme soft nuove. 23.47 Inizia la Q3. 13 minuti di durata. 23.45 Per la Ferrari arriva il…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/live-f1-gp-usa-2026-in-diretta-antonelli-sfida-verstappen-e-russell-per-la-pole/",
+   "pubblicato": "2026-10-24T21:41:41+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 32.0,
+   "testate": 3
+  },
   {
    "titolo": "Griglia di partenza F1, GP USA 2026: risultati e classifica qualifiche",
    "estratto": "Calato il sipario sulle qualifiche del GP degli USA, undicesima tappa del Mondiale 2026 di F1. Sul circuito di Austin, il time-attack ha decretato il poleman sul Luna Park del Texas. Una pista per…",
@@ -14,19 +26,7 @@
    "testate": 2
   },
   {
-   "titolo": "LIVE F1, GP USA 2026 in DIRETTA: Norris davanti a Leclerc in Q1, Antonelli avanza con gomme medie",
-   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE 23.40 Termina la Q2. Eliminati Gasly, Hulkenberg, Bearman, Bortoleto, Colapinto ed Alonso. 23.40 Leclerc balza in testa in 1’34″198: 80 millesimi meglio di…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/live-f1-gp-usa-2026-in-diretta-antonelli-sfida-verstappen-e-russell-per-la-pole/",
-   "pubblicato": "2026-10-24T21:19:41+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 31.9,
-   "testate": 3
-  },
-  {
-   "titolo": "F1 GP Stati Uniti 2026, qualifiche: Norris davanti a Leclerc e Verstappen in Q1 – DIRETTA",
+   "titolo": "F1 GP Stati Uniti 2026, qualifiche: Leclerc davanti a tutti in Q2, ma occhio a Verstappen – DIRETTA",
    "estratto": "La cronaca live minuto per minuto delle prove ufficiali che decidono la griglia di partenza del fine settimana a Austin",
    "fonte": "FormulaPassion",
    "serie": "F1",
@@ -286,7 +286,7 @@
    "pubblicato": "2026-10-24T08:52:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.8,
+   "punteggio": 15.7,
    "testate": 2
   },
   {
@@ -430,7 +430,7 @@
    "pubblicato": "2026-10-24T07:16:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.4,
+   "punteggio": 23.3,
    "testate": 2
   },
   {
@@ -478,7 +478,7 @@
    "pubblicato": "2026-10-24T06:27:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.2,
+   "punteggio": 23.1,
    "testate": 2
   },
   {
@@ -694,7 +694,7 @@
    "pubblicato": "2026-10-24T04:52:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.8,
+   "punteggio": 7.7,
    "testate": 3
   },
   {
@@ -706,7 +706,7 @@
    "pubblicato": "2026-10-24T04:50:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.8,
+   "punteggio": 19.7,
    "testate": 3
   },
   {
@@ -922,7 +922,7 @@
    "pubblicato": "2026-10-24T00:51:55+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 31.8,
+   "punteggio": 31.7,
    "testate": 3
   },
   {
@@ -1018,7 +1018,7 @@
    "pubblicato": "2026-10-23T22:04:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.1,
+   "punteggio": 14.0,
    "testate": 3
   },
   {
@@ -1150,7 +1150,7 @@
    "pubblicato": "2026-10-23T18:50:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.3,
+   "punteggio": 15.2,
    "testate": 2
   },
   {
@@ -1234,7 +1234,7 @@
    "pubblicato": "2026-10-23T13:40:28+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 20.0,
+   "punteggio": 19.9,
    "testate": 2
   },
   {
@@ -1402,7 +1402,7 @@
    "pubblicato": "2026-10-23T07:14:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.4,
+   "punteggio": 7.3,
    "testate": 1
   },
   {
@@ -1414,7 +1414,7 @@
    "pubblicato": "2026-10-23T06:52:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.7,
+   "punteggio": -0.8,
    "testate": 1
   },
   {
@@ -1426,7 +1426,7 @@
    "pubblicato": "2026-10-23T06:04:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.1,
+   "punteggio": 2.0,
    "testate": 1
   },
   {

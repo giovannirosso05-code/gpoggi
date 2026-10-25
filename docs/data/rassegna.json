@@ -1,32 +1,104 @@
 {
- "generato_il": "2026-10-25T20:15:12+00:00",
+ "generato_il": "2026-10-25T21:57:09+00:00",
  "articoli": [
   {
-   "titolo": "LIVE F1, GP USA 2026 in DIRETTA: Antonelli tiene la testa, Leclerc in bagarre con Verstappen",
-   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE 7° giro/56 Norris a soli 6 decimi dal compagno di squadra Piastri. 7° giro/56 Attenzione a Leclerc: si porta a 1″3 da Verstappen. 6° giro/56 La classifica…",
+   "titolo": "F1, Kimi Antonelli: “Voglio chiudere in bellezza, oggi lavoro di squadra eccezionale”",
+   "estratto": "Si è concluso con la vittoria di Andrea Kimi Antonelli il Gran Premio degli Stati Uniti d’America 2026, diciottesimo appuntamento del Mondiale F1. Sul circuito di Austin, in Texas, l’italiano ha…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/f1-kimi-antonelli-voglio-chiudere-in-bellezza-oggi-lavoro-di-squadra-eccezionale/",
+   "pubblicato": "2026-10-25T21:54:45+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 17.0,
+   "testate": 1
+  },
+  {
+   "titolo": "LIVE F1, GP USA 2026 in DIRETTA: KIMI ANTONELLI E’ L’UOMO DEL TEXAS! Dominio straripante, Mondiale il 1° novembre!",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE L’ORDINE D’ARRIVO DELLA GARA 22.52 Grazie per averci seguito, amici di OA Sport. Appuntamento dunque a domenica prossima per l’appuntamento con la storia. Un…",
    "fonte": "OA Sport",
    "serie": "F1",
    "url": "https://www.oasport.it/2026/10/live-f1-gp-usa-2026-in-diretta-kimi-antonelli-dalla-pole-per-vincere-e-conquistare-il-titolo/",
-   "pubblicato": "2026-10-25T20:04:31+00:00",
+   "pubblicato": "2026-10-25T21:52:31+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 22.0,
+   "testate": 2
+  },
+  {
+   "titolo": "LO CHIAMAVANO KIMI…Assolo regale di Antonelli ad Austin: per il Mondiale manca solo la matematica!",
+   "estratto": "Kimi Antonelli realizza un weekend praticamente perfetto al COTA di Austin e vince per dispersione dalla pole position il Gran Premio degli Stati Uniti, diciottesimo appuntamento del Mondiale di…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/lo-chiamavano-kimi-assolo-regale-di-antonelli-ad-austin-per-il-mondiale-manca-solo-la-matematica/",
+   "pubblicato": "2026-10-25T21:51:36+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 22.0,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 | Antonelli domina ad Austin ed è a un passo dal titolo. A podio Leclerc e Verstappen",
+   "estratto": "In Texas c’è un nuovo sceriffo a dettar legge e il suo nome è Andrea Kimi Antonelli. Dopo essere scattato dalla pole conquistata sabato, l’italiano ha infatti portato a termine il lavoro, vincendo ad…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-antonelli-domina-ad-austin-ed-e-a-un-passo-dal-titolo-a-podio-leclerc-e-verstappen/10868345/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-25T21:50:02+00:00",
    "tipo": null,
    "citazione": false,
    "punteggio": 32.0,
    "testate": 3
   },
   {
-   "titolo": "LIVE F1, GP USA 2026 in DIRETTA: Antonelli tiene la testa, Leclerc in bagarre con Verstappen",
-   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE 7° giro/56 Norris a soli 6 decimi dal compagno di squadra Piastri. 7° giro/56 Attenzione a Leclerc: si porta a 1″3 da Verstappen. 6° giro/56 La classifica…",
+   "titolo": "Ordine d’arrivo F1, GP USA 2026: Kimi Antonelli domina ad Austin e vicinissimo al titolo! Leclerc in piazza d’onore, batte Verstappen. Hamilton giù dal podio",
+   "estratto": "Calato il sipario sul GP degli USA, diciottesimo appuntamento del Mondiale 2026 di F1. Sullo spettacolare circuito di Austin, si è assistito a una gara dalle palpitanti emozioni in cui i protagonisti…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/ordine-darrivo-f1-gp-usa-2026-risultati-e-classifica-gara/",
+   "pubblicato": "2026-10-25T21:46:46+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 42.0,
+   "testate": 4
+  },
+  {
+   "titolo": "Classifica Mondiale costruttori F1 2026: Mercedes imprendibile per la Ferrari, Red Bull vicina alla McLaren",
+   "estratto": "La Ferrari ha recuperato sette punti nei confronti della Mercedes al termine del GP di Singapore: il secondo posto di Charles Leclerc alle spalle di Max Verstappen e la sesta piazza di Lewis Hamilton…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/classifica-mondiale-costruttori-f1-2026-graduatoria-e-punti/",
+   "pubblicato": "2026-10-25T21:44:28+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -0.1,
+   "testate": 1
+  },
+  {
+   "titolo": "LIVE F1, GP USA 2026 in DIRETTA: KIMI ANTONELLI E’ L’UOMO DEL TEXAS! Dominio straripante, Mondiale ad un soffio!",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE L’ORDINE D’ARRIVO DELLA GARA 22.42 Il team-radio di Toto Wolff dice tutto: “Fai un altro sport, Kimi“. 22.41 La nuova classifica del Mondiale piloti: 1 Kimi…",
    "fonte": "OA Sport",
    "serie": "MotoGP",
    "url": "https://www.oasport.it/2026/10/live-f1-gp-usa-2026-in-diretta-kimi-antonelli-dalla-pole-per-vincere-e-conquistare-il-titolo/",
-   "pubblicato": "2026-10-25T20:04:31+00:00",
+   "pubblicato": "2026-10-25T21:39:31+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 32.0,
-   "testate": 3
+   "punteggio": 21.9,
+   "testate": 2
   },
   {
-   "titolo": "F1 GP Stati Uniti 2026, gara: Antonelli scappa via, poi Verstappen e le Ferrari – DIRETTA",
+   "titolo": "Classifica F1, Mondiale piloti 2026: Kimi Antonelli dominatore, solo una manciata di punti per il Mondiale!",
+   "estratto": "Kimi Antonelli ha rafforzato il primo posto nella classifica del Mondiale F1 dopo il GP di Singapore. Il ventenne bologne ha concluso al terzo posto la gara disputata sul tracciato cittadino in terra…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/classifica-mondiale-piloti-f1-2026-graduatoria-e-punti/",
+   "pubblicato": "2026-10-25T21:36:51+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 9.9,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 GP Stati Uniti 2026, gara: Antonelli scappa via, Leclerc passa Verstappen ed è 2° – DIRETTA",
    "estratto": "La cronaca live minuto per minuto del Gran Premio degli Stati Uniti di Austin, tappa numero 18 del Mondiale 2026 di Formula 1",
    "fonte": "FormulaPassion",
    "serie": "F1",
@@ -34,8 +106,8 @@
    "pubblicato": "2026-10-25T19:45:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.9,
-   "testate": 3
+   "punteggio": 41.4,
+   "testate": 4
   },
   {
    "titolo": "Davide Tardozzi prende posizione: “Marquez l’unico a parlare di sicurezza per il Qatar, gli altri piloti in silenzio”",
@@ -46,11 +118,11 @@
    "pubblicato": "2026-10-25T19:30:05+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 36.8,
+   "punteggio": 36.4,
    "testate": 3
   },
   {
-   "titolo": "Diretta F1, Gp Usa in tempo reale: Antonelli può vincere il titolo, le Ferrari inseguono",
+   "titolo": "Diretta F1, Gp Usa in tempo reale: stravince Antonelli, show Leclerc. Russell penalizzato",
    "estratto": "Ad Austin, sul Circuito delle Americhe, il primo match point per il pilota italiano. Seguilo live sul nostro sito",
    "fonte": "Tuttosport",
    "serie": "F1",
@@ -58,8 +130,8 @@
    "pubblicato": "2026-10-25T18:30:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.6,
-   "testate": 3
+   "punteggio": 21.1,
+   "testate": 2
   },
   {
    "titolo": "MotoGP, Massimo Rivola sulla cancellazione del GP d’Australia: “Non so se è un bene o un male per Aprilia…”",
@@ -70,7 +142,7 @@
    "pubblicato": "2026-10-25T18:26:43+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.5,
+   "punteggio": 18.1,
    "testate": 2
   },
   {
@@ -82,7 +154,7 @@
    "pubblicato": "2026-10-25T17:20:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.3,
+   "punteggio": 18.8,
    "testate": 3
   },
   {
@@ -94,7 +166,7 @@
    "pubblicato": "2026-10-25T17:16:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.3,
+   "punteggio": 10.8,
    "testate": 1
   },
   {
@@ -106,7 +178,7 @@
    "pubblicato": "2026-10-25T16:30:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.1,
+   "punteggio": 2.6,
    "testate": 1
   },
   {
@@ -118,7 +190,7 @@
    "pubblicato": "2026-10-25T15:49:21+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.9,
+   "punteggio": 7.5,
    "testate": 1
   },
   {
@@ -130,7 +202,7 @@
    "pubblicato": "2026-10-25T15:30:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.2,
+   "punteggio": -9.6,
    "testate": 1
   },
   {
@@ -142,7 +214,7 @@
    "pubblicato": "2026-10-25T15:09:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.7,
+   "punteggio": 20.3,
    "testate": 2
   },
   {
@@ -154,7 +226,7 @@
    "pubblicato": "2026-10-25T13:45:31+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 27.4,
+   "punteggio": 27.0,
    "testate": 3
   },
   {
@@ -166,7 +238,7 @@
    "pubblicato": "2026-10-25T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.9,
+   "punteggio": 6.5,
    "testate": 1
   },
   {
@@ -178,7 +250,7 @@
    "pubblicato": "2026-10-25T11:42:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.9,
+   "punteggio": 1.4,
    "testate": 1
   },
   {
@@ -190,7 +262,7 @@
    "pubblicato": "2026-10-25T11:41:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.1,
+   "punteggio": -10.6,
    "testate": 1
   },
   {
@@ -202,7 +274,7 @@
    "pubblicato": "2026-10-25T11:20:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.8,
+   "punteggio": 1.3,
    "testate": 1
   },
   {
@@ -214,7 +286,7 @@
    "pubblicato": "2026-10-25T11:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.7,
+   "punteggio": 14.3,
    "testate": 1
   },
   {
@@ -226,7 +298,7 @@
    "pubblicato": "2026-10-25T10:30:15+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.6,
+   "punteggio": 6.1,
    "testate": 1
   },
   {
@@ -238,7 +310,7 @@
    "pubblicato": "2026-10-25T10:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.4,
+   "punteggio": 1.0,
    "testate": 1
   },
   {
@@ -250,8 +322,8 @@
    "pubblicato": "2026-10-25T09:29:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.3,
-   "testate": 3
+   "punteggio": 18.9,
+   "testate": 2
   },
   {
    "titolo": "Leclerc: “2 gradi in meno e per noi è stato come passare dal giorno alla notte”",
@@ -262,7 +334,7 @@
    "pubblicato": "2026-10-25T09:19:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.3,
+   "punteggio": 13.8,
    "testate": 1
   },
   {
@@ -274,7 +346,7 @@
    "pubblicato": "2026-10-25T09:00:38+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.2,
+   "punteggio": 8.8,
    "testate": 1
   },
   {
@@ -286,7 +358,7 @@
    "pubblicato": "2026-10-25T08:45:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.1,
+   "punteggio": 13.7,
    "testate": 1
   },
   {
@@ -298,7 +370,7 @@
    "pubblicato": "2026-10-25T08:41:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.1,
+   "punteggio": 28.7,
    "testate": 3
   },
   {
@@ -310,7 +382,7 @@
    "pubblicato": "2026-10-25T08:38:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.1,
+   "punteggio": 5.7,
    "testate": 1
   },
   {
@@ -322,7 +394,7 @@
    "pubblicato": "2026-10-25T08:34:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.1,
+   "punteggio": 13.7,
    "testate": 1
   },
   {
@@ -334,7 +406,7 @@
    "pubblicato": "2026-10-25T08:20:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.0,
+   "punteggio": 20.6,
    "testate": 3
   },
   {
@@ -346,7 +418,7 @@
    "pubblicato": "2026-10-25T08:18:44+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.0,
+   "punteggio": 25.6,
    "testate": 3
   },
   {
@@ -358,7 +430,7 @@
    "pubblicato": "2026-10-25T08:11:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.0,
+   "punteggio": 5.6,
    "testate": 1
   },
   {
@@ -370,7 +442,7 @@
    "pubblicato": "2026-10-25T07:57:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.9,
+   "punteggio": 23.5,
    "testate": 2
   },
   {
@@ -382,7 +454,7 @@
    "pubblicato": "2026-10-25T07:53:45+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.9,
+   "punteggio": 18.5,
    "testate": 2
   },
   {
@@ -394,7 +466,7 @@
    "pubblicato": "2026-10-25T07:40:41+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 33.9,
+   "punteggio": 33.4,
    "testate": 3
   },
   {
@@ -406,8 +478,8 @@
    "pubblicato": "2026-10-25T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.7,
-   "testate": 3
+   "punteggio": 18.3,
+   "testate": 2
   },
   {
    "titolo": "GP Stati Uniti 2026: orari Sky/Now e TV8",
@@ -418,7 +490,7 @@
    "pubblicato": "2026-10-25T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.3,
+   "punteggio": -11.7,
    "testate": 1
   },
   {
@@ -430,7 +502,7 @@
    "pubblicato": "2026-10-25T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.7,
+   "punteggio": 5.3,
    "testate": 1
   },
   {
@@ -442,7 +514,7 @@
    "pubblicato": "2026-10-25T06:35:24+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.4,
+   "punteggio": -11.8,
    "testate": 1
   },
   {
@@ -454,7 +526,7 @@
    "pubblicato": "2026-10-25T06:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.6,
+   "punteggio": 23.1,
    "testate": 2
   },
   {
@@ -466,7 +538,7 @@
    "pubblicato": "2026-10-25T06:12:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.5,
+   "punteggio": 10.1,
    "testate": 2
   },
   {
@@ -478,7 +550,7 @@
    "pubblicato": "2026-10-25T06:09:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.5,
+   "punteggio": -12.0,
    "testate": 1
   },
   {
@@ -490,7 +562,7 @@
    "pubblicato": "2026-10-25T06:01:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.6,
+   "punteggio": -12.0,
    "testate": 1
   },
   {
@@ -502,7 +574,7 @@
    "pubblicato": "2026-10-25T06:01:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.6,
+   "punteggio": -12.0,
    "testate": 1
   },
   {
@@ -514,7 +586,7 @@
    "pubblicato": "2026-10-25T06:00:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.4,
+   "punteggio": 16.0,
    "testate": 3
   },
   {
@@ -526,7 +598,7 @@
    "pubblicato": "2026-10-25T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.4,
+   "punteggio": 10.0,
    "testate": 2
   },
   {
@@ -538,7 +610,7 @@
    "pubblicato": "2026-10-25T05:55:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.4,
+   "punteggio": -0.0,
    "testate": 1
   },
   {
@@ -550,8 +622,8 @@
    "pubblicato": "2026-10-25T05:54:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.4,
-   "testate": 2
+   "punteggio": 8.0,
+   "testate": 1
   },
   {
    "titolo": "L’amarezza dei piloti dopo la cancellazione del GP d’Australia. “Il modo peggiore per salutare una pista splendida”",
@@ -562,7 +634,7 @@
    "pubblicato": "2026-10-25T05:32:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.3,
+   "punteggio": 4.9,
    "testate": 1
   },
   {
@@ -574,7 +646,7 @@
    "pubblicato": "2026-10-25T05:16:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.3,
+   "punteggio": 19.8,
    "testate": 3
   },
   {
@@ -586,7 +658,7 @@
    "pubblicato": "2026-10-25T05:15:07+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.2,
+   "punteggio": 9.8,
    "testate": 2
   },
   {
@@ -598,7 +670,7 @@
    "pubblicato": "2026-10-25T05:03:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.2,
+   "punteggio": 19.8,
    "testate": 3
   },
   {
@@ -610,7 +682,7 @@
    "pubblicato": "2026-10-25T05:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.2,
+   "punteggio": 9.8,
    "testate": 2
   },
   {
@@ -622,7 +694,7 @@
    "pubblicato": "2026-10-25T05:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.2,
+   "punteggio": -0.2,
    "testate": 1
   },
   {
@@ -634,7 +706,7 @@
    "pubblicato": "2026-10-25T05:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.2,
+   "punteggio": 9.8,
    "testate": 2
   },
   {
@@ -646,7 +718,7 @@
    "pubblicato": "2026-10-25T04:31:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.1,
+   "punteggio": 4.6,
    "testate": 1
   },
   {
@@ -658,7 +730,7 @@
    "pubblicato": "2026-10-25T04:10:53+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.0,
+   "punteggio": 7.6,
    "testate": 3
   },
   {
@@ -670,7 +742,7 @@
    "pubblicato": "2026-10-25T04:00:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.9,
+   "punteggio": 9.5,
    "testate": 2
   },
   {
@@ -682,7 +754,7 @@
    "pubblicato": "2026-10-25T03:49:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.9,
+   "punteggio": 17.5,
    "testate": 2
   },
   {
@@ -694,7 +766,7 @@
    "pubblicato": "2026-10-25T03:29:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.8,
+   "punteggio": 19.4,
    "testate": 3
   },
   {
@@ -706,7 +778,7 @@
    "pubblicato": "2026-10-25T03:23:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.8,
+   "punteggio": 19.4,
    "testate": 3
   },
   {
@@ -718,7 +790,7 @@
    "pubblicato": "2026-10-25T03:07:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.7,
+   "punteggio": 19.3,
    "testate": 3
   },
   {
@@ -730,7 +802,7 @@
    "pubblicato": "2026-10-25T02:54:07+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.7,
+   "punteggio": 22.2,
    "testate": 2
   },
   {
@@ -742,7 +814,7 @@
    "pubblicato": "2026-10-25T02:29:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.6,
+   "punteggio": 7.1,
    "testate": 3
   },
   {
@@ -754,7 +826,7 @@
    "pubblicato": "2026-10-25T01:52:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.4,
+   "punteggio": 17.0,
    "testate": 2
   },
   {
@@ -766,7 +838,7 @@
    "pubblicato": "2026-10-25T01:40:54+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.6,
+   "punteggio": -3.1,
    "testate": 2
   },
   {
@@ -778,7 +850,7 @@
    "pubblicato": "2026-10-25T01:17:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.3,
+   "punteggio": 8.8,
    "testate": 2
   },
   {
@@ -790,7 +862,7 @@
    "pubblicato": "2026-10-25T00:18:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.0,
+   "punteggio": 3.6,
    "testate": 1
   },
   {
@@ -802,7 +874,7 @@
    "pubblicato": "2026-10-25T00:06:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.0,
+   "punteggio": 11.5,
    "testate": 1
   },
   {
@@ -814,7 +886,7 @@
    "pubblicato": "2026-10-24T23:50:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.9,
+   "punteggio": 21.5,
    "testate": 2
   },
   {
@@ -826,7 +898,7 @@
    "pubblicato": "2026-10-24T23:41:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.9,
+   "punteggio": 6.4,
    "testate": 1
   },
   {
@@ -838,7 +910,7 @@
    "pubblicato": "2026-10-24T23:40:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.9,
+   "punteggio": 11.4,
    "testate": 1
   },
   {
@@ -850,7 +922,7 @@
    "pubblicato": "2026-10-24T23:37:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.8,
+   "punteggio": 11.4,
    "testate": 1
   },
   {
@@ -862,7 +934,7 @@
    "pubblicato": "2026-10-24T23:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.8,
+   "punteggio": 18.4,
    "testate": 3
   },
   {
@@ -874,7 +946,7 @@
    "pubblicato": "2026-10-24T23:23:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.8,
+   "punteggio": 11.4,
    "testate": 1
   },
   {
@@ -886,8 +958,8 @@
    "pubblicato": "2026-10-24T23:23:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 31.8,
-   "testate": 3
+   "punteggio": 21.4,
+   "testate": 2
   },
   {
    "titolo": "F1 | Vasseur: \"Siamo a mezzo decimo dalla prima fila, ma in gara possiamo fare molto meglio\"",
@@ -898,7 +970,7 @@
    "pubblicato": "2026-10-24T23:20:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.8,
+   "punteggio": 11.3,
    "testate": 1
   },
   {
@@ -910,7 +982,7 @@
    "pubblicato": "2026-10-24T23:20:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.8,
+   "punteggio": 11.3,
    "testate": 1
   },
   {
@@ -922,7 +994,7 @@
    "pubblicato": "2026-10-24T23:17:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.8,
+   "punteggio": 3.3,
    "testate": 1
   },
   {
@@ -934,7 +1006,7 @@
    "pubblicato": "2026-10-24T23:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.3,
+   "punteggio": -1.7,
    "testate": 1
   },
   {
@@ -946,7 +1018,7 @@
    "pubblicato": "2026-10-24T22:58:05+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.7,
+   "punteggio": 21.3,
    "testate": 2
   },
   {
@@ -958,7 +1030,7 @@
    "pubblicato": "2026-10-24T22:40:44+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.6,
+   "punteggio": 3.2,
    "testate": 1
   },
   {
@@ -970,7 +1042,7 @@
    "pubblicato": "2026-10-24T22:34:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.6,
+   "punteggio": 11.2,
    "testate": 1
   },
   {
@@ -982,7 +1054,7 @@
    "pubblicato": "2026-10-24T22:29:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.6,
+   "punteggio": 3.1,
    "testate": 1
   },
   {
@@ -994,7 +1066,7 @@
    "pubblicato": "2026-10-24T22:22:02+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.5,
+   "punteggio": 21.1,
    "testate": 2
   },
   {
@@ -1006,31 +1078,7 @@
    "pubblicato": "2026-10-24T22:21:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 26.5,
-   "testate": 3
-  },
-  {
-   "titolo": "F1, Kimi Antonelli brucia Verstappen e si prende la pole ad Austin! Incubo Russell, Ferrari si scioglie",
-   "estratto": "Kimi Antonelli mette fine ad un digiuno lungo sette qualifiche e si aggiudica la pole position per il Gran Premio degli Stati Uniti 2026, valevole come diciottesimo capitolo stagionale del Mondiale…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/kimi-antonelli-fa-una-magia-ed-e-in-pole-position-ad-austin-prima-fila-di-lusso-con-verstappen-delude-la-ferrari/",
-   "pubblicato": "2026-10-24T22:10:58+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 36.5,
-   "testate": 4
-  },
-  {
-   "titolo": "LIVE F1, GP USA 2026 in DIRETTA: fantastica pole di Antonelli! Smacco Russell, ‘solita’ Ferrari. La griglia di partenza",
-   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE LA GRIGLIA DI PARTENZA 0.09 Grazie per averci seguito, amici di OA Sport, e buona notte. Un saluto sportivo. 0.08 La gara si svolgerà oggi (domenica 25…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/live-f1-gp-usa-2026-in-diretta-antonelli-sfida-verstappen-e-russell-per-la-pole/",
-   "pubblicato": "2026-10-24T22:08:41+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 14.5,
+   "punteggio": 26.1,
    "testate": 3
   },
   {
@@ -1042,7 +1090,7 @@
    "pubblicato": "2026-10-24T22:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.6,
+   "punteggio": -2.0,
    "testate": 1
   },
   {
@@ -1054,7 +1102,7 @@
    "pubblicato": "2026-10-24T19:51:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 25.9,
+   "punteggio": 25.5,
    "testate": 3
   },
   {
@@ -1066,7 +1114,7 @@
    "pubblicato": "2026-10-24T19:18:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.2,
+   "punteggio": -2.7,
    "testate": 1
   },
   {
@@ -1078,32 +1126,8 @@
    "pubblicato": "2026-10-24T18:58:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.7,
-   "testate": 1
-  },
-  {
-   "titolo": "F1, GP USA 2026: risultati e classifica FP3. Hamilton il migliore, Verstappen in scia. Antonelli non brilla",
-   "estratto": "Calato il sipario sulla terza sessione di prove libere del GP degli USA, diciottesimo appuntamento del Mondiale 2026 di F1. Sul tracciato di Austin, le scuderie hanno lavorato per trovare gli ultimi…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/f1-gp-usa-2026-risultati-e-classifica-fp3-hamilton-il-migliore-verstappen-in-scia-antonelli-non-brilla/",
-   "pubblicato": "2026-10-24T18:46:50+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 3.6,
+   "punteggio": 15.3,
    "testate": 2
-  },
-  {
-   "titolo": "Lewis Hamilton svetta nella FP3 ad Austin, davanti a Verstappen. Antonelli ‘litiga’ coi track-limits",
-   "estratto": "Le prove libere continuano a parlare Ferrari ad Austin (USA). Dopo che, nel venerdì del diciottesimo appuntamento del Mondiale 2026 di F1, il monegasco Charles Leclerc aveva dominato FP1 e FP2, la…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/lewis-hamilton-svetta-nella-fp3-davanti-a-verstappen-ad-austin-antonelli-litiga-coi-track-limits/",
-   "pubblicato": "2026-10-24T18:42:15+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 25.6,
-   "testate": 3
   },
   {
    "titolo": "MotoGP su TV8, GP Australia 2026: quando la gara in chiaro, orario e programma",
@@ -1114,7 +1138,7 @@
    "pubblicato": "2026-10-24T16:35:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.1,
+   "punteggio": 4.7,
    "testate": 3
   },
   {
@@ -1126,7 +1150,7 @@
    "pubblicato": "2026-10-24T16:14:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.0,
+   "punteggio": 11.6,
    "testate": 2
   },
   {
@@ -1138,7 +1162,7 @@
    "pubblicato": "2026-10-24T14:53:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.3,
+   "punteggio": -3.8,
    "testate": 1
   },
   {
@@ -1150,7 +1174,7 @@
    "pubblicato": "2026-10-24T14:21:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.5,
+   "punteggio": 1.1,
    "testate": 1
   },
   {
@@ -1162,7 +1186,7 @@
    "pubblicato": "2026-10-24T13:31:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.3,
+   "punteggio": 0.9,
    "testate": 1
   },
   {
@@ -1174,7 +1198,7 @@
    "pubblicato": "2026-10-24T13:00:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.2,
+   "punteggio": 3.8,
    "testate": 3
   },
   {
@@ -1186,7 +1210,7 @@
    "pubblicato": "2026-10-24T12:58:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.2,
+   "punteggio": 0.8,
    "testate": 1
   },
   {
@@ -1198,7 +1222,7 @@
    "pubblicato": "2026-10-24T12:38:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.1,
+   "punteggio": 8.7,
    "testate": 1
   },
   {
@@ -1210,7 +1234,7 @@
    "pubblicato": "2026-10-24T10:20:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.5,
+   "punteggio": 0.1,
    "testate": 1
   },
   {
@@ -1222,7 +1246,7 @@
    "pubblicato": "2026-10-24T09:30:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.3,
+   "punteggio": 2.9,
    "testate": 3
   },
   {
@@ -1234,7 +1258,7 @@
    "pubblicato": "2026-10-24T08:53:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.2,
+   "punteggio": 12.7,
    "testate": 2
   },
   {
@@ -1246,20 +1270,8 @@
    "pubblicato": "2026-10-24T08:52:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.2,
+   "punteggio": 9.7,
    "testate": 2
-  },
-  {
-   "titolo": "Dove vedere la F1 stasera in tv, GP USA 2026: orari FP3 e qualifiche, differita TV8, streaming",
-   "estratto": "Tutto pronto al COTA di Austin per la terza sessione di prove libere e le qualifiche del Gran Premio degli Stati Uniti 2026, valevole come diciottesimo round stagionale del Mondiale di Formula Uno…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/dove-vedere-la-f1-stasera-in-tv-gp-usa-2026-orari-fp3-e-qualifiche-differita-tv8-streaming/",
-   "pubblicato": "2026-10-24T08:30:08+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -16.9,
-   "testate": 1
   },
   {
    "titolo": "F1 | Antonelli, Mercedes ritrova il passo ad Austin: la sfida è centrare la finestra della W17",
@@ -1270,7 +1282,7 @@
    "pubblicato": "2026-10-24T08:13:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.0,
+   "punteggio": 12.6,
    "testate": 2
   },
   {
@@ -1282,7 +1294,7 @@
    "pubblicato": "2026-10-24T07:58:21+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.9,
+   "punteggio": 7.5,
    "testate": 1
   },
   {
@@ -1294,7 +1306,7 @@
    "pubblicato": "2026-10-24T07:55:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.1,
+   "punteggio": -0.5,
    "testate": 1
   },
   {
@@ -1306,7 +1318,7 @@
    "pubblicato": "2026-10-24T07:53:50+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.9,
+   "punteggio": 7.5,
    "testate": 1
   },
   {
@@ -1318,7 +1330,7 @@
    "pubblicato": "2026-10-24T07:37:37+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.8,
+   "punteggio": 12.4,
    "testate": 2
   },
   {
@@ -1330,7 +1342,7 @@
    "pubblicato": "2026-10-24T07:32:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.8,
+   "punteggio": 4.4,
    "testate": 2
   },
   {
@@ -1342,7 +1354,7 @@
    "pubblicato": "2026-10-24T07:24:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.2,
+   "punteggio": -0.6,
    "testate": 1
   },
   {
@@ -1354,7 +1366,7 @@
    "pubblicato": "2026-10-24T07:16:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.8,
+   "punteggio": 7.3,
    "testate": 1
   },
   {
@@ -1366,7 +1378,7 @@
    "pubblicato": "2026-10-24T06:42:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.6,
+   "punteggio": 19.2,
    "testate": 3
   },
   {
@@ -1378,7 +1390,7 @@
    "pubblicato": "2026-10-24T06:38:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.4,
+   "punteggio": -0.8,
    "testate": 1
   },
   {
@@ -1390,7 +1402,7 @@
    "pubblicato": "2026-10-24T06:27:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.6,
+   "punteggio": 17.1,
    "testate": 2
   },
   {
@@ -1402,7 +1414,7 @@
    "pubblicato": "2026-10-24T06:13:17+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.5,
+   "punteggio": -0.9,
    "testate": 1
   },
   {
@@ -1414,7 +1426,7 @@
    "pubblicato": "2026-10-24T05:56:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.4,
+   "punteggio": 14.0,
    "testate": 3
   },
   {
@@ -1426,20 +1438,8 @@
    "pubblicato": "2026-10-24T05:28:48+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.3,
+   "punteggio": 16.9,
    "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Martin vende cara la pelle, ma poi cade e Marquez si prende Sprint e leadership a Phillip Island",
-   "estratto": "Se c'era del rammarico per l'addio di Phillip Island alla MotoGP, a maggior ragione è aumentato dopo la Sprint di oggi, che ha regalato di nuovo dello spettacolo dopo una sequenza di gare che…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-martin-vende-cara-la-pelle-ma-poi-cade-e-marquez-si-prende-sprint-e-leadership-a-phillip-isl/10867701/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-24T04:46:07+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 14.1,
-   "testate": 3
   }
  ]
 }

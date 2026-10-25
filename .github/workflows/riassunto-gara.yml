@@ -42,7 +42,7 @@ jobs:
           MALE: ${{ github.event.inputs.male }}
         run: |
           mkdir -p video/pronti
-          python video/riassunto_gara.py --bene "${BENE:-Charles Leclerc}" --male "${MALE:-George Russell}" --invia --uscita "video/pronti/riassunto-$(date +%Y%m%d-%H%M).mp4"
+          python video/riassunto_gara.py --bene "${BENE:-Charles Leclerc}" --male "${MALE:-George Russell}" $( [ -f video/ordine_austin.json ] && echo --ordine video/ordine_austin.json ) --invia --uscita "video/pronti/riassunto-$(date +%Y%m%d-%H%M).mp4"
       - name: Tiene una copia del video nel repository (per riaverlo in chat)
         run: |
           git config user.name "gpoggi-bot"

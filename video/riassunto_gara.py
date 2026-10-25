@@ -24,13 +24,18 @@ pp = lambda pos: PTS[pos - 1] if pos and 1 <= pos <= 10 else 0
 cogn = lambda n: n.split()[-1]
 
 
-def carica():
+def carica(ordine=None):
+    """ordine: lista di nomi in ordine d'arrivo presa da testate autorevoli, usata quando i dati del sito non hanno ancora la gara (squadre dalle qualifiche)."""
     ora = datetime.now(timezone.utc).isoformat()
     eventi = json.load(open(DATA / "events.json"))
     passati = [g for g in eventi if g["inizio"] < ora]
     for g in sorted(passati, key=lambda g: g["inizio"], reverse=True):
         det = json.load(open(DATA / "gare" / f"{g['id']}.json"))
         gara = next((s for s in det["sessioni"] if s["tipo"] == "Race" and s.get("risultati")), None)
+        if not gara and ordine and det["sessioni"]:
+            qq = next((s for s in det["sessioni"] if s["tipo"] == "Qualifying"), {})
+            team = {x["nome"]: x["team"] for x in (qq.get("risultati") or [])}
+            gara = {"risultati": [{"pos": i + 1, "nome": n, "team": team.get(n, ""), "stato": None, "tempo": None} for i, n in enumerate(ordine)]}
         if gara:
             q = next((s for s in det["sessioni"] if s["tipo"] == "Qualifying"), {})
             griglia = {x["nome"]: x["pos"] for x in (q.get("risultati") or []) if x.get("pos")}
@@ -63,6 +68,8 @@ def scenario(punti, leader, n_dopo):
     # punti massimi concessi al rivale più vicino se Antonelli vince: a - r > resto - L
     r_max = 25 - (resto - r0["L"]) - 1
     r0["punti_max_rivale"] = r_max
+    # posizione minima che chiude il titolo alla prossima gara anche se il rivale vince (25): L - 25 + punti > resto
+    r0["pos_basta"] = max((pos for pos in range(1, 23) if all(x["L"] - 25 + pp(pos) > resto for x in out["rivali"])), default=None)
     r0["pos_min_rivale"] = next((pos for pos in range(1, 23) if pp(pos) <= r_max), 11) if r_max >= 0 else None
     return out
 
@@ -74,8 +81,8 @@ def descr(nome, ris, griglia):
     return {"pos": r["pos"], "griglia": griglia.get(nome), "stato": r.get("stato"), "team": r["team"], "tempo": r.get("tempo")}
 
 
-def costruisci(bene, male):
-    g, ris, griglia, prossimo, dopo = carica()
+def costruisci(bene, male, ordine=None):
+    g, ris, griglia, prossimo, dopo = carica(ordine)
     ris = sorted((x for x in ris if x.get("pos")), key=lambda x: x["pos"])
     luogo = g["circuito"]
     vinc = ris[0]
@@ -144,6 +151,9 @@ def costruisci(bene, male):
         if r0["chiuso_gia"]:
             frase = f"Il titolo è già suo."
             ch_t = [("si", "Titolo già matematico")]
+        elif r0["pos_basta"] is not None and r0["pos_basta"] > 1:
+            frase = f"A {nome_p} gli basta un {ORD.get(r0['pos_basta'], str(r0['pos_basta']) + '°')} posto per essere campione del mondo."
+            ch_t = [("si", f"{r0['pos_basta']}° posto a {nome_p} e il titolo è suo")]
         elif r0["basta_vincere"]:
             frase = f"Se vince a {nome_p}, è campione del mondo con quattro gare d'anticipo."
             ch_t = [("si", f"Vince a {nome_p}: campione già lì")]
@@ -166,10 +176,11 @@ def costruisci(bene, male):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--bene", default="Charles Leclerc"); ap.add_argument("--male", default="George Russell")
+    ap.add_argument("--ordine", type=Path, help="file JSON con i nomi in ordine d'arrivo (da testate autorevoli)")
     ap.add_argument("--prova", action="store_true", help="stampa i fatti e le scene senza fare il video")
     ap.add_argument("--invia", action="store_true"); ap.add_argument("--uscita", type=Path, default=NS.QUI / "riassunto_gara.mp4")
     a = ap.parse_args()
-    spec, social, res, sc, punti, ricalcolati, g = costruisci(a.bene, a.male)
+    spec, social, res, sc, punti, ricalcolati, g = costruisci(a.bene, a.male, json.load(open(a.ordine)) if a.ordine else None)
     print("Risultati:", json.dumps(res, ensure_ascii=False), "\nScenario:", json.dumps(sc, ensure_ascii=False), "\nRicalcolati:", ricalcolati)
     for s in spec["scene"]:
         print(" *", {k: v for k, v in s.items() if k in ("hook_titolo", "nome", "chips", "testo")})

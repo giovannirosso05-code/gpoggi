@@ -54,7 +54,23 @@ def punti_mondiale(g, ris):
     return {n: pil.get(n, 0) + pp(next((x["pos"] for x in ris if x["nome"] == n), None)) for n in pil}, True
 
 
-def scenario(punti, leader, n_dopo):
+def vittorie(g, vinc):
+    """Vittorie stagionali (dai risultati del sito + la gara appena finita): servono allo spareggio a pari punti."""
+    w = {}
+    for f in (DATA / "gare").glob("*.json"):
+        d = json.load(open(f))
+        if str(d.get("id", f.stem)) == str(g["id"]):
+            continue
+        for ses in d["sessioni"]:
+            if ses["tipo"] == "Race" and ses.get("risultati"):
+                r = sorted((x for x in ses["risultati"] if x.get("pos")), key=lambda x: x["pos"])
+                if r:
+                    w[r[0]["nome"]] = w.get(r[0]["nome"], 0) + 1
+    w[vinc] = w.get(vinc, 0) + 1
+    return w
+
+
+def scenario(punti, leader, n_dopo, vitt=None):
     """Come può chiudere il titolo alla gara dopo, con 25 punti a gara nelle gare ancora rimaste (nessuna sprint nel calendario): dict con il necessario per la voce."""
     resto = 25 * (n_dopo - 1)   # punti ancora in palio dopo la prossima gara
     rivali = sorted(((n, p) for n, p in punti.items() if n != leader), key=lambda x: -x[1])
@@ -69,7 +85,18 @@ def scenario(punti, leader, n_dopo):
     r_max = 25 - (resto - r0["L"]) - 1
     r0["punti_max_rivale"] = r_max
     # posizione minima che chiude il titolo alla prossima gara anche se il rivale vince (25): L - 25 + punti > resto
-    r0["pos_basta"] = max((pos for pos in range(1, 23) if all(x["L"] - 25 + pp(pos) > resto for x in out["rivali"])), default=None)
+    # pari punti: vale lo spareggio per vittorie (il rivale vince tutte le gare rimaste, compresa la prossima)
+    vitt = vitt or {}
+    def basta(pos):
+        for x in out["rivali"]:
+            d = x["L"] - 25 + pp(pos) - resto
+            if d > 0:
+                continue
+            if d == 0 and vitt and vitt.get(leader, 0) + (1 if pos == 1 else 0) > vitt.get(x["nome"], 0) + n_dopo:
+                continue
+            return False
+        return True
+    r0["pos_basta"] = max((pos for pos in range(1, 23) if basta(pos)), default=None)
     r0["pos_min_rivale"] = next((pos for pos in range(1, 23) if pp(pos) <= r_max), 11) if r_max >= 0 else None
     return out
 
@@ -140,7 +167,7 @@ def costruisci(bene, male, ordine=None):
                 (f"partito {ORD.get(part, str(part) + '°')}, arriva {ORD.get(d['pos'], str(d['pos']) + '°')}" if part else f"arriva {ORD.get(d['pos'], str(d['pos']) + '°')}") + ".")
         scene.append({"foto": n, "nome": n, "chips": ch, "sub_top": 1440, "testo": voce, **espn(n)})
     # il mondiale
-    sc = scenario(punti, leader, len(dopo))
+    sc = scenario(punti, leader, len(dopo), vittorie(g, vinc['nome']))
     r0 = sc["rivali"][0]
     ch_m = [("si", f"{leader}: {punti[leader]:g} punti{' · calcolo GP Oggi' if ricalcolati else ''}"), ("info", f"+{r0['L']:g} su {cogn(r0['nome'])}")]
     # con punti ricalcolati da noi niente numeri a voce (la dichiarazione resta scritta nelle chips e in didascalia)
@@ -153,7 +180,7 @@ def costruisci(bene, male, ordine=None):
             ch_t = [("si", "Titolo già matematico")]
         elif r0["pos_basta"] is not None and r0["pos_basta"] > 1:
             frase = f"A {nome_p} gli basta un {ORD.get(r0['pos_basta'], str(r0['pos_basta']) + '°')} posto per essere campione del mondo."
-            ch_t = [("si", f"{r0['pos_basta']}° posto a {nome_p} e il titolo è suo"), ("info", "Calcolo GP Oggi sui punti rimasti")]
+            ch_t = [("si", f"{r0['pos_basta']}° posto a {nome_p} e il titolo è suo"), ("info", "Calcolo GP Oggi: punti rimasti e vittorie")]
         elif r0["basta_vincere"]:
             frase = f"Se vince a {nome_p}, è campione del mondo con quattro gare d'anticipo."
             ch_t = [("si", f"Vince a {nome_p}: campione già lì")]

@@ -1,6 +1,30 @@
 {
- "generato_il": "2026-10-25T22:06:32+00:00",
+ "generato_il": "2026-10-25T22:07:52+00:00",
  "articoli": [
+  {
+   "titolo": "Delusione Verstappen: “Gomme, pit-stop di m***a…non ha funzionato niente. Alla fine che fortuna la VSC”",
+   "estratto": "L'olandese mastica amaro al termine del GP degli Stati Uniti e non nasconde la propria frustrazione nelle comunicazioni radio",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/delusione-verstappen-gomme-pit-stop-di-merda-non-ha-funzionato-niente-alla-fine-che-fortuna-la-vsc",
+   "pubblicato": "2026-10-25T22:05:48+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 9.0,
+   "testate": 1
+  },
+  {
+   "titolo": "Ordine d’arrivo F1, GP USA 2026: dominio totale di Antonelli! Leclerc sorpassa Verstappen, Russell a picco",
+   "estratto": "Calato il sipario sul GP degli USA, diciottesimo appuntamento del Mondiale 2026 di F1. Sullo spettacolare circuito di Austin, si è assistito a una gara dalle palpitanti emozioni in cui i protagonisti…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/ordine-darrivo-f1-gp-usa-2026-risultati-e-classifica-gara/",
+   "pubblicato": "2026-10-25T21:56:46+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 32.0,
+   "testate": 3
+  },
   {
    "titolo": "F1, Kimi Antonelli: “Voglio chiudere in bellezza, oggi lavoro di squadra eccezionale”",
    "estratto": "Si è concluso con la vittoria di Andrea Kimi Antonelli il Gran Premio degli Stati Uniti d’America 2026, diciottesimo appuntamento del Mondiale F1. Sul circuito di Austin, in Texas, l’italiano ha…",
@@ -10,7 +34,7 @@
    "pubblicato": "2026-10-25T21:54:45+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.0,
+   "punteggio": 16.9,
    "testate": 1
   },
   {
@@ -46,8 +70,8 @@
    "pubblicato": "2026-10-25T21:51:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.9,
-   "testate": 2
+   "punteggio": 31.9,
+   "testate": 3
   },
   {
    "titolo": "F1 | Antonelli domina ad Austin ed è a un passo dal titolo. A podio Leclerc e Verstappen",
@@ -62,32 +86,80 @@
    "testate": 3
   },
   {
-   "titolo": "Ordine d’arrivo F1, GP USA 2026: Kimi Antonelli domina ad Austin e vicinissimo al titolo! Leclerc in piazza d’onore, batte Verstappen. Hamilton giù dal podio",
-   "estratto": "Calato il sipario sul GP degli USA, diciottesimo appuntamento del Mondiale 2026 di F1. Sullo spettacolare circuito di Austin, si è assistito a una gara dalle palpitanti emozioni in cui i protagonisti…",
-   "fonte": "OA Sport",
+   "titolo": "Mondiale Costruttori 2026: la classifica dopo il GP degli Stati Uniti",
+   "estratto": "La Ferrari porta a casa 30 punti in Texas",
+   "fonte": "FormulaPassion",
    "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/ordine-darrivo-f1-gp-usa-2026-risultati-e-classifica-gara/",
-   "pubblicato": "2026-10-25T21:46:46+00:00",
+   "url": "https://www.formulapassion.it/f1/f1-classifiche/classifica-mondiale-costruttori-f1-2026-dopo-gp-stati-uniti-austin-30-punti-ferrari",
+   "pubblicato": "2026-10-25T21:50:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 41.9,
-   "testate": 4
+   "punteggio": 9.9,
+   "testate": 2
   },
   {
    "titolo": "Classifica Mondiale costruttori F1 2026: Mercedes imprendibile per la Ferrari, Red Bull vicina alla McLaren",
-   "estratto": "La Ferrari ha recuperato sette punti nei confronti della Mercedes al termine del GP di Singapore: il secondo posto di Charles Leclerc alle spalle di Max Verstappen e la sesta piazza di Lewis Hamilton…",
+   "estratto": "La Mercedes esce dal fine settimana di Austin con un vantaggio ancora consistente nella classifica del Mondiale Costruttori. La Ferrari, tuttavia, è riuscita a ridurre leggermente il divario grazie…",
    "fonte": "OA Sport",
    "serie": "F1",
    "url": "https://www.oasport.it/2026/10/classifica-mondiale-costruttori-f1-2026-graduatoria-e-punti/",
    "pubblicato": "2026-10-25T21:44:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.1,
+   "punteggio": 9.9,
+   "testate": 2
+  },
+  {
+   "titolo": "GP Stati Uniti 2026, ordine di arrivo: capolavoro Antonelli ad Austin, il Mondiale è vicinissimo. Leclerc splendido 2°, Verstappen stavolta stecca ed è ‘solo’ 3°",
+   "estratto": "L'italiano domina una gara splendida ad Austin ed è a un paio di punti dal titolo. Leclerc e Verstappen sul podio, Hamilton è quarto",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-risultati/gp-stati-uniti-2026-ordine-di-arrivo-capolavoro-antonelli-ad-austin-il-mondiale-e-vicinissimo-leclerc-splendido-2-verstappen-stavolta-stecca-ed-e-solo-3",
+   "pubblicato": "2026-10-25T21:41:44+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 41.9,
+   "testate": 4
+  },
+  {
+   "titolo": "Albo d’Oro GP Stati Uniti",
+   "estratto": "Tante le sedi per uno degli storici appuntamenti del campionato del mondo di Formula 1",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-albo-doro/f1-albo-doro-gp-stati-uniti-damerica",
+   "pubblicato": "2026-10-25T21:40:10+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.9,
    "testate": 1
   },
   {
+   "titolo": "Mondiale Piloti 2026: la classifica dopo il GP degli Stati Uniti",
+   "estratto": "Andrea Kimi Antonelli domina in Texas e ora basterà un nono posto in Messico per festeggiare il titolo mondiale",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-classifiche/classifica-mondiale-piloti-f1-2026-dopo-gp-stati-uniti-austin-antonelli-kimi-domina-due-punti-mondiale",
+   "pubblicato": "2026-10-25T21:40:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 9.9,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 GP Stati Uniti 2026, gara: Antonelli domina su Leclerc e Verstappen, ma il Mondiale non è ancora chiuso – DIRETTA",
+   "estratto": "La cronaca live minuto per minuto del Gran Premio degli Stati Uniti di Austin, tappa numero 18 del Mondiale 2026 di Formula 1",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-usa-stati-uniti-2026-austin-gara-aggiornamenti-ferrari-leclerc-hamilton-verstappen",
+   "pubblicato": "2026-10-25T21:40:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 41.9,
+   "testate": 4
+  },
+  {
    "titolo": "Classifica F1, Mondiale piloti 2026: Kimi Antonelli dominatore, solo una manciata di punti per il Mondiale!",
-   "estratto": "Kimi Antonelli ha rafforzato il primo posto nella classifica del Mondiale F1 dopo il GP di Singapore. Il ventenne bologne ha concluso al terzo posto la gara disputata sul tracciato cittadino in terra…",
+   "estratto": "Kimi Antonelli continua a lasciare il segno in questa stagione di F1. Sul circuito di Austin, il giovane talento italiano della Mercedes ha centrato la sua nona vittoria stagionale, confermando…",
    "fonte": "OA Sport",
    "serie": "F1",
    "url": "https://www.oasport.it/2026/10/classifica-mondiale-piloti-f1-2026-graduatoria-e-punti/",
@@ -96,18 +168,6 @@
    "citazione": false,
    "punteggio": 9.9,
    "testate": 2
-  },
-  {
-   "titolo": "F1 GP Stati Uniti 2026, gara: Antonelli scappa via, Leclerc passa Verstappen ed è 2° – DIRETTA",
-   "estratto": "La cronaca live minuto per minuto del Gran Premio degli Stati Uniti di Austin, tappa numero 18 del Mondiale 2026 di Formula 1",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-usa-stati-uniti-2026-austin-gara-aggiornamenti-ferrari-leclerc-hamilton-verstappen",
-   "pubblicato": "2026-10-25T19:45:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 41.4,
-   "testate": 4
   },
   {
    "titolo": "Davide Tardozzi prende posizione: “Marquez l’unico a parlare di sicurezza per il Qatar, gli altri piloti in silenzio”",
@@ -214,8 +274,8 @@
    "pubblicato": "2026-10-25T15:09:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.3,
-   "testate": 2
+   "punteggio": 30.3,
+   "testate": 3
   },
   {
    "titolo": "La MotoGP spiega perché la gara cancellata di Phillip Island non è stata spostata al sabato",
@@ -418,7 +478,7 @@
    "pubblicato": "2026-10-25T08:18:44+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.6,
+   "punteggio": 25.5,
    "testate": 3
   },
   {
@@ -470,18 +530,6 @@
    "testate": 3
   },
   {
-   "titolo": "Telemetria: Antonelli pole da campione, Ferrari tradita da temperature e motore",
-   "estratto": "Clamorosa pole di Kimi che risolve con la guida alcuni problemi strutturali della Mercedes",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/telemetria-ferrari-sf26-perde-quattro-decimi-rettilineo-tradita-abbassamento-temperature-qualifiche-gp-stati-uniti-leclerc-hamilton",
-   "pubblicato": "2026-10-25T07:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 18.2,
-   "testate": 2
-  },
-  {
    "titolo": "GP Stati Uniti 2026: orari Sky/Now e TV8",
    "estratto": "I dettagli della programmazione televisiva dell'appuntamento ad Austin in Texas sul circuito del COTA",
    "fonte": "FormulaPassion",
@@ -492,6 +540,18 @@
    "citazione": false,
    "punteggio": -11.8,
    "testate": 1
+  },
+  {
+   "titolo": "Telemetria: Antonelli pole da campione, Ferrari tradita da temperature e motore",
+   "estratto": "Clamorosa pole di Kimi che risolve con la guida alcuni problemi strutturali della Mercedes",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/telemetria-ferrari-sf26-perde-quattro-decimi-rettilineo-tradita-abbassamento-temperature-qualifiche-gp-stati-uniti-leclerc-hamilton",
+   "pubblicato": "2026-10-25T07:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 18.2,
+   "testate": 2
   },
   {
    "titolo": "Rivola: “Martin in pista a Sepang? Difficile, noi non molleremo fino alla fine”",
@@ -610,7 +670,7 @@
    "pubblicato": "2026-10-25T05:55:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.0,
+   "punteggio": -0.1,
    "testate": 1
   },
   {
@@ -790,7 +850,7 @@
    "pubblicato": "2026-10-25T03:07:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.3,
+   "punteggio": 19.2,
    "testate": 3
   },
   {
@@ -886,8 +946,8 @@
    "pubblicato": "2026-10-24T23:50:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.4,
-   "testate": 2
+   "punteggio": 11.4,
+   "testate": 1
   },
   {
    "titolo": "Kimi funambolo, fa funzionare la Mercedes: la Ferrari spreca tutto",
@@ -1010,18 +1070,6 @@
    "testate": 1
   },
   {
-   "titolo": "Wolff stregato da Antonelli: “Giro magico, mi ha lasciato senza parole”",
-   "estratto": "Il team principal della Mercedes è rimasto impressionato dal giro realizzato in Q3 da Antonelli e che gli è valso la pole position",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/wolff-stregato-da-antonelli-giro-magico-mi-ha-lasciato-senza-parole",
-   "pubblicato": "2026-10-24T22:58:05+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 21.2,
-   "testate": 2
-  },
-  {
    "titolo": "Isack Hadjar: “Felice del terzo posto, chiedo scusa al mio team. Potevamo fare la pole”",
    "estratto": "Isack Hadjar partirà dalla seconda fila in occasione del GP degli Stati Uniti, atto numero diciotto del Mondiale 2026 di Formula 1 in scena questo weekend ad Austin, precisamente presso il circuito…",
    "fonte": "OA Sport",
@@ -1031,18 +1079,6 @@
    "tipo": "dichiarazione",
    "citazione": true,
    "punteggio": 3.1,
-   "testate": 1
-  },
-  {
-   "titolo": "Furia Leclerc, team radio al vetriolo: “L’ala anteriore è troppo carica, ca**o! È una m***a”",
-   "estratto": "Il monegasco dalla Ferrari via radio ha espresso tutta la sua delusione e frustrazione per non aver centrato neanche la prima fila",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/furia-leclerc-team-radio-al-vetriolo-lala-anteriore-e-troppo-carica-cao-e-una-ma",
-   "pubblicato": "2026-10-24T22:34:47+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 11.1,
    "testate": 1
   },
   {
@@ -1082,42 +1118,6 @@
    "testate": 3
   },
   {
-   "titolo": "F1 GP Stati Uniti 2026, Austin: la cronaca delle qualifiche, minuto per minuto",
-   "estratto": "La cronaca live minuto per minuto delle prove ufficiali che decidono la griglia di partenza del fine settimana a Austin",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-usa-stati-uniti-2026-austin-qualifiche-q1-q2-q3-pole-aggiornamenti-ferrari-leclerc-hamilton-verstappen",
-   "pubblicato": "2026-10-24T22:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -2.0,
-   "testate": 1
-  },
-  {
-   "titolo": "Austin, telemetria FP3: Ferrari impressiona e sfida Verstappen e Antonelli per la pole",
-   "estratto": "Le rosse sono state protagoniste anche nelle FP3 e arrivano alle qualifiche con il vento in poppa. Ma la prima fila non è scontata",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/austin-telemetria-fp3-ferrari-impressiona-e-sfida-verstappen-e-antonelli-per-la-pole",
-   "pubblicato": "2026-10-24T19:51:46+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 25.4,
-   "testate": 3
-  },
-  {
-   "titolo": "McLaren non molla: ecco gli aggiornamenti di Austin",
-   "estratto": "In Texas la McLaren porta novità al diffusore e non solo: l’obiettivo è ritrovare la guidabilità persa con il pacchetto precedente",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/mclaren-non-molla-ecco-aggiornamenti-austin",
-   "pubblicato": "2026-10-24T19:18:33+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -2.7,
-   "testate": 1
-  },
-  {
    "titolo": "F1 | Austin, Libere 3: Hamilton fa sognare la Ferrari con Max vicino, poi Leclerc e le due Mercedes",
    "estratto": "Ferrari e sempre Ferrari. Anche nel terzo turno di prove libere del GP degli Stati Uniti c'è la rossa davanti a tutti. La novità è che questa volta la prestazione è firmata da Lewis Hamilton che con…",
    "fonte": "Motorsport.com",
@@ -1126,8 +1126,8 @@
    "pubblicato": "2026-10-24T18:58:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.2,
-   "testate": 2
+   "punteggio": 5.2,
+   "testate": 1
   },
   {
    "titolo": "MotoGP su TV8, GP Australia 2026: quando la gara in chiaro, orario e programma",
@@ -1282,8 +1282,8 @@
    "pubblicato": "2026-10-24T08:13:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.5,
-   "testate": 2
+   "punteggio": 2.5,
+   "testate": 1
   },
   {
    "titolo": "Marco Bezzecchi: “Partendo nono, ho fatto un bel lavoro. Il vento dà fastidio a tutti”",
@@ -1378,7 +1378,7 @@
    "pubblicato": "2026-10-24T06:42:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.2,
+   "punteggio": 19.1,
    "testate": 3
   },
   {

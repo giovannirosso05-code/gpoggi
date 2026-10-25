@@ -36,5 +36,5 @@ jobs:
         run: |
           git config user.name "gpoggi-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/data/rassegna.json avvisi_social.json
+          git add docs/data/rassegna.json avvisi_social.json avvisi_tendenza.json
           git diff --cached --quiet || (git commit -m "notizie: aggiornamento e avvisi social" && git pull --rebase --autostash -X theirs origin main && git push)

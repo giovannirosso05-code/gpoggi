@@ -14,6 +14,8 @@ import requests
 QUI = Path(__file__).parent
 RASSEGNA = QUI / "docs" / "data" / "rassegna.json"
 STATO = QUI / "avvisi_social.json"
+STATO_TENDENZA = QUI / "avvisi_tendenza.json"
+SOGLIA = {"F1": 4, "MotoGP": 3}   # testate che raccontano la stessa storia: più di tre per la F1 (quattro feed), tutte e tre per la MotoGP
 ORE = 4  # solo notizie pubblicate nelle ultime ore
 PILOTI = ["Leclerc", "Hamilton", "Antonelli", "Verstappen", "Norris", "Piastri", "Russell", "Alonso",
           "Marc Marquez", "Alex Marquez", "Bagnaia", "Bezzecchi", "Acosta", "Jorge Martin", "Di Giannantonio",
@@ -57,6 +59,29 @@ def main():
         else:
             print("[prova, nessun token]\n" + testo)
     STATO.write_text(json.dumps(sorted(visti)[-600:]), encoding="utf-8")
+    # notizie in tendenza: la stessa storia su quattro testate (F1) o su tutte e tre (MotoGP)
+    prima = not STATO_TENDENZA.exists()
+    gia = set(json.loads(STATO_TENDENZA.read_text())) if not prima else set()
+    limite6 = datetime.now(timezone.utc) - timedelta(hours=6)
+    for a in art:
+        if a.get("testate", 1) < SOGLIA.get(a.get("serie"), 99) or a["url"] in gia:
+            continue
+        gia.add(a["url"])
+        try:
+            recente = datetime.fromisoformat(a["pubblicato"]) >= limite6
+        except Exception:
+            recente = False
+        if prima or not recente:
+            continue
+        testo = (f"🔥 In tendenza: {a['testate']} testate raccontano la stessa storia ({a['serie']})\n\n{a['titolo']}\n{a['fonte']}\n\n{a.get('estratto', '')}\n\n"
+                 f"Fai il video: /n_{codice(a['url'])}\nControlla prima la fonte e, se sono risultati, i dati ufficiali: {a['url']}")
+        if token:
+            r = requests.post(f"https://api.telegram.org/bot{token}/sendMessage",
+                              data={"chat_id": chat, "text": testo, "disable_web_page_preview": "true"}, timeout=30)
+            print("Tendenza", "inviata" if r.ok else f"errore {r.status_code}", "-", a["titolo"])
+        else:
+            print("[prova, nessun token]\n" + testo)
+    STATO_TENDENZA.write_text(json.dumps(sorted(gia)[-600:]), encoding="utf-8")
     print(f"Avvisi social: {len(nuovi)} nuovi ({'prima esecuzione, solo registrazione' if primo else 'ok'})")
 
 

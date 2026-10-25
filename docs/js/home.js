@@ -21,7 +21,7 @@ const conto = (diff) => {
   return g > 0 ? `${g}g ${d(h)}h ${d(m)}m ${d(s)}s` : `${d(h)}h ${d(m)}m ${d(s)}s`;
 };
 const timer = [];
-function riquadro(id, sigla, classe, trovata, link, foto, favorito) {
+function riquadro(id, sigla, classe, trovata, link, foto, favorito, liveLink) {
   const el = document.getElementById(id);
   if (!trovata) { el.innerHTML = `<span class="cd-sigla ${classe}">${sigla}</span><span class="muted">Nessun weekend in programma</span>`; return; }
   const { g, s } = trovata;
@@ -41,6 +41,7 @@ function riquadro(id, sigla, classe, trovata, link, foto, favorito) {
     const diff = new Date(s.inizio).getTime() - Date.now();
     t.textContent = diff > 0 ? conto(diff) : "In corso";
     t.classList.toggle("live", diff <= 0);
+    el.href = diff <= 0 && liveLink ? liveLink : link(g);   // sessione in corso: il riquadro porta alla pagina Live
   });
 }
 setInterval(() => timer.forEach((f) => f()), 1000);
@@ -107,8 +108,8 @@ const favP = prono && prono.motogp && prono.motogp.favoriti[0];
 // la foto è quella del favorito, così coincide con il nome scritto sotto
 const favMoto = favP && (FM[favP.id] || FM["nome:" + favP.nome]);
 const leaderMoto = ((clMoto && (clMoto.categorie || {}).MotoGP) || [])[0];
-riquadro("pross-f1", "F1", "", eventi && prossimaSessione(eventi), (g) => `gara.html?id=${g.id}${tema}`, (favF1 && favF1.foto) || (leaderF1 && leaderF1.foto), prono && prono.f1 && prono.f1.favoriti[0].nome);
-riquadro("pross-moto", "MotoGP", "moto", cal && prossimaSessione(cal.weekend), (g) => `gara-moto.html?gp=${encodeURIComponent(g.nome)}${tema}`, favMoto || (leaderMoto && FM["nome:" + leaderMoto.nome]), prono && prono.motogp && prono.motogp.favoriti[0].nome);
+riquadro("pross-f1", "F1", "", eventi && prossimaSessione(eventi), (g) => `gara.html?id=${g.id}${tema}`, (favF1 && favF1.foto) || (leaderF1 && leaderF1.foto), prono && prono.f1 && prono.f1.favoriti[0].nome, `live.html?serie=f1${tema}`);
+riquadro("pross-moto", "MotoGP", "moto", cal && prossimaSessione(cal.weekend), (g) => `gara-moto.html?gp=${encodeURIComponent(g.nome)}${tema}`, favMoto || (leaderMoto && FM["nome:" + leaderMoto.nome]), prono && prono.motogp && prono.motogp.favoriti[0].nome, `live.html?serie=moto${tema}`);
 timer.forEach((f) => f());
 
 if (standings) standings.costruttori.forEach((c) => (coloreTeam[c.team] = c.colore));

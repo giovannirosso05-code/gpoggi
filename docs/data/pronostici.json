@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T02:46:30+00:00",
+ "aggiornato": "2026-10-25T05:44:57+00:00",
  "metodo": "Indice da 0 a 100 calcolato da GP Oggi: 45% forma nelle ultime 5 gare, 35% classifica del campionato, 20% risultato sullo stesso circuito l'anno scorso. È un'opinione basata sui numeri, non una previsione ufficiale né una certezza.",
  "f1": {
   "gp": "Gran Premio degli Stati Uniti",
@@ -59,9 +59,9 @@
   ]
  },
  "motogp": {
-  "gp": "GP Australia",
-  "circuito": "Phillip Island",
-  "gara": "2026-10-25T03:00:00+00:00",
+  "gp": "GP Malesia",
+  "circuito": "Petronas Sepang International Circuit",
+  "gara": "2026-11-01T07:00:00+00:00",
   "favoriti": [
    {
     "id": "f55b433d-38b8-4d1d-bb3a-a709c82a0260",
@@ -71,17 +71,6 @@
     "motivi": [
      "2 vittorie nelle ultime 5 gare",
      "1° nel campionato (365 punti)"
-    ]
-   },
-   {
-    "id": "ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd",
-    "nome": "Marco Bezzecchi",
-    "team": "Aprilia Racing",
-    "indice": 98,
-    "motivi": [
-     "1 vittoria nelle ultime 5 gare",
-     "3° nel campionato (315 punti)",
-     "GP Australia 2025: 3°"
     ]
    },
    {
@@ -95,25 +84,36 @@
     ]
    },
    {
-    "id": "58448742-f520-466a-a1a1-bf3286cce9c3",
-    "nome": "Raul Fernandez",
-    "team": "SuperFile Trackhouse MotoGP Team",
-    "indice": 88,
-    "motivi": [
-     "1 podio nelle ultime 5 gare",
-     "7° nel campionato (236 punti)",
-     "GP Australia 2025: 1°"
-    ]
-   },
-   {
     "id": "a6108385-dd4c-490d-b02e-542ed0275f79",
     "nome": "Pedro Acosta",
     "team": "Red Bull KTM Factory Racing",
-    "indice": 84,
+    "indice": 94,
     "motivi": [
      "1 vittoria nelle ultime 5 gare",
      "4° nel campionato (263 punti)",
-     "GP Australia 2025: 5°"
+     "GP Malesia 2025: 2°"
+    ]
+   },
+   {
+    "id": "ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd",
+    "nome": "Marco Bezzecchi",
+    "team": "Aprilia Racing",
+    "indice": 79,
+    "motivi": [
+     "1 vittoria nelle ultime 5 gare",
+     "3° nel campionato (315 punti)",
+     "GP Malesia 2025: 11°"
+    ]
+   },
+   {
+    "id": "e7e4c72e-952e-4f64-8e8a-a47ff590fade",
+    "nome": "Alex Marquez",
+    "team": "BK8 Gresini Racing MotoGP",
+    "indice": 72,
+    "motivi": [
+     "1 podio nelle ultime 5 gare",
+     "8° nel campionato (181 punti)",
+     "GP Malesia 2025: 1°"
     ]
    }
   ]

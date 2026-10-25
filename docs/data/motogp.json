@@ -1,61 +1,6 @@
 {
- "generato_il": "2026-10-25T02:44:10+00:00",
+ "generato_il": "2026-10-25T05:42:37+00:00",
  "weekend": [
-  {
-   "nome": "GP Australia",
-   "circuito": "Phillip Island",
-   "paese": "Australia",
-   "sessioni": [
-    {
-     "nome": "Prove libere 1",
-     "codice": "FP1",
-     "inizio": "2026-10-22T23:45:00+00:00",
-     "fine": "2026-10-23T00:30:00+00:00"
-    },
-    {
-     "nome": "Prove libere",
-     "codice": "PR",
-     "inizio": "2026-10-23T04:00:00+00:00",
-     "fine": "2026-10-23T05:10:00+00:00"
-    },
-    {
-     "nome": "Prove libere 2",
-     "codice": "FP2",
-     "inizio": "2026-10-23T23:10:00+00:00",
-     "fine": "2026-10-23T23:40:00+00:00"
-    },
-    {
-     "nome": "Qualifiche 1",
-     "codice": "Q1",
-     "inizio": "2026-10-23T23:50:00+00:00",
-     "fine": "2026-10-24T00:05:00+00:00"
-    },
-    {
-     "nome": "Qualifiche 2",
-     "codice": "Q2",
-     "inizio": "2026-10-24T00:15:00+00:00",
-     "fine": "2026-10-24T00:30:00+00:00"
-    },
-    {
-     "nome": "Sprint",
-     "codice": "SPR",
-     "inizio": "2026-10-24T04:00:00+00:00",
-     "fine": "2026-10-24T04:00:00+00:00"
-    },
-    {
-     "nome": "Warm up",
-     "codice": "WUP",
-     "inizio": "2026-10-24T22:40:00+00:00",
-     "fine": "2026-10-24T22:50:00+00:00"
-    },
-    {
-     "nome": "Gara",
-     "codice": "RAC",
-     "inizio": "2026-10-25T03:00:00+00:00",
-     "fine": "2026-10-25T03:00:00+00:00"
-    }
-   ]
-  },
   {
    "nome": "GP Malesia",
    "circuito": "Petronas Sepang International Circuit",

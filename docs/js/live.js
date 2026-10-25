@@ -26,11 +26,11 @@ async function caricaF1() {
   await rosterP;
   const d = await (await fetch(ESPN, { cache: "no-store" })).json();
   const ev = (d.events || [])[0];
-  if (!ev) { box.innerHTML = `<p class="muted">Nessun weekend di Formula 1 in questo momento.</p>`; nota.textContent = ""; return false; }
+  if (!ev) { await nessunaLive("f1"); return false; }
   const sess = ev.competitions || [];
   const stato = (c) => c.status && c.status.type && c.status.type.state;
   const attiva = sess.find((c) => stato(c) === "in") || [...sess].reverse().find((c) => stato(c) === "post" && (c.competitors || []).length) || sess.find((c) => stato(c) === "pre");
-  if (!attiva) { box.innerHTML = `<p class="muted">Nessuna sessione disponibile.</p>`; return false; }
+  if (!attiva) { await nessunaLive("f1"); return false; }
   const sigla = attiva.type && attiva.type.abbreviation;
   const live = stato(attiva) === "in";
   if (!live) { await nessunaLive("f1"); return false; }
@@ -61,10 +61,37 @@ async function ultimaGara(serie) {
   } catch (e) { return null; }
 }
 
+// Subito dopo le qualifiche e fino alla partenza: la griglia di partenza. È l'ordine delle qualifiche (provvisoria: le penalità non sono ancora applicate).
+async function grigliaProssima(serie) {
+  try {
+    await rosterP;
+    if (serie === "moto") {
+      const d = await fetchJSON("data/motogp-griglia.json");
+      if (!d || !d.righe || !d.righe.length || new Date(d.gara_inizio).getTime() < Date.now()) return null;
+      return { titolo: d.gp, inizio: d.gara_inizio, righe: d.righe.map((r) => ({ pos: r.pos, nome: r.nome, info: r.info || "" })),
+               avviso: "Griglia provvisoria: è l'ordine delle qualifiche. Le penalità non sono ancora applicate: la griglia ufficiale la pubblica la MotoGP dopo le qualifiche." };
+    }
+    const ev = await fetchJSON("data/events.json");
+    const adesso = Date.now();
+    const g = ev.filter((x) => new Date(x.fine).getTime() > adesso).sort((a, b) => new Date(a.inizio) - new Date(b.inizio))[0];
+    if (!g) return null;
+    const qual = g.sessioni.find((s) => s.nome === "Qualifiche"), gara = g.sessioni.find((s) => s.nome === "Gara");
+    if (!qual || !gara || new Date(qual.fine).getTime() > adesso || new Date(gara.inizio).getTime() < adesso) return null;
+    const det = await fetchJSON(`data/gare/${g.id}.json`);
+    const q = (det.sessioni || []).find((s) => s.tipo === "Qualifying");
+    const righe = ((q && q.risultati) || []).filter((r) => r.pos).sort((a, b) => a.pos - b.pos);
+    if (!righe.length) return null;
+    return { titolo: g.nome, inizio: gara.inizio, righe: righe.map((r) => { const t = team[r.nome]; return { pos: r.pos, nome: r.nome, team: t && t.team, colore: t && t.colore, info: r.tempo || "" }; }),
+             avviso: "Griglia provvisoria: è l'ordine delle qualifiche. Penalità e partenze dai box non sono ancora applicate: la griglia ufficiale è il documento FIA «Final Starting Grid», che arriva dopo le qualifiche." };
+  } catch (e) { return null; }
+}
+
 async function nessunaLive(serie) {
-  const g = await ultimaGara(serie);
+  const [g, gr] = await Promise.all([ultimaGara(serie), grigliaProssima(serie)]);
   nota.textContent = "";
+  const quando = gr && new Date(gr.inizio).toLocaleString("it-IT", { weekday: "long", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Rome" });
   box.innerHTML = `<p class="live-vuoto">Al momento non c'è nessuna sessione dal vivo.</p>` +
+    (gr ? `<div class="live-testa"><h2>Griglia di partenza · provvisoria</h2><span class="muted">${esc(gr.titolo)} · gara ${esc(quando)}</span></div>${tabella(gr.righe, "")}<p class="live-avviso">${esc(gr.avviso)}</p>` : "") +
     (g ? `<a class="live-ultima" href="${g.href}">Vuoi vedere l'ultima gara? ${esc(g.nome)} →</a>` : "");
 }
 

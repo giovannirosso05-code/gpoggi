@@ -65,6 +65,7 @@ jobs:
           python build_motogp_sessioni.py || true
           python build_orari_gara.py
           python build_report_moto.py
+          python build_griglia_moto.py || true
           python build_cronaca.py || true
           python build_pagella.py || true
           python build_statistiche.py || true

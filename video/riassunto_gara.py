@@ -142,9 +142,9 @@ def costruisci(bene, male, ordine=None):
     # il mondiale
     sc = scenario(punti, leader, len(dopo))
     r0 = sc["rivali"][0]
-    dich = " (punti calcolati da noi sulla classifica prima della gara)" if ricalcolati else ""
     ch_m = [("si", f"{leader}: {punti[leader]:g} punti{' · calcolo GP Oggi' if ricalcolati else ''}"), ("info", f"+{r0['L']:g} su {cogn(r0['nome'])}")]
-    voce_m = f"Nel mondiale {cogn(leader)} è primo con {punti[leader]:g} punti, {r0['L']:g} su {cogn(r0['nome'])}{dich}."
+    # con punti ricalcolati da noi niente numeri a voce (la dichiarazione resta scritta nelle chips e in didascalia)
+    voce_m = (f"Nel mondiale {cogn(leader)} è sempre primo." if ricalcolati else f"Nel mondiale {cogn(leader)} è primo con {punti[leader]:g} punti, {r0['L']:g} su {cogn(r0['nome'])}.")
     scene.append({"foto": leader, "nome": leader, "chips": ch_m, "sub_top": 1440, "testo": voce_m, **espn(leader)})
     if prossimo:
         nome_p = re.sub(r"^Gran Premio (di|del|dello|della|degli|d')\s*", "", prossimo["nome"])
@@ -153,7 +153,7 @@ def costruisci(bene, male, ordine=None):
             ch_t = [("si", "Titolo già matematico")]
         elif r0["pos_basta"] is not None and r0["pos_basta"] > 1:
             frase = f"A {nome_p} gli basta un {ORD.get(r0['pos_basta'], str(r0['pos_basta']) + '°')} posto per essere campione del mondo."
-            ch_t = [("si", f"{r0['pos_basta']}° posto a {nome_p} e il titolo è suo")]
+            ch_t = [("si", f"{r0['pos_basta']}° posto a {nome_p} e il titolo è suo"), ("info", "Calcolo GP Oggi sui punti rimasti")]
         elif r0["basta_vincere"]:
             frase = f"Se vince a {nome_p}, è campione del mondo con quattro gare d'anticipo."
             ch_t = [("si", f"Vince a {nome_p}: campione già lì")]
@@ -163,7 +163,7 @@ def costruisci(bene, male, ordine=None):
         else:
             frase = f"A {nome_p} non può ancora chiudere il titolo."
             ch_t = [("info", f"Non ancora a {nome_p}")]
-        scene.append({"foto": leader, "nome": f"Il titolo a {nome_p}", "chips": ch_t, "sub_top": 1440, "testo": frase + " Calcolo nostro sui punti rimasti.", **espn(leader)})
+        scene.append({"foto": leader, "nome": f"Il titolo a {nome_p}", "chips": ch_t, "sub_top": 1440, "testo": frase, **espn(leader)})
     spec = {"serie": "F1", "titolo_breve": luogo, "etichetta": "Riassunto gara", "fonte": "risultati ufficiali, calcoli GP Oggi", "velocita": "+38%", "scene": scene,
             "finale": {"foto": vinc["nome"], "domanda": f"{cogn(leader)} campione già a {nome_p}?" if prossimo else "Che ne pensi della gara?"}}
     social = (f"🏁 {luogo}: vince {vinc['nome']}! 🏆\n\n" + (f"👏 {bene}: partito {res['bene']['griglia']}°, arrivato {res['bene']['pos']}°\n" if "bene" in res and res["bene"]["griglia"] else "")

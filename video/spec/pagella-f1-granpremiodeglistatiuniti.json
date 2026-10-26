@@ -1,0 +1,117 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Gran Premio degli Stati Uniti: la pagella",
+ "fonte": "risultati ufficiali, calcolo GP Oggi",
+ "velocita": "+31%",
+ "scene": [
+  {
+   "foto": "Charles Leclerc",
+   "alt": "ferrari",
+   "hook": true,
+   "hook_titolo": "Un ottimo Leclerc",
+   "testo": "Un ottimo [Leclerc] fa felice la Ferrari."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Hamilton]: quinto in qualifica e quarto in gara. Voto *sette e mezzo*."
+  },
+  {
+   "foto": "Valtteri Bottas",
+   "testo": "[Bottas]: ventiduesimo in qualifica e ritirato al giro 49. Per lui oggi *tre*."
+  },
+  {
+   "foto": "Franco Colapinto",
+   "testo": "[Colapinto]: quattordicesimo in qualifica e ritirato al giro 36. Si prende *tre e mezzo*."
+  },
+  {
+   "foto": "George Russell",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Russell]: sesto in qualifica e ottavo in gara. Gli diamo *sei*."
+  },
+  {
+   "foto": "Max Verstappen",
+   "alt": "pista_cina",
+   "pista": true,
+   "testo": "[Verstappen]: secondo in qualifica e terzo in gara. Ha fatto 3 sorpassi. Voto *otto*."
+  },
+  {
+   "foto": "Charles Leclerc",
+   "alt": "pista_cina",
+   "pista": true,
+   "testo": "[Leclerc]: quarto in qualifica e secondo in gara. Ha fatto 2 sorpassi. Per lui oggi *otto e mezzo*."
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "E poi il migliore: [Antonelli]. Pole e vittoria: un weekend perfetto. Una prova da applausi. Voto *dieci*."
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "pista": true,
+   "classifica": {
+    "titolo": "I nostri voti",
+    "righe": [
+     {
+      "pos": "",
+      "colore": "00D7B6",
+      "nome": "Antonelli",
+      "voto": "10",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "ED1131",
+      "nome": "Leclerc",
+      "voto": "8,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "4781D7",
+      "nome": "Verstappen",
+      "voto": "8",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "ED1131",
+      "nome": "Hamilton",
+      "voto": "7,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "00D7B6",
+      "nome": "Russell",
+      "voto": "6",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "00A1E8",
+      "nome": "Colapinto",
+      "voto": "3,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "909090",
+      "nome": "Bottas",
+      "voto": "3",
+      "nota": " "
+     }
+    ]
+   },
+   "sub_top": 1360,
+   "testo": "Ecco la pagella completa."
+  }
+ ],
+ "finale": {
+  "foto": "Kimi Antonelli",
+  "domanda": "Che voto dai tu a Gran Premio degli Stati Uniti?"
+ }
+}

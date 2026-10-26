@@ -5,7 +5,7 @@
  "team": "Ferrari",
  "colore": "ED1131",
  "posizione": 5,
- "punti": 215.0,
+ "punti": 233.0,
  "foto": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg/500px-Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg",
   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg/1280px-Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg",
@@ -280,11 +280,14 @@
     "stato": null
    },
    "sprint": null,
-   "gara": null
+   "gara": {
+    "pos": 2,
+    "stato": null
+   }
   }
  ],
  "vittorie": 1,
- "podi": 5,
+ "podi": 6,
  "pole": 0,
  "miglior_arrivo": 1,
  "ritiri": 3

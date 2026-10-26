@@ -5,7 +5,7 @@
  "team": "Mercedes",
  "colore": "00D7B6",
  "posizione": 2,
- "punti": 238.0,
+ "punti": 242.0,
  "foto": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/KingsLeonSilverstne040724_%2828_of_112%29_%2853838006028%29_%28cropped%29.jpg/500px-KingsLeonSilverstne040724_%2828_of_112%29_%2853838006028%29_%28cropped%29.jpg",
   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/KingsLeonSilverstne040724_%2828_of_112%29_%2853838006028%29_%28cropped%29.jpg/1280px-KingsLeonSilverstne040724_%2828_of_112%29_%2853838006028%29_%28cropped%29.jpg",
@@ -280,7 +280,10 @@
     "stato": null
    },
    "sprint": null,
-   "gara": null
+   "gara": {
+    "pos": 8,
+    "stato": null
+   }
   }
  ],
  "vittorie": 3,

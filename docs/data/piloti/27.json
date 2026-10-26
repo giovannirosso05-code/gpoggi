@@ -280,7 +280,10 @@
     "stato": null
    },
    "sprint": null,
-   "gara": null
+   "gara": {
+    "pos": 11,
+    "stato": null
+   }
   }
  ],
  "vittorie": 0,

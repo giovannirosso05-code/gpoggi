@@ -5,7 +5,7 @@
  "team": "McLaren",
  "colore": "F47600",
  "posizione": 6,
- "punti": 201.0,
+ "punti": 211.0,
  "foto": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_%28cropped2%29.jpg/500px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_%28cropped2%29.jpg",
   "grande": "https://upload.wikimedia.org/wikipedia/commons/9/90/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_%28cropped2%29.jpg",
@@ -280,7 +280,10 @@
     "stato": null
    },
    "sprint": null,
-   "gara": null
+   "gara": {
+    "pos": 5,
+    "stato": null
+   }
   }
  ],
  "vittorie": 2,

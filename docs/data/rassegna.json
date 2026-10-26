@@ -1,6 +1,42 @@
 {
- "generato_il": "2026-10-26T17:17:32+00:00",
+ "generato_il": "2026-10-26T21:40:49+00:00",
  "articoli": [
+  {
+   "titolo": "Kimi Antonelli, il titolo mondiale è sempre più vicino: la lezione di un ragazzo che continua a correre con il sorriso",
+   "estratto": "Per Holly, all’anagrafe Oliver Hutton, il pallone era un amico. Per Andrea Kimi Antonelli, vent’anni, bolognese, l’amico ha quattro ruote, una stella a tre punte sul muso e una discreta tendenza a…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/kimi-antonelli-il-sogno-mondiale-sempre-piu-vicino-la-lezione-di-un-ragazzo-che-continua-a-correre-con-il-sorriso/",
+   "pubblicato": "2026-10-26T18:20:58+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 21.2,
+   "testate": 2
+  },
+  {
+   "titolo": "Wolff: “La prestazione di Antonelli ha superato quella della macchina. Lauda si sarebbe tolto il cappello”",
+   "estratto": "Il numero uno del team Mercedes ha speso parole al miele per il leader del mondiale",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/wolff-prestazione-antonelli-superato-quella-mercedes-lauda-tolto-cappello",
+   "pubblicato": "2026-10-26T18:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.1,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Tardozzi: \"Marquez ha chiesto garanzie per andare in Qatar. Altri davanti all'organizzazione tacciono\"",
+   "estratto": "Il Mondiale MotoGP ha diversi fronti aperti in questo finale di stagione 2026, ma pochi sembrano più rilevanti della visita che il campionato sta per fare in Qatar. Dopo il GP della Malesia di questo…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-tardozzi-marquez-ha-chiesto-garanzie-per-andare-in-qatar-altri-davanti-allorganizzazione-tac/10868657/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-26T17:30:47+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 28.0,
+   "testate": 3
+  },
   {
    "titolo": "F1 | Hadjar è rimasto nella mappa del pit stop per metà gara: non aveva potenza sotto il 40% di acceleratore",
    "estratto": "Il podio conquistato ad Austin da Max Verstappen, unito al sesto posto di Isack Hadjar, ha permesso alla Red Bull di agganciare e superare la McLaren nel mondiale Costruttori, un traguardo che alla…",
@@ -10,7 +46,19 @@
    "pubblicato": "2026-10-26T17:02:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.9,
+   "punteggio": 2.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Russell, penalità troppo severa? Gli steward non ci stanno: “Abbiamo considerato anche le attenuanti”",
+   "estratto": "La domenica da incubo dell'inglese era iniziata già nel corso del primo giro, con una sanzione che ha fatto molto discutere",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/russell-penalita-troppo-severa-gli-steward-non-ci-stanno-abbiamo-considerato-anche-le-attenuanti",
+   "pubblicato": "2026-10-26T17:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 7.8,
    "testate": 1
   },
   {
@@ -22,7 +70,7 @@
    "pubblicato": "2026-10-26T16:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.7,
+   "punteggio": 2.6,
    "testate": 1
   },
   {
@@ -34,7 +82,7 @@
    "pubblicato": "2026-10-26T15:30:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.6,
+   "punteggio": 7.5,
    "testate": 1
   },
   {
@@ -46,7 +94,7 @@
    "pubblicato": "2026-10-26T15:01:55+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.4,
+   "punteggio": 17.3,
    "testate": 2
   },
   {
@@ -58,7 +106,7 @@
    "pubblicato": "2026-10-26T15:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.4,
+   "punteggio": 15.3,
    "testate": 1
   },
   {
@@ -70,7 +118,7 @@
    "pubblicato": "2026-10-26T14:48:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.4,
+   "punteggio": 10.3,
    "testate": 1
   },
   {
@@ -82,7 +130,7 @@
    "pubblicato": "2026-10-26T14:30:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.3,
+   "punteggio": 15.2,
    "testate": 1
   },
   {
@@ -94,7 +142,7 @@
    "pubblicato": "2026-10-26T14:23:24+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.3,
+   "punteggio": 10.2,
    "testate": 1
   },
   {
@@ -106,7 +154,7 @@
    "pubblicato": "2026-10-26T14:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.2,
+   "punteggio": 7.1,
    "testate": 1
   },
   {
@@ -118,7 +166,7 @@
    "pubblicato": "2026-10-26T13:17:53+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 23.0,
+   "punteggio": 21.9,
    "testate": 3
   },
   {
@@ -130,7 +178,7 @@
    "pubblicato": "2026-10-26T13:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.9,
+   "punteggio": 14.8,
    "testate": 1
   },
   {
@@ -142,7 +190,7 @@
    "pubblicato": "2026-10-26T12:16:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 27.7,
+   "punteggio": 26.6,
    "testate": 3
   },
   {
@@ -154,7 +202,7 @@
    "pubblicato": "2026-10-26T12:03:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.7,
+   "punteggio": 1.6,
    "testate": 1
   },
   {
@@ -166,7 +214,7 @@
    "pubblicato": "2026-10-26T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.7,
+   "punteggio": 6.6,
    "testate": 1
   },
   {
@@ -178,7 +226,7 @@
    "pubblicato": "2026-10-26T11:41:07+00:00",
    "tipo": "social",
    "citazione": true,
-   "punteggio": 18.6,
+   "punteggio": 17.5,
    "testate": 1
   },
   {
@@ -190,7 +238,7 @@
    "pubblicato": "2026-10-26T11:30:41+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 35.6,
+   "punteggio": 34.5,
    "testate": 3
   },
   {
@@ -202,7 +250,7 @@
    "pubblicato": "2026-10-26T11:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.6,
+   "punteggio": 9.5,
    "testate": 1
   },
   {
@@ -214,7 +262,7 @@
    "pubblicato": "2026-10-26T11:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.4,
+   "punteggio": 6.3,
    "testate": 1
   },
   {
@@ -226,7 +274,7 @@
    "pubblicato": "2026-10-26T10:47:10+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.4,
+   "punteggio": 9.3,
    "testate": 1
   },
   {
@@ -238,7 +286,7 @@
    "pubblicato": "2026-10-26T10:32:07+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 8.3,
+   "punteggio": 7.2,
    "testate": 1
   },
   {
@@ -250,7 +298,7 @@
    "pubblicato": "2026-10-26T10:20:11+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 16.3,
+   "punteggio": 15.2,
    "testate": 1
   },
   {
@@ -262,7 +310,7 @@
    "pubblicato": "2026-10-26T10:03:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.2,
+   "punteggio": 14.1,
    "testate": 1
   },
   {
@@ -274,7 +322,7 @@
    "pubblicato": "2026-10-26T10:01:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.2,
+   "punteggio": 21.1,
    "testate": 3
   },
   {
@@ -286,7 +334,7 @@
    "pubblicato": "2026-10-26T09:50:07+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.1,
+   "punteggio": 14.0,
    "testate": 1
   },
   {
@@ -298,8 +346,8 @@
    "pubblicato": "2026-10-26T09:45:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.1,
-   "testate": 1
+   "punteggio": 11.0,
+   "testate": 2
   },
   {
    "titolo": "F1 2026 | Ecco gli orari TV di Sky, Now e TV8 del Gran Premio di Città del Messico",
@@ -310,7 +358,7 @@
    "pubblicato": "2026-10-26T09:40:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.1,
+   "punteggio": 17.0,
    "testate": 3
   },
   {
@@ -322,7 +370,7 @@
    "pubblicato": "2026-10-26T09:23:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.0,
+   "punteggio": -1.1,
    "testate": 2
   },
   {
@@ -334,7 +382,7 @@
    "pubblicato": "2026-10-26T09:00:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.9,
+   "punteggio": 13.8,
    "testate": 1
   },
   {
@@ -346,7 +394,7 @@
    "pubblicato": "2026-10-26T08:47:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.9,
+   "punteggio": 18.8,
    "testate": 2
   },
   {
@@ -358,7 +406,7 @@
    "pubblicato": "2026-10-26T08:44:19+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.9,
+   "punteggio": 5.8,
    "testate": 1
   },
   {
@@ -370,7 +418,7 @@
    "pubblicato": "2026-10-26T08:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.8,
+   "punteggio": 18.7,
    "testate": 2
   },
   {
@@ -382,7 +430,7 @@
    "pubblicato": "2026-10-26T08:25:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.8,
+   "punteggio": 28.7,
    "testate": 3
   },
   {
@@ -394,7 +442,7 @@
    "pubblicato": "2026-10-26T08:24:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.8,
+   "punteggio": 13.7,
    "testate": 1
   },
   {
@@ -406,7 +454,7 @@
    "pubblicato": "2026-10-26T08:15:00+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 7.7,
+   "punteggio": 6.6,
    "testate": 1
   },
   {
@@ -418,7 +466,7 @@
    "pubblicato": "2026-10-26T08:14:07+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.7,
+   "punteggio": 8.6,
    "testate": 1
   },
   {
@@ -430,7 +478,7 @@
    "pubblicato": "2026-10-26T08:00:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.7,
+   "punteggio": 0.6,
    "testate": 1
   },
   {
@@ -442,7 +490,7 @@
    "pubblicato": "2026-10-26T07:55:53+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.7,
+   "punteggio": 28.6,
    "testate": 3
   },
   {
@@ -454,7 +502,7 @@
    "pubblicato": "2026-10-26T07:18:53+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.5,
+   "punteggio": 5.4,
    "testate": 1
   },
   {
@@ -466,7 +514,7 @@
    "pubblicato": "2026-10-26T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.4,
+   "punteggio": 16.3,
    "testate": 3
   },
   {
@@ -478,7 +526,7 @@
    "pubblicato": "2026-10-26T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.6,
+   "punteggio": -1.7,
    "testate": 2
   },
   {
@@ -490,7 +538,7 @@
    "pubblicato": "2026-10-26T06:45:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.4,
+   "punteggio": 8.3,
    "testate": 1
   },
   {
@@ -502,7 +550,7 @@
    "pubblicato": "2026-10-26T06:16:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.2,
+   "punteggio": 18.1,
    "testate": 2
   },
   {
@@ -514,7 +562,7 @@
    "pubblicato": "2026-10-26T06:00:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.2,
+   "punteggio": 18.1,
    "testate": 2
   },
   {
@@ -526,7 +574,7 @@
    "pubblicato": "2026-10-26T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.8,
+   "punteggio": -3.9,
    "testate": 1
   },
   {
@@ -538,7 +586,7 @@
    "pubblicato": "2026-10-26T05:00:22+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.9,
+   "punteggio": 7.8,
    "testate": 1
   },
   {
@@ -550,7 +598,7 @@
    "pubblicato": "2026-10-26T05:00:22+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.9,
+   "punteggio": 7.8,
    "testate": 1
   },
   {
@@ -562,7 +610,7 @@
    "pubblicato": "2026-10-26T05:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.1,
+   "punteggio": -12.2,
    "testate": 1
   },
   {
@@ -574,7 +622,7 @@
    "pubblicato": "2026-10-26T04:05:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.7,
+   "punteggio": 7.6,
    "testate": 3
   },
   {
@@ -586,7 +634,7 @@
    "pubblicato": "2026-10-26T04:00:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.7,
+   "punteggio": 7.6,
    "testate": 3
   },
   {
@@ -598,7 +646,7 @@
    "pubblicato": "2026-10-25T23:59:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.7,
+   "punteggio": 3.6,
    "testate": 1
   },
   {
@@ -610,31 +658,7 @@
    "pubblicato": "2026-10-25T23:51:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.6,
-   "testate": 1
-  },
-  {
-   "titolo": "Kimi risolve il rebus Mercedes, ma la Ferrari poteva vincere",
-   "estratto": "Antonelli conquista una vittoria che avvicina il titolo mondiale e rafforza le basi per il 2027, mentre la Ferrari si rammarica per un successo che era alla portata",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/kimi-risolve-rebus-mercedes-ferrari-poteva-vincere",
-   "pubblicato": "2026-10-25T23:28:53+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 7.5,
-   "testate": 1
-  },
-  {
-   "titolo": "Vasseur felice, ma non al 100%: “Puoi esserlo solo se vinci. Ma è un buon passo avanti”",
-   "estratto": "Il team principal della Ferrari non può definirsi completamente soddisfatto ma ammette che ad Austin era proprio impossibile sperare di fare di più partendo dal quarto e quinto posto",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/vasseur-felice-non-100-puoi-esserlo-solo-se-vinci-ma-buon-passo-avanti-potenziale",
-   "pubblicato": "2026-10-25T23:25:01+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 12.5,
+   "punteggio": 11.5,
    "testate": 1
   },
   {
@@ -646,7 +670,7 @@
    "pubblicato": "2026-10-25T23:22:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.5,
+   "punteggio": 11.4,
    "testate": 1
   },
   {
@@ -658,7 +682,7 @@
    "pubblicato": "2026-10-25T23:20:15+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.5,
+   "punteggio": 11.4,
    "testate": 1
   },
   {
@@ -670,7 +694,7 @@
    "pubblicato": "2026-10-25T23:12:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.5,
+   "punteggio": 6.4,
    "testate": 1
   },
   {
@@ -682,7 +706,7 @@
    "pubblicato": "2026-10-25T23:12:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.5,
+   "punteggio": 6.4,
    "testate": 1
   },
   {
@@ -694,7 +718,7 @@
    "pubblicato": "2026-10-25T23:07:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.5,
+   "punteggio": 3.4,
    "testate": 1
   },
   {
@@ -706,7 +730,7 @@
    "pubblicato": "2026-10-25T23:04:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.4,
+   "punteggio": 21.3,
    "testate": 2
   },
   {
@@ -718,7 +742,7 @@
    "pubblicato": "2026-10-25T23:01:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.4,
+   "punteggio": 3.3,
    "testate": 1
   },
   {
@@ -730,7 +754,7 @@
    "pubblicato": "2026-10-25T22:53:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.4,
+   "punteggio": 16.3,
    "testate": 2
   },
   {
@@ -742,7 +766,7 @@
    "pubblicato": "2026-10-25T22:44:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.4,
+   "punteggio": 11.3,
    "testate": 1
   },
   {
@@ -754,7 +778,7 @@
    "pubblicato": "2026-10-25T22:38:04+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.3,
+   "punteggio": 3.2,
    "testate": 1
   },
   {
@@ -766,7 +790,7 @@
    "pubblicato": "2026-10-25T22:28:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.3,
+   "punteggio": 11.2,
    "testate": 1
   },
   {
@@ -778,7 +802,7 @@
    "pubblicato": "2026-10-25T22:14:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.2,
+   "punteggio": 26.1,
    "testate": 3
   },
   {
@@ -790,7 +814,7 @@
    "pubblicato": "2026-10-25T22:10:53+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.2,
+   "punteggio": 3.1,
    "testate": 1
   },
   {
@@ -802,7 +826,7 @@
    "pubblicato": "2026-10-25T21:56:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.2,
+   "punteggio": 16.1,
    "testate": 2
   },
   {
@@ -814,19 +838,7 @@
    "pubblicato": "2026-10-25T21:54:45+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.2,
-   "testate": 2
-  },
-  {
-   "titolo": "LIVE F1, GP USA 2026 in DIRETTA: KIMI ANTONELLI E’ L’UOMO DEL TEXAS! Dominio straripante, Mondiale il 1° novembre!",
-   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE L’ORDINE D’ARRIVO DELLA GARA 22.52 Grazie per averci seguito, amici di OA Sport. Appuntamento dunque a domenica prossima per l’appuntamento con la storia. Un…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/live-f1-gp-usa-2026-in-diretta-kimi-antonelli-dalla-pole-per-vincere-e-conquistare-il-titolo/",
-   "pubblicato": "2026-10-25T21:52:31+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 17.1,
+   "punteggio": 21.1,
    "testate": 2
   },
   {
@@ -838,7 +850,7 @@
    "pubblicato": "2026-10-25T21:52:31+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.1,
+   "punteggio": 16.0,
    "testate": 2
   },
   {
@@ -850,7 +862,7 @@
    "pubblicato": "2026-10-25T21:50:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.1,
+   "punteggio": 26.0,
    "testate": 3
   },
   {
@@ -862,7 +874,7 @@
    "pubblicato": "2026-10-25T19:30:05+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 31.6,
+   "punteggio": 30.5,
    "testate": 3
   },
   {
@@ -874,7 +886,7 @@
    "pubblicato": "2026-10-25T18:30:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.3,
+   "punteggio": 5.2,
    "testate": 1
   },
   {
@@ -886,7 +898,7 @@
    "pubblicato": "2026-10-25T18:26:43+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.3,
+   "punteggio": 12.2,
    "testate": 2
   },
   {
@@ -898,7 +910,7 @@
    "pubblicato": "2026-10-25T16:30:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.2,
+   "punteggio": -3.3,
    "testate": 1
   },
   {
@@ -910,7 +922,7 @@
    "pubblicato": "2026-10-25T15:49:21+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.6,
+   "punteggio": 1.5,
    "testate": 1
   },
   {
@@ -922,7 +934,7 @@
    "pubblicato": "2026-10-25T15:09:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 25.5,
+   "punteggio": 24.4,
    "testate": 3
   },
   {
@@ -934,7 +946,7 @@
    "pubblicato": "2026-10-25T13:45:31+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.1,
+   "punteggio": 21.0,
    "testate": 3
   },
   {
@@ -946,7 +958,7 @@
    "pubblicato": "2026-10-25T10:30:15+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.3,
+   "punteggio": 0.2,
    "testate": 1
   },
   {
@@ -958,7 +970,7 @@
    "pubblicato": "2026-10-25T09:29:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.0,
+   "punteggio": 13.0,
    "testate": 2
   },
   {
@@ -970,7 +982,7 @@
    "pubblicato": "2026-10-25T09:00:38+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.9,
+   "punteggio": 2.8,
    "testate": 1
   },
   {
@@ -982,7 +994,7 @@
    "pubblicato": "2026-10-25T08:45:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.9,
+   "punteggio": 7.8,
    "testate": 1
   },
   {
@@ -994,7 +1006,7 @@
    "pubblicato": "2026-10-25T08:41:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 23.8,
+   "punteggio": 22.8,
    "testate": 3
   },
   {
@@ -1006,7 +1018,7 @@
    "pubblicato": "2026-10-25T08:38:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.8,
+   "punteggio": -0.3,
    "testate": 1
   },
   {
@@ -1018,7 +1030,7 @@
    "pubblicato": "2026-10-25T08:34:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.8,
+   "punteggio": 7.7,
    "testate": 1
   },
   {
@@ -1030,7 +1042,7 @@
    "pubblicato": "2026-10-25T08:20:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.8,
+   "punteggio": 14.7,
    "testate": 3
   },
   {
@@ -1042,7 +1054,7 @@
    "pubblicato": "2026-10-25T08:18:44+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 20.8,
+   "punteggio": 19.7,
    "testate": 3
   },
   {
@@ -1054,7 +1066,7 @@
    "pubblicato": "2026-10-25T08:11:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.7,
+   "punteggio": -0.4,
    "testate": 1
   },
   {
@@ -1066,7 +1078,7 @@
    "pubblicato": "2026-10-25T07:57:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.7,
+   "punteggio": 17.6,
    "testate": 2
   },
   {
@@ -1078,7 +1090,7 @@
    "pubblicato": "2026-10-25T07:40:41+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.6,
+   "punteggio": 17.5,
    "testate": 2
   },
   {
@@ -1090,7 +1102,7 @@
    "pubblicato": "2026-10-25T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.4,
+   "punteggio": -0.7,
    "testate": 1
   },
   {
@@ -1102,7 +1114,7 @@
    "pubblicato": "2026-10-25T06:35:24+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.3,
+   "punteggio": 2.2,
    "testate": 3
   },
   {
@@ -1114,8 +1126,8 @@
    "pubblicato": "2026-10-25T06:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.3,
-   "testate": 2
+   "punteggio": 27.2,
+   "testate": 3
   },
   {
    "titolo": "Perché la cancellazione della gara di MotoGP è un ‘regalo’ enorme per Jorge Martin. E il responso sull’infortunio…",
@@ -1126,7 +1138,7 @@
    "pubblicato": "2026-10-25T06:12:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.2,
+   "punteggio": 4.1,
    "testate": 2
   },
   {
@@ -1138,7 +1150,7 @@
    "pubblicato": "2026-10-25T06:01:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -16.8,
+   "punteggio": -17.9,
    "testate": 1
   },
   {
@@ -1150,7 +1162,7 @@
    "pubblicato": "2026-10-25T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.2,
+   "punteggio": 4.1,
    "testate": 2
   },
   {
@@ -1162,7 +1174,7 @@
    "pubblicato": "2026-10-25T05:55:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.8,
+   "punteggio": -5.9,
    "testate": 1
   },
   {
@@ -1174,7 +1186,7 @@
    "pubblicato": "2026-10-25T05:32:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.1,
+   "punteggio": -1.0,
    "testate": 1
   },
   {
@@ -1186,7 +1198,7 @@
    "pubblicato": "2026-10-25T05:16:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.0,
+   "punteggio": 3.9,
    "testate": 2
   },
   {
@@ -1198,7 +1210,7 @@
    "pubblicato": "2026-10-25T05:15:07+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.0,
+   "punteggio": 3.9,
    "testate": 2
   },
   {
@@ -1210,7 +1222,7 @@
    "pubblicato": "2026-10-25T05:03:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.9,
+   "punteggio": 13.8,
    "testate": 3
   },
   {
@@ -1222,7 +1234,7 @@
    "pubblicato": "2026-10-25T05:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.9,
+   "punteggio": 3.8,
    "testate": 2
   },
   {
@@ -1234,7 +1246,7 @@
    "pubblicato": "2026-10-25T05:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.1,
+   "punteggio": -6.2,
    "testate": 1
   },
   {
@@ -1246,7 +1258,7 @@
    "pubblicato": "2026-10-25T05:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.9,
+   "punteggio": 3.8,
    "testate": 2
   },
   {
@@ -1258,7 +1270,7 @@
    "pubblicato": "2026-10-25T04:10:53+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.3,
+   "punteggio": -8.4,
    "testate": 2
   },
   {
@@ -1270,7 +1282,7 @@
    "pubblicato": "2026-10-25T04:00:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.7,
+   "punteggio": 3.6,
    "testate": 2
   },
   {
@@ -1282,7 +1294,7 @@
    "pubblicato": "2026-10-25T03:49:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.6,
+   "punteggio": 11.5,
    "testate": 2
   },
   {
@@ -1294,7 +1306,7 @@
    "pubblicato": "2026-10-25T03:29:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.6,
+   "punteggio": 13.5,
    "testate": 3
   },
   {
@@ -1306,7 +1318,7 @@
    "pubblicato": "2026-10-25T03:23:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.5,
+   "punteggio": 13.4,
    "testate": 3
   },
   {
@@ -1318,7 +1330,7 @@
    "pubblicato": "2026-10-25T03:07:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.5,
+   "punteggio": 13.4,
    "testate": 3
   },
   {
@@ -1330,7 +1342,7 @@
    "pubblicato": "2026-10-25T02:29:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.3,
+   "punteggio": 1.2,
    "testate": 3
   },
   {
@@ -1342,7 +1354,7 @@
    "pubblicato": "2026-10-25T01:52:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.1,
+   "punteggio": 11.0,
    "testate": 2
   },
   {
@@ -1354,7 +1366,7 @@
    "pubblicato": "2026-10-25T00:18:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.2,
+   "punteggio": -2.3,
    "testate": 1
   },
   {
@@ -1366,7 +1378,7 @@
    "pubblicato": "2026-10-25T00:06:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.7,
+   "punteggio": 5.6,
    "testate": 1
   },
   {
@@ -1378,7 +1390,7 @@
    "pubblicato": "2026-10-24T23:37:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.6,
+   "punteggio": 5.5,
    "testate": 1
   },
   {
@@ -1390,7 +1402,7 @@
    "pubblicato": "2026-10-24T23:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.6,
+   "punteggio": 12.5,
    "testate": 3
   },
   {
@@ -1402,7 +1414,7 @@
    "pubblicato": "2026-10-24T23:20:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.5,
+   "punteggio": 5.4,
    "testate": 1
   },
   {
@@ -1414,7 +1426,7 @@
    "pubblicato": "2026-10-24T23:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.6,
+   "punteggio": -7.7,
    "testate": 1
   },
   {
@@ -1426,20 +1438,8 @@
    "pubblicato": "2026-10-24T22:21:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.3,
+   "punteggio": 20.2,
    "testate": 3
-  },
-  {
-   "titolo": "F1 | Austin, Libere 3: Hamilton fa sognare la Ferrari con Max vicino, poi Leclerc e le due Mercedes",
-   "estratto": "Ferrari e sempre Ferrari. Anche nel terzo turno di prove libere del GP degli Stati Uniti c'è la rossa davanti a tutti. La novità è che questa volta la prestazione è firmata da Lewis Hamilton che con…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-austin-libere-3-hamilton-fa-sognare-la-ferrari-con-max-vicino-poi-leclerc-e-le-due-mercedes/10867899/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-24T18:58:25+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 10.4,
-   "testate": 2
   }
  ]
 }

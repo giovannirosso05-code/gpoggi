@@ -180,6 +180,29 @@ def parole(s):
     return norm(re.sub(r"[*\[\]]", "", s)).split()
 
 
+UN_IT = {w: i for i, w in enumerate("zero uno due tre quattro cinque sei sette otto nove dieci undici dodici tredici quattordici quindici sedici diciassette diciotto diciannove venti".split())}
+
+
+def controlla_punti(t, serie):
+    """Un numero di punti detto in una scena deve tornare con la nostra classifica: totale di un pilota citato nella scena o distacco tra due citati.
+    Altrimenti la scena è scartata (un video con i punti sbagliati di un pilota non deve uscire). Vale per la F1; MotoGP: stesso file se c'è la classifica."""
+    try:
+        st = json.load(open(DATA / ("standings.json" if serie == "F1" else "standings-motogp.json")))
+    except (OSError, ValueError):
+        return
+    pil = {p["nome"]: float(p["punti"]) for p in st.get("piloti", [])}
+    nt = norm(t)
+    citati = [pil[n] for n in pil if len(norm(n).split()[-1]) > 3 and norm(n).split()[-1] in nt.split()]
+    ammessi = set(citati) | {abs(x - y) for x in citati for y in citati if x != y}
+    for m in re.finditer(r"\b(\d+|[a-z]+)\s+punt[oi]\b", nt):
+        v = m.group(1)
+        n = int(v) if v.isdigit() else UN_IT.get(v)
+        if n is None or n < 2:
+            continue
+        if n not in ammessi:
+            raise ValueError(f"il numero di punti «{n}» non torna con la classifica (scena: «{t}»): usa solo punti e distacchi veri tra i piloti citati")
+
+
 def valida(j, a, testo, nomi, predefiniti):
     """Trasforma la risposta del modello nel file di istruzioni del video; alza ValueError se qualcosa non va."""
     canon = {norm(n): n for n in nomi}
@@ -204,6 +227,7 @@ def valida(j, a, testo, nomi, predefiniti):
             t = t.replace("*", "")
         if not 18 <= len(t) <= 150:
             raise ValueError("scena troppo corta o lunga")
+        controlla_punti(t, a["serie"])
         w = parole(t)
         tot += len(w)
         if any(" ".join(w[i:i + 6]) in ngram for i in range(len(w) - 5)):

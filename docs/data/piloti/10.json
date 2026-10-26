@@ -5,7 +5,7 @@
  "team": "Alpine",
  "colore": "00A1E8",
  "posizione": 10,
- "punti": 41.0,
+ "punti": 42.0,
  "foto": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/2022_French_Grand_Prix_%2852279066548%29_%28cropped%29_%28cropped%29.png/500px-2022_French_Grand_Prix_%2852279066548%29_%28cropped%29_%28cropped%29.png",
   "grande": "https://upload.wikimedia.org/wikipedia/commons/6/61/2022_French_Grand_Prix_%2852279066548%29_%28cropped%29_%28cropped%29.png",
@@ -280,7 +280,10 @@
     "stato": null
    },
    "sprint": null,
-   "gara": null
+   "gara": {
+    "pos": 10,
+    "stato": null
+   }
   }
  ],
  "vittorie": 0,

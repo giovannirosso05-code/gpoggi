@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T22:04:13+00:00",
+ "aggiornato": "2026-10-26T02:45:50+00:00",
  "metodo": "Indice da 0 a 100 calcolato da GP Oggi: 45% forma nelle ultime 5 gare, 35% classifica del campionato, 20% risultato sullo stesso circuito l'anno scorso. È un'opinione basata sui numeri, non una previsione ufficiale né una certezza.",
  "f1": {
   "gp": "Gran Premio di Città del Messico",
@@ -12,8 +12,8 @@
     "team": "Mercedes",
     "indice": 100,
     "motivi": [
-     "1 vittoria nelle ultime 5 gare",
-     "1° nel campionato (340 punti)",
+     "2 vittorie nelle ultime 5 gare",
+     "1° nel campionato (365 punti)",
      "Mexico City 2025: 6°"
     ]
    },
@@ -21,10 +21,10 @@
     "numero": 3,
     "nome": "Max Verstappen",
     "team": "Red Bull Racing",
-    "indice": 100,
+    "indice": 95,
     "motivi": [
      "2 vittorie nelle ultime 5 gare",
-     "4° nel campionato (221 punti)",
+     "4° nel campionato (236 punti)",
      "Mexico City 2025: 3°"
     ]
    },
@@ -32,10 +32,10 @@
     "numero": 16,
     "nome": "Charles Leclerc",
     "team": "Ferrari",
-    "indice": 85,
+    "indice": 84,
     "motivi": [
-     "1 podio nelle ultime 5 gare",
-     "5° nel campionato (215 punti)",
+     "2 podi nelle ultime 5 gare",
+     "5° nel campionato (233 punti)",
      "Mexico City 2025: 2°"
     ]
    },
@@ -43,10 +43,10 @@
     "numero": 1,
     "nome": "Lando Norris",
     "team": "McLaren",
-    "indice": 78,
+    "indice": 72,
     "motivi": [
      "1 podio nelle ultime 5 gare",
-     "6° nel campionato (201 punti)",
+     "6° nel campionato (211 punti)",
      "Mexico City 2025: 1°"
     ]
    },
@@ -54,10 +54,10 @@
     "numero": 63,
     "nome": "George Russell",
     "team": "Mercedes",
-    "indice": 65,
+    "indice": 57,
     "motivi": [
      "1 vittoria nelle ultime 5 gare",
-     "2° nel campionato (238 punti)",
+     "2° nel campionato (242 punti)",
      "Mexico City 2025: 7°"
     ]
    }

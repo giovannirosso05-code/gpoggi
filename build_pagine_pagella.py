@@ -82,7 +82,7 @@ def main():
                                                  "Tutte le pagelle di GP Oggi: i voti ai piloti di Formula 1 e MotoGP dopo ogni Gran Premio, con il metodo di calcolo.",
                                                  "Pagelle dei Gran Premi", "Formula 1 e MotoGP", "\n".join(corpo), "pagelle-gp.html", None), encoding="utf-8")
     sm = DOCS / "sitemap.xml"
-    s = re.sub(r"\s*<url><loc>https://gpoggi\.it/pagelle?-[^<]*</loc></url>", "", sm.read_text(encoding="utf-8"))
+    s = re.sub(r"\s*<url><loc>https://gpoggi\.it/pagell[ae]-[^<]*</loc></url>", "", sm.read_text(encoding="utf-8"))
     nuove = "".join(f"\n  <url><loc>{SITO}/{f}</loc></url>" for f in ["pagelle-gp.html"] + [v[0] for v in voci])
     sm.write_text(s.replace("</urlset>", nuove.lstrip("\n") + "\n</urlset>"), encoding="utf-8")
     print(f"Pagine pagella: {len(voci)} + indice")

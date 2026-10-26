@@ -31,7 +31,7 @@ try {
     <div class="pg-metodo muted"><h3 class="section-title" style="margin-top:0">Come calcoliamo il voto</h3>
       <ol><li>Ogni sessione dà un voto in base alla posizione: 1° = 10, 2° = 8,5, 3° = 8, 4° = 7,5, 5° = 7, 6° = 6,5, poi si scende di poco a ogni posizione, fino a un minimo di 4.</li>
       <li>In gara si aggiunge 0,1 per ogni posizione guadagnata rispetto alla griglia di partenza ufficiale (da −1 a +1,5, mai oltre 10).</li>
-      <li>Chi si ritira, o non fa registrare un tempo, prende 3 in quella sessione.</li>
+      <li>Chi si ritira, o non fa registrare un tempo, prende 4,5 in quella sessione (nelle pagelle fino al 25 ottobre 2026 prendeva 3).</li>
       <li>Pesi: qualifica 20%, sprint 20%, gara 60%. Senza sprint: qualifica 25%, gara 75%. Il voto finale è arrotondato al mezzo punto.</li></ol>
       <p>Il calcolo è il punto di partenza: se la redazione ritiene che un voto non renda giustizia a una giornata, lo corregge e lo scrive sotto il nome del pilota, con il motivo.</p><p>Sono i voti di GP Oggi, messi a scopo divertente e senza intenzione di offendere nessuno, non quelli di un ente ufficiale: il calcolo non conosce strategie o incidenti subiti, per questo possono esserci correzioni. Si aggiorna dopo ogni gara.</p></div>`;
   const mostra = (k) => {

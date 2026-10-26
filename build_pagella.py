@@ -3,7 +3,7 @@
 Il voto e' di GP Oggi: parte da un calcolo sui risultati ufficiali, che la redazione puo' correggere dichiarandolo. Metodo (scritto anche nella pagina del sito):
 - ogni sessione vale un voto da posizione: 1° = 10, 2° = 8,5, 3° = 8, 4° = 7,5, 5° = 7, 6° = 6,5, poi si scende (7° 6,2 ... 10° 5,6, poi -0,15 a posizione, minimo 4);
 - in gara si aggiungono 0,1 per ogni posizione guadagnata sulla griglia di partenza ufficiale (da -1 a +1,5, mai sopra 10);
-- chi si ritira, o non ha un tempo, prende 3 in quella sessione;
+- chi si ritira, o non ha un tempo, prende 4,5 in quella sessione (fino al 25 ottobre 2026 era 3: troppo severo, il ritiro non è sempre colpa del pilota);
 - peso: qualifica 20%, sprint 20%, gara 60%. Arrotondato al mezzo voto.
 - la redazione puo' correggere un voto con un motivo scritto (docs/data/pagella-correzioni.json): la pagina del sito la mostra sempre.
 Prova:  python build_pagella.py
@@ -14,12 +14,13 @@ from pathlib import Path
 
 D = Path(__file__).parent / "docs" / "data"
 PESI = {"q": 0.2, "s": 0.2, "g": 0.6}
+RITIRO = 4.5   # ritiro o nessun tempo (era 3: troppo duro, la causa spesso non è del pilota)
 TABELLA = {1: 10, 2: 8.5, 3: 8, 4: 7.5, 5: 7, 6: 6.5, 7: 6.2, 8: 6, 9: 5.8, 10: 5.6}
 
 
 def da_posizione(p):
     if p is None:
-        return 3.0
+        return RITIRO
     return TABELLA.get(p, max(4.0, 5.6 - 0.15 * (p - 10)))
 
 

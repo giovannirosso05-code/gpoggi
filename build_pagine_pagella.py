@@ -60,7 +60,7 @@ def costruisci(w, serie):
              f"    <p>I voti più bassi del weekend: {', '.join(esc(r['nome']) + ' (' + virgola(r['voto']) + ')' for r in ultimi)}.</p>",
              "    <h2>Come calcoliamo il voto</h2>",
              "    <p>Ogni sessione dà un voto in base alla posizione: 1° = 10, 2° = 8,5, 3° = 8, 4° = 7,5, 5° = 7, 6° = 6,5, poi si scende di poco a ogni posizione, fino a un minimo di 4. "
-             "In gara si aggiunge 0,1 per ogni posizione guadagnata rispetto alla griglia di partenza ufficiale. Chi si ritira o non fa registrare un tempo prende 3 in quella sessione. "
+             "In gara si aggiunge 0,1 per ogni posizione guadagnata rispetto alla griglia di partenza ufficiale. Chi si ritira o non fa registrare un tempo prende 4,5 in quella sessione (nelle pagelle fino al 25 ottobre 2026 prendeva 3). "
              "Pesi: qualifica 20%, sprint 20%, gara 60% (senza sprint: 25% e 75%). Il voto finale è arrotondato al mezzo punto. "
              "Se la redazione ritiene che un voto non renda giustizia a una giornata lo corregge e scrive il motivo sotto il nome del pilota.</p>",
              f'    <p class="muted">{NOTA}</p>',

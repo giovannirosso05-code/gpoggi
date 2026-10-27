@@ -20,6 +20,23 @@ import edge_tts.communicate as C
 from playwright.async_api import async_playwright
 
 
+def nome_parlato(titolo):
+    """«GP Malesia» -> «Gran Premio della Malesia» (preposizione giusta, come si dice a voce)."""
+    if not titolo.startswith("GP "):
+        return titolo
+    n = titolo[3:].strip()
+    b = n.lower()
+    if b.startswith("stati uniti"):
+        return f"Gran Premio degli {n}"
+    if b.startswith("paesi bassi"):
+        return f"Gran Premio dei {n}"
+    if b.startswith(("gran ", "san ", "città", "citta", "abu ", "las ", "emilia", "catalogna", "valencia", "aragona", "mugello")):
+        return f"Gran Premio di {n}"
+    if b[0] in "aeiou":
+        return f"Gran Premio d'{n}"
+    return f"Gran Premio {'della' if n.endswith('a') else 'del'} {n}"
+
+
 async def _voce_comune(testo, vel, uscita):
     """Stessa voce di tutti gli altri video: Azure se ci sono le chiavi, poi le riserve (vedi notizia_sub.voce)."""
     import notizia_sub as NS
@@ -90,7 +107,7 @@ def righe(d):
 
 
 def copione(d, gruppi):
-    nome_gp = d["titolo"].replace("GP ", "Gran Premio d'", 1) if d["titolo"].startswith("GP ") else d["titolo"]
+    nome_gp = nome_parlato(d["titolo"])
     serie = "di Moto G P" if d["motogp"] else ""
     t = [(f"{nome_gp} {serie}").strip() + ".", "Ecco tutti gli orari, in ora italiana."]
     if d["motogp"]:

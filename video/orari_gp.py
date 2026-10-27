@@ -10,6 +10,7 @@ import json
 import ssl
 import os
 import subprocess
+import sys
 import tempfile
 from datetime import datetime
 from pathlib import Path
@@ -158,8 +159,25 @@ def tipo_sessione(nome):
     return "altro"
 
 
+def foto_espn(nome, colore_hex):
+    """Ritratto ESPN del pilota sul gradiente del team, ritagliato per la fascia in alto (1080x600). None se non c'è."""
+    try:
+        sys.path.insert(0, str(Path(__file__).parent))
+        import ritratti_espn as R
+        from PIL import Image
+        col = tuple(int(colore_hex.lstrip("#")[i:i + 2], 16) for i in (0, 2, 4))
+        im = Image.open(R.ritratto(nome, col, larghezza=1100, centro_volto_y=520, sfx="_orari2")).convert("RGB")
+        f = Path(tempfile.gettempdir()) / "orari_fascia.jpg"
+        im.crop((0, 240, 1080, 840)).save(f, "JPEG", quality=92)
+        return f
+    except (SystemExit, Exception) as e:
+        print(f"  ritratto ESPN non disponibile per {nome}: {e}")
+        return None
+
+
 def pagina(d, gruppi):
-    foto = SITO / (d["foto"].get("file_grande") or d["foto"]["file"])
+    espn = None if d["motogp"] else foto_espn(d["fav"], next((p["colore"] for p in json.load(open(SITO / "data/roster.json")) if p["nome"] == d["fav"] and p.get("colore")), "e8352f"))
+    foto = espn or SITO / (d["foto"].get("file_grande") or d["foto"]["file"])
     colore, ambra = d["colore"], "#f5b301"
     flat = [(g, n, o) for g, sess in gruppi for n, o, _, _ in sess]
     gara = [x for x in flat if tipo_sessione(x[1]) == "gara"]
@@ -194,7 +212,7 @@ def pagina(d, gruppi):
 *{{box-sizing:border-box}} html,body{{margin:0;width:{W}px;height:{H}px;background:#0b0b0e;color:#fff;font-family:Inter,sans-serif;overflow:hidden}}
 /* zona sicura: blocco centrato (120 px per lato); i pulsanti di TikTok e Instagram stanno a destra (da circa 950 px) e in alto, la didascalia in basso */
 .logo{{position:absolute;left:0;right:0;top:135px;text-align:center}} .logo img{{width:210px}}
-.foto{{position:absolute;left:0;top:260px;width:{W}px;height:600px;background:url(data:image/jpeg;base64,{b64(foto)}) center {'-175' if d['motogp'] else '-85'}px/{W}px auto no-repeat}}
+.foto{{position:absolute;left:0;top:260px;width:{W}px;height:600px;background:url(data:image/jpeg;base64,{b64(foto)}) center {'-175' if d['motogp'] else ('0' if espn else '-85')}px/{W}px auto no-repeat}}
 .vel{{position:absolute;left:0;top:260px;width:{W}px;height:600px;background:linear-gradient(180deg,#0b0b0e 0%,rgba(11,11,14,0) 16%,rgba(11,11,14,0) 62%,#0b0b0e 100%)}}
 .testata{{position:absolute;left:120px;width:840px;top:825px}}
 .pill{{display:inline-block;font:700 28px Oswald;letter-spacing:.1em;background:{colore};padding:3px 16px;border-radius:8px;text-transform:uppercase;vertical-align:middle}}
@@ -224,7 +242,7 @@ h1{{margin:12px 0 0;font:700 60px/1 Oswald;text-transform:uppercase;white-space:
 <div class=sotto>{d['luogo'][:34]}</div><div class=sotto style='margin-top:2px'>Tra i favoriti: <b>{d['fav']}</b></div></div>
 <div class=blocco>{carte}{chips}
 <div class=piede><div class=url>gpoggi.it</div><div class=piccolo>Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team</div>
-<div class=piccolo>Foto: {d['foto'].get('autore', '')} · {d['foto'].get('licenza', '')} · via Wikimedia Commons</div></div></div>"""
+<div class=piccolo>{'Foto: ESPN' if espn else "Foto: " + d['foto'].get('autore', '') + ' · ' + d['foto'].get('licenza', '') + ' · via Wikimedia Commons'}</div></div></div>"""
 
 
 async def main(args):

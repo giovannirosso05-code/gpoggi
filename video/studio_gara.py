@@ -1,12 +1,12 @@
 """Studio di GP Oggi su chi può vincere la gara e chi può prendere la pole: non solo le ultime cinque gare.
 
 Per ogni pilota si mettono insieme, con pesi dichiarati:
-  - la forma del pilota (ultime 5 gare, oppure ultime 5 qualifiche): 30%
+  - la forma del pilota (ultime 5 gare, oppure ultime 5 qualifiche): 45%
   - la classifica del campionato: 15% (per la pole: la forma in gara)
-  - la forza di oggi della sua squadra (punti delle ultime 5 gare/qualifiche): 15%
-  - come è andato lui sullo stesso circuito negli ultimi 3 anni (più peso all'anno scorso): 15%
-  - quanto la sua moto/macchina va bene su quel circuito: podi (o primi 3 in griglia) del suo costruttore lì in 3 anni: 15%
-  - chi ha vinto (o preso la pole) lì l'anno scorso: 10%
+  - la forza di oggi della sua squadra (punti delle ultime 5 gare/qualifiche): 20%
+  - come è andato lui sullo stesso circuito negli ultimi 3 anni (più peso all'anno scorso): 8%
+  - quanto la sua moto/macchina va bene su quel circuito: podi (o primi 3 in griglia) del suo costruttore lì in 3 anni: 6%
+  - chi ha vinto (o preso la pole) lì l'anno scorso: 6%
 Dati: Jolpica (F1) e servizio pubblico MotoGP; nessun modello di linguaggio. I numeri a schermo e a voce sono quelli veri dello studio.
 
 Prova:  python3 studio_gara.py f1|motogp     (stampa le classifiche con i motivi)
@@ -219,10 +219,10 @@ def studio(chiave):
         vinto = stor and any(r["pos"] == 1 and id_riga(r) == pid for r in stor[0]["gara"]) if stor and stor[0]["anno"] == anno - 1 else False
         pole_scorso = stor and any(r["pos"] == 1 and id_riga(r) == pid for r in stor[0]["quali"]) if stor and stor[0]["anno"] == anno - 1 else False
         bonus_g = 1.0 if vinto else 0.0; bonus_q = 1.0 if pole_scorso else 0.0
-        sg = (0.30 * forma_g + 0.15 * camp + 0.15 * tf_g[p["cost"]] / max_tg + 0.15 * (NEUTRO if circ_g is None else circ_g)
-              + 0.15 * (NEUTRO if cost_g is None else cost_g) + 0.10 * bonus_g)
-        sq = (0.30 * forma_q + 0.15 * (NEUTRO if circ_q is None else circ_q) + 0.15 * (NEUTRO if cost_q is None else cost_q)
-              + 0.15 * tf_q[p["cost"]] / max_tq + 0.15 * forma_g + 0.10 * bonus_q)
+        sg = (0.45 * forma_g + 0.15 * camp + 0.20 * tf_g[p["cost"]] / max_tg + 0.08 * (NEUTRO if circ_g is None else circ_g)
+              + 0.06 * (NEUTRO if cost_g is None else cost_g) + 0.06 * bonus_g)
+        sq = (0.45 * forma_q + 0.08 * (NEUTRO if circ_q is None else circ_q) + 0.06 * (NEUTRO if cost_q is None else cost_q)
+              + 0.20 * tf_q[p["cost"]] / max_tq + 0.15 * forma_g + 0.06 * bonus_q)
         # --- motivi con i numeri veri: (esito, testo a schermo, testo a voce, forza)
         mg, mq = [], []
         if vinto:

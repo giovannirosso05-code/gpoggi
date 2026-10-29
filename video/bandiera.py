@@ -61,7 +61,7 @@ def coriandoli(img, n=90, seed=5):
         img.alpha_composite(riq, (min(max(x, 0), W - riq.width), min(max(y, 0), H - riq.height)))
 
 
-def composizione(nome, uscita, trofeo=None, alza=0, larghezza=1250, px=None, tr_x=730, tr_h=760, conf=False):
+def composizione(nome, uscita, trofeo=None, alza=0, larghezza=1250, px=None, tr_x=730, tr_h=760, conf=False, estendi=False):
     """alza: pixel di cui spostare in alto il pilota (nei video il pannello dei dati copre la parte bassa)."""
     import ritratti_espn as R
     sfondo = bandiera().convert("RGBA")
@@ -73,10 +73,24 @@ def composizione(nome, uscita, trofeo=None, alza=0, larghezza=1250, px=None, tr_
     sx = 0 if trofeo else (W - p.width) // 2
     px = px if px is not None else (-110 if trofeo else sx)
     # il ritratto finisce al petto: bordo basso sfumato nello sfondo
-    al = np.asarray(p.getchannel("A")).astype(float)
-    fade = np.clip((p.height - np.arange(p.height)) / 260.0, 0, 1)[:, None]
-    p.putalpha(Image.fromarray((al * fade).astype("uint8")))
-    py = 1560 - alza - p.height
+    if estendi:
+        # nei video il pannello dei dati copre il petto: il busto continua verso il basso (ultime righe della tuta allungate e scurite), senza buco sotto il pannello
+        # colore della tuta nelle ultime righe (centro): il busto continua come massa scura e sfuma verso il basso
+        base = np.asarray(p.crop((p.width // 3, p.height - 30, 2 * p.width // 3, p.height - 4)).convert("RGB")).reshape(-1, 3).astype(float).mean(axis=0)
+        alfa_bordo = np.asarray(p.getchannel("A"))[p.height - 3].astype(float)    # larghezza delle spalle
+        y = np.arange(520)[:, None]
+        scuro = np.clip(1 - y / 1100.0, 0.55, 1)
+        col = np.broadcast_to((base * scuro)[:, None, :] if False else (base[None, None, :] * scuro[..., None]), (520, p.width, 3)).astype("uint8")
+        a2 = (alfa_bordo[None, :] * np.clip((520 - y) / 380.0, 0, 1)).astype("uint8")
+        banda = Image.fromarray(col).convert("RGBA"); banda.putalpha(Image.fromarray(a2))
+        lungo = Image.new("RGBA", (p.width, p.height + 520), (0, 0, 0, 0))
+        lungo.alpha_composite(p, (0, 0)); lungo.alpha_composite(banda, (0, p.height))
+        p = lungo
+    else:
+        al = np.asarray(p.getchannel("A")).astype(float)
+        fade = np.clip((p.height - np.arange(p.height)) / 260.0, 0, 1)[:, None]
+        p.putalpha(Image.fromarray((al * fade).astype("uint8")))
+    py = 1560 - alza - p.height + (520 if estendi else 0)
     sfondo.alpha_composite(p, (px, py)) if px >= 0 else sfondo.alpha_composite(p.crop((-px, 0, p.width, p.height)), (0, py))
     if trofeo:
         t = taglia_trofeo(trofeo)

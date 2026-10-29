@@ -48,15 +48,30 @@ def taglia_trofeo(percorso):
     return out.crop(out.getbbox())
 
 
-def composizione(nome, uscita, trofeo=None, alza=0):
+def coriandoli(img, n=90, seed=5):
+    """Coriandoli sullo sfondo (si disegnano prima del pilota, così non finiscono sulla faccia)."""
+    import random
+    random.seed(seed)
+    d = ImageDraw.Draw(img)
+    for _ in range(n):
+        x, y = random.randint(0, W), random.randint(250, 1700)
+        w, h = random.randint(12, 22), random.randint(26, 44)
+        c = random.choice([(255, 212, 0), (255, 255, 255), (232, 53, 47), (0, 215, 182), (255, 179, 0)])
+        riq = Image.new("RGBA", (w, h), c + (255,)).rotate(random.randint(0, 180), expand=True)
+        img.alpha_composite(riq, (min(max(x, 0), W - riq.width), min(max(y, 0), H - riq.height)))
+
+
+def composizione(nome, uscita, trofeo=None, alza=0, larghezza=1250, px=None, tr_x=730, tr_h=760, conf=False):
     """alza: pixel di cui spostare in alto il pilota (nei video il pannello dei dati copre la parte bassa)."""
     import ritratti_espn as R
     sfondo = bandiera().convert("RGBA")
+    if conf:
+        coriandoli(sfondo)
     p = Image.open(R.scarica(nome)).convert("RGBA")
-    s = 1250 / p.width
+    s = larghezza / p.width
     p = p.resize((int(p.width * s), int(p.height * s)), Image.LANCZOS).filter(ImageFilter.UnsharpMask(1.4, 60, 2))
     sx = 0 if trofeo else (W - p.width) // 2
-    px = (-110 if trofeo else sx)
+    px = px if px is not None else (-110 if trofeo else sx)
     # il ritratto finisce al petto: bordo basso sfumato nello sfondo
     al = np.asarray(p.getchannel("A")).astype(float)
     fade = np.clip((p.height - np.arange(p.height)) / 260.0, 0, 1)[:, None]
@@ -65,11 +80,11 @@ def composizione(nome, uscita, trofeo=None, alza=0):
     sfondo.alpha_composite(p, (px, py)) if px >= 0 else sfondo.alpha_composite(p.crop((-px, 0, p.width, p.height)), (0, py))
     if trofeo:
         t = taglia_trofeo(trofeo)
-        k = 760 / t.height
-        t = t.resize((int(t.width * k), 760), Image.LANCZOS)
+        k = tr_h / t.height
+        t = t.resize((int(t.width * k), tr_h), Image.LANCZOS)
         ombra = Image.new("RGBA", t.size, (0, 0, 0, 0)); ombra.putalpha(t.getchannel("A").filter(ImageFilter.GaussianBlur(18)).point(lambda v: int(v * 0.6)))
-        sfondo.alpha_composite(ombra, (730 - t.width // 2 + 10, 1500 - alza - 760 + 14))
-        sfondo.alpha_composite(t, (730 - t.width // 2, 1500 - alza - 760))
+        sfondo.alpha_composite(ombra, (tr_x - t.width // 2 + 10, 1500 - alza - tr_h + 14))
+        sfondo.alpha_composite(t, (tr_x - t.width // 2, 1500 - alza - tr_h))
     sfondo.convert("RGB").save(uscita, "JPEG", quality=92)
     return uscita
 

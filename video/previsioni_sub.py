@@ -38,7 +38,8 @@ def costruisci(chiave):
     if len(gara) < 3 or not pole:
         raise SystemExit("meno di tre piloti con foto libera")
     luogo = re.sub(r"^(Gran Premio (degli|di|del|dello|della|d')\s*|GP )", "", pron["gp"]).strip()
-    cogn = lambda n: n.split()[-1]
+    # due fratelli Marquez in MotoGP: si dice sempre il nome intero, altrimenti non si capisce chi è
+    cogn = lambda n: n if n.split()[-1].lower() in ("marquez", "márquez") else n.split()[-1]
     a_ = lambda c: ("ad " if c[0] in "AEIOU" else "a ") + c
     extra = json.load(open(A.DATA / "foto-extra.json"))
     usate = {}

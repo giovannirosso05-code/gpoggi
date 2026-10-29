@@ -27,6 +27,10 @@ def serie_prossima():
     return min(cand, key=cand.get)
 
 
+# foto con il trofeo (ESPN, scaricate al momento in video/_cache/, mai nel repository): GP degli Stati Uniti 2026
+TROFEO = {"Kimi Antonelli": "https://a.espncdn.com/photo/2026/1026/r1736510_1296x729_16-9.jpg"}
+
+
 def costruisci(chiave):
     """Scene del video dallo studio di GP Oggi (studio_gara.py): gara e pole non solo dalle ultime 5 gare, ma anche dal circuito, dalla moto/macchina e da chi ha vinto l'anno scorso."""
     st = SG.studio(chiave)
@@ -91,6 +95,35 @@ def costruisci(chiave):
         if not r["motivi_gara"] or not v:
             continue
         scene.append({"foto": r["nome"], "nome": r["nome"], "chips": chips(r, "gara"), "sub_top": 1440, "testo": (f"Occhio {a_(cogn(r['nome']))}: " if k == 0 else f"E {a_(cogn(r['nome']))}: ") + ", ".join(v) + ".", **(alt(r["nome"]) or espn(r["nome"]))})
+    # F1: se il leader del mondiale può chiudere il titolo in questa gara (calcolo con spareggio per vittorie), una scena lo dice con la foto del trofeo
+    if chiave == "f1":
+        try:
+            import riassunto_gara as RG
+            stand = json.load(open(A.DATA / "standings.json"))
+            punti = {x["nome"]: x["punti"] for x in stand["piloti"]}
+            capo = max(punti, key=punti.get)
+            vitt = {}
+            for f in (A.DATA / "gare").glob("*.json"):
+                for ses in json.load(open(f))["sessioni"]:
+                    if ses["tipo"] == "Race" and ses.get("risultati"):
+                        v = sorted((x for x in ses["risultati"] if x.get("pos")), key=lambda x: x["pos"])
+                        if v:
+                            vitt[v[0]["nome"]] = vitt.get(v[0]["nome"], 0) + 1
+            ora = datetime.now(timezone.utc).isoformat()
+            n_dopo = len([g for g in json.load(open(A.DATA / "events.json")) if g["inizio"] > ora])
+            sc_t = RG.scenario(punti, capo, n_dopo, vitt)
+            pb = sc_t["rivali"][0].get("pos_basta")
+            if pb and pb > 1 and capo in nomi and TROFEO.get(capo):
+                if capo in [r["nome"] for r in gara]:
+                    intro = "Per il podio è tra i nostri favoriti, ma"
+                else:
+                    intro = f"{cogn(capo)} non è tra i nostri tre favoriti, e"
+                ult = max((i for i, x in enumerate(scene) if x.get("nome") == capo), default=len(scene) - 1)   # subito dopo la sua scena
+                scene.insert(ult + 1, {"foto": capo, "nome": capo, "chips": [("si", f"Titolo con un {pb}° posto"), ("info", "Calcolo GP Oggi")], "sub_top": 1440,
+                              "testo": f"{intro} gli basta un {RG.ORD[pb]} posto per essere campione del mondo: potrebbe non rischiare.",
+                              "foto_url": TROFEO[capo], "credito": "Foto: ESPN"})
+        except (ImportError, KeyError, ValueError, OSError) as e:
+            print(f"  scena titolo non fatta: {e}")
     # la pole, con chi l'ha presa l'anno scorso
     p0 = pole[0]
     ch_p = [(m[0], m[1]) for m in p0["motivi_pole"]][:3]

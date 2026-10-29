@@ -166,6 +166,19 @@ def costruisci(chiave):
     scena_podio = {"foto": f0["nome"], "pista": True, "podio": podio, "sub_top": 1450,
                    "testo": f"Ecco il podio dei nostri favoriti: primo {cogn(gara[0]['nome'])}, secondo {cogn(gara[1]['nome'])}, terzo {cogn(gara[2]['nome'])}."}
     scene.append(scena_podio)
+    # F1: Antonelli (l'italiano) sempre davanti alla bandiera italiana; nella scena del titolo c'è anche il trofeo del campionato (foto libera di Commons)
+    if chiave == "f1":
+        try:
+            import bandiera as BA
+            for sc_ in scene:
+                if sc_.get("foto") == "Kimi Antonelli" and (sc_.get("foto_file") or sc_.get("foto_url") or sc_.get("alt")):
+                    sc_.pop("alt", None)
+                    col = sc_.pop("foto_url", None) is not None   # la scena del titolo aveva la foto con il trofeo
+                    f = BA.composizione("Kimi Antonelli", str(R.CACHE / ("antonelli_bandiera" + ("_trofeo" if col else "") + ".jpg")), (Path(__file__).parent / "extra" / "trofeo-f1.jpg") if col else None)
+                    sc_["foto_file"] = str(f)
+                    sc_["credito"] = "Foto: ESPN" + (" · Trofeo: Raimond Spekking (CC BY-SA 4.0), Wikimedia Commons" if col else "")
+        except (ImportError, OSError, SystemExit, Exception) as e:
+            print(f"  bandiera non applicata: {e}")
     spec = {"serie": S, "titolo_breve": luogo, "etichetta": "Chi sale sul podio", "fonte": "studio GP Oggi", "velocita": "+38%", "scene": scene,
             "finale": {"foto": f0["nome"], "domanda": "Chi sale sul podio secondo te?"}}
     icona, tag = ("🏁", "#f1 #formula1") if chiave == "f1" else ("🏍️", "#motogp")

@@ -48,7 +48,8 @@ def taglia_trofeo(percorso):
     return out.crop(out.getbbox())
 
 
-def composizione(nome, uscita, trofeo=None):
+def composizione(nome, uscita, trofeo=None, alza=0):
+    """alza: pixel di cui spostare in alto il pilota (nei video il pannello dei dati copre la parte bassa)."""
     import ritratti_espn as R
     sfondo = bandiera().convert("RGBA")
     p = Image.open(R.scarica(nome)).convert("RGBA")
@@ -60,15 +61,15 @@ def composizione(nome, uscita, trofeo=None):
     al = np.asarray(p.getchannel("A")).astype(float)
     fade = np.clip((p.height - np.arange(p.height)) / 260.0, 0, 1)[:, None]
     p.putalpha(Image.fromarray((al * fade).astype("uint8")))
-    py = 1560 - p.height
+    py = 1560 - alza - p.height
     sfondo.alpha_composite(p, (px, py)) if px >= 0 else sfondo.alpha_composite(p.crop((-px, 0, p.width, p.height)), (0, py))
     if trofeo:
         t = taglia_trofeo(trofeo)
         k = 760 / t.height
         t = t.resize((int(t.width * k), 760), Image.LANCZOS)
         ombra = Image.new("RGBA", t.size, (0, 0, 0, 0)); ombra.putalpha(t.getchannel("A").filter(ImageFilter.GaussianBlur(18)).point(lambda v: int(v * 0.6)))
-        sfondo.alpha_composite(ombra, (730 - t.width // 2 + 10, 1500 - 760 + 14))
-        sfondo.alpha_composite(t, (730 - t.width // 2, 1500 - 760))
+        sfondo.alpha_composite(ombra, (730 - t.width // 2 + 10, 1500 - alza - 760 + 14))
+        sfondo.alpha_composite(t, (730 - t.width // 2, 1500 - alza - 760))
     sfondo.convert("RGB").save(uscita, "JPEG", quality=92)
     return uscita
 

@@ -174,7 +174,7 @@ def costruisci(chiave):
                 if sc_.get("foto") == "Kimi Antonelli" and (sc_.get("foto_file") or sc_.get("foto_url") or sc_.get("alt")):
                     sc_.pop("alt", None)
                     col = sc_.pop("foto_url", None) is not None   # la scena del titolo aveva la foto con il trofeo
-                    f = BA.composizione("Kimi Antonelli", str(R.CACHE / ("antonelli_bandiera" + ("_trofeo" if col else "") + ".jpg")), (Path(__file__).parent / "extra" / "trofeo-f1.jpg") if col else None)
+                    f = BA.composizione("Kimi Antonelli", str(R.CACHE / ("antonelli_bandiera" + ("_trofeo" if col else "") + ".jpg")), (Path(__file__).parent / "extra" / "trofeo-f1.jpg") if col else None, alza=330)
                     sc_["foto_file"] = str(f)
                     sc_["credito"] = "Foto: ESPN" + (" · Trofeo: Raimond Spekking (CC BY-SA 4.0), Wikimedia Commons" if col else "")
         except (ImportError, OSError, SystemExit, Exception) as e:

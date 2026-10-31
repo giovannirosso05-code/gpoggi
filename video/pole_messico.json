@@ -1,0 +1,17 @@
+{"gp": "Città del Messico", "fonte": "OA Sport, Fuori Traiettoria",
+ "gancio": "Non succedeva da più di tre anni.",
+ "classifica": [
+  {"pos": 1, "nome": "Lewis Hamilton", "nota": "1:16.514"},
+  {"pos": 2, "nome": "George Russell", "nota": "+0.009"},
+  {"pos": 3, "nome": "Charles Leclerc", "nota": "+0.119"},
+  {"pos": 4, "nome": "Max Verstappen", "nota": "+0.178"},
+  {"pos": 5, "nome": "Kimi Antonelli", "nota": "+0.193"},
+  {"pos": 6, "nome": "Lando Norris", "nota": "+0.310"}],
+ "scene": [
+  {"pilota": "George Russell", "testo": "*Russell* è secondo, battuto per soli *nove millesimi*."},
+  {"pilota": "Charles Leclerc", "testo": "Terzo *Leclerc*, a *centodiciannove millesimi* dal compagno."},
+  {"pilota": "Kimi Antonelli", "testo": "*Antonelli* chiude quinto, a meno di due decimi dalla pole."},
+  {"pilota": "Kimi Antonelli", "testo": "Domani gli basta un *nono posto* per essere campione del mondo.", "chips": [["si", "Titolo con un 9° posto"], ["info", "Calcolo GP Oggi"]]}],
+ "testo_tabella": "Ecco i primi sei delle qualifiche: *Hamilton*, *Russell*, *Leclerc*, *Verstappen*, *Antonelli* e *Norris*.",
+ "domanda": "Domani Hamilton può vincere con la Ferrari?",
+ "didascalia": "🔥 Hamilton in pole a Città del Messico: non succedeva da più di tre anni! 🏁\n\nRussell è secondo per soli 9 millesimi, Leclerc terzo a 119. Antonelli è quinto in qualifica: domani gli basta un nono posto per essere campione del mondo.\n\nDomani Hamilton può vincere con la Ferrari? Dimmi la tua nei commenti 👇\n\nFonti: OA Sport, Fuori Traiettoria. Il nono posto è un calcolo GP Oggi sui punti rimasti.\n🔗 gpoggi.it\n\n#gpoggi #f1 #hamilton #ferrari #messico"}

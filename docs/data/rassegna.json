@@ -1,5 +1,5 @@
 {
- "generato_il": "2026-10-31T22:38:13+00:00",
+ "generato_il": "2026-10-31T22:50:25+00:00",
  "articoli": [
   {
    "titolo": "Lewis Hamilton raggiante: “La prima pole con la Ferrari, mi mancano le parole”",
@@ -10,7 +10,7 @@
    "pubblicato": "2026-10-31T22:32:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 37.0,
+   "punteggio": 36.9,
    "testate": 3
   },
   {
@@ -22,7 +22,7 @@
    "pubblicato": "2026-10-31T22:28:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.0,
+   "punteggio": 18.9,
    "testate": 2
   },
   {
@@ -110,16 +110,16 @@
    "testate": 4
   },
   {
-   "titolo": "F1 GP Messico 2026, Città del Messico: la cronaca delle qualifiche, minuto per minuto",
+   "titolo": "F1 GP Messico 2026, qualifiche: capolavoro Hamilton, è in pole davanti a Russell e Leclerc! – DIRETTA",
    "estratto": "La cronaca live minuto per minuto delle prove ufficiali che decidono la griglia di partenza del fine settimana a Città del Messico",
    "fonte": "FormulaPassion",
    "serie": "F1",
    "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-messico-2026-citta-del-messico-q1-q2-q3-qualifiche-pole-position-aggiornamenti-ferrari-leclerc-antonelli",
-   "pubblicato": "2026-10-31T22:10:00+00:00",
+   "pubblicato": "2026-10-31T20:45:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.9,
-   "testate": 2
+   "punteggio": 33.5,
+   "testate": 4
   },
   {
    "titolo": "Messico, sarà qualifica da lotteria: McLaren sembra la migliore, ma Antonelli e Leclerc possono fare la differenza",
@@ -178,7 +178,7 @@
    "pubblicato": "2026-10-31T18:37:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.0,
+   "punteggio": 18.9,
    "testate": 3
   },
   {
@@ -190,7 +190,7 @@
    "pubblicato": "2026-10-31T18:30:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.0,
+   "punteggio": 30.9,
    "testate": 3
   },
   {
@@ -214,7 +214,7 @@
    "pubblicato": "2026-10-31T17:15:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.7,
+   "punteggio": 2.6,
    "testate": 1
   },
   {
@@ -250,7 +250,7 @@
    "pubblicato": "2026-10-31T16:04:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.4,
+   "punteggio": 2.3,
    "testate": 1
   },
   {
@@ -286,7 +286,7 @@
    "pubblicato": "2026-10-31T15:45:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.3,
+   "punteggio": 7.2,
    "testate": 1
   },
   {
@@ -310,7 +310,7 @@
    "pubblicato": "2026-10-31T15:15:53+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.2,
+   "punteggio": 2.1,
    "testate": 1
   },
   {
@@ -322,7 +322,7 @@
    "pubblicato": "2026-10-31T14:59:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.1,
+   "punteggio": 22.0,
    "testate": 3
   },
   {
@@ -334,7 +334,7 @@
    "pubblicato": "2026-10-31T14:59:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.1,
+   "punteggio": 22.0,
    "testate": 3
   },
   {
@@ -370,7 +370,7 @@
    "pubblicato": "2026-10-31T13:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.6,
+   "punteggio": 6.5,
    "testate": 1
   },
   {
@@ -418,7 +418,7 @@
    "pubblicato": "2026-10-31T11:47:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.3,
+   "punteggio": 14.2,
    "testate": 1
   },
   {
@@ -442,7 +442,7 @@
    "pubblicato": "2026-10-31T11:17:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.2,
+   "punteggio": 9.1,
    "testate": 1
   },
   {
@@ -454,7 +454,7 @@
    "pubblicato": "2026-10-31T11:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.1,
+   "punteggio": 6.0,
    "testate": 1
   },
   {
@@ -466,7 +466,7 @@
    "pubblicato": "2026-10-31T10:50:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.1,
+   "punteggio": 1.0,
    "testate": 1
   },
   {
@@ -478,7 +478,7 @@
    "pubblicato": "2026-10-31T10:32:09+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.0,
+   "punteggio": 18.9,
    "testate": 2
   },
   {
@@ -490,7 +490,7 @@
    "pubblicato": "2026-10-31T10:30:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.0,
+   "punteggio": -1.1,
    "testate": 2
   },
   {
@@ -514,7 +514,7 @@
    "pubblicato": "2026-10-31T09:45:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.8,
+   "punteggio": 13.7,
    "testate": 1
   },
   {
@@ -562,7 +562,7 @@
    "pubblicato": "2026-10-31T09:15:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.7,
+   "punteggio": 5.6,
    "testate": 1
   },
   {
@@ -646,7 +646,7 @@
    "pubblicato": "2026-10-31T08:32:28+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 6.5,
+   "punteggio": 6.4,
    "testate": 1
   },
   {
@@ -694,7 +694,7 @@
    "pubblicato": "2026-10-31T08:06:04+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.4,
+   "punteggio": 13.3,
    "testate": 1
   },
   {
@@ -766,7 +766,7 @@
    "pubblicato": "2026-10-31T07:49:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.3,
+   "punteggio": 28.2,
    "testate": 3
   },
   {
@@ -778,7 +778,7 @@
    "pubblicato": "2026-10-31T07:48:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.3,
+   "punteggio": 5.2,
    "testate": 1
   },
   {
@@ -790,7 +790,7 @@
    "pubblicato": "2026-10-31T07:43:35+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.3,
+   "punteggio": 28.2,
    "testate": 3
   },
   {
@@ -802,7 +802,7 @@
    "pubblicato": "2026-10-31T07:42:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.3,
+   "punteggio": 5.2,
    "testate": 1
   },
   {
@@ -814,7 +814,7 @@
    "pubblicato": "2026-10-31T07:42:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.3,
+   "punteggio": 16.2,
    "testate": 3
   },
   {
@@ -826,7 +826,7 @@
    "pubblicato": "2026-10-31T07:39:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.3,
+   "punteggio": 28.2,
    "testate": 3
   },
   {
@@ -862,7 +862,7 @@
    "pubblicato": "2026-10-31T07:24:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.2,
+   "punteggio": 16.1,
    "testate": 3
   },
   {
@@ -874,7 +874,7 @@
    "pubblicato": "2026-10-31T07:20:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.2,
+   "punteggio": 13.1,
    "testate": 1
   },
   {
@@ -886,7 +886,7 @@
    "pubblicato": "2026-10-31T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.1,
+   "punteggio": 6.0,
    "testate": 2
   },
   {
@@ -898,7 +898,7 @@
    "pubblicato": "2026-10-31T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.1,
+   "punteggio": 10.0,
    "testate": 2
   },
   {
@@ -910,7 +910,7 @@
    "pubblicato": "2026-10-31T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.9,
+   "punteggio": -2.0,
    "testate": 2
   },
   {
@@ -922,7 +922,7 @@
    "pubblicato": "2026-10-31T06:59:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.1,
+   "punteggio": 5.0,
    "testate": 1
   },
   {
@@ -934,7 +934,7 @@
    "pubblicato": "2026-10-31T06:49:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.0,
+   "punteggio": -0.0,
    "testate": 1
   },
   {
@@ -970,7 +970,7 @@
    "pubblicato": "2026-10-31T06:11:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.1,
+   "punteggio": -12.2,
    "testate": 1
   },
   {
@@ -982,7 +982,7 @@
    "pubblicato": "2026-10-31T06:11:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.1,
+   "punteggio": -12.2,
    "testate": 1
   },
   {
@@ -1066,7 +1066,7 @@
    "pubblicato": "2026-10-31T05:42:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.2,
+   "punteggio": -0.3,
    "testate": 1
   },
   {
@@ -1102,7 +1102,7 @@
    "pubblicato": "2026-10-31T05:00:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.6,
+   "punteggio": 17.5,
    "testate": 2
   },
   {
@@ -1126,7 +1126,7 @@
    "pubblicato": "2026-10-31T04:34:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.5,
+   "punteggio": 4.4,
    "testate": 1
   },
   {
@@ -1150,7 +1150,7 @@
    "pubblicato": "2026-10-31T03:17:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.2,
+   "punteggio": 19.1,
    "testate": 3
   },
   {
@@ -1162,7 +1162,7 @@
    "pubblicato": "2026-10-31T03:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.1,
+   "punteggio": 9.0,
    "testate": 2
   },
   {
@@ -1174,7 +1174,7 @@
    "pubblicato": "2026-10-31T03:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.1,
+   "punteggio": 19.0,
    "testate": 3
   },
   {
@@ -1198,7 +1198,7 @@
    "pubblicato": "2026-10-31T01:42:45+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.8,
+   "punteggio": 11.7,
    "testate": 1
   },
   {
@@ -1210,7 +1210,7 @@
    "pubblicato": "2026-10-31T00:55:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.6,
+   "punteggio": 11.5,
    "testate": 1
   },
   {
@@ -1306,7 +1306,7 @@
    "pubblicato": "2026-10-30T23:01:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 26.1,
+   "punteggio": 26.0,
    "testate": 3
   },
   {
@@ -1318,7 +1318,7 @@
    "pubblicato": "2026-10-30T23:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.9,
+   "punteggio": -2.0,
    "testate": 1
   },
   {
@@ -1342,7 +1342,7 @@
    "pubblicato": "2026-10-30T19:41:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 25.3,
+   "punteggio": 25.2,
    "testate": 3
   },
   {
@@ -1366,7 +1366,7 @@
    "pubblicato": "2026-10-30T14:30:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.0,
+   "punteggio": 3.9,
    "testate": 1
   },
   {
@@ -1378,7 +1378,7 @@
    "pubblicato": "2026-10-30T14:11:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 28.9,
+   "punteggio": 28.8,
    "testate": 3
   },
   {
@@ -1390,7 +1390,7 @@
    "pubblicato": "2026-10-30T11:40:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.3,
+   "punteggio": 0.2,
    "testate": 1
   },
   {
@@ -1402,7 +1402,7 @@
    "pubblicato": "2026-10-30T11:18:35+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.2,
+   "punteggio": 0.1,
    "testate": 1
   },
   {
@@ -1414,7 +1414,7 @@
    "pubblicato": "2026-10-30T11:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.2,
+   "punteggio": 8.1,
    "testate": 1
   },
   {
@@ -1438,7 +1438,7 @@
    "pubblicato": "2026-10-30T11:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.1,
+   "punteggio": 0.0,
    "testate": 1
   }
  ]

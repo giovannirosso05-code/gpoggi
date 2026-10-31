@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-31T07:03:00+00:00",
+ "aggiornato": "2026-10-31T11:36:56+00:00",
  "metodo": "Indice da 0 a 100 calcolato da GP Oggi: 45% forma nelle ultime 5 gare, 35% classifica del campionato, 20% risultato sullo stesso circuito l'anno scorso. È un'opinione basata sui numeri, non una previsione ufficiale né una certezza.",
  "f1": {
   "gp": "Gran Premio di Città del Messico",
@@ -69,20 +69,10 @@
   "gara": "2026-11-01T07:00:00+00:00",
   "favoriti": [
    {
-    "id": "f55b433d-38b8-4d1d-bb3a-a709c82a0260",
-    "nome": "Marc Marquez",
-    "team": "Ducati Lenovo Team",
-    "indice": 100,
-    "motivi": [
-     "2 vittorie nelle ultime 5 gare",
-     "1° nel campionato (365 punti)"
-    ]
-   },
-   {
     "id": "5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b",
     "nome": "Jorge Martin",
     "team": "Aprilia Racing",
-    "indice": 95,
+    "indice": 100,
     "motivi": [
      "3 podi nelle ultime 5 gare",
      "2° nel campionato (355 punti)"
@@ -92,21 +82,31 @@
     "id": "a6108385-dd4c-490d-b02e-542ed0275f79",
     "nome": "Pedro Acosta",
     "team": "Red Bull KTM Factory Racing",
-    "indice": 94,
+    "indice": 99,
     "motivi": [
      "1 vittoria nelle ultime 5 gare",
-     "4° nel campionato (263 punti)",
+     "4° nel campionato (275 punti)",
      "GP Malesia 2025: 2°"
+    ]
+   },
+   {
+    "id": "f55b433d-38b8-4d1d-bb3a-a709c82a0260",
+    "nome": "Marc Marquez",
+    "team": "Ducati Lenovo Team",
+    "indice": 98,
+    "motivi": [
+     "1 vittoria nelle ultime 5 gare",
+     "1° nel campionato (374 punti)"
     ]
    },
    {
     "id": "ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd",
     "nome": "Marco Bezzecchi",
     "team": "Aprilia Racing",
-    "indice": 79,
+    "indice": 90,
     "motivi": [
      "1 vittoria nelle ultime 5 gare",
-     "3° nel campionato (315 punti)",
+     "3° nel campionato (322 punti)",
      "GP Malesia 2025: 11°"
     ]
    },
@@ -114,9 +114,8 @@
     "id": "e7e4c72e-952e-4f64-8e8a-a47ff590fade",
     "nome": "Alex Marquez",
     "team": "BK8 Gresini Racing MotoGP",
-    "indice": 72,
+    "indice": 70,
     "motivi": [
-     "1 podio nelle ultime 5 gare",
      "8° nel campionato (181 punti)",
      "GP Malesia 2025: 1°"
     ]

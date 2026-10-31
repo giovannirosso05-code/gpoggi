@@ -1,6 +1,114 @@
 {
- "generato_il": "2026-10-31T01:00:08+00:00",
+ "generato_il": "2026-10-31T03:40:48+00:00",
  "articoli": [
+  {
+   "titolo": "LIVE MotoGP, GP Malesia 2026 in DIRETTA: Alex Marquez in pole davanti a Marc. Bezzecchi in seconda fila, Martin si ritira. Dalle 08:00 la Sprint",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE 04.38 E’ tutto per questa DIRETTA LIVE. Appuntamento alle 08:00 italiane per la Sprint Race. Un saluto dalla redazione di OA Sport. 04.37 In top-10 troviamo…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/live-motogp-gp-malesia-2026-in-diretta-marquez-verso-lo-scacco-matto-tra-qualifiche-e-sprint/",
+   "pubblicato": "2026-10-31T03:30:13+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 32.0,
+   "testate": 3
+  },
+  {
+   "titolo": "Contatto nelle FP2: una posizione di penalità in griglia per Verstappen e Lawson",
+   "estratto": "Entrambi avevano già ricevuto un'ammonizione in passato",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/verstappen-paga-cara-follia-posizione-penalita-griglia-partenza-gp-messico-lawson-contatto-fp2",
+   "pubblicato": "2026-10-31T03:20:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.9,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Jorge Martin ci ha provato ma si arrende: si ritira dal GP della Malesia",
+   "estratto": "Jorge Martin è caduto durante l'ultima Sprint, sabato scorso, in Australia e mentre lottava con Marc Marquez per la vittoria, e nell'incidente si è fratturato il radio del braccio destro. La…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-jorge-martin-ci-ha-provato-ma-si-arrende-si-ritira-dal-gp-della-malesia/10869937/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-31T03:17:49+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 23.9,
+   "testate": 3
+  },
+  {
+   "titolo": "Ufficiale: Jorge Martin non proseguirà il weekend in Malesia",
+   "estratto": "Niente da fare per il pilota Aprilia",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/ufficiale-gp-malesia-martin-finisce-dopo-fp2-dolore-polso-frattura-aprilia",
+   "pubblicato": "2026-10-31T03:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 23.8,
+   "testate": 3
+  },
+  {
+   "titolo": "GP Malesia 2026, Qualifiche: Alex Marquez in pole davanti a Marc, terzo Acosta",
+   "estratto": "La cronaca minuto per minuto della sessione che stabilisce la griglia di partenza a Sepang",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-live/diretta-motogp-gp-malesia-2026-live-qualifiche-cronaca-aggiornamenti-pole-position-q1-q2",
+   "pubblicato": "2026-10-31T03:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 13.8,
+   "testate": 2
+  },
+  {
+   "titolo": "Moto2, Izan Guevara impressionante nella FP2 a Sepang. Vietti in top-10",
+   "estratto": "Archiviata la seconda sessione di prove libere del GP della Malesia, quartultimo appuntamento del Mondiale 2026 di Moto2. Sul circuito di Sepang, trovare il giusto ritmo non è semplice, soprattutto a…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/moto2-izan-guevara-impressionante-nella-fp2-a-sepang-vietti-in-top-10/",
+   "pubblicato": "2026-10-31T02:05:50+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.6,
+   "testate": 1
+  },
+  {
+   "titolo": "Lewis Hamilton: “La macchina è sembrata veloce, analizzeremo il problema sulla vettura”",
+   "estratto": "Una giornata a due facce per Lewis Hamilton, che a Città del Messico, 19° appuntamento del Mondiale 2026 di F1, ha trovato buone sensazioni al volante della SF-26 ma ha dovuto fare i conti con un…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/lewis-hamilton-la-macchina-e-sembrata-veloce-analizzeremo-il-problema-sulla-vettura/",
+   "pubblicato": "2026-10-31T01:50:31+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.5,
+   "testate": 1
+  },
+  {
+   "titolo": "Charles Leclerc rimane concentrato: “Dobbiamo ancora lavorare sui nostri limiti”",
+   "estratto": "Tempi alla mano, una giornata positiva per la Ferrari e Charles Leclerc. Il pilota monegasco della Rossa ha fatto segnare i migliori crono sia nella prima sia nella seconda sessione di prove libere…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/charles-leclerc-rimane-concentrato-dobbiamo-ancora-lavorare-sui-nostri-limiti/",
+   "pubblicato": "2026-10-31T01:42:45+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.5,
+   "testate": 1
+  },
+  {
+   "titolo": "Moto3, David Almansa si prende il miglior tempo della FP2 a Sepang. 14° Bertelle davanti a Pini",
+   "estratto": "Calato il sipario sulle prove libere 2 del GP della Malesia, quartultimo appuntamento del Mondiale 2026 di Moto3, a Sepang è andata in scena la consueta mattinata condizionata dall’incertezza…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/moto3-david-almansa-si-prende-il-miglior-tempo-della-fp2-a-sepang-14-bertelle-davanti-a-pini/",
+   "pubblicato": "2026-10-31T01:27:24+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.4,
+   "testate": 1
+  },
   {
    "titolo": "F1 | Vasseur positivo: “È un buon inizio. Il turbo piccolo e le curve lente possono essere un vantaggio”",
    "estratto": "Dopo le prime prove libere del Messico, sembrano esserci molti punti in comune per Ferrari con quello che era stato il venerdì di Austin. Anche qui in altura la Rossa ha concluso le prime due…",
@@ -10,7 +118,7 @@
    "pubblicato": "2026-10-31T00:55:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.0,
+   "punteggio": 16.3,
    "testate": 1
   },
   {
@@ -22,7 +130,7 @@
    "pubblicato": "2026-10-31T00:45:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.9,
+   "punteggio": 8.3,
    "testate": 1
   },
   {
@@ -34,7 +142,7 @@
    "pubblicato": "2026-10-30T23:37:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.7,
+   "punteggio": 16.0,
    "testate": 1
   },
   {
@@ -46,7 +154,7 @@
    "pubblicato": "2026-10-30T23:35:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.6,
+   "punteggio": 8.0,
    "testate": 1
   },
   {
@@ -58,7 +166,7 @@
    "pubblicato": "2026-10-30T23:26:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.6,
+   "punteggio": 18.9,
    "testate": 3
   },
   {
@@ -70,7 +178,7 @@
    "pubblicato": "2026-10-30T23:08:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.5,
+   "punteggio": 10.9,
    "testate": 3
   },
   {
@@ -82,7 +190,7 @@
    "pubblicato": "2026-10-30T23:05:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.5,
+   "punteggio": 30.9,
    "testate": 3
   },
   {
@@ -94,7 +202,7 @@
    "pubblicato": "2026-10-30T23:03:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.5,
+   "punteggio": 30.8,
    "testate": 3
   },
   {
@@ -106,7 +214,7 @@
    "pubblicato": "2026-10-30T23:01:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.5,
+   "punteggio": 30.8,
    "testate": 3
   },
   {
@@ -118,7 +226,7 @@
    "pubblicato": "2026-10-30T23:01:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.5,
+   "punteggio": -9.2,
    "testate": 1
   },
   {
@@ -130,7 +238,7 @@
    "pubblicato": "2026-10-30T23:01:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.5,
+   "punteggio": -9.2,
    "testate": 1
   },
   {
@@ -142,7 +250,7 @@
    "pubblicato": "2026-10-30T23:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.5,
+   "punteggio": 2.8,
    "testate": 1
   },
   {
@@ -154,7 +262,7 @@
    "pubblicato": "2026-10-30T22:43:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.4,
+   "punteggio": 10.8,
    "testate": 1
   },
   {
@@ -166,7 +274,7 @@
    "pubblicato": "2026-10-30T22:32:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.4,
+   "punteggio": 2.7,
    "testate": 1
   },
   {
@@ -178,7 +286,7 @@
    "pubblicato": "2026-10-30T21:13:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.1,
+   "punteggio": 2.4,
    "testate": 1
   },
   {
@@ -190,7 +298,7 @@
    "pubblicato": "2026-10-30T20:32:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.9,
+   "punteggio": 20.2,
    "testate": 2
   },
   {
@@ -202,7 +310,7 @@
    "pubblicato": "2026-10-30T19:56:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.7,
+   "punteggio": 2.1,
    "testate": 1
   },
   {
@@ -214,7 +322,7 @@
    "pubblicato": "2026-10-30T19:50:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.7,
+   "punteggio": 18.0,
    "testate": 3
   },
   {
@@ -226,7 +334,7 @@
    "pubblicato": "2026-10-30T19:41:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 30.7,
+   "punteggio": 30.0,
    "testate": 3
   },
   {
@@ -238,7 +346,7 @@
    "pubblicato": "2026-10-30T19:41:10+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 30.7,
+   "punteggio": 30.0,
    "testate": 3
   },
   {
@@ -250,7 +358,7 @@
    "pubblicato": "2026-10-30T19:39:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.7,
+   "punteggio": 18.0,
    "testate": 3
   },
   {
@@ -262,20 +370,8 @@
    "pubblicato": "2026-10-30T19:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.6,
+   "punteggio": 2.0,
    "testate": 1
-  },
-  {
-   "titolo": "LIVE MotoGP, GP Malesia 2026 in DIRETTA: Marquez verso lo scacco matto tra qualifiche e Sprint",
-   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE Buongiorno e bentrovati alla DIRETTA LIVE della seconda giornata del weekend del GP della Malesia, quartultimo appuntamento del Mondiale 2026 di MotoGP. Sul…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/10/live-motogp-gp-malesia-2026-in-diretta-marquez-verso-lo-scacco-matto-tra-qualifiche-e-sprint/",
-   "pubblicato": "2026-10-30T18:30:13+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 12.4,
-   "testate": 2
   },
   {
    "titolo": "Kimi Antonelli, allarme rientrato dopo il virus: “Guardate chi è tornato”",
@@ -286,7 +382,7 @@
    "pubblicato": "2026-10-30T18:09:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.3,
+   "punteggio": 14.6,
    "testate": 1
   },
   {
@@ -298,7 +394,7 @@
    "pubblicato": "2026-10-30T16:12:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.8,
+   "punteggio": 19.1,
    "testate": 2
   },
   {
@@ -310,7 +406,7 @@
    "pubblicato": "2026-10-30T15:07:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.5,
+   "punteggio": 13.9,
    "testate": 1
   },
   {
@@ -322,7 +418,7 @@
    "pubblicato": "2026-10-30T14:30:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.4,
+   "punteggio": 8.7,
    "testate": 1
   },
   {
@@ -334,7 +430,7 @@
    "pubblicato": "2026-10-30T14:11:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.3,
+   "punteggio": 13.6,
    "testate": 1
   },
   {
@@ -346,7 +442,7 @@
    "pubblicato": "2026-10-30T14:00:24+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.3,
+   "punteggio": 20.6,
    "testate": 3
   },
   {
@@ -358,7 +454,7 @@
    "pubblicato": "2026-10-30T12:50:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 34.0,
+   "punteggio": 33.3,
    "testate": 3
   },
   {
@@ -370,7 +466,7 @@
    "pubblicato": "2026-10-30T11:45:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.7,
+   "punteggio": 5.0,
    "testate": 1
   },
   {
@@ -382,7 +478,7 @@
    "pubblicato": "2026-10-30T11:40:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.7,
+   "punteggio": 5.0,
    "testate": 1
   },
   {
@@ -394,7 +490,7 @@
    "pubblicato": "2026-10-30T11:18:35+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.6,
+   "punteggio": 4.9,
    "testate": 1
   },
   {
@@ -406,7 +502,7 @@
    "pubblicato": "2026-10-30T11:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.6,
+   "punteggio": 22.9,
    "testate": 2
   },
   {
@@ -418,7 +514,7 @@
    "pubblicato": "2026-10-30T11:10:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.5,
+   "punteggio": 22.9,
    "testate": 2
   },
   {
@@ -430,7 +526,7 @@
    "pubblicato": "2026-10-30T11:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.5,
+   "punteggio": 4.8,
    "testate": 1
   },
   {
@@ -442,7 +538,7 @@
    "pubblicato": "2026-10-30T10:59:31+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.5,
+   "punteggio": 4.8,
    "testate": 1
   },
   {
@@ -454,7 +550,7 @@
    "pubblicato": "2026-10-30T10:41:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.4,
+   "punteggio": 12.8,
    "testate": 1
   },
   {
@@ -466,7 +562,7 @@
    "pubblicato": "2026-10-30T10:30:31+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.6,
+   "punteggio": -2.3,
    "testate": 2
   },
   {
@@ -478,7 +574,7 @@
    "pubblicato": "2026-10-30T10:21:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.3,
+   "punteggio": 22.7,
    "testate": 2
   },
   {
@@ -490,7 +586,7 @@
    "pubblicato": "2026-10-30T10:05:14+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.3,
+   "punteggio": 12.6,
    "testate": 1
   },
   {
@@ -502,7 +598,7 @@
    "pubblicato": "2026-10-30T09:49:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.2,
+   "punteggio": 4.5,
    "testate": 1
   },
   {
@@ -514,8 +610,8 @@
    "pubblicato": "2026-10-30T09:43:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.2,
-   "testate": 1
+   "punteggio": 14.5,
+   "testate": 2
   },
   {
    "titolo": "Bonora su Martin: “Fa fatica a spingere nei time-attack, abbiamo preferito aspettare domani”",
@@ -526,7 +622,7 @@
    "pubblicato": "2026-10-30T09:35:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.1,
+   "punteggio": 4.5,
    "testate": 1
   },
   {
@@ -538,7 +634,7 @@
    "pubblicato": "2026-10-30T09:33:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.1,
+   "punteggio": 12.5,
    "testate": 1
   },
   {
@@ -550,7 +646,7 @@
    "pubblicato": "2026-10-30T09:18:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.1,
+   "punteggio": 22.4,
    "testate": 2
   },
   {
@@ -562,7 +658,7 @@
    "pubblicato": "2026-10-30T09:17:32+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.1,
+   "punteggio": 4.4,
    "testate": 1
   },
   {
@@ -574,7 +670,7 @@
    "pubblicato": "2026-10-30T09:15:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.1,
+   "punteggio": 22.4,
    "testate": 2
   },
   {
@@ -586,7 +682,7 @@
    "pubblicato": "2026-10-30T09:05:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.0,
+   "punteggio": 7.4,
    "testate": 1
   },
   {
@@ -598,7 +694,7 @@
    "pubblicato": "2026-10-30T09:02:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.0,
+   "punteggio": 4.3,
    "testate": 1
   },
   {
@@ -610,7 +706,7 @@
    "pubblicato": "2026-10-30T08:45:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -7.1,
+   "punteggio": -7.7,
    "testate": 1
   },
   {
@@ -622,7 +718,7 @@
    "pubblicato": "2026-10-30T08:45:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.9,
+   "punteggio": 12.3,
    "testate": 1
   },
   {
@@ -634,7 +730,7 @@
    "pubblicato": "2026-10-30T08:26:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.9,
+   "punteggio": 15.2,
    "testate": 3
   },
   {
@@ -646,7 +742,7 @@
    "pubblicato": "2026-10-30T08:24:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.9,
+   "punteggio": 19.2,
    "testate": 3
   },
   {
@@ -658,7 +754,7 @@
    "pubblicato": "2026-10-30T08:15:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.8,
+   "punteggio": 27.1,
    "testate": 3
   },
   {
@@ -670,7 +766,7 @@
    "pubblicato": "2026-10-30T08:05:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.2,
+   "punteggio": -2.9,
    "testate": 2
   },
   {
@@ -682,7 +778,7 @@
    "pubblicato": "2026-10-30T08:00:12+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.8,
+   "punteggio": 27.1,
    "testate": 3
   },
   {
@@ -694,7 +790,7 @@
    "pubblicato": "2026-10-30T08:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.3,
+   "punteggio": -0.9,
    "testate": 1
   },
   {
@@ -706,7 +802,7 @@
    "pubblicato": "2026-10-30T07:43:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.3,
+   "punteggio": -1.0,
    "testate": 1
   },
   {
@@ -718,19 +814,7 @@
    "pubblicato": "2026-10-30T07:25:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.6,
-   "testate": 2
-  },
-  {
-   "titolo": "GP Città del Messico 2026: orari Sky/Now e TV8",
-   "estratto": "Domenica 1 novembre appuntamento alle 21:00 per il primo titolo mondiale di Andrea Kimi Antonelli",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-messico-2026-televisione-diretta-sky-differita-tv8-programmazione-dove-vederla-kimi-antonelli-due-punti-titolo-mondiale-ferrari-sf26-leclerc-hamilton",
-   "pubblicato": "2026-10-30T07:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 5.5,
+   "punteggio": 8.9,
    "testate": 2
   },
   {
@@ -742,8 +826,20 @@
    "pubblicato": "2026-10-30T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.5,
+   "punteggio": 11.8,
    "testate": 1
+  },
+  {
+   "titolo": "GP Città del Messico 2026: orari Sky/Now e TV8",
+   "estratto": "Domenica 1 novembre appuntamento alle 21:00 per il primo titolo mondiale di Andrea Kimi Antonelli",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-messico-2026-televisione-diretta-sky-differita-tv8-programmazione-dove-vederla-kimi-antonelli-due-punti-titolo-mondiale-ferrari-sf26-leclerc-hamilton",
+   "pubblicato": "2026-10-30T07:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 4.8,
+   "testate": 2
   },
   {
    "titolo": "Leclerc: “Noi favoriti in Messico? Non sono d’accordo anche se il trend è positivo”",
@@ -754,7 +850,7 @@
    "pubblicato": "2026-10-30T07:00:00+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 5.5,
+   "punteggio": 4.8,
    "testate": 1
   },
   {
@@ -766,7 +862,7 @@
    "pubblicato": "2026-10-30T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.5,
+   "punteggio": -3.2,
    "testate": 2
   },
   {
@@ -778,7 +874,7 @@
    "pubblicato": "2026-10-30T06:59:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.5,
+   "punteggio": -1.2,
    "testate": 1
   },
   {
@@ -790,8 +886,8 @@
    "pubblicato": "2026-10-30T06:06:22+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.3,
-   "testate": 2
+   "punteggio": 18.6,
+   "testate": 3
   },
   {
    "titolo": "Moto3, Almansa fa sue le pre-qualifiche in Malesia. Bertelle in Q2, Pini primo degli esclusi",
@@ -802,7 +898,7 @@
    "pubblicato": "2026-10-30T06:04:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.7,
+   "punteggio": -1.4,
    "testate": 1
   },
   {
@@ -814,7 +910,7 @@
    "pubblicato": "2026-10-30T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.2,
+   "punteggio": 18.6,
    "testate": 3
   },
   {
@@ -826,7 +922,7 @@
    "pubblicato": "2026-10-30T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.2,
+   "punteggio": 4.6,
    "testate": 2
   },
   {
@@ -838,7 +934,7 @@
    "pubblicato": "2026-10-30T05:54:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.8,
+   "punteggio": -3.4,
    "testate": 2
   },
   {
@@ -850,7 +946,7 @@
    "pubblicato": "2026-10-30T05:50:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.8,
+   "punteggio": -13.5,
    "testate": 1
   },
   {
@@ -862,7 +958,7 @@
    "pubblicato": "2026-10-30T05:50:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.8,
+   "punteggio": -13.5,
    "testate": 1
   },
   {
@@ -874,7 +970,7 @@
    "pubblicato": "2026-10-30T05:36:24+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.2,
+   "punteggio": 18.5,
    "testate": 3
   },
   {
@@ -886,7 +982,7 @@
    "pubblicato": "2026-10-30T05:31:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.1,
+   "punteggio": 26.5,
    "testate": 3
   },
   {
@@ -898,7 +994,7 @@
    "pubblicato": "2026-10-30T05:28:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.1,
+   "punteggio": 6.4,
    "testate": 3
   },
   {
@@ -910,7 +1006,7 @@
    "pubblicato": "2026-10-30T05:26:38+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.1,
+   "punteggio": 18.4,
    "testate": 3
   },
   {
@@ -922,7 +1018,7 @@
    "pubblicato": "2026-10-30T05:24:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.1,
+   "punteggio": 6.4,
    "testate": 1
   },
   {
@@ -934,7 +1030,7 @@
    "pubblicato": "2026-10-30T03:58:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.7,
+   "punteggio": 21.1,
    "testate": 2
   },
   {
@@ -946,7 +1042,7 @@
    "pubblicato": "2026-10-30T02:42:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.6,
+   "punteggio": -2.2,
    "testate": 1
   },
   {
@@ -958,7 +1054,7 @@
    "pubblicato": "2026-10-30T02:00:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.7,
+   "punteggio": -2.4,
    "testate": 1
   },
   {
@@ -970,7 +1066,7 @@
    "pubblicato": "2026-10-29T23:57:50+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.3,
+   "punteggio": -1.9,
    "testate": 1
   },
   {
@@ -982,7 +1078,7 @@
    "pubblicato": "2026-10-29T22:43:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.4,
+   "punteggio": 5.8,
    "testate": 1
   },
   {
@@ -994,7 +1090,7 @@
    "pubblicato": "2026-10-29T22:00:19+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.7,
+   "punteggio": -2.4,
    "testate": 1
   },
   {
@@ -1006,7 +1102,7 @@
    "pubblicato": "2026-10-29T21:43:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.2,
+   "punteggio": 5.5,
    "testate": 1
   },
   {
@@ -1018,7 +1114,7 @@
    "pubblicato": "2026-10-29T20:47:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.9,
+   "punteggio": 0.3,
    "testate": 1
   },
   {
@@ -1030,31 +1126,7 @@
    "pubblicato": "2026-10-29T19:50:29+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": -1.3,
-   "testate": 1
-  },
-  {
-   "titolo": "Kimi Antonelli, maxischermo a Imola per il GP del Messico: ingresso gratuito",
-   "estratto": "Imola si prepara a vivere la notte di Kimi Antonelli. Domenica 1° novembre 2026 l’Autodromo Internazionale Enzo e Dino Ferrari ospiterà una serata speciale dedicata al Gran Premio di Città del…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/kimi-antonelli-maxischermo-a-imola-per-il-gp-del-messico-ingresso-gratuito/",
-   "pubblicato": "2026-10-29T19:08:20+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 10.5,
-   "testate": 2
-  },
-  {
-   "titolo": "Moto3, scatta il weekend di Sepang con l’ennesimo duello tra Quiles e Almansa",
-   "estratto": "Riparte il Mondiale di Moto3 2026. Dopo la cancellazione del Gran Premio d’Australia dello scorso fine settimana (per colpa del pesante maltempo che si era abbattuto sul tracciato di Phillip Island)…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/10/moto3-scatta-il-weekend-di-sepang-con-lennesimo-duello-tra-quiles-e-almansa/",
-   "pubblicato": "2026-10-29T18:00:32+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -7.7,
+   "punteggio": -2.0,
    "testate": 1
   },
   {
@@ -1066,20 +1138,8 @@
    "pubblicato": "2026-10-29T17:07:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.0,
-   "testate": 3
-  },
-  {
-   "titolo": "Kimi Antonelli salta il media day: cos’è successo in Messico, il messaggio di Mercedes e i prossimi appuntamenti",
-   "estratto": "Kimi Antonelli non ha preso parte al media day, la consueta giornata di presentazione che si svolge alla vigilia di un fine settimana riservato alla massima categoria automobilistica. Il pilota…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/kimi-antonelli-salta-il-media-day-cose-successo-in-messico-il-messaggio-di-mercedes-e-i-prossimi-appuntamenti/",
-   "pubblicato": "2026-10-29T17:00:16+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 20.0,
-   "testate": 3
+   "punteggio": 9.4,
+   "testate": 2
   },
   {
    "titolo": "F1 | Antonelli indisposto in Messico: salta il media-day, Mercedes lo aspetta domani in pista",
@@ -1090,7 +1150,7 @@
    "pubblicato": "2026-10-29T16:44:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.9,
+   "punteggio": 19.3,
    "testate": 3
   },
   {
@@ -1102,7 +1162,7 @@
    "pubblicato": "2026-10-29T16:05:03+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.8,
+   "punteggio": 4.1,
    "testate": 1
   },
   {
@@ -1114,19 +1174,7 @@
    "pubblicato": "2026-10-29T16:00:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -3.2,
-   "testate": 1
-  },
-  {
-   "titolo": "Moto2, Manuel Gonzalez difende in Malesia la leadership del Mondiale dal sempre più pericoloso Guevara",
-   "estratto": "Il Mondiale di Moto2 si avvia lentamente verso la sua conclusione. Nel prossimo weekend, dal 30 ottobre all’1 novembre, si disputerà in Malesia il diciannovesimo e quart’ultimo appuntamento di una…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/10/moto2-manuel-gonzalez-difende-in-malesia-la-leadership-del-mondiale-dal-sempre-piu-pericoloso-guevara/",
-   "pubblicato": "2026-10-29T16:00:07+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -3.3,
+   "punteggio": -3.9,
    "testate": 1
   },
   {
@@ -1138,7 +1186,7 @@
    "pubblicato": "2026-10-29T15:43:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.3,
+   "punteggio": -9.0,
    "testate": 1
   },
   {
@@ -1150,7 +1198,7 @@
    "pubblicato": "2026-10-29T15:20:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.6,
+   "punteggio": 3.9,
    "testate": 1
   },
   {
@@ -1162,7 +1210,7 @@
    "pubblicato": "2026-10-29T15:19:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.4,
+   "punteggio": -9.1,
    "testate": 1
   },
   {
@@ -1174,7 +1222,7 @@
    "pubblicato": "2026-10-29T15:00:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -3.5,
+   "punteggio": -4.2,
    "testate": 1
   },
   {
@@ -1186,7 +1234,7 @@
    "pubblicato": "2026-10-29T14:39:40+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.4,
+   "punteggio": 8.7,
    "testate": 2
   },
   {
@@ -1198,7 +1246,7 @@
    "pubblicato": "2026-10-29T14:20:20+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.3,
+   "punteggio": 3.7,
    "testate": 1
   },
   {
@@ -1210,7 +1258,7 @@
    "pubblicato": "2026-10-29T14:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.2,
+   "punteggio": 8.6,
    "testate": 2
   },
   {
@@ -1222,19 +1270,7 @@
    "pubblicato": "2026-10-29T13:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.1,
-   "testate": 1
-  },
-  {
-   "titolo": "Thomas Fuhr nuovo amministratore delegato di Audi Formula Racing GmbH",
-   "estratto": "L'ex responsabile dei motori della Mercedes sarà il CEO della divisione dell'Audi che si occupa dello sviluppo delle power unit",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/thomas-fuhr-nuovo-amministratore-delegato-di-audi-formula-racing-gmbh",
-   "pubblicato": "2026-10-29T13:23:01+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -8.9,
+   "punteggio": 3.5,
    "testate": 1
   },
   {
@@ -1246,7 +1282,7 @@
    "pubblicato": "2026-10-29T12:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -4.1,
+   "punteggio": -4.8,
    "testate": 1
   },
   {
@@ -1258,7 +1294,7 @@
    "pubblicato": "2026-10-29T12:00:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.2,
+   "punteggio": -9.9,
    "testate": 1
   },
   {
@@ -1270,7 +1306,7 @@
    "pubblicato": "2026-10-29T11:45:04+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.7,
+   "punteggio": 3.0,
    "testate": 1
   },
   {
@@ -1282,7 +1318,7 @@
    "pubblicato": "2026-10-29T11:43:07+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -4.3,
+   "punteggio": -5.0,
    "testate": 1
   },
   {
@@ -1294,7 +1330,7 @@
    "pubblicato": "2026-10-29T11:42:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.3,
+   "punteggio": -2.0,
    "testate": 1
   },
   {
@@ -1306,7 +1342,7 @@
    "pubblicato": "2026-10-29T11:21:35+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.4,
+   "punteggio": -10.1,
    "testate": 1
   },
   {
@@ -1318,7 +1354,7 @@
    "pubblicato": "2026-10-29T10:30:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -21.6,
+   "punteggio": -22.3,
    "testate": 1
   },
   {
@@ -1330,7 +1366,7 @@
    "pubblicato": "2026-10-29T10:00:02+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.2,
+   "punteggio": 2.6,
    "testate": 1
   },
   {
@@ -1342,7 +1378,7 @@
    "pubblicato": "2026-10-29T09:30:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.1,
+   "punteggio": 4.5,
    "testate": 2
   },
   {
@@ -1354,7 +1390,7 @@
    "pubblicato": "2026-10-29T09:10:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.0,
+   "punteggio": 2.4,
    "testate": 1
   },
   {
@@ -1366,7 +1402,7 @@
    "pubblicato": "2026-10-29T09:02:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.0,
+   "punteggio": -10.7,
    "testate": 1
   },
   {
@@ -1378,8 +1414,8 @@
    "pubblicato": "2026-10-29T08:41:03+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.9,
-   "testate": 2
+   "punteggio": 14.3,
+   "testate": 3
   },
   {
    "titolo": "Marquez, alleanza di famiglia: “Alex? Tra fratelli non serve parlare, in gara tutti sanno cosa devono fare”",
@@ -1390,7 +1426,7 @@
    "pubblicato": "2026-10-29T08:40:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.9,
+   "punteggio": 4.2,
    "testate": 2
   },
   {
@@ -1402,44 +1438,8 @@
    "pubblicato": "2026-10-29T08:04:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.2,
+   "punteggio": -10.9,
    "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Martin: \"Se non mi stessi giocando il titolo, sarei a casa con il gesso\"",
-   "estratto": "Jorge Martin è arrivato una settimana fa in Australia da leader del Mondiale, ed è uscito sabato in ambulanza verso un ospedale di Melbourne dopo essersi fratturato la base del radio del braccio…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-martin-se-non-mi-stessi-giocando-il-titolo-sarei-a-casa-con-il-gesso/10869210/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-29T07:59:22+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 4.7,
-   "testate": 2
-  },
-  {
-   "titolo": "Aprilia riabbraccia anche Fernandez, è ‘fit’ per le FP1: “Ma sto pensando al mio dito, non al Mondiale”",
-   "estratto": "Lo spagnolo del team Trackhouse scenderà in pista nelle FP1 a Sepang e poi dovrà essere rivalutato dai medici",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/aprilia-riabbraccia-anche-fernandez-e-fit-per-le-fp1-ma-sto-pensando-al-mio-dito-non-la-mondiale",
-   "pubblicato": "2026-10-29T07:42:16+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -5.3,
-   "testate": 1
-  },
-  {
-   "titolo": "Martin ci prova. ‘Fit’ per le FP1, sarà valutato durante il weekend: “Se non mi stessi giocando il Mondiale sarei a casa”",
-   "estratto": "Lo spagnolo dell'Aprilia ha ottenuto il via libera dei medici, ma dovrà sottoporsi a nuovi controlli dopo il primo turno di prove libere",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/martin-ci-prova-fit-per-le-fp1-sara-valutato-durante-il-weekend-se-non-mi-stessi-giocando-il-mondiale-sarei-a-casa",
-   "pubblicato": "2026-10-29T07:15:42+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 4.6,
-   "testate": 2
   }
  ]
 }

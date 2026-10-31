@@ -1,6 +1,66 @@
 {
- "generato_il": "2026-10-31T15:54:29+00:00",
+ "generato_il": "2026-10-31T16:42:18+00:00",
  "articoli": [
+  {
+   "titolo": "F1 | Ferrari, problema alla power unit di Hamilton: niente penalità in Messico",
+   "estratto": "La Ferrari è stata costretta a un lavoro supplementare nella notte tra venerdì e sabato sul circuito Hermanos Rodriguez. Il problema tecnico che ha costretto Lewis Hamilton a concludere…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-ferrari-problema-alla-power-unit-di-hamilton-niente-penalita-in-messico/10870190/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-31T16:39:08+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 22.0,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 | Herta, che confusione sulla superlicenza: gli manca ancora un punto per un errore della IndyCar",
+   "estratto": "Dopo aver completato più di 100 chilometri durante la prima sessione di prove libere del Gran Premio del Messico, Colton Herta sembrava avere conquistato un altro punto per portare il totale a 40…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/spiegata-la-confusione-sulla-superlicenza-f1-di-colton-herta-perche-gli-manca-ancora-un-punto/10869866/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-31T16:25:28+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.9,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Aston Martin: Stroll cambia telaio, si vede che la AMR26 non funziona ma non si è capito perché...",
+   "estratto": "C’è anche une tegola caduta sull’Aston Martin: la squadra di Silverstone ha sottoposto alla FIA il telaio di scorta che è stato montato sulla AMR26 di Lance Stroll per una sessione straordinaria di…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-aston-martin-stroll-cambia-telaio-si-vede-che-la-amr26-non-funziona-ma-non-si-e-capito-perche/10870177/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-31T16:04:23+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.8,
+   "testate": 1
+  },
+  {
+   "titolo": "F1, colpo di scena in Messico: Ocon escluso, la Haas fa debuttare Hirakawa",
+   "estratto": "Nell’altitudine dell’Autodromo Hermanos Rodríguez il weekend della Haas ha cambiato pelle in poche righe di comunicato. Oggi, a ridosso delle FP3, la squadra di Kannapolis ha reso noto che Esteban…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/haas-colpo-di-scena-a-citta-del-messico-ocon-escluso-debutta-hirakawa-in-f1/",
+   "pubblicato": "2026-10-31T16:01:55+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 23.8,
+   "testate": 3
+  },
+  {
+   "titolo": "Clamoroso, la MotoGP minaccia i piloti: chi salta il Qatar rischia l’esclusione da Portimão e Valencia",
+   "estratto": "I piloti non vogliono andare in Qatar, ma sono da soli contro MotoGP, squadre e organizzatori: secondo Autosport, rischierebbero ripercussioni sportive ed economiche",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/clamoroso-motogp-minaccia-piloti-chi-salta-qatar-rischia-esclusione-da-portimao-e-valencia",
+   "pubblicato": "2026-10-31T15:51:52+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.8,
+   "testate": 1
+  },
   {
    "titolo": "MotoGP | Ogura spiega la battaglia con Márquez, ma smentisce gli ordini di scuderia Aprilia",
    "estratto": "Ai Ogura ha parlato del suo serrato duello con Marc Marquez nella gara Sprint del Gran Premio della Malesia negando di aver agito su ordine della casa Aprilia. Il pilota della Trackhouse è partito…",
@@ -10,8 +70,20 @@
    "pubblicato": "2026-10-31T15:45:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.0,
+   "punteggio": 8.8,
    "testate": 1
+  },
+  {
+   "titolo": "F1 GP Messico 2026, FP3: ultime libere e poi si fa sul serio, partenza alle 18.30 – DIRETTA",
+   "estratto": "La cronaca live minuto per minuto della terza sessione di prove del fine settimana a Città del Messico",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-messico-2026-citta-del-messico-prove-libere-3-fp3-aggiornamenti-ferrari-leclerc-antonelli-verstappen",
+   "pubblicato": "2026-10-31T15:45:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 13.8,
+   "testate": 2
   },
   {
    "titolo": "Ferrari rompe ancora il coprifuoco in Messico: resta solo un jolly",
@@ -22,7 +94,7 @@
    "pubblicato": "2026-10-31T15:30:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.9,
+   "punteggio": 11.7,
    "testate": 1
   },
   {
@@ -34,7 +106,7 @@
    "pubblicato": "2026-10-31T15:15:53+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.8,
+   "punteggio": 3.6,
    "testate": 1
   },
   {
@@ -46,8 +118,8 @@
    "pubblicato": "2026-10-31T14:59:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.8,
-   "testate": 2
+   "punteggio": 23.6,
+   "testate": 3
   },
   {
    "titolo": "F1 | Colpo di scena in Haas: in Messico prosegue il weekend Hirakawa al posto di Ocon",
@@ -58,8 +130,8 @@
    "pubblicato": "2026-10-31T14:59:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.8,
-   "testate": 2
+   "punteggio": 23.6,
+   "testate": 3
   },
   {
    "titolo": "MotoGP | Miller spiega lo sfogo in pitlane: \"Sembriamo dei c******i\"",
@@ -70,8 +142,20 @@
    "pubblicato": "2026-10-31T14:19:29+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 9.6,
+   "punteggio": 9.4,
    "testate": 1
+  },
+  {
+   "titolo": "MotoGP, GP Malesia 2026. Marc Marquez in versione “boscaiolo”. Far legna in ottica Mondiale",
+   "estratto": "Il Gran Premio di Malesia di MotoGP prenderà il via alle ore 8:00 di domenica 1 novembre. Il tema della gara è rappresentato dal risultato che sarà conseguito da Marc Marquez. Oggi, il trentatreenne…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-gp-malesia-2026-marc-marquez-in-versione-boscaiolo-far-legna-in-ottica-mondiale/",
+   "pubblicato": "2026-10-31T14:00:28+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 28.3,
+   "testate": 3
   },
   {
    "titolo": "Sainz difende i piloti delle retrovie dalle critiche di Alonso: “Tutti all’altezza degli standard della F1”",
@@ -82,7 +166,7 @@
    "pubblicato": "2026-10-31T13:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.3,
+   "punteggio": 8.1,
    "testate": 1
   },
   {
@@ -94,7 +178,7 @@
    "pubblicato": "2026-10-31T12:15:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.1,
+   "punteggio": 2.9,
    "testate": 1
   },
   {
@@ -106,7 +190,7 @@
    "pubblicato": "2026-10-31T12:01:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.0,
+   "punteggio": 2.8,
    "testate": 1
   },
   {
@@ -118,7 +202,7 @@
    "pubblicato": "2026-10-31T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.0,
+   "punteggio": 15.8,
    "testate": 1
   },
   {
@@ -130,7 +214,7 @@
    "pubblicato": "2026-10-31T11:47:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.0,
+   "punteggio": 15.8,
    "testate": 1
   },
   {
@@ -142,7 +226,7 @@
    "pubblicato": "2026-10-31T11:33:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.9,
+   "punteggio": 2.7,
    "testate": 1
   },
   {
@@ -154,7 +238,7 @@
    "pubblicato": "2026-10-31T11:17:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.8,
+   "punteggio": 10.6,
    "testate": 1
   },
   {
@@ -166,7 +250,7 @@
    "pubblicato": "2026-10-31T11:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.8,
+   "punteggio": 7.6,
    "testate": 1
   },
   {
@@ -178,7 +262,7 @@
    "pubblicato": "2026-10-31T10:50:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.7,
+   "punteggio": 2.5,
    "testate": 1
   },
   {
@@ -190,7 +274,19 @@
    "pubblicato": "2026-10-31T10:32:09+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.7,
+   "punteggio": 20.5,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP in tv domani, GP Malesia 2026: orari 1° novembre, streaming, programma Sky, differita TV8",
+   "estratto": "Il Motomondiale 2026 sta per archiviare la tappa di Sepang, teatro del GP della Malesia, 19° round stagionale, in programma oggi, domenica 1° novembre. Un appuntamento che si preannuncia ricco di…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-in-tv-domani-gp-malesia-2026-orari-1-novembre-streaming-programma-sky-differita-tv8/",
+   "pubblicato": "2026-10-31T10:30:16+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 0.4,
    "testate": 2
   },
   {
@@ -202,7 +298,7 @@
    "pubblicato": "2026-10-31T10:00:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.5,
+   "punteggio": 15.3,
    "testate": 1
   },
   {
@@ -214,7 +310,7 @@
    "pubblicato": "2026-10-31T09:45:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.5,
+   "punteggio": 15.3,
    "testate": 1
   },
   {
@@ -226,8 +322,32 @@
    "pubblicato": "2026-10-31T09:30:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.4,
+   "punteggio": 25.2,
    "testate": 2
+  },
+  {
+   "titolo": "Dove vedere la F1 stasera in tv, GP Messico 2026: orario qualifiche, differita TV8, streaming",
+   "estratto": "Nella serata italiana di sabato 31 ottobre entrerà nel vivo il weekend di gara di Città del Messico con la terza sessione di prove libere e le qualifiche del Gran Premio del Messico 2026, valevole…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/dove-vedere-la-f1-stasera-in-tv-gp-messico-2026-orario-qualifiche-differita-tv8-streaming/",
+   "pubblicato": "2026-10-31T09:30:18+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -9.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Max Verstappen stuzzica Lawson dopo lo scontro nelle libere: “Al suo posto sarei stato più intelligente…”",
+   "estratto": "Comincia con un colpo di scena inatteso il weekend di Città del Messico per Max Verstappen, che dovrà pagare una posizione di penalità sulla griglia di partenza del Gran Premio del Messico 2026…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/max-verstappen-stuzzica-lawson-dopo-lo-scontro-nelle-libere-al-suo-posto-sarei-stato-piu-intelligente/",
+   "pubblicato": "2026-10-31T09:28:20+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 27.2,
+   "testate": 3
   },
   {
    "titolo": "MotoGP | Márquez: \"Potevo andare in testa, ma non volevo. Si rischia di cadere e non ne valeva la pena\"",
@@ -238,7 +358,7 @@
    "pubblicato": "2026-10-31T09:15:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.3,
+   "punteggio": 7.1,
    "testate": 1
   },
   {
@@ -250,7 +370,7 @@
    "pubblicato": "2026-10-31T09:10:48+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.3,
+   "punteggio": 7.1,
    "testate": 1
   },
   {
@@ -262,8 +382,20 @@
    "pubblicato": "2026-10-31T09:04:44+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.3,
+   "punteggio": 15.1,
    "testate": 1
+  },
+  {
+   "titolo": "F1, Max Verstappen e Liam Lawson penalizzati per il contatto in FP2: sanzione soft sulla griglia di partenza",
+   "estratto": "Incredibile ma vero. Si complica il weekend a Città del Messico per Max Verstappen e Liam Lawson, che affronteranno le qualifiche odierne sapendo di dover scontare una penalità sulla griglia di…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/f1-clamoroso-in-messico-max-verstappen-e-liam-lawson-penalizzati-per-il-contatto-in-fp2/",
+   "pubblicato": "2026-10-31T09:02:48+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 20.1,
+   "testate": 4
   },
   {
    "titolo": "Telemetria del venerdì del Messico: Ferrari ancora davanti, ma ci sarà da divertirsi",
@@ -274,8 +406,8 @@
    "pubblicato": "2026-10-31T08:40:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.2,
-   "testate": 2
+   "punteggio": 30.0,
+   "testate": 3
   },
   {
    "titolo": "MotoGP | Acosta: \"Ho rischiato quando ho visto la pioggia, non avevo nulla da perdere\"",
@@ -286,8 +418,8 @@
    "pubblicato": "2026-10-31T08:39:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.2,
-   "testate": 2
+   "punteggio": 27.0,
+   "testate": 3
   },
   {
    "titolo": "Gp Messico, Verstappen e Lawson penalizzati di una posizione in griglia: cosa è successo",
@@ -298,8 +430,8 @@
    "pubblicato": "2026-10-31T08:39:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.2,
-   "testate": 3
+   "punteggio": 32.0,
+   "testate": 4
   },
   {
    "titolo": "Marquez stuzzica Aprilia: “Team order? Il paddock è piccolo. Ogura sapeva che se non stava davanti a me avrebbe perso il podio”",
@@ -310,7 +442,7 @@
    "pubblicato": "2026-10-31T08:32:28+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 8.2,
+   "punteggio": 8.0,
    "testate": 1
   },
   {
@@ -322,7 +454,7 @@
    "pubblicato": "2026-10-31T08:25:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.1,
+   "punteggio": 14.9,
    "testate": 1
   },
   {
@@ -334,7 +466,7 @@
    "pubblicato": "2026-10-31T08:20:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.1,
+   "punteggio": 24.9,
    "testate": 2
   },
   {
@@ -346,8 +478,8 @@
    "pubblicato": "2026-10-31T08:19:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.1,
-   "testate": 3
+   "punteggio": 31.9,
+   "testate": 4
   },
   {
    "titolo": "Marquez: “Con la pioggia non volevo stare in testa, dovevo solo stare davanti a Bezzecchi”",
@@ -358,7 +490,19 @@
    "pubblicato": "2026-10-31T08:06:04+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.0,
+   "punteggio": 14.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Marco Bezzecchi: “Ho fatto qualche errore all’inizio. Mondiale? Non posso non crederci",
+   "estratto": "Marco Bezzecchi ha centrato una buona terza posizione in occasione della Sprint Race valida per il GP della Malesia, diciannovesimo appuntamento del Mondiale 2026 di MotoGP in fase di svolgimento…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/marco-bezzecchi-ho-fatto-qualche-errore-allinizio-mondiale-non-posso-non-crederci/",
+   "pubblicato": "2026-10-31T08:01:09+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 14.8,
    "testate": 1
   },
   {
@@ -370,7 +514,7 @@
    "pubblicato": "2026-10-31T08:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.0,
+   "punteggio": 24.8,
    "testate": 2
   },
   {
@@ -382,7 +526,7 @@
    "pubblicato": "2026-10-31T07:56:48+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.0,
+   "punteggio": 2.8,
    "testate": 1
   },
   {
@@ -394,7 +538,19 @@
    "pubblicato": "2026-10-31T07:55:32+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.0,
+   "punteggio": 26.8,
+   "testate": 3
+  },
+  {
+   "titolo": "MotoGP, Pedro Acosta: “Con la pioggia ho preso dei rischi, domani voglio lottare per il podio”",
+   "estratto": "Si è conclusa con la vittoria di Pedro Acosta la Sprint Race del Gran Premio della Malesia 2026, diciannovesimo appuntamento del Motomondiale. Sul circuito di Sepang reso scivoloso dalla pioggia, lo…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-pedro-acosta-con-la-pioggia-ho-preso-dei-rischi-domani-voglio-lottare-per-il-podio/",
+   "pubblicato": "2026-10-31T07:54:53+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.8,
    "testate": 2
   },
   {
@@ -406,8 +562,32 @@
    "pubblicato": "2026-10-31T07:49:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.0,
-   "testate": 2
+   "punteggio": 29.8,
+   "testate": 3
+  },
+  {
+   "titolo": "Marc Marquez sorride dopo la Sprint: “Un secondo posto importante, non ho voluto correre il minimo rischio”",
+   "estratto": "Non vince, ma vince lo stesso. Marc Marquez non può che essere soddisfatto dopo aver chiuso al secondo posto la Sprint Race del Gran Premio di Malesia, diciannovesimo e quartultimo appuntamento del…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/marc-marquez-sorride-dopo-la-sprint-un-secondo-posto-importante-non-ho-voluto-correre-il-minimo-rischio/",
+   "pubblicato": "2026-10-31T07:48:40+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 6.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Ordine d’arrivo MotoGP, Sprint GP Malesia 2026: Acosta precede Marc Marquez e Bezzecchi",
+   "estratto": "Pedro Acosta ha vinto la Sprint del Gran Premio della Malesia 2026, valevole come diciannovesimo capitolo stagionale del Mondiale MotoGP. Secondo successo della carriera nelle gare brevi del sabato…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/ordine-darrivo-motogp-sprint-gp-malesia-2026/",
+   "pubblicato": "2026-10-31T07:43:35+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 29.8,
+   "testate": 3
   },
   {
    "titolo": "Hamilton: “Non è solo questione di turbo, anche qua perdiamo tanto da Mercedes e Red Bull”",
@@ -418,8 +598,32 @@
    "pubblicato": "2026-10-31T07:42:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.0,
+   "punteggio": 6.8,
    "testate": 1
+  },
+  {
+   "titolo": "Classifica Mondiale MotoGP 2026: Marquez sfrutta l’assenza di Martin e allunga anche su Bezzecchi",
+   "estratto": "Marc Marquez consolida la sua leadership nella classifica del Mondiale MotoGP 2026 al termine della Sprint del Gran Premio della Malesia, conclusa in seconda posizione dallo spagnolo della Ducati…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/classifica-mondiale-motogp-2026-acosta-in-testa-dopo-la-sprint-di-buriram-avvio-in-salita-per-bagnaia-e-bezzecchi/",
+   "pubblicato": "2026-10-31T07:42:08+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 17.7,
+   "testate": 3
+  },
+  {
+   "titolo": "MotoGP, Acosta si impone nella Sprint di Sepang. Punti mondiali per Marquez, Bezzecchi a podio",
+   "estratto": "Termina con il successo di Pedro Acosta la Sprint Race valida per il GP della Malesia, appuntamento numero diciannove del Mondiale 2026 di MotoGP in scena questo fine settimana presso il circuito di…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-acosta-si-impone-nella-sprint-di-sepang-punti-mondiali-per-marquez-bezzecchi-a-podio/",
+   "pubblicato": "2026-10-31T07:39:17+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 29.7,
+   "testate": 3
   },
   {
    "titolo": "GP Malesia 2026, ordine di arrivo della Sprint: Acosta vince, Marquez (2°) allunga nel Mondiale. Bezzecchi 3°, ma è a -52",
@@ -430,8 +634,8 @@
    "pubblicato": "2026-10-31T07:33:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.9,
-   "testate": 2
+   "punteggio": 29.7,
+   "testate": 3
   },
   {
    "titolo": "Mondiale Piloti MotoGP 2026 dopo la Sprint di Sepang",
@@ -442,8 +646,20 @@
    "pubblicato": "2026-10-31T07:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.9,
-   "testate": 2
+   "punteggio": 21.7,
+   "testate": 3
+  },
+  {
+   "titolo": "LIVE MotoGP, GP Malesia 2026 in DIRETTA: Acosta vince la Sprint, Marquez allunga in classifica, Bezzecchi sul podio",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE 08.30 Non ci rimane che ringraziarvi per la cortese attenzione e rimandarvi a domani per le gare delle tre classi. Grazie e buon proseguimento di giornata!…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/live-motogp-gp-malesia-2026-in-diretta-marquez-verso-lo-scacco-matto-tra-qualifiche-e-sprint/",
+   "pubblicato": "2026-10-31T07:24:13+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 17.7,
+   "testate": 3
   },
   {
    "titolo": "Leclerc: “La prestazione sembra abbastanza buona, ma serve migliorare”",
@@ -454,7 +670,7 @@
    "pubblicato": "2026-10-31T07:20:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.9,
+   "punteggio": 14.7,
    "testate": 1
   },
   {
@@ -466,8 +682,8 @@
    "pubblicato": "2026-10-31T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.2,
-   "testate": 1
+   "punteggio": 7.6,
+   "testate": 2
   },
   {
    "titolo": "GP Malesia 2026: la cronaca della Sprint",
@@ -478,8 +694,8 @@
    "pubblicato": "2026-10-31T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.8,
-   "testate": 1
+   "punteggio": 11.6,
+   "testate": 2
   },
   {
    "titolo": "GP Malesia 2026: orari Sky/Now e TV8",
@@ -490,8 +706,8 @@
    "pubblicato": "2026-10-31T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.2,
-   "testate": 1
+   "punteggio": -0.4,
+   "testate": 2
   },
   {
    "titolo": "Martin: “Per me il campionato è perso, ma lotterò fino alla fine”",
@@ -502,7 +718,79 @@
    "pubblicato": "2026-10-31T06:59:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.8,
+   "punteggio": 6.6,
+   "testate": 1
+  },
+  {
+   "titolo": "Moto2, Daniel Holgado fa il vuoto nelle qualifiche di Sepang. Guevara in prima fila, Gonzalez deve inseguire",
+   "estratto": "Daniel Holgado spazza via tutti nelle qualifiche di Sepang e si aggiudica con ampio margine la pole position per il Gran Premio della Malesia 2026, in occasione del diciannovesimo appuntamento…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/moto2-daniel-holgado-fa-il-vuoto-nelle-qualifiche-di-sepang-guevara-in-prima-fila-gonzalez-deve-inseguire/",
+   "pubblicato": "2026-10-31T06:49:36+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 1.5,
+   "testate": 1
+  },
+  {
+   "titolo": "Quando la F1 su TV8 oggi, GP Messico 2026: orario qualifiche, differita in chiaro",
+   "estratto": "Le qualifiche del Gran Premio del Messico 2026 di F1 avranno luogo sabato 31 ottobre dalle ore 22:00 alle ore 23:00 del nostro Paese. Verrà dunque conferita una delle pole position meno ambite…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/a-che-ora-la-f1-su-tv8-oggi-gp-messico-2026-programma-qualifiche-differita-in-chiaro/",
+   "pubblicato": "2026-10-31T06:20:47+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 1.4,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 oggi in tv, GP Messico 2026: orari FP3 e qualifiche, streaming, programma, differita TV8",
+   "estratto": "Sabato 31 ottobre andrà in scena la seconda giornata del diciannovesimo week end del Mondiale 2026 di F1. Sul circuito di Citta del Messico, piloti e team saranno chiamati a trovare nel più breve…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/f1-oggi-in-tv-gp-messico-2026-orari-fp3-e-qualifiche-streaming-programma-sky-e-tv8/",
+   "pubblicato": "2026-10-31T06:19:21+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -0.6,
+   "testate": 2
+  },
+  {
+   "titolo": "LIVE F1, GP Messico 2026 in DIRETTA: Antonelli a caccia della pole, sarà una Ferrari diversa in qualifica?",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE Buona sera e bentrovati alla DIRETTA LIVE della seconda giornata del week end del GP di Città del Messico, diciannovesimo appuntamento del Mondiale 2026 di…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/live-f1-gp-messico-2026-in-diretta-antonelli-sfida-verstappen-e-le-ferrari-per-la-pole/",
+   "pubblicato": "2026-10-31T06:18:05+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 29.4,
+   "testate": 3
+  },
+  {
+   "titolo": "Quando MotoGP e F1 oggi (sabato 31 ottobre): orari qualifiche e Sprint, streaming, programma TV8 e Sky",
+   "estratto": "Sabato 31 ottobre prosegue il lungo weekend riservato ai motori, per la gioia di tutti gli appassionati che potranno gustarsi un fine settimana ricchissimo. Spazio alla prove libere e alle qualifiche…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/quando-motogp-e-f1-oggi-31-ottobre-orari-qualifiche-e-sprint-streaming-programma-tv8-e-sky/",
+   "pubblicato": "2026-10-31T06:11:02+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -10.6,
+   "testate": 1
+  },
+  {
+   "titolo": "Quando MotoGP e F1 oggi (sabato 31 ottobre): orari qualifiche e Sprint, streaming, programma TV8 e Sky",
+   "estratto": "Sabato 31 ottobre prosegue il lungo weekend riservato ai motori, per la gioia di tutti gli appassionati che potranno gustarsi un fine settimana ricchissimo. Spazio alla prove libere e alle qualifiche…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/quando-motogp-e-f1-oggi-31-ottobre-orari-qualifiche-e-sprint-streaming-programma-tv8-e-sky/",
+   "pubblicato": "2026-10-31T06:11:02+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -10.6,
    "testate": 1
   },
   {
@@ -514,8 +802,8 @@
    "pubblicato": "2026-10-31T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.5,
-   "testate": 3
+   "punteggio": 31.3,
+   "testate": 4
   },
   {
    "titolo": "GP Malesia 2026, griglia di partenza: Alex Marquez batte Marc, terzo Acosta",
@@ -526,8 +814,128 @@
    "pubblicato": "2026-10-31T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.5,
+   "punteggio": 9.3,
+   "testate": 3
+  },
+  {
+   "titolo": "La decisione prudente di Jorge Martin: “In moto non avevo il controllo al 100%. Non penso al Mondiale”",
+   "estratto": "Sepang dovrà fare a meno di Jorge Martín. Il pilota dell’Aprilia ha gettato la spugna al termine delle FP2, rinunciando a qualifiche e gare del Gran Premio della Malesia di MotoGP: un epilogo amaro…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/jorge-martin-spiega-il-ritiro-a-sepang-ho-dovuto-fermarmi-era-troppo-rischioso/",
+   "pubblicato": "2026-10-31T05:58:57+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 6.3,
+   "testate": 1
+  },
+  {
+   "titolo": "Jorge Martin si arrende: forfait per qualifiche e GP di Malesia, sfuma il sogno iridato",
+   "estratto": "Sepang perde Jorge Martín. Il pilota dell’Aprilia ha alzato bandiera bianca al termine delle FP2 e ha annunciato il forfait per qualifiche e gara del Gran Premio della Malesia, chiudendo un fine…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/jorge-martin-alza-bandiera-bianca-il-pilota-dellaprilia-da-forfait-per-qualifiche-e-gp-a-sepang/",
+   "pubblicato": "2026-10-31T05:57:34+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 21.3,
+   "testate": 3
+  },
+  {
+   "titolo": "MotoGP, Alex Marquez precede il fratello nelle qualifiche a Sepang. Martin alza bandiera bianca",
+   "estratto": "Calato il sipario sulle qualifiche del GP della Malesia, quartultimo appuntamento del Mondiale 2026 di MotoGP. Sul circuito di Sepang il time-attack è stato all’insegna del dominio spagnolo e della…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/motogp-alex-marquez-si-prende-la-pole-a-sepang-davanti-al-fratello-marc-bezzecchi-in-seconda-fila-martin-si-ritira/",
+   "pubblicato": "2026-10-31T05:57:24+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 11.3,
    "testate": 2
+  },
+  {
+   "titolo": "Griglia di partenza MotoGP, GP Malesia 2026: comandano i Marquez, Bezzecchi in seconda fila, out Martin",
+   "estratto": "Calato il sipario sulle qualifiche del GP della Malesia, quartultimo appuntamento del Mondiale 2026 di MotoGP. Sul tracciato di Sepang, il time-attack è stato piuttosto tirato e le condizioni…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/griglia-di-partenza-motogp-gp-malesia-2026-dominio-della-famiglia-marquez-bezzecchi-in-top-5-martin-si-arrende/",
+   "pubblicato": "2026-10-31T05:56:54+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 17.3,
+   "testate": 3
+  },
+  {
+   "titolo": "Moto3, Maximo Quiles in pole-position a Sepang. Bertelle in seconda fila",
+   "estratto": "Andata in archivio la sessione di qualifica del GP della Malesia, quartultimo appuntamento del Mondiale 2026 di Moto3. Sul circuito di Sepang, i centauri della minima cilindrata si sono dati…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/moto3-maximo-quiles-in-pole-position-a-sepang-bertelle-in-seconda-fila/",
+   "pubblicato": "2026-10-31T05:42:17+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 1.2,
+   "testate": 1
+  },
+  {
+   "titolo": "A che ora la MotoGP su TV8 oggi, GP Malesia 2026: programma qualifiche in chiaro",
+   "estratto": "Le qualifiche di MotoGP, Moto2 e Moto3 valevoli per il Gran Premio di Malesia 2026 si disputeranno sabato 31 ottobre dalle ore 4:50 alle 7:20 italiane. Dopodiché, alle ore 8:00 del nostro Paese…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/a-che-ora-la-motogp-su-tv8-oggi-gp-malesia-2026-programma-qualifiche-in-chiaro/",
+   "pubblicato": "2026-10-31T05:10:54+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -0.9,
+   "testate": 2
+  },
+  {
+   "titolo": "Pedro Acosta: “Per prendermi la prima fila ho rischiato al massimo. Sarà dura tenere il ritmo dei Marquez”",
+   "estratto": "Rischiare il tutto per tutto. E’ con questo spirito che Pedro Acosta ha interpretato le qualifiche del GP della Malesia, quartultimo appuntamento del Mondiale 2026 di MotoGP. Sul circuito di Sepang…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/pedro-acosta-per-prendermi-la-prima-fila-ho-rischiato-al-massimo-sara-dura-tenere-il-ritmo-dei-marquez/",
+   "pubblicato": "2026-10-31T05:08:08+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 6.1,
+   "testate": 1
+  },
+  {
+   "titolo": "F1, GP Messico 2026. Oggi si lotta per la pole, comincia il weekend dell’Incoronazione?",
+   "estratto": "Alle ore 22:00 italiane di sabato 31 ottobre, cominceranno le qualifiche del Gran Premio del Messico di F1. Si tratta del primo atto formale del weekend in cui Kimi Antonelli potrebbe (dovrebbe)…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/f1-gp-messico-2026-oggi-si-lotta-per-la-pole-comincia-il-weekend-dellincoronazione/",
+   "pubblicato": "2026-10-31T05:00:26+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 9.1,
+   "testate": 1
+  },
+  {
+   "titolo": "Marc Marquez: “Mai stato così veloce a Sepang, ma Alex va forte. Auguro un pronto recupero a Martin”",
+   "estratto": "Un secondo posto che si accoglie con soddisfazione. E’ questo il mood di Marc Marquez, al termine delle qualifiche del GP della Malesia, quartultimo appuntamento del Mondiale 2026 di MotoGP. Il…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/marc-marquez-mai-stato-cosi-veloce-qui-a-sepang-ma-alex-va-forte-auguro-un-pronto-recupero-a-martin/",
+   "pubblicato": "2026-10-31T04:46:05+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 26.0,
+   "testate": 3
+  },
+  {
+   "titolo": "Alex Marquez: “Darò il massimo, ma valuterò tutti i rischi con Marc”",
+   "estratto": "Lo spagnolo Alex Márquez ha conquistato la pole position del GP della Malesia, quartultimo appuntamento del Mondiale 2026 di MotoGP. Sul tracciato di Sepang il pilota della Ducati Gresini ha saputo…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/alex-marquez-daro-il-massimo-ma-valutero-tutti-i-rischi-con-marc/",
+   "pubblicato": "2026-10-31T04:34:58+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 34.0,
+   "testate": 3
   },
   {
    "titolo": "MotoGP | Martin: \"Ci ho provato al massimo, ma continuare significherebbe che non ho imparato nulla dal passato\"",
@@ -538,7 +946,7 @@
    "pubblicato": "2026-10-31T04:34:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.2,
+   "punteggio": 6.0,
    "testate": 1
   },
   {
@@ -550,8 +958,8 @@
    "pubblicato": "2026-10-31T03:56:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.0,
-   "testate": 2
+   "punteggio": 25.8,
+   "testate": 3
   },
   {
    "titolo": "MotoGP | Jorge Martin ci ha provato ma si arrende: si ritira dal GP della Malesia",
@@ -562,8 +970,8 @@
    "pubblicato": "2026-10-31T03:17:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.8,
-   "testate": 2
+   "punteggio": 20.6,
+   "testate": 3
   },
   {
    "titolo": "GP Malesia 2026: la cronaca delle Qualifiche",
@@ -574,8 +982,8 @@
    "pubblicato": "2026-10-31T03:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.8,
-   "testate": 1
+   "punteggio": 10.6,
+   "testate": 2
   },
   {
    "titolo": "Ufficiale: Jorge Martin non proseguirà il weekend in Malesia",
@@ -586,8 +994,44 @@
    "pubblicato": "2026-10-31T03:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.8,
-   "testate": 2
+   "punteggio": 20.6,
+   "testate": 3
+  },
+  {
+   "titolo": "Moto2, Izan Guevara impressionante nella FP2 a Sepang. Vietti in top-10",
+   "estratto": "Archiviata la seconda sessione di prove libere del GP della Malesia, quartultimo appuntamento del Mondiale 2026 di Moto2. Sul circuito di Sepang, trovare il giusto ritmo non è semplice, soprattutto a…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/10/moto2-izan-guevara-impressionante-nella-fp2-a-sepang-vietti-in-top-10/",
+   "pubblicato": "2026-10-31T02:05:50+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 0.3,
+   "testate": 1
+  },
+  {
+   "titolo": "Lewis Hamilton: “La macchina è sembrata veloce, analizzeremo il problema sulla vettura”",
+   "estratto": "Una giornata a due facce per Lewis Hamilton, che a Città del Messico, 19° appuntamento del Mondiale 2026 di F1, ha trovato buone sensazioni al volante della SF-26 ma ha dovuto fare i conti con un…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/lewis-hamilton-la-macchina-e-sembrata-veloce-analizzeremo-il-problema-sulla-vettura/",
+   "pubblicato": "2026-10-31T01:50:31+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 5.3,
+   "testate": 1
+  },
+  {
+   "titolo": "Charles Leclerc rimane concentrato: “Dobbiamo ancora lavorare sui nostri limiti”",
+   "estratto": "Tempi alla mano, una giornata positiva per la Ferrari e Charles Leclerc. Il pilota monegasco della Rossa ha fatto segnare i migliori crono sia nella prima sia nella seconda sessione di prove libere…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/charles-leclerc-rimane-concentrato-dobbiamo-ancora-lavorare-sui-nostri-limiti/",
+   "pubblicato": "2026-10-31T01:42:45+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 13.3,
+   "testate": 1
   },
   {
    "titolo": "F1 | Vasseur positivo: “È un buon inizio. Il turbo piccolo e le curve lente possono essere un vantaggio”",
@@ -598,7 +1042,7 @@
    "pubblicato": "2026-10-31T00:55:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.3,
+   "punteggio": 13.1,
    "testate": 1
   },
   {
@@ -610,7 +1054,19 @@
    "pubblicato": "2026-10-31T00:45:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.2,
+   "punteggio": 5.0,
+   "testate": 1
+  },
+  {
+   "titolo": "Kimi Antonelli fiducioso: “Buon lavoro in pista ma possiamo ancora migliorare. Sul titolo…”",
+   "estratto": "Andrea Kimi Antonelli bada al sodo al termine della seconda sessione di prove libere del Gran Premio del Messico, diciannovesimo appuntamento del Mondiale di Formula Uno 2026. Sul tracciato di Città…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/kimi-antonelli-fiducioso-buon-lavoro-in-pista-ma-possiamo-ancora-migliorare-sul-titolo/",
+   "pubblicato": "2026-10-30T23:37:11+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 12.7,
    "testate": 1
   },
   {
@@ -622,8 +1078,20 @@
    "pubblicato": "2026-10-30T23:35:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.9,
-   "testate": 1
+   "punteggio": 14.7,
+   "testate": 2
+  },
+  {
+   "titolo": "F1, GP Messico 2026: risultati e classifica FP2. Leclerc ancora primo, Antonelli è quarto",
+   "estratto": "Si chiude la prima giornata di lavoro sul tracciato di Città del Messico: va in archivio la seconda sessione di prove libere del GP del Messico, diciannovesima tappa del Mondiale 2026 di F1, con la…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/f1-gp-messico-2026-risultati-e-classifica-fp2-leclerc-ancora-primo-antonelli-e-quarto/",
+   "pubblicato": "2026-10-30T23:26:41+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 15.7,
+   "testate": 3
   },
   {
    "titolo": "GP Città del Messico 2026 – Classifica FP2: Leclerc si conferma, Kimi 4°. Hamilton, motore ko",
@@ -634,8 +1102,20 @@
    "pubblicato": "2026-10-30T23:08:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.2,
-   "testate": 2
+   "punteggio": 7.6,
+   "testate": 3
+  },
+  {
+   "titolo": "LIVE F1, GP Messico 2026 in DIRETTA: Leclerc svetta nella FP2, bene Antonelli",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE 00:06 Grazie per averci seguito, Amici di OA Sport. Appuntamento a domani con la FP3 e con le qualifiche che, da programma, cominceranno alle 22:00 italiane…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/live-f1-gp-messico-2026-in-diretta-inizia-il-conto-alla-rovescia-iridato-per-kimi-antonelli/",
+   "pubblicato": "2026-10-30T23:05:20+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 27.6,
+   "testate": 3
   },
   {
    "titolo": "F1 | Messico, Libere 2: la Ferrari si conferma con Leclerc, ma Hamilton si ferma. Quarto Antonelli",
@@ -646,8 +1126,20 @@
    "pubblicato": "2026-10-30T23:03:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.8,
-   "testate": 2
+   "punteggio": 27.6,
+   "testate": 3
+  },
+  {
+   "titolo": "Charles Leclerc si conferma anche nella FP2 del GP del Messico, Kimi Antonelli insegue",
+   "estratto": "Charles Leclerc chiude in vetta anche la seconda sessione di prove libere del Gran Premio del Messico, diciannovesimo appuntamento del Mondiale di Formula Uno 2026. Sul tracciato di Città del…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/charles-leclerc-si-conferma-anche-nella-fp2-del-gp-del-messico-kimi-antonelli-insegue/",
+   "pubblicato": "2026-10-30T23:01:33+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 27.6,
+   "testate": 3
   },
   {
    "titolo": "F1 GP Messico 2026, Città del Messico: la cronaca delle FP2, minuto per minuto",
@@ -658,7 +1150,7 @@
    "pubblicato": "2026-10-30T23:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.2,
+   "punteggio": -0.4,
    "testate": 1
   },
   {
@@ -670,7 +1162,7 @@
    "pubblicato": "2026-10-30T22:43:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.7,
+   "punteggio": 7.5,
    "testate": 1
   },
   {
@@ -682,8 +1174,8 @@
    "pubblicato": "2026-10-30T22:32:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.7,
-   "testate": 2
+   "punteggio": 19.5,
+   "testate": 3
   },
   {
    "titolo": "Hadjar, il weekend inizia male: problemi alla power unit e spintoni a un tifoso",
@@ -694,8 +1186,8 @@
    "pubblicato": "2026-10-30T21:13:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.7,
-   "testate": 1
+   "punteggio": 9.1,
+   "testate": 2
   },
   {
    "titolo": "Messico, Ferrari parte spingendo per cercare risposte tecniche. Antonelli è subito dietro",
@@ -706,8 +1198,8 @@
    "pubblicato": "2026-10-30T20:32:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.2,
-   "testate": 2
+   "punteggio": 27.0,
+   "testate": 3
   },
   {
    "titolo": "Herta ‘sblocca’ la Superlicenza: nel 2027 potrà essere titolare al posto di Bottas",
@@ -718,8 +1210,20 @@
    "pubblicato": "2026-10-30T19:56:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.0,
+   "punteggio": -1.2,
    "testate": 1
+  },
+  {
+   "titolo": "F1, GP Messico 2026: risultati e classifica FP1. Leclerc in testa davanti ad Antonelli, quarto Hamilton",
+   "estratto": "Il Mondiale di F1 2026 è ripreso oggi, venerdì 30 ottobre, con il GP del Messico, valido come diciannovesima prova del calendario. Nella prima serata italiana si è disputata la prima sessione delle…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/f1-gp-messico-2026-risultati-e-classifica-fp1-leclerc-in-testa-davanti-ad-antonelli-quarto-hamilton/",
+   "pubblicato": "2026-10-30T19:50:14+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 14.8,
+   "testate": 3
   },
   {
    "titolo": "F1 | Messico, Libere 1: Ferrari subito davanti con Leclerc. Seguono le Mercedes di Kimi e Vesti",
@@ -730,8 +1234,20 @@
    "pubblicato": "2026-10-30T19:41:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.9,
-   "testate": 2
+   "punteggio": 26.7,
+   "testate": 3
+  },
+  {
+   "titolo": "F1, Charles Leclerc domina le prime libere a Città del Messico. Antonelli a sei decimi, tanti rookie in pista",
+   "estratto": "Charles Leclerc comincia con il piede giusto il weekend di Città del Messico e realizza il miglior tempo nella prima sessione di prove libere del Gran Premio del Messico 2026, diciannovesimo round…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/f1-charles-leclerc-domina-le-prime-libere-a-citta-del-messico-antonelli-a-sei-decimi-tanti-rookie-in-pista/",
+   "pubblicato": "2026-10-30T19:41:10+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 26.7,
+   "testate": 3
   },
   {
    "titolo": "GP Città del Messico 2026 – Classifica FP1: Ferrari parte forte, Leclerc da 6 decimi a Kimi. Hamilton 4°",
@@ -742,19 +1258,31 @@
    "pubblicato": "2026-10-30T19:39:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.9,
-   "testate": 2
+   "punteggio": 14.7,
+   "testate": 3
   },
   {
-   "titolo": "F1 GP Messico 2026, Città del Messico: la cronaca delle FP1, minuto per minuto",
-   "estratto": "La cronaca live minuto per minuto della prima sessione di prove del fine settimana a Città del Messico",
-   "fonte": "FormulaPassion",
+   "titolo": "Kimi Antonelli, allarme rientrato dopo il virus: “Guardate chi è tornato”",
+   "estratto": "Nella giornata di ieri, Kimi Antonelli aveva saltato il media day, la consueta giornata di presentazione che si svolge alla vigilia di un fine settimana riservato alla massima categoria…",
+   "fonte": "OA Sport",
    "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-messico-2026-citta-del-messico-prove-libere-1-fp1-aggiornamenti-ferrari-leclerc-hamilton-antonelli-fornaroli-mini",
-   "pubblicato": "2026-10-30T19:30:00+00:00",
+   "url": "https://www.oasport.it/2026/10/kimi-antonelli-allarme-rientrato-dopo-il-virus-guardate-chi-e-tornato/",
+   "pubblicato": "2026-10-30T18:09:47+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 11.4,
+   "testate": 1
+  },
+  {
+   "titolo": "Cosa deve fare Kimi Antonelli per vincere il Mondiale di F1 in Messico: le combinazioni per fare festa a Ognissanti",
+   "estratto": "Kimi Antonelli si era presentato al GP degli USA con la prima possibilità di laurearsi Campione del Mondo di F1. Il pilota italiano avrebbe dovuto vincere la gara e sperare in determinati risultati…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/10/cosa-deve-fare-kimi-antonelli-per-vincere-il-mondiale-di-f1-in-messico-le-combinazioni-fare-festa-a-ognissanti/",
+   "pubblicato": "2026-10-30T16:12:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.1,
+   "punteggio": 5.9,
    "testate": 1
   },
   {
@@ -766,7 +1294,7 @@
    "pubblicato": "2026-10-30T15:07:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.8,
+   "punteggio": 10.6,
    "testate": 1
   },
   {
@@ -778,7 +1306,7 @@
    "pubblicato": "2026-10-30T14:30:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.7,
+   "punteggio": 5.5,
    "testate": 1
   },
   {
@@ -790,8 +1318,8 @@
    "pubblicato": "2026-10-30T14:11:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 20.6,
-   "testate": 2
+   "punteggio": 10.4,
+   "testate": 1
   },
   {
    "titolo": "MotoGP | Bastianini: \"Una delle migliori giornate dell'anno, sogno sempre in grande!\"",
@@ -802,7 +1330,7 @@
    "pubblicato": "2026-10-30T11:40:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.9,
+   "punteggio": 1.7,
    "testate": 1
   },
   {
@@ -814,7 +1342,7 @@
    "pubblicato": "2026-10-30T11:18:35+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.9,
+   "punteggio": 1.7,
    "testate": 1
   },
   {
@@ -826,7 +1354,7 @@
    "pubblicato": "2026-10-30T11:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.8,
+   "punteggio": 9.6,
    "testate": 1
   },
   {
@@ -838,8 +1366,8 @@
    "pubblicato": "2026-10-30T11:10:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.8,
-   "testate": 2
+   "punteggio": 9.6,
+   "testate": 1
   },
   {
    "titolo": "Marc Marquez: “La caduta mi ha fatto arrabbiare, ma sono contento perché quando cala la gomma mi sento davvero bene”",
@@ -850,7 +1378,7 @@
    "pubblicato": "2026-10-30T11:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.8,
+   "punteggio": 1.6,
    "testate": 1
   },
   {
@@ -862,7 +1390,7 @@
    "pubblicato": "2026-10-30T10:59:31+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.8,
+   "punteggio": 1.6,
    "testate": 1
   },
   {
@@ -874,7 +1402,7 @@
    "pubblicato": "2026-10-30T10:41:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.7,
+   "punteggio": 9.5,
    "testate": 1
   },
   {
@@ -886,8 +1414,8 @@
    "pubblicato": "2026-10-30T10:21:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.6,
-   "testate": 1
+   "punteggio": 19.4,
+   "testate": 2
   },
   {
    "titolo": "F1 | Hamilton guarda al 2027: “Quest'anno abbiamo guidato l'innovazione, ora serve più motore\"",
@@ -898,7 +1426,7 @@
    "pubblicato": "2026-10-30T10:05:14+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.5,
+   "punteggio": 9.3,
    "testate": 1
   },
   {
@@ -910,535 +1438,7 @@
    "pubblicato": "2026-10-30T09:49:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.5,
-   "testate": 1
-  },
-  {
-   "titolo": "Bonora su Martin: “Fa fatica a spingere nei time-attack, abbiamo preferito aspettare domani”",
-   "estratto": "Il pilota Aprilia ha interrotto anzitempo le Prove",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/bonora-aprilia-martin-fatica-spingere-time-attack-preferito-aspettare-domani-dottor-charte",
-   "pubblicato": "2026-10-30T09:35:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 1.4,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Ferrari, Leclerc: \"Possiamo vincere, ma la nostra macchina non perdona\"",
-   "estratto": "La Ferrari arriva a Città del Messico con una fiducia che non si respirava da tempo. Le prestazioni mostrate a Singapore e soprattutto ad Austin hanno confermato i progressi della squadra di…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-ferrari-leclerc-possiamo-vincere-ma-la-nostra-macchina-non-perdona/10869610/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-30T09:33:54+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 9.4,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Bagnaia: \"La mia moto funziona solo in rettilineo, nel T1 e nel T4. Negli altri due perdo 0\"8, è ridicolo\"",
-   "estratto": "L'ottimismo con cui Pecco Bagnaia si era presentato a Sepang ieri, si è sciolto come neve al sole nella prima giornata di prove del Gran Premio della Malesia di MotoGP. Il pilota piemontese sperava…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bagnaia-la-mia-moto-funziona-solo-in-rettilineo-nel-t1-e-nel-t4-negli-altri-due-perdo-08-e-r/10869597/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-30T09:18:46+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 19.4,
-   "testate": 2
-  },
-  {
-   "titolo": "Kimi, Leo e Gabri: l'Italia cala il tris",
-   "estratto": "Antonelli è influenzato: rimasto \"per precauzione\" in albergo, oggi gira insieme a Fornaroli sulla McLaren e per la prima volta a Minì sull'Alpine",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/30-152253245/kimi_leo_e_gabri_l_italia_cala_il_tris/",
-   "pubblicato": "2026-10-30T09:05:20+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 4.3,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Verstappen spiega i limiti della Red Bull RB22: \"Non eccelliamo né nel lento né nel veloce\"",
-   "estratto": "La Red Bull arriva a Città del Messico con la necessità di confermare i progressi mostrati nelle ultime settimane, ma anche con alcuni interrogativi che il weekend di Austin ha lasciato aperti. La…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-verstappen-spiega-i-limiti-della-red-bull-rb22-non-eccelliamo-ne-nel-lento-ne-nel-veloce/10869580/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-30T09:02:16+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
    "punteggio": 1.3,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Sepang, Prove: Marquez scivola ma si conferma al top, Martin si ferma dopo 3 giri",
-   "estratto": "Il weekend del Gran Premio della Malesia prosegue su due traiettorie diametralmente opposte per i due candidati al titolo della MotoGP. Da una parte, Marc Marquez ha continuato a mostrarsi in…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-sepang-prove-marquez-scivola-ma-si-conferma-al-top-martin-si-ferma-dopo-3-giri/10869546/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-30T08:24:51+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -3.9,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Martin ha l'ok dei medici per correre il GP di Malesia, Raul Fernandez invece si ritira",
-   "estratto": "Jorge Martin ha ottenuto il via libera dei medici per partecipare al resto del GP della Malesia dopo le prove libere di venerdì. Dopo essere stato inizialmente dichiarato idoneo giovedì dal medico…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-martin-ha-ok-dei-medici-per-correre-il-gp-di-malesia-fernandez-invece-si-ritira/10869531/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-30T05:36:24+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -4.6,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Sepang, Libere 1: Marquez precede Bezzecchi, Martin chiude 20° a 1\"8",
-   "estratto": "Gli occhi erano inevitabilmente puntati sui due candidati al titolo nella prima sessione di prove libere del Gran Premio della Malesia di MotoGP. Marc Marquez ha fatto al meglio il suo lavoro, perché…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-sepang-libere-1-marquez-precede-bezzecchi-martin-chiude-20-a-18/10869506/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-30T03:58:52+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 8.0,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Antonelli indisposto in Messico: salta il media-day, Mercedes lo aspetta domani in pista",
-   "estratto": "Kimi Antonelli non sarà presente oggi nel paddock dell'Autodromo Hermanos Rodríguez, dove è in programma il consueto media-day che precede il Gran Premio del Messico. Il pilota della Mercedes è alle…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-antonelli-indisposto-in-messico-salta-il-media-day-mercedes-lo-aspetta-domani-in-pista/10869359/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-29T16:44:06+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -3.8,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Marini recuperato: \"Mi mancava forza, non riuscivo neanche a scrivere messaggi sul telefono\"",
-   "estratto": "Nell'ecatombe di ritiri e forfait che la griglia di MotoGP sta patendo in questo 2026, anche Luca Marini ha avuto i suoi problemi dovendo rinunciare a correre lo scorso fine settimana a Phillip…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-marini-recuperato-mi-mancava-forza-non-riuscivo-neanche-a-scrivere-messaggi-sul-telefono/10869245/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-29T16:05:03+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 1.0,
-   "testate": 1
-  },
-  {
-   "titolo": "Il progetto di Lando Norris continua la sua scalata: LN4 Fusion correrà in FIA F2 a partire dal 2027",
-   "estratto": "La FIA Formula 2 ha annunciato oggi i team che comporranno la griglia di partenza della stagione 2027 e, tra questi, è apparso LN4 Fusion, il team di Lando Norris. Questa notizia non è stata una vera…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/fia-f2/news/il-progetto-di-lando-norris-continua-la-sua-scalata-ln4-fusion-correra-in-fia-f2-a-partire-dal-2027/10869133/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-29T15:43:15+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -12.0,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Aston Martin, Newey conferma: la sua scommessa del rake spinto sulla AMR26 non ha funzionato",
-   "estratto": "Tante delle attenzioni di Aston Martin sono rivolte da tempo al 2027, sia lato motore, dove la speranza è che Honda possa compiere un buon step in avanti durante la sosta invernale, sia lato telaio…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-aston-martin-senza-rake-spinto-la-scommessa-di-newey-sulla-amr26-non-ha-funzionato/10869163/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-29T15:19:49+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -12.1,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Mir: \"La stanchezza mi impediva di vedere bene, ho dovuto fermarmi\"",
-   "estratto": "Joan Mir è pronto a risalire in moto questo fine settimana a Sepang. Il campione del mondo del 2020 non gareggiava dal Gran Premio di San Marino, quando aveva dovuto scendere dalla moto prima che…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-mir-la-stanchezza-mi-impediva-di-vedere-bene-ho-dovuto-fermarmi/10869200/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-29T15:00:46+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -7.2,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Antonelli campione del mondo in Messico: ecco tutte le combinazioni",
-   "estratto": "In Texas l'ha sfiorato, ci è andato molto vicino, ma non è bastato per un soffio. Ora, però, Andrea Kimi Antonelli avrà la prima, vera e grande chance per portare a casa il primo titolo iridato di…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-antonelli-campione-del-mondo-in-messico-ecco-tutte-le-combinazioni/10868871/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-29T14:39:40+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 5.7,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Di Giannantonio: \"Aiutare Marquez? Io vesto giallo e devo pensare ai miei obiettivi con VR46\"",
-   "estratto": "Fabio Di Giannantonio è particolarmente carico in vista del GP della Malesia, pensando ai primi mesi del 2026, quando a Sepang aveva iniziato un percorso piuttosto interessante e motivante. Durante…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-di-giannantonio-aiutare-marquez-io-vesto-giallo-e-devo-pensare-ai-miei-obiettivi-con-vr46/10869234/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-29T14:20:20+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 0.6,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Audi riorganizza la divisione power unit: Fuhr sarà il nuovo CEO",
-   "estratto": "Audi continua a guardare con grande attenzione al futuro e a costruire una struttura solida per provare a diventare una seria contendente ai titoli iridati a partire dal 2030. Oggi la Casa tedesca ha…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-audi-riorganizza-la-divisione-power-unit-fuhr-sara-il-nuovo-ceo/10869013/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-29T12:00:16+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -13.0,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Bagnaia: \"Sepang è la possibilità più concreta per un ultimo podio con la Ducati\"",
-   "estratto": "Raramente quest'anno è capitato sentire un Pecco Bagnaia ottimista alla vigilia di un Gran Premio come oggi a Sepang. Il piemontese ha ricordato che lo scorso anno, anche nel bel mezzo di una…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bagnaia-sepang-e-la-possibilita-piu-concreta-per-un-ultimo-podio-con-la-ducati/10869280/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-29T11:45:04+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -0.0,
-   "testate": 1
-  },
-  {
-   "titolo": "GP Messico, perché in casa Ferrari si respira ottimismo: tira una bella aria…",
-   "estratto": "Dopo le ultime gare con tre Gran Premi consecutivi sul podio, Vasseur dà indicazioni importanti: \"La città offre parametri particolari\"",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/ferrari/2026/10/29-152237535/gp_messico_perch_in_casa_ferrari_si_respira_ottimismo_tira_una_bella_aria/",
-   "pubblicato": "2026-10-29T11:42:20+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -5.1,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Simulazione Megaride: a Città del Messico si fanno i conti con la mancanza di carico aerodinamico",
-   "estratto": "Ad una settimana dal Gran Premio degli Stati Uniti, la Formula 1 torna subito in pista per la terza delle quattro tappe americane in calendario che è anche la seconda della triplice. Si corre…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-simulazione-megaride-a-citta-del-messico-si-fanno-i-conti-con-la-mancanza-di-carico-aerodinamico/10869264/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-29T11:21:35+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -13.1,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | GP del Messico: asfalto nuovo e graining sono le incognite di questa edizione",
-   "estratto": "L'Hermanos Rodriguez, sede del Gran Premio del Messico, presenterà grandi novità rispetto alla passata stagione. L'appuntamento centrale della tripletta americana presenta la solita caratteristica…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-gp-del-messico-lasfalto-nuovo-e-le-mescole-piu-morbide-sono-le-incognite-di-questa-edizione/10869090/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-29T09:02:11+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -13.7,
-   "testate": 1
-  },
-  {
-   "titolo": "Per Antonelli è in arrivo il titolo da 100 e lode",
-   "estratto": "A Città del Messico sarà Mondiale anche col 9° posto. Il suo dominio così forte da poter chiudere con 100 lunghezze sul 2° o sul suo compagno di team",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/29-152233062/per_antonelli_in_arrivo_il_titolo_da_100_e_lode/",
-   "pubblicato": "2026-10-29T05:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -6.7,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Ceccarelli: \"Il Kimi campione non cambierà, Russell deve finire secondo per evitare il tracollo\"",
-   "estratto": "Il primo mondiale di Antonelli ormai lo diamo per scontato: gli bastano due punti per celebrare un titolo iridato strameritato. A Riccardo Ceccarelli, allora, chiediamo di gettare lo sguardo un po’…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-ceccarelli-il-kimi-campione-non-cambiera-russell-deve-finire-secondo-per-evitare-il-tracollo/10868930/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-28T17:48:23+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -4.5,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Racing Bulls super anche ad Austin: dalla sosta estiva ha ottenuto il doppio dei punti di Alpine",
-   "estratto": "Dopo il Gran Premio degli Stati Uniti ad Austin, c’è un dato che conferma ancora di più quanto sia magica la stagione della Racing Bulls. Da quando la Formula 1 è tornata in pista dopo la sosta…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-racing-bulls-super-anche-ad-austin-dalla-sosta-estiva-ha-ottenuto-il-doppio-dei-punti-di-alpine/10869101/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-28T16:37:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -17.8,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Perez crede nel progetto Cadillac a lungo termine: ha rinnovato per tre anni fino al 2029",
-   "estratto": "Dopo essere tornato quest’anno sulla griglia di partenza, Sergio Perez resterà ancora a lungo in Formula 1 grazie al rinnovo del contratto per altri tre anni con Cadillac fino al 2029. Un accordo…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-perez-cadillac-il-matrimonio-continua-checo-ha-rinnovato-fino-al-2029/10869122/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-28T15:32:50+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -18.1,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Accordo FIA-AWS: come l'IA aiuterà a sviluppare i futuri regolamenti e chiudere zone grigie",
-   "estratto": "La FIA ha annunciato una partnership con Amazon Web Services (AWS) nell'ambito del proprio percorso di potenziamento delle capacità digitali e dell'intelligenza artificiale. La collaborazione…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-partnership-fia-aws-come-lia-aiutera-a-sviluppre-i-futuri-regolamenti-e-chiudere-zone-grigie/10869018/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-28T10:06:11+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -19.5,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Antonelli e la forza di rimanere pragmatici: aspetta di fare la storia restando se stesso",
-   "estratto": "A dodici anni, Cosimo Piovasco di Rondò decise di salire su un albero e di non scendere mai più. Nel “Barone rampante”, Italo Calvino racconta la storia di un ragazzo che, attraverso una scelta…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-antonelli-e-la-forza-di-rimanere-pragmatici-aspetta-di-fare-la-storia-restando-se-stesso/10868757/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-28T09:25:35+00:00",
-   "tipo": "intervista",
-   "citazione": true,
-   "punteggio": -5.6,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Alpine: Gasly a punti nonostante i tanti danni nel contatto con Bearman. 10 i punti di carico persi",
-   "estratto": "A punti, un punto, nonostante tutto. Pierre Gasly ha regalato ad Alpine un'altra Top 10 in una stagione molto più ricca di soddisfazioni rispetto al 2025. Eppure ad Austin non è andato tutto nel…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-alpine-gasly-a-punti-nonostante-i-tanti-danni-nel-contatto-con-bearman-10-i-punti-di-carico-persi/10868895/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-28T08:40:10+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -19.8,
-   "testate": 1
-  },
-  {
-   "titolo": "Antonelli, countdown Mondiale: \"Non l'ho ancora vinto... ma nel caso non prenderò il numero 1\"",
-   "estratto": "Così il 20enne pilota italiano della Mercedes: \"Penso di tenere il 12\"",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/mercedes/2026/10/27-152206947/antonelli_countdown_mondiale_non_l_ho_ancora_vinto_ma_nel_caso_non_prender_il_numero_1/",
-   "pubblicato": "2026-10-27T20:09:18+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -9.9,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Williams, Browning torna sulla FW48: parteciperà alle FP1 in Messico e Brasile",
-   "estratto": "Luke Browning è ormai un habitué nel paddock di Formula 1. Il britannico veste i panni di terzo pilota Williams dalla stagione 2023 e ha già partecipato a diverse sessioni di prove libere con le…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-williams-browning-torna-sulla-fw48-partecipera-alle-fp1-in-messico-e-brasile/10868914/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-27T17:30:57+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -23.6,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Red Bull, per sistemare le partenze serve attendere il 2027: non è solo PU, va rivista la frizione​‌",
-   "estratto": "C’è un aspetto che quest’anno ha messo particolarmente in crisi la Red Bull ed è quello delle partenze. Anche ad Austin sia Max Verstappen che Isack Hadjar, pur partendo da due lati diversi della…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-red-bull-per-sistemare-le-partenze-serve-attendere-2027/10868905/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-27T16:59:54+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -23.7,
-   "testate": 1
-  },
-  {
-   "titolo": "Antonelli vince in Texas e fa volare gli ascolti di Sky: è il top dal 2022",
-   "estratto": "La gara ha raccolto 1 milione 917 mila spettatori medi complessivi in total audience, con il 9,8% di share e 2 milioni 838 mila spettatori unici",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/26-152172216/antonelli_vince_in_texas_e_fa_volare_gli_ascolti_di_sky_il_top_dal_2022/",
-   "pubblicato": "2026-10-26T14:23:24+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -18,
-   "testate": 1
-  },
-  {
-   "titolo": "Kimi Antonelli, vittoria Mondiale! Sarà campione già in Messico se…",
-   "estratto": "La felicità del baby fenomeno azzurro: \"La squadra aveva bisogno di questo risultato. Ora voglio finire in bellezza, vincendo altre gare\"",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/26-152166970/kimi_antonelli_vittoria_mondiale_sar_campione_gi_in_messico_se/",
-   "pubblicato": "2026-10-26T07:55:53+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -8,
-   "testate": 2
-  },
-  {
-   "titolo": "Marquez non fugge. Il meteo tifa Martin e fa saltare la gara!",
-   "estratto": "L’annullamento del GP di Phillip Island della MotoGP (e di tutte le altre classi) lascia una ferita nel cuore di piloti e appassionati che avrebbero voluto salutare in altro modo quella che per molti…",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/26-152155368/marquez_non_fugge_il_meteo_tifa_martin_e_fa_saltare_la_gara_/",
-   "pubblicato": "2026-10-26T05:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -38,
-   "testate": 1
-  },
-  {
-   "titolo": "Antonelli stravince il Gp Usa ma la festa è rimandata. Leclerc show, tutte le dichiarazioni",
-   "estratto": "Dominio del pilota italiano che ad Austin, sul Circuito delle Americhe, conquista la nona vittoria della stagione. Hamilton quarto",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/25-152154092/diretta_f1_gp_usa_in_tempo_reale_antonelli_pu_vincere_il_titolo_le_ferrari_inseguono/",
-   "pubblicato": "2026-10-25T18:30:03+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -18,
-   "testate": 1
-  },
-  {
-   "titolo": "Antonelli può vincere il mondiale ad Austin se: tutte le combinazioni",
-   "estratto": "Per il pilota della Mercedes c'è il primo match point iridato con 102 punti di vantaggio su George Russell e 111 su Lewis Hamilton",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/25-152148961/antonelli_pu_vincere_il_mondiale_ad_austin_se_tutte_le_combinazioni/",
-   "pubblicato": "2026-10-25T15:09:20+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -8,
-   "testate": 2
-  },
-  {
-   "titolo": "Verstappen shock, \"Nella schiena non mi è rimasto più niente, vado avanti a pillole\"",
-   "estratto": "Il pilota della Red Bull ha rilasciato alcune clamorose dichiarazioni circa il proprio stato di salute",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/red-bull/2026/10/25-152135460/verstappen_shock_nella_schiena_non_mi_rimasto_pi_niente_vado_avanti_a_pillole/",
-   "pubblicato": "2026-10-25T08:38:22+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -21,
-   "testate": 1
-  },
-  {
-   "titolo": "Kimi dell'altro mondo, Antonelli ad Austin con un astronauta Nasa: cosa è successo",
-   "estratto": "L'italiano ha portato il campionato in un’altra dimensione, al punto che la Mercedes ad Austin gli affianca un astronauta",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/mercedes/2026/10/24-152107482/kimi_dell_altro_mondo_antonelli_ad_austin_con_un_astronauta_nasa_cosa_successo/",
-   "pubblicato": "2026-10-24T08:53:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -18,
-   "testate": 1
-  },
-  {
-   "titolo": "\"Ha detto una sciocchezza. Non ne ha la minima idea\": Leclerc durissimo, con chi ce l'ha e perché",
-   "estratto": "Botta e risposta a distanza tra i due piloti dopo il Gp di Singapore dominato da Verstappen",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/23-152089992/ha_detto_una_sciocchezza_non_ne_ha_la_minima_idea_leclerc_durissimo_con_chi_ce_l_ha_e_perch/",
-   "pubblicato": "2026-10-23T13:25:44+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -21,
-   "testate": 1
-  },
-  {
-   "titolo": "Antonelli, il sogno mondiale a un passo: cosa deve succedere a Austin, \"manca un po' di strada...\"",
-   "estratto": "Ecco i tasselli per il trionfo dell'italiano già in Texas: \"Dovrebbe accadere qualcosa di catastrofico per gli altri\"",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/22-152078501/antonelli_il_sogno_mondiale_a_un_passo_cosa_deve_succedere_a_austin_manca_un_po_di_strada_/",
-   "pubblicato": "2026-10-22T20:37:37+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -17,
-   "testate": 1
-  },
-  {
-   "titolo": "\"Nessuno come Kimi Antonelli, per l’Italia è un sogno\": Valentino Rossi non ha dubbi",
-   "estratto": "L'elogio più importante arriva dalla leggenda della MotoGp: il pilota della Mercedes, suo erede nelle 4 ruote, non avrà scorciatoie per il Mondiale",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/22-152056210/nessuno_come_kimi_antonelli_per_litalia_un_sogno_valentino_rossi_non_ha_dubbi/",
-   "pubblicato": "2026-10-22T08:32:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -17,
-   "testate": 1
-  },
-  {
-   "titolo": "Antonelli negli Usa accende la scintilla: anche l'Nba ai piedi di Kimi. Certo, con Wembanyama...",
-   "estratto": "Quanto affetto dai giganti di San Antonio con in testa la superstar Wemby tra selfie e in bocca al lupo",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/21-152038748/antonelli_negli_usa_accende_la_scintilla_anche_l_nba_ai_piedi_di_kimi_certo_con_wembanyama_/",
-   "pubblicato": "2026-10-21T09:26:11+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -22,
-   "testate": 1
-  },
-  {
-   "titolo": "Antonelli e i suoi fratelli d’Italia: chi sono gli eredi del campione Mercedes",
-   "estratto": "Il bolognese prepara la festa Mondiale, ma il futuro azzurro è ricco di sorprese: i nomi",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/20-152018324/antonelli_e_i_suoi_fratelli_ditalia_chi_sono_gli_eredi_del_campione_mercedes/",
-   "pubblicato": "2026-10-20T09:28:06+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -22,
-   "testate": 1
-  },
-  {
-   "titolo": "Russell, la penalità diventa un caso Mercedes: Antonelli vede il Mondiale, George prende tempo",
-   "estratto": "Il britannico vorrebbe rinviare l'utilizzo del nuovo motore, mentre il team punta su Austin. Kimi, con 102 punti di vantaggio, può già chiudere i conti in Texas",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/mercedes/2026/10/19-151998953/russell_la_penalit_diventa_un_caso_mercedes_antonelli_vede_il_mondiale_george_prende_tempo/",
-   "pubblicato": "2026-10-19T08:44:57+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -8,
-   "testate": 2
-  },
-  {
-   "titolo": "“Kimi Antonelli e il match point ad Austin, c’è una possibilità su…”",
-   "estratto": "Bradley Lord mantiene i piedi per terra: \"Alla gente piace molto questo paragone tennistico...\"",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/18-151972546/kimi_antonelli_e_il_match_point_ad_austin_c_una_possibilit_su/",
-   "pubblicato": "2026-10-18T08:28:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -13,
    "testate": 1
   }
  ]

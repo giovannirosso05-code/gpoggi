@@ -61,10 +61,27 @@ def coriandoli(img, n=90, seed=5):
         img.alpha_composite(riq, (min(max(x, 0), W - riq.width), min(max(y, 0), H - riq.height)))
 
 
-def composizione(nome, uscita, trofeo=None, alza=0, larghezza=1250, px=None, tr_x=730, tr_h=760, conf=False, estendi=False):
+def raggi(img, cx=540, cy=900, colore=(255, 214, 90), intensita=0.30):
+    """Raggi di luce dorati che partono da dietro la testa (per le grafiche da campione)."""
+    w, h = img.size
+    y, x = np.mgrid[0:h, 0:w]
+    ang = np.arctan2(y - cy, x - cx)
+    r = np.hypot(x - cx, y - cy)
+    ray = (np.sin(ang * 14) > 0.35).astype(float)
+    alone = np.clip(1 - r / 1250.0, 0, 1) ** 1.3
+    a = (ray * 0.55 + 0.45) * alone * intensita
+    ov = np.zeros((h, w, 4), dtype="uint8")
+    ov[..., 0], ov[..., 1], ov[..., 2] = colore
+    ov[..., 3] = (a * 255).astype("uint8")
+    img.alpha_composite(Image.fromarray(ov))
+
+
+def composizione(nome, uscita, trofeo=None, alza=0, larghezza=1250, px=None, tr_x=730, tr_h=760, conf=False, estendi=False, luce=False):
     """alza: pixel di cui spostare in alto il pilota (nei video il pannello dei dati copre la parte bassa)."""
     import ritratti_espn as R
     sfondo = bandiera().convert("RGBA")
+    if luce:
+        raggi(sfondo)
     if conf:
         coriandoli(sfondo)
     p = Image.open(R.scarica(nome)).convert("RGBA")

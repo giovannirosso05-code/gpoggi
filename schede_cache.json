@@ -11346,5 +11346,162 @@
   },
   "immagine": "Aleix Espargaro at the 2022 San Marino Grand Prix at Misano.jpg",
   "fonte": "https://en.wikipedia.org/wiki/Aleix_Espargaro"
+ },
+ "moto:1ddf1165-e6da-4859-9a97-eac600efb431": {
+  "nascita": "1997-02-12",
+  "luogo": "Cesena, Italy",
+  "altezza": 176,
+  "peso": 67,
+  "debutto": 2013,
+  "carriera": [
+   {
+    "anno": 2013,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Ongetta-Centro Seta",
+      "numero": 3
+     }
+    ]
+   },
+   {
+    "anno": 2014,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "San Carlo Team Italia",
+      "numero": 3
+     }
+    ]
+   },
+   {
+    "anno": 2015,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "San Carlo Team Italia",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoE",
+      "team": "Team Gresini MotoE",
+      "numero": 11
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoE",
+      "team": "Team Gresini MotoE",
+      "numero": 11
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoE",
+      "team": "Team Gresini MotoE",
+      "numero": 11
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoE",
+      "team": "Felo Gresini MotoE™",
+      "numero": 11
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoE",
+      "team": "Felo Gresini MotoE™",
+      "numero": 11
+     },
+     {
+      "categoria": "Moto2",
+      "team": "ITALJET Gresini Moto2",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ITALJET Gresini Moto2",
+      "numero": 23
+     },
+     {
+      "categoria": "Moto2",
+      "team": "ITALJET Gresini Moto2",
+      "numero": 23
+     },
+     {
+      "categoria": "MotoE",
+      "team": "Felo Gresini MotoE™",
+      "numero": 11
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoE",
+      "team": "Felo Gresini MotoE™",
+      "numero": 11
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ITALJET Gresini Moto2",
+      "numero": 23
+     }
+    ]
+   }
+  ]
+ },
+ "wikistat:1ddf1165-e6da-4859-9a97-eac600efb431": {
+  "gare": 49,
+  "vittorie": 0,
+  "podi": 0,
+  "pole": 0,
+  "giri_veloci": 0,
+  "titoli": 0,
+  "motogp": {
+   "gare": 0,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0
+  },
+  "immagine": "MotoGP - Sachsenring 2015 - Matteo Ferrari (cropped).jpg",
+  "fonte": "https://en.wikipedia.org/wiki/Matteo_Ferrari_(motorcyclist)"
+ },
+ "nome:Matteo Ferrari": {
+  "testo": "Matteo Ferrari è un pilota motociclistico italiano, campione europeo Moto3 nel 2012 e vincitore della coppa del mondo MotoE nel 2019.",
+  "descrizione": "pilota motociclistico italiano",
+  "pagina": "https://it.wikipedia.org/wiki/Matteo_Ferrari_(motociclista)"
  }
 }

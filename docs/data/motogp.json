@@ -1,61 +1,6 @@
 {
- "generato_il": "2026-11-01T06:52:30+00:00",
+ "generato_il": "2026-11-01T12:32:39+00:00",
  "weekend": [
-  {
-   "nome": "GP Malesia",
-   "circuito": "Petronas Sepang International Circuit",
-   "paese": "Malesia",
-   "sessioni": [
-    {
-     "nome": "Prove libere 1",
-     "codice": "FP1",
-     "inizio": "2026-10-30T02:45:00+00:00",
-     "fine": "2026-10-30T03:35:00+00:00"
-    },
-    {
-     "nome": "Prove libere",
-     "codice": "PR",
-     "inizio": "2026-10-30T07:00:00+00:00",
-     "fine": "2026-10-30T08:00:00+00:00"
-    },
-    {
-     "nome": "Prove libere 2",
-     "codice": "FP2",
-     "inizio": "2026-10-31T02:10:00+00:00",
-     "fine": "2026-10-31T02:40:00+00:00"
-    },
-    {
-     "nome": "Qualifiche 1",
-     "codice": "Q1",
-     "inizio": "2026-10-31T02:50:00+00:00",
-     "fine": "2026-10-31T03:05:00+00:00"
-    },
-    {
-     "nome": "Qualifiche 2",
-     "codice": "Q2",
-     "inizio": "2026-10-31T03:15:00+00:00",
-     "fine": "2026-10-31T03:30:00+00:00"
-    },
-    {
-     "nome": "Sprint",
-     "codice": "SPR",
-     "inizio": "2026-10-31T07:00:00+00:00",
-     "fine": "2026-10-31T07:00:00+00:00"
-    },
-    {
-     "nome": "Warm up",
-     "codice": "WUP",
-     "inizio": "2026-11-01T02:40:00+00:00",
-     "fine": "2026-11-01T02:50:00+00:00"
-    },
-    {
-     "nome": "Gara",
-     "codice": "RAC",
-     "inizio": "2026-11-01T07:00:00+00:00",
-     "fine": "2026-11-01T07:00:00+00:00"
-    }
-   ]
-  },
   {
    "nome": "GP Qatar",
    "circuito": "Lusail International Circuit",

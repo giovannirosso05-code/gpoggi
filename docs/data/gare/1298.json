@@ -846,17 +846,6 @@
     },
     {
      "pos": 8,
-     "numero": 30,
-     "acronimo": "LAW",
-     "nome": "Liam Lawson",
-     "team": "Racing Bulls",
-     "giri": 21,
-     "stato": null,
-     "tempo": "1:17.029",
-     "distacco": "+0.515"
-    },
-    {
-     "pos": 9,
      "numero": 41,
      "acronimo": "LIN",
      "nome": "Arvid Lindblad",
@@ -867,7 +856,7 @@
      "distacco": "+0.603"
     },
     {
-     "pos": 10,
+     "pos": 9,
      "numero": 10,
      "acronimo": "GAS",
      "nome": "Pierre Gasly",
@@ -878,7 +867,7 @@
      "distacco": "+0.639"
     },
     {
-     "pos": 11,
+     "pos": 10,
      "numero": 27,
      "acronimo": "HUL",
      "nome": "Nico Hulkenberg",
@@ -889,7 +878,7 @@
      "distacco": "+0.578"
     },
     {
-     "pos": 12,
+     "pos": 11,
      "numero": 43,
      "acronimo": "COL",
      "nome": "Franco Colapinto",
@@ -900,7 +889,7 @@
      "distacco": "+0.912"
     },
     {
-     "pos": 13,
+     "pos": 12,
      "numero": 81,
      "acronimo": "PIA",
      "nome": "Oscar Piastri",
@@ -911,7 +900,7 @@
      "distacco": "+0.918"
     },
     {
-     "pos": 14,
+     "pos": 13,
      "numero": 5,
      "acronimo": "BOR",
      "nome": "Gabriel Bortoleto",
@@ -922,7 +911,7 @@
      "distacco": "+0.952"
     },
     {
-     "pos": 15,
+     "pos": 14,
      "numero": 87,
      "acronimo": "BEA",
      "nome": "Oliver Bearman",
@@ -933,7 +922,7 @@
      "distacco": "+1.355"
     },
     {
-     "pos": 16,
+     "pos": 15,
      "numero": 55,
      "acronimo": "SAI",
      "nome": "Carlos Sainz",
@@ -944,7 +933,7 @@
      "distacco": "+2.157"
     },
     {
-     "pos": 17,
+     "pos": 16,
      "numero": 23,
      "acronimo": "ALB",
      "nome": "Alexander Albon",
@@ -955,7 +944,7 @@
      "distacco": "+1.289"
     },
     {
-     "pos": 18,
+     "pos": 17,
      "numero": 14,
      "acronimo": "ALO",
      "nome": "Fernando Alonso",
@@ -966,7 +955,7 @@
      "distacco": "+1.567"
     },
     {
-     "pos": 19,
+     "pos": 18,
      "numero": 50,
      "acronimo": "HIR",
      "nome": "Ryo Hirakawa",
@@ -977,7 +966,7 @@
      "distacco": "+1.617"
     },
     {
-     "pos": 20,
+     "pos": 19,
      "numero": 18,
      "acronimo": "STR",
      "nome": "Lance Stroll",
@@ -988,7 +977,7 @@
      "distacco": "+1.731"
     },
     {
-     "pos": 21,
+     "pos": 20,
      "numero": 11,
      "acronimo": "PER",
      "nome": "Sergio Perez",
@@ -999,7 +988,7 @@
      "distacco": "+1.764"
     },
     {
-     "pos": 22,
+     "pos": 21,
      "numero": 77,
      "acronimo": "BOT",
      "nome": "Valtteri Bottas",
@@ -1008,6 +997,17 @@
      "stato": null,
      "tempo": "1:19.852",
      "distacco": "+2.511"
+    },
+    {
+     "pos": null,
+     "numero": 30,
+     "acronimo": "LAW",
+     "nome": "Liam Lawson",
+     "team": "Racing Bulls",
+     "giri": 0,
+     "stato": null,
+     "tempo": "1:17.029",
+     "distacco": "+0.515"
     }
    ]
   },

@@ -1,6 +1,114 @@
 {
- "generato_il": "2026-10-31T23:18:54+00:00",
+ "generato_il": "2026-11-01T03:46:35+00:00",
  "articoli": [
+  {
+   "titolo": "F1 | Hamilton, la prima pole Ferrari è magica: \"Un sogno, mi riporta a quando ero bambino guardando Schumacher\"",
+   "estratto": "Ci sono momenti che nella vita non si scordano mai e le “prime volte” con la Ferrari rientrano tra quelli. È vero, in termini assoluti quella di Città del Messico non è la prima pole in di Lewis…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-hamilton-la-prima-pole-ferrari-e-magica-un-sogno-mi-riporta-a-quando-ero-bambino-guardando-schum/10870373/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-01T00:04:44+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 36.1,
+   "testate": 3
+  },
+  {
+   "titolo": "Hamilton: “Pole con Ferrari? Mi fa tornare ragazzino, a quando vedevo Schumacher”",
+   "estratto": "L'inglese ha potuto celebrare la sua pole numero 105, la prima da pilota di Maranello",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/hamilton-pole-con-ferrari-mi-fa-tornare-ragazzino-quando-vedevo-michael",
+   "pubblicato": "2026-10-31T23:55:56+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 36.0,
+   "testate": 3
+  },
+  {
+   "titolo": "F1 | Vasseur: \"Restiamo concentrati sul Messico perché è importante tornare a vincere un GP”",
+   "estratto": "L’incantesimo si è rotto: la Ferrari conquista la prima pole position con la SF-26 e la Scuderia colleziona la 255esima partenza al palo, interrompendo un’attesa che durava dal GP d’Ungheria del…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-vasseur-restiamo-concentrati-sul-messico-perche-e-importante-tornare-a-vincere-un-gp/10870351/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-31T23:52:15+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 26.0,
+   "testate": 2
+  },
+  {
+   "titolo": "Ferrari-Hamilton: una pole di turbo, aggiornamenti ed esecuzione",
+   "estratto": "Lewis Hamilton e la Ferrari conquistano la pole position con un’ottima esecuzione e una macchina galvanizzata dalle novità e dall’altitudine",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/ferrari-hamilton-pole-turbo-aggiornamenti",
+   "pubblicato": "2026-10-31T23:45:39+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 31.0,
+   "testate": 3
+  },
+  {
+   "titolo": "Antonelli in seconda fila: “Sarà importantissimo evitare casini in partenza”",
+   "estratto": "Il bolognese, 4° dopo la penalità inflitta a Verstappen, ha indicato le difficoltà riscontrate in qualifica e i maggiori obiettivi per la gara di domani",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/antonelli-in-seconda-fila-sara-importantissimo-evitare-casini-in-partenza",
+   "pubblicato": "2026-10-31T23:40:31+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 26.0,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 | Leclerc si accusa: \"In Q3 la SF-26 si è trasformata, ma sono io a non aver fatto un buon lavoro\"",
+   "estratto": "Una rinascita prestazionale inattesa, proprio nel momento più caldo delle qualifiche del Gran Premio di Città del Messico, ha sorpreso Charles Leclerc, il quale si è trovato così a non riuscire a…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-leclerc-si-accusa-in-q3-la-sf-26-si-e-trasformata-ma-sono-io-a-non-aver-fatto-un-buon-lavoro/10870355/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-31T23:37:50+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 18.0,
+   "testate": 2
+  },
+  {
+   "titolo": "La delusione di Leclerc: “In Q3? Semplice, non ho fatto un buon lavoro. Ma che fatica con le gomme”",
+   "estratto": "La Ferrari festeggia il ritorno alla pole position e la prima partenza al palo con Hamilton, ma Charles mastica amaro",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/delusione-ferrari-festa-charles-leclerc-no-in-q3-semplice-non-buon-lavoro-fatica-gomme",
+   "pubblicato": "2026-10-31T23:30:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 35.9,
+   "testate": 3
+  },
+  {
+   "titolo": "Lawson, il weekend da incubo prosegue: utilizzo irregolare dell’MGU-K, rischia la squalifica",
+   "estratto": "Ancora problemi per Lawson Non sembra proprio esserci pace per Liam Lawson in questo weekend di Città del Messico. Dopo le tensioni di ieri in FP2 con Max Verstappen, che hanno portato a una…",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/lawson-il-weekend-da-incubo-prosegue-utilizzo-irregolare-mgu-k-rischia-la-squalifica",
+   "pubblicato": "2026-10-31T23:18:57+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 2.9,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Ocon parla dopo l'esclusione dalla Haas: \"C'è stata una discussione, ma respingo ogni accusa di violenza\"",
+   "estratto": "La decisione della Haas di escludere Esteban Ocon dal resto del weekend in Messico, sostituendolo con Ryo Hirakawa, ha inevitabilmente alimentato interrogativi e speculazioni su quanto accaduto…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-ocon-parla-dopo-lesclusione-dalla-haas-ce-stata-una-discussione-ma-respingo-ogni-accusa-di-viole/10870345/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-10-31T23:13:55+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 17.9,
+   "testate": 2
+  },
   {
    "titolo": "Quando MotoGP e F1 oggi (1° novembre): orari gare, programma TV8 e Sky",
    "estratto": "Oggi domenica 1° novembre si conclude il lungo weekend riservato ai motori, arriviamo al momento clou dell’intenso fine settimana. Spazio alle gare: GP del Messico per quanto riguarda la F1 e GP di…",
@@ -10,7 +118,7 @@
    "pubblicato": "2026-10-31T23:01:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.1,
+   "punteggio": -9.2,
    "testate": 1
   },
   {
@@ -22,7 +130,7 @@
    "pubblicato": "2026-10-31T23:01:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.1,
+   "punteggio": -9.2,
    "testate": 1
   },
   {
@@ -34,8 +142,20 @@
    "pubblicato": "2026-10-31T22:59:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.9,
-   "testate": 1
+   "punteggio": 25.8,
+   "testate": 2
+  },
+  {
+   "titolo": "Ocon conferma la lite: “Ma non c’è stata alcuna violenza fisica”",
+   "estratto": "Esteban Ocon ha fornito la sua versione dei fatti dopo la clamorosa esclusione dal GP di Città del Messico da parte della Haas",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/gp-messico-ocon-haas-conferma-la-lite-ma-non-ce-stata-alcuna-violenza-fisica",
+   "pubblicato": "2026-10-31T22:59:03+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 17.8,
+   "testate": 2
   },
   {
    "titolo": "F1 | Antonelli: \"Ho faticato con le gomme. Domani attaccherò, ma starò attento in curva 1\"",
@@ -46,7 +166,7 @@
    "pubblicato": "2026-10-31T22:58:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.9,
+   "punteggio": 25.8,
    "testate": 2
   },
   {
@@ -58,7 +178,7 @@
    "pubblicato": "2026-10-31T22:56:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.9,
+   "punteggio": 7.8,
    "testate": 1
   },
   {
@@ -70,8 +190,8 @@
    "pubblicato": "2026-10-31T22:50:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.9,
-   "testate": 2
+   "punteggio": 35.8,
+   "testate": 3
   },
   {
    "titolo": "Charles Leclerc: “Fatica a mettere le gomme in finestra, non ho completato l’opera. Bassa aderenza",
@@ -82,8 +202,8 @@
    "pubblicato": "2026-10-31T22:42:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.8,
-   "testate": 1
+   "punteggio": 17.7,
+   "testate": 2
   },
   {
    "titolo": "Lewis Hamilton raggiante: “La prima pole con la Ferrari, mi mancano le parole”",
@@ -94,7 +214,7 @@
    "pubblicato": "2026-10-31T22:32:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 36.8,
+   "punteggio": 35.7,
    "testate": 3
   },
   {
@@ -106,7 +226,7 @@
    "pubblicato": "2026-10-31T22:28:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.8,
+   "punteggio": 17.7,
    "testate": 2
   },
   {
@@ -118,7 +238,7 @@
    "pubblicato": "2026-10-31T22:25:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.8,
+   "punteggio": 28.7,
    "testate": 4
   },
   {
@@ -130,7 +250,7 @@
    "pubblicato": "2026-10-31T22:23:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 41.8,
+   "punteggio": 40.7,
    "testate": 4
   },
   {
@@ -142,7 +262,7 @@
    "pubblicato": "2026-10-31T22:22:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 41.8,
+   "punteggio": 40.6,
    "testate": 4
   },
   {
@@ -154,7 +274,7 @@
    "pubblicato": "2026-10-31T22:21:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.8,
+   "punteggio": 28.6,
    "testate": 4
   },
   {
@@ -166,7 +286,7 @@
    "pubblicato": "2026-10-31T22:21:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 41.8,
+   "punteggio": 40.6,
    "testate": 4
   },
   {
@@ -178,7 +298,7 @@
    "pubblicato": "2026-10-31T22:19:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.8,
+   "punteggio": 7.6,
    "testate": 1
   },
   {
@@ -190,7 +310,7 @@
    "pubblicato": "2026-10-31T22:18:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 41.7,
+   "punteggio": 40.6,
    "testate": 4
   },
   {
@@ -202,7 +322,7 @@
    "pubblicato": "2026-10-31T22:10:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.7,
+   "punteggio": 12.6,
    "testate": 2
   },
   {
@@ -214,7 +334,7 @@
    "pubblicato": "2026-10-31T19:52:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.1,
+   "punteggio": 30.0,
    "testate": 3
   },
   {
@@ -226,7 +346,7 @@
    "pubblicato": "2026-10-31T18:45:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 30.9,
+   "punteggio": 29.7,
    "testate": 3
   },
   {
@@ -238,7 +358,7 @@
    "pubblicato": "2026-10-31T18:42:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.8,
+   "punteggio": 27.7,
    "testate": 4
   },
   {
@@ -250,7 +370,7 @@
    "pubblicato": "2026-10-31T18:41:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 30.8,
+   "punteggio": 29.7,
    "testate": 3
   },
   {
@@ -262,7 +382,7 @@
    "pubblicato": "2026-10-31T18:37:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.8,
+   "punteggio": 17.7,
    "testate": 3
   },
   {
@@ -274,7 +394,7 @@
    "pubblicato": "2026-10-31T18:30:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 30.8,
+   "punteggio": 29.7,
    "testate": 3
   },
   {
@@ -286,7 +406,7 @@
    "pubblicato": "2026-10-31T17:35:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.6,
+   "punteggio": 1.5,
    "testate": 1
   },
   {
@@ -298,7 +418,7 @@
    "pubblicato": "2026-10-31T17:15:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.5,
+   "punteggio": 1.4,
    "testate": 1
   },
   {
@@ -310,7 +430,7 @@
    "pubblicato": "2026-10-31T16:39:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 30.3,
+   "punteggio": 29.2,
    "testate": 3
   },
   {
@@ -322,7 +442,7 @@
    "pubblicato": "2026-10-31T16:25:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.3,
+   "punteggio": 1.2,
    "testate": 1
   },
   {
@@ -334,7 +454,7 @@
    "pubblicato": "2026-10-31T16:04:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.2,
+   "punteggio": 1.1,
    "testate": 1
   },
   {
@@ -346,7 +466,7 @@
    "pubblicato": "2026-10-31T16:01:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.2,
+   "punteggio": 21.1,
    "testate": 3
   },
   {
@@ -358,7 +478,7 @@
    "pubblicato": "2026-10-31T15:51:52+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.1,
+   "punteggio": 1.0,
    "testate": 1
   },
   {
@@ -370,7 +490,7 @@
    "pubblicato": "2026-10-31T15:45:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.1,
+   "punteggio": 6.0,
    "testate": 1
   },
   {
@@ -382,7 +502,7 @@
    "pubblicato": "2026-10-31T15:30:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.0,
+   "punteggio": 8.9,
    "testate": 1
   },
   {
@@ -394,7 +514,7 @@
    "pubblicato": "2026-10-31T15:15:53+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.0,
+   "punteggio": 0.9,
    "testate": 1
   },
   {
@@ -406,7 +526,7 @@
    "pubblicato": "2026-10-31T14:59:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.9,
+   "punteggio": 20.8,
    "testate": 3
   },
   {
@@ -418,7 +538,7 @@
    "pubblicato": "2026-10-31T14:59:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.9,
+   "punteggio": 20.8,
    "testate": 3
   },
   {
@@ -430,7 +550,7 @@
    "pubblicato": "2026-10-31T14:19:29+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 7.8,
+   "punteggio": 6.6,
    "testate": 1
   },
   {
@@ -442,7 +562,7 @@
    "pubblicato": "2026-10-31T14:00:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.7,
+   "punteggio": 25.6,
    "testate": 3
   },
   {
@@ -454,7 +574,7 @@
    "pubblicato": "2026-10-31T13:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.4,
+   "punteggio": 5.3,
    "testate": 1
   },
   {
@@ -466,7 +586,7 @@
    "pubblicato": "2026-10-31T12:15:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.2,
+   "punteggio": 0.1,
    "testate": 1
   },
   {
@@ -478,7 +598,7 @@
    "pubblicato": "2026-10-31T12:01:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.2,
+   "punteggio": 0.1,
    "testate": 1
   },
   {
@@ -490,7 +610,7 @@
    "pubblicato": "2026-10-31T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.2,
+   "punteggio": 13.1,
    "testate": 1
   },
   {
@@ -502,7 +622,7 @@
    "pubblicato": "2026-10-31T11:47:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.1,
+   "punteggio": 13.0,
    "testate": 1
   },
   {
@@ -514,7 +634,7 @@
    "pubblicato": "2026-10-31T11:33:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.1,
+   "punteggio": -0.1,
    "testate": 1
   },
   {
@@ -526,7 +646,7 @@
    "pubblicato": "2026-10-31T11:17:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.0,
+   "punteggio": 7.9,
    "testate": 1
   },
   {
@@ -538,7 +658,7 @@
    "pubblicato": "2026-10-31T11:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.9,
+   "punteggio": 4.8,
    "testate": 1
   },
   {
@@ -550,7 +670,7 @@
    "pubblicato": "2026-10-31T10:50:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.9,
+   "punteggio": -0.2,
    "testate": 1
   },
   {
@@ -562,7 +682,7 @@
    "pubblicato": "2026-10-31T10:32:09+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.8,
+   "punteggio": 17.7,
    "testate": 2
   },
   {
@@ -574,7 +694,7 @@
    "pubblicato": "2026-10-31T10:30:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.2,
+   "punteggio": -2.3,
    "testate": 2
   },
   {
@@ -586,7 +706,7 @@
    "pubblicato": "2026-10-31T10:00:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.7,
+   "punteggio": 12.6,
    "testate": 1
   },
   {
@@ -598,7 +718,7 @@
    "pubblicato": "2026-10-31T09:45:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.6,
+   "punteggio": 12.5,
    "testate": 1
   },
   {
@@ -610,7 +730,7 @@
    "pubblicato": "2026-10-31T09:30:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.6,
+   "punteggio": 22.4,
    "testate": 2
   },
   {
@@ -622,7 +742,7 @@
    "pubblicato": "2026-10-31T09:30:18+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.5,
+   "punteggio": -2.6,
    "testate": 2
   },
   {
@@ -634,7 +754,7 @@
    "pubblicato": "2026-10-31T09:28:20+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.5,
+   "punteggio": 24.4,
    "testate": 3
   },
   {
@@ -646,7 +766,7 @@
    "pubblicato": "2026-10-31T09:15:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.5,
+   "punteggio": 4.4,
    "testate": 1
   },
   {
@@ -658,7 +778,7 @@
    "pubblicato": "2026-10-31T09:10:48+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.5,
+   "punteggio": 4.4,
    "testate": 1
   },
   {
@@ -670,7 +790,7 @@
    "pubblicato": "2026-10-31T09:04:44+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.4,
+   "punteggio": 12.3,
    "testate": 1
   },
   {
@@ -682,8 +802,8 @@
    "pubblicato": "2026-10-31T09:02:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.4,
-   "testate": 4
+   "punteggio": 7.3,
+   "testate": 3
   },
   {
    "titolo": "Telemetria del venerdì del Messico: Ferrari ancora davanti, ma ci sarà da divertirsi",
@@ -694,7 +814,7 @@
    "pubblicato": "2026-10-31T08:40:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.3,
+   "punteggio": 17.2,
    "testate": 2
   },
   {
@@ -706,7 +826,7 @@
    "pubblicato": "2026-10-31T08:39:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.3,
+   "punteggio": 24.2,
    "testate": 3
   },
   {
@@ -718,8 +838,8 @@
    "pubblicato": "2026-10-31T08:39:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 30.3,
-   "testate": 4
+   "punteggio": 19.2,
+   "testate": 3
   },
   {
    "titolo": "Marquez stuzzica Aprilia: “Team order? Il paddock è piccolo. Ogura sapeva che se non stava davanti a me avrebbe perso il podio”",
@@ -730,7 +850,7 @@
    "pubblicato": "2026-10-31T08:32:28+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 6.3,
+   "punteggio": 5.2,
    "testate": 1
   },
   {
@@ -742,7 +862,7 @@
    "pubblicato": "2026-10-31T08:25:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.3,
+   "punteggio": 12.2,
    "testate": 1
   },
   {
@@ -754,7 +874,7 @@
    "pubblicato": "2026-10-31T08:20:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.3,
+   "punteggio": 22.1,
    "testate": 2
   },
   {
@@ -766,7 +886,7 @@
    "pubblicato": "2026-10-31T08:19:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 30.3,
+   "punteggio": 29.1,
    "testate": 4
   },
   {
@@ -778,7 +898,7 @@
    "pubblicato": "2026-10-31T08:06:04+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.2,
+   "punteggio": 12.1,
    "testate": 1
   },
   {
@@ -790,7 +910,7 @@
    "pubblicato": "2026-10-31T08:01:09+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.2,
+   "punteggio": 12.1,
    "testate": 1
   },
   {
@@ -802,7 +922,7 @@
    "pubblicato": "2026-10-31T08:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.2,
+   "punteggio": 22.1,
    "testate": 2
   },
   {
@@ -814,7 +934,7 @@
    "pubblicato": "2026-10-31T07:56:48+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.2,
+   "punteggio": 0.0,
    "testate": 1
   },
   {
@@ -826,7 +946,7 @@
    "pubblicato": "2026-10-31T07:55:32+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.2,
+   "punteggio": 24.0,
    "testate": 3
   },
   {
@@ -838,7 +958,7 @@
    "pubblicato": "2026-10-31T07:54:53+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.1,
+   "punteggio": 14.0,
    "testate": 2
   },
   {
@@ -850,7 +970,7 @@
    "pubblicato": "2026-10-31T07:49:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.1,
+   "punteggio": 27.0,
    "testate": 3
   },
   {
@@ -862,7 +982,7 @@
    "pubblicato": "2026-10-31T07:48:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.1,
+   "punteggio": 4.0,
    "testate": 1
   },
   {
@@ -874,20 +994,8 @@
    "pubblicato": "2026-10-31T07:43:35+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.1,
+   "punteggio": 27.0,
    "testate": 3
-  },
-  {
-   "titolo": "Hamilton: “Non è solo questione di turbo, anche qua perdiamo tanto da Mercedes e Red Bull”",
-   "estratto": "Problema al motore a metà FP2 per il campione inglese",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/hamilton-ferrari-non-e-solo-turbo-anche-qua-perdiamo-tanto-da-mercedes-e-red-bull",
-   "pubblicato": "2026-10-31T07:42:49+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 5.1,
-   "testate": 1
   },
   {
    "titolo": "Classifica Mondiale MotoGP 2026: Marquez sfrutta l’assenza di Martin e allunga anche su Bezzecchi",
@@ -898,7 +1006,7 @@
    "pubblicato": "2026-10-31T07:42:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.1,
+   "punteggio": 15.0,
    "testate": 3
   },
   {
@@ -910,7 +1018,7 @@
    "pubblicato": "2026-10-31T07:39:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.1,
+   "punteggio": 27.0,
    "testate": 3
   },
   {
@@ -922,7 +1030,7 @@
    "pubblicato": "2026-10-31T07:33:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.1,
+   "punteggio": 26.9,
    "testate": 3
   },
   {
@@ -934,7 +1042,7 @@
    "pubblicato": "2026-10-31T07:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.0,
+   "punteggio": 18.9,
    "testate": 3
   },
   {
@@ -946,32 +1054,8 @@
    "pubblicato": "2026-10-31T07:24:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.0,
+   "punteggio": 14.9,
    "testate": 3
-  },
-  {
-   "titolo": "Leclerc: “La prestazione sembra abbastanza buona, ma serve migliorare”",
-   "estratto": "Venerdì da leader per il pilota monegasco della Ferrari a Città del Messico",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/leclerc-la-prestazione-sembra-abbastanza-buona-ma-serve-migliorare-ferrari-messico",
-   "pubblicato": "2026-10-31T07:20:16+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 13.0,
-   "testate": 1
-  },
-  {
-   "titolo": "GP Città del Messico 2026: orari Sky/Now e TV8",
-   "estratto": "Domenica 1 novembre appuntamento alle 21:00 per il primo titolo mondiale di Andrea Kimi Antonelli",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-messico-2026-televisione-diretta-sky-differita-tv8-programmazione-dove-vederla-kimi-antonelli-due-punti-titolo-mondiale-ferrari-sf26-leclerc-hamilton",
-   "pubblicato": "2026-10-31T07:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 5.9,
-   "testate": 2
   },
   {
    "titolo": "GP Malesia 2026: la cronaca della Sprint",
@@ -982,7 +1066,7 @@
    "pubblicato": "2026-10-31T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.9,
+   "punteggio": 8.8,
    "testate": 2
   },
   {
@@ -994,7 +1078,7 @@
    "pubblicato": "2026-10-31T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.1,
+   "punteggio": -3.2,
    "testate": 2
   },
   {
@@ -1006,7 +1090,7 @@
    "pubblicato": "2026-10-31T06:59:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.9,
+   "punteggio": 3.8,
    "testate": 1
   },
   {
@@ -1018,7 +1102,7 @@
    "pubblicato": "2026-10-31T06:49:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.1,
+   "punteggio": -1.2,
    "testate": 1
   },
   {
@@ -1030,7 +1114,7 @@
    "pubblicato": "2026-10-31T06:20:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.8,
+   "punteggio": 8.6,
    "testate": 2
   },
   {
@@ -1042,7 +1126,7 @@
    "pubblicato": "2026-10-31T06:19:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.2,
+   "punteggio": -3.4,
    "testate": 2
   },
   {
@@ -1054,7 +1138,7 @@
    "pubblicato": "2026-10-31T06:11:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.3,
+   "punteggio": -13.4,
    "testate": 1
   },
   {
@@ -1066,20 +1150,8 @@
    "pubblicato": "2026-10-31T06:11:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.3,
+   "punteggio": -13.4,
    "testate": 1
-  },
-  {
-   "titolo": "Contatto nelle FP2: una posizione di penalità in griglia per Verstappen e Lawson",
-   "estratto": "Entrambi avevano già ricevuto un'ammonizione in passato",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/verstappen-paga-cara-follia-posizione-penalita-griglia-partenza-gp-messico-lawson-contatto-fp2",
-   "pubblicato": "2026-10-31T06:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 29.7,
-   "testate": 4
   },
   {
    "titolo": "GP Malesia 2026, griglia di partenza: Alex Marquez batte Marc, terzo Acosta",
@@ -1090,7 +1162,7 @@
    "pubblicato": "2026-10-31T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.7,
+   "punteggio": 6.6,
    "testate": 3
   },
   {
@@ -1102,7 +1174,7 @@
    "pubblicato": "2026-10-31T05:58:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.7,
+   "punteggio": 3.6,
    "testate": 1
   },
   {
@@ -1114,7 +1186,7 @@
    "pubblicato": "2026-10-31T05:57:34+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.7,
+   "punteggio": 18.5,
    "testate": 3
   },
   {
@@ -1126,7 +1198,7 @@
    "pubblicato": "2026-10-31T05:57:24+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.7,
+   "punteggio": 8.5,
    "testate": 2
   },
   {
@@ -1138,7 +1210,7 @@
    "pubblicato": "2026-10-31T05:56:54+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.7,
+   "punteggio": 14.5,
    "testate": 3
   },
   {
@@ -1150,7 +1222,7 @@
    "pubblicato": "2026-10-31T05:42:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.4,
+   "punteggio": -1.5,
    "testate": 1
   },
   {
@@ -1162,7 +1234,7 @@
    "pubblicato": "2026-10-31T05:10:54+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.5,
+   "punteggio": -3.6,
    "testate": 2
   },
   {
@@ -1174,7 +1246,7 @@
    "pubblicato": "2026-10-31T05:08:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.5,
+   "punteggio": 3.3,
    "testate": 1
   },
   {
@@ -1186,7 +1258,7 @@
    "pubblicato": "2026-10-31T05:00:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.4,
+   "punteggio": 16.3,
    "testate": 2
   },
   {
@@ -1198,7 +1270,7 @@
    "pubblicato": "2026-10-31T04:34:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.3,
+   "punteggio": 3.2,
    "testate": 1
   },
   {
@@ -1210,7 +1282,7 @@
    "pubblicato": "2026-10-31T03:56:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.2,
+   "punteggio": 23.0,
    "testate": 3
   },
   {
@@ -1222,7 +1294,7 @@
    "pubblicato": "2026-10-31T03:17:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.0,
+   "punteggio": 17.9,
    "testate": 3
   },
   {
@@ -1234,7 +1306,7 @@
    "pubblicato": "2026-10-31T03:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.9,
+   "punteggio": 7.8,
    "testate": 2
   },
   {
@@ -1246,7 +1318,7 @@
    "pubblicato": "2026-10-31T03:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.9,
+   "punteggio": 17.8,
    "testate": 3
   },
   {
@@ -1258,7 +1330,7 @@
    "pubblicato": "2026-10-31T01:50:31+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.6,
+   "punteggio": 2.5,
    "testate": 1
   },
   {
@@ -1270,7 +1342,7 @@
    "pubblicato": "2026-10-31T01:42:45+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.6,
+   "punteggio": 10.5,
    "testate": 1
   },
   {
@@ -1282,7 +1354,7 @@
    "pubblicato": "2026-10-31T00:55:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.4,
+   "punteggio": 10.3,
    "testate": 1
   },
   {
@@ -1294,7 +1366,7 @@
    "pubblicato": "2026-10-31T00:45:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.4,
+   "punteggio": 2.2,
    "testate": 1
   },
   {
@@ -1306,20 +1378,8 @@
    "pubblicato": "2026-10-30T23:35:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.1,
+   "punteggio": 12.0,
    "testate": 2
-  },
-  {
-   "titolo": "GP Città del Messico 2026 – Classifica FP2: Leclerc si conferma, Kimi 4°. Hamilton, motore ko",
-   "estratto": "La classifica della seconda sessione di prove libere in Messico: Leclerc comanda ancora, poi Norris e Russell. Le FP2 di Hamilton durano 30'",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-risultati/gp-citta-del-messico-2026-classifica-fp2-prove-libere-antonelli-ferrari-hamilton-motore-leclerc-verstappen-mclaren-norris",
-   "pubblicato": "2026-10-30T23:08:17+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 6.0,
-   "testate": 3
   },
   {
    "titolo": "F1 | Messico, Libere 2: la Ferrari si conferma con Leclerc, ma Hamilton si ferma. Quarto Antonelli",
@@ -1330,20 +1390,8 @@
    "pubblicato": "2026-10-30T23:03:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 35.9,
+   "punteggio": 34.8,
    "testate": 4
-  },
-  {
-   "titolo": "F1 GP Messico 2026, Città del Messico: la cronaca delle FP2, minuto per minuto",
-   "estratto": "La cronaca live minuto per minuto della seconda sessione di prove del fine settimana a Città del Messico",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-messico-2026-citta-del-messico-prove-libere-2-fp2-aggiornamenti-ferrari-leclerc-hamilton-antonelli",
-   "pubblicato": "2026-10-30T23:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -2.1,
-   "testate": 1
   },
   {
    "titolo": "F1 | Messico, Libere 1: Ferrari subito davanti con Leclerc. Seguono le Mercedes di Kimi e Vesti",
@@ -1354,7 +1402,7 @@
    "pubblicato": "2026-10-30T19:41:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.1,
+   "punteggio": 14.0,
    "testate": 2
   },
   {
@@ -1366,7 +1414,7 @@
    "pubblicato": "2026-10-30T15:07:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.0,
+   "punteggio": 7.8,
    "testate": 1
   },
   {
@@ -1378,7 +1426,7 @@
    "pubblicato": "2026-10-30T14:30:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.8,
+   "punteggio": 2.7,
    "testate": 1
   },
   {
@@ -1390,56 +1438,8 @@
    "pubblicato": "2026-10-30T14:11:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 28.7,
+   "punteggio": 27.6,
    "testate": 3
-  },
-  {
-   "titolo": "MotoGP | Bastianini: \"Una delle migliori giornate dell'anno, sogno sempre in grande!\"",
-   "estratto": "Le KTM sembrano in forma in quel di Sepang e il sorriso che appare sul volto di Enea Bastianini al termine della prima giornata di prove di MotoGP sul tracciato di Kuala Lumpur lo conferma. Il GP…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bastianini-una-delle-migliori-giornate-anno-sogno-sempre-in-grande/10869650/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-30T11:40:23+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 0.1,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Martin si ferma dopo 3 giri nel pomeriggio, Bonora: \"Deciso coi medici per preservare le sue energie\"",
-   "estratto": "Jorge Martin sapeva esattamente a cosa andavo incontro, ma la posta in palio era troppo importante per non provarci. Dopo aver ottenuto il \"fit\" per la FP1 nella giornata di ieri, il pilota…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-martin-si-ferma-dopo-3-giri-nel-pomeriggio-bonora-deciso-coi-medici-per-preservare-le-sue-en/10869644/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-30T11:18:35+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -0.0,
-   "testate": 1
-  },
-  {
-   "titolo": "Bezzecchi: “Buon venerdì, devo migliorare sul time-attack”",
-   "estratto": "Il pilota Aprilia ha commentato così il venerdì di Sepang",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/bezzecchi-gp-malesia-buon-venerdi-devo-lavorare-time-attack-aprilia",
-   "pubblicato": "2026-10-30T11:15:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 8.0,
-   "testate": 1
-  },
-  {
-   "titolo": "Bagnaia: “Perdo otto decimi in due settori, faccio fatica ad accettarlo dalla mia moto, non c’è modo di portare velocità in curva”",
-   "estratto": "Pecco non ha ottenuto l'accesso diretto alla Q2",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/bagnaia-contro-ducati-perdo-8-decimi-due-settori-inaccettabile-no-modo-portare-velocita-curva",
-   "pubblicato": "2026-10-30T11:10:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 8.0,
-   "testate": 1
   }
  ]
 }

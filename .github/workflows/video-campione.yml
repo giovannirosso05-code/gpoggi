@@ -1,0 +1,42 @@
+name: Video campione
+
+# Video «Antonelli campione del mondo»: si lancia a mano SOLO a titolo confermato. Copia in video/pronti.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: video-campione
+  cancel-in-progress: false
+
+jobs:
+  video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt edge-tts piper-tts kokoro-onnx soundfile azure-cognitiveservices-speech playwright
+      - run: python -m playwright install --with-deps chromium
+      - name: Installa ffmpeg
+        run: |
+          for i in 1 2 3; do timeout 150 sudo apt-get update -qq && timeout 200 sudo apt-get install -y -qq ffmpeg && break; sleep 5; done
+      - name: Prepara e invia il video
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID || '559225883' }}
+        run: |
+          mkdir -p video/pronti
+          python video/video_campione.py --invia --uscita "video/pronti/campione-$(date +%Y%m%d-%H%M).mp4"
+      - name: Tiene una copia del video nel repository (per riaverlo in chat)
+        run: |
+          git config user.name "gpoggi-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add video/pronti
+          git diff --cached --quiet || (git commit -m "video campione: copia" && git pull --rebase --autostash -X theirs origin main && git push)

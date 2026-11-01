@@ -3,6 +3,10 @@ name: Video stagione Antonelli
 # Video lungo sulla stagione di Antonelli (≈75 s). Si lancia a mano. Copia in video/pronti.
 on:
   workflow_dispatch:
+    inputs:
+      lingua:
+        description: 'it oppure en (versione inglese per il secondo account)'
+        default: 'it'
 
 permissions:
   contents: write
@@ -31,9 +35,10 @@ jobs:
           AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID || '559225883' }}
+          GPOGGI_LINGUA: ${{ github.event.inputs.lingua || 'it' }}
         run: |
           mkdir -p video/pronti
-          python video/video_stagione.py --invia --uscita "video/pronti/stagione-$(date +%Y%m%d-%H%M).mp4"
+          python video/video_stagione.py --invia --uscita "video/pronti/stagione-${GPOGGI_LINGUA}-$(date +%Y%m%d-%H%M).mp4"
       - name: Tiene una copia del video nel repository (per riaverlo in chat)
         run: |
           git config user.name "gpoggi-bot"

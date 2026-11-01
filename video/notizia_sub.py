@@ -23,7 +23,14 @@ if os.path.exists("/root/.ccr/ca-bundle.crt"):
     C._SSL_CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
 QUI = Path(__file__).parent; SITO = QUI.parent / "docs"; DATA = SITO / "data"; FONT = QUI / "logo" / "font"
 W, H = 1080, 1920
-VOCE = "it-IT-DiegoNeural"
+# Lingua del video: GPOGGI_LINGUA=en per la versione inglese (secondo account). Stesse grafiche, voce e scritte fisse in inglese.
+EN = os.environ.get("GPOGGI_LINGUA", "it") == "en"
+VOCE = "en-US-GuyNeural" if EN else "it-IT-DiegoNeural"
+LANG = "en-US" if EN else "it-IT"
+T = ({"foto": "Photo", "fonte": "Source", "commenti": "Tell us in the comments", "segui": "*Follow* for more content like this.",
+      "avviso": "Unofficial site, not affiliated with Formula 1, the FIA, MotoGP, Dorna or any team."} if EN else
+     {"foto": "Foto", "fonte": "Fonte", "commenti": "Dimmi la tua nei commenti", "segui": "*Seguici* per altri contenuti come questo.",
+      "avviso": "Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team. Eventuali voti: a scopo divertente, senza offendere nessuno"})
 GIALLO = "#ffd21f"
 b64 = lambda p: base64.b64encode(Path(p).read_bytes()).decode()
 esc = html.escape
@@ -46,7 +53,7 @@ def trova_foto(nome, alt=None):
     raise SystemExit(f"Nessuna foto libera per {nome}")
 
 
-def foto_da_url(url, credito="Foto: ESPN"):
+def foto_da_url(url, credito=f"{T['foto']}: ESPN"):
     """Foto orizzontale scaricata al momento (mai nel repository) e portata a 1080x1920: sfondo sfocato e la foto a tutta larghezza al centro.
     Serve per mostrare macchine e circuiti; la scena ha "foto_url" e il credito scritto nel video."""
     import hashlib, requests
@@ -82,6 +89,8 @@ PRONUNCIA = {"Vettel": "Fettel", "Russell": "Rassel", "Leclerc": "Leclèr", "Law
 
 
 def pronuncia(parola):
+    if EN:
+        return parola
     nuda = parola.strip(".,:;!?'\"…")
     return parola.replace(nuda, PRONUNCIA[nuda]) if nuda in PRONUNCIA else parola
 
@@ -107,7 +116,7 @@ def token(testo):
     return res
 
 
-VOCE_PIPER = "it_IT-riccardo-x_low"   # voce di riserva (maschile, gira sul computer, senza internet) se Microsoft rifiuta la connessione
+VOCE_PIPER = "en_US-ryan-low" if EN else "it_IT-riccardo-x_low"   # voce di riserva (maschile, gira sul computer, senza internet) se Microsoft rifiuta la connessione
 
 
 def _tempi_stimati(testo, uscita):
@@ -134,7 +143,7 @@ def voce_azure(testo, velocita, uscita, grido=False):
     parole = []
     sint.synthesis_word_boundary.connect(lambda e: parole.append((e.text, e.audio_offset / 1e7, e.audio_offset / 1e7 + e.duration.total_seconds())))
     rate, vol = ("+55%", "+100%") if grido else (velocita, "+0%")
-    ssml = (f'<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="it-IT"><voice name="{VOCE}">'
+    ssml = (f'<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="{LANG}"><voice name="{VOCE}">'
             f'<prosody rate="{rate}" volume="{vol}">{esc(testo)}</prosody></voice></speak>')
     r = sint.speak_ssml_async(ssml).get()
     if r.reason != sdk.ResultReason.SynthesizingAudioCompleted:
@@ -154,7 +163,7 @@ def voce_kokoro(testo, velocita, uscita, grido=False):
             urllib.request.urlretrieve(f"https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/{nome}", cart / nome)
     k = Kokoro(str(cart / "kokoro-v1.0.int8.onnx"), str(cart / "voices-v1.0.bin"))
     pct = 55 if grido else int(re.sub(r"[^\d-]", "", str(velocita)) or 0)
-    campioni, sr = k.create(testo, voice="im_nicola", speed=min(2.0, 1 + pct / 100), lang="it")
+    campioni, sr = k.create(testo, voice="am_michael" if EN else "im_nicola", speed=min(2.0, 1 + pct / 100), lang="en-us" if EN else "it")
     wav = Path(uscita).with_suffix(".wav")
     sf.write(str(wav), campioni, sr)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(wav), "-ar", "24000", str(uscita)], check=True)
@@ -170,7 +179,7 @@ def voce_piper(testo, velocita, uscita, grido=False):
     for est in ("onnx", "onnx.json"):
         f = cart / f"{VOCE_PIPER}.{est}"
         if not f.exists():
-            urllib.request.urlretrieve(f"https://huggingface.co/rhasspy/piper-voices/resolve/main/it/it_IT/riccardo/x_low/{VOCE_PIPER}.{est}", f)
+            urllib.request.urlretrieve(f"https://huggingface.co/rhasspy/piper-voices/resolve/main/{"en/en_US/ryan/low" if EN else "it/it_IT/riccardo/x_low"}/{VOCE_PIPER}.{est}", f)
     v = PiperVoice.load(str(cart / f"{VOCE_PIPER}.onnx"))
     pct = 55 if grido else int(re.sub(r"[^\d-]", "", str(velocita)) or 0)
     wav = Path(uscita).with_suffix(".wav")
@@ -287,7 +296,7 @@ def prepara_scena(sc):
             aut = re.sub(r"Original:\s*", "", f["autore"])
             autori.append(f"{aut} ({f['licenza']})")
         pd["pronto"] = True
-        pd["credito"] = "Foto: " + " · ".join(dict.fromkeys(autori)) + (" · Wikimedia Commons" if any(r.get("file") is None for r in pd["righe"]) else "")
+        pd["credito"] = f"{T['foto']}: " + " · ".join(dict.fromkeys(autori)) + (" · Wikimedia Commons" if any(r.get("file") is None for r in pd["righe"]) else "")
     if pd:
         cred = pd["credito"]
     return cred
@@ -353,8 +362,8 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
 .q{{margin:70px 100px 0;font:700 80px/1.08 Oswald;text-transform:uppercase;-webkit-text-stroke:2px #000;paint-order:stroke fill}}
 .cm{{margin:34px 100px 0;font:600 50px/1.1 Oswald;text-transform:uppercase;color:{GIALLO};letter-spacing:.03em}}
 .u{{margin-top:50px;font:700 56px Oswald;color:{nom};letter-spacing:.04em}} .n{{position:absolute;left:60px;right:60px;bottom:90px;text-align:center;font:500 22px Inter;color:rgba(255,255,255,.7)}}
-</style><div class=bg></div><div class=prog></div><div class=c><img src="data:image/png;base64,{logo}"><div class=q>{esc(finale)}</div><div class=cm>Dimmi la tua nei commenti</div><div class=u>gpoggi.it</div></div>
-<div class=n>Fonte: {esc(spec['fonte'])} · Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team. Eventuali voti: a scopo divertente, senza offendere nessuno</div>""")
+</style><div class=bg></div><div class=prog></div><div class=c><img src="data:image/png;base64,{logo}"><div class=q>{esc(finale)}</div><div class=cm>{T["commenti"]}</div><div class=u>gpoggi.it</div></div>
+<div class=n>{T["fonte"]}: {esc(spec['fonte'])} · {T["avviso"]}</div>""")
     etichetta = esc(spec.get("etichetta", "Ultim'ora"))
     corpo = f'<img class=logo src="data:image/png;base64,{logo}"><div class=tag>{etichetta}</div>'
     if hook:
@@ -366,7 +375,7 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
         if nome and scena.get("nome"):
             corpo += f'<div class=nome>{esc(scena["nome"])}</div>'
         if scena.get("fonte_alto"):
-            corpo += f'<div class=fonte-alto>Fonte: {esc(scena["fonte_alto"])}</div>'
+            corpo += f'<div class=fonte-alto>{T["fonte"]}: {esc(scena["fonte_alto"])}</div>'
         if sub:
             corpo += '<div class=sub>' + " ".join(f'<span class="{fl}">{esc(w)}</span>' for w, fl in sub) + '</div>'
     if scena.get("classifica"):
@@ -375,7 +384,7 @@ def pagina(spec, scena, foto_b64, credito, avanzamento, sub=None, nome=False, ho
             f'<div class=r>{"<span class=p>" + str(r["pos"]) + "</span>" if r["pos"] != "" else ""}<span class=b style="background:#{r["colore"]}"></span><span class=n>{esc(r["nome"])}</span>'
             f'<span class=pt>{r.get("voto", r.get("punti"))}</span><span class="d{"" if r.get("piu", 1) else " z"}">{esc(r["nota"]) if r.get("nota") else "+" + str(r["piu"])}</span></div>' for r in c["righe"]) + '</div>'
     if scena.get("chips"):
-        corpo += '<div class=chips2>' + "".join(f'<div class="c2 {k}"><b>{ {"si": "SÌ", "no": "NO", "info": "•"}.get(k, "•") }</b><span>{esc(t)}</span></div>' for k, t in scena["chips"]) + '</div>'
+        corpo += '<div class=chips2>' + "".join(f'<div class="c2 {k}"><b>{ {"si": "YES" if EN else "SÌ", "no": "NO", "info": "•"}.get(k, "•") }</b><span>{esc(t)}</span></div>' for k, t in scena["chips"]) + '</div>'
     if scena.get("podio"):
         pd = scena["podio"]
         medaglie = {1: "#f5c518", 2: "#cfd3da", 3: "#d58a4a"}
@@ -406,15 +415,15 @@ async def genera(spec, uscita):
         finale = spec["finale"]
         for sc in scene + [finale]:
             if sc.get("foto_url"):
-                sc["foto_file"], sc["credito"] = foto_da_url(sc["foto_url"], sc.get("credito", "Foto: ESPN"))
+                sc["foto_file"], sc["credito"] = foto_da_url(sc["foto_url"], sc.get("credito", f"{T['foto']}: ESPN"))
                 sc.setdefault("foto", "ESPN")
         # subito dopo il gancio (la fine del video non la ascolta nessuno): invito a seguire il canale; "segui": false nella scaletta lo toglie
-        if spec.get("segui", True) and scene and scene[0].get("hook") and not any("Seguici" in x.get("testo", "") for x in scene):
+        if spec.get("segui", True) and scene and scene[0].get("hook") and not any(("Seguici" in x.get("testo", "") or "*Follow*" in x.get("testo", "")) for x in scene):
             scene.insert(1, {**{k: v for k, v in scene[0].items() if k in ("foto", "alt", "pista", "volto_alt", "foto_file", "credito", "pos")},
-                             "testo": "*Seguici* per altri contenuti come questo.", "velocita": "+20%"})
+                             "testo": T["segui"], "velocita": "+20%"})
         # audio e tempi
         t = 0.0; lavoro = []
-        for i, s in enumerate(scene + [dict(finale, testo=finale["domanda"] + " Dimmi la tua nei commenti.", finale=True)]):
+        for i, s in enumerate(scene + [dict(finale, testo=finale["domanda"] + " " + T["commenti"] + ".", finale=True)]):
             tok = token(s["testo"]); parlato = " ".join(pronuncia(w) for w, _ in tok)
             mp3 = tmp / f"v{i}.mp3"
             tempi = await voce(parlato, s.get("velocita", vel), mp3, grido=bool(s.get("grido")))
@@ -444,7 +453,7 @@ async def genera(spec, uscita):
                 # immagine già pronta 1080x1920 (per esempio da ritratti_espn.py) con il suo credito
                 fotos[chiave] = (b64(s["s"]["foto_file"]), s["s"].get("credito", ""))
             elif chiave not in fotos:
-                f = trova_foto(nome, s["s"].get("alt")); autore = re.sub(r"Original:\s*", "", f["autore"]); fotos[chiave] = (b64(file_foto(f)), f"Foto: {autore} · {f['licenza']} · Wikimedia Commons")
+                f = trova_foto(nome, s["s"].get("alt")); autore = re.sub(r"Original:\s*", "", f["autore"]); fotos[chiave] = (b64(file_foto(f)), f"{T['foto']}: {autore} · {f['licenza']} · Wikimedia Commons")
         # fotogrammi
         quadri = []   # (png, inizio, fine)
         async with async_playwright() as p:

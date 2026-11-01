@@ -1,7 +1,7 @@
 """Video «Antonelli campione del mondo»: pronto in anticipo, si lancia SOLO a titolo confermato (workflow «Video campione»).
 Graﬁche: bandiera italiana, raggi, coriandoli, trofeo del campionato (Commons CC BY-SA); ritratto ESPN. Nessun dato di gara: solo fatti che valgono se il titolo arriva a Città del Messico.
 Uso:  python3 video_campione.py [--invia] [--uscita FILE]"""
-import argparse, asyncio, sys
+import argparse, asyncio, os, sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -10,8 +10,11 @@ import notizia_sub as NS  # noqa: E402
 import notizie_giorno as NG  # noqa: E402
 import ritratti_espn as R  # noqa: E402
 
+EN = os.environ.get("GPOGGI_LINGUA", "it") == "en"   # versione inglese per il secondo account (stesso script, voce e scritte in inglese)
+_ = lambda it, en: en if EN else it
+FOTO = _("Foto", "Photo")
 TR = B.QUI / "extra" / "trofeo-f1.jpg"
-CRED = "Foto: ESPN · Trofeo: Raimond Spekking (CC BY-SA 4.0), Wikimedia Commons"
+CRED = f"{FOTO}: ESPN · " + _("Trofeo", "Trophy") + ": Raimond Spekking (CC BY-SA 4.0), Wikimedia Commons"
 
 
 def costruisci():
@@ -24,17 +27,34 @@ def costruisci():
     f3 = comp("camp_v3.jpg", trofeo=None, larghezza=1300, px=-110, alza=0, conf=True, luce=True)
     esp = lambda p: f"https://a.espncdn.com/photo/2026/{p}_1296x729_16-9.jpg"   # foto ESPN di questa stagione (scaricate al momento in video/_cache/, mai nel repository)
     sc = [
-        {"foto": "Kimi Antonelli", "hook": True, "hook_titolo": "Antonelli campione del mondo!", "testo": "*Antonelli* è *campione del mondo*!", "foto_file": f0, "credito": CRED},
-        {"foto": "Kimi Antonelli", "testo": "A *vent'anni* è il più giovane di sempre: il record era di *Vettel*, a ventitré.", "foto_url": esp("0805/r1697948"), "credito": "Foto: ESPN (Monaco 2026)"},
-        {"foto": "Kimi Antonelli", "testo": "Tutto è cominciato in *Cina*: prima pole e prima vittoria, la prima di un italiano in vent'anni.", "foto_file": f3, "credito": "Foto: ESPN", "fonte_alto": "Il Post"},
-        {"foto": "Kimi Antonelli", "testo": "A *Monza* ha vinto partendo dal *diciannovesimo* posto: a casa, un italiano non vinceva dal *millenovecentosessantasei*.", "foto_file": f2, "credito": "Foto: ESPN", "fonte_alto": "Sky Sport, ESPN"},
-        {"foto": "Kimi Antonelli", "testo": "Nove vittorie in diciotto gare, e un italiano sul tetto del mondo *settantatré anni* dopo *Ascari*.", "foto_url": esp("1026/r1736290"), "credito": "Foto: ESPN (Austin 2026)"},
-        {"foto": "Kimi Antonelli", "testo": "Ha chiuso il conto a *Città del Messico*, con quattro gare d'anticipo.", "foto_url": esp("1025/r1736157"), "credito": "Foto: ESPN (Austin 2026)"},
+        {"foto": "Kimi Antonelli", "hook": True, "hook_titolo": _("Antonelli campione del mondo!", "Antonelli is world champion!"), "testo": _("*Antonelli* è *campione del mondo*!", "*Antonelli* is *world champion*!"), "foto_file": f0, "credito": CRED},
+        {"foto": "Kimi Antonelli", "testo": _("A *vent'anni* è il più giovane di sempre: il record era di *Vettel*, a ventitré.", "At *twenty* he's the youngest champion ever: the record was *Vettel's*, at twenty-three."), "foto_url": esp("0805/r1697948"), "credito": f"{FOTO}: ESPN (Monaco 2026)"},
+        {"foto": "Kimi Antonelli", "testo": _("Tutto è cominciato in *Cina*: prima pole e prima vittoria, la prima di un italiano in vent'anni.", "It all began in *China*: first pole and first win, the first for an Italian in twenty years."), "foto_file": f3, "credito": f"{FOTO}: ESPN", "fonte_alto": "Il Post"},
+        {"foto": "Kimi Antonelli", "testo": _("A *Monza* ha vinto partendo dal *diciannovesimo* posto: a casa, un italiano non vinceva dal *millenovecentosessantasei*.", "At *Monza* he won starting *nineteenth*: no Italian had won the home race since *nineteen sixty-six*."), "foto_file": f2, "credito": f"{FOTO}: ESPN", "fonte_alto": "Sky Sport, ESPN"},
+        {"foto": "Kimi Antonelli", "testo": _("Nove vittorie in diciotto gare, e un italiano sul tetto del mondo *settantatré anni* dopo *Ascari*.", "Nine wins in eighteen races, and an Italian on top of the world *seventy-three years* after *Ascari*."), "foto_url": esp("1026/r1736290"), "credito": f"{FOTO}: ESPN (Austin 2026)", "pausa": 0.2},
+        {"foto": "Kimi Antonelli", "testo": _("Ha chiuso il conto a *Città del Messico*, con quattro gare d'anticipo.", "He clinched it in *Mexico City*, with four races to spare."), "foto_url": esp("1025/r1736157"), "credito": f"{FOTO}: ESPN (Austin 2026)"},
     ]
-    spec = {"serie": "F1", "titolo_breve": "Antonelli campione", "etichetta": "Campione del mondo", "fonte": "GP Oggi", "velocita": "+38%", "segui": False, "scene": sc,
-            "finale": {"foto": "Kimi Antonelli", "domanda": "Qual è il momento che ricorderai di questa stagione?"}}
-    social = ("🏆🇮🇹 ANTONELLI CAMPIONE DEL MONDO! 🇮🇹🏆\n\nA 20 anni Kimi diventa il più giovane campione della storia della F1 (il record era di Vettel, a 23) e il primo italiano a vincere il Mondiale dopo Alberto Ascari, nel 1953. Dalla prima vittoria in Cina a Monza, vinta partendo dal 19° posto, fino al titolo a Città del Messico con quattro gare d'anticipo.\n\n"
-              "Qual è il momento che ricorderai di questa stagione? Dimmi la tua nei commenti 👇\n\nFonti: Il Post, Sky Sport, ESPN.\n🔗 gpoggi.it\n\n#gpoggi #f1 #antonelli #campione #formula1")
+    spec = {"serie": "F1", "titolo_breve": _("Antonelli campione", "Antonelli champion"), "etichetta": _("Campione del mondo", "World champion"), "fonte": "GP Oggi", "velocita": "+38%", "segui": False, "scene": sc,
+            "finale": {"foto": "Kimi Antonelli", "domanda": _("Qual è il momento che ricorderai di questa stagione?", "Which moment of this season will you remember?")}}
+    social = (_("""🏆🇮🇹 ANTONELLI CAMPIONE DEL MONDO! 🇮🇹🏆
+
+A 20 anni Kimi diventa il più giovane campione della storia della F1 (il record era di Vettel, a 23) e il primo italiano a vincere il Mondiale dopo Alberto Ascari, nel 1953. Dalla prima vittoria in Cina a Monza, vinta partendo dal 19° posto, fino al titolo a Città del Messico con quattro gare d'anticipo.
+
+Qual è il momento che ricorderai di questa stagione? Dimmi la tua nei commenti 👇
+
+Fonti: Il Post, Sky Sport, ESPN.
+🔗 gpoggi.it
+
+#gpoggi #f1 #antonelli #campione #formula1""", """🏆🇮🇹 ANTONELLI IS WORLD CHAMPION! 🇮🇹🏆
+
+At 20, Kimi becomes the youngest champion in F1 history (the record was Vettel's, at 23) and the first Italian to win the title since Alberto Ascari in 1953. From his first win in China to Monza, won from 19th on the grid, to the title in Mexico City with four races to spare.
+
+Which moment of this season will you remember? Tell us in the comments 👇
+
+Sources: Il Post, Sky Sport, ESPN.
+🔗 gpoggi.it
+
+#gpoggi #f1 #antonelli #worldchampion #formula1"""))
     return spec, social
 
 
@@ -69,7 +89,7 @@ def main():
     spec, social = costruisci()
     asyncio.run(NS.genera(spec, a.uscita))
     if a.invia:
-        NG.telegram(a.uscita, "🏆 Antonelli campione del mondo", social)
+        NG.telegram(a.uscita, _("🏆 Antonelli campione del mondo", "🏆 Antonelli world champion (EN)"), social)
 
 
 if __name__ == "__main__":

@@ -11,7 +11,7 @@ sys.path.insert(0, str(QUI))
 W, H = 1080, 1920
 
 
-def bandiera(w=W, h=H):
+def bandiera(w=W, h=H, velo=True):
     """Tre bande verticali (verde, bianco, rosso) con onde e ombre, poi scurita in basso e in alto perché il testo si legga."""
     x = np.arange(w)[None, :].astype(float)
     y = np.arange(h)[:, None].astype(float)
@@ -26,7 +26,8 @@ def bandiera(w=W, h=H):
     img = np.clip(img * luce[..., None], 0, 255)
     # velo scuro: più forte in alto (zona del logo) e in basso (titoli), centro libero
     v = 0.78 * np.clip((y - 1150) / 770, 0, 1) ** 1.2 + 0.55 * np.clip((380 - y) / 380, 0, 1) + 0.18
-    img = img * (1 - np.clip(v, 0, 0.9))[..., None]
+    if velo:
+        img = img * (1 - np.clip(v, 0, 0.9))[..., None]
     return Image.fromarray(img.astype("uint8"))
 
 

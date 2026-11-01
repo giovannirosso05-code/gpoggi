@@ -1,17 +1,41 @@
 {
- "generato_il": "2026-11-01T21:15:35+00:00",
+ "generato_il": "2026-11-01T21:34:35+00:00",
  "articoli": [
   {
-   "titolo": "LIVE F1, GP Messico 2026 in DIRETTA: cambia tutto! Bandiera rossa, gara riaperta",
-   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE COSA DEVE FARE ANTONELLI PER VINCERE IL MONDIALE OGGI 22.14 Il team-radio minaccioso di Hamilton: “Abbiamo grossi problemi…“. 📻 “We’ve got big problems…”…",
+   "titolo": "LIVE F1, GP Messico 2026 in DIRETTA: definito il nuovo orario per la ripartenza. Leclerc ci crede!",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE COSA DEVE FARE ANTONELLI PER VINCERE IL MONDIALE OGGI 22.33 Definito il nuovo orario. Si riparte alle 22.45! 22.32 Siamo già a quasi mezz’ora di…",
    "fonte": "OA Sport",
    "serie": "F1",
    "url": "https://www.oasport.it/2026/11/live-f1-gp-messico-2026-in-diretta-kimi-antonelli-per-la-leggenda-ferrari-per-il-successo/",
-   "pubblicato": "2026-11-01T21:06:56+00:00",
+   "pubblicato": "2026-11-01T21:32:56+00:00",
    "tipo": null,
    "citazione": false,
    "punteggio": 22.0,
    "testate": 2
+  },
+  {
+   "titolo": "Perché è stata interrotta la gara di F1 in Messico: la classifica al momento della bandiera rossa",
+   "estratto": "Il GP del Messico è stato interrotto nel corso del 46mo giro sui 71 previsti. I commissari di gara hanno deciso di esporre la bandiera rossa in seguito all’incidente occorso una tornata prima a…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/perche-e-stata-interrotta-la-gara-di-f1-in-messico-la-classifica-al-momento-della-bandiera-rossa/",
+   "pubblicato": "2026-11-01T21:26:05+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -8.0,
+   "testate": 1
+  },
+  {
+   "titolo": "Hamilton contro i soli 5 secondi inflitti a Leclerc: “I Commissari gli stanno regalando la vittoria”",
+   "estratto": "Il sette volte iridato non ha gradito la scelta della Direzione Gara",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/penalita-leclerc-cinque-secondi-hamilton-stanno-regalando-vittoria-leclerc-ferrari-gp-messico",
+   "pubblicato": "2026-11-01T20:45:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.8,
+   "testate": 1
   },
   {
    "titolo": "Leclerc-Hamilton rischiano l’incidente! Le Ferrari erano prima e seconda in Messico: penalità pesante – VIDEO",
@@ -22,7 +46,7 @@
    "pubblicato": "2026-11-01T20:25:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.8,
+   "punteggio": 31.7,
    "testate": 3
   },
   {
@@ -34,11 +58,11 @@
    "pubblicato": "2026-11-01T20:25:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.8,
+   "punteggio": 21.7,
    "testate": 2
   },
   {
-   "titolo": "F1 GP Messico 2026, gara: Leclerc 1° ma penalizzato, Verstappen passa Hamilton – DIRETTA",
+   "titolo": "F1 GP Messico 2026, gara: Verstappen leader su Leclerc e Hamilton, polemica in casa Ferrari – DIRETTA",
    "estratto": "La cronaca live minuto per minuto della gara a Città del Messico, 19° appuntamento del Mondiale 2026 di Formula 1",
    "fonte": "FormulaPassion",
    "serie": "F1",
@@ -46,7 +70,7 @@
    "pubblicato": "2026-11-01T19:45:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 33.6,
+   "punteggio": 41.5,
    "testate": 4
   },
   {
@@ -58,7 +82,7 @@
    "pubblicato": "2026-11-01T18:47:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.4,
+   "punteggio": 3.3,
    "testate": 1
   },
   {
@@ -70,7 +94,7 @@
    "pubblicato": "2026-11-01T18:30:12+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 41.3,
+   "punteggio": 41.2,
    "testate": 4
   },
   {
@@ -82,7 +106,7 @@
    "pubblicato": "2026-11-01T17:10:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.0,
+   "punteggio": 10.9,
    "testate": 1
   },
   {
@@ -94,7 +118,7 @@
    "pubblicato": "2026-11-01T16:51:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.9,
+   "punteggio": 2.8,
    "testate": 1
   },
   {
@@ -106,7 +130,7 @@
    "pubblicato": "2026-11-01T16:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.8,
+   "punteggio": 15.7,
    "testate": 1
   },
   {
@@ -118,7 +142,7 @@
    "pubblicato": "2026-11-01T16:25:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.8,
+   "punteggio": 2.7,
    "testate": 1
   },
   {
@@ -130,7 +154,7 @@
    "pubblicato": "2026-11-01T16:06:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 35.7,
+   "punteggio": 35.6,
    "testate": 3
   },
   {
@@ -142,7 +166,7 @@
    "pubblicato": "2026-11-01T15:30:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.4,
+   "punteggio": -9.5,
    "testate": 1
   },
   {
@@ -154,7 +178,7 @@
    "pubblicato": "2026-11-01T15:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.6,
+   "punteggio": 25.5,
    "testate": 2
   },
   {
@@ -166,7 +190,7 @@
    "pubblicato": "2026-11-01T15:20:40+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.5,
+   "punteggio": 12.4,
    "testate": 2
   },
   {
@@ -178,7 +202,7 @@
    "pubblicato": "2026-11-01T14:34:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.3,
+   "punteggio": 7.2,
    "testate": 1
   },
   {
@@ -190,7 +214,7 @@
    "pubblicato": "2026-11-01T14:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.3,
+   "punteggio": 15.2,
    "testate": 1
   },
   {
@@ -202,7 +226,7 @@
    "pubblicato": "2026-11-01T14:06:21+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.2,
+   "punteggio": 15.1,
    "testate": 1
   },
   {
@@ -214,7 +238,7 @@
    "pubblicato": "2026-11-01T14:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.2,
+   "punteggio": 7.1,
    "testate": 1
   },
   {
@@ -226,7 +250,7 @@
    "pubblicato": "2026-11-01T13:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.1,
+   "punteggio": 7.0,
    "testate": 1
   },
   {
@@ -238,7 +262,7 @@
    "pubblicato": "2026-11-01T13:05:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.0,
+   "punteggio": 19.9,
    "testate": 2
   },
   {
@@ -250,7 +274,7 @@
    "pubblicato": "2026-11-01T12:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.8,
+   "punteggio": 6.7,
    "testate": 1
   },
   {
@@ -262,7 +286,7 @@
    "pubblicato": "2026-11-01T12:24:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.8,
+   "punteggio": 21.7,
    "testate": 3
   },
   {
@@ -274,7 +298,7 @@
    "pubblicato": "2026-11-01T12:20:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.8,
+   "punteggio": 24.7,
    "testate": 2
   },
   {
@@ -286,7 +310,7 @@
    "pubblicato": "2026-11-01T11:33:09+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.6,
+   "punteggio": 16.5,
    "testate": 2
   },
   {
@@ -298,7 +322,7 @@
    "pubblicato": "2026-11-01T11:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.6,
+   "punteggio": 14.5,
    "testate": 1
   },
   {
@@ -322,7 +346,7 @@
    "pubblicato": "2026-11-01T11:05:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.5,
+   "punteggio": 11.4,
    "testate": 2
   },
   {
@@ -334,7 +358,7 @@
    "pubblicato": "2026-11-01T11:04:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.5,
+   "punteggio": 26.4,
    "testate": 3
   },
   {
@@ -346,7 +370,7 @@
    "pubblicato": "2026-11-01T10:53:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.6,
+   "punteggio": -0.7,
    "testate": 2
   },
   {
@@ -358,7 +382,7 @@
    "pubblicato": "2026-11-01T10:52:43+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.4,
+   "punteggio": 26.3,
    "testate": 3
   },
   {
@@ -370,7 +394,7 @@
    "pubblicato": "2026-11-01T10:47:45+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.4,
+   "punteggio": 6.3,
    "testate": 1
   },
   {
@@ -394,7 +418,7 @@
    "pubblicato": "2026-11-01T10:33:54+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.3,
+   "punteggio": 9.2,
    "testate": 1
   },
   {
@@ -406,7 +430,7 @@
    "pubblicato": "2026-11-01T10:32:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.3,
+   "punteggio": 14.2,
    "testate": 1
   },
   {
@@ -418,7 +442,7 @@
    "pubblicato": "2026-11-01T10:30:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.3,
+   "punteggio": 6.2,
    "testate": 1
   },
   {
@@ -430,7 +454,7 @@
    "pubblicato": "2026-11-01T10:28:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.3,
+   "punteggio": 19.2,
    "testate": 2
   },
   {
@@ -442,7 +466,7 @@
    "pubblicato": "2026-11-01T10:16:03+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.3,
+   "punteggio": 26.2,
    "testate": 3
   },
   {
@@ -454,7 +478,7 @@
    "pubblicato": "2026-11-01T10:00:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.2,
+   "punteggio": 11.1,
    "testate": 2
   },
   {
@@ -478,7 +502,7 @@
    "pubblicato": "2026-11-01T09:39:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.1,
+   "punteggio": 14.0,
    "testate": 1
   },
   {
@@ -490,7 +514,7 @@
    "pubblicato": "2026-11-01T09:30:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 34.1,
+   "punteggio": 34.0,
    "testate": 3
   },
   {
@@ -502,7 +526,7 @@
    "pubblicato": "2026-11-01T09:30:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.1,
+   "punteggio": 7.0,
    "testate": 2
   },
   {
@@ -514,7 +538,7 @@
    "pubblicato": "2026-11-01T09:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.1,
+   "punteggio": 14.0,
    "testate": 1
   },
   {
@@ -538,7 +562,7 @@
    "pubblicato": "2026-11-01T09:22:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.0,
+   "punteggio": 18.9,
    "testate": 2
   },
   {
@@ -550,7 +574,7 @@
    "pubblicato": "2026-11-01T09:17:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 39.0,
+   "punteggio": 38.9,
    "testate": 4
   },
   {
@@ -562,7 +586,7 @@
    "pubblicato": "2026-11-01T09:11:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.0,
+   "punteggio": 15.9,
    "testate": 2
   },
   {
@@ -574,7 +598,7 @@
    "pubblicato": "2026-11-01T09:10:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.0,
+   "punteggio": 25.9,
    "testate": 3
   },
   {
@@ -610,7 +634,7 @@
    "pubblicato": "2026-11-01T08:42:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.9,
+   "punteggio": 15.8,
    "testate": 2
   },
   {
@@ -646,7 +670,7 @@
    "pubblicato": "2026-11-01T08:32:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.8,
+   "punteggio": 23.7,
    "testate": 2
   },
   {
@@ -658,7 +682,7 @@
    "pubblicato": "2026-11-01T08:29:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.8,
+   "punteggio": 10.7,
    "testate": 2
   },
   {
@@ -670,7 +694,7 @@
    "pubblicato": "2026-11-01T08:26:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.8,
+   "punteggio": 25.7,
    "testate": 3
   },
   {
@@ -682,7 +706,7 @@
    "pubblicato": "2026-11-01T08:25:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.8,
+   "punteggio": 5.7,
    "testate": 1
   },
   {
@@ -706,7 +730,7 @@
    "pubblicato": "2026-11-01T08:08:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.7,
+   "punteggio": 23.6,
    "testate": 2
   },
   {
@@ -718,7 +742,7 @@
    "pubblicato": "2026-11-01T08:05:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.7,
+   "punteggio": 28.6,
    "testate": 3
   },
   {
@@ -730,7 +754,7 @@
    "pubblicato": "2026-11-01T08:01:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.7,
+   "punteggio": 18.6,
    "testate": 2
   },
   {
@@ -742,7 +766,7 @@
    "pubblicato": "2026-11-01T08:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 38.7,
+   "punteggio": 38.6,
    "testate": 4
   },
   {
@@ -754,7 +778,7 @@
    "pubblicato": "2026-11-01T08:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.7,
+   "punteggio": 15.6,
    "testate": 2
   },
   {
@@ -766,7 +790,7 @@
    "pubblicato": "2026-11-01T07:57:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.7,
+   "punteggio": 28.6,
    "testate": 3
   },
   {
@@ -778,7 +802,7 @@
    "pubblicato": "2026-11-01T07:55:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.7,
+   "punteggio": 28.6,
    "testate": 3
   },
   {
@@ -790,7 +814,7 @@
    "pubblicato": "2026-11-01T07:55:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.7,
+   "punteggio": 16.6,
    "testate": 3
   },
   {
@@ -802,7 +826,7 @@
    "pubblicato": "2026-11-01T07:51:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.7,
+   "punteggio": 28.6,
    "testate": 3
   },
   {
@@ -838,7 +862,7 @@
    "pubblicato": "2026-11-01T07:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.6,
+   "punteggio": 10.5,
    "testate": 2
   },
   {
@@ -850,7 +874,7 @@
    "pubblicato": "2026-11-01T07:08:18+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.5,
+   "punteggio": 10.4,
    "testate": 2
   },
   {
@@ -910,7 +934,7 @@
    "pubblicato": "2026-11-01T06:23:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.7,
+   "punteggio": -11.8,
    "testate": 1
   },
   {
@@ -922,7 +946,7 @@
    "pubblicato": "2026-11-01T05:58:09+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.8,
+   "punteggio": -11.9,
    "testate": 1
   },
   {
@@ -934,7 +958,7 @@
    "pubblicato": "2026-11-01T05:51:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.8,
+   "punteggio": -11.9,
    "testate": 1
   },
   {
@@ -946,7 +970,7 @@
    "pubblicato": "2026-11-01T05:51:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.8,
+   "punteggio": -11.9,
    "testate": 1
   },
   {
@@ -982,7 +1006,7 @@
    "pubblicato": "2026-11-01T05:45:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.1,
+   "punteggio": 10.0,
    "testate": 2
   },
   {
@@ -994,8 +1018,8 @@
    "pubblicato": "2026-11-01T05:00:31+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.9,
-   "testate": 3
+   "punteggio": 37.9,
+   "testate": 4
   },
   {
    "titolo": "Maximo Quiles sa solo vincere e centra l’11° successo stagionale nel GP della Malesia!",
@@ -1006,7 +1030,7 @@
    "pubblicato": "2026-11-01T04:43:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.1,
+   "punteggio": -0.2,
    "testate": 1
   },
   {
@@ -1018,7 +1042,7 @@
    "pubblicato": "2026-11-01T00:04:44+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 31.7,
+   "punteggio": 31.6,
    "testate": 3
   },
   {
@@ -1030,7 +1054,7 @@
    "pubblicato": "2026-10-31T23:55:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 31.7,
+   "punteggio": 31.6,
    "testate": 3
   },
   {
@@ -1042,7 +1066,7 @@
    "pubblicato": "2026-10-31T23:52:15+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.7,
+   "punteggio": 21.6,
    "testate": 2
   },
   {
@@ -1054,7 +1078,7 @@
    "pubblicato": "2026-10-31T23:45:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 36.6,
+   "punteggio": 36.5,
    "testate": 4
   },
   {
@@ -1066,7 +1090,7 @@
    "pubblicato": "2026-10-31T23:40:31+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.6,
+   "punteggio": 21.5,
    "testate": 2
   },
   {
@@ -1078,7 +1102,7 @@
    "pubblicato": "2026-10-31T23:37:50+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.6,
+   "punteggio": 13.5,
    "testate": 2
   },
   {
@@ -1090,7 +1114,7 @@
    "pubblicato": "2026-10-31T23:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 31.6,
+   "punteggio": 31.5,
    "testate": 3
   },
   {
@@ -1102,7 +1126,7 @@
    "pubblicato": "2026-10-31T23:18:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.5,
+   "punteggio": -1.6,
    "testate": 1
   },
   {
@@ -1112,18 +1136,6 @@
    "serie": "F1",
    "url": "https://it.motorsport.com/f1/news/f1-ocon-parla-dopo-lesclusione-dalla-haas-ce-stata-una-discussione-ma-respingo-ogni-accusa-di-viole/10870345/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
    "pubblicato": "2026-10-31T23:13:55+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 3.5,
-   "testate": 1
-  },
-  {
-   "titolo": "Vasseur: “Hamilton, Q3 fantastico. Per Leclerc piccolo errore. Ma siamo dal lato pulito, meglio così”",
-   "estratto": "Il team principal francese ha commentato con soddisfazione l'esito delle qualifiche di Città del Messico",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/vasseur-hamilton-q3-fantastico-per-leclerc-piccolo-errore-ma-siamo-dal-lato-pulito-meglio-cosi",
-   "pubblicato": "2026-10-31T23:02:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
    "punteggio": 3.4,
@@ -1162,7 +1174,7 @@
    "pubblicato": "2026-10-31T22:50:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 31.4,
+   "punteggio": 31.3,
    "testate": 3
   },
   {
@@ -1174,7 +1186,7 @@
    "pubblicato": "2026-10-31T22:42:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.4,
+   "punteggio": 13.3,
    "testate": 2
   },
   {
@@ -1186,7 +1198,7 @@
    "pubblicato": "2026-10-31T22:32:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 31.3,
+   "punteggio": 31.2,
    "testate": 3
   },
   {
@@ -1198,7 +1210,7 @@
    "pubblicato": "2026-10-31T22:23:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 36.3,
+   "punteggio": 36.2,
    "testate": 4
   },
   {
@@ -1210,7 +1222,7 @@
    "pubblicato": "2026-10-31T22:22:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 36.3,
+   "punteggio": 36.2,
    "testate": 4
   },
   {
@@ -1222,7 +1234,7 @@
    "pubblicato": "2026-10-31T22:21:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 36.3,
+   "punteggio": 36.2,
    "testate": 4
   },
   {
@@ -1234,7 +1246,7 @@
    "pubblicato": "2026-10-31T22:19:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.3,
+   "punteggio": 3.2,
    "testate": 1
   },
   {
@@ -1246,7 +1258,7 @@
    "pubblicato": "2026-10-31T22:18:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 36.3,
+   "punteggio": 36.2,
    "testate": 4
   },
   {
@@ -1258,7 +1270,7 @@
    "pubblicato": "2026-10-31T18:45:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.4,
+   "punteggio": 15.3,
    "testate": 2
   },
   {
@@ -1270,20 +1282,8 @@
    "pubblicato": "2026-10-31T18:41:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.4,
+   "punteggio": 15.3,
    "testate": 2
-  },
-  {
-   "titolo": "F1, GP Messico 2026: risultati e classifica FP3. Antonelli beffato per un millesimo, Leclerc grintoso",
-   "estratto": "Lando Norris ha firmato il miglior tempo nelle prove libere 3 del GP del Messico 2026, tappa del Mondiale F1 che va in scena sul circuito intitolato agli Hermanos Rodriguez. Il pilota britannico ha…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/10/f1-gp-messico-2026-risultati-e-classifica-fp3-antonelli-beffato-per-un-millesimo-leclerc-grintoso/",
-   "pubblicato": "2026-10-31T18:37:51+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 13.3,
-   "testate": 3
   },
   {
    "titolo": "F1 | Ferrari, problema alla power unit di Hamilton: niente penalità in Messico",
@@ -1306,7 +1306,7 @@
    "pubblicato": "2026-10-31T16:25:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.2,
+   "punteggio": -3.3,
    "testate": 1
   },
   {
@@ -1318,7 +1318,7 @@
    "pubblicato": "2026-10-31T16:04:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.3,
+   "punteggio": -3.4,
    "testate": 1
   },
   {
@@ -1330,7 +1330,7 @@
    "pubblicato": "2026-10-31T15:51:52+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.7,
+   "punteggio": 6.6,
    "testate": 2
   },
   {
@@ -1342,7 +1342,7 @@
    "pubblicato": "2026-10-31T15:45:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.6,
+   "punteggio": 1.5,
    "testate": 1
   },
   {
@@ -1354,7 +1354,7 @@
    "pubblicato": "2026-10-31T15:15:53+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.5,
+   "punteggio": -3.6,
    "testate": 1
   },
   {
@@ -1378,7 +1378,7 @@
    "pubblicato": "2026-10-31T14:19:29+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 2.3,
+   "punteggio": 2.2,
    "testate": 1
   },
   {
@@ -1402,7 +1402,7 @@
    "pubblicato": "2026-10-31T12:01:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.7,
+   "punteggio": 5.6,
    "testate": 2
   },
   {
@@ -1414,7 +1414,7 @@
    "pubblicato": "2026-10-31T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.7,
+   "punteggio": 8.6,
    "testate": 1
   },
   {
@@ -1426,8 +1426,8 @@
    "pubblicato": "2026-10-31T11:47:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.6,
-   "testate": 1
+   "punteggio": 18.6,
+   "testate": 2
   },
   {
    "titolo": "La tensione tra la MotoGP e i suoi piloti è alle stelle: siamo alle minacce di sanzioni sportive",
@@ -1438,7 +1438,7 @@
    "pubblicato": "2026-10-31T11:33:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.6,
+   "punteggio": 5.5,
    "testate": 2
   }
  ]

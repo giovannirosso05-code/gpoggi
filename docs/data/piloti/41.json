@@ -284,6 +284,17 @@
     "pos": 12,
     "stato": null
    }
+  },
+  {
+   "id": 1298,
+   "nome": "Gran Premio di Città del Messico",
+   "inizio": "2026-10-30T18:30:00+00:00",
+   "qualifiche": {
+    "pos": 9,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": null
   }
  ],
  "vittorie": 0,

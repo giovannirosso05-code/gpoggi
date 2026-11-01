@@ -3,6 +3,10 @@ name: Video campione
 # Video «Antonelli campione del mondo»: si lancia a mano SOLO a titolo confermato. Copia in video/pronti.
 on:
   workflow_dispatch:
+    inputs:
+      forza:
+        description: 'true solo se il titolo è confermato da due testate ma i dati del sito non sono ancora aggiornati'
+        default: 'false'
 
 permissions:
   contents: write
@@ -31,9 +35,10 @@ jobs:
           AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CANALE: ${{ secrets.TELEGRAM_CANALE || secrets.TELEGRAM_CHAT_ID || '559225883' }}
+          FORZA: ${{ github.event.inputs.forza }}
         run: |
           mkdir -p video/pronti
-          python video/video_campione.py --invia --uscita "video/pronti/campione-$(date +%Y%m%d-%H%M).mp4"
+          python video/video_campione.py $( [ "$FORZA" = "true" ] && echo --forza ) --invia --uscita "video/pronti/campione-$(date +%Y%m%d-%H%M).mp4"
       - name: Tiene una copia del video nel repository (per riaverlo in chat)
         run: |
           git config user.name "gpoggi-bot"

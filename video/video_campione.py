@@ -32,15 +32,39 @@ def costruisci():
     ]
     spec = {"serie": "F1", "titolo_breve": "Antonelli campione", "etichetta": "Campione del mondo", "fonte": "GP Oggi", "velocita": "+38%", "segui": False, "scene": sc,
             "finale": {"foto": "Kimi Antonelli", "domanda": "Qual è il momento che ricorderai di questa stagione?"}}
-    social = ("🏆🇮🇹 ANTONELLI CAMPIONE DEL MONDO! 🇮🇹🏆\n\nA 20 anni è il più giovane campione di sempre (il record era di Vettel, a 23) e il primo italiano a vincere il Mondiale dopo Ascari, nel 1953.\n\n"
+    social = ("🏆🇮🇹 ANTONELLI CAMPIONE DEL MONDO! 🇮🇹🏆\n\nA 20 anni Kimi diventa il più giovane campione della storia della F1 (il record era di Vettel, a 23) e il primo italiano a vincere il Mondiale dopo Alberto Ascari, nel 1953. Il titolo arriva a Città del Messico, con quattro gare d'anticipo.\n\n"
               "Qual è il momento che ricorderai di questa stagione? Dimmi la tua nei commenti 👇\n\n🔗 gpoggi.it\n\n#gpoggi #f1 #antonelli #campione #formula1")
     return spec, social
 
 
+def titolo_matematico():
+    """True solo se la classifica del sito, dopo il GP di Città del Messico, dà Antonelli campione con le gare rimaste (spareggio per vittorie compreso).
+    False se i dati non sono ancora aggiornati dopo la gara: allora serve --forza, dopo aver controllato due testate."""
+    import json
+    st = json.load(open(NS.DATA / "standings.json"))
+    if "Messico" not in (st.get("dopo") or ""):
+        return False
+    punti = sorted(((p["punti"], p["nome"]) for p in st["piloti"]), reverse=True)
+    (p1, n1), (p2, n2) = punti[0], punti[1]
+    ev = json.load(open(NS.DATA / "events.json"))
+    from datetime import datetime, timezone
+    resto = 25 * len([g for g in ev if g["inizio"] > datetime.now(timezone.utc).isoformat()])
+    vitt = {}
+    for f in (NS.DATA / "gare").glob("*.json"):
+        for ses in json.load(open(f))["sessioni"]:
+            if ses["tipo"] == "Race" and ses.get("risultati"):
+                v = sorted((x for x in ses["risultati"] if x.get("pos")), key=lambda x: x["pos"])
+                if v:
+                    vitt[v[0]["nome"]] = vitt.get(v[0]["nome"], 0) + 1
+    return n1 == "Kimi Antonelli" and (p1 - p2 > resto or (p1 - p2 == resto and vitt.get(n1, 0) > vitt.get(n2, 0) + len([g for g in ev if g["inizio"] > datetime.now(timezone.utc).isoformat()])))
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--invia", action="store_true"); ap.add_argument("--uscita", type=Path, default=NS.QUI / "video_campione.mp4")
+    ap.add_argument("--invia", action="store_true"); ap.add_argument("--forza", action="store_true", help="salta il controllo dei dati (solo dopo aver visto il titolo su due testate)"); ap.add_argument("--uscita", type=Path, default=NS.QUI / "video_campione.mp4")
     a = ap.parse_args()
+    if not a.forza and not titolo_matematico():
+        raise SystemExit("Antonelli non risulta campione nei dati del sito (o i dati non sono aggiornati dopo la gara): niente video. Controlla due testate e rilancia con --forza.")
     spec, social = costruisci()
     asyncio.run(NS.genera(spec, a.uscita))
     if a.invia:

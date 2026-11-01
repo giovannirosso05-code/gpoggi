@@ -25,15 +25,16 @@ def costruisci():
     esp = lambda p: f"https://a.espncdn.com/photo/2026/{p}_1296x729_16-9.jpg"   # foto ESPN di questa stagione (scaricate al momento in video/_cache/, mai nel repository)
     sc = [
         {"foto": "Kimi Antonelli", "hook": True, "hook_titolo": "Antonelli campione del mondo!", "testo": "*Antonelli* è *campione del mondo*!", "foto_file": f0, "credito": CRED},
-        {"foto": "Kimi Antonelli", "testo": "A *vent'anni* è il più giovane campione di sempre: il record era di *Vettel*, a ventitré.", "foto_url": esp("0805/r1697948"), "credito": "Foto: ESPN (Monaco 2026)"},
-        {"foto": "Kimi Antonelli", "testo": "Un italiano sul tetto del mondo, *settantatré anni* dopo *Ascari*.", "foto_url": esp("1026/r1736290"), "credito": "Foto: ESPN (Austin 2026)", "pausa": 0.2},
-        {"foto": "Kimi Antonelli", "testo": "Ha chiuso il conto a *Città del Messico*, con quattro gare d'anticipo.", "foto_url": esp("1025/r1736108"), "credito": "Foto: ESPN (Austin 2026)"},
-        {"foto": "Kimi Antonelli", "testo": "Una stagione da *incorniciare*, e adesso tutta l'*Italia* è con lui.", "foto_file": f2, "credito": "Foto: ESPN"},
+        {"foto": "Kimi Antonelli", "testo": "A *vent'anni* è il più giovane di sempre: il record era di *Vettel*, a ventitré.", "foto_url": esp("0805/r1697948"), "credito": "Foto: ESPN (Monaco 2026)"},
+        {"foto": "Kimi Antonelli", "testo": "Tutto è cominciato in *Cina*: prima pole e prima vittoria, la prima di un italiano in vent'anni.", "foto_file": f3, "credito": "Foto: ESPN", "fonte_alto": "Il Post"},
+        {"foto": "Kimi Antonelli", "testo": "A *Monza* ha vinto partendo dal *diciannovesimo* posto: a casa, un italiano non vinceva dal *millenovecentosessantasei*.", "foto_file": f2, "credito": "Foto: ESPN", "fonte_alto": "Sky Sport, ESPN"},
+        {"foto": "Kimi Antonelli", "testo": "Nove vittorie in diciotto gare, e un italiano sul tetto del mondo *settantatré anni* dopo *Ascari*.", "foto_url": esp("1026/r1736290"), "credito": "Foto: ESPN (Austin 2026)"},
+        {"foto": "Kimi Antonelli", "testo": "Ha chiuso il conto a *Città del Messico*, con quattro gare d'anticipo.", "foto_url": esp("1025/r1736157"), "credito": "Foto: ESPN (Austin 2026)"},
     ]
     spec = {"serie": "F1", "titolo_breve": "Antonelli campione", "etichetta": "Campione del mondo", "fonte": "GP Oggi", "velocita": "+38%", "segui": False, "scene": sc,
             "finale": {"foto": "Kimi Antonelli", "domanda": "Qual è il momento che ricorderai di questa stagione?"}}
-    social = ("🏆🇮🇹 ANTONELLI CAMPIONE DEL MONDO! 🇮🇹🏆\n\nA 20 anni Kimi diventa il più giovane campione della storia della F1 (il record era di Vettel, a 23) e il primo italiano a vincere il Mondiale dopo Alberto Ascari, nel 1953. Il titolo arriva a Città del Messico, con quattro gare d'anticipo.\n\n"
-              "Qual è il momento che ricorderai di questa stagione? Dimmi la tua nei commenti 👇\n\n🔗 gpoggi.it\n\n#gpoggi #f1 #antonelli #campione #formula1")
+    social = ("🏆🇮🇹 ANTONELLI CAMPIONE DEL MONDO! 🇮🇹🏆\n\nA 20 anni Kimi diventa il più giovane campione della storia della F1 (il record era di Vettel, a 23) e il primo italiano a vincere il Mondiale dopo Alberto Ascari, nel 1953. Dalla prima vittoria in Cina a Monza, vinta partendo dal 19° posto, fino al titolo a Città del Messico con quattro gare d'anticipo.\n\n"
+              "Qual è il momento che ricorderai di questa stagione? Dimmi la tua nei commenti 👇\n\nFonti: Il Post, Sky Sport, ESPN.\n🔗 gpoggi.it\n\n#gpoggi #f1 #antonelli #campione #formula1")
     return spec, social
 
 

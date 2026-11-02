@@ -262,7 +262,7 @@ def main():
     a = ap.parse_args()
     solo = {int(x) for x in a.solo.split(",")} if a.solo else None
     cap = asyncio.run(genera(carica(solo), a.uscita, a.prova))
-    if a.invia:
+    if a.invia and not a.prova:   # le prove non vanno mai sul Telegram
         invia_telegram(a.uscita, cap)
 
 

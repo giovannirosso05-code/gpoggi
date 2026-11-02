@@ -1,0 +1,185 @@
+{
+ "giri": 71,
+ "griglia": {
+  "44": 1,
+  "63": 2,
+  "16": 3,
+  "12": 4,
+  "3": 5,
+  "1": 6,
+  "6": 7,
+  "41": 8,
+  "10": 9,
+  "27": 10,
+  "43": 11,
+  "81": 12,
+  "5": 13,
+  "87": 14,
+  "55": 15,
+  "23": 16,
+  "14": 17,
+  "50": 18,
+  "18": 19,
+  "11": 20,
+  "77": 21,
+  "30": 22
+ },
+ "giro_veloce": 44,
+ "voci": [
+  {
+   "giro": 1,
+   "tipo": "via",
+   "testo": "Parte la gara alle 21:03 (ora italiana); rischio pioggia indicato al 0%."
+  },
+  {
+   "giro": 1,
+   "tipo": "sorpasso",
+   "testo": "Primo giro: Perez risale dal 20° al 14° posto; Bottas risale dal 21° al 17° posto."
+  },
+  {
+   "giro": 3,
+   "tipo": "incidente",
+   "testo": "**Incidente tra Hamilton e Leclerc.**"
+  },
+  {
+   "giro": 6,
+   "tipo": "ritiro",
+   "testo": "**Fernando Alonso si ritira** (5 giri completati su 71)."
+  },
+  {
+   "giro": 6,
+   "tipo": "ritiro",
+   "testo": "**Lance Stroll si ritira** (5 giri completati su 71)."
+  },
+  {
+   "giro": 7,
+   "tipo": "safety",
+   "testo": "**Virtual safety car.**"
+  },
+  {
+   "giro": 8,
+   "tipo": "safety",
+   "testo": "Termina la virtual safety car."
+  },
+  {
+   "giro": 12,
+   "tipo": "penalita",
+   "testo": "**Penalità di 5 secondi a Leclerc** per il contatto con Hamilton."
+  },
+  {
+   "giro": 13,
+   "tipo": "penalita",
+   "testo": "**Penalità di 10 secondi a Russell** (contatto)."
+  },
+  {
+   "giro": 27,
+   "tipo": "pit",
+   "testo": "Ai box: Verstappen, Leclerc."
+  },
+  {
+   "giro": 28,
+   "tipo": "comando",
+   "testo": "**Hamilton passa al comando.**"
+  },
+  {
+   "giro": 28,
+   "tipo": "comando",
+   "testo": "**Antonelli passa al comando.**"
+  },
+  {
+   "giro": 28,
+   "tipo": "pit",
+   "testo": "Ai box: Hamilton."
+  },
+  {
+   "giro": 33,
+   "tipo": "pit",
+   "testo": "Ai box: Russell."
+  },
+  {
+   "giro": 39,
+   "tipo": "pit",
+   "testo": "Ai box: Norris."
+  },
+  {
+   "giro": 43,
+   "tipo": "ritiro",
+   "testo": "**Valtteri Bottas si ritira** (42 giri completati su 71)."
+  },
+  {
+   "giro": 43,
+   "tipo": "pit",
+   "testo": "Ai box: Antonelli."
+  },
+  {
+   "giro": 44,
+   "tipo": "safety",
+   "testo": "**Safety car in pista.**"
+  },
+  {
+   "giro": 44,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 44,
+   "tipo": "pit",
+   "testo": "Ai box: Hamilton, Russell."
+  },
+  {
+   "giro": 46,
+   "tipo": "penalita",
+   "testo": "**Penalità di 5 secondi a Perez** (eccesso di velocità ai box)."
+  },
+  {
+   "giro": 47,
+   "tipo": "sorpasso",
+   "testo": "**Hamilton supera Leclerc** e sale al 2° posto."
+  },
+  {
+   "giro": 48,
+   "tipo": "incidente",
+   "testo": "**Incidente tra Hamilton e Verstappen.**"
+  },
+  {
+   "giro": 48,
+   "tipo": "ritiro",
+   "testo": "**Oliver Bearman si ritira** (47 giri completati su 71)."
+  },
+  {
+   "giro": 51,
+   "tipo": "penalita",
+   "testo": "**Penalità di 10 secondi a Hulkenberg** (contatto)."
+  },
+  {
+   "giro": 59,
+   "tipo": "safety",
+   "testo": "**Safety car in pista.**"
+  },
+  {
+   "giro": 59,
+   "tipo": "ritiro",
+   "testo": "**Arvid Lindblad si ritira** (58 giri completati su 71)."
+  },
+  {
+   "giro": 62,
+   "tipo": "safety",
+   "testo": "La safety car rientra ai box: si riparte."
+  },
+  {
+   "giro": 64,
+   "tipo": "incidente",
+   "testo": "**Incidente tra Piastri e Lindblad.**"
+  },
+  {
+   "giro": 66,
+   "tipo": "incidente",
+   "testo": "**Incidente tra Gasly e Lawson.**"
+  },
+  {
+   "giro": 71,
+   "tipo": "arrivo",
+   "testo": "**Bandiera a scacchi: vince Max Verstappen** (Red Bull Racing), davanti a Lewis Hamilton e Kimi Antonelli."
+  }
+ ]
+}

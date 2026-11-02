@@ -14,6 +14,7 @@ from pathlib import Path
 
 D = Path(__file__).parent / "docs" / "data"
 PESI = {"q": 0.2, "s": 0.2, "g": 0.6}
+GRAVE = 3.0     # chi causa un incidente grave (vedi incidenti_gravi)
 MINIMO = 5.0   # voto finale minimo (dal 2 novembre 2026)
 RITIRO = 4.5   # ritiro o nessun tempo (era 3: troppo duro, la causa spesso non è del pilota)
 TABELLA = {1: 10, 2: 8.5, 3: 8, 4: 7.5, 5: 7, 6: 6.5, 7: 6.2, 8: 6, 9: 5.8, 10: 5.6}
@@ -104,6 +105,47 @@ def correggi(righe, corr):
     return righe
 
 
+def incidenti_gravi(righe, voci):
+    """Chi causa un incidente GRAVE puo' scendere sotto il minimo (fino a 3). Gravi sono solo i casi documentati dalla cronaca: penalita' di almeno 10 secondi
+    'per il contatto con X' E, in piu', X si ritira entro pochi giri oppure l'incidente porta la safety car. Mai colpe senza una riga di cronaca che le dica."""
+    def trova(tok):
+        m = [r for r in righe if r["nome"] == tok] or [r for r in righe if r["nome"].split()[-1] == tok]
+        return m[0] if len(m) == 1 else None
+    ritiri = {}
+    for v in voci or []:
+        m = re.match(r"\*\*(.+?) si ritira", v.get("testo", ""))
+        if v.get("tipo") == "ritiro" and m:
+            ritiri[m.group(1)] = v.get("giro") or 0
+    out = {}
+    for v in voci or []:
+        m = re.match(r"\*\*Penalità di (\d+) secondi a (.+?)\*\* per il contatto con (.+?)\.", v.get("testo", ""))
+        if v.get("tipo") != "penalita" or not m or int(m.group(1)) < 10:
+            continue
+        sec, colpevole, vittima = int(m.group(1)), trova(m.group(2)), trova(m.group(3))
+        if not colpevole or not vittima:
+            continue
+        g = v.get("giro") or 0
+        gv = next((k for k, x in ritiri.items() if trova(k) is vittima), None)
+        vittima_ritirata = gv is not None and g - 8 <= ritiri[gv] <= g + 3
+        inc = [x.get("giro") or 0 for x in voci if x.get("tipo") == "incidente" and m.group(2) in x.get("testo", "") and m.group(3) in x.get("testo", "")]
+        safety = any(x.get("tipo") == "safety" and "in pista" in x.get("testo", "") and inc and inc[0] <= (x.get("giro") or 0) <= inc[0] + 2 for x in voci)
+        if vittima_ritirata or safety:
+            out[colpevole["nome"]] = (f"penalità di {sec} secondi per il contatto con {vittima['nome'].split()[-1]}, " + ("che si è ritirato" if vittima_ritirata else "con la safety car in pista"))
+    return out
+
+
+def applica_gravi(righe, voci):
+    for nome, motivo in incidenti_gravi(righe, voci).items():
+        r = next(x for x in righe if x["nome"] == nome)
+        if r.get("correzione"):
+            continue   # una correzione scritta dalla redazione vince
+        r["voto_calcolato"], r["grave"] = r["voto"], True
+        r["correzione"], r["motivo"] = round(GRAVE - r["voto"], 1), motivo
+        r["voto_esatto"], r["voto"] = GRAVE, GRAVE
+    righe.sort(key=lambda r: (-r["voto_esatto"], r["g"] is None, r["g"] or 99))
+    return righe
+
+
 def correzioni(serie, chiave):
     try:
         return json.load(open(D / "pagella-correzioni.json")).get(serie, {}).get(str(chiave), {})
@@ -154,6 +196,7 @@ def f1_evento(g, gara, id_):
     for x in righe:
         x["perche"] = perche(x, hanno_sprint)
         x["causa"] = cause.get(x["nome"], "sconosciuta")
+    righe = applica_gravi(righe, cj.get("voci") or [])
     righe = correggi(righe, correzioni("f1", id_))
     return {"nome": g["nome"], "id": id_, "data": gara["inizio"], "sprint": hanno_sprint, "righe": righe}
 
@@ -185,6 +228,7 @@ def moto_evento(nome, g):
     for x in righe:
         x["perche"] = perche(x, hanno_sprint)
         x["causa"] = cause.get(x["nome"], "sconosciuta")
+    righe = applica_gravi(righe, g.get("cronaca"))
     righe = correggi(righe, correzioni("motogp", nome))
     return {"nome": nome, "data": g["data"], "sprint": hanno_sprint, "righe": righe}
 
@@ -259,7 +303,8 @@ def main():
     f1_all, moto_all = f1_tutti(), moto_tutti()
     for e in (*f1_all, *moto_all):   # voto minimo 5 (richiesta del gestore, 2 novembre 2026: voti troppo bassi attirano insulti)
         for r in e["righe"]:
-            r["voto"] = max(MINIMO, r["voto"])
+            if not r.get("grave"):
+                r["voto"] = max(MINIMO, r["voto"])
     out = {"generato_il": datetime.now(timezone.utc).isoformat(timespec="seconds"), "f1": f1_all[-1] if f1_all else None, "motogp": moto_all[-1] if moto_all else None}
     (D / "pagella.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")))
     # un riepilogo per ogni gara (le schede 'Voti GP Oggi' delle pagine gara)

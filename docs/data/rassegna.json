@@ -1,6 +1,66 @@
 {
- "generato_il": "2026-11-02T13:23:57+00:00",
+ "generato_il": "2026-11-02T14:31:30+00:00",
  "articoli": [
+  {
+   "titolo": "Kimi Antonelli campione del mondo di F1 e degli ascolti su Sky",
+   "estratto": "La gara di Città del Messico è la più vista nella Casa dello Sport dal 2022, con oltre 2 milioni 44 mila spettatori medi complessivi in total audience. “Kampione”, lo speciale firmato Sky Sport",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152322863/kimi_antonelli_campione_del_mondo_di_f1_e_degli_ascolti_su_sky/",
+   "pubblicato": "2026-11-02T14:17:13+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 41.9,
+   "testate": 4
+  },
+  {
+   "titolo": "Tomba su Antonelli: “Mi rivedo in lui, siamo della stessa pasta emiliana”",
+   "estratto": "Dodici chilometri separano Casalecchio di Reno da San Lazzaro di Savena, e dodici è anche il numero di gara di Kimi Antonelli. Una coincidenza che Alberto Tomba, raggiunto al telefono dall’ANSA, non…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/tomba-su-antonelli-mi-rivedo-in-lui-siamo-della-stessa-pasta-emiliana/",
+   "pubblicato": "2026-11-02T14:11:51+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Lapo Elkann si complimenta con Kimi Antonelli. Il retroscena di Wolff e la frase del nipote su Gianni Agnelli",
+   "estratto": "Il capo della Mercedes: «Sapete cosa gli ho detto ieri? Lapo Elkann una volta mi disse, parlando di suo nonno, che era riuscito a rimanere una figura importante e rilevante per tutta la vita. A Kimi…",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152322675/lapo_elkann_si_complimenta_con_kimi_antonelli_il_retroscena_di_wolff_e_la_frase_del_nipote_su_gianni_agnelli/",
+   "pubblicato": "2026-11-02T13:52:48+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 21.8,
+   "testate": 2
+  },
+  {
+   "titolo": "Komatsu trattenuto per una spalla da Ocon: la situazione degenera",
+   "estratto": "Secondo quanto riportato dalla BILD, le discussioni tra il pilota della Haas e il team principal avrebbero raggiunto il punto più basso sabato scorso",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/komatsu-trattenuto-per-una-spalla-da-ocon-la-situazione-degenera",
+   "pubblicato": "2026-11-02T13:42:29+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.8,
+   "testate": 1
+  },
+  {
+   "titolo": "GP Qatar 2026: gli orari su Sky/Now e TV8",
+   "estratto": "I dettagli di un appuntamento avvolto dall'incertezza legata al conflitto in corso a pochi km dal circuito di Lusail",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-orari/gp-qatar-2026-orari-tv-diretta-sky-tv8-programma-televisione-dove-vederla-marquez-decimo-titolo-sorpasso-rossi",
+   "pubblicato": "2026-11-02T13:30:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 1.7,
+   "testate": 2
+  },
   {
    "titolo": "Hirakawa a punti al debutto in F1: “Ho realizzato un sogno”",
    "estratto": "Chiamato all'ultimo momento in sostituzione di Ocon, il giapponese ha chiuso al 10° posto dopo le penalità inflitte a Piastri, Colapinto e Gasly",
@@ -10,7 +70,7 @@
    "pubblicato": "2026-11-02T13:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.9,
+   "punteggio": 18.6,
    "testate": 2
   },
   {
@@ -22,7 +82,7 @@
    "pubblicato": "2026-11-02T13:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.9,
+   "punteggio": 16.6,
    "testate": 1
   },
   {
@@ -34,7 +94,7 @@
    "pubblicato": "2026-11-02T13:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.9,
+   "punteggio": 11.6,
    "testate": 1
   },
   {
@@ -46,7 +106,7 @@
    "pubblicato": "2026-11-02T13:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.1,
+   "punteggio": -8.4,
    "testate": 1
   },
   {
@@ -58,7 +118,7 @@
    "pubblicato": "2026-11-02T12:55:41+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 46.9,
+   "punteggio": 46.6,
    "testate": 4
   },
   {
@@ -70,7 +130,7 @@
    "pubblicato": "2026-11-02T12:23:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.7,
+   "punteggio": 16.5,
    "testate": 1
   },
   {
@@ -82,7 +142,7 @@
    "pubblicato": "2026-11-02T12:15:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.7,
+   "punteggio": 11.4,
    "testate": 1
   },
   {
@@ -94,7 +154,7 @@
    "pubblicato": "2026-11-02T12:00:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.7,
+   "punteggio": 21.4,
    "testate": 2
   },
   {
@@ -106,7 +166,7 @@
    "pubblicato": "2026-11-02T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.7,
+   "punteggio": 8.4,
    "testate": 1
   },
   {
@@ -118,7 +178,7 @@
    "pubblicato": "2026-11-02T11:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.5,
+   "punteggio": 16.2,
    "testate": 1
   },
   {
@@ -130,8 +190,8 @@
    "pubblicato": "2026-11-02T11:13:22+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.5,
-   "testate": 1
+   "punteggio": 21.2,
+   "testate": 2
   },
   {
    "titolo": "Lawson: “Avevamo il potenziale per guadagnare ulteriori posizioni”",
@@ -142,7 +202,7 @@
    "pubblicato": "2026-11-02T11:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.4,
+   "punteggio": 8.1,
    "testate": 1
   },
   {
@@ -154,7 +214,7 @@
    "pubblicato": "2026-11-02T11:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.4,
+   "punteggio": 8.1,
    "testate": 1
   },
   {
@@ -166,7 +226,7 @@
    "pubblicato": "2026-11-02T10:52:40+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 47.4,
+   "punteggio": 47.1,
    "testate": 4
   },
   {
@@ -178,7 +238,7 @@
    "pubblicato": "2026-11-02T10:34:03+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.3,
+   "punteggio": 26.0,
    "testate": 2
   },
   {
@@ -190,7 +250,7 @@
    "pubblicato": "2026-11-02T10:23:15+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.2,
+   "punteggio": 18.0,
    "testate": 2
   },
   {
@@ -202,7 +262,7 @@
    "pubblicato": "2026-11-02T10:20:44+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.2,
+   "punteggio": 16.0,
    "testate": 1
   },
   {
@@ -214,7 +274,7 @@
    "pubblicato": "2026-11-02T10:00:34+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.2,
+   "punteggio": 12.9,
    "testate": 2
   },
   {
@@ -226,7 +286,7 @@
    "pubblicato": "2026-11-02T09:59:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.1,
+   "punteggio": 12.9,
    "testate": 2
   },
   {
@@ -238,7 +298,7 @@
    "pubblicato": "2026-11-02T09:41:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.1,
+   "punteggio": 15.8,
    "testate": 1
   },
   {
@@ -250,11 +310,11 @@
    "pubblicato": "2026-11-02T09:39:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.1,
+   "punteggio": 10.8,
    "testate": 1
   },
   {
-   "titolo": "Kimi Antonelli guarda al 2027: oggi la Mercedes non é più la miglior macchina dopo gli aggiornamenti",
+   "titolo": "Kimi Antonelli guarda al 2027: oggi la Mercedes non è più la miglior macchina dopo gli aggiornamenti",
    "estratto": "Il 1° novembre 2026 resterà una data impressa nella memoria degli appassionati di motorsport italiano. Andrea Kimi Antonelli, classe 2006, bolognese, ha riportato il titolo iridato della massima…",
    "fonte": "OA Sport",
    "serie": "F1",
@@ -262,7 +322,7 @@
    "pubblicato": "2026-11-02T09:27:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.0,
+   "punteggio": 10.7,
    "testate": 1
   },
   {
@@ -274,7 +334,7 @@
    "pubblicato": "2026-11-02T09:23:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.0,
+   "punteggio": 2.7,
    "testate": 1
   },
   {
@@ -286,7 +346,7 @@
    "pubblicato": "2026-11-02T09:22:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.0,
+   "punteggio": 12.7,
    "testate": 2
   },
   {
@@ -298,7 +358,7 @@
    "pubblicato": "2026-11-02T09:10:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.9,
+   "punteggio": 15.7,
    "testate": 1
   },
   {
@@ -310,7 +370,7 @@
    "pubblicato": "2026-11-02T09:00:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.9,
+   "punteggio": 10.6,
    "testate": 1
   },
   {
@@ -322,7 +382,7 @@
    "pubblicato": "2026-11-02T08:58:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.9,
+   "punteggio": 12.6,
    "testate": 2
   },
   {
@@ -334,7 +394,7 @@
    "pubblicato": "2026-11-02T08:58:21+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.9,
+   "punteggio": 15.6,
    "testate": 1
   },
   {
@@ -346,7 +406,7 @@
    "pubblicato": "2026-11-02T08:56:41+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.9,
+   "punteggio": 15.6,
    "testate": 1
   },
   {
@@ -358,7 +418,7 @@
    "pubblicato": "2026-11-02T08:55:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.9,
+   "punteggio": 15.6,
    "testate": 1
   },
   {
@@ -370,7 +430,7 @@
    "pubblicato": "2026-11-02T08:37:07+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 26.8,
+   "punteggio": 26.5,
    "testate": 2
   },
   {
@@ -382,7 +442,7 @@
    "pubblicato": "2026-11-02T08:35:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.8,
+   "punteggio": 8.5,
    "testate": 2
   },
   {
@@ -394,7 +454,7 @@
    "pubblicato": "2026-11-02T08:34:09+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.8,
+   "punteggio": 15.5,
    "testate": 1
   },
   {
@@ -406,7 +466,7 @@
    "pubblicato": "2026-11-02T08:30:40+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 40.8,
+   "punteggio": 40.5,
    "testate": 4
   },
   {
@@ -418,7 +478,7 @@
    "pubblicato": "2026-11-02T08:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.8,
+   "punteggio": 28.5,
    "testate": 4
   },
   {
@@ -430,7 +490,7 @@
    "pubblicato": "2026-11-02T08:29:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.8,
+   "punteggio": 2.5,
    "testate": 1
   },
   {
@@ -442,7 +502,7 @@
    "pubblicato": "2026-11-02T08:27:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.8,
+   "punteggio": 25.5,
    "testate": 2
   },
   {
@@ -454,7 +514,7 @@
    "pubblicato": "2026-11-02T08:24:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.8,
+   "punteggio": 25.5,
    "testate": 2
   },
   {
@@ -466,19 +526,7 @@
    "pubblicato": "2026-11-02T08:21:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.7,
-   "testate": 1
-  },
-  {
-   "titolo": "Fenomeni e Contrari e le altre storie dal Messico: I Doppiati F1 Podcast – VIDEO",
-   "estratto": "Sventolate le bandiere blu, I Doppiati sono in diretta su YouTube, Spotify e Apple Podcast per commentare il GP di Città del Messico di F1",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/fenomeni-e-contrari-e-le-altre-storie-dal-messico-i-doppiati-f1-podcast-video-antonelli-campione-ferrari-leclerc-hamilton",
-   "pubblicato": "2026-11-02T08:15:00+00:00",
-   "tipo": "intervista",
-   "citazione": true,
-   "punteggio": 8.7,
+   "punteggio": 15.5,
    "testate": 1
   },
   {
@@ -490,7 +538,7 @@
    "pubblicato": "2026-11-02T08:05:19+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 45.7,
+   "punteggio": 45.4,
    "testate": 4
   },
   {
@@ -502,7 +550,7 @@
    "pubblicato": "2026-11-02T08:03:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.7,
+   "punteggio": 10.4,
    "testate": 1
   },
   {
@@ -514,7 +562,7 @@
    "pubblicato": "2026-11-02T07:57:45+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.6,
+   "punteggio": 20.4,
    "testate": 2
   },
   {
@@ -526,7 +574,7 @@
    "pubblicato": "2026-11-02T07:52:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.6,
+   "punteggio": 10.3,
    "testate": 1
   },
   {
@@ -538,7 +586,7 @@
    "pubblicato": "2026-11-02T07:48:34+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.6,
+   "punteggio": 10.3,
    "testate": 1
   },
   {
@@ -550,7 +598,7 @@
    "pubblicato": "2026-11-02T07:44:24+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.6,
+   "punteggio": 2.3,
    "testate": 1
   },
   {
@@ -562,7 +610,7 @@
    "pubblicato": "2026-11-02T07:36:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.6,
+   "punteggio": 25.3,
    "testate": 2
   },
   {
@@ -574,7 +622,7 @@
    "pubblicato": "2026-11-02T07:12:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.5,
+   "punteggio": 25.2,
    "testate": 2
   },
   {
@@ -586,7 +634,7 @@
    "pubblicato": "2026-11-02T07:04:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.4,
+   "punteggio": 25.1,
    "testate": 2
   },
   {
@@ -598,7 +646,7 @@
    "pubblicato": "2026-11-02T07:00:07+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.4,
+   "punteggio": 17.1,
    "testate": 2
   },
   {
@@ -610,7 +658,7 @@
    "pubblicato": "2026-11-02T06:54:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.4,
+   "punteggio": 15.1,
    "testate": 1
   },
   {
@@ -622,7 +670,7 @@
    "pubblicato": "2026-11-02T06:38:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.3,
+   "punteggio": 25.0,
    "testate": 2
   },
   {
@@ -634,7 +682,7 @@
    "pubblicato": "2026-11-02T06:00:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.2,
+   "punteggio": 1.9,
    "testate": 1
   },
   {
@@ -646,7 +694,7 @@
    "pubblicato": "2026-11-02T05:00:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.9,
+   "punteggio": 29.6,
    "testate": 3
   },
   {
@@ -658,8 +706,8 @@
    "pubblicato": "2026-11-02T04:10:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.3,
-   "testate": 1
+   "punteggio": -0.6,
+   "testate": 2
   },
   {
    "titolo": "F1, GP Brasile 2026: programma, orari, tv, streaming, guida SKY e TV8",
@@ -670,7 +718,7 @@
    "pubblicato": "2026-11-02T04:05:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.3,
+   "punteggio": -10.6,
    "testate": 1
   },
   {
@@ -682,7 +730,7 @@
    "pubblicato": "2026-11-02T00:44:02+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.8,
+   "punteggio": 23.6,
    "testate": 2
   },
   {
@@ -694,7 +742,7 @@
    "pubblicato": "2026-11-02T00:40:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.8,
+   "punteggio": 23.5,
    "testate": 2
   },
   {
@@ -706,7 +754,7 @@
    "pubblicato": "2026-11-02T00:18:14+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.7,
+   "punteggio": 23.4,
    "testate": 2
   },
   {
@@ -718,7 +766,7 @@
    "pubblicato": "2026-11-01T23:51:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.6,
+   "punteggio": 5.3,
    "testate": 1
   },
   {
@@ -730,7 +778,7 @@
    "pubblicato": "2026-11-01T23:47:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 38.6,
+   "punteggio": 38.3,
    "testate": 4
   },
   {
@@ -742,7 +790,7 @@
    "pubblicato": "2026-11-01T23:33:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.5,
+   "punteggio": 13.3,
    "testate": 1
   },
   {
@@ -754,7 +802,7 @@
    "pubblicato": "2026-11-01T23:31:45+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.5,
+   "punteggio": 23.3,
    "testate": 2
   },
   {
@@ -766,7 +814,7 @@
    "pubblicato": "2026-11-01T23:15:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 33.5,
+   "punteggio": 33.2,
    "testate": 3
   },
   {
@@ -778,7 +826,7 @@
    "pubblicato": "2026-11-01T23:14:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 38.5,
+   "punteggio": 38.2,
    "testate": 4
   },
   {
@@ -790,20 +838,8 @@
    "pubblicato": "2026-11-01T23:03:35+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 43.4,
+   "punteggio": 43.1,
    "testate": 4
-  },
-  {
-   "titolo": "Toto Wolff si lascia andare: “Umiltà ed intelligenza: Antonelli è la nuova superstar! Sapevo che era l’erede di Hamilton”",
-   "estratto": "Toto Wolff è un misto tra gioia e commozione al termine del Gran Premio del Messico, diciannovesimo appuntamento del Mondiale di Formula Uno 2026. Sul tracciato di Città del Messico, intitolato agli…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/toto-wolff-si-lascia-andare-umilta-ed-intelligenza-antonelli-e-la-nuova-superstar-sapevo-che-era-lerede-di-hamilton/",
-   "pubblicato": "2026-11-01T23:03:03+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 13.4,
-   "testate": 1
   },
   {
    "titolo": "F1 | Kimi Antonelli campione del mondo. Ecco il ragazzo che ha battuto anche il tempo",
@@ -814,7 +850,7 @@
    "pubblicato": "2026-11-01T23:02:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 38.4,
+   "punteggio": 38.1,
    "testate": 4
   },
   {
@@ -826,7 +862,7 @@
    "pubblicato": "2026-11-01T22:24:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 38.3,
+   "punteggio": 38.0,
    "testate": 4
   },
   {
@@ -838,7 +874,7 @@
    "pubblicato": "2026-11-01T18:47:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.7,
+   "punteggio": -0.9,
    "testate": 1
   },
   {
@@ -850,7 +886,7 @@
    "pubblicato": "2026-11-01T18:30:12+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 37.3,
+   "punteggio": 37.0,
    "testate": 4
   },
   {
@@ -862,7 +898,7 @@
    "pubblicato": "2026-11-01T16:51:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.1,
+   "punteggio": -1.4,
    "testate": 1
   },
   {
@@ -874,7 +910,7 @@
    "pubblicato": "2026-11-01T16:25:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.2,
+   "punteggio": -1.5,
    "testate": 1
   },
   {
@@ -886,7 +922,7 @@
    "pubblicato": "2026-11-01T16:06:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 31.7,
+   "punteggio": 31.4,
    "testate": 3
   },
   {
@@ -898,7 +934,7 @@
    "pubblicato": "2026-11-01T15:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.5,
+   "punteggio": 21.2,
    "testate": 2
   },
   {
@@ -910,7 +946,7 @@
    "pubblicato": "2026-11-01T15:20:40+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.5,
+   "punteggio": 8.2,
    "testate": 2
   },
   {
@@ -922,7 +958,7 @@
    "pubblicato": "2026-11-01T14:34:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.3,
+   "punteggio": 3.0,
    "testate": 1
   },
   {
@@ -934,7 +970,7 @@
    "pubblicato": "2026-11-01T14:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.3,
+   "punteggio": 11.0,
    "testate": 1
   },
   {
@@ -946,7 +982,7 @@
    "pubblicato": "2026-11-01T14:06:21+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.2,
+   "punteggio": 10.9,
    "testate": 1
   },
   {
@@ -958,7 +994,7 @@
    "pubblicato": "2026-11-01T13:05:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.9,
+   "punteggio": 15.6,
    "testate": 2
   },
   {
@@ -970,7 +1006,7 @@
    "pubblicato": "2026-11-01T12:24:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.8,
+   "punteggio": 17.5,
    "testate": 3
   },
   {
@@ -982,7 +1018,7 @@
    "pubblicato": "2026-11-01T12:20:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 20.7,
+   "punteggio": 20.5,
    "testate": 2
   },
   {
@@ -994,7 +1030,7 @@
    "pubblicato": "2026-11-01T11:33:09+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.5,
+   "punteggio": 2.3,
    "testate": 1
   },
   {
@@ -1006,7 +1042,7 @@
    "pubblicato": "2026-11-01T11:04:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.4,
+   "punteggio": 22.1,
    "testate": 3
   },
   {
@@ -1018,7 +1054,7 @@
    "pubblicato": "2026-11-01T10:52:43+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.4,
+   "punteggio": 22.1,
    "testate": 3
   },
   {
@@ -1030,7 +1066,7 @@
    "pubblicato": "2026-11-01T10:47:45+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.3,
+   "punteggio": 2.1,
    "testate": 1
   },
   {
@@ -1042,7 +1078,7 @@
    "pubblicato": "2026-11-01T10:33:54+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.3,
+   "punteggio": 5.0,
    "testate": 1
   },
   {
@@ -1054,7 +1090,7 @@
    "pubblicato": "2026-11-01T10:32:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.3,
+   "punteggio": 10.0,
    "testate": 1
   },
   {
@@ -1066,7 +1102,7 @@
    "pubblicato": "2026-11-01T10:30:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.3,
+   "punteggio": 2.0,
    "testate": 1
   },
   {
@@ -1078,7 +1114,7 @@
    "pubblicato": "2026-11-01T10:28:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.3,
+   "punteggio": 5.0,
    "testate": 1
   },
   {
@@ -1090,7 +1126,7 @@
    "pubblicato": "2026-11-01T10:16:03+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.2,
+   "punteggio": 21.9,
    "testate": 3
   },
   {
@@ -1102,7 +1138,7 @@
    "pubblicato": "2026-11-01T10:00:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.8,
+   "punteggio": -3.1,
    "testate": 1
   },
   {
@@ -1114,7 +1150,7 @@
    "pubblicato": "2026-11-01T09:39:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.1,
+   "punteggio": 9.8,
    "testate": 1
   },
   {
@@ -1126,7 +1162,7 @@
    "pubblicato": "2026-11-01T09:30:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 30.0,
+   "punteggio": 29.7,
    "testate": 3
   },
   {
@@ -1138,7 +1174,7 @@
    "pubblicato": "2026-11-01T09:25:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.0,
+   "punteggio": 1.7,
    "testate": 1
   },
   {
@@ -1150,7 +1186,7 @@
    "pubblicato": "2026-11-01T09:17:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.0,
+   "punteggio": 4.7,
    "testate": 1
   },
   {
@@ -1162,7 +1198,7 @@
    "pubblicato": "2026-11-01T09:11:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.9,
+   "punteggio": 11.7,
    "testate": 2
   },
   {
@@ -1174,7 +1210,7 @@
    "pubblicato": "2026-11-01T09:10:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.9,
+   "punteggio": 21.7,
    "testate": 3
   },
   {
@@ -1186,7 +1222,7 @@
    "pubblicato": "2026-11-01T09:03:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.9,
+   "punteggio": 1.6,
    "testate": 1
   },
   {
@@ -1198,7 +1234,7 @@
    "pubblicato": "2026-11-01T09:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.9,
+   "punteggio": 9.6,
    "testate": 1
   },
   {
@@ -1210,7 +1246,7 @@
    "pubblicato": "2026-11-01T08:42:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.8,
+   "punteggio": 11.5,
    "testate": 2
   },
   {
@@ -1222,7 +1258,7 @@
    "pubblicato": "2026-11-01T08:37:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.8,
+   "punteggio": 11.5,
    "testate": 2
   },
   {
@@ -1234,7 +1270,7 @@
    "pubblicato": "2026-11-01T08:32:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.8,
+   "punteggio": 19.5,
    "testate": 2
   },
   {
@@ -1246,7 +1282,7 @@
    "pubblicato": "2026-11-01T08:29:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.8,
+   "punteggio": 6.5,
    "testate": 2
   },
   {
@@ -1258,7 +1294,7 @@
    "pubblicato": "2026-11-01T08:26:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.8,
+   "punteggio": 21.5,
    "testate": 3
   },
   {
@@ -1270,7 +1306,7 @@
    "pubblicato": "2026-11-01T08:25:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.8,
+   "punteggio": 1.5,
    "testate": 1
   },
   {
@@ -1282,7 +1318,7 @@
    "pubblicato": "2026-11-01T08:13:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 24.7,
+   "punteggio": 24.4,
    "testate": 3
   },
   {
@@ -1294,7 +1330,7 @@
    "pubblicato": "2026-11-01T08:08:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.7,
+   "punteggio": 19.4,
    "testate": 2
   },
   {
@@ -1306,7 +1342,7 @@
    "pubblicato": "2026-11-01T08:05:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 24.7,
+   "punteggio": 24.4,
    "testate": 3
   },
   {
@@ -1318,7 +1354,7 @@
    "pubblicato": "2026-11-01T08:01:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.7,
+   "punteggio": 14.4,
    "testate": 2
   },
   {
@@ -1330,7 +1366,7 @@
    "pubblicato": "2026-11-01T08:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.7,
+   "punteggio": 11.4,
    "testate": 2
   },
   {
@@ -1342,7 +1378,7 @@
    "pubblicato": "2026-11-01T07:57:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 24.6,
+   "punteggio": 24.4,
    "testate": 3
   },
   {
@@ -1354,7 +1390,7 @@
    "pubblicato": "2026-11-01T07:55:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 24.6,
+   "punteggio": 24.3,
    "testate": 3
   },
   {
@@ -1366,7 +1402,7 @@
    "pubblicato": "2026-11-01T07:55:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.6,
+   "punteggio": 12.3,
    "testate": 3
   },
   {
@@ -1378,7 +1414,7 @@
    "pubblicato": "2026-11-01T07:51:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 24.6,
+   "punteggio": 24.3,
    "testate": 3
   },
   {
@@ -1390,7 +1426,7 @@
    "pubblicato": "2026-11-01T07:50:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 24.6,
+   "punteggio": 24.3,
    "testate": 3
   },
   {
@@ -1402,44 +1438,8 @@
    "pubblicato": "2026-11-01T07:50:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.6,
+   "punteggio": 6.3,
    "testate": 2
-  },
-  {
-   "titolo": "GP Malesia 2026: la cronaca della gara",
-   "estratto": "La cronaca giro dopo giro della corsa di Sepang",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-live/diretta-motogp-gp-malesia-2026-cronaca-gara-aggiornamenti-marquez-fuga-mondiale-ducati-aprilia",
-   "pubblicato": "2026-11-01T07:30:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -3.5,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Lettera dei piloti come ultimo tentativo per evitare di recarsi in Qatar",
-   "estratto": "La tensione tra la maggior parte dei piloti e l’organizzazione ha raggiunto livelli molto elevati questo fine settimana nel paddock di Sepang, in vista dell’imminente trasferimento in Qatar, dove…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-lettera-dei-piloti-come-ultimo-tentativo-per-evitare-di-recarsi-in-qatar/10870462/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-01T07:08:18+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -3.6,
-   "testate": 1
-  },
-  {
-   "titolo": "GP Malesia 2026: orari Sky/Now e TV8",
-   "estratto": "Tutti i dettagli della programmazione televisiva dell'appuntamento di Sepang",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-orari/orari-tv-gp-malesia-2025-sepang-televisione-diretta-sky-differita-tv8-programmazione-dove-vederla-marquez-martin-infortunio-lotta-mondiale-bezzecchi-aprilia-ducati",
-   "pubblicato": "2026-11-01T07:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -15.6,
-   "testate": 1
   }
  ]
 }

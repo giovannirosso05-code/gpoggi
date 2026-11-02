@@ -1,6 +1,678 @@
 {
- "generato_il": "2026-11-02T03:52:14+00:00",
+ "generato_il": "2026-11-02T13:23:57+00:00",
  "articoli": [
+  {
+   "titolo": "Hirakawa a punti al debutto in F1: “Ho realizzato un sogno”",
+   "estratto": "Chiamato all'ultimo momento in sostituzione di Ocon, il giapponese ha chiuso al 10° posto dopo le penalità inflitte a Piastri, Colapinto e Gasly",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/hirakawa-a-punti-al-debutto-in-f1-ho-realizzato-un-sogno",
+   "pubblicato": "2026-11-02T13:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 18.9,
+   "testate": 2
+  },
+  {
+   "titolo": "L’ingegner Dallara si commuove per Kimi: “Tanti ottimi piloti italiani, ma il super fuoriclasse è arrivato solo adesso”",
+   "estratto": "L’ingegner Giampaolo Dallara vede in Antonelli la maturità tipica di un veterano come Hamilton: “Abbiamo un campione, teniamocelo”",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/dallara-si-commuove-kimi-tanti-ottimi-piloti-italiani-super-fuoriclasse-adesso",
+   "pubblicato": "2026-11-02T13:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Alto contrasto",
+   "estratto": "Max vince la gara, Kimi un fantastico titolo. Ferrari perde con la miglior macchina, travolta dalla lotta non governata tra Hamilton e Leclerc",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/vasseur-leclerc-hamilton-volano-stracci-pesanti-ferrari-vittoria-buttata-via-gp-messico-sf26-miglior-vettura",
+   "pubblicato": "2026-11-02T13:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 11.9,
+   "testate": 1
+  },
+  {
+   "titolo": "GP San Paolo 2026: orari Sky/Now e TV8",
+   "estratto": "I dettagli della programmazione televisiva dell'appuntamento in programma ad Interlagos",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-brasile-2026-interlagos-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-antonelli-campione-verstappen",
+   "pubblicato": "2026-11-02T13:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -8.1,
+   "testate": 1
+  },
+  {
+   "titolo": "Kimi Antonelli aveva le idee chiare a 11 anni: “Voglio diventare campione del mondo” – VIDEO",
+   "estratto": "Mexico City, ottomilacinquecento passi sopra il livello del mare, e un ragazzo che a un certo punto smette di respirare come respirano gli altri. Sul podio dell’Hermanos Rodríguez c’è Kimi Antonelli…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/kimi-antonelli-aveva-le-idee-chiare-a-11-anni-voglio-diventare-campione-del-mondo-video/",
+   "pubblicato": "2026-11-02T12:55:41+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 46.9,
+   "testate": 4
+  },
+  {
+   "titolo": "Da “ha camminato sulle acque” a “voracità nei sorpassi”: Kimi Antonelli celebrato dalla stampa estera",
+   "estratto": "Il mondo ai piedi di un gigante di vent’anni. La stampa internazionale celebra il titolo mondiale di Andrea Kimi Antonelli, capace di riportare l’iride della F1 in Italia dopo ben 73 anni di attesa…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/kimi-antonelli-nella-storia-della-f1-la-stampa-estera-si-inchina-al-nuovo-fenomeno-italiano/",
+   "pubblicato": "2026-11-02T12:23:57+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Quasi 4 milioni di telespettatori tra Sky e TV8 per il titolo di Antonelli",
+   "estratto": "Numeri da record grazie al nuovo fenomeno italiano",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/trionfo-mondiale-kimi-antonelli-gp-messico-nuovi-record-ascolti-tv-sky-tv8-share",
+   "pubblicato": "2026-11-02T12:15:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 11.7,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Quante penalità nel post-gara: Hirakawa va a punti al debutto con un sorpasso all’esterno!",
+   "estratto": "Ci sono giornate che non si dimenticano, mai. Nella domenica di festa di Andrea Kimi Antonelli, fresco campione del mondo, c’è un altro pilota che può lasciare il Messico sorridendo: Ryo Hirakawa. Il…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-quante-penalita-nel-post-gara-hirakawa-va-a-punti-al-debutto-con-un-sorpasso-allesterno/10870999/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-02T12:00:06+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 21.7,
+   "testate": 2
+  },
+  {
+   "titolo": "Bortoleto torna in zona punti: “Non si poteva chiedere di meglio”",
+   "estratto": "8° dopo le penalità di tempo a Piastri, Gasly e Colapinto, il brasiliano dell'Audi ha voluto ringraziare il proprio team per l'impegno profuso",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/bortoleto-torna-in-zona-punti-non-si-poteva-chiedere-di-meglio",
+   "pubblicato": "2026-11-02T12:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Hamilton: “Vasseur fa del suo meglio. Prima della gara è venuto a parlarmi ed era nervoso”",
+   "estratto": "Il campione inglese ha parlato ampiamente della gestione della rivalità tra i due piloti in Ferrari",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/hamilton-vasseur-fa-del-suo-meglio-prima-gara-venuto-parlarmi-era-nervoso",
+   "pubblicato": "2026-11-02T11:30:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.5,
+   "testate": 1
+  },
+  {
+   "titolo": "George Russell diserta la festa di Kimi Antonelli. La reazione di Toto Wolff",
+   "estratto": "C’è una fotografia nella giornata di ieri a Città del Messico, stampata sulla retina della scuderia Mercedes. Da una parte del garage c’è la felicità assoluta, l’esplosione di gioia per la corona…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/george-russell-diserta-la-festa-di-kimi-antonelli-la-reazione-di-toto-wolff/",
+   "pubblicato": "2026-11-02T11:13:22+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 11.5,
+   "testate": 1
+  },
+  {
+   "titolo": "Lawson: “Avevamo il potenziale per guadagnare ulteriori posizioni”",
+   "estratto": "Nonostante la partenza dalla pit lane, il pilota neozelandese ha chiuso il GP di Città del Messico al 7° posto, con il team che ha allungato nei Costruttori sull'Alpine",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/lawson-avevamo-potenziale-per-guadagnare-ulteriori-posizioni",
+   "pubblicato": "2026-11-02T11:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.4,
+   "testate": 1
+  },
+  {
+   "titolo": "Leclerc: “Non penso ci sia tanto da discutere, non ci siamo toccati e siamo andati entrambi larghi”",
+   "estratto": "Il monegasco ha voluto ridimensionare quanto accaduto con il compagno di squadra",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/leclerc-non-penso-tanto-discutere-hamilton-non-ci-siamo-toccati-ferrari-messico",
+   "pubblicato": "2026-11-02T11:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.4,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Papà Antonelli ci racconta Kimi: \"Ho capito che sarebbe diventato campione dopo il crash in Australia\"",
+   "estratto": "L'apoteosi iridata: Kimi Antonelli portato in trionfo da Lewis Hamilton e Max Verstappen. Sul podio del GP del Messico abbiamo visto dodici titoli mondiali, l'ultimo freschissimo si è aggiunto grazie…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-papa-antonelli-ci-racconta-kimi-ho-capito-che-sarebbe-diventato-campione-dopo-il-crash-in-austra/10870779/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-02T10:52:40+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 47.4,
+   "testate": 4
+  },
+  {
+   "titolo": "Caos Ferrari, Hamilton durissimo: \"Leclerc contro di me! Ha 29 anni, è questione di mentalità\"",
+   "estratto": "Il duello in avvio a Città del Messico ha spianato la strada della vittoria a Verstappen rovinando una possibile vittoria della Rossa",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152320937/caos_ferrari_hamilton_durissimo_leclerc_contro_di_me_ha_29_anni_questione_di_mentalit/",
+   "pubblicato": "2026-11-02T10:34:03+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 26.3,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 | Hamilton, altra bordata a Leclerc: “O vinco io o non vince nessuno. Questa mentalità deve cambiare”",
+   "estratto": "Lewis Hamilton non ha cercato attenuanti, né ha provato a nascondere la propria amarezza. Al termine del Gran Premio del Messico, il sette volte campione del mondo ha puntato il dito contro Charles…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-hamilton-altra-bordata-a-leclerc-o-vinco-io-o-non-vince-nessuno-questa-mentalita-deve-cambiare/10870983/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-02T10:23:15+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 18.2,
+   "testate": 2
+  },
+  {
+   "titolo": "Wolff: “Antonelli? Vince perché è una brava persona. Basta con piloti spietati ed egoisti che si lamentano in radio”",
+   "estratto": "Un titolo speciale anche per Wolff Una grande fetta del merito per la conquista del titolo Mondiale 2026 di Kimi Antonelli va necessariamente attribuito a Toto Wolff. Il manager austriaco ha puntato…",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/wolff-antonelli-vince-perche-e-una-brava-persona-basta-con-piloti-spietati-ed-egoisti-che-si-lamentano-in-radio",
+   "pubblicato": "2026-11-02T10:20:44+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.2,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Come si organizzano i team e i piloti per il loro sbarco in Qatar",
+   "estratto": "Domenica è stata una giornata di corse a Sepang. E non solo di moto. Le riunioni si sono susseguite nel paddock del circuito malese. Alle undici del mattino si sono riuniti i team manager delle…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-come-si-organizzano-i-team-e-i-piloti-per-il-loro-sbarco-in-qatar/10870978/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-02T10:00:34+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 13.2,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP, il caso Qatar diventa uno scontro totale: Yamaha si ritira, Dorna non arretra",
+   "estratto": "C’è un Gran Premio che, prima ancora di cominciare, rischia già di lasciare un segno profondo nella storia recente della MotoGP. Non per quello che succederà in pista, ma per tutto ciò che sta…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-il-caso-qatar-diventa-uno-scontro-totale-yamaha-si-ritira-dorna-non-arretra/",
+   "pubblicato": "2026-11-02T09:59:36+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 13.1,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 | Antonelli: “Il Mondiale è solo l'inizio. Voglio lasciare un segno nella storia”",
+   "estratto": "A un giro dalla fine Kimi Antonelli ha iniziato a piangere. Non riusciva più a vedere bene la pista, davanti a sé distingueva a fatica le due Ferrari e nella sua mente scorrevano le immagini di una…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-antonelli-il-mondiale-e-solo-linizio-voglio-lasciare-un-segno-nella-storia/10870979/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-02T09:41:08+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.1,
+   "testate": 1
+  },
+  {
+   "titolo": "Antonelli campione, Russell ‘scappa’: non si presenta alle interviste e viene multato di 5000 €",
+   "estratto": "L'inglese ha disertato senza giustificazione gli impegni post gara, ricevendo una multa salata da parte della FIA",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/antonelli-campione-russell-scappa-non-si-presenta-alle-interviste-e-viene-multato-di-5000-e",
+   "pubblicato": "2026-11-02T09:39:28+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 11.1,
+   "testate": 1
+  },
+  {
+   "titolo": "Kimi Antonelli guarda al 2027: oggi la Mercedes non é più la miglior macchina dopo gli aggiornamenti",
+   "estratto": "Il 1° novembre 2026 resterà una data impressa nella memoria degli appassionati di motorsport italiano. Andrea Kimi Antonelli, classe 2006, bolognese, ha riportato il titolo iridato della massima…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/kimi-antonelli-guarda-al-2027-oggi-la-mercedes-non-e-piu-la-miglior-macchina-dopo-gli-aggiornamenti/",
+   "pubblicato": "2026-11-02T09:27:42+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 11.0,
+   "testate": 1
+  },
+  {
+   "titolo": "Alpine penalizzate, Hirakawa a punti: il motivo",
+   "estratto": "Colapinto e Gasly hanno subito una penalità a fine gara che ha consentito al pilota giapponese della Haas di conquistare un punto al debutto in F1",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/alpine-penalizzate-hirakawa-a-punti-il-motivo",
+   "pubblicato": "2026-11-02T09:23:01+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.0,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Leclerc: ecco perché è stato penalizzato di 5 secondi (e non 10) per il taglio al primo giro",
+   "estratto": "L'episodio tra Charles Leclerc e Lewis Hamilton al primo giro del GP del Messico ha inevitabilmente acceso le polemiche. Il contatto tra i due Ferraristi è costato infatti alla Rossa una grande…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-leclerc-ecco-perche-e-stato-penalizzato-di-5s-e-non-10-per-il-taglio-al-primo-giro/10870751/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-02T09:22:56+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 13.0,
+   "testate": 2
+  },
+  {
+   "titolo": "Antonelli: “La foto in spalle a Max e Lewis la incornicio e farò in modo di vederla bene ogni volta che entro in casa”",
+   "estratto": "Il pilota italiano è il nuovo campione del mondo in F1",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/antonelli-foto-iconica-gp-messico-verstappen-hamilton-la-incornicio-casa-spalle",
+   "pubblicato": "2026-11-02T09:10:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 15.9,
+   "testate": 1
+  },
+  {
+   "titolo": "F1, la Ferrari deve riflettere sul suo futuro. Vasseur leader debole, i piloti fanno ciò che vogliono. Così, non si vincerà mai",
+   "estratto": "Catastrofe Ferrari nel Gran Premio del Messico. Non dal punto di vista prestazionale, anzi. Bensì sul piano gestionale. Quanto accaduto ieri nell’autodromo intitolato ai fratelli Rodriguez è la…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-la-ferrari-deve-riflettere-sul-suo-futuro-vasseur-leader-debole-i-piloti-fanno-cio-che-vogliono-cosi-non-si-vincera-mai/",
+   "pubblicato": "2026-11-02T09:00:08+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 10.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Leclerc penalizzato di 5 secondi e non 10, per i commissari c’è l’attenuante: è uscito anche Hamilton",
+   "estratto": "Gli steward nel comunicato ufficiale hanno spiegato la ragione della penalità 'mitigata' assegnata a Leclerc",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/leclerc-penalizzato-di-5-secondi-e-non-10-per-i-commissari-ce-attenuante-e-uscito-anche-hamilton",
+   "pubblicato": "2026-11-02T08:58:55+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 12.9,
+   "testate": 2
+  },
+  {
+   "titolo": "Kimi Antonelli: “Correrò nel 2027 ancora col 12 per un motivo. Senna è un modello di ispirazione”",
+   "estratto": "Il sogno è diventato realtà e Kimi Antonelli ha finalmente potuto lasciarsi andare alle emozioni. Il titolo mondiale di F1, conquistato al termine di una stagione straordinaria, ha consegnato…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/kimi-antonelli-correro-nel-2027-ancora-col-12-per-un-motivo-senna-e-un-modello-di-ispirazione/",
+   "pubblicato": "2026-11-02T08:58:21+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 15.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Vasseur: “Capisco la frustrazione di Hamilton, ma parleremo dei suoi commenti”",
+   "estratto": "Il team principal Ferrari è decisamente arrabbiato dopo quanto accaduto in Messico",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/vasseur-capisco-frustrazione-hamilton-parleremo-suoi-commenti-ferrari-leclerc-messico",
+   "pubblicato": "2026-11-02T08:56:41+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 15.9,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Antonelli non userà il numero 1 nel 2027: \"Avrò ancora il 12. Un modo per rimanere con i piedi per terra\"",
+   "estratto": "AKA 12. No, non è \"also known as\", ovvero \"anche noto come\". E' l'abbreviazione più comoda di Andrea Kimi Antonelli, sfruttando molto banalmente le iniziali dei due nomi e quella del cognome. Ma in…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-antonelli-non-usera-il-numero-1-nel-2027-avro-ancora-il-12-un-modo-per-rimanere-con-i-piedi-per-/10870847/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-02T08:55:39+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 15.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Ferrari e Antonelli, il sogno italiano: quella foto a Maranello che racconta tutto",
+   "estratto": "Il più giovane campione del mondo ha cambiato anche il tifo, superando i conflitti di “colore”, al contrario di quello che avviene nel calcio",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152318452/ferrari_e_antonelli_il_sogno_italiano_quella_foto_a_maranello_che_racconta_tutto/",
+   "pubblicato": "2026-11-02T08:37:07+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 26.8,
+   "testate": 2
+  },
+  {
+   "titolo": "Mondiale Costruttori 2026: la classifica dopo il GP del Messico",
+   "estratto": "La Ferrari ha ottenuto 30 punti anche in Messico",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-classifiche/classifica-costruttori-f1-2026-ferrari-fa-30-punti-anche-gp-messico-antonelli-campione",
+   "pubblicato": "2026-11-02T08:35:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 8.8,
+   "testate": 2
+  },
+  {
+   "titolo": "Arrivabene bacchetta la Ferrari: “Leclerc ha fatto una figuraccia, ma la macchina è competitiva”",
+   "estratto": "Nel giorno in cui la F1 celebra la consacrazione iridata di Kimi Antonelli, il paddock di Città del Messico si trasforma nel teatro di una guerra civile tutta interna alla Ferrari. La convivenza…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/arrivabene-bacchetta-la-ferrari-leclerc-ha-fatto-una-figuraccia-ma-la-macchina-e-competitiva/",
+   "pubblicato": "2026-11-02T08:34:09+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 15.8,
+   "testate": 1
+  },
+  {
+   "titolo": "GP Città del Messico 2026, ordine di arrivo: Kimi, un sogno italiano! Antonelli 3° dietro Max e Hamilton, è campione del mondo",
+   "estratto": "A soli 20 anni, Antonelli è il più giovane campione del mondo della storia. Al bolognese basta la P3 dietro Max Verstappen e Lewis Hamilton, per un podio destinato a rimanere iconico. Scintille tra i…",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-risultati/gp-messico-ordine-arrivo-ferrari-antonelli-campione-del-mondo-leclerc-penalita-hamilton-verstappen",
+   "pubblicato": "2026-11-02T08:30:40+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 40.8,
+   "testate": 4
+  },
+  {
+   "titolo": "Mondiale Piloti 2026: la classifica dopo il GP del Messico, Antonelli è campione del mondo",
+   "estratto": "Il pilota italiano si è laureato campione del mondo in Messico",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-classifiche/classifica-mondiale-piloti-f1-2026-dopo-gp-messico-antonelli-campione-del-mondo",
+   "pubblicato": "2026-11-02T08:30:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 28.8,
+   "testate": 4
+  },
+  {
+   "titolo": "Caro Kimi ti scrivo. Possa tu trovare Itaca e... guidare una macchina rossa",
+   "estratto": "Ti auguro di non abituarti mai alla vittoria, mantenere il sorriso e la rotta nella burrasca, restituire agli altri, di vedere presto un Mondiale di calcio...",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152318339/caro_kimi_ti_scrivo_possa_tu_trovare_itaca_e_guidare_una_macchina_rossa/",
+   "pubblicato": "2026-11-02T08:29:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 2.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Norris passa la corona ad Antonelli: “Il titolo non poteva andare a una persona migliore”",
+   "estratto": "L'inglese della McLaren ha espresso parole splendide per il suo erede nell'albo d'oro, sottolineando il livello raggiunto da Kimi quest'anno",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/norris-passa-la-corona-ad-antonelli-il-titolo-non-poteva-andare-a-una-persona-migliore",
+   "pubblicato": "2026-11-02T08:27:13+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 25.8,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP | Ogura si scusa con Bezzecchi per il contatto: \"Colpa mia\"",
+   "estratto": "Le scaramucce tra le Aprilia sono state un tema ricorrente nella stagione 2026 di MotoGP e il Gran Premio della Malesia non è stato da meno. Questa volta è stato Ai Ogura, in sella alla RS-GP…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-ogura-si-scusa-con-bezzecchi-per-il-contatto-colpa-mia/10870620/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-02T08:24:28+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 25.8,
+   "testate": 2
+  },
+  {
+   "titolo": "“Kimi ricorda Vettel, ecco il suo segreto e la sua gara manifesto. E l'anno prossimo...\"",
+   "estratto": "Ivan Capelli disegna la grandezza di Antonelli: \" Provoca con fair play, nel 2027 con Verstappen ci divertiremo\"",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152317506/kimi_ricorda_vettel_ecco_il_suo_segreto_e_la_sua_gara_manifesto_e_l_anno_prossimo_/",
+   "pubblicato": "2026-11-02T08:21:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 15.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Fenomeni e Contrari e le altre storie dal Messico: I Doppiati F1 Podcast – VIDEO",
+   "estratto": "Sventolate le bandiere blu, I Doppiati sono in diretta su YouTube, Spotify e Apple Podcast per commentare il GP di Città del Messico di F1",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/fenomeni-e-contrari-e-le-altre-storie-dal-messico-i-doppiati-f1-podcast-video-antonelli-campione-ferrari-leclerc-hamilton",
+   "pubblicato": "2026-11-02T08:15:00+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 8.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Kimi Antonelli, mamma Veronica svela il segreto del campione: “Fa un lavoro che gli piace”",
+   "estratto": "Il mondo celebra un’impresa destinata a entrare nella storia della F1, ma dentro casa Antonelli il rumore della festa lascia spazio a qualcosa di molto più semplice e autentico: l’orgoglio di una…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/kimi-antonelli-mamma-veronica-svela-il-segreto-del-campione-fa-un-lavoro-che-gli-piace/",
+   "pubblicato": "2026-11-02T08:05:19+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 45.7,
+   "testate": 4
+  },
+  {
+   "titolo": "Favola Antonelli, i momenti più iconici: a Monza l’abbraccio di un Paese",
+   "estratto": "La rimonta nel GP d'Italia e la vittoria di Spa: la svolta nel Mondiale di Kimi",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152317774/favola_antonelli_i_momenti_pi_iconici_a_monza_labbraccio_di_un_paese/",
+   "pubblicato": "2026-11-02T08:03:23+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 10.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Kimi Antonelli e la generazione numero 1. Da Sinner a Bezzecchi e...",
+   "estratto": "La comparsata a Wimbledon da Jannik, le partite a briscola con Bez. E quanti altri campioni in rubrica: in primis l’iridato nel lungo Furlani",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152317504/kimi_antonelli_e_la_generazione_numero_1_da_sinner_a_bezzecchi_e_/",
+   "pubblicato": "2026-11-02T07:57:45+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 20.6,
+   "testate": 2
+  },
+  {
+   "titolo": "Un Giamburrasca della tribù dei Valentino: chi è davvero Kimi Antonelli",
+   "estratto": "Il nome che sembra una gag di Troisi, la linguetta “impegnata” e le burle. Dalla “ciotola” di Monza all’ironia con Hamilton sui tatuaggi che non ha",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152317401/un_giamburrasca_della_trib_dei_valentino_chi_davvero_kimi_antonelli/",
+   "pubblicato": "2026-11-02T07:52:50+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 10.6,
+   "testate": 1
+  },
+  {
+   "titolo": "Antonelli, l’imperatore del mondo",
+   "estratto": "Gara caotica con una bandiera rossa e safety car, Kimi però naviga tra i guai e chiude i conti con quattro gare d’anticipo: \"Ce l’abbiamo fatta!\"",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152317404/antonelli_limperatore_del_mondo/",
+   "pubblicato": "2026-11-02T07:48:34+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 10.6,
+   "testate": 1
+  },
+  {
+   "titolo": "Gen Z? No, Generazione K. Talento unico e favoloso",
+   "estratto": "A soli vent'anni è già fonte di ispirazione, così come i suoi connazionali negli altri sport. Il suo successo è dovuto proprio alla giovane età: parola di Toto Wolff",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152317297/gen_z_no_generazione_k_talento_unico_e_favoloso/",
+   "pubblicato": "2026-11-02T07:44:24+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 2.6,
+   "testate": 1
+  },
+  {
+   "titolo": "Le toccanti parole di Jannik Sinner a Kimi Antonelli: “Hai cambiato tutte le carte in tavola”",
+   "estratto": "Ci sono imprese che vanno oltre il risultato sportivo, capaci di attraversare discipline, generazioni e confini, accomunando campioni che, pur avendo scritto pagine importanti della storia dello…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/le-toccanti-parole-di-jannik-sinner-a-kimi-antonelli-hai-cambiato-tutte-le-carte-in-tavola/",
+   "pubblicato": "2026-11-02T07:36:57+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 25.6,
+   "testate": 2
+  },
+  {
+   "titolo": "Vasseur striglia i piloti Ferrari: “Una mancanza di rispetto verso il marchio”",
+   "estratto": "“Una mancanza di rispetto verso il marchio“. Frederic Vasseur non usa mezzi termini per descrivere quanto accaduto alla Ferrari nel Gran Premio del Messico. Il Team Principal di Maranello punta il…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/vasseur-striglia-i-piloti-ferrari-una-mancanza-di-rispetto-verso-il-marchio/",
+   "pubblicato": "2026-11-02T07:12:38+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 25.5,
+   "testate": 2
+  },
+  {
+   "titolo": "“Kimi Antonelli può vincere sei Mondiali!”, l’investitura di Valentino Rossi. “Mi ricorda me stesso”",
+   "estratto": "Il Dottore commenta la vittoria del 20enne bolognese: \"Può diventare uno dei più grandi della storia\"",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152317193/kimi_antonelli_pu_vincere_sei_mondiali_linvestitura_di_valentino_rossi_mi_ricorda_me_stesso/",
+   "pubblicato": "2026-11-02T07:04:01+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 25.4,
+   "testate": 2
+  },
+  {
+   "titolo": "La MotoGP può permettersi un Mondiale deciso dagli infortuni? Tutti i contendenti al titolo 2026 si sono “rotti”. È sostenibile?",
+   "estratto": "Se si vuole effettuare un’analisi sul Mondiale di MotoGP che vada al di là delle banalità e dell’ovvio, ossia che Marc Marquez è un pilota di una forgia totalmente diversa e di qualità ben più…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/la-motogp-puo-permettersi-un-mondiale-deciso-dagli-infortuni-tutti-i-contendenti-al-titolo-2026-si-sono-rotti-e-sostenibile/",
+   "pubblicato": "2026-11-02T07:00:07+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 17.4,
+   "testate": 2
+  },
+  {
+   "titolo": "Russell riconosce la superiorità di Antonelli: “Campionato meritato, può essere orgoglioso”",
+   "estratto": "George Russell ha archiviato il Gran Premio di Città del Messico di F1 con un deludente sesto posto, al termine di una gara condizionata da un problema tecnico nelle fasi iniziali. Il britannico…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/george-russell-si-congratula-con-antonelli-lavoro-fantastico-campionato-piu-che-meritato/",
+   "pubblicato": "2026-11-02T06:54:22+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 15.4,
+   "testate": 1
+  },
+  {
+   "titolo": "Valentino Rossi: “Antonelli mi ricorda me. Può diventare uno dei più grandi della storia”",
+   "estratto": "C’è un filo che attraversa venticinque anni di motorismo italiano e che, nella notte del titolo mondiale di Kimi Antonelli, è tornato a tendersi. A tirarlo, con la naturalezza di chi sa riconoscere i…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/valentino-rossi-antonelli-mi-ricorda-me-puo-diventare-uno-dei-piu-grandi-della-storia/",
+   "pubblicato": "2026-11-02T06:38:28+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 25.3,
+   "testate": 2
+  },
+  {
+   "titolo": "F1, promossi e bocciati del GP del Messico 2026. Verstappen implacabile, Vasseur inconsistente",
+   "estratto": "Il Gran Premio del Messico di F1 è passato agli archivi, ma il Circus non ha nessuna intenzione di fermarsi. Difatti, prosegue il suo viaggio verso sud e si appresta a varcare l’equatore…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-promossi-e-bocciati-del-gp-del-messico-2026-verstappen-implacabile-vasseur-inconsistente/",
+   "pubblicato": "2026-11-02T06:00:05+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 2.2,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP, i promossi e bocciati del GP di Malesia 2026. Marquez, tesi quasi pubblicata. Bezzecchi respinto con perdite",
+   "estratto": "Il Gran Premio di Malesia di MotoGP è oramai cronaca. Nelle prossime settimane è destinato a diventare storia. Cionondimeno, prima di abbandonare idealmente Sepang, è bene mettere sul piatto della…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-i-promossi-e-bocciati-del-gp-di-malesia-2026-marquez-tesi-quasi-pubblicata-bezzecchi-respinto-con-perdite/",
+   "pubblicato": "2026-11-02T05:00:03+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 29.9,
+   "testate": 3
+  },
+  {
+   "titolo": "MotoGP, GP Qatar 2026: programma, orari, tv, streaming, guida SKY e TV8",
+   "estratto": "Dopo aver salutato la Malesia si torna subito in azi0ne nel Motomondiale 2026 per andare a completare la tripletta asiatica-oceanica. Dopo le tappe di Australia e Sepang, infatti, ci si trasferisce…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-gp-qatar-2026-programma-orari-tv-streaming-guida-sky-e-tv8/",
+   "pubblicato": "2026-11-02T04:10:56+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -10.3,
+   "testate": 1
+  },
+  {
+   "titolo": "F1, GP Brasile 2026: programma, orari, tv, streaming, guida SKY e TV8",
+   "estratto": "Il Mondiale di F1 2026 si prepara a vivere una delle sue tappe più iconiche e calde. Dal 6 all’8 novembre, i riflettori si accenderanno a San Paolo per il Gran Premio del Brasile, ventesimo…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-gp-brasile-2026-programma-orari-tv-streaming-guida-sky-e-tv8/",
+   "pubblicato": "2026-11-02T04:05:32+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -10.3,
+   "testate": 1
+  },
   {
    "titolo": "F1 | Vasseur: \"I piloti hanno mancato di rispetto per le persone che lavorano per loro. Ne riparleremo...\"",
    "estratto": "I nodi vengono al pettine. Una volta che la Ferrari ha nuovamente trovato la macchina competitiva per ambire alla vittoria ci hanno pensato i piloti a rovinare tutto. Il patatrac alla curva 4 fra…",
@@ -10,7 +682,7 @@
    "pubblicato": "2026-11-02T00:44:02+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.2,
+   "punteggio": 23.8,
    "testate": 2
   },
   {
@@ -22,8 +694,8 @@
    "pubblicato": "2026-11-02T00:40:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.2,
-   "testate": 1
+   "punteggio": 23.8,
+   "testate": 2
   },
   {
    "titolo": "F1 | Hamilton vs Leclerc costa la vittoria alla Ferrari, ma Leclerc dice: \"Non dovrebbe essere un tema di discussione\"",
@@ -34,55 +706,7 @@
    "pubblicato": "2026-11-02T00:18:14+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.1,
-   "testate": 2
-  },
-  {
-   "titolo": "Tensione con Leclerc, Hamilton: “Abbiamo perso punti nei Costruttori, io ho perso la vittoria”",
-   "estratto": "Il commento a caldo del sette volte iridato dopo il controverso episodio avvenuto con il suo compagno di squadra alla partenza del GP messicano",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/tensione-con-leclerc-hamilton-abbiamo-perso-punti-nei-costruttori-ho-perso-la-vittoria",
-   "pubblicato": "2026-11-02T00:15:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 18.1,
-   "testate": 2
-  },
-  {
-   "titolo": "Valentino Rossi incorona Antonelli: “Kimi, mi ricordi me. Puoi vincere 5-6 Mondiali ed essere uno dei più forti di sempre”",
-   "estratto": "Valentino Rossi si complimenta con Kimi Antonelli dopo lo storico trionfo che ha riportato l'Italia in vetta alla F1 dopo 73 anni",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/valentino-rossi-kimi-antonelli-mi-ricorda-me-quando-avevo-20-anni-puo-vincere-5-6-mondiali-e-diventare-uno-dei-piu-forti-della-storia",
-   "pubblicato": "2026-11-02T00:14:28+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 26.1,
-   "testate": 2
-  },
-  {
-   "titolo": "Antonelli mondiale con risvolto: senza di lui Ferrari da titolo",
-   "estratto": "Il commento del Gran Premio del Messico che ha incoronato il fenomeno italiano campione del mondo",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-commento/analisi-gp-messico-antonelli-fenomeno-campione-mondo-ferrari-da-mondiale-leclerc-hamilton-vasseur",
-   "pubblicato": "2026-11-02T00:10:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 11.1,
-   "testate": 1
-  },
-  {
-   "titolo": "Wolff impazzisce di gioia: “Kimi Antonelli la nuova superstar della F1, mi mancano le parole”",
-   "estratto": "Tutta l'emozione di Toto Wolff, che sotto il podio ha saltato e ha cantato tra le note di \"Sarà perché ti amo\" dei Ricchi e Poveri",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/toto-wolff-impazzisce-gioia-kimi-antonelli-nuova-superstar-f1-mancano-le-parole",
-   "pubblicato": "2026-11-01T23:55:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 26.0,
+   "punteggio": 23.7,
    "testate": 2
   },
   {
@@ -94,8 +718,8 @@
    "pubblicato": "2026-11-01T23:51:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 28.0,
-   "testate": 3
+   "punteggio": 5.6,
+   "testate": 1
   },
   {
    "titolo": "Kimi Antonelli è il più giovane campione del mondo della storia della F1! Battuto (e non di poco) il record di Vettel",
@@ -106,32 +730,8 @@
    "pubblicato": "2026-11-01T23:47:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 41.0,
+   "punteggio": 38.6,
    "testate": 4
-  },
-  {
-   "titolo": "Tensione Hamilton-Leclerc, Charles smorza i toni: “Penalità meritata. Volevo ridare la posizione a Lewis, ma c’era Max”",
-   "estratto": "Il caos nel corso del primo giro è costato la vittoria alla Ferrari sulla pista di Città del Messico",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/tensione-hamilton-leclerc-charles-smorza-i-toni-penalita-meritata-volevo-ridare-la-posizione-a-lewis-ma-cera-max",
-   "pubblicato": "2026-11-01T23:37:24+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 25.9,
-   "testate": 2
-  },
-  {
-   "titolo": "Kimi campione! Un titolo che va oltre la macchina",
-   "estratto": "Antonelli scrive la storia e ringrazia la Mercedes, ma la sua forza va ancora oltre e prospetta una carriera ricca di successi",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/kimi-campione-titolo-va-oltre-macchina",
-   "pubblicato": "2026-11-01T23:35:36+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 10.9,
-   "testate": 1
   },
   {
    "titolo": "Charles Leclerc ammette: “Penalità meritata, non ho potuto restituire la posizione ad Hamilton”",
@@ -142,8 +742,8 @@
    "pubblicato": "2026-11-01T23:33:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.9,
-   "testate": 2
+   "punteggio": 13.5,
+   "testate": 1
   },
   {
    "titolo": "F1 | Antonelli commosso: \"Ce l'abbiamo fatta. Questo è un nuovo punto di partenza per continuare a vincere\"",
@@ -154,19 +754,7 @@
    "pubblicato": "2026-11-01T23:31:45+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 35.9,
-   "testate": 3
-  },
-  {
-   "titolo": "Vasseur contro Leclerc e Hamilton: “Faccio fatica ad accettare una mancanza di rispetto per tutte le persone che lavorano per loro”",
-   "estratto": "Il team principal della Ferrari è molto amareggiato per la vittoria sfumata",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/gp-messico-vasseur-stronca-hamilton-leclerc-2mila-persone-lavorano-per-loro-rispetto-ferrari",
-   "pubblicato": "2026-11-01T23:30:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 25.9,
+   "punteggio": 23.5,
    "testate": 2
   },
   {
@@ -178,7 +766,7 @@
    "pubblicato": "2026-11-01T23:15:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 35.8,
+   "punteggio": 33.5,
    "testate": 3
   },
   {
@@ -190,20 +778,8 @@
    "pubblicato": "2026-11-01T23:14:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 40.8,
+   "punteggio": 38.5,
    "testate": 4
-  },
-  {
-   "titolo": "Vettel incorona Antonelli e gli dedica un video-lettera: ora è lui il più giovane campione di sempre",
-   "estratto": "Il tedesco e la F1 hanno omaggiato Antonelli con uno splendido video che sancisce il 'passaggio di consegne' tra i due",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/vettel-incorona-antonelli-e-gli-dedica-un-video-lettera-ora-e-lui-il-piu-giovane-campione-di-sempre",
-   "pubblicato": "2026-11-01T23:10:29+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 20.8,
-   "testate": 2
   },
   {
    "titolo": "Il papà di Kimi Antonelli: “Il Campione lo abbiamo visto lo scorso anno. Grazie a Wolff: ha creduto in lui”",
@@ -214,7 +790,7 @@
    "pubblicato": "2026-11-01T23:03:35+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 45.8,
+   "punteggio": 43.4,
    "testate": 4
   },
   {
@@ -226,8 +802,8 @@
    "pubblicato": "2026-11-01T23:03:03+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.8,
-   "testate": 2
+   "punteggio": 13.4,
+   "testate": 1
   },
   {
    "titolo": "F1 | Kimi Antonelli campione del mondo. Ecco il ragazzo che ha battuto anche il tempo",
@@ -238,284 +814,8 @@
    "pubblicato": "2026-11-01T23:02:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 40.8,
+   "punteggio": 38.4,
    "testate": 4
-  },
-  {
-   "titolo": "Antonelli: “Con una macchina così ho capito presto di poter vincere il titolo, continuerò a spingere per portare l’Italia in alto”",
-   "estratto": "Le prime parole da campione del mondo del pilota italiano",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/antonelli-campione-capito-presto-poter-vincere-felice-esserci-riuscito-gp-messico",
-   "pubblicato": "2026-11-01T23:01:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 25.8,
-   "testate": 2
-  },
-  {
-   "titolo": "Ordine d’arrivo F1, GP Messico: Antonelli campione del mondo! Verstappen precede Hamilton, rimpianti Leclerc",
-   "estratto": "Oggi è andato in scena il GP del Messico 2026, tappa del Mondiale F1 che si è disputata sul tracciato intitolato agli Hermanos Rodriguez. I piloti si sono fronteggiati a viso aperto su un circuito…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/ordine-darrivo-f1-gp-messico-risultati-e-classifica-gara/",
-   "pubblicato": "2026-11-01T22:53:33+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 40.8,
-   "testate": 4
-  },
-  {
-   "titolo": "Lewis Hamilton non si dà pace: “Oggi avevo il passo per vincere. Gara rovinata dall’episodio con Leclerc”",
-   "estratto": "Lewis Hamilton chiude particolarmente accigliato dopo aver concluso al secondo posto il Gran Premio del Messico, diciannovesimo appuntamento del Mondiale di Formula Uno 2026. Sul tracciato di Città…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/lewis-hamilton-non-si-da-pace-oggi-avevo-il-passo-per-vincere-gara-rovinata-dallepisodio-al-via-con-leclerc/",
-   "pubblicato": "2026-11-01T22:50:11+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 27.7,
-   "testate": 3
-  },
-  {
-   "titolo": "Max Verstappen incorona Antonelli: “Impressionante quello che ha fatto a quella età. Sono fiero di lui”",
-   "estratto": "Un successo di rabbia, classe e perfetta lettura della gara. Max Verstappen si prende di forza il Gran Premio del Messico, firmando la sua terza vittoria stagionale al termine di una domenica…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/max-verstappen-incorona-antonelli-impressionante-quello-che-ha-fatto-a-quella-eta-sono-fiero-di-lui/",
-   "pubblicato": "2026-11-01T22:48:58+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 15.7,
-   "testate": 1
-  },
-  {
-   "titolo": "Mondiale Costruttori 2026: la classifica dopo il GP del Messico",
-   "estratto": "La Ferrari ha ottenuto 30 punti anche in Messico",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-classifiche/classifica-costruttori-f1-2026-ferrari-fa-30-punti-anche-gp-messico-antonelli-campione",
-   "pubblicato": "2026-11-01T22:45:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 8.7,
-   "testate": 2
-  },
-  {
-   "titolo": "LIVE F1, GP Messico 2026 in DIRETTA: Kimi Antonelli campione del mondo! Questa è pura mitologia dopo 73 anni!",
-   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE L’ORDINE D’ARRIVO L’ALBO D’ORO DEL MONDIALE DI F1 23.44 Grazie per averci seguito, amici di OA Sport. Questa notte siamo tutti campioni del mondo! Kimi…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/live-f1-gp-messico-2026-in-diretta-kimi-antonelli-per-la-leggenda-ferrari-per-il-successo/",
-   "pubblicato": "2026-11-01T22:44:56+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 40.7,
-   "testate": 4
-  },
-  {
-   "titolo": "IL RAGAZZO DEL DESTINO! Kimi Antonelli campione del mondo di F1: Italia in estasi dopo 73 anni!",
-   "estratto": "Campione del Mondo! Kimi Antonelli fa la storia e diventa il terzo pilota italiano di sempre (dopo Giuseppe Farina nel 1950 e Alberto Ascari nel 1952 e 1953) capace di entrare nell’albo d’oro del…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/il-ragazzo-del-destino-kimi-antonelli-campione-del-mondo-di-f1-italia-in-estasi-dopo-73-anni/",
-   "pubblicato": "2026-11-01T22:44:09+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 40.7,
-   "testate": 4
-  },
-  {
-   "titolo": "Antonelli, il primo team radio da campione del mondo: “Ce l’abbiamo fatta”. E Bono rilancia: “È solo il primo capitolo”",
-   "estratto": "Ad appena 20 anni il pilota della Mercedes ha scritto una grandissima pagina di storia dello sport italiano",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/antonelli-il-primo-team-radio-da-campione-del-mondo-ce-labbiamo-fatta-e-bono-rilancia-e-solo-il-primo-capitolo",
-   "pubblicato": "2026-11-01T22:41:37+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 45.7,
-   "testate": 4
-  },
-  {
-   "titolo": "Gerarchie ribaltate e confronto mai realmente esistito: Kimi Antonelli ha stravinto il confronto interno con George Russell",
-   "estratto": "Andrea Kimi Antonelli ha vinto il Mondiale di Formula Uno 2026. Ormai com’è ben noto, si tratta quasi una non-notizia, dato che si sapeva ampiamente che per il giovane talento bolognese fosse solo…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/gerarchie-ribaltate-e-confronto-mai-realmente-esistito-kimi-antonelli-ha-stravinto-il-confronto-interno-con-george-russell/",
-   "pubblicato": "2026-11-01T22:37:55+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 10.7,
-   "testate": 1
-  },
-  {
-   "titolo": "F1, pagelle GP Messico 2026: Antonelli nel Gotha, la Ferrari si fa male da sola e Verstappen ringrazia.",
-   "estratto": "PAGELLE GP MESSICO F1 2026 Domenica 1 novembre MAX VERSTAPPEN (Red Bull) 9: sfrutta nel migliore dei modi le disavventure ferrariste e tiene duro. Vince ancora e conferma di essere il miglior pilota…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/f1-pagelle-gp-messico-2026-antonelli-nel-gotha-la-ferrari-si-fa-male-da-sola-e-verstappen-ringrazia/",
-   "pubblicato": "2026-11-01T22:37:41+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 20.7,
-   "testate": 2
-  },
-  {
-   "titolo": "Classifica F1, Mondiale piloti 2026: Kimi Antonelli trionfa! Margine enorme su Verstappen e Hamilton",
-   "estratto": "Kimi Antonelli ha vinto il Mondiale F1! Il terzo posto conseguito nel GP del Messico ha permesso al ventenne bolognese di chiudere matematicamente i conti e di conquistare il titolo iridato…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/classifica-mondiale-piloti-f1-2026-graduatoria-e-punti/",
-   "pubblicato": "2026-11-01T22:35:51+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 28.7,
-   "testate": 4
-  },
-  {
-   "titolo": "Mondiale Piloti 2026: la classifica dopo il GP del Messico, Antonelli è campione del mondo",
-   "estratto": "Il pilota italiano si è laureato campione del mondo in Messico",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-classifiche/classifica-mondiale-piloti-f1-2026-dopo-gp-messico-antonelli-campione-del-mondo",
-   "pubblicato": "2026-11-01T22:35:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 28.7,
-   "testate": 4
-  },
-  {
-   "titolo": "Classifica Mondiale costruttori F1 2026: Ferrari accorcia sulla Mercedes",
-   "estratto": "La Mercedes si trova al comando della classifica del Mondiale costruttori con 630 punti e può fare affidamento su un vantaggio di 126 lunghezze nei confronti della Ferrari, che ha recuperato qualcosa…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/classifica-mondiale-costruttori-f1-2026-graduatoria-e-punti/",
-   "pubblicato": "2026-11-01T22:34:28+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 8.7,
-   "testate": 2
-  },
-  {
-   "titolo": "La storia di Kimi Antonelli. Fenomeno indiscusso sin dalle categorie giovanili. Ma in F2…",
-   "estratto": "Andrea Kimi Antonelli ha vinto in Messico il Mondiale di F1 2026 scrivendo una pagina indelebile dell’automobilismo italiano e non solo. Il pilota di Mercedes ha raggiunto in pochi anni la massima…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/la-storia-di-kimi-antonelli-fenomeno-indiscusso-sin-dalle-categorie-giovanili-ma-in-f2/",
-   "pubblicato": "2026-11-01T22:33:01+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 20.7,
-   "testate": 2
-  },
-  {
-   "titolo": "Antonelli, il rimpianto della Ferrari. Quel bambino rifiutato che oggi fa grande la Mercedes",
-   "estratto": "Ci sono porte che si chiudono senza fare rumore. E poi ci sono quelle che, molti anni dopo, producono un boato. Quella che la Ferrari lasciò socchiusa, anzi richiuse davanti a un bambino di undici…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/antonelli-il-rimpianto-della-ferrari-quel-bambino-rifiutato-che-oggi-fa-grande-la-mercedes/",
-   "pubblicato": "2026-11-01T22:32:04+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 10.7,
-   "testate": 1
-  },
-  {
-   "titolo": "Antonelli, il ragazzo che ha messo le ali. Campione del mondo a vent’anni, come Villeneuve e Hamilton",
-   "estratto": "Ci sono record che resistono, aspettano, sembrano fatti apposta per scoraggiare chiunque abbia fretta. Poi arriva un ragazzo di vent’anni, si mette al volante di una Mercedes e li sposta un po’ più…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/antonelli-il-ragazzo-che-ha-messo-le-ali-campione-del-mondo-a-ventanni-come-villeneuve-e-hamilton/",
-   "pubblicato": "2026-11-01T22:31:56+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 40.7,
-   "testate": 4
-  },
-  {
-   "titolo": "Albo d’oro Mondiale F1: Kimi Antonelli riporta l’Italia sul trono dei piloti dopo 73 anni!",
-   "estratto": "Kimi Antonelli ha vinto il Mondiale F1 e ha riportato il titolo iridato in Italia ad addirittura 73 anni di distanza dall’ultima gioia. Il ventenne bolognese si è imposto al volante della Mercedes al…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/albo-doro-mondiale-f1-kimi-antonelli-riporta-litalia-sul-trono-dei-piloti-dopo-73-anni/",
-   "pubblicato": "2026-11-01T22:30:58+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 20.7,
-   "testate": 2
-  },
-  {
-   "titolo": "Quanti soldi ha guadagnato Kimi Antonelli vincendo il Mondiale di F1? E lo stipendio in Mercedes…",
-   "estratto": "Kimi Antonelli si è laureato Campione del Mondo di F1, compiendo un’impresa che resterà per sempre nella leggenda dello sport italiano ed entrando in maniera imperitura nella leggenda dell’intero…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/quanti-soldi-ha-guadagnato-kimi-antonelli-vincendo-il-mondiale-di-f1-e-lo-stipendio-in-mercedes/",
-   "pubblicato": "2026-11-01T22:30:55+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 20.7,
-   "testate": 2
-  },
-  {
-   "titolo": "Andrea Kimi Antonelli: il pilota più giovane di sempre a vincere un mondiale",
-   "estratto": "Grazie al risultato ottenuto in Messico, il bolognese ha battuto il record di tutti i tempi precedentemente stabilito da Vettel",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/andrea-kimi-antonelli-pilota-piu-giovane-di-sempre-a-vincere-un-mondiale",
-   "pubblicato": "2026-11-01T22:29:11+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 20.7,
-   "testate": 2
-  },
-  {
-   "titolo": "GP Città del Messico 2026, ordine di arrivo: Kimi, un sogno italiano! Antonelli 3° dietro Max e Hamilton, è campione del mondo",
-   "estratto": "A soli 20 anni, Antonelli è il più giovane campione del mondo della storia. Al bolognese basta la P3 dietro Max Verstappen e Lewis Hamilton, per un podio destinato a rimanere iconico. Scintille tra i…",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-risultati/gp-messico-ordine-arrivo-ferrari-antonelli-campione-del-mondo-leclerc-penalita-hamilton-verstappen",
-   "pubblicato": "2026-11-01T22:28:42+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 40.7,
-   "testate": 4
-  },
-  {
-   "titolo": "F1 / Albo d’Oro Mondiale Piloti",
-   "estratto": "Kimi Antonelli riporta l'Italia a vincere un Mondiale di F1 73 anni dopo Alberto Ascari",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-albo-doro/albo-doro-campionato-del-mondo-piloti",
-   "pubblicato": "2026-11-01T22:25:15+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 20.6,
-   "testate": 2
-  },
-  {
-   "titolo": "F1 GP Messico 2026, Città del Messico: la cronaca della gara, minuto per minuto",
-   "estratto": "La cronaca live minuto per minuto della gara a Città del Messico, 19° appuntamento del Mondiale 2026 di Formula 1",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-messico-2026-citta-del-messico-gara-aggiornamenti-ferrari-hamilton-pole-leclerc-antonelli-campione",
-   "pubblicato": "2026-11-01T22:25:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 2.6,
-   "testate": 1
-  },
-  {
-   "titolo": "Albo d’Oro GP Messico",
-   "estratto": "Dopo una presenza altalenante tra il 1963 e il 1992, Città del Messico è tornata ad essere protagonista nel calendario iridato di Formula 1 a partire dal 2015",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-albo-doro/f1-albo-doro-gran-premio-del-messico",
-   "pubblicato": "2026-11-01T22:24:44+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 2.6,
-   "testate": 1
   },
   {
    "titolo": "F1 | Tutto vero: Antonelli campione del mondo! In Messico vince Max davanti a Hamilton e Kimi",
@@ -526,44 +826,8 @@
    "pubblicato": "2026-11-01T22:24:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 40.6,
+   "punteggio": 38.3,
    "testate": 4
-  },
-  {
-   "titolo": "Kimi Antonelli da leggenda: è campione del mondo! Un italiano rivince il Mondiale di F1 dopo 73 anni",
-   "estratto": "A 20 anni il bolognese diventa il più giovane campione di sempre nella storia del Circus. Cancellato il record di Vettel",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/kimi-antonelli-da-leggenda-e-campione-del-mondo-un-italiano-rivince-il-mondiale-di-f1-dopo-73-anni",
-   "pubblicato": "2026-11-01T22:24:32+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 40.6,
-   "testate": 4
-  },
-  {
-   "titolo": "GP Messico, bandiera rossa: Bottas a muro dopo il cedimento della sospensione anteriore",
-   "estratto": "Si ripartirà per una Sprint di 26 giri",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/gp-messico-bandiera-rossa-bottas-ko-furia-hamilton-abbiamo-grandi-problemi",
-   "pubblicato": "2026-11-01T21:15:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 2.3,
-   "testate": 1
-  },
-  {
-   "titolo": "Hamilton contro i soli 5 secondi inflitti a Leclerc: “I Commissari gli stanno regalando la vittoria”",
-   "estratto": "Il sette volte iridato non ha gradito la scelta della Direzione Gara",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/penalita-leclerc-cinque-secondi-hamilton-stanno-regalando-vittoria-leclerc-ferrari-gp-messico",
-   "pubblicato": "2026-11-01T20:45:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 17.2,
-   "testate": 2
   },
   {
    "titolo": "F1 | GP di Città del Messico, strategie: si va verso la singola sosta. C5 e C4 le mescole preferite?",
@@ -574,7 +838,7 @@
    "pubblicato": "2026-11-01T18:47:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.7,
+   "punteggio": -0.7,
    "testate": 1
   },
   {
@@ -586,7 +850,7 @@
    "pubblicato": "2026-11-01T18:30:12+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 39.7,
+   "punteggio": 37.3,
    "testate": 4
   },
   {
@@ -598,7 +862,7 @@
    "pubblicato": "2026-11-01T16:51:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.2,
+   "punteggio": -1.1,
    "testate": 1
   },
   {
@@ -610,7 +874,7 @@
    "pubblicato": "2026-11-01T16:25:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.1,
+   "punteggio": -1.2,
    "testate": 1
   },
   {
@@ -622,7 +886,7 @@
    "pubblicato": "2026-11-01T16:06:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 34.1,
+   "punteggio": 31.7,
    "testate": 3
   },
   {
@@ -634,7 +898,7 @@
    "pubblicato": "2026-11-01T15:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.9,
+   "punteggio": 21.5,
    "testate": 2
   },
   {
@@ -646,7 +910,7 @@
    "pubblicato": "2026-11-01T15:20:40+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.9,
+   "punteggio": 8.5,
    "testate": 2
   },
   {
@@ -658,7 +922,7 @@
    "pubblicato": "2026-11-01T14:34:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.7,
+   "punteggio": 3.3,
    "testate": 1
   },
   {
@@ -670,7 +934,7 @@
    "pubblicato": "2026-11-01T14:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.7,
+   "punteggio": 11.3,
    "testate": 1
   },
   {
@@ -682,7 +946,7 @@
    "pubblicato": "2026-11-01T14:06:21+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.6,
+   "punteggio": 11.2,
    "testate": 1
   },
   {
@@ -694,7 +958,7 @@
    "pubblicato": "2026-11-01T13:05:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.3,
+   "punteggio": 15.9,
    "testate": 2
   },
   {
@@ -706,7 +970,7 @@
    "pubblicato": "2026-11-01T12:24:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.1,
+   "punteggio": 17.8,
    "testate": 3
   },
   {
@@ -718,7 +982,7 @@
    "pubblicato": "2026-11-01T12:20:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.1,
+   "punteggio": 20.7,
    "testate": 2
   },
   {
@@ -730,7 +994,7 @@
    "pubblicato": "2026-11-01T11:33:09+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.9,
+   "punteggio": 2.5,
    "testate": 1
   },
   {
@@ -742,7 +1006,7 @@
    "pubblicato": "2026-11-01T11:04:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.8,
+   "punteggio": 22.4,
    "testate": 3
   },
   {
@@ -754,7 +1018,7 @@
    "pubblicato": "2026-11-01T10:52:43+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.8,
+   "punteggio": 22.4,
    "testate": 3
   },
   {
@@ -766,7 +1030,7 @@
    "pubblicato": "2026-11-01T10:47:45+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.7,
+   "punteggio": 2.3,
    "testate": 1
   },
   {
@@ -778,7 +1042,7 @@
    "pubblicato": "2026-11-01T10:33:54+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.7,
+   "punteggio": 5.3,
    "testate": 1
   },
   {
@@ -790,7 +1054,7 @@
    "pubblicato": "2026-11-01T10:32:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.7,
+   "punteggio": 10.3,
    "testate": 1
   },
   {
@@ -802,7 +1066,7 @@
    "pubblicato": "2026-11-01T10:30:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.7,
+   "punteggio": 2.3,
    "testate": 1
   },
   {
@@ -814,8 +1078,8 @@
    "pubblicato": "2026-11-01T10:28:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.7,
-   "testate": 2
+   "punteggio": 5.3,
+   "testate": 1
   },
   {
    "titolo": "Yamaha prende posizione contro il GP del Qatar e annuncia che non correrà, MotoGP risponde minacciando sanzioni",
@@ -826,7 +1090,7 @@
    "pubblicato": "2026-11-01T10:16:03+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.6,
+   "punteggio": 22.2,
    "testate": 3
   },
   {
@@ -838,7 +1102,7 @@
    "pubblicato": "2026-11-01T10:00:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.5,
+   "punteggio": -2.8,
    "testate": 1
   },
   {
@@ -850,7 +1114,7 @@
    "pubblicato": "2026-11-01T09:39:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.4,
+   "punteggio": 10.1,
    "testate": 1
   },
   {
@@ -862,7 +1126,7 @@
    "pubblicato": "2026-11-01T09:30:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 32.4,
+   "punteggio": 30.0,
    "testate": 3
   },
   {
@@ -874,7 +1138,7 @@
    "pubblicato": "2026-11-01T09:25:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.4,
+   "punteggio": 2.0,
    "testate": 1
   },
   {
@@ -886,8 +1150,8 @@
    "pubblicato": "2026-11-01T09:17:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.4,
-   "testate": 2
+   "punteggio": 5.0,
+   "testate": 1
   },
   {
    "titolo": "Rivola, siluro alle allusioni di Marquez: “I giochi di squadra? Si fanno in famiglia…”",
@@ -898,7 +1162,7 @@
    "pubblicato": "2026-11-01T09:11:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.3,
+   "punteggio": 11.9,
    "testate": 2
   },
   {
@@ -910,7 +1174,7 @@
    "pubblicato": "2026-11-01T09:10:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.3,
+   "punteggio": 21.9,
    "testate": 3
   },
   {
@@ -922,7 +1186,7 @@
    "pubblicato": "2026-11-01T09:03:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.3,
+   "punteggio": 1.9,
    "testate": 1
   },
   {
@@ -934,7 +1198,7 @@
    "pubblicato": "2026-11-01T09:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.3,
+   "punteggio": 9.9,
    "testate": 1
   },
   {
@@ -946,7 +1210,7 @@
    "pubblicato": "2026-11-01T08:42:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.2,
+   "punteggio": 11.8,
    "testate": 2
   },
   {
@@ -958,7 +1222,7 @@
    "pubblicato": "2026-11-01T08:37:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.2,
+   "punteggio": 11.8,
    "testate": 2
   },
   {
@@ -970,7 +1234,7 @@
    "pubblicato": "2026-11-01T08:32:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.2,
+   "punteggio": 19.8,
    "testate": 2
   },
   {
@@ -982,7 +1246,7 @@
    "pubblicato": "2026-11-01T08:29:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.2,
+   "punteggio": 6.8,
    "testate": 2
   },
   {
@@ -994,7 +1258,7 @@
    "pubblicato": "2026-11-01T08:26:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.1,
+   "punteggio": 21.8,
    "testate": 3
   },
   {
@@ -1006,7 +1270,7 @@
    "pubblicato": "2026-11-01T08:25:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.1,
+   "punteggio": 1.8,
    "testate": 1
   },
   {
@@ -1018,7 +1282,7 @@
    "pubblicato": "2026-11-01T08:13:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.1,
+   "punteggio": 24.7,
    "testate": 3
   },
   {
@@ -1030,7 +1294,7 @@
    "pubblicato": "2026-11-01T08:08:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.1,
+   "punteggio": 19.7,
    "testate": 2
   },
   {
@@ -1042,7 +1306,7 @@
    "pubblicato": "2026-11-01T08:05:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.1,
+   "punteggio": 24.7,
    "testate": 3
   },
   {
@@ -1054,7 +1318,7 @@
    "pubblicato": "2026-11-01T08:01:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.0,
+   "punteggio": 14.7,
    "testate": 2
   },
   {
@@ -1066,7 +1330,7 @@
    "pubblicato": "2026-11-01T08:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.0,
+   "punteggio": 11.7,
    "testate": 2
   },
   {
@@ -1078,7 +1342,7 @@
    "pubblicato": "2026-11-01T07:57:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.0,
+   "punteggio": 24.6,
    "testate": 3
   },
   {
@@ -1090,7 +1354,7 @@
    "pubblicato": "2026-11-01T07:55:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.0,
+   "punteggio": 24.6,
    "testate": 3
   },
   {
@@ -1102,7 +1366,7 @@
    "pubblicato": "2026-11-01T07:55:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.0,
+   "punteggio": 12.6,
    "testate": 3
   },
   {
@@ -1114,7 +1378,7 @@
    "pubblicato": "2026-11-01T07:51:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.0,
+   "punteggio": 24.6,
    "testate": 3
   },
   {
@@ -1126,7 +1390,7 @@
    "pubblicato": "2026-11-01T07:50:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.0,
+   "punteggio": 24.6,
    "testate": 3
   },
   {
@@ -1138,7 +1402,7 @@
    "pubblicato": "2026-11-01T07:50:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.0,
+   "punteggio": 6.6,
    "testate": 2
   },
   {
@@ -1150,8 +1414,8 @@
    "pubblicato": "2026-11-01T07:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.9,
-   "testate": 2
+   "punteggio": -3.5,
+   "testate": 1
   },
   {
    "titolo": "MotoGP | Lettera dei piloti come ultimo tentativo per evitare di recarsi in Qatar",
@@ -1162,8 +1426,8 @@
    "pubblicato": "2026-11-01T07:08:18+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.8,
-   "testate": 2
+   "punteggio": -3.6,
+   "testate": 1
   },
   {
    "titolo": "GP Malesia 2026: orari Sky/Now e TV8",
@@ -1174,271 +1438,7 @@
    "pubblicato": "2026-11-01T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.2,
-   "testate": 1
-  },
-  {
-   "titolo": "Dove la prossima gara di MotoGP? GP Qatar 2026: programma, orari, tv",
-   "estratto": "Il prossimo evento valido per il Motomondiale 2026 sarà il Gran Premio di Qatar. L’appuntamento è in calendario nel weekend del 6, 7 e 8 novembre. Indi per cui non vi sarà alcuna pausa tra il GP di…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/dove-la-prossima-gara-di-motogp-gp-qatar-2026-programma-orari-tv/",
-   "pubblicato": "2026-11-01T06:35:10+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -3.3,
-   "testate": 2
-  },
-  {
-   "titolo": "Classifica Moto2 2026: Gonzalez in testa, Vietti in ottava posizione",
-   "estratto": "CLASSIFICA MOTO2 2026 1 GONZALEZ Manuel SPA 276.5 2 GUEVARA Izan SPA 273 3 ORTOLA Ivan SPA 199.5 4 ALONSO David COL 191 5 HOLGADO Daniel SPA 190 6 AGIUS Senna AUS 166 7 SALAC Filip CZE 155 8 VIETTI…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/classifica-moto2-2026/",
-   "pubblicato": "2026-11-01T06:34:42+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -13.3,
-   "testate": 1
-  },
-  {
-   "titolo": "Classifica Moto3 2026: Maximo Quiles già campione del mondo, Bertelle in top ten",
-   "estratto": "CLASSIFICA MOTO3 2026 1 QUILES Maximo SPA 376 2 ALMANSA David SPA 228 3 URIARTE Brian SPA 205 4 CARPE Alvaro SPA 205 5 FERNANDEZ Adrian SPA 157 6 MORELLI Marco ARG 140 7 PRATAMA Veda INA 131 8…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/classifica-moto3-2026/",
-   "pubblicato": "2026-11-01T06:23:33+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -3.4,
-   "testate": 2
-  },
-  {
-   "titolo": "David Alonso vince il GP di Malesia di Moto2. Distacco minimo tra Gonzalez e Guevara in classifica!",
-   "estratto": "David Alonso si è aggiudicato il Gran Premio di Malesia, diciannovesimo e quartultimo appuntamento del Mondiale di Moto2 2026. Sul tracciato di Sepang (reso rovente da temperature di 35°) il pilota…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/david-alonso-vince-il-gp-di-malesia-di-moto2-distacco-minimo-tra-gonzalez-e-guevara-in-classifica/",
-   "pubblicato": "2026-11-01T05:58:09+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -13.5,
-   "testate": 1
-  },
-  {
-   "titolo": "Quando MotoGP e F1 oggi (domenica 1° novembre): orari gare, programma TV8 e Sky",
-   "estratto": "Oggi domenica 1° novembre si conclude il lungo weekend riservato ai motori, arriviamo al momento clou dell’intenso fine settimana. Spazio alle gare: GP del Messico per quanto riguarda la F1 e GP di…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/quando-motogp-e-f1-oggi-1-novembre-orari-gare-programma-tv8-e-sky/",
-   "pubblicato": "2026-11-01T05:51:39+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -13.5,
-   "testate": 1
-  },
-  {
-   "titolo": "Quando la MotoGP su TV8 oggi, GP Malesia 2026: orario gara, differita in chiaro",
-   "estratto": "Il Gran Premio di Malesia di MotoGP si disputerà dalle ore 8:00 italiane di domenica 1 novembre. La top-class sarà preceduta, come d’abitudine, dalla gara della Moto3 (che avrà luogo dalle 4:00 del…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/a-che-ora-la-motogp-su-tv8-oggi-gp-malesia-2026-programma-gara-differita-in-chiaro/",
-   "pubblicato": "2026-11-01T05:45:59+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 8.5,
-   "testate": 2
-  },
-  {
-   "titolo": "Maximo Quiles sa solo vincere e centra l’11° successo stagionale nel GP della Malesia!",
-   "estratto": "Tanto per cambiare ha vinto Maximo Quiles! Il pilota spagnolo, infatti, si è aggiudicato il Gran Premio di Malesia, diciannovesimo e quartultimo appuntamento del Mondiale di Moto3 2026. Sul tracciato…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/maximo-quiles-sa-solo-vincere-e-centra-l11-successo-stagionale-nel-gp-della-malesia/",
-   "pubblicato": "2026-11-01T04:43:13+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -1.8,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Hamilton, la prima pole Ferrari è magica: \"Un sogno, mi riporta a quando ero bambino guardando Schumacher\"",
-   "estratto": "Ci sono momenti che nella vita non si scordano mai e le “prime volte” con la Ferrari rientrano tra quelli. È vero, in termini assoluti quella di Città del Messico non è la prima pole in di Lewis…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-hamilton-la-prima-pole-ferrari-e-magica-un-sogno-mi-riporta-a-quando-ero-bambino-guardando-schum/10870373/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-01T00:04:44+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 10.1,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Vasseur: \"Restiamo concentrati sul Messico perché è importante tornare a vincere un GP”",
-   "estratto": "L’incantesimo si è rotto: la Ferrari conquista la prima pole position con la SF-26 e la Scuderia colleziona la 255esima partenza al palo, interrompendo un’attesa che durava dal GP d’Ungheria del…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-vasseur-restiamo-concentrati-sul-messico-perche-e-importante-tornare-a-vincere-un-gp/10870351/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-31T23:52:15+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 10.0,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Leclerc si accusa: \"In Q3 la SF-26 si è trasformata, ma sono io a non aver fatto un buon lavoro\"",
-   "estratto": "Una rinascita prestazionale inattesa, proprio nel momento più caldo delle qualifiche del Gran Premio di Città del Messico, ha sorpreso Charles Leclerc, il quale si è trovato così a non riuscire a…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-leclerc-si-accusa-in-q3-la-sf-26-si-e-trasformata-ma-sono-io-a-non-aver-fatto-un-buon-lavoro/10870355/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-31T23:37:50+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 1.9,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Ocon parla dopo l'esclusione dalla Haas: \"C'è stata una discussione, ma respingo ogni accusa di violenza\"",
-   "estratto": "La decisione della Haas di escludere Esteban Ocon dal resto del weekend in Messico, sostituendolo con Ryo Hirakawa, ha inevitabilmente alimentato interrogativi e speculazioni su quanto accaduto…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-ocon-parla-dopo-lesclusione-dalla-haas-ce-stata-una-discussione-ma-respingo-ogni-accusa-di-viole/10870345/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-31T23:13:55+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 1.8,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Antonelli: \"Ho faticato con le gomme. Domani attaccherò, ma starò attento in curva 1\"",
-   "estratto": "Quinto, ma alla fine quarto. Oggi Andrea Kimi Antonelli è andato incontro a una delle qualifiche più difficili della stagione, in cui però riuscirà a limitare i danni e a mettersi potenzialmente in…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-antonelli-ho-faticato-con-le-gomme-domani-attacchero-ma-staro-attento-in-curva-1/10870329/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-31T22:58:56+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 9.8,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | In Messico Hamilton regala la prima pole stagionale alla Ferrari. Russell secondo davanti a Leclerc",
-   "estratto": "105. Non è il numero di una celebre radio italiana, ma quello impressionante delle pole position ottenute in Formula 1 da Sir Lewis Hamilton. Non sarà più nella fase migliore della carriera, ma il…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1--10870275/10870275/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-31T22:22:32+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 24.6,
-   "testate": 3
-  },
-  {
-   "titolo": "Hamilton super in Messico: prima pole dopo 3 anni. Russell subito dietro, più staccato Antonelli",
-   "estratto": "Il britannico partirà davanti a tutti: non era mai accaduto da quando è in Ferrari. Bene anche Leclerc",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/10/31-152290031/hamilton_super_in_messico_prima_pole_dopo_3_anni_russell_subito_dietro_pi_staccato_antonelli/",
-   "pubblicato": "2026-10-31T22:21:11+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 34.6,
-   "testate": 4
-  },
-  {
-   "titolo": "F1 | Messico, Libere 3: Norris svetta battendo di un millesimo Antonelli, Leclerc 3°",
-   "estratto": "La notizia del giorno è senza dubbio l’allontanamento di Esteban Ocon dalla Haas, arrivato del tutto a sorpresa, con la scelta del team americano di sostituirlo per il resto del weekend con Ryo…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-messico-libere-3-norris-svetta-battendo-di-un-millesimo-antonelli-leclerc-3/10870232/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-31T18:45:23+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 13.7,
-   "testate": 2
-  },
-  {
-   "titolo": "F1 | Ferrari, problema alla power unit di Hamilton: niente penalità in Messico",
-   "estratto": "La Ferrari è stata costretta a un lavoro supplementare nella notte tra venerdì e sabato sul circuito Hermanos Rodriguez. Il problema tecnico che ha costretto Lewis Hamilton a concludere…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-ferrari-problema-alla-power-unit-di-hamilton-niente-penalita-in-messico/10870190/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-31T16:39:08+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 3.2,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Herta, che confusione sulla superlicenza: gli manca ancora un punto per un errore della IndyCar",
-   "estratto": "Dopo aver completato più di 100 chilometri durante la prima sessione di prove libere del Gran Premio del Messico, Colton Herta sembrava avere conquistato un altro punto per portare il totale a 40…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/spiegata-la-confusione-sulla-superlicenza-f1-di-colton-herta-perche-gli-manca-ancora-un-punto/10869866/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-31T16:25:28+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -4.9,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Aston Martin: Stroll cambia telaio, si vede che la AMR26 non funziona ma non si è capito perché...",
-   "estratto": "C’è anche une tegola caduta sull’Aston Martin: la squadra di Silverstone ha sottoposto alla FIA il telaio di scorta che è stato montato sulla AMR26 di Lance Stroll per una sessione straordinaria di…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-aston-martin-stroll-cambia-telaio-si-vede-che-la-amr26-non-funziona-ma-non-si-e-capito-perche/10870177/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-31T16:04:23+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -4.9,
-   "testate": 1
-  },
-  {
-   "titolo": "Clamoroso, la MotoGP minaccia i piloti: chi salta il Qatar rischia l’esclusione da Portimão e Valencia",
-   "estratto": "I piloti non vogliono andare in Qatar, ma sono da soli contro MotoGP, squadre e organizzatori: secondo Autosport, rischierebbero ripercussioni sportive ed economiche",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/clamoroso-motogp-minaccia-piloti-chi-salta-qatar-rischia-esclusione-da-portimao-e-valencia",
-   "pubblicato": "2026-10-31T15:51:52+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 5.0,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Ogura spiega la battaglia con Márquez, ma smentisce gli ordini di scuderia Aprilia",
-   "estratto": "Ai Ogura ha parlato del suo serrato duello con Marc Marquez nella gara Sprint del Gran Premio della Malesia negando di aver agito su ordine della casa Aprilia. Il pilota della Trackhouse è partito…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-ogura-spiega-la-battaglia-con-marquez-ma-smentisce-gli-ordini-di-scuderia-aprilia/10870066/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-31T15:45:51+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -0.0,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Minì e Fornaroli, l'Italia protagonista nelle libere in Messico: debutto positivo per Gabriele",
-   "estratto": "La prima sessione di prove libere del Gran Premio del Messico ha visto la presenza di Gabriele Minì e Leonardo Fornaroli. Per il ventunenne siciliano si è trattato del debutto assoluto in un weekend…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-mini-e-fornaroli-litalia-protagonista-nelle-fp1-in-messico-debutto-positivo-per-gabriele/10870078/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-31T15:15:53+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -5.2,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Colpo di scena in Haas: in Messico prosegue il weekend Hirakawa al posto di Ocon",
-   "estratto": "E' un vero colpo di scena: il pilota di riserva del team Haas, Ryō Hirakawa, sostituirà Esteban Ocon per il resto del weekend del Gran Premio di Città del Messico. La decisione è stata ufficializzata…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-colpo-di-scena-in-haas-in-messico-prosegue-il-weekend-hirakawa-al-posto-di-ocon/10870165/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-10-31T14:59:28+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -5.2,
+   "punteggio": -15.6,
    "testate": 1
   }
  ]

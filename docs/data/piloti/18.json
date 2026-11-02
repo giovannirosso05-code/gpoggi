@@ -288,12 +288,15 @@
     "stato": null
    },
    "sprint": null,
-   "gara": null
+   "gara": {
+    "pos": null,
+    "stato": "RIT"
+   }
   }
  ],
  "vittorie": 0,
  "podi": 0,
  "pole": 0,
  "miglior_arrivo": 12,
- "ritiri": 11
+ "ritiri": 12
 }

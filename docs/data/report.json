@@ -1,5 +1,19 @@
 [
  {
+  "id": 1298,
+  "nome": "Gran Premio di Città del Messico",
+  "circuito": "Mexico City",
+  "paese": "Messico",
+  "data": "2026-11-01T23:00:00+00:00",
+  "titolo": "Max Verstappen vince il Gran Premio di Città del Messico",
+  "paragrafi": [
+   "Max Verstappen (Red Bull Racing) vince il Gran Premio di Città del Messico in 2:20:28.772, davanti a Lewis Hamilton (+0.799) e a Kimi Antonelli (+4.006).",
+   "La pole position era stata di Lewis Hamilton con 1:16.514.",
+   "Si sono ritirati 5 piloti: Fernando Alonso, Lance Stroll, Arvid Lindblad, Valtteri Bottas, Oliver Bearman.",
+   "Dopo la gara guida il campionato piloti Kimi Antonelli con 380 punti; tra i costruttori è primo Mercedes con 630."
+  ]
+ },
+ {
   "id": 1297,
   "nome": "Gran Premio degli Stati Uniti",
   "circuito": "Austin",

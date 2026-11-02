@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-01T22:47:58+00:00",
+ "aggiornato": "2026-11-02T02:01:18+00:00",
  "metodo": "Indice da 0 a 100 calcolato da GP Oggi: 45% forma nelle ultime 5 gare, 35% classifica del campionato, 20% risultato sullo stesso circuito l'anno scorso. È un'opinione basata sui numeri, non una previsione ufficiale né una certezza.",
  "f1": {
   "gp": "Gran Premio di San Paolo",
@@ -13,7 +13,7 @@
     "indice": 100,
     "motivi": [
      "1 vittoria nelle ultime 5 gare",
-     "1° nel campionato (365 punti)",
+     "1° nel campionato (380 punti)",
      "Interlagos 2025: 2°"
     ]
    },
@@ -21,10 +21,10 @@
     "numero": 3,
     "nome": "Max Verstappen",
     "team": "Red Bull Racing",
-    "indice": 87,
+    "indice": 94,
     "motivi": [
-     "2 vittorie nelle ultime 5 gare",
-     "4° nel campionato (236 punti)",
+     "3 vittorie nelle ultime 5 gare",
+     "2° nel campionato (261 punti)",
      "Interlagos 2025: 3°"
     ]
    },
@@ -34,30 +34,30 @@
     "team": "McLaren",
     "indice": 66,
     "motivi": [
-     "6° nel campionato (211 punti)",
+     "6° nel campionato (221 punti)",
      "Interlagos 2025: 1°"
-    ]
-   },
-   {
-    "numero": 63,
-    "nome": "George Russell",
-    "team": "Mercedes",
-    "indice": 60,
-    "motivi": [
-     "1 vittoria nelle ultime 5 gare",
-     "2° nel campionato (242 punti)",
-     "Interlagos 2025: 4°"
     ]
    },
    {
     "numero": 16,
     "nome": "Charles Leclerc",
     "team": "Ferrari",
-    "indice": 59,
+    "indice": 61,
     "motivi": [
      "2 podi nelle ultime 5 gare",
-     "5° nel campionato (233 punti)",
+     "5° nel campionato (245 punti)",
      "Interlagos 2025: 19°"
+    ]
+   },
+   {
+    "numero": 63,
+    "nome": "George Russell",
+    "team": "Mercedes",
+    "indice": 59,
+    "motivi": [
+     "1 vittoria nelle ultime 5 gare",
+     "4° nel campionato (250 punti)",
+     "Interlagos 2025: 4°"
     ]
    }
   ]

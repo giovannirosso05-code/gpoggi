@@ -1,0 +1,38 @@
+{
+ "numero": 50,
+ "acronimo": "HIR",
+ "nome": "Ryo Hirakawa",
+ "team": null,
+ "colore": null,
+ "posizione": 23,
+ "punti": 0.0,
+ "foto": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Ryo_Hirakawa_2024_WEC_Fuji_3.jpg/500px-Ryo_Hirakawa_2024_WEC_Fuji_3.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Ryo_Hirakawa_2024_WEC_Fuji_3.jpg",
+  "autore": "Morio",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Ryo_Hirakawa_2024_WEC_Fuji_3.jpg",
+  "file": "img/foto/0dd5c1a0e8881174.jpg"
+ },
+ "weekend": [
+  {
+   "id": 1298,
+   "nome": "Gran Premio di Città del Messico",
+   "inizio": "2026-10-30T18:30:00+00:00",
+   "qualifiche": {
+    "pos": 18,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": {
+    "pos": 13,
+    "stato": null
+   }
+  }
+ ],
+ "vittorie": 0,
+ "podi": 0,
+ "pole": 0,
+ "miglior_arrivo": 13,
+ "ritiri": 0
+}

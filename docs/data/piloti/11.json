@@ -4,7 +4,7 @@
  "nome": "Sergio Perez",
  "team": "Cadillac",
  "colore": "909090",
- "posizione": 23,
+ "posizione": 24,
  "punti": 0.0,
  "foto": {
   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Sergio_P%C3%A9rez_2019_%28cropped%29.jpg",
@@ -294,7 +294,10 @@
     "stato": null
    },
    "sprint": null,
-   "gara": null
+   "gara": {
+    "pos": 17,
+    "stato": null
+   }
   }
  ],
  "vittorie": 0,

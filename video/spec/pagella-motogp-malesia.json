@@ -1,0 +1,116 @@
+{
+ "serie": "MotoGP",
+ "titolo_breve": "Malesia: la pagella",
+ "fonte": "risultati ufficiali, calcolo GP Oggi",
+ "velocita": "+31%",
+ "scene": [
+  {
+   "foto": "Augusto Fernandez",
+   "hook": true,
+   "hook_titolo": "Fernandez tra i peggiori",
+   "testo": "[Fernandez] tra i peggiori del weekend: si è ritirato al giro 2."
+  },
+  {
+   "foto": "Augusto Fernandez",
+   "testo": "[Fernandez]: ventesimo in qualifica, quattordicesimo nella sprint e ritirato al giro 2. Voto *cinque*."
+  },
+  {
+   "foto": "Francesco Bagnaia",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Bagnaia]: decimo in qualifica, sesto nella sprint e tredicesimo in gara, partendo decimo. Per lui oggi *cinque e mezzo*."
+  },
+  {
+   "foto": "Fabio Quartararo",
+   "testo": "[Quartararo]: diciottesimo in qualifica, undicesimo nella sprint e undicesimo in gara, partendo diciottesimo. Si prende *cinque e mezzo*."
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Bezzecchi]: quinto in qualifica, terzo nella sprint e sesto in gara. Gli diamo *sette*."
+  },
+  {
+   "foto": "Alex Marquez",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Alex Marquez]: primo in qualifica, fuori nella sprint e terzo in gara. Voto *sette e mezzo*."
+  },
+  {
+   "foto": "Pedro Acosta",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Acosta]: terzo in qualifica, primo nella sprint e secondo in gara. Per lui oggi *nove*."
+  },
+  {
+   "foto": "Marc Marquez",
+   "alt": "pista",
+   "pista": true,
+   "testo": "E poi il migliore: [Marc Marquez]. Secondo in qualifica, secondo nella sprint e primo in gara. Una prova da applausi. Voto *nove e mezzo*."
+  },
+  {
+   "foto": "Marc Marquez",
+   "pista": true,
+   "classifica": {
+    "titolo": "I nostri voti",
+    "righe": [
+     {
+      "pos": "",
+      "colore": "e1251b",
+      "nome": "M. Marquez",
+      "voto": "9,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "f26a1b",
+      "nome": "Acosta",
+      "voto": "9",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "e1251b",
+      "nome": "A. Marquez",
+      "voto": "7,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "7b2c8f",
+      "nome": "Bezzecchi",
+      "voto": "7",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "1d4fa3",
+      "nome": "Quartararo",
+      "voto": "5,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "e1251b",
+      "nome": "Bagnaia",
+      "voto": "5,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "1d4fa3",
+      "nome": "Fernandez",
+      "voto": "5",
+      "nota": " "
+     }
+    ]
+   },
+   "sub_top": 1360,
+   "testo": "Ecco la pagella completa."
+  }
+ ],
+ "finale": {
+  "foto": "Marc Marquez",
+  "domanda": "Che voto dai tu a Malesia?"
+ }
+}

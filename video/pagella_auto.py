@@ -182,7 +182,7 @@ def foto_pista(serie, nome):
 
 def costruisci(serie, w):
     sprint, righe = w["sprint"], w["righe"]
-    gp = w["nome"].replace("Gran Premio d'", "").replace("Gran Premio di ", "").replace("Gran Premio del ", "").replace("Gran Premio dell'", "").replace("GP ", "")
+    gp = w["nome"].replace("Gran Premio d'", "").replace("Gran Premio di ", "").replace("Gran Premio del ", "").replace("Gran Premio dell'", "").replace("GP ", "").replace("Città del ", "")
     gp_art = w["nome"].replace("Gran Premio", "Gran Premio").replace("GP ", "GP ")
     punti = prominenza(serie)
     for r in righe:

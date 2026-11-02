@@ -28,7 +28,7 @@ EN = os.environ.get("GPOGGI_LINGUA", "it") == "en"
 VOCE = "en-US-GuyNeural" if EN else "it-IT-DiegoNeural"
 LANG = "en-US" if EN else "it-IT"
 T = ({"foto": "Photo", "fonte": "Source", "commenti": "Tell us in the comments", "segui": "*Follow* for more content like this.",
-      "avviso": "Unofficial site, not affiliated with Formula 1, the FIA, MotoGP, Dorna or any team."} if EN else
+      "avviso": "Unofficial site, not affiliated with Formula 1, the FIA, MotoGP, Dorna or any team. Any grades are just for fun, no offence meant."} if EN else
      {"foto": "Foto", "fonte": "Fonte", "commenti": "Dimmi la tua nei commenti", "segui": "*Seguici* per altri contenuti come questo.",
       "avviso": "Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team. Eventuali voti: a scopo divertente, senza offendere nessuno"})
 GIALLO = "#ffd21f"

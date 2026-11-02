@@ -14,6 +14,7 @@ from pathlib import Path
 
 D = Path(__file__).parent / "docs" / "data"
 PESI = {"q": 0.2, "s": 0.2, "g": 0.6}
+MINIMO = 5.0   # voto finale minimo (dal 2 novembre 2026)
 RITIRO = 4.5   # ritiro o nessun tempo (era 3: troppo duro, la causa spesso non è del pilota)
 TABELLA = {1: 10, 2: 8.5, 3: 8, 4: 7.5, 5: 7, 6: 6.5, 7: 6.2, 8: 6, 9: 5.8, 10: 5.6}
 
@@ -256,6 +257,9 @@ def riepilogo(e):
 
 def main():
     f1_all, moto_all = f1_tutti(), moto_tutti()
+    for e in (*f1_all, *moto_all):   # voto minimo 5 (richiesta del gestore, 2 novembre 2026: voti troppo bassi attirano insulti)
+        for r in e["righe"]:
+            r["voto"] = max(MINIMO, r["voto"])
     out = {"generato_il": datetime.now(timezone.utc).isoformat(timespec="seconds"), "f1": f1_all[-1] if f1_all else None, "motogp": moto_all[-1] if moto_all else None}
     (D / "pagella.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")))
     # un riepilogo per ogni gara (le schede 'Voti GP Oggi' delle pagine gara)

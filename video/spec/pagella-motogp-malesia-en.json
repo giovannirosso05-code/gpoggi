@@ -1,0 +1,116 @@
+{
+ "serie": "MotoGP",
+ "titolo_breve": "Malaysia: the grades",
+ "fonte": "risultati ufficiali, calcolo GP Oggi",
+ "velocita": "+12%",
+ "scene": [
+  {
+   "foto": "Augusto Fernandez",
+   "hook": true,
+   "hook_titolo": "Fernandez among the worst",
+   "testo": "[Fernandez] among the worst of the weekend: he retired on lap 2."
+  },
+  {
+   "foto": "Augusto Fernandez",
+   "testo": "[Fernandez]: twentieth in qualifying, fourteenth in the sprint and retired on lap 2. Grade *five*."
+  },
+  {
+   "foto": "Francesco Bagnaia",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Bagnaia]: tenth in qualifying, sixth in the sprint and thirteenth in the race, starting tenth. Today he gets *five and a half*."
+  },
+  {
+   "foto": "Fabio Quartararo",
+   "testo": "[Quartararo]: eighteenth in qualifying, eleventh in the sprint and eleventh in the race, starting eighteenth. He earns *five and a half*."
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Bezzecchi]: fifth in qualifying, third in the sprint and sixth in the race. We give him *seven*."
+  },
+  {
+   "foto": "Alex Marquez",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Alex Marquez]: first in qualifying, out in the sprint and third in the race. Grade *seven and a half*."
+  },
+  {
+   "foto": "Pedro Acosta",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Acosta]: third in qualifying, first in the sprint and second in the race. Today he gets *nine*."
+  },
+  {
+   "foto": "Marc Marquez",
+   "alt": "pista",
+   "pista": true,
+   "testo": "And then the best: [Marc Marquez]. Second in qualifying, second in the sprint and first in the race. A performance worth applauding. Grade *nine and a half*."
+  },
+  {
+   "foto": "Marc Marquez",
+   "pista": true,
+   "classifica": {
+    "titolo": "Our grades",
+    "righe": [
+     {
+      "pos": "",
+      "colore": "e1251b",
+      "nome": "M. Marquez",
+      "voto": "9.5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "f26a1b",
+      "nome": "Acosta",
+      "voto": "9",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "e1251b",
+      "nome": "A. Marquez",
+      "voto": "7.5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "7b2c8f",
+      "nome": "Bezzecchi",
+      "voto": "7",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "1d4fa3",
+      "nome": "Quartararo",
+      "voto": "5.5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "e1251b",
+      "nome": "Bagnaia",
+      "voto": "5.5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "1d4fa3",
+      "nome": "Fernandez",
+      "voto": "5",
+      "nota": " "
+     }
+    ]
+   },
+   "sub_top": 1360,
+   "testo": "Here are all the grades."
+  }
+ ],
+ "finale": {
+  "foto": "Marc Marquez",
+  "domanda": "What grade would you give Malaysia?"
+ }
+}

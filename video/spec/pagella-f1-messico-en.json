@@ -1,0 +1,103 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Mexico City: the grades",
+ "fonte": "risultati ufficiali, calcolo GP Oggi",
+ "velocita": "+12%",
+ "scene": [
+  {
+   "foto": "Lewis Hamilton",
+   "hook": true,
+   "hook_titolo": "A great Hamilton",
+   "testo": "A great [Hamilton] makes Ferrari happy."
+  },
+  {
+   "foto": "Charles Leclerc",
+   "alt": "pista_cina",
+   "pista": true,
+   "testo": "[Leclerc]: third in qualifying and fourth in the race. Grade *seven and a half*."
+  },
+  {
+   "foto": "Pierre Gasly",
+   "testo": "[Gasly]: ninth in qualifying and seventeenth in the race, starting ninth. Today he gets *five*."
+  },
+  {
+   "foto": "Liam Lawson",
+   "testo": "[Lawson]: no time in qualifying and seventh in the race, starting twenty-second. He earns *seven*."
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Antonelli]: fifth in qualifying and third in the race. We give him *eight*."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Hamilton]: first in qualifying and second in the race. Grade *nine*."
+  },
+  {
+   "foto": "Max Verstappen",
+   "alt": "pista_cina",
+   "pista": true,
+   "testo": "And then the best: [Verstappen]. Fourth in qualifying and first in the race, starting fifth. A performance worth applauding. Grade *nine and a half*."
+  },
+  {
+   "foto": "Max Verstappen",
+   "pista": true,
+   "classifica": {
+    "titolo": "Our grades",
+    "righe": [
+     {
+      "pos": "",
+      "colore": "4781D7",
+      "nome": "Verstappen",
+      "voto": "9.5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "ED1131",
+      "nome": "Hamilton",
+      "voto": "9",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "00D7B6",
+      "nome": "Antonelli",
+      "voto": "8",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "ED1131",
+      "nome": "Leclerc",
+      "voto": "7.5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "6C98FF",
+      "nome": "Lawson",
+      "voto": "7",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "00A1E8",
+      "nome": "Gasly",
+      "voto": "5",
+      "nota": " "
+     }
+    ]
+   },
+   "sub_top": 1360,
+   "testo": "Here are all the grades."
+  }
+ ],
+ "finale": {
+  "foto": "Max Verstappen",
+  "domanda": "What grade would you give Mexico City?"
+ }
+}

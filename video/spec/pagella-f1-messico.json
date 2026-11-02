@@ -1,0 +1,103 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Messico: la pagella",
+ "fonte": "risultati ufficiali, calcolo GP Oggi",
+ "velocita": "+31%",
+ "scene": [
+  {
+   "foto": "Lewis Hamilton",
+   "hook": true,
+   "hook_titolo": "Un ottimo Hamilton",
+   "testo": "Un ottimo [Hamilton] fa felice la Ferrari."
+  },
+  {
+   "foto": "Charles Leclerc",
+   "alt": "pista_cina",
+   "pista": true,
+   "testo": "[Leclerc]: terzo in qualifica e quarto in gara. Voto *sette e mezzo*."
+  },
+  {
+   "foto": "Pierre Gasly",
+   "testo": "[Gasly]: nono in qualifica e diciassettesimo in gara, partendo nono. Per lui oggi *cinque*."
+  },
+  {
+   "foto": "Liam Lawson",
+   "testo": "[Lawson]: senza tempo in qualifica e settimo in gara, partendo ventiduesimo. Si prende *sette*."
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Antonelli]: quinto in qualifica e terzo in gara. Gli diamo *otto*."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Hamilton]: primo in qualifica e secondo in gara. Voto *nove*."
+  },
+  {
+   "foto": "Max Verstappen",
+   "alt": "pista_cina",
+   "pista": true,
+   "testo": "E poi il migliore: [Verstappen]. Quarto in qualifica e primo in gara, partendo quinto. Una prova da applausi. Voto *nove e mezzo*."
+  },
+  {
+   "foto": "Max Verstappen",
+   "pista": true,
+   "classifica": {
+    "titolo": "I nostri voti",
+    "righe": [
+     {
+      "pos": "",
+      "colore": "4781D7",
+      "nome": "Verstappen",
+      "voto": "9,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "ED1131",
+      "nome": "Hamilton",
+      "voto": "9",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "00D7B6",
+      "nome": "Antonelli",
+      "voto": "8",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "ED1131",
+      "nome": "Leclerc",
+      "voto": "7,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "6C98FF",
+      "nome": "Lawson",
+      "voto": "7",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "00A1E8",
+      "nome": "Gasly",
+      "voto": "5",
+      "nota": " "
+     }
+    ]
+   },
+   "sub_top": 1360,
+   "testo": "Ecco la pagella completa."
+  }
+ ],
+ "finale": {
+  "foto": "Max Verstappen",
+  "domanda": "Che voto dai tu a Messico?"
+ }
+}

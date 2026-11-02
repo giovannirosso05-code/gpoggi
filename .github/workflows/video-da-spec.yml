@@ -46,6 +46,7 @@ jobs:
           for s in video/spec/*.json; do
             n=$(basename "$s" .json)
             if [ -e "invio/$n.mp4" ] || grep -q "\"$n.mp4\"" video/inviati.json; then continue; fi
+            case "$n" in *-en) export GPOGGI_LINGUA=en;; *) unset GPOGGI_LINGUA;; esac
             python video/notizia_sub.py "$s" "invio/$n.mp4"
             for e in png txt; do [ -e "video/spec/$n.$e" ] && cp "video/spec/$n.$e" "invio/$n.$e"; done
           done

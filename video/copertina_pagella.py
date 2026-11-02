@@ -18,14 +18,16 @@ def html_pagella(serie, alt=None, quante=5):
     eroe, altri = righe[0], righe[1:1 + quante]   # dal migliore in giu: il secondo subito sotto il primo
     f = n.trova_foto(eroe["nome"], alt)
     autore = re.sub(r"Original:\s*", "", f["autore"])
-    cred = f"Foto: {autore} · {f['licenza']} · Wikimedia Commons"
+    cred = f"{n.T['foto']}: {autore} · {f['licenza']} · Wikimedia Commons"
     foto = n.b64(n.file_foto(f))
     import re as _re
     logo = _re.sub(r"^<svg ", '<svg ', (n.QUI / "logo" / ("moto-gp-scuro.svg" if moto else "auto-gp-scuro.svg")).read_text(), 1).replace('width="512" height="512"', 'width="276" height="276"', 1)
-    voto = lambda r: str(r["voto"]).replace(".0", "").replace(".", ",")
-    cognome = lambda nome: nome.split()[-1].upper() if "Di Giannantonio" not in nome else "DI GIANNANTONIO"
+    voto = lambda r: str(r["voto"]).replace(".0", "") if n.EN else str(r["voto"]).replace(".0", "").replace(".", ",")
+    cognome = lambda nome: "A. MARQUEZ" if nome == "Alex Marquez" else (nome.split()[-1].upper() if "Di Giannantonio" not in nome else "DI GIANNANTONIO")
     rr = "".join(f'<div class=r><span>{n.esc(cognome(r["nome"]))}</span><b>{voto(r)}</b></div>' for r in altri)
     gp = d["nome"].replace("Gran Premio di ", "").replace("Gran Premio del ", "").replace("Gran Premio dell'", "").replace("Gran Premio d'", "").replace("GP ", "").upper()
+    if n.EN:
+        gp = {"CITTÀ DEL MESSICO": "MEXICO CITY", "MALESIA": "MALAYSIA", "STATI UNITI": "UNITED STATES"}.get(gp, gp)
     return f"""<!doctype html><meta charset=utf-8><style>{n.CSS_FONT}
 html,body{{margin:0;width:{n.W}px;height:{n.H}px;overflow:hidden;position:relative;background:#0b0b0e;font-family:Inter,sans-serif}}
 .bg{{position:absolute;inset:-80px;background:url(data:image/jpeg;base64,{foto}) center 15%/cover no-repeat;filter:blur(30px) brightness(.35)}}
@@ -42,10 +44,10 @@ html,body{{margin:0;width:{n.W}px;height:{n.H}px;overflow:hidden;position:relati
 .nota{{position:absolute;left:100px;bottom:50px;right:50px;font:600 28px Inter;color:#4a4a52;line-height:1.35}}
 .cred{{position:absolute;right:40px;bottom:34px;font:500 20px Inter;color:rgba(255,255,255,.75);max-width:700px;text-align:right}}
 </style><div class=bg></div>
-<div class=carta><div class=logo>{logo}</div><div class=tit>Pagella</div><div class=gp>{n.esc(gp)}</div>
+<div class=carta><div class=logo>{logo}</div><div class=tit>{"Grades" if n.EN else "Pagella"}</div><div class=gp>{n.esc(gp)}</div>
 <div class=foto></div><div class=sigillo>{voto(eroe)}</div>
 <div class=elenco>{rr}</div>
-<div class=nota><b>Uomo del weekend: {n.esc(eroe["nome"].upper())}.</b> I nostri voti, per divertimento, calcolati sui risultati ufficiali.</div></div>
+<div class=nota>{(f"<b>Man of the weekend: {n.esc(eroe['nome'].upper())}.</b> Our grades, just for fun, based on the official results.") if n.EN else (f"<b>Uomo del weekend: {n.esc(eroe['nome'].upper())}.</b> I nostri voti, per divertimento, calcolati sui risultati ufficiali.")}</div></div>
 <div class=cred>{n.esc(cred)}</div>"""
 
 

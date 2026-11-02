@@ -13,7 +13,9 @@ QUI = Path(__file__).parent
 NS.RALLENTA = 1.0            # il -3% vale per i video del canale, non per le lezioni
 NS.VOCE = "it-IT-IsabellaNeural"   # voce piu' chiara per spiegare (solo lezioni)
 VELOCITA = "+14%"
-AUDIO_KBPS = "80k"           # prima 28k: audio impastato
+AUDIO_KBPS = "80k"
+AULA = bool(os.environ.get("LEZIONE_AULA"))   # --aula: professore al leggio e slide sullo schermo di un'aula
+FPS = 6           # prima 28k: audio impastato
 W, H = 1920, 1080
 SPAZIO = 0.35        # pausa tra le battute (s)
 SPAZIO_SLIDE = 0.9   # pausa a fine schermata
@@ -213,8 +215,13 @@ async def genera(args, uscita, prova=None):
         b = await p.chromium.launch(**({"executable_path": "/opt/pw-browsers/chromium"} if Path("/opt/pw-browsers/chromium").exists() else {}), args=["--no-sandbox"])
         pg = await b.new_page(viewport={"width": W, "height": H})
         ult_arg = None
+        if AULA:   # aula virtuale: livelli fissi disegnati una volta sola
+            import aula as AU
+            async def _lancia():
+                return await p.chromium.launch(**({"executable_path": "/opt/pw-browsers/chromium"} if Path("/opt/pw-browsers/chromium").exists() else {}), args=["--no-sandbox"])
+            au = AU.Aula(await AU.prepara(lav / "aula_livelli", _lancia))
         for i, (a, sl, k, testo, pausa) in enumerate(bt):
-            h = hashlib.sha1(f"{testo}|{sl['titolo']}|{k}|{NS.VOCE}".encode()).hexdigest()[:12]
+            h = hashlib.sha1(f"{testo}|{sl['titolo']}|{k}|{NS.VOCE}{'|aula' if AULA else ''}".encode()).hexdigest()[:12]
             mp3, png, seg = lav / f"{h}.mp3", lav / f"{h}.png", lav / f"{h}_{int(pausa * 100)}.mp4"
             if not seg.exists():
                 if not mp3.exists():
@@ -225,9 +232,22 @@ async def genera(args, uscita, prova=None):
                 await pg.set_content(pagina(a, sl, k, (i + 1) / tot)); await pg.wait_for_timeout(60)
                 await pg.screenshot(path=str(png))
                 d = durata(mp3) + pausa
-                subprocess.run(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-framerate", "1", "-i", str(png), "-i", str(mp3), "-af", f"apad=pad_dur={pausa}",
-                                "-t", f"{d:.2f}", "-vf", "scale=1280:720,format=yuv420p", "-c:v", "libx264", "-tune", "stillimage", "-crf", "36", "-r", "2", "-g", "20",
-                                "-c:a", "aac", "-b:a", AUDIO_KBPS, "-ar", "24000", "-ac", "1", str(seg)], check=True)
+                if AULA:
+                    seq = AU.sequenza(AU.inviluppo(mp3, FPS), FPS, d)
+                    base = au.base(png); fr = {}
+                    for st in sorted(set(seq)):
+                        fr[st] = lav / f"{h}_{st[0]}{st[1]}.jpg"; au.fotogramma(base, st[0], st[1], fr[st])
+                    lista_fr = lav / f"{h}_fr.txt"
+                    lista_fr.write_text("".join(f"file '{fr[st]}'\nduration {1 / FPS:.4f}\n" for st in seq) + f"file '{fr[seq[-1]]}'\n")
+                    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lista_fr), "-i", str(mp3), "-af", f"apad=pad_dur={pausa}",
+                                    "-t", f"{d:.2f}", "-vf", "format=yuv420p", "-c:v", "libx264", "-preset", "veryfast", "-crf", "30", "-r", str(FPS), "-g", str(FPS * 4),
+                                    "-c:a", "aac", "-b:a", AUDIO_KBPS, "-ar", "24000", "-ac", "1", str(seg)], check=True)
+                    for f in [*fr.values(), lista_fr]:
+                        f.unlink()
+                else:
+                  subprocess.run(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-framerate", "1", "-i", str(png), "-i", str(mp3), "-af", f"apad=pad_dur={pausa}",
+                                  "-t", f"{d:.2f}", "-vf", "scale=1280:720,format=yuv420p", "-c:v", "libx264", "-tune", "stillimage", "-crf", "36", "-r", "2", "-g", "20",
+                                  "-c:a", "aac", "-b:a", AUDIO_KBPS, "-ar", "24000", "-ac", "1", str(seg)], check=True)
             if a["n"] != ult_arg and sl.get("vt"):
                 capitoli.append((t, f"Argomento {a['n']} – {a['titolo']}")); ult_arg = a["n"]
             t += durata(seg)
@@ -278,8 +298,10 @@ def invia_telegram(video, capitoli, titolo="video lezione (argomenti 1-8)"):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--prova", type=int); ap.add_argument("--solo"); ap.add_argument("--uscita", type=Path, default=QUI / "lezione.mp4"); ap.add_argument("--invia", action="store_true")
+    ap.add_argument("--prova", type=int); ap.add_argument("--solo"); ap.add_argument("--uscita", type=Path, default=QUI / "lezione.mp4"); ap.add_argument("--invia", action="store_true"); ap.add_argument("--aula", action="store_true")
     a = ap.parse_args()
+    global AULA
+    AULA = AULA or a.aula
     solo = {int(x) for x in a.solo.split(",")} if a.solo else None
     cap = asyncio.run(genera(carica(solo), a.uscita, a.prova))
     if a.invia and not a.prova:   # le prove non vanno mai sul Telegram

@@ -15,7 +15,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: video-lezione
+  group: video-lezione-${{ github.event.inputs.solo }}
   cancel-in-progress: false
 
 jobs:

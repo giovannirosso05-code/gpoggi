@@ -11503,5 +11503,20 @@
   "testo": "Matteo Ferrari è un pilota motociclistico italiano, campione europeo Moto3 nel 2012 e vincitore della coppa del mondo MotoE nel 2019.",
   "descrizione": "pilota motociclistico italiano",
   "pagina": "https://it.wikipedia.org/wiki/Matteo_Ferrari_(motociclista)"
+ },
+ "f1:50": {
+  "nascita": "1994-03-07",
+  "nazionalita": "Japanese",
+  "titoli": null,
+  "gare": 1,
+  "vittorie": 0,
+  "podi": 0,
+  "pole": 0,
+  "giri_veloci": 0
+ },
+ "nome:Ryo Hirakawa": {
+  "testo": "Ryō Hirakawa è un pilota automobilistico giapponese, ha vinto la 24 Ore di Le Mans nel 2022 e due volte il Mondiale Endurance.",
+  "descrizione": "pilota automobilistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Ry%C5%8D_Hirakawa"
  }
 }

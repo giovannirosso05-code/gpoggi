@@ -9,15 +9,15 @@
   "pole": 9,
   "giri_veloci": 10
  },
- "f1:63": {
-  "nascita": "1998-02-15",
-  "nazionalita": "British",
-  "titoli": 0,
-  "gare": 168,
-  "vittorie": 8,
-  "podi": 32,
-  "pole": 18,
-  "giri_veloci": 13
+ "f1:3": {
+  "nascita": "1997-09-30",
+  "nazionalita": "Dutch",
+  "titoli": 4,
+  "gare": 249,
+  "vittorie": 72,
+  "podi": 135,
+  "pole": 66,
+  "giri_veloci": 38
  },
  "f1:44": {
   "nascita": "1985-01-07",
@@ -29,15 +29,15 @@
   "pole": 118,
   "giri_veloci": 69
  },
- "f1:3": {
-  "nascita": "1997-09-30",
-  "nazionalita": "Dutch",
-  "titoli": 4,
-  "gare": 249,
-  "vittorie": 72,
-  "podi": 135,
-  "pole": 66,
-  "giri_veloci": 38
+ "f1:63": {
+  "nascita": "1998-02-15",
+  "nazionalita": "British",
+  "titoli": 0,
+  "gare": 168,
+  "vittorie": 8,
+  "podi": 32,
+  "pole": 18,
+  "giri_veloci": 13
  },
  "f1:16": {
   "nascita": "1997-10-16",
@@ -218,6 +218,16 @@
   "podi": 67,
   "pole": 19,
   "giri_veloci": 19
+ },
+ "f1:50": {
+  "nascita": "1994-03-07",
+  "nazionalita": "Japanese",
+  "titoli": null,
+  "gare": 1,
+  "vittorie": 0,
+  "podi": 0,
+  "pole": 0,
+  "giri_veloci": 0
  },
  "f1:11": {
   "nascita": "1990-01-26",
@@ -10211,20 +10221,20 @@
   "descrizione": "pilota automobilistico bolognese",
   "pagina": "https://it.wikipedia.org/wiki/Andrea_Kimi_Antonelli"
  },
- "nome:George Russell": {
-  "testo": "George William Russell è un pilota automobilistico britannico, attivo in Formula 1 con la Mercedes.",
-  "descrizione": "pilota automobilistico britannico",
-  "pagina": "https://it.wikipedia.org/wiki/George_Russell_(pilota_automobilistico)"
+ "nome:Max Verstappen": {
+  "testo": "Max Emilian Verstappen /maks emiliˈaːn ʋərˈstɑpən/ è un pilota automobilistico olandese con cittadinanza belga, attivo in Formula 1 con la Red Bull Racing, scuderia con la quale è diventato campione del mondo per 4 volte consecutive.",
+  "descrizione": "pilota automobilistico olandese con cittadinanza belga (1997-)",
+  "pagina": "https://it.wikipedia.org/wiki/Max_Verstappen"
  },
  "nome:Lewis Hamilton": {
   "testo": "Sir Lewis Carl Davidson Hamilton è un pilota automobilistico britannico, attivo in Formula 1 con la Ferrari.",
   "descrizione": "pilota automobilistico britannico (1985-)",
   "pagina": "https://it.wikipedia.org/wiki/Lewis_Hamilton"
  },
- "nome:Max Verstappen": {
-  "testo": "Max Emilian Verstappen /maks emiliˈaːn ʋərˈstɑpən/ è un pilota automobilistico olandese con cittadinanza belga, attivo in Formula 1 con la Red Bull Racing, scuderia con la quale è diventato campione del mondo per 4 volte consecutive.",
-  "descrizione": "pilota automobilistico olandese con cittadinanza belga (1997-)",
-  "pagina": "https://it.wikipedia.org/wiki/Max_Verstappen"
+ "nome:George Russell": {
+  "testo": "George William Russell è un pilota automobilistico britannico, attivo in Formula 1 con la Mercedes.",
+  "descrizione": "pilota automobilistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/George_Russell_(pilota_automobilistico)"
  },
  "nome:Charles Leclerc": {
   "testo": "Charles Marc Hervé Perceval Leclerc è un pilota automobilistico monegasco, attivo in Formula 1 con la Ferrari.",
@@ -10315,6 +10325,11 @@
   "testo": "Valtteri Viktor Bottas è un pilota automobilistico finlandese, attivo in Formula 1 con la Cadillac.",
   "descrizione": "pilota automobilistico finlandese (1989-)",
   "pagina": "https://it.wikipedia.org/wiki/Valtteri_Bottas"
+ },
+ "nome:Ryo Hirakawa": {
+  "testo": "Ryō Hirakawa è un pilota automobilistico giapponese, ha vinto la 24 Ore di Le Mans nel 2022 e due volte il Mondiale Endurance.",
+  "descrizione": "pilota automobilistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Ry%C5%8D_Hirakawa"
  },
  "nome:Sergio Perez": {
   "testo": "Sergio Michel Pérez Mendoza, detto Checo, è un pilota automobilistico messicano, attivo in Formula 1 con la Cadillac.",

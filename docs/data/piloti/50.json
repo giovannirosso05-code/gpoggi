@@ -25,7 +25,7 @@
    },
    "sprint": null,
    "gara": {
-    "pos": 13,
+    "pos": 10,
     "stato": null
    }
   }
@@ -33,6 +33,6 @@
  "vittorie": 0,
  "podi": 0,
  "pole": 0,
- "miglior_arrivo": 13,
+ "miglior_arrivo": 10,
  "ritiri": 0
 }

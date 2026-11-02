@@ -10,6 +10,10 @@ sys.path.insert(0, str(Path(__file__).parent))
 import notizia_sub as NS  # noqa: E402
 
 QUI = Path(__file__).parent
+NS.RALLENTA = 1.0            # il -3% vale per i video del canale, non per le lezioni
+NS.VOCE = "it-IT-IsabellaNeural"   # voce piu' chiara per spiegare (solo lezioni)
+VELOCITA = "+14%"
+AUDIO_KBPS = "80k"           # prima 28k: audio impastato
 W, H = 1920, 1080
 SPAZIO = 0.35        # pausa tra le battute (s)
 SPAZIO_SLIDE = 0.9   # pausa a fine schermata
@@ -29,10 +33,22 @@ ABBR = [
 ]
 
 
-SIGLE = {"MIT": "emme i ti", "MEF": "emme e effe", "ART": "a erre ti", "AGCM": "a gi ci emme", "TFUE": "ti effe u e", "AdSP": "a di esse pi", "DPSS": "di pi esse esse",
-         "PRP": "pi erre pi", "POT": "pi o ti", "DEASP": "di e a esse pi", "RFI": "erre effe i", "PEF": "pi e effe", "PIR": "pi i erre", "COA": "ci o a", "CIV": "ci i vu",
-         "CIM": "ci i emme", "ICAO": "i cao", "IMO": "i emme o", "UE": "u e", "CE": "ci e", "CEE": "ci e e", "CCI": "ci ci i", "AM": "a emme", "TEN-T": "ten ti", "FS": "effe esse",
-         "SGHA": "esse gi acca a", "AP": "a pi", "CdA": "ci di a", "USA": "u esse a", "COM": "ci o emme", "DM": "decreto ministeriale", "AI": "ei ai", "TV": "ti vu"}
+SIGLE = {
+    # lette per esteso (nessuna abbreviazione a voce, richiesta del proprietario)
+    "MIT": "Ministero delle infrastrutture e dei trasporti", "MEF": "Ministero dell'economia e delle finanze", "ART": "Autorità di regolazione dei trasporti",
+    "AGCM": "Autorità garante della concorrenza e del mercato", "TFUE": "Trattato sul funzionamento dell'Unione europea", "AdSP": "Autorità di sistema portuale",
+    "AM": "Autorità marittima", "AP": "Autorità portuale", "UE": "Unione europea", "CE": "Comunità europea", "CEE": "Comunità economica europea",
+    "CCI": "Camera di commercio internazionale", "CdA": "consiglio di amministrazione", "USA": "Stati Uniti d'America", "FS": "Ferrovie dello Stato",
+    "RFI": "Rete ferroviaria italiana", "DPSS": "Documento di pianificazione strategica di sistema", "PRP": "Piano regolatore portuale", "POT": "Piano operativo triennale",
+    "DEASP": "Documento di pianificazione energetica e ambientale del sistema portuale", "PEF": "Piano economico finanziario", "PIR": "Prospetto informativo della rete",
+    "SUA": "Sportello unico amministrativo", "DM": "decreto ministeriale", "TV": "televisione", "ICAO": "Organizzazione internazionale dell'aviazione civile",
+    "IMO": "Organizzazione marittima internazionale", "ONU": "Organizzazione delle Nazioni Unite", "IATA": "Associazione internazionale del trasporto aereo",
+    "UNCTAD": "Conferenza delle Nazioni Unite sul commercio e lo sviluppo", "SUDOCO": "Sportello unico doganale e dei controlli", "IVA": "imposta sul valore aggiunto",
+    "ENAC": "Ente nazionale per l'aviazione civile", "ENAV": "Ente nazionale assistenza al volo", "ANAS": "Anas", "ANSFISA": "Ansfisa", "ANAC": "Anac", "EASA": "Agenzia europea per la sicurezza aerea",
+    "ERA": "Agenzia dell'Unione europea per le ferrovie", "CIPESS": "Cipess", "ASPI": "Autostrade per l'Italia", "BIMCO": "Bimco", "FIATA": "Fiata", "OTIF": "Otif", "COTIF": "Cotif",
+    # restano lette lettera per lettera (non hanno un nome esteso nel documento)
+    "COA": "ci o a", "CIV": "ci i vu", "CIM": "ci i emme", "SGHA": "esse gi acca a", "COM": "ci o emme", "AI": "ei ai", "TEN-T": "ten ti",
+}
 _RE_SIGLE = re.compile(r"(?<![\w-])(" + "|".join(re.escape(k) for k in sorted(SIGLE, key=len, reverse=True)) + r")(?![\w-])")
 
 
@@ -205,13 +221,13 @@ async def genera(args, uscita, prova=None):
                     if os.environ.get("LEZIONE_SENZA_VOCE"):   # prova grafica in locale: silenzio lungo quanto servirebbe il parlato
                         subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", f"{max(1.0, len(testo.split()) / 2.7):.2f}", str(mp3)], check=True)
                     else:
-                        await NS.voce(testo, "+0%", mp3)
+                        await NS.voce(testo, VELOCITA, mp3)
                 await pg.set_content(pagina(a, sl, k, (i + 1) / tot)); await pg.wait_for_timeout(60)
                 await pg.screenshot(path=str(png))
                 d = durata(mp3) + pausa
                 subprocess.run(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-framerate", "1", "-i", str(png), "-i", str(mp3), "-af", f"apad=pad_dur={pausa}",
                                 "-t", f"{d:.2f}", "-vf", "scale=1280:720,format=yuv420p", "-c:v", "libx264", "-tune", "stillimage", "-crf", "36", "-r", "2", "-g", "20",
-                                "-c:a", "aac", "-b:a", "28k", "-ar", "24000", "-ac", "1", str(seg)], check=True)
+                                "-c:a", "aac", "-b:a", AUDIO_KBPS, "-ar", "24000", "-ac", "1", str(seg)], check=True)
             if a["n"] != ult_arg and sl.get("vt"):
                 capitoli.append((t, f"Argomento {a['n']} – {a['titolo']}")); ult_arg = a["n"]
             t += durata(seg)

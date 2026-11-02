@@ -15,7 +15,8 @@ NS.VOCE = "it-IT-IsabellaNeural"   # voce piu' chiara per spiegare (solo lezioni
 VELOCITA = "+14%"
 AUDIO_KBPS = "80k"
 AULA = bool(os.environ.get("LEZIONE_AULA"))   # --aula: professore al leggio e slide sullo schermo di un'aula
-FPS = 6           # prima 28k: audio impastato
+FPS = 6
+RIASSUNTO = bool(os.environ.get("LEZIONE_RIASSUNTO"))   # --riassunto: versione breve di tutti gli argomenti           # prima 28k: audio impastato
 W, H = 1920, 1080
 SPAZIO = 0.35        # pausa tra le battute (s)
 SPAZIO_SLIDE = 0.9   # pausa a fine schermata
@@ -167,6 +168,9 @@ def pagina(arg, sl, k, progresso):
 # ---------------------------------------------------------------- costruzione
 def carica(solo=None):
     args = []
+    if RIASSUNTO:   # riassunto lampo (10 minuti): lezione_testi/riassunto.py
+        from lezione_testi.riassunto import RIASSUNTO as RR
+        return [dict(n=r["n"], titolo=r["titolo"], intro=r["intro"], schermate=[p for sl in r["schermate"] for p in pagine(sl)]) for r in RR if not solo or r["n"] in solo]
     for f in sorted(QUI.glob("lezione_testi/arg[0-9].py")):
         n = int(re.search(r"arg(\d)", f.name).group(1))
         if solo and n not in solo:
@@ -298,14 +302,16 @@ def invia_telegram(video, capitoli, titolo="video lezione (argomenti 1-8)"):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--prova", type=int); ap.add_argument("--solo"); ap.add_argument("--uscita", type=Path, default=QUI / "lezione.mp4"); ap.add_argument("--invia", action="store_true"); ap.add_argument("--aula", action="store_true")
+    ap.add_argument("--prova", type=int); ap.add_argument("--solo"); ap.add_argument("--uscita", type=Path, default=QUI / "lezione.mp4"); ap.add_argument("--invia", action="store_true"); ap.add_argument("--aula", action="store_true"); ap.add_argument("--riassunto", action="store_true")
     a = ap.parse_args()
-    global AULA
+    global AULA, RIASSUNTO
     AULA = AULA or a.aula
+    RIASSUNTO = RIASSUNTO or a.riassunto
     solo = {int(x) for x in a.solo.split(",")} if a.solo else None
     cap = asyncio.run(genera(carica(solo), a.uscita, a.prova))
     if a.invia and not a.prova:   # le prove non vanno mai sul Telegram
-        invia_telegram(a.uscita, cap, "video lezione, argomento " + a.solo if a.solo and "," not in a.solo else "video lezione (argomenti 1-8)")
+        titolo = ("riassunto lampo (argomenti 1-8)" if RIASSUNTO else ("video lezione, argomento " + a.solo if a.solo and "," not in a.solo else "video lezione (argomenti 1-8)"))
+        invia_telegram(a.uscita, cap, titolo + (" · aula" if AULA else ""))
 
 
 if __name__ == "__main__":

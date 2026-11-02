@@ -10,6 +10,9 @@ on:
       aula:
         description: 'si = lezione in aula (professore che parla e slide sullo schermo); vuoto = solo slide'
         default: ''
+      riassunto:
+        description: 'si = riassunto lampo di 10 minuti di tutti gli argomenti'
+        default: ''
       prova:
         description: 'solo le prime N battute (prova veloce; vuoto = tutto)'
         default: ''
@@ -18,7 +21,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: video-lezione-${{ github.event.inputs.solo }}
+  group: video-lezione-${{ github.event.inputs.solo }}-${{ github.event.inputs.aula }}-${{ github.event.inputs.riassunto }}
   cancel-in-progress: false
 
 jobs:
@@ -44,8 +47,9 @@ jobs:
           SOLO: ${{ github.event.inputs.solo }}
           PROVA: ${{ github.event.inputs.prova }}
           AULA: ${{ github.event.inputs.aula }}
+          RIASSUNTO: ${{ github.event.inputs.riassunto }}
         run: |
-          python video/lezione.py $( [ -n "$SOLO" ] && echo --solo "$SOLO" ) $( [ -n "$PROVA" ] && echo --prova "$PROVA" ) $( [ -n "$AULA" ] && echo --aula ) --invia --uscita /tmp/lezione.mp4
+          python video/lezione.py $( [ -n "$SOLO" ] && echo --solo "$SOLO" ) $( [ -n "$PROVA" ] && echo --prova "$PROVA" ) $( [ -n "$AULA" ] && echo --aula ) $( [ -n "$RIASSUNTO" ] && echo --riassunto ) --invia --uscita /tmp/lezione.mp4
       - if: always()
         uses: actions/upload-artifact@v4
         with:

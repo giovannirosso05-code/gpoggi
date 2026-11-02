@@ -252,18 +252,22 @@ def invia_telegram(video, capitoli, titolo="video lezione (argomenti 1-8)"):
     if not tok:
         print("Token Telegram mancante: video non inviato."); return
     video = Path(video); parti = [video]
-    if video.stat().st_size > 48 * 2 ** 20:
-        n = video.stat().st_size // (45 * 2 ** 20) + 1
-        tot = durata(video); tagli = []
-        for k in range(1, n):
-            target = tot * k / n
-            tagli.append(min((c[0] for c in capitoli), key=lambda t: abs(t - target)))
-        tagli = sorted(set(tagli)); parti = []
-        for k, a in enumerate([0.0] + tagli):
-            b = (tagli + [tot])[k]
-            f = video.with_name(f"{video.stem}_parte{k + 1}.mp4")
-            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{a:.2f}", "-to", f"{b:.2f}", "-i", str(video), "-c", "copy", "-movflags", "+faststart", str(f)], check=True)
-            parti.append(f)
+    LIM = 48 * 2 ** 20
+    if video.stat().st_size > LIM:
+        tot = durata(video); bs = video.stat().st_size / tot
+        for margine in (0.85, 0.75, 0.65, 0.55):   # si restringe finché ogni parte sta sotto il limite di Telegram (50 MB)
+            max_s = LIM * margine / bs; inizi = [0.0]
+            while tot - inizi[-1] > max_s:
+                ok = [c[0] for c in capitoli if inizi[-1] + 60 < c[0] <= inizi[-1] + max_s]
+                inizi.append(max(ok) if ok else inizi[-1] + max_s)   # taglio a un inizio di argomento; se non c'è, a metà
+            parti = []
+            for k, a0 in enumerate(inizi):
+                b0 = (inizi + [tot])[k + 1]
+                f = video.with_name(f"{video.stem}_parte{k + 1}.mp4")
+                subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{a0:.2f}", "-to", f"{b0:.2f}", "-i", str(video), "-c", "copy", "-movflags", "+faststart", str(f)], check=True)
+                parti.append(f)
+            if all(f.stat().st_size <= LIM for f in parti):
+                break
     for k, f in enumerate(parti):
         with open(f, "rb") as fh:
             requests.post(f"https://api.telegram.org/bot{tok}/sendVideo", data={"chat_id": chat, "caption": f"🎓 Diritto dei trasporti, {titolo}" + (f" · parte {k + 1}/{len(parti)}" if len(parti) > 1 else ""),

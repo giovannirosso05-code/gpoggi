@@ -42,7 +42,8 @@ jobs:
           PROVA: ${{ github.event.inputs.prova }}
         run: |
           python video/lezione.py $( [ -n "$SOLO" ] && echo --solo "$SOLO" ) $( [ -n "$PROVA" ] && echo --prova "$PROVA" ) --invia --uscita /tmp/lezione.mp4
-      - uses: actions/upload-artifact@v4
+      - if: always()
+        uses: actions/upload-artifact@v4
         with:
           name: video-lezione
           path: |

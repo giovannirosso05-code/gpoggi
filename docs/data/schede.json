@@ -129,16 +129,6 @@
   "pole": 0,
   "giri_veloci": 0
  },
- "f1:27": {
-  "nascita": "1987-08-19",
-  "nazionalita": "German",
-  "titoli": 0,
-  "gare": 270,
-  "vittorie": 0,
-  "podi": 1,
-  "pole": 1,
-  "giri_veloci": 2
- },
  "f1:5": {
   "nascita": "2004-10-14",
   "nazionalita": "Brazilian",
@@ -148,6 +138,16 @@
   "podi": 0,
   "pole": 0,
   "giri_veloci": 0
+ },
+ "f1:27": {
+  "nascita": "1987-08-19",
+  "nazionalita": "German",
+  "titoli": 0,
+  "gare": 270,
+  "vittorie": 0,
+  "podi": 1,
+  "pole": 1,
+  "giri_veloci": 2
  },
  "f1:31": {
   "nascita": "1996-09-17",
@@ -10281,15 +10281,15 @@
   "descrizione": "pilota automobilistico britannico (2005-)",
   "pagina": "https://it.wikipedia.org/wiki/Oliver_Bearman"
  },
- "nome:Nico Hulkenberg": {
-  "testo": "Nicolas Hülkenberg, detto Nico, è un pilota automobilistico tedesco, attivo in Formula 1 con l'Audi.",
-  "descrizione": "pilota automobilistico tedesco (1987-)",
-  "pagina": "https://it.wikipedia.org/wiki/Nico_H%C3%BClkenberg"
- },
  "nome:Gabriel Bortoleto": {
   "testo": "Gabriel Bortoleto è un pilota automobilistico brasiliano, attivo in Formula 1 con l'Audi.",
   "descrizione": "pilota automobilistico brasiliano (2004-)",
   "pagina": "https://it.wikipedia.org/wiki/Gabriel_Bortoleto"
+ },
+ "nome:Nico Hulkenberg": {
+  "testo": "Nicolas Hülkenberg, detto Nico, è un pilota automobilistico tedesco, attivo in Formula 1 con l'Audi.",
+  "descrizione": "pilota automobilistico tedesco (1987-)",
+  "pagina": "https://it.wikipedia.org/wiki/Nico_H%C3%BClkenberg"
  },
  "nome:Esteban Ocon": {
   "testo": "Esteban José Jean-Pierre Ocon-Khelfane è un pilota automobilistico francese, attivo in Formula 1 con la Haas.",

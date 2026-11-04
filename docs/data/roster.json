@@ -341,12 +341,29 @@
   }
  },
  {
+  "numero": 50,
+  "acronimo": "HIR",
+  "nome": "Ryo Hirakawa",
+  "team": "Haas F1 Team",
+  "colore": "9C9FA2",
+  "posizione": 21,
+  "punti": 1.0,
+  "foto": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Ryo_Hirakawa_2024_WEC_Fuji_3.jpg/500px-Ryo_Hirakawa_2024_WEC_Fuji_3.jpg",
+   "grande": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Ryo_Hirakawa_2024_WEC_Fuji_3.jpg",
+   "autore": "Morio",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Ryo_Hirakawa_2024_WEC_Fuji_3.jpg",
+   "file": "img/foto/0dd5c1a0e8881174.jpg"
+  }
+ },
+ {
   "numero": 18,
   "acronimo": "STR",
   "nome": "Lance Stroll",
   "team": "Aston Martin",
   "colore": "229971",
-  "posizione": 21,
+  "posizione": 22,
   "punti": 0.0,
   "foto": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/2025_Japan_GP_-_Aston_Martin_-_Lance_Stroll_-_Fanzone_Stage_%28cropped%29.jpg/500px-2025_Japan_GP_-_Aston_Martin_-_Lance_Stroll_-_Fanzone_Stage_%28cropped%29.jpg",
@@ -363,7 +380,7 @@
   "nome": "Valtteri Bottas",
   "team": "Cadillac",
   "colore": "909090",
-  "posizione": 22,
+  "posizione": 23,
   "punti": 0.0,
   "foto": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Valtteri_Bottas_at_the_2026_Adelaide_Motorsport_Festival_%28028A7556%29.jpg/500px-Valtteri_Bottas_at_the_2026_Adelaide_Motorsport_Festival_%28028A7556%29.jpg",
@@ -372,23 +389,6 @@
    "licenza": "CC BY-SA 4.0",
    "pagina": "https://commons.wikimedia.org/wiki/File:Valtteri_Bottas_at_the_2026_Adelaide_Motorsport_Festival_(028A7556).jpg",
    "file": "img/foto/e266fad25d3fb942.jpg"
-  }
- },
- {
-  "numero": 50,
-  "acronimo": "HIR",
-  "nome": "Ryo Hirakawa",
-  "team": "Haas F1 Team",
-  "colore": "9C9FA2",
-  "posizione": 23,
-  "punti": 0.0,
-  "foto": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Ryo_Hirakawa_2024_WEC_Fuji_3.jpg/500px-Ryo_Hirakawa_2024_WEC_Fuji_3.jpg",
-   "grande": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Ryo_Hirakawa_2024_WEC_Fuji_3.jpg",
-   "autore": "Morio",
-   "licenza": "CC BY-SA 4.0",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Ryo_Hirakawa_2024_WEC_Fuji_3.jpg",
-   "file": "img/foto/0dd5c1a0e8881174.jpg"
   }
  },
  {

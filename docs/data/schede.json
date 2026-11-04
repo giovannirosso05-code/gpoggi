@@ -199,6 +199,16 @@
   "pole": 1,
   "giri_veloci": 1
  },
+ "f1:50": {
+  "nascita": "1994-03-07",
+  "nazionalita": "Japanese",
+  "titoli": null,
+  "gare": 1,
+  "vittorie": 0,
+  "podi": 0,
+  "pole": 0,
+  "giri_veloci": 0
+ },
  "f1:18": {
   "nascita": "1998-10-29",
   "nazionalita": "Canadian",
@@ -218,16 +228,6 @@
   "podi": 67,
   "pole": 19,
   "giri_veloci": 19
- },
- "f1:50": {
-  "nascita": "1994-03-07",
-  "nazionalita": "Japanese",
-  "titoli": null,
-  "gare": 1,
-  "vittorie": 0,
-  "podi": 0,
-  "pole": 0,
-  "giri_veloci": 0
  },
  "f1:11": {
   "nascita": "1990-01-26",
@@ -10316,6 +10316,11 @@
   "descrizione": "pilota automobilistico giapponese (2000-)",
   "pagina": "https://it.wikipedia.org/wiki/Y%C5%ABki_Tsunoda"
  },
+ "nome:Ryo Hirakawa": {
+  "testo": "Ryō Hirakawa è un pilota automobilistico giapponese, ha vinto la 24 Ore di Le Mans nel 2022 e due volte il Mondiale Endurance.",
+  "descrizione": "pilota automobilistico giapponese",
+  "pagina": "https://it.wikipedia.org/wiki/Ry%C5%8D_Hirakawa"
+ },
  "nome:Lance Stroll": {
   "testo": "Lance Stroll, pseudonimo di Lance Strulovitch, è un pilota automobilistico canadese, attivo in Formula 1 con l'Aston Martin.",
   "descrizione": "pilota automobilistico canadese (1998-)",
@@ -10325,11 +10330,6 @@
   "testo": "Valtteri Viktor Bottas è un pilota automobilistico finlandese, attivo in Formula 1 con la Cadillac.",
   "descrizione": "pilota automobilistico finlandese (1989-)",
   "pagina": "https://it.wikipedia.org/wiki/Valtteri_Bottas"
- },
- "nome:Ryo Hirakawa": {
-  "testo": "Ryō Hirakawa è un pilota automobilistico giapponese, ha vinto la 24 Ore di Le Mans nel 2022 e due volte il Mondiale Endurance.",
-  "descrizione": "pilota automobilistico giapponese",
-  "pagina": "https://it.wikipedia.org/wiki/Ry%C5%8D_Hirakawa"
  },
  "nome:Sergio Perez": {
   "testo": "Sergio Michel Pérez Mendoza, detto Checo, è un pilota automobilistico messicano, attivo in Formula 1 con la Cadillac.",

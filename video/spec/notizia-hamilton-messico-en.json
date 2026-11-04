@@ -1,0 +1,60 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Hamilton writes after Mexico",
+ "fonte": "OA Sport",
+ "velocita": "+20%",
+ "scene": [
+  {
+   "foto": "Lewis Hamilton",
+   "ritratto_espn": true,
+   "hook": true,
+   "hook_titolo": "Hamilton writes after Mexico",
+   "testo": "Hamilton writes after Mexico."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "ritratto_espn": true,
+   "testo": "Lewis Hamilton posted a *message* on Instagram after the race in Mexico."
+  },
+  {
+   "foto": "Max Verstappen",
+   "ritratto_espn": true,
+   "testo": "The Briton finished *second*, behind Max Verstappen."
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "ritratto_espn": true,
+   "testo": "First of all he congratulated Kimi Antonelli, the new *world champion*."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "ritratto_espn": true,
+   "testo": "In Mexico the two Ferraris were ahead, with Hamilton ahead of *Leclerc*."
+  },
+  {
+   "foto": "Max Verstappen",
+   "ritratto_espn": true,
+   "testo": "An incident at turn 4 changed the race and helped *Verstappen*."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "pista": true,
+   "foto_espn_cerca": [
+    "hamilton"
+   ],
+   "testo": "Losing the *victory* hurts, writes Lewis, and internal fights must not damage the team."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "pista": true,
+   "foto_espn_cerca": [
+    "ferrari"
+   ],
+   "testo": "He restated his *faith* in Ferrari: for him the best is yet to come."
+  }
+ ],
+ "finale": {
+  "foto": "Lewis Hamilton",
+  "domanda": "What do you think of Hamilton's words?"
+ }
+}

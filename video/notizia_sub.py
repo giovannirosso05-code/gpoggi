@@ -414,6 +414,28 @@ async def genera(spec, uscita):
         scene = list(spec["scene"])
         finale = spec["finale"]
         for sc in scene + [finale]:
+            if sc.get("ritratto_espn"):   # ritratto ESPN del pilota sul colore del team (scaricato qui, mai nel repository)
+                try:
+                    import ritratti_espn as RE
+                    col = {p["nome"]: p.get("colore") for p in json.load(open(DATA / "roster.json"))}.get(sc["foto"]) or "e8352f"
+                    sc["foto_file"] = str(RE.ritratto(sc["foto"], tuple(int(col[k:k + 2], 16) for k in (0, 2, 4))))
+                    sc["credito"] = f"{T['foto']}: ESPN"
+                except (Exception, SystemExit) as e:
+                    print(f"  ritratto ESPN di {sc['foto']} non disponibile ({type(e).__name__}): resta la foto libera")
+            if sc.get("foto_espn_cerca"):   # foto ESPN il cui titolo contiene queste parole (la prima non ancora usata)
+                try:
+                    import requests as _rq
+                    usate = {x.get("foto_url") for x in scene + [finale]}
+                    r = _rq.get("https://site.api.espn.com/apis/site/v2/sports/racing/f1/news?limit=50", headers={"User-Agent": "GPOggiBot/0.1"}, timeout=30,
+                                verify="/root/.ccr/ca-bundle.crt" if os.path.exists("/root/.ccr/ca-bundle.crt") else True)
+                    for a in r.json().get("articles", []):
+                        t = a.get("headline", "").lower()
+                        if all(w in t for w in sc["foto_espn_cerca"]):
+                            u = next((i["url"] for i in a.get("images", []) if i.get("width") == 1296 and "/photo/" in i.get("url", "")), None)
+                            if u and u not in usate:
+                                sc["foto_url"] = u; break
+                except Exception as e:
+                    print("  foto ESPN non trovata:", e)
             if sc.get("foto_url"):
                 sc["foto_file"], sc["credito"] = foto_da_url(sc["foto_url"], sc.get("credito", f"{T['foto']}: ESPN"))
                 sc.setdefault("foto", "ESPN")

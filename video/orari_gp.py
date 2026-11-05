@@ -46,13 +46,16 @@ async def _voce_comune(testo, vel, uscita):
 
 if os.path.exists("/root/.ccr/ca-bundle.crt"):
     C._SSL_CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
+EN = os.environ.get("GPOGGI_LINGUA", "it") == "en"   # versione inglese (secondo account): stessi dati, scritte e voce in inglese
 QUI = Path(__file__).parent
 SITO = QUI.parent / "docs"
 FONT = QUI / "logo" / "font"
 CHROMIUM = "/opt/pw-browsers/chromium"
 ROMA = ZoneInfo("Europe/Rome")
 W, H = 1080, 1920
-VOCE, VELOCITA = "it-IT-DiegoNeural", "+19%"
+VOCE, VELOCITA = "it-IT-DiegoNeural", ("+10%" if EN else "+19%")
+GIORNI_EN = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+MESI_EN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 GIORNI = ["lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"]
 MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"]
 UNITA = ["zero", "uno", "due", "tre", "quattro", "cinque", "sei", "sette", "otto", "nove", "dieci", "undici", "dodici", "tredici", "quattordici", "quindici",
@@ -86,13 +89,45 @@ def carica(serie, pos=None):
         ro = json.load(open(SITO / "data/roster.json"))
         fav = pron["f1"]["favoriti"][pos]["nome"]
         foto = next(p for p in ro if p["nome"] == fav)["foto"]
-        return dict(sigla="F1", colore="#e8352f", titolo=w["nome"], luogo=w["paese"] or w["circuito"], fav=fav, foto=foto, sessioni=w["sessioni"], motogp=False)
+        return dict(sigla="F1", colore="#e8352f", titolo=titolo_en(w["nome"]) if EN else w["nome"], luogo=w["paese"] or w["circuito"], fav=fav, foto=foto, sessioni=w["sessioni"], motogp=False)
     mg = json.load(open(SITO / "data/motogp.json"))["weekend"]
     gara = pron["motogp"]["gara"]
     w = next(x for x in mg if any(s["nome"] == "Gara" and datetime.fromisoformat(s["inizio"]) == datetime.fromisoformat(gara) for s in x["sessioni"]))
     fav = pron["motogp"]["favoriti"][pos]
     fm = json.load(open(SITO / "data/foto-motogp.json"))
-    return dict(sigla="MotoGP", colore="#1f5fd1", titolo=w["nome"], luogo=w["circuito"], fav=fav["nome"], foto=fm[fav["id"]], sessioni=w["sessioni"], motogp=True)
+    return dict(sigla="MotoGP", colore="#1f5fd1", titolo=titolo_en(w["nome"]) if EN else w["nome"], luogo=w["circuito"], fav=fav["nome"], foto=fm[fav["id"]], sessioni=w["sessioni"], motogp=True)
+
+
+NOMI_EN = {"San Paolo": "São Paulo", "Città del Messico": "Mexico City", "Stati Uniti": "United States", "Paesi Bassi": "Netherlands", "Malesia": "Malaysia",
+           "Giappone": "Japan", "Spagna": "Spain", "Austria": "Austria", "Gran Bretagna": "Great Britain", "Monaco": "Monaco", "Italia": "Italy", "Belgio": "Belgium",
+           "Ungheria": "Hungary", "Singapore": "Singapore", "Qatar": "Qatar", "Abu Dhabi": "Abu Dhabi", "Brasile": "Brazil", "Australia": "Australia", "Canada": "Canada",
+           "Indonesia": "Indonesia", "Thailandia": "Thailand", "Argentina": "Argentina", "Francia": "France", "Germania": "Germany", "Portogallo": "Portugal", "Cina": "China",
+           "Arabia Saudita": "Saudi Arabia", "Las Vegas": "Las Vegas", "Miami": "Miami", "Emilia Romagna": "Emilia-Romagna"}
+
+
+def titolo_en(t):
+    """«Gran Premio di San Paolo» -> «São Paulo Grand Prix»; «GP Qatar» resta «GP Qatar»."""
+    base = t
+    for pre in ("Gran Premio degli ", "Gran Premio dei ", "Gran Premio della ", "Gran Premio dello ", "Gran Premio del ", "Gran Premio dell'", "Gran Premio d'", "Gran Premio di ", "GP "):
+        if t.startswith(pre):
+            base = t[len(pre):].strip(); break
+    nome = NOMI_EN.get(base, base)
+    return f"GP {nome}" if t.startswith("GP ") else f"{nome} Grand Prix"
+
+
+def sessione_en(nome):
+    """Nome della sessione in inglese (solo per mostrarlo; la logica usa il nome italiano)."""
+    n = nome.strip()
+    for a, b in (("Prove libere", "Free Practice"), ("Qualifiche sprint", "Sprint Qualifying"), ("Qualifiche", "Qualifying"), ("Gara", "Race"), ("Warm up", "Warm-up")):
+        if n.startswith(a):
+            return n.replace(a, b, 1)
+    return n
+
+
+def ora_en(h, m):
+    suf = "AM" if h < 12 else "PM"
+    h12 = h % 12 or 12
+    return f"{h12} {suf}" if m == 0 else f"{h12}:{m:02d} {suf}"
 
 
 def righe(d):
@@ -103,15 +138,33 @@ def righe(d):
         nome = s["nome"]
         if d["motogp"] and nome == "Prove libere":
             nome = "Practice"
-        out.setdefault((t.date(), f"{GIORNI[t.weekday()]} {t.day} {MESI[t.month - 1]}"), []).append((nome, t.strftime("%H:%M"), t.hour, t.minute))
+        if EN:
+            nome = sessione_en(nome)
+        giorno = f"{GIORNI_EN[t.weekday()]} {t.day} {MESI_EN[t.month - 1]}" if EN else f"{GIORNI[t.weekday()]} {t.day} {MESI[t.month - 1]}"
+        out.setdefault((t.date(), giorno), []).append((nome, t.strftime("%H:%M"), t.hour, t.minute))
     return [(g[1], v) for g, v in sorted(out.items())]
 
 
+def copione_en(d, gruppi):
+    t = [(d["titolo"].replace("GP ", "", 1) + " Moto G P" if d["motogp"] else d["titolo"]) + ".",
+         "Here are all the session times, in Italian time."]
+    if any(h < 9 for _, sess in gruppi for _, _, h, _ in sess):
+        t.append("Heads up: some sessions are early in the morning.")
+    for giorno, sess in gruppi:
+        parti = [f"{n.lower() if n.lower() != 'race' else 'the race'} at {ora_en(h, m)}" for n, _, h, m in sess]
+        t.append(f"{giorno}: " + ", ".join(parti) + ".")
+    t.append(f"Among the favourites: {d['fav']}.")
+    t.append("Everything at G P Oggi dot it.")
+    return " ".join(t)
+
+
 def copione(d, gruppi):
+    if EN:
+        return copione_en(d, gruppi)
     nome_gp = nome_parlato(d["titolo"])
     serie = "di Moto G P" if d["motogp"] else ""
     t = [(f"{nome_gp} {serie}").strip() + ".", "Ecco tutti gli orari, in ora italiana."]
-    if d["motogp"]:
+    if any(h < 9 for _, sess in gruppi for _, _, h, _ in sess):
         t.append("Attenzione: le sessioni sono di prima mattina.")
     for giorno, sess in gruppi:
         parti = [f"{n.lower().replace('warm up', 'warm up').replace('qualifiche 1', 'qualifiche uno').replace('qualifiche 2', 'qualifiche due').replace('prove libere 1', 'prove libere uno').replace('prove libere 2', 'prove libere due').replace('prove libere 3', 'prove libere tre')} {a_voce(h, m)}" for n, _, h, m in sess]
@@ -132,6 +185,9 @@ def didascalia(d, gruppi):
                 orari.append(f"{'🏁' if t == 'gara' else '⏱️'} {n} · {giorno} · {o}")
     orari.sort(key=lambda r: r.startswith("🏁"), reverse=True)
     tag = "motogp" if d["motogp"] else "f1"
+    if EN:
+        return (f"{d['titolo']}: all the session times, in Italian time ⏰\n\n" + "\n".join(orari) + "\n\n"
+                f"Who wins, in your opinion? Tell us in the comments 👇\n\n🔗 gpoggi.it\n\n#gpoggi #{tag} #racing #schedule")
     return (f"{d['titolo']}: ecco tutti gli orari in ora italiana ⏰\n\n" + "\n".join(orari) + "\n\n"
             f"Chi vince secondo te? Dimmi la tua nei commenti 👇\n\n🔗 gpoggi.it\n\n#gpoggi #{tag} #granpremio #orari")
 
@@ -152,9 +208,9 @@ def b64(p):
 
 def tipo_sessione(nome):
     n = nome.lower()
-    if n == "gara":
+    if n in ("gara", "race"):
         return "gara"
-    if n.startswith("qualifiche") and "sprint" not in n:
+    if n.startswith(("qualifiche", "qualifying")) and "sprint" not in n:
         return "qualifica"
     return "altro"
 
@@ -238,11 +294,11 @@ h1{{margin:12px 0 0;font:700 60px/1 Oswald;text-transform:uppercase;white-space:
 </style>
 <div class=logo><img src="data:image/png;base64,{b64(SITO / 'img/logo-wide-scuro.png')}"></div>
 <div class=foto></div><div class=vel></div>
-<div class=testata><span class=pill>{d['sigla']}</span><span class=ora-it>Orari in ora italiana</span><h1>{d['titolo']}</h1>
-<div class=sotto>{d['luogo'][:34]}</div><div class=sotto style='margin-top:2px'>Tra i favoriti: <b>{d['fav']}</b></div></div>
+<div class=testata><span class=pill>{d['sigla']}</span><span class=ora-it>{"Times in Italian time" if EN else "Orari in ora italiana"}</span><h1>{d['titolo']}</h1>
+<div class=sotto>{d['luogo'][:34]}</div><div class=sotto style='margin-top:2px'>{'Among the favourites' if EN else 'Tra i favoriti'}: <b>{d['fav']}</b></div></div>
 <div class=blocco>{carte}{chips}
-<div class=piede><div class=url>gpoggi.it</div><div class=piccolo>Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team</div>
-<div class=piccolo>{'Foto: ESPN' if espn else "Foto: " + d['foto'].get('autore', '') + ' · ' + d['foto'].get('licenza', '') + ' · via Wikimedia Commons'}</div></div></div>"""
+<div class=piede><div class=url>gpoggi.it</div><div class=piccolo>{"Unofficial site, not affiliated with Formula 1, the FIA, MotoGP, Dorna or any team" if EN else "Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team"}</div>
+<div class=piccolo>{('Photo: ESPN' if EN else 'Foto: ESPN') if espn else ('Photo: ' if EN else 'Foto: ') + d['foto'].get('autore', '') + ' · ' + d['foto'].get('licenza', '') + ' · via Wikimedia Commons'}</div></div></div>"""
 
 
 async def main(args):
@@ -270,7 +326,7 @@ async def main(args):
         print(f"Fatto: {args.uscita} ({dur + 1.9:.1f}s)")
         if args.invia:
             import notizie_giorno as NG
-            NG.telegram(args.uscita, f"🏁 {d['titolo']}: orari in ora italiana", didascalia(d, gruppi))
+            NG.telegram(args.uscita, f"🏁 {d['titolo']}: " + ("session times, Italian time" if EN else "orari in ora italiana"), didascalia(d, gruppi))
 
 
 if __name__ == "__main__":

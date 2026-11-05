@@ -42,7 +42,7 @@ jobs:
           GPOGGI_LINGUA: ${{ github.event.inputs.lingua || 'it' }}
         run: |
           mkdir -p video/pronti
-          python video/orari_gp.py "${SERIE:-auto}" --invia --avvisa --uscita "video/pronti/orari-$(date +%Y%m%d-%H%M)-${SERIE:-auto}$( [ "$GPOGGI_LINGUA" = en ] && echo -en ).mp4"
+          python video/orari_gp.py "${SERIE:-auto}" --invia --avvisa --uscita "video/pronti/orari-$(date +%Y%m%d-%H%M)-${SERIE:-auto}$( [ "$GPOGGI_LINGUA" = en ] && printf -- '-en' ).mp4"
       - name: Tiene una copia del video nel repository (per riaverlo in chat)
         run: |
           git config user.name "gpoggi-bot"

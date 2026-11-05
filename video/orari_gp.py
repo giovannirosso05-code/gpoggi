@@ -295,7 +295,7 @@ h1{{margin:12px 0 0;font:700 60px/1 Oswald;text-transform:uppercase;white-space:
 <div class=logo><img src="data:image/png;base64,{b64(SITO / 'img/logo-wide-scuro.png')}"></div>
 <div class=foto></div><div class=vel></div>
 <div class=testata><span class=pill>{d['sigla']}</span><span class=ora-it>{"Times in UK time" if EN else "Orari in ora italiana"}</span><h1>{d['titolo']}</h1>
-<div class=sotto>{d['luogo'][:34]}</div><div class=sotto style='margin-top:2px'>{'Among the favourites' if EN else 'Tra i favoriti'}: <b>{d['fav']}</b></div></div>
+<div class=sotto>{(NOMI_EN.get(d['luogo'], d['luogo']) if EN else d['luogo'])[:34]}</div><div class=sotto style='margin-top:2px'>{'Among the favourites' if EN else 'Tra i favoriti'}: <b>{d['fav']}</b></div></div>
 <div class=blocco>{carte}{chips}
 <div class=piede><div class=url>gpoggi.it</div><div class=piccolo>{"Unofficial site, not affiliated with Formula 1, the FIA, MotoGP, Dorna or any team" if EN else "Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team"}</div>
 <div class=piccolo>{('Photo: ESPN' if EN else 'Foto: ESPN') if espn else ('Photo: ' if EN else 'Foto: ') + d['foto'].get('autore', '') + ' · ' + d['foto'].get('licenza', '') + ' · via Wikimedia Commons'}</div></div></div>"""

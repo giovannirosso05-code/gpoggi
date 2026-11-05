@@ -51,7 +51,7 @@ QUI = Path(__file__).parent
 SITO = QUI.parent / "docs"
 FONT = QUI / "logo" / "font"
 CHROMIUM = "/opt/pw-browsers/chromium"
-ROMA = ZoneInfo("Europe/Rome")
+ROMA = ZoneInfo("Europe/London" if EN else "Europe/Rome")   # versione inglese: ora di Londra (il pubblico è britannico)
 W, H = 1080, 1920
 VOCE, VELOCITA = "it-IT-DiegoNeural", ("+10%" if EN else "+19%")
 GIORNI_EN = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
@@ -147,7 +147,7 @@ def righe(d):
 
 def copione_en(d, gruppi):
     t = [(d["titolo"].replace("GP ", "", 1) + " Moto G P" if d["motogp"] else d["titolo"]) + ".",
-         "Here are all the session times, in Italian time."]
+         "Here are all the session times, in U K time."]
     if any(h < 9 for _, sess in gruppi for _, _, h, _ in sess):
         t.append("Heads up: some sessions are early in the morning.")
     for giorno, sess in gruppi:
@@ -186,7 +186,7 @@ def didascalia(d, gruppi):
     orari.sort(key=lambda r: r.startswith("🏁"), reverse=True)
     tag = "motogp" if d["motogp"] else "f1"
     if EN:
-        return (f"{d['titolo']}: all the session times, in Italian time ⏰\n\n" + "\n".join(orari) + "\n\n"
+        return (f"{d['titolo']}: all the session times, in UK time ⏰\n\n" + "\n".join(orari) + "\n\n"
                 f"Who wins, in your opinion? Tell us in the comments 👇\n\n🔗 gpoggi.it\n\n#gpoggi #{tag} #racing #schedule")
     return (f"{d['titolo']}: ecco tutti gli orari in ora italiana ⏰\n\n" + "\n".join(orari) + "\n\n"
             f"Chi vince secondo te? Dimmi la tua nei commenti 👇\n\n🔗 gpoggi.it\n\n#gpoggi #{tag} #granpremio #orari")
@@ -294,7 +294,7 @@ h1{{margin:12px 0 0;font:700 60px/1 Oswald;text-transform:uppercase;white-space:
 </style>
 <div class=logo><img src="data:image/png;base64,{b64(SITO / 'img/logo-wide-scuro.png')}"></div>
 <div class=foto></div><div class=vel></div>
-<div class=testata><span class=pill>{d['sigla']}</span><span class=ora-it>{"Times in Italian time" if EN else "Orari in ora italiana"}</span><h1>{d['titolo']}</h1>
+<div class=testata><span class=pill>{d['sigla']}</span><span class=ora-it>{"Times in UK time" if EN else "Orari in ora italiana"}</span><h1>{d['titolo']}</h1>
 <div class=sotto>{d['luogo'][:34]}</div><div class=sotto style='margin-top:2px'>{'Among the favourites' if EN else 'Tra i favoriti'}: <b>{d['fav']}</b></div></div>
 <div class=blocco>{carte}{chips}
 <div class=piede><div class=url>gpoggi.it</div><div class=piccolo>{"Unofficial site, not affiliated with Formula 1, the FIA, MotoGP, Dorna or any team" if EN else "Sito non ufficiale, non affiliato a Formula 1, FIA, MotoGP, Dorna o ai team"}</div>
@@ -326,7 +326,7 @@ async def main(args):
         print(f"Fatto: {args.uscita} ({dur + 1.9:.1f}s)")
         if args.invia:
             import notizie_giorno as NG
-            NG.telegram(args.uscita, f"🏁 {d['titolo']}: " + ("session times, Italian time" if EN else "orari in ora italiana"), didascalia(d, gruppi))
+            NG.telegram(args.uscita, f"🏁 {d['titolo']}: " + ("session times, UK time" if EN else "orari in ora italiana"), didascalia(d, gruppi))
 
 
 if __name__ == "__main__":

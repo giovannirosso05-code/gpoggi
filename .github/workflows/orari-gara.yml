@@ -15,7 +15,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: orari-gara
+  group: orari-gara-${{ github.event.inputs.serie }}-${{ github.event.inputs.lingua }}
   cancel-in-progress: false
 
 jobs:

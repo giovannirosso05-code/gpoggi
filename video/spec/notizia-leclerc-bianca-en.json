@@ -1,0 +1,69 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Leclerc is a dad: Bianca",
+ "fonte": "Tuttosport",
+ "velocita": "+20%",
+ "scene": [
+  {
+   "foto": "Charles Leclerc",
+   "ritratto_espn": true,
+   "hook": true,
+   "hook_titolo": "Leclerc is a dad",
+   "testo": "Bianca is born."
+  },
+  {
+   "foto": "Charles Leclerc",
+   "ritratto_espn": true,
+   "testo": "Ferrari driver Charles Leclerc and his wife Alexandra have had a *baby girl*."
+  },
+  {
+   "foto": "Charles Leclerc",
+   "pista": true,
+   "foto_espn_cerca": [
+    "leclerc"
+   ],
+   "testo": "They announced it with a social post showing the little girl's *tiny feet*."
+  },
+  {
+   "foto": "Charles Leclerc",
+   "pista": true,
+   "foto_espn_cerca": [
+    "leclerc"
+   ],
+   "testo": "Under the photo there is only the name *Bianca* and the date of birth."
+  },
+  {
+   "foto": "Charles Leclerc",
+   "pista": true,
+   "foto_espn_cerca": [
+    "leclerc"
+   ],
+   "testo": "The post has already collected over *4 million* likes in a few hours."
+  },
+  {
+   "foto": "Oscar Piastri",
+   "ritratto_espn": true,
+   "testo": "Among the well-wishes are those from *Piastri*, Gasly, Mercedes and Ferrari."
+  },
+  {
+   "foto": "Charles Leclerc",
+   "pista": true,
+   "foto_espn_cerca": [
+    "leclerc"
+   ],
+   "testo": "After Mexico he flew to Monte Carlo, and in Brazil he would skip the first *practice sessions*."
+  },
+  {
+   "foto": "Charles Leclerc",
+   "pista": true,
+   "foto_espn_cerca": [
+    "leclerc"
+   ],
+   "testo": "For many fans that name recalls *Jules Bianchi*, but the couple has not clarified."
+  }
+ ],
+ "finale": {
+  "foto": "Charles Leclerc",
+  "domanda": "Do you think Bianca is a tribute to Jules?"
+ }
+}

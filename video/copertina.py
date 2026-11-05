@@ -15,7 +15,7 @@ def html_copertina(pilota, righe, serie="MotoGP", alt=None, pos="center 12%", sf
     f = None if sfondo else n.trova_foto(pilota, alt)
     col = "#1f5fd1" if serie == "MotoGP" else "#e8352f"
     autore = re.sub(r"Original:\s*", "", f["autore"]) if f else ""
-    cred = "Immagine creata con intelligenza artificiale" if sfondo else f"Foto: {autore} · {f['licenza']} · Wikimedia Commons"
+    cred = "Immagine creata con intelligenza artificiale" if sfondo else f"{n.T['foto']}: {autore} · {f['licenza']} · Wikimedia Commons"
     cred = credito or cred
     img = (n.b64(sfondo), "png" if str(sfondo).endswith(".png") else "jpeg") if sfondo else (n.b64(n.file_foto(f)), "jpeg")
     logo = n.b64(n.SITO / "img/logo-wide-scuro.png")

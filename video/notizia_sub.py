@@ -426,7 +426,7 @@ async def genera(spec, uscita):
                 try:
                     import requests as _rq
                     usate = {x.get("foto_url") for x in scene + [finale]}
-                    r = _rq.get("https://site.api.espn.com/apis/site/v2/sports/racing/f1/news?limit=50", headers={"User-Agent": "GPOggiBot/0.1"}, timeout=30,
+                    r = _rq.get("https://site.api.espn.com/apis/site/v2/sports/racing/f1/news?limit=50", headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"}, timeout=30,
                                 verify="/root/.ccr/ca-bundle.crt" if os.path.exists("/root/.ccr/ca-bundle.crt") else True)
                     for a in r.json().get("articles", []):
                         t = a.get("headline", "").lower()

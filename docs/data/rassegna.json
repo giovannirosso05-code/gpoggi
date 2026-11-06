@@ -1,6 +1,18 @@
 {
- "generato_il": "2026-11-05T23:10:34+00:00",
+ "generato_il": "2026-11-06T01:29:31+00:00",
  "articoli": [
+  {
+   "titolo": "George Russell spiega il suo momento: “Campionato estenuante a livello mentale. È dura ma credo in me stesso”",
+   "estratto": "George Russell prova a concentrarsi solamente sulla pista in vista del via ufficiale del Gran Premio di San Paolo, ventesimo e quartultimo appuntamento del Mondiale di Formula Uno 2026. Sullo…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/george-russell-spiega-il-suo-momento-campionato-estenuante-a-livello-mentale-e-dura-ma-credo-in-me-stesso/",
+   "pubblicato": "2026-11-05T22:28:06+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 4.2,
+   "testate": 1
+  },
   {
    "titolo": "Marquez-Bezzecchi, botta e risposta in conferenza: “Tanto casino ma sei venuto”, “Non potevo lasciarti punti gratis”",
    "estratto": "I due rivali per il titolo iridato si sono stuzzicati in maniera pungente subito prima dell'inizio dell'incontro con i giornalisti a Lusail",
@@ -10,8 +22,20 @@
    "pubblicato": "2026-11-05T21:07:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.5,
+   "punteggio": 11.9,
    "testate": 1
+  },
+  {
+   "titolo": "Kimi Antonelli a Interlagos: “Zero pensieri, ma niente rilassamento perché voglio vincere”",
+   "estratto": "Il titolo mondiale in tasca non ha spento la fame di Kimi Antonelli, che a Interlagos si presenta con un solo obiettivo: continuare a vincere. Il ventenne bolognese della Mercedes, laureatosi…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/kimi-antonelli-a-interlagos-zero-pensieri-ma-niente-rilassamento-perche-voglio-vincere/",
+   "pubblicato": "2026-11-05T20:58:21+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 21.9,
+   "testate": 2
   },
   {
    "titolo": "F1 | Antonelli riparte da Interlagos: \"Zero pensieri, voglio continuare a vincere\"",
@@ -22,8 +46,8 @@
    "pubblicato": "2026-11-05T20:25:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.3,
-   "testate": 1
+   "punteggio": 21.7,
+   "testate": 2
   },
   {
    "titolo": "F1 | Hamilton non arretra: “Leclerc corre più duro con me. Non mi farò mettere a tacere”",
@@ -34,8 +58,20 @@
    "pubblicato": "2026-11-05T20:06:50+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.2,
-   "testate": 1
+   "punteggio": 13.7,
+   "testate": 2
+  },
+  {
+   "titolo": "Lewis Hamilton punta ancora il dito contro Leclerc: “Ha fatto lo stesso con Vettel e Sainz”",
+   "estratto": "La ferita del Messico continua a bruciare in casa Ferrari. Il duello tra Lewis Hamilton e Charles Leclerc alla prima curva del Gran Premio di Città del Messico ha lasciato strascichi pesanti, non…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/lewis-hamilton-punta-ancora-il-dito-contro-leclerc-ha-fatto-lo-stesso-con-vettel-e-sainz/",
+   "pubblicato": "2026-11-05T19:31:25+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 21.5,
+   "testate": 2
   },
   {
    "titolo": "Hamilton attacca ancora Leclerc: “Con me è più aggressivo. Ha fatto lo stesso con Vettel e Sainz”",
@@ -46,8 +82,8 @@
    "pubblicato": "2026-11-05T19:08:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.0,
-   "testate": 1
+   "punteggio": 13.4,
+   "testate": 2
   },
   {
    "titolo": "Bagnaia: “Con Ducati non ho parlato. Marquez campione? I piloti Aprilia hanno buttato via tantissimi punti…”",
@@ -58,8 +94,8 @@
    "pubblicato": "2026-11-05T18:51:55+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 22.9,
-   "testate": 2
+   "punteggio": 32.3,
+   "testate": 3
   },
   {
    "titolo": "MotoGP | Marquez: \"Vorrei essere da un'altra parte, per questo ho preso l'ultimo aereo possibile\"",
@@ -70,8 +106,8 @@
    "pubblicato": "2026-11-05T18:10:13+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 14.7,
-   "testate": 2
+   "punteggio": 24.2,
+   "testate": 3
   },
   {
    "titolo": "Marquez gela i vertici della MotoGP: “Qatar? Vorrei essere altrove, non vedo l’ora di andarmene”",
@@ -82,8 +118,8 @@
    "pubblicato": "2026-11-05T18:04:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.7,
-   "testate": 2
+   "punteggio": 23.1,
+   "testate": 3
   },
   {
    "titolo": "MotoGP | Bezzecchi: \"Nel 2025 erano i primi giorni di 'convivenza' con l'Aprilia, litagavamo sempre. Ora siamo sposati\"",
@@ -94,7 +130,19 @@
    "pubblicato": "2026-11-05T17:57:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.7,
+   "punteggio": 11.1,
+   "testate": 1
+  },
+  {
+   "titolo": "Max Verstappen: “Interlagos è fantastica, ci sono tante variabili. Essere secondo nel Mondiale è una sorpresa”",
+   "estratto": "Max Verstappen era uno dei protagonisti più attesi nella conferenza stampa piloti del giovedì a Interlagos alla vigilia del weekend del Gran Premio del Brasile 2026, ventesimo capitolo stagionale del…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-max-verstappen-interlagos-e-fantastica-ci-sono-tante-variabili-essere-secondo-nel-mondiale-e-una-sorpresa/",
+   "pubblicato": "2026-11-05T17:51:38+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 4.1,
    "testate": 1
   },
   {
@@ -106,7 +154,7 @@
    "pubblicato": "2026-11-05T17:44:37+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 12.6,
+   "punteggio": 12.1,
    "testate": 1
   },
   {
@@ -118,7 +166,7 @@
    "pubblicato": "2026-11-05T17:38:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.6,
+   "punteggio": 11.0,
    "testate": 1
   },
   {
@@ -130,8 +178,20 @@
    "pubblicato": "2026-11-05T17:35:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.6,
+   "punteggio": 3.0,
    "testate": 1
+  },
+  {
+   "titolo": "Marc Marquez ammette: “Vorrei essere altrove, ma dobbiamo trovare la concentrazione per gareggiare”",
+   "estratto": "Marc Márquez arriva al Gran Premio del Qatar 2026 come leader del campionato e con il primo match point a disposizione per vincere il suo decimo titolo mondiale (l’ottavo nella classe regina). Il…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/marc-marquez-ammette-vorrei-essere-altrove-ma-dobbiamo-trovare-la-concentrazione-per-gareggiare/",
+   "pubblicato": "2026-11-05T17:31:56+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 13.0,
+   "testate": 2
   },
   {
    "titolo": "Marquez: “Titolo? Ho iniziato a crederci al Sachsenring, ma c’è ancora lavoro da fare”",
@@ -142,7 +202,19 @@
    "pubblicato": "2026-11-05T17:22:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.6,
+   "punteggio": 11.0,
+   "testate": 1
+  },
+  {
+   "titolo": "Marco Bezzecchi verso Lusail: “Proverò a tenere aperti i discorsi per il titolo, ma non sarà un’impresa facile”",
+   "estratto": "Marco Bezzecchi si presenta carico e determinato a fare bene nel corso della conferenza stampa che ha sancito il via ufficiale del fine settimana del Gran Premio del Qatar, ventesimo e terzultimo…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/marco-bezzecchi-verso-lusail-provero-a-tenere-aperti-i-discorsi-per-il-titolo-ma-non-sara-unimpresa-facile/",
+   "pubblicato": "2026-11-05T17:21:53+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 12.0,
    "testate": 1
   },
   {
@@ -154,7 +226,7 @@
    "pubblicato": "2026-11-05T17:05:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.5,
+   "punteggio": 5.9,
    "testate": 1
   },
   {
@@ -166,8 +238,8 @@
    "pubblicato": "2026-11-05T16:50:15+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.4,
-   "testate": 1
+   "punteggio": 12.8,
+   "testate": 2
   },
   {
    "titolo": "MotoGP | Bagnaia: \"Un finale degno? Abbiamo portato Ducati ad essere la moto migliore, questo non ce lo toglieranno mai\"",
@@ -178,7 +250,7 @@
    "pubblicato": "2026-11-05T16:34:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.3,
+   "punteggio": 10.8,
    "testate": 1
   },
   {
@@ -190,7 +262,7 @@
    "pubblicato": "2026-11-05T16:18:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.7,
+   "punteggio": -2.3,
    "testate": 1
   },
   {
@@ -202,7 +274,7 @@
    "pubblicato": "2026-11-05T15:52:38+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.8,
+   "punteggio": -2.4,
    "testate": 1
   },
   {
@@ -214,7 +286,7 @@
    "pubblicato": "2026-11-05T15:50:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.8,
+   "punteggio": -2.4,
    "testate": 1
   },
   {
@@ -226,7 +298,7 @@
    "pubblicato": "2026-11-05T15:46:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.2,
+   "punteggio": 2.6,
    "testate": 1
   },
   {
@@ -238,7 +310,7 @@
    "pubblicato": "2026-11-05T15:16:45+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.0,
+   "punteggio": 10.4,
    "testate": 1
   },
   {
@@ -250,8 +322,20 @@
    "pubblicato": "2026-11-05T15:05:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.0,
+   "punteggio": 2.4,
    "testate": 1
+  },
+  {
+   "titolo": "MotoGP: Jorge Martin è “fit” per il Qatar, ma non del tutto",
+   "estratto": "Jorge Martin al GP del Qatar. Al momento lo spagnolo, che dopo l’incidente occorsogli a Phillip Island in Australia ha saltato l’appuntamento di Sepang in Malesia perdendo punti nella lotta al titolo…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-jorge-martin-e-fit-per-il-qatar-ma-non-del-tutto/",
+   "pubblicato": "2026-11-05T14:58:59+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 12.4,
+   "testate": 2
   },
   {
    "titolo": "MotoGP | Acosta chiude un accordo con Monster come sponsor personale",
@@ -262,7 +346,7 @@
    "pubblicato": "2026-11-05T14:39:42+00:00",
    "tipo": "social",
    "citazione": true,
-   "punteggio": 5.9,
+   "punteggio": 5.3,
    "testate": 1
   },
   {
@@ -274,7 +358,7 @@
    "pubblicato": "2026-11-05T14:23:34+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.8,
+   "punteggio": 5.2,
    "testate": 1
   },
   {
@@ -286,7 +370,19 @@
    "pubblicato": "2026-11-05T14:16:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.8,
+   "punteggio": 10.2,
+   "testate": 1
+  },
+  {
+   "titolo": "Moto2, Guevara cerca in Qatar il sorpasso nel Mondiale. Gonzalez deve difendersi",
+   "estratto": "Siamo ormai giunti alle fase finali del Mondiale Moto2 2026. Dopo la Malesia, l’attenzione ora si sposta in Qatar dove questo fine settimana andrà in scena il tanto discusso Gran Premio, rimandato…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/moto2-guevara-cerca-in-qatar-il-sorpasso-nel-mondiale-gonzalez-deve-difendersi/",
+   "pubblicato": "2026-11-05T14:00:17+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -2.9,
    "testate": 1
   },
   {
@@ -298,7 +394,7 @@
    "pubblicato": "2026-11-05T14:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.7,
+   "punteggio": 2.1,
    "testate": 1
   },
   {
@@ -310,8 +406,8 @@
    "pubblicato": "2026-11-05T13:57:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.7,
-   "testate": 1
+   "punteggio": 20.1,
+   "testate": 2
   },
   {
    "titolo": "Raul Fernandez torna in sella. Dichiarato ‘fit’ per il GP del Qatar",
@@ -322,7 +418,19 @@
    "pubblicato": "2026-11-05T13:44:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.4,
+   "punteggio": -2.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Moto3, a Lusail vedremo se Maximo Quiles ritoccherà nuovamente il libro dei record",
+   "estratto": "Siamo pronti per alzare ufficialmente il sipario sul discussissimo fine settimana del Gran Premio del Qatar, ventesimo e terzultimo appuntamento del Mondiale 2026 di Moto3 che, dopo tante polemiche e…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/moto3-a-lusail-vedremo-se-maximo-quiles-ritocchera-nuovamente-il-libro-dei-record/",
+   "pubblicato": "2026-11-05T13:00:53+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -3.1,
    "testate": 1
   },
   {
@@ -334,8 +442,32 @@
    "pubblicato": "2026-11-05T13:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.5,
+   "punteggio": 14.9,
    "testate": 2
+  },
+  {
+   "titolo": "F1, Kimi Antonelli avrà una livrea speciale in Brasile nel ricordo del mito Ayrton Senna",
+   "estratto": "Kimi Antonelli renderà omaggio alla memoria di Ayrton Senna nel GP del Brasile di F1: il pilota italiano della Mercedes indosserà un casco commemorativo in occasione dei 35 anni dalla prima vittoria…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-kimi-antonelli-avra-una-livrea-speciale-in-brasile-nel-ricordo-del-mito-ayrton-senna/",
+   "pubblicato": "2026-11-05T12:54:52+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 4.9,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP, GP Qatar 2026. Lusail può incoronare Marc Marquez. Ducati e Aprilia si scornano per il titolo costruttori",
+   "estratto": "Il fine settimana del 6, 7 e 8 novembre vedrà la MotoGP impegnata nel Gran Premio del Qatar. Una gara che quasi nessuno vuole correre, eccezion fatta per gli organizzatori e il management della…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-gp-qatar-2026-lusail-puo-incoronare-marc-marquez-ducati-e-aprilia-si-scornano-per-il-titolo-costruttori/",
+   "pubblicato": "2026-11-05T12:00:01+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 24.6,
+   "testate": 3
   },
   {
    "titolo": "Dall’Igna: “Marquez dal ritorno dall’infortunio non ha commesso nessun errore, ma il lavoro non è ancora finito”",
@@ -346,8 +478,8 @@
    "pubblicato": "2026-11-05T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 20.2,
-   "testate": 2
+   "punteggio": 29.6,
+   "testate": 3
   },
   {
    "titolo": "MotoGP | Domenicali: \"A Bagnaia non manca niente, spero ancora in una chiusura degna di questa storia bellissima\"",
@@ -358,7 +490,7 @@
    "pubblicato": "2026-11-05T11:40:05+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 20.1,
+   "punteggio": 19.5,
    "testate": 2
   },
   {
@@ -370,7 +502,7 @@
    "pubblicato": "2026-11-05T11:21:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.0,
+   "punteggio": -3.5,
    "testate": 1
   },
   {
@@ -382,7 +514,7 @@
    "pubblicato": "2026-11-05T10:55:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.9,
+   "punteggio": 6.4,
    "testate": 2
   },
   {
@@ -394,7 +526,7 @@
    "pubblicato": "2026-11-05T10:40:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.9,
+   "punteggio": 9.3,
    "testate": 1
   },
   {
@@ -406,7 +538,7 @@
    "pubblicato": "2026-11-05T10:25:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.8,
+   "punteggio": 1.2,
    "testate": 1
   },
   {
@@ -418,7 +550,7 @@
    "pubblicato": "2026-11-05T10:21:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.8,
+   "punteggio": 11.2,
    "testate": 2
   },
   {
@@ -430,7 +562,31 @@
    "pubblicato": "2026-11-05T10:10:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.7,
+   "punteggio": 9.2,
+   "testate": 1
+  },
+  {
+   "titolo": "F1, è morto Alan Jones. Campione del Mondo 1980 con la Williams, aveva appena compiuto 80 anni",
+   "estratto": "È morto Alan Jones, Campione del Mondo di Formula 1 nel 1980 e primo pilota a vincere il titolo iridato con una Williams. L’australiano è scomparso tre giorni dopo aver compiuto 80 anni. Era…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-e-morto-alan-jones-campione-del-mondo-1980-con-la-williams-aveva-appena-compiuto-80-anni/",
+   "pubblicato": "2026-11-05T10:08:36+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 16.2,
+   "testate": 3
+  },
+  {
+   "titolo": "Mikaela Shiffrin e gli accorati complimenti a Kimi Antonelli",
+   "estratto": "Nelle ore successive al Gran Premio del Messico di Formula Uno andato in scena domenica scorsa si sono susseguite una lista infinita di reazioni social per celebrare l’impresa di Kimi Antonelli…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/mikaela-shiffrin-e-gli-accorati-complimenti-a-kimi-antonelli/",
+   "pubblicato": "2026-11-05T10:03:54+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 4.1,
    "testate": 1
   },
   {
@@ -442,8 +598,8 @@
    "pubblicato": "2026-11-05T10:00:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.7,
-   "testate": 2
+   "punteggio": 29.1,
+   "testate": 3
   },
   {
    "titolo": "Audi a Interlagos con una livrea speciale dedicata a San Paolo",
@@ -454,7 +610,7 @@
    "pubblicato": "2026-11-05T09:54:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.7,
+   "punteggio": 6.1,
    "testate": 2
   },
   {
@@ -466,8 +622,20 @@
    "pubblicato": "2026-11-05T09:40:52+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.6,
+   "punteggio": 14.0,
    "testate": 2
+  },
+  {
+   "titolo": "F1, Piero Ferrari si sbilancia: “Non desidero altro che vedere Kimi Antonelli sulla Rossa”",
+   "estratto": "“Non desidero altro che vedere Kimi con la tuta rossa“. Un pensiero che accomuna la stragrande maggioranza dei tifosi ferraristi italiani e non solo, espresso in questo caso sulle colonne del…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-piero-ferrari-si-sbilancia-non-desidero-altro-che-vedere-kimi-antonelli-sulla-rossa/",
+   "pubblicato": "2026-11-05T09:34:10+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 9.0,
+   "testate": 1
   },
   {
    "titolo": "Lusail 2026: temperature elevate sotto le stelle",
@@ -478,8 +646,20 @@
    "pubblicato": "2026-11-05T09:10:53+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.5,
+   "punteggio": -4.1,
    "testate": 1
+  },
+  {
+   "titolo": "F1, GP Brasile 2026. Antonelli ‘buon samaritano’ in Mercedes? Ferrari deve riscattarsi dopo il pasticcio messicano",
+   "estratto": "Nonostante il Gran Premio del Brasile abbia formalmente cambiato denominazione, diventando il Gran Premio di San Paolo, viene ancora oggi comunemente identificato con l’antico nome. D’altronde, non…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-gp-brasile-2026-antonelli-buon-samaritano-in-mercedes-ferrari-deve-riscattarsi-dopo-il-pasticcio-messicano/",
+   "pubblicato": "2026-11-05T09:00:27+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 13.9,
+   "testate": 2
   },
   {
    "titolo": "Domenicali: “A Bagnaia non manca niente, spero in un ultimo exploit per chiudere al meglio una storia bellissima”",
@@ -490,7 +670,7 @@
    "pubblicato": "2026-11-05T09:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.5,
+   "punteggio": 18.9,
    "testate": 2
   },
   {
@@ -502,7 +682,7 @@
    "pubblicato": "2026-11-05T08:58:34+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.6,
+   "punteggio": -4.1,
    "testate": 1
   },
   {
@@ -514,7 +694,7 @@
    "pubblicato": "2026-11-05T08:36:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.4,
+   "punteggio": 5.8,
    "testate": 2
   },
   {
@@ -526,8 +706,20 @@
    "pubblicato": "2026-11-05T08:32:07+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.7,
+   "punteggio": -4.2,
    "testate": 1
+  },
+  {
+   "titolo": "MotoGP, Gigi Dall’Igna: “Abbiamo ancora molta strada da fare, il lavoro non è finito”",
+   "estratto": "Prima di proiettarsi verso l’imminente Gran Premio del Qatar, Gigi Dall’Igna ha pubblicato nei giorni scorsi sul suo profilo Linkedin il consueto bilancio dell’ultimo weekend di gara andato in scena…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-gigi-dalligna-abbiamo-ancora-molta-strada-da-fare-il-lavoro-non-e-finito/",
+   "pubblicato": "2026-11-05T08:20:57+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 20.7,
+   "testate": 3
   },
   {
    "titolo": "F1 | E' morto Alan Jones: il primo campione del mondo della Williams aveva 80 anni",
@@ -538,8 +730,8 @@
    "pubblicato": "2026-11-05T08:03:22+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.2,
-   "testate": 2
+   "punteggio": 15.6,
+   "testate": 3
   },
   {
    "titolo": "La F1 piange Alan Jones, campione del mondo nel 1980",
@@ -550,7 +742,55 @@
    "pubblicato": "2026-11-05T07:53:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.2,
+   "punteggio": 15.6,
+   "testate": 3
+  },
+  {
+   "titolo": "F1, Frederic Vasseur verso il GP del Brasile: “Stiamo andando nella direzione giusta in termini di prestazione”",
+   "estratto": "La Ferrari ha avuto una macchina in grado di competere per il successo nelle ultime tre gare consecutive, non riuscendo però mai a salire sul gradino più alto del podio tra Singapore, Austin e Città…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-frederic-vasseur-verso-il-gp-del-brasile-stiamo-andando-nella-direzione-giusta-in-termini-di-prestazione/",
+   "pubblicato": "2026-11-05T07:50:49+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.6,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP, GP Qatar 2026: gli orari del fine settimana dalle prove libere alla gara. Guida Sky e TV8",
+   "estratto": "Siamo pronti per alzare il sipario sul discussissimo fine settimana del Gran Premio del Qatar, ventesimo e terzultimo appuntamento del Motomondiale 2026. Dopo un dimezzato weekend di Phillip Island e…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-gp-qatar-2026-gli-orari-del-fine-settimana-dalle-prove-libere-alla-gara-guida-sky-e-tv8/",
+   "pubblicato": "2026-11-05T07:35:25+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -6.5,
+   "testate": 2
+  },
+  {
+   "titolo": "F1, GP Brasile 2026: gli orari del fine settimana dalle prove libere alla gara. Guida Sky e TV8",
+   "estratto": "Anche se il titolo mondiale, come ben sappiamo, è stato ampiamente consegnato e festeggiato da Kimi Antonelli in Messico, il campionato di Formula Uno 2026 prosegue senza soluzioni di continuità e ci…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-gp-brasile-2026-gli-orari-del-fine-settimana-dalle-prove-libere-alla-gara-guida-sky-e-tv8/",
+   "pubblicato": "2026-11-05T07:30:38+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -8.5,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP, Marc Marquez: “Lusail non è una delle mie piste preferite, a volte ho fatto tanta fatica qui”",
+   "estratto": "Marc Marquez arriva a Lusail con a disposizione il primo match point per vincere il Mondiale MotoGP 2026 con due tappe d’anticipo. Il fenomeno catalano della Ducati si presenterà infatti al Gran…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-marc-marquez-lusail-non-e-una-delle-mie-piste-preferite-a-volte-ho-fatto-tanta-fatica-qui/",
+   "pubblicato": "2026-11-05T07:19:18+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 18.5,
    "testate": 2
   },
   {
@@ -562,8 +802,8 @@
    "pubblicato": "2026-11-05T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.0,
-   "testate": 2
+   "punteggio": 28.4,
+   "testate": 3
   },
   {
    "titolo": "Ecclestone: “La Ferrari non ha scelta, deve prendere Antonelli”",
@@ -574,8 +814,8 @@
    "pubblicato": "2026-11-05T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.0,
-   "testate": 1
+   "punteggio": 18.4,
+   "testate": 2
   },
   {
    "titolo": "GP San Paolo 2026: orari Sky/Now e TV8",
@@ -586,8 +826,8 @@
    "pubblicato": "2026-11-05T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.0,
-   "testate": 2
+   "punteggio": -16.6,
+   "testate": 1
   },
   {
    "titolo": "Antonelli campione del mondo, Dindo Capello: “Kimi è mix di talento, lavoro e freddezza. Il suo record resterà imbattuto”",
@@ -598,8 +838,8 @@
    "pubblicato": "2026-11-05T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 29.0,
-   "testate": 3
+   "punteggio": 18.4,
+   "testate": 2
   },
   {
    "titolo": "GP Qatar 2026: gli orari su Sky/Now e TV8",
@@ -610,8 +850,8 @@
    "pubblicato": "2026-11-05T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -16.0,
-   "testate": 1
+   "punteggio": -6.6,
+   "testate": 2
   },
   {
    "titolo": "Ferrari, Beganovic con Hamilton per le prime libere: il motivo dell'assenza di Leclerc",
@@ -622,8 +862,32 @@
    "pubblicato": "2026-11-05T05:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 23.5,
-   "testate": 3
+   "punteggio": 32.9,
+   "testate": 4
+  },
+  {
+   "titolo": "MotoGP, GP Qatar 2026 su TV8: orari in chiaro fine settimana, qualifiche e gara",
+   "estratto": "Il Gran Premio di Qatar di MotoGP andrà in scena dal 6 all’8 novembre. La Sprint del terz’ultimo atto dell’edizione 2026 del Motomondiale inizierà alle ore 17:00 italiane di sabato 7, mentre la Gara…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-gp-qatar-2026-su-tv8-orari-in-chiaro-fine-settimana-qualifiche-e-gara/",
+   "pubblicato": "2026-11-05T04:10:06+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -7.3,
+   "testate": 2
+  },
+  {
+   "titolo": "F1, GP Brasile 2026 su TV8: orari in chiaro fine settimana, qualifiche e gara",
+   "estratto": "Il Gran Premio del Brasile di F1 si disputerà domenica 8 novembre. La quart’ultima gara del Mondiale 2026 comincerà alle ore 18:00 del nostro Paese. Ovviamente, la griglia di partenza sarà stabilita…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-gp-brasile-2026-su-tv8-orari-in-chiaro-fine-settimana-qualifiche-e-gara/",
+   "pubblicato": "2026-11-05T04:05:11+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -17.4,
+   "testate": 1
   },
   {
    "titolo": "Wolff: “Antonelli in Ferrari sarebbe stato parcheggiato come Bearman”",
@@ -634,7 +898,7 @@
    "pubblicato": "2026-11-04T18:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.7,
+   "punteggio": 5.1,
    "testate": 1
   },
   {
@@ -646,7 +910,7 @@
    "pubblicato": "2026-11-04T17:31:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.4,
+   "punteggio": -8.0,
    "testate": 1
   },
   {
@@ -658,7 +922,7 @@
    "pubblicato": "2026-11-04T17:00:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.5,
+   "punteggio": 1.9,
    "testate": 2
   },
   {
@@ -670,8 +934,8 @@
    "pubblicato": "2026-11-04T17:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.5,
-   "testate": 1
+   "punteggio": 9.9,
+   "testate": 2
   },
   {
    "titolo": "Leclerc papà: il nome della figlia e quella suggestione legata all'amico e pilota scomparso",
@@ -682,7 +946,7 @@
    "pubblicato": "2026-11-04T16:56:25+00:00",
    "tipo": "social",
    "citazione": true,
-   "punteggio": 8.4,
+   "punteggio": 7.9,
    "testate": 1
   },
   {
@@ -694,7 +958,7 @@
    "pubblicato": "2026-11-04T16:45:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.4,
+   "punteggio": 9.8,
    "testate": 2
   },
   {
@@ -706,7 +970,7 @@
    "pubblicato": "2026-11-04T16:31:02+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.7,
+   "punteggio": -3.2,
    "testate": 1
   },
   {
@@ -718,7 +982,7 @@
    "pubblicato": "2026-11-04T16:19:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.7,
+   "punteggio": -8.3,
    "testate": 1
   },
   {
@@ -730,8 +994,8 @@
    "pubblicato": "2026-11-04T16:02:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.2,
-   "testate": 2
+   "punteggio": 4.6,
+   "testate": 1
   },
   {
    "titolo": "F1 | Vasseur: \"A Interlagos dovremo rimanere concentrati per sfruttare al meglio ogni opportunità\"",
@@ -742,7 +1006,7 @@
    "pubblicato": "2026-11-04T16:01:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.2,
+   "punteggio": 4.6,
    "testate": 1
   },
   {
@@ -754,7 +1018,7 @@
    "pubblicato": "2026-11-04T16:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.2,
+   "punteggio": 4.6,
    "testate": 1
   },
   {
@@ -766,7 +1030,7 @@
    "pubblicato": "2026-11-04T15:28:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.1,
+   "punteggio": -0.5,
    "testate": 1
   },
   {
@@ -778,7 +1042,7 @@
    "pubblicato": "2026-11-04T15:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.0,
+   "punteggio": 4.4,
    "testate": 1
   },
   {
@@ -790,7 +1054,7 @@
    "pubblicato": "2026-11-04T14:40:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -3.1,
+   "punteggio": -3.7,
    "testate": 1
   },
   {
@@ -802,8 +1066,8 @@
    "pubblicato": "2026-11-04T14:28:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.8,
-   "testate": 2
+   "punteggio": 19.2,
+   "testate": 3
   },
   {
    "titolo": "MotoGP | Jorge Martin conferma che si recherà in Qatar per provare a correre",
@@ -814,7 +1078,31 @@
    "pubblicato": "2026-11-04T14:03:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.3,
+   "punteggio": 1.1,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP, Marco Bezzecchi: “Continuo a credere nel Mondiale, devo provarci fino alla fine”",
+   "estratto": "Diminuiscono gara dopo gara le residue speranze iridate di Marco Bezzecchi, sprofondato ormai a -67 dal leader della classifica generale Marc Marquez quando mancano solamente tre tappe alla fine del…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-marco-bezzecchi-continuo-a-credere-nel-mondiale-devo-provarci-fino-alla-fine/",
+   "pubblicato": "2026-11-04T14:02:18+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 4.1,
+   "testate": 1
+  },
+  {
+   "titolo": "Jorge Martin ci riprova a Lusail: “Sarà importante capire il mio stato fisico e fino a dove potrò spingermi”",
+   "estratto": "Jorge Martin dà un aggiornamento sulle sue condizioni fisiche in vista del fine settimana del Gran Premio del Qatar, ventesimo e terzultimo appuntamento del Mondiale di MotoGP 2026. Lo spagnolo, come…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/jorge-martin-ci-riprova-a-lusail-sara-importante-capire-il-mio-stato-fisico-e-fino-a-dove-potro-spingermi/",
+   "pubblicato": "2026-11-04T12:28:09+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": -4.3,
    "testate": 1
   },
   {
@@ -826,8 +1114,32 @@
    "pubblicato": "2026-11-04T12:20:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -3.7,
+   "punteggio": -4.3,
    "testate": 1
+  },
+  {
+   "titolo": "MotoGP, Alex Marquez operato a Madrid: salterà il GP del Qatar, possibile rientro a Portimao",
+   "estratto": "Dopo averlo confermato domenica ai microfoni di Sky Sport al termine della gara in Malesia, Alex Marquez si è sottoposto ad un intervento chirurgico nella giornata di lunedì a Madrid e non prenderà…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-alex-marquez-operato-a-madrid-saltera-il-gp-del-qatar-possibile-rientro-a-portimao/",
+   "pubblicato": "2026-11-04T12:00:53+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 16.6,
+   "testate": 3
+  },
+  {
+   "titolo": "Charles Leclerc torna a casa per la nascita della figlia: Beganovic al suo posto nella FP1 in Brasile",
+   "estratto": "A Città del Messico dieci squadre su undici avevano schierato almeno un rookie nella prima sessione di prove libere (per rispettare il programma stagionale di sviluppo dei giovani piloti imposto dal…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/charles-leclerc-torna-a-casa-per-la-nascita-della-figlia-beganovic-al-suo-posto-nella-fp1-in-brasile/",
+   "pubblicato": "2026-11-04T11:32:26+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 0.5,
+   "testate": 2
   },
   {
    "titolo": "MotoGP | Ecco cosa serve a Marc Marquez per diventare campione del mondo in Qatar",
@@ -838,8 +1150,8 @@
    "pubblicato": "2026-11-04T11:29:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.1,
-   "testate": 2
+   "punteggio": 10.5,
+   "testate": 3
   },
   {
    "titolo": "Kimi N.1, perchè il modello Mercedes insegna molte cose alla Ferrari",
@@ -850,7 +1162,7 @@
    "pubblicato": "2026-11-04T10:52:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.1,
+   "punteggio": -1.7,
    "testate": 1
   },
   {
@@ -862,8 +1174,20 @@
    "pubblicato": "2026-11-04T10:40:52+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.1,
+   "punteggio": -9.7,
    "testate": 1
+  },
+  {
+   "titolo": "Benedetto Vigna si congratula con Kimi Antonelli e aggiunge: “La Ferrari corre per vincere”. Nessun cenno su Leclerc-Hamilton a Città del Messico",
+   "estratto": "Nel corso della conference call dedicata ai conti del terzo trimestre 2026, Benedetto Vigna ha riservato alla F1 solo qualche passaggio, senza mai citare le tensioni emerse in Messico tra Charles…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/benedetto-vigna-si-congratula-con-kimi-antonelli-e-aggiunge-la-ferrari-corre-per-vincere-nessun-cenno-su-leclerc-hamilton-a-citta-del-messico/",
+   "pubblicato": "2026-11-04T10:25:12+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 33.2,
+   "testate": 4
   },
   {
    "titolo": "MotoGP | Dall'Igna: \"Il margine di Marc è significativo, ma il lavoro non è ancora finito\"",
@@ -874,8 +1198,8 @@
    "pubblicato": "2026-11-04T10:22:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.8,
-   "testate": 2
+   "punteggio": 15.2,
+   "testate": 3
   },
   {
    "titolo": "F1 | GP di San Paolo del Brasile: a Interlagos mescole più morbide e una pista in parte riasfaltata",
@@ -886,8 +1210,20 @@
    "pubblicato": "2026-11-04T10:04:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.3,
+   "punteggio": -9.9,
    "testate": 1
+  },
+  {
+   "titolo": "Câmara in F1 già a San Paolo: Haas chiude con Ocon e brucia le tappe",
+   "estratto": "A pochi giorni dal Gran Premio del Brasile, la Haas ha preso la sua decisione. Esteban Ocon non guiderà più la VF-26: il team ha formalizzato la fine del rapporto con effetto immediato, quando…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/camara-in-f1-gia-a-san-paolo-haas-chiude-con-ocon-e-brucia-le-tappe/",
+   "pubblicato": "2026-11-04T09:20:31+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -0.0,
+   "testate": 2
   },
   {
    "titolo": "MotoGP | Gresini ritrova Aldeguer in Qatar e conferma Lecuona, che sostituirà Alex Marquez",
@@ -898,8 +1234,20 @@
    "pubblicato": "2026-11-04T09:05:24+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.5,
-   "testate": 2
+   "punteggio": 17.9,
+   "testate": 3
+  },
+  {
+   "titolo": "F1, GP Brasile 2026: numeri, statistiche, curiosità. Verstappen e Hamilton a un passo dal record di Schumacher",
+   "estratto": "Domenica 8 novembre andrà in scena la sesta edizione del Gran Premio di San Paolo, denominazione dell’appuntamento organizzato dall’autodromo di Interlagos. La nuova etichetta ha sostituito ormai da…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-gp-brasile-2026-numeri-statistiche-curiosita-verstappen-e-hamilton-a-un-passo-dal-record-di-schumacher/",
+   "pubblicato": "2026-11-04T09:00:37+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -10.1,
+   "testate": 1
   },
   {
    "titolo": "F1 | McLaren farà esordire un'ala anteriore che dovrebbe essere la base 2027",
@@ -910,8 +1258,68 @@
    "pubblicato": "2026-11-04T08:25:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.7,
+   "punteggio": -10.3,
    "testate": 1
+  },
+  {
+   "titolo": "“Sei senza paura”: l’abbraccio di Vettel a Kimi Antonelli, nuovo campione del mondo",
+   "estratto": "Ha la voce di chi quella notte l’ha già vissuta, e per questo sa che cosa sta per succedere. Sebastian Vettel si rivolge così a Kimi Antonelli, che a Città del Messico gli ha strappato il record di…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/sei-senza-paura-labbraccio-di-vettel-a-kimi-antonelli-nuovo-campione-del-mondo/",
+   "pubblicato": "2026-11-04T08:12:48+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 12.7,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP, Davide Tardozzi loda Marquez e punge Aprilia: “I commenti fatti da altri al Mugello decisivi per motivarci”",
+   "estratto": "Il Gran Premio di Malesia di MotoGP ha permesso a Marc Marquez di portare il suo vantaggio nella classifica piloti a 44 punti di vantaggio su Jorge Martin e a 67 su Marco Bezzecchi, i due centauri…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-davide-tardozzi-loda-marquez-e-punge-aprilia-i-commenti-fatti-da-altri-al-mugello-decisivi-per-motivarci/",
+   "pubblicato": "2026-11-04T08:05:24+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 2.6,
+   "testate": 1
+  },
+  {
+   "titolo": "Kimi Antonelli come Valentino Rossi: quando il n.1 é sgradito. E non é solo scaramanzia…",
+   "estratto": "Il numero 1 è il più ambito, il più ostentato, quello che il campione del mondo ha il diritto di portarsi addosso come una medaglia sulla carrozzeria. Eppure c’è chi lo rifiuta. Ci aveva pensato…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/kimi-antonelli-come-valentino-rossi-quando-il-n-1-e-sgradito-e-non-e-solo-scaramanzia/",
+   "pubblicato": "2026-11-04T07:49:26+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -2.4,
+   "testate": 1
+  },
+  {
+   "titolo": "Antonelli e Senna, l’abbraccio della storia: Kimi sale sulla leggendaria Lotus 98T",
+   "estratto": "Ci sono giornate che non hanno bisogno di un cronometro per essere indimenticabili. Nessun giro veloce, nessuna bandiera a scacchi. Soltanto un abitacolo, una macchina che appartiene alla leggenda e…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/antonelli-e-senna-labbraccio-della-storia-kimi-sale-sulla-leggendaria-lotus-98t/",
+   "pubblicato": "2026-11-04T07:22:37+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -2.5,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP, GP Qatar 2026: numeri, statistiche, curiosità. Marc Marquez cerca il terzo successo a Lusail",
+   "estratto": "Il Motomondiale si trasferisce in Medio Oriente, dove domenica 8 novembre 2026 andrà in scena il Gran Premio del Qatar. L’appuntamento ha valenza storica per la MotoGP, essendo stato il primo a…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-gp-qatar-2026-numeri-statistiche-curiosita-marc-marquez-cerca-il-terzo-successo-a-lusail/",
+   "pubblicato": "2026-11-04T05:29:36+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 9.0,
+   "testate": 3
   },
   {
    "titolo": "F1 | Haas, debutto anticipato per Câmara: Ocon fuori fino a fine stagione",
@@ -922,7 +1330,19 @@
    "pubblicato": "2026-11-03T20:47:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.6,
+   "punteggio": -3.2,
+   "testate": 2
+  },
+  {
+   "titolo": "Peter Bonnington non ha dubbi: “Antonelli è un talento generazionale. All’inizio era un diamante grezzo…”",
+   "estratto": "Dopo aver vinto ben sei titoli mondiali piloti in Mercedes con Lewis Hamilton dal 2014 al 2020, Peter Bonnington è ripartito praticamente da zero nel 2025 ricoprendo il ruolo di ingegnere di pista di…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/peter-bonnington-si-sbilancia-antonelli-e-un-talento-generazionale-allinizio-era-un-diamante-grezzo/",
+   "pubblicato": "2026-11-03T20:32:45+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": -0.2,
    "testate": 1
   },
   {
@@ -934,7 +1354,7 @@
    "pubblicato": "2026-11-03T18:06:02+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.3,
+   "punteggio": -0.8,
    "testate": 1
   },
   {
@@ -946,7 +1366,7 @@
    "pubblicato": "2026-11-03T17:07:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.5,
+   "punteggio": -6.1,
    "testate": 1
   },
   {
@@ -958,7 +1378,7 @@
    "pubblicato": "2026-11-03T16:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -8.8,
+   "punteggio": -9.4,
    "testate": 1
   },
   {
@@ -970,7 +1390,7 @@
    "pubblicato": "2026-11-03T15:30:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.9,
+   "punteggio": -6.5,
    "testate": 1
   },
   {
@@ -982,7 +1402,7 @@
    "pubblicato": "2026-11-03T15:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.0,
+   "punteggio": -1.6,
    "testate": 1
   },
   {
@@ -994,7 +1414,7 @@
    "pubblicato": "2026-11-03T14:56:45+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -14.1,
+   "punteggio": -14.6,
    "testate": 1
   },
   {
@@ -1006,7 +1426,7 @@
    "pubblicato": "2026-11-03T14:13:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -14.2,
+   "punteggio": -14.8,
    "testate": 1
   },
   {
@@ -1018,427 +1438,7 @@
    "pubblicato": "2026-11-03T14:03:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.3,
-   "testate": 1
-  },
-  {
-   "titolo": "Qatar: il rischio del record negativo di piloti in pista tra infortunati e non partecipanti",
-   "estratto": "Nel peggiore dei casi la gara potrebbe disputarsi con soli 14 piloti, come accadde a Phillip Island nel 2011",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/qatar-rischio-record-negativo-piloti-in-pista-tra-infortunati-e-non-partecipanti",
-   "pubblicato": "2026-11-03T13:33:04+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -14.4,
-   "testate": 1
-  },
-  {
-   "titolo": "Alex Marquez operato con successo alla spalla destra",
-   "estratto": "Il pilota del team Gresini ha confermato sui social di aver superato con successo l'intervento chirurgico subito a Madrid",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/alex-marquez-operato-con-successo-alla-spalla-destra",
-   "pubblicato": "2026-11-03T12:31:01+00:00",
-   "tipo": "social",
-   "citazione": true,
-   "punteggio": 3.3,
-   "testate": 2
-  },
-  {
-   "titolo": "F1 | “Kimi è un talento generazionale. Ha qualcosa che solo i grandi hanno”: il trionfo di Antonelli visto da Bono",
-   "estratto": "Ventiquattro ore per realizzare che è tutto vero, che non è più un sogno, ma la realtà. Dopo la vittoria del titolo mondiale con tutti i dovuti festeggiamenti per un traguardo così prestigioso…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-kimi-e-un-talento-generazionale-ha-qualcosa-che-solo-i-grandi-hanno-il-trionfo-di-antonelli-vist/10871064/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-03T10:55:38+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 17.9,
-   "testate": 3
-  },
-  {
-   "titolo": "MotoGP | Bastianini ritrova la Top5: \"Ora riesco a lavorare bene con il team e il pacchetto\"",
-   "estratto": "Un quinto posto artigliato all'ultimissimo giro e un applauso meritatissimo per Enea Bastianini, che al GP della Malesia traduce in un bel risultato le buone sensazioni che aveva già manifestato…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bastianini-ritrova-la-top5-ora-riesco-a-lavorare-bene-con-il-team-e-il-pacchetto/10870903/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-03T10:41:37+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -10.1,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Alex Márquez operato alla spalla: è già a casa per la riabilitazione, salterà il Qatar",
-   "estratto": "Alex Márquez è stato sottoposto ad un intervento chirurgico per risolvere i problemi causati dall’infortunio subito lo scorso 17 maggio a Barcellona, quando era entrato in collisione con la moto di…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-alex-marquez-operato-alla-spalla-iniziata-la-riabilitazione-a-casa-saltera-il-qatar/10871213/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-03T10:17:46+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -5.2,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Ecco gli orari TV di Sky, Now e TV8 del Gran Premio del Qatar",
-   "estratto": "La MotoGP si avvia verso la conclusione della tripletta asiatica della stagione 2026, che termina con il tanto discusso Gran Premio del Qatar, che alla fine sembra destinato a disputarsi regolarmente…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-ecco-gli-orari-tv-di-sky-now-e-tv8-del-gran-premio-del-qatar/10870965/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-03T09:48:49+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -27.3,
-   "testate": 1
-  },
-  {
-   "titolo": "Kimi Antonelli, il Mondiale visto attraverso le lacrime: la foto, il nonno e il futuro da re",
-   "estratto": "Tutta l’emozione del neo campione di F1: “Domenica in Brasile correrò usando un casco dedicato a Senna\"",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/03-152338834/kimi_antonelli_il_mondiale_visto_attraverso_le_lacrime_la_foto_il_nonno_e_il_futuro_da_re/",
-   "pubblicato": "2026-11-03T08:31:23+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 2.3,
-   "testate": 2
-  },
-  {
-   "titolo": "F1 2026 | Ecco gli orari TV di Sky, NowTV e TV8 del Gran Premio di San Paolo del Brasile",
-   "estratto": "Tanto tuonò che piovve. Andrea Kimi Antonelli si è laureato campione del mondo di Formula 1 in Messico, ma il Circus iridato prosegue il suo percorso itinerante e arriva in Brasile, a Interlagos…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-2026-ecco-gli-orari-tv-di-sky-now-e-tv8-del-gran-premio-di-san-paolo-del-brasile/10870651/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-03T08:02:38+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -9.8,
-   "testate": 2
-  },
-  {
-   "titolo": "F1 | Wolff incorona Antonelli: “Ha dimostrato che si può vincere restando una brava persona”",
-   "estratto": "Toto Wolff ha aspettato che Kimi Antonelli diventasse campione del mondo per togliersi qualche sassolino dalle scarpe. Non tanto per rivendicare una scelta che due anni fa aveva suscitato parecchio…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-wolff-incorona-antonelli-ha-dimostrato-che-si-puo-vincere-restando-una-brava-persona/10870971/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-02T17:13:09+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -2.5,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Tardozzi: \"Quella cosa che non esiste più secondo Bagnaia? Non ho idea a cosa si riferisca\"",
-   "estratto": "Il Gran Premio della Malesia ha segnato l'ennesimo capitolo deludente del lungo addio tra Pecco Bagnaia e la Ducati. Il pilota piemontese aveva indicato Sepang come la grande occasione per provare ad…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-tardozzi-quella-cosa-che-non-esiste-piu-secondo-bagnaia-non-ho-idea-a-cosa-si-riferisca/10871079/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-02T16:53:29+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -2.6,
-   "testate": 1
-  },
-  {
-   "titolo": "Fiorello celebra Kimi Antonelli e chiama l'ad Rai Rossi: \"Un GP sulla Rai? Sarebbe bello…\"",
-   "estratto": "In puntata la visita a sorpresa del premio Oscar Diego Abatantuono e l'omaggio a Gigi Proietti. Il plauso a Kimi Antonelli: “Straordinario, a 20 anni sul tetto del mondo!”",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152324282/fiorello_celebra_kimi_antonelli_e_chiama_l_ad_rai_rossi_un_gp_sulla_rai_sarebbe_bello/",
-   "pubblicato": "2026-11-02T16:19:54+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -2.7,
-   "testate": 1
-  },
-  {
-   "titolo": "Brembo presenta la nuova pinza GP4 che frenerà tutta la MotoGP dal 2027",
-   "estratto": "In occasione di EICMA 2026 (3-8 novembre), Brembo presenta la nuova pinza freno GP4, frutto della continua ricerca e innovazione che caratterizzano da sempre l’impegno di Brembo in MotoGP, con…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/brembo-presenta-la-nuova-pinza-gp4-che-frenera-tutta-la-motogp-dal-2027/10871008/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-02T15:50:40+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -15.8,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Marini incredulo: \"A fine gara ero morto! Risultato incredibile, pensavo di ritirarmi\"",
-   "estratto": "Luca Marini ha festeggiato le 200 gare in MotoGP concludendo con un bel 7° posto il GP della Malesia, che in sè potrebbe non sembrare un risultato di cui gioire, ma il quale assume un valore…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-marini-incredulo-a-fine-gara-ero-morto-risultato-incredibile-pensavo-di-ritirarmi/10870901/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-02T14:24:03+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -3.2,
-   "testate": 1
-  },
-  {
-   "titolo": "Kimi Antonelli campione del mondo di F1 e degli ascolti su Sky",
-   "estratto": "La gara di Città del Messico è la più vista nella Casa dello Sport dal 2022, con oltre 2 milioni 44 mila spettatori medi complessivi in total audience. “Kampione”, lo speciale firmato Sky Sport",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152322863/kimi_antonelli_campione_del_mondo_di_f1_e_degli_ascolti_su_sky/",
-   "pubblicato": "2026-11-02T14:17:13+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 1.8,
-   "testate": 2
-  },
-  {
-   "titolo": "Lapo Elkann si complimenta con Kimi Antonelli. Il retroscena di Wolff e la frase del nipote su Gianni Agnelli",
-   "estratto": "Il capo della Mercedes: «Sapete cosa gli ho detto ieri? Lapo Elkann una volta mi disse, parlando di suo nonno, che era riuscito a rimanere una figura importante e rilevante per tutta la vita. A Kimi…",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152322675/lapo_elkann_si_complimenta_con_kimi_antonelli_il_retroscena_di_wolff_e_la_frase_del_nipote_su_gianni_agnelli/",
-   "pubblicato": "2026-11-02T13:52:48+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -8.3,
-   "testate": 1
-  },
-  {
-   "titolo": "Caos Ferrari, Hamilton durissimo: \"Leclerc contro di me! Ha 29 anni, è questione di mentalità\"",
-   "estratto": "Il duello in avvio a Città del Messico ha spianato la strada della vittoria a Verstappen rovinando una possibile vittoria della Rossa",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152320937/caos_ferrari_hamilton_durissimo_leclerc_contro_di_me_ha_29_anni_questione_di_mentalit/",
-   "pubblicato": "2026-11-02T10:34:03+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 5.8,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Come si organizzano i team e i piloti per il loro sbarco in Qatar",
-   "estratto": "Domenica è stata una giornata di corse a Sepang. E non solo di moto. Le riunioni si sono susseguite nel paddock del circuito malese. Alle undici del mattino si sono riuniti i team manager delle…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-come-si-organizzano-i-team-e-i-piloti-per-il-loro-sbarco-in-qatar/10870978/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-02T10:00:34+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -17.3,
-   "testate": 1
-  },
-  {
-   "titolo": "Ferrari e Antonelli, il sogno italiano: quella foto a Maranello che racconta tutto",
-   "estratto": "Il più giovane campione del mondo ha cambiato anche il tifo, superando i conflitti di “colore”, al contrario di quello che avviene nel calcio",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152318452/ferrari_e_antonelli_il_sogno_italiano_quella_foto_a_maranello_che_racconta_tutto/",
-   "pubblicato": "2026-11-02T08:37:07+00:00",
-   "tipo": "intervista",
-   "citazione": true,
-   "punteggio": -3.6,
-   "testate": 1
-  },
-  {
-   "titolo": "Caro Kimi ti scrivo. Possa tu trovare Itaca e... guidare una macchina rossa",
-   "estratto": "Ti auguro di non abituarti mai alla vittoria, mantenere il sorriso e la rotta nella burrasca, restituire agli altri, di vedere presto un Mondiale di calcio...",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152318339/caro_kimi_ti_scrivo_possa_tu_trovare_itaca_e_guidare_una_macchina_rossa/",
-   "pubblicato": "2026-11-02T08:29:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -17.7,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Ogura si scusa con Bezzecchi per il contatto: \"Colpa mia\"",
-   "estratto": "Le scaramucce tra le Aprilia sono state un tema ricorrente nella stagione 2026 di MotoGP e il Gran Premio della Malesia non è stato da meno. Questa volta è stato Ai Ogura, in sella alla RS-GP…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-ogura-si-scusa-con-bezzecchi-per-il-contatto-colpa-mia/10870620/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-02T08:24:28+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -4.7,
-   "testate": 1
-  },
-  {
-   "titolo": "“Kimi ricorda Vettel, ecco il suo segreto e la sua gara manifesto. E l'anno prossimo...\"",
-   "estratto": "Ivan Capelli disegna la grandezza di Antonelli: \" Provoca con fair play, nel 2027 con Verstappen ci divertiremo\"",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152317506/kimi_ricorda_vettel_ecco_il_suo_segreto_e_la_sua_gara_manifesto_e_l_anno_prossimo_/",
-   "pubblicato": "2026-11-02T08:21:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -4.7,
-   "testate": 1
-  },
-  {
-   "titolo": "Favola Antonelli, i momenti più iconici: a Monza l’abbraccio di un Paese",
-   "estratto": "La rimonta nel GP d'Italia e la vittoria di Spa: la svolta nel Mondiale di Kimi",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152317774/favola_antonelli_i_momenti_pi_iconici_a_monza_labbraccio_di_un_paese/",
-   "pubblicato": "2026-11-02T08:03:23+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -9.8,
-   "testate": 1
-  },
-  {
-   "titolo": "Kimi Antonelli e la generazione numero 1. Da Sinner a Bezzecchi e...",
-   "estratto": "La comparsata a Wimbledon da Jannik, le partite a briscola con Bez. E quanti altri campioni in rubrica: in primis l’iridato nel lungo Furlani",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152317504/kimi_antonelli_e_la_generazione_numero_1_da_sinner_a_bezzecchi_e_/",
-   "pubblicato": "2026-11-02T07:57:45+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -9.8,
-   "testate": 1
-  },
-  {
-   "titolo": "Un Giamburrasca della tribù dei Valentino: chi è davvero Kimi Antonelli",
-   "estratto": "Il nome che sembra una gag di Troisi, la linguetta “impegnata” e le burle. Dalla “ciotola” di Monza all’ironia con Hamilton sui tatuaggi che non ha",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152317401/un_giamburrasca_della_trib_dei_valentino_chi_davvero_kimi_antonelli/",
-   "pubblicato": "2026-11-02T07:52:50+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -9.8,
-   "testate": 1
-  },
-  {
-   "titolo": "Antonelli, l’imperatore del mondo",
-   "estratto": "Gara caotica con una bandiera rossa e safety car, Kimi però naviga tra i guai e chiude i conti con quattro gare d’anticipo: \"Ce l’abbiamo fatta!\"",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152317404/antonelli_limperatore_del_mondo/",
-   "pubblicato": "2026-11-02T07:48:34+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -9.8,
-   "testate": 1
-  },
-  {
-   "titolo": "Gen Z? No, Generazione K. Talento unico e favoloso",
-   "estratto": "A soli vent'anni è già fonte di ispirazione, così come i suoi connazionali negli altri sport. Il suo successo è dovuto proprio alla giovane età: parola di Toto Wolff",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152317297/gen_z_no_generazione_k_talento_unico_e_favoloso/",
-   "pubblicato": "2026-11-02T07:44:24+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -17.9,
-   "testate": 1
-  },
-  {
-   "titolo": "“Kimi Antonelli può vincere sei Mondiali!”, l’investitura di Valentino Rossi. “Mi ricorda me stesso”",
-   "estratto": "Il Dottore commenta la vittoria del 20enne bolognese: \"Può diventare uno dei più grandi della storia\"",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/02-152317193/kimi_antonelli_pu_vincere_sei_mondiali_linvestitura_di_valentino_rossi_mi_ricorda_me_stesso/",
-   "pubblicato": "2026-11-02T07:04:01+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -5.0,
-   "testate": 1
-  },
-  {
-   "titolo": "Kimi Antonelli è campione del mondo! Un italiano torna a scrivere la storia in Formula 1",
-   "estratto": "Giornata decisiva all'Autodromo Hermanos Rodríguez per la diciannovesima tappa del Mondiale: il bolognese è il più giovane iridato della storia",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/01-152305900/formula_1_diretta_gp_messico_antonelli_per_il_titolo_hamilton_dalla_pole_aggiornamenti_in_tempo_reale/",
-   "pubblicato": "2026-11-01T18:30:12+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -3.2,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | I problemi di salute sono un incubo per Mir: ritirato in Malesia per capogiri e vertigini",
-   "estratto": "Joan Mir ha confermato che il suo ritiro dal Gran Premio della Malesia di domenica è stato causato da capogiri e vertigini, riportando ancora una volta alla ribalta i problemi di salute che…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-i-problemi-di-salute-sono-un-incubo-per-mir-ritirato-in-malesia-per-capogiri-e-vertigini/10870577/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-01T16:25:41+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -21.7,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Alex Márquez: \"Contento del podio e per aver aiutato Marc fermando Bezzecchi, domani mi opero\"",
-   "estratto": "Nonostante la caduta di ieri e i problemi fisici alla spalla destra, Alex Márquez, partito in pole position nel GP della Malesia, si è assicurato il terzo posto dietro al fratello Marc Márquez e a…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-alex-marquez-contento-del-podio-e-per-aver-aiutato-marc-fermando-bezzecchi-domani-mi-opero/10870504/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-01T16:06:01+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -8.8,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Marquez è ad un passo dalla leggenda, ma la gara che nessuno vorrebbe in Qatar gli ruba la scena",
-   "estratto": "Marc Marquez è ad un passo dalla leggenda. O meglio, è ad un passo dallo scrivere un capitolo molto importante della sua già leggendaria carriera. Dopo la vittoria di Sepang, la settima negli ultimi…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-marquez-e-un-passo-dalla-leggenda-ma-la-gara-che-nessuno-vorrebbe-in-qatar-gli-ruba-la-scena/10870626/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-01T15:20:40+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -12.0,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Bagnaia rassegnato: \"Conto i minuti che mancano alla fine della stagione...\"",
-   "estratto": "\"Conto i minuti che mancano alla fine della stagione\". Con questa breve frase, Pecco Bagnaia ha fatto la radiografia perfetta del momento che sta vivendo in MotoGP. Giovedì si era presentato a Sepang…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bagnaia-rassegnato-conto-i-minuti-che-mancano-alla-fine-della-stagione-/10870581/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-01T14:06:21+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -9.3,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Mondiale: Marquez vola a +44 e ha il primo match point. Ducati scavalca Aprilia nel Costruttori",
-   "estratto": "Mondiale Piloti Pos Pilota Punti 1 M. Marquez Ducati Team 399 9 25 11 12 - - 14 37 32 13 37 10 37 37 20 37 22 12/1 34 - - - 2 J. Martin Aprilia Racing Team ... Continua a leggere",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-mondiale-marquez-vola-a-44-e-ha-il-primo-match-point-ducati-scavalca-aprilia-nel-costruttori-/10870593/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-01T13:05:02+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -4.5,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Bezzecchi: \"Ogura mi avrebbe superato comunque. Il contatto si poteva evitare, ma non deve scusarsi\"",
-   "estratto": "Che l'Aprilia potesse soffrire a Sepang era abbastanza risaputo, ma probabilmente la domenica di Marco Bezzecchi in Malesia è andata anche peggio del previsto, soprattutto dopo una Sprint come quella…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bezzecchi--10870521/10870521/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-01T12:20:13+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -9.7,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Rivola: \"Quello che dice Marquez non mi interessa. I giochi di squadra si fanno a casa propria, in famiglia\"",
-   "estratto": "Massimo Rivola si è espresso sulle parole di Marc Marquez dopo quanto accaduto nella Sprint del Gran Premio della Malesia . Il leader del Mondiale MotoGP è stato protagonista di un’intensa lotta con…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-rivola-quello-che-dice-marquez-non-mi-interessa-i-giochi-di-squadra-si-fanno-a-casa-propria-/10870509/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-01T11:04:01+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -18.0,
+   "punteggio": -1.9,
    "testate": 1
   }
  ]

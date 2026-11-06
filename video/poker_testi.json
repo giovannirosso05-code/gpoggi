@@ -1,0 +1,323 @@
+{
+ "scene": [
+  {
+   "n": 1,
+   "titolo": "Scena 1 — Hook",
+   "frasi": [
+    "Hai in mano 9♥8♥.",
+    "Sul tavolo ci sono quattro carte: K♥, 7♥, 2♣, 4♠.",
+    "Ti manca un solo cuori per fare colore.",
+    "Nel piatto ci sono 100 fiches e il tuo avversario ne punta 50.",
+    "Chiami o lasci?",
+    "Quasi tutti decidono a sensazione.",
+    "I professionisti fanno un conto che dura tre secondi.",
+    "Alla fine di questo video lo saprai fare anche tu.",
+    "E la risposta a questa mano, te lo anticipo, sorprende molti."
+   ]
+  },
+  {
+   "n": 2,
+   "titolo": "Scena 2 — Glossario rapido",
+   "frasi": [
+    "Prima dei numeri, le parole.",
+    "Nel poker si usano termini inglesi ovunque: al tavolo, nelle app, nei video dei professionisti.",
+    "Non li traduciamo: li impariamo.",
+    "Una mano ha quattro fasi.",
+    "Preflop è il momento prima che escano carte comuni: hai solo le tue due.",
+    "Flop sono le prime tre carte comuni, scoperte insieme.",
+    "Turn è la quarta.",
+    "River è la quinta e ultima.",
+    "L'insieme delle carte comuni si chiama board.",
+    "Le fiches in palio, al centro, sono il pot.",
+    "Le azioni sono sei.",
+    "Bet: punti.",
+    "Check: passi senza puntare.",
+    "Call: pareggi la puntata di un altro.",
+    "Raise: rilanci, cioè punti di più.",
+    "Fold: abbandoni la mano.",
+    "All-in: punti tutte le fiches che hai.",
+    "Negli esempi chiameremo hero il giocatore che decide, cioè te, e villain l'avversario.",
+    "Da qui in poi userò solo questi termini."
+   ]
+  },
+  {
+   "n": 3,
+   "titolo": "Scena 3 — Gli outs",
+   "frasi": [
+    "Il primo numero da conoscere sono gli outs: le carte ancora nel mazzo che migliorano la tua mano.",
+    "Torniamo alla mano iniziale.",
+    "Hai 9♥8♥ e sul board ci sono K♥ e 7♥: hai quattro cuori, te ne manca uno.",
+    "Questo si chiama draw, cioè progetto: una mano non ancora completa.",
+    "In particolare è un flush draw, un progetto di colore.",
+    "Quanti cuori restano?",
+    "Un mazzo ne ha 13.",
+    "Quattro li vedi già: i due che hai in mano e i due sul board.",
+    "13 meno 4 fa 9.",
+    "Hai 9 outs.",
+    "Con lo stesso metodo si contano tutti i progetti più comuni.",
+    "Uno straight draw è un progetto di scala.",
+    "Se è open-ended, cioè aperto da entrambi i lati, ti servono 4 carte da una parte e 4 dall'altra: 8 outs.",
+    "Se è un gutshot, una scala interna, ti serve una sola carta precisa: 4 outs.",
+    "Un'overcard è una carta più alta di quelle sul board.",
+    "Se hai due overcard, ogni carta che le accoppia ti dà la coppia più alta: 3 più 3, 6 outs.",
+    "Se hai una coppia in mano e cerchi il set, cioè il tris fatto con la tua coppia più una carta del board, ti restano solo 2 outs.",
+    "Attenzione però ai dirty outs, gli outs sporchi.",
+    "Sono carte che ti migliorano ma possono dare all'avversario una mano ancora migliore.",
+    "Se il board ha già una coppia, per esempio, un cuori che ti dà colore può dare a lui un full.",
+    "Quando hai dubbi, contali a metà o non contarli."
+   ]
+  },
+  {
+   "n": 4,
+   "titolo": "Scena 4 — Da outs a equity: la regola del 2 e del 4",
+   "frasi": [
+    "Contare gli outs non basta: serve una percentuale.",
+    "Si chiama equity, ed è la percentuale di volte in cui vinci la mano se si arriva fino in fondo.",
+    "Il calcolo esatto è semplice.",
+    "Al turn le carte che non vedi sono 46: 52 meno le tue 2, meno le 4 del board.",
+    "Le carte dell'avversario non le vedi, quindi contano come carte nel mazzo.",
+    "Con 9 outs e 46 carte, la probabilità che il river sia un cuori è 9 diviso 46: 19,6%.",
+    "Al tavolo però non si fanno divisioni.",
+    "Si usa una scorciatoia: la regola del 2 e del 4.",
+    "Se devi vedere una sola carta, moltiplichi gli outs per 2.",
+    "9 per 2 fa 18%: vicinissimo al 19,6% esatto.",
+    "Se sei al flop e vedrai sicuramente sia il turn sia il river, moltiplichi per 4.",
+    "Ma attenzione: \"sicuramente\" vuol dire che sei all-in.",
+    "Se l'avversario può puntare di nuovo al turn, tu stai pagando per vedere una carta sola, e devi usare il 2.",
+    "È l'errore più comune di tutti: ci torneremo.",
+    "Ultima correzione: con più di 8 outs la regola del 4 esagera.",
+    "Togli la differenza tra i tuoi outs e 8.",
+    "Con 15 outs: 15 per 4 fa 60, meno 7, fa 53%.",
+    "Il valore esatto è 54%."
+   ]
+  },
+  {
+   "n": 5,
+   "titolo": "Scena 5 — Le pot odds",
+   "frasi": [
+    "Ora sai quanto spesso vinci.",
+    "La seconda domanda è: quanto spesso ti serve vincere perché il call convenga?",
+    "La risposta la danno le pot odds: il rapporto tra quanto devi mettere e quanto puoi vincere, espresso come percentuale minima di vittoria.",
+    "La formula è una sola.",
+    "Prendi quanto devi chiamare e dividilo per il pot totale dopo il tuo call: il pot di partenza, più la bet dell'avversario, più il tuo call.",
+    "Esempio.",
+    "Nel pot ci sono 100 fiches, il villain punta 50.",
+    "Per chiamare metti 50.",
+    "Il pot finale sarà 100 più 50 più 50: 200.",
+    "50 diviso 200 fa 25%.",
+    "Ti serve vincere almeno una volta su quattro.",
+    "La bella notizia è che non devi rifare il conto ogni volta: dipende solo da quanto è grande la bet rispetto al pot.",
+    "Ecco i cinque casi che vedrai più spesso.",
+    "Impara questa tabella a memoria: è metà del lavoro."
+   ]
+  },
+  {
+   "n": 6,
+   "titolo": "Scena 6 — La regola decisionale",
+   "frasi": [
+    "Ecco il cuore di tutto il video.",
+    "Hai due numeri: la tua equity, cioè quanto spesso vinci, e l'equity richiesta dalle pot odds, cioè quanto spesso ti serve vincere.",
+    "Se la prima è più alta della seconda, fai call.",
+    "Se è più bassa, fai fold.",
+    "Non esiste una percentuale fissa sopra cui giocare.",
+    "La soglia la decide l'avversario con la sua bet: cambia la bet, cambia la soglia.",
+    "C'è una sola eccezione, le implied odds, che vedremo tra poco.",
+    "Ora mettiamo tutto alla prova."
+   ]
+  },
+  {
+   "n": 7,
+   "titolo": "Scena 7 — Mano 1",
+   "frasi": [
+    "Torniamo alla mano dell'inizio.",
+    "Hero ha 9♥8♥, board K♥7♥2♣4♠: siamo al turn.",
+    "Pot 100, il villain punta 50.",
+    "Primo passo, gli outs: 9 cuori.",
+    "Perché non contiamo anche i 9 e gli 8?",
+    "Perché una coppia di 9 o di 8 non batte un avversario che ha un re.",
+    "Secondo passo, l'equity: manca una sola carta, quindi 9 per 2, 18%.",
+    "Il valore esatto è 19,6%.",
+    "Terzo passo, le pot odds: bet di metà pot, quindi 25%.",
+    "Quarto passo, il confronto: 19,6 è meno di 25.",
+    "La decisione corretta è fold.",
+    "È questa la risposta che sorprende: un progetto di colore, da solo, non giustifica un call di mezzo pot al turn."
+   ]
+  },
+  {
+   "n": 8,
+   "titolo": "Scena 8 — Mano 2",
+   "frasi": [
+    "Stessa identica situazione.",
+    "Stesse carte, stesso board, stesso pot.",
+    "Cambia una sola cosa: il villain punta 25 invece di 50.",
+    "La tua equity non è cambiata: sempre 19,6%.",
+    "Sono cambiate le pot odds: 25 diviso 150, cioè 100 più 25 più 25, fa 16,7%.",
+    "Ora 19,6 è più di 16,7.",
+    "La decisione corretta è call.",
+    "Stessa mano, decisione opposta.",
+    "È per questo che non esiste una percentuale magica: la soglia la sposta la bet dell'avversario."
+   ]
+  },
+  {
+   "n": 9,
+   "titolo": "Scena 9 — Mano 3: il combo draw all-in",
+   "frasi": [
+    "Hero ha J♠T♠.",
+    "Flop: 9♠8♠2♦.",
+    "Pot 100.",
+    "Il villain va all-in per 100, cioè una bet pari al pot.",
+    "Supponiamo che abbia una coppia di assi, A♦A♣.",
+    "Outs: hai un flush draw, 9 picche.",
+    "Hai anche un open-ended: ti servono una Q o un 7.",
+    "Le Q e i 7 sono 8 carte, ma due sono picche e le hai già contate.",
+    "Restano 6.",
+    "9 più 6 fa 15 outs.",
+    "Qui puoi usare la regola del 4, perché sei all-in: vedrai sicuramente turn e river.",
+    "15 per 4 fa 60.",
+    "Sopra gli 8 outs togli la differenza: 15 meno 8 fa 7.",
+    "60 meno 7: 53%.",
+    "Il valore esatto è circa 54%.",
+    "Pot odds: bet pari al pot, quindi 33,3%.",
+    "54 contro 33: call, senza esitare.",
+    "Anzi, sei tu il favorito, anche se in questo momento non hai nemmeno una coppia.",
+    "Una nota.",
+    "Se il villain avesse un set, per esempio 9-9, molti dei tuoi outs diventerebbero dirty outs: alcune carte che ti danno colore o scala gli darebbero il full.",
+    "La tua equity scenderebbe molto."
+   ]
+  },
+  {
+   "n": 10,
+   "titolo": "Scena 10 — Mano 4: il gutshot e la trappola del × 4",
+   "frasi": [
+    "Hero ha 9♣8♦.",
+    "Flop: J♥7♠2♣.",
+    "Pot 90.",
+    "Il villain punta 60, cioè due terzi del pot, e non è all-in.",
+    "Hai un gutshot: ti serve solo un 10 per fare scala, da 7 a J.",
+    "4 outs.",
+    "Il villain non è all-in: se il turn non ti aiuta, può puntare di nuovo.",
+    "Quindi stai pagando per vedere una carta sola.",
+    "Regola del 2: 4 per 2, 8%.",
+    "Esatto: 4 diviso 47, cioè 8,5%.",
+    "Pot odds a due terzi del pot: 28,6%.",
+    "8 contro 28: fold netto.",
+    "Ora la trappola.",
+    "Cambiamo una sola carta del flop: J♥T♠2♣.",
+    "Adesso hai un open-ended: va bene una Q o un 7, 8 outs.",
+    "Chi sbaglia fa così: 8 per 4, 32%.",
+    "32 è più di 28,6, quindi chiama.",
+    "Sbagliato.",
+    "Non sei all-in: la carta che stai pagando è una sola.",
+    "8 per 2 fa 16%, esatto 17%.",
+    "17 contro 28,6: per la sola matematica è fold.",
+    "Al tavolo, un call qui può avere senso per un altro motivo: le implied odds, cioè quanto puoi vincere dopo se centri la scala.",
+    "Ma devi sapere che la stai pagando cara, non illuderti di avere il 32%."
+   ]
+  },
+  {
+   "n": 11,
+   "titolo": "Scena 11 — Mano 5: gli scontri preflop e il range",
+   "frasi": [
+    "Preflop non ci sono outs da contare: ci sono scontri tipici da sapere a memoria.",
+    "Tre bastano per cominciare.",
+    "Una coppia contro due overcard, per esempio 7♠7♥ contro A♦K♣: più o meno testa o croce, circa 55 a 45 per la coppia.",
+    "Un'overpair, cioè una coppia più alta, contro una coppia più bassa: K♠K♥ contro Q♦Q♣, circa 82 a 18.",
+    "Una dominated hand, una mano dominata: A♣Q♥ contro A♠K♦.",
+    "Avete lo stesso asso, ma il kicker, la carta laterale che decide a parità di coppia, è più alto per lui.",
+    "Circa 25 a 75.",
+    "Ora la mano.",
+    "Nel pot ci sono 200 fiches, il villain va all-in per 400 e hero ha 7♠7♥.",
+    "Per chiamare metti 400.",
+    "Pot finale: 200 più 400 più 400, 1000.",
+    "400 diviso 1000: ti serve il 40%.",
+    "Se il villain ha A-K, hai il 55%: call.",
+    "Se ha Q-Q, hai circa il 20%: fold.",
+    "Il problema è che non sai cosa ha.",
+    "Ed è qui che i professionisti fanno la differenza: non ragionano su una mano sola, ma sul range, cioè l'insieme di tutte le mani che quell'avversario potrebbe avere in quella situazione.",
+    "La matematica di questo video è la base; il range è il passo successivo."
+   ]
+  },
+  {
+   "n": 12,
+   "titolo": "Scena 12 — Mano 6: implied odds e set mining",
+   "frasi": [
+    "L'unica eccezione alla regola sono le implied odds: le fiches extra che pensi di vincere nelle puntate successive se completi il progetto.",
+    "L'esempio classico è il set mining: chiamare con una coppia piccola sperando di fare set al flop.",
+    "Hero ha 5♣5♦.",
+    "Il villain rilancia preflop a 30 e ha davanti a sé 1000 fiches.",
+    "Hero fa set al flop circa il 12% delle volte: una volta su 8,5.",
+    "Se guardi solo il pot attuale, il call non conviene.",
+    "Ma fai il conto su più mani.",
+    "In 8,5 tentativi ne perdi 7,5, e ognuno ti costa 30 fiches: in tutto circa 225.",
+    "Per andare in pari ti basta vincere 225 fiches in più quella volta che centri.",
+    "Con un avversario che ha 1000 fiches e una mano forte, è realistico.",
+    "Nella pratica si usa una regola più prudente: chiama se le fiches che puoi ancora vincere sono almeno 15-20 volte il call.",
+    "Più del minimo teorico, perché non sempre vieni pagato e a volte anche un set perde.",
+    "Qui 1000 diviso 30 fa circa 33 volte: call."
+   ]
+  },
+  {
+   "n": 13,
+   "titolo": "Scena 13 — Errori comuni",
+   "frasi": [
+    "Quattro errori che costano più fiches di tutti gli altri.",
+    "Uno: usare il × 4 quando non sei all-in.",
+    "Paghi per una carta, non per due.",
+    "Due: contare i dirty outs come se fossero puliti.",
+    "Se una carta può aiutare anche l'avversario, il tuo out vale meno.",
+    "Tre: guardare solo le tue carte e non la dimensione della bet.",
+    "La soglia la decide la bet.",
+    "Quattro: ragionare contro una mano sola.",
+    "L'avversario non ha una mano, ha un range."
+   ]
+  },
+  {
+   "n": 14,
+   "titolo": "Scena 14 — Riepilogo",
+   "frasi": [
+    "Il metodo è sempre lo stesso, in quattro passi.",
+    "Conta gli outs.",
+    "Trasformali in equity: per 2 se vedi una carta, per 4 solo se sei all-in.",
+    "Calcola l'equity richiesta con le pot odds.",
+    "Confronta: se la tua equity è più alta, call.",
+    "Fai uno screenshot di questa schermata: è tutto quello che ti serve al tavolo."
+   ]
+  },
+  {
+   "n": 15,
+   "titolo": "Scena 15 — Quiz",
+   "frasi": [
+    "Tocca a te.",
+    "Tre mani: per ognuna metti in pausa, fai il conto e decidi call o fold.",
+    "Poi riparti e controlla."
+   ]
+  },
+  {
+   "n": 16,
+   "titolo": "Scena 16 — Glossario completo e chiusura",
+   "frasi": [
+    "Ecco tutti i termini di oggi in una schermata: salvala.",
+    "Un'ultima cosa, la più importante.",
+    "Questa matematica ti fa prendere decisioni migliori, ma non elimina la varianza, cioè la fortuna nel breve periodo.",
+    "Puoi giocare perfettamente e perdere una mano, una sera, anche una settimana.",
+    "Gioca solo con soldi che puoi permetterti di perdere.",
+    "Il poker è vietato ai minori di 18 anni.",
+    "Se il gioco smette di essere un divertimento, chiedi aiuto: in Italia c'è il numero verde unico per le dipendenze dell'Istituto Superiore di Sanità, gratuito e anonimo: 800 940 789."
+   ]
+  }
+ ],
+ "quiz": [
+  {
+   "d": "Hero Q♣J♦, board T♠9♥3♣2♦ (turn). Pot 100, il villain punta 100.",
+   "s": "Soluzione: open-ended, servono un K o un 8: 8 outs. Una carta da vedere: 8 × 2 = 16% (esatto 17,4%). Bet pari al pot: serve il 33,3%. FOLD."
+  },
+  {
+   "d": "Hero 7♦6♦, board Q♦J♦3♣2♠ (turn). Pot 200, il villain punta 50.",
+   "s": "Soluzione: flush draw, 9 outs. 9 × 2 = 18% (esatto 19,6%). Pot odds: 50 ÷ 300 = 16,7%. CALL."
+  },
+  {
+   "d": "Hero 8♣7♣, board A♣J♣4♥ (flop). Pot 100, il villain va all-in per 50 con una coppia d'assi senza fiori.",
+   "s": "Soluzione: flush draw, 9 outs. All-in, quindi × 4: 36%, meno 1 = 35% (esatto 35%). Pot odds: 50 ÷ 200 = 25%. CALL."
+  }
+ ]
+}

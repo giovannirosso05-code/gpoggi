@@ -268,7 +268,7 @@ async def genera(args, uscita, prova=None):
     return capitoli
 
 
-def invia_telegram(video, capitoli, titolo="video lezione (argomenti 1-8)"):
+def invia_telegram(video, capitoli, titolo="video lezione (argomenti 1-8)", prefisso="🎓 Diritto dei trasporti, "):
     """Manda il video sul Telegram del proprietario (se supera i 48 MB lo divide agli argomenti, senza ricodificare) e i capitoli come messaggio."""
     import requests
     tok = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN")
@@ -294,7 +294,7 @@ def invia_telegram(video, capitoli, titolo="video lezione (argomenti 1-8)"):
                 break
     for k, f in enumerate(parti):
         with open(f, "rb") as fh:
-            requests.post(f"https://api.telegram.org/bot{tok}/sendVideo", data={"chat_id": chat, "caption": f"🎓 Diritto dei trasporti, {titolo}" + (f" · parte {k + 1}/{len(parti)}" if len(parti) > 1 else ""),
+            requests.post(f"https://api.telegram.org/bot{tok}/sendVideo", data={"chat_id": chat, "caption": f"{prefisso}{titolo}" + (f" · parte {k + 1}/{len(parti)}" if len(parti) > 1 else ""),
                           "supports_streaming": "true", "disable_notification": "true", "width": 1280, "height": 720}, files={"video": fh}, timeout=900, verify=NS.CA if hasattr(NS, "CA") else True).raise_for_status()
     cap = "\n".join(f"{int(s // 3600):02d}:{int(s % 3600 // 60):02d}:{int(s % 60):02d} {nome}" for s, nome in capitoli)
     requests.post(f"https://api.telegram.org/bot{tok}/sendMessage", data={"chat_id": chat, "text": "📚 Capitoli (tempi del video intero)\n\n" + cap + ("\n\nIl video è diviso in %d parti agli argomenti." % len(parti) if len(parti) > 1 else "")}, timeout=60).raise_for_status()

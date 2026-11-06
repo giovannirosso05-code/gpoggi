@@ -110,7 +110,7 @@ CSS = f"""{NS.CSS_FONT}
 .bil{{position:absolute;left:0;right:0;top:140px;text-align:center}}
 .verdetto{{font:700 150px Oswald;letter-spacing:.06em;margin-top:10px}}
 .barre{{position:absolute;left:120px;right:120px;top:140px}} .riga{{margin-bottom:46px}}
-.riga .mani{{display:flex;align-items:center;gap:30px;font:700 40px Oswald}} .riga .mani .car{{position:relative}}
+.riga .mani{{display:flex;align-items:center;gap:30px;font:700 40px Oswald}} .riga .mani .car{{position:relative}} .riga .mani>div{{position:relative;width:84px;height:118px}}
 .barra{{display:flex;height:56px;border-radius:12px;overflow:hidden;margin-top:14px;font:700 36px Oswald}} .barra i{{display:flex;align-items:center;justify-content:center;font-style:normal}}
 .cart{{position:absolute;left:120px;right:120px;top:130px;display:grid;grid-template-columns:1fr 1fr;gap:28px}}
 .cart div{{background:#8a1c1c;border-radius:18px;padding:30px 34px;font:700 56px/1.1 Oswald;display:flex;gap:26px;align-items:center;min-height:270px}} .cart div i{{font-style:normal;background:#fff;color:#8a1c1c;border-radius:50%;width:84px;height:84px;display:flex;align-items:center;justify-content:center;font-size:56px;flex:none}}
@@ -118,6 +118,12 @@ CSS = f"""{NS.CSS_FONT}
 .dos{{display:flex;gap:30px}} .dos table{{flex:1;border-collapse:collapse;font:500 30px Inter}} .dos th{{font:700 22px Oswald;letter-spacing:.1em;color:#9fd8b5;text-align:left;padding:5px 10px;border-bottom:2px solid #2a4a3a}} .dos td{{padding:6px 10px;border-bottom:1px solid #1f3a2d}} .dos td:last-child{{font:700 32px Oswald;color:#ffd24a}}
 .fin{{position:absolute;inset:0;background:#000;text-align:center;padding-top:130px}} .fin .d18{{font:700 220px Oswald;color:#ff6b6b;line-height:1}}
 .fin h1{{font:700 74px Oswald;margin:10px 0 28px;color:#fff;letter-spacing:.05em}} .fin p{{font:500 40px/1.3 Inter;margin:0 140px 20px;color:#dfe8e2}} .fin .num{{font:700 100px Oswald;color:#ffd24a;margin-top:26px}}
+.mazzo{{position:absolute;left:50px;top:100px;width:1240px;display:grid;grid-template-columns:repeat(13,1fr);gap:7px}}
+.mazzo div{{background:#fbfbf6;border-radius:8px;height:128px;padding:6px 4px;text-align:center;font:700 34px Oswald}} .mazzo div svg{{display:block;margin:6px auto 0}}
+.mazzo div.k{{opacity:.18;filter:grayscale(1)}} .mazzo div.o{{outline:5px solid #f5b301;box-shadow:0 0 22px #f5b301;transform:translateY(-6px)}}
+.comb{{position:absolute;left:60px;right:60px;top:90px;display:grid;grid-template-columns:1fr 1fr;gap:6px 40px}} .comb>div{{display:flex;align-items:center;gap:18px;height:146px;background:#0f2419;border-radius:12px;padding:0 16px}}
+.comb>div.nuova{{background:#1a3a28;outline:3px solid #f5b301}} .comb .c5{{display:flex;gap:6px;width:390px;height:98px}}
+.comb>div>b{{font:700 34px/1.05 Oswald;color:#ffd24a;text-transform:uppercase}} .comb>div>b>span{{display:block;font:500 22px Inter;color:#cfe0d6;text-transform:none;margin-top:4px}}
 .pausa{{position:absolute;left:1330px;top:100px;width:540px;height:730px;background:#222;border:14px solid #5a3a1e;border-radius:10px;display:flex;align-items:center;justify-content:center;font:700 120px Oswald;color:#ff6b6b;letter-spacing:.1em}}
 """
 
@@ -157,6 +163,23 @@ def pagina(st, titolo, prog):
         else:
             righe = "".join(f'<p class="{c}">{rich(t)}</p>' for t, c in st.get("lav", []))
             corpo += f'<div class=lav><h3>Lavagna</h3>{righe}</div>'
+    elif modo == "mazzo":
+        known = set(st.get("known", [])); outs = set(st.get("outs", []))
+        g = ""
+        for se in "hdsc":
+            for r in "AKQJT98765432":
+                c = r + se
+                cl = "k" if c in known else ("o" if c in outs else "")
+                g += f'<div class="{cl}" style="color:{COL[se]}">{"10" if r == "T" else r}{seme(se, 34, COL[se])}</div>'
+        corpo += f'<div class=mazzo>{g}</div>'
+        righe = "".join(f'<p class="{c}">{rich(t)}</p>' for t, c in st.get("lav", []))
+        corpo += f'<div class=lav style="top:100px"><h3>Lavagna</h3>{righe}</div>'
+    elif modo == "mani":
+        g = ""
+        for i, (nome, note, cs) in enumerate(st["righe"][:st["n"]]):
+            g += (f'<div class="{"nuova" if i == st["n"] - 1 else ""}"><div class=c5>' + "".join(f'<div style="position:relative;width:70px;height:98px">{carta(c, w=70)}</div>' for c in cs)
+                  + f'</div><b>{html.escape(nome)}<span>{html.escape(note)}</span></b></div>')
+        corpo += f'<div class=comb>{g}</div>'
     elif modo == "tabella":
         corpo += f'<div class=tab><h2>{html.escape(st["titolo"])}</h2><table><tr>' + "".join(f"<th>{html.escape(h)}</th>" for h in st["testa"]) + "</tr>"
         for i, r in enumerate(st["righe"][:st["n"]]):
@@ -176,7 +199,7 @@ def pagina(st, titolo, prog):
     elif modo == "barre":
         h_ = ""
         for hh, vv, pc in st["righe"][:st["n"]]:
-            ca = "".join(carta(c, w=84) for c in hh); cb = "".join(carta(c, w=84) for c in vv)
+            ca = "".join(f'<div style="position:relative;width:84px;height:118px">{carta(c, w=84)}</div>' for c in hh); cb = "".join(f'<div style="position:relative;width:84px;height:118px">{carta(c, w=84)}</div>' for c in vv)
             h_ += (f'<div class=riga><div class=mani>{ca}<span>contro</span>{cb}</div><div class=barra><i style="width:{pc}%;background:#2f9e5f">{pc}%</i>'
                    f'<i style="width:{100 - pc}%;background:#b83a3a">{100 - pc}%</i></div></div>')
         corpo += f'<div class=barre>{h_}</div>'
@@ -344,9 +367,9 @@ def durata(f):
     return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(f)], capture_output=True, text=True).stdout or 0)
 
 
-async def genera(uscita, prova=None):
+async def genera(uscita, prova=None, bt=None):
     from playwright.async_api import async_playwright
-    bt = beats()
+    bt = bt or beats()
     if prova:
         bt = bt[:prova]
     lav = QUI / "_cache" / "poker"; lav.mkdir(parents=True, exist_ok=True)
@@ -388,12 +411,16 @@ async def genera(uscita, prova=None):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--prova", type=int); ap.add_argument("--uscita", type=Path, default=QUI / "poker.mp4"); ap.add_argument("--invia", action="store_true")
+    ap.add_argument("--prova", type=int); ap.add_argument("--uscita", type=Path, default=QUI / "poker.mp4"); ap.add_argument("--invia", action="store_true"); ap.add_argument("--corso", action="store_true")
     a = ap.parse_args()
-    cap = asyncio.run(genera(a.uscita, a.prova))
+    bt = None
+    if a.corso:
+        import poker_corso as PC
+        bt = PC.beats_corso()
+    cap = asyncio.run(genera(a.uscita, a.prova, bt))
     if a.invia and not a.prova:
         import lezione as L
-        L.invia_telegram(a.uscita, cap, "Quando chiamare: la matematica del Texas Hold'em", prefisso="🃏 ")
+        L.invia_telegram(a.uscita, cap, "Quando chiamare: il corso completo (da zero)" if a.corso else "Quando chiamare: la matematica del Texas Hold'em", prefisso="🃏 ")
 
 
 if __name__ == "__main__":

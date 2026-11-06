@@ -49,13 +49,32 @@ CUORI = [r + "h" for r in "AKQJT98765432"]
 def scene():
     S = []
 
-    # 1 ---------------------------------------------------------------- hook
-    s = Sc("Hook")
-    s.b("Hai in mano 9♥8♥.", hero=B1)
-    s.b("Sul tavolo ci sono quattro carte comuni: K♥, 7♥, 2♣, 4♠. Ti manca un solo cuori per fare colore.", board=BD)
-    s.b("Nel piatto ci sono 100 fiches e il tuo avversario ne punta 50. Chiami o lasci?", pot=100, bet=50, lav=("?", "y"), sov="Chiami o lasci?")
-    s.b("Quasi tutti decidono a sensazione. I professionisti fanno un conto che dura tre secondi.")
-    s.b("In questo video lo imparerai da zero: prima le regole e le parole del poker, poi la teoria, poi le mani, una per una. Alla fine saprai rispondere da solo. E la risposta a questa mano, te lo anticipo, sorprende molti.")
+    # 1 ---------------------------------------------------------------- hook (senza carte: solo idee)
+    s = Sc("Hook", modo="cartelli", testi=["Decidi con i numeri, non a sensazione"], n=1)
+    s.b("Nel poker puoi prendere la decisione giusta e perdere lo stesso. E puoi prendere quella sbagliata e vincere. Per questo quasi tutti giocano a sensazione.")
+    s.b("Chi vince nel lungo periodo fa un'altra cosa: confronta un prezzo con una probabilità. È un conto semplice, che dura pochi secondi.")
+    s.b("In questo video lo imparerai da zero. Prima un po' di teoria, per capire come si ragiona. Poi le regole e le parole del poker, poi i calcoli, poi le mani una per una. Alla fine saprai decidere da solo.", sov="Prima la teoria, poi le mani")
+    S += s.fine()
+
+    # 1b --------------------------------------------------------------- teoria introduttiva (nessuna carta)
+    s = Sc("Introduzione · Decisione e risultato", modo="cartelli", testi=["Decisione ≠ risultato", "Il poker è informazione incompleta", "Ogni scelta ha un prezzo"], n=1)
+    s.b("Cominciamo dall'idea più importante, e non servono carte per capirla. Nel poker devi distinguere la decisione dal risultato.", sov="DECISIONE ≠ RISULTATO")
+    s.b("Il poker è un gioco a informazione incompleta: non vedi le carte dell'avversario e non sai cosa uscirà. Quindi anche la scelta migliore può perdere, perché c'è la fortuna. Questa fortuna di breve periodo si chiama varianza.", n=2, sov="VARIANZA = la fortuna nel breve periodo")
+    s.b("Una decisione si giudica da come si comporta se la ripeti mille volte, non da come va una volta sola. Se è giusta, alla lunga ti fa guadagnare, anche se stasera perdi.", n=3)
+    S += s.fine()
+
+    s = Sc("Introduzione · Prezzo contro probabilità", modo="cartelli", testi=["Prezzo: quanto devi pagare", "Premio: quanto puoi vincere", "Probabilità: quanto spesso vinci"], n=1)
+    s.b("Ogni decisione di poker ha tre ingredienti. Il prezzo: quanto devi pagare per restare in gioco. Il premio: quanto puoi vincere. E la probabilità: quanto spesso vinci davvero.", sov="PREZZO · PREMIO · PROBABILITÀ")
+    s.b("Facciamo un esempio senza carte. Paghi 10 fiches per tirare un dado. Se esce il 6, ricevi 60 fiches. Il 6 esce una volta su sei, quindi in media ricevi 60 diviso 6, cioè 10. Paghi 10 e in media riprendi 10: è un pareggio.", n=2, sov="1 su 6 × 60 = 10 → pareggio")
+    s.b("Se il premio fosse 90, in media riprenderesti 15: ogni tiro ti farebbe guadagnare 5. Conviene. Se il premio fosse 30, in media riprenderesti 5: ogni tiro ti farebbe perdere 5. Non conviene.", n=3, sov="Premio 90: conviene · Premio 30: non conviene")
+    s.b("Questo guadagno medio si chiama valore atteso, in inglese expected value. Una decisione è buona quando il valore atteso è positivo. Nel poker succede lo stesso: l'avversario punta, quello è il tuo prezzo; il piatto è il tuo premio; e la tua mano determina la probabilità.", sov="EXPECTED VALUE = guadagno medio nel lungo periodo")
+    S += s.fine()
+
+    s = Sc("Introduzione · Le tre domande", modo="scheda", passi=["Cosa ho? (le mie carte e i miei progetti)", "Cosa può avere lui? (il suo range)", "Quanto mi costa restare? (le pot odds)"], n=1, tabelle=False)
+    s.b("In ogni mano ti farai tre domande, sempre le stesse. Prima: cosa ho? Cioè le tue carte e quello che possono diventare.", n=1)
+    s.b("Seconda: cosa può avere lui? Non puoi saperlo, ma puoi stimare l'insieme delle sue mani possibili. Si chiama range.", n=2)
+    s.b("Terza: quanto mi costa restare in gioco, rispetto a quanto posso vincere? Si chiama pot odds.", n=3)
+    s.b("Ti spiego ognuna con calma, nell'ordine giusto. Prima le regole e le parole, così non ti perdi niente. Poi le carte e le probabilità. Solo dopo tutto questo, le mani vere.", sov="Prima la teoria, poi le mani")
     S += s.fine()
 
     # 2 ---------------------------------------------------------------- roadmap

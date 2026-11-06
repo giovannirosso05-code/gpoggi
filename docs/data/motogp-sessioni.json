@@ -1,5 +1,5 @@
 {
- "generato_il": "2026-11-06T04:42:09+00:00",
+ "generato_il": "2026-11-06T13:39:05+00:00",
  "weekend": [
   {
    "nome": "GP Malesia",
@@ -1536,7 +1536,195 @@
   {
    "nome": "GP Qatar",
    "stato": "CURRENT",
-   "sessioni": []
+   "sessioni": [
+    {
+     "nome": "Prove libere 1",
+     "codice": "FP1",
+     "inizio": "2026-11-06T11:45:00+00:00",
+     "risultati": [
+      {
+       "pos": 1,
+       "nome": "Marc Marquez",
+       "numero": 93,
+       "team": "Ducati Lenovo Team",
+       "tempo": "1:52.278",
+       "distacco": "0.000",
+       "giri": 16,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 2,
+       "nome": "Marco Bezzecchi",
+       "numero": 72,
+       "team": "Aprilia Racing",
+       "tempo": "1:52.388",
+       "distacco": "0.110",
+       "giri": 16,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 3,
+       "nome": "Fabio Di Giannantonio",
+       "numero": 49,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "1:52.691",
+       "distacco": "0.413",
+       "giri": 16,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 4,
+       "nome": "Pedro Acosta",
+       "numero": 37,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "1:52.955",
+       "distacco": "0.677",
+       "giri": 15,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 5,
+       "nome": "Jorge Martin",
+       "numero": 89,
+       "team": "Aprilia Racing",
+       "tempo": "1:53.012",
+       "distacco": "0.734",
+       "giri": 15,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 6,
+       "nome": "Francesco Bagnaia",
+       "numero": 63,
+       "team": "Ducati Lenovo Team",
+       "tempo": "1:53.071",
+       "distacco": "0.793",
+       "giri": 15,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 7,
+       "nome": "Raul Fernandez",
+       "numero": 25,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:53.189",
+       "distacco": "0.911",
+       "giri": 14,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 8,
+       "nome": "Luca Marini",
+       "numero": 10,
+       "team": "Honda HRC Castrol",
+       "tempo": "1:53.230",
+       "distacco": "0.952",
+       "giri": 16,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 9,
+       "nome": "Franco Morbidelli",
+       "numero": 21,
+       "team": "Pertamina Enduro VR46 Racing Team",
+       "tempo": "1:53.306",
+       "distacco": "1.028",
+       "giri": 15,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 10,
+       "nome": "Johann Zarco",
+       "numero": 5,
+       "team": "Castrol Honda LCR",
+       "tempo": "1:53.362",
+       "distacco": "1.084",
+       "giri": 15,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 11,
+       "nome": "Ai Ogura",
+       "numero": 79,
+       "team": "SuperFile Trackhouse MotoGP Team",
+       "tempo": "1:53.541",
+       "distacco": "1.263",
+       "giri": 15,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 12,
+       "nome": "Fermin Aldeguer",
+       "numero": 54,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "1:53.617",
+       "distacco": "1.339",
+       "giri": 14,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 13,
+       "nome": "Brad Binder",
+       "numero": 33,
+       "team": "Red Bull KTM Factory Racing",
+       "tempo": "1:53.631",
+       "distacco": "1.353",
+       "giri": 14,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 14,
+       "nome": "Iker Lecuona",
+       "numero": 27,
+       "team": "BK8 Gresini Racing MotoGP",
+       "tempo": "1:53.710",
+       "distacco": "1.432",
+       "giri": 16,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 15,
+       "nome": "Maverick Viñales",
+       "numero": 12,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "1:53.725",
+       "distacco": "1.447",
+       "giri": 17,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 16,
+       "nome": "Diogo Moreira",
+       "numero": 11,
+       "team": "Pro Honda LCR",
+       "tempo": "1:54.069",
+       "distacco": "1.791",
+       "giri": 15,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 17,
+       "nome": "Enea Bastianini",
+       "numero": 23,
+       "team": "Red Bull KTM Tech3",
+       "tempo": "1:54.243",
+       "distacco": "1.965",
+       "giri": 14,
+       "stato": "INSTND"
+      },
+      {
+       "pos": 18,
+       "nome": "Jake Dixon",
+       "numero": 96,
+       "team": "Honda HRC Castrol",
+       "tempo": "1:55.426",
+       "distacco": "3.148",
+       "giri": 13,
+       "stato": "INSTND"
+      }
+     ]
+    }
+   ]
   }
  ]
 }

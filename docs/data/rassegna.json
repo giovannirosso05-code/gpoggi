@@ -1,6 +1,54 @@
 {
- "generato_il": "2026-11-06T12:52:00+00:00",
+ "generato_il": "2026-11-06T13:37:41+00:00",
  "articoli": [
+  {
+   "titolo": "F1, alta tensione in casa Ferrari. Vasseur convoca Hamilton e Leclerc per un confronto in Brasile",
+   "estratto": "Le tante piccole scintille degli ultimi due anni sono divampate in un incendio difficile da contenere per quanto riguarda il rapporto (in pista) tra i piloti ferraristi Lewis Hamilton e Charles…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-alta-tensione-in-casa-ferrari-vasseur-convoca-hamilton-e-leclerc-per-un-confronto-in-brasile/",
+   "pubblicato": "2026-11-06T13:30:15+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 42.0,
+   "testate": 4
+  },
+  {
+   "titolo": "F1 | Cadillac: la sospensione di Bottas ha ceduto perché… sciolta dal calore dei freni",
+   "estratto": "L’aria rarefatta del Messico rappresenta una grossa sfida per i costruttori, non solo per il raffreddamento della Power Unit, ma anche per quello dei freni. Per questo i team chiedono via radio ai…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-cadillac-la-sospensione-di-bottas-ha-ceduto-perche-sciolta-dal-calore-dei-freni/10871935/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-06T13:24:57+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.9,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP, GP Qatar 2026: risultati e classifica FP1. Bezzecchi in scia a Marquez, in difficoltà Martin",
+   "estratto": "Va ufficialmente in archivio la prima sessione di prove libere del Gran Premio del Qatar 2026, valevole come ventesimo e terzultimo appuntamento stagionale del Mondiale MotoGP. Il weekend di gara si…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-gp-qatar-2026-risultati-e-classifica-fp1-bezzecchi-in-scia-a-marquez-in-difficolta-martin/",
+   "pubblicato": "2026-11-06T13:10:51+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 19.9,
+   "testate": 3
+  },
+  {
+   "titolo": "MotoGP | Lusail, Libere 1: Marquez e Bezzecchi staccano la concorrenza, Martin 5° a 0\"7",
+   "estratto": "Marc Marquez si gioca il suo primo match point iridato nel Gran Premio del Qatar e il pilota della Ducati sembra intenzionato a non lasciare nulla al caso, anche se Marco Bezzecchi pare altrettanto…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-lusail-libere-1-marquez-e-bezzecchi-staccano-la-concorrenza-martin-5-a-07/10872039/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-06T12:54:18+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 36.8,
+   "testate": 3
+  },
   {
    "titolo": "MotoGP, Marquez e Bezzecchi dettano legge in FP1 a Lusail. Martin stringe i denti",
    "estratto": "Marc Marquez e Marco Bezzecchi sono i protagonisti annunciati del weekend al Lusail International Circuit e lo dimostrano subito, facendo il vuoto rispetto alla concorrenza nel corso della prima…",
@@ -10,7 +58,43 @@
    "pubblicato": "2026-11-06T12:46:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 32.0,
+   "punteggio": 31.8,
+   "testate": 3
+  },
+  {
+   "titolo": "Bottas: “I rapporti tra Hamilton e Leclerc sono buoni, Lewis ha ritrovato lo smalto dei giorni migliori ed è normale avere brevi attriti”",
+   "estratto": "L'ex compagno di squadra di Hamilton è convinto che la partenza in Messico faccia parte di un normale episodio \"da gara\"",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/parere-bottas-rapporti-hamilton-leclerc-buoni-ferrari-attriti-grinta-smalto",
+   "pubblicato": "2026-11-06T12:45:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 28.8,
+   "testate": 3
+  },
+  {
+   "titolo": "GP Qatar 2026, Classifica FP1: Marc Marquez davanti a Bezzecchi, 5° Martin",
+   "estratto": "Il leader del Mondiale è stato il più veloce nella prima sessione di prove libere",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-risultati/gp-qatar-2026-classifica-fp1-marquez-top-bezzecchi-martin-ducati-aprilia-lusail",
+   "pubblicato": "2026-11-06T12:45:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 19.8,
+   "testate": 3
+  },
+  {
+   "titolo": "Antonelli a Interlagos con il casco speciale dedicato ad Ayrton Senna",
+   "estratto": "Il neocampione del mondo renderà omaggio al suo idolo con un casco che richiama quello del compianto brasiliano",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/antonelli-interlagos-con-casco-speciale-dedicato-a-ayrton-senna",
+   "pubblicato": "2026-11-06T12:43:23+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 31.8,
    "testate": 3
   },
   {
@@ -22,7 +106,7 @@
    "pubblicato": "2026-11-06T12:35:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.9,
+   "punteggio": 1.7,
    "testate": 2
   },
   {
@@ -34,7 +118,7 @@
    "pubblicato": "2026-11-06T12:32:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.9,
+   "punteggio": 31.7,
    "testate": 3
   },
   {
@@ -46,11 +130,11 @@
    "pubblicato": "2026-11-06T12:30:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.1,
+   "punteggio": -8.3,
    "testate": 1
   },
   {
-   "titolo": "GP Qatar 2026, FP1: Marc Marquez davanti a Bezzecchi, 5° Martin",
+   "titolo": "GP Qatar 2026: la cronaca delle FP1, alle 17:00 il via alle Prove",
    "estratto": "La cronaca minuto per minuto delle sessioni della MotoGP del venerdì del GP del Qatar",
    "fonte": "FormulaPassion",
    "serie": "MotoGP",
@@ -58,7 +142,7 @@
    "pubblicato": "2026-11-06T12:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.8,
+   "punteggio": 13.6,
    "testate": 2
   },
   {
@@ -70,7 +154,7 @@
    "pubblicato": "2026-11-06T11:53:41+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.8,
+   "punteggio": 26.6,
    "testate": 2
   },
   {
@@ -82,7 +166,7 @@
    "pubblicato": "2026-11-06T11:49:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.7,
+   "punteggio": 16.5,
    "testate": 1
   },
   {
@@ -94,7 +178,7 @@
    "pubblicato": "2026-11-06T11:46:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.7,
+   "punteggio": 3.5,
    "testate": 1
   },
   {
@@ -106,7 +190,7 @@
    "pubblicato": "2026-11-06T11:40:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.7,
+   "punteggio": 13.5,
    "testate": 2
   },
   {
@@ -118,7 +202,7 @@
    "pubblicato": "2026-11-06T11:32:33+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.7,
+   "punteggio": 16.5,
    "testate": 1
   },
   {
@@ -130,7 +214,7 @@
    "pubblicato": "2026-11-06T11:22:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.6,
+   "punteggio": 13.4,
    "testate": 2
   },
   {
@@ -142,7 +226,7 @@
    "pubblicato": "2026-11-06T11:15:35+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.6,
+   "punteggio": 3.4,
    "testate": 1
   },
   {
@@ -154,8 +238,8 @@
    "pubblicato": "2026-11-06T10:56:55+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.5,
-   "testate": 1
+   "punteggio": 26.3,
+   "testate": 2
   },
   {
    "titolo": "Moto3, Maximo Quiles vola nelle prime libere in Qatar. Pini a ridosso della top10",
@@ -166,7 +250,7 @@
    "pubblicato": "2026-11-06T10:54:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.5,
+   "punteggio": 3.3,
    "testate": 1
   },
   {
@@ -178,7 +262,7 @@
    "pubblicato": "2026-11-06T10:47:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.5,
+   "punteggio": 13.3,
    "testate": 2
   },
   {
@@ -190,7 +274,7 @@
    "pubblicato": "2026-11-06T10:24:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.4,
+   "punteggio": 16.2,
    "testate": 1
   },
   {
@@ -202,7 +286,7 @@
    "pubblicato": "2026-11-06T10:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.3,
+   "punteggio": 21.1,
    "testate": 2
   },
   {
@@ -214,7 +298,7 @@
    "pubblicato": "2026-11-06T09:43:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.2,
+   "punteggio": 13.0,
    "testate": 2
   },
   {
@@ -226,7 +310,7 @@
    "pubblicato": "2026-11-06T09:13:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.1,
+   "punteggio": 7.9,
    "testate": 1
   },
   {
@@ -238,7 +322,7 @@
    "pubblicato": "2026-11-06T09:03:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.0,
+   "punteggio": 10.9,
    "testate": 1
   },
   {
@@ -250,7 +334,7 @@
    "pubblicato": "2026-11-06T09:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 46.0,
+   "punteggio": 45.8,
    "testate": 4
   },
   {
@@ -262,8 +346,8 @@
    "pubblicato": "2026-11-06T08:48:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.0,
-   "testate": 3
+   "punteggio": 40.8,
+   "testate": 4
   },
   {
    "titolo": "Di Giannantonio: “Mi mancano 10-12 km/h di velocità di punta e non ho preso chili”",
@@ -274,7 +358,7 @@
    "pubblicato": "2026-11-06T08:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.9,
+   "punteggio": 15.7,
    "testate": 1
   },
   {
@@ -286,7 +370,7 @@
    "pubblicato": "2026-11-06T08:27:41+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 45.9,
+   "punteggio": 45.7,
    "testate": 4
   },
   {
@@ -298,7 +382,7 @@
    "pubblicato": "2026-11-06T08:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.8,
+   "punteggio": 7.6,
    "testate": 1
   },
   {
@@ -310,7 +394,7 @@
    "pubblicato": "2026-11-06T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.5,
+   "punteggio": 7.3,
    "testate": 1
   },
   {
@@ -322,7 +406,7 @@
    "pubblicato": "2026-11-06T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.5,
+   "punteggio": 7.3,
    "testate": 1
   },
   {
@@ -334,19 +418,7 @@
    "pubblicato": "2026-11-06T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.5,
-   "testate": 1
-  },
-  {
-   "titolo": "GP San Paolo 2026: orari Sky/Now e TV8",
-   "estratto": "I dettagli della programmazione televisiva dell'appuntamento in programma ad Interlagos",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-brasile-2026-interlagos-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-antonelli-campione-verstappen",
-   "pubblicato": "2026-11-06T07:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -9.5,
+   "punteggio": 15.3,
    "testate": 1
   },
   {
@@ -358,7 +430,19 @@
    "pubblicato": "2026-11-06T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.5,
+   "punteggio": 15.3,
+   "testate": 1
+  },
+  {
+   "titolo": "GP San Paolo 2026: orari Sky/Now e TV8",
+   "estratto": "I dettagli della programmazione televisiva dell'appuntamento in programma ad Interlagos",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-brasile-2026-interlagos-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-antonelli-campione-verstappen",
+   "pubblicato": "2026-11-06T07:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -9.7,
    "testate": 1
   },
   {
@@ -370,7 +454,7 @@
    "pubblicato": "2026-11-06T07:00:00+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 4.5,
+   "punteggio": 4.3,
    "testate": 1
   },
   {
@@ -382,7 +466,7 @@
    "pubblicato": "2026-11-06T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.5,
+   "punteggio": 0.3,
    "testate": 2
   },
   {
@@ -394,7 +478,7 @@
    "pubblicato": "2026-11-06T06:37:35+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.6,
+   "punteggio": -9.8,
    "testate": 1
   },
   {
@@ -406,7 +490,7 @@
    "pubblicato": "2026-11-06T06:36:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.4,
+   "punteggio": 20.2,
    "testate": 2
   },
   {
@@ -418,7 +502,7 @@
    "pubblicato": "2026-11-06T06:34:35+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.4,
+   "punteggio": 0.2,
    "testate": 2
   },
   {
@@ -430,7 +514,7 @@
    "pubblicato": "2026-11-06T06:34:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.6,
+   "punteggio": -9.8,
    "testate": 1
   },
   {
@@ -442,7 +526,7 @@
    "pubblicato": "2026-11-06T06:34:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.6,
+   "punteggio": -9.8,
    "testate": 1
   },
   {
@@ -454,7 +538,7 @@
    "pubblicato": "2026-11-06T05:58:21+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.3,
+   "punteggio": 25.1,
    "testate": 2
   },
   {
@@ -466,7 +550,7 @@
    "pubblicato": "2026-11-06T05:56:55+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.3,
+   "punteggio": 15.1,
    "testate": 1
   },
   {
@@ -478,7 +562,7 @@
    "pubblicato": "2026-11-06T05:46:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.2,
+   "punteggio": 22.0,
    "testate": 3
   },
   {
@@ -490,7 +574,7 @@
    "pubblicato": "2026-11-06T05:00:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.0,
+   "punteggio": 9.8,
    "testate": 1
   },
   {
@@ -502,7 +586,7 @@
    "pubblicato": "2026-11-05T22:28:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.4,
+   "punteggio": 1.2,
    "testate": 1
   },
   {
@@ -514,7 +598,7 @@
    "pubblicato": "2026-11-05T21:07:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.1,
+   "punteggio": 8.9,
    "testate": 1
   },
   {
@@ -526,7 +610,7 @@
    "pubblicato": "2026-11-05T20:25:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.9,
+   "punteggio": 18.7,
    "testate": 2
   },
   {
@@ -538,7 +622,7 @@
    "pubblicato": "2026-11-05T20:06:50+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.8,
+   "punteggio": 0.6,
    "testate": 1
   },
   {
@@ -550,7 +634,7 @@
    "pubblicato": "2026-11-05T19:31:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 28.7,
+   "punteggio": 28.5,
    "testate": 3
   },
   {
@@ -562,7 +646,7 @@
    "pubblicato": "2026-11-05T19:08:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.6,
+   "punteggio": 10.4,
    "testate": 2
   },
   {
@@ -574,7 +658,7 @@
    "pubblicato": "2026-11-05T18:51:55+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 29.5,
+   "punteggio": 29.3,
    "testate": 3
   },
   {
@@ -586,7 +670,7 @@
    "pubblicato": "2026-11-05T18:10:13+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 11.3,
+   "punteggio": 11.1,
    "testate": 2
   },
   {
@@ -598,7 +682,7 @@
    "pubblicato": "2026-11-05T18:04:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 20.3,
+   "punteggio": 20.1,
    "testate": 3
   },
   {
@@ -610,7 +694,7 @@
    "pubblicato": "2026-11-05T17:57:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.3,
+   "punteggio": 8.1,
    "testate": 1
   },
   {
@@ -622,7 +706,7 @@
    "pubblicato": "2026-11-05T17:51:38+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 1.2,
+   "punteggio": 1.1,
    "testate": 1
   },
   {
@@ -634,7 +718,7 @@
    "pubblicato": "2026-11-05T17:44:37+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 9.2,
+   "punteggio": 9.0,
    "testate": 1
   },
   {
@@ -646,7 +730,7 @@
    "pubblicato": "2026-11-05T17:38:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.2,
+   "punteggio": 8.0,
    "testate": 1
   },
   {
@@ -658,7 +742,7 @@
    "pubblicato": "2026-11-05T17:35:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.2,
+   "punteggio": -0.0,
    "testate": 1
   },
   {
@@ -670,7 +754,7 @@
    "pubblicato": "2026-11-05T17:31:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.2,
+   "punteggio": 10.0,
    "testate": 2
   },
   {
@@ -682,7 +766,7 @@
    "pubblicato": "2026-11-05T17:22:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.1,
+   "punteggio": 7.9,
    "testate": 1
   },
   {
@@ -694,7 +778,7 @@
    "pubblicato": "2026-11-05T17:21:53+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 9.1,
+   "punteggio": 8.9,
    "testate": 1
   },
   {
@@ -706,7 +790,7 @@
    "pubblicato": "2026-11-05T17:05:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.1,
+   "punteggio": 2.9,
    "testate": 1
   },
   {
@@ -718,7 +802,7 @@
    "pubblicato": "2026-11-05T16:50:15+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.0,
+   "punteggio": 9.8,
    "testate": 2
   },
   {
@@ -730,7 +814,7 @@
    "pubblicato": "2026-11-05T16:34:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.9,
+   "punteggio": 17.7,
    "testate": 2
   },
   {
@@ -742,7 +826,7 @@
    "pubblicato": "2026-11-05T16:18:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.1,
+   "punteggio": -5.3,
    "testate": 1
   },
   {
@@ -754,7 +838,7 @@
    "pubblicato": "2026-11-05T15:52:38+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.2,
+   "punteggio": -5.4,
    "testate": 1
   },
   {
@@ -766,7 +850,7 @@
    "pubblicato": "2026-11-05T15:50:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.3,
+   "punteggio": -5.4,
    "testate": 1
   },
   {
@@ -778,7 +862,7 @@
    "pubblicato": "2026-11-05T15:46:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.3,
+   "punteggio": -0.5,
    "testate": 1
   },
   {
@@ -790,7 +874,7 @@
    "pubblicato": "2026-11-05T15:16:45+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.6,
+   "punteggio": 7.4,
    "testate": 1
   },
   {
@@ -802,7 +886,7 @@
    "pubblicato": "2026-11-05T15:05:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.4,
+   "punteggio": -0.6,
    "testate": 1
   },
   {
@@ -814,7 +898,7 @@
    "pubblicato": "2026-11-05T14:58:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.5,
+   "punteggio": 9.3,
    "testate": 2
   },
   {
@@ -826,7 +910,7 @@
    "pubblicato": "2026-11-05T14:39:42+00:00",
    "tipo": "social",
    "citazione": true,
-   "punteggio": 2.4,
+   "punteggio": 2.3,
    "testate": 1
   },
   {
@@ -838,7 +922,7 @@
    "pubblicato": "2026-11-05T14:23:34+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.4,
+   "punteggio": 2.2,
    "testate": 1
   },
   {
@@ -850,7 +934,7 @@
    "pubblicato": "2026-11-05T14:16:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.4,
+   "punteggio": 7.2,
    "testate": 1
   },
   {
@@ -862,7 +946,7 @@
    "pubblicato": "2026-11-05T14:00:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.7,
+   "punteggio": -5.9,
    "testate": 1
   },
   {
@@ -874,7 +958,7 @@
    "pubblicato": "2026-11-05T14:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.7,
+   "punteggio": -0.9,
    "testate": 1
   },
   {
@@ -886,7 +970,7 @@
    "pubblicato": "2026-11-05T13:57:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.3,
+   "punteggio": 17.1,
    "testate": 2
   },
   {
@@ -898,7 +982,7 @@
    "pubblicato": "2026-11-05T13:44:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.8,
+   "punteggio": -6.0,
    "testate": 1
   },
   {
@@ -910,7 +994,7 @@
    "pubblicato": "2026-11-05T13:00:53+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.0,
+   "punteggio": -6.2,
    "testate": 1
   },
   {
@@ -922,7 +1006,7 @@
    "pubblicato": "2026-11-05T13:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.0,
+   "punteggio": 11.8,
    "testate": 2
   },
   {
@@ -934,8 +1018,8 @@
    "pubblicato": "2026-11-05T12:54:52+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.0,
-   "testate": 1
+   "punteggio": 11.8,
+   "testate": 2
   },
   {
    "titolo": "MotoGP, GP Qatar 2026. Lusail può incoronare Marc Marquez. Ducati e Aprilia si scornano per il titolo costruttori",
@@ -946,7 +1030,7 @@
    "pubblicato": "2026-11-05T12:00:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.8,
+   "punteggio": 21.6,
    "testate": 3
   },
   {
@@ -958,7 +1042,7 @@
    "pubblicato": "2026-11-05T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.8,
+   "punteggio": 16.6,
    "testate": 2
   },
   {
@@ -970,7 +1054,7 @@
    "pubblicato": "2026-11-05T11:40:05+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.7,
+   "punteggio": 16.5,
    "testate": 2
   },
   {
@@ -982,7 +1066,7 @@
    "pubblicato": "2026-11-05T11:21:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.4,
+   "punteggio": -6.6,
    "testate": 1
   },
   {
@@ -994,7 +1078,7 @@
    "pubblicato": "2026-11-05T10:55:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.5,
+   "punteggio": 3.3,
    "testate": 2
   },
   {
@@ -1006,7 +1090,7 @@
    "pubblicato": "2026-11-05T10:40:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.5,
+   "punteggio": 6.3,
    "testate": 1
   },
   {
@@ -1018,7 +1102,7 @@
    "pubblicato": "2026-11-05T10:25:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.6,
+   "punteggio": -1.8,
    "testate": 1
   },
   {
@@ -1030,8 +1114,8 @@
    "pubblicato": "2026-11-05T10:21:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.4,
-   "testate": 2
+   "punteggio": -1.8,
+   "testate": 1
   },
   {
    "titolo": "Rosberg: “Wolff aveva dato istruzioni chiare a me e Hamilton sui duelli in gara, in Ferrari evidentemente non ci sono regole”",
@@ -1042,7 +1126,7 @@
    "pubblicato": "2026-11-05T10:10:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.3,
+   "punteggio": 6.1,
    "testate": 1
   },
   {
@@ -1054,7 +1138,7 @@
    "pubblicato": "2026-11-05T10:08:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.3,
+   "punteggio": 3.1,
    "testate": 2
   },
   {
@@ -1066,7 +1150,7 @@
    "pubblicato": "2026-11-05T10:03:54+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.3,
+   "punteggio": 1.1,
    "testate": 1
   },
   {
@@ -1078,20 +1162,8 @@
    "pubblicato": "2026-11-05T10:00:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.3,
+   "punteggio": 26.1,
    "testate": 3
-  },
-  {
-   "titolo": "Audi a Interlagos con una livrea speciale dedicata a San Paolo",
-   "estratto": "Il team tedesco ha presentato il design della R26 per l'appuntamento in Brasile realizzato in collaborazione con Revolut e Adidas",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/audi-a-interlagos-con-livrea-speciale-dedicata-a-san-paolo",
-   "pubblicato": "2026-11-05T09:54:21+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 3.3,
-   "testate": 2
   },
   {
    "titolo": "F1 | Retroscena Antonelli: ha rischiato il ritiro in Messico per una perdita d'olio",
@@ -1102,7 +1174,7 @@
    "pubblicato": "2026-11-05T09:40:52+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.2,
+   "punteggio": 1.0,
    "testate": 1
   },
   {
@@ -1114,7 +1186,7 @@
    "pubblicato": "2026-11-05T09:34:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.2,
+   "punteggio": 6.0,
    "testate": 1
   },
   {
@@ -1126,7 +1198,7 @@
    "pubblicato": "2026-11-05T09:10:53+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.9,
+   "punteggio": -7.1,
    "testate": 1
   },
   {
@@ -1138,7 +1210,7 @@
    "pubblicato": "2026-11-05T09:00:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.0,
+   "punteggio": 10.8,
    "testate": 2
   },
   {
@@ -1150,7 +1222,7 @@
    "pubblicato": "2026-11-05T09:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.0,
+   "punteggio": 15.8,
    "testate": 2
   },
   {
@@ -1162,7 +1234,7 @@
    "pubblicato": "2026-11-05T08:58:34+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.0,
+   "punteggio": -7.2,
    "testate": 1
   },
   {
@@ -1174,20 +1246,8 @@
    "pubblicato": "2026-11-05T08:36:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.9,
+   "punteggio": 2.7,
    "testate": 2
-  },
-  {
-   "titolo": "San Paolo 2026: possibili temporali in qualifica",
-   "estratto": "Fine settimana non affatto sereno sul circuito di Interlagos, tra nuvolosità e pioggia prevista nella giornata di sabato",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-meteo/san-paolo-2026-possibili-temporali-in-qualifica",
-   "pubblicato": "2026-11-05T08:32:07+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -7.1,
-   "testate": 1
   },
   {
    "titolo": "MotoGP, Gigi Dall’Igna: “Abbiamo ancora molta strada da fare, il lavoro non è finito”",
@@ -1198,7 +1258,7 @@
    "pubblicato": "2026-11-05T08:20:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.9,
+   "punteggio": 7.7,
    "testate": 2
   },
   {
@@ -1210,7 +1270,7 @@
    "pubblicato": "2026-11-05T08:03:22+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.8,
+   "punteggio": 2.6,
    "testate": 2
   },
   {
@@ -1222,7 +1282,7 @@
    "pubblicato": "2026-11-05T07:50:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.7,
+   "punteggio": 5.6,
    "testate": 1
   },
   {
@@ -1234,7 +1294,7 @@
    "pubblicato": "2026-11-05T07:35:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.3,
+   "punteggio": -9.5,
    "testate": 2
   },
   {
@@ -1246,7 +1306,7 @@
    "pubblicato": "2026-11-05T07:30:38+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.3,
+   "punteggio": -11.5,
    "testate": 1
   },
   {
@@ -1258,8 +1318,8 @@
    "pubblicato": "2026-11-05T07:19:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.6,
-   "testate": 1
+   "punteggio": 15.4,
+   "testate": 2
   },
   {
    "titolo": "Ferrari, Beganovic con Hamilton per le prime libere: il motivo dell'assenza di Leclerc",
@@ -1270,8 +1330,8 @@
    "pubblicato": "2026-11-05T05:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.0,
-   "testate": 2
+   "punteggio": 19.8,
+   "testate": 3
   },
   {
    "titolo": "MotoGP, GP Qatar 2026 su TV8: orari in chiaro fine settimana, qualifiche e gara",
@@ -1282,7 +1342,7 @@
    "pubblicato": "2026-11-05T04:10:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.2,
+   "punteggio": -10.4,
    "testate": 2
   },
   {
@@ -1294,7 +1354,7 @@
    "pubblicato": "2026-11-05T04:05:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -20.2,
+   "punteggio": -20.4,
    "testate": 1
   },
   {
@@ -1306,7 +1366,7 @@
    "pubblicato": "2026-11-04T17:31:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.8,
+   "punteggio": -11.0,
    "testate": 1
   },
   {
@@ -1318,7 +1378,7 @@
    "pubblicato": "2026-11-04T17:00:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.0,
+   "punteggio": -1.2,
    "testate": 2
   },
   {
@@ -1330,7 +1390,7 @@
    "pubblicato": "2026-11-04T16:56:25+00:00",
    "tipo": "social",
    "citazione": true,
-   "punteggio": 5.0,
+   "punteggio": 4.8,
    "testate": 1
   },
   {
@@ -1342,7 +1402,7 @@
    "pubblicato": "2026-11-04T16:31:02+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -6.1,
+   "punteggio": -6.3,
    "testate": 1
   },
   {
@@ -1354,7 +1414,7 @@
    "pubblicato": "2026-11-04T16:02:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.8,
+   "punteggio": 1.6,
    "testate": 1
   },
   {
@@ -1366,7 +1426,7 @@
    "pubblicato": "2026-11-04T16:01:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.8,
+   "punteggio": 1.6,
    "testate": 1
   },
   {
@@ -1378,67 +1438,7 @@
    "pubblicato": "2026-11-04T15:28:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.3,
-   "testate": 1
-  },
-  {
-   "titolo": "Bezzecchi: “Voglio rifarmi dopo Sepang, il Qatar mi piace molto”",
-   "estratto": "Il pilota Aprilia è pronto per Lusail",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/bezzecchi-qatar-mi-piace-devo-rifarmi-dopo-sepang-aprilia-mondiale-costruttori-ducati",
-   "pubblicato": "2026-11-04T15:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 1.5,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | McLaren, Stella difende Fornaroli: “In Brasile avrà più spazio per cercare la prestazione”",
-   "estratto": "Leonardo Fornaroli avrà una nuova opportunità di tornare in pista nella sessione FP1 del Gran Premio del Brasile, e questa volta con un programma maggiormente orientato alla ricerca della…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-mclaren-stella-difende-fornaroli-in-brasile-avra-piu-spazio-per-cercare-la-prestazione/10871386/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-04T14:40:18+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -6.5,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | E' nata Bianca: Leclerc a casa per la nascita della figlia. Beganovic guiderà la Ferrari in FP1 in Brasile",
-   "estratto": "Le roventi polemiche sono state messe momentaneamente da parte. Charles Leclerc ha lasciato il Brasile per rientrare di corsa a casa visto che sta per nascere la sua promogenita. Il monegasco ha…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-leclerc-torna-a-casa-per-la-nascita-della-figlia-e-beganovic-guidera-la-ferrari-in-fp1-in-brasile/10871432/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-04T14:28:43+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 6.4,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Jorge Martin conferma che si recherà in Qatar per provare a correre",
-   "estratto": "Jorge Martin è caduto ad alta velocità due settimane fa, nella Sprint del Gran Premio d'Australia, mentre lottava con Marc Marquez per la vittoria. Nell'incidente si è procurato una frattura al polso…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-jorge-martin-conferma-che-si-rechera-in-qatar-per-provare-a-correre-/10871479/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-04T14:03:28+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -1.7,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP, Marco Bezzecchi: “Continuo a credere nel Mondiale, devo provarci fino alla fine”",
-   "estratto": "Diminuiscono gara dopo gara le residue speranze iridate di Marco Bezzecchi, sprofondato ormai a -67 dal leader della classifica generale Marc Marquez quando mancano solamente tre tappe alla fine del…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/motogp-marco-bezzecchi-continuo-a-credere-nel-mondiale-devo-provarci-fino-alla-fine/",
-   "pubblicato": "2026-11-04T14:02:18+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 1.3,
+   "punteggio": -3.5,
    "testate": 1
   }
  ]

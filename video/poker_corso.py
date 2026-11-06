@@ -60,10 +60,11 @@ def scene():
 
     # 2 ---------------------------------------------------------------- roadmap
     s = Sc("Cosa imparerai")
-    passi = ["Parte 1 · Le regole e le parole del poker", "Parte 2 · La teoria: probabilità, outs, equity, pot odds", "Parte 3 · Sette mani, passo per passo", "Parte 4 · Gli errori comuni, il riepilogo e un quiz"]
-    s.b("Il video è diviso in quattro parti.", modo="scheda", passi=passi, n=1, tabelle=False)
+    passi = ["Parte 1 · Le regole e le parole del poker", "Parte 2 · La teoria: probabilità, outs, equity, pot odds", "Parte 3 · Capire la mano dell'avversario", "Parte 4 · Sette mani, passo per passo", "Parte 5 · Errori, riepilogo e quiz"]
+    s.b("Il video è diviso in cinque parti.", modo="scheda", passi=passi, n=1, tabelle=False)
     s.b("Nella prima ripassiamo le regole e impariamo le parole inglesi del poker, una alla volta. Nella seconda arriva la teoria: probabilità, outs, equity e pot odds.", n=2)
-    s.b("Nella terza applichiamo tutto a sette mani vere, con il conto fatto passo per passo. Nella quarta gli errori da evitare, un riepilogo da salvare e un quiz.", n=4)
+    s.b("Nella terza impari a capire la mano dell'avversario: i range, le azioni, le dimensioni delle puntate.", n=3)
+    s.b("Nella quarta applichiamo tutto a sette mani vere, con il conto fatto passo per passo. Nella quinta gli errori da evitare, un riepilogo da salvare e un quiz.", n=5)
     s.b("Il messaggio da portare a casa è uno solo: non esiste una percentuale fissa sopra cui giocare. La soglia la decide la puntata dell'avversario. Lo ripeteremo spesso.", sov="La soglia la decide la puntata dell'avversario")
     S += s.fine()
 
@@ -177,22 +178,71 @@ def scene():
     S += s.fine()
 
     # 13 --------------------------------------------------------------- range
-    s = Sc("Parte 2 · L'avversario e il range")
-    s.b("Finora abbiamo contato carte come se le mani dell'avversario non esistessero. In effetti non le conosci. Quello che puoi stimare è l'insieme di tutte le mani che il villain potrebbe avere in quella situazione. Si chiama range.", modo="tavolo", hero=["7s", "7h"], vil="x", sov="RANGE = tutte le mani che l'avversario può avere")
-    s.b("I professionisti non pensano 'ha un asso': pensano 'ha una di queste venti mani'. Vediamo come cambia l'equity al cambiare della mano avversaria. I valori sono indicativi e arrotondati.")
+    s = Sc("Parte 3 · Capire l'avversario: il range")
+    s.b("Finora abbiamo contato carte come se le mani dell'avversario non esistessero. In effetti non le conosci. Ma puoi stimare l'insieme di tutte le mani che il villain potrebbe avere in quella situazione. Si chiama range, ed è la parte più importante del poker: dal prossimo capitolo impari a ragionarci passo per passo.", modo="tavolo", hero=["7s", "7h"], vil="x", sov="RANGE = tutte le mani che l'avversario può avere")
+    s.b("I professionisti non pensano 'ha un asso': pensano 'ha una di queste venti mani'. Per capire perché conta, guarda come cambia l'equity al cambiare della mano avversaria. I valori sono indicativi e arrotondati.")
     RB = [(["7s", "7h"], ["Ad", "Kc"], 55), (["Ks", "Kh"], ["Qd", "Qc"], 82), (["Ac", "Qh"], ["As", "Kd"], 25)]
     s.b("Una coppia contro due overcard, per esempio 7♠7♥ contro A♦K♣, è quasi un testa o croce: circa 55 a 45 per la coppia.", modo="barre", righe=RB, n=1, sov="")
     s.b("Un overpair, cioè una coppia più alta contro una coppia più bassa: K♠K♥ contro Q♦Q♣, circa 82 a 18.", n=2, sov="OVERPAIR = coppia più alta della coppia avversaria")
     s.b("Una dominated hand è una mano dominata: A♣Q♥ contro A♠K♦. Avete lo stesso asso, ma il kicker di lui è più alto. Circa 25 a 75.", n=3, sov="DOMINATED HAND = stessa carta alta, l'altra peggiore")
-    s.b("Lo stesso identico 7♠7♥, quindi, vale il 55% contro una mano e il 20% contro un'altra. Per questo il range è il passo successivo: la matematica di questo video è la base.")
+    s.b("Lo stesso identico 7♠7♥, quindi, vale il 55% contro una mano e il 20% contro un'altra. La tua equity dipende da cosa ha lui: ecco perché dobbiamo imparare a capirlo.")
+    S += s.fine()
+
+    FAM = (["Famiglia di mani", "Esempio sul board K♥ 7♥ 2♣ 4♠", "Cosa fa"], [
+        ["Mano fatta forte", "A♦K♣ (top pair) · 7♠7♦ (set)", "ha già vinto o quasi"], ["Mano media", "Q♦Q♣ (coppia sotto il re)", "ha valore, non vuole grosse puntate"],
+        ["Progetto (draw)", "A♥Q♥ (colore) · 6♠5♠ (scala)", "può migliorare"], ["Aria", "J♦T♣ (niente)", "non ha nulla"]])
+    s = Sc("Parte 3 · Passo 1: le famiglie di mani", hero=B1, board=BD, pot=100, bet=50)
+    s.b("Come si ragiona su un range? Si parte dividendo le mani in famiglie. Prendiamo il nostro board, K♥ 7♥ 2♣ 4♠, e immaginiamo che il villain stia puntando.")
+    s.b("Prima famiglia: le mani fatte forti. Per esempio A♦K♣, che ha la coppia di re con il kicker più alto. Si chiama top pair: la coppia con la carta più alta del board. Oppure 7♠7♦, che ha fatto set.", modo="tabella", titolo="Le famiglie di mani", testa=FAM[0], righe=FAM[1], n=1, sov="TOP PAIR = coppia con la carta più alta del board")
+    s.b("Seconda famiglia: le mani medie, per esempio Q♦Q♣. Una coppia, ma sotto il re del board: ha valore, però non vuole giocare grossi piatti.", n=2)
+    s.b("Terza: i progetti, i draw. A♥Q♥ ha un progetto di colore, 6♠5♠ un progetto di scala.", n=3)
+    s.b("Quarta: l'aria, cioè mani che non hanno niente, per esempio J♦T♣. Un avversario può puntare anche con queste: si chiama bluff, puntare senza avere la mano per far foldare l'altro.", n=4, sov="BLUFF = puntare senza mano, per far foldare")
+    s.b("Quando invece punta con una mano forte per farsi pagare da mani peggiori, si parla di value bet, una puntata di valore.", sov="VALUE BET = puntata per farsi pagare da mani peggiori")
+    S += s.fine()
+
+    s = Sc("Parte 3 · Passo 2: le azioni raccontano una storia", hero=B1, board=BD, pot=100, bet=50)
+    s.b("Ogni azione dell'avversario toglie alcune mani dal suo range. È come un'indagine: ogni indizio restringe i sospettati.")
+    s.b("Preflop il villain ha rilanciato. Chi rilancia di solito ha mani buone: quelle più deboli, come 7♣2♦, quasi mai.", lav=("Preflop: rilancia → mani buone", "w"))
+    s.b("Al flop ha puntato: possono essere mani fatte, progetti, qualche bluff.", lav=("Flop: punta → fatte, progetti, bluff", "w"))
+    s.b("Al turn punta ancora. Adesso restano soprattutto le mani che vogliono davvero continuare: chi aveva un bluff debole spesso si ferma qui.", lav=("Turn: punta ancora → più forte, o progetto che insiste", "y"))
+    s.b("Se invece passa, cioè fa check, di solito non ha una mano molto forte. Ma attenzione: a volte è una trappola, finge debolezza per farti puntare.", lav=("Check → di solito debole, a volte trappola", "b"))
+    s.b("Nessuna lettura è certa: sono indizi, non prove. Servono a spostare le probabilità, non a conoscere le carte.")
+    S += s.fine()
+
+    s = Sc("Parte 3 · Passo 3: la dimensione della bet", hero=B1, board=BD, pot=100, bet=33)
+    s.b("Anche la grandezza della puntata è un indizio. Qui il villain punta 33, circa un terzo del pot.")
+    s.b("Una bet piccola, di solito, viene da mani medie che vogliono solo vedere cosa fai, oppure da mani forti che vogliono farsi pagare da mani deboli.", lav=("Bet piccola → media, oppure value bet leggera", "w"))
+    s.b("Ora il villain punta 100, cioè tutto il pot. Una bet grande è quasi sempre una di due cose: una mano molto forte che vuole incassare, oppure un bluff che vuole farti foldare.", bet=100, lav=("Bet grande → molto forte oppure bluff", "y"), sov="BET GRANDE = molto forte oppure bluff")
+    s.b("E ricorda il legame con le pot odds: più la bet è grande, più equity ti serve. Con la bet da 100 ti serve il 33,3%.", lav=("Pot pieno → equity richiesta 33,3%", "b"))
+    s.b("Quindi davanti a una bet grande chiediti: questo avversario ha davvero una mano così forte più spesso di quanto bluffa?")
+    S += s.fine()
+
+    VS = (["Mano del villain", "Cosa ha", "La tua equity (9♥8♥)"], [["A♦K♣", "top pair, coppia di re", "20,5%"], ["7♠7♦", "set di sette", "15,9%"], ["A♥Q♥", "colore con l'asso, ancora da fare", "13,6%"], ["6♠5♠", "progetto di scala", "77,3%"]])
+    s = Sc("Parte 3 · Passo 4: la tua equity contro le sue mani", hero=B1, board=BD, pot=100, bet=50, ev=["Kh", "7h", "9h", "8h"])
+    s.b("Rivediamo la nostra mano, 9♥8♥ sul board K♥ 7♥ 2♣ 4♠, al turn. Finora abbiamo usato 9 diviso 46, cioè abbiamo ipotizzato mani a caso. Ora contiamo contro mani precise: restano 44 carte, perché ne vediamo 6 e conosciamo le 2 del villain.", lav=("52 − 6 − 2 = 44", "w"))
+    s.b("Contro A♦K♣, la coppia di re, hai il 20,5%. Ti servono i cuori: 9 carte su 44. È quasi come il nostro 19,6%.", modo="tabella", titolo="La tua equity contro mani precise", testa=VS[0], righe=VS[1], n=1, sov="")
+    s.b("Contro il set di sette, 7♠7♦, scendi al 15,9%. Il 2♥ e il 4♥ ti darebbero colore, ma appaiano il board e gli darebbero il full: sono dirty outs. Restano 7 outs puliti, 7 su 44.", n=2, sov="DIRTY OUTS: 2♥ e 4♥ gli danno il full")
+    s.b("Contro A♥Q♥, il colore con l'asso, scendi al 13,6%. Se esce un altro cuori vince lui, con il colore più alto. Ti salvi solo accoppiando un 9 o un 8: 6 carte su 44.", n=3)
+    s.b("Contro 6♠5♠, un progetto di scala, sei tu il favorito: 77,3%. A lui servono 10 carte su 44, tra scale e coppie.", n=4)
+    s.b("Guarda quanto cambia: da circa il 14% a circa il 77%, con la stessa identica mano. La tua equity dipende da cosa ha lui.", sov="")
+    S += s.fine()
+
+    s = Sc("Parte 3 · Passo 5: pesare il range", hero=B1, board=BD, pot=100, bet=50)
+    s.b("Ora la domanda finale: quanto pesa ciascuna di queste mani? Facciamo un esempio semplificato: dai al villain dieci mani possibili, tutte ugualmente probabili. La tua equity totale è la media.")
+    s.b("Primo avversario, prudente: punta solo con mani forti. Nel suo range ci sono 6 mani da top pair, 3 set e 1 colore con l'asso.", lav=("Prudente: 6 top pair · 3 set · 1 colore", "w"))
+    s.b("Fai la media: 6 per 20,5, più 3 per 15,9, più 1 per 13,6, diviso 10. Fa circa 18,4%. Le pot odds chiedono il 25%: fold.", lav=[("(6×20,5 + 3×15,9 + 1×13,6) ÷ 10", "y"), ("= 18,4% < 25% → FOLD", "r")])
+    s.b("Secondo avversario, aggressivo: punta anche con i progetti. Nel suo range ci sono 4 top pair, 2 set, 2 colori con l'asso e 2 scale aperte.", reset=True, lav=("Aggressivo: 4 top pair · 2 set · 2 colori · 2 scale", "w"))
+    s.b("Media: 4 per 20,5, più 2 per 15,9, più 2 per 13,6, più 2 per 77,3, diviso 10. Fa circa 29,6%. Più del 25%: call.", lav=[("(4×20,5 + 2×15,9 + 2×13,6 + 2×77,3) ÷ 10", "y"), ("= 29,6% > 25% → CALL", "g")])
+    s.b("Stessa mano, stessa bet, decisione opposta: è cambiato solo ciò che pensi che abbia. Questo è un esempio didattico, nel gioco vero non hai numeri così precisi. Ma il ragionamento è lo stesso: più progetti e bluff ci sono nel suo range, più il call diventa giusto.", sov="Più progetti e bluff nel suo range → più il call è giusto")
+    s.b("Come si impara a stimare il range? Prima di decidere, fatti tre domande: che storia racconta la mano? Che dimensione ha la bet? Che tipo di giocatore ho davanti, prudente o aggressivo?")
     S += s.fine()
 
     # 14 --------------------------------------------------------------- metodo
-    s = Sc("Il metodo in quattro passi")
-    pas = ["Conta gli outs", "Equity: outs × 2 (una carta) · × 4 (solo all-in)", "Equity richiesta = call ÷ (pot + bet + call)", "Equity > richiesta → CALL · altrimenti → FOLD"]
-    s.b("Mettiamo tutto in fila. Da qui in poi ogni mano userà sempre gli stessi quattro passi.", modo="scheda", passi=pas, n=1, tabelle=False)
-    s.b("Primo: conta gli outs. Secondo: trasformali in equity, per 2 se vedi una carta, per 4 solo se sei all-in.", n=2)
-    s.b("Terzo: calcola l'equity richiesta con le pot odds. Quarto: confronta. Se la tua equity è più alta, call; altrimenti, fold.", n=4)
+    s = Sc("Il metodo completo")
+    pas = ["Leggi l'avversario: che mani può avere?", "Conta gli outs", "Equity: outs × 2 (una carta) · × 4 (solo all-in)", "Equity richiesta = call ÷ (pot + bet + call)", "Equity > richiesta → CALL · altrimenti → FOLD"]
+    s.b("Mettiamo tutto in fila. Il metodo completo ha cinque passi.", modo="scheda", passi=pas, n=1, tabelle=False)
+    s.b("Passo zero: leggi l'avversario e immagina il suo range. Poi i quattro passi di calcolo: conta gli outs, trasformali in equity, calcola l'equity richiesta con le pot odds, confronta.", n=3)
+    s.b("Nelle prossime sette mani useremo il conto standard, quello con gli outs, e ogni volta ti dirò quando la lettura dell'avversario potrebbe cambiare la decisione.", n=5)
     S += s.fine()
 
     # ---------------------------------------------------------------- mani

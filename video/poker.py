@@ -22,7 +22,7 @@ TERMINI = [("preflop", "prìflop"), ("river", "rìver"), ("turn", "tern"), ("boa
            ("fold", "fòld"), ("all-in", "òl in"), ("hero", "ìro"), ("villain", "vìllen"), ("draw", "drò"), ("flush", "flàsh"), ("straight", "strèit"), ("open-ended", "òpen èndid"),
            ("gutshot", "gàtscot"), ("outs", "àuts"), ("dirty", "dèrti"), ("equity", "èquiti"), ("odds", "òds"), ("implied", "implàid"), ("overcard", "òvercàrd"),
            ("overpair", "òverpèr"), ("mining", "màining"), ("kicker", "chìcker"), ("dominated", "dòmineitid"), ("hand", "hend"), ("range", "rèinj"), ("showdown", "sciòudaun"),
-           ("screenshot", "scrinsciòt"), ("out", "àut"), ("set", "sèt")]
+           ("screenshot", "scrinsciòt"), ("bluff", "blàf"), ("value", "vàliu"), ("pair", "pèr"), ("out", "àut"), ("set", "sèt")]
 _RE_CARTA = re.compile(r"(10|[2-9TJQKA])([♠♥♦♣])")
 _RE_TERM = re.compile(r"(?<![\w-])(" + "|".join(re.escape(a) for a, _ in sorted(TERMINI, key=lambda x: -len(x[0]))) + r")(?![\w-])", re.I)
 _MAP_T = dict(TERMINI)
@@ -105,6 +105,7 @@ CSS = f"""{NS.CSS_FONT}
 .tab table{{border-collapse:collapse;width:100%;font:500 30px Inter}} .tab th{{text-align:left;font:700 26px Oswald;letter-spacing:.1em;color:#9fd8b5;text-transform:uppercase;padding:8px 16px;border-bottom:3px solid #2a4a3a}}
 .tab td{{padding:9px 16px;border-bottom:2px solid #1f3a2d}} .tab td.n{{font:700 40px Oswald;color:#ffd24a}} .tab tr.nuova td{{background:rgba(245,179,1,.14)}}
 .glos{{position:absolute;left:100px;right:100px;top:110px;display:grid;grid-template-columns:1fr 1fr;gap:12px 28px}}
+.glos.cp{{gap:6px 24px;top:100px}} .glos.cp div{{padding:3px 12px;border-left-width:6px}} .glos.cp b{{font-size:21px;line-height:1.05}} .glos.cp span{{font-size:16px;line-height:1.1}}
 .glos div{{background:#10281d;border-left:8px solid #2a8a5a;border-radius:10px;padding:10px 18px}} .glos div.nuova{{border-left-color:#f5b301;background:#1a3a28}}
 .glos b{{display:block;font:700 34px Oswald;color:#ffd24a;letter-spacing:.04em;text-transform:uppercase}} .glos span{{font:500 25px/1.2 Inter;color:#dfe8e2}}
 .bil{{position:absolute;left:0;right:0;top:140px;text-align:center}}
@@ -186,7 +187,7 @@ def pagina(st, titolo, prog):
             corpo += f'<tr class="{"nuova" if i == st["n"] - 1 else ""}">' + "".join(f'<td class="{"n" if j == len(r) - 1 else ""}">{rich(c)}</td>' for j, c in enumerate(r)) + "</tr>"
         corpo += "</table></div>"
     elif modo == "glossario":
-        corpo += '<div class=glos>' + "".join(f'<div class="{"nuova" if i == st["n"] - 1 and not st.get("tutti") else ""}"><b>{html.escape(a)}</b><span>{rich(b)}</span></div>' for i, (a, b) in enumerate(st["voci"][:st["n"]])) + "</div>"
+        corpo += f'<div class="glos{" cp" if st.get("tutti") else ""}">' + "".join(f'<div class="{"nuova" if i == st["n"] - 1 and not st.get("tutti") else ""}"><b>{html.escape(a)}</b><span>{rich(b)}</span></div>' for i, (a, b) in enumerate(st["voci"][:st["n"]])) + "</div>"
     elif modo == "bilancia":
         ang = {"sx": -11, "dx": 11}.get(st.get("incl"), 0)
         corpo += (f'<div class=bil><svg width="1000" height="420" viewBox="0 0 1000 420"><g transform="rotate({ang} 500 120)"><rect x="100" y="112" width="800" height="16" rx="8" fill="#c9a66b"/>'
@@ -240,7 +241,7 @@ GLOS_COMPLETO = [("Preflop / Flop / Turn / River", "le fasi: prima delle carte c
                  ("Outs", "carte nel mazzo che migliorano la tua mano"), ("Dirty outs", "outs che possono dare all'avversario una mano migliore"), ("Equity", "% di volte che vinci la mano se si arriva in fondo"),
                  ("Pot odds", "% minima di vittoria che ti serve per chiamare"), ("Implied odds", "fiches extra che vincerai dopo, se centri"), ("Overcard", "carta più alta di quelle sul board"),
                  ("Overpair", "coppia in mano più alta di tutte le carte del board"), ("Set / Set mining", "tris con coppia in mano / chiamare per fare set"), ("Kicker", "carta laterale che decide a parità di coppia"),
-                 ("Dominated hand", "mano dominata: stessa carta alta, l'altra peggiore"), ("Range", "tutte le mani che l'avversario può avere"), ("Showdown", "quando si scoprono le carte a fine mano"),
+                 ("Dominated hand", "mano dominata: stessa carta alta, l'altra peggiore"), ("Top pair", "coppia con la carta più alta del board"), ("Bluff / Value bet", "puntare senza mano per far foldare / puntare forte per farsi pagare"), ("Blind / Stack", "puntata obbligatoria iniziale / le fiches davanti a te"), ("Range", "tutte le mani che l'avversario può avere"), ("Showdown", "quando si scoprono le carte a fine mano"),
                  ("Varianza", "la fortuna nel breve periodo")]
 
 # ---------------------------------------------------------------- scene: stati per frase

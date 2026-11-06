@@ -13,7 +13,250 @@
    "tipo": "Practice 1",
    "inizio": "2026-11-06T15:30:00+00:00",
    "fine": "2026-11-06T16:30:00+00:00",
-   "risultati": null
+   "risultati": [
+    {
+     "pos": 1,
+     "numero": 1,
+     "acronimo": "NOR",
+     "nome": "Lando Norris",
+     "team": "McLaren",
+     "giri": 33,
+     "stato": null,
+     "tempo": "1:11.717",
+     "distacco": null
+    },
+    {
+     "pos": 2,
+     "numero": 12,
+     "acronimo": "ANT",
+     "nome": "Kimi Antonelli",
+     "team": "Mercedes",
+     "giri": 32,
+     "stato": null,
+     "tempo": "1:11.799",
+     "distacco": "+0.082"
+    },
+    {
+     "pos": 3,
+     "numero": 3,
+     "acronimo": "VER",
+     "nome": "Max Verstappen",
+     "team": "Red Bull Racing",
+     "giri": 29,
+     "stato": null,
+     "tempo": "1:11.953",
+     "distacco": "+0.236"
+    },
+    {
+     "pos": 4,
+     "numero": 44,
+     "acronimo": "HAM",
+     "nome": "Lewis Hamilton",
+     "team": "Ferrari",
+     "giri": 31,
+     "stato": null,
+     "tempo": "1:12.041",
+     "distacco": "+0.324"
+    },
+    {
+     "pos": 5,
+     "numero": 63,
+     "acronimo": "RUS",
+     "nome": "George Russell",
+     "team": "Mercedes",
+     "giri": 30,
+     "stato": null,
+     "tempo": "1:12.103",
+     "distacco": "+0.386"
+    },
+    {
+     "pos": 6,
+     "numero": 6,
+     "acronimo": "HAD",
+     "nome": "Isack Hadjar",
+     "team": "Red Bull Racing",
+     "giri": 25,
+     "stato": null,
+     "tempo": "1:12.156",
+     "distacco": "+0.439"
+    },
+    {
+     "pos": 7,
+     "numero": 62,
+     "acronimo": "MIN",
+     "nome": "Gabriele Mini",
+     "team": "Alpine",
+     "giri": 28,
+     "stato": null,
+     "tempo": "1:12.569",
+     "distacco": "+0.852"
+    },
+    {
+     "pos": 8,
+     "numero": 5,
+     "acronimo": "BOR",
+     "nome": "Gabriel Bortoleto",
+     "team": "Audi",
+     "giri": 30,
+     "stato": null,
+     "tempo": "1:12.614",
+     "distacco": "+0.897"
+    },
+    {
+     "pos": 9,
+     "numero": 43,
+     "acronimo": "COL",
+     "nome": "Franco Colapinto",
+     "team": "Alpine",
+     "giri": 34,
+     "stato": null,
+     "tempo": "1:12.654",
+     "distacco": "+0.937"
+    },
+    {
+     "pos": 10,
+     "numero": 30,
+     "acronimo": "LAW",
+     "nome": "Liam Lawson",
+     "team": "Racing Bulls",
+     "giri": 32,
+     "stato": null,
+     "tempo": "1:12.715",
+     "distacco": "+0.998"
+    },
+    {
+     "pos": 11,
+     "numero": 67,
+     "acronimo": "FOR",
+     "nome": "Leonardo Fornaroli",
+     "team": "McLaren",
+     "giri": 28,
+     "stato": null,
+     "tempo": "1:12.833",
+     "distacco": "+1.116"
+    },
+    {
+     "pos": 12,
+     "numero": 87,
+     "acronimo": "BEA",
+     "nome": "Oliver Bearman",
+     "team": "Haas F1 Team",
+     "giri": 27,
+     "stato": null,
+     "tempo": "1:12.837",
+     "distacco": "+1.120"
+    },
+    {
+     "pos": 13,
+     "numero": 14,
+     "acronimo": "ALO",
+     "nome": "Fernando Alonso",
+     "team": "Aston Martin",
+     "giri": 26,
+     "stato": null,
+     "tempo": "1:13.017",
+     "distacco": "+1.300"
+    },
+    {
+     "pos": 14,
+     "numero": 41,
+     "acronimo": "LIN",
+     "nome": "Arvid Lindblad",
+     "team": "Racing Bulls",
+     "giri": 32,
+     "stato": null,
+     "tempo": "1:13.038",
+     "distacco": "+1.321"
+    },
+    {
+     "pos": 15,
+     "numero": 77,
+     "acronimo": "BOT",
+     "nome": "Valtteri Bottas",
+     "team": "Cadillac",
+     "giri": 16,
+     "stato": null,
+     "tempo": "1:13.371",
+     "distacco": "+1.654"
+    },
+    {
+     "pos": 16,
+     "numero": 23,
+     "acronimo": "ALB",
+     "nome": "Alexander Albon",
+     "team": "Williams",
+     "giri": 18,
+     "stato": null,
+     "tempo": "1:13.511",
+     "distacco": "+1.794"
+    },
+    {
+     "pos": 17,
+     "numero": 46,
+     "acronimo": "BRO",
+     "nome": "Luke Browning",
+     "team": "Williams",
+     "giri": 12,
+     "stato": null,
+     "tempo": "1:13.591",
+     "distacco": "+1.874"
+    },
+    {
+     "pos": 18,
+     "numero": 51,
+     "acronimo": "CAM",
+     "nome": "Rafael Camara",
+     "team": "Haas F1 Team",
+     "giri": 30,
+     "stato": null,
+     "tempo": "1:13.696",
+     "distacco": "+1.979"
+    },
+    {
+     "pos": 19,
+     "numero": 18,
+     "acronimo": "STR",
+     "nome": "Lance Stroll",
+     "team": "Aston Martin",
+     "giri": 28,
+     "stato": null,
+     "tempo": "1:13.760",
+     "distacco": "+2.043"
+    },
+    {
+     "pos": 20,
+     "numero": 25,
+     "acronimo": "HER",
+     "nome": "Colton Herta",
+     "team": "Cadillac",
+     "giri": 31,
+     "stato": null,
+     "tempo": "1:14.275",
+     "distacco": "+2.558"
+    },
+    {
+     "pos": 21,
+     "numero": 38,
+     "acronimo": "BEG",
+     "nome": "Dino Beganovic",
+     "team": "Ferrari",
+     "giri": 11,
+     "stato": null,
+     "tempo": "1:14.357",
+     "distacco": "+2.640"
+    },
+    {
+     "pos": 22,
+     "numero": 98,
+     "acronimo": "SLA",
+     "nome": "Freddie Slater",
+     "team": "Audi",
+     "giri": 7,
+     "stato": null,
+     "tempo": "1:14.966",
+     "distacco": "+3.249"
+    }
+   ]
   },
   {
    "key": 11406,
@@ -21,7 +264,239 @@
    "tipo": "Practice 2",
    "inizio": "2026-11-06T19:00:00+00:00",
    "fine": "2026-11-06T20:00:00+00:00",
-   "risultati": null
+   "risultati": [
+    {
+     "pos": 1,
+     "numero": 12,
+     "acronimo": "ANT",
+     "nome": "Kimi Antonelli",
+     "team": "Mercedes",
+     "giri": 37,
+     "stato": null,
+     "tempo": "1:10.763",
+     "distacco": null
+    },
+    {
+     "pos": 2,
+     "numero": 1,
+     "acronimo": "NOR",
+     "nome": "Lando Norris",
+     "team": "McLaren",
+     "giri": 31,
+     "stato": null,
+     "tempo": "1:11.016",
+     "distacco": "+0.253"
+    },
+    {
+     "pos": 3,
+     "numero": 3,
+     "acronimo": "VER",
+     "nome": "Max Verstappen",
+     "team": "Red Bull Racing",
+     "giri": 23,
+     "stato": null,
+     "tempo": "1:11.022",
+     "distacco": "+0.259"
+    },
+    {
+     "pos": 4,
+     "numero": 63,
+     "acronimo": "RUS",
+     "nome": "George Russell",
+     "team": "Mercedes",
+     "giri": 35,
+     "stato": null,
+     "tempo": "1:11.036",
+     "distacco": "+0.273"
+    },
+    {
+     "pos": 5,
+     "numero": 81,
+     "acronimo": "PIA",
+     "nome": "Oscar Piastri",
+     "team": "McLaren",
+     "giri": 32,
+     "stato": null,
+     "tempo": "1:11.084",
+     "distacco": "+0.321"
+    },
+    {
+     "pos": 6,
+     "numero": 44,
+     "acronimo": "HAM",
+     "nome": "Lewis Hamilton",
+     "team": "Ferrari",
+     "giri": 35,
+     "stato": null,
+     "tempo": "1:11.213",
+     "distacco": "+0.450"
+    },
+    {
+     "pos": 7,
+     "numero": 16,
+     "acronimo": "LEC",
+     "nome": "Charles Leclerc",
+     "team": "Ferrari",
+     "giri": 33,
+     "stato": null,
+     "tempo": "1:11.483",
+     "distacco": "+0.720"
+    },
+    {
+     "pos": 8,
+     "numero": 5,
+     "acronimo": "BOR",
+     "nome": "Gabriel Bortoleto",
+     "team": "Audi",
+     "giri": 33,
+     "stato": null,
+     "tempo": "1:11.780",
+     "distacco": "+1.017"
+    },
+    {
+     "pos": 9,
+     "numero": 6,
+     "acronimo": "HAD",
+     "nome": "Isack Hadjar",
+     "team": "Red Bull Racing",
+     "giri": 33,
+     "stato": null,
+     "tempo": "1:11.839",
+     "distacco": "+1.076"
+    },
+    {
+     "pos": 10,
+     "numero": 87,
+     "acronimo": "BEA",
+     "nome": "Oliver Bearman",
+     "team": "Haas F1 Team",
+     "giri": 36,
+     "stato": null,
+     "tempo": "1:11.991",
+     "distacco": "+1.228"
+    },
+    {
+     "pos": 11,
+     "numero": 43,
+     "acronimo": "COL",
+     "nome": "Franco Colapinto",
+     "team": "Alpine",
+     "giri": 33,
+     "stato": null,
+     "tempo": "1:11.996",
+     "distacco": "+1.233"
+    },
+    {
+     "pos": 12,
+     "numero": 41,
+     "acronimo": "LIN",
+     "nome": "Arvid Lindblad",
+     "team": "Racing Bulls",
+     "giri": 36,
+     "stato": null,
+     "tempo": "1:12.008",
+     "distacco": "+1.245"
+    },
+    {
+     "pos": 13,
+     "numero": 30,
+     "acronimo": "LAW",
+     "nome": "Liam Lawson",
+     "team": "Racing Bulls",
+     "giri": 36,
+     "stato": null,
+     "tempo": "1:12.042",
+     "distacco": "+1.279"
+    },
+    {
+     "pos": 14,
+     "numero": 10,
+     "acronimo": "GAS",
+     "nome": "Pierre Gasly",
+     "team": "Alpine",
+     "giri": 37,
+     "stato": null,
+     "tempo": "1:12.109",
+     "distacco": "+1.346"
+    },
+    {
+     "pos": 15,
+     "numero": 14,
+     "acronimo": "ALO",
+     "nome": "Fernando Alonso",
+     "team": "Aston Martin",
+     "giri": 34,
+     "stato": null,
+     "tempo": "1:12.538",
+     "distacco": "+1.775"
+    },
+    {
+     "pos": 16,
+     "numero": 51,
+     "acronimo": "CAM",
+     "nome": "Rafael Camara",
+     "team": "Haas F1 Team",
+     "giri": 30,
+     "stato": null,
+     "tempo": "1:12.561",
+     "distacco": "+1.798"
+    },
+    {
+     "pos": 17,
+     "numero": 55,
+     "acronimo": "SAI",
+     "nome": "Carlos Sainz",
+     "team": "Williams",
+     "giri": 33,
+     "stato": null,
+     "tempo": "1:12.742",
+     "distacco": "+1.979"
+    },
+    {
+     "pos": 18,
+     "numero": 18,
+     "acronimo": "STR",
+     "nome": "Lance Stroll",
+     "team": "Aston Martin",
+     "giri": 31,
+     "stato": null,
+     "tempo": "1:12.942",
+     "distacco": "+2.179"
+    },
+    {
+     "pos": 19,
+     "numero": 23,
+     "acronimo": "ALB",
+     "nome": "Alexander Albon",
+     "team": "Williams",
+     "giri": 37,
+     "stato": null,
+     "tempo": "1:12.953",
+     "distacco": "+2.190"
+    },
+    {
+     "pos": 20,
+     "numero": 11,
+     "acronimo": "PER",
+     "nome": "Sergio Perez",
+     "team": "Cadillac",
+     "giri": 34,
+     "stato": null,
+     "tempo": "1:13.316",
+     "distacco": "+2.553"
+    },
+    {
+     "pos": 21,
+     "numero": 77,
+     "acronimo": "BOT",
+     "nome": "Valtteri Bottas",
+     "team": "Cadillac",
+     "giri": 33,
+     "stato": null,
+     "tempo": "1:13.383",
+     "distacco": "+2.620"
+    }
+   ]
   },
   {
    "key": 11407,

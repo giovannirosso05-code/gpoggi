@@ -412,16 +412,21 @@ async def genera(uscita, prova=None, bt=None):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--prova", type=int); ap.add_argument("--uscita", type=Path, default=QUI / "poker.mp4"); ap.add_argument("--invia", action="store_true"); ap.add_argument("--corso", action="store_true")
+    ap.add_argument("--prova", type=int); ap.add_argument("--uscita", type=Path, default=QUI / "poker.mp4"); ap.add_argument("--invia", action="store_true"); ap.add_argument("--corso", action="store_true"); ap.add_argument("--pratico", action="store_true")
     a = ap.parse_args()
     bt = None
-    if a.corso:
+    global VELOCITA
+    if a.pratico:
+        import poker_pratico as PR
+        VELOCITA = "-4%"  # più lenta e inseguibile
+        bt = PR.beats_pratico()
+    elif a.corso:
         import poker_corso as PC
         bt = PC.beats_corso()
     cap = asyncio.run(genera(a.uscita, a.prova, bt))
     if a.invia and not a.prova:
         import lezione as L
-        L.invia_telegram(a.uscita, cap, "Quando chiamare: il corso completo (da zero)" if a.corso else "Quando chiamare: la matematica del Texas Hold'em", prefisso="🃏 ")
+        L.invia_telegram(a.uscita, cap, "Chiamare o lasciare: il conto a mente" if a.pratico else "Quando chiamare: il corso completo (da zero)" if a.corso else "Quando chiamare: la matematica del Texas Hold'em", prefisso="🃏 ")
 
 
 if __name__ == "__main__":

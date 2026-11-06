@@ -8,8 +8,8 @@ on:
         description: 'solo le prime N battute (prova; non invia)'
         default: ''
       corso:
-        description: 'si = corso completo da zero (consigliato); vuoto = versione breve dalla sceneggiatura'
-        default: 'si'
+        description: 'pratico = video breve e discorsivo sul conto da fare a mente (consigliato); si = corso lungo da zero; vuoto = versione dalla sceneggiatura'
+        default: 'pratico'
 
 permissions:
   contents: read
@@ -41,7 +41,7 @@ jobs:
           PROVA: ${{ github.event.inputs.prova }}
           CORSO: ${{ github.event.inputs.corso }}
         run: |
-          python video/poker.py $( [ -n "$PROVA" ] && echo --prova "$PROVA" ) $( [ -n "$CORSO" ] && echo --corso ) --invia --uscita /tmp/poker.mp4
+          python video/poker.py $( [ -n "$PROVA" ] && echo --prova "$PROVA" ) $( [ "$CORSO" = pratico ] && echo --pratico || { [ -n "$CORSO" ] && echo --corso; } ) --invia --uscita /tmp/poker.mp4
       - if: always()
         uses: actions/upload-artifact@v4
         with:

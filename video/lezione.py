@@ -3,6 +3,7 @@ Il contenuto sta in video/lezione_testi/argN.py (solo il testo del documento «D
 Pipeline: per ogni «battuta» (un pezzo di parlato + la voce di schema che compare) → voce (Azure / edge-tts / Piper) + immagine 1920x1080 → segmento video; poi si uniscono.
 Uso:  python3 lezione.py [--prova N] [--solo 1,2] [--uscita FILE] [--invia]
   --prova N  : solo le prime N battute (controllo veloce)   --solo : solo alcuni argomenti"""
+import time
 import argparse, asyncio, hashlib, html, importlib, json, os, re, subprocess, sys
 from pathlib import Path
 
@@ -297,7 +298,12 @@ def invia_telegram(video, capitoli, titolo="video lezione (argomenti 1-8)", pref
             requests.post(f"https://api.telegram.org/bot{tok}/sendVideo", data={"chat_id": chat, "caption": f"{prefisso}{titolo}" + (f" · parte {k + 1}/{len(parti)}" if len(parti) > 1 else ""),
                           "supports_streaming": "true", "disable_notification": "true", "width": 1280, "height": 720}, files={"video": fh}, timeout=900, verify=NS.CA if hasattr(NS, "CA") else True).raise_for_status()
     cap = "\n".join(f"{int(s // 3600):02d}:{int(s % 3600 // 60):02d}:{int(s % 60):02d} {nome}" for s, nome in capitoli)
-    requests.post(f"https://api.telegram.org/bot{tok}/sendMessage", data={"chat_id": chat, "text": "📚 Capitoli (tempi del video intero)\n\n" + cap + ("\n\nIl video è diviso in %d parti agli argomenti." % len(parti) if len(parti) > 1 else "")}, timeout=60).raise_for_status()
+    for tentativo in range(4):   # il messaggio coi capitoli è secondario: si riprova e non fa fallire il run
+        try:
+            requests.post(f"https://api.telegram.org/bot{tok}/sendMessage", data={"chat_id": chat, "text": "📚 Capitoli (tempi del video intero)\n\n" + cap + ("\n\nIl video è diviso in %d parti agli argomenti." % len(parti) if len(parti) > 1 else "")}, timeout=60).raise_for_status()
+            break
+        except Exception as e:
+            print(f"Capitoli non inviati (tentativo {tentativo + 1}): {e}", flush=True); time.sleep(3 * (tentativo + 1))
 
 
 def main():

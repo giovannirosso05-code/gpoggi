@@ -4470,6 +4470,128 @@
    "fonte": "https://en.wikipedia.org/wiki/Cal_Crutchlow"
   }
  },
+ "moto:6cbb2071-121c-4407-9966-1a16cacbf970": {
+  "nascita": "1996-01-15",
+  "luogo": "Dover, United Kingdom",
+  "altezza": 178,
+  "peso": 63,
+  "debutto": 2017,
+  "carriera": [
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Dynavolt Intact GP",
+      "numero": 94
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Dynavolt Intact GP",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Petronas Sprinta Racing",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Petronas Sprinta Racing",
+      "numero": 96
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Petronas Yamaha SRT",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Inde GASGAS Aspar Team",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "GASGAS Aspar Team",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "CFMOTO Aspar Team",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 96
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 127,
+   "vittorie": 7,
+   "podi": 22,
+   "pole": 8,
+   "giri_veloci": 4,
+   "titoli": 0,
+   "motogp": {
+    "gare": 2,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Jake Dixon 2017.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Jake_Dixon"
+  }
+ },
  "moto:14ca9be2-6d69-4a70-b224-ea44b791638c": {
   "nascita": "1993-08-13",
   "luogo": "Mühldorf, Germany",
@@ -10881,6 +11003,11 @@
   "descrizione": "pilota motociclistico britannico",
   "pagina": "https://it.wikipedia.org/wiki/Cal_Crutchlow"
  },
+ "nome:Jake Dixon": {
+  "testo": "Jake Curtis Dixon è un pilota motociclistico britannico.",
+  "descrizione": "pilota motociclistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Jake_Dixon"
+ },
  "nome:Jonas Folger": {
   "testo": "Jonas Folger è un pilota motociclistico tedesco.",
   "descrizione": "pilota motociclistico tedesco",
@@ -11110,11 +11237,6 @@
   "testo": "Garrett Gerloff è un pilota motociclistico statunitense vincitore del Trofeo Indipendenti nel mondiale Superbike 2021.",
   "descrizione": "pilota motociclistico statunitense",
   "pagina": "https://it.wikipedia.org/wiki/Garrett_Gerloff"
- },
- "nome:Jake Dixon": {
-  "testo": "Jake Curtis Dixon è un pilota motociclistico britannico.",
-  "descrizione": "pilota motociclistico britannico",
-  "pagina": "https://it.wikipedia.org/wiki/Jake_Dixon"
  },
  "nome:Bradley Smith": {
   "testo": "Bradley William Smith è un pilota motociclistico britannico.",

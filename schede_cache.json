@@ -11523,5 +11523,127 @@
   "testo": "Deniz Öncü è un pilota motociclistico turco.",
   "descrizione": "pilota motociclistico turco (2003-)",
   "pagina": "https://it.wikipedia.org/wiki/Deniz_%C3%96nc%C3%BC"
+ },
+ "moto:6cbb2071-121c-4407-9966-1a16cacbf970": {
+  "nascita": "1996-01-15",
+  "luogo": "Dover, United Kingdom",
+  "altezza": 178,
+  "peso": 63,
+  "debutto": 2017,
+  "carriera": [
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Dynavolt Intact GP",
+      "numero": 94
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Dynavolt Intact GP",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Petronas Sprinta Racing",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Petronas Sprinta Racing",
+      "numero": 96
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Petronas Yamaha SRT",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Inde GASGAS Aspar Team",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "GASGAS Aspar Team",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "CFMOTO Aspar Team",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 96
+     }
+    ]
+   }
+  ]
+ },
+ "wikistat:6cbb2071-121c-4407-9966-1a16cacbf970": {
+  "gare": 127,
+  "vittorie": 7,
+  "podi": 22,
+  "pole": 8,
+  "giri_veloci": 4,
+  "titoli": 0,
+  "motogp": {
+   "gare": 2,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0
+  },
+  "immagine": "Jake Dixon 2017.jpg",
+  "fonte": "https://en.wikipedia.org/wiki/Jake_Dixon"
  }
 }

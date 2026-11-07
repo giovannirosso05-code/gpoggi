@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-07T13:29:43+00:00",
+ "aggiornato": "2026-11-07T18:19:50+00:00",
  "metodo": "Indice da 0 a 100 calcolato da GP Oggi: 45% forma nelle ultime 5 gare, 35% classifica del campionato, 20% risultato sullo stesso circuito l'anno scorso. È un'opinione basata sui numeri, non una previsione ufficiale né una certezza.",
  "f1": {
   "gp": "Gran Premio di San Paolo",
@@ -74,25 +74,15 @@
     "indice": 100,
     "motivi": [
      "2 vittorie nelle ultime 5 gare",
-     "1° nel campionato (399 punti)",
+     "1° nel campionato (411 punti)",
      "GP Qatar 2025: 1°"
-    ]
-   },
-   {
-    "id": "5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b",
-    "nome": "Jorge Martin",
-    "team": "Aprilia Racing",
-    "indice": 67,
-    "motivi": [
-     "3 podi nelle ultime 5 gare",
-     "2° nel campionato (355 punti)"
     ]
    },
    {
     "id": "ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd",
     "nome": "Marco Bezzecchi",
     "team": "Aprilia Racing",
-    "indice": 67,
+    "indice": 62,
     "motivi": [
      "1 vittoria nelle ultime 5 gare",
      "3° nel campionato (332 punti)",
@@ -100,13 +90,23 @@
     ]
    },
    {
+    "id": "5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b",
+    "nome": "Jorge Martin",
+    "team": "Aprilia Racing",
+    "indice": 62,
+    "motivi": [
+     "2 podi nelle ultime 5 gare",
+     "2° nel campionato (362 punti)"
+    ]
+   },
+   {
     "id": "a6108385-dd4c-490d-b02e-542ed0275f79",
     "nome": "Pedro Acosta",
     "team": "Red Bull KTM Factory Racing",
-    "indice": 63,
+    "indice": 54,
     "motivi": [
-     "1 vittoria nelle ultime 5 gare",
-     "4° nel campionato (295 punti)",
+     "1 podio nelle ultime 5 gare",
+     "4° nel campionato (299 punti)",
      "GP Qatar 2025: 8°"
     ]
    },
@@ -114,9 +114,9 @@
     "id": "eb47c439-e136-40ff-9534-5c612853f529",
     "nome": "Ai Ogura",
     "team": "SuperFile Trackhouse MotoGP Team",
-    "indice": 51,
+    "indice": 47,
     "motivi": [
-     "5° nel campionato (278 punti)",
+     "5° nel campionato (281 punti)",
      "GP Qatar 2025: 15°"
     ]
    }

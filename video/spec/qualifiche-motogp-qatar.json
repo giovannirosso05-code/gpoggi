@@ -1,0 +1,78 @@
+{
+ "serie": "MotoGP",
+ "titolo_breve": "Pole Qatar",
+ "etichetta": "Qualifiche",
+ "fonte": "MotoGP.com, LaPresse",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto": "Marco Bezzecchi",
+   "hook": true,
+   "hook_titolo": "Bezzecchi in pole in Qatar!",
+   "testo": "*Bezzecchi* in pole in Qatar, con il *record della pista*!",
+   "fonte_alto": "MotoGP.com, LaPresse"
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "testo": "Il suo giro: *un minuto, cinquanta secondi e ventotto millesimi*.",
+   "fonte_alto": "MotoGP.com, LaPresse"
+  },
+  {
+   "foto": "Marc Marquez",
+   "testo": "Secondo *Marc Marquez*, a *duecentosessantasei millesimi*. Domenica può diventare *campione del mondo*.",
+   "fonte_alto": "MotoGP.com, LaPresse"
+  },
+  {
+   "foto": "Fabio Di Giannantonio",
+   "testo": "Terzo *Di Giannantonio*, a *duecentonovantanove millesimi*: due italiani nei primi tre!",
+   "fonte_alto": "MotoGP.com, LaPresse"
+  },
+  {
+   "foto": "Francesco Bagnaia",
+   "testo": "*Bagnaia* è quinto, in seconda fila.",
+   "fonte_alto": "MotoGP.com, LaPresse"
+  },
+  {
+   "foto": "Jorge Martin",
+   "testo": "*Martin* parte undicesimo, al rientro dopo l'infortunio al braccio.",
+   "fonte_alto": "MotoGP.com, LaPresse"
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "nome": "Qualifiche: i primi sei",
+   "chips": [
+    [
+     "si",
+     "1. Bezzecchi 1:50.028"
+    ],
+    [
+     "info",
+     "2. M. Marquez +0.266"
+    ],
+    [
+     "info",
+     "3. Di Giannantonio +0.299"
+    ],
+    [
+     "info",
+     "4. R. Fernandez +0.429"
+    ],
+    [
+     "info",
+     "5. Bagnaia +0.564"
+    ],
+    [
+     "info",
+     "6. Ogura +0.568"
+    ]
+   ],
+   "sub_top": 1650,
+   "testo": "Ecco i primi sei: *Bezzecchi*, *Marquez*, *Di Giannantonio*, *Fernandez*, *Bagnaia* e *Ogura*.",
+   "fonte_alto": "MotoGP.com, LaPresse"
+  }
+ ],
+ "finale": {
+  "foto": "Marco Bezzecchi",
+  "domanda": "Chi vince domani in Qatar?"
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "serie": "MotoGP",
+ "titolo_breve": "Qatar pole",
+ "etichetta": "Qualifying",
+ "fonte": "MotoGP.com, LaPresse",
+ "velocita": "+20%",
+ "scene": [
+  {
+   "foto": "Marco Bezzecchi",
+   "hook": true,
+   "hook_titolo": "Bezzecchi on pole in Qatar!",
+   "testo": "*Bezzecchi* takes pole in Qatar, with a new *track record*!",
+   "fonte_alto": "MotoGP.com, LaPresse"
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "testo": "His lap: *one minute, fifty point oh two eight*.",
+   "fonte_alto": "MotoGP.com, LaPresse"
+  },
+  {
+   "foto": "Marc Marquez",
+   "testo": "*Marc Marquez* is second, *two hundred and sixty-six thousandths* behind. On Sunday he can become *world champion*.",
+   "fonte_alto": "MotoGP.com, LaPresse"
+  },
+  {
+   "foto": "Fabio Di Giannantonio",
+   "testo": "*Di Giannantonio* is third, *two hundred and ninety-nine thousandths* off the pole: two Italians in the top three!",
+   "fonte_alto": "MotoGP.com, LaPresse"
+  },
+  {
+   "foto": "Francesco Bagnaia",
+   "testo": "*Bagnaia* is fifth, on the second row.",
+   "fonte_alto": "MotoGP.com, LaPresse"
+  },
+  {
+   "foto": "Jorge Martin",
+   "testo": "*Martin* starts eleventh, back after his arm injury.",
+   "fonte_alto": "MotoGP.com, LaPresse"
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "nome": "Qualifying: the top six",
+   "chips": [
+    [
+     "si",
+     "1. Bezzecchi 1:50.028"
+    ],
+    [
+     "info",
+     "2. M. Marquez +0.266"
+    ],
+    [
+     "info",
+     "3. Di Giannantonio +0.299"
+    ],
+    [
+     "info",
+     "4. R. Fernandez +0.429"
+    ],
+    [
+     "info",
+     "5. Bagnaia +0.564"
+    ],
+    [
+     "info",
+     "6. Ogura +0.568"
+    ]
+   ],
+   "sub_top": 1650,
+   "testo": "Here are the top six: *Bezzecchi*, *Marquez*, *Di Giannantonio*, *Fernandez*, *Bagnaia* and *Ogura*.",
+   "fonte_alto": "MotoGP.com, LaPresse"
+  }
+ ],
+ "finale": {
+  "foto": "Marco Bezzecchi",
+  "domanda": "Who wins in Qatar tomorrow?"
+ }
+}

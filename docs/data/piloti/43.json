@@ -298,6 +298,17 @@
     "pos": 15,
     "stato": null
    }
+  },
+  {
+   "id": 1299,
+   "nome": "Gran Premio di San Paolo",
+   "inizio": "2026-11-06T15:30:00+00:00",
+   "qualifiche": {
+    "pos": 17,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": null
   }
  ],
  "vittorie": 0,

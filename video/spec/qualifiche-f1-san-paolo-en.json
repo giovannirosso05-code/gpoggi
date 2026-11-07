@@ -1,0 +1,86 @@
+{
+ "serie": "F1",
+ "titolo_breve": "São Paulo pole",
+ "etichetta": "Qualifying",
+ "fonte": "Pit Debrief, Motorsport.com",
+ "velocita": "+20%",
+ "scene": [
+  {
+   "foto": "Lando Norris",
+   "ritratto_espn": true,
+   "hook": true,
+   "hook_titolo": "Norris on pole in São Paulo!",
+   "testo": "*Norris* takes pole in São Paulo, in the *rain*!",
+   "fonte_alto": "Pit Debrief, Motorsport.com"
+  },
+  {
+   "foto": "George Russell",
+   "ritratto_espn": true,
+   "testo": "*Russell* is second, but he has a *five-place penalty*.",
+   "fonte_alto": "Pit Debrief, Motorsport.com"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "ritratto_espn": true,
+   "testo": "*Antonelli*, the new world champion, is third: Russell's penalty moves him up a place.",
+   "fonte_alto": "Pit Debrief, Motorsport.com"
+  },
+  {
+   "foto": "Charles Leclerc",
+   "ritratto_espn": true,
+   "testo": "*Leclerc* is fourth, but he drops *ten places* for an engine change.",
+   "fonte_alto": "Pit Debrief, Motorsport.com"
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "ritratto_espn": true,
+   "testo": "*Hamilton* is out in Q2, eleventh: he starts from the back after a power unit change.",
+   "fonte_alto": "Pit Debrief, Motorsport.com"
+  },
+  {
+   "foto": "Max Verstappen",
+   "ritratto_espn": true,
+   "testo": "*Verstappen* is out in Q2 too, sixteenth: he also starts from the back.",
+   "fonte_alto": "Pit Debrief, Motorsport.com"
+  },
+  {
+   "foto": "Lando Norris",
+   "ritratto_espn": true,
+   "nome": "Qualifying: the top six",
+   "chips": [
+    [
+     "si",
+     "1. Norris"
+    ],
+    [
+     "info",
+     "2. Russell · −5 places"
+    ],
+    [
+     "info",
+     "3. Antonelli"
+    ],
+    [
+     "info",
+     "4. Leclerc · −10 places"
+    ],
+    [
+     "info",
+     "5. Lawson"
+    ],
+    [
+     "info",
+     "6. Hülkenberg"
+    ]
+   ],
+   "sub_top": 1650,
+   "testo": "Here are the top six: *Norris*, *Russell*, *Antonelli*, *Leclerc*, *Lawson* and *Hülkenberg*.",
+   "fonte_alto": "Pit Debrief, Motorsport.com"
+  }
+ ],
+ "finale": {
+  "foto": "Lando Norris",
+  "ritratto_espn": true,
+  "domanda": "Who wins in São Paulo tomorrow?"
+ }
+}

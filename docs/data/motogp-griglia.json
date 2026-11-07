@@ -1,1 +1,151 @@
-{}
+{
+ "gp": "GP Qatar",
+ "gara_inizio": "2026-11-08T19:00:00+00:00",
+ "aggiornato": "2026-11-07T13:29:43+00:00",
+ "righe": [
+  {
+   "pos": 1,
+   "nome": "Marco Bezzecchi",
+   "team": "Aprilia Racing",
+   "moto": "Aprilia",
+   "info": "1:50.028",
+   "da": "Q2"
+  },
+  {
+   "pos": 2,
+   "nome": "Marc Marquez",
+   "team": "Ducati Lenovo Team",
+   "moto": "Ducati",
+   "info": "1:50.294",
+   "da": "Q2"
+  },
+  {
+   "pos": 3,
+   "nome": "Fabio Di Giannantonio",
+   "team": "Pertamina Enduro VR46 Racing Team",
+   "moto": "Ducati",
+   "info": "1:50.327",
+   "da": "Q2"
+  },
+  {
+   "pos": 4,
+   "nome": "Raul Fernandez",
+   "team": "SuperFile Trackhouse MotoGP Team",
+   "moto": "Aprilia",
+   "info": "1:50.457",
+   "da": "Q2"
+  },
+  {
+   "pos": 5,
+   "nome": "Francesco Bagnaia",
+   "team": "Ducati Lenovo Team",
+   "moto": "Ducati",
+   "info": "1:50.592",
+   "da": "Q2"
+  },
+  {
+   "pos": 6,
+   "nome": "Ai Ogura",
+   "team": "SuperFile Trackhouse MotoGP Team",
+   "moto": "Aprilia",
+   "info": "1:50.596",
+   "da": "Q2"
+  },
+  {
+   "pos": 7,
+   "nome": "Johann Zarco",
+   "team": "Castrol Honda LCR",
+   "moto": "Honda",
+   "info": "1:50.735",
+   "da": "Q2"
+  },
+  {
+   "pos": 8,
+   "nome": "Pedro Acosta",
+   "team": "Red Bull KTM Factory Racing",
+   "moto": "KTM",
+   "info": "1:50.872",
+   "da": "Q2"
+  },
+  {
+   "pos": 9,
+   "nome": "Fermin Aldeguer",
+   "team": "BK8 Gresini Racing MotoGP",
+   "moto": "Ducati",
+   "info": "1:50.890",
+   "da": "Q2"
+  },
+  {
+   "pos": 10,
+   "nome": "Enea Bastianini",
+   "team": "Red Bull KTM Tech3",
+   "moto": "KTM",
+   "info": "1:51.001",
+   "da": "Q2"
+  },
+  {
+   "pos": 11,
+   "nome": "Jorge Martin",
+   "team": "Aprilia Racing",
+   "moto": "Aprilia",
+   "info": "1:51.064",
+   "da": "Q2"
+  },
+  {
+   "pos": 12,
+   "nome": "Brad Binder",
+   "team": "Red Bull KTM Factory Racing",
+   "moto": "KTM",
+   "info": "1:51.904",
+   "da": "Q2"
+  },
+  {
+   "pos": 13,
+   "nome": "Franco Morbidelli",
+   "team": "Pertamina Enduro VR46 Racing Team",
+   "moto": "Ducati",
+   "info": "1:51.271",
+   "da": "Q1"
+  },
+  {
+   "pos": 14,
+   "nome": "Luca Marini",
+   "team": "Honda HRC Castrol",
+   "moto": "Honda",
+   "info": "1:51.350",
+   "da": "Q1"
+  },
+  {
+   "pos": 15,
+   "nome": "Iker Lecuona",
+   "team": "BK8 Gresini Racing MotoGP",
+   "moto": "Ducati",
+   "info": "1:51.387",
+   "da": "Q1"
+  },
+  {
+   "pos": 16,
+   "nome": "Diogo Moreira",
+   "team": "Pro Honda LCR",
+   "moto": "Honda",
+   "info": "1:51.504",
+   "da": "Q1"
+  },
+  {
+   "pos": 17,
+   "nome": "Jake Dixon",
+   "team": "Honda HRC Castrol",
+   "moto": "Honda",
+   "info": "1:51.621",
+   "da": "Q1"
+  },
+  {
+   "pos": 18,
+   "nome": "Maverick Viñales",
+   "team": "Red Bull KTM Tech3",
+   "moto": "KTM",
+   "info": "1:51.991",
+   "da": "Q1"
+  }
+ ]
+}

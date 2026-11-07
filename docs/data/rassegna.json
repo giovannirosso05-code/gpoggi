@@ -1,52 +1,436 @@
 {
- "generato_il": "2026-11-07T04:06:19+00:00",
+ "generato_il": "2026-11-07T11:40:01+00:00",
  "articoli": [
   {
-   "titolo": "Quando MotoGP e F1 oggi (8 novembre): orari gare, streaming, diretta Sky, differita TV8",
-   "estratto": "Oggi domenica 8 novembre si conclude il lungo weekend riservato ai motori, arriviamo al momento clou dell’intenso fine settimana. Spazio alle gare: GP del Brasile per quanto riguarda la F1 e GP del…",
+   "titolo": "LIVE MotoGP, GP Qatar 2026 in DIRETTA: Bezzecchi vola nella FP2 e lancia la sfida per le qualifiche!",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE 12.40 I PILOTI AL VIA DELLA Q1 11 54 Fermin ALDEGUER SPA BK8 Gresini Racing MotoGP DUCATI 1’51.447 16 18 1.041 0.038 346.1 12 21 Franco MORBIDELLI ITA…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/live-motogp-gp-qatar-2026-in-diretta-bezzecchi-lancia-la-sfida-a-marquez-tra-qualifiche-e-sprint/",
+   "pubblicato": "2026-11-07T11:32:52+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 32.0,
+   "testate": 3
+  },
+  {
+   "titolo": "GP Qatar 2026, Qualifiche: scatta la Q1, Acosta a caccia della Q2 – DIRETTA",
+   "estratto": "La cronaca minuto per minuto della sessione che determinerà la griglia di partenza a Lusail",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-live/diretta-motogp-gp-qatar-2026-lusail-live-qualifiche-q1-q2-pole-position-cronaca-aggiornamenti",
+   "pubblicato": "2026-11-07T11:30:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 14.0,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 | Haas, Câmara convince a Interlagos: un venerdì in costante crescita",
+   "estratto": "La prima giornata di Rafael Câmara in Formula 1 non si annunciava tra le più semplici. Il ventunenne brasiliano ha dovuto familiarizzare con una Haas VF-26 che non aveva mai guidato prima, su un…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-haas-camara-convince-a-interlagos-un-venerdi-in-costante-crescita/10872438/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-07T11:22:58+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.9,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 GP Brasile 2026, FP3: ultimi affinamenti prima delle qualifiche, si parte 15.30 – DIRETTA",
+   "estratto": "La cronaca live minuto per minuto della terza e ultima sessione di prove del fine settimana a Interlagos",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-brasile-2026-interlagos-prove-libere-3-fp3-aggiornamenti-ferrari-leclerc-hamilton-verstappen",
+   "pubblicato": "2026-11-07T11:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 13.8,
+   "testate": 2
+  },
+  {
+   "titolo": "Moto2, Manuel Gonzalez anticipa Guevara nelle FP2 di Lusail. Italiani lontani",
+   "estratto": "Si è conclusa poco fa la seconda sessione di prove libere valida per il Gran Premio del Qatar 2026, ventesimo e terzultimo appuntamento del Mondiale Moto2. Sul circuito di Lusail, la migliore…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/moto2-manuel-gonzalez-anticipa-guevara-nelle-fp2-di-lusail-lontano-gli-italiani/",
+   "pubblicato": "2026-11-07T10:55:59+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.8,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | McLaren: la nuova ala anteriore cambia la filosofia della MCL40. Nel 2027 allungherà il passo",
+   "estratto": "Ci si aspettava che alla fine del primo campionato con le nuove regole cominciasse una convergenza nelle scelte tecniche che portasse gradualmente le monoposto 2026 nella direzione delle soluzioni…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-mclaren-10872103/10872103/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-07T10:49:13+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 13.8,
+   "testate": 2
+  },
+  {
+   "titolo": "Dove vedere la F1 stasera in tv, GP Brasile 2026: orari, streaming, programma TV8",
+   "estratto": "Tutto pronto al circuito di Interlagos per l’ultima sessione di prove libere e soprattutto per le qualifiche del Gran Premio del Brasile 2026, valevole come ventesimo round della stagione di Formula…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/dove-vedere-la-f1-stasera-in-tv-gp-brasile-2026-orari-streaming-programma-tv8/",
+   "pubblicato": "2026-11-07T10:30:48+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -8.3,
+   "testate": 1
+  },
+  {
+   "titolo": "Cattiva (di)gestione",
+   "estratto": "\"La Ferrari prima di tutto\": ma era così anche dopo Monza...",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-commento/cattiva-digestione-ferrari-vasseur-leclerc-hamilton",
+   "pubblicato": "2026-11-07T10:23:20+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 11.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Moto3: Quiles senza rivali anche nella FP3 in Qatar, indietro Guido Pini",
+   "estratto": "Ancora lui, sempre e solo lui. Maximo Quiles continua a regalare spettacolo sul tracciato di Lusail, teatro in questo fine settimana del GP del Qatar, ventesimo appuntamento del Mondiale 2026 di…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/moto3-quiles-senza-rivali-anche-nella-fp3-in-qatar-indietro-guido-pini/",
+   "pubblicato": "2026-11-07T10:14:09+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.6,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Acosta: \"Non è normale soffrire di più con la gomma morbida che con la media\"",
+   "estratto": "Nella giornata di giovedì, Pedro Acosta diceva che le sue aspettative non erano del tutto negative per il Gran Premio del Qatar, tenuto conto che le KTM storicamente lì non sono andate affatto male…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-acosta-non-e-normale-soffrire-di-piu-con-la-gomma-morbida-che-con-la-media/10872377/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-07T10:00:43+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.6,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Ferrari, Interlagos è un brusco risveglio: mezzo secondo da recuperare sul passo gara",
+   "estratto": "Una settimana fa, a Città del Messico, Lewis Hamilton e Charles Leclerc avevano tra le mani una Ferrari in grado di lottare per la vittoria, un'opportunità compromessa dal loro duello nelle prime…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-ferrari-interlagos-e-un-brusco-risveglio-mezzo-secondo-da-recuperare-sul-passo-gara/10872423/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-07T09:40:02+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 11.5,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Di Giannantonio: \"Siamo migliorati con poche modifiche. Avremmo potuto lavorare meglio negli ultimi GP\"",
+   "estratto": "Lusail è la pista che nel 2023 gli ha regalato il primo successo in MotoGP, quindi sarà sempre speciale per Fabio Di Giannantonio. Probabilmente però il venerdì del Gran Premio del Qatar di MotoGP è…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-di-giannantonio-siamo-migliorati-con-poche-modifiche-avremmo-potuto-lavorare-meglio-negli-ul/10872381/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-07T09:12:08+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.4,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Antonelli non si ferma: il campione del mondo detta il passo a Interlagos",
+   "estratto": "Nessun segnale di appagamento, nessuna intenzione di concedersi una pausa dopo la conquista del titolo mondiale. Kimi Antonelli si è presentato a Interlagos con la stessa determinazione che lo ha…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-antonelli-non-si-ferma-il-campione-del-mondo-detta-il-passo-a-interlagos/10872424/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-07T08:43:34+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 11.3,
+   "testate": 1
+  },
+  {
+   "titolo": "Hamilton verso la penalità sulla griglia di partenza nel GP del Brasile",
+   "estratto": "Nuova power unit per il pilota inglese",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/ferrari-gp-brasile-hamilton-penalita-griglia-partenza-nuova-power-unit",
+   "pubblicato": "2026-11-07T07:20:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 0.9,
+   "testate": 2
+  },
+  {
+   "titolo": "Cambio di filosofia: McLaren riprende la soluzione scartata da Mercedes per il 2027",
+   "estratto": "La McLaren introduce una nuova ala e cambia l’aerodinamica attiva, riprendendo lo schema abbandonato da Mercedes",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/cambio-filosofia-mclaren-riprende-soluzione-scartata-mercedes-2027",
+   "pubblicato": "2026-11-07T07:00:59+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 12.8,
+   "testate": 2
+  },
+  {
+   "titolo": "GP San Paolo 2026: orari Sky/Now e TV8",
+   "estratto": "I dettagli della programmazione televisiva dell'appuntamento in programma ad Interlagos",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-brasile-2026-interlagos-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-antonelli-campione-verstappen",
+   "pubblicato": "2026-11-07T07:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -9.2,
+   "testate": 1
+  },
+  {
+   "titolo": "Leclerc: “Abbiamo parlato ed è tutto risolto. Ma sono state tra le peggiori FP2 dell’anno”",
+   "estratto": "Il monegasco ha concluso al settimo posto il venerdì di Interlagos",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/leclerc-abbiamo-parlato-hamilton-tutto-risolto-tra-peggiori-fp2-brasile-ferrari",
+   "pubblicato": "2026-11-07T07:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 7.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Hamilton: “Giornata impegnativa, FP2 complicate. C’è da lavorare”",
+   "estratto": "Venerdì non troppo positivo in Brasile per il sette volte campione del mondo",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/hamilton-giornata-impegnativa-fp2-complicate-ce-da-lavorare-ferrari-gp-brasile",
+   "pubblicato": "2026-11-07T07:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 7.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Antonelli non si fida della Ferrari: “Troverà qualcosa in più quando si arriva in Qualifica”",
+   "estratto": "Il pilota Mercedes ha commentato così il venerdì di Interlagos",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/antonelli-non-si-fida-ferrari-qualifica-avra-qualcosa-in-piu-prove-libere-gp-brasile",
+   "pubblicato": "2026-11-07T07:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 15.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Cinque posizioni di penalità in griglia per Russell: “La Qualifica diventa ancor più importante”",
+   "estratto": "Il GP del Brasile del pilota inglese è già in salita",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/gp-brasile-russell-cinque-posizioni-penalita-griglia-partenza-nuovo-ice-motore-senza-aduo",
+   "pubblicato": "2026-11-07T07:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 17.8,
+   "testate": 2
+  },
+  {
+   "titolo": "Montezemolo: “Antonelli ha nel DNA i kart, come Schumacher, Senna e Verstappen. Wolff lo ha gestito nel modo giusto”",
+   "estratto": "Luca Cordero di Montezemolo ritiene che la formazione 'kartistica' sia stata una scuola perfetta per Kimi Antonelli",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/montezemolo-antonelli-ha-nel-dna-i-kart-come-schumacher-senna-e-verstappen-wolff-lo-ha-gestito-nel-modo-giusto",
+   "pubblicato": "2026-11-07T07:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 15.8,
+   "testate": 1
+  },
+  {
+   "titolo": "GP Qatar 2026: gli orari su Sky/Now e TV8",
+   "estratto": "I dettagli di un appuntamento avvolto dall'incertezza legata al conflitto in corso a pochi km dal circuito di Lusail",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-orari/gp-qatar-2026-orari-tv-diretta-sky-tv8-programma-televisione-dove-vederla-marquez-decimo-titolo-sorpasso-rossi",
+   "pubblicato": "2026-11-07T07:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 0.8,
+   "testate": 2
+  },
+  {
+   "titolo": "Quando la F1 su TV8 oggi, GP Brasile 2026: programma differita qualifiche in chiaro",
+   "estratto": "Le qualifiche del Gran Premio del Brasile 2026 di F1 si disputeranno sabato 7 novembre dalle ore 19:00 alle ore 20:00 del nostro Paese. La sessione che ha lo scopo di determinare la griglia di…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/a-che-ora-la-f1-su-tv8-oggi-gp-brasile-2026-programma-qualifiche-differita-in-chiaro/",
+   "pubblicato": "2026-11-07T06:16:12+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 0.7,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 oggi in tv, GP Brasile 2026: orari FP3 e qualifiche 7 novembre, streaming, differita TV8",
+   "estratto": "Sabato 7 novembre andrà in scena la seconda giornata del ventesimo week end del Mondiale 2026 di F1. Sul circuito di Interlagos (Brasile), piloti e team saranno chiamati a trovare nel più breve tempo…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-oggi-in-tv-gp-brasile-2026-orari-fp3-e-qualifiche-streaming-programma-sky-e-tv8/",
+   "pubblicato": "2026-11-07T06:15:33+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 0.6,
+   "testate": 2
+  },
+  {
+   "titolo": "LIVE F1, GP Brasile 2026 in DIRETTA: Antonelli a caccia della pole, Ferrari per svoltare sul giro secco",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE Buona sera e bentrovati alla DIRETTA LIVE della seconda giornata del weekend del GP di San Paolo (Brasile), ventesimo appuntamento del Mondiale 2026 di F1…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/live-f1-gp-brasile-2026-in-diretta-ferrari-a-caccia-della-pole-antonelli-cerca-la-magia/",
+   "pubblicato": "2026-11-07T06:13:23+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 20.6,
+   "testate": 2
+  },
+  {
+   "titolo": "Quando MotoGP e F1 oggi (sabato 7 novembre): orari qualifiche e Sprint, streaming, programma TV8",
+   "estratto": "Sabato 7 novembre prosegue il lungo weekend riservato ai motori, per la gioia di tutti gli appassionati che potranno gustarsi un fine settimana ricchissimo. Spazio alla prove libere e alle qualifiche…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/quando-motogp-e-f1-oggi-7-novembre-orari-qualifiche-e-sprint-streaming-programma-tv8-e-sky/",
+   "pubblicato": "2026-11-07T06:11:20+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -9.4,
+   "testate": 1
+  },
+  {
+   "titolo": "Quando MotoGP e F1 oggi (sabato 7 novembre): orari qualifiche e Sprint, streaming, programma TV8",
+   "estratto": "Sabato 7 novembre prosegue il lungo weekend riservato ai motori, per la gioia di tutti gli appassionati che potranno gustarsi un fine settimana ricchissimo. Spazio alla prove libere e alle qualifiche…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/quando-motogp-e-f1-oggi-7-novembre-orari-qualifiche-e-sprint-streaming-programma-tv8-e-sky/",
+   "pubblicato": "2026-11-07T06:11:20+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -9.4,
+   "testate": 1
+  },
+  {
+   "titolo": "Quando la MotoGP su TV8 oggi, GP Qatar 2026: orari qualifiche e Sprint in chiaro",
+   "estratto": "Le qualifiche di MotoGP, Moto2 e Moto3 valide per il Gran Premio di Qatar 2026 avranno luogo sabato 7 novembre dalle ore 12:40 alle 16:25. Dopodiché, alle ore 17:00 del nostro Paese inizierà la…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/a-che-ora-la-motogp-su-tv8-oggi-gp-qatar-2026-programma-qualifiche-e-sprint-in-chiaro/",
+   "pubblicato": "2026-11-07T06:10:08+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 0.6,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP oggi in tv, GP Qatar 2026: orari qualifiche e Sprint, streaming, programma in chiaro",
+   "estratto": "Sabato 7 novembre sarà una giornata piuttosto impegnativa per i piloti del Motomondiale 2026. Sul tracciato di Lusail (Qatar) si andrà a caccia del tempo migliore nelle qualifiche, ma ci sarà da…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-oggi-in-tv-gp-qatar-2026-orari-qualifiche-e-sprint-streaming-programma-sky-e-tv8/",
+   "pubblicato": "2026-11-07T06:08:10+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 0.6,
+   "testate": 2
+  },
+  {
+   "titolo": "Vasseur: “Non credo nelle regole d’ingaggio, sono superflue”",
+   "estratto": "Il team principal Ferrari ha ribadito che crede nella professionalità di Hamilton e Leclerc",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/ferrari-vasseur-non-credo-regole-ingaggio-sono-superflue-hamilton-leclerc",
+   "pubblicato": "2026-11-07T06:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 15.6,
+   "testate": 1
+  },
+  {
+   "titolo": "Bagnaia: “Finalmente sembro un pilota ufficiale”",
+   "estratto": "Il campione italiano ha concluso al quarto posto il primo giorno in pista in Qatar",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/bagnaia-finalmente-sembro-un-pilota-ufficiale-ducati-gp-qatar",
+   "pubblicato": "2026-11-07T06:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 25.6,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP, GP Qatar 2026. Equilibrio fra Ducati e Aprilia. Martin getta il cuore oltre l’ostacolo, Marquez attento alle insidie",
+   "estratto": "La giornata di sabato 7 novembre vedrà entrare nel vivo il discusso Gran Premio del Qatar di MotoGP. La sessione di qualifica della classe regina comincerà alle ore 12:40 italiane di quest’oggi…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-gp-qatar-2026-equilibrio-fra-ducati-e-aprilia-martin-getta-il-cuore-oltre-lostacolo-marquez-attento-alle-insidie/",
+   "pubblicato": "2026-11-07T05:54:20+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 30.6,
+   "testate": 3
+  },
+  {
+   "titolo": "Antonelli, Kimi boom! È diventato un brand e vola in pista e fuori",
+   "estratto": "Dai follower schizzati a 10 milioni allo stipendio decuplicato e l’esplosione del merchandising",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/11/07-152430741/antonelli_kimi_boom_diventato_un_brand_e_vola_in_pista_e_fuori/",
+   "pubblicato": "2026-11-07T05:30:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 10.5,
+   "testate": 1
+  },
+  {
+   "titolo": "F1, GP Brasile 2026. Antonelli cerca la pole sulle ali dell’entusiasmo, Ferrari in affanno e c’è il rischio pioggia…",
+   "estratto": "Il Gran Premio del Brasile di Formula 1 entrerà nel vivo a partire dalle ore 19:00 italiane di sabato 7 novembre, momento in cui scatteranno le qualifiche. D’accordo, dal punto di vista formale si…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-gp-brasile-2026-antonelli-cerca-la-pole-sulle-ali-dellentusiasmo-ferrari-in-affanno-e-ce-il-rischio-pioggia/",
+   "pubblicato": "2026-11-07T05:00:18+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 10.3,
+   "testate": 1
+  },
+  {
+   "titolo": "Quando MotoGP e F1 domani (8 novembre): orari gare, streaming, diretta Sky, differita TV8",
+   "estratto": "Domani domenica 8 novembre si conclude il lungo weekend riservato ai motori, arriviamo al momento clou dell’intenso fine settimana. Spazio alle gare: GP del Brasile per quanto riguarda la F1 e GP del…",
    "fonte": "OA Sport",
    "serie": "F1",
    "url": "https://www.oasport.it/2026/11/quando-motogp-e-f1-oggi-8-novembre-orari-gare-streaming-diretta-sky-differita-tv8/",
    "pubblicato": "2026-11-07T03:00:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.3,
+   "punteggio": -10.2,
    "testate": 1
   },
   {
-   "titolo": "Quando MotoGP e F1 oggi (8 novembre): orari gare, streaming, diretta Sky, differita TV8",
-   "estratto": "Oggi domenica 8 novembre si conclude il lungo weekend riservato ai motori, arriviamo al momento clou dell’intenso fine settimana. Spazio alle gare: GP del Brasile per quanto riguarda la F1 e GP del…",
+   "titolo": "Quando MotoGP e F1 domani (8 novembre): orari gare, streaming, diretta Sky, differita TV8",
+   "estratto": "Domani domenica 8 novembre si conclude il lungo weekend riservato ai motori, arriviamo al momento clou dell’intenso fine settimana. Spazio alle gare: GP del Brasile per quanto riguarda la F1 e GP del…",
    "fonte": "OA Sport",
    "serie": "MotoGP",
    "url": "https://www.oasport.it/2026/11/quando-motogp-e-f1-oggi-8-novembre-orari-gare-streaming-diretta-sky-differita-tv8/",
    "pubblicato": "2026-11-07T03:00:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.3,
-   "testate": 1
-  },
-  {
-   "titolo": "Quando MotoGP e F1 oggi (7 novembre): orari qualifiche e Sprint, streaming, programma TV8 e Sky",
-   "estratto": "Sabato 7 novembre prosegue il lungo weekend riservato ai motori, per la gioia di tutti gli appassionati che potranno gustarsi un fine settimana ricchissimo. Spazio alla prove libere e alle qualifiche…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/quando-motogp-e-f1-oggi-7-novembre-orari-qualifiche-e-sprint-streaming-programma-tv8-e-sky/",
-   "pubblicato": "2026-11-07T03:00:20+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -8.3,
-   "testate": 1
-  },
-  {
-   "titolo": "Quando MotoGP e F1 oggi (7 novembre): orari qualifiche e Sprint, streaming, programma TV8 e Sky",
-   "estratto": "Sabato 7 novembre prosegue il lungo weekend riservato ai motori, per la gioia di tutti gli appassionati che potranno gustarsi un fine settimana ricchissimo. Spazio alla prove libere e alle qualifiche…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/quando-motogp-e-f1-oggi-7-novembre-orari-qualifiche-e-sprint-streaming-programma-tv8-e-sky/",
-   "pubblicato": "2026-11-07T03:00:20+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -8.3,
+   "punteggio": -10.2,
    "testate": 1
   },
   {
@@ -58,7 +442,7 @@
    "pubblicato": "2026-11-06T22:27:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.6,
+   "punteggio": 23.7,
    "testate": 2
   },
   {
@@ -70,7 +454,7 @@
    "pubblicato": "2026-11-06T22:08:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.5,
+   "punteggio": 13.6,
    "testate": 1
   },
   {
@@ -82,7 +466,7 @@
    "pubblicato": "2026-11-06T21:58:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.5,
+   "punteggio": 23.6,
    "testate": 2
   },
   {
@@ -94,19 +478,19 @@
    "pubblicato": "2026-11-06T21:47:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.4,
+   "punteggio": 8.5,
    "testate": 1
   },
   {
    "titolo": "Kimi Antonelli analizza il venerdì a Interlagos: “Ottime sensazioni, ma c’è ancora da lavorare”",
-   "estratto": "Nemmeno il tempo di smaltire l’euforia per il titolo mondiale che Kimi Antonelli è già tornato a dettare il ritmo. A Interlagos, il neo-campione del mondo di F1 ha inaugurato il week end del Gran…",
+   "estratto": "Nemmeno il tempo di smaltire l’euforia per il titolo mondiale che Kimi Antonelli è già tornato a dettare il ritmo. A Interlagos, il neocampione del mondo di F1 ha inaugurato il weekend del Gran…",
    "fonte": "OA Sport",
    "serie": "F1",
    "url": "https://www.oasport.it/2026/11/kimi-antonelli-analizza-il-venerdi-a-interlagos-ottime-sensazioni-ma-ce-ancora-da-lavorare/",
    "pubblicato": "2026-11-06T21:42:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.4,
+   "punteggio": 23.5,
    "testate": 2
   },
   {
@@ -118,7 +502,7 @@
    "pubblicato": "2026-11-06T21:40:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.4,
+   "punteggio": 13.5,
    "testate": 1
   },
   {
@@ -130,7 +514,7 @@
    "pubblicato": "2026-11-06T21:33:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.4,
+   "punteggio": 5.5,
    "testate": 1
   },
   {
@@ -142,8 +526,8 @@
    "pubblicato": "2026-11-06T21:30:33+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 45.4,
-   "testate": 4
+   "punteggio": 33.5,
+   "testate": 3
   },
   {
    "titolo": "Oscar Piastri analizza con fiducia il suo venerdì di Interlagos: “Giornata positiva, fondamentale confermarsi domani”",
@@ -154,7 +538,7 @@
    "pubblicato": "2026-11-06T21:15:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.3,
+   "punteggio": 5.4,
    "testate": 1
   },
   {
@@ -166,7 +550,7 @@
    "pubblicato": "2026-11-06T21:11:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.3,
+   "punteggio": 13.4,
    "testate": 1
   },
   {
@@ -178,7 +562,7 @@
    "pubblicato": "2026-11-06T21:09:43+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.3,
+   "punteggio": 5.4,
    "testate": 1
   },
   {
@@ -190,7 +574,7 @@
    "pubblicato": "2026-11-06T20:42:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.2,
+   "punteggio": 15.3,
    "testate": 2
   },
   {
@@ -202,7 +586,7 @@
    "pubblicato": "2026-11-06T20:41:50+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.1,
+   "punteggio": 15.3,
    "testate": 2
   },
   {
@@ -214,7 +598,7 @@
    "pubblicato": "2026-11-06T20:20:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 30.1,
+   "punteggio": 28.2,
    "testate": 3
   },
   {
@@ -226,7 +610,7 @@
    "pubblicato": "2026-11-06T20:12:12+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.0,
+   "punteggio": 6.1,
    "testate": 2
   },
   {
@@ -238,7 +622,7 @@
    "pubblicato": "2026-11-06T20:07:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 33.0,
+   "punteggio": 31.1,
    "testate": 4
   },
   {
@@ -250,7 +634,7 @@
    "pubblicato": "2026-11-06T20:01:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.0,
+   "punteggio": 18.1,
    "testate": 2
   },
   {
@@ -262,8 +646,8 @@
    "pubblicato": "2026-11-06T20:00:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.0,
-   "testate": 1
+   "punteggio": 18.1,
+   "testate": 2
   },
   {
    "titolo": "F1 GP Brasile 2026, Interlagos: la cronaca delle FP2, minuto per minuto",
@@ -274,7 +658,7 @@
    "pubblicato": "2026-11-06T20:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.0,
+   "punteggio": 0.1,
    "testate": 1
   },
   {
@@ -286,8 +670,8 @@
    "pubblicato": "2026-11-06T19:54:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.0,
-   "testate": 1
+   "punteggio": 23.1,
+   "testate": 2
   },
   {
    "titolo": "Marquez ‘chiama’ Di Giannantonio: “Felice che sia veloce, almeno lotta con le Aprilia”",
@@ -298,7 +682,7 @@
    "pubblicato": "2026-11-06T19:41:50+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.9,
+   "punteggio": 13.0,
    "testate": 1
   },
   {
@@ -310,8 +694,8 @@
    "pubblicato": "2026-11-06T19:30:05+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 44.8,
-   "testate": 4
+   "punteggio": 33.0,
+   "testate": 3
   },
   {
    "titolo": "MotoGP | Marquez: \"Martin sta tirando fuori la forza che ti dà lottare per un Mondiale\"",
@@ -322,7 +706,7 @@
    "pubblicato": "2026-11-06T19:12:21+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.8,
+   "punteggio": 22.9,
    "testate": 2
   },
   {
@@ -334,7 +718,7 @@
    "pubblicato": "2026-11-06T18:58:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.7,
+   "punteggio": 22.8,
    "testate": 2
   },
   {
@@ -346,7 +730,7 @@
    "pubblicato": "2026-11-06T18:19:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.6,
+   "punteggio": 12.7,
    "testate": 1
   },
   {
@@ -358,8 +742,8 @@
    "pubblicato": "2026-11-06T18:11:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 44.5,
-   "testate": 4
+   "punteggio": 32.6,
+   "testate": 3
   },
   {
    "titolo": "Francesco Bagnaia sorride: “Giornata positiva, non abbiamo toccato la moto”",
@@ -370,7 +754,7 @@
    "pubblicato": "2026-11-06T18:03:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.5,
+   "punteggio": 22.6,
    "testate": 2
   },
   {
@@ -382,7 +766,7 @@
    "pubblicato": "2026-11-06T18:02:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.5,
+   "punteggio": 12.6,
    "testate": 1
   },
   {
@@ -394,7 +778,7 @@
    "pubblicato": "2026-11-06T17:57:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.5,
+   "punteggio": 4.6,
    "testate": 1
   },
   {
@@ -406,8 +790,8 @@
    "pubblicato": "2026-11-06T17:30:22+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.6,
-   "testate": 1
+   "punteggio": -2.5,
+   "testate": 2
   },
   {
    "titolo": "GP Qatar 2026: la cronaca di FP1 e Prove",
@@ -418,7 +802,7 @@
    "pubblicato": "2026-11-06T17:27:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.3,
+   "punteggio": -0.6,
    "testate": 1
   },
   {
@@ -430,7 +814,7 @@
    "pubblicato": "2026-11-06T17:26:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.3,
+   "punteggio": 27.4,
    "testate": 3
   },
   {
@@ -442,7 +826,7 @@
    "pubblicato": "2026-11-06T17:23:24+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.3,
+   "punteggio": 15.4,
    "testate": 3
   },
   {
@@ -454,7 +838,7 @@
    "pubblicato": "2026-11-06T17:19:54+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.3,
+   "punteggio": 27.4,
    "testate": 3
   },
   {
@@ -466,7 +850,7 @@
    "pubblicato": "2026-11-06T17:15:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.3,
+   "punteggio": 7.4,
    "testate": 1
   },
   {
@@ -478,7 +862,7 @@
    "pubblicato": "2026-11-06T17:14:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.3,
+   "punteggio": 15.4,
    "testate": 3
   },
   {
@@ -490,7 +874,7 @@
    "pubblicato": "2026-11-06T17:08:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.3,
+   "punteggio": 17.4,
    "testate": 2
   },
   {
@@ -502,7 +886,7 @@
    "pubblicato": "2026-11-06T17:00:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.2,
+   "punteggio": 27.3,
    "testate": 3
   },
   {
@@ -514,7 +898,7 @@
    "pubblicato": "2026-11-06T16:46:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.2,
+   "punteggio": 17.3,
    "testate": 2
   },
   {
@@ -526,7 +910,7 @@
    "pubblicato": "2026-11-06T16:45:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.2,
+   "punteggio": 15.3,
    "testate": 3
   },
   {
@@ -538,7 +922,7 @@
    "pubblicato": "2026-11-06T16:40:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.1,
+   "punteggio": 5.3,
    "testate": 2
   },
   {
@@ -550,7 +934,7 @@
    "pubblicato": "2026-11-06T16:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.1,
+   "punteggio": -0.8,
    "testate": 1
   },
   {
@@ -562,7 +946,7 @@
    "pubblicato": "2026-11-06T15:56:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.0,
+   "punteggio": -0.9,
    "testate": 1
   },
   {
@@ -574,7 +958,7 @@
    "pubblicato": "2026-11-06T15:06:09+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.7,
+   "punteggio": -1.1,
    "testate": 1
   },
   {
@@ -586,7 +970,7 @@
    "pubblicato": "2026-11-06T14:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.5,
+   "punteggio": 11.6,
    "testate": 1
   },
   {
@@ -598,7 +982,7 @@
    "pubblicato": "2026-11-06T14:10:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.5,
+   "punteggio": -1.4,
    "testate": 1
   },
   {
@@ -610,8 +994,8 @@
    "pubblicato": "2026-11-06T14:04:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.5,
-   "testate": 1
+   "punteggio": 8.6,
+   "testate": 2
   },
   {
    "titolo": "MotoGP | Lorenzo: \"Aprilia tecnicamente superiore alla Ducati, ma Marquez è il Senna delle moto\"",
@@ -622,20 +1006,8 @@
    "pubblicato": "2026-11-06T14:04:04+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.5,
-   "testate": 2
-  },
-  {
-   "titolo": "F1, alta tensione in casa Ferrari. Vasseur convoca Hamilton e Leclerc per un confronto in Brasile",
-   "estratto": "Le tante piccole scintille degli ultimi due anni sono divampate in un incendio difficile da contenere per quanto riguarda il rapporto (in pista) tra i piloti ferraristi Lewis Hamilton e Charles…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/f1-alta-tensione-in-casa-ferrari-vasseur-convoca-hamilton-e-leclerc-per-un-confronto-in-brasile/",
-   "pubblicato": "2026-11-06T13:30:15+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 38.3,
-   "testate": 4
+   "punteggio": 31.6,
+   "testate": 3
   },
   {
    "titolo": "F1 | Cadillac: la sospensione di Bottas ha ceduto perché… sciolta dal calore dei freni",
@@ -646,7 +1018,7 @@
    "pubblicato": "2026-11-06T13:24:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.3,
+   "punteggio": -1.6,
    "testate": 1
   },
   {
@@ -658,7 +1030,7 @@
    "pubblicato": "2026-11-06T13:10:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.3,
+   "punteggio": 14.4,
    "testate": 3
   },
   {
@@ -670,7 +1042,7 @@
    "pubblicato": "2026-11-06T12:54:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 33.2,
+   "punteggio": 31.3,
    "testate": 3
   },
   {
@@ -682,20 +1054,8 @@
    "pubblicato": "2026-11-06T12:46:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.2,
+   "punteggio": 26.3,
    "testate": 3
-  },
-  {
-   "titolo": "Bottas: “I rapporti tra Hamilton e Leclerc sono buoni, Lewis ha ritrovato lo smalto dei giorni migliori ed è normale avere brevi attriti”",
-   "estratto": "L'ex compagno di squadra di Hamilton è convinto che la partenza in Messico faccia parte di un normale episodio \"da gara\"",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/parere-bottas-rapporti-hamilton-leclerc-buoni-ferrari-attriti-grinta-smalto",
-   "pubblicato": "2026-11-06T12:45:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 15.2,
-   "testate": 2
   },
   {
    "titolo": "GP Qatar 2026, Classifica FP1: Marc Marquez davanti a Bezzecchi, 5° Martin",
@@ -706,20 +1066,8 @@
    "pubblicato": "2026-11-06T12:45:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.2,
+   "punteggio": 14.3,
    "testate": 3
-  },
-  {
-   "titolo": "Antonelli a Interlagos con il casco speciale dedicato ad Ayrton Senna",
-   "estratto": "Il neocampione del mondo renderà omaggio al suo idolo con un casco che richiama quello del compianto brasiliano",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/antonelli-interlagos-con-casco-speciale-dedicato-a-ayrton-senna",
-   "pubblicato": "2026-11-06T12:43:23+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 18.2,
-   "testate": 2
   },
   {
    "titolo": "Quando la MotoGP domani in tv, GP Qatar 2026: orari qualifiche e Sprint",
@@ -730,31 +1078,7 @@
    "pubblicato": "2026-11-06T12:35:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.9,
-   "testate": 2
-  },
-  {
-   "titolo": "Quando la F1 domani in tv, GP Brasile 2026: orari FP3 e qualifiche",
-   "estratto": "Domani, sabato 7 novembre, l’autodromo José Carlos Pace di Interlagos ospiterà la terza sessione di prove libere e le qualifiche del Gran Premio del Brasile (ufficialmente GP di San Paolo) 2026…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/quando-la-f1-domani-in-tv-gp-brasile-2026-orari-fp3-e-qualifiche/",
-   "pubblicato": "2026-11-06T12:30:47+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -11.9,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP, Francesco Bagnaia: “Lusail è una delle piste migliori per Ducati, punto ad un buon risultato”",
-   "estratto": "La lunga e vincente collaborazione tra Ducati e Francesco Bagnaia sta per esaurirsi, quando mancano solamente tre Gran Premi al termine del Mondiale MotoGP 2026. Il rapporto tra Pecco e la Casa di…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/motogp-francesco-bagnaia-lusail-e-una-delle-piste-migliori-per-ducati-punto-ad-un-buon-risultato/",
-   "pubblicato": "2026-11-06T11:53:41+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 22.9,
+   "punteggio": -3.8,
    "testate": 2
   },
   {
@@ -766,19 +1090,7 @@
    "pubblicato": "2026-11-06T11:49:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.9,
-   "testate": 1
-  },
-  {
-   "titolo": "Moto2, Celestino Vietti in top 3 dopo il primo turno di libere in Qatar, sorride anche Lunetta",
-   "estratto": "Comincia con la prestazione di alto livello firmata da Celestino Vietti il weekend dedicato al GP del Qatar, ventesimo atto del Mondiale 2026 di Moto2 in fase di svolgimento presso il circuito di…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/moto2-celestino-vietti-in-top-3-dopo-il-primo-turno-di-libere-in-qatar-sorride-anche-lunetta/",
-   "pubblicato": "2026-11-06T11:46:41+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -0.1,
+   "punteggio": 11.0,
    "testate": 1
   },
   {
@@ -790,20 +1102,8 @@
    "pubblicato": "2026-11-06T11:32:33+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.9,
+   "punteggio": 11.0,
    "testate": 1
-  },
-  {
-   "titolo": "MotoGP, Jorge Martin supera l’ultima visita medica in Qatar: sarà in pista nella FP1",
-   "estratto": "Jorge Martin ha ricevuto il via libera dallo staff medico della MotoGP e potrà prendere parte alla prima sessione di prove libere del Gran Premio del Qatar 2026, terzultimo appuntamento della…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/motogp-jorge-martin-supera-lultima-visita-medica-in-qatar-sara-in-pista-nella-fp1/",
-   "pubblicato": "2026-11-06T11:22:29+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 9.8,
-   "testate": 2
   },
   {
    "titolo": "Jorge Martin idoneo per il weekend di Lusail",
@@ -814,7 +1114,7 @@
    "pubblicato": "2026-11-06T11:15:35+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.2,
+   "punteggio": -2.1,
    "testate": 1
   },
   {
@@ -826,32 +1126,8 @@
    "pubblicato": "2026-11-06T10:56:55+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.7,
-   "testate": 2
-  },
-  {
-   "titolo": "Moto3, Maximo Quiles vola nelle prime libere in Qatar. Pini a ridosso della top10",
-   "estratto": "Al Lusail International Circuit va in archivio con il miglior tempo di Maximo Quiles la prima sessione di prove libere del Gran Premio del Qatar 2026, valevole come ventesima e terzultima tappa…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/moto3-maximo-quiles-vola-nelle-prime-libere-in-qatar-pini-a-ridosso-della-top10/",
-   "pubblicato": "2026-11-06T10:54:55+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -0.3,
+   "punteggio": 10.8,
    "testate": 1
-  },
-  {
-   "titolo": "Ufficiale: Alan Permane resterà team principal della Racing Bulls fino al 2031",
-   "estratto": "Il britannico, che ha assunto questo ruolo la scorsa estate, ha rinnovato con la Casa di Faenza",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/ufficiale-alan-permane-restera-team-principal-racing-bulls-fino-al-2031",
-   "pubblicato": "2026-11-06T10:47:56+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 9.7,
-   "testate": 2
   },
   {
    "titolo": "Antonelli mai sazio. \"Ora il titolo costruttori. Poi al lavoro per restare al vertice anche nel 2027\"",
@@ -862,19 +1138,7 @@
    "pubblicato": "2026-11-06T10:24:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.6,
-   "testate": 1
-  },
-  {
-   "titolo": "Mercedes, un titolo tira l’altro: in Brasile può arrivare il Costruttori, serve fare 3 punti in più della Ferrari",
-   "estratto": "Le frecce d'argento puntano a chiudere i giochi per il Mondiale a Interlagos, ma la Ferrari è in trend positivo",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/mercedes-un-titolo-tira-laltro-in-brasile-puo-arrivare-il-costruttori-serve-fare-3-punti-in-piu-della-ferrari",
-   "pubblicato": "2026-11-06T10:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 7.5,
+   "punteggio": 10.7,
    "testate": 1
   },
   {
@@ -886,8 +1150,8 @@
    "pubblicato": "2026-11-06T09:43:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.4,
-   "testate": 2
+   "punteggio": -2.5,
+   "testate": 1
   },
   {
    "titolo": "MotoGP | Marquez: \"Se tuo fratello si gioca un Mondiale e gli lanci la moto addosso, allora sei un cattivo fratello\"",
@@ -898,7 +1162,7 @@
    "pubblicato": "2026-11-06T09:13:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.3,
+   "punteggio": 2.4,
    "testate": 1
   },
   {
@@ -910,20 +1174,8 @@
    "pubblicato": "2026-11-06T09:03:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.2,
+   "punteggio": 5.3,
    "testate": 1
-  },
-  {
-   "titolo": "Oggi in Brasile riunione tra Vasseur, Leclerc e Hamilton, Lewis: “Non risolveremo tutto, ma è un incontro importante”",
-   "estratto": "Vertice chiave in casa Ferrari dopo quanto accaduto in Messico",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/ferrari-vertice-brasile-riunione-vasseur-hamilton-leclerc-gp-messico-lewis-non-so-cosa-aspettarmi",
-   "pubblicato": "2026-11-06T09:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 42.2,
-   "testate": 4
   },
   {
    "titolo": "Ferrari, il caso Hamilton-Leclerc arriva a Interlagos: ora tocca a Vasseur risolvere la questione",
@@ -934,7 +1186,7 @@
    "pubblicato": "2026-11-06T08:48:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 37.2,
+   "punteggio": 35.3,
    "testate": 4
   },
   {
@@ -946,7 +1198,7 @@
    "pubblicato": "2026-11-06T08:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.1,
+   "punteggio": 10.2,
    "testate": 1
   },
   {
@@ -958,80 +1210,8 @@
    "pubblicato": "2026-11-06T08:27:41+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 42.1,
-   "testate": 4
-  },
-  {
-   "titolo": "Camara pronto a vivere il sogno: “Debuttare in F1 in Brasile sarà speciale per me”",
-   "estratto": "Il pilota della Haas, promosso dal team in sostituzione di Ocon, disputerà la sua prima gara proprio in occasione del suo GP di casa a Interlagos",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/camara-printo-a-vivere-il-sogno-esordire-f1-sara-speciale-per-me",
-   "pubblicato": "2026-11-06T08:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 4.0,
-   "testate": 1
-  },
-  {
-   "titolo": "GP San Paolo 2026: orari Sky/Now e TV8",
-   "estratto": "I dettagli della programmazione televisiva dell'appuntamento in programma ad Interlagos",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-brasile-2026-interlagos-televisione-programmazione-diretta-sky-differita-tv8-dove-vederla-ferrari-leclerc-hamilton-sf26-antonelli-campione-verstappen",
-   "pubblicato": "2026-11-06T07:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -13.3,
-   "testate": 1
-  },
-  {
-   "titolo": "Hamilton: “Le mie non sono frasi calcolate. Il team non mi ha mai zittito”",
-   "estratto": "Il campione inglese ha voluto smentire una certa narrazione che lo descrive piuttosto politico con i media",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/hamilton-mie-dichiarazioni-non-calcolate-ferrari-non-mi-ha-mai-zittito",
-   "pubblicato": "2026-11-06T07:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 3.7,
-   "testate": 1
-  },
-  {
-   "titolo": "Sainz: “I tifosi di Leclerc mi insultavano e mi auguravano il male. Ma con Charles chiarivo subito”",
-   "estratto": "Lo spagnolo più di ogni altro può parlare della rivalità con Leclerc",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/sainz-tifosi-leclerc-insultavano-auguravano-male-con-charles-chiarivamo-subito-ferrari",
-   "pubblicato": "2026-11-06T07:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 3.7,
-   "testate": 1
-  },
-  {
-   "titolo": "Ralf Schumacher: “Da Hamilton minacce via radio alla Al Capone, si pone al di sopra della Ferrari”",
-   "estratto": "L'ex pilota ha condannato pesantemente il comportamento del pilota inglese",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/ralf-schumacher-inchioda-hamilton-minacce-via-radio-al-capone-intollerabile-ferrari-leclerc-vasseur",
-   "pubblicato": "2026-11-06T07:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 11.7,
-   "testate": 1
-  },
-  {
-   "titolo": "Herbert: “Antonelli potrebbe battere il record di titoli di Schumacher e Hamilton”",
-   "estratto": "Secondo l'ex pilota l'italiano può riscrivere tutti i record della F1",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/herbert-profezia-andrea-kimi-antonelli-battera-record-titoli-mondiali-schumacher-hamilton",
-   "pubblicato": "2026-11-06T07:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 11.7,
-   "testate": 1
+   "punteggio": 30.2,
+   "testate": 3
   },
   {
    "titolo": "Bagnaia e le accuse a Ducati: “Volevo far parlare di me, dato che non riesco con i risultati”",
@@ -1042,80 +1222,8 @@
    "pubblicato": "2026-11-06T07:00:00+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 0.7,
+   "punteggio": -1.2,
    "testate": 1
-  },
-  {
-   "titolo": "GP Qatar 2026: gli orari su Sky/Now e TV8",
-   "estratto": "I dettagli di un appuntamento avvolto dall'incertezza legata al conflitto in corso a pochi km dal circuito di Lusail",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-orari/gp-qatar-2026-orari-tv-diretta-sky-tv8-programma-televisione-dove-vederla-marquez-decimo-titolo-sorpasso-rossi",
-   "pubblicato": "2026-11-06T07:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -3.3,
-   "testate": 2
-  },
-  {
-   "titolo": "F1 oggi in tv, GP Brasile 2026: orari venerdì 6 novembre, streaming, programma prove libere",
-   "estratto": "Oggi, venerdì 6 novembre, prende il via la ventesima tappa del Mondiale 2026 di F1. Sul circuito di Interlagos, in Brasile, si prevede un fine-settimana piuttosto intenso dove le scuderie dovranno…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/f1-oggi-in-tv-gp-brasile-2026-orari-prove-libere-streaming-programma-sky-e-tv8/",
-   "pubblicato": "2026-11-06T06:37:35+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -13.4,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP oggi in tv, GP Qatar 2026: orari venerdì 6 novembre, streaming, programma Sky e TV8",
-   "estratto": "Venerdì 6 novembre andrà in scena la prima giornata di prove libere del GP del Qatar, round del Motomondiale 2026. Sul tracciato di Sepang, le squadre e i piloti lavoreranno alacremente per trovare…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/motogp-oggi-in-tv-gp-qatar-2026-orari-prove-libere-streaming-programma-sky-e-tv8/",
-   "pubblicato": "2026-11-06T06:34:35+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -3.4,
-   "testate": 2
-  },
-  {
-   "titolo": "Quando MotoGP e F1 oggi (venerdì 6 novembre): orari prove libere, streaming, programma TV8 e Sky",
-   "estratto": "Venerdì 6 novembre inizia l’intenso weekend riservato ai motori, per la gioia di tutti gli appassionati che potranno gustarsi un fine settimana memorabile. Sul circuito di Interlagos andranno in…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/quando-motogp-e-f1-oggi-6-novembre-orari-prove-libere-streaming-programma-tv8-e-sky/",
-   "pubblicato": "2026-11-06T06:34:26+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -13.4,
-   "testate": 1
-  },
-  {
-   "titolo": "Quando MotoGP e F1 oggi (venerdì 6 novembre): orari prove libere, streaming, programma TV8 e Sky",
-   "estratto": "Venerdì 6 novembre inizia l’intenso weekend riservato ai motori, per la gioia di tutti gli appassionati che potranno gustarsi un fine settimana memorabile. Sul circuito di Interlagos andranno in…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/quando-motogp-e-f1-oggi-6-novembre-orari-prove-libere-streaming-programma-tv8-e-sky/",
-   "pubblicato": "2026-11-06T06:34:26+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -13.4,
-   "testate": 1
-  },
-  {
-   "titolo": "Kimi Antonelli rilancia: “Non posso fermarmi, voglio vincere. Il messaggio di Vettel mi ha colpito”",
-   "estratto": "Il titolo mondiale in tasca non ha spento la fame di Kimi Antonelli, che a Interlagos si presenta con un solo obiettivo: continuare a vincere. Il ventenne bolognese della Mercedes, laureatosi…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/kimi-antonelli-a-interlagos-zero-pensieri-ma-niente-rilassamento-perche-voglio-vincere/",
-   "pubblicato": "2026-11-06T05:58:21+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 21.5,
-   "testate": 2
   },
   {
    "titolo": "Marquez-Bezzecchi, botta e risposta in conferenza: “Tanto casino ma sei venuto”, “Non potevo lasciarti punti gratis”",
@@ -1126,7 +1234,7 @@
    "pubblicato": "2026-11-05T21:07:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.3,
+   "punteggio": 3.4,
    "testate": 1
   },
   {
@@ -1138,8 +1246,8 @@
    "pubblicato": "2026-11-05T20:25:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.1,
-   "testate": 2
+   "punteggio": 3.2,
+   "testate": 1
   },
   {
    "titolo": "F1 | Hamilton non arretra: “Leclerc corre più duro con me. Non mi farò mettere a tacere”",
@@ -1150,7 +1258,7 @@
    "pubblicato": "2026-11-05T20:06:50+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -3.0,
+   "punteggio": -4.9,
    "testate": 1
   },
   {
@@ -1162,8 +1270,8 @@
    "pubblicato": "2026-11-05T18:51:55+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 15.7,
-   "testate": 2
+   "punteggio": 23.8,
+   "testate": 3
   },
   {
    "titolo": "MotoGP | Marquez: \"Vorrei essere da un'altra parte, per questo ho preso l'ultimo aereo possibile\"",
@@ -1174,7 +1282,7 @@
    "pubblicato": "2026-11-05T18:10:13+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 7.5,
+   "punteggio": 5.6,
    "testate": 2
   },
   {
@@ -1186,7 +1294,7 @@
    "pubblicato": "2026-11-05T18:04:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.5,
+   "punteggio": 14.6,
    "testate": 3
   },
   {
@@ -1198,7 +1306,7 @@
    "pubblicato": "2026-11-05T17:57:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.5,
+   "punteggio": 2.6,
    "testate": 1
   },
   {
@@ -1210,7 +1318,7 @@
    "pubblicato": "2026-11-05T17:38:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.4,
+   "punteggio": 2.5,
    "testate": 1
   },
   {
@@ -1222,7 +1330,7 @@
    "pubblicato": "2026-11-05T17:35:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -3.6,
+   "punteggio": -5.5,
    "testate": 1
   },
   {
@@ -1234,7 +1342,7 @@
    "pubblicato": "2026-11-05T17:22:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.3,
+   "punteggio": 2.4,
    "testate": 1
   },
   {
@@ -1246,7 +1354,7 @@
    "pubblicato": "2026-11-05T17:05:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.8,
+   "punteggio": -2.6,
    "testate": 1
   },
   {
@@ -1258,7 +1366,7 @@
    "pubblicato": "2026-11-05T16:50:15+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.2,
+   "punteggio": 4.3,
    "testate": 2
   },
   {
@@ -1270,7 +1378,7 @@
    "pubblicato": "2026-11-05T16:34:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.1,
+   "punteggio": 12.2,
    "testate": 2
   },
   {
@@ -1282,7 +1390,7 @@
    "pubblicato": "2026-11-05T16:18:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.9,
+   "punteggio": -10.8,
    "testate": 1
   },
   {
@@ -1294,7 +1402,7 @@
    "pubblicato": "2026-11-05T15:52:38+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.1,
+   "punteggio": -10.9,
    "testate": 1
   },
   {
@@ -1306,7 +1414,7 @@
    "pubblicato": "2026-11-05T15:46:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -4.1,
+   "punteggio": -6.0,
    "testate": 1
   },
   {
@@ -1318,7 +1426,7 @@
    "pubblicato": "2026-11-05T15:16:45+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.8,
+   "punteggio": 1.9,
    "testate": 1
   },
   {
@@ -1330,115 +1438,7 @@
    "pubblicato": "2026-11-05T14:39:42+00:00",
    "tipo": "social",
    "citazione": true,
-   "punteggio": -1.4,
-   "testate": 1
-  },
-  {
-   "titolo": "Leclerc papà sfida il detto di Enzo Ferrari...D'altronde Verstappen insegna",
-   "estratto": "Il monegasco vuole contraddire la massima del padre fondatore del Cavallino a cui ha legato il proprio nome",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/05-152386241/leclerc_pap_sfida_il_detto_di_enzo_ferrari_d_altronde_verstappen_insegna/",
-   "pubblicato": "2026-11-05T14:23:34+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -1.4,
-   "testate": 1
-  },
-  {
-   "titolo": "\"Più tosta per Kimi rispetto a Michael\": Alessandro Benetton e il paragone tra Antonelli e Schumacher",
-   "estratto": "\"Entrambi determinati e concentrati, con una grande attitudine per la velocità. Ma partire dalla Mercedes ha voluto dire avere addosso più pressione\"",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/05-152386542/pi_tosta_per_kimi_rispetto_a_michael_alessandro_benetton_e_il_paragone_tra_antonelli_e_schumacher/",
-   "pubblicato": "2026-11-05T14:16:11+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 3.5,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Martin \"fit\" per la FP1 in Qatar, Fernandez ed Aldeguer hanno il via libera per tutto il GP",
-   "estratto": "Jorge Martin potrà disputare la FP1 del Gran Premio del Qatar, terzultimo appuntamento della stagione 2026 della MotoGP, che si disputa questo fine settimana a Lusail, in attesa di superare un nuovo…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-martin-fit-per-la-fp1-in-qatar-fernandez-ed-aldeguer-hanno-il-via-libera-per-tutto-il-gp/10871718/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-05T13:57:38+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 13.5,
-   "testate": 2
-  },
-  {
-   "titolo": "Raul Fernandez torna in sella. Dichiarato ‘fit’ per il GP del Qatar",
-   "estratto": "In seguito alla visita medica effettuata a Lusail, il pilota spagnolo del team Trackhouse è stato dichiarato idoneo per scendere in pista",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/raul-fernandez-torna-in-sella-dichiarato-fit-per-gp-qatar",
-   "pubblicato": "2026-11-05T13:44:03+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -9.6,
-   "testate": 1
-  },
-  {
-   "titolo": "Honda HRC: in Qatar con Marini c’è Jake Dixon al posto di Joan Mir",
-   "estratto": "La casa giapponese deve far fronte all'assenza del campione del mondo nel 2020",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/honda-hrc-con-marini-qatar-ce-dixon-joan-mir-assente",
-   "pubblicato": "2026-11-05T13:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -1.8,
-   "testate": 1
-  },
-  {
-   "titolo": "Dall’Igna: “Marquez dal ritorno dall’infortunio non ha commesso nessun errore, ma il lavoro non è ancora finito”",
-   "estratto": "Il Direttore Generale di Ducati Corse non vuole che si perda la concentrazione in questo finale di stagione",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/primo-match-point-marquez-qatar-dalligna-lavoro-non-ancora-finito-ducati-titolo-mondiale",
-   "pubblicato": "2026-11-05T12:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 3.0,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Domenicali: \"A Bagnaia non manca niente, spero ancora in una chiusura degna di questa storia bellissima\"",
-   "estratto": "La MotoGP è già sbarcata in Qatar, per il terzultimo appuntamento della stagione, che potrebbe già essere decisivo e consegnare il Mondiale a Marc Marquez, nel caso in cui dovesse riuscire a…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-domenicali-a-bagnaia-non-manca-niente-spero-ancora-in-una-chiusura-degna-di-questa-storia-be/10871688/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-05T11:40:05+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 2.9,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Simulazione MegaRide: a Interlagos si temono i forti carichi laterali della curva do Sol",
-   "estratto": "Terza gara consecutiva per la Formula 1 e terza tappa americana di fila di questo finale di stagione. Si corre in Brasile per il Gran Premio di São Paulo, su circuito José Carlos Pace, meglio…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-simulazione-megaride-a-interlagos-si-temono-i-forti-carichi-laterali-della-curva-do-sol/10871679/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-05T11:21:39+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -10.2,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Ceccarelli: \"Fra i piloti Ferrari sono possibili altre scintille perché sono due prime guide\"",
-   "estratto": "Kimi Antonelli è campione del mondo, l'Italia ritrova un pilota al vertice della Formula 1 73 anni dopo Ciccio Ascari. Il GP del Messico 2026 passerà alla storia, ma Riccardo Ceccarelli, mental coach…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-ceccarelli-fra-i-piloti-ferrari-sono-possibili-altre-scintille-perche-sono-due-prime-guide/10871674/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-05T10:40:49+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 2.6,
+   "punteggio": -3.3,
    "testate": 1
   }
  ]

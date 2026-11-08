@@ -1,6 +1,54 @@
 {
- "generato_il": "2026-11-08T11:52:13+00:00",
+ "generato_il": "2026-11-08T12:39:10+00:00",
  "articoli": [
+  {
+   "titolo": "LIVE MotoGP, GP Qatar 2026 in DIRETTA: tre italiani davanti nel warm-up. Alle 17.00 la gara",
+   "estratto": "‍CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE 12.55 Grazie per averci seguito, amici di OA Sport. Appuntamento alle 17:00 con la gara.‌ 12.53 Di seguito la classifica del warm-up con una bella tripletta…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/live-motogp-gp-qatar-2026-in-diretta-marquez-ha-il-primo-match-point-bezzecchi-per-rimanere-in-corsa/",
+   "pubblicato": "2026-11-08T12:31:13+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 24.0,
+   "testate": 3
+  },
+  {
+   "titolo": "MotoGP | Lusail, Warm-Up: tripletta italiana con Di Giannantonio davanti a Bezzecchi e Bastianini",
+   "estratto": "Con buona parte della griglia che ha utilizzato una coppia di gomme medie già nella Sprint di ieri, è molto probabile che questa possa essere la scelta maggioritaria anche nella gara lunga del Gran…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-lusail-warm-up-tripletta-italiana-con-di-giannantonio-davanti-a-bezzecchi-e-bastianini/10872901/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-08T12:22:28+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 21.9,
+   "testate": 2
+  },
+  {
+   "titolo": "Fabio Giannantonio svetta nel warm-up di Lusail davanti a Bezzecchi. Marquez e Martin non forzano",
+   "estratto": "Fabio Di Giannantonio è stato il pilota più veloce nel warm-up del GP del Qatar, terzultimo appuntamento del Mondiale 2026 di MotoGP. Sul circuito di Lusail, i piloti e i team hanno sfruttato…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/fabio-giannantonio-svetta-nel-warm-up-di-lusail-davanti-a-bezzecchi-marquez-e-martin-non-forzano/",
+   "pubblicato": "2026-11-08T12:05:27+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 31.9,
+   "testate": 3
+  },
+  {
+   "titolo": "Bezzecchi a Marquez: “Paragone con Indonesia 2025 inopportuno. I 13 zeri? Non me li so spiegare”",
+   "estratto": "Il pilota italiano non ha gradito il paragone del rivale",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/bezzecchi-marquez-paragone-indonesia-inopportuno-13-zeri-non-so-spiegare",
+   "pubblicato": "2026-11-08T12:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.8,
+   "testate": 1
+  },
   {
    "titolo": "F1 | Russell, la rabbia per la pole sfumata: un errore Mercedes gli nega la rivincita",
    "estratto": "George Russell ha concluso le qualifiche del Gran Premio del Brasile con il secondo tempo, ma il risultato non è bastato a nascondere una profonda delusione. Il pilota Mercedes era convinto di avere…",
@@ -10,19 +58,7 @@
    "pubblicato": "2026-11-08T11:41:24+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.0,
-   "testate": 1
-  },
-  {
-   "titolo": "LIVE MotoGP, GP Qatar 2026 in DIRETTA: comincia il warm-up",
-   "estratto": "‍CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE BANDIERA A SCACCHI! -1 minuti Bezzecchi sale al secondo posto, per lui uno scarto di 0.505. -2 minuti: eccolo Marquez, quarto tempo per lui, adesso a 0.036…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/live-motogp-gp-qatar-2026-in-diretta-marquez-ha-il-primo-match-point-bezzecchi-per-rimanere-in-corsa/",
-   "pubblicato": "2026-11-08T11:39:13+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 11.9,
+   "punteggio": 3.8,
    "testate": 1
   },
   {
@@ -34,7 +70,7 @@
    "pubblicato": "2026-11-08T11:35:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.9,
+   "punteggio": 8.7,
    "testate": 1
   },
   {
@@ -46,11 +82,11 @@
    "pubblicato": "2026-11-08T11:26:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.9,
+   "punteggio": 26.7,
    "testate": 2
   },
   {
-   "titolo": "MotoGP | Le assenze nella gara lunga del Qatar potrebbero bloccare il titolo di Marquez",
+   "titolo": "MotoGP | Le possibili assenze nella gara lunga del Qatar potrebbero bloccare il titolo di Marquez",
    "estratto": "I numeri affinché Marc Marquez si proclami campione del mondo questa domenica sono chiari: deve vincere la gara, ottenendo 25 punti, e Jorge Martin non ne deve conquistare, che sia per una caduta sia…",
    "fonte": "Motorsport.com",
    "serie": "MotoGP",
@@ -58,7 +94,7 @@
    "pubblicato": "2026-11-08T11:20:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.9,
+   "punteggio": 13.7,
    "testate": 2
   },
   {
@@ -70,7 +106,7 @@
    "pubblicato": "2026-11-08T11:10:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.8,
+   "punteggio": 8.6,
    "testate": 1
   },
   {
@@ -82,7 +118,7 @@
    "pubblicato": "2026-11-08T11:03:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 36.8,
+   "punteggio": 36.6,
    "testate": 3
   },
   {
@@ -94,7 +130,7 @@
    "pubblicato": "2026-11-08T11:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.8,
+   "punteggio": 21.6,
    "testate": 2
   },
   {
@@ -106,7 +142,7 @@
    "pubblicato": "2026-11-08T10:45:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.7,
+   "punteggio": 8.5,
    "testate": 1
   },
   {
@@ -118,7 +154,7 @@
    "pubblicato": "2026-11-08T10:42:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.7,
+   "punteggio": 16.5,
    "testate": 1
   },
   {
@@ -130,7 +166,7 @@
    "pubblicato": "2026-11-08T10:41:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.7,
+   "punteggio": 26.5,
    "testate": 2
   },
   {
@@ -142,7 +178,7 @@
    "pubblicato": "2026-11-08T10:30:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.7,
+   "punteggio": 1.5,
    "testate": 2
   },
   {
@@ -154,7 +190,7 @@
    "pubblicato": "2026-11-08T10:18:44+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.6,
+   "punteggio": 16.4,
    "testate": 1
   },
   {
@@ -166,7 +202,7 @@
    "pubblicato": "2026-11-08T10:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.5,
+   "punteggio": 11.3,
    "testate": 1
   },
   {
@@ -178,7 +214,7 @@
    "pubblicato": "2026-11-08T09:51:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.5,
+   "punteggio": 8.3,
    "testate": 1
   },
   {
@@ -190,7 +226,7 @@
    "pubblicato": "2026-11-08T09:26:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.4,
+   "punteggio": 8.2,
    "testate": 1
   },
   {
@@ -202,7 +238,7 @@
    "pubblicato": "2026-11-08T09:07:53+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 36.3,
+   "punteggio": 36.1,
    "testate": 3
   },
   {
@@ -214,7 +250,7 @@
    "pubblicato": "2026-11-08T09:00:00+00:00",
    "tipo": "social",
    "citazione": true,
-   "punteggio": 29.3,
+   "punteggio": 29.1,
    "testate": 2
   },
   {
@@ -226,7 +262,7 @@
    "pubblicato": "2026-11-08T08:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.0,
+   "punteggio": 25.8,
    "testate": 2
   },
   {
@@ -238,7 +274,7 @@
    "pubblicato": "2026-11-08T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.8,
+   "punteggio": 20.6,
    "testate": 2
   },
   {
@@ -250,7 +286,7 @@
    "pubblicato": "2026-11-08T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.8,
+   "punteggio": 17.6,
    "testate": 2
   },
   {
@@ -262,7 +298,7 @@
    "pubblicato": "2026-11-08T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.8,
+   "punteggio": 15.6,
    "testate": 1
   },
   {
@@ -274,7 +310,7 @@
    "pubblicato": "2026-11-08T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.2,
+   "punteggio": -9.4,
    "testate": 1
   },
   {
@@ -286,7 +322,7 @@
    "pubblicato": "2026-11-08T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 35.8,
+   "punteggio": 35.6,
    "testate": 3
   },
   {
@@ -298,7 +334,7 @@
    "pubblicato": "2026-11-08T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.8,
+   "punteggio": 17.6,
    "testate": 2
   },
   {
@@ -310,7 +346,7 @@
    "pubblicato": "2026-11-08T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 35.8,
+   "punteggio": 35.6,
    "testate": 3
   },
   {
@@ -322,7 +358,7 @@
    "pubblicato": "2026-11-08T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.8,
+   "punteggio": 0.6,
    "testate": 2
   },
   {
@@ -334,7 +370,7 @@
    "pubblicato": "2026-11-08T06:18:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.4,
+   "punteggio": -9.6,
    "testate": 1
   },
   {
@@ -346,7 +382,7 @@
    "pubblicato": "2026-11-08T06:18:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.4,
+   "punteggio": -9.6,
    "testate": 1
   },
   {
@@ -358,7 +394,7 @@
    "pubblicato": "2026-11-08T06:18:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.6,
+   "punteggio": 12.4,
    "testate": 2
   },
   {
@@ -370,7 +406,7 @@
    "pubblicato": "2026-11-08T06:15:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.6,
+   "punteggio": 0.4,
    "testate": 2
   },
   {
@@ -382,7 +418,7 @@
    "pubblicato": "2026-11-08T06:13:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.6,
+   "punteggio": 20.4,
    "testate": 2
   },
   {
@@ -394,7 +430,7 @@
    "pubblicato": "2026-11-08T06:10:09+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.6,
+   "punteggio": 12.4,
    "testate": 2
   },
   {
@@ -406,7 +442,7 @@
    "pubblicato": "2026-11-08T06:06:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.6,
+   "punteggio": 10.4,
    "testate": 3
   },
   {
@@ -418,7 +454,7 @@
    "pubblicato": "2026-11-08T06:00:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.5,
+   "punteggio": 28.3,
    "testate": 4
   },
   {
@@ -430,7 +466,7 @@
    "pubblicato": "2026-11-08T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.5,
+   "punteggio": 15.3,
    "testate": 1
   },
   {
@@ -442,7 +478,7 @@
    "pubblicato": "2026-11-08T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.5,
+   "punteggio": 15.3,
    "testate": 1
   },
   {
@@ -454,7 +490,7 @@
    "pubblicato": "2026-11-08T05:53:52+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.5,
+   "punteggio": 2.3,
    "testate": 1
   },
   {
@@ -466,7 +502,7 @@
    "pubblicato": "2026-11-08T05:53:52+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.5,
+   "punteggio": 2.3,
    "testate": 1
   },
   {
@@ -478,7 +514,7 @@
    "pubblicato": "2026-11-08T05:52:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 30.5,
+   "punteggio": 30.3,
    "testate": 3
   },
   {
@@ -490,7 +526,7 @@
    "pubblicato": "2026-11-08T05:00:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.3,
+   "punteggio": 17.1,
    "testate": 2
   },
   {
@@ -502,7 +538,7 @@
    "pubblicato": "2026-11-07T22:39:41+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.7,
+   "punteggio": 5.5,
    "testate": 1
   },
   {
@@ -514,7 +550,7 @@
    "pubblicato": "2026-11-07T22:38:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.7,
+   "punteggio": 13.5,
    "testate": 1
   },
   {
@@ -526,7 +562,7 @@
    "pubblicato": "2026-11-07T22:25:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.6,
+   "punteggio": 13.4,
    "testate": 1
   },
   {
@@ -538,7 +574,7 @@
    "pubblicato": "2026-11-07T22:13:44+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.6,
+   "punteggio": 28.4,
    "testate": 3
   },
   {
@@ -550,7 +586,7 @@
    "pubblicato": "2026-11-07T22:02:35+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.5,
+   "punteggio": 0.3,
    "testate": 1
   },
   {
@@ -562,7 +598,7 @@
    "pubblicato": "2026-11-07T21:51:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.5,
+   "punteggio": 13.3,
    "testate": 1
   },
   {
@@ -574,7 +610,7 @@
    "pubblicato": "2026-11-07T21:45:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.5,
+   "punteggio": 23.3,
    "testate": 2
   },
   {
@@ -586,7 +622,7 @@
    "pubblicato": "2026-11-07T21:29:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.4,
+   "punteggio": 0.2,
    "testate": 1
   },
   {
@@ -598,7 +634,7 @@
    "pubblicato": "2026-11-07T21:29:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.4,
+   "punteggio": 13.2,
    "testate": 1
   },
   {
@@ -610,7 +646,7 @@
    "pubblicato": "2026-11-07T21:26:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.4,
+   "punteggio": 15.2,
    "testate": 2
   },
   {
@@ -622,7 +658,7 @@
    "pubblicato": "2026-11-07T21:22:27+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.4,
+   "punteggio": 5.2,
    "testate": 1
   },
   {
@@ -634,7 +670,7 @@
    "pubblicato": "2026-11-07T21:21:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.4,
+   "punteggio": 13.2,
    "testate": 1
   },
   {
@@ -646,7 +682,7 @@
    "pubblicato": "2026-11-07T21:20:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.4,
+   "punteggio": 8.2,
    "testate": 1
   },
   {
@@ -658,7 +694,7 @@
    "pubblicato": "2026-11-07T21:12:27+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.3,
+   "punteggio": 23.1,
    "testate": 2
   },
   {
@@ -670,7 +706,7 @@
    "pubblicato": "2026-11-07T21:11:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.3,
+   "punteggio": 5.1,
    "testate": 1
   },
   {
@@ -682,7 +718,7 @@
    "pubblicato": "2026-11-07T21:05:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.3,
+   "punteggio": 5.1,
    "testate": 1
   },
   {
@@ -694,7 +730,7 @@
    "pubblicato": "2026-11-07T20:53:20+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.3,
+   "punteggio": 23.1,
    "testate": 2
   },
   {
@@ -706,7 +742,7 @@
    "pubblicato": "2026-11-07T20:43:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.2,
+   "punteggio": 10.0,
    "testate": 2
   },
   {
@@ -718,7 +754,7 @@
    "pubblicato": "2026-11-07T20:42:31+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.2,
+   "punteggio": 28.0,
    "testate": 3
   },
   {
@@ -730,7 +766,7 @@
    "pubblicato": "2026-11-07T20:41:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.2,
+   "punteggio": 28.0,
    "testate": 3
   },
   {
@@ -742,7 +778,7 @@
    "pubblicato": "2026-11-07T20:40:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.2,
+   "punteggio": 5.0,
    "testate": 1
   },
   {
@@ -754,7 +790,7 @@
    "pubblicato": "2026-11-07T20:39:20+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.2,
+   "punteggio": 15.0,
    "testate": 2
   },
   {
@@ -766,7 +802,7 @@
    "pubblicato": "2026-11-07T20:38:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.2,
+   "punteggio": 28.0,
    "testate": 3
   },
   {
@@ -778,7 +814,7 @@
    "pubblicato": "2026-11-07T20:34:24+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.2,
+   "punteggio": 16.0,
    "testate": 3
   },
   {
@@ -790,7 +826,7 @@
    "pubblicato": "2026-11-07T20:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.2,
+   "punteggio": 10.0,
    "testate": 2
   },
   {
@@ -802,7 +838,7 @@
    "pubblicato": "2026-11-07T20:29:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.2,
+   "punteggio": 28.0,
    "testate": 3
   },
   {
@@ -814,7 +850,7 @@
    "pubblicato": "2026-11-07T20:26:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.1,
+   "punteggio": 12.9,
    "testate": 1
   },
   {
@@ -826,7 +862,7 @@
    "pubblicato": "2026-11-07T19:47:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.0,
+   "punteggio": 17.8,
    "testate": 2
   },
   {
@@ -838,7 +874,7 @@
    "pubblicato": "2026-11-07T19:39:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 32.9,
+   "punteggio": 32.8,
    "testate": 3
   },
   {
@@ -850,7 +886,7 @@
    "pubblicato": "2026-11-07T19:32:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 32.9,
+   "punteggio": 32.7,
    "testate": 3
   },
   {
@@ -862,7 +898,7 @@
    "pubblicato": "2026-11-07T19:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 32.8,
+   "punteggio": 32.6,
    "testate": 3
   },
   {
@@ -874,7 +910,7 @@
    "pubblicato": "2026-11-07T19:11:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.8,
+   "punteggio": 14.6,
    "testate": 2
   },
   {
@@ -886,7 +922,7 @@
    "pubblicato": "2026-11-07T18:58:21+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 13.8,
+   "punteggio": 13.6,
    "testate": 1
   },
   {
@@ -898,7 +934,7 @@
    "pubblicato": "2026-11-07T18:53:03+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 32.8,
+   "punteggio": 32.6,
    "testate": 3
   },
   {
@@ -910,7 +946,7 @@
    "pubblicato": "2026-11-07T18:39:05+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.7,
+   "punteggio": 12.5,
    "testate": 1
   },
   {
@@ -922,7 +958,7 @@
    "pubblicato": "2026-11-07T18:35:34+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.3,
+   "punteggio": -2.5,
    "testate": 2
   },
   {
@@ -934,7 +970,7 @@
    "pubblicato": "2026-11-07T18:35:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.3,
+   "punteggio": -0.5,
    "testate": 1
   },
   {
@@ -946,7 +982,7 @@
    "pubblicato": "2026-11-07T18:13:48+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.6,
+   "punteggio": 22.4,
    "testate": 2
   },
   {
@@ -958,7 +994,7 @@
    "pubblicato": "2026-11-07T18:00:20+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.5,
+   "punteggio": 22.3,
    "testate": 2
   },
   {
@@ -970,7 +1006,7 @@
    "pubblicato": "2026-11-07T17:58:45+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.5,
+   "punteggio": 4.3,
    "testate": 1
   },
   {
@@ -982,7 +1018,7 @@
    "pubblicato": "2026-11-07T17:47:50+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.5,
+   "punteggio": 22.3,
    "testate": 2
   },
   {
@@ -994,7 +1030,7 @@
    "pubblicato": "2026-11-07T17:47:18+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.5,
+   "punteggio": 7.3,
    "testate": 1
   },
   {
@@ -1006,7 +1042,7 @@
    "pubblicato": "2026-11-07T17:45:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 32.5,
+   "punteggio": 32.3,
    "testate": 3
   },
   {
@@ -1018,7 +1054,7 @@
    "pubblicato": "2026-11-07T17:43:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.5,
+   "punteggio": 22.3,
    "testate": 2
   },
   {
@@ -1030,7 +1066,7 @@
    "pubblicato": "2026-11-07T17:28:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 32.4,
+   "punteggio": 32.2,
    "testate": 3
   },
   {
@@ -1042,7 +1078,7 @@
    "pubblicato": "2026-11-07T17:22:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.4,
+   "punteggio": 12.2,
    "testate": 1
   },
   {
@@ -1054,7 +1090,7 @@
    "pubblicato": "2026-11-07T17:20:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 32.4,
+   "punteggio": 32.2,
    "testate": 3
   },
   {
@@ -1066,7 +1102,7 @@
    "pubblicato": "2026-11-07T17:18:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.4,
+   "punteggio": 17.2,
    "testate": 2
   },
   {
@@ -1078,7 +1114,7 @@
    "pubblicato": "2026-11-07T17:14:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.3,
+   "punteggio": 27.1,
    "testate": 3
   },
   {
@@ -1090,7 +1126,7 @@
    "pubblicato": "2026-11-07T17:10:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.3,
+   "punteggio": 4.1,
    "testate": 1
   },
   {
@@ -1102,7 +1138,7 @@
    "pubblicato": "2026-11-07T17:06:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.3,
+   "punteggio": 27.1,
    "testate": 3
   },
   {
@@ -1114,7 +1150,7 @@
    "pubblicato": "2026-11-07T17:01:09+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.3,
+   "punteggio": 9.1,
    "testate": 2
   },
   {
@@ -1126,7 +1162,7 @@
    "pubblicato": "2026-11-07T17:00:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.3,
+   "punteggio": 27.1,
    "testate": 3
   },
   {
@@ -1138,7 +1174,7 @@
    "pubblicato": "2026-11-07T16:55:52+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.3,
+   "punteggio": 27.1,
    "testate": 3
   },
   {
@@ -1150,7 +1186,7 @@
    "pubblicato": "2026-11-07T16:54:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.3,
+   "punteggio": 15.1,
    "testate": 3
   },
   {
@@ -1162,7 +1198,7 @@
    "pubblicato": "2026-11-07T16:45:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.2,
+   "punteggio": 9.0,
    "testate": 2
   },
   {
@@ -1174,7 +1210,7 @@
    "pubblicato": "2026-11-07T16:44:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.2,
+   "punteggio": 27.0,
    "testate": 3
   },
   {
@@ -1186,19 +1222,7 @@
    "pubblicato": "2026-11-07T16:43:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.2,
-   "testate": 3
-  },
-  {
-   "titolo": "LIVE MotoGP, GP Qatar 2026 in DIRETTA: Marquez stende Bezzecchi con una spallata e vince senza sanzioni",
-   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE LA GRIGLIA DI PARTENZA 17.47 E’ tutto per questa DIRETTA LIVE. Un saluto dalla redazione di OA Sport. 17.46 Marc Marquez, con 49 punti di margine su Martin…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/live-motogp-gp-qatar-2026-in-diretta-bezzecchi-lancia-la-sfida-a-marquez-tra-qualifiche-e-sprint/",
-   "pubblicato": "2026-11-07T16:40:52+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 27.2,
+   "punteggio": 27.0,
    "testate": 3
   },
   {
@@ -1210,20 +1234,8 @@
    "pubblicato": "2026-11-07T16:19:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.1,
+   "punteggio": 6.9,
    "testate": 1
-  },
-  {
-   "titolo": "GP Qatar 2026, la cronaca della Sprint",
-   "estratto": "La cronaca giro dopo giro della Sprint di Lusail",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-live/diretta-motogp-gp-qatar-2026-sprint-gara-cronaca-aggiornamenti-bezzecchi-marquez-aprilia-ducati",
-   "pubblicato": "2026-11-07T16:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 9.0,
-   "testate": 2
   },
   {
    "titolo": "F1 | Interlagos, Libere 3: Verstappen detta il passo su Antonelli e Norris. Hamilton rompe il motore nuovo",
@@ -1234,7 +1246,7 @@
    "pubblicato": "2026-11-07T15:51:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.0,
+   "punteggio": 16.8,
    "testate": 2
   },
   {
@@ -1246,7 +1258,7 @@
    "pubblicato": "2026-11-07T15:46:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.0,
+   "punteggio": 14.8,
    "testate": 3
   },
   {
@@ -1258,7 +1270,7 @@
    "pubblicato": "2026-11-07T15:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.9,
+   "punteggio": 8.7,
    "testate": 2
   },
   {
@@ -1270,7 +1282,7 @@
    "pubblicato": "2026-11-07T15:05:10+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.8,
+   "punteggio": 6.6,
    "testate": 1
   },
   {
@@ -1282,7 +1294,7 @@
    "pubblicato": "2026-11-07T13:34:53+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.4,
+   "punteggio": 13.2,
    "testate": 2
   },
   {
@@ -1294,7 +1306,7 @@
    "pubblicato": "2026-11-07T12:44:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 26.2,
+   "punteggio": 26.0,
    "testate": 3
   },
   {
@@ -1306,7 +1318,7 @@
    "pubblicato": "2026-11-07T12:06:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.9,
+   "punteggio": -2.1,
    "testate": 1
   },
   {
@@ -1318,7 +1330,7 @@
    "pubblicato": "2026-11-07T11:22:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.1,
+   "punteggio": -2.3,
    "testate": 1
   },
   {
@@ -1330,7 +1342,7 @@
    "pubblicato": "2026-11-07T10:49:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.3,
+   "punteggio": -2.5,
    "testate": 1
   },
   {
@@ -1342,7 +1354,7 @@
    "pubblicato": "2026-11-07T10:00:43+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.5,
+   "punteggio": 2.3,
    "testate": 1
   },
   {
@@ -1354,7 +1366,7 @@
    "pubblicato": "2026-11-07T09:40:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.4,
+   "punteggio": 5.3,
    "testate": 1
   },
   {
@@ -1366,7 +1378,7 @@
    "pubblicato": "2026-11-07T09:12:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.3,
+   "punteggio": 10.1,
    "testate": 1
   },
   {
@@ -1378,7 +1390,7 @@
    "pubblicato": "2026-11-07T08:43:34+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.2,
+   "punteggio": 5.0,
    "testate": 1
   },
   {
@@ -1390,7 +1402,7 @@
    "pubblicato": "2026-11-07T05:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.4,
+   "punteggio": 4.2,
    "testate": 1
   },
   {
@@ -1402,7 +1414,7 @@
    "pubblicato": "2026-11-06T21:58:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.5,
+   "punteggio": 7.3,
    "testate": 1
   },
   {
@@ -1414,7 +1426,7 @@
    "pubblicato": "2026-11-06T21:40:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.4,
+   "punteggio": 17.3,
    "testate": 2
   },
   {
@@ -1426,20 +1438,8 @@
    "pubblicato": "2026-11-06T21:30:33+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.4,
+   "punteggio": 17.2,
    "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Martin: \"Mi sto già abituando a guidare con dolore\"",
-   "estratto": "Jorge Martin non vuole andare oltre il giorno per giorno. Il pilota dell'Aprilia è arrivato in Qatar con l'obiettivo di portare la lotta per il Mondiale fino all'ultima gara, ma consapevole che il…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/martin-mi-sto-gia-abituando-a-guidare-con-dolore/10872275/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-06T20:41:50+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -0.8,
-   "testate": 1
   }
  ]
 }

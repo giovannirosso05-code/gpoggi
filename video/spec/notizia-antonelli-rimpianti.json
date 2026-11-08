@@ -1,0 +1,61 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Antonelli: vittoria sfumata",
+ "etichetta": "Gara",
+ "fonte": "Motorsport.com",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto": "Kimi Antonelli",
+   "ritratto_espn": true,
+   "hook": true,
+   "hook_titolo": "Antonelli, vittoria sfumata",
+   "testo": "*Antonelli* sfiora la vittoria a San Paolo, poi il *testacoda*!",
+   "fonte_alto": "Motorsport.com"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "ritratto_espn": true,
+   "testo": "Parte dalla prima fila, supera *Norris* al via e comanda la gara, con circa *sette secondi* di vantaggio.",
+   "fonte_alto": "Motorsport.com"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "pista": true,
+   "foto_espn_cerca": [
+    "antonelli"
+   ],
+   "testo": "Poi, con le *gomme slick*, perde ritmo. Al giro venti, un lungo e un *testacoda* alla prima curva.",
+   "fonte_alto": "Motorsport.com"
+  },
+  {
+   "foto": "Lando Norris",
+   "ritratto_espn": true,
+   "testo": "Perde la testa: scappa *Norris*, e lo superano anche le due *Red Bull*.",
+   "fonte_alto": "Motorsport.com"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "ritratto_espn": true,
+   "testo": "Dice: «*Eravamo in lizza per la vittoria* fino a quel momento», e non sa spiegare perché il posteriore sia andato così in fretta.",
+   "fonte_alto": "Motorsport.com"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "ritratto_espn": true,
+   "testo": "Già con le soft sentiva *qualcosa di anomalo* e teme un problema alla *geometria del posteriore*. Ai box pensavano alla temperatura delle gomme.",
+   "fonte_alto": "Motorsport.com"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "ritratto_espn": true,
+   "testo": "Chiude *quinto*: «Sono molto deluso», ma la *Mercedes* ha appena vinto il titolo costruttori.",
+   "fonte_alto": "Motorsport.com"
+  }
+ ],
+ "finale": {
+  "foto": "Kimi Antonelli",
+  "ritratto_espn": true,
+  "domanda": "Antonelli poteva vincere a San Paolo?"
+ }
+}

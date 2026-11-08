@@ -19,16 +19,6 @@
   "pole": 66,
   "giri_veloci": 38
  },
- "f1:44": {
-  "nascita": "1985-01-07",
-  "nazionalita": "British",
-  "titoli": 7,
-  "gare": 396,
-  "vittorie": 106,
-  "podi": 208,
-  "pole": 118,
-  "giri_veloci": 69
- },
  "f1:63": {
   "nascita": "1998-02-15",
   "nazionalita": "British",
@@ -38,6 +28,16 @@
   "podi": 32,
   "pole": 18,
   "giri_veloci": 13
+ },
+ "f1:44": {
+  "nascita": "1985-01-07",
+  "nazionalita": "British",
+  "titoli": 7,
+  "gare": 396,
+  "vittorie": 106,
+  "podi": 208,
+  "pole": 118,
+  "giri_veloci": 69
  },
  "f1:16": {
   "nascita": "1997-10-16",
@@ -238,6 +238,16 @@
   "podi": 39,
   "pole": 4,
   "giri_veloci": 12
+ },
+ "f1:51": {
+  "nascita": null,
+  "nazionalita": null,
+  "titoli": null,
+  "gare": 1,
+  "vittorie": 0,
+  "podi": 0,
+  "pole": 0,
+  "giri_veloci": 0
  },
  "moto:f55b433d-38b8-4d1d-bb3a-a709c82a0260": {
   "nascita": "1993-02-17",
@@ -3239,6 +3249,123 @@
    "fonte": "https://en.wikipedia.org/wiki/Alex_Rins"
   }
  },
+ "moto:173da4e6-99bd-4468-b277-cf47f1efd24b": {
+  "nascita": "2000-01-06",
+  "luogo": "Valencia, Spain",
+  "altezza": 179,
+  "peso": 70,
+  "debutto": 2016,
+  "carriera": [
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "CarXpert Interwetten",
+      "numero": 27
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Garage Plus Interwetten",
+      "numero": 27
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "American Team",
+      "numero": 27
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "American Team",
+      "numero": 0
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "American Team",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Tech3 KTM Factory Racing",
+      "numero": 27
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Tech3 KTM Factory Racing",
+      "numero": 27
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda LCR",
+      "numero": 27
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Repsol Honda",
+      "numero": 27
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "BK8 Gresini Racing MotoGP",
+      "numero": 27
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 94,
+   "vittorie": 0,
+   "podi": 2,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 39,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Iker Lecuona 2023 (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Iker_Lecuona"
+  }
+ },
  "moto:24c03c0c-b2d9-4959-99e0-017214043604": {
   "nascita": "1996-10-16",
   "luogo": "Alanya, Türkiye",
@@ -3466,123 +3593,6 @@
    },
    "immagine": "Maverick Viñales at the 2025 Italian motorcycle Grand Prix (cropped).jpg",
    "fonte": "https://en.wikipedia.org/wiki/Maverick_Vi%C3%B1ales"
-  }
- },
- "moto:173da4e6-99bd-4468-b277-cf47f1efd24b": {
-  "nascita": "2000-01-06",
-  "luogo": "Valencia, Spain",
-  "altezza": 179,
-  "peso": 70,
-  "debutto": 2016,
-  "carriera": [
-   {
-    "anno": 2016,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "CarXpert Interwetten",
-      "numero": 27
-     }
-    ]
-   },
-   {
-    "anno": 2017,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Garage Plus Interwetten",
-      "numero": 27
-     }
-    ]
-   },
-   {
-    "anno": 2018,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "American Team",
-      "numero": 27
-     }
-    ]
-   },
-   {
-    "anno": 2019,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "American Team",
-      "numero": 0
-     },
-     {
-      "categoria": "MotoGP",
-      "team": "American Team",
-      "numero": 0
-     }
-    ]
-   },
-   {
-    "anno": 2020,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Tech3 KTM Factory Racing",
-      "numero": 27
-     }
-    ]
-   },
-   {
-    "anno": 2021,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Tech3 KTM Factory Racing",
-      "numero": 27
-     }
-    ]
-   },
-   {
-    "anno": 2023,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Honda LCR",
-      "numero": 27
-     },
-     {
-      "categoria": "MotoGP",
-      "team": "Repsol Honda",
-      "numero": 27
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "BK8 Gresini Racing MotoGP",
-      "numero": 27
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 94,
-   "vittorie": 0,
-   "podi": 2,
-   "pole": 0,
-   "giri_veloci": 0,
-   "titoli": 0,
-   "motogp": {
-    "gare": 39,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": "Iker Lecuona 2023 (cropped).jpg",
-   "fonte": "https://en.wikipedia.org/wiki/Iker_Lecuona"
   }
  },
  "moto:1113c9b8-c231-4ba7-a352-4c11c92ab9df": {
@@ -4298,6 +4308,128 @@
    "fonte": "https://en.wikipedia.org/wiki/Takaaki_Nakagami"
   }
  },
+ "moto:6cbb2071-121c-4407-9966-1a16cacbf970": {
+  "nascita": "1996-01-15",
+  "luogo": "Dover, United Kingdom",
+  "altezza": 178,
+  "peso": 63,
+  "debutto": 2017,
+  "carriera": [
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Dynavolt Intact GP",
+      "numero": 94
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Dynavolt Intact GP",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Petronas Sprinta Racing",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Petronas Sprinta Racing",
+      "numero": 96
+     },
+     {
+      "categoria": "MotoGP",
+      "team": "Petronas Yamaha SRT",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Inde GASGAS Aspar Team",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "GASGAS Aspar Team",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "CFMOTO Aspar Team",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ELF Marc VDS Racing Team",
+      "numero": 96
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 96
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 127,
+   "vittorie": 7,
+   "podi": 22,
+   "pole": 8,
+   "giri_veloci": 4,
+   "titoli": 0,
+   "motogp": {
+    "gare": 2,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Jake Dixon 2017.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Jake_Dixon"
+  }
+ },
  "moto:c2e99a2c-ec5b-4757-8728-ed3254ebbeee": {
   "nascita": "1985-10-29",
   "luogo": "Coventry, United Kingdom",
@@ -4468,128 +4600,6 @@
    },
    "immagine": "Crutchlow COTA 2015.jpg",
    "fonte": "https://en.wikipedia.org/wiki/Cal_Crutchlow"
-  }
- },
- "moto:6cbb2071-121c-4407-9966-1a16cacbf970": {
-  "nascita": "1996-01-15",
-  "luogo": "Dover, United Kingdom",
-  "altezza": 178,
-  "peso": 63,
-  "debutto": 2017,
-  "carriera": [
-   {
-    "anno": 2017,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Dynavolt Intact GP",
-      "numero": 94
-     }
-    ]
-   },
-   {
-    "anno": 2019,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Dynavolt Intact GP",
-      "numero": 96
-     }
-    ]
-   },
-   {
-    "anno": 2020,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Petronas Sprinta Racing",
-      "numero": 96
-     }
-    ]
-   },
-   {
-    "anno": 2021,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Petronas Sprinta Racing",
-      "numero": 96
-     },
-     {
-      "categoria": "MotoGP",
-      "team": "Petronas Yamaha SRT",
-      "numero": 96
-     }
-    ]
-   },
-   {
-    "anno": 2022,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Inde GASGAS Aspar Team",
-      "numero": 96
-     }
-    ]
-   },
-   {
-    "anno": 2023,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "GASGAS Aspar Team",
-      "numero": 96
-     }
-    ]
-   },
-   {
-    "anno": 2024,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "CFMOTO Aspar Team",
-      "numero": 96
-     }
-    ]
-   },
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "ELF Marc VDS Racing Team",
-      "numero": 96
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Honda HRC Castrol",
-      "numero": 96
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 127,
-   "vittorie": 7,
-   "podi": 22,
-   "pole": 8,
-   "giri_veloci": 4,
-   "titoli": 0,
-   "motogp": {
-    "gare": 2,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": "Jake Dixon 2017.jpg",
-   "fonte": "https://en.wikipedia.org/wiki/Jake_Dixon"
   }
  },
  "moto:14ca9be2-6d69-4a70-b224-ea44b791638c": {
@@ -5696,93 +5706,6 @@
    "fonte": "https://en.wikipedia.org/wiki/Iv%C3%A1n_Ortol%C3%A1"
   }
  },
- "moto:f9d74cc7-4747-4956-881b-b79ce1edb6f5": {
-  "nascita": "2006-04-25",
-  "luogo": "Madrid, Spain",
-  "altezza": 162,
-  "peso": 55,
-  "debutto": 2021,
-  "carriera": [
-   {
-    "anno": 2021,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "GASGAS Gaviota Aspar",
-      "numero": 80
-     }
-    ]
-   },
-   {
-    "anno": 2022,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Inde GASGAS Aspar Team",
-      "numero": 80
-     }
-    ]
-   },
-   {
-    "anno": 2023,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "GASGAS Aspar Team",
-      "numero": 80
-     }
-    ]
-   },
-   {
-    "anno": 2024,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "CFMOTO Aspar Team",
-      "numero": 80
-     }
-    ]
-   },
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "CFMOTO Aspar Team",
-      "numero": 80
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "CFMOTO Aspar Team",
-      "numero": 80
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 80,
-   "vittorie": 20,
-   "podi": 32,
-   "pole": 9,
-   "giri_veloci": 9,
-   "titoli": 1,
-   "motogp": {
-    "gare": 0,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": "David Alonso 2025.jpg",
-   "fonte": "https://en.wikipedia.org/wiki/David_Alonso_(motorcyclist)"
-  }
- },
  "moto:e27904a7-0e30-4d91-84f8-016d421aa89e": {
   "nascita": "2005-04-27",
   "luogo": "Sant Vicent del Raspeig, Spain",
@@ -5873,6 +5796,93 @@
    },
    "immagine": "Daniel Holgado 2019.jpg",
    "fonte": "https://en.wikipedia.org/wiki/Daniel_Holgado"
+  }
+ },
+ "moto:f9d74cc7-4747-4956-881b-b79ce1edb6f5": {
+  "nascita": "2006-04-25",
+  "luogo": "Madrid, Spain",
+  "altezza": 162,
+  "peso": 55,
+  "debutto": 2021,
+  "carriera": [
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GASGAS Gaviota Aspar",
+      "numero": 80
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Inde GASGAS Aspar Team",
+      "numero": 80
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GASGAS Aspar Team",
+      "numero": 80
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CFMOTO Aspar Team",
+      "numero": 80
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "CFMOTO Aspar Team",
+      "numero": 80
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "CFMOTO Aspar Team",
+      "numero": 80
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 80,
+   "vittorie": 20,
+   "podi": 32,
+   "pole": 9,
+   "giri_veloci": 9,
+   "titoli": 1,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "David Alonso 2025.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/David_Alonso_(motorcyclist)"
   }
  },
  "moto:2e991b48-6cce-4488-9839-705fa2d198da": {
@@ -6308,6 +6318,45 @@
    "fonte": "https://en.wikipedia.org/wiki/Alonso_L%C3%B3pez_(motorcyclist)"
   }
  },
+ "moto:3fc01a22-75e3-4cb3-a19d-401386cf80cc": {
+  "nascita": "2006-04-28",
+  "luogo": "Dos Hermanas, Spain",
+  "altezza": 176,
+  "peso": 67,
+  "debutto": 2024,
+  "carriera": [
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Preicanos Racing Team",
+      "numero": 17
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Red Bull KTM Ajo",
+      "numero": 17
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 17
+     }
+    ]
+   }
+  ]
+ },
  "moto:642ca2e1-3962-45ba-8745-fd7c8b140462": {
   "nascita": "2005-02-19",
   "luogo": "Meppel, Netherlands",
@@ -6375,20 +6424,60 @@
    "fonte": "https://en.wikipedia.org/wiki/Collin_Veijer"
   }
  },
- "moto:3fc01a22-75e3-4cb3-a19d-401386cf80cc": {
-  "nascita": "2006-04-28",
-  "luogo": "Dos Hermanas, Spain",
-  "altezza": 176,
-  "peso": 67,
-  "debutto": 2024,
+ "moto:3f1dfb38-8fee-460b-83e0-01fe8b1f175e": {
+  "nascita": "2004-02-21",
+  "luogo": "Valencia, Spain",
+  "altezza": 184,
+  "peso": 69,
+  "debutto": 2021,
   "carriera": [
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoE",
+      "team": "Tech3 E-Racing",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoE",
+      "team": "Tech3 E-Racing",
+      "numero": 0
+     },
+     {
+      "categoria": "MotoE",
+      "team": "Tech3 E-Racing",
+      "numero": 17
+     },
+     {
+      "categoria": "Moto2",
+      "team": "KLINT Racing Team",
+      "numero": 17
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "KLINT Racing Team",
+      "numero": 17
+     }
+    ]
+   },
    {
     "anno": 2024,
     "classi": [
      {
       "categoria": "Moto2",
-      "team": "Preicanos Racing Team",
-      "numero": 17
+      "team": "KLINT Racing Team",
+      "numero": 11
      }
     ]
    },
@@ -6397,8 +6486,8 @@
     "classi": [
      {
       "categoria": "Moto2",
-      "team": "Red Bull KTM Ajo",
-      "numero": 17
+      "team": "KLINT Racing Team",
+      "numero": 11
      }
     ]
    },
@@ -6407,12 +6496,30 @@
     "classi": [
      {
       "categoria": "Moto2",
-      "team": "Italtrans Racing Team",
-      "numero": 17
+      "team": "KLINT Racing Team",
+      "numero": 11
      }
     ]
    }
-  ]
+  ],
+  "totali": {
+   "gare": 62,
+   "vittorie": 0,
+   "podi": 1,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Alex_Escrig"
+  }
  },
  "moto:64c448a5-6f5e-4bef-bac5-d0f5e8a9b89a": {
   "nascita": "2000-08-03",
@@ -6539,103 +6646,6 @@
    },
    "immagine": "Tony Arbolino 2019.jpg",
    "fonte": "https://en.wikipedia.org/wiki/Tony_Arbolino"
-  }
- },
- "moto:3f1dfb38-8fee-460b-83e0-01fe8b1f175e": {
-  "nascita": "2004-02-21",
-  "luogo": "Valencia, Spain",
-  "altezza": 184,
-  "peso": 69,
-  "debutto": 2021,
-  "carriera": [
-   {
-    "anno": 2021,
-    "classi": [
-     {
-      "categoria": "MotoE",
-      "team": "Tech3 E-Racing",
-      "numero": 0
-     }
-    ]
-   },
-   {
-    "anno": 2022,
-    "classi": [
-     {
-      "categoria": "MotoE",
-      "team": "Tech3 E-Racing",
-      "numero": 0
-     },
-     {
-      "categoria": "MotoE",
-      "team": "Tech3 E-Racing",
-      "numero": 17
-     },
-     {
-      "categoria": "Moto2",
-      "team": "KLINT Racing Team",
-      "numero": 17
-     }
-    ]
-   },
-   {
-    "anno": 2023,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "KLINT Racing Team",
-      "numero": 17
-     }
-    ]
-   },
-   {
-    "anno": 2024,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "KLINT Racing Team",
-      "numero": 11
-     }
-    ]
-   },
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "KLINT Racing Team",
-      "numero": 11
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "KLINT Racing Team",
-      "numero": 11
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 62,
-   "vittorie": 0,
-   "podi": 1,
-   "pole": 0,
-   "giri_veloci": 0,
-   "titoli": 0,
-   "motogp": {
-    "gare": 0,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": null,
-   "fonte": "https://en.wikipedia.org/wiki/Alex_Escrig"
   }
  },
  "moto:5315c17f-fe2f-4478-8ad6-fac49d337c84": {
@@ -8842,58 +8852,6 @@
    "fonte": "https://en.wikipedia.org/wiki/David_Almansa"
   }
  },
- "moto:ebbcbb0f-0692-4963-9a8b-7efb7bd91d9e": {
-  "nascita": "2008-08-11",
-  "luogo": "Santander, Spain",
-  "altezza": null,
-  "peso": null,
-  "debutto": 2025,
-  "carriera": [
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Liqui Moly Dynavolt Intact GP",
-      "numero": 51
-     },
-     {
-      "categoria": "Moto3",
-      "team": "Red Bull KTM Ajo",
-      "numero": 51
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Red Bull KTM Ajo",
-      "numero": 51
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 19,
-   "vittorie": 2,
-   "podi": 4,
-   "pole": 2,
-   "giri_veloci": 0,
-   "titoli": 0,
-   "motogp": {
-    "gare": 0,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": "Brian Uriarte 2026 San Marino GP.jpg",
-   "fonte": "https://en.wikipedia.org/wiki/Brian_Uriarte"
-  }
- },
  "moto:8c6da2df-4891-41f1-a703-8d51dc51c284": {
   "nascita": "2007-06-05",
   "luogo": "Murcia, Spain",
@@ -8949,6 +8907,58 @@
    },
    "immagine": null,
    "fonte": "https://en.wikipedia.org/wiki/Alvaro_Carpe"
+  }
+ },
+ "moto:ebbcbb0f-0692-4963-9a8b-7efb7bd91d9e": {
+  "nascita": "2008-08-11",
+  "luogo": "Santander, Spain",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 51
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 51
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 51
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 19,
+   "vittorie": 2,
+   "podi": 4,
+   "pole": 2,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Brian Uriarte 2026 San Marino GP.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Brian_Uriarte"
   }
  },
  "moto:16332a3a-5c77-4f28-b58f-1381711cd452": {
@@ -9053,6 +9063,43 @@
    "fonte": "https://en.wikipedia.org/wiki/Adri%C3%A1n_Fern%C3%A1ndez_(motorcyclist)"
   }
  },
+ "moto:4540b4b4-43ca-46a9-bbca-68ade8c5ced2": {
+  "nascita": "2008-11-23",
+  "luogo": "Gunungkidul Regency, Indonesia",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 9
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 15,
+   "vittorie": 0,
+   "podi": 2,
+   "pole": 0,
+   "giri_veloci": 1,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Veda Pratama at Merdeka Palace (2025-09-30).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Veda_Pratama"
+  }
+ },
  "moto:eff84411-d39e-49c1-8447-a42160daf173": {
   "nascita": "2007-07-03",
   "luogo": "Barcelona, Argentina",
@@ -9098,90 +9145,6 @@
    },
    "immagine": null,
    "fonte": "https://en.wikipedia.org/wiki/Marco_Morelli_(motorcyclist)"
-  }
- },
- "moto:4540b4b4-43ca-46a9-bbca-68ade8c5ced2": {
-  "nascita": "2008-11-23",
-  "luogo": "Gunungkidul Regency, Indonesia",
-  "altezza": null,
-  "peso": null,
-  "debutto": 2025,
-  "carriera": [
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Honda Team Asia",
-      "numero": 9
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 15,
-   "vittorie": 0,
-   "podi": 2,
-   "pole": 0,
-   "giri_veloci": 1,
-   "titoli": 0,
-   "motogp": {
-    "gare": 0,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": "Veda Pratama at Merdeka Palace (2025-09-30).jpg",
-   "fonte": "https://en.wikipedia.org/wiki/Veda_Pratama"
-  }
- },
- "moto:f69ef365-138a-4727-a992-b8857bc5bb52": {
-  "nascita": "2007-12-28",
-  "luogo": "Barcelona, Argentina",
-  "altezza": 171,
-  "peso": 57,
-  "debutto": 2024,
-  "carriera": [
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Red Bull KTM Tech3",
-      "numero": 73
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Red Bull KTM Tech3",
-      "numero": 73
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 36,
-   "vittorie": 0,
-   "podi": 4,
-   "pole": 3,
-   "giri_veloci": 2,
-   "titoli": 0,
-   "motogp": {
-    "gare": 0,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": "Valentín Perrone recorrió las obras del Gálvez 1 (cropped).jpg",
-   "fonte": "https://en.wikipedia.org/wiki/Valentin_Perrone"
   }
  },
  "moto:b187512c-fb56-46b1-b00d-62b46a7c65aa": {
@@ -9234,6 +9197,53 @@
    },
    "immagine": "Hakim Danish at the 2026 San Marino and Rimini Riviera motorcycle Grand Prix (cropped).jpg",
    "fonte": "https://en.wikipedia.org/wiki/Hakim_Danish_(motorcyclist)"
+  }
+ },
+ "moto:f69ef365-138a-4727-a992-b8857bc5bb52": {
+  "nascita": "2007-12-28",
+  "luogo": "Barcelona, Argentina",
+  "altezza": 171,
+  "peso": 57,
+  "debutto": 2024,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Tech3",
+      "numero": 73
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Tech3",
+      "numero": 73
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 36,
+   "vittorie": 0,
+   "podi": 4,
+   "pole": 3,
+   "giri_veloci": 2,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Valentín Perrone recorrió las obras del Gálvez 1 (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Valentin_Perrone"
   }
  },
  "moto:760c8192-f5d5-4f96-a032-36dde524ea62": {
@@ -9495,6 +9505,170 @@
    "fonte": "https://en.wikipedia.org/wiki/Joel_Esteban"
   }
  },
+ "moto:8d4c8c88-f989-4d86-8cfd-702237b8083b": {
+  "nascita": "2003-06-12",
+  "luogo": "Nambour QLD, Australia",
+  "altezza": 163,
+  "peso": 59,
+  "debutto": 2021,
+  "carriera": [
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CIP Green Power",
+      "numero": 66
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CIP Green Power",
+      "numero": 66
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CFMOTO Racing PruestelGP",
+      "numero": 66
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 66
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "LEVEL UP - MTA",
+      "numero": 66
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GRYD Racing",
+      "numero": 66
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 96,
+   "vittorie": 0,
+   "podi": 5,
+   "pole": 3,
+   "giri_veloci": 1,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Joel_Kelso"
+  }
+ },
+ "moto:ed6ebad8-3f85-48db-8539-5cf755de6c30": {
+  "nascita": "2006-05-15",
+  "luogo": "Brenes, Spain",
+  "altezza": 168,
+  "peso": 53,
+  "debutto": 2022,
+  "carriera": [
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 44
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 64
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 64
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 64
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 75,
+   "vittorie": 3,
+   "podi": 18,
+   "pole": 2,
+   "giri_veloci": 5,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/David_Mu%C3%B1oz_(motorcyclist)"
+  }
+ },
  "moto:39bd22aa-4179-411f-bebb-c8bb3c0c8620": {
   "nascita": "2006-09-25",
   "luogo": "Leicester, United Kingdom",
@@ -9602,217 +9776,6 @@
    },
    "immagine": "Casey O'Gorman at the 2026 San Marino and Rimini Riviera motorcycle Grand Prix (cropped).jpg",
    "fonte": "https://en.wikipedia.org/wiki/Casey_O%27Gorman_(motorcyclist)"
-  }
- },
- "moto:ed6ebad8-3f85-48db-8539-5cf755de6c30": {
-  "nascita": "2006-05-15",
-  "luogo": "Brenes, Spain",
-  "altezza": 168,
-  "peso": 53,
-  "debutto": 2022,
-  "carriera": [
-   {
-    "anno": 2022,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "CODE Motorsports",
-      "numero": 44
-     }
-    ]
-   },
-   {
-    "anno": 2023,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "CODE Motorsports",
-      "numero": 44
-     }
-    ]
-   },
-   {
-    "anno": 2024,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "CODE Motorsports",
-      "numero": 64
-     }
-    ]
-   },
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Liqui Moly Dynavolt Intact GP",
-      "numero": 64
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Liqui Moly Dynavolt Intact GP",
-      "numero": 64
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 75,
-   "vittorie": 3,
-   "podi": 18,
-   "pole": 2,
-   "giri_veloci": 5,
-   "titoli": 0,
-   "motogp": {
-    "gare": 0,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": null,
-   "fonte": "https://en.wikipedia.org/wiki/David_Mu%C3%B1oz_(motorcyclist)"
-  }
- },
- "moto:8d4c8c88-f989-4d86-8cfd-702237b8083b": {
-  "nascita": "2003-06-12",
-  "luogo": "Nambour QLD, Australia",
-  "altezza": 163,
-  "peso": 59,
-  "debutto": 2021,
-  "carriera": [
-   {
-    "anno": 2021,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "CIP Green Power",
-      "numero": 66
-     }
-    ]
-   },
-   {
-    "anno": 2022,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "CIP Green Power",
-      "numero": 66
-     }
-    ]
-   },
-   {
-    "anno": 2023,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "CFMOTO Racing PruestelGP",
-      "numero": 66
-     }
-    ]
-   },
-   {
-    "anno": 2024,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "CODE Motorsports",
-      "numero": 66
-     }
-    ]
-   },
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "LEVEL UP - MTA",
-      "numero": 66
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "GRYD Racing",
-      "numero": 66
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 96,
-   "vittorie": 0,
-   "podi": 5,
-   "pole": 3,
-   "giri_veloci": 1,
-   "titoli": 0,
-   "motogp": {
-    "gare": 0,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": null,
-   "fonte": "https://en.wikipedia.org/wiki/Joel_Kelso"
-  }
- },
- "moto:f7138283-ea5f-475a-bd40-cb1fcb02c6aa": {
-  "nascita": "2007-10-29",
-  "luogo": "Marbella, Spain",
-  "altezza": null,
-  "peso": null,
-  "debutto": 2025,
-  "carriera": [
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Rivacold Snipers Team",
-      "numero": 45
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Rivacold Snipers Team",
-      "numero": 54
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 0,
-   "vittorie": 0,
-   "podi": 0,
-   "pole": 0,
-   "giri_veloci": 0,
-   "titoli": 0,
-   "motogp": {
-    "gare": 0,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": null,
-   "fonte": "https://en.wikipedia.org/wiki/Marco_Morelli"
   }
  },
  "moto:9de28705-315e-4370-a304-308147bf8203": {
@@ -9927,6 +9890,53 @@
    "fonte": "https://en.wikipedia.org/wiki/Ryusei_Yamanaka"
   }
  },
+ "moto:f7138283-ea5f-475a-bd40-cb1fcb02c6aa": {
+  "nascita": "2007-10-29",
+  "luogo": "Marbella, Spain",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Rivacold Snipers Team",
+      "numero": 45
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Rivacold Snipers Team",
+      "numero": 54
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 0,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Marco_Morelli"
+  }
+ },
  "moto:4331b1bc-b5f4-4649-b787-485f762639cb": {
   "nascita": "2003-10-16",
   "luogo": "Doncaster, United Kingdom",
@@ -10023,6 +10033,40 @@
    }
   ]
  },
+ "moto:9aad8146-4002-4852-9857-e1edb47543ea": {
+  "nascita": "2007-03-27",
+  "luogo": "Ibaraki, Japan",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Rivacold Snipers Team",
+      "numero": 2
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 2
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Honda Team Asia",
+      "numero": 32
+     }
+    ]
+   }
+  ]
+ },
  "moto:6adb635c-52cd-4473-8479-67869e89b97d": {
   "nascita": "2004-12-07",
   "luogo": "Cantabria, Spain",
@@ -10101,40 +10145,6 @@
       "categoria": "Moto3",
       "team": "CODE Motorsports",
       "numero": 14
-     }
-    ]
-   }
-  ]
- },
- "moto:9aad8146-4002-4852-9857-e1edb47543ea": {
-  "nascita": "2007-03-27",
-  "luogo": "Ibaraki, Japan",
-  "altezza": null,
-  "peso": null,
-  "debutto": 2025,
-  "carriera": [
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Rivacold Snipers Team",
-      "numero": 2
-     },
-     {
-      "categoria": "Moto3",
-      "team": "Honda Team Asia",
-      "numero": 2
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Honda Team Asia",
-      "numero": 32
      }
     ]
    }
@@ -10338,6 +10348,25 @@
    }
   ]
  },
+ "moto:c2936a6a-4718-4dbd-ba8f-7132b654a495": {
+  "nascita": "2007-06-07",
+  "luogo": "Pretoria, South Africa",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2026,
+  "carriera": [
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 45
+     }
+    ]
+   }
+  ]
+ },
  "nome:Kimi Antonelli": {
   "testo": "Andrea Kimi Antonelli è un pilota automobilistico italiano, attivo in Formula 1 con la Mercedes.",
   "descrizione": "pilota automobilistico bolognese",
@@ -10348,15 +10377,15 @@
   "descrizione": "pilota automobilistico olandese con cittadinanza belga (1997-)",
   "pagina": "https://it.wikipedia.org/wiki/Max_Verstappen"
  },
- "nome:Lewis Hamilton": {
-  "testo": "Sir Lewis Carl Davidson Hamilton è un pilota automobilistico britannico, attivo in Formula 1 con la Ferrari.",
-  "descrizione": "pilota automobilistico britannico (1985-)",
-  "pagina": "https://it.wikipedia.org/wiki/Lewis_Hamilton"
- },
  "nome:George Russell": {
   "testo": "George William Russell è un pilota automobilistico britannico, attivo in Formula 1 con la Mercedes.",
   "descrizione": "pilota automobilistico britannico",
   "pagina": "https://it.wikipedia.org/wiki/George_Russell_(pilota_automobilistico)"
+ },
+ "nome:Lewis Hamilton": {
+  "testo": "Sir Lewis Carl Davidson Hamilton è un pilota automobilistico britannico, attivo in Formula 1 con la Ferrari.",
+  "descrizione": "pilota automobilistico britannico (1985-)",
+  "pagina": "https://it.wikipedia.org/wiki/Lewis_Hamilton"
  },
  "nome:Charles Leclerc": {
   "testo": "Charles Marc Hervé Perceval Leclerc è un pilota automobilistico monegasco, attivo in Formula 1 con la Ferrari.",
@@ -10963,6 +10992,11 @@
   "descrizione": "pilota motociclistico spagnolo",
   "pagina": "https://it.wikipedia.org/wiki/%C3%81lex_Rins"
  },
+ "nome:Iker Lecuona": {
+  "testo": "Iker Lecuona Gascón è un pilota motociclistico spagnolo.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Iker_Lecuona"
+ },
  "nome:Toprak Razgatlioglu": {
   "testo": "Toprak Razgatlıoğlu è un pilota motociclistico turco vincitore del campionato europeo Superstock 600 nel 2015, del Trofeo Indipendenti nel mondiale Superbike 2019, campione del mondo Superbike nel 2021, 2024 e 2025.",
   "descrizione": "pilota motociclistico turco (1996-)",
@@ -10972,11 +11006,6 @@
   "testo": "Maverick Viñales Ruiz è un pilota motociclistico spagnolo, campione europeo della classe 125 nel 2010 e campione mondiale Moto3 nel 2013.",
   "descrizione": "pilota motociclistico spagnolo (1995-)",
   "pagina": "https://it.wikipedia.org/wiki/Maverick_Vi%C3%B1ales"
- },
- "nome:Iker Lecuona": {
-  "testo": "Iker Lecuona Gascón è un pilota motociclistico spagnolo.",
-  "descrizione": "pilota motociclistico spagnolo",
-  "pagina": "https://it.wikipedia.org/wiki/Iker_Lecuona"
  },
  "nome:Augusto Fernandez": {
   "testo": "Augusto Fernández Guerra è un pilota motociclistico spagnolo vincitore della European Junior Cup nel 2014 e campione del mondo Moto2 nel 2022.",
@@ -10998,15 +11027,15 @@
   "descrizione": "pilota motociclistico giapponese",
   "pagina": "https://it.wikipedia.org/wiki/Takaaki_Nakagami"
  },
- "nome:Cal Crutchlow": {
-  "testo": "Cal Crutchlow è un pilota motociclistico britannico campione britannico (2006) e mondiale Supersport (2009).",
-  "descrizione": "pilota motociclistico britannico",
-  "pagina": "https://it.wikipedia.org/wiki/Cal_Crutchlow"
- },
  "nome:Jake Dixon": {
   "testo": "Jake Curtis Dixon è un pilota motociclistico britannico.",
   "descrizione": "pilota motociclistico britannico",
   "pagina": "https://it.wikipedia.org/wiki/Jake_Dixon"
+ },
+ "nome:Cal Crutchlow": {
+  "testo": "Cal Crutchlow è un pilota motociclistico britannico campione britannico (2006) e mondiale Supersport (2009).",
+  "descrizione": "pilota motociclistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/Cal_Crutchlow"
  },
  "nome:Jonas Folger": {
   "testo": "Jonas Folger è un pilota motociclistico tedesco.",
@@ -11033,15 +11062,15 @@
   "descrizione": "pilota motociclistico spagnolo (2004-)",
   "pagina": "https://it.wikipedia.org/wiki/Izan_Guevara"
  },
- "nome:David Alonso": {
-  "testo": "David Alonso Gómez è un pilota motociclistico colombiano con cittadinanza spagnola, vincitore della European Talent Cup nel 2020, della MotoGP Rookies Cup nel 2021 e del mondiale Moto3 nel 2024.",
-  "descrizione": "pilota motociclistico colombiano",
-  "pagina": "https://it.wikipedia.org/wiki/David_Alonso"
- },
  "nome:Daniel Holgado": {
   "testo": "Daniel Holgado Miralles è un pilota motociclistico spagnolo.",
   "descrizione": "pilota motociclistico spagnolo (2005-)",
   "pagina": "https://it.wikipedia.org/wiki/Daniel_Holgado"
+ },
+ "nome:David Alonso": {
+  "testo": "David Alonso Gómez è un pilota motociclistico colombiano con cittadinanza spagnola, vincitore della European Talent Cup nel 2020, della MotoGP Rookies Cup nel 2021 e del mondiale Moto3 nel 2024.",
+  "descrizione": "pilota motociclistico colombiano",
+  "pagina": "https://it.wikipedia.org/wiki/David_Alonso"
  },
  "nome:Senna Agius": {
   "testo": "Senna Agius è un pilota motociclistico australiano, campione europeo Moto2 nel 2023.",
@@ -11153,15 +11182,15 @@
   "descrizione": "pilota motociclistico italiano",
   "pagina": "https://it.wikipedia.org/wiki/Guido_Pini"
  },
- "nome:David Muñoz": {
-  "testo": "David Muñoz Rodríguez è un pilota motociclistico spagnolo.",
-  "descrizione": "pilota motociclistico spagnolo",
-  "pagina": "https://it.wikipedia.org/wiki/David_Mu%C3%B1oz_(motociclista)"
- },
  "nome:Joel Kelso": {
   "testo": "Joel Damon Kelso è un pilota motociclistico australiano.",
   "descrizione": "pilota motociclistico australiano",
   "pagina": "https://it.wikipedia.org/wiki/Joel_Kelso"
+ },
+ "nome:David Muñoz": {
+  "testo": "David Muñoz Rodríguez è un pilota motociclistico spagnolo.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/David_Mu%C3%B1oz_(motociclista)"
  },
  "nome:Ryusei Yamanaka": {
   "testo": "Ryūsei Yamanaka è un pilota motociclistico giapponese.",

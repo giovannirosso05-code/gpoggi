@@ -11645,5 +11645,37 @@
   },
   "immagine": "Jake Dixon 2017.jpg",
   "fonte": "https://en.wikipedia.org/wiki/Jake_Dixon"
- }
+ },
+ "f1:51": {
+  "nascita": null,
+  "nazionalita": null,
+  "titoli": null,
+  "gare": 1,
+  "vittorie": 0,
+  "podi": 0,
+  "pole": 0,
+  "giri_veloci": 0
+ },
+ "moto:c2936a6a-4718-4dbd-ba8f-7132b654a495": {
+  "nascita": "2007-06-07",
+  "luogo": "Pretoria, South Africa",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2026,
+  "carriera": [
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 45
+     }
+    ]
+   }
+  ]
+ },
+ "wikistat:c2936a6a-4718-4dbd-ba8f-7132b654a495": null,
+ "nome:Rafael Camara": null,
+ "nome:Kgopotso Mononyane": null
 }

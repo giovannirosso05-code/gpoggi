@@ -4,12 +4,12 @@
 "2026-10-26"
 ],
 "calendario-f1-2026.html": [
-"f60ab256e7ca",
-"2026-11-03"
+"ad9abddb4ca5",
+"2026-11-08"
 ],
 "calendario-motogp-2026.html": [
-"f929b63b8265",
-"2026-11-01"
+"119ff2d26fa7",
+"2026-11-08"
 ],
 "calendario.html": [
 "f6529a61a5d3",
@@ -20,12 +20,12 @@
 "2026-10-26"
 ],
 "classifica-f1-2026.html": [
-"d2552290189e",
-"2026-11-04"
+"7c6739224e9c",
+"2026-11-08"
 ],
 "classifica-motogp-2026.html": [
-"872ffb77642f",
-"2026-11-07"
+"86aa84684342",
+"2026-11-08"
 ],
 "classifiche.html": [
 "68ecb180bb9e",
@@ -336,8 +336,8 @@
 "2026-10-26"
 ],
 "orari-f1-san-paolo-2026.html": [
-"9ffcc5e0a43e",
-"2026-10-26"
+"6abb96a16c61",
+"2026-11-08"
 ],
 "orari-f1-singapore-2026.html": [
 "f12aefbd8c6f",
@@ -356,8 +356,8 @@
 "2026-10-26"
 ],
 "orari-gp.html": [
-"9d3b0c09c752",
-"2026-11-01"
+"066720614917",
+"2026-11-08"
 ],
 "orari-motogp-malesia-2026.html": [
 "bd51a6121a45",
@@ -435,6 +435,10 @@
 "e4fe9c9add3f",
 "2026-11-03"
 ],
+"pagella-f1-san-paolo-2026.html": [
+"44b24f5577b8",
+"2026-11-08"
+],
 "pagella-f1-singapore-2026.html": [
 "718b61ea2f61",
 "2026-11-03"
@@ -499,6 +503,10 @@
 "465205aa9a95",
 "2026-11-03"
 ],
+"pagella-motogp-qatar-2026.html": [
+"0f6bc0405ec2",
+"2026-11-08"
+],
 "pagella-motogp-repubblica-ceca-2026.html": [
 "45aa1ef41366",
 "2026-11-03"
@@ -528,108 +536,112 @@
 "2026-10-26"
 ],
 "pagelle-gp.html": [
-"fd6439ed25c1",
-"2026-11-02"
+"db80c0475bab",
+"2026-11-08"
 ],
 "pilota-f1-alexander-albon.html": [
-"6d7eace2d3b1",
-"2026-11-03"
+"8ffc613e15cb",
+"2026-11-08"
 ],
 "pilota-f1-arvid-lindblad.html": [
-"7b8fc9e44d3d",
-"2026-11-03"
+"1d5c1fa37f72",
+"2026-11-08"
 ],
 "pilota-f1-carlos-sainz.html": [
-"c41f369ee336",
-"2026-11-03"
+"6d76935f0848",
+"2026-11-08"
 ],
 "pilota-f1-charles-leclerc.html": [
-"3b97644bf744",
-"2026-11-03"
+"1c482becce3c",
+"2026-11-08"
 ],
 "pilota-f1-esteban-ocon.html": [
 "cff12afe8db2",
 "2026-10-26"
 ],
 "pilota-f1-fernando-alonso.html": [
-"130dd0abe317",
-"2026-11-03"
+"45b94dc0d7ac",
+"2026-11-08"
 ],
 "pilota-f1-franco-colapinto.html": [
-"d5d3f4ace086",
-"2026-11-03"
+"f6a229532647",
+"2026-11-08"
 ],
 "pilota-f1-gabriel-bortoleto.html": [
-"642730439963",
-"2026-11-03"
+"52e29a411173",
+"2026-11-08"
 ],
 "pilota-f1-george-russell.html": [
-"84295a4c069e",
-"2026-11-03"
+"9db4605ec5ff",
+"2026-11-08"
 ],
 "pilota-f1-isack-hadjar.html": [
-"ff0a094c9725",
-"2026-11-03"
+"4d7e9e3b6261",
+"2026-11-08"
 ],
 "pilota-f1-kimi-antonelli.html": [
-"7c8c4009ed02",
-"2026-11-03"
+"67418ce07b42",
+"2026-11-08"
 ],
 "pilota-f1-lance-stroll.html": [
-"06f916e61b9d",
-"2026-11-04"
+"ace588b3873d",
+"2026-11-08"
 ],
 "pilota-f1-lando-norris.html": [
-"78fd3484c3fa",
+"c4a392d1e7bb",
 "2026-11-08"
 ],
 "pilota-f1-lewis-hamilton.html": [
-"e28aa7bea150",
-"2026-11-03"
+"d1e79511b14e",
+"2026-11-08"
 ],
 "pilota-f1-liam-lawson.html": [
-"9012b0aed97f",
-"2026-11-03"
+"85ef15b181f6",
+"2026-11-08"
 ],
 "pilota-f1-max-verstappen.html": [
-"5d1c2c0c39fc",
-"2026-11-03"
+"455150d48cd0",
+"2026-11-08"
 ],
 "pilota-f1-nico-hulkenberg.html": [
-"b6f0a39e48fd",
-"2026-11-03"
+"5ee7d3042d11",
+"2026-11-08"
 ],
 "pilota-f1-oliver-bearman.html": [
-"d302d811689a",
-"2026-11-03"
+"6f418f07983a",
+"2026-11-08"
 ],
 "pilota-f1-oscar-piastri.html": [
-"837ce93fffea",
-"2026-11-03"
+"dc2eb68a963a",
+"2026-11-08"
 ],
 "pilota-f1-pierre-gasly.html": [
-"21990dd2ac9c",
-"2026-11-03"
+"f2708e0f0a5c",
+"2026-11-08"
+],
+"pilota-f1-rafael-camara.html": [
+"4d896ba28f89",
+"2026-11-08"
 ],
 "pilota-f1-ryo-hirakawa.html": [
 "2227cc2a6d9f",
 "2026-11-04"
 ],
 "pilota-f1-sergio-perez.html": [
-"dadea51cb0fb",
-"2026-11-03"
+"3a36fea34a18",
+"2026-11-08"
 ],
 "pilota-f1-valtteri-bottas.html": [
-"90d71b4a2e6f",
-"2026-11-04"
+"c3d086bbdb56",
+"2026-11-08"
 ],
 "pilota-f1-yuki-tsunoda.html": [
 "99a35d3f3b56",
 "2026-10-26"
 ],
 "pilota-motogp-ai-ogura.html": [
-"96cd03fa6e6a",
-"2026-11-07"
+"0798d88effc7",
+"2026-11-08"
 ],
 "pilota-motogp-aleix-espargaro.html": [
 "2f6e02d4685a",
@@ -648,68 +660,68 @@
 "2026-11-01"
 ],
 "pilota-motogp-brad-binder.html": [
-"bb0be7fe907a",
-"2026-11-07"
+"070bfd1d02a3",
+"2026-11-08"
 ],
 "pilota-motogp-cal-crutchlow.html": [
-"4f5126d4c8e3",
-"2026-10-26"
+"2ee84f6238e1",
+"2026-11-08"
 ],
 "pilota-motogp-diogo-moreira.html": [
-"972eea371af7",
-"2026-11-07"
+"5ec272e9206f",
+"2026-11-08"
 ],
 "pilota-motogp-enea-bastianini.html": [
-"44697d944bf3",
-"2026-11-07"
+"18fadf7257c9",
+"2026-11-08"
 ],
 "pilota-motogp-fabio-di-giannantonio.html": [
-"2074789964ab",
-"2026-11-07"
+"c940bf4fb134",
+"2026-11-08"
 ],
 "pilota-motogp-fabio-quartararo.html": [
 "c85f4e67808a",
 "2026-11-01"
 ],
 "pilota-motogp-fermin-aldeguer.html": [
-"32f03bade116",
-"2026-11-07"
+"f2665837ceab",
+"2026-11-08"
 ],
 "pilota-motogp-francesco-bagnaia.html": [
 "c7c8d7e270cb",
 "2026-11-07"
 ],
 "pilota-motogp-franco-morbidelli.html": [
-"d3ce3a77e239",
-"2026-11-07"
+"9814660e2810",
+"2026-11-08"
 ],
 "pilota-motogp-iker-lecuona.html": [
-"cf481837f46c",
-"2026-11-07"
+"9d671418f2fa",
+"2026-11-08"
 ],
 "pilota-motogp-jack-miller.html": [
 "654c4f074d9c",
 "2026-11-01"
 ],
 "pilota-motogp-jake-dixon.html": [
-"4fd236af3cc3",
-"2026-11-07"
+"0c5427a1c0e1",
+"2026-11-08"
 ],
 "pilota-motogp-joan-mir.html": [
 "d9aaa5e82335",
 "2026-11-01"
 ],
 "pilota-motogp-johann-zarco.html": [
-"c5654b9885db",
-"2026-11-07"
+"c5bb793efd9f",
+"2026-11-08"
 ],
 "pilota-motogp-jonas-folger.html": [
 "07a2abf0a7aa",
 "2026-11-07"
 ],
 "pilota-motogp-jorge-martin.html": [
-"0ef4cf2bbbb6",
-"2026-11-07"
+"a1b6176dfb6e",
+"2026-11-08"
 ],
 "pilota-motogp-lorenzo-savadori.html": [
 "f7113aa58f7d",
@@ -720,32 +732,32 @@
 "2026-11-07"
 ],
 "pilota-motogp-marc-marquez.html": [
-"ad9b6c894c27",
-"2026-11-07"
+"99098d35e0e8",
+"2026-11-08"
 ],
 "pilota-motogp-marco-bezzecchi.html": [
-"baa1c8af04df",
-"2026-11-07"
+"77e71612941d",
+"2026-11-08"
 ],
 "pilota-motogp-maverick-vinales.html": [
-"d8332441fffd",
-"2026-11-07"
+"61f783464188",
+"2026-11-08"
 ],
 "pilota-motogp-michele-pirro.html": [
 "8db7c1940ca3",
 "2026-11-07"
 ],
 "pilota-motogp-pedro-acosta.html": [
-"e55a87faa0f9",
-"2026-11-07"
+"d833c01e1341",
+"2026-11-08"
 ],
 "pilota-motogp-pol-espargaro.html": [
 "3deec03b0075",
 "2026-10-26"
 ],
 "pilota-motogp-raul-fernandez.html": [
-"c3c9bb78816c",
-"2026-11-07"
+"a462d74dea14",
+"2026-11-08"
 ],
 "pilota-motogp-somkiat-chantra.html": [
 "efd3a1622649",
@@ -756,8 +768,8 @@
 "2026-10-26"
 ],
 "pilota-motogp-toprak-razgatlioglu.html": [
-"ce25f1a44a29",
-"2026-10-26"
+"6981d1338ed7",
+"2026-11-08"
 ],
 "pilota.html?n=1": [
 "cdd98a65aecf",
@@ -852,8 +864,8 @@
 "2026-10-26"
 ],
 "piloti-2026.html": [
-"5367e9b2e341",
-"2026-11-07"
+"50abecfa99c5",
+"2026-11-08"
 ],
 "piloti.html": [
 "900f757485b9",

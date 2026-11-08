@@ -1,0 +1,70 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Russell e Wolff in radio",
+ "etichetta": "Radio",
+ "fonte": "Crash.net, F1.com, Sky Sports",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto": "George Russell",
+   "pista": true,
+   "foto_espn_cerca": [
+    "fumes"
+   ],
+   "hook": true,
+   "hook_titolo": "Russell furioso, Wolff: «sei secondo»",
+   "testo": "*Russell* furioso via radio, e *Wolff* risponde: «*George, sei secondo*»!",
+   "fonte_alto": "Crash.net, F1.com, Sky Sports"
+  },
+  {
+   "foto": "George Russell",
+   "ritratto_espn": true,
+   "testo": "In Q3 a San Paolo *Russell* sta facendo un *giro fortissimo*, ma si ritrova davanti Albon e dal muretto gli dicono di *alzare il piede*.",
+   "fonte_alto": "Crash.net, F1.com, Sky Sports"
+  },
+  {
+   "foto": "George Russell",
+   "pista": true,
+   "foto_espn_cerca": [
+    "russell"
+   ],
+   "testo": "La squadra pensava di avere ancora *un giro* prima della pioggia. Invece la pioggia si fa più forte e nessuno migliora.",
+   "fonte_alto": "Crash.net, F1.com, Sky Sports"
+  },
+  {
+   "foto": "George Russell",
+   "ritratto_espn": true,
+   "testo": "*Russell* sbotta: «*Dovevo finire il giro!*»",
+   "fonte_alto": "Crash.net, F1.com, Sky Sports"
+  },
+  {
+   "foto": "George Russell",
+   "pista": true,
+   "foto_espn_cerca": [
+    "wolff"
+   ],
+   "testo": "Interviene *Wolff*: «*George, sei secondo*». E *Russell*: «Non voglio essere secondo, voglio la pole!»",
+   "fonte_alto": "Crash.net, F1.com, Sky Sports"
+  },
+  {
+   "foto": "George Russell",
+   "ritratto_espn": true,
+   "testo": "Dopo, *Russell* parla di *errore di valutazione* di tutta la squadra. *Wolff*: non sarebbe bastato per la pole, ma ha guidato alla perfezione.",
+   "fonte_alto": "Crash.net, F1.com, Sky Sports"
+  },
+  {
+   "foto": "George Russell",
+   "pista": true,
+   "foto_espn_cerca": [
+    "penalty"
+   ],
+   "testo": "Così in pole c'è *Norris*, e *Russell* partirà *settimo*, per la penalità di cinque posizioni.",
+   "fonte_alto": "Crash.net, F1.com, Sky Sports"
+  }
+ ],
+ "finale": {
+  "foto": "George Russell",
+  "ritratto_espn": true,
+  "domanda": "Chi aveva ragione, Russell o Wolff?"
+ }
+}

@@ -5,7 +5,7 @@
  "team": "Mercedes",
  "colore": "00D7B6",
  "posizione": 1,
- "punti": 380.0,
+ "punti": 390.0,
  "foto": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Kimi_Antonelli_at_the_2025_US_Grand_Prix_in_Austin%2C_TX_%28cropped%29.jpg/500px-Kimi_Antonelli_at_the_2025_US_Grand_Prix_in_Austin%2C_TX_%28cropped%29.jpg",
   "grande": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Kimi_Antonelli_at_the_2025_US_Grand_Prix_in_Austin%2C_TX_%28cropped%29.jpg",
@@ -309,7 +309,10 @@
     "stato": null
    },
    "sprint": null,
-   "gara": null
+   "gara": {
+    "pos": 5,
+    "stato": null
+   }
   }
  ],
  "vittorie": 9,

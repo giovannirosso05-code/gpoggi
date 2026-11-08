@@ -1,0 +1,160 @@
+{
+ "giri": 71,
+ "griglia": {
+  "1": 1,
+  "12": 2,
+  "30": 3,
+  "27": 4,
+  "6": 5,
+  "87": 6,
+  "63": 7,
+  "14": 8,
+  "23": 9,
+  "81": 10,
+  "51": 11,
+  "55": 12,
+  "43": 13,
+  "16": 14,
+  "10": 15,
+  "18": 16,
+  "77": 17,
+  "41": 18,
+  "5": 19,
+  "44": 20,
+  "3": 21,
+  "11": 22
+ },
+ "giro_veloce": 12,
+ "voci": [
+  {
+   "giro": 1,
+   "tipo": "via",
+   "testo": "Parte la gara alle 18:03 (ora italiana); rischio pioggia indicato al 80%."
+  },
+  {
+   "giro": 1,
+   "tipo": "sorpasso",
+   "testo": "Primo giro: Hamilton risale dal 20° al 9° posto; Verstappen risale dal 21° al 13° posto."
+  },
+  {
+   "giro": 6,
+   "tipo": "sorpasso",
+   "testo": "**Norris supera Lawson** e sale al 2° posto."
+  },
+  {
+   "giro": 16,
+   "tipo": "pit",
+   "testo": "Ai box: Norris, Russell, Hadjar, Piastri."
+  },
+  {
+   "giro": 17,
+   "tipo": "pit",
+   "testo": "Ai box: Antonelli, Verstappen."
+  },
+  {
+   "giro": 20,
+   "tipo": "comando",
+   "testo": "**Norris passa al comando.**"
+  },
+  {
+   "giro": 31,
+   "tipo": "ritiro",
+   "testo": "**Lance Stroll si ritira** (30 giri completati su 71)."
+  },
+  {
+   "giro": 36,
+   "tipo": "incidente",
+   "testo": "**Incidente tra Bearman e Sainz.**"
+  },
+  {
+   "giro": 37,
+   "tipo": "incidente",
+   "testo": "**Incidente tra Albon e Gasly.**"
+  },
+  {
+   "giro": 42,
+   "tipo": "penalita",
+   "testo": "**Penalità di 5 secondi a Albon** per il contatto con Gasly."
+  },
+  {
+   "giro": 45,
+   "tipo": "pit",
+   "testo": "Ai box: Verstappen."
+  },
+  {
+   "giro": 49,
+   "tipo": "pit",
+   "testo": "Ai box: Norris."
+  },
+  {
+   "giro": 50,
+   "tipo": "comando",
+   "testo": "**Hadjar passa al comando.**"
+  },
+  {
+   "giro": 50,
+   "tipo": "comando",
+   "testo": "**Antonelli passa al comando.**"
+  },
+  {
+   "giro": 50,
+   "tipo": "pit",
+   "testo": "Ai box: Hadjar."
+  },
+  {
+   "giro": 51,
+   "tipo": "pit",
+   "testo": "Ai box: Piastri."
+  },
+  {
+   "giro": 53,
+   "tipo": "penalita",
+   "testo": "**Penalità di 10 secondi a Hulkenberg**."
+  },
+  {
+   "giro": 53,
+   "tipo": "sorpasso",
+   "testo": "**Hadjar supera Russell** e sale al 4° posto."
+  },
+  {
+   "giro": 53,
+   "tipo": "pit",
+   "testo": "Ai box: Antonelli."
+  },
+  {
+   "giro": 54,
+   "tipo": "comando",
+   "testo": "**Norris passa al comando.**"
+  },
+  {
+   "giro": 54,
+   "tipo": "sorpasso",
+   "testo": "**Hadjar supera Russell** e sale al 3° posto."
+  },
+  {
+   "giro": 57,
+   "tipo": "sorpasso",
+   "testo": "**Antonelli supera Russell** e sale al 4° posto."
+  },
+  {
+   "giro": 61,
+   "tipo": "pit",
+   "testo": "Ai box: Russell."
+  },
+  {
+   "giro": 62,
+   "tipo": "pit",
+   "testo": "Ai box: Norris, Verstappen, Hadjar, Antonelli, Piastri."
+  },
+  {
+   "giro": 71,
+   "tipo": "incidente",
+   "testo": "**Incidente tra Leclerc e Lawson.**"
+  },
+  {
+   "giro": 71,
+   "tipo": "arrivo",
+   "testo": "**Bandiera a scacchi: vince Lando Norris** (McLaren), davanti a Max Verstappen e Isack Hadjar."
+  }
+ ]
+}

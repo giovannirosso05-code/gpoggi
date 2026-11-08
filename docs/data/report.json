@@ -1,5 +1,19 @@
 [
  {
+  "id": 1299,
+  "nome": "Gran Premio di San Paolo",
+  "circuito": "Interlagos",
+  "paese": "Brasile",
+  "data": "2026-11-08T19:00:00+00:00",
+  "titolo": "Lando Norris vince il Gran Premio di San Paolo",
+  "paragrafi": [
+   "Lando Norris (McLaren) vince il Gran Premio di San Paolo in 1:35:23.504, davanti a Max Verstappen (+14.602) e a Isack Hadjar (+24.485).",
+   "La pole position era stata di Lando Norris con 1:27.470.",
+   "Si sono ritirati 1 piloti: Lance Stroll.",
+   "Dopo la gara guida il campionato piloti Kimi Antonelli con 390 punti; tra i costruttori è primo Mercedes con 652."
+  ]
+ },
+ {
   "id": 1298,
   "nome": "Gran Premio di Città del Messico",
   "circuito": "Mexico City",

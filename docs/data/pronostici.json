@@ -1,10 +1,10 @@
 {
- "aggiornato": "2026-11-08T15:13:04+00:00",
+ "aggiornato": "2026-11-08T19:48:18+00:00",
  "metodo": "Indice da 0 a 100 calcolato da GP Oggi: 45% forma nelle ultime 5 gare, 35% classifica del campionato, 20% risultato sullo stesso circuito l'anno scorso. È un'opinione basata sui numeri, non una previsione ufficiale né una certezza.",
  "f1": {
-  "gp": "Gran Premio di San Paolo",
-  "circuito": "Interlagos",
-  "gara": "2026-11-08T17:00:00+00:00",
+  "gp": "Gran Premio di Las Vegas",
+  "circuito": "Las Vegas",
+  "gara": "2026-11-22T04:00:00+00:00",
   "favoriti": [
    {
     "numero": 12,
@@ -13,111 +13,106 @@
     "indice": 100,
     "motivi": [
      "1 vittoria nelle ultime 5 gare",
-     "1° nel campionato (380 punti)",
-     "Interlagos 2025: 2°"
+     "1° nel campionato (390 punti)"
     ]
    },
    {
     "numero": 3,
     "nome": "Max Verstappen",
     "team": "Red Bull Racing",
-    "indice": 94,
+    "indice": 99,
     "motivi": [
      "3 vittorie nelle ultime 5 gare",
-     "2° nel campionato (261 punti)",
-     "Interlagos 2025: 3°"
-    ]
-   },
-   {
-    "numero": 1,
-    "nome": "Lando Norris",
-    "team": "McLaren",
-    "indice": 66,
-    "motivi": [
-     "6° nel campionato (221 punti)",
-     "Interlagos 2025: 1°"
+     "2° nel campionato (279 punti)"
     ]
    },
    {
     "numero": 16,
     "nome": "Charles Leclerc",
     "team": "Ferrari",
-    "indice": 61,
+    "indice": 73,
     "motivi": [
      "2 podi nelle ultime 5 gare",
-     "5° nel campionato (245 punti)",
-     "Interlagos 2025: 19°"
+     "5° nel campionato (251 punti)"
     ]
    },
    {
-    "numero": 63,
-    "nome": "George Russell",
-    "team": "Mercedes",
-    "indice": 59,
+    "numero": 1,
+    "nome": "Lando Norris",
+    "team": "McLaren",
+    "indice": 69,
     "motivi": [
      "1 vittoria nelle ultime 5 gare",
-     "4° nel campionato (250 punti)",
-     "Interlagos 2025: 4°"
+     "6° nel campionato (246 punti)"
+    ]
+   },
+   {
+    "numero": 44,
+    "nome": "Lewis Hamilton",
+    "team": "Ferrari",
+    "indice": 69,
+    "motivi": [
+     "2 podi nelle ultime 5 gare",
+     "4° nel campionato (261 punti)"
     ]
    }
   ]
  },
  "motogp": {
-  "gp": "GP Qatar",
-  "circuito": "Lusail International Circuit",
-  "gara": "2026-11-08T16:00:00+00:00",
+  "gp": "GP Portogallo",
+  "circuito": "Autódromo Internacional do Algarve",
+  "gara": "2026-11-22T13:00:00+00:00",
   "favoriti": [
-   {
-    "id": "f55b433d-38b8-4d1d-bb3a-a709c82a0260",
-    "nome": "Marc Marquez",
-    "team": "Ducati Lenovo Team",
-    "indice": 100,
-    "motivi": [
-     "2 vittorie nelle ultime 5 gare",
-     "1° nel campionato (411 punti)",
-     "GP Qatar 2025: 1°"
-    ]
-   },
    {
     "id": "ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd",
     "nome": "Marco Bezzecchi",
     "team": "Aprilia Racing",
-    "indice": 62,
+    "indice": 100,
     "motivi": [
-     "1 vittoria nelle ultime 5 gare",
-     "3° nel campionato (332 punti)",
-     "GP Qatar 2025: 9°"
+     "2 vittorie nelle ultime 5 gare",
+     "3° nel campionato (357 punti)",
+     "GP Portogallo 2025: 1°"
     ]
    },
    {
-    "id": "5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b",
-    "nome": "Jorge Martin",
-    "team": "Aprilia Racing",
-    "indice": 62,
+    "id": "f55b433d-38b8-4d1d-bb3a-a709c82a0260",
+    "nome": "Marc Marquez",
+    "team": "Ducati Lenovo Team",
+    "indice": 88,
     "motivi": [
-     "2 podi nelle ultime 5 gare",
-     "2° nel campionato (362 punti)"
+     "2 vittorie nelle ultime 5 gare",
+     "1° nel campionato (431 punti)"
     ]
    },
    {
     "id": "a6108385-dd4c-490d-b02e-542ed0275f79",
     "nome": "Pedro Acosta",
     "team": "Red Bull KTM Factory Racing",
-    "indice": 54,
+    "indice": 69,
     "motivi": [
      "1 podio nelle ultime 5 gare",
-     "4° nel campionato (299 punti)",
-     "GP Qatar 2025: 8°"
+     "4° nel campionato (309 punti)",
+     "GP Portogallo 2025: 3°"
+    ]
+   },
+   {
+    "id": "5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b",
+    "nome": "Jorge Martin",
+    "team": "Aprilia Racing",
+    "indice": 64,
+    "motivi": [
+     "2 podi nelle ultime 5 gare",
+     "2° nel campionato (371 punti)"
     ]
    },
    {
     "id": "eb47c439-e136-40ff-9534-5c612853f529",
     "nome": "Ai Ogura",
     "team": "SuperFile Trackhouse MotoGP Team",
-    "indice": 47,
+    "indice": 59,
     "motivi": [
-     "5° nel campionato (281 punti)",
-     "GP Qatar 2025: 15°"
+     "5° nel campionato (294 punti)",
+     "GP Portogallo 2025: 7°"
     ]
    }
   ]

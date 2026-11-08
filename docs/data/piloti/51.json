@@ -1,0 +1,38 @@
+{
+ "numero": 51,
+ "acronimo": "CAM",
+ "nome": "Rafael Camara",
+ "team": "Haas F1 Team",
+ "colore": "9C9FA2",
+ "posizione": 25,
+ "punti": 0.0,
+ "foto": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Rafael_C%C3%A2mara_in_2022.jpg/500px-Rafael_C%C3%A2mara_in_2022.jpg",
+  "grande": "https://upload.wikimedia.org/wikipedia/commons/3/38/Rafael_C%C3%A2mara_in_2022.jpg",
+  "autore": "KVYTICAL",
+  "licenza": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Rafael_C%C3%A2mara_in_2022.jpg",
+  "file": "img/foto/761157e32b397eea.jpg"
+ },
+ "weekend": [
+  {
+   "id": 1299,
+   "nome": "Gran Premio di San Paolo",
+   "inizio": "2026-11-06T15:30:00+00:00",
+   "qualifiche": {
+    "pos": 13,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": {
+    "pos": 20,
+    "stato": null
+   }
+  }
+ ],
+ "vittorie": 0,
+ "podi": 0,
+ "pole": 0,
+ "miglior_arrivo": 20,
+ "ritiri": 0
+}

@@ -1,0 +1,86 @@
+{
+ "serie": "F1",
+ "titolo_breve": "São Paulo race",
+ "etichetta": "Race",
+ "fonte": "The Race, PlanetF1",
+ "velocita": "+20%",
+ "scene": [
+  {
+   "foto": "Lando Norris",
+   "ritratto_espn": true,
+   "hook": true,
+   "hook_titolo": "Norris wins in São Paulo!",
+   "testo": "*Norris* wins in São Paulo, in the *rain*!",
+   "fonte_alto": "The Race, PlanetF1"
+  },
+  {
+   "foto": "Max Verstappen",
+   "ritratto_espn": true,
+   "testo": "*Verstappen* is second, *fourteen seconds* back: he started from the *back*, twenty-first.",
+   "fonte_alto": "The Race, PlanetF1"
+  },
+  {
+   "foto": "Isack Hadjar",
+   "ritratto_espn": true,
+   "testo": "*Hadjar* is third: a double podium for *Red Bull*.",
+   "fonte_alto": "The Race, PlanetF1"
+  },
+  {
+   "foto": "George Russell",
+   "ritratto_espn": true,
+   "testo": "*Russell* is fourth, from seventh on the grid. *Antonelli*, the new world champion, is fifth, from the front row.",
+   "fonte_alto": "The Race, PlanetF1"
+  },
+  {
+   "foto": "Charles Leclerc",
+   "ritratto_espn": true,
+   "testo": "For Ferrari, *Leclerc* is seventh, after starting fourteenth. *Hamilton* finishes ninth, from the back of the grid.",
+   "fonte_alto": "The Race, PlanetF1"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "ritratto_espn": true,
+   "testo": "And *Mercedes* take the constructors' title.",
+   "fonte_alto": "The Race, PlanetF1"
+  },
+  {
+   "foto": "Lando Norris",
+   "ritratto_espn": true,
+   "nome": "Race: the top six",
+   "chips": [
+    [
+     "si",
+     "1. Norris"
+    ],
+    [
+     "info",
+     "2. Verstappen"
+    ],
+    [
+     "info",
+     "3. Hadjar"
+    ],
+    [
+     "info",
+     "4. Russell"
+    ],
+    [
+     "info",
+     "5. Antonelli"
+    ],
+    [
+     "info",
+     "6. Piastri"
+    ]
+   ],
+   "sub_top": 1650,
+   "testo": "Here are the top six: *Norris*, *Verstappen*, *Hadjar*, *Russell*, *Antonelli* and *Piastri*.",
+   "fonte_alto": "The Race, PlanetF1"
+  }
+ ],
+ "finale": {
+  "foto": "Lando Norris",
+  "ritratto_espn": true,
+  "domanda": "Who was best in São Paulo: Norris or Verstappen?"
+ }
+}

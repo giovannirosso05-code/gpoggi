@@ -1,0 +1,94 @@
+{
+ "serie": "MotoGP",
+ "titolo_breve": "Qatar race",
+ "etichetta": "Race",
+ "fonte": "Il Fatto Quotidiano, GPOne",
+ "velocita": "+20%",
+ "scene": [
+  {
+   "foto": "Marco Bezzecchi",
+   "hook": true,
+   "hook_titolo": "Bezzecchi wins in Qatar!",
+   "testo": "*Bezzecchi* dominates in Qatar and *wins the race*!",
+   "fonte_alto": "Il Fatto Quotidiano, GPOne"
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "testo": "From pole, all on his own: a *dominant* win, a day after crashing in the sprint.",
+   "fonte_alto": "Il Fatto Quotidiano, GPOne"
+  },
+  {
+   "foto": "Marc Marquez",
+   "testo": "*Marc Marquez* is second: the world title is *postponed*, because he needed a win and Martin scoring no points.",
+   "fonte_alto": "Il Fatto Quotidiano, GPOne"
+  },
+  {
+   "foto": "Raul Fernandez",
+   "testo": "*Raul Fernandez* is third, ahead of *Ogura*: three *Aprilias* in the top four.",
+   "fonte_alto": "Il Fatto Quotidiano, GPOne"
+  },
+  {
+   "foto": "Pedro Acosta",
+   "testo": "*Bastianini* is fifth, *Acosta* sixth. *Martin* finishes seventh.",
+   "fonte_alto": "Il Fatto Quotidiano, GPOne"
+  },
+  {
+   "foto": "Marc Marquez",
+   "nome": "Standings: GP Oggi calculation",
+   "chips": [
+    [
+     "si",
+     "Marquez +60 on Martin"
+    ],
+    [
+     "info",
+     "Marquez +74 on Bezzecchi"
+    ],
+    [
+     "info",
+     "74 points still to play for"
+    ]
+   ],
+   "sub_top": 1650,
+   "testo": "Marquez leads Martin by *sixty points* and Bezzecchi by *seventy-four*: the celebration is postponed, probably until Portugal.",
+   "fonte_alto": "Il Fatto Quotidiano, GPOne"
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "nome": "Race: the top six",
+   "chips": [
+    [
+     "si",
+     "1. Bezzecchi"
+    ],
+    [
+     "info",
+     "2. M. Marquez"
+    ],
+    [
+     "info",
+     "3. R. Fernandez"
+    ],
+    [
+     "info",
+     "4. Ogura"
+    ],
+    [
+     "info",
+     "5. Bastianini"
+    ],
+    [
+     "info",
+     "6. Acosta"
+    ]
+   ],
+   "sub_top": 1650,
+   "testo": "Here are the top six: *Bezzecchi*, *Marquez*, *Fernandez*, *Ogura*, *Bastianini* and *Acosta*.",
+   "fonte_alto": "Il Fatto Quotidiano, GPOne"
+  }
+ ],
+ "finale": {
+  "foto": "Marco Bezzecchi",
+  "domanda": "Will Marquez be champion already at Portimão?"
+ }
+}

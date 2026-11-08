@@ -1,0 +1,94 @@
+{
+ "serie": "MotoGP",
+ "titolo_breve": "Gara Qatar",
+ "etichetta": "Gara",
+ "fonte": "Il Fatto Quotidiano, GPOne",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto": "Marco Bezzecchi",
+   "hook": true,
+   "hook_titolo": "Bezzecchi vince in Qatar!",
+   "testo": "*Bezzecchi* domina il Qatar e *vince la gara*!",
+   "fonte_alto": "Il Fatto Quotidiano, GPOne"
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "testo": "Dalla pole, tutto da solo: un *dominio*, il giorno dopo la caduta nella sprint.",
+   "fonte_alto": "Il Fatto Quotidiano, GPOne"
+  },
+  {
+   "foto": "Marc Marquez",
+   "testo": "Secondo *Marc Marquez*: il titolo mondiale *slitta*, perché gli serviva vincere e che Martin non facesse punti.",
+   "fonte_alto": "Il Fatto Quotidiano, GPOne"
+  },
+  {
+   "foto": "Raul Fernandez",
+   "testo": "Terzo *Raul Fernandez*, davanti a *Ogura*: tre *Aprilia* nelle prime quattro.",
+   "fonte_alto": "Il Fatto Quotidiano, GPOne"
+  },
+  {
+   "foto": "Pedro Acosta",
+   "testo": "Quinto *Bastianini*, sesto *Acosta*. *Martin* chiude settimo.",
+   "fonte_alto": "Il Fatto Quotidiano, GPOne"
+  },
+  {
+   "foto": "Marc Marquez",
+   "nome": "Mondiale: calcolo GP Oggi",
+   "chips": [
+    [
+     "si",
+     "Marquez +60 su Martin"
+    ],
+    [
+     "info",
+     "Marquez +74 su Bezzecchi"
+    ],
+    [
+     "info",
+     "Restano 74 punti in palio"
+    ]
+   ],
+   "sub_top": 1650,
+   "testo": "Marquez ha *sessanta punti* su Martin e *settantaquattro* su Bezzecchi: la festa è rimandata, probabilmente al Portogallo.",
+   "fonte_alto": "Il Fatto Quotidiano, GPOne"
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "nome": "Gara: i primi sei",
+   "chips": [
+    [
+     "si",
+     "1. Bezzecchi"
+    ],
+    [
+     "info",
+     "2. M. Marquez"
+    ],
+    [
+     "info",
+     "3. R. Fernandez"
+    ],
+    [
+     "info",
+     "4. Ogura"
+    ],
+    [
+     "info",
+     "5. Bastianini"
+    ],
+    [
+     "info",
+     "6. Acosta"
+    ]
+   ],
+   "sub_top": 1650,
+   "testo": "Ecco i primi sei: *Bezzecchi*, *Marquez*, *Fernandez*, *Ogura*, *Bastianini* e *Acosta*.",
+   "fonte_alto": "Il Fatto Quotidiano, GPOne"
+  }
+ ],
+ "finale": {
+  "foto": "Marco Bezzecchi",
+  "domanda": "Marquez sarà campione già a Portimão?"
+ }
+}

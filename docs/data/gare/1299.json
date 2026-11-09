@@ -1059,8 +1059,8 @@
      "team": "Mercedes",
      "giri": 71,
      "stato": null,
-     "tempo": "1:35:59.521",
-     "distacco": "+36.017"
+     "tempo": "1:36:04.521",
+     "distacco": "+41.017"
     },
     {
      "pos": 6,
@@ -1075,17 +1075,6 @@
     },
     {
      "pos": 7,
-     "numero": 16,
-     "acronimo": "LEC",
-     "nome": "Charles Leclerc",
-     "team": "Ferrari",
-     "giri": 71,
-     "stato": null,
-     "tempo": "1:36:37.090",
-     "distacco": "+73.586"
-    },
-    {
-     "pos": 8,
      "numero": 30,
      "acronimo": "LAW",
      "nome": "Liam Lawson",
@@ -1094,6 +1083,17 @@
      "stato": null,
      "tempo": "1:36:38.906",
      "distacco": "+75.402"
+    },
+    {
+     "pos": 8,
+     "numero": 16,
+     "acronimo": "LEC",
+     "nome": "Charles Leclerc",
+     "team": "Ferrari",
+     "giri": 71,
+     "stato": null,
+     "tempo": "1:36:42.090",
+     "distacco": "+78.586"
     },
     {
      "pos": 9,

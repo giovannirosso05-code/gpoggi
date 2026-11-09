@@ -1,0 +1,118 @@
+{
+ "serie": "F1",
+ "titolo_breve": "San Paolo: la pagella",
+ "fonte": "risultati ufficiali, calcolo GP Oggi",
+ "velocita": "+31%",
+ "scene": [
+  {
+   "foto": "Rafael Camara",
+   "hook": true,
+   "hook_titolo": "Camara tra i peggiori",
+   "testo": "[Camara] tra i peggiori del weekend: ha perso 9 posizioni rispetto alla griglia."
+  },
+  {
+   "foto": "Rafael Camara",
+   "testo": "[Camara]: tredicesimo in qualifica e ventesimo in gara, partendo undicesimo. Voto *cinque*."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Hamilton]: undicesimo in qualifica e nono in gara, partendo ventesimo. Per lui oggi *sei e mezzo*."
+  },
+  {
+   "foto": "Charles Leclerc",
+   "alt": "pista_cina",
+   "pista": true,
+   "testo": "[Leclerc]: quarto in qualifica e ottavo in gara, partendo quattordicesimo. Si prende *sette*."
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Antonelli]: terzo in qualifica e quinto in gara, partendo secondo. Gli diamo *sette*."
+  },
+  {
+   "foto": "George Russell",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Russell]: secondo in qualifica e quarto in gara, partendo settimo. Voto *otto*."
+  },
+  {
+   "foto": "Max Verstappen",
+   "alt": "pista_cina",
+   "pista": true,
+   "testo": "[Verstappen]: sedicesimo in qualifica e secondo in gara, partendo ventunesimo. Per lui oggi *otto e mezzo*."
+  },
+  {
+   "foto": "Lando Norris",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "E poi il migliore: [Norris]. Pole e vittoria: un weekend perfetto. Una prova da applausi. Voto *dieci*."
+  },
+  {
+   "foto": "Lando Norris",
+   "pista": true,
+   "classifica": {
+    "titolo": "I nostri voti",
+    "righe": [
+     {
+      "pos": "",
+      "colore": "F47600",
+      "nome": "Norris",
+      "voto": "10",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "4781D7",
+      "nome": "Verstappen",
+      "voto": "8,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "00D7B6",
+      "nome": "Russell",
+      "voto": "8",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "00D7B6",
+      "nome": "Antonelli",
+      "voto": "7",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "ED1131",
+      "nome": "Leclerc",
+      "voto": "7",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "ED1131",
+      "nome": "Hamilton",
+      "voto": "6,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "9C9FA2",
+      "nome": "Camara",
+      "voto": "5",
+      "nota": " "
+     }
+    ]
+   },
+   "sub_top": 1360,
+   "testo": "Ecco la pagella completa."
+  }
+ ],
+ "finale": {
+  "foto": "Lando Norris",
+  "domanda": "Che voto dai tu a San Paolo?"
+ }
+}

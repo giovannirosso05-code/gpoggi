@@ -1,0 +1,104 @@
+{
+ "serie": "MotoGP",
+ "titolo_breve": "Qatar: la pagella",
+ "fonte": "risultati ufficiali, calcolo GP Oggi",
+ "velocita": "+31%",
+ "scene": [
+  {
+   "foto": "Diogo Moreira",
+   "hook": true,
+   "hook_titolo": "Moreira tra i peggiori",
+   "testo": "[Moreira] tra i peggiori del weekend: si è ritirato al giro 16."
+  },
+  {
+   "foto": "Diogo Moreira",
+   "testo": "[Moreira]: sedicesimo in qualifica, decimo nella sprint e ritirato al giro 16. Voto *cinque*."
+  },
+  {
+   "foto": "Fabio Di Giannantonio",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Giannantonio]: terzo in qualifica, secondo nella sprint e ottavo in gara, partendo terzo. Per lui oggi *sei e mezzo*."
+  },
+  {
+   "foto": "Jorge Martin",
+   "testo": "[Martin]: undicesimo in qualifica, terzo nella sprint e settimo in gara, partendo undicesimo. Si prende *sei e mezzo*."
+  },
+  {
+   "foto": "Raul Fernandez",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Fernandez]: quarto in qualifica, quarto nella sprint e terzo in gara. Gli diamo *otto*."
+  },
+  {
+   "foto": "Marc Marquez",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Marc Marquez]: secondo in qualifica, primo nella sprint e secondo in gara. Voto *nove*."
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "alt": "pista",
+   "pista": true,
+   "volto_alt": "sorriso",
+   "testo": "E poi il migliore: [Bezzecchi]. Primo in qualifica, fuori nella sprint e primo in gara. Una prova da applausi. Voto *nove*."
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "pista": true,
+   "classifica": {
+    "titolo": "I nostri voti",
+    "righe": [
+     {
+      "pos": "",
+      "colore": "7b2c8f",
+      "nome": "Bezzecchi",
+      "voto": "9",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "e1251b",
+      "nome": "M. Marquez",
+      "voto": "9",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "7b2c8f",
+      "nome": "Fernandez",
+      "voto": "8",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "7b2c8f",
+      "nome": "Martin",
+      "voto": "6,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "e1251b",
+      "nome": "Giannantonio",
+      "voto": "6,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "dcdce2",
+      "nome": "Moreira",
+      "voto": "5",
+      "nota": " "
+     }
+    ]
+   },
+   "sub_top": 1360,
+   "testo": "Ecco la pagella completa."
+  }
+ ],
+ "finale": {
+  "foto": "Marco Bezzecchi",
+  "domanda": "Che voto dai tu a Qatar?"
+ }
+}

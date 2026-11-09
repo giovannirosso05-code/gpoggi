@@ -1,17 +1,425 @@
 {
- "generato_il": "2026-11-09T04:03:28+00:00",
+ "generato_il": "2026-11-09T13:48:24+00:00",
  "articoli": [
   {
-   "titolo": "Nuovo ordine d’arrivo GP Brasile 2026: Antonelli e Leclerc penalizzati, cambiano i piazzamenti. La classifica finale",
+   "titolo": "F1, Max Verstappen e Kimi Antonelli alla pari (o quasi) nel Mondiale dopo la pausa estiva",
+   "estratto": "Dopo aver raccolto due soli podi nelle prime nove gare dell’anno, Max Verstappen ha cambiato passo grazie alla notevole crescita prestazionale della Red Bull (spinta dal miglior motore endotermico su…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-max-verstappen-e-kimi-antonelli-alla-pari-o-quasi-nel-mondiale-dopo-la-pausa-estiva/",
+   "pubblicato": "2026-11-09T13:17:04+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 11.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Hadjar: “Non ho mai dovuto affrontare così tante sfide in una sola corsa”",
+   "estratto": "Il pilota franco-algerino della Red Bull ha superato le costanti difficoltà del GP del Brasile piazzandosi al 3° posto dietro a Norris e Verstappen",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/hadjar-non-ho-mai-dovuto-affrontare-cosi-tante-sfide-in-una-sola-corsa-redbull-podio-brasile",
+   "pubblicato": "2026-11-09T13:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Vasseur e Ferrari verso il 2027 tra dubbi e rischio di riscrivere la storia del team, ma dalla parte sbagliata…",
+   "estratto": "La Ferrari saluta Interlagos con un ennesimo buco nell’acqua e, effettivamente, di acqua se n’è vista parecchia in occasione del Gran Premio di San Paolo, ventesimo e quartultimo appuntamento del…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/vasseur-e-ferrari-verso-il-2027-tra-dubbi-e-rischio-di-riscrivere-la-storia-del-team-ma-dalla-parte-sbagliata/",
+   "pubblicato": "2026-11-09T12:45:09+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 11.7,
+   "testate": 1
+  },
+  {
+   "titolo": "F1, Laurent Mekies esalta la rimonta di Verstappen in Brasile: “Max riesce sempre a fare meglio delle nostre simulazioni”",
+   "estratto": "Il Gran Premio del Brasile 2026 di Formula Uno è andato in archivio con un bilancio estremamente positivo in casa Red Bull, che ha piazzato entrambe le macchine sul podio per la seconda volta in…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-laurent-mekies-esalta-la-rimonta-di-verstappen-in-brasile-max-riesce-sempre-a-fare-meglio-delle-nostre-simulazioni/",
+   "pubblicato": "2026-11-09T12:31:30+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 18.7,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 | Verstappen, l'impossibile diventa normale. Mekies: \"Max batte anche le nostre simulazioni\"",
+   "estratto": "Quando è Max Verstappen a compiere certe imprese, il rischio è quasi quello di considerarle normali. Eppure, quanto visto a Interlagos è qualcosa di straordinario. Partito dalla ventunesima…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-verstappen-limpossibile-diventa-normale-mekies-max-batte-anche-le-nostre-simulazioni/10873278/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-09T12:01:22+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 18.6,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP, Marc Marquez vede il 10° titolo. Aprilia insegue Ducati per vincere almeno il Mondiale costruttori",
+   "estratto": "L’infortunio rimediato da Jorge Martin nella Sprint di Phillip Island ha spento sul più bello la sfida con Marc Marquez per il Mondiale MotoGP 2026, consentendo al fuoriclasse catalano di piazzare…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-marc-marquez-vede-il-10-titolo-aprilia-insegue-ducati-per-vincere-almeno-il-mondiale-costruttori/",
+   "pubblicato": "2026-11-09T12:00:47+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 31.6,
+   "testate": 3
+  },
+  {
+   "titolo": "Verstappen: “Partire dalla 21ª posizione e risalire fino alla 2ª è stato un risultato pazzesco”",
+   "estratto": "Tutta la soddisfazione del quattro volte iridato, autore di un'incredibile rimonta in occasione del GP del Brasile",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/verstappen-partire-dalla-21-posizione-e-risalire-fino-alla-2-e-stato-un-risultato-pazzesco",
+   "pubblicato": "2026-11-09T12:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.5,
+   "testate": 1
+  },
+  {
+   "titolo": "Azzardo Ferrari: perché ha esagerato con le pressioni gomme",
+   "estratto": "Dalla partenza lampo al tracollo: il primo stint di Lewis Hamilton in Brasile nasce dall’azzardo della Ferrari con le pressioni gomme",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/azzardo-ferrari-perche-ha-esagerato-pressioni-gomme",
+   "pubblicato": "2026-11-09T12:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 11.5,
+   "testate": 1
+  },
+  {
+   "titolo": "Valentino Rossi si sfoga da Fazio: “Marquez voleva solo farmi perdere. Ingiustizia insopportabile ancora oggi”",
+   "estratto": "Ieri sera Valentino Rossi è stato ospite di Fabio Fazio nella trasmissione televisiva “Che Tempo Che Fa” in occasione dell’imminente uscita della sua autobiografia intitolata ‘La mia storia’. Il…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/valentino-rossi-si-sfoga-da-fazio-marquez-voleva-solo-farmi-perdere-ingiustizia-insopportabile-ancora-oggi/",
+   "pubblicato": "2026-11-09T11:24:48+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.4,
+   "testate": 1
+  },
+  {
+   "titolo": "Una brutta Fazenda e le altre storie dal Brasile: I Doppiati F1 Podcast – VIDEO",
+   "estratto": "Sventolate le bandiere blu, I Doppiati sono in diretta su YouTube, Spotify e Apple Podcast per commentare il GP di San Paolo di F1",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/una-brutta-fazenda-e-le-altre-storie-dal-brasile-i-doppiati-f1-podcast-video-ferrari-hamilton-leclerc",
+   "pubblicato": "2026-11-09T11:15:00+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 9.4,
+   "testate": 1
+  },
+  {
+   "titolo": "Kimi Antonelli e la necessità di chiudere bene il 2026: Verstappen e Norris lanciano il guanto di sfida per il prossimo anno",
+   "estratto": "Mancano tre appuntamenti alla chiusura della stagione di F1. Dal 19 al 21 novembre si correrà a Las Vegas e, salvo stravolgimenti, il Circus proseguirà poi con le tappe in Qatar (27-29 novembre) e ad…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/kimi-antonelli-e-la-necessita-di-chiudere-bene-il-2026-verstappen-e-norris-lanciano-il-guanto-di-sfida-per-il-prossimo-anno/",
+   "pubblicato": "2026-11-09T10:34:25+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 21.2,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP | Rivola: \"A volte non bastano quattro Aprilia per battere Marquez, il Mondiale l'ha vinto lui\"",
+   "estratto": "Nonostante la vittoria di Marco Bezzecchi, il Gran Premio del Qatar sembra essersi portato via le ultime speranze dell'Aprilia di contendere il titolo iridato della MotoGP a Marc Marquez, che ora è…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-rivola-a-volte-non-bastano-4-aprilia-per-battere-marquez-il-mondiale-lha-vinto-lui/10873280/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-09T10:30:02+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 36.2,
+   "testate": 3
+  },
+  {
+   "titolo": "Testacoda in pit-lane, Russell: “Volevo vincere, ho rischiato troppo”",
+   "estratto": "Il pilota della Mercedes ha spiegato le motivazioni alla base del clamoroso errore commesso in Brasile",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/russell-sul-testacoda-pit-lane-ho-visto-opportunita-di-lottare-per-vittoria-ma-ho-rischiato-troppo",
+   "pubblicato": "2026-11-09T10:30:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.2,
+   "testate": 1
+  },
+  {
+   "titolo": "Ufficiale: Piastri si separa dal manager Mark Webber",
+   "estratto": "Dopo sette anni temine il rapporto tra il pilota McLaren e l'ex Red Bull",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/ufficiale-rottura-piastri-webber-oscar-avra-nuovo-manager",
+   "pubblicato": "2026-11-09T10:20:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.1,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Wolff racconta la rinascita Mercedes: “Quattro anni difficili, ma abbiamo continuato a credere nelle persone”",
+   "estratto": "Il diciassettesimo titolo mondiale conquistato dalla Mercedes sotto la sua gestione, considerando i campionati Piloti e Costruttori, ha portato Toto Wolff ad affiancare Ron Dennis in una statistica…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-wolff-racconta-la-rinascita-mercedes-quattro-anni-difficili-ma-abbiamo-continuato-a-credere-nell/10873275/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-09T10:11:24+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 9.1,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Marquez: \"Siamo tutti qui per contribuire e far crescere questo sport così bello\"",
+   "estratto": "Marc Marquez ha lasciato il Qatar con 32 punti in tasca, più di chiunque altro, superando i 25 di Marco Bezzecchi e i 16 di Jorge Martin, per cui è sempre più vicino a chiudere il campionato e a…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-marquez-siamo-tutti-qui-per-contribuire-e-far-crescere-questo-sport-cosi-bello/10873262/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-09T09:55:30+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.0,
+   "testate": 1
+  },
+  {
+   "titolo": "Antonelli insaziabile: “Peccato, potevo vincere, la macchina mi è partita di colpo”",
+   "estratto": "Il pilota italiano era leader della corsa prima di un testacoda misterioso",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/rabbia-antonelli-insaziabile-gp-brasile-potevo-vincere-testacoda-misterioso-mercedes",
+   "pubblicato": "2026-11-09T09:55:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.0,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Norris, la vittoria della maturità. Stella: \"Nell'adattarsi alle condizioni è un maestro\"",
+   "estratto": "È stata una prova di maturità di grande valore quella offerta da Lando Norris sul circuito di Interlagos. La terza vittoria stagionale del pilota inglese è arrivata al termine di una corsa…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-norris-la-vittoria-della-maturita-stella-nelladattarsi-alle-condizioni-e-un-maestro/10873270/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-09T09:35:06+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 7.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Non solo Hamilton: anche Leclerc non è rientrato ai box al richiamo del muretto Ferrari",
+   "estratto": "Il pilota monegasco si è imposto sul muretto, che l'aveva richiamato ai box per montare altre Soft",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/non-solo-hamilton-anche-leclerc-rientrato-box-richiamo-muretto-ferrari",
+   "pubblicato": "2026-11-09T09:27:32+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 10.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Massimo Rivola: “Marc Marquez ha fatto la differenza, sistema di punteggio da rivedere”",
+   "estratto": "Il decimo sigillo iridato di Marc Marquez è ormai a un passo, e a certificarlo è stato il Gran Premio del Qatar a Lusail. A Portimao, salvo sorprese, la corsa al Mondiale 2026 della MotoGP potrebbe…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/massimo-rivola-marc-marquez-ha-fatto-la-differenza-sistema-di-punteggio-da-rivedere/",
+   "pubblicato": "2026-11-09T09:27:32+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 27.9,
+   "testate": 3
+  },
+  {
+   "titolo": "MotoGP | Ezpeleta: \"Il rumore che si è creato intorno al Qatar ci ha esposti in modo inutile\"",
+   "estratto": "Il Mondiale di MotoGP ha ricevuto un'ondata di critiche per la sua ostinazione nel mantenere in calendario il GP del Qatar, mobilitando tutto il paddock iridato fino al Medio Oriente, una zona…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-ezpeleta-il-rumore-che-si-e-creato-intorno-a-noi-ci-ha-esposti-in-modo-inutile/10873252/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-09T09:11:40+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 7.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Montezemolo all'attacco, che critica alla Ferrari: \"Manca una leadership che imponga le regole\"",
+   "estratto": "Lo storico presidente: \"Servono gerarchie chiare. Hamilton non è certamente venuto a Maranello per fare il numero 2...\"",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/11/09-152486933/montezemolo_all_attacco_che_critica_alla_ferrari_manca_una_leadership_che_imponga_le_regole/",
+   "pubblicato": "2026-11-09T09:05:06+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 15.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Rossi: “Bezzecchi aveva la velocità per vincere il Mondiale. Lo ha perso per i troppi errori”",
+   "estratto": "Intervistato al programma Che Tempo Che Fa il nove volte campione del mondo ha parlato della stagione che sta per concludersi",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/rossi-bezzecchi-aveva-la-velocita-per-vincere-il-mondiale-lo-ha-perso-per-i-troppi-errori",
+   "pubblicato": "2026-11-09T08:49:14+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 16.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Mercedes, la festa continua: ora vede la Stella. E Wolff punge la Ferrari...",
+   "estratto": "A Interlagos per la prima volta senza podio ma arriva il nono titolo per la scuderia, il primo senza Hamilton e dell’era Antonelli",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/mercedes/2026/11/09-152486741/mercedes_la_festa_continua_ora_vede_la_stella_e_wolff_punge_la_ferrari_/",
+   "pubblicato": "2026-11-09T08:36:12+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 10.7,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP, il GP del Qatar mostra la tara fra Marquez e Bezzecchi. Non è una questione di velocità, bensì di maturità",
+   "estratto": "La differenza tra Marc Marquez e Marco Bezzecchi l’abbiamo vista tutta in Qatar. Una sintesi perfetta dell’abilità dell’uno e dell’altro nel concretizzare il potenziale a propria disposizione. Lo…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-il-gp-del-qatar-mostra-la-tara-fra-marquez-e-bezzecchi-non-e-una-questione-di-velocita-bensi-di-maturita/",
+   "pubblicato": "2026-11-09T08:00:30+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 30.6,
+   "testate": 3
+  },
+  {
+   "titolo": "Tardozzi: “Bagnaia sarà a Valencia senza dubbio, ma la sua intenzione è esserci già a Portimao”",
+   "estratto": "Il team manger di Ducati ha rivelato le intenzioni del pilota infortunatosi nella Sprint di Lusail",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/tardozzi-bagnaia-senza-dubbio-valencia-vuole-esserci-gia-portimao-infortunio-frattura-piede",
+   "pubblicato": "2026-11-09T08:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 15.5,
+   "testate": 1
+  },
+  {
+   "titolo": "Tardozzi risponde a Rivola: “Non bastano 4 Aprilia a battere Marquez? Serve tutto il pacchetto, anche la gestione sportiva”",
+   "estratto": "Il team manager Ducati Lenovo sottolinea il lavoro di squadra oltre all'immenso talento di un Marc Marquez veloce e maturo",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/tardozzi-incenerisce-rivola-marquez-batte-aprilia-da-solo-gestione-sportiva-conta",
+   "pubblicato": "2026-11-09T07:50:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 25.5,
+   "testate": 2
+  },
+  {
+   "titolo": "F1, Interlagos mostra il più grande limite della Ferrari. L’incapacità di sfruttare le occasioni propizie, a differenza degli altri",
+   "estratto": "Perché la McLaren nel 2025 è tornata a vincere un Mondiale piloti dopo 17 anni di digiuno, imponendosi per due stagioni consecutive nel Mondiale costruttori, sia nel 2024 che nel 2025? È un caso che…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-interlagos-mostra-il-piu-grande-limite-della-ferrari-lincapacita-di-sfruttare-le-occasioni-propizie-a-differenza-degli-altri/",
+   "pubblicato": "2026-11-09T07:00:27+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 10.3,
+   "testate": 1
+  },
+  {
+   "titolo": "Rivola: “Il Mondiale l’ha vinto Marquez, non l’ha perso Aprilia, punteggi da rivedere”",
+   "estratto": "L'amministratore delegato di Aprilia Racing critica l'attuale sistema di punteggio",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/rivola-contro-punteggi-non-bastano-4-aprilia-battere-marquez-da-solo-ducati",
+   "pubblicato": "2026-11-09T06:55:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 27.3,
+   "testate": 3
+  },
+  {
+   "titolo": "Vasseur: “Complimenti alla Mercedes per il titolo Costruttori, hanno fatto un ottimo lavoro”",
+   "estratto": "Il team principal della Ferrari si è complimentato con i rivali",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/vasseur-complimenti-mercedes-titolo-costruttori-meritato-ferrari-gara-no-gp-brasile",
+   "pubblicato": "2026-11-09T06:35:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 35.2,
+   "testate": 3
+  },
+  {
+   "titolo": "Nuovo ordine d’arrivo GP Brasile F1 2026: Antonelli e Leclerc penalizzati, cambiano i piazzamenti. La classifica finale",
    "estratto": "Tre penalità inflitte al termine della gara hanno modificato l’ordine d’arrivo del GP del Brasile 2026, tappa del Mondiale F1 andata in scena sul circuito di Interlagos. I commissari hanno sanzionato…",
    "fonte": "OA Sport",
    "serie": "F1",
    "url": "https://www.oasport.it/2026/11/nuovo-ordine-darrivo-gp-brasile-2026-antonelli-e-leclerc-penalizzati-cambiano-i-piazzamenti-la-classifica-finale/",
-   "pubblicato": "2026-11-08T22:24:35+00:00",
+   "pubblicato": "2026-11-09T06:06:35+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.6,
+   "punteggio": 8.1,
    "testate": 2
+  },
+  {
+   "titolo": "MotoGP, i promossi e bocciati del GP del Qatar 2026: Marquez come Robin Hood. Bezzecchi double face",
+   "estratto": "Il contestato Gran Premio del Qatar di MotoGP è alfine passato agli archivi. Per fortuna, perché l’evento si è disputato comunque senza grossi scompensi. Ora, dopo una serie di gare ravvicinate, si…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-i-promossi-e-bocciati-del-gp-del-qatar-2026-marquez-come-robin-hood-bezzecchi-double-face/",
+   "pubblicato": "2026-11-09T06:00:26+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 30.1,
+   "testate": 3
+  },
+  {
+   "titolo": "Hamilton non sarebbe stato penalizzato per il sorpasso su Bearman",
+   "estratto": "La Ferrari aveva imposto al proprio pilota di cedere una posizione",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/hamilton-non-sarebbe-stato-penalizzato-sorpasso-bearman-ferrari",
+   "pubblicato": "2026-11-09T06:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 10.0,
+   "testate": 1
+  },
+  {
+   "titolo": "Ferrari, piove sul bagnato: Hamilton fa di testa sua",
+   "estratto": "Gara anonima con un 7° e un 9° posto che certificano troppi guai, non solo la convivenza tra i piloti. Lewis rovina il suo 400° GP e un primo giro da leggenda con \"un’auto difficile\" (Vasseur dixit)…",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/11/09-152481282/ferrari_piove_sul_bagnato_hamilton_fa_di_testa_sua/",
+   "pubblicato": "2026-11-09T05:15:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 9.9,
+   "testate": 1
+  },
+  {
+   "titolo": "F1, i promossi e bocciati del GP del Brasile 2026: Verstappen vale il prezzo del biglietto, Ferrari in disarmo",
+   "estratto": "Il Gran Premio del Brasile di F1 ha posto fine a un intenso trittico cominciato ad Austin e proseguito a Città del Messico. Il Circus è andato progressivamente verso sud, arrivando a varcare…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-i-promossi-e-bocciati-del-gp-del-brasile-2026-verstappen-vale-il-prezzo-del-biglietto-ferrari-in-disarmo/",
+   "pubblicato": "2026-11-09T05:00:24+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 9.8,
+   "testate": 1
   },
   {
    "titolo": "LIVE F1, GP Brasile 2026 in DIRETTA: Leclerc e Antonelli penalizzati, cambia l’ordine di arrivo! Norris vince",
@@ -22,7 +430,7 @@
    "pubblicato": "2026-11-08T22:10:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 30.5,
+   "punteggio": 28.1,
    "testate": 3
   },
   {
@@ -34,7 +442,7 @@
    "pubblicato": "2026-11-08T22:08:38+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 30.5,
+   "punteggio": 28.1,
    "testate": 3
   },
   {
@@ -46,7 +454,7 @@
    "pubblicato": "2026-11-08T22:02:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.5,
+   "punteggio": 8.1,
    "testate": 1
   },
   {
@@ -58,8 +466,8 @@
    "pubblicato": "2026-11-08T22:01:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.5,
-   "testate": 4
+   "punteggio": 16.1,
+   "testate": 3
   },
   {
    "titolo": "Classifica F1, Mondiale piloti 2026: Kimi Antonelli già campione, Verstappen resta ad oltre 100 punti",
@@ -70,7 +478,7 @@
    "pubblicato": "2026-11-08T22:00:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.5,
+   "punteggio": 6.1,
    "testate": 2
   },
   {
@@ -82,7 +490,7 @@
    "pubblicato": "2026-11-08T21:56:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.5,
+   "punteggio": 8.0,
    "testate": 1
   },
   {
@@ -94,7 +502,7 @@
    "pubblicato": "2026-11-08T21:48:12+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.4,
+   "punteggio": 8.0,
    "testate": 1
   },
   {
@@ -106,7 +514,7 @@
    "pubblicato": "2026-11-08T21:47:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.4,
+   "punteggio": 18.0,
    "testate": 2
   },
   {
@@ -118,7 +526,7 @@
    "pubblicato": "2026-11-08T21:45:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.4,
+   "punteggio": 18.0,
    "testate": 2
   },
   {
@@ -130,7 +538,7 @@
    "pubblicato": "2026-11-08T21:44:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.4,
+   "punteggio": 18.0,
    "testate": 2
   },
   {
@@ -142,7 +550,7 @@
    "pubblicato": "2026-11-08T21:39:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.4,
+   "punteggio": 5.0,
    "testate": 1
   },
   {
@@ -154,7 +562,7 @@
    "pubblicato": "2026-11-08T21:35:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.4,
+   "punteggio": 9.9,
    "testate": 2
   },
   {
@@ -166,7 +574,7 @@
    "pubblicato": "2026-11-08T21:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.4,
+   "punteggio": 7.9,
    "testate": 1
   },
   {
@@ -178,7 +586,7 @@
    "pubblicato": "2026-11-08T21:23:09+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.3,
+   "punteggio": 12.9,
    "testate": 1
   },
   {
@@ -190,7 +598,7 @@
    "pubblicato": "2026-11-08T21:15:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 30.3,
+   "punteggio": 27.9,
    "testate": 3
   },
   {
@@ -202,7 +610,7 @@
    "pubblicato": "2026-11-08T21:12:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.3,
+   "punteggio": 22.8,
    "testate": 2
   },
   {
@@ -214,7 +622,7 @@
    "pubblicato": "2026-11-08T21:06:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.3,
+   "punteggio": 17.8,
    "testate": 2
   },
   {
@@ -226,7 +634,7 @@
    "pubblicato": "2026-11-08T20:48:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.2,
+   "punteggio": 12.8,
    "testate": 1
   },
   {
@@ -238,7 +646,7 @@
    "pubblicato": "2026-11-08T20:33:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.1,
+   "punteggio": 22.7,
    "testate": 2
   },
   {
@@ -250,7 +658,7 @@
    "pubblicato": "2026-11-08T20:31:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.1,
+   "punteggio": 4.7,
    "testate": 1
   },
   {
@@ -262,7 +670,7 @@
    "pubblicato": "2026-11-08T20:30:44+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.1,
+   "punteggio": 7.7,
    "testate": 1
   },
   {
@@ -274,7 +682,7 @@
    "pubblicato": "2026-11-08T20:20:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.1,
+   "punteggio": 12.6,
    "testate": 1
   },
   {
@@ -286,7 +694,7 @@
    "pubblicato": "2026-11-08T20:17:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.1,
+   "punteggio": 17.6,
    "testate": 2
   },
   {
@@ -298,7 +706,7 @@
    "pubblicato": "2026-11-08T20:14:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.0,
+   "punteggio": 12.6,
    "testate": 1
   },
   {
@@ -310,7 +718,7 @@
    "pubblicato": "2026-11-08T20:04:45+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.0,
+   "punteggio": 4.6,
    "testate": 1
   },
   {
@@ -322,8 +730,8 @@
    "pubblicato": "2026-11-08T19:58:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.0,
-   "testate": 3
+   "punteggio": 5.5,
+   "testate": 2
   },
   {
    "titolo": "F1, pagelle GP Brasile 2026: qualche sbavatura per Antonelli, Norris rimedia la partenza, Verstappen sprazzi da fenomeno",
@@ -334,7 +742,7 @@
    "pubblicato": "2026-11-08T19:55:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.0,
+   "punteggio": 17.5,
    "testate": 2
   },
   {
@@ -346,7 +754,7 @@
    "pubblicato": "2026-11-08T19:55:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.0,
+   "punteggio": 4.5,
    "testate": 1
   },
   {
@@ -358,7 +766,7 @@
    "pubblicato": "2026-11-08T19:53:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.0,
+   "punteggio": 4.5,
    "testate": 1
   },
   {
@@ -370,31 +778,7 @@
    "pubblicato": "2026-11-08T19:42:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.9,
-   "testate": 1
-  },
-  {
-   "titolo": "Charles Leclerc deluso: “Sui rettilinei perdevo un’enormità, non tenevo il passo dell’Alpine”",
-   "estratto": "Charles Leclerc non ha troppi motivi per sorridere al termine del Gran Premio di San Paolo, ventesimo e quartultimo appuntamento del Mondiale di Formula Uno 2026. Sul tracciato di Interlagos il…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/charles-leclerc-deluso-sui-rettilinei-perdevo-una-enormita-non-tenevo-il-passo-dellalpine/",
-   "pubblicato": "2026-11-08T19:40:46+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 6.9,
-   "testate": 1
-  },
-  {
-   "titolo": "Frederic Vasseur ammette: “Alti e bassi, non abbiamo sfruttato il potenziale”",
-   "estratto": "È un Frédéric Vasseur amareggiato quello che si presenta ai microfoni di Sky Sport al termine del Gran Premio del Brasile. Nel giorno in cui la Ferrari lascia Interlagos con un bottino magro –…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/frederic-vasseur-ammette-alti-e-bassi-non-abbiamo-sfruttato-il-potenziale/",
-   "pubblicato": "2026-11-08T19:37:14+00:00",
-   "tipo": "intervista",
-   "citazione": true,
-   "punteggio": 15.9,
+   "punteggio": 4.5,
    "testate": 1
   },
   {
@@ -406,7 +790,7 @@
    "pubblicato": "2026-11-08T19:34:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.9,
+   "punteggio": 12.4,
    "testate": 1
   },
   {
@@ -418,20 +802,8 @@
    "pubblicato": "2026-11-08T19:30:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.9,
+   "punteggio": 27.4,
    "testate": 3
-  },
-  {
-   "titolo": "Doppio ordine di scuderia tra Antonelli e Russell: il campione del mondo ha dovuto cedere la posizione ad Interlagos",
-   "estratto": "Kimi Antonelli ha concluso al quinto posto il GP del Brasile, tappa del Mondiale F1 andata in scena sul circuito di Interlagos. Il fresco Campione del Mondo ha commesso un paio di testacoda nella…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/doppio-ordine-di-scuderia-tra-antonelli-e-russell-il-campione-del-mondo-ha-dovuto-cedere-la-posizione-ad-interlagos/",
-   "pubblicato": "2026-11-08T19:25:31+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 9.8,
-   "testate": 1
   },
   {
    "titolo": "MotoGP | Acosta: \"Questa volta non è stata la pressione, la gomma davanti è rimasta fredda e non capiamo perché\"",
@@ -442,19 +814,7 @@
    "pubblicato": "2026-11-08T19:10:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.8,
-   "testate": 1
-  },
-  {
-   "titolo": "Hamilton-Ferrari, ancora caos nella gestione della strategia",
-   "estratto": "L'inglese ha chiuso una gara piuttosto deludente in nona piazza, mostrando l'ennesima incomprensione con il box rosso",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/hamilton-ferrari-ancora-caos-nella-gestione-della-strategia",
-   "pubblicato": "2026-11-08T19:07:01+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 9.8,
+   "punteggio": 4.3,
    "testate": 1
   },
   {
@@ -466,7 +826,7 @@
    "pubblicato": "2026-11-08T19:06:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 34.8,
+   "punteggio": 32.3,
    "testate": 3
   },
   {
@@ -478,19 +838,7 @@
    "pubblicato": "2026-11-08T19:05:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.8,
-   "testate": 1
-  },
-  {
-   "titolo": "Max Verstappen dopo la rimonta: “Gara complicata, ma da 21° a secondo è un grande risultato”",
-   "estratto": "Max Verstappen non può che festeggiare la grande rimonta messa in atto nel Gran Premio di San Paolo, ventesimo e quartultimo appuntamento del Mondiale di Formula Uno 2026. Sul tracciato di Interlagos…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/max-verstappen-dopo-la-rimonta-gara-complicata-ma-da-21-a-secondo-e-un-grande-risultato/",
-   "pubblicato": "2026-11-08T18:57:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 6.7,
+   "punteggio": 12.3,
    "testate": 1
   },
   {
@@ -502,7 +850,7 @@
    "pubblicato": "2026-11-08T18:55:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.7,
+   "punteggio": 29.3,
    "testate": 4
   },
   {
@@ -514,31 +862,7 @@
    "pubblicato": "2026-11-08T18:54:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.7,
-   "testate": 1
-  },
-  {
-   "titolo": "Lando Norris si gode il successo a Interlagos: “Sapevo fin dal sabato che potevamo vincere”",
-   "estratto": "Lando Norris doma il meteo imprevedibile di Interlagos e conquista con autorità il Gran Premio del Brasile 2026. Partito dalla pole position, il pilota della McLaren ha centrato il terzo successo…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/lando-norris-si-gode-il-successo-a-interlagos-sapevo-fin-dal-sabato-che-potevamo-vincere/",
-   "pubblicato": "2026-11-08T18:53:11+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 6.7,
-   "testate": 1
-  },
-  {
-   "titolo": "Isack Hadjar: “Felice del terzo posto, ma potevo commettere meno errori”",
-   "estratto": "Isack Hadjar si è piazzato sul gradino più basso del podio in occasione del GP del Brasile, ventesimo appuntamento del Mondiale 2026 di Formula 1 appena terminato questo fine settimana presso il…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/isack-hadjar-felice-del-terzo-posto-ma-potevo-commettere-meno-errori/",
-   "pubblicato": "2026-11-08T18:51:02+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 6.7,
+   "punteggio": 4.3,
    "testate": 1
   },
   {
@@ -550,20 +874,8 @@
    "pubblicato": "2026-11-08T18:49:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 39.7,
+   "punteggio": 37.3,
    "testate": 4
-  },
-  {
-   "titolo": "Mondiale Piloti 2026: la classifica dopo il GP del Brasile",
-   "estratto": "Lando Norris ha vinto a Interlagos",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-classifiche/classifica-mondiale-piloti-f1-2026-dopo-gp-brasile-norris-verstappen-leclerc-hamilton",
-   "pubblicato": "2026-11-08T18:45:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -0.3,
-   "testate": 2
   },
   {
    "titolo": "MotoGP | Martin: \"Lunedì e martedì non volevo nemmeno venire in Qatar\"",
@@ -574,55 +886,7 @@
    "pubblicato": "2026-11-08T18:45:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.7,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 GP Brasile 2026, Interlagos: la cronaca della gara, minuto per minuto",
-   "estratto": "La cronaca live minuto per minuto del Gran Premio a Interlagos, round 20 della stagione 2026 di Formula 1",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-brasile-2026-interlagos-gara-aggiornamenti-ferrari-norris-pole-antonelli-leclerc-verstappen-hamilton",
-   "pubblicato": "2026-11-08T18:40:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 1.7,
-   "testate": 1
-  },
-  {
-   "titolo": "Mondiale Costruttori 2026: la classifica dopo il GP del Brasile, Mercedes campione",
-   "estratto": "Giornata no per la Ferrari",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-classifiche/classifica-mondiale-costruttori-f1-2026-mercedes-campione-ferrari-giornata-no",
-   "pubblicato": "2026-11-08T18:40:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 17.7,
-   "testate": 3
-  },
-  {
-   "titolo": "Trionfo Mercedes, è campione del mondo Costruttori per la nona volta",
-   "estratto": "Antonelli e Russell hanno spezzato il digiuno della scuderia di Brackley, che durava dal 2021. Per le frecce d'argento è il primo titolo team del post-Hamilton",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/trionfo-mercedes-e-campione-del-mondo-costruttori-per-la-nona-volta",
-   "pubblicato": "2026-11-08T18:39:40+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 9.7,
-   "testate": 1
-  },
-  {
-   "titolo": "Albo d’Oro GP Brasile",
-   "estratto": "L'Albo d'Oro del Gran Premio del Brasile di Formula 1: tutti i piloti e le macchine che hanno vinto la gara che si disputa dal 1973",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-albo-doro/f1-albo-doro-gp-brasile",
-   "pubblicato": "2026-11-08T18:39:10+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 1.6,
+   "punteggio": 4.2,
    "testate": 1
   },
   {
@@ -634,8 +898,8 @@
    "pubblicato": "2026-11-08T18:27:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 34.6,
-   "testate": 3
+   "punteggio": 22.2,
+   "testate": 2
   },
   {
    "titolo": "MotoGP | Marquez: \"La battaglia del Qatar l'abbiamo vinta, ora tocca fare un passettino indietro\"",
@@ -646,7 +910,7 @@
    "pubblicato": "2026-11-08T18:12:17+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.5,
+   "punteggio": 14.1,
    "testate": 2
   },
   {
@@ -658,7 +922,7 @@
    "pubblicato": "2026-11-08T18:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.5,
+   "punteggio": 12.0,
    "testate": 1
   },
   {
@@ -670,19 +934,7 @@
    "pubblicato": "2026-11-08T17:53:20+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.5,
-   "testate": 1
-  },
-  {
-   "titolo": "Russell, che pasticcio: va in testacoda uscendo dalla corsia dei box",
-   "estratto": "L'inglese della Mercedes è stato protagonista di un errore molto singolare durante il GP del Brasile",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/russell-che-pasticcio-va-in-testacoda-uscendo-dalla-corsia-dei-box",
-   "pubblicato": "2026-11-08T17:41:40+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 1.4,
+   "punteggio": 12.0,
    "testate": 1
   },
   {
@@ -694,7 +946,7 @@
    "pubblicato": "2026-11-08T17:39:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.4,
+   "punteggio": 4.0,
    "testate": 1
   },
   {
@@ -706,7 +958,7 @@
    "pubblicato": "2026-11-08T17:31:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.4,
+   "punteggio": 8.9,
    "testate": 2
   },
   {
@@ -718,7 +970,7 @@
    "pubblicato": "2026-11-08T17:28:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.4,
+   "punteggio": 3.9,
    "testate": 1
   },
   {
@@ -730,7 +982,7 @@
    "pubblicato": "2026-11-08T17:20:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.3,
+   "punteggio": 11.9,
    "testate": 1
   },
   {
@@ -742,7 +994,7 @@
    "pubblicato": "2026-11-08T17:12:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.3,
+   "punteggio": 26.8,
    "testate": 3
   },
   {
@@ -754,7 +1006,7 @@
    "pubblicato": "2026-11-08T16:52:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.2,
+   "punteggio": 14.8,
    "testate": 3
   },
   {
@@ -766,7 +1018,7 @@
    "pubblicato": "2026-11-08T16:50:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.2,
+   "punteggio": 18.8,
    "testate": 3
   },
   {
@@ -778,7 +1030,7 @@
    "pubblicato": "2026-11-08T16:49:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.2,
+   "punteggio": 26.8,
    "testate": 3
   },
   {
@@ -790,7 +1042,7 @@
    "pubblicato": "2026-11-08T16:48:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.2,
+   "punteggio": 16.8,
    "testate": 2
   },
   {
@@ -802,7 +1054,7 @@
    "pubblicato": "2026-11-08T16:44:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.2,
+   "punteggio": 26.7,
    "testate": 3
   },
   {
@@ -814,7 +1066,7 @@
    "pubblicato": "2026-11-08T16:42:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.2,
+   "punteggio": 26.7,
    "testate": 3
   },
   {
@@ -826,19 +1078,7 @@
    "pubblicato": "2026-11-08T16:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.0,
-   "testate": 2
-  },
-  {
-   "titolo": "Strategie Pirelli: doppia sosta sull’asciutto, ma il freddo può influire",
-   "estratto": "Pirelli si aspetta strategie aggressive in Brasile, anche per Verstappen e le Ferrari, ma il termometro registra le temperature più basse del weekend",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/brasile-strategie-doppia-sosta-asciutto-freddo-puo-influire",
-   "pubblicato": "2026-11-08T15:11:43+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 8.8,
+   "punteggio": -1.5,
    "testate": 1
   },
   {
@@ -850,7 +1090,7 @@
    "pubblicato": "2026-11-08T15:05:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.8,
+   "punteggio": 8.3,
    "testate": 2
   },
   {
@@ -862,7 +1102,7 @@
    "pubblicato": "2026-11-08T15:02:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.7,
+   "punteggio": -1.7,
    "testate": 1
   },
   {
@@ -874,7 +1114,7 @@
    "pubblicato": "2026-11-08T15:02:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.3,
+   "punteggio": -13.7,
    "testate": 1
   },
   {
@@ -886,7 +1126,7 @@
    "pubblicato": "2026-11-08T14:59:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.7,
+   "punteggio": 13.3,
    "testate": 2
   },
   {
@@ -898,7 +1138,7 @@
    "pubblicato": "2026-11-08T14:41:10+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.7,
+   "punteggio": -1.8,
    "testate": 1
   },
   {
@@ -910,7 +1150,7 @@
    "pubblicato": "2026-11-08T14:35:10+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.4,
+   "punteggio": -13.8,
    "testate": 1
   },
   {
@@ -922,7 +1162,7 @@
    "pubblicato": "2026-11-08T14:20:24+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.6,
+   "punteggio": 26.1,
    "testate": 3
   },
   {
@@ -934,19 +1174,7 @@
    "pubblicato": "2026-11-08T14:09:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.5,
-   "testate": 2
-  },
-  {
-   "titolo": "Leclerc su Hamilton: “È normale che ci sia tensione e che a volte ci siano disaccordi”",
-   "estratto": "Il monegasco spera di mettere la parola fine sulle discussioni del Messico",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/leclerc-su-hamilton-normale-ci-sia-tensione-e-disaccordi-ferrari",
-   "pubblicato": "2026-11-08T14:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 15.5,
+   "punteggio": 21.1,
    "testate": 2
   },
   {
@@ -958,8 +1186,8 @@
    "pubblicato": "2026-11-08T13:50:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.6,
-   "testate": 2
+   "punteggio": -14.0,
+   "testate": 1
   },
   {
    "titolo": "Moto3, David Almansa domina il GP del Qatar e torna alla vittoria davanti a Fernandez e Quiles",
@@ -970,7 +1198,7 @@
    "pubblicato": "2026-11-08T13:43:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.4,
+   "punteggio": -2.0,
    "testate": 1
   },
   {
@@ -982,7 +1210,7 @@
    "pubblicato": "2026-11-08T13:26:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.3,
+   "punteggio": 5.9,
    "testate": 1
   },
   {
@@ -994,7 +1222,7 @@
    "pubblicato": "2026-11-08T12:40:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.2,
+   "punteggio": 2.7,
    "testate": 1
   },
   {
@@ -1006,20 +1234,8 @@
    "pubblicato": "2026-11-08T12:22:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.1,
-   "testate": 2
-  },
-  {
-   "titolo": "Fabio Giannantonio svetta nel warm-up di Lusail davanti a Bezzecchi. Marquez e Martin non forzano",
-   "estratto": "Fabio Di Giannantonio è stato il pilota più veloce nel warm-up del GP del Qatar, terzultimo appuntamento del Mondiale 2026 di MotoGP. Sul circuito di Lusail, i piloti e i team hanno sfruttato…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/fabio-giannantonio-svetta-nel-warm-up-di-lusail-davanti-a-bezzecchi-marquez-e-martin-non-forzano/",
-   "pubblicato": "2026-11-08T12:05:27+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 28.0,
-   "testate": 3
+   "punteggio": 5.6,
+   "testate": 1
   },
   {
    "titolo": "Bezzecchi a Marquez: “Paragone con Indonesia 2025 inopportuno. I 13 zeri? Non me li so spiegare”",
@@ -1030,7 +1246,7 @@
    "pubblicato": "2026-11-08T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.0,
+   "punteggio": 10.5,
    "testate": 1
   },
   {
@@ -1042,19 +1258,7 @@
    "pubblicato": "2026-11-08T11:41:24+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.1,
-   "testate": 1
-  },
-  {
-   "titolo": "Alonso mago della pioggia: in Q3 nelle ultime 15 qualifiche “bagnate”",
-   "estratto": "Il \"manico\" di Alonso è evidente con la pioggia. Lo spagnolo infila l'11esimo passaggio in Q3 sotto l'acqua. Un conto che sale a 15 se consideriamo le qualifiche con pioggia solo nel Q3",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/alonso-mago-della-pioggia-in-q3-nelle-ultime-15-qualifiche-bagnate",
-   "pubblicato": "2026-11-08T11:35:47+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 4.9,
+   "punteggio": -2.5,
    "testate": 1
   },
   {
@@ -1066,19 +1270,7 @@
    "pubblicato": "2026-11-08T11:20:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.8,
-   "testate": 3
-  },
-  {
-   "titolo": "Di Giannantonio attacca Marc Marquez dopo la Sprint a Lusail: “Devi guardare quando rientri, Bezzecchi era dentro”",
-   "estratto": "Tante polemiche. La Sprint di MotoGP a Lusail (Qatar) ha lasciato ieri in eredità solo veleni. Nelle prime fasi, alla prima curva il contatto tra Marc Marquez e Marco Bezzecchi: un urto violento che…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/di-giannantonio-attacca-marc-marquez-dopo-la-sprint-devi-guardare-quando-rientri-bezzecchi-era-dentro-la-risposta-dello-spagnolo/",
-   "pubblicato": "2026-11-08T11:03:40+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 32.8,
+   "punteggio": 17.4,
    "testate": 3
   },
   {
@@ -1090,20 +1282,8 @@
    "pubblicato": "2026-11-08T10:42:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.7,
-   "testate": 2
-  },
-  {
-   "titolo": "Francesco Bagnaia dopo il tremendo incidente di Lusail: “Tornerò, voglio prende le cose positive dal weekend”",
-   "estratto": "Due dita del piede destro rotte e un’operazione all’orizzonte: Lusail chiude in anticipo il fine settimana di Francesco Bagnaia, travolto nella Sprint Race di ieri da Fermin Aldeguer proprio quando…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/francesco-bagnaia-dopo-il-brutto-incidente-di-lusail-tornero-voglio-prende-le-cose-positive-da-questo-weekend/",
-   "pubblicato": "2026-11-08T10:41:58+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 22.7,
-   "testate": 2
+   "punteggio": 10.2,
+   "testate": 1
   },
   {
    "titolo": "MotoGP | Bagnaia deve operarsi ma pensa positivo: \"In realtà è stato uno dei migliori weekend del 2026\"",
@@ -1114,7 +1294,7 @@
    "pubblicato": "2026-11-08T10:18:44+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.6,
+   "punteggio": 10.1,
    "testate": 1
   },
   {
@@ -1126,7 +1306,7 @@
    "pubblicato": "2026-11-08T10:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.5,
+   "punteggio": 5.0,
    "testate": 1
   },
   {
@@ -1138,7 +1318,7 @@
    "pubblicato": "2026-11-08T09:51:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.4,
+   "punteggio": 2.0,
    "testate": 1
   },
   {
@@ -1150,7 +1330,7 @@
    "pubblicato": "2026-11-08T09:26:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.3,
+   "punteggio": 1.9,
    "testate": 1
   },
   {
@@ -1162,7 +1342,7 @@
    "pubblicato": "2026-11-08T09:07:53+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 32.3,
+   "punteggio": 29.8,
    "testate": 3
   },
   {
@@ -1174,8 +1354,8 @@
    "pubblicato": "2026-11-08T09:00:00+00:00",
    "tipo": "social",
    "citazione": true,
-   "punteggio": 25.2,
-   "testate": 2
+   "punteggio": 12.8,
+   "testate": 1
   },
   {
    "titolo": "Sterlacchini: “Bezzecchi-Marquez? Episodio di gara sfortunato, peccato pagarne le conseguenze”",
@@ -1186,7 +1366,19 @@
    "pubblicato": "2026-11-08T08:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.0,
+   "punteggio": 19.5,
+   "testate": 2
+  },
+  {
+   "titolo": "Di Giannantonio a Marquez: “Devi guardare quando rientri, caz**. Bezzecchi era dentro”",
+   "estratto": "Botta e risposta tra i due piloti sull'incidente della Sprint",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/digiannantonio-a-marquez-devi-guardare-quando-rientri-cazzo-incidente-bezzecchi",
+   "pubblicato": "2026-11-08T07:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 19.3,
    "testate": 2
   },
   {
@@ -1198,44 +1390,8 @@
    "pubblicato": "2026-11-08T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.3,
+   "punteggio": -15.7,
    "testate": 1
-  },
-  {
-   "titolo": "Di Giannantonio a Marquez: “Devi guardare quando rientri, caz**. Bezzecchi era dentro”",
-   "estratto": "Botta e risposta tra i due piloti sull'incidente della Sprint",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/digiannantonio-a-marquez-devi-guardare-quando-rientri-cazzo-incidente-bezzecchi",
-   "pubblicato": "2026-11-08T07:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 31.7,
-   "testate": 3
-  },
-  {
-   "titolo": "Quando MotoGP e F1 oggi (domenica 8 novembre): orari gare, streaming, diretta Sky, differita TV8",
-   "estratto": "Oggi domenica 8 novembre si conclude il lungo weekend riservato ai motori, arriviamo al momento clou dell’intenso fine settimana. Spazio alle gare: GP del Brasile per quanto riguarda la F1 e GP del…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/quando-motogp-e-f1-oggi-8-novembre-orari-gare-streaming-diretta-sky-differita-tv8/",
-   "pubblicato": "2026-11-08T06:18:57+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -13.4,
-   "testate": 1
-  },
-  {
-   "titolo": "Quando la MotoGP su TV8 oggi, GP Qatar 2026: orario gara in chiaro",
-   "estratto": "Il Gran Premio di Qatar di MotoGP andrà in scena alle ore 17:00 di domenica 8 novembre. Come di consueto, il programma sarà progressivo. Pertanto, La al-fi’a al-‘ulyā, come i qatarioti e tutti coloro…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/a-che-ora-la-motogp-su-tv8-oggi-gp-qatar-2026-programma-gara-differita-in-chiaro/",
-   "pubblicato": "2026-11-08T06:10:09+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 18.5,
-   "testate": 3
   },
   {
    "titolo": "Pernat: “Marquez andava penalizzato, ha buttato giù Bezzecchi”",
@@ -1246,7 +1402,7 @@
    "pubblicato": "2026-11-08T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.5,
+   "punteggio": 9.0,
    "testate": 1
   },
   {
@@ -1258,7 +1414,7 @@
    "pubblicato": "2026-11-07T22:38:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.6,
+   "punteggio": 7.2,
    "testate": 1
   },
   {
@@ -1270,7 +1426,7 @@
    "pubblicato": "2026-11-07T22:25:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.6,
+   "punteggio": 7.2,
    "testate": 1
   },
   {
@@ -1282,163 +1438,7 @@
    "pubblicato": "2026-11-07T22:02:35+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.5,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Vasseur: \"Sul bagnato la Ferrari ha il passo e abbiamo risparmiato le gomme rain\"",
-   "estratto": "La Formula 1 ha dato la dimostrazione che si può correre anche con una pioggia forte: finalmente a Interlagos abbiamo visto i piloti usare la mescola full wet prima di passare alle intermedie nelle…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-vasseur-sul-bagnato-la-ferrari-ha-il-passo-e-abbiamo-risparmiato-le-gomme-rain/10872753/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-07T21:45:51+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 9.4,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | La pioggia esalta i piloti: Interlagos premia le scelte della FIA",
-   "estratto": "C'è un'impazienza di fondo, comprensibile, ogni volta che la pioggia costringe la Formula 1 a fermarsi. È accaduto anche a Interlagos, dove alle 15 locali, orario previsto per l'inizio delle…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-la-pioggia-esalta-i-piloti-interlagos-premia-le-scelte-della-fia/10872754/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-07T21:29:56+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -3.6,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Bezzecchi bravo a non polemizzare, battere Marquez in pista domani sarebbe la \"vendetta\" migliore",
-   "estratto": "Che Marc Marquez sia il pilota più talentuoso della MotoGP, probabilmente il più talentuoso di tutti i tempi, non lo mette in dubbio nessuno. Solo un vero fuoriclasse avrebbe potuto compiere la…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bezzecchi-bravo-a-non-polemizzare-battere-marquez-in-pista-domani-sarebbe-la-vendetta-miglio/10872703/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-07T20:53:20+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 19.2,
-   "testate": 2
-  },
-  {
-   "titolo": "Hamilton dal fondo, Leclerc 14°: la pioggia stravolge le qualifiche in Brasile",
-   "estratto": "Temporale su San Paolo e tanti colpi di scena per la Ferrari e non solo. Pole a Norris davanti ad Antonelli",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/07-152448254/hamilton_dal_fondo_leclerc_14_la_pioggia_stravolge_le_qualifiche_in_brasile/",
-   "pubblicato": "2026-11-07T20:42:31+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 4.2,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Norris brilla sotto la pioggia e riporta in pole la McLaren a Interlagos. Antonelli partirà 2°",
-   "estratto": "La pioggia è stata la grande protagonista del sabato di San Paolo, regalando delle qualifiche davvero intense nonostante la lunga attesa di oltre un’ora che ha posticipato l’inizio delle prove…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-norris-brilla-sotto-la-pioggia-e-riporta-in-pole-la-mclaren-a-interlagos-antonelli-partira-2/10872722/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-07T20:41:28+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 4.2,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Bezzecchi zen sul contatto con Marquez: \"Non ha senso arrabbiarsi, è uno spreco di energie\"",
-   "estratto": "Era la sua ultima chance di tenere vive le poche speranze iridate che gli rimanevano e Marco Bezzecchi se la stava giocando anche piuttosto bene nel Gran Premio del Qatar. Oggi ha firmato una pole…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bezzecchi-zen-sul-contatto-con-marquez-non-ha-senso-arrabbiarsi-e-uno-spreco-di-energie/10872687/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-07T19:39:29+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 28.9,
-   "testate": 3
-  },
-  {
-   "titolo": "Marquez punge Bezzecchi: “Ha fatto un errore. Ero stupito di trovarlo lì”",
-   "estratto": "Lo spagnolo, parlando a DAZN, ha commentato l'episodio che ha deciso la gara Sprint del Qatar",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/marquez-punge-bezzecchi-ha-fatto-un-errore-ero-stupito-di-trovarlo-li",
-   "pubblicato": "2026-11-07T19:32:23+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 18.9,
-   "testate": 2
-  },
-  {
-   "titolo": "Contatto Marquez-Bezzecchi, Rolfo: “Attacco troppo rischioso di Bezzecchi dove non c’era spazio”",
-   "estratto": "L'ex pilota ritiene che il portacolori Aprilia abbia esagerato",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/rolfo-stronca-bezzecchi-contatto-marquez-attacca-dove-non-ce-spazio",
-   "pubblicato": "2026-11-07T19:15:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 18.8,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Martin: \"Quando ho visto Marquez con l'airbag attivato, ho detto: 'ora o mai più'\"",
-   "estratto": "Jorge Martin ha realizzato questo sabato a Lusail una delle più grandi prestazioni della stagione 2026 della MotoGP. 14 giorni dopo essersi fratturato il radio distale del polso destro a Phillip…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-martin-quando-ho-visto-marquez-con-lairbag-attivato-ho-detto-ora-o-mai-piu/10872684/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-07T19:11:01+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 10.8,
-   "testate": 2
-  },
-  {
-   "titolo": "Bezzecchi: “Dovevo rischiare, dovevo fare di tutto per ottenere un buon risultato”. Gelo con Marquez in zona mista",
-   "estratto": "Ai microfoni della tv inglese TNT il riminese dell'Aprilia ha fornito ulteriori dettagli sul duello con Marc Marquez che si è concluso con la sua caduta",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/bezzecchi-dovevo-rischiare-dovevo-fare-di-tutto-per-ottenere-un-buon-risultato-gelo-con-marquez-in-zona-mista",
-   "pubblicato": "2026-11-07T18:58:21+00:00",
-   "tipo": "intervista",
-   "citazione": true,
-   "punteggio": 9.7,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Marquez: \"Il contatto con Bezzecchi? Per me è chiaro, ho fatto la curva 1 come sempre\"",
-   "estratto": "L'impresa è lì, ad un passo, ma dopo la Sprint del Gran Premio del Qatar si è parlato più del contatto che ha estromesso Marco Bezzecchi che della vittoria nella Sprint con cui Marc Marquez si è…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-marquez--10872662/10872662/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-07T18:53:03+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 28.7,
-   "testate": 3
-  },
-  {
-   "titolo": "Di Giannantonio 2° all’ultimo giro: “Dobbiamo essere super contenti per questa performance”",
-   "estratto": "Il pilota del team VR46, stabilmente in zona podio per tutta la gara, ha superato Martin all'ultimo giro, chiudendo al 2° posto",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/di-giannantonio-2-ultimo-giro-dobbiamo-essere-super-contenti-per-la-prestazione",
-   "pubblicato": "2026-11-07T18:39:05+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 8.6,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Il GP di San Paolo rinnova per altri 5 anni: resterà in calendario fino al 2035",
-   "estratto": "Il Gran Premio del Brasile continuerà a far parte del calendario della Formula 1 almeno fino al 2035, prolungando così l'accordo esistente per altri cinque anni che sarebbe scaduto al termine della…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-il-gp-di-san-paolo-rinnova-per-altri-5-anni-restera-in-calendario-fino-al-2035/10872595/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-07T18:35:33+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -4.4,
+   "punteggio": -5.9,
    "testate": 1
   }
  ]

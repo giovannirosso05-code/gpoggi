@@ -1,0 +1,104 @@
+{
+ "serie": "MotoGP",
+ "titolo_breve": "Qatar: the grades",
+ "fonte": "risultati ufficiali, calcolo GP Oggi",
+ "velocita": "+12%",
+ "scene": [
+  {
+   "foto": "Diogo Moreira",
+   "hook": true,
+   "hook_titolo": "Moreira among the worst",
+   "testo": "[Moreira] among the worst of the weekend: he retired on lap 16."
+  },
+  {
+   "foto": "Diogo Moreira",
+   "testo": "[Moreira]: sixteenth in qualifying, tenth in the sprint and retired on lap 16. Grade *five*."
+  },
+  {
+   "foto": "Fabio Di Giannantonio",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Giannantonio]: third in qualifying, second in the sprint and eighth in the race, starting third. Today he gets *six and a half*."
+  },
+  {
+   "foto": "Jorge Martin",
+   "testo": "[Martin]: eleventh in qualifying, third in the sprint and seventh in the race, starting eleventh. He earns *six and a half*."
+  },
+  {
+   "foto": "Raul Fernandez",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Fernandez]: fourth in qualifying, fourth in the sprint and third in the race. We give him *eight*."
+  },
+  {
+   "foto": "Marc Marquez",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Marc Marquez]: second in qualifying, first in the sprint and second in the race. Grade *nine*."
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "alt": "pista",
+   "pista": true,
+   "volto_alt": "sorriso",
+   "testo": "And then the best: [Bezzecchi]. First in qualifying, out in the sprint and first in the race. A performance worth applauding. Grade *nine*."
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "pista": true,
+   "classifica": {
+    "titolo": "Our grades",
+    "righe": [
+     {
+      "pos": "",
+      "colore": "7b2c8f",
+      "nome": "Bezzecchi",
+      "voto": "9",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "e1251b",
+      "nome": "M. Marquez",
+      "voto": "9",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "7b2c8f",
+      "nome": "Fernandez",
+      "voto": "8",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "7b2c8f",
+      "nome": "Martin",
+      "voto": "6.5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "e1251b",
+      "nome": "Giannantonio",
+      "voto": "6.5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "dcdce2",
+      "nome": "Moreira",
+      "voto": "5",
+      "nota": " "
+     }
+    ]
+   },
+   "sub_top": 1360,
+   "testo": "Here are all the grades."
+  }
+ ],
+ "finale": {
+  "foto": "Marco Bezzecchi",
+  "domanda": "What grade would you give Qatar?"
+ }
+}

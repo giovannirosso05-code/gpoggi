@@ -1,0 +1,86 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Gara San Paolo",
+ "etichetta": "Gara",
+ "fonte": "The Race, PlanetF1",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto": "Lando Norris",
+   "ritratto_espn": true,
+   "hook": true,
+   "hook_titolo": "Norris vince a San Paolo!",
+   "testo": "*Norris* vince a San Paolo, sotto la *pioggia*!",
+   "fonte_alto": "The Race, PlanetF1"
+  },
+  {
+   "foto": "Max Verstappen",
+   "ritratto_espn": true,
+   "testo": "Secondo *Verstappen*, a *quattordici secondi*: era partito dal *fondo*, ventunesimo.",
+   "fonte_alto": "The Race, PlanetF1"
+  },
+  {
+   "foto": "Isack Hadjar",
+   "ritratto_espn": true,
+   "testo": "Terzo *Hadjar*: doppio podio per la *Red Bull*.",
+   "fonte_alto": "The Race, PlanetF1"
+  },
+  {
+   "foto": "George Russell",
+   "ritratto_espn": true,
+   "testo": "Quarto *Russell*, partito settimo. Quinto *Antonelli*, il neo campione del mondo, partito dalla prima fila.",
+   "fonte_alto": "The Race, PlanetF1"
+  },
+  {
+   "foto": "Charles Leclerc",
+   "ritratto_espn": true,
+   "testo": "Per la Ferrari, *Leclerc* chiude ottavo, partito quattordicesimo, dopo cinque secondi di penalità per il contatto con Lawson. *Hamilton* è nono, partendo dalle retrovie.",
+   "fonte_alto": "The Race, PlanetF1"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "ritratto_espn": true,
+   "testo": "E la *Mercedes* si prende il titolo costruttori.",
+   "fonte_alto": "The Race, PlanetF1"
+  },
+  {
+   "foto": "Lando Norris",
+   "ritratto_espn": true,
+   "nome": "Gara: i primi sei",
+   "chips": [
+    [
+     "si",
+     "1. Norris"
+    ],
+    [
+     "info",
+     "2. Verstappen"
+    ],
+    [
+     "info",
+     "3. Hadjar"
+    ],
+    [
+     "info",
+     "4. Russell"
+    ],
+    [
+     "info",
+     "5. Antonelli"
+    ],
+    [
+     "info",
+     "6. Piastri"
+    ]
+   ],
+   "sub_top": 1650,
+   "testo": "Ecco i primi sei: *Norris*, *Verstappen*, *Hadjar*, *Russell*, *Antonelli* e *Piastri*.",
+   "fonte_alto": "The Race, PlanetF1"
+  }
+ ],
+ "finale": {
+  "foto": "Lando Norris",
+  "ritratto_espn": true,
+  "domanda": "Chi è stato il migliore a San Paolo: Norris o Verstappen?"
+ }
+}

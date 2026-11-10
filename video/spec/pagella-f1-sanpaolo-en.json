@@ -1,0 +1,118 @@
+{
+ "serie": "F1",
+ "titolo_breve": "São Paulo: the grades",
+ "fonte": "risultati ufficiali, calcolo GP Oggi",
+ "velocita": "+12%",
+ "scene": [
+  {
+   "foto": "Rafael Camara",
+   "hook": true,
+   "hook_titolo": "Camara among the worst",
+   "testo": "[Camara] among the worst of the weekend: he lost 9 places compared with his grid slot."
+  },
+  {
+   "foto": "Rafael Camara",
+   "testo": "[Camara]: thirteenth in qualifying and twentieth in the race, starting eleventh. Grade *five*."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Hamilton]: eleventh in qualifying and ninth in the race, starting twentieth. Today he gets *six and a half*."
+  },
+  {
+   "foto": "Charles Leclerc",
+   "alt": "pista_cina",
+   "pista": true,
+   "testo": "[Leclerc]: fourth in qualifying and eighth in the race, starting fourteenth. He earns *seven*."
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Antonelli]: third in qualifying and fifth in the race, starting second. We give him *seven*."
+  },
+  {
+   "foto": "George Russell",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Russell]: second in qualifying and fourth in the race, starting seventh. Grade *eight*."
+  },
+  {
+   "foto": "Max Verstappen",
+   "alt": "pista_cina",
+   "pista": true,
+   "testo": "[Verstappen]: sixteenth in qualifying and second in the race, starting twenty-first. Today he gets *eight and a half*."
+  },
+  {
+   "foto": "Lando Norris",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "And then the best: [Norris]. Pole and win: a perfect weekend. A performance worth applauding. Grade *ten*."
+  },
+  {
+   "foto": "Lando Norris",
+   "pista": true,
+   "classifica": {
+    "titolo": "Our grades",
+    "righe": [
+     {
+      "pos": "",
+      "colore": "F47600",
+      "nome": "Norris",
+      "voto": "10",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "4781D7",
+      "nome": "Verstappen",
+      "voto": "8.5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "00D7B6",
+      "nome": "Russell",
+      "voto": "8",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "00D7B6",
+      "nome": "Antonelli",
+      "voto": "7",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "ED1131",
+      "nome": "Leclerc",
+      "voto": "7",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "ED1131",
+      "nome": "Hamilton",
+      "voto": "6.5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "9C9FA2",
+      "nome": "Camara",
+      "voto": "5",
+      "nota": " "
+     }
+    ]
+   },
+   "sub_top": 1360,
+   "testo": "Here are all the grades."
+  }
+ ],
+ "finale": {
+  "foto": "Lando Norris",
+  "domanda": "What grade would you give São Paulo?"
+ }
+}

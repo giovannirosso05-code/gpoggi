@@ -27,7 +27,7 @@ def html_pagella(serie, alt=None, quante=5):
     rr = "".join(f'<div class=r><span>{n.esc(cognome(r["nome"]))}</span><b>{voto(r)}</b></div>' for r in altri)
     gp = d["nome"].replace("Gran Premio di ", "").replace("Gran Premio del ", "").replace("Gran Premio dell'", "").replace("Gran Premio d'", "").replace("GP ", "").upper()
     if n.EN:
-        gp = {"CITTÀ DEL MESSICO": "MEXICO CITY", "MALESIA": "MALAYSIA", "STATI UNITI": "UNITED STATES"}.get(gp, gp)
+        gp = {"CITTÀ DEL MESSICO": "MEXICO CITY", "MALESIA": "MALAYSIA", "STATI UNITI": "UNITED STATES", "SAN PAOLO": "SÃO PAULO", "PAESI BASSI": "NETHERLANDS"}.get(gp, gp)
     return f"""<!doctype html><meta charset=utf-8><style>{n.CSS_FONT}
 html,body{{margin:0;width:{n.W}px;height:{n.H}px;overflow:hidden;position:relative;background:#0b0b0e;font-family:Inter,sans-serif}}
 .bg{{position:absolute;inset:-80px;background:url(data:image/jpeg;base64,{foto}) center 15%/cover no-repeat;filter:blur(30px) brightness(.35)}}

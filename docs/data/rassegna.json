@@ -1,6 +1,234 @@
 {
- "generato_il": "2026-11-10T14:09:32+00:00",
+ "generato_il": "2026-11-10T20:36:09+00:00",
  "articoli": [
+  {
+   "titolo": "Le decisioni della FIA sull’ADUO: la Ferrari con ‘gettoni’ in più può recuperare nel 2027?",
+   "estratto": "La F1 arriva al finale di stagione con un punto fermo: la terza e ultima finestra di verifica ADUO, quella che misura il distacco prestazionale tra i motori, si è chiusa senza alcuna conseguenza. Nel…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/le-decisioni-sulla-fia-sulladuo-la-ferrari-con-gettoni-in-piu-puo-recuperare-nel-2027/",
+   "pubblicato": "2026-11-10T19:59:05+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 7.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Verstappen e Antonelli, Montoya svela il segreto della loro sintonia: “Max rivede se stesso in Kimi”",
+   "estratto": "Nel paddock della F1, dove la competizione lascia spesso poco spazio alla simpatia tra avversari, il rapporto tra Max Verstappen e Kimi Antonelli rappresenta un’eccezione interessante. Il quattro…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/verstappen-e-antonelli-montoya-svela-il-segreto-della-loro-sintonia-max-rivede-se-stesso-in-kimi/",
+   "pubblicato": "2026-11-10T19:32:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 22.7,
+   "testate": 2
+  },
+  {
+   "titolo": "Francesco Bagnaia operato al piede destro: intervento riuscito, dubbi sui tempi di recupero",
+   "estratto": "L’operazione è riuscita, ma la strada verso il ritorno in pista è ancora tutta da percorrere. Francesco “Pecco” Bagnaia è stato sottoposto a un intervento chirurgico per ridurre la doppia frattura al…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/francesco-bagnaia-operato-al-piede-destro-intervento-riuscito-ma-il-rientro-e-un-rebus/",
+   "pubblicato": "2026-11-10T19:04:19+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 15.6,
+   "testate": 3
+  },
+  {
+   "titolo": "Brasile, lo straordinario diventa abitudine",
+   "estratto": "La rimonta di Verstappen, il nono titolo Mercedes, la capacità di Norris di volare sul passo e sul bagnato. Fatti che appaiono scontati. Ma non lo sono",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/mercedes-aggiornata-potenziale-elevatissimo-stretta-finestra-esercizio-antonelli",
+   "pubblicato": "2026-11-10T18:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -0.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Bagnaia, intervento riuscito. Ora la riabilitazione, ancora incerte le tempistiche del rientro",
+   "estratto": "Il ducatista è stato operato oggi a Torino in mattinata",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/bagnaia-intervento-riuscito-ora-la-riabilitazione-ancora-incerte-le-tempistiche",
+   "pubblicato": "2026-11-10T17:50:17+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 17.3,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP | Bagnaia operato con successo a Torino per la doppia frattura del piede destro",
+   "estratto": "Pecco Bagnaia ha iniziato il processo di recupero dalla doppia frattura al piede destro rimediata lo scorso fine settimana in Qatar, in un incidente innescato da Fermin Aldeguer e avvenuto nel corso…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-bagnaia-operato-con-successo-a-torino-per-la-doppia-frattura-del-piede-destro/10873699/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-10T17:44:55+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 17.3,
+   "testate": 2
+  },
+  {
+   "titolo": "Ocon saluta i suoi fan sui social. Un messaggio che sa di ritiro",
+   "estratto": "Dopo l'espulsione dalla Haas, il francese ha lasciato un toccante messaggio ai suoi tifosi",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/ocon-saluta-suoi-fan-sui-social-messaggio-che-sa-di-ritiro",
+   "pubblicato": "2026-11-10T17:36:09+00:00",
+   "tipo": "social",
+   "citazione": true,
+   "punteggio": 7.2,
+   "testate": 1
+  },
+  {
+   "titolo": "Fornaroli, completato l’ultimo test dell’anno con McLaren: “Sono soddisfatto dei progressi fatti. Il 2027 sarà entusiasmante”",
+   "estratto": "L'italiano ha terminato i suoi impegni in pista per quest'anno, ma la prossima stagione sarà ancora più impegnativa e stimolante",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/fornaroli-completato-lultimo-test-dellanno-con-mclaren-sono-soddisfatto-dei-progressi-fatti-il-2027-sara-entusiasmante",
+   "pubblicato": "2026-11-10T17:10:41+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 4.1,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Marco Bezzecchi ha finalmente ritrovato la forma di inizio stagione?",
+   "estratto": "Marco Bezzecchi potrebbe prendersela solo con se stesso per il crollo della sua candidatura al titolo a metà della stagione MotoGP 2026, ma il pilota dell'Aprilia sa certamente come dominare un Gran…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-marco-bezzecchi-ha-finalmente-ritrovato-la-forma-di-inizio-stagione/10873644/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-10T17:01:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 7.1,
+   "testate": 1
+  },
+  {
+   "titolo": "Ferrari, kit giallo-nero per Las Vegas",
+   "estratto": "La Ferrari si presenterà a Las Vegas con un kit giallo-nero. In Nevada la Scuderia cercherà di chiudere i giochi per la P2 nei Costruttori",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/ferrari-kit-giallo-nero-per-las-vegas",
+   "pubblicato": "2026-11-10T17:00:12+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 7.1,
+   "testate": 1
+  },
+  {
+   "titolo": "Montoya: “Per Verstappen è impossibile avercela con Antonelli, rivede in Kimi il se stesso di pochi anni fa”",
+   "estratto": "Il colombiano ha sottolineato l'affinità tra i due fuoriclasse",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/montoya-verstappen-impossibile-odiare-kimi-antonelli-ricorda-lui-pochi-anni-fa",
+   "pubblicato": "2026-11-10T17:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 22.1,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 | \"Ha mostrato una velocità impressionante\": come Camara ha convinto Ferrari e Haas al debutto",
+   "estratto": "Ci sono debutti che non si dimenticano, resi speciali non solo perché si tratta del primo passo in F1, ciò che si è sognato fin da bambini, ma anche per il contesto. È stato così anche per Rafael…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-ha-mostrato-una-velocita-impressionante-come-camara-ha-stupito-ferrar/10873646/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-10T16:32:10+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 12.0,
+   "testate": 1
+  },
+  {
+   "titolo": "F1, sfuma l’ipotesi del gran finale a Imola. Ben Sulayem conferma le ultime due tappe in Medio Oriente",
+   "estratto": "Tramonta definitivamente l’ipotesi di vedere a Imola l’ultimo appuntamento del Mondiale di Formula Uno 2026. L’autodromo Enzo e Dino Ferrari era l’unico vero candidato rimasto in lizza per sostituire…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-sfuma-lipotesi-del-gran-finale-a-imola-ben-sulayem-conferma-le-ultime-due-tappe-in-medio-oriente/",
+   "pubblicato": "2026-11-10T16:02:34+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 6.9,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Ocon torna a farsi sentire dopo l'addio ad Haas: \"La mia passione per le corse rimane più forte che mai\"",
+   "estratto": "A una settimana e mezzo dal suo appiedamento, Esteban Ocon è tornato a far sentire la propria voce. O meglio, ha dato un segnale pubblicando poche frasi, ma significative. Il pilota francese…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-ocon-torna-a-farsi-sentire-dopo-laddio-ad-haas-la-mia-passione-per-le-corse-rimane-piu-forte-che/10873645/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-10T15:37:38+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 3.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Hülkenberg: “È positivo portare a casa un punto da una gara così complessa”",
+   "estratto": "Secondo piazzamento consecutivo in zona punti per l'Audi, questa volta grazie al 10° posto del pilota tedesco",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/hulkenberg-positivo-portare-a-casa-un-punto-da-una-gara-cosi-complessa",
+   "pubblicato": "2026-11-10T15:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 3.6,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Vinales: \"Farò tutti gli esami possibili e se ho qualcosa di rotto, mi fermo\"",
+   "estratto": "Se per qualcuno la vita è cambiata da una stagione all'altra, quello è Maverick Vinales. Nel Gran Premio del Qatar 2025, il pilota spagnolo affrontava una delle sue prime gare in sella alla KTM. E…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-vinales-faro-tutti-gli-esami-possibili-e-se-ho-qualcosa-di-rotto-mi-fermo/10873631/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-10T14:42:44+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 3.5,
+   "testate": 1
+  },
+  {
+   "titolo": "Ufficiale, la F1 conferma Qatar e Abu Dhabi: niente Imola a fine anno",
+   "estratto": "Anche la F1 ha confermato che i piani sul calendario 2026 non saranno modificati: niente Imola, si corre in Medio Oriente",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/ufficiale-la-f1-conferma-qatar-e-abu-dhabi-niente-imola-a-fine-anno",
+   "pubblicato": "2026-11-10T14:35:19+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 16.5,
+   "testate": 2
+  },
+  {
+   "titolo": "Viñales valuta un nuovo stop per i dolori alla spalla: “Non ha senso continuare così”",
+   "estratto": "Il pilota spagnolo non riesce ancora a recuperare dall'infortunio subito lo scorso anno in Germania",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/vinales-valuta-nuovo-stop-non-ha-senso-continuare-cosi",
+   "pubblicato": "2026-11-10T14:15:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 3.4,
+   "testate": 1
+  },
+  {
+   "titolo": "“Dove sono?”, “Ti faccio sapere”: il surreale team radio tra Hamilton e Santi a Interlagos",
+   "estratto": "Lewis Hamilton e il suo ingegnere di pista Carlo Santi hanno dato vita a un team radio surreale nel GP di San Paolo",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/dove-sono-surreale-team-radio-tra-hamilton-e-santi-a-interlagos-ferrari",
+   "pubblicato": "2026-11-10T14:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 3.3,
+   "testate": 1
+  },
   {
    "titolo": "Hamilton campione in pista e fuori: in Egitto per visitare le strutture di aiuti umanitari per Gaza",
    "estratto": "Il sette volte iridato ha incontrato i volontari della Mezzaluna Rossa, impegnati nella spedizione di aiuti umanitari e beni di soccorso per la popolazione di Gaza",
@@ -10,7 +238,7 @@
    "pubblicato": "2026-11-10T13:39:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.1,
+   "punteggio": -1.7,
    "testate": 1
   },
   {
@@ -22,7 +250,7 @@
    "pubblicato": "2026-11-10T13:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.7,
+   "punteggio": 3.1,
    "testate": 1
   },
   {
@@ -34,7 +262,7 @@
    "pubblicato": "2026-11-10T12:19:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.5,
+   "punteggio": 15.9,
    "testate": 2
   },
   {
@@ -46,7 +274,7 @@
    "pubblicato": "2026-11-10T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.5,
+   "punteggio": 2.8,
    "testate": 1
   },
   {
@@ -58,7 +286,7 @@
    "pubblicato": "2026-11-10T11:57:31+00:00",
    "tipo": "social",
    "citazione": true,
-   "punteggio": 25.4,
+   "punteggio": 23.8,
    "testate": 2
   },
   {
@@ -70,7 +298,7 @@
    "pubblicato": "2026-11-10T11:55:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -7.6,
+   "punteggio": -9.2,
    "testate": 1
   },
   {
@@ -82,7 +310,7 @@
    "pubblicato": "2026-11-10T11:39:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.6,
+   "punteggio": -2.2,
    "testate": 1
   },
   {
@@ -94,7 +322,7 @@
    "pubblicato": "2026-11-10T10:58:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.2,
+   "punteggio": 7.6,
    "testate": 2
   },
   {
@@ -106,7 +334,7 @@
    "pubblicato": "2026-11-10T10:52:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.2,
+   "punteggio": 2.6,
    "testate": 1
   },
   {
@@ -118,7 +346,7 @@
    "pubblicato": "2026-11-10T10:11:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.0,
+   "punteggio": 7.4,
    "testate": 2
   },
   {
@@ -130,7 +358,7 @@
    "pubblicato": "2026-11-10T09:33:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.9,
+   "punteggio": 10.2,
    "testate": 1
   },
   {
@@ -142,7 +370,7 @@
    "pubblicato": "2026-11-10T09:25:15+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.8,
+   "punteggio": 10.2,
    "testate": 1
   },
   {
@@ -154,7 +382,7 @@
    "pubblicato": "2026-11-10T09:22:37+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.8,
+   "punteggio": 15.2,
    "testate": 2
   },
   {
@@ -166,7 +394,7 @@
    "pubblicato": "2026-11-10T09:08:32+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.7,
+   "punteggio": 10.1,
    "testate": 1
   },
   {
@@ -178,7 +406,7 @@
    "pubblicato": "2026-11-10T09:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.7,
+   "punteggio": 17.1,
    "testate": 3
   },
   {
@@ -190,7 +418,7 @@
    "pubblicato": "2026-11-10T08:35:17+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.6,
+   "punteggio": 2.0,
    "testate": 1
   },
   {
@@ -202,7 +430,7 @@
    "pubblicato": "2026-11-10T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.2,
+   "punteggio": 4.6,
    "testate": 1
   },
   {
@@ -214,7 +442,7 @@
    "pubblicato": "2026-11-10T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.0,
+   "punteggio": 4.3,
    "testate": 1
   },
   {
@@ -226,7 +454,7 @@
    "pubblicato": "2026-11-10T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.0,
+   "punteggio": 1.3,
    "testate": 1
   },
   {
@@ -238,7 +466,7 @@
    "pubblicato": "2026-11-10T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.0,
+   "punteggio": 19.3,
    "testate": 2
   },
   {
@@ -250,7 +478,7 @@
    "pubblicato": "2026-11-10T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 31.0,
+   "punteggio": 29.3,
    "testate": 3
   },
   {
@@ -262,7 +490,7 @@
    "pubblicato": "2026-11-09T19:07:23+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 23.2,
+   "punteggio": 21.6,
    "testate": 2
   },
   {
@@ -274,7 +502,7 @@
    "pubblicato": "2026-11-09T18:00:12+00:00",
    "tipo": "social",
    "citazione": true,
-   "punteggio": 15.0,
+   "punteggio": 13.4,
    "testate": 1
   },
   {
@@ -286,7 +514,7 @@
    "pubblicato": "2026-11-09T18:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.0,
+   "punteggio": 2.3,
    "testate": 1
   },
   {
@@ -298,7 +526,7 @@
    "pubblicato": "2026-11-09T17:02:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.7,
+   "punteggio": 20.1,
    "testate": 2
   },
   {
@@ -310,7 +538,7 @@
    "pubblicato": "2026-11-09T17:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.7,
+   "punteggio": 2.1,
    "testate": 1
   },
   {
@@ -322,7 +550,7 @@
    "pubblicato": "2026-11-09T16:32:20+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.6,
+   "punteggio": 20.0,
    "testate": 2
   },
   {
@@ -334,32 +562,8 @@
    "pubblicato": "2026-11-09T16:06:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 31.5,
+   "punteggio": 29.9,
    "testate": 3
-  },
-  {
-   "titolo": "Brasile 2026, l’altro podio",
-   "estratto": "Le pagelle dei promossi e dei bocciati del GP Brasile, quartultimo appuntamento del Mondiale",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/gp-brasile-2026-pagelle-altro-podio-promossi-bocciati-ferrari-verstappen-norris-antonelli-mercedes-leclerc-hamilton-alonso",
-   "pubblicato": "2026-11-09T16:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -1.5,
-   "testate": 1
-  },
-  {
-   "titolo": "Alonso grintoso anche in Brasile: “Protagonisti di bei duelli in pista”",
-   "estratto": "12° al traguardo, lo spagnolo ha valutato la gara a Interlagos come una delle più competitive",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/alonso-grintoso-anche-in-brasile-protagonisti-di-bei-duelli-in-pista-aston-martin",
-   "pubblicato": "2026-11-09T15:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 3.2,
-   "testate": 1
   },
   {
    "titolo": "F1 | Piastri, si chiude un capitolo per iniziarne un altro: Webber non sarà più il suo manager",
@@ -370,7 +574,7 @@
    "pubblicato": "2026-11-09T14:51:07+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.8,
+   "punteggio": -3.4,
    "testate": 1
   },
   {
@@ -382,19 +586,7 @@
    "pubblicato": "2026-11-09T14:04:40+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.0,
-   "testate": 1
-  },
-  {
-   "titolo": "Lawson eroe in Brasile: “Abbiamo sfruttato tutto ciò che avevamo a disposizione”",
-   "estratto": "Ennesimo piazzamento in zona punti per il neozelandese, 7° al termine del GP del Brasile",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/lawson-si-riconferma-in-top-10-sfruttato-tutto-cio-che-avevamo-a-disposizione",
-   "pubblicato": "2026-11-09T14:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 3.0,
+   "punteggio": 4.4,
    "testate": 1
   },
   {
@@ -406,20 +598,8 @@
    "pubblicato": "2026-11-09T13:17:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.8,
-   "testate": 1
-  },
-  {
-   "titolo": "Hadjar: “Non ho mai dovuto affrontare così tante sfide in una sola corsa”",
-   "estratto": "Il pilota franco-algerino della Red Bull ha superato le costanti difficoltà del GP del Brasile piazzandosi al 3° posto dietro a Norris e Verstappen",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/hadjar-non-ho-mai-dovuto-affrontare-cosi-tante-sfide-in-una-sola-corsa-redbull-podio-brasile",
-   "pubblicato": "2026-11-09T13:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 2.7,
-   "testate": 1
+   "punteggio": 14.2,
+   "testate": 2
   },
   {
    "titolo": "Vasseur e Ferrari verso il 2027 tra dubbi e rischio di riscrivere la storia del team, ma dalla parte sbagliata…",
@@ -430,7 +610,7 @@
    "pubblicato": "2026-11-09T12:45:09+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.6,
+   "punteggio": 4.0,
    "testate": 1
   },
   {
@@ -442,7 +622,7 @@
    "pubblicato": "2026-11-09T12:31:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.6,
+   "punteggio": 11.0,
    "testate": 2
   },
   {
@@ -454,7 +634,7 @@
    "pubblicato": "2026-11-09T12:01:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.5,
+   "punteggio": 10.9,
    "testate": 2
   },
   {
@@ -466,32 +646,8 @@
    "pubblicato": "2026-11-09T12:00:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 25.5,
+   "punteggio": 23.9,
    "testate": 3
-  },
-  {
-   "titolo": "Verstappen: “Partire dalla 21ª posizione e risalire fino alla 2ª è stato un risultato pazzesco”",
-   "estratto": "Tutta la soddisfazione del quattro volte iridato, autore di un'incredibile rimonta in occasione del GP del Brasile",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/verstappen-partire-dalla-21-posizione-e-risalire-fino-alla-2-e-stato-un-risultato-pazzesco",
-   "pubblicato": "2026-11-09T12:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 2.5,
-   "testate": 1
-  },
-  {
-   "titolo": "Azzardo Ferrari: perché ha esagerato con le pressioni gomme",
-   "estratto": "Dalla partenza lampo al tracollo: il primo stint di Lewis Hamilton in Brasile nasce dall’azzardo della Ferrari con le pressioni gomme",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/azzardo-ferrari-perche-ha-esagerato-pressioni-gomme",
-   "pubblicato": "2026-11-09T12:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 5.5,
-   "testate": 1
   },
   {
    "titolo": "Valentino Rossi si sfoga da Fazio: “Marquez voleva solo farmi perdere. Ingiustizia insopportabile ancora oggi”",
@@ -502,20 +658,8 @@
    "pubblicato": "2026-11-09T11:24:48+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 20.3,
+   "punteggio": 18.7,
    "testate": 2
-  },
-  {
-   "titolo": "Una brutta Fazenda e le altre storie dal Brasile: I Doppiati F1 Podcast – VIDEO",
-   "estratto": "Sventolate le bandiere blu, I Doppiati sono in diretta su YouTube, Spotify e Apple Podcast per commentare il GP di San Paolo di F1",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/una-brutta-fazenda-e-le-altre-storie-dal-brasile-i-doppiati-f1-podcast-video-ferrari-hamilton-leclerc",
-   "pubblicato": "2026-11-09T11:15:00+00:00",
-   "tipo": "intervista",
-   "citazione": true,
-   "punteggio": 3.3,
-   "testate": 1
   },
   {
    "titolo": "Kimi Antonelli e la necessità di chiudere bene il 2026: Verstappen e Norris lanciano il guanto di sfida per il prossimo anno",
@@ -526,8 +670,8 @@
    "pubblicato": "2026-11-09T10:34:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.1,
-   "testate": 1
+   "punteggio": 13.5,
+   "testate": 2
   },
   {
    "titolo": "MotoGP | Rivola: \"A volte non bastano quattro Aprilia per battere Marquez, il Mondiale l'ha vinto lui\"",
@@ -538,20 +682,8 @@
    "pubblicato": "2026-11-09T10:30:02+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 30.1,
+   "punteggio": 28.5,
    "testate": 3
-  },
-  {
-   "titolo": "Testacoda in pit-lane, Russell: “Volevo vincere, ho rischiato troppo”",
-   "estratto": "Il pilota della Mercedes ha spiegato le motivazioni alla base del clamoroso errore commesso in Brasile",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/russell-sul-testacoda-pit-lane-ho-visto-opportunita-di-lottare-per-vittoria-ma-ho-rischiato-troppo",
-   "pubblicato": "2026-11-09T10:30:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 2.1,
-   "testate": 1
   },
   {
    "titolo": "F1 | Wolff racconta la rinascita Mercedes: “Quattro anni difficili, ma abbiamo continuato a credere nelle persone”",
@@ -562,7 +694,7 @@
    "pubblicato": "2026-11-09T10:11:24+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 3.0,
+   "punteggio": 1.4,
    "testate": 1
   },
   {
@@ -574,7 +706,7 @@
    "pubblicato": "2026-11-09T09:55:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.9,
+   "punteggio": 8.3,
    "testate": 1
   },
   {
@@ -586,7 +718,7 @@
    "pubblicato": "2026-11-09T09:35:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.9,
+   "punteggio": 0.2,
    "testate": 1
   },
   {
@@ -598,7 +730,7 @@
    "pubblicato": "2026-11-09T09:27:32+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.8,
+   "punteggio": 20.2,
    "testate": 3
   },
   {
@@ -610,7 +742,7 @@
    "pubblicato": "2026-11-09T09:11:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.8,
+   "punteggio": 0.1,
    "testate": 1
   },
   {
@@ -622,7 +754,7 @@
    "pubblicato": "2026-11-09T09:05:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.7,
+   "punteggio": 8.1,
    "testate": 1
   },
   {
@@ -634,7 +766,7 @@
    "pubblicato": "2026-11-09T08:49:14+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 10.7,
+   "punteggio": 9.1,
    "testate": 1
   },
   {
@@ -646,7 +778,7 @@
    "pubblicato": "2026-11-09T08:36:12+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.6,
+   "punteggio": 3.0,
    "testate": 1
   },
   {
@@ -658,7 +790,7 @@
    "pubblicato": "2026-11-09T08:00:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 24.5,
+   "punteggio": 22.9,
    "testate": 3
   },
   {
@@ -670,7 +802,7 @@
    "pubblicato": "2026-11-09T08:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.5,
+   "punteggio": 7.8,
    "testate": 1
   },
   {
@@ -682,7 +814,7 @@
    "pubblicato": "2026-11-09T07:50:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.4,
+   "punteggio": 17.8,
    "testate": 2
   },
   {
@@ -694,7 +826,7 @@
    "pubblicato": "2026-11-09T07:00:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.2,
+   "punteggio": 2.6,
    "testate": 1
   },
   {
@@ -706,7 +838,7 @@
    "pubblicato": "2026-11-09T06:55:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.2,
+   "punteggio": 19.6,
    "testate": 3
   },
   {
@@ -718,7 +850,7 @@
    "pubblicato": "2026-11-09T06:06:35+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.0,
+   "punteggio": 0.4,
    "testate": 2
   },
   {
@@ -730,7 +862,7 @@
    "pubblicato": "2026-11-09T06:00:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 24.0,
+   "punteggio": 22.4,
    "testate": 3
   },
   {
@@ -742,7 +874,7 @@
    "pubblicato": "2026-11-09T05:15:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.8,
+   "punteggio": 2.2,
    "testate": 1
   },
   {
@@ -754,7 +886,7 @@
    "pubblicato": "2026-11-09T05:00:24+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.7,
+   "punteggio": 2.1,
    "testate": 1
   },
   {
@@ -766,7 +898,7 @@
    "pubblicato": "2026-11-08T22:10:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.0,
+   "punteggio": 20.4,
    "testate": 3
   },
   {
@@ -778,7 +910,7 @@
    "pubblicato": "2026-11-08T22:08:38+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.0,
+   "punteggio": 20.4,
    "testate": 3
   },
   {
@@ -790,7 +922,7 @@
    "pubblicato": "2026-11-08T22:02:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.0,
+   "punteggio": 10.4,
    "testate": 2
   },
   {
@@ -802,7 +934,7 @@
    "pubblicato": "2026-11-08T22:01:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.0,
+   "punteggio": 8.4,
    "testate": 3
   },
   {
@@ -814,7 +946,7 @@
    "pubblicato": "2026-11-08T22:00:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.0,
+   "punteggio": -1.6,
    "testate": 2
   },
   {
@@ -826,7 +958,7 @@
    "pubblicato": "2026-11-08T21:56:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.9,
+   "punteggio": 0.3,
    "testate": 1
   },
   {
@@ -838,7 +970,7 @@
    "pubblicato": "2026-11-08T21:47:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.9,
+   "punteggio": 0.3,
    "testate": 1
   },
   {
@@ -850,7 +982,7 @@
    "pubblicato": "2026-11-08T21:45:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.9,
+   "punteggio": 10.3,
    "testate": 2
   },
   {
@@ -862,7 +994,7 @@
    "pubblicato": "2026-11-08T21:44:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.9,
+   "punteggio": 0.3,
    "testate": 1
   },
   {
@@ -874,7 +1006,7 @@
    "pubblicato": "2026-11-08T21:39:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.1,
+   "punteggio": -2.7,
    "testate": 1
   },
   {
@@ -886,7 +1018,7 @@
    "pubblicato": "2026-11-08T21:23:09+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.8,
+   "punteggio": 5.2,
    "testate": 1
   },
   {
@@ -898,7 +1030,7 @@
    "pubblicato": "2026-11-08T21:12:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.8,
+   "punteggio": 15.2,
    "testate": 2
   },
   {
@@ -910,7 +1042,7 @@
    "pubblicato": "2026-11-08T20:48:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.7,
+   "punteggio": 5.1,
    "testate": 1
   },
   {
@@ -922,7 +1054,7 @@
    "pubblicato": "2026-11-08T20:33:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.6,
+   "punteggio": 15.0,
    "testate": 2
   },
   {
@@ -934,7 +1066,7 @@
    "pubblicato": "2026-11-08T20:31:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.4,
+   "punteggio": -3.0,
    "testate": 1
   },
   {
@@ -946,7 +1078,7 @@
    "pubblicato": "2026-11-08T20:30:44+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.6,
+   "punteggio": -0.0,
    "testate": 1
   },
   {
@@ -958,7 +1090,7 @@
    "pubblicato": "2026-11-08T20:17:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.5,
+   "punteggio": 9.9,
    "testate": 2
   },
   {
@@ -970,44 +1102,8 @@
    "pubblicato": "2026-11-08T19:58:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.5,
+   "punteggio": -2.2,
    "testate": 2
-  },
-  {
-   "titolo": "F1, pagelle GP Brasile 2026: qualche sbavatura per Antonelli, Norris rimedia la partenza, Verstappen sprazzi da fenomeno",
-   "estratto": "PAGELLE GP BRASILE 2026 F1 Lando Norris 9: dal sesto giro in poi si rende protagonista di una gara perfetta, volando in ogni condizione ed effettuando (insieme al muretto box) le scelte strategiche…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/f1-pagelle-gp-brasile-2026-qualche-sbavatura-per-antonelli-norris-rimedia-la-partenza-verstappen-sprazzi-da-fenomeno/",
-   "pubblicato": "2026-11-08T19:55:50+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 11.4,
-   "testate": 2
-  },
-  {
-   "titolo": "Lewis Hamilton: “Una giornata complicata. Peccato, avevo fatto un’ottima partenza”",
-   "estratto": "Lewis Hamilton si lecca le ferite al termine del Gran Premio di San Paolo, ventesimo e quartultimo appuntamento del Mondiale di Formula Uno 2026. Sul tracciato di Interlagos, laddove ha spesso…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/f1-lewis-hamilton-una-giornata-complicata-peccato-perche-avevo-fatto-unottima-partenza/",
-   "pubblicato": "2026-11-08T19:55:39+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -1.6,
-   "testate": 1
-  },
-  {
-   "titolo": "Toto Wolff: “Non sono molte le squadre che tornano a vincere dopo momenti difficili”",
-   "estratto": "Il Gran Premio del Brasile 2026, ventesimo appuntamento della stagione F1, ha dato la certezza matematica alla Mercedes di vincere il Mondiale costruttori 2026. Seppur la scuderia tedesca oggi non…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/toto-wolff-non-sono-molte-le-squadre-che-tornano-a-vincere-dopo-momenti-difficili-ora-guardo-al-futuro/",
-   "pubblicato": "2026-11-08T19:42:18+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -1.6,
-   "testate": 1
   },
   {
    "titolo": "MotoGP | Mondiale: Marquez ad un passo dal titolo a +60 su Martin. Ducati a +8 su Aprilia nel Costruttori",
@@ -1018,7 +1114,7 @@
    "pubblicato": "2026-11-08T19:30:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.3,
+   "punteggio": 19.7,
    "testate": 3
   },
   {
@@ -1030,7 +1126,7 @@
    "pubblicato": "2026-11-08T19:10:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.7,
+   "punteggio": -3.4,
    "testate": 1
   },
   {
@@ -1042,7 +1138,7 @@
    "pubblicato": "2026-11-08T19:06:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.2,
+   "punteggio": 24.6,
    "testate": 3
   },
   {
@@ -1054,7 +1150,7 @@
    "pubblicato": "2026-11-08T19:05:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.2,
+   "punteggio": 14.6,
    "testate": 2
   },
   {
@@ -1066,7 +1162,7 @@
    "pubblicato": "2026-11-08T18:55:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.2,
+   "punteggio": 11.6,
    "testate": 3
   },
   {
@@ -1078,7 +1174,7 @@
    "pubblicato": "2026-11-08T18:54:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.8,
+   "punteggio": -3.4,
    "testate": 1
   },
   {
@@ -1090,7 +1186,7 @@
    "pubblicato": "2026-11-08T18:49:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.2,
+   "punteggio": 19.6,
    "testate": 3
   },
   {
@@ -1102,7 +1198,7 @@
    "pubblicato": "2026-11-08T18:45:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.9,
+   "punteggio": -3.5,
    "testate": 1
   },
   {
@@ -1114,7 +1210,7 @@
    "pubblicato": "2026-11-08T18:27:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.1,
+   "punteggio": 14.5,
    "testate": 2
   },
   {
@@ -1126,7 +1222,7 @@
    "pubblicato": "2026-11-08T18:12:17+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.0,
+   "punteggio": 6.4,
    "testate": 2
   },
   {
@@ -1138,7 +1234,7 @@
    "pubblicato": "2026-11-08T18:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.0,
+   "punteggio": 4.3,
    "testate": 1
   },
   {
@@ -1150,7 +1246,7 @@
    "pubblicato": "2026-11-08T17:53:20+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.9,
+   "punteggio": 4.3,
    "testate": 1
   },
   {
@@ -1162,7 +1258,7 @@
    "pubblicato": "2026-11-08T17:39:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.1,
+   "punteggio": -3.7,
    "testate": 1
   },
   {
@@ -1174,7 +1270,7 @@
    "pubblicato": "2026-11-08T17:31:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.8,
+   "punteggio": 11.2,
    "testate": 3
   },
   {
@@ -1186,7 +1282,7 @@
    "pubblicato": "2026-11-08T17:28:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.2,
+   "punteggio": -3.8,
    "testate": 1
   },
   {
@@ -1198,7 +1294,7 @@
    "pubblicato": "2026-11-08T17:20:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.8,
+   "punteggio": 4.2,
    "testate": 1
   },
   {
@@ -1210,7 +1306,7 @@
    "pubblicato": "2026-11-08T17:12:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.8,
+   "punteggio": 19.1,
    "testate": 3
   },
   {
@@ -1222,7 +1318,7 @@
    "pubblicato": "2026-11-08T16:52:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.7,
+   "punteggio": 7.1,
    "testate": 3
   },
   {
@@ -1234,7 +1330,7 @@
    "pubblicato": "2026-11-08T16:50:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.7,
+   "punteggio": 11.1,
    "testate": 3
   },
   {
@@ -1246,7 +1342,7 @@
    "pubblicato": "2026-11-08T16:49:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.7,
+   "punteggio": 19.1,
    "testate": 3
   },
   {
@@ -1258,7 +1354,7 @@
    "pubblicato": "2026-11-08T16:48:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.7,
+   "punteggio": 9.1,
    "testate": 2
   },
   {
@@ -1270,7 +1366,7 @@
    "pubblicato": "2026-11-08T16:44:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.6,
+   "punteggio": 19.0,
    "testate": 3
   },
   {
@@ -1282,7 +1378,7 @@
    "pubblicato": "2026-11-08T16:42:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.6,
+   "punteggio": 19.0,
    "testate": 3
   },
   {
@@ -1294,7 +1390,7 @@
    "pubblicato": "2026-11-08T16:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.5,
+   "punteggio": -9.2,
    "testate": 1
   },
   {
@@ -1306,7 +1402,7 @@
    "pubblicato": "2026-11-08T15:05:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.2,
+   "punteggio": 0.6,
    "testate": 2
   },
   {
@@ -1318,7 +1414,7 @@
    "pubblicato": "2026-11-08T15:02:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.8,
+   "punteggio": -9.4,
    "testate": 1
   },
   {
@@ -1330,7 +1426,7 @@
    "pubblicato": "2026-11-08T15:02:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -19.8,
+   "punteggio": -21.4,
    "testate": 1
   },
   {
@@ -1342,104 +1438,8 @@
    "pubblicato": "2026-11-08T14:59:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.2,
+   "punteggio": 5.6,
    "testate": 2
-  },
-  {
-   "titolo": "F1 | GP di San Paolo del Brasile, strategie: si va verso le 2 soste e attenzione alle Hard",
-   "estratto": "In una Formula 1 come quella attuale, dove la singola sosta è di gran lunga la strategia preferita dai team nella maggioranza dei 24 appuntamenti del Mondiale, il Gran Premio di San Paolo del Brasile…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-gp-di-san-paolo-del-brasile-strategie-si-va-verso-le-2-soste-e-attenzione-alle-hard/10872899/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-08T14:41:10+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -7.9,
-   "testate": 1
-  },
-  {
-   "titolo": "Dove la prossima gara di MotoGP? GP Portogallo 2026: programma, orari, tv",
-   "estratto": "Il prossimo appuntamento del Motomondiale 2026 sarà il Gran Premio di Portogallo. L’evento è programmato nel weekend dell’20, 21 e 22 novembre. Dunque, ci sarà un fine settimana di intervallo tra il…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/dove-la-prossima-gara-di-motogp-gp-portogallo-2026-programma-orari-tv/",
-   "pubblicato": "2026-11-08T14:35:10+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -19.9,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Si ferma anche Marini: ci saranno solo 16 piloti sulla griglia del GP del Qatar",
-   "estratto": "Luca Marini non disputerà la gara lunga di questa domenica nel Gran Premio del Qatar di MotoGP. Il pilota italiano è stato nuovamente colpito dai problemi di affaticamento e stanchezza che si porta…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-si-ferma-anche-marini-ci-saranno-solo-16-piloti-sulla-griglia-del-gp-del-qatar/10872940/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-08T14:20:24+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 20.0,
-   "testate": 3
-  },
-  {
-   "titolo": "Dani Pedrosa: “E’ stato un incidente di gara tra Marquez e Bezzecchi, ma serve coerenza nel giudizio”",
-   "estratto": "Il contatto tra Marc Márquez e Marco Bezzecchi nella Sprint Race del Gran Premio del Qatar continua a far discutere. L’episodio, avvenuto sul circuito di Lusail, ha avuto conseguenze pesanti per…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/dani-pedrosa-e-stato-un-incidente-di-gara-tra-marquez-e-bezzecchi-ma-serve-coerenza-nel-giudizio/",
-   "pubblicato": "2026-11-08T14:09:24+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 5.0,
-   "testate": 1
-  },
-  {
-   "titolo": "Classifica Moto3 2026: Maximo Quiles già campione del mondo, Bertelle si mantiene in top-10",
-   "estratto": "CLASSIFICA MOTO3 2026 1 Maximo Quiles SPA 392 2 David Almansa SPA 253 3 Alvaro Carpe SPA 216 4 Brian Uriarte SPA 207 5 Adrian Fernandez SPA 177 6 Veda Pratama INA 144 7 Marco Morelli ARG 141 8 Hakim…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/classifica-moto3-2026/",
-   "pubblicato": "2026-11-08T13:50:33+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -20.1,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Ferrari, la pioggia sarà un'alleata: a Interlagos rimonta possibile, ma Lewis non crede ai sorpassi",
-   "estratto": "La Ferrari si affida alla pioggia. È una prospettiva insolita per una squadra che negli ultimi anni ha spesso sofferto le condizioni di pista bagnata, ma alla vigilia del Gran Premio del Brasile il…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-ferrari-la-pioggia-sara-unalleata-a-interlagos-rimonta-possibile-ma-lewis-non-crede-ai-sorpassi/10872886/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-08T13:26:32+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -0.2,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Câmara, che debutto! A Interlagos sfiora l'impresa, Komatsu: \"Ecco perché lo abbiamo scelto\"",
-   "estratto": "Rafael Câmara ha impiegato pochissimo tempo per dimostrare di meritare un posto in Formula 1. Il ventunenne brasiliano, chiamato dalla Haas ad anticipare il debutto previsto inizialmente per il 2027…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-camara-che-debutto-a-interlagos-sfiora-limpresa-komatsu-ecco-perche-lo-abbiamo-scelto/10872874/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-08T12:40:42+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -3.4,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Lusail, Warm-Up: tripletta italiana con Di Giannantonio davanti a Bezzecchi e Bastianini",
-   "estratto": "Con buona parte della griglia che ha utilizzato una coppia di gomme medie già nella Sprint di ieri, è molto probabile che questa possa essere la scelta maggioritaria anche nella gara lunga del Gran…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-lusail-warm-up-tripletta-italiana-con-di-giannantonio-davanti-a-bezzecchi-e-bastianini/10872901/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-08T12:22:28+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -0.4,
-   "testate": 1
   }
  ]
 }

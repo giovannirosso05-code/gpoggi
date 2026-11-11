@@ -1,6 +1,174 @@
 {
- "generato_il": "2026-11-11T13:26:32+00:00",
+ "generato_il": "2026-11-11T20:09:02+00:00",
  "articoli": [
+  {
+   "titolo": "Hamilton: “Il genocidio di Israele a Gaza è sconvolgente. Non possiamo voltarci dall’altra parte”",
+   "estratto": "Il campione della Ferrari si è fatto portavoce della causa palestinese",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/hamilton-il-genocidio-di-israele-a-gaza-e-sconvolgente-non-possiamo-voltarci-dallaltra-parte",
+   "pubblicato": "2026-11-11T18:45:09+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 12.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Windsor: “Leclerc è un pilota scorretto e lo sapevano tutti tranne Hamilton. Le sue lamentele ora sono ridicole”",
+   "estratto": "Il noto giornalista britannico si è espresso sulle storie tese in casa Ferrari",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/windsor-leclerc-pilota-scorretto-sapevano-tutti-tranne-hamilton-lamentele-ora-ridicole",
+   "pubblicato": "2026-11-11T18:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 12.5,
+   "testate": 1
+  },
+  {
+   "titolo": "Insaziabile Verstappen, furioso con il team nonostante la rimonta: “La macchina è stata un disastro”",
+   "estratto": "I team radio dell'olandese durante la gara di Interlagos testimoniano i tanti problemi di bilanciamento avuti dalla RB22, nonostante il podio",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/insaziabile-verstappen-furioso-con-il-team-nonostante-la-rimonta-e-il-podio-la-macchina-e-stata-un-disastro",
+   "pubblicato": "2026-11-11T17:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 4.2,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Mercedes in difficoltà: le gomme di Antonelli entravano e uscivano della finestra di temperatura",
+   "estratto": "La Mercedes ha conquistato a Interlagos il nono titolo Costruttori, centrando l’obiettivo mondiale nell’unica gara in cui una W17 non è andata sul podio. La Stella, infatti, ha vissuto con le due…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-mercedes-in-difficolta-le-gomme-di-antonelli-entravano-e-uscivano-della-finestra-di-temperatura/10873921/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-11T16:58:59+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 7.2,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Marquez ad un passo dal titolo e Bagnaia KO: un Qatar a due facce in \"Inside Ducati\"",
+   "estratto": "Il Gran Premio del Qatar di MotoGP ha avuto di tutto, nel bene e nel male, per la Ducati. Sul fronte positivo, Marc Marquez ha brillato di luce propria nella notte di Lusail, in una gara molto…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-marquez-ad-un-passo-dal-titolo-e-bagnaia-ko-un-qatar-a-due-facce-in-inside-ducati/10873886/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-11T16:21:13+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 32.1,
+   "testate": 3
+  },
+  {
+   "titolo": "FIA, Mohammed Ben Sulayem all’attacco del limite d’età: così potrà restare Presidente a vita",
+   "estratto": "Dopo la rimozione del limite dei tre mandati, c'è un ultimo scoglio che impedisce all'emiratino di restare in carica senza limiti di tempo",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/fia-mohammed-ben-sulayem-allattacco-del-limite-deta-cosi-potra-restare-presidente-a-vita",
+   "pubblicato": "2026-11-11T16:05:35+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -1.0,
+   "testate": 1
+  },
+  {
+   "titolo": "Kimi Antonelli si tinge i capelli! Promessa mantenuta, la chioma diventa tricolore. E la reazione di Wolff…",
+   "estratto": "Kimi Antonelli ha mantenuto la promessa e si è tinto i capelli con i colori della bandiera tricolore. Il fresco Campione del Mondo F1 aveva dichiarato che avrebbe dato un volto nuovo alla propria…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/kimi-antonelli-si-tinge-i-capelli-promessa-mantenuta-la-chioma-diventa-tricolore-e-la-reazione-di-wolff/",
+   "pubblicato": "2026-11-11T15:59:59+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 37.0,
+   "testate": 4
+  },
+  {
+   "titolo": "F1 | Kimi festeggia il mondiale a Brackley con la chioma tricolore: ha mantenuto la promessa",
+   "estratto": "Toto Wolff quando lo ha visto è rimasto incredulo prima di commentare: “Non ho parole...”, mentre George Russell e gli altri membri del team Mercedes hanno riso a crepapelle. Lo aveva promesso e Kimi…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-kimi-festeggia-il-mondiale-a-brackley-con-la-chioma-tricolore-ha-mantenuto-la-promessa/10873898/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-11T15:49:43+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 18.9,
+   "testate": 3
+  },
+  {
+   "titolo": "Brasile: un altro weekend disastroso per la Cadillac",
+   "estratto": "Mentre Perez ha concluso al 18° posto, Bottas non ha nemmeno preso parte alla gara per un problema tecinico",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/brasile-un-altro-weekend-disastroso-per-la-cadillac",
+   "pubblicato": "2026-11-11T15:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -1.3,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Dovizioso: \"Bezzecchi e Aprilia più veloci di Marquez e Ducati, hanno buttato via il Mondiale\"",
+   "estratto": "Vittoria della Ducati o occasione sprecata dell'Aprilia? Con Marc Marquez ad un passo dal decimo titolo iridato, l'ottavo nella classe regina, il post-gara del Qatar ha acceso il dibattito su questo…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-dovizioso-bezzecchi-e-aprilia-piu-veloci-di-marquez-e-ducati-hanno-buttato-via-il-mondiale/10873829/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-11T14:32:38+00:00",
+   "tipo": "social",
+   "citazione": true,
+   "punteggio": 34.6,
+   "testate": 3
+  },
+  {
+   "titolo": "MotoGP, Aprilia prolunga il contratto di Lorenzo Savadori da collaudatore fino al 2028",
+   "estratto": "In attesa degli ultimi due appuntamenti del Mondiale MotoGP 2026 e dei primi test ufficiali in vista del 2027, Aprilia ha annunciato di aver trovato un accordo con Lorenzo Savadori per prolungare il…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-aprilia-prolunga-il-contratto-di-lorenzo-savadori-da-collaudatore-fino-al-2028/",
+   "pubblicato": "2026-11-11T14:27:05+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 18.6,
+   "testate": 3
+  },
+  {
+   "titolo": "Bearman guarda a Las Vegas: “Sono state tre settimane deludenti”",
+   "estratto": "Fuori dalla zona punti anche in Brasile, il britannico ha ritenuto di aver perso due occasioni per entrare in top-10",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/bearman-guarda-a-las-vegas-sono-state-tre-settimane-deludenti",
+   "pubblicato": "2026-11-11T14:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 3.5,
+   "testate": 1
+  },
+  {
+   "titolo": "Antonelli mantiene la promessa: nuovo look con i capelli tricolore! La reazione di Toto Wolff e Russell",
+   "estratto": "Il campione italiano chiede un parere anche al compagno di squadra. La risposta è da siparietto",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/mercedes/2026/11/11-152524080/antonelli_mantiene_la_promessa_nuovo_look_con_i_capelli_tricolore_la_reazione_di_toto_wolff_e_russell/",
+   "pubblicato": "2026-11-11T13:40:02+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 26.4,
+   "testate": 3
+  },
+  {
+   "titolo": "Promessa mantenuta! Antonelli a Brackley con i capelli tricolore",
+   "estratto": "Il neo-campione del mondo aveva detto a inizio stagione che avrebbe tinto i capelli in caso di vittoria del mondiale",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/promessa-mantenuta-antonelli-a-brackley-con-i-capelli-tricolore",
+   "pubblicato": "2026-11-11T13:25:32+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 36.3,
+   "testate": 4
+  },
   {
    "titolo": "Nessun test in IndyCar per Yuki Tsunoda",
    "estratto": "Le prove, che erano state programmate per fine ottobre con il team Meyer Shank Racing, sono state cancellate.",
@@ -10,7 +178,7 @@
    "pubblicato": "2026-11-11T13:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.1,
+   "punteggio": -1.8,
    "testate": 1
   },
   {
@@ -22,7 +190,7 @@
    "pubblicato": "2026-11-11T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.6,
+   "punteggio": 3.0,
    "testate": 1
   },
   {
@@ -34,7 +202,7 @@
    "pubblicato": "2026-11-11T11:30:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.5,
+   "punteggio": 5.8,
    "testate": 1
   },
   {
@@ -46,7 +214,7 @@
    "pubblicato": "2026-11-11T11:23:14+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.5,
+   "punteggio": 12.8,
    "testate": 2
   },
   {
@@ -58,7 +226,7 @@
    "pubblicato": "2026-11-11T10:54:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.4,
+   "punteggio": 7.7,
    "testate": 2
   },
   {
@@ -70,8 +238,8 @@
    "pubblicato": "2026-11-11T10:29:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.3,
-   "testate": 2
+   "punteggio": 5.6,
+   "testate": 1
   },
   {
    "titolo": "Il Sindaco di Imola prende atto della decisione finale di FIA e F1",
@@ -82,7 +250,7 @@
    "pubblicato": "2026-11-11T10:17:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.2,
+   "punteggio": 5.5,
    "testate": 1
   },
   {
@@ -94,7 +262,7 @@
    "pubblicato": "2026-11-11T10:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.2,
+   "punteggio": 20.5,
    "testate": 2
   },
   {
@@ -106,7 +274,7 @@
    "pubblicato": "2026-11-11T08:58:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.9,
+   "punteggio": 10.2,
    "testate": 1
   },
   {
@@ -118,7 +286,7 @@
    "pubblicato": "2026-11-11T08:56:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.9,
+   "punteggio": 12.2,
    "testate": 2
   },
   {
@@ -130,7 +298,7 @@
    "pubblicato": "2026-11-11T08:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.8,
+   "punteggio": 5.1,
    "testate": 1
   },
   {
@@ -142,7 +310,7 @@
    "pubblicato": "2026-11-11T08:19:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.7,
+   "punteggio": 10.0,
    "testate": 1
   },
   {
@@ -154,7 +322,7 @@
    "pubblicato": "2026-11-11T08:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.6,
+   "punteggio": 2.0,
    "testate": 1
   },
   {
@@ -166,7 +334,7 @@
    "pubblicato": "2026-11-11T07:27:07+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 32.5,
+   "punteggio": 30.8,
    "testate": 3
   },
   {
@@ -178,7 +346,7 @@
    "pubblicato": "2026-11-11T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.4,
+   "punteggio": 9.7,
    "testate": 1
   },
   {
@@ -190,7 +358,7 @@
    "pubblicato": "2026-11-11T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.1,
+   "punteggio": 1.5,
    "testate": 1
   },
   {
@@ -202,7 +370,7 @@
    "pubblicato": "2026-11-11T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.1,
+   "punteggio": 4.5,
    "testate": 1
   },
   {
@@ -214,7 +382,7 @@
    "pubblicato": "2026-11-11T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.1,
+   "punteggio": 11.5,
    "testate": 2
   },
   {
@@ -226,7 +394,7 @@
    "pubblicato": "2026-11-10T22:01:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.1,
+   "punteggio": 7.5,
    "testate": 1
   },
   {
@@ -238,8 +406,8 @@
    "pubblicato": "2026-11-10T20:49:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.8,
-   "testate": 2
+   "punteggio": 2.2,
+   "testate": 1
   },
   {
    "titolo": "Le decisioni della FIA sull’ADUO: la Ferrari con ‘gettoni’ in più può recuperare nel 2027?",
@@ -250,7 +418,7 @@
    "pubblicato": "2026-11-10T19:59:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.6,
+   "punteggio": 2.0,
    "testate": 1
   },
   {
@@ -262,7 +430,7 @@
    "pubblicato": "2026-11-10T19:32:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.5,
+   "punteggio": 16.8,
    "testate": 2
   },
   {
@@ -274,7 +442,7 @@
    "pubblicato": "2026-11-10T19:04:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.4,
+   "punteggio": 9.7,
    "testate": 3
   },
   {
@@ -286,7 +454,7 @@
    "pubblicato": "2026-11-10T18:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.9,
+   "punteggio": -6.5,
    "testate": 1
   },
   {
@@ -298,7 +466,7 @@
    "pubblicato": "2026-11-10T17:50:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.1,
+   "punteggio": 11.4,
    "testate": 2
   },
   {
@@ -310,7 +478,7 @@
    "pubblicato": "2026-11-10T17:44:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.1,
+   "punteggio": 11.4,
    "testate": 2
   },
   {
@@ -322,7 +490,7 @@
    "pubblicato": "2026-11-10T17:36:09+00:00",
    "tipo": "social",
    "citazione": true,
-   "punteggio": 3.0,
+   "punteggio": 1.4,
    "testate": 1
   },
   {
@@ -334,7 +502,7 @@
    "pubblicato": "2026-11-10T17:10:41+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.9,
+   "punteggio": 8.3,
    "testate": 2
   },
   {
@@ -346,7 +514,7 @@
    "pubblicato": "2026-11-10T17:01:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.9,
+   "punteggio": 1.2,
    "testate": 1
   },
   {
@@ -358,7 +526,7 @@
    "pubblicato": "2026-11-10T17:00:12+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.9,
+   "punteggio": 1.2,
    "testate": 1
   },
   {
@@ -370,7 +538,7 @@
    "pubblicato": "2026-11-10T17:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.9,
+   "punteggio": 16.2,
    "testate": 2
   },
   {
@@ -382,7 +550,7 @@
    "pubblicato": "2026-11-10T16:32:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.8,
+   "punteggio": 6.1,
    "testate": 1
   },
   {
@@ -394,7 +562,7 @@
    "pubblicato": "2026-11-10T16:02:34+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.7,
+   "punteggio": 1.0,
    "testate": 1
   },
   {
@@ -406,19 +574,7 @@
    "pubblicato": "2026-11-10T15:37:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.5,
-   "testate": 1
-  },
-  {
-   "titolo": "Hülkenberg: “È positivo portare a casa un punto da una gara così complessa”",
-   "estratto": "Secondo piazzamento consecutivo in zona punti per l'Audi, questa volta grazie al 10° posto del pilota tedesco",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/hulkenberg-positivo-portare-a-casa-un-punto-da-una-gara-cosi-complessa",
-   "pubblicato": "2026-11-10T15:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -0.6,
+   "punteggio": -2.1,
    "testate": 1
   },
   {
@@ -430,20 +586,8 @@
    "pubblicato": "2026-11-10T14:42:44+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.7,
+   "punteggio": -2.4,
    "testate": 1
-  },
-  {
-   "titolo": "Ufficiale, la F1 conferma Qatar e Abu Dhabi: niente Imola a fine anno",
-   "estratto": "Anche la F1 ha confermato che i piani sul calendario 2026 non saranno modificati: niente Imola, si corre in Medio Oriente",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/ufficiale-la-f1-conferma-qatar-e-abu-dhabi-niente-imola-a-fine-anno",
-   "pubblicato": "2026-11-10T14:35:19+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 12.3,
-   "testate": 2
   },
   {
    "titolo": "Viñales valuta un nuovo stop per i dolori alla spalla: “Non ha senso continuare così”",
@@ -454,43 +598,7 @@
    "pubblicato": "2026-11-10T14:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.8,
-   "testate": 1
-  },
-  {
-   "titolo": "“Dove sono?”, “Ti faccio sapere”: il surreale team radio tra Hamilton e Santi a Interlagos",
-   "estratto": "Lewis Hamilton e il suo ingegnere di pista Carlo Santi hanno dato vita a un team radio surreale nel GP di San Paolo",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/dove-sono-surreale-team-radio-tra-hamilton-e-santi-a-interlagos-ferrari",
-   "pubblicato": "2026-11-10T14:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -0.9,
-   "testate": 1
-  },
-  {
-   "titolo": "Hamilton campione in pista e fuori: in Egitto per visitare le strutture di aiuti umanitari per Gaza",
-   "estratto": "Il sette volte iridato ha incontrato i volontari della Mezzaluna Rossa, impegnati nella spedizione di aiuti umanitari e beni di soccorso per la popolazione di Gaza",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/hamilton-campione-pista-e-fuori-in-egitto-per-visitare-strutture-aiuti-umanitari-per-gaza",
-   "pubblicato": "2026-11-10T13:39:11+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 14.1,
-   "testate": 3
-  },
-  {
-   "titolo": "Gasly: “È deludente mancare ancora una volta la zona punti”",
-   "estratto": "La frustrazione del pilota dell'Alpine, 14° in Brasile alle spalle del compagno di squadra Colapinto",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/gasly-deludente-mancare-ancora-una-volta-la-zona-punti",
-   "pubblicato": "2026-11-10T13:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -1.1,
+   "punteggio": -2.5,
    "testate": 1
   },
   {
@@ -502,32 +610,8 @@
    "pubblicato": "2026-11-10T12:19:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.7,
-   "testate": 2
-  },
-  {
-   "titolo": "Doppio podio per la Red Bull a Interlagos, Mekies: “Frutto del nostro grande lavoro”",
-   "estratto": "Il 2° posto di Verstappen e il 3° di Hadjar soddisfano il team principal della Red Bull, che ha così commentato l'ultima gara in Brasile",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/doppio-podio-red-bull-interlagos-mekies-frutto-nostro-grande-lavoro-ex-ferrari",
-   "pubblicato": "2026-11-10T12:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -1.4,
+   "punteggio": 0.0,
    "testate": 1
-  },
-  {
-   "titolo": "Niente Imola, la FIA conferma Qatar e Abu Dhabi",
-   "estratto": "Con un post sui social il presidente Ben Sulayem ha confermato i gran premi in Medio Oriente",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/niente-imola-la-fia-conferma-qatar-abu-dhabi",
-   "pubblicato": "2026-11-10T11:57:31+00:00",
-   "tipo": "social",
-   "citazione": true,
-   "punteggio": 19.6,
-   "testate": 2
   },
   {
    "titolo": "F1 | La FIA svela i nuovi risultati dell'ADUO senza deroge extra: si lavora a una revisione per il 2027",
@@ -538,7 +622,7 @@
    "pubblicato": "2026-11-10T11:55:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -13.4,
+   "punteggio": -15.1,
    "testate": 1
   },
   {
@@ -550,8 +634,8 @@
    "pubblicato": "2026-11-10T10:58:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.4,
-   "testate": 2
+   "punteggio": 11.7,
+   "testate": 3
   },
   {
    "titolo": "MotoGP | Bastianini: \"Restano due gare e voglio regalare un podio alla mia squadra\"",
@@ -562,7 +646,7 @@
    "pubblicato": "2026-11-10T10:52:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.6,
+   "punteggio": -3.3,
    "testate": 1
   },
   {
@@ -574,8 +658,8 @@
    "pubblicato": "2026-11-10T10:11:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.2,
-   "testate": 2
+   "punteggio": 11.5,
+   "testate": 3
   },
   {
    "titolo": "MotoGP | Aldeguer si difende dopo l'incidente con Bagnaia: \"Non è stata una manovra folle\"",
@@ -586,7 +670,7 @@
    "pubblicato": "2026-11-10T09:33:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.0,
+   "punteggio": 4.4,
    "testate": 1
   },
   {
@@ -598,8 +682,8 @@
    "pubblicato": "2026-11-10T09:22:37+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.0,
-   "testate": 2
+   "punteggio": -0.7,
+   "testate": 1
   },
   {
    "titolo": "Punteggio MotoGP da cambiare? Non è per quello che Marquez vincerà il Mondiale",
@@ -610,7 +694,7 @@
    "pubblicato": "2026-11-10T09:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.9,
+   "punteggio": 11.2,
    "testate": 3
   },
   {
@@ -622,7 +706,7 @@
    "pubblicato": "2026-11-10T08:35:17+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.2,
+   "punteggio": -3.9,
    "testate": 1
   },
   {
@@ -634,7 +718,7 @@
    "pubblicato": "2026-11-10T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.1,
+   "punteggio": 13.5,
    "testate": 2
   },
   {
@@ -646,7 +730,7 @@
    "pubblicato": "2026-11-10T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.1,
+   "punteggio": 23.5,
    "testate": 3
   },
   {
@@ -658,7 +742,7 @@
    "pubblicato": "2026-11-09T19:07:23+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 17.4,
+   "punteggio": 15.7,
    "testate": 2
   },
   {
@@ -670,7 +754,7 @@
    "pubblicato": "2026-11-09T18:00:12+00:00",
    "tipo": "social",
    "citazione": true,
-   "punteggio": 9.1,
+   "punteggio": 7.5,
    "testate": 1
   },
   {
@@ -682,7 +766,7 @@
    "pubblicato": "2026-11-09T17:02:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.9,
+   "punteggio": 14.2,
    "testate": 2
   },
   {
@@ -694,7 +778,7 @@
    "pubblicato": "2026-11-09T16:32:20+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.8,
+   "punteggio": 14.1,
    "testate": 2
   },
   {
@@ -706,7 +790,7 @@
    "pubblicato": "2026-11-09T16:06:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.7,
+   "punteggio": 24.0,
    "testate": 3
   },
   {
@@ -718,7 +802,7 @@
    "pubblicato": "2026-11-09T14:51:07+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.6,
+   "punteggio": -9.3,
    "testate": 1
   },
   {
@@ -730,7 +814,7 @@
    "pubblicato": "2026-11-09T14:04:40+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.2,
+   "punteggio": -1.5,
    "testate": 1
   },
   {
@@ -742,7 +826,7 @@
    "pubblicato": "2026-11-09T13:17:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.0,
+   "punteggio": 8.3,
    "testate": 2
   },
   {
@@ -754,7 +838,7 @@
    "pubblicato": "2026-11-09T12:45:09+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.2,
+   "punteggio": -1.8,
    "testate": 1
   },
   {
@@ -766,7 +850,7 @@
    "pubblicato": "2026-11-09T12:31:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.8,
+   "punteggio": 5.1,
    "testate": 2
   },
   {
@@ -778,7 +862,7 @@
    "pubblicato": "2026-11-09T12:01:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.6,
+   "punteggio": 5.0,
    "testate": 2
   },
   {
@@ -790,7 +874,7 @@
    "pubblicato": "2026-11-09T12:00:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.6,
+   "punteggio": 18.0,
    "testate": 3
   },
   {
@@ -802,7 +886,7 @@
    "pubblicato": "2026-11-09T11:24:48+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.5,
+   "punteggio": 12.8,
    "testate": 2
   },
   {
@@ -814,7 +898,7 @@
    "pubblicato": "2026-11-09T10:34:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.3,
+   "punteggio": 7.6,
    "testate": 2
   },
   {
@@ -826,7 +910,7 @@
    "pubblicato": "2026-11-09T10:30:02+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.3,
+   "punteggio": 22.6,
    "testate": 3
   },
   {
@@ -838,7 +922,7 @@
    "pubblicato": "2026-11-09T10:11:24+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": -2.8,
+   "punteggio": -4.5,
    "testate": 1
   },
   {
@@ -850,7 +934,7 @@
    "pubblicato": "2026-11-09T09:55:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.1,
+   "punteggio": 2.4,
    "testate": 1
   },
   {
@@ -862,7 +946,7 @@
    "pubblicato": "2026-11-09T09:35:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -4.0,
+   "punteggio": -5.6,
    "testate": 1
   },
   {
@@ -874,7 +958,7 @@
    "pubblicato": "2026-11-09T09:27:32+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.0,
+   "punteggio": 14.3,
    "testate": 3
   },
   {
@@ -886,7 +970,7 @@
    "pubblicato": "2026-11-09T09:11:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -4.1,
+   "punteggio": -5.7,
    "testate": 1
   },
   {
@@ -898,7 +982,7 @@
    "pubblicato": "2026-11-09T09:05:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.9,
+   "punteggio": 2.2,
    "testate": 1
   },
   {
@@ -910,7 +994,7 @@
    "pubblicato": "2026-11-09T08:49:14+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 4.8,
+   "punteggio": 3.2,
    "testate": 1
   },
   {
@@ -922,7 +1006,7 @@
    "pubblicato": "2026-11-09T08:36:12+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.2,
+   "punteggio": -2.9,
    "testate": 1
   },
   {
@@ -934,7 +1018,7 @@
    "pubblicato": "2026-11-09T08:00:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.6,
+   "punteggio": 7.0,
    "testate": 2
   },
   {
@@ -946,7 +1030,7 @@
    "pubblicato": "2026-11-09T08:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.6,
+   "punteggio": 2.0,
    "testate": 1
   },
   {
@@ -958,7 +1042,7 @@
    "pubblicato": "2026-11-09T07:50:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.6,
+   "punteggio": 11.9,
    "testate": 2
   },
   {
@@ -970,7 +1054,7 @@
    "pubblicato": "2026-11-09T07:00:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.6,
+   "punteggio": -3.3,
    "testate": 1
   },
   {
@@ -982,7 +1066,7 @@
    "pubblicato": "2026-11-09T06:55:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.4,
+   "punteggio": 13.7,
    "testate": 3
   },
   {
@@ -994,7 +1078,7 @@
    "pubblicato": "2026-11-09T06:06:35+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.8,
+   "punteggio": -15.5,
    "testate": 1
   },
   {
@@ -1006,7 +1090,7 @@
    "pubblicato": "2026-11-09T06:00:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.1,
+   "punteggio": 6.5,
    "testate": 2
   },
   {
@@ -1018,7 +1102,7 @@
    "pubblicato": "2026-11-09T05:15:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.0,
+   "punteggio": -3.7,
    "testate": 1
   },
   {
@@ -1030,7 +1114,7 @@
    "pubblicato": "2026-11-09T05:00:24+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.1,
+   "punteggio": -3.8,
    "testate": 1
   },
   {
@@ -1042,7 +1126,7 @@
    "pubblicato": "2026-11-08T22:10:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.2,
+   "punteggio": 4.5,
    "testate": 2
   },
   {
@@ -1054,7 +1138,7 @@
    "pubblicato": "2026-11-08T22:08:38+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.2,
+   "punteggio": 4.5,
    "testate": 2
   },
   {
@@ -1066,7 +1150,7 @@
    "pubblicato": "2026-11-08T22:02:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.2,
+   "punteggio": 4.5,
    "testate": 2
   },
   {
@@ -1078,7 +1162,7 @@
    "pubblicato": "2026-11-08T22:01:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.1,
+   "punteggio": 2.5,
    "testate": 3
   },
   {
@@ -1090,7 +1174,7 @@
    "pubblicato": "2026-11-08T22:00:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.9,
+   "punteggio": -7.5,
    "testate": 2
   },
   {
@@ -1102,7 +1186,7 @@
    "pubblicato": "2026-11-08T21:56:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.9,
+   "punteggio": -5.6,
    "testate": 1
   },
   {
@@ -1114,7 +1198,7 @@
    "pubblicato": "2026-11-08T21:47:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.9,
+   "punteggio": -5.6,
    "testate": 1
   },
   {
@@ -1126,7 +1210,7 @@
    "pubblicato": "2026-11-08T21:45:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.1,
+   "punteggio": 4.4,
    "testate": 2
   },
   {
@@ -1138,7 +1222,7 @@
    "pubblicato": "2026-11-08T21:44:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.9,
+   "punteggio": -5.6,
    "testate": 1
   },
   {
@@ -1150,7 +1234,7 @@
    "pubblicato": "2026-11-08T21:39:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -6.9,
+   "punteggio": -8.6,
    "testate": 1
   },
   {
@@ -1162,7 +1246,7 @@
    "pubblicato": "2026-11-08T21:23:09+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.0,
+   "punteggio": -0.7,
    "testate": 1
   },
   {
@@ -1174,7 +1258,7 @@
    "pubblicato": "2026-11-08T21:12:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.9,
+   "punteggio": 9.3,
    "testate": 2
   },
   {
@@ -1186,7 +1270,7 @@
    "pubblicato": "2026-11-08T20:48:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.8,
+   "punteggio": -0.8,
    "testate": 1
   },
   {
@@ -1198,7 +1282,7 @@
    "pubblicato": "2026-11-08T20:33:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.8,
+   "punteggio": 9.1,
    "testate": 2
   },
   {
@@ -1210,19 +1294,7 @@
    "pubblicato": "2026-11-08T20:31:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -7.2,
-   "testate": 1
-  },
-  {
-   "titolo": "La domenica nera di Kimi Antonelli: tra errori e una scelta strategica sbagliata nel finale",
-   "estratto": "Kimi Antonelli non ha vissuto la domenica che sognava a Interlagos, dovendosi accontentare di un deludente quinto posto al termine del Gran Premio del Brasile 2026, valevole come ventesima tappa…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/la-domenica-nera-di-kimi-antonelli-tra-errori-e-una-scelta-strategica-sbagliata-nel-finale/",
-   "pubblicato": "2026-11-08T20:30:44+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -4.2,
+   "punteggio": -8.9,
    "testate": 1
   },
   {
@@ -1234,7 +1306,7 @@
    "pubblicato": "2026-11-08T20:17:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.7,
+   "punteggio": 4.0,
    "testate": 2
   },
   {
@@ -1246,7 +1318,7 @@
    "pubblicato": "2026-11-08T19:30:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.5,
+   "punteggio": 13.8,
    "testate": 3
   },
   {
@@ -1258,7 +1330,7 @@
    "pubblicato": "2026-11-08T19:10:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -7.6,
+   "punteggio": -9.2,
    "testate": 1
   },
   {
@@ -1270,7 +1342,7 @@
    "pubblicato": "2026-11-08T19:06:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.4,
+   "punteggio": 8.7,
    "testate": 2
   },
   {
@@ -1282,7 +1354,7 @@
    "pubblicato": "2026-11-08T19:05:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.4,
+   "punteggio": 8.7,
    "testate": 2
   },
   {
@@ -1294,7 +1366,7 @@
    "pubblicato": "2026-11-08T18:55:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.4,
+   "punteggio": 5.7,
    "testate": 3
   },
   {
@@ -1306,7 +1378,7 @@
    "pubblicato": "2026-11-08T18:54:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -7.6,
+   "punteggio": -9.3,
    "testate": 1
   },
   {
@@ -1318,7 +1390,7 @@
    "pubblicato": "2026-11-08T18:49:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.3,
+   "punteggio": 13.7,
    "testate": 3
   },
   {
@@ -1330,7 +1402,7 @@
    "pubblicato": "2026-11-08T18:45:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -7.7,
+   "punteggio": -9.4,
    "testate": 1
   },
   {
@@ -1342,7 +1414,7 @@
    "pubblicato": "2026-11-08T18:27:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 20.3,
+   "punteggio": 18.6,
    "testate": 3
   },
   {
@@ -1354,7 +1426,7 @@
    "pubblicato": "2026-11-08T18:12:17+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.2,
+   "punteggio": 0.5,
    "testate": 2
   },
   {
@@ -1366,80 +1438,8 @@
    "pubblicato": "2026-11-08T18:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.1,
+   "punteggio": -1.5,
    "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Bezzecchi: \"Le Sprint sono state il mio anello debole, ma avrei firmato per una stagione così\"",
-   "estratto": "Ieri in tanti hanno polemizzato sul contatto con Marc Marquez che lo ha portato a cadere e a ritirarsi nella Sprint di Lusail, ma non Marco Bezzecchi. Il pilota dell'Aprilia ha preferito provare a…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bezzecchi-le-sprint-sono-state-il-mio-anello-debole-ma-avrei-firmato-per-una-stagione-cosi-/10873024/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-08T17:53:20+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 0.1,
-   "testate": 1
-  },
-  {
-   "titolo": "Marc Marquez: “Sono stato attendista nella prima parte, secondo posto ottimo risultato”",
-   "estratto": "Il titolo è sempre più vicino. Marc Marquez ha limitato i danni conquistando il posto d’onore in occasione del GP di Qatar, appuntamento numero venti del Motomondiale 2026 di Formula 1 andato in…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/marc-marquez-sono-stato-attendista-nella-prima-parte-secondo-posto-ottimo-risultato/",
-   "pubblicato": "2026-11-08T17:39:25+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 2.1,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP, Marc Marquez rimanda l’appuntamento con il titolo. Le combinazioni per il GP del Portogallo",
-   "estratto": "Titolo iridato ipotecato per Marc Marquez al termine della gara lunga del GP del Qatar del Mondiale 2026 della MotoGP: lo spagnolo vanta 60 punti di vantaggio sul connazionale Jorge Martin e 74…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/motogp-marc-marquez-rimanda-lappuntamento-con-il-titolo-le-combinazioni-per-il-gp-del-portogallo/",
-   "pubblicato": "2026-11-08T17:31:47+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 7.0,
-   "testate": 3
-  },
-  {
-   "titolo": "Raul Fernandez: “Ho dato tutto quello che avevo per tenermi il podio”",
-   "estratto": "Raúl Fernández conquista un brillante terzo posto al Gran Premio del Qatar 2026 sul circuito di Lusail, firmando una prestazione di grande carattere al termine di una gara combattuta fino all’ultimo…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/raul-fernandez-ho-dato-tutto-quello-che-avevo-per-tenermi-il-podio/",
-   "pubblicato": "2026-11-08T17:28:24+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -8.0,
-   "testate": 1
-  },
-  {
-   "titolo": "Bezzecchi: “Oggi tutto perfetto, imparerò dagli errori di questa stagione”",
-   "estratto": "Il pilota Aprilia si è riscattato dopo l'errore di ieri",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/bezzecchi-oggi-tutto-perfetto-imparero-errori-tutta-esperienza-aprilia-gp-qatar",
-   "pubblicato": "2026-11-08T17:20:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -0.0,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Bezzecchi trionfa in Qatar, Marquez chiude 2° e rimanda la festa Mondiale a Portimao",
-   "estratto": "Marc Marquez dovrà aspettare almeno altre due settimane per festeggiare la sua decima corona iridata. Per farlo stasera a Lusail aveva un solo risultato a disposizione, la vittoria (oltre ad uno zero…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bezzecchi-trionfa-in-qatar-marquez-chiude-2-e-rimanda-la-festa-mondiale-a-portimao/10872966/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-08T17:12:01+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 14.9,
-   "testate": 3
   }
  ]
 }

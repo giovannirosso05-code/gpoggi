@@ -1,6 +1,54 @@
 {
- "generato_il": "2026-11-17T14:17:17+00:00",
+ "generato_il": "2026-11-17T15:24:20+00:00",
  "articoli": [
+  {
+   "titolo": "MotoGP | Honda spiega perché le 850cc non sono così lontane delle 1.000cc",
+   "estratto": "In casa Honda sono convinti che le moto da 850cc di nuova generazione della MotoGP resteranno relativamente vicine alle attuali moto da 1000cc, perché la perdita di potenza del motore è stata in gran…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-honda-spiega-perche-le-850cc-non-sono-lontane-delle-1000cc/10875008/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-17T15:00:48+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 4.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Kimi Antonelli sul 2027: “Le nuove modifiche avranno un impatto sulle monoposto, sarà come ripartire da zero”",
+   "estratto": "Ipotecata ormai il 2026 è già tempo per Andrea Kimi Antonelli di concentrarsi verso la prossima stagione. L’italiano ha più volte sottolineato la volontà di concludere in bellezza gli ultimi…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/andrea-kimi-antonelli-sul-2027-le-nuove-modifiche-avranno-un-impatto-sulle-monoposto-sara-come-ripartire-da-zero/",
+   "pubblicato": "2026-11-17T14:33:34+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 32.8,
+   "testate": 3
+  },
+  {
+   "titolo": "F1 | Mercedes spinge ancora: al GP di Las Vegas ecco il turbo con ADUO. Ma lo avrà solo Antonelli",
+   "estratto": "I due titoli appena portati a Brackley, evidentemente, non bastano ancora. Mercedes ha annunciato questo pomeriggio che al Gran Premio di Las Vegas, previsto in questo fine settimana nella metropoli…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-mercedes-spinge-ancora-antonelli-avra-il-turbo-con-aduo-al-gp-di-las-vegas/10875089/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-17T14:31:12+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 7.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Wolff traccia la rotta: “L’obiettivo è aiutare Russell nel Mondiale. Kimi avrà power unit con ADUO”",
+   "estratto": "Il team principal Mercedes prevede che il vantaggio portato dalla power unit aggiornata sarà \"piuttosto contenuto\"",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/wolff-traccia-la-rotta-lobiettivo-e-aiutare-russell-nel-mondiale-kimi-avra-power-unit-con-aduo",
+   "pubblicato": "2026-11-17T14:25:40+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 14.8,
+   "testate": 2
+  },
   {
    "titolo": "MotoGP, Alex Marquez atteso dal ritorno nel GP del Portogallo",
    "estratto": "Dopo l’appuntamento in Qatar con una partecipazione bassa a cause degli infortuni e delle rinunce, la MotoGP riacquista un altro importante protagonista per la prossima tappa. Il penultimo…",
@@ -10,7 +58,7 @@
    "pubblicato": "2026-11-17T14:13:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.0,
+   "punteggio": -0.3,
    "testate": 1
   },
   {
@@ -22,7 +70,7 @@
    "pubblicato": "2026-11-17T14:07:10+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.0,
+   "punteggio": -0.3,
    "testate": 1
   },
   {
@@ -34,7 +82,7 @@
    "pubblicato": "2026-11-17T14:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.9,
+   "punteggio": 4.6,
    "testate": 1
   },
   {
@@ -46,7 +94,7 @@
    "pubblicato": "2026-11-17T13:45:44+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.9,
+   "punteggio": 7.6,
    "testate": 1
   },
   {
@@ -58,7 +106,7 @@
    "pubblicato": "2026-11-17T13:00:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.7,
+   "punteggio": 7.4,
    "testate": 1
   },
   {
@@ -70,7 +118,7 @@
    "pubblicato": "2026-11-17T13:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.7,
+   "punteggio": 4.4,
    "testate": 1
   },
   {
@@ -82,7 +130,7 @@
    "pubblicato": "2026-11-17T12:00:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.6,
+   "punteggio": -0.8,
    "testate": 1
   },
   {
@@ -94,7 +142,7 @@
    "pubblicato": "2026-11-17T12:00:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.4,
+   "punteggio": 17.1,
    "testate": 2
   },
   {
@@ -106,7 +154,7 @@
    "pubblicato": "2026-11-17T11:18:04+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 32.3,
+   "punteggio": 32.0,
    "testate": 3
   },
   {
@@ -118,7 +166,7 @@
    "pubblicato": "2026-11-17T11:02:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.8,
+   "punteggio": -1.1,
    "testate": 1
   },
   {
@@ -130,7 +178,7 @@
    "pubblicato": "2026-11-17T11:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.8,
+   "punteggio": -1.1,
    "testate": 1
   },
   {
@@ -142,7 +190,7 @@
    "pubblicato": "2026-11-17T10:35:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.1,
+   "punteggio": 21.8,
    "testate": 2
   },
   {
@@ -154,7 +202,7 @@
    "pubblicato": "2026-11-17T10:25:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.0,
+   "punteggio": 11.8,
    "testate": 1
   },
   {
@@ -166,7 +214,7 @@
    "pubblicato": "2026-11-17T10:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.0,
+   "punteggio": 3.7,
    "testate": 1
   },
   {
@@ -178,7 +226,7 @@
    "pubblicato": "2026-11-17T09:59:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.9,
+   "punteggio": 8.6,
    "testate": 2
   },
   {
@@ -190,7 +238,7 @@
    "pubblicato": "2026-11-17T09:45:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 31.9,
+   "punteggio": 31.6,
    "testate": 3
   },
   {
@@ -202,7 +250,7 @@
    "pubblicato": "2026-11-17T09:00:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.7,
+   "punteggio": 6.4,
    "testate": 1
   },
   {
@@ -214,7 +262,7 @@
    "pubblicato": "2026-11-17T08:23:45+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.5,
+   "punteggio": -1.8,
    "testate": 1
   },
   {
@@ -226,7 +274,7 @@
    "pubblicato": "2026-11-17T08:22:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.5,
+   "punteggio": 6.2,
    "testate": 1
   },
   {
@@ -238,7 +286,7 @@
    "pubblicato": "2026-11-17T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.2,
+   "punteggio": 20.9,
    "testate": 2
   },
   {
@@ -250,7 +298,7 @@
    "pubblicato": "2026-11-17T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.2,
+   "punteggio": 2.9,
    "testate": 1
   },
   {
@@ -262,20 +310,8 @@
    "pubblicato": "2026-11-17T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.2,
+   "punteggio": 2.9,
    "testate": 1
-  },
-  {
-   "titolo": "GP Las Vegas 2026: orari Sky/Now e TV8",
-   "estratto": "I dettagli della programmazione televisiva dell'appuntamento in programma sul circuito cittadino nel Nevada",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-las-vegas-2026-televisione-diretta-sky-differita-tv8-programmazione-dove-vederla-ferrari-leclerc-hamilton-antonelli-verstappen",
-   "pubblicato": "2026-11-17T07:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 6.2,
-   "testate": 3
   },
   {
    "titolo": "Ecclestone: “Hamilton si lagna sempre. Antonelli? La Ferrari sarà buona per lui quando avrà 50 anni…”",
@@ -286,7 +322,19 @@
    "pubblicato": "2026-11-17T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 31.2,
+   "punteggio": 30.9,
+   "testate": 3
+  },
+  {
+   "titolo": "GP Las Vegas 2026: orari Sky/Now e TV8",
+   "estratto": "I dettagli della programmazione televisiva dell'appuntamento in programma sul circuito cittadino nel Nevada",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-las-vegas-2026-televisione-diretta-sky-differita-tv8-programmazione-dove-vederla-ferrari-leclerc-hamilton-antonelli-verstappen",
+   "pubblicato": "2026-11-17T07:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 5.9,
    "testate": 3
   },
   {
@@ -298,7 +346,7 @@
    "pubblicato": "2026-11-17T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.2,
+   "punteggio": 5.9,
    "testate": 1
   },
   {
@@ -310,7 +358,7 @@
    "pubblicato": "2026-11-17T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.8,
+   "punteggio": -4.1,
    "testate": 2
   },
   {
@@ -322,7 +370,7 @@
    "pubblicato": "2026-11-17T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.8,
+   "punteggio": -14.1,
    "testate": 1
   },
   {
@@ -334,7 +382,7 @@
    "pubblicato": "2026-11-17T05:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 20.7,
+   "punteggio": 20.4,
    "testate": 2
   },
   {
@@ -346,7 +394,7 @@
    "pubblicato": "2026-11-16T18:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.9,
+   "punteggio": 21.6,
    "testate": 2
   },
   {
@@ -358,7 +406,7 @@
    "pubblicato": "2026-11-16T17:44:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.9,
+   "punteggio": 16.6,
    "testate": 2
   },
   {
@@ -370,7 +418,7 @@
    "pubblicato": "2026-11-16T17:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.7,
+   "punteggio": 11.4,
    "testate": 1
   },
   {
@@ -382,7 +430,7 @@
    "pubblicato": "2026-11-16T16:39:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.6,
+   "punteggio": 13.3,
    "testate": 2
   },
   {
@@ -394,7 +442,7 @@
    "pubblicato": "2026-11-16T16:36:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.6,
+   "punteggio": 8.3,
    "testate": 2
   },
   {
@@ -406,7 +454,7 @@
    "pubblicato": "2026-11-16T16:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.6,
+   "punteggio": 3.3,
    "testate": 1
   },
   {
@@ -418,7 +466,7 @@
    "pubblicato": "2026-11-16T16:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.6,
+   "punteggio": -1.9,
    "testate": 1
   },
   {
@@ -430,7 +478,7 @@
    "pubblicato": "2026-11-16T15:00:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.2,
+   "punteggio": 5.9,
    "testate": 1
   },
   {
@@ -442,7 +490,7 @@
    "pubblicato": "2026-11-16T14:25:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.0,
+   "punteggio": 10.8,
    "testate": 1
   },
   {
@@ -454,7 +502,7 @@
    "pubblicato": "2026-11-16T14:05:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.0,
+   "punteggio": 2.7,
    "testate": 1
   },
   {
@@ -466,7 +514,7 @@
    "pubblicato": "2026-11-16T14:03:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.9,
+   "punteggio": 2.7,
    "testate": 1
   },
   {
@@ -478,7 +526,7 @@
    "pubblicato": "2026-11-16T14:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.1,
+   "punteggio": -2.4,
    "testate": 1
   },
   {
@@ -490,7 +538,7 @@
    "pubblicato": "2026-11-16T13:18:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.8,
+   "punteggio": 7.5,
    "testate": 2
   },
   {
@@ -502,7 +550,7 @@
    "pubblicato": "2026-11-16T13:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.7,
+   "punteggio": 10.5,
    "testate": 1
   },
   {
@@ -514,7 +562,7 @@
    "pubblicato": "2026-11-16T13:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.7,
+   "punteggio": 2.4,
    "testate": 1
   },
   {
@@ -526,7 +574,7 @@
    "pubblicato": "2026-11-16T12:47:54+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.4,
+   "punteggio": -2.7,
    "testate": 1
   },
   {
@@ -538,7 +586,7 @@
    "pubblicato": "2026-11-16T12:26:10+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.5,
+   "punteggio": 15.3,
    "testate": 2
   },
   {
@@ -550,19 +598,7 @@
    "pubblicato": "2026-11-16T12:08:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.5,
-   "testate": 1
-  },
-  {
-   "titolo": "Coulthard bacchetta Norris: “Deve cambiare il modo in cui festeggia sul podio”",
-   "estratto": "L'ex pilota scozzese ha criticato lo stile del campione del mondo in carica di festeggiare la vittoria sul podio, soprattutto dopo quanto accaduto in Brasile",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/coulthard-sgrida-norris-battera-la-bottiglia-a-terra-non-e-una-buona-idea-deve-smetterla",
-   "pubblicato": "2026-11-16T12:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 2.4,
+   "punteggio": -2.8,
    "testate": 1
   },
   {
@@ -574,7 +610,7 @@
    "pubblicato": "2026-11-16T11:58:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.4,
+   "punteggio": 15.1,
    "testate": 2
   },
   {
@@ -586,7 +622,7 @@
    "pubblicato": "2026-11-16T11:45:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 25.4,
+   "punteggio": 25.1,
    "testate": 3
   },
   {
@@ -598,7 +634,7 @@
    "pubblicato": "2026-11-16T10:09:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.0,
+   "punteggio": 1.7,
    "testate": 1
   },
   {
@@ -610,7 +646,7 @@
    "pubblicato": "2026-11-16T09:28:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.8,
+   "punteggio": 4.5,
    "testate": 1
   },
   {
@@ -622,7 +658,7 @@
    "pubblicato": "2026-11-16T09:14:34+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.7,
+   "punteggio": 6.5,
    "testate": 2
   },
   {
@@ -634,7 +670,7 @@
    "pubblicato": "2026-11-16T09:09:43+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 29.7,
+   "punteggio": 29.4,
    "testate": 3
   },
   {
@@ -646,7 +682,7 @@
    "pubblicato": "2026-11-16T09:03:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.7,
+   "punteggio": 19.4,
    "testate": 2
   },
   {
@@ -658,7 +694,7 @@
    "pubblicato": "2026-11-16T08:57:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.3,
+   "punteggio": -5.6,
    "testate": 2
   },
   {
@@ -670,7 +706,7 @@
    "pubblicato": "2026-11-16T08:25:40+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.5,
+   "punteggio": 12.3,
    "testate": 3
   },
   {
@@ -682,7 +718,7 @@
    "pubblicato": "2026-11-16T08:15:43+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.5,
+   "punteggio": 9.2,
    "testate": 1
   },
   {
@@ -694,7 +730,7 @@
    "pubblicato": "2026-11-16T07:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.7,
+   "punteggio": -4.0,
    "testate": 1
   },
   {
@@ -706,7 +742,7 @@
    "pubblicato": "2026-11-16T04:10:22+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.5,
+   "punteggio": 3.2,
    "testate": 3
   },
   {
@@ -718,7 +754,7 @@
    "pubblicato": "2026-11-16T04:05:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.4,
+   "punteggio": 11.2,
    "testate": 3
   },
   {
@@ -730,7 +766,7 @@
    "pubblicato": "2026-11-15T16:59:18+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.7,
+   "punteggio": 0.4,
    "testate": 1
   },
   {
@@ -742,7 +778,7 @@
    "pubblicato": "2026-11-15T15:59:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.6,
+   "punteggio": -7.9,
    "testate": 1
   },
   {
@@ -754,7 +790,7 @@
    "pubblicato": "2026-11-15T14:00:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.1,
+   "punteggio": -8.3,
    "testate": 1
   },
   {
@@ -766,7 +802,7 @@
    "pubblicato": "2026-11-15T11:34:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.7,
+   "punteggio": -9.0,
    "testate": 1
   },
   {
@@ -778,7 +814,7 @@
    "pubblicato": "2026-11-15T10:45:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.9,
+   "punteggio": -1.2,
    "testate": 1
   },
   {
@@ -790,7 +826,7 @@
    "pubblicato": "2026-11-15T09:59:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -4.1,
+   "punteggio": -4.4,
    "testate": 1
   },
   {
@@ -802,7 +838,7 @@
    "pubblicato": "2026-11-15T09:00:22+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.3,
+   "punteggio": -9.6,
    "testate": 1
   },
   {
@@ -814,7 +850,7 @@
    "pubblicato": "2026-11-15T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -4.8,
+   "punteggio": -5.1,
    "testate": 1
   },
   {
@@ -826,7 +862,7 @@
    "pubblicato": "2026-11-15T05:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.3,
+   "punteggio": -2.6,
    "testate": 1
   },
   {
@@ -838,7 +874,7 @@
    "pubblicato": "2026-11-14T17:25:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.2,
+   "punteggio": -13.5,
    "testate": 1
   },
   {
@@ -850,7 +886,7 @@
    "pubblicato": "2026-11-14T15:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -8.8,
+   "punteggio": -9.1,
    "testate": 1
   },
   {
@@ -862,7 +898,7 @@
    "pubblicato": "2026-11-14T14:59:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.8,
+   "punteggio": -6.1,
    "testate": 1
   },
   {
@@ -874,7 +910,7 @@
    "pubblicato": "2026-11-14T14:44:53+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 0.1,
+   "punteggio": -0.2,
    "testate": 1
   },
   {
@@ -886,7 +922,7 @@
    "pubblicato": "2026-11-14T14:04:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.1,
+   "punteggio": -6.3,
    "testate": 1
   },
   {
@@ -898,7 +934,7 @@
    "pubblicato": "2026-11-14T10:42:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.9,
+   "punteggio": -2.2,
    "testate": 1
   },
   {
@@ -910,7 +946,7 @@
    "pubblicato": "2026-11-14T10:08:07+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -15.0,
+   "punteggio": -15.3,
    "testate": 1
   },
   {
@@ -922,7 +958,7 @@
    "pubblicato": "2026-11-14T09:06:48+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.3,
+   "punteggio": -2.6,
    "testate": 1
   },
   {
@@ -934,7 +970,7 @@
    "pubblicato": "2026-11-14T08:42:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.6,
+   "punteggio": 2.3,
    "testate": 2
   },
   {
@@ -946,7 +982,7 @@
    "pubblicato": "2026-11-13T20:36:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.4,
+   "punteggio": -0.7,
    "testate": 2
   },
   {
@@ -958,7 +994,7 @@
    "pubblicato": "2026-11-13T18:04:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -19.1,
+   "punteggio": -19.3,
    "testate": 1
   },
   {
@@ -970,7 +1006,7 @@
    "pubblicato": "2026-11-13T17:19:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -19.2,
+   "punteggio": -19.5,
    "testate": 1
   },
   {
@@ -982,7 +1018,7 @@
    "pubblicato": "2026-11-13T16:47:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -6.4,
+   "punteggio": -6.7,
    "testate": 1
   },
   {
@@ -994,7 +1030,7 @@
    "pubblicato": "2026-11-13T16:21:20+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.5,
+   "punteggio": 13.2,
    "testate": 3
   },
   {
@@ -1006,7 +1042,7 @@
    "pubblicato": "2026-11-13T16:02:29+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -19.6,
+   "punteggio": -19.8,
    "testate": 1
   },
   {
@@ -1018,7 +1054,7 @@
    "pubblicato": "2026-11-13T15:53:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.4,
+   "punteggio": 3.1,
    "testate": 2
   },
   {
@@ -1030,7 +1066,7 @@
    "pubblicato": "2026-11-13T15:31:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -14.7,
+   "punteggio": -15.0,
    "testate": 1
   },
   {
@@ -1042,7 +1078,7 @@
    "pubblicato": "2026-11-13T12:33:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.4,
+   "punteggio": -10.7,
    "testate": 2
   },
   {
@@ -1054,7 +1090,7 @@
    "pubblicato": "2026-11-13T12:01:22+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -20.6,
+   "punteggio": -20.8,
    "testate": 1
   },
   {
@@ -1066,7 +1102,7 @@
    "pubblicato": "2026-11-13T11:30:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.7,
+   "punteggio": -13.0,
    "testate": 1
   },
   {
@@ -1078,7 +1114,7 @@
    "pubblicato": "2026-11-13T10:32:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -20.9,
+   "punteggio": -21.2,
    "testate": 1
   },
   {
@@ -1090,7 +1126,7 @@
    "pubblicato": "2026-11-13T09:09:50+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -8.3,
+   "punteggio": -8.6,
    "testate": 1
   },
   {
@@ -1102,7 +1138,7 @@
    "pubblicato": "2026-11-13T08:59:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -21.3,
+   "punteggio": -21.6,
    "testate": 1
   },
   {
@@ -1114,7 +1150,7 @@
    "pubblicato": "2026-11-13T08:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -8.4,
+   "punteggio": -8.7,
    "testate": 1
   },
   {
@@ -1126,7 +1162,7 @@
    "pubblicato": "2026-11-13T08:13:07+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.5,
+   "punteggio": -13.8,
    "testate": 1
   },
   {
@@ -1138,7 +1174,7 @@
    "pubblicato": "2026-11-13T07:30:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -16.7,
+   "punteggio": -17.0,
    "testate": 1
   },
   {
@@ -1150,7 +1186,7 @@
    "pubblicato": "2026-11-13T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -9.1,
+   "punteggio": -9.4,
    "testate": 1
   },
   {
@@ -1162,7 +1198,7 @@
    "pubblicato": "2026-11-13T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.9,
+   "punteggio": 0.6,
    "testate": 2
   },
   {
@@ -1174,7 +1210,7 @@
    "pubblicato": "2026-11-12T18:02:01+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -24.1,
+   "punteggio": -24.3,
    "testate": 1
   },
   {
@@ -1186,7 +1222,7 @@
    "pubblicato": "2026-11-12T18:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -16.1,
+   "punteggio": -16.4,
    "testate": 1
   },
   {
@@ -1198,7 +1234,7 @@
    "pubblicato": "2026-11-12T17:32:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -29.2,
+   "punteggio": -29.5,
    "testate": 1
   },
   {
@@ -1210,7 +1246,7 @@
    "pubblicato": "2026-11-12T17:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -16.3,
+   "punteggio": -16.6,
    "testate": 1
   },
   {
@@ -1222,7 +1258,7 @@
    "pubblicato": "2026-11-12T16:06:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -21.5,
+   "punteggio": -21.8,
    "testate": 1
   },
   {
@@ -1234,7 +1270,7 @@
    "pubblicato": "2026-11-12T15:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -21.8,
+   "punteggio": -22,
    "testate": 1
   },
   {
@@ -1246,7 +1282,7 @@
    "pubblicato": "2026-11-12T14:54:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -29.8,
+   "punteggio": -30,
    "testate": 1
   },
   {
@@ -1258,8 +1294,8 @@
    "pubblicato": "2026-11-12T14:26:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -30.0,
-   "testate": 1
+   "punteggio": -20,
+   "testate": 2
   },
   {
    "titolo": "Ducati, l’era Marquez-Acosta sta per cominciare: presentazione della 850cc il 18 gennaio",
@@ -1270,7 +1306,7 @@
    "pubblicato": "2026-11-12T14:26:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -22.0,
+   "punteggio": -22,
    "testate": 1
   },
   {
@@ -1282,7 +1318,7 @@
    "pubblicato": "2026-11-12T14:19:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -25.0,
+   "punteggio": -25,
    "testate": 1
   },
   {
@@ -1404,42 +1440,6 @@
    "citazione": true,
    "punteggio": -7,
    "testate": 2
-  },
-  {
-   "titolo": "Kimi Antonelli e le sbavature a Interlagos: svelato il problema dalla Mercedes",
-   "estratto": "Interlagos ha consegnato alla Mercedes il nono Titolo Costruttori, ma ha lasciato in eredità anche un retrogusto amaro, quello di una vittoria che inizialmente era sembrata a portata di mano e che…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/kimi-antonelli-e-le-sbavature-a-interlagos-svelato-il-problema-dalla-mercedes/",
-   "pubblicato": "2026-11-12T08:13:28+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -22,
-   "testate": 1
-  },
-  {
-   "titolo": "Andrea Dovizioso deciso: “Bezzecchi e Aprilia hanno buttato via il Mondiale”",
-   "estratto": "Il Mondiale MotoGP 2026 vedrà Marc Marquez campione al termine della stagione. Rimane solamente da capire se il Cabroncito potrà già festeggiare nel prossimo appuntamento di Portimao, oppure dovrà…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/andrea-dovizioso-e-netto-bezzecchi-e-aprilia-hanno-buttato-loro-via-il-mondiale/",
-   "pubblicato": "2026-11-11T22:02:50+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -17,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Mercedes in difficoltà: le gomme di Antonelli entravano e uscivano della finestra di temperatura",
-   "estratto": "La Mercedes ha conquistato a Interlagos il nono titolo Costruttori, centrando l’obiettivo mondiale nell’unica gara in cui una W17 non è andata sul podio. La Stella, infatti, ha vissuto con le due…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-mercedes-in-difficolta-le-gomme-di-antonelli-entravano-e-uscivano-della-finestra-di-temperatura/10873921/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-11T16:58:59+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -22,
-   "testate": 1
   }
  ]
 }

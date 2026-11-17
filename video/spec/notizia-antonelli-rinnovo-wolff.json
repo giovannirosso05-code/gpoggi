@@ -1,0 +1,58 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Wolff su Antonelli",
+ "etichetta": "Ultim'ora",
+ "fonte": "Bild, Tuttosport, GPBlog",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto": "Kimi Antonelli",
+   "ritratto_espn": true,
+   "hook": true,
+   "hook_titolo": "Wolff su Antonelli: ricompensato",
+   "testo": "*Wolff* su *Antonelli*: «merita di essere *adeguatamente ricompensato*»!",
+   "fonte_alto": "Bild, Tuttosport, GPBlog"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "ritratto_espn": true,
+   "testo": "Lo dice alla *Bild*: Antonelli, vent'anni, è il *campione del mondo* più giovane di sempre.",
+   "fonte_alto": "Bild, Tuttosport, GPBlog"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "pista": true,
+   "foto_espn_cerca": [
+    "wolff"
+   ],
+   "testo": "Un nuovo contratto? «Per il prossimo anno *lo ha già*». Nessun nuovo accordo annunciato, per ora.",
+   "fonte_alto": "Bild, Tuttosport, GPBlog"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "pista": true,
+   "foto_espn_cerca": [
+    "ferrari"
+   ],
+   "testo": "E la *Ferrari*? Paura che un italiano prima o poi la voglia? «*Zero*. Kimi e la sua famiglia sono persone *leali*».",
+   "fonte_alto": "Bild, Tuttosport, GPBlog"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "ritratto_espn": true,
+   "testo": "«Lui appartiene alla *Mercedes* come le ruote appartengono a un'automobile».",
+   "fonte_alto": "Bild, Tuttosport, GPBlog"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "ritratto_espn": true,
+   "testo": "Quest'anno la *Mercedes* ha vinto *entrambi i titoli*: piloti e costruttori.",
+   "fonte_alto": "Bild, Tuttosport, GPBlog"
+  }
+ ],
+ "finale": {
+  "foto": "Kimi Antonelli",
+  "ritratto_espn": true,
+  "domanda": "Antonelli resterà sempre alla Mercedes?"
+ }
+}

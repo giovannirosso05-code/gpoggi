@@ -1,6 +1,534 @@
 {
- "generato_il": "2026-11-19T05:31:16+00:00",
+ "generato_il": "2026-11-19T14:19:05+00:00",
  "articoli": [
+  {
+   "titolo": "Moto2, primo match point per Gonzalez a Portimao. Ma non sarà semplice",
+   "estratto": "Non sarà un weekend come gli altri per Manuel Gonzalez. Lo spagnolo infatti dopo la beffa dello scorso anno avrà la possibilità di mettere, finalmente, le mani sul titolo in occasione del GP del…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/moto2-primo-match-point-per-gonzalez-a-portimao-ma-non-sara-semplice/",
+   "pubblicato": "2026-11-19T14:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 9.9,
+   "testate": 2
+  },
+  {
+   "titolo": "Lawson dopo la riconferma: “Sono grato che non sia più Marko a prendere le decisioni”",
+   "estratto": "Il neozelandese, che resterà in Racing Bulls nel 2027, ha commentato una dichiarazione dell'ex talent scout della Red Bull, il quale aveva espresso la propria preferenza su Tsolov",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/lawson-dopo-riconferma-sono-grato-che-non-sia-piu-marko-a-prendere-decisioni",
+   "pubblicato": "2026-11-19T13:29:18+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 4.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Moto3, a Portimao l’ennesimo duello Quiles-Almansa in attesa del salto di categoria",
+   "estratto": "Non è ancora tempo di vacanze per il Motomondiale. La stagione 2026 della classe più leggera, infatti, ha in serbo ancora due tappe prima del “rompete le righe” e mai come in questa occasione siamo…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/moto3-a-portimao-lennesimo-duello-quiles-almansa-in-attesa-del-salto-di-categoria/",
+   "pubblicato": "2026-11-19T13:00:47+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -0.3,
+   "testate": 1
+  },
+  {
+   "titolo": "Norris e i festeggiamenti pericolosi: “Cambiare esultanza? Lo scoprirete quando vincerò la prossima gara”",
+   "estratto": "L'inglese della McLaren è stato protagonista di un episodio curioso (e pericoloso) sul podio di Interlagos",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/norris-e-i-festeggiamenti-pericolosi-cambiare-esultanza-lo-scoprirete-quando-vincero-la-prossima-gara",
+   "pubblicato": "2026-11-19T12:48:45+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 4.6,
+   "testate": 1
+  },
+  {
+   "titolo": "I piloti di F1 debuttano in versione Minifigure Lego",
+   "estratto": "Una collezione imperdibile",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/minifigure-lego-piloti-f1-speed-of-champions-nuova-serie-quando-arrivano-nei-negozi",
+   "pubblicato": "2026-11-19T12:20:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -0.5,
+   "testate": 1
+  },
+  {
+   "titolo": "Antonelli fa l’uomo squadra: “Se potrò aiutare Russell lo farò. Ma il mio obiettivo resta vincere”",
+   "estratto": "L'italiano spera di aggiungere ancora qualche vittoria al suo bilancio stagionale dopo aver già conquistato il titolo",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/antonelli-fa-luomo-squadra-se-potro-aiutare-russell-lo-faro-ma-il-mio-obiettivo-resta-vincere",
+   "pubblicato": "2026-11-19T12:05:55+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 22.4,
+   "testate": 2
+  },
+  {
+   "titolo": "La Ferrari è in difesa ma si gioca il futuro",
+   "estratto": "Nel trittico finale in palio c’è una grossa fetta di 2027. Vasseur: \"Serve il risultato massimo per la squadra\"",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/ferrari/2026/11/19-152683681/la_ferrari_in_difesa_ma_si_gioca_il_futuro/",
+   "pubblicato": "2026-11-19T12:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 7.4,
+   "testate": 1
+  },
+  {
+   "titolo": "F1, Lando Norris: “Las Vegas è una pista che mi piace, ma non abbiamo ancora la macchina più forte”",
+   "estratto": "Lando Norris è stato uno dei protagonisti principali della conferenza stampa piloti andata in scena alla vigilia del weekend di Las Vegas, sede del terzultimo appuntamento stagionale del Mondiale di…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-lando-norris-las-vegas-e-una-pista-che-mi-piace-ma-non-abbiamo-ancora-la-macchina-piu-forte/",
+   "pubblicato": "2026-11-19T11:46:35+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 5.4,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Bearman rimane l'unica incertezza del mercato per il 2027: \"Deludente non avere un contratto a 3 gare dalla fine\"",
+   "estratto": "Il futuro di Oliver Bearman con Haas sembrava ormai in cassaforte, invece così non è. Il pilota britannico, a oggi, è l'ultimo pilota in griglia a non avere ancora un sedile per la prossima stagione…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-bearman-rimane-lunica-incertezza-del-mercato-per-il-2027-deludente-non-avere-un-contratto-a-3-ga/10875581/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-19T11:29:13+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 4.3,
+   "testate": 1
+  },
+  {
+   "titolo": "Russell: “Ho scelto io di non avere motore ADUO. Punto alla vittoria e non voglio penalità in griglia”",
+   "estratto": "L'inglese attualmente è terzo nella classifica iridata Piloti, ma quella di Las Vegas è una pista 'amica' su cui ha già vinto in passato",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/russell-ho-scelto-io-di-non-avere-motore-aduo-punto-alla-vittoria-e-non-voglio-penalita-in-griglia",
+   "pubblicato": "2026-11-19T11:20:36+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 14.3,
+   "testate": 2
+  },
+  {
+   "titolo": "F1, weekend in salita a Las Vegas per Kimi Antonelli: penalità in vista per il campione del mondo",
+   "estratto": "Manca solamente l’ufficialità, che arriverà nel corso della prima sessione di prove libere tramite il documento ufficiale della FIA, ma con ogni probabilità Kimi Antonelli sconterà una penalizzazione…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-weekend-in-salita-a-las-vegas-per-kimi-antonelli-penalita-in-vista-per-il-campione-del-mondo/",
+   "pubblicato": "2026-11-19T10:54:57+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 7.1,
+   "testate": 1
+  },
+  {
+   "titolo": "Leclerc-Hamilton, dalle scintille al chiarimento: \"Succederà ancora, ma basta...\"",
+   "estratto": "Le tensione tra i due piloti della Ferrari ha fatto parlare tanto nell'ultimo periodo, ma le cose sembrerebbero essere cambiate...",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/11/19-152686146/leclerc-hamilton_dalle_scintille_al_chiarimento_succeder_ancora_ma_basta_/",
+   "pubblicato": "2026-11-19T10:54:56+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 12.1,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Antonelli, il segreto del passo gara: “Ho imparato a correggere il bilanciamento”",
+   "estratto": "La velocità pura è soltanto una delle qualità che hanno permesso a Kimi Antonelli di conquistare il titolo mondiale. Nel corso della stagione 2026 ha dimostrato anche una crescente capacità di…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-antonelli-il-segreto-del-passo-gara-ho-imparato-a-correggere-il-bilanciamento/10875542/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-19T10:31:56+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 12.1,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 stanotte in tv, GP Las Vegas 2026: orari prove libere 20 novembre, streaming, programma Sky e TV8",
+   "estratto": "La F1 si prepara a vivere il Gran Premio di Las Vegas 2026, terzultimo appuntamento del Mondiale, con le monoposto pronte a sfrecciare tra le luci e i lunghi rettilinei della celebre Strip. Il…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-stanotte-in-tv-gp-las-vegas-2026-orari-prove-libere-20-novembre-streaming-programma-sky-e-tv8/",
+   "pubblicato": "2026-11-19T10:30:02+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 7.0,
+   "testate": 3
+  },
+  {
+   "titolo": "MotoGP, GP Portogallo 2026. Marquez a un passo dall’Iride, Ducati e Aprilia, che bagarre per il titolo costruttori!",
+   "estratto": "Il fine settimana del 20, 21 e 22 novembre dovrebbe incoronare il Campione del Mondo 2026 di MotoGP. A Portimao si corre il Gran Premio del Portogallo che, a meno di cataclismi, conferirà a Marc…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-gp-portogallo-2026-marquez-a-un-passo-dalliride-ducati-e-aprilia-che-bagarre-per-il-titolo-costruttori/",
+   "pubblicato": "2026-11-19T10:00:03+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 26.9,
+   "testate": 3
+  },
+  {
+   "titolo": "F1 | Max felice del ritorno del V8, ma non del tutto: \"Se avessi potuto scrivere le regole, ecco cosa avrei tolto\"",
+   "estratto": "Non è ancora del tutto ciò che avrebbe voluto, ma è un netto passo avanti rispetto al presente. Max Verstappen non ha usato giri di parole per commentare la base d'accordo che è stata trovata…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-max-felice-del-ritorno-del-v8-ma-non-del-tutto-se-avessi-potuto-scrivere-le-regole-ecco-cosa-avr/10875555/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-19T09:57:18+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 3.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Leclerc e l’incontro con Hamilton: “Abbiamo risolto in 5 minuti. Ma non andiamo sempre d’accordo”",
+   "estratto": "Il monegasco torna a parlare del rapporto (non sempre idilliaco) con il compagno di squadra dopo i fatti del GP del Messico",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/charles-leclerc-incontro-lewis-hamilton-abbiamo-risolto-5-minuti-non-sempre-daccordo-ferrari",
+   "pubblicato": "2026-11-19T09:50:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 13.9,
+   "testate": 2
+  },
+  {
+   "titolo": "Max Verstappen si prepara a Las Vegas: “Siamo migliorati molto, sarà importante per il prossimo anno”",
+   "estratto": "Un finale di stagione da protagonista. Max Verstappen vuole chiudere al meglio l’annata sportiva per preparare nel migliore dei modi il 2027. E’ questo quanto trapelato dall’olandese in occasione del…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/max-verstappen-si-prepara-a-las-vegas-siamo-migliorati-molto-sara-importante-per-il-prossimo-anno/",
+   "pubblicato": "2026-11-19T09:49:47+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 3.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Jak Crawford sull’Aston Martin di Alonso nelle FP1 di Las Vegas",
+   "estratto": "Il terzo pilota del team di Silverstone parteciperà alla sua quinta FP1 stagionale, la prima di fronte al pubblico di casa",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/jak-crawford-sull-aston-martin-alonso-nelle-fp1-di-las-vegas",
+   "pubblicato": "2026-11-19T09:36:51+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 8.8,
+   "testate": 2
+  },
+  {
+   "titolo": "Hamilton: “Io e Leclerc ci capiamo a vicenda, non abbiamo timori a gareggiare l’uno contro l’altro”",
+   "estratto": "I piloti della Ferrari in più occasioni in questo 2026 hanno lottato ferocemente perdendo punti",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/tensioni-ferrari-hamilton-io-leclerc-ci-capiamo-vicenda-nessuna-paura-gareggiare-contro",
+   "pubblicato": "2026-11-19T09:30:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 11.8,
+   "testate": 1
+  },
+  {
+   "titolo": "F1, Oscar Piastri: “Partirò indietro a causa della penalità, spero che il nuovo motore possa dare una mano”",
+   "estratto": "Oscar Piastri sta vivendo una stagione molto difficile dopo aver lottato nel 2025 per il titolo fino all’ultima gara con il compagno di squadra Lando Norris (laureatosi campione del mondo) e con la…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-oscar-piastri-partiro-indietro-a-causa-della-penalita-spero-che-il-nuovo-motore-possa-dare-una-mano/",
+   "pubblicato": "2026-11-19T09:19:01+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 13.7,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 | Ferrari, Leclerc: \"Con Hamilton chiariti in dieci minuti. Ora voglio vincere\"",
+   "estratto": "Per Charles Leclerc il caso è chiuso, e probabilmente lo era già pochi minuti dopo l'inizio dell'incontro organizzato da Fred Vasseur a Interlagos. Le tensioni con Lewis Hamilton, emerse dopo il Gran…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-ferrari-leclerc-con-hamilton-chiariti-in-dieci-minuti-ora-voglio-vincere/10875539/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-19T09:11:44+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 21.7,
+   "testate": 2
+  },
+  {
+   "titolo": "F1, GP Las Vegas 2026. “Fuori i secondi” sul ring del Nevada! A chi la piazza d’onore iridata?",
+   "estratto": "Il Gran Premio di Las Vegas di F1 andrà in scena nella primissima mattinata europea di domenica 22 novembre, nonostante la gara abbia formalmente luogo nella serata locale di sabato 21. La differenza…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-gp-las-vegas-2026-fuori-i-secondi-sul-ring-del-nevada-a-chi-la-piazza-donore-iridata/",
+   "pubblicato": "2026-11-19T09:00:24+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 3.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Hamilton: “Non c’è mancanza di fiducia da parte mia nei confronti del team, Carlo Santi sta facendo un lavoro straordinario”",
+   "estratto": "Il pilota della Ferrari ha sottolineato l'ottimo rapporto che sta coltivando con l'ingegnere di pista",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/caso-strategie-ferrari-hamilton-non-ce-alcuna-mancanza-fiducia-carlo-santi-lavoro-straordinario",
+   "pubblicato": "2026-11-19T09:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 11.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Bearman ancora senza ufficialità in Haas per il 2027: “Sono deluso, non ci sono scuse”",
+   "estratto": "Il britannico ha espresso la sua frustrazione per non essere stato ancora confermato dal team per la prossima stagione, ritenendo che non vi siano ragioni",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/bearman-ancora-senza-ufficialita-haas-per-2027-sono-deluso-non-ci-sono-scuse",
+   "pubblicato": "2026-11-19T08:58:13+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 3.7,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Antonelli: “Mercedes è la più efficiente sull'elettrico, ma Red Bull sarà forte a Las Vegas”",
+   "estratto": "Las Vegas potrebbe rappresentare uno degli esami più particolari della stagione per le power unit di Formula 1. Le caratteristiche del circuito americano, unite alle basse temperature previste…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-antonelli-mercedes-e-la-piu-efficiente-sullelettrico-ma-red-bull-sara-forte-a-las-vegas-/10875533/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-19T08:41:58+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 21.6,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 | Hamilton rimanda il discorso sul futuro: \"Al rinnovo non ho ancora pensato\"",
+   "estratto": "Il futuro di Lewis Hamilton in Ferrari non è ancora un argomento sul tavolo delle discussioni tra il sette volte campione del mondo e la Scuderia. Alla vigilia del Gran Premio di Las Vegas, il…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-hamilton-rimanda-il-discorso-sul-futuro-al-rinnovo-non-ho-ancora-pensato-/10875530/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-19T08:16:14+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 11.5,
+   "testate": 1
+  },
+  {
+   "titolo": "Marquez a un passo dal titolo. Sprint potenzialmente bagnata a Portimão",
+   "estratto": "Mentre domenica il cielo sarà parzialmente soleggiato, il rischio di precipitazioni è previsto per sabato pomeriggio",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-meteo/marquez-a-un-passo-dal-titolo-sprint-potenzialmente-bagnata-a-portimao",
+   "pubblicato": "2026-11-19T08:11:01+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 8.5,
+   "testate": 2
+  },
+  {
+   "titolo": "Basse temperature nelle notti di Las Vegas",
+   "estratto": "Oltre al rischio di precipitazioni per le prime due sessioni di libere, la colonnina di mercurio scenderà in occasione delle qualifiche e della gara",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-meteo/basse-temperature-nelle-notti-di-las-vegas",
+   "pubblicato": "2026-11-19T07:49:55+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 8.4,
+   "testate": 2
+  },
+  {
+   "titolo": "George Russell non molla: “Voglio chiudere l’annata in maniera solida. A Las Vegas ho sempre fatto bene”",
+   "estratto": "Inizia l’ultima tripletta stagionale e lo fa con il fine settimana del Gran Premio di Las Vegas, ventunesimo e terzultimo appuntamento del Mondiale di F1 2026. Nel caso di George Russell arriva la…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/george-russell-non-molla-la-presa-voglio-chiudere-lannata-in-maniera-solida-a-las-vegas-ho-sempre-fatto-bene/",
+   "pubblicato": "2026-11-19T07:42:33+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 3.3,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP, GP Portogallo 2026: gli orari del fine settimana dalle prove libere alla gara. Guida Sky e TV8",
+   "estratto": "Ci siamo. Tra poco più di 24 ore si alzerà il sipario sull’Autódromo internacional do Algarve di Portimao, circuito teatro questo fine settimana del GP del Portogallo, penultima tappa del…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-gp-portogallo-2026-gli-orari-del-fine-settimana-dalle-prove-libere-alla-gara-guida-sky-e-tv8/",
+   "pubblicato": "2026-11-19T07:35:48+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 6.3,
+   "testate": 3
+  },
+  {
+   "titolo": "F1, GP Las Vegas 2026: gli orari del fine settimana dalle prove libere alla gara. Guida Sky e TV8",
+   "estratto": "La Formula Uno si appresta ad affrontare il trittico conclusivo della stagione a partire dal Gran Premio di Las Vegas, che si svilupperà nell’imminente weekend da venerdì 20 a domenica 22 novembre…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/f1-gp-las-vegas-2026-gli-orari-del-fine-settimana-dalle-prove-libere-alla-gara-guida-sky-e-tv8/",
+   "pubblicato": "2026-11-19T07:30:21+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 6.3,
+   "testate": 3
+  },
+  {
+   "titolo": "Lewis Hamilton: “A Las Vegas il freddo sarà ancora più insidioso. La priorità è il secondo posto tra i costruttori”",
+   "estratto": "Lewis Hamilton arriva a Las Vegas con la voglia di chiudere in bellezza e con un nemico dichiarato: il freddo del Nevada. Alla vigilia del Gran Premio, 21° appuntamento del Mondiale 2026 di F1, il…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/lewis-hamilton-a-las-vegas-il-freddo-sara-ancora-piu-insidioso-la-priorita-e-il-secondo-posto-tra-i-costruttori/",
+   "pubblicato": "2026-11-19T07:22:04+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 13.3,
+   "testate": 2
+  },
+  {
+   "titolo": "Kimi Antonelli verso Las Vegas: “Guadagno minimo con il nuovo motore. Sull’aiutare Russell…”",
+   "estratto": "Andrea Kimi Antonelli dà il via con un sorriso serafico al suo fine settimana del Gran Premio di Las Vegas, ventunesimo e terzultimo appuntamento del Mondiale di Formula Uno 2026. Nella città…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/kimi-antonelli-verso-las-vegas-guadagno-minimo-con-il-nuovo-motore-sullaiutare-russell/",
+   "pubblicato": "2026-11-19T07:18:58+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 31.2,
+   "testate": 3
+  },
+  {
+   "titolo": "Charles Leclerc rivela: “Gomme e basse temperature la vera sfida a Las Vegas. Con Hamilton tutto chiarito”",
+   "estratto": "A Las Vegas il freddo fa più paura della concorrenza. Alla vigilia del Gran Premio, 21° appuntamento del Mondiale 2026 di F1, Charles Leclerc ha incontrato la stampa nell’hospitality della Scuderia…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/charles-leclerc-rivela-gomme-e-basse-temperature-la-vera-sfida-a-las-vegas-con-hamilton-tutto-chiarito/",
+   "pubblicato": "2026-11-19T07:11:50+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 23.2,
+   "testate": 3
+  },
+  {
+   "titolo": "GP Las Vegas 2026: orari Sky/Now e TV8",
+   "estratto": "I dettagli della programmazione televisiva dell'appuntamento in programma sul circuito cittadino nel Nevada",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-las-vegas-2026-televisione-diretta-sky-differita-tv8-programmazione-dove-vederla-ferrari-leclerc-hamilton-antonelli-verstappen",
+   "pubblicato": "2026-11-19T07:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 6.2,
+   "testate": 3
+  },
+  {
+   "titolo": "GP Portogallo 2026: orari Sky/Now e TV8",
+   "estratto": "A Portimao Marc Marquez ha la grande occasione per vincere il decimo titolo mondiale con una gara d'anticipo",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-orari/gp-portogallo-portimao-2026-orari-diretta-sky-differita-tv8-programmazione-televisione-dove-vederla-marquez-decimo-titolo-sorpasso-rossi-bezzecchi-martin",
+   "pubblicato": "2026-11-19T07:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -3.8,
+   "testate": 2
+  },
+  {
+   "titolo": "Verstappen e i V8 dal 2030: “Bene, io vorrei i V10 senza turbo, ma faremmo troppo rumore e dovremmo poter fare rifornimento ai box”",
+   "estratto": "L'olandese si 'accontenta'",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/motori-v8-f1-2030-verstappen-vorrei-v10-senza-turbo-ma-servirebbero-rifornimenti",
+   "pubblicato": "2026-11-19T06:40:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 3.1,
+   "testate": 1
+  },
+  {
+   "titolo": "Battiti cardiaci in tempo reale trasmessi in tv dal 2027, Verstappen si nega: “Non voglio far vedere certe informazioni su di me”",
+   "estratto": "La F1 ha stretto un accordo con WHOOP",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/battiti-cardiaci-tv-tempo-reale-verstappen-si-nega-non-voglio-far-vedere-informazioni-su-di-me",
+   "pubblicato": "2026-11-19T06:30:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": -9.0,
+   "testate": 1
+  },
+  {
+   "titolo": "Ecclestone insiste: “Elkann e Vasseur senza coraggio e indecisi. Ferrari riprenda Sainz”",
+   "estratto": "Il manager britannico ha ancora il mirino puntato su Maranello",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/ecclestone-insiste-elkann-vasseur-senza-coraggio-indecisi-ferrari-riprenda-sainz",
+   "pubblicato": "2026-11-19T06:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 10.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Il ‘team Verstappen’ cambia ancora: lascia Jon Caller, il capo meccanico di Max",
+   "estratto": "Il crew chief dell'olandese lascerà la F1 per approdare nel campionato WEC con Ford",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/il-team-verstappen-cambia-ancora-lascia-jon-caller-il-capo-meccanico-di-max",
+   "pubblicato": "2026-11-19T06:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": -2.1,
+   "testate": 1
+  },
+  {
+   "titolo": "Button stupito da Alonso: “La sua dedizione al motorsport è innegabile. Non so come faccia”",
+   "estratto": "Il campione del mondo 2009 ha elogiato le qualità dello spagnolo, capace di esprimersi ancora ai massimi livelli a 45 anni d'età",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/button-stupito-da-alonso-sua-dedizione-al-motorsport-e-innegabile-non-so-come-faccia",
+   "pubblicato": "2026-11-19T06:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 2.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Carlos Sainz a Las Vegas per il suo 250° GP in Formula 1: “Provo un senso di orgoglio”",
+   "estratto": "In un'intervista a F1.com, lo spagnolo ha ripercorso i momenti della sua carriera, dal debutto in Toro Rosso alle vittorie in Ferrari, fino all'attuale esperienza in Williams",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/sainz-las-vegas-per-250-gp-provo-senso-di-orgoglio",
+   "pubblicato": "2026-11-19T06:00:00+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 11.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Acosta implacabile: “La prima vittoria? L’ho sognata tanto, ma non mi basta. Io voglio molto di più”",
+   "estratto": "Quest'anno lo spagnolo ha finalmente centrato il primo successo in MotoGP, ma la sua emozione è stata meno intensa del previsto",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/acosta-implacabile-prima-vittoria-sognata-tanto-ma-non-mi-basta-voglio-molto-di-piu",
+   "pubblicato": "2026-11-19T06:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 2.9,
+   "testate": 1
+  },
   {
    "titolo": "MotoGP, GP Portogallo 2026 su TV8: orari in chiaro fine settimana, qualifiche e gara",
    "estratto": "Il Gran Premio di Portogallo di MotoGP si disputerà dal 20 al 22 novembre. La Sprint del penultimo atto dell’edizione 2026 del Motomondiale comincerà alle ore 16:00 del nostro Paese di sabato 21…",
@@ -10,7 +538,7 @@
    "pubblicato": "2026-11-19T04:10:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.7,
+   "punteggio": 5.5,
    "testate": 3
   },
   {
@@ -22,7 +550,7 @@
    "pubblicato": "2026-11-19T04:05:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.6,
+   "punteggio": 5.4,
    "testate": 3
   },
   {
@@ -34,7 +562,7 @@
    "pubblicato": "2026-11-18T21:27:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.0,
+   "punteggio": 5.8,
    "testate": 2
   },
   {
@@ -46,7 +574,7 @@
    "pubblicato": "2026-11-18T20:16:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.7,
+   "punteggio": 5.5,
    "testate": 2
   },
   {
@@ -58,8 +586,8 @@
    "pubblicato": "2026-11-18T18:13:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.8,
-   "testate": 1
+   "punteggio": 5.0,
+   "testate": 2
   },
   {
    "titolo": "Montezemolo: “Non andare in Ferrari è stata la fortuna di Antonelli. A Maranello non avrebbe potuto fare ciò che ha fatto”",
@@ -70,7 +598,7 @@
    "pubblicato": "2026-11-18T18:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 20.1,
+   "punteggio": 17.9,
    "testate": 2
   },
   {
@@ -82,20 +610,8 @@
    "pubblicato": "2026-11-18T17:52:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.1,
+   "punteggio": 4.9,
    "testate": 2
-  },
-  {
-   "titolo": "Toto Wolff entusiasta del finale tra Qatar e Abu Dhabi: “Merito del grande lavoro di FIA e F1”",
-   "estratto": "Il manager austriaco è soddisfatto dello sforzo profuso dagli organizzatori del Mondiale per rispettare il finale di stagione",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/toto-wolff-entusiasta-del-finale-tra-qatar-e-abu-dhabi-merito-del-grande-lavoro-di-fia-e-f1",
-   "pubblicato": "2026-11-18T17:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 1.9,
-   "testate": 1
   },
   {
    "titolo": "MotoGP | Marc Marquez campione del mondo nella Sprint di Portimao: ecco tutte le combinazioni",
@@ -106,7 +622,7 @@
    "pubblicato": "2026-11-18T16:44:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.8,
+   "punteggio": 14.6,
    "testate": 3
   },
   {
@@ -118,19 +634,7 @@
    "pubblicato": "2026-11-18T16:00:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.4,
-   "testate": 1
-  },
-  {
-   "titolo": "McLaren, la MCL41 non c’è…ma va già all’asta",
-   "estratto": "Ripetendo l'esperimento del 2025, la McLaren metterà all'asta la vettura del 2027, con power unit Mercedes conforme ai nuovi regolamenti",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/mclaren-la-mcl41-non-ce-ma-va-gia-allasta",
-   "pubblicato": "2026-11-18T16:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -3.4,
+   "punteggio": -5.6,
    "testate": 1
   },
   {
@@ -142,7 +646,7 @@
    "pubblicato": "2026-11-18T14:45:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.3,
+   "punteggio": -0.9,
    "testate": 1
   },
   {
@@ -154,7 +658,7 @@
    "pubblicato": "2026-11-18T14:39:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.3,
+   "punteggio": 17.1,
    "testate": 2
   },
   {
@@ -166,11 +670,11 @@
    "pubblicato": "2026-11-18T14:35:55+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.3,
+   "punteggio": -0.9,
    "testate": 1
   },
   {
-   "titolo": "MotoGP | Mir salta a GP del Portogallo: Honda richiama Jake Dixon",
+   "titolo": "MotoGP | Mir salta il GP del Portogallo: Honda richiama Jake Dixon",
    "estratto": "Jake Dixon farà la sua seconda apparizione consecutiva nella stagione MotoGP 2026 al Gran Premio del Portogallo di questo fine settimana, con la malattia che continua a tenere fuori il pilota…",
    "fonte": "Motorsport.com",
    "serie": "MotoGP",
@@ -178,7 +682,7 @@
    "pubblicato": "2026-11-18T14:08:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.8,
+   "punteggio": -6.0,
    "testate": 1
   },
   {
@@ -190,7 +694,7 @@
    "pubblicato": "2026-11-18T13:45:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.1,
+   "punteggio": -1.1,
    "testate": 1
   },
   {
@@ -202,43 +706,7 @@
    "pubblicato": "2026-11-18T13:05:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.9,
-   "testate": 1
-  },
-  {
-   "titolo": "Williams, testa al 2027: “Da Baku nessun aggiornamento, decisione difficile”",
-   "estratto": "La Williams ha rinunciato da tempo a sviluppare la FW48, preferendo risparmiare risorse per il prossimo campionato",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/williams-testa-al-2027-da-baku-nessun-aggiornamento-decisione-difficile-vowles",
-   "pubblicato": "2026-11-18T13:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 0.9,
-   "testate": 1
-  },
-  {
-   "titolo": "La FIA vuole cambiare la regola sul limite di potenza elettrica dopo le lamentele di Hamilton",
-   "estratto": "In Messico, Lewis Hamilton si è lamentato di quanto fosse complesso passare Max Verstappen: c'è un tema anche tecnico che la FIA vuole modificare",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/fia-vuole-cambiare-regola-limite-potenza-elettrica-lamentele-lewis-hamilton-messico",
-   "pubblicato": "2026-11-18T12:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -4.4,
-   "testate": 1
-  },
-  {
-   "titolo": "Bottas, il 2027 è in bilico: “Situazione spiacevole, non ho firmato per questo”",
-   "estratto": "La frustrazione di Valtteri Bottas riguardante le incertezze sul suo futuro",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/bottas-il-2027-e-in-bilico-situazione-spiacevole-non-ho-firmato-per-questo-cadillac-perez",
-   "pubblicato": "2026-11-18T11:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 0.4,
+   "punteggio": 1.7,
    "testate": 1
   },
   {
@@ -250,7 +718,7 @@
    "pubblicato": "2026-11-18T10:53:33+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.3,
+   "punteggio": 6.1,
    "testate": 1
   },
   {
@@ -262,7 +730,7 @@
    "pubblicato": "2026-11-18T10:45:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.3,
+   "punteggio": 1.1,
    "testate": 1
   },
   {
@@ -274,7 +742,7 @@
    "pubblicato": "2026-11-18T10:45:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.3,
+   "punteggio": 1.1,
    "testate": 1
   },
   {
@@ -286,7 +754,7 @@
    "pubblicato": "2026-11-18T10:28:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.8,
+   "punteggio": -7.0,
    "testate": 1
   },
   {
@@ -298,7 +766,7 @@
    "pubblicato": "2026-11-18T10:03:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.1,
+   "punteggio": 7.9,
    "testate": 2
   },
   {
@@ -310,20 +778,8 @@
    "pubblicato": "2026-11-18T10:00:10+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.1,
+   "punteggio": 2.9,
    "testate": 2
-  },
-  {
-   "titolo": "Gasly: “Abbiamo bisogno di ottenere un buon risultato a Las Vegas dopo settimane difficili”",
-   "estratto": "Il francese ha indicato i principali obiettivi della squadra per il weekend nel Nevada, dove l'A526 scenderà in pista con un look speciale",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/gasly-abbiamo-bisogno-di-ottenere-un-buon-risultato-a-las-vegas-dopo-settimane-difficili",
-   "pubblicato": "2026-11-18T10:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 0.1,
-   "testate": 1
   },
   {
    "titolo": "F1 | McLaren, Stella spiega la parabola del 2026: \"Non abbiamo fatto passi indietro\"",
@@ -334,7 +790,7 @@
    "pubblicato": "2026-11-18T09:41:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.0,
+   "punteggio": -2.2,
    "testate": 1
   },
   {
@@ -346,7 +802,7 @@
    "pubblicato": "2026-11-18T09:00:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.1,
+   "punteggio": -7.3,
    "testate": 1
   },
   {
@@ -358,20 +814,8 @@
    "pubblicato": "2026-11-18T08:43:45+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.8,
+   "punteggio": 12.6,
    "testate": 3
-  },
-  {
-   "titolo": "La Williams FW48 a Las Vegas con una livrea speciale cromata",
-   "estratto": "La vettura del team di Grove scenderà in pista sulla Strip anche con alcune parti in carbonio a vista",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/williams-fw48-a-las-vegas-con-una-livrea-speciale-cromata",
-   "pubblicato": "2026-11-18T08:33:35+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -5.2,
-   "testate": 1
   },
   {
    "titolo": "MotoGP, Marco Bezzecchi è un “Dr. Jekyll e Mr.Hyde”. Le Sprint il tallone d’Achille su cui agire per poter essere un pilota da Mondiale",
@@ -382,116 +826,8 @@
    "pubblicato": "2026-11-18T08:15:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.7,
+   "punteggio": 5.5,
    "testate": 1
-  },
-  {
-   "titolo": "Verstappen: “A Las Vegas sarà cruciale gestire correttamente l’energia e gli pneumatici”",
-   "estratto": "L'olandese, reduce dal 2° posto in Brasile conquistato davanti al compagno di squadra Hadjar, ha indicato gli elementi principali per il GP nel Nevada",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/verstappen-las-vegas-sara-cruciale-gestire-correttamente-energia-pneumatici",
-   "pubblicato": "2026-11-18T08:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -0.4,
-   "testate": 1
-  },
-  {
-   "titolo": "Allison: “Antonelli fa la differenza su Russell in ingresso curva, è lo stesso motivo per cui Hamilton è rinato con le F1 2026”",
-   "estratto": "L'italiano e il sette volte iridato si sono trovati a loro agio con questo nuovo regolamento a differenza di altri piloti",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/allison-svela-segreto-antonelli-hamilton-f1-2026-ingresso-curva-gestione-posteriore-russell",
-   "pubblicato": "2026-11-18T08:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 7.6,
-   "testate": 1
-  },
-  {
-   "titolo": "10 posizioni di penalità in griglia a Las Vegas per Oscar Piastri: monta il turbo Mercedes con ADUO al pari di Norris e delle Alpine",
-   "estratto": "L'australiano dovrà correre in rimonta",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/gp-las-vegas-piastri-10-posizioni-penalita-griglia-partenza-power-unit-turbo-mercedes-aduo",
-   "pubblicato": "2026-11-18T07:30:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 14.5,
-   "testate": 3
-  },
-  {
-   "titolo": "Ferrari in difesa: a Las Vegas ci sarà da soffrire",
-   "estratto": "I lunghi rettilinei del Nevada faranno pensare la mancanza di spinta dalla power unit del Cavallino, anche con le soluzioni viste a Monza",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/ferrari-difesa-las-vegas-ci-sara-da-soffrire",
-   "pubblicato": "2026-11-18T07:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 2.4,
-   "testate": 1
-  },
-  {
-   "titolo": "Ecclestone: “La Ferrari avrebbe dovuto vincere il mondiale. Vasseur pensa tutto il giorno al team?”",
-   "estratto": "Per il manager britannico alla Ferrari sarebbe necessaria una personalità molto forte",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/ecclestone-ferrari-avrebbe-dovuto-vincere-mondiale-vasseur",
-   "pubblicato": "2026-11-18T07:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 7.4,
-   "testate": 1
-  },
-  {
-   "titolo": "Antonelli: “Mi aspetto un Russell feroce e spietato nel 2027”",
-   "estratto": "Kimi sarà l’uomo da battere Andrea Kimi Antonelli non sfoggerà il numero #1 sul musetto della sua Mercedes W18 nel 2027, ma partirà automaticamente con l’etichetta di uomo da battere dal momento che…",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/antonelli-aspetto-russell-feroce-spietato-2027-mercedes-verstappen-hamilton-poesia",
-   "pubblicato": "2026-11-18T07:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 7.4,
-   "testate": 1
-  },
-  {
-   "titolo": "Wolff e la tradizione tricolore in Mercedes: “In palestra e al ristorante sono circondato da italiani, Kimi ha contagiato pure Bono”",
-   "estratto": "A Brackley si parla italiano",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/toto-wolff-antonelli-kimi-esponente-anima-italiana-ferrari-aldo-costa-simone-resta-bono-palestra-ristorante",
-   "pubblicato": "2026-11-18T07:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -0.6,
-   "testate": 1
-  },
-  {
-   "titolo": "GP Las Vegas 2026: orari Sky/Now e TV8",
-   "estratto": "I dettagli della programmazione televisiva dell'appuntamento in programma sul circuito cittadino nel Nevada",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-orari/orari-tv-gp-las-vegas-2026-televisione-diretta-sky-differita-tv8-programmazione-dove-vederla-ferrari-leclerc-hamilton-antonelli-verstappen",
-   "pubblicato": "2026-11-18T07:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 2.4,
-   "testate": 3
-  },
-  {
-   "titolo": "GP Portogallo 2026: orari Sky/Now e TV8",
-   "estratto": "A Portimao Marc Marquez ha la grande occasione per vincere il decimo titolo mondiale con una gara d'anticipo",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-orari/gp-portogallo-portimao-2026-orari-diretta-sky-differita-tv8-programmazione-televisione-dove-vederla-marquez-decimo-titolo-sorpasso-rossi-bezzecchi-martin",
-   "pubblicato": "2026-11-18T07:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -7.6,
-   "testate": 2
   },
   {
    "titolo": "F1, nuova rivoluzione dal 2030: addio ai motori attuali dopo sole 4 stagioni",
@@ -502,7 +838,7 @@
    "pubblicato": "2026-11-18T06:50:34+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.7,
+   "punteggio": -7.9,
    "testate": 1
   },
   {
@@ -514,7 +850,7 @@
    "pubblicato": "2026-11-18T05:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.9,
+   "punteggio": -0.3,
    "testate": 1
   },
   {
@@ -526,7 +862,7 @@
    "pubblicato": "2026-11-17T21:47:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.1,
+   "punteggio": 7.9,
    "testate": 2
   },
   {
@@ -538,7 +874,7 @@
    "pubblicato": "2026-11-17T21:17:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.9,
+   "punteggio": 17.7,
    "testate": 3
   },
   {
@@ -550,7 +886,7 @@
    "pubblicato": "2026-11-17T21:14:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.1,
+   "punteggio": -2.3,
    "testate": 1
   },
   {
@@ -562,8 +898,8 @@
    "pubblicato": "2026-11-17T19:29:10+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.5,
-   "testate": 3
+   "punteggio": 7.3,
+   "testate": 2
   },
   {
    "titolo": "\"Antonelli? Una fortuna non sia andato alla Ferrari. In futuro...\": Montezemolo punge la Rossa",
@@ -574,8 +910,8 @@
    "pubblicato": "2026-11-17T18:58:31+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.4,
-   "testate": 3
+   "punteggio": 12.2,
+   "testate": 2
   },
   {
    "titolo": "Acosta si prepara alla stagione della svolta: “In Ducati con Marquez imparerò tanto. Ma è prematuro pensare al titolo”",
@@ -586,8 +922,8 @@
    "pubblicato": "2026-11-17T18:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.1,
-   "testate": 2
+   "punteggio": 21.9,
+   "testate": 3
   },
   {
    "titolo": "MotoGP | Martin si aggrappa alla speranza: \"Arrivo in Portogallo in condizioni fisiche decisamente migliori\"",
@@ -598,8 +934,8 @@
    "pubblicato": "2026-11-17T17:32:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.0,
-   "testate": 2
+   "punteggio": 13.8,
+   "testate": 3
   },
   {
    "titolo": "F1 | Cadillac svela la livrea celebrativa che userà al GP di Las Vegas: è ispirata alle luci della Strip",
@@ -610,43 +946,7 @@
    "pubblicato": "2026-11-17T17:06:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.9,
-   "testate": 2
-  },
-  {
-   "titolo": "La Cadillac fa tre su tre nei GP negli USA: anche a Las Vegas c’è una livrea speciale",
-   "estratto": "Il team americano battezza anche la terza gara su suolo statunitense con una colorazione speciale, stavolta per omaggiare gli sforzi ingegneristici di questa (complicatissima) stagione d'esordio",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/cadillac-f1-tre-su-tre-gp-stati-uniti-anche-las-vegas-livrea-speciale-omaggio-ingegneria",
-   "pubblicato": "2026-11-17T17:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 0.9,
-   "testate": 2
-  },
-  {
-   "titolo": "Verstappen: “Antonelli talento speciale, può solo migliorare. Ma non ho bisogno di lui per essere motivato”",
-   "estratto": "L'olandese ha parlato del suo legame con il nuovo campione e della sua stima per lui, ma non vede Kimi come una extra-motivazione",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/verstappen-antonelli-talento-speciale-puo-solo-migliorare-ma-non-ho-bisogno-di-lui-per-essere-motivato",
-   "pubblicato": "2026-11-17T17:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 3.9,
-   "testate": 1
-  },
-  {
-   "titolo": "I motori V8 tornano nel 2030! Raggiunto accordo di massima tra FIA, FOM e motoristi",
-   "estratto": "La FIA ha ufficializzato il raggiungimento di un'intesa per il ritorno dei motori V8 in F1 a partire dal Mondiale 2030",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/ufficiale-tornano-motori-v8-nel-2030-raggiunto-accordo-di-massima-tra-fia-fom-e-motoristi",
-   "pubblicato": "2026-11-17T16:23:28+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -9.3,
+   "punteggio": -6.3,
    "testate": 1
   },
   {
@@ -658,7 +958,7 @@
    "pubblicato": "2026-11-17T15:30:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.5,
+   "punteggio": 11.3,
    "testate": 2
   },
   {
@@ -670,7 +970,7 @@
    "pubblicato": "2026-11-17T15:00:48+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -4.6,
+   "punteggio": -6.8,
    "testate": 1
   },
   {
@@ -682,7 +982,7 @@
    "pubblicato": "2026-11-17T14:33:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.3,
+   "punteggio": 11.1,
    "testate": 2
   },
   {
@@ -694,8 +994,8 @@
    "pubblicato": "2026-11-17T14:31:12+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.2,
-   "testate": 3
+   "punteggio": 6.1,
+   "testate": 2
   },
   {
    "titolo": "MotoGP, Alex Marquez atteso dal ritorno nel GP del Portogallo",
@@ -706,7 +1006,7 @@
    "pubblicato": "2026-11-17T14:13:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.8,
+   "punteggio": -12.0,
    "testate": 1
   },
   {
@@ -718,7 +1018,7 @@
    "pubblicato": "2026-11-17T14:07:10+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.9,
+   "punteggio": -12.0,
    "testate": 1
   },
   {
@@ -730,7 +1030,7 @@
    "pubblicato": "2026-11-17T13:45:44+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.9,
+   "punteggio": -4.1,
    "testate": 1
   },
   {
@@ -742,7 +1042,7 @@
    "pubblicato": "2026-11-17T13:00:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.9,
+   "punteggio": 5.7,
    "testate": 2
   },
   {
@@ -754,7 +1054,7 @@
    "pubblicato": "2026-11-17T12:00:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.4,
+   "punteggio": -12.6,
    "testate": 1
   },
   {
@@ -766,8 +1066,8 @@
    "pubblicato": "2026-11-17T12:00:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.6,
-   "testate": 2
+   "punteggio": 15.4,
+   "testate": 3
   },
   {
    "titolo": "“Hamilton una lagna. Antonelli in Ferrari? Dopo i 50 anni…”: Ecclestone al veleno",
@@ -778,8 +1078,8 @@
    "pubblicato": "2026-11-17T11:18:04+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.4,
-   "testate": 2
+   "punteggio": 0.2,
+   "testate": 1
   },
   {
    "titolo": "MotoGP | David Alonso ha provato la Honda in un test privato a Sepang",
@@ -790,7 +1090,7 @@
    "pubblicato": "2026-11-17T11:02:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.6,
+   "punteggio": -12.8,
    "testate": 1
   },
   {
@@ -802,7 +1102,7 @@
    "pubblicato": "2026-11-17T10:25:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.2,
+   "punteggio": 0.0,
    "testate": 1
   },
   {
@@ -814,7 +1114,7 @@
    "pubblicato": "2026-11-17T10:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.2,
+   "punteggio": 2.0,
    "testate": 2
   },
   {
@@ -826,32 +1126,8 @@
    "pubblicato": "2026-11-17T09:59:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.9,
-   "testate": 1
-  },
-  {
-   "titolo": "Bernie Ecclestone al veleno: “Hamilton lamentoso, Antonelli in Ferrari? Dopo i 50 anni…”",
-   "estratto": "Novant’anni e passa, e la lingua affilata come un rasoio. Bernie Ecclestone non ha mai imparato a girare intorno alle cose, e nemmeno adesso che il circo se lo guarda da lontano ha intenzione di…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/bernie-ecclestone-al-veleno-hamilton-lamentoso-antonelli-in-ferrari-dopo-i-50-anni/",
-   "pubblicato": "2026-11-17T09:45:52+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 12.1,
-   "testate": 2
-  },
-  {
-   "titolo": "F1, i precedenti della Ferrari nel GP di Las Vegas. Pole e podi ci sono, manca solo la vittoria",
-   "estratto": "La Ferrari e Las Vegas hanno una relazione contraddittoria, cambiata in maniera radicale a seconda delle epoche. La Scuderia di Maranello e la città del Nevada sono tutto sommato in buoni rapporti…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/f1-i-precedenti-della-ferrari-nel-gp-di-las-vegas-pole-e-podi-ci-sono-manca-solo-la-vittoria/",
-   "pubblicato": "2026-11-17T09:00:06+00:00",
-   "tipo": null,
-   "citazione": false,
    "punteggio": -3.1,
-   "testate": 1
+   "testate": 2
   },
   {
    "titolo": "Gresini conferma: Alex Marquez tornerà in pista a Portimao",
@@ -862,7 +1138,7 @@
    "pubblicato": "2026-11-17T08:23:45+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.3,
+   "punteggio": -13.5,
    "testate": 1
   },
   {
@@ -874,7 +1150,7 @@
    "pubblicato": "2026-11-17T08:22:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.3,
+   "punteggio": -5.5,
    "testate": 1
   },
   {
@@ -886,8 +1162,8 @@
    "pubblicato": "2026-11-17T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.6,
-   "testate": 2
+   "punteggio": -5.8,
+   "testate": 3
   },
   {
    "titolo": "Verstappen avverte Antonelli: “Sono io il più forte”",
@@ -898,7 +1174,7 @@
    "pubblicato": "2026-11-17T05:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.9,
+   "punteggio": 8.7,
    "testate": 2
   },
   {
@@ -910,8 +1186,8 @@
    "pubblicato": "2026-11-16T17:44:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.1,
-   "testate": 2
+   "punteggio": -5.1,
+   "testate": 1
   },
   {
    "titolo": "F1 | Aston Martin svela la livrea ideata per il Gran Premio di Las Vegas",
@@ -922,20 +1198,8 @@
    "pubblicato": "2026-11-16T16:39:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -6.2,
-   "testate": 1
-  },
-  {
-   "titolo": "Patrese esalta Kimi Antonelli: “Prende ancora la paghetta, ha la testa sulle spalle per diventare più forte”",
-   "estratto": "Il talento non basta, servono esperienza, maturità e continuità. Kimi Antonelli ha ancora tanta strada da percorrere, ma le qualità mostrate in F1 hanno già convinto Riccardo Patrese. L’ex pilota…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/patrese-esalta-kimi-antonelli-prende-ancora-la-paghetta-ha-la-testa-sulle-spalle-per-diventare-piu-forte/",
-   "pubblicato": "2026-11-16T14:25:12+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 1.2,
-   "testate": 1
+   "punteggio": 1.6,
+   "testate": 2
   },
   {
    "titolo": "MotoGP | Acosta: \"È presto per pensare di vincere il titolo nel 2027\"",
@@ -946,7 +1210,7 @@
    "pubblicato": "2026-11-16T14:03:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.1,
+   "punteggio": 0.9,
    "testate": 2
   },
   {
@@ -958,20 +1222,8 @@
    "pubblicato": "2026-11-16T14:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.9,
+   "punteggio": -14.1,
    "testate": 1
-  },
-  {
-   "titolo": "F1, Rafael Camara confermato in Haas per Las Vegas: valzer di piloti nel team americano",
-   "estratto": "Per il Gran Premio di Las Vegas 2026 la Haas conferma Rafael Câmara al fianco di Oliver Bearman, ma nel corso del weekend impiegherà tre piloti complessivi: nelle prime prove libere, infatti, la…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/f1-rafael-camara-confermato-in-haas-per-las-vegas-valzer-di-piloti-nel-team-americano/",
-   "pubblicato": "2026-11-16T13:18:17+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -2.1,
-   "testate": 2
   },
   {
    "titolo": "MotoGP, assenze e infortuni ormai dominano la scena. La situazione rischia di rovinare ulteriormente il giocattolo",
@@ -982,7 +1234,7 @@
    "pubblicato": "2026-11-16T12:47:54+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.2,
+   "punteggio": -14.4,
    "testate": 1
   },
   {
@@ -994,7 +1246,7 @@
    "pubblicato": "2026-11-16T12:26:10+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.7,
+   "punteggio": 3.5,
    "testate": 2
   },
   {
@@ -1006,7 +1258,7 @@
    "pubblicato": "2026-11-16T12:08:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.3,
+   "punteggio": -14.5,
    "testate": 1
   },
   {
@@ -1018,7 +1270,7 @@
    "pubblicato": "2026-11-16T11:58:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.6,
+   "punteggio": 3.4,
    "testate": 2
   },
   {
@@ -1030,7 +1282,7 @@
    "pubblicato": "2026-11-16T11:45:49+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.6,
+   "punteggio": 13.4,
    "testate": 3
   },
   {
@@ -1042,19 +1294,7 @@
    "pubblicato": "2026-11-16T10:09:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -7.8,
-   "testate": 1
-  },
-  {
-   "titolo": "McLaren alza l’asticella in vista di Las Vegas: sviluppi in chiave 2027, guanto di sfida ad Antonelli",
-   "estratto": "C’era bisogno di un successo così, a Woking. Non soltanto per il sorriso ritrovato, ma per un’altra ragione, più concreta: la vittoria di Lando Norris a Interlagos ha detto alla McLaren che la strada…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/mclaren-alza-lasticella-in-vista-di-las-vegas-sviluppi-in-chiave-2027-guanto-di-sfida-ad-antonelli/",
-   "pubblicato": "2026-11-16T09:28:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -5.0,
+   "punteggio": -10.0,
    "testate": 1
   },
   {
@@ -1066,8 +1306,8 @@
    "pubblicato": "2026-11-16T09:14:34+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.1,
-   "testate": 2
+   "punteggio": -15.3,
+   "testate": 1
   },
   {
    "titolo": "Wolff si lascia andare: \"Kimi Antonelli sarà più amato di Schumi. Sarà come Senna\"",
@@ -1078,19 +1318,7 @@
    "pubblicato": "2026-11-16T09:09:43+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.9,
-   "testate": 2
-  },
-  {
-   "titolo": "Toto Wolff sul futuro in Ferrari di Kimi Antonelli: “Le possibilità sono zero virgola zero”",
-   "estratto": "Il ritorno di un pilota italiano sul tetto del mondo della F1, a distanza di 73 anni dall’ultimo trionfo di Alberto Ascari nel 1953, ha inevitabilmente riacceso l’entusiasmo del pubblico italiano. La…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/toto-wolff-sul-futuro-in-ferrari-di-kimi-antonelli-le-possibilita-sono-zero-virgola-zero/",
-   "pubblicato": "2026-11-16T09:03:23+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 9.9,
+   "punteggio": 7.7,
    "testate": 2
   },
   {
@@ -1102,7 +1330,7 @@
    "pubblicato": "2026-11-16T08:57:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -15.1,
+   "punteggio": -17.3,
    "testate": 2
   },
   {
@@ -1114,20 +1342,8 @@
    "pubblicato": "2026-11-16T08:25:40+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.7,
+   "punteggio": 0.5,
    "testate": 3
-  },
-  {
-   "titolo": "F1, il “Grande Mistero” della Ferrari contemporanea. Non si riesce mai ad avere una stagione intera ad altissimo livello. Come è possibile?",
-   "estratto": "A corollario di quanto scritto nella giornata di ieri, sorge spontanea una riflessione. Ossia, come è possibile che la Ferrari non riesca da tempo immemore a disputare un’intera stagione di alto…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/f1-il-grande-mistero-della-ferrari-contemporanea-non-si-riesce-mai-ad-avere-una-stagione-intera-ad-altissimo-livello-come-e-possibile/",
-   "pubblicato": "2026-11-16T08:15:43+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -0.3,
-   "testate": 1
   },
   {
    "titolo": "Niente decurtazione di punti per Yamaha, ma Dorna vuole redistribuire la multa alle altre case che sono andate in Qatar come premio",
@@ -1138,7 +1354,7 @@
    "pubblicato": "2026-11-16T07:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.5,
+   "punteggio": -15.7,
    "testate": 1
   },
   {
@@ -1150,19 +1366,7 @@
    "pubblicato": "2026-11-16T04:10:22+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.3,
-   "testate": 3
-  },
-  {
-   "titolo": "F1, GP Las Vegas 2026: programma, orari, tv, streaming, guida SKY e TV8",
-   "estratto": "Con i titoli mondiali Costruttori e Piloti già assegnati alla Mercedes e a Kimi Antonelli, la F1 si prepara a fare tappa a Las Vegas per il ventunesimo appuntamento stagionale. Dal 20 al 22 novembre…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/f1-gp-las-vegas-2026-programma-orari-tv-streaming-guida-sky-e-tv8/",
-   "pubblicato": "2026-11-16T04:05:06+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 1.6,
+   "punteggio": -8.5,
    "testate": 3
   },
   {
@@ -1174,7 +1378,7 @@
    "pubblicato": "2026-11-15T16:59:18+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.1,
+   "punteggio": -11.3,
    "testate": 1
   },
   {
@@ -1186,7 +1390,7 @@
    "pubblicato": "2026-11-15T15:59:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -17.4,
+   "punteggio": -19.6,
    "testate": 1
   },
   {
@@ -1198,7 +1402,7 @@
    "pubblicato": "2026-11-15T14:00:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -17.9,
+   "punteggio": -20.1,
    "testate": 1
   },
   {
@@ -1210,7 +1414,7 @@
    "pubblicato": "2026-11-15T11:34:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -18.5,
+   "punteggio": -20.7,
    "testate": 1
   },
   {
@@ -1222,7 +1426,7 @@
    "pubblicato": "2026-11-15T10:45:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.7,
+   "punteggio": -12.9,
    "testate": 1
   },
   {
@@ -1234,211 +1438,7 @@
    "pubblicato": "2026-11-15T09:59:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -13.9,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | I numeri che rivelano come le Sprint abbiano ribaltato la lotta per il titolo",
-   "estratto": "La corsa al titolo della MotoGP si avvia verso un epilogo scontato al Gran Premio del Portogallo della prossima settimana, con Marc Marquez ormai quasi certo di conquistare la sua 10° corona…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-i-numeri-che-rivelano-come-le-sprint-abbiano-ribaltato-la-lotta-per-il-titolo/10874377/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-15T09:00:22+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -19.1,
-   "testate": 1
-  },
-  {
-   "titolo": "Niente Qatar, ora che succederà a Yamaha? MotoGP “sorpresa e delusa”, ma le sanzioni spettano alla FIM",
-   "estratto": "La Casa di Iwata potrebbe essere sanzionata per il forfait di Lusail, ma la decisione spetta alla federazione, non alla MotoGP",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/niente-qatar-ora-che-succedera-a-yamaha-motogp-sorpresa-e-delusa-ma-le-sanzioni-spettano-alla-fim",
-   "pubblicato": "2026-11-15T07:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -14.6,
-   "testate": 1
-  },
-  {
-   "titolo": "Kimi Antonelli, il più conveniente nel Circus dei nababbi",
-   "estratto": "Il bolognese è costato appena 9 mila dollari a punto, Alonso 3,4 milioni. Ferrari resta la squadra regina: la sua stima sale a quota 8,2 miliardi",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/15-152597792/kimi_antonelli_il_pi_conveniente_nel_circus_dei_nababbi/",
-   "pubblicato": "2026-11-15T05:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -12.1,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | McLaren: la nuova ala non porta solo carico, ora la MCL40 è più guidabile",
-   "estratto": "Ci sono due aspetti fondamentale nella vittoria centrata dalla McLaren a Interlagos. Il primo, molto più diretto e scontato, è che quest’anno portare aggiornamenti che funzionano continua a fare la…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-mclaren-con-la-nuova-ala-non-ha-trovato-solo-carico/10874542/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-14T17:25:21+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -23.0,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP in Qatar, Ezpeleta: “Scelta giusta, non abbiamo ceduto alla disinformazione”",
-   "estratto": "Il manager spagnolo ha parlato al termine del weekend di Lusail, rivendicando la decisione di correre nonostante tutte le critiche",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/motogp-in-qatar-ezpeleta-scelta-giusta-non-abbiamo-ceduto-alla-disinformazione",
-   "pubblicato": "2026-11-14T15:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -18.6,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Lecuona evidenzia le grandi differenze tra le Ducati GP25 e GP26",
-   "estratto": "Iker Lecuona ha dovuto adattarsi ad una Ducati diversa durante il weekend del Gran Premio del Qatar di MotoGP. Mentre finora aveva guidato la GP25 di Fermin Aldeguer, lo spagnolo è salito sulla moto…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-lecuona-evidenzia-le-grandi-differenze-tra-le-ducati-gp25-e-gp26/10874294/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-14T14:59:57+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -15.6,
-   "testate": 1
-  },
-  {
-   "titolo": "Ralf Schumacher attacca Hamilton: “Mai imparato a guidare una squadra. La Ferrari ha un’eredità di Michael”",
-   "estratto": "Ralf Schumacher ha criticato duramente l’atteggiamento tenuto da Lewis Hamilton nelle ultime settimane e, in un’intervista rilasciata a Sky Sport Deutschland, ha chiaramente dichiarato che il pilota…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/ralf-schumacher-attacca-hamilton-mai-imparato-a-guidare-una-squadra-la-ferrari-ha-uneredita-di-michael/",
-   "pubblicato": "2026-11-14T14:44:53+00:00",
-   "tipo": "intervista",
-   "citazione": true,
-   "punteggio": -9.7,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | La seconda giovinezza di Hamilton: ecco perché ha ritrovato i suoi punti di forza con il regolamento 2026",
-   "estratto": "Più volte nel corso di questa stagione abbiamo raccontato come, alla base del titolo mondiale conquistato da Andrea Kimi Antonelli, non ci sia soltanto una grande dose di talento, ma anche la…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-la-seconda-giovinezza-di-hamilton-dove-ha-ritrovato-i-suoi-punti-di-forza/10874484/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-14T14:04:42+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -15.9,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Mercedes non temeva di non vincere il titolo in Brasile. Allison: \"La Ferrari stava facendo una gara disastrosa\"",
-   "estratto": "Mercedes avrebbe dovuto fare 3 punti in più della Ferrari al Gran Premio del Brasile per assicurarsi il titolo Mondiale Costruttori di Formula 1, e così è stato. Il team di Brackley ha portato a casa…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-mercedes-punge-ferrari-gara-disastrosa-brasile/10874454/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-14T10:42:39+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -11.7,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Come la bandiera rossa del Qatar ha sbloccato i fantasmi di Zarco per lasciarsi alle spalle Barcellona",
-   "estratto": "Johann Zarco ha subito un doppio incidente durante il GP di Catalogna, lo scorso maggio, dal quale si sta ancora riprendendo, sia fisicamente che psicologicamente. Non a caso, l'infortunio al…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-come-la-bandiera-rossa-del-qatar-ha-sbloccato-i-fantasmi-di-zarco-per-lasciarsi-alle-spalle-/10874350/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-14T10:08:07+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -24.8,
-   "testate": 1
-  },
-  {
-   "titolo": "Antonelli e il siparietto con Mattarella: \"Questa condizione nuova mi sollecita molto\"",
-   "estratto": "Il bolognese porta in dono un casco con dedica e saluta con un invito e il Presidente risponde pronto: \"La Formula 1 mi attira adesso\"",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/14-152580265/antonelli_e_il_siparietto_con_mattarella_questa_condizione_nuova_mi_sollecita_molto/",
-   "pubblicato": "2026-11-14T09:06:48+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -12.1,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Kimi Antonelli ricevuto in Quirinale dal Presidente della Repubblica Mattarella",
-   "estratto": "\"Al Presidente Mattarella, con molta ammirazione\", firmato Andrea Kimi Antonelli. Il nuovo campione del mondo di Formula 1 è nel pieno di un turbillon di incontri, eventi e celebrazioni per il titolo…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-kimi-antonelli-ricevuto-in-quirinale-dal-presidente-della-repubblica-mattarella/10874439/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-14T08:42:15+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -7.2,
-   "testate": 2
-  },
-  {
-   "titolo": "Kimi Antonelli da Mattarella al Quirinale: il casco in regalo e l’invito speciale",
-   "estratto": "Il trionfo iridato di Kimi Antonelli fa tappa al Quirinale. Nel pomeriggio odierno, il neocampione del mondo di F1 è stato ricevuto in udienza privata dal Presidente della Repubblica, Sergio…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/kimi-antonelli-da-mattarella-al-quirinale-il-casco-in-regalo-e-linvito-speciale/",
-   "pubblicato": "2026-11-13T20:36:48+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -8,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Aprilia: la RS-GP 2027 mostra soluzioni aerodinamiche innovative sull'ala anteriore",
-   "estratto": "Il test team dell’Aprilia, a conclusione dei due giorni di lavoro dei collaudatori a Jerez con le MotoGP in versione 850 cc, ha posato con Lorenzo Savadori e la RS-GP 2027 in pit lane per una foto da…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-aprilia-la-rs-gp-2027-mostra-soluzioni-aerodinamiche-innovative-sullala-anteriore/10874390/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-13T18:04:43+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -26,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Pirelli ha svelato le mescole per gli ultimi 3 GP della stagione 2026",
-   "estratto": "Nel fine settimana che separa la Formula 1 dal gran finale della stagione 2026, Pirelli ha svelato le mescole che porterà nelle tre gare conclusive, ovvero Las Vegas, Qatar e Abu Dhabi. Nel Nevada e…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-pirelli-ha-svelato-le-mescole-per-gli-ultimi-3-gp-della-stagione-2026/10874385/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-13T17:19:59+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -26,
-   "testate": 1
-  },
-  {
-   "titolo": "F1, Montoya svela il segreto di Antonelli: ecco perché Russell fatica a tenergli testa",
-   "estratto": "Alla vigilia della stagione, George Russell sembrava destinato a rappresentare il principale punto di riferimento in casa Mercedes. L’esperienza accumulata in F1, unita alle qualità mostrate negli…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/f1-montoya-svela-il-segreto-di-antonelli-ecco-perche-russell-fatica-a-tenergli-testa/",
-   "pubblicato": "2026-11-13T16:47:28+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -13,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | La rinvicita di Lawson è nei numeri: è un rinnovo meritato che mette tutti d'accordo",
-   "estratto": "La conferma di Liam Lawson alla Racing Bulls per il prossimo anno ha il sapore di una storia a lieto fine che può mettere d’accordo (quasi) tutti. Dopo un’ottima stagione, in particolare da metà…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-la-rinvicita-di-lawson-e-nei-numeri-e-un-rinnovo-meritato-che-mette-daccordo-quasi-tutti/10874302/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-13T16:02:29+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -26,
+   "punteggio": -16.1,
    "testate": 1
   }
  ]

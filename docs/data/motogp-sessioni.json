@@ -1,5 +1,5 @@
 {
- "generato_il": "2026-11-19T15:07:10+00:00",
+ "generato_il": "2026-11-20T00:09:17+00:00",
  "weekend": [
   {
    "nome": "GP Qatar",
@@ -1312,6 +1312,11 @@
      ]
     }
    ]
+  },
+  {
+   "nome": "GP Portogallo",
+   "stato": "CURRENT",
+   "sessioni": []
   }
  ]
 }

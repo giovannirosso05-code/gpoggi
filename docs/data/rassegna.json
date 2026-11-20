@@ -1,6 +1,78 @@
 {
- "generato_il": "2026-11-20T13:57:05+00:00",
+ "generato_il": "2026-11-20T14:47:47+00:00",
  "articoli": [
+  {
+   "titolo": "LIVE MotoGP, GP Portogallo 2026 in DIRETTA: tra poco le pre-qualifiche. Bezzecchi vuole confermarsi, Marquez punta alla consistenza",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE 15.48 Per laurearsi campione già al termine della gara del sabato, Márquez deve guadagnare almeno 2 punti su Martín (e non perdere più di 12 punti da…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/live-motogp-gp-portogallo-2026-in-diretta-inizia-il-fine-settimana-dellincoronazione-per-marquez/",
+   "pubblicato": "2026-11-20T14:40:20+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 32.0,
+   "testate": 3
+  },
+  {
+   "titolo": "Quando la F1 su TV8 domani, GP Las Vegas 2026: orario qualifiche, differita in chiaro",
+   "estratto": "Domani, sabato 21 novembre, dalle ore 5.00 alle ore 6.00 italiane, andranno in scena le qualifiche del GP di Las Vegas, ventunesima tappa del Mondiale 2026 di F1. Il terzultimo weekend della F1 vedrà…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/quando-la-f1-su-tv8-domani-gp-las-vegas-2026-orario-qualifiche-differita-in-chiaro/",
+   "pubblicato": "2026-11-20T14:30:31+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.9,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Tardozzi respinge le speculazioni sul ritiro di Marquez: \"Resterà con noi\"",
+   "estratto": "Le speculazioni sul futuro in MotoGP di Marc Marquez non si placano. Tra gli altri, Stefan Bradl ha avanzato l'ipotesi che Marquez, dopo aver conquistato il suo ottavo titolo mondiale in MotoGP e il…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-tardozzi-respinge-le-speculazioni-sul-ritiro-di-marquez-restera-con-noi/10876056/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-20T14:29:18+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 18.9,
+   "testate": 2
+  },
+  {
+   "titolo": "Moto3, David Almansa primeggia anche nelle pre-qualifiche di Portimao. Quiles competitivo, bene Pini",
+   "estratto": "Dopo aver dominato la scena nella prima sessione di prove libere, David Almansa si conferma il più veloce del lotto a Portimao anche nelle pre-qualifiche del Gran Premio del Portogallo 2026, valevole…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/moto3-david-almansa-primeggia-anche-nelle-pre-qualifiche-di-portimao-quiles-competitivo-bene-pini/",
+   "pubblicato": "2026-11-20T14:04:26+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Ritorno V8, Briatore: “Serve un motore semplice e rumoroso”",
+   "estratto": "Flavio Briatore e Zak Brown hanno commentato il ritorno dei motori V8 nel 2030 \"spoilerato\" in settimana dalla FIA",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/ritorno-motori-v8-briatore-serve-un-motore-semplice-e-rumoroso-brown-las-vegas",
+   "pubblicato": "2026-11-20T14:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.8,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Briatore fissa l'obiettivo Alpine 2027: “A tre decimi dalla McLaren sarebbe un successo”",
+   "estratto": "Flavio Briatore ha fissato un primo riferimento per valutare la competitività dell'Alpine nel 2027: arrivare a due o tre decimi dalla McLaren sarebbe già un successo. Non è una promessa di vittorie…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-briatore-fissa-lobiettivo-alpine-2027-a-tre-decimi-dalla-mclaren-sarebbe-un-successo/10875986/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-20T13:58:52+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.8,
+   "testate": 1
+  },
   {
    "titolo": "F1, GP Las Vegas 2026. Oggi le qualifiche, a chi la pole position nel Nevada? Tanti i temi d’interesse nonostante i Mondiali chiusi",
    "estratto": "Alle ore 5:00 italiane di sabato 21 novembre scatterà la sessione di qualifica del Gran Premio di Las Vegas di Formula 1, tramite la quale verrà stabilita la griglia di partenza della gara…",
@@ -10,7 +82,7 @@
    "pubblicato": "2026-11-20T13:00:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.8,
+   "punteggio": 3.6,
    "testate": 1
   },
   {
@@ -22,7 +94,7 @@
    "pubblicato": "2026-11-20T12:40:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.7,
+   "punteggio": 3.5,
    "testate": 1
   },
   {
@@ -34,7 +106,7 @@
    "pubblicato": "2026-11-20T12:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.6,
+   "punteggio": 8.4,
    "testate": 1
   },
   {
@@ -46,7 +118,7 @@
    "pubblicato": "2026-11-20T12:08:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.5,
+   "punteggio": 9.3,
    "testate": 2
   },
   {
@@ -58,8 +130,8 @@
    "pubblicato": "2026-11-20T12:08:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.5,
-   "testate": 1
+   "punteggio": 18.3,
+   "testate": 2
   },
   {
    "titolo": "MotoGP | Portimao, Libere 1: Bezzecchi guida la doppietta Aprilia, Marc Marquez è 4° dietro ad Alex",
@@ -70,7 +142,7 @@
    "pubblicato": "2026-11-20T11:50:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.5,
+   "punteggio": 31.3,
    "testate": 3
   },
   {
@@ -82,7 +154,7 @@
    "pubblicato": "2026-11-20T11:46:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.5,
+   "punteggio": 21.2,
    "testate": 2
   },
   {
@@ -94,20 +166,8 @@
    "pubblicato": "2026-11-20T11:45:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.4,
+   "punteggio": 19.2,
    "testate": 3
-  },
-  {
-   "titolo": "LIVE MotoGP, GP Portogallo 2026 in DIRETTA: Bezzecchi scatenato, Martin risale nel finale. Alle 16.00 le pre-qualifiche",
-   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE 12.37 Vi ringraziamo per aver seguito le prove libere 1 con noi. L’appuntamento ora è alle ore 16.00, quando ci saranno le pre-qualifiche, che potrete…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/live-motogp-gp-portogallo-2026-in-diretta-inizia-il-fine-settimana-dellincoronazione-per-marquez/",
-   "pubblicato": "2026-11-20T11:40:20+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 21.4,
-   "testate": 2
   },
   {
    "titolo": "GP Portogallo 2026, la cronaca delle FP1: alle 16:00 il via alle Prove – DIRETTA",
@@ -118,7 +178,7 @@
    "pubblicato": "2026-11-20T11:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.4,
+   "punteggio": 13.2,
    "testate": 2
   },
   {
@@ -130,7 +190,7 @@
    "pubblicato": "2026-11-20T11:24:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.4,
+   "punteggio": 18.2,
    "testate": 2
   },
   {
@@ -142,7 +202,7 @@
    "pubblicato": "2026-11-20T10:53:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.2,
+   "punteggio": 3.0,
    "testate": 1
   },
   {
@@ -154,7 +214,7 @@
    "pubblicato": "2026-11-20T10:45:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.2,
+   "punteggio": 8.0,
    "testate": 1
   },
   {
@@ -166,7 +226,7 @@
    "pubblicato": "2026-11-20T10:40:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.2,
+   "punteggio": 3.0,
    "testate": 1
   },
   {
@@ -178,7 +238,7 @@
    "pubblicato": "2026-11-20T10:30:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.1,
+   "punteggio": 0.9,
    "testate": 2
   },
   {
@@ -190,7 +250,7 @@
    "pubblicato": "2026-11-20T10:20:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.1,
+   "punteggio": 12.9,
    "testate": 2
   },
   {
@@ -202,7 +262,7 @@
    "pubblicato": "2026-11-20T09:58:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.0,
+   "punteggio": 2.8,
    "testate": 1
   },
   {
@@ -214,7 +274,7 @@
    "pubblicato": "2026-11-20T09:56:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.0,
+   "punteggio": 2.8,
    "testate": 1
   },
   {
@@ -226,7 +286,7 @@
    "pubblicato": "2026-11-20T09:56:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.0,
+   "punteggio": 7.8,
    "testate": 1
   },
   {
@@ -238,7 +298,7 @@
    "pubblicato": "2026-11-20T09:40:39+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 26.9,
+   "punteggio": 26.7,
    "testate": 2
   },
   {
@@ -250,7 +310,7 @@
    "pubblicato": "2026-11-20T09:33:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.9,
+   "punteggio": 20.7,
    "testate": 2
   },
   {
@@ -262,7 +322,7 @@
    "pubblicato": "2026-11-20T09:29:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.9,
+   "punteggio": 17.7,
    "testate": 2
   },
   {
@@ -274,7 +334,7 @@
    "pubblicato": "2026-11-20T09:14:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.8,
+   "punteggio": 15.6,
    "testate": 1
   },
   {
@@ -286,7 +346,7 @@
    "pubblicato": "2026-11-20T08:39:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.7,
+   "punteggio": 15.5,
    "testate": 1
   },
   {
@@ -298,7 +358,7 @@
    "pubblicato": "2026-11-20T08:34:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.7,
+   "punteggio": 20.4,
    "testate": 2
   },
   {
@@ -310,7 +370,7 @@
    "pubblicato": "2026-11-20T08:12:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.6,
+   "punteggio": 7.4,
    "testate": 1
   },
   {
@@ -322,7 +382,7 @@
    "pubblicato": "2026-11-20T08:06:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.5,
+   "punteggio": 15.3,
    "testate": 1
   },
   {
@@ -334,7 +394,7 @@
    "pubblicato": "2026-11-20T07:53:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 30.5,
+   "punteggio": 30.3,
    "testate": 3
   },
   {
@@ -346,7 +406,7 @@
    "pubblicato": "2026-11-20T07:49:55+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.5,
+   "punteggio": 17.3,
    "testate": 2
   },
   {
@@ -358,7 +418,7 @@
    "pubblicato": "2026-11-20T07:41:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.4,
+   "punteggio": 17.2,
    "testate": 2
   },
   {
@@ -370,7 +430,7 @@
    "pubblicato": "2026-11-20T07:38:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.4,
+   "punteggio": 7.2,
    "testate": 1
   },
   {
@@ -382,7 +442,7 @@
    "pubblicato": "2026-11-20T07:32:09+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.4,
+   "punteggio": 25.2,
    "testate": 2
   },
   {
@@ -394,7 +454,7 @@
    "pubblicato": "2026-11-20T07:29:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.4,
+   "punteggio": 7.2,
    "testate": 1
   },
   {
@@ -406,7 +466,7 @@
    "pubblicato": "2026-11-20T07:28:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.4,
+   "punteggio": 12.2,
    "testate": 2
   },
   {
@@ -418,7 +478,7 @@
    "pubblicato": "2026-11-20T07:27:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.4,
+   "punteggio": 15.2,
    "testate": 1
   },
   {
@@ -430,7 +490,7 @@
    "pubblicato": "2026-11-20T07:12:41+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.3,
+   "punteggio": 7.1,
    "testate": 1
   },
   {
@@ -442,7 +502,7 @@
    "pubblicato": "2026-11-20T07:08:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.3,
+   "punteggio": 2.1,
    "testate": 1
   },
   {
@@ -454,7 +514,7 @@
    "pubblicato": "2026-11-20T07:07:07+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.3,
+   "punteggio": 17.1,
    "testate": 2
   },
   {
@@ -466,7 +526,7 @@
    "pubblicato": "2026-11-20T07:01:05+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.3,
+   "punteggio": 7.1,
    "testate": 1
   },
   {
@@ -478,7 +538,7 @@
    "pubblicato": "2026-11-20T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.3,
+   "punteggio": 0.1,
    "testate": 2
   },
   {
@@ -490,7 +550,7 @@
    "pubblicato": "2026-11-20T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.3,
+   "punteggio": 0.1,
    "testate": 2
   },
   {
@@ -502,7 +562,7 @@
    "pubblicato": "2026-11-20T06:51:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.2,
+   "punteggio": 12.0,
    "testate": 2
   },
   {
@@ -514,7 +574,7 @@
    "pubblicato": "2026-11-20T06:39:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.2,
+   "punteggio": 2.0,
    "testate": 1
   },
   {
@@ -526,7 +586,7 @@
    "pubblicato": "2026-11-20T06:22:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.1,
+   "punteggio": 6.9,
    "testate": 1
   },
   {
@@ -538,7 +598,7 @@
    "pubblicato": "2026-11-20T06:07:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.0,
+   "punteggio": 19.8,
    "testate": 2
   },
   {
@@ -550,7 +610,7 @@
    "pubblicato": "2026-11-20T06:06:10+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.0,
+   "punteggio": 19.8,
    "testate": 2
   },
   {
@@ -562,7 +622,7 @@
    "pubblicato": "2026-11-20T06:00:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.0,
+   "punteggio": 19.8,
    "testate": 2
   },
   {
@@ -574,7 +634,7 @@
    "pubblicato": "2026-11-20T05:57:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.0,
+   "punteggio": -10.2,
    "testate": 1
   },
   {
@@ -586,7 +646,7 @@
    "pubblicato": "2026-11-20T05:57:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.0,
+   "punteggio": -10.2,
    "testate": 1
   },
   {
@@ -598,7 +658,7 @@
    "pubblicato": "2026-11-20T05:52:53+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.0,
+   "punteggio": 6.8,
    "testate": 1
   },
   {
@@ -610,7 +670,7 @@
    "pubblicato": "2026-11-20T05:47:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 30.0,
+   "punteggio": 29.7,
    "testate": 3
   },
   {
@@ -622,7 +682,7 @@
    "pubblicato": "2026-11-20T05:40:53+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.9,
+   "punteggio": 19.7,
    "testate": 2
   },
   {
@@ -634,7 +694,7 @@
    "pubblicato": "2026-11-20T05:39:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.9,
+   "punteggio": 29.7,
    "testate": 3
   },
   {
@@ -646,7 +706,7 @@
    "pubblicato": "2026-11-20T05:39:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.9,
+   "punteggio": 9.7,
    "testate": 3
   },
   {
@@ -658,7 +718,7 @@
    "pubblicato": "2026-11-20T05:38:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.9,
+   "punteggio": 17.7,
    "testate": 3
   },
   {
@@ -670,7 +730,7 @@
    "pubblicato": "2026-11-20T05:16:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.8,
+   "punteggio": 21.6,
    "testate": 3
   },
   {
@@ -682,7 +742,7 @@
    "pubblicato": "2026-11-20T05:11:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.8,
+   "punteggio": 17.6,
    "testate": 3
   },
   {
@@ -694,7 +754,7 @@
    "pubblicato": "2026-11-20T05:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.8,
+   "punteggio": 1.6,
    "testate": 1
   },
   {
@@ -706,7 +766,7 @@
    "pubblicato": "2026-11-20T04:48:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.7,
+   "punteggio": 29.5,
    "testate": 3
   },
   {
@@ -718,7 +778,7 @@
    "pubblicato": "2026-11-20T04:06:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.5,
+   "punteggio": 9.3,
    "testate": 1
   },
   {
@@ -730,7 +790,7 @@
    "pubblicato": "2026-11-20T04:04:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.5,
+   "punteggio": -0.7,
    "testate": 2
   },
   {
@@ -742,7 +802,7 @@
    "pubblicato": "2026-11-20T03:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.3,
+   "punteggio": 26.1,
    "testate": 3
   },
   {
@@ -754,7 +814,7 @@
    "pubblicato": "2026-11-20T01:43:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.9,
+   "punteggio": 8.7,
    "testate": 3
   },
   {
@@ -766,20 +826,8 @@
    "pubblicato": "2026-11-20T01:40:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.9,
+   "punteggio": 8.7,
    "testate": 3
-  },
-  {
-   "titolo": "F1 GP Las Vegas 2026: la cronaca delle FP1, minuto per minuto",
-   "estratto": "La cronaca live minuto per minuto della prima sessione di prove del fine settimana a Las Vegas",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-las-vegas-2026-prove-libere-1-fp1-aggiornamenti-ferrari-leclerc-verstappen-antonelli",
-   "pubblicato": "2026-11-20T01:30:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 0.9,
-   "testate": 1
   },
   {
    "titolo": "F1 | C'è una svolta FIA: dal 2027 arriveranno i commissari sportivi permanenti",
@@ -790,7 +838,7 @@
    "pubblicato": "2026-11-20T00:30:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.6,
+   "punteggio": 10.4,
    "testate": 2
   },
   {
@@ -802,7 +850,7 @@
    "pubblicato": "2026-11-19T18:18:21+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.1,
+   "punteggio": 7.9,
    "testate": 1
   },
   {
@@ -814,7 +862,7 @@
    "pubblicato": "2026-11-19T17:53:45+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.0,
+   "punteggio": -0.2,
    "testate": 1
   },
   {
@@ -826,7 +874,7 @@
    "pubblicato": "2026-11-19T17:38:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.9,
+   "punteggio": 7.7,
    "testate": 1
   },
   {
@@ -838,7 +886,7 @@
    "pubblicato": "2026-11-19T17:35:09+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.9,
+   "punteggio": 7.7,
    "testate": 1
   },
   {
@@ -850,7 +898,7 @@
    "pubblicato": "2026-11-19T17:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.9,
+   "punteggio": 7.7,
    "testate": 1
   },
   {
@@ -862,7 +910,7 @@
    "pubblicato": "2026-11-19T17:20:50+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.8,
+   "punteggio": 19.6,
    "testate": 3
   },
   {
@@ -874,7 +922,7 @@
    "pubblicato": "2026-11-19T17:11:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.8,
+   "punteggio": 7.6,
    "testate": 1
   },
   {
@@ -886,7 +934,7 @@
    "pubblicato": "2026-11-19T16:58:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.8,
+   "punteggio": 7.5,
    "testate": 1
   },
   {
@@ -898,7 +946,7 @@
    "pubblicato": "2026-11-19T16:54:34+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 10.7,
+   "punteggio": 10.5,
    "testate": 2
   },
   {
@@ -910,7 +958,7 @@
    "pubblicato": "2026-11-19T16:43:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.7,
+   "punteggio": 7.5,
    "testate": 1
   },
   {
@@ -922,7 +970,7 @@
    "pubblicato": "2026-11-19T16:42:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.7,
+   "punteggio": 9.5,
    "testate": 2
   },
   {
@@ -934,7 +982,7 @@
    "pubblicato": "2026-11-19T16:40:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.7,
+   "punteggio": 9.5,
    "testate": 2
   },
   {
@@ -946,7 +994,7 @@
    "pubblicato": "2026-11-19T16:36:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.7,
+   "punteggio": 9.5,
    "testate": 2
   },
   {
@@ -958,7 +1006,7 @@
    "pubblicato": "2026-11-19T16:33:03+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.4,
+   "punteggio": -0.6,
    "testate": 1
   },
   {
@@ -970,7 +1018,7 @@
    "pubblicato": "2026-11-19T16:14:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.4,
+   "punteggio": -5.6,
    "testate": 1
   },
   {
@@ -982,7 +1030,7 @@
    "pubblicato": "2026-11-19T15:57:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.5,
+   "punteggio": 7.3,
    "testate": 1
   },
   {
@@ -994,7 +1042,7 @@
    "pubblicato": "2026-11-19T15:37:55+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.4,
+   "punteggio": 7.2,
    "testate": 1
   },
   {
@@ -1006,7 +1054,7 @@
    "pubblicato": "2026-11-19T15:19:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.7,
+   "punteggio": -5.9,
    "testate": 1
   },
   {
@@ -1018,7 +1066,7 @@
    "pubblicato": "2026-11-19T15:00:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.3,
+   "punteggio": 7.1,
    "testate": 1
   },
   {
@@ -1030,7 +1078,7 @@
    "pubblicato": "2026-11-19T14:53:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.8,
+   "punteggio": -6.0,
    "testate": 1
   },
   {
@@ -1042,7 +1090,7 @@
    "pubblicato": "2026-11-19T14:32:20+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.9,
+   "punteggio": -1.1,
    "testate": 1
   },
   {
@@ -1054,7 +1102,7 @@
    "pubblicato": "2026-11-19T14:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.0,
+   "punteggio": 3.8,
    "testate": 2
   },
   {
@@ -1066,7 +1114,7 @@
    "pubblicato": "2026-11-19T13:00:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.2,
+   "punteggio": -6.4,
    "testate": 1
   },
   {
@@ -1078,7 +1126,7 @@
    "pubblicato": "2026-11-19T12:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.5,
+   "punteggio": 1.3,
    "testate": 1
   },
   {
@@ -1090,7 +1138,7 @@
    "pubblicato": "2026-11-19T11:46:35+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": -0.5,
+   "punteggio": -0.8,
    "testate": 1
   },
   {
@@ -1102,7 +1150,7 @@
    "pubblicato": "2026-11-19T11:29:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.4,
+   "punteggio": 8.2,
    "testate": 2
   },
   {
@@ -1114,7 +1162,7 @@
    "pubblicato": "2026-11-19T10:54:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.2,
+   "punteggio": 21.0,
    "testate": 3
   },
   {
@@ -1126,7 +1174,7 @@
    "pubblicato": "2026-11-19T10:54:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.2,
+   "punteggio": 6.0,
    "testate": 1
   },
   {
@@ -1138,20 +1186,8 @@
    "pubblicato": "2026-11-19T10:31:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.1,
+   "punteggio": 5.9,
    "testate": 1
-  },
-  {
-   "titolo": "F1 stanotte in tv, GP Las Vegas 2026: orari prove libere 20 novembre, streaming, programma Sky e TV8",
-   "estratto": "La F1 si prepara a vivere il Gran Premio di Las Vegas 2026, terzultimo appuntamento del Mondiale, con le monoposto pronte a sfrecciare tra le luci e i lunghi rettilinei della celebre Strip. Il…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/f1-stanotte-in-tv-gp-las-vegas-2026-orari-prove-libere-20-novembre-streaming-programma-sky-e-tv8/",
-   "pubblicato": "2026-11-19T10:30:02+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -8.9,
-   "testate": 2
   },
   {
    "titolo": "MotoGP, GP Portogallo 2026. Marquez a un passo dall’Iride, Ducati e Aprilia, che bagarre per il titolo costruttori!",
@@ -1162,7 +1198,7 @@
    "pubblicato": "2026-11-19T10:00:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.0,
+   "punteggio": 20.8,
    "testate": 3
   },
   {
@@ -1174,7 +1210,7 @@
    "pubblicato": "2026-11-19T09:57:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.0,
+   "punteggio": -2.2,
    "testate": 1
   },
   {
@@ -1186,7 +1222,7 @@
    "pubblicato": "2026-11-19T09:11:44+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.8,
+   "punteggio": 5.6,
    "testate": 1
   },
   {
@@ -1198,7 +1234,7 @@
    "pubblicato": "2026-11-19T08:41:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.7,
+   "punteggio": 5.5,
    "testate": 1
   },
   {
@@ -1210,7 +1246,7 @@
    "pubblicato": "2026-11-19T08:16:14+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.6,
+   "punteggio": 15.4,
    "testate": 2
   },
   {
@@ -1222,7 +1258,7 @@
    "pubblicato": "2026-11-19T08:11:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.6,
+   "punteggio": 2.3,
    "testate": 2
   },
   {
@@ -1234,7 +1270,7 @@
    "pubblicato": "2026-11-19T07:35:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.4,
+   "punteggio": 0.2,
    "testate": 3
   },
   {
@@ -1246,7 +1282,7 @@
    "pubblicato": "2026-11-19T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -3.0,
+   "punteggio": -3.2,
    "testate": 1
   },
   {
@@ -1258,7 +1294,7 @@
    "pubblicato": "2026-11-19T04:10:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.4,
+   "punteggio": -10.7,
    "testate": 2
   },
   {
@@ -1270,7 +1306,7 @@
    "pubblicato": "2026-11-18T20:16:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.4,
+   "punteggio": -10.6,
    "testate": 1
   },
   {
@@ -1282,7 +1318,7 @@
    "pubblicato": "2026-11-18T18:13:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.9,
+   "punteggio": -11.1,
    "testate": 1
   },
   {
@@ -1294,7 +1330,7 @@
    "pubblicato": "2026-11-18T17:52:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.0,
+   "punteggio": -1.2,
    "testate": 2
   },
   {
@@ -1306,7 +1342,7 @@
    "pubblicato": "2026-11-18T16:44:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.3,
+   "punteggio": -1.5,
    "testate": 2
   },
   {
@@ -1318,7 +1354,7 @@
    "pubblicato": "2026-11-18T16:00:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.5,
+   "punteggio": -11.7,
    "testate": 1
   },
   {
@@ -1330,7 +1366,7 @@
    "pubblicato": "2026-11-18T14:45:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -6.8,
+   "punteggio": -7.0,
    "testate": 1
   },
   {
@@ -1342,7 +1378,7 @@
    "pubblicato": "2026-11-18T14:35:55+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.2,
+   "punteggio": 3.0,
    "testate": 2
   },
   {
@@ -1354,7 +1390,7 @@
    "pubblicato": "2026-11-18T14:08:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.0,
+   "punteggio": -12.2,
    "testate": 1
   },
   {
@@ -1366,7 +1402,7 @@
    "pubblicato": "2026-11-18T13:45:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -7.1,
+   "punteggio": -7.3,
    "testate": 1
   },
   {
@@ -1378,7 +1414,7 @@
    "pubblicato": "2026-11-18T13:05:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.2,
+   "punteggio": -4.4,
    "testate": 1
   },
   {
@@ -1390,7 +1426,7 @@
    "pubblicato": "2026-11-18T10:53:33+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.2,
+   "punteggio": 0.0,
    "testate": 1
   },
   {
@@ -1402,44 +1438,8 @@
    "pubblicato": "2026-11-18T10:45:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.8,
+   "punteggio": -5.0,
    "testate": 1
-  },
-  {
-   "titolo": "Razgatlıoğlu, il 2027 inizia in ritardo: sta meglio, ma salterà il test di Valencia",
-   "estratto": "Il turco sta meglio, ma il team Pramac ha confermato che non tornerà più in pista fino ai test di Sepang di fine gennaio 2027",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/razgatlioglu-il-2027-inizia-in-ritardo-sta-meglio-ma-saltera-il-test-di-valencia",
-   "pubblicato": "2026-11-18T10:28:26+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -12.9,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Taramasso: \"La curiosità di Portimao è la gomma posteriore media, perché è simmetrica\"",
-   "estratto": "La MotoGP si avvia verso il gran finale dell'era delle 1.000cc e per farlo torna in Europa, a Portimao, dove il Gran Premio del Portogallo apre la doppietta conclusiva che porterà alla tradizionale…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-taramasso-la-curiosita-di-portimao-e-la-gomma-posteriore-media-perche-e-simmetrica/10875027/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-18T10:03:58+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 2.0,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP, GP Portogallo 2026: numeri, statistiche, curiosità. Nessuno ha ancora vinto 2 volte di fila a Portimao!",
-   "estratto": "Il fine settimana del 13-15 novembre sarà quello in cui il Mondiale MotoGP vivrà il primo dei due appuntamenti iberici che rappresentano il rush finale della stagione 2026. Rientrati in Europa dopo…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/motogp-gp-portogallo-2026-numeri-statistiche-curiosita-nessuno-ha-ancora-vinto-2-volte-di-fila-a-portimao/",
-   "pubblicato": "2026-11-18T10:00:10+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -3.0,
-   "testate": 2
   }
  ]
 }

@@ -1,17 +1,293 @@
 {
- "generato_il": "2026-11-20T14:47:47+00:00",
+ "generato_il": "2026-11-20T21:46:12+00:00",
  "articoli": [
   {
-   "titolo": "LIVE MotoGP, GP Portogallo 2026 in DIRETTA: tra poco le pre-qualifiche. Bezzecchi vuole confermarsi, Marquez punta alla consistenza",
-   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE 15.48 Per laurearsi campione già al termine della gara del sabato, Márquez deve guadagnare almeno 2 punti su Martín (e non perdere più di 12 punti da…",
+   "titolo": "F1 GP Las Vegas 2026, FP3: l’ultimo turno di libere parte alle 1.30 – DIRETTA",
+   "estratto": "La cronaca live minuto per minuto della terza e ultima sessione di prove del fine settimana a Las Vegas",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-las-vegas-2026-prove-libere-3-fp3-aggiornamenti-ferrari-leclerc-hamilton-verstappen",
+   "pubblicato": "2026-11-20T20:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 13.6,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP, Marc Marquez: “Posso solo perdere, il Mondiale dipende da me”",
+   "estratto": "È un venerdì in controllo per Marc Marquez quello che poche ore fa si è concluso sul circuito di Portimao, località che ospita il Gran Premio del Portogallo 2026, penultimo appuntamento del Mondiale…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-marc-marquez-posso-solo-perdere-il-mondiale-dipende-da-me/",
+   "pubblicato": "2026-11-20T18:55:03+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 18.3,
+   "testate": 2
+  },
+  {
+   "titolo": "La FIA “ri-annuncia” il ritorno dei V8. Ben Sulayem: “Ci riconnettiamo con il Dna della F1”",
+   "estratto": "Dopo l'autogol comunicativo di martedì, la FIA ha ufficializzato per una seconda volta il ritorno dei motori V8 a partire dal 2030",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/fia-ri-annuncia-ritorno-motori-v8-ben-sulayem-ci-riconnettiamo-con-il-dna-della-f1",
+   "pubblicato": "2026-11-20T18:52:28+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.3,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | La FIA ufficializza: i motori V8 da 2,1 litri turbo entreranno in vigore dal 2030",
+   "estratto": "La FIA ha annunciato il raggiungimento di un accordo di massima con la FOM e i Costruttori per il passaggio della Formula 1 a motori V8 turbocompressi da 2,1 litri a partire dal 2030. Nella F1…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-la-fia-ufficializza-i-motori-v8-da-21-litri-turbo-entreranno-in-vigore-dal-2030/10875124/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-20T18:43:02+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.2,
+   "testate": 1
+  },
+  {
+   "titolo": "LIVE F1, GP Las Vegas 2026 in DIRETTA: occasione Ferrari in qualifica, Antonelli penalizzato",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE Buongiorno e bentrovati alla DIRETTA LIVE della seconda giornata del week end del GP di Las Vegas, ventunesimo appuntamento del Mondiale 2026 di F1. Sul…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/live-f1-gp-las-vegas-2026-in-diretta-occasione-ferrari-in-qualifica-antonelli-penalizzato/",
+   "pubblicato": "2026-11-20T18:30:31+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 21.2,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP | Martin: \"Se non sei al 100%, è difficile andare forte a Portimao. Speravo di avere qualcosina in più\"",
+   "estratto": "Jorge Martin Non ha avuto un venerdì facile a Portimao. Il pilota spagnolo arrivava al Gran Premio del Portogallo fiducioso di essere vicino al 100% fisicamente, ma questo venerdì ha incontrato più…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-martin-se-non-sei-al-100-a-portimao-e-difficile-andare-forte-speravo-di-avere-qualcosina-in-/10876115/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-20T18:30:24+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 18.2,
+   "testate": 2
+  },
+  {
+   "titolo": "Marquez: “Sono umano! Non ho lo stesso passo del Qatar, ma sono contento”",
+   "estratto": "Marc Marquez si assume la responsabilità di una prestazione inferiore alle attese nelle Prove di Portimão, spiegando di non voler correre rischi",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/marquez-sono-umano-non-ho-lo-stesso-passo-del-qatar-ma-sono-contento",
+   "pubblicato": "2026-11-20T18:22:10+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 8.1,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Marquez: \"Sono umano e oggi il corpo mi pesava di più perché sono io l’unico che può perdere\"",
+   "estratto": "Marc Marquez non smette di ripetere un numero, il 14, che sono i punti che deve conquistare questo fine settimana per eliminare dalla corsa al titolo Jorge Martin e Marco Bezzecchi, gli unici due…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-marquez-sono-umano-e-oggi-il-corpo-mi-pesava-di-piu-perche-sono-io-lunico-che-puo-perdere/10876114/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-20T18:15:52+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 26.1,
+   "testate": 2
+  },
+  {
+   "titolo": "Jorge Martin: “Sento ancora dolore, ma non è una scusa. Devo migliorare il quarto settore”",
+   "estratto": "Per un soffio. Jorge Martin ha centrato la decima posizione in occasione delle pre-qualifiche valide per il GP del Portogallo, penultimo appuntamento del Mondiale 2026 di MotoGP in scena questo fine…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/jorge-martin-sento-ancora-dolore-ma-non-e-una-scusa-devo-migliorare-il-quarto-settore/",
+   "pubblicato": "2026-11-20T18:10:18+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 18.1,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP | Bezzecchi: \"Se mi sento più leggero? Avrei preferito sentire ancora il peso della lotta\"",
+   "estratto": "Per larghi tratti del venerdì del Gran Premio del Portogallo, Marco Bezzecchi ha dato la sensazione di essere uno dei piloti più a posto del lotto, soprattutto fino a quando si è lavorato sul passo…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-bezzecchi-se-mi-sento-piu-leggero-avrei-preferito-sentire-ancora-il-peso-della-lotta/10876106/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-20T18:00:28+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 16.1,
+   "testate": 1
+  },
+  {
+   "titolo": "Bezzecchi: “Una buona base di partenza, ma devo migliorare terzo e quarto settore”",
+   "estratto": "Il commento di Marco Bezzecchi al venerdì di Portimão, chiuso con un primo posto al mattino e un terzo posto nelle Prove",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/bezzecchi-una-buona-base-di-partenza-ma-devo-migliorare-terzo-e-quarto-settore-aprilia-portimao",
+   "pubblicato": "2026-11-20T17:20:52+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 25.9,
+   "testate": 2
+  },
+  {
+   "titolo": "Marco Bezzecchi resta cauto: “Abbiamo cominciato bene, ma c’è ancora tanto lavoro da fare”",
+   "estratto": "Un venerdì da protagonista assoluta per Marco Bezzecchi sul tracciato dell’Algarve, teatro del penultimo appuntamento del Mondiale 2026 di MotoGP, ma il pilota dell’Aprilia mantiene i piedi ben…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/marco-bezzecchi-resta-cauto-abbiamo-cominciato-bene-ma-ce-ancora-tanto-lavoro-da-fare/",
+   "pubblicato": "2026-11-20T17:08:56+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 15.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Alex Marquez al top nelle Prove: “Eppure non sto molto bene”",
+   "estratto": "Alex Marquez non è ancora al 100% a livello muscolare dopo l'operazione a spalla e clavicola destra di due settimane fa",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/alex-marquez-al-top-nelle-prove-eppure-non-sto-molto-bene",
+   "pubblicato": "2026-11-20T17:06:26+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 17.8,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP, risultati e classifica pre-qualifiche GP Portogallo 2026: Bezzecchi e Di Giannantonio tallonano Alex Marquez",
+   "estratto": "Alex Marquez ha firmato il miglior tempo nelle pre-qualifiche del GP del Portogallo 2026, tappa del Mondiale MotoGP che va in scena sul circuito di Portimao. Lo spagnolo ha stampato un convincente…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-risultati-e-classifica-pre-qualifiche-gp-portogallo-2026-bezzecchi-e-di-giannantonio-tallonano-alex-marquez/",
+   "pubblicato": "2026-11-20T16:29:22+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 18.7,
+   "testate": 3
+  },
+  {
+   "titolo": "MotoGP | Portimao, Prove: super rientro di Alex Marquez davanti a Diggia e Bezzecchi. Marc è 6° e Martin 10°",
+   "estratto": "Quello di Alex Marquez è stato un grande ritorno. Dopo aver saltato il Gran Premio del Qatar per farsi togliere la placca inserita sulla clavicola destra dopo il terribile incidente di Barcellona, il…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-portimao-prove-super-rientro-di-alex-marquez-davanti-a-diggia-e-bezzecchi-marc-e-6-e-martin-/10876053/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-20T16:22:07+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 30.6,
+   "testate": 3
+  },
+  {
+   "titolo": "MotoGP, Alex Marquez lascia il segno nelle pre-qualifiche di Portimao. Bezzecchi competitivo, Martin salvo per un soffio",
+   "estratto": "Va in archivio con la miglior prestazione assoluta di Alex Marquez il turno di pre-qualifiche del Gran Premio del Portogallo 2026, penultima tappa stagionale del Mondiale MotoGP. Il catalano del team…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-alex-marquez-lascia-il-segno-nelle-pre-qualifiche-di-portimao-bezzecchi-competitivo-martin-salvo-per-un-soffio/",
+   "pubblicato": "2026-11-20T16:19:01+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 30.6,
+   "testate": 3
+  },
+  {
+   "titolo": "GP Portogallo 2026 – Classifica Prove: comanda Alex Marquez, Marc 6°. Martin per un soffio in Q2",
+   "estratto": "A Portimão Alex Marquez centra il miglior tempo battendo Di Giannantonio e Bezzecchi",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-risultati/gp-portogallo-2026-classifica-prove-portimao-marquez-ducati-bezzecchi-aprilia-acosta",
+   "pubblicato": "2026-11-20T16:13:19+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 18.6,
+   "testate": 3
+  },
+  {
+   "titolo": "F1 | Pirelli: ecco perché per il Qatar ha imposto 2 soste obbligatorie e un limite di 27 giri per gomma",
+   "estratto": "Non è un segreto che quello del Qatar sia uno degli appuntamenti più impegnativi dell’anno per gli pneumatici, se il più severo in assoluto dell’intera stagione, date le tante curve ad altissima…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-pirelli-per-il-gp-del-qatar-ha-imposto-un-limite-di-27-giri-per-gomma-e-2-soste-obbligatorie/10875981/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-20T16:00:56+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 12.6,
+   "testate": 2
+  },
+  {
+   "titolo": "LIVE MotoGP, GP Portogallo 2026 in DIRETTA: Alex Marquez svetta nelle pre-qualifiche, Bezzecchi in scia. Marc Marquez gestisce, Martin si salva",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE 17.08 E’ tutto per questa DIRETTA LIVE. Un saluto dalla redazione di OA Sport. 17.07 Sorprendente le performance di Alex Marquez e Di Giannantonio, in grado…",
    "fonte": "OA Sport",
    "serie": "MotoGP",
    "url": "https://www.oasport.it/2026/11/live-motogp-gp-portogallo-2026-in-diretta-inizia-il-fine-settimana-dellincoronazione-per-marquez/",
-   "pubblicato": "2026-11-20T14:40:20+00:00",
+   "pubblicato": "2026-11-20T16:00:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 32.0,
+   "punteggio": 30.6,
    "testate": 3
+  },
+  {
+   "titolo": "GP Portogallo 2026: la cronaca delle Prove e delle FP1",
+   "estratto": "La cronaca minuto per minuto delle sessioni del venerdì della classe MotoGP impegnata sul circuito di Portimao",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-live/diretta-motogp-gp-portogallo-2026-live-prove-fp1-cronaca-aggiornamenti-marquez-ducati-martin-bezzecchi-aprilia",
+   "pubblicato": "2026-11-20T15:30:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 12.4,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 | Cadillac, Towriss svela il retroscena Bottas: “Herta è deluso, è stata una decisione difficile”",
+   "estratto": "La conferma di Valtteri Bottas per la stagione 2027 ha messo fine a uno dei casi di mercato che hanno accompagnato gli ultimi mesi del campionato. Cadillac ha scelto di proseguire con la coppia…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-cadillac-towriss-svela-il-retroscena-bottas-herta-e-deluso-e-stata-una-decisione-difficile/10875993/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-20T15:29:38+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 7.4,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Vinales si ferma di nuovo: Pol Espargaró lo sostituirà nel resto del weekend di Portimao",
+   "estratto": "Maverick Vinales ci ha provato, ma le sue condizioni fisiche non gli permettono di proseguire il weekend del Gran Premio del Portogallo, penultimo appuntamento della MotoGP 2026. Il pilota della KTM…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-vinales-si-ferma-di-nuovo-pol-espargaro-lo-sostituira-nel-resto-del-weekend-di-portimao/10876065/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-20T15:04:20+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 12.3,
+   "testate": 2
+  },
+  {
+   "titolo": "Moto2, Senna Agius davanti a tutti anche nelle pre-qualifiche di Portimao. Fuori dalla top14 gli italiani",
+   "estratto": "È calato poco fa il sipario sul venerdì del Gran Premio del Portogallo 2026, penultimo appuntamento del Mondiale Moto2. Sul circuito di Portimao, il più veloce al termine delle pre-qualifiche è stato…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/moto2-senna-agius-davanti-a-tutti-anche-nelle-pre-qualifiche-di-portimao-fuori-dalla-top14-gli-italiani/",
+   "pubblicato": "2026-11-20T14:58:41+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 2.3,
+   "testate": 1
+  },
+  {
+   "titolo": "Ufficiale, Viñales out a Portimão: al suo posto Pol Espargaró",
+   "estratto": "Maverick Vinales si ritira dal GP di Portogallo dopo aver accusato ulteriori problemi alla spalla",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/ufficiale-vinales-out-a-portimao-al-suo-posto-pol-espargaro",
+   "pubblicato": "2026-11-20T14:50:53+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 2.3,
+   "testate": 1
   },
   {
    "titolo": "Quando la F1 su TV8 domani, GP Las Vegas 2026: orario qualifiche, differita in chiaro",
@@ -22,7 +298,7 @@
    "pubblicato": "2026-11-20T14:30:31+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.9,
+   "punteggio": 2.2,
    "testate": 1
   },
   {
@@ -34,7 +310,7 @@
    "pubblicato": "2026-11-20T14:29:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.9,
+   "punteggio": 17.2,
    "testate": 2
   },
   {
@@ -46,7 +322,7 @@
    "pubblicato": "2026-11-20T14:04:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.8,
+   "punteggio": 2.1,
    "testate": 1
   },
   {
@@ -58,7 +334,7 @@
    "pubblicato": "2026-11-20T14:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.8,
+   "punteggio": 7.1,
    "testate": 1
   },
   {
@@ -70,7 +346,7 @@
    "pubblicato": "2026-11-20T13:58:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.8,
+   "punteggio": 7.1,
    "testate": 1
   },
   {
@@ -82,7 +358,7 @@
    "pubblicato": "2026-11-20T13:00:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.6,
+   "punteggio": 1.8,
    "testate": 1
   },
   {
@@ -94,8 +370,8 @@
    "pubblicato": "2026-11-20T12:40:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.5,
-   "testate": 1
+   "punteggio": 11.7,
+   "testate": 2
   },
   {
    "titolo": "\"La F1 caccia l’ospedale\"",
@@ -106,7 +382,7 @@
    "pubblicato": "2026-11-20T12:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.4,
+   "punteggio": 6.6,
    "testate": 1
   },
   {
@@ -118,8 +394,8 @@
    "pubblicato": "2026-11-20T12:08:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.3,
-   "testate": 2
+   "punteggio": 17.6,
+   "testate": 3
   },
   {
    "titolo": "Tardozzi non pensa al ritiro di Marquez: “Credo darà seguito ai 2 anni di contratto”",
@@ -130,7 +406,7 @@
    "pubblicato": "2026-11-20T12:08:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.3,
+   "punteggio": 16.6,
    "testate": 2
   },
   {
@@ -142,7 +418,7 @@
    "pubblicato": "2026-11-20T11:50:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.3,
+   "punteggio": 29.5,
    "testate": 3
   },
   {
@@ -154,7 +430,7 @@
    "pubblicato": "2026-11-20T11:46:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.2,
+   "punteggio": 19.5,
    "testate": 2
   },
   {
@@ -166,20 +442,8 @@
    "pubblicato": "2026-11-20T11:45:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.2,
+   "punteggio": 17.5,
    "testate": 3
-  },
-  {
-   "titolo": "GP Portogallo 2026, la cronaca delle FP1: alle 16:00 il via alle Prove – DIRETTA",
-   "estratto": "La cronaca minuto per minuto delle sessioni del venerdì della classe MotoGP impegnata sul circuito di Portimao",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-live/diretta-motogp-gp-portogallo-2026-live-prove-fp1-cronaca-aggiornamenti-marquez-ducati-martin-bezzecchi-aprilia",
-   "pubblicato": "2026-11-20T11:30:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 13.2,
-   "testate": 2
   },
   {
    "titolo": "MotoGP | Alex Marquez: \"Aprilia ha perso il campionato perché si è trovata contro Marc\"",
@@ -190,8 +454,8 @@
    "pubblicato": "2026-11-20T11:24:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.2,
-   "testate": 2
+   "punteggio": 26.4,
+   "testate": 3
   },
   {
    "titolo": "Moto2, inizio complicato per Gonzalez a Portimao. Agius il più veloce, bene Guevara",
@@ -202,7 +466,7 @@
    "pubblicato": "2026-11-20T10:53:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.0,
+   "punteggio": 1.3,
    "testate": 1
   },
   {
@@ -214,7 +478,7 @@
    "pubblicato": "2026-11-20T10:45:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.0,
+   "punteggio": 6.2,
    "testate": 1
   },
   {
@@ -226,7 +490,7 @@
    "pubblicato": "2026-11-20T10:40:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.0,
+   "punteggio": 1.2,
    "testate": 1
   },
   {
@@ -238,7 +502,7 @@
    "pubblicato": "2026-11-20T10:30:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.9,
+   "punteggio": -0.8,
    "testate": 2
   },
   {
@@ -250,8 +514,8 @@
    "pubblicato": "2026-11-20T10:20:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.9,
-   "testate": 2
+   "punteggio": 1.1,
+   "testate": 1
   },
   {
    "titolo": "Moto3: David Almansa svetta nel primo turno di libere a Portimao, Pini in top 10",
@@ -262,7 +526,7 @@
    "pubblicato": "2026-11-20T09:58:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.8,
+   "punteggio": 1.1,
    "testate": 1
   },
   {
@@ -274,7 +538,7 @@
    "pubblicato": "2026-11-20T09:56:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.8,
+   "punteggio": 1.0,
    "testate": 1
   },
   {
@@ -286,7 +550,7 @@
    "pubblicato": "2026-11-20T09:56:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.8,
+   "punteggio": 6.0,
    "testate": 1
   },
   {
@@ -298,7 +562,7 @@
    "pubblicato": "2026-11-20T09:40:39+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 26.7,
+   "punteggio": 25.0,
    "testate": 2
   },
   {
@@ -310,8 +574,8 @@
    "pubblicato": "2026-11-20T09:33:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.7,
-   "testate": 2
+   "punteggio": 8.9,
+   "testate": 1
   },
   {
    "titolo": "F1, Bearman ancora senza contratto per il 2027: “Non è piacevole stare in questa situazione”",
@@ -322,7 +586,7 @@
    "pubblicato": "2026-11-20T09:29:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.7,
+   "punteggio": 15.9,
    "testate": 2
   },
   {
@@ -334,7 +598,7 @@
    "pubblicato": "2026-11-20T09:14:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.6,
+   "punteggio": 13.9,
    "testate": 1
   },
   {
@@ -346,7 +610,7 @@
    "pubblicato": "2026-11-20T08:39:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.5,
+   "punteggio": 13.7,
    "testate": 1
   },
   {
@@ -358,7 +622,7 @@
    "pubblicato": "2026-11-20T08:34:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.4,
+   "punteggio": 18.7,
    "testate": 2
   },
   {
@@ -370,7 +634,7 @@
    "pubblicato": "2026-11-20T08:12:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.4,
+   "punteggio": 5.6,
    "testate": 1
   },
   {
@@ -382,7 +646,7 @@
    "pubblicato": "2026-11-20T08:06:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.3,
+   "punteggio": 13.6,
    "testate": 1
   },
   {
@@ -394,7 +658,7 @@
    "pubblicato": "2026-11-20T07:53:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 30.3,
+   "punteggio": 28.5,
    "testate": 3
   },
   {
@@ -406,7 +670,7 @@
    "pubblicato": "2026-11-20T07:49:55+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.3,
+   "punteggio": 15.5,
    "testate": 2
   },
   {
@@ -418,7 +682,7 @@
    "pubblicato": "2026-11-20T07:41:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.2,
+   "punteggio": 15.5,
    "testate": 2
   },
   {
@@ -430,7 +694,7 @@
    "pubblicato": "2026-11-20T07:38:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.2,
+   "punteggio": 5.5,
    "testate": 1
   },
   {
@@ -442,7 +706,7 @@
    "pubblicato": "2026-11-20T07:32:09+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.2,
+   "punteggio": 23.4,
    "testate": 2
   },
   {
@@ -454,7 +718,7 @@
    "pubblicato": "2026-11-20T07:29:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.2,
+   "punteggio": 5.4,
    "testate": 1
   },
   {
@@ -466,7 +730,7 @@
    "pubblicato": "2026-11-20T07:28:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.2,
+   "punteggio": 10.4,
    "testate": 2
   },
   {
@@ -478,7 +742,7 @@
    "pubblicato": "2026-11-20T07:27:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.2,
+   "punteggio": 13.4,
    "testate": 1
   },
   {
@@ -490,7 +754,7 @@
    "pubblicato": "2026-11-20T07:12:41+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.1,
+   "punteggio": 5.4,
    "testate": 1
   },
   {
@@ -502,7 +766,7 @@
    "pubblicato": "2026-11-20T07:08:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.1,
+   "punteggio": 0.3,
    "testate": 1
   },
   {
@@ -514,7 +778,7 @@
    "pubblicato": "2026-11-20T07:07:07+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.1,
+   "punteggio": 15.3,
    "testate": 2
   },
   {
@@ -526,7 +790,7 @@
    "pubblicato": "2026-11-20T07:01:05+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.1,
+   "punteggio": 5.3,
    "testate": 1
   },
   {
@@ -538,7 +802,7 @@
    "pubblicato": "2026-11-20T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.1,
+   "punteggio": -1.7,
    "testate": 2
   },
   {
@@ -550,7 +814,7 @@
    "pubblicato": "2026-11-20T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.1,
+   "punteggio": -1.7,
    "testate": 2
   },
   {
@@ -562,8 +826,8 @@
    "pubblicato": "2026-11-20T06:51:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.0,
-   "testate": 2
+   "punteggio": 0.3,
+   "testate": 1
   },
   {
    "titolo": "F1 | Red Bull, ci sono diversi punti interrogativi: dalla gestione dell'energia a un bilanciamento che preoccupa Max",
@@ -574,7 +838,7 @@
    "pubblicato": "2026-11-20T06:39:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.0,
+   "punteggio": 0.2,
    "testate": 1
   },
   {
@@ -586,7 +850,7 @@
    "pubblicato": "2026-11-20T06:22:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.9,
+   "punteggio": 5.1,
    "testate": 1
   },
   {
@@ -598,7 +862,7 @@
    "pubblicato": "2026-11-20T06:07:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.8,
+   "punteggio": 18.1,
    "testate": 2
   },
   {
@@ -610,7 +874,7 @@
    "pubblicato": "2026-11-20T06:06:10+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.8,
+   "punteggio": 18.1,
    "testate": 2
   },
   {
@@ -622,7 +886,7 @@
    "pubblicato": "2026-11-20T06:00:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.8,
+   "punteggio": 18.1,
    "testate": 2
   },
   {
@@ -634,7 +898,7 @@
    "pubblicato": "2026-11-20T05:57:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.2,
+   "punteggio": -12.0,
    "testate": 1
   },
   {
@@ -646,7 +910,7 @@
    "pubblicato": "2026-11-20T05:57:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.2,
+   "punteggio": -12.0,
    "testate": 1
   },
   {
@@ -658,7 +922,7 @@
    "pubblicato": "2026-11-20T05:52:53+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.8,
+   "punteggio": 5.0,
    "testate": 1
   },
   {
@@ -670,7 +934,7 @@
    "pubblicato": "2026-11-20T05:47:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.7,
+   "punteggio": 28.0,
    "testate": 3
   },
   {
@@ -682,7 +946,7 @@
    "pubblicato": "2026-11-20T05:40:53+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.7,
+   "punteggio": 18.0,
    "testate": 2
   },
   {
@@ -694,7 +958,7 @@
    "pubblicato": "2026-11-20T05:39:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.7,
+   "punteggio": 28.0,
    "testate": 3
   },
   {
@@ -706,8 +970,8 @@
    "pubblicato": "2026-11-20T05:39:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.7,
-   "testate": 3
+   "punteggio": -2.0,
+   "testate": 2
   },
   {
    "titolo": "F1, risultati e classifica FP2 GP Las Vegas 2026: Russell fa il vuoto sul bagnato, Ferrari vicina. Antonelli a quasi 2 secondi",
@@ -718,7 +982,7 @@
    "pubblicato": "2026-11-20T05:38:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.7,
+   "punteggio": 16.0,
    "testate": 3
   },
   {
@@ -730,7 +994,7 @@
    "pubblicato": "2026-11-20T05:16:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 21.6,
+   "punteggio": 19.9,
    "testate": 3
   },
   {
@@ -742,7 +1006,7 @@
    "pubblicato": "2026-11-20T05:11:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.6,
+   "punteggio": 15.9,
    "testate": 3
   },
   {
@@ -754,7 +1018,7 @@
    "pubblicato": "2026-11-20T05:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.6,
+   "punteggio": -0.2,
    "testate": 1
   },
   {
@@ -766,7 +1030,7 @@
    "pubblicato": "2026-11-20T04:48:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.5,
+   "punteggio": 27.8,
    "testate": 3
   },
   {
@@ -778,7 +1042,7 @@
    "pubblicato": "2026-11-20T04:06:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.3,
+   "punteggio": 7.6,
    "testate": 1
   },
   {
@@ -790,20 +1054,8 @@
    "pubblicato": "2026-11-20T04:04:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.7,
+   "punteggio": -2.4,
    "testate": 2
-  },
-  {
-   "titolo": "Svolta FIA, arrivano gli “arbitri” professionisti: dal 2027, commissari a tempo pieno in F1",
-   "estratto": "Novità epocale in Formula 1: debutta nel 2027 una nuova struttura arbitrale composta anche da steward professionisti, con l'obiettivo di garantire un giudizio più equo e uniforme",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/svolta-fia-arrivano-gli-arbitri-professionisti-dal-2027-commissari-a-tempo-pieno-in-f1",
-   "pubblicato": "2026-11-20T03:15:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 26.1,
-   "testate": 3
   },
   {
    "titolo": "F1 | Las Vegas, Libere 1: piove a dirotto e non c'è classifica perché nessun pilota ha chiuso un tempo",
@@ -814,20 +1066,8 @@
    "pubblicato": "2026-11-20T01:43:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.7,
-   "testate": 3
-  },
-  {
-   "titolo": "F1 GP Las Vegas 2026 – Classifica FP1: pioggia e freddo sulla Strip, nessun giro cronometrato",
-   "estratto": "Sulla Strip va in scena la prima sessione di prove libere del weekend di Las Vegas: il dettaglio dei risultati e il riassunto delle FP1",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-risultati/classifica-f1-gp-las-vegas-2026-prove-libere-1-fp1-pioggia-freddo-strip-poca-attivita",
-   "pubblicato": "2026-11-20T01:40:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 8.7,
-   "testate": 3
+   "punteggio": -3.0,
+   "testate": 2
   },
   {
    "titolo": "F1 | C'è una svolta FIA: dal 2027 arriveranno i commissari sportivi permanenti",
@@ -838,8 +1078,8 @@
    "pubblicato": "2026-11-20T00:30:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.4,
-   "testate": 2
+   "punteggio": -1.3,
+   "testate": 1
   },
   {
    "titolo": "Di Giannantonio-Marquez, chiarimento a metà: “Non devo insegnare niente a nessuno, ma si sa che chi è dietro ci prova”",
@@ -850,7 +1090,7 @@
    "pubblicato": "2026-11-19T18:18:21+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.9,
+   "punteggio": 6.1,
    "testate": 1
   },
   {
@@ -862,7 +1102,7 @@
    "pubblicato": "2026-11-19T17:53:45+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.2,
+   "punteggio": -2.0,
    "testate": 1
   },
   {
@@ -874,7 +1114,7 @@
    "pubblicato": "2026-11-19T17:38:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.7,
+   "punteggio": 6.0,
    "testate": 1
   },
   {
@@ -886,7 +1126,7 @@
    "pubblicato": "2026-11-19T17:35:09+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.7,
+   "punteggio": 6.0,
    "testate": 1
   },
   {
@@ -898,7 +1138,7 @@
    "pubblicato": "2026-11-19T17:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.7,
+   "punteggio": 5.9,
    "testate": 1
   },
   {
@@ -910,7 +1150,7 @@
    "pubblicato": "2026-11-19T17:20:50+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.6,
+   "punteggio": 17.9,
    "testate": 3
   },
   {
@@ -922,7 +1162,7 @@
    "pubblicato": "2026-11-19T17:11:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.6,
+   "punteggio": 5.9,
    "testate": 1
   },
   {
@@ -934,7 +1174,7 @@
    "pubblicato": "2026-11-19T16:58:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.5,
+   "punteggio": 5.8,
    "testate": 1
   },
   {
@@ -946,7 +1186,7 @@
    "pubblicato": "2026-11-19T16:54:34+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 10.5,
+   "punteggio": 8.8,
    "testate": 2
   },
   {
@@ -958,7 +1198,7 @@
    "pubblicato": "2026-11-19T16:43:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.5,
+   "punteggio": 5.7,
    "testate": 1
   },
   {
@@ -970,7 +1210,7 @@
    "pubblicato": "2026-11-19T16:42:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.5,
+   "punteggio": 7.7,
    "testate": 2
   },
   {
@@ -982,7 +1222,7 @@
    "pubblicato": "2026-11-19T16:40:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.5,
+   "punteggio": 7.7,
    "testate": 2
   },
   {
@@ -994,7 +1234,7 @@
    "pubblicato": "2026-11-19T16:36:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.5,
+   "punteggio": 7.7,
    "testate": 2
   },
   {
@@ -1006,7 +1246,7 @@
    "pubblicato": "2026-11-19T16:33:03+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.6,
+   "punteggio": -2.3,
    "testate": 1
   },
   {
@@ -1018,7 +1258,7 @@
    "pubblicato": "2026-11-19T16:14:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.6,
+   "punteggio": -7.4,
    "testate": 1
   },
   {
@@ -1030,7 +1270,7 @@
    "pubblicato": "2026-11-19T15:57:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.3,
+   "punteggio": 5.5,
    "testate": 1
   },
   {
@@ -1042,7 +1282,7 @@
    "pubblicato": "2026-11-19T15:37:55+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.2,
+   "punteggio": 5.5,
    "testate": 1
   },
   {
@@ -1054,7 +1294,7 @@
    "pubblicato": "2026-11-19T15:19:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.9,
+   "punteggio": -7.6,
    "testate": 1
   },
   {
@@ -1066,7 +1306,7 @@
    "pubblicato": "2026-11-19T15:00:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.1,
+   "punteggio": 5.3,
    "testate": 1
   },
   {
@@ -1078,7 +1318,7 @@
    "pubblicato": "2026-11-19T14:53:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.0,
+   "punteggio": -7.7,
    "testate": 1
   },
   {
@@ -1090,7 +1330,7 @@
    "pubblicato": "2026-11-19T14:32:20+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.1,
+   "punteggio": -2.8,
    "testate": 1
   },
   {
@@ -1102,7 +1342,7 @@
    "pubblicato": "2026-11-19T14:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.8,
+   "punteggio": 2.1,
    "testate": 2
   },
   {
@@ -1114,7 +1354,7 @@
    "pubblicato": "2026-11-19T13:00:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.4,
+   "punteggio": -8.2,
    "testate": 1
   },
   {
@@ -1126,7 +1366,7 @@
    "pubblicato": "2026-11-19T12:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.3,
+   "punteggio": -0.4,
    "testate": 1
   },
   {
@@ -1138,7 +1378,7 @@
    "pubblicato": "2026-11-19T11:46:35+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": -0.8,
+   "punteggio": -2.5,
    "testate": 1
   },
   {
@@ -1150,20 +1390,8 @@
    "pubblicato": "2026-11-19T11:29:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.2,
+   "punteggio": 6.4,
    "testate": 2
-  },
-  {
-   "titolo": "F1, weekend in salita a Las Vegas per Kimi Antonelli: penalità in vista per il campione del mondo",
-   "estratto": "Manca solamente l’ufficialità, che arriverà nel corso della prima sessione di prove libere tramite il documento ufficiale della FIA, ma con ogni probabilità Kimi Antonelli sconterà una penalizzazione…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/f1-weekend-in-salita-a-las-vegas-per-kimi-antonelli-penalita-in-vista-per-il-campione-del-mondo/",
-   "pubblicato": "2026-11-19T10:54:57+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 21.0,
-   "testate": 3
   },
   {
    "titolo": "Leclerc-Hamilton, dalle scintille al chiarimento: \"Succederà ancora, ma basta...\"",
@@ -1174,7 +1402,7 @@
    "pubblicato": "2026-11-19T10:54:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.0,
+   "punteggio": 4.3,
    "testate": 1
   },
   {
@@ -1186,7 +1414,7 @@
    "pubblicato": "2026-11-19T10:31:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.9,
+   "punteggio": 4.2,
    "testate": 1
   },
   {
@@ -1198,7 +1426,7 @@
    "pubblicato": "2026-11-19T10:00:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.8,
+   "punteggio": 19.1,
    "testate": 3
   },
   {
@@ -1210,235 +1438,7 @@
    "pubblicato": "2026-11-19T09:57:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.2,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Ferrari, Leclerc: \"Con Hamilton chiariti in dieci minuti. Ora voglio vincere\"",
-   "estratto": "Per Charles Leclerc il caso è chiuso, e probabilmente lo era già pochi minuti dopo l'inizio dell'incontro organizzato da Fred Vasseur a Interlagos. Le tensioni con Lewis Hamilton, emerse dopo il Gran…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-ferrari-leclerc-con-hamilton-chiariti-in-dieci-minuti-ora-voglio-vincere/10875539/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-19T09:11:44+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 5.6,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Antonelli: “Mercedes è la più efficiente sull'elettrico, ma Red Bull sarà forte a Las Vegas”",
-   "estratto": "Las Vegas potrebbe rappresentare uno degli esami più particolari della stagione per le power unit di Formula 1. Le caratteristiche del circuito americano, unite alle basse temperature previste…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-antonelli-mercedes-e-la-piu-efficiente-sullelettrico-ma-red-bull-sara-forte-a-las-vegas-/10875533/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-19T08:41:58+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 5.5,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Hamilton rimanda il discorso sul futuro: \"Al rinnovo non ho ancora pensato\"",
-   "estratto": "Il futuro di Lewis Hamilton in Ferrari non è ancora un argomento sul tavolo delle discussioni tra il sette volte campione del mondo e la Scuderia. Alla vigilia del Gran Premio di Las Vegas, il…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-hamilton-rimanda-il-discorso-sul-futuro-al-rinnovo-non-ho-ancora-pensato-/10875530/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-19T08:16:14+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 15.4,
-   "testate": 2
-  },
-  {
-   "titolo": "Marquez a un passo dal titolo. Sprint potenzialmente bagnata a Portimão",
-   "estratto": "Mentre domenica il cielo sarà parzialmente soleggiato, il rischio di precipitazioni è previsto per sabato pomeriggio",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-meteo/marquez-a-un-passo-dal-titolo-sprint-potenzialmente-bagnata-a-portimao",
-   "pubblicato": "2026-11-19T08:11:01+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 2.3,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP, GP Portogallo 2026: gli orari del fine settimana dalle prove libere alla gara. Guida Sky e TV8",
-   "estratto": "Ci siamo. Tra poco più di 24 ore si alzerà il sipario sull’Autódromo internacional do Algarve di Portimao, circuito teatro questo fine settimana del GP del Portogallo, penultima tappa del…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/motogp-gp-portogallo-2026-gli-orari-del-fine-settimana-dalle-prove-libere-alla-gara-guida-sky-e-tv8/",
-   "pubblicato": "2026-11-19T07:35:48+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 0.2,
-   "testate": 3
-  },
-  {
-   "titolo": "Acosta implacabile: “La prima vittoria? L’ho sognata tanto, ma non mi basta. Io voglio molto di più”",
-   "estratto": "Quest'anno lo spagnolo ha finalmente centrato il primo successo in MotoGP, ma la sua emozione è stata meno intensa del previsto",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/acosta-implacabile-prima-vittoria-sognata-tanto-ma-non-mi-basta-voglio-molto-di-piu",
-   "pubblicato": "2026-11-19T06:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -3.2,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP, GP Portogallo 2026 su TV8: orari in chiaro fine settimana, qualifiche e gara",
-   "estratto": "Il Gran Premio di Portogallo di MotoGP si disputerà dal 20 al 22 novembre. La Sprint del penultimo atto dell’edizione 2026 del Motomondiale comincerà alle ore 16:00 del nostro Paese di sabato 21…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/motogp-gp-portogallo-2026-su-tv8-orari-in-chiaro-fine-settimana-qualifiche-e-gara/",
-   "pubblicato": "2026-11-19T04:10:20+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -10.7,
-   "testate": 2
-  },
-  {
-   "titolo": "F1 | Cadillac dà ancora fiducia a Bottas: Valtteri ha rinnovato per il 2027 battendo Herta e Vesti",
-   "estratto": "Nonostante le incertezze che avevano accompagnato il suo futuro negli ultimi mesi, Cadillac ha deciso di puntare sulla continuità confermando Valtteri Bottas anche per la stagione 2027. Il finlandese…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-bottas-rinnovo-cadillac-20227/10875165/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-18T20:16:55+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -10.6,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Aston Martin: a Las Vegas in FP1 ci sarà Crawford sulla AMR26 di Alonso",
-   "estratto": "Jak Crawford, terzo pilota Aston Martin, sarà in pista nella prima sessione di prove libere del Gran Premio di Las Vegas, al volante della AMR26 di Fernando Alonso. Il 21enne statunitense avrà…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-aston-martin-a-las-vegas-in-fp1-ci-sara-crawford-sulla-amr26-di-alonso/10875357/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-18T18:13:17+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -11.1,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Il titolo Costruttori: la grande sfida che resta ad Aprilia in questa stagione",
-   "estratto": "L'Aprilia è stata sulla griglia della classe regina del motociclismo in 22 stagioni, compresa quella attuale, suddivise in tre periodi. La prima incursione fu nel 1994, quando ha corso nella 500cc…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-il-titolo-costruttori-la-grande-sfida-che-resta-ad-aprilia-in-questa-stagione/10874763/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-18T17:52:42+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -1.2,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Marc Marquez campione del mondo nella Sprint di Portimao: ecco tutte le combinazioni",
-   "estratto": "Il Gran Premio del Portogallo sembra essere destinato a rimanere nella storia del Motomondiale. A Portimao, infatti, Marc Marquez ha ottime chance di tagliare un traguardo che prima di lui hanno…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-marc-marquez-campione-del-mondo-nella-sprint-di-portimao-ecco-tutte-le-combinazioni/10875145/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-18T16:44:56+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -1.5,
-   "testate": 2
-  },
-  {
-   "titolo": "DZE: l’eccellenza italiana che da oltre 15 anni è protagonista dell’illuminazione delle gare in notturna di F1",
-   "estratto": "Scorrendo la storia degli ultimi vent’anni, alcune delle pagine più significative della Formula 1 sono state scritte sotto i riflettori: non solo quelli mediatici, ma anche quelli che rendono…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/dze-leccellenza-italiana-che-da-oltre-15-anni-e-protagonista-dellilluminazione-delle-gare-in-nottur/10875134/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-18T16:00:56+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -11.7,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Ceccarelli: \"Las Vegas è un GP scintillante per i piloti, ma molto usurante per gli addetti ai lavori\"",
-   "estratto": "La Formula 1 approda a Las Vegas, un appuntamento fortemente promosso da Liberty Media per il suo valore promozionale dei Gran Premi negli Stati Uniti. La terza gara USA è sicuramente la più glamour…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-ceccarelli-las-vegas-e-un-gp-scintillante-per-i-piloti-ma-molto-usurante-per-gli-addetti-ai-lavo/10875228/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-18T14:45:23+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -7.0,
-   "testate": 1
-  },
-  {
-   "titolo": "Marquez, secondo match point: “A Portimão sempre sfortunato, serve massima concentrazione”",
-   "estratto": "Marc Marquez è vicinissimo all'ottavo titolo in MotoGP, il decimo nel Motomondiale: a Portimão può chiudere i giochi già sabato",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/marquez-secondo-match-point-qui-mai-fortunato-serve-massima-concentrazione-portimao-ducati",
-   "pubblicato": "2026-11-18T14:35:55+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 3.0,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Mir salta il GP del Portogallo: Honda richiama Jake Dixon",
-   "estratto": "Jake Dixon farà la sua seconda apparizione consecutiva nella stagione MotoGP 2026 al Gran Premio del Portogallo di questo fine settimana, con la malattia che continua a tenere fuori il pilota…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/honda-richiama-jake-dixon-mentre-joan-mir-si-ritira-dal-gp-del-portogallo/10875261/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-18T14:08:51+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -12.2,
-   "testate": 1
-  },
-  {
-   "titolo": "Quartararo nella “sua” Portimão: “È una delle piste più dure”",
-   "estratto": "Fabio Quartararo ha vinto per due volte a Portimão, ben figurando anche nel difficile 2025: l'anno scorso andò in prima fila",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/quartararo-nella-sua-portimao-e-una-delle-piste-piu-dure",
-   "pubblicato": "2026-11-18T13:45:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -7.3,
-   "testate": 1
-  },
-  {
-   "titolo": "Honda: Marini c’è, Mir ancora ai box. Al suo posto Dixon",
-   "estratto": "Luca Marini ha recuperato dai problemi fisici che lo hanno tenuto ai box in Qatar. Ancora fuori Joan Mir, che viene rimpiazzato da Jake Dixon",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/honda-marini-ce-mir-ancora-ai-box-al-suo-posto-dixon-portimao",
-   "pubblicato": "2026-11-18T13:05:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -4.4,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Lecuona: \"Ho dovuto trattare con mia moglie perché non mi cacciasse di casa\"",
-   "estratto": "Iker Lecuona sostituirà l'infortunato Pecco Bagnaia nel team ufficiale Ducati a Portimao, dove questo fine settimana si disputa il GP del Portogallo. Sarà la sesta apparizione quest'anno in MotoGP…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-lecuona-ho-dovuto-trattare-con-mia-moglie-perche-non-mi-cacciasse-di-casa/10875135/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-18T10:53:33+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 0.0,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 e MotoGP, differenziale senza precedenti in termini di età. Antonelli e Marquez stanno per scrivere la storia a braccetto",
-   "estratto": "Kimi Antonelli, in questo 2026, è diventato il più giovane Campione del Mondo di F1 della storia. Al contempo, in MotoGP stiamo per assistere all’incoronazione di uno dei Campioni più anziani da…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/f1-e-motogp-differenziale-senza-precedenti-in-termini-di-eta-antonelli-e-marquez-stanno-per-scrivere-la-storia-a-braccetto/",
-   "pubblicato": "2026-11-18T10:45:19+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -5.0,
+   "punteggio": -4.0,
    "testate": 1
   }
  ]

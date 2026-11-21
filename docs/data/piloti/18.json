@@ -306,6 +306,17 @@
     "pos": null,
     "stato": "RIT"
    }
+  },
+  {
+   "id": 1300,
+   "nome": "Gran Premio di Las Vegas",
+   "inizio": "2026-11-20T00:30:00+00:00",
+   "qualifiche": {
+    "pos": 20,
+    "stato": null
+   },
+   "sprint": null,
+   "gara": null
   }
  ],
  "vittorie": 0,

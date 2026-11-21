@@ -1,0 +1,58 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Wolff on Antonelli",
+ "etichetta": "Breaking",
+ "fonte": "Bild, Tuttosport, GPBlog",
+ "velocita": "+20%",
+ "scene": [
+  {
+   "foto": "Kimi Antonelli",
+   "ritratto_espn": true,
+   "hook": true,
+   "hook_titolo": "Wolff on Antonelli: rewarded",
+   "testo": "*Wolff* on *Antonelli*: he «deserves to be *rewarded accordingly*»!",
+   "fonte_alto": "Bild, Tuttosport, GPBlog"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "ritratto_espn": true,
+   "testo": "He told *Bild*: Antonelli, twenty, is the youngest *world champion* ever.",
+   "fonte_alto": "Bild, Tuttosport, GPBlog"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "pista": true,
+   "foto_espn_cerca": [
+    "wolff"
+   ],
+   "testo": "A new contract? «For next year *he already has one*». No new deal announced, for now.",
+   "fonte_alto": "Bild, Tuttosport, GPBlog"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "pista": true,
+   "foto_espn_cerca": [
+    "ferrari"
+   ],
+   "testo": "And *Ferrari*? Worried an Italian will want it sooner or later? «*Zero*. Kimi and his family are *loyal* people».",
+   "fonte_alto": "Bild, Tuttosport, GPBlog"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "ritratto_espn": true,
+   "testo": "«He belongs to *Mercedes* like wheels belong to a car».",
+   "fonte_alto": "Bild, Tuttosport, GPBlog"
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "ritratto_espn": true,
+   "testo": "This year *Mercedes* won *both titles*: drivers' and constructors'.",
+   "fonte_alto": "Bild, Tuttosport, GPBlog"
+  }
+ ],
+ "finale": {
+  "foto": "Kimi Antonelli",
+  "ritratto_espn": true,
+  "domanda": "Will Antonelli stay at Mercedes forever?"
+ }
+}

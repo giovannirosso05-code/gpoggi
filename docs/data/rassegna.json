@@ -1,6 +1,90 @@
 {
- "generato_il": "2026-11-21T02:52:10+00:00",
+ "generato_il": "2026-11-21T05:06:16+00:00",
  "articoli": [
+  {
+   "titolo": "LIVE F1, GP Las Vegas 2026 in DIRETTA: Antonelli il migliore in qualifica, ma la pole è di Verstappen. Flop fragoroso per la Ferrari",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE LA GRIGLIA DI PARTENZA 6.05 La classifica finale della Q3: 1 Kimi Antonelli (Mercedes) 1:33.893 2 Max Verstappen (Red Bull) +0.258 3 George Russell…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/live-f1-gp-las-vegas-2026-in-diretta-occasione-ferrari-in-qualifica-antonelli-penalizzato/",
+   "pubblicato": "2026-11-21T05:03:31+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 22.0,
+   "testate": 2
+  },
+  {
+   "titolo": "F1, la vera scossa? Il ritorno del rumore",
+   "estratto": "Nel 2030 l’addio dall’era elettrica con motori V8 e macchine leggere",
+   "fonte": "Tuttosport",
+   "serie": "F1",
+   "url": "https://www.tuttosport.com/news/formula-1/2026/11/21-152705829/f1_la_vera_scossa_il_ritorno_del_rumore/",
+   "pubblicato": "2026-11-21T05:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 4.0,
+   "testate": 1
+  },
+  {
+   "titolo": "Duello con Russell, Verstappen se la cava con un warning",
+   "estratto": "Max Verstappen non ha ricevuto penalità in seguito agli episodi con George Russell e Franco Colapinto nelle FP3 di Las Vegas",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/duello-con-russell-verstappen-se-la-cava-con-un-warning-colapinto-las-vegas-fp3-prove-libere",
+   "pubblicato": "2026-11-21T04:52:02+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 3.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Griglia di partenza F1, GP Las Vegas 2026: risultati e classifica qualifiche",
+   "estratto": "Il Circus della F1 ha vissuto una notte ad altissima tensione sullo Strip di Las Vegas per definire lo schieramento del Gran Premio, terzultimo appuntamento del campionato. La caccia alla pole…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/griglia-di-partenza-f1-gp-las-vegas-2026-risultati-e-classifica-qualifiche/",
+   "pubblicato": "2026-11-21T04:20:58+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 1.8,
+   "testate": 2
+  },
+  {
+   "titolo": "LIVE MotoGP, GP Portogallo 2026 in DIRETTA: Marquez può chiudere i conti nella Sprint",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE Buongiorno amici ed amiche di OA Sport e benvenuti alla DIRETTA LIVE testuale del Gran Premio del Portogallo, ventunesimo appuntamento del Mondiale di MotoGP…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/live-motogp-gp-portogallo-2026-in-diretta-marquez-puo-chiudere-i-conti-nella-sprint/",
+   "pubblicato": "2026-11-21T04:10:49+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 13.8,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 GP Las Vegas 2026, qualifiche: incubo Ferrari, Leclerc e Hamilton eliminati in Q2! – DIRETTA",
+   "estratto": "La cronaca live minuto per minuto delle prove ufficiali che decidono la griglia di partenza del fine settimana a Las Vegas",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-las-vegas-2026-qualifiche-q1-q2-q3-pole-aggiornamenti-ferrari-leclerc-hamilton-verstappen",
+   "pubblicato": "2026-11-21T03:45:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 31.7,
+   "testate": 3
+  },
+  {
+   "titolo": "A che ora la F1 su TV8 oggi, GP Las Vegas 2026: programma qualifiche, differita in chiaro",
+   "estratto": "Le qualifiche del Gran Premio di Las Vegas 2026 di F1 avranno luogo sabato 21 novembre dalle ore 5:00 alle ore 6:00 del nostro Paese. Verrà pertanto assegnata la quarta pole position da quando si…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/a-che-ora-la-f1-su-tv8-oggi-gp-las-vegas-2026-programma-qualifiche-differita-in-chiaro/",
+   "pubblicato": "2026-11-21T03:05:15+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 1.5,
+   "testate": 2
+  },
   {
    "titolo": "F1 | Las Vegas, Libere 3: Russell fa il vuoto nella doppietta Mercedes, poi spuntano Norris e Leclerc",
    "estratto": "George Russell si scatena e monopolizza la terza sessione di prove libere del GP di Las Vegas. Messa da parte la pioggia che ha condizionato i due turni del giovedì, resta poco tempo per preparare la…",
@@ -10,20 +94,8 @@
    "pubblicato": "2026-11-21T02:24:07+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 23.9,
+   "punteggio": 23.3,
    "testate": 3
-  },
-  {
-   "titolo": "F1 GP Las Vegas 2026, qualifiche: Russell favorito ma c’è equilibrio! Si parte alle 5.00 con la Q1 – DIRETTA",
-   "estratto": "La cronaca live minuto per minuto delle prove ufficiali che decidono la griglia di partenza del fine settimana a Las Vegas",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-las-vegas-2026-qualifiche-q1-q2-q3-pole-aggiornamenti-ferrari-leclerc-hamilton-verstappen",
-   "pubblicato": "2026-11-21T02:10:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 13.8,
-   "testate": 2
   },
   {
    "titolo": "F1, risultati e classifica FP3 GP Las Vegas 2026: Russell precede Antonelli e Norris. 4° Leclerc, 6° Verstappen, 8° Hamilton",
@@ -34,7 +106,7 @@
    "pubblicato": "2026-11-21T02:04:45+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.8,
+   "punteggio": 19.2,
    "testate": 3
   },
   {
@@ -46,7 +118,7 @@
    "pubblicato": "2026-11-21T01:49:54+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.7,
+   "punteggio": 31.2,
    "testate": 3
   },
   {
@@ -58,19 +130,7 @@
    "pubblicato": "2026-11-21T01:40:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.7,
-   "testate": 3
-  },
-  {
-   "titolo": "LIVE F1, GP Las Vegas 2026 in DIRETTA: Russell fa il vuoto nella FP3. Antonelli risponde, le Ferrari rincorrono. Alle 5.00 le qualifiche",
-   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE 02.37 Non ci rimane che ringraziarvi per la cortese attenzione e rimandarvi alle ore 05.00 per le qualifiche. Grazie e buon proseguimento di nottata. 02.36…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/live-f1-gp-las-vegas-2026-in-diretta-occasione-ferrari-in-qualifica-antonelli-penalizzato/",
-   "pubblicato": "2026-11-21T01:31:31+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 36.7,
+   "punteggio": 19.1,
    "testate": 3
   },
   {
@@ -82,7 +142,7 @@
    "pubblicato": "2026-11-21T01:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.7,
+   "punteggio": 3.1,
    "testate": 1
   },
   {
@@ -94,7 +154,7 @@
    "pubblicato": "2026-11-20T23:01:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.0,
+   "punteggio": -9.5,
    "testate": 1
   },
   {
@@ -106,7 +166,7 @@
    "pubblicato": "2026-11-20T23:01:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.0,
+   "punteggio": -9.5,
    "testate": 1
   },
   {
@@ -118,7 +178,7 @@
    "pubblicato": "2026-11-20T18:55:03+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.0,
+   "punteggio": 16.5,
    "testate": 2
   },
   {
@@ -130,7 +190,7 @@
    "pubblicato": "2026-11-20T18:52:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.0,
+   "punteggio": 6.4,
    "testate": 1
   },
   {
@@ -142,7 +202,7 @@
    "pubblicato": "2026-11-20T18:43:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.0,
+   "punteggio": 1.4,
    "testate": 1
   },
   {
@@ -154,7 +214,7 @@
    "pubblicato": "2026-11-20T18:30:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.9,
+   "punteggio": 16.4,
    "testate": 2
   },
   {
@@ -166,7 +226,7 @@
    "pubblicato": "2026-11-20T18:22:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.9,
+   "punteggio": 6.3,
    "testate": 1
   },
   {
@@ -178,7 +238,7 @@
    "pubblicato": "2026-11-20T18:15:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.8,
+   "punteggio": 24.3,
    "testate": 2
   },
   {
@@ -190,7 +250,7 @@
    "pubblicato": "2026-11-20T18:10:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.8,
+   "punteggio": 16.3,
    "testate": 2
   },
   {
@@ -202,7 +262,7 @@
    "pubblicato": "2026-11-20T18:00:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.8,
+   "punteggio": 14.2,
    "testate": 1
   },
   {
@@ -214,7 +274,7 @@
    "pubblicato": "2026-11-20T17:20:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.6,
+   "punteggio": 24.1,
    "testate": 2
   },
   {
@@ -226,7 +286,7 @@
    "pubblicato": "2026-11-20T17:08:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.6,
+   "punteggio": 14.0,
    "testate": 1
   },
   {
@@ -238,7 +298,7 @@
    "pubblicato": "2026-11-20T17:06:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.6,
+   "punteggio": 16.0,
    "testate": 2
   },
   {
@@ -250,7 +310,7 @@
    "pubblicato": "2026-11-20T16:29:22+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.4,
+   "punteggio": 16.8,
    "testate": 3
   },
   {
@@ -262,7 +322,7 @@
    "pubblicato": "2026-11-20T16:22:07+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.4,
+   "punteggio": 28.8,
    "testate": 3
   },
   {
@@ -274,7 +334,7 @@
    "pubblicato": "2026-11-20T16:19:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.4,
+   "punteggio": 28.8,
    "testate": 3
   },
   {
@@ -286,7 +346,7 @@
    "pubblicato": "2026-11-20T16:13:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.3,
+   "punteggio": 16.8,
    "testate": 3
   },
   {
@@ -298,7 +358,7 @@
    "pubblicato": "2026-11-20T16:00:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.3,
+   "punteggio": 10.7,
    "testate": 2
   },
   {
@@ -310,7 +370,7 @@
    "pubblicato": "2026-11-20T16:00:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.3,
+   "punteggio": 28.7,
    "testate": 3
   },
   {
@@ -322,7 +382,7 @@
    "pubblicato": "2026-11-20T15:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.2,
+   "punteggio": 10.6,
    "testate": 2
   },
   {
@@ -334,7 +394,7 @@
    "pubblicato": "2026-11-20T15:29:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.2,
+   "punteggio": 5.6,
    "testate": 1
   },
   {
@@ -346,7 +406,7 @@
    "pubblicato": "2026-11-20T15:04:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.1,
+   "punteggio": 10.5,
    "testate": 2
   },
   {
@@ -358,7 +418,7 @@
    "pubblicato": "2026-11-20T14:58:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.0,
+   "punteggio": 0.5,
    "testate": 1
   },
   {
@@ -370,7 +430,7 @@
    "pubblicato": "2026-11-20T14:50:53+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.0,
+   "punteggio": 0.4,
    "testate": 1
   },
   {
@@ -382,7 +442,7 @@
    "pubblicato": "2026-11-20T14:30:31+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.9,
+   "punteggio": 10.4,
    "testate": 2
   },
   {
@@ -394,7 +454,7 @@
    "pubblicato": "2026-11-20T14:29:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.9,
+   "punteggio": 15.3,
    "testate": 2
   },
   {
@@ -406,7 +466,7 @@
    "pubblicato": "2026-11-20T14:04:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.8,
+   "punteggio": 0.2,
    "testate": 1
   },
   {
@@ -418,7 +478,7 @@
    "pubblicato": "2026-11-20T14:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.8,
+   "punteggio": 5.2,
    "testate": 1
   },
   {
@@ -430,7 +490,7 @@
    "pubblicato": "2026-11-20T13:58:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.8,
+   "punteggio": 5.2,
    "testate": 1
   },
   {
@@ -442,7 +502,7 @@
    "pubblicato": "2026-11-20T13:00:04+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.5,
+   "punteggio": 10.0,
    "testate": 2
   },
   {
@@ -454,7 +514,7 @@
    "pubblicato": "2026-11-20T12:40:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.4,
+   "punteggio": 9.9,
    "testate": 2
   },
   {
@@ -466,7 +526,7 @@
    "pubblicato": "2026-11-20T12:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.3,
+   "punteggio": 4.8,
    "testate": 1
   },
   {
@@ -478,7 +538,7 @@
    "pubblicato": "2026-11-20T12:08:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.3,
+   "punteggio": 15.8,
    "testate": 3
   },
   {
@@ -490,7 +550,7 @@
    "pubblicato": "2026-11-20T12:08:24+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.3,
+   "punteggio": 14.8,
    "testate": 2
   },
   {
@@ -502,7 +562,7 @@
    "pubblicato": "2026-11-20T11:50:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 28.2,
+   "punteggio": 27.7,
    "testate": 3
   },
   {
@@ -514,7 +574,7 @@
    "pubblicato": "2026-11-20T11:46:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.2,
+   "punteggio": 17.7,
    "testate": 2
   },
   {
@@ -526,7 +586,7 @@
    "pubblicato": "2026-11-20T11:45:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.2,
+   "punteggio": 15.7,
    "testate": 3
   },
   {
@@ -538,7 +598,7 @@
    "pubblicato": "2026-11-20T11:24:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.1,
+   "punteggio": 24.6,
    "testate": 3
   },
   {
@@ -550,7 +610,7 @@
    "pubblicato": "2026-11-20T10:53:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.0,
+   "punteggio": -0.6,
    "testate": 1
   },
   {
@@ -562,7 +622,7 @@
    "pubblicato": "2026-11-20T10:45:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.0,
+   "punteggio": 4.4,
    "testate": 1
   },
   {
@@ -574,7 +634,7 @@
    "pubblicato": "2026-11-20T10:40:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.0,
+   "punteggio": -0.6,
    "testate": 1
   },
   {
@@ -586,7 +646,7 @@
    "pubblicato": "2026-11-20T10:30:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.1,
+   "punteggio": -2.7,
    "testate": 2
   },
   {
@@ -598,7 +658,7 @@
    "pubblicato": "2026-11-20T10:20:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.1,
+   "punteggio": -0.7,
    "testate": 1
   },
   {
@@ -610,7 +670,7 @@
    "pubblicato": "2026-11-20T09:58:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.2,
+   "punteggio": -0.8,
    "testate": 1
   },
   {
@@ -622,7 +682,7 @@
    "pubblicato": "2026-11-20T09:56:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.2,
+   "punteggio": -0.8,
    "testate": 1
   },
   {
@@ -634,7 +694,7 @@
    "pubblicato": "2026-11-20T09:56:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.8,
+   "punteggio": 4.2,
    "testate": 1
   },
   {
@@ -646,7 +706,7 @@
    "pubblicato": "2026-11-20T09:40:39+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 23.7,
+   "punteggio": 23.1,
    "testate": 2
   },
   {
@@ -658,7 +718,7 @@
    "pubblicato": "2026-11-20T09:33:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.7,
+   "punteggio": 7.1,
    "testate": 1
   },
   {
@@ -670,7 +730,7 @@
    "pubblicato": "2026-11-20T09:29:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.7,
+   "punteggio": 14.1,
    "testate": 2
   },
   {
@@ -682,7 +742,7 @@
    "pubblicato": "2026-11-20T09:14:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.6,
+   "punteggio": 12.0,
    "testate": 1
   },
   {
@@ -694,8 +754,8 @@
    "pubblicato": "2026-11-20T08:39:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.4,
-   "testate": 1
+   "punteggio": 21.9,
+   "testate": 2
   },
   {
    "titolo": "Cadillac modifica i propri progetti: motori Ferrari fino al 2029",
@@ -706,7 +766,7 @@
    "pubblicato": "2026-11-20T08:34:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.4,
+   "punteggio": 16.9,
    "testate": 2
   },
   {
@@ -718,7 +778,7 @@
    "pubblicato": "2026-11-20T08:12:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.3,
+   "punteggio": 3.8,
    "testate": 1
   },
   {
@@ -730,7 +790,7 @@
    "pubblicato": "2026-11-20T08:06:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.3,
+   "punteggio": 11.8,
    "testate": 1
   },
   {
@@ -742,7 +802,7 @@
    "pubblicato": "2026-11-20T07:53:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.3,
+   "punteggio": 16.7,
    "testate": 2
   },
   {
@@ -754,7 +814,7 @@
    "pubblicato": "2026-11-20T07:49:55+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.2,
+   "punteggio": 13.7,
    "testate": 2
   },
   {
@@ -766,7 +826,7 @@
    "pubblicato": "2026-11-20T07:41:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.2,
+   "punteggio": 13.6,
    "testate": 2
   },
   {
@@ -778,7 +838,7 @@
    "pubblicato": "2026-11-20T07:38:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.2,
+   "punteggio": 3.6,
    "testate": 1
   },
   {
@@ -790,7 +850,7 @@
    "pubblicato": "2026-11-20T07:32:09+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.2,
+   "punteggio": 21.6,
    "testate": 2
   },
   {
@@ -802,7 +862,7 @@
    "pubblicato": "2026-11-20T07:29:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.2,
+   "punteggio": 3.6,
    "testate": 1
   },
   {
@@ -814,8 +874,8 @@
    "pubblicato": "2026-11-20T07:28:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.1,
-   "testate": 2
+   "punteggio": -1.4,
+   "testate": 1
   },
   {
    "titolo": "Kimi Antonelli non brilla sul bagnato: “Poco feeling con le intermedie, raccolti dati importanti”",
@@ -826,7 +886,7 @@
    "pubblicato": "2026-11-20T07:27:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.1,
+   "punteggio": 11.6,
    "testate": 1
   },
   {
@@ -838,7 +898,7 @@
    "pubblicato": "2026-11-20T07:12:41+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.1,
+   "punteggio": 3.5,
    "testate": 1
   },
   {
@@ -850,7 +910,7 @@
    "pubblicato": "2026-11-20T07:08:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.1,
+   "punteggio": 8.5,
    "testate": 2
   },
   {
@@ -862,7 +922,7 @@
    "pubblicato": "2026-11-20T07:07:07+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.1,
+   "punteggio": 13.5,
    "testate": 2
   },
   {
@@ -874,7 +934,7 @@
    "pubblicato": "2026-11-20T07:01:05+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.0,
+   "punteggio": 3.5,
    "testate": 1
   },
   {
@@ -886,7 +946,7 @@
    "pubblicato": "2026-11-20T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.0,
+   "punteggio": -3.5,
    "testate": 2
   },
   {
@@ -898,7 +958,7 @@
    "pubblicato": "2026-11-20T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.0,
+   "punteggio": -3.5,
    "testate": 2
   },
   {
@@ -910,7 +970,7 @@
    "pubblicato": "2026-11-20T06:51:39+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.0,
+   "punteggio": -1.6,
    "testate": 1
   },
   {
@@ -922,7 +982,7 @@
    "pubblicato": "2026-11-20T06:39:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.1,
+   "punteggio": -1.6,
    "testate": 1
   },
   {
@@ -934,7 +994,7 @@
    "pubblicato": "2026-11-20T06:22:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.9,
+   "punteggio": 3.3,
    "testate": 1
   },
   {
@@ -946,7 +1006,7 @@
    "pubblicato": "2026-11-20T06:07:27+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.8,
+   "punteggio": 16.3,
    "testate": 2
   },
   {
@@ -958,7 +1018,7 @@
    "pubblicato": "2026-11-20T06:06:10+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.8,
+   "punteggio": 6.2,
    "testate": 1
   },
   {
@@ -970,7 +1030,7 @@
    "pubblicato": "2026-11-20T06:00:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.8,
+   "punteggio": 16.2,
    "testate": 2
   },
   {
@@ -982,7 +1042,7 @@
    "pubblicato": "2026-11-20T05:57:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.2,
+   "punteggio": -13.8,
    "testate": 1
   },
   {
@@ -994,7 +1054,7 @@
    "pubblicato": "2026-11-20T05:57:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.2,
+   "punteggio": -13.8,
    "testate": 1
   },
   {
@@ -1006,7 +1066,7 @@
    "pubblicato": "2026-11-20T05:52:53+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.8,
+   "punteggio": 3.2,
    "testate": 1
   },
   {
@@ -1018,7 +1078,7 @@
    "pubblicato": "2026-11-20T05:47:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.7,
+   "punteggio": 16.2,
    "testate": 2
   },
   {
@@ -1030,32 +1090,8 @@
    "pubblicato": "2026-11-20T05:40:53+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 26.7,
+   "punteggio": 26.1,
    "testate": 3
-  },
-  {
-   "titolo": "LIVE F1, GP Las Vegas 2026 in DIRETTA: Russell davanti sotto la pioggia, bene Leclerc, Antonelli fatica sul bagnato",
-   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE LA CRONACA DELLE FP1 LA CRONACA DELLE FP2 06.07 E’ tutto per questa DIRETTA LIVE. Un saluto dalla redazione di OA Sport. 06.05 George Russell, con un colpo…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/live-f1-gp-las-vegas-2026-in-diretta-antonelli-con-laduo-ferrari-per-dare-un-segnale/",
-   "pubblicato": "2026-11-20T05:39:58+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 26.7,
-   "testate": 3
-  },
-  {
-   "titolo": "F1, a Las Vegas vince la pioggia: nemmeno un tempo cronometrato nella prima sessione di prove libere!",
-   "estratto": "La pioggia ha letteralmente dominato la scena lungo tutta la durata della prima sessione di prove libere del Gran Premio di Las Vegas, ventunesimo e terzultimo appuntamento del Mondiale di Formula…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/f1-la-pioggia-domina-la-scena-a-las-vegas-la-fp1-va-in-archivio-senza-nemmeno-un-tempo/",
-   "pubblicato": "2026-11-20T05:39:25+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -3.3,
-   "testate": 2
   },
   {
    "titolo": "F1 | Las Vegas, Libere 2: Russell sul filo di lana davanti a Gasly in una sessione bagnata",
@@ -1066,20 +1102,8 @@
    "pubblicato": "2026-11-20T05:16:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.6,
-   "testate": 3
-  },
-  {
-   "titolo": "GP Las Vegas 2026 – Classifica FP2: dal freddo spunta Russell, poi Gasly e Leclerc. Antonelli è 8°",
-   "estratto": "L'inglese della Mercedes ha stabilito il miglior tempo in una sessione condizionata da freddo e pista bagnata",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-risultati/gp-las-vegas-2026-classifica-fp2-dal-freddo-spunta-russell-poi-gasly-e-leclerc-antonelli-e-8",
-   "pubblicato": "2026-11-20T05:11:20+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 14.6,
-   "testate": 3
+   "punteggio": -2.0,
+   "testate": 1
   },
   {
    "titolo": "F1 | Ferrari: un solo elemento verticale semplificato nel bargeboard alla ricerca dell'efficienza",
@@ -1090,7 +1114,7 @@
    "pubblicato": "2026-11-20T04:06:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.3,
+   "punteggio": 5.7,
    "testate": 1
   },
   {
@@ -1102,7 +1126,7 @@
    "pubblicato": "2026-11-20T04:04:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.7,
+   "punteggio": -4.3,
    "testate": 2
   },
   {
@@ -1114,8 +1138,8 @@
    "pubblicato": "2026-11-20T01:43:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.3,
-   "testate": 2
+   "punteggio": -14.8,
+   "testate": 1
   },
   {
    "titolo": "F1 | C'è una svolta FIA: dal 2027 arriveranno i commissari sportivi permanenti",
@@ -1126,7 +1150,7 @@
    "pubblicato": "2026-11-20T00:30:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.6,
+   "punteggio": -3.1,
    "testate": 1
   },
   {
@@ -1138,7 +1162,7 @@
    "pubblicato": "2026-11-19T18:18:21+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.9,
+   "punteggio": 4.3,
    "testate": 1
   },
   {
@@ -1150,7 +1174,7 @@
    "pubblicato": "2026-11-19T17:53:45+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -3.2,
+   "punteggio": -3.8,
    "testate": 1
   },
   {
@@ -1162,7 +1186,7 @@
    "pubblicato": "2026-11-19T17:38:39+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.7,
+   "punteggio": 4.1,
    "testate": 1
   },
   {
@@ -1174,7 +1198,7 @@
    "pubblicato": "2026-11-19T17:35:09+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.7,
+   "punteggio": 4.1,
    "testate": 1
   },
   {
@@ -1186,7 +1210,7 @@
    "pubblicato": "2026-11-19T17:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.7,
+   "punteggio": 4.1,
    "testate": 1
   },
   {
@@ -1198,7 +1222,7 @@
    "pubblicato": "2026-11-19T17:20:50+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.6,
+   "punteggio": 16.1,
    "testate": 3
   },
   {
@@ -1210,7 +1234,7 @@
    "pubblicato": "2026-11-19T17:11:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.6,
+   "punteggio": 4.0,
    "testate": 1
   },
   {
@@ -1222,7 +1246,7 @@
    "pubblicato": "2026-11-19T16:58:42+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.5,
+   "punteggio": 4.0,
    "testate": 1
   },
   {
@@ -1234,7 +1258,7 @@
    "pubblicato": "2026-11-19T16:54:34+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 7.5,
+   "punteggio": 7.0,
    "testate": 2
   },
   {
@@ -1246,7 +1270,7 @@
    "pubblicato": "2026-11-19T16:43:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.5,
+   "punteggio": 3.9,
    "testate": 1
   },
   {
@@ -1258,7 +1282,7 @@
    "pubblicato": "2026-11-19T16:42:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.5,
+   "punteggio": 5.9,
    "testate": 2
   },
   {
@@ -1270,7 +1294,7 @@
    "pubblicato": "2026-11-19T16:40:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.5,
+   "punteggio": 5.9,
    "testate": 2
   },
   {
@@ -1282,7 +1306,7 @@
    "pubblicato": "2026-11-19T16:36:46+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.4,
+   "punteggio": 5.9,
    "testate": 2
   },
   {
@@ -1294,7 +1318,7 @@
    "pubblicato": "2026-11-19T16:33:03+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -3.6,
+   "punteggio": -4.1,
    "testate": 1
   },
   {
@@ -1306,7 +1330,7 @@
    "pubblicato": "2026-11-19T16:14:26+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.7,
+   "punteggio": -9.2,
    "testate": 1
   },
   {
@@ -1318,7 +1342,7 @@
    "pubblicato": "2026-11-19T15:57:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.3,
+   "punteggio": 3.7,
    "testate": 1
   },
   {
@@ -1330,7 +1354,7 @@
    "pubblicato": "2026-11-19T15:37:55+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.2,
+   "punteggio": 3.6,
    "testate": 1
   },
   {
@@ -1342,7 +1366,7 @@
    "pubblicato": "2026-11-19T15:19:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.9,
+   "punteggio": -9.4,
    "testate": 1
   },
   {
@@ -1354,7 +1378,7 @@
    "pubblicato": "2026-11-19T14:53:03+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.0,
+   "punteggio": -9.6,
    "testate": 1
   },
   {
@@ -1366,7 +1390,7 @@
    "pubblicato": "2026-11-19T14:32:20+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -4.1,
+   "punteggio": -4.6,
    "testate": 1
   },
   {
@@ -1378,20 +1402,8 @@
    "pubblicato": "2026-11-19T14:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.8,
+   "punteggio": 0.2,
    "testate": 2
-  },
-  {
-   "titolo": "Moto3, a Portimao l’ennesimo duello Quiles-Almansa in attesa del salto di categoria",
-   "estratto": "Non è ancora tempo di vacanze per il Motomondiale. La stagione 2026 della classe più leggera, infatti, ha in serbo ancora due tappe prima del “rompete le righe” e mai come in questa occasione siamo…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/moto3-a-portimao-lennesimo-duello-quiles-almansa-in-attesa-del-salto-di-categoria/",
-   "pubblicato": "2026-11-19T13:00:47+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -9.5,
-   "testate": 1
   },
   {
    "titolo": "La Ferrari è in difesa ma si gioca il futuro",
@@ -1402,7 +1414,7 @@
    "pubblicato": "2026-11-19T12:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.7,
+   "punteggio": -2.3,
    "testate": 1
   },
   {
@@ -1414,7 +1426,7 @@
    "pubblicato": "2026-11-19T11:29:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.2,
+   "punteggio": 4.6,
    "testate": 2
   },
   {
@@ -1426,19 +1438,7 @@
    "pubblicato": "2026-11-19T10:54:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.0,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Antonelli, il segreto del passo gara: “Ho imparato a correggere il bilanciamento”",
-   "estratto": "La velocità pura è soltanto una delle qualità che hanno permesso a Kimi Antonelli di conquistare il titolo mondiale. Nel corso della stagione 2026 ha dimostrato anche una crescente capacità di…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-antonelli-il-segreto-del-passo-gara-ho-imparato-a-correggere-il-bilanciamento/10875542/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-19T10:31:56+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 2.9,
+   "punteggio": 2.5,
    "testate": 1
   }
  ]

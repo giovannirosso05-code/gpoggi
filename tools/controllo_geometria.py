@@ -13,7 +13,7 @@ from playwright.async_api import async_playwright
 
 DOCS = Path(__file__).resolve().parent.parent / "docs"
 PORTA = 8771
-GRIGLIE = [".driver-card", ".podio-home a", ".pross-card", ".hero2-lato", ".prono-col", ".ultima-gara", ".stat-card", ".card"]
+GRIGLIE = [".driver-card", ".podio-home a", ".ris-card", ".pross-card", ".hero2-lato", ".prono-col", ".ultima-gara", ".stat-card", ".card"]
 
 JS = r"""
 (griglie) => {

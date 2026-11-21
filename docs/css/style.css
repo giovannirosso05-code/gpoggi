@@ -1514,3 +1514,39 @@ html { scroll-behavior: smooth; }
 .gioco-card[data-gioco="sfida"] b { text-shadow: 0 2px 0 rgba(0, 0, 0, .25); }
 @media (prefers-reduced-motion: reduce) { .gioco-card[data-gioco="sfida"]::before { animation: none; } }
 .sfida-serie { font-size: 20px; margin: 4px 0 8px; } .sfida-serie b { color: var(--accent); }
+
+/* ---- Ultimi risultati in grande (home) ---- */
+.ris-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 22px; }
+.ris-hero[hidden] { display: none; }
+.ris-hero.uno { grid-template-columns: 1fr; }
+.ris-colonna { min-width: 0; background: #0f0f13; border-radius: 18px; padding: 18px 16px 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, .22); color: #fff; border-top: 5px solid #e8352f; }
+.ris-colonna.serie-moto { border-top-color: var(--moto-blu, #1f5fd1); }
+.ris-testa { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+.ris-testa > div { flex: 1 1 160px; min-width: 0; }
+.ris-sess { font-family: var(--font-display); letter-spacing: .14em; text-transform: uppercase; font-size: 13px; color: rgba(255, 255, 255, .75); }
+.ris-gp { margin: 0; font-family: var(--font-display); font-size: clamp(24px, 3vw, 38px); line-height: 1.05; text-transform: uppercase; }
+.ris-tutti { color: #fff; font-size: 13px; text-decoration: underline; text-underline-offset: 4px; white-space: nowrap; }
+.ris-podio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.ris-card { position: relative; display: flex; flex-direction: column; justify-content: flex-end; min-height: 380px; border-radius: 14px; overflow: hidden; padding: 14px 12px 12px; color: #fff; text-decoration: none; border-bottom: 5px solid var(--team, #8b8a92);
+  background: linear-gradient(180deg, rgba(10, 10, 14, 0) 25%, rgba(10, 10, 14, .55) 62%, rgba(10, 10, 14, .96) 100%), var(--foto, none) center 14% / cover, #1b1b22; }
+.ris-card.p1 { box-shadow: inset 0 0 0 3px #ffd24a; }
+.ris-pos { position: absolute; top: 4px; left: 12px; font-family: var(--font-display); font-weight: 700; font-size: clamp(64px, 7vw, 104px); line-height: 1; color: rgba(255, 255, 255, .94); -webkit-text-stroke: 2px rgba(0, 0, 0, .55); text-shadow: 0 4px 20px rgba(0, 0, 0, .5); }
+.ris-card.p1 .ris-pos { color: #ffd24a; }
+.ris-tag { position: absolute; top: 14px; right: 10px; max-width: 58%; background: #ffd24a; color: #111; font-family: var(--font-display); font-weight: 700; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; padding: 4px 9px; border-radius: 6px; text-align: center; line-height: 1.15; }
+.ris-info { display: flex; flex-direction: column; gap: 5px; }
+.ris-nome { display: flex; align-items: flex-end; min-height: 2.15em; font-family: var(--font-display); font-size: clamp(20px, 2.1vw, 30px); line-height: 1.05; text-transform: uppercase; text-shadow: 0 2px 14px rgba(0, 0, 0, .6); overflow-wrap: break-word; }
+.ris-nome.lungo { font-size: clamp(15px, 1.5vw, 22px); }
+.ris-team { display: block; min-height: 24px; font-size: 12px; color: rgba(255, 255, 255, .85); }
+.ris-tempo { display: block; font-family: var(--font-display); font-size: clamp(16px, 1.6vw, 22px); letter-spacing: .02em; color: #fff; }
+.ris-credito { display: block; margin-top: 6px; font-size: 9.5px; color: rgba(255, 255, 255, .5); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ris-card:hover .ris-nome { text-decoration: underline; text-underline-offset: 4px; }
+@media (min-width: 901px) { .ris-hero:not(.uno) .ris-testa { min-height: 112px; } }
+@media (max-width: 900px) { .ris-hero { grid-template-columns: 1fr; } }
+@media (max-width: 640px) {
+  .ris-nome.lungo { font-size: 18px; }
+  .ris-colonna { padding: 14px 10px 12px; }
+  .ris-podio { grid-template-columns: 1fr 1fr; }
+  .ris-card { min-height: 250px; }
+  .ris-card.p1 { grid-column: 1 / -1; min-height: 340px; }
+  .ris-pos { font-size: 72px; }
+}

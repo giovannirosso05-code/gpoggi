@@ -125,6 +125,80 @@ if (eventi) {
 if (ultMoto && ultMoto.risultati) html += podioMoto(ultMoto);
 ultime.innerHTML = html || `<p class="muted">Nessuna gara ancora disputata.</p>`;
 
+
+// ---- Ultimi risultati in grande (qualifiche, sprint, gara): appena una sessione ha i risultati compaiono in cima alla home per 4 giorni
+const GIORNI_RIS = 4;
+const cognomeGrande = (n) => ((/(?:\b(?:Di|De|Da|Van|Von|Del)\s+)?\S+$/i.exec(String(n || "").trim()) || [n || ""])[0]);
+const ETICHETTA = { Qualifying: ["Qualifiche", "Pole position"], Sprint: ["Sprint", "Vince la sprint"], Race: ["Gara", "Vittoria"],
+  Q2: ["Qualifiche", "Pole position"], SPR: ["Sprint", "Vince la sprint"], RAC: ["Gara", "Vittoria"] };
+const urlFoto = (f) => f && new URL(f.file_grande || f.grande || f.file || f.url, document.baseURI).href;
+function distacco(r, primo) {
+  if (primo) return r.tempo || "";
+  const d = r.distacco;
+  if (d && d !== "0.000") return /^[+-]/.test(String(d)) || /LAP/i.test(String(d)) ? String(d) : "+" + d;
+  return r.tempo || "";
+}
+function colonnaRisultati(serie, classe, chiave, titolo, sotto, link, top, fotoDi, coloreDi, stemmaDi) {
+  const [sess, vince] = ETICHETTA[chiave] || ["Risultati", "Primo"];
+  const carte = top.map((r) => {
+    const f = fotoDi(r);
+    const u = urlFoto(f);
+    return `<a class="ris-card p${r.pos}" href="${link}" style="--team:#${esc(coloreDi(r) || "8b8a92")};${u ? `--foto:url('${esc(u)}')` : ""}">
+      <span class="ris-pos">${r.pos}</span>
+      ${r.pos === 1 ? `<span class="ris-tag">${esc(vince)}</span>` : ""}
+      <span class="ris-info"><strong class="ris-nome${cognomeGrande(r.nome).length >= 11 ? " lungo" : ""}">${esc(cognomeGrande(r.nome))}</strong>
+      <span class="ris-team">${stemmaDi(r)}</span>
+      <span class="ris-tempo">${esc(distacco(r, r.pos === 1)) || ND}</span></span>
+      ${f ? `<span class="ris-credito" title="${esc(f.autore || "")} · ${esc(f.licenza || "")}">Foto: ${esc(f.autore || "")}</span>` : ""}</a>`;
+  }).join("");
+  return `<div class="ris-colonna serie-${classe || "f1"}">
+    <div class="ris-testa"><span class="cd-sigla ${classe}">${serie}</span><div><div class="ris-sess">${esc(sess)}</div><h2 class="ris-gp">${esc(titolo)}</h2></div>
+      <a class="ris-tutti" href="${link}">Tutti i risultati →</a></div>
+    <div class="ris-podio">${carte}</div></div>`;
+}
+async function risultatiF1() {
+  if (!eventi) return "";
+  const ora = Date.now();
+  const recenti = eventi.filter((g) => new Date(g.inizio) <= ora).sort((a, b) => new Date(b.inizio) - new Date(a.inizio)).slice(0, 2);
+  for (const ev of recenti) {
+    let d; try { d = await fetchJSON(`data/gare/${ev.id}.json`); } catch (e) { continue; }
+    const s = (d.sessioni || []).filter((x) => ["Race", "Sprint", "Qualifying"].includes(x.tipo) && x.risultati && x.risultati.length && new Date(x.fine) <= ora)
+      .sort((a, b) => new Date(b.fine) - new Date(a.fine))[0];
+    if (!s) continue;
+    if (ora - new Date(s.fine) > GIORNI_RIS * 864e5) return "";
+    const top = s.risultati.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos);
+    if (top.length < 3) return "";
+    return colonnaRisultati("F1", "", s.tipo, nomeGp(d), `${d.circuito}`, `gara.html?id=${d.id}${tema}`, top, (r) => foto[r.numero], (r) => coloreTeam[r.team], (r) => stemma(r.team, coloreTeam[r.team]));
+  }
+  return "";
+}
+async function risultatiMoto() {
+  const sm = await sicuro(fetchJSON("data/motogp-sessioni.json"));
+  if (!sm || !sm.weekend) return "";
+  const ordine = ["Q2", "SPR", "RAC"];
+  const pesi = [...sm.weekend].reverse();
+  const w = pesi.find((x) => x.stato === "CURRENT") || pesi.find((x) => x.stato === "FINISHED");
+  if (!w) return "";
+  const ok = (w.sessioni || []).filter((x) => ordine.includes(x.codice) && x.risultati && x.risultati.length >= 3);
+  const s = ok[ok.length - 1];
+  if (!s) return "";
+  if (s.inizio && Date.now() - new Date(s.inizio) > (GIORNI_RIS * 864e5 + 3 * 36e5)) return "";
+  const top = s.risultati.filter((r) => r.pos && r.pos <= 3).sort((a, b) => a.pos - b.pos);
+  if (top.length < 3) return "";
+  const moto = (r) => ((clMoto && (clMoto.categorie || {}).MotoGP) || []).find((p) => p.nome === r.nome);
+  return colonnaRisultati("MotoGP", "moto", s.codice, w.nome, "", `gara-moto.html?gp=${encodeURIComponent(w.nome)}${tema}`, top, (r) => FM["nome:" + r.nome],
+    (r) => coloreMoto((moto(r) || {}).moto), (r) => stemmaMoto((moto(r) || {}).moto));
+}
+{
+  const [cf, cm] = await Promise.all([risultatiF1().catch(() => ""), risultatiMoto().catch(() => "")]);
+  const hero = document.getElementById("ris-hero");
+  if (hero && (cf || cm)) {
+    hero.classList.toggle("uno", !(cf && cm));
+    hero.innerHTML = cf + cm;
+    hero.hidden = false;
+  }
+}
+
 Object.assign(classifica, { standings, foto, moto: clMoto });
 if (standings && clMoto) {
   mostraClassifica("f1");

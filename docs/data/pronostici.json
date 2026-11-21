@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-21T14:06:25+00:00",
+ "aggiornato": "2026-11-21T15:53:31+00:00",
  "metodo": "Indice da 0 a 100 calcolato da GP Oggi: 45% forma nelle ultime 5 gare, 35% classifica del campionato, 20% risultato sullo stesso circuito l'anno scorso. È un'opinione basata sui numeri, non una previsione ufficiale né una certezza.",
  "f1": {
   "gp": "Gran Premio di Las Vegas",
@@ -70,7 +70,7 @@
     "indice": 100,
     "motivi": [
      "2 vittorie nelle ultime 5 gare",
-     "3° nel campionato (357 punti)",
+     "3° nel campionato (369 punti)",
      "GP Portogallo 2025: 1°"
     ]
    },
@@ -78,9 +78,9 @@
     "id": "f55b433d-38b8-4d1d-bb3a-a709c82a0260",
     "nome": "Marc Marquez",
     "team": "Ducati Lenovo Team",
-    "indice": 88,
+    "indice": 81,
     "motivi": [
-     "2 vittorie nelle ultime 5 gare",
+     "1 vittoria nelle ultime 5 gare",
      "1° nel campionato (431 punti)"
     ]
    },
@@ -88,10 +88,10 @@
     "id": "a6108385-dd4c-490d-b02e-542ed0275f79",
     "nome": "Pedro Acosta",
     "team": "Red Bull KTM Factory Racing",
-    "indice": 69,
+    "indice": 71,
     "motivi": [
      "1 podio nelle ultime 5 gare",
-     "4° nel campionato (309 punti)",
+     "4° nel campionato (315 punti)",
      "GP Portogallo 2025: 3°"
     ]
    },
@@ -99,10 +99,10 @@
     "id": "5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b",
     "nome": "Jorge Martin",
     "team": "Aprilia Racing",
-    "indice": 64,
+    "indice": 59,
     "motivi": [
-     "2 podi nelle ultime 5 gare",
-     "2° nel campionato (371 punti)"
+     "1 podio nelle ultime 5 gare",
+     "2° nel campionato (376 punti)"
     ]
    },
    {
@@ -111,7 +111,7 @@
     "team": "SuperFile Trackhouse MotoGP Team",
     "indice": 59,
     "motivi": [
-     "5° nel campionato (294 punti)",
+     "5° nel campionato (298 punti)",
      "GP Portogallo 2025: 7°"
     ]
    }

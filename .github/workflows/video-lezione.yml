@@ -13,6 +13,9 @@ on:
       riassunto:
         description: 'si = riassunto lampo di 10 minuti di tutti gli argomenti'
         default: ''
+      corso:
+        description: 'cg = Controllo di gestione e bilancio nelle imprese di trasporto (12 capitoli, slide chiare, ritmo da lezione); vuoto = Diritto dei trasporti'
+        default: ''
       prova:
         description: 'solo le prime N battute (prova veloce; vuoto = tutto)'
         default: ''
@@ -21,7 +24,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: video-lezione-${{ github.event.inputs.solo }}-${{ github.event.inputs.aula }}-${{ github.event.inputs.riassunto }}
+  group: video-lezione-${{ github.event.inputs.corso }}-${{ github.event.inputs.solo }}-${{ github.event.inputs.aula }}-${{ github.event.inputs.riassunto }}
   cancel-in-progress: false
 
 jobs:
@@ -48,6 +51,7 @@ jobs:
           PROVA: ${{ github.event.inputs.prova }}
           AULA: ${{ github.event.inputs.aula }}
           RIASSUNTO: ${{ github.event.inputs.riassunto }}
+          LEZIONE_CORSO: ${{ github.event.inputs.corso }}
         run: |
           python video/lezione.py $( [ -n "$SOLO" ] && echo --solo "$SOLO" ) $( [ -n "$PROVA" ] && echo --prova "$PROVA" ) $( [ -n "$AULA" ] && echo --aula ) $( [ -n "$RIASSUNTO" ] && echo --riassunto ) --invia --uscita /tmp/lezione.mp4
       - if: always()

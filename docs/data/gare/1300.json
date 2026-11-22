@@ -920,17 +920,6 @@
     },
     {
      "pos": 14,
-     "numero": 6,
-     "acronimo": "HAD",
-     "nome": "Isack Hadjar",
-     "team": "Red Bull Racing",
-     "giri": 50,
-     "stato": null,
-     "tempo": "1:28:16.112",
-     "distacco": "+36.488"
-    },
-    {
-     "pos": 15,
      "numero": 30,
      "acronimo": "LAW",
      "nome": "Liam Lawson",
@@ -939,6 +928,17 @@
      "stato": null,
      "tempo": "1:28:16.212",
      "distacco": "+36.588"
+    },
+    {
+     "pos": 15,
+     "numero": 6,
+     "acronimo": "HAD",
+     "nome": "Isack Hadjar",
+     "team": "Red Bull Racing",
+     "giri": 50,
+     "stato": null,
+     "tempo": "1:28:26.112",
+     "distacco": "+46.488"
     },
     {
      "pos": 16,

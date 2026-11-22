@@ -11677,5 +11677,26 @@
  },
  "wikistat:c2936a6a-4718-4dbd-ba8f-7132b654a495": null,
  "nome:Rafael Camara": null,
- "nome:Kgopotso Mononyane": null
+ "nome:Kgopotso Mononyane": null,
+ "moto:3aee0e36-f53b-476f-ac70-b6eab2eabf30": {
+  "nascita": "2007-11-19",
+  "luogo": "San Sebastián, Spain",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2026,
+  "carriera": [
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "LEVEL UP - MTA",
+      "numero": 7
+     }
+    ]
+   }
+  ]
+ },
+ "wikistat:3aee0e36-f53b-476f-ac70-b6eab2eabf30": null,
+ "nome:Beñat Fernandez": null
 }

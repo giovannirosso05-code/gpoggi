@@ -19,16 +19,6 @@
   "pole": 66,
   "giri_veloci": 38
  },
- "f1:63": {
-  "nascita": "1998-02-15",
-  "nazionalita": "British",
-  "titoli": 0,
-  "gare": 168,
-  "vittorie": 8,
-  "podi": 32,
-  "pole": 18,
-  "giri_veloci": 13
- },
  "f1:44": {
   "nascita": "1985-01-07",
   "nazionalita": "British",
@@ -39,14 +29,14 @@
   "pole": 118,
   "giri_veloci": 69
  },
- "f1:16": {
-  "nascita": "1997-10-16",
-  "nazionalita": "Monegasque",
+ "f1:63": {
+  "nascita": "1998-02-15",
+  "nazionalita": "British",
   "titoli": 0,
-  "gare": 189,
-  "vittorie": 9,
-  "podi": 54,
-  "pole": 34,
+  "gare": 168,
+  "vittorie": 8,
+  "podi": 32,
+  "pole": 18,
   "giri_veloci": 13
  },
  "f1:1": {
@@ -58,6 +48,16 @@
   "podi": 49,
   "pole": 33,
   "giri_veloci": 20
+ },
+ "f1:16": {
+  "nascita": "1997-10-16",
+  "nazionalita": "Monegasque",
+  "titoli": 0,
+  "gare": 189,
+  "vittorie": 9,
+  "podi": 54,
+  "pole": 34,
+  "giri_veloci": 13
  },
  "f1:81": {
   "nascita": "2001-04-06",
@@ -149,6 +149,16 @@
   "pole": 1,
   "giri_veloci": 2
  },
+ "f1:55": {
+  "nascita": "1994-09-01",
+  "nazionalita": "Spanish",
+  "titoli": 0,
+  "gare": 248,
+  "vittorie": 4,
+  "podi": 29,
+  "pole": 11,
+  "giri_veloci": 4
+ },
  "f1:31": {
   "nascita": "1996-09-17",
   "nazionalita": "French",
@@ -168,16 +178,6 @@
   "podi": 106,
   "pole": 23,
   "giri_veloci": 25
- },
- "f1:55": {
-  "nascita": "1994-09-01",
-  "nazionalita": "Spanish",
-  "titoli": 0,
-  "gare": 248,
-  "vittorie": 4,
-  "podi": 29,
-  "pole": 11,
-  "giri_veloci": 4
  },
  "f1:23": {
   "nascita": "1996-03-23",
@@ -9147,6 +9147,53 @@
    "fonte": "https://en.wikipedia.org/wiki/Marco_Morelli_(motorcyclist)"
   }
  },
+ "moto:f69ef365-138a-4727-a992-b8857bc5bb52": {
+  "nascita": "2007-12-28",
+  "luogo": "Barcelona, Argentina",
+  "altezza": 171,
+  "peso": 57,
+  "debutto": 2024,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Tech3",
+      "numero": 73
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Tech3",
+      "numero": 73
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 36,
+   "vittorie": 0,
+   "podi": 4,
+   "pole": 3,
+   "giri_veloci": 2,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Valentín Perrone recorrió las obras del Gálvez 1 (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Valentin_Perrone"
+  }
+ },
  "moto:b187512c-fb56-46b1-b00d-62b46a7c65aa": {
   "nascita": "2007-07-30",
   "luogo": "Terengganu, Malaysia",
@@ -9199,40 +9246,30 @@
    "fonte": "https://en.wikipedia.org/wiki/Hakim_Danish_(motorcyclist)"
   }
  },
- "moto:f69ef365-138a-4727-a992-b8857bc5bb52": {
-  "nascita": "2007-12-28",
-  "luogo": "Barcelona, Argentina",
-  "altezza": 171,
-  "peso": 57,
-  "debutto": 2024,
+ "moto:f3dd914c-72cf-446a-a135-12c05a0eebde": {
+  "nascita": "2008-02-14",
+  "luogo": "Pirkanmaa, Finland",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2025,
   "carriera": [
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Red Bull KTM Tech3",
-      "numero": 73
-     }
-    ]
-   },
    {
     "anno": 2026,
     "classi": [
      {
       "categoria": "Moto3",
       "team": "Red Bull KTM Tech3",
-      "numero": 73
+      "numero": 27
      }
     ]
    }
   ],
   "totali": {
-   "gare": 36,
+   "gare": 15,
    "vittorie": 0,
-   "podi": 4,
-   "pole": 3,
-   "giri_veloci": 2,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
    "titoli": 0,
    "motogp": {
     "gare": 0,
@@ -9242,8 +9279,8 @@
     "giri_veloci": 0,
     "titoli": 0
    },
-   "immagine": "Valentín Perrone recorrió las obras del Gálvez 1 (cropped).jpg",
-   "fonte": "https://en.wikipedia.org/wiki/Valentin_Perrone"
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Rico_Salmela"
   }
  },
  "moto:760c8192-f5d5-4f96-a032-36dde524ea62": {
@@ -9320,43 +9357,6 @@
    }
   ]
  },
- "moto:f3dd914c-72cf-446a-a135-12c05a0eebde": {
-  "nascita": "2008-02-14",
-  "luogo": "Pirkanmaa, Finland",
-  "altezza": null,
-  "peso": null,
-  "debutto": 2025,
-  "carriera": [
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Red Bull KTM Tech3",
-      "numero": 27
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 15,
-   "vittorie": 0,
-   "podi": 0,
-   "pole": 0,
-   "giri_veloci": 0,
-   "titoli": 0,
-   "motogp": {
-    "gare": 0,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": null,
-   "fonte": "https://en.wikipedia.org/wiki/Rico_Salmela"
-  }
- },
  "moto:bc85adec-2833-4acb-8f42-0d1b7b3839e8": {
   "nascita": "2008-01-09",
   "luogo": "Italy, Italy",
@@ -9402,6 +9402,93 @@
    },
    "immagine": null,
    "fonte": "https://en.wikipedia.org/wiki/Guido_Pini"
+  }
+ },
+ "moto:8d4c8c88-f989-4d86-8cfd-702237b8083b": {
+  "nascita": "2003-06-12",
+  "luogo": "Nambour QLD, Australia",
+  "altezza": 163,
+  "peso": 59,
+  "debutto": 2021,
+  "carriera": [
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CIP Green Power",
+      "numero": 66
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CIP Green Power",
+      "numero": 66
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CFMOTO Racing PruestelGP",
+      "numero": 66
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "CODE Motorsports",
+      "numero": 66
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "LEVEL UP - MTA",
+      "numero": 66
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "GRYD Racing",
+      "numero": 66
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 96,
+   "vittorie": 0,
+   "podi": 5,
+   "pole": 3,
+   "giri_veloci": 1,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Joel_Kelso"
   }
  },
  "moto:aa5b1925-1b45-4cf1-8b0d-7d2726e99415": {
@@ -9505,93 +9592,6 @@
    "fonte": "https://en.wikipedia.org/wiki/Joel_Esteban"
   }
  },
- "moto:8d4c8c88-f989-4d86-8cfd-702237b8083b": {
-  "nascita": "2003-06-12",
-  "luogo": "Nambour QLD, Australia",
-  "altezza": 163,
-  "peso": 59,
-  "debutto": 2021,
-  "carriera": [
-   {
-    "anno": 2021,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "CIP Green Power",
-      "numero": 66
-     }
-    ]
-   },
-   {
-    "anno": 2022,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "CIP Green Power",
-      "numero": 66
-     }
-    ]
-   },
-   {
-    "anno": 2023,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "CFMOTO Racing PruestelGP",
-      "numero": 66
-     }
-    ]
-   },
-   {
-    "anno": 2024,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "CODE Motorsports",
-      "numero": 66
-     }
-    ]
-   },
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "LEVEL UP - MTA",
-      "numero": 66
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "GRYD Racing",
-      "numero": 66
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 96,
-   "vittorie": 0,
-   "podi": 5,
-   "pole": 3,
-   "giri_veloci": 1,
-   "titoli": 0,
-   "motogp": {
-    "gare": 0,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": null,
-   "fonte": "https://en.wikipedia.org/wiki/Joel_Kelso"
-  }
- },
  "moto:ed6ebad8-3f85-48db-8539-5cf755de6c30": {
   "nascita": "2006-05-15",
   "luogo": "Brenes, Spain",
@@ -9669,6 +9669,58 @@
    "fonte": "https://en.wikipedia.org/wiki/David_Mu%C3%B1oz_(motorcyclist)"
   }
  },
+ "moto:b2ad206f-7eb7-4ecf-b53f-8be998663b23": {
+  "nascita": "2007-08-07",
+  "luogo": "Portlaoise",
+  "altezza": 175,
+  "peso": 61,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "SIC58 Squadra Corse",
+      "numero": 67
+     },
+     {
+      "categoria": "Moto3",
+      "team": "Liqui Moly Dynavolt Intact GP",
+      "numero": 67
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "SIC58 Squadra Corse",
+      "numero": 67
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 19,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 1,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Casey O'Gorman at the 2026 San Marino and Rimini Riviera motorcycle Grand Prix (cropped).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Casey_O%27Gorman_(motorcyclist)"
+  }
+ },
  "moto:39bd22aa-4179-411f-bebb-c8bb3c0c8620": {
   "nascita": "2006-09-25",
   "luogo": "Leicester, United Kingdom",
@@ -9724,58 +9776,6 @@
    },
    "immagine": null,
    "fonte": "https://en.wikipedia.org/wiki/Eddie_O%27Shea"
-  }
- },
- "moto:b2ad206f-7eb7-4ecf-b53f-8be998663b23": {
-  "nascita": "2007-08-07",
-  "luogo": "Portlaoise",
-  "altezza": 175,
-  "peso": 61,
-  "debutto": 2025,
-  "carriera": [
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "SIC58 Squadra Corse",
-      "numero": 67
-     },
-     {
-      "categoria": "Moto3",
-      "team": "Liqui Moly Dynavolt Intact GP",
-      "numero": 67
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "SIC58 Squadra Corse",
-      "numero": 67
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 19,
-   "vittorie": 0,
-   "podi": 0,
-   "pole": 0,
-   "giri_veloci": 1,
-   "titoli": 0,
-   "motogp": {
-    "gare": 0,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": "Casey O'Gorman at the 2026 San Marino and Rimini Riviera motorcycle Grand Prix (cropped).jpg",
-   "fonte": "https://en.wikipedia.org/wiki/Casey_O%27Gorman_(motorcyclist)"
   }
  },
  "moto:9de28705-315e-4370-a304-308147bf8203": {
@@ -10329,6 +10329,25 @@
    }
   ]
  },
+ "moto:3aee0e36-f53b-476f-ac70-b6eab2eabf30": {
+  "nascita": "2007-11-19",
+  "luogo": "San Sebastián, Spain",
+  "altezza": null,
+  "peso": null,
+  "debutto": 2026,
+  "carriera": [
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "LEVEL UP - MTA",
+      "numero": 7
+     }
+    ]
+   }
+  ]
+ },
  "moto:67d13fd3-1b88-4557-b547-ca0e6e4f5535": {
   "nascita": "2008-05-03",
   "luogo": "Sevilla, Spain",
@@ -10377,25 +10396,25 @@
   "descrizione": "pilota automobilistico olandese con cittadinanza belga (1997-)",
   "pagina": "https://it.wikipedia.org/wiki/Max_Verstappen"
  },
- "nome:George Russell": {
-  "testo": "George William Russell è un pilota automobilistico britannico, attivo in Formula 1 con la Mercedes.",
-  "descrizione": "pilota automobilistico britannico",
-  "pagina": "https://it.wikipedia.org/wiki/George_Russell_(pilota_automobilistico)"
- },
  "nome:Lewis Hamilton": {
   "testo": "Sir Lewis Carl Davidson Hamilton è un pilota automobilistico britannico, attivo in Formula 1 con la Ferrari.",
   "descrizione": "pilota automobilistico britannico (1985-)",
   "pagina": "https://it.wikipedia.org/wiki/Lewis_Hamilton"
  },
- "nome:Charles Leclerc": {
-  "testo": "Charles Marc Hervé Perceval Leclerc è un pilota automobilistico monegasco, attivo in Formula 1 con la Ferrari.",
-  "descrizione": "pilota automobilistico e imprenditore monegasco (1997-)",
-  "pagina": "https://it.wikipedia.org/wiki/Charles_Leclerc"
+ "nome:George Russell": {
+  "testo": "George William Russell è un pilota automobilistico britannico, attivo in Formula 1 con la Mercedes.",
+  "descrizione": "pilota automobilistico britannico",
+  "pagina": "https://it.wikipedia.org/wiki/George_Russell_(pilota_automobilistico)"
  },
  "nome:Lando Norris": {
   "testo": "Lando Norris è un pilota automobilistico britannico con cittadinanza belga, attivo in Formula 1 con la McLaren, scuderia con la quale è diventato campione del mondo nel 2025.",
   "descrizione": "pilota automobilistico britannico (1999-)",
   "pagina": "https://it.wikipedia.org/wiki/Lando_Norris"
+ },
+ "nome:Charles Leclerc": {
+  "testo": "Charles Marc Hervé Perceval Leclerc è un pilota automobilistico monegasco, attivo in Formula 1 con la Ferrari.",
+  "descrizione": "pilota automobilistico e imprenditore monegasco (1997-)",
+  "pagina": "https://it.wikipedia.org/wiki/Charles_Leclerc"
  },
  "nome:Oscar Piastri": {
   "testo": "Oscar Jack Piastri è un pilota automobilistico australiano, attivo in Formula 1 con la McLaren.",
@@ -10442,6 +10461,11 @@
   "descrizione": "pilota automobilistico tedesco (1987-)",
   "pagina": "https://it.wikipedia.org/wiki/Nico_H%C3%BClkenberg"
  },
+ "nome:Carlos Sainz": {
+  "testo": "Carlos Sainz Cenamor è un pilota di rally spagnolo, vincitore di due edizioni del campionato del mondo rally e di quattro edizioni del Rally Dakar.",
+  "descrizione": "pilota di rally spagnolo (1962-)",
+  "pagina": "https://it.wikipedia.org/wiki/Carlos_Sainz"
+ },
  "nome:Esteban Ocon": {
   "testo": "Esteban José Jean-Pierre Ocon-Khelfane è un pilota automobilistico francese, attivo in Formula 1 con la Haas.",
   "descrizione": "pilota automobilistico francese (1996-)",
@@ -10451,11 +10475,6 @@
   "testo": "Fernando Alonso Díaz è un pilota automobilistico spagnolo, attivo in Formula 1 con l'Aston Martin. In carriera si è laureato due volte campione del mondo di Formula 1 con la scuderia Renault e ha trionfato, inoltre, a Le Mans 2018, 2019 e alla 24 Ore di Daytona 2019.",
   "descrizione": "pilota automobilistico spagnolo (1981-)",
   "pagina": "https://it.wikipedia.org/wiki/Fernando_Alonso"
- },
- "nome:Carlos Sainz": {
-  "testo": "Carlos Sainz Cenamor è un pilota di rally spagnolo, vincitore di due edizioni del campionato del mondo rally e di quattro edizioni del Rally Dakar.",
-  "descrizione": "pilota di rally spagnolo (1962-)",
-  "pagina": "https://it.wikipedia.org/wiki/Carlos_Sainz"
  },
  "nome:Alexander Albon": {
   "testo": "Alexander Albon Ansusinha è un pilota automobilistico thailandese con cittadinanza britannica, attivo in Formula 1 con la Williams.",

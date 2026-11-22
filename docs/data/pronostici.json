@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-22T12:05:11+00:00",
+ "aggiornato": "2026-11-22T14:00:51+00:00",
  "metodo": "Indice da 0 a 100 calcolato da GP Oggi: 45% forma nelle ultime 5 gare, 35% classifica del campionato, 20% risultato sullo stesso circuito l'anno scorso. È un'opinione basata sui numeri, non una previsione ufficiale né una certezza.",
  "f1": {
   "gp": "Gran Premio del Qatar",
@@ -64,47 +64,45 @@
   ]
  },
  "motogp": {
-  "gp": "GP Portogallo",
-  "circuito": "Autódromo Internacional do Algarve",
-  "gara": "2026-11-22T13:00:00+00:00",
+  "gp": "GP Valencia",
+  "circuito": "Circuit Ricardo Tormo",
+  "gara": "2026-11-29T13:00:00+00:00",
   "favoriti": [
-   {
-    "id": "ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd",
-    "nome": "Marco Bezzecchi",
-    "team": "Aprilia Racing",
-    "indice": 100,
-    "motivi": [
-     "2 vittorie nelle ultime 5 gare",
-     "3° nel campionato (369 punti)",
-     "GP Portogallo 2025: 1°"
-    ]
-   },
    {
     "id": "f55b433d-38b8-4d1d-bb3a-a709c82a0260",
     "nome": "Marc Marquez",
     "team": "Ducati Lenovo Team",
-    "indice": 81,
+    "indice": 100,
     "motivi": [
      "1 vittoria nelle ultime 5 gare",
      "1° nel campionato (431 punti)"
     ]
    },
    {
+    "id": "ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd",
+    "nome": "Marco Bezzecchi",
+    "team": "Aprilia Racing",
+    "indice": 96,
+    "motivi": [
+     "2 vittorie nelle ultime 5 gare",
+     "3° nel campionato (369 punti)"
+    ]
+   },
+   {
     "id": "a6108385-dd4c-490d-b02e-542ed0275f79",
     "nome": "Pedro Acosta",
     "team": "Red Bull KTM Factory Racing",
-    "indice": 71,
+    "indice": 74,
     "motivi": [
      "1 podio nelle ultime 5 gare",
-     "4° nel campionato (315 punti)",
-     "GP Portogallo 2025: 3°"
+     "4° nel campionato (315 punti)"
     ]
    },
    {
     "id": "5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b",
     "nome": "Jorge Martin",
     "team": "Aprilia Racing",
-    "indice": 59,
+    "indice": 73,
     "motivi": [
      "1 podio nelle ultime 5 gare",
      "2° nel campionato (376 punti)"
@@ -114,10 +112,9 @@
     "id": "eb47c439-e136-40ff-9534-5c612853f529",
     "nome": "Ai Ogura",
     "team": "SuperFile Trackhouse MotoGP Team",
-    "indice": 59,
+    "indice": 72,
     "motivi": [
-     "5° nel campionato (298 punti)",
-     "GP Portogallo 2025: 7°"
+     "5° nel campionato (298 punti)"
     ]
    }
   ]

@@ -1,61 +1,6 @@
 {
- "generato_il": "2026-11-22T12:02:20+00:00",
+ "generato_il": "2026-11-22T13:57:32+00:00",
  "weekend": [
-  {
-   "nome": "GP Portogallo",
-   "circuito": "Autódromo Internacional do Algarve",
-   "paese": "Portogallo",
-   "sessioni": [
-    {
-     "nome": "Prove libere 1",
-     "codice": "FP1",
-     "inizio": "2026-11-20T10:45:00+00:00",
-     "fine": "2026-11-20T11:30:00+00:00"
-    },
-    {
-     "nome": "Prove libere",
-     "codice": "PR",
-     "inizio": "2026-11-20T15:00:00+00:00",
-     "fine": "2026-11-20T16:00:00+00:00"
-    },
-    {
-     "nome": "Prove libere 2",
-     "codice": "FP2",
-     "inizio": "2026-11-21T10:10:00+00:00",
-     "fine": "2026-11-21T10:40:00+00:00"
-    },
-    {
-     "nome": "Qualifiche 1",
-     "codice": "Q1",
-     "inizio": "2026-11-21T10:50:00+00:00",
-     "fine": "2026-11-21T11:05:00+00:00"
-    },
-    {
-     "nome": "Qualifiche 2",
-     "codice": "Q2",
-     "inizio": "2026-11-21T11:15:00+00:00",
-     "fine": "2026-11-21T11:30:00+00:00"
-    },
-    {
-     "nome": "Sprint",
-     "codice": "SPR",
-     "inizio": "2026-11-21T14:30:00+00:00",
-     "fine": "2026-11-21T14:30:00+00:00"
-    },
-    {
-     "nome": "Warm up",
-     "codice": "WUP",
-     "inizio": "2026-11-22T09:00:00+00:00",
-     "fine": "2026-11-22T09:10:00+00:00"
-    },
-    {
-     "nome": "Gara",
-     "codice": "RAC",
-     "inizio": "2026-11-22T13:00:00+00:00",
-     "fine": "2026-11-22T13:00:00+00:00"
-    }
-   ]
-  },
   {
    "nome": "GP Valencia",
    "circuito": "Circuit Ricardo Tormo",

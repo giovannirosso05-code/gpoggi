@@ -4,12 +4,12 @@
 "2026-10-26"
 ],
 "calendario-f1-2026.html": [
-"4699bcc38edc",
+"68a20ebf4c0b",
 "2026-11-22"
 ],
 "calendario-motogp-2026.html": [
-"119ff2d26fa7",
-"2026-11-08"
+"96a1fe5a3e30",
+"2026-11-22"
 ],
 "calendario.html": [
 "f6529a61a5d3",
@@ -20,12 +20,12 @@
 "2026-10-26"
 ],
 "classifica-f1-2026.html": [
-"c4a25642b309",
-"2026-11-09"
+"693391b0fb2c",
+"2026-11-22"
 ],
 "classifica-motogp-2026.html": [
-"0afcc2ff1be8",
-"2026-11-21"
+"8578ee15bc9c",
+"2026-11-22"
 ],
 "classifiche.html": [
 "68ecb180bb9e",
@@ -316,8 +316,8 @@
 "2026-10-26"
 ],
 "orari-f1-las-vegas-2026.html": [
-"90340751bdff",
-"2026-10-26"
+"157343c095f8",
+"2026-11-22"
 ],
 "orari-f1-miami-2026.html": [
 "cf782a51b14d",
@@ -356,7 +356,7 @@
 "2026-10-26"
 ],
 "orari-gp.html": [
-"d1779a04937c",
+"f631b8447f10",
 "2026-11-22"
 ],
 "orari-motogp-malesia-2026.html": [
@@ -422,6 +422,10 @@
 "pagella-f1-italia-2026.html": [
 "145333c17ba8",
 "2026-11-03"
+],
+"pagella-f1-las-vegas-2026.html": [
+"e1f4890b1a42",
+"2026-11-22"
 ],
 "pagella-f1-miami-2026.html": [
 "6870a49c76d4",
@@ -536,104 +540,104 @@
 "2026-10-26"
 ],
 "pagelle-gp.html": [
-"db80c0475bab",
-"2026-11-08"
+"108948341d7b",
+"2026-11-22"
 ],
 "pilota-f1-alexander-albon.html": [
-"8ffc613e15cb",
-"2026-11-08"
+"b410c4b4a4c1",
+"2026-11-22"
 ],
 "pilota-f1-arvid-lindblad.html": [
-"1d5c1fa37f72",
-"2026-11-08"
+"c02cfc2be04c",
+"2026-11-22"
 ],
 "pilota-f1-carlos-sainz.html": [
-"6d76935f0848",
-"2026-11-08"
+"d9e5201a8e84",
+"2026-11-22"
 ],
 "pilota-f1-charles-leclerc.html": [
-"d6146ea65d90",
-"2026-11-09"
+"b1a10ce7efab",
+"2026-11-22"
 ],
 "pilota-f1-esteban-ocon.html": [
-"cff12afe8db2",
-"2026-10-26"
+"8e1c60debaf7",
+"2026-11-22"
 ],
 "pilota-f1-fernando-alonso.html": [
-"45b94dc0d7ac",
-"2026-11-08"
+"91cfb1d9317c",
+"2026-11-22"
 ],
 "pilota-f1-franco-colapinto.html": [
-"f6a229532647",
-"2026-11-08"
+"05c8755d2214",
+"2026-11-22"
 ],
 "pilota-f1-gabriel-bortoleto.html": [
-"52e29a411173",
-"2026-11-08"
+"b2ea5c97a741",
+"2026-11-22"
 ],
 "pilota-f1-george-russell.html": [
-"9db4605ec5ff",
-"2026-11-08"
+"9c1d2252b9be",
+"2026-11-22"
 ],
 "pilota-f1-isack-hadjar.html": [
-"4d7e9e3b6261",
-"2026-11-08"
+"d405fca9afd4",
+"2026-11-22"
 ],
 "pilota-f1-kimi-antonelli.html": [
-"30b9f2e5b1f3",
-"2026-11-21"
+"648cd0b69cde",
+"2026-11-22"
 ],
 "pilota-f1-lance-stroll.html": [
-"ace588b3873d",
-"2026-11-08"
+"f63b0a51bd29",
+"2026-11-22"
 ],
 "pilota-f1-lando-norris.html": [
-"c4a392d1e7bb",
-"2026-11-08"
+"5a1f1d6274cf",
+"2026-11-22"
 ],
 "pilota-f1-lewis-hamilton.html": [
-"d1e79511b14e",
-"2026-11-08"
+"600799d15966",
+"2026-11-22"
 ],
 "pilota-f1-liam-lawson.html": [
-"298d04a0c49e",
-"2026-11-09"
+"53b3e6687b81",
+"2026-11-22"
 ],
 "pilota-f1-max-verstappen.html": [
-"455150d48cd0",
-"2026-11-08"
+"46f843bf6774",
+"2026-11-22"
 ],
 "pilota-f1-nico-hulkenberg.html": [
-"5ee7d3042d11",
-"2026-11-08"
+"5525096effd5",
+"2026-11-22"
 ],
 "pilota-f1-oliver-bearman.html": [
-"6f418f07983a",
-"2026-11-08"
+"c6a61c34b92d",
+"2026-11-22"
 ],
 "pilota-f1-oscar-piastri.html": [
-"dc2eb68a963a",
-"2026-11-08"
+"0778638b2ca8",
+"2026-11-22"
 ],
 "pilota-f1-pierre-gasly.html": [
-"f2708e0f0a5c",
-"2026-11-08"
+"ceee50c6c225",
+"2026-11-22"
 ],
 "pilota-f1-rafael-camara.html": [
-"4d896ba28f89",
-"2026-11-08"
+"56f701fbadf8",
+"2026-11-22"
 ],
 "pilota-f1-ryo-hirakawa.html": [
 "2227cc2a6d9f",
 "2026-11-04"
 ],
 "pilota-f1-sergio-perez.html": [
-"3a36fea34a18",
-"2026-11-08"
+"35437a2b379c",
+"2026-11-22"
 ],
 "pilota-f1-valtteri-bottas.html": [
-"c3d086bbdb56",
-"2026-11-08"
+"22c9738e7035",
+"2026-11-22"
 ],
 "pilota-f1-yuki-tsunoda.html": [
 "99a35d3f3b56",
@@ -864,8 +868,8 @@
 "2026-10-26"
 ],
 "piloti-2026.html": [
-"af7aea31231e",
-"2026-11-21"
+"26663eef744f",
+"2026-11-22"
 ],
 "piloti.html": [
 "900f757485b9",

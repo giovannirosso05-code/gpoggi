@@ -1,5 +1,19 @@
 [
  {
+  "id": 1300,
+  "nome": "Gran Premio di Las Vegas",
+  "circuito": "Las Vegas",
+  "paese": "Stati Uniti",
+  "data": "2026-11-22T06:00:00+00:00",
+  "titolo": "Max Verstappen vince il Gran Premio di Las Vegas",
+  "paragrafi": [
+   "Max Verstappen (Red Bull Racing) vince il Gran Premio di Las Vegas in 1:27:39.624, davanti a Lando Norris (+0.639) e a Oscar Piastri (+1.529).",
+   "La pole position era stata di Kimi Antonelli con 1:33.893.",
+   "Si sono ritirati 3 piloti: Fernando Alonso, Sergio Perez, Arvid Lindblad.",
+   "Dopo la gara guida il campionato piloti Kimi Antonelli con 402 punti; tra i costruttori è primo Mercedes con 666."
+  ]
+ },
+ {
   "id": 1299,
   "nome": "Gran Premio di San Paolo",
   "circuito": "Interlagos",

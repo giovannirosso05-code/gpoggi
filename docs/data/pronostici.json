@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-22T06:24:22+00:00",
+ "aggiornato": "2026-11-22T08:00:51+00:00",
  "metodo": "Indice da 0 a 100 calcolato da GP Oggi: 45% forma nelle ultime 5 gare, 35% classifica del campionato, 20% risultato sullo stesso circuito l'anno scorso. È un'opinione basata sui numeri, non una previsione ufficiale né una certezza.",
  "f1": {
   "gp": "Gran Premio del Qatar",
@@ -12,8 +12,8 @@
     "team": "Red Bull Racing",
     "indice": 100,
     "motivi": [
-     "2 vittorie nelle ultime 5 gare",
-     "2° nel campionato (279 punti)",
+     "3 vittorie nelle ultime 5 gare",
+     "2° nel campionato (304 punti)",
      "Lusail 2025: 1°"
     ]
    },
@@ -21,10 +21,10 @@
     "numero": 12,
     "nome": "Kimi Antonelli",
     "team": "Mercedes",
-    "indice": 89,
+    "indice": 83,
     "motivi": [
      "1 vittoria nelle ultime 5 gare",
-     "1° nel campionato (390 punti)",
+     "1° nel campionato (402 punti)",
      "Lusail 2025: 5°"
     ]
    },
@@ -35,7 +35,7 @@
     "indice": 70,
     "motivi": [
      "1 vittoria nelle ultime 5 gare",
-     "6° nel campionato (246 punti)",
+     "5° nel campionato (264 punti)",
      "Lusail 2025: 4°"
     ]
    },
@@ -43,21 +43,22 @@
     "numero": 16,
     "nome": "Charles Leclerc",
     "team": "Ferrari",
-    "indice": 59,
+    "indice": 52,
     "motivi": [
      "2 podi nelle ultime 5 gare",
-     "5° nel campionato (249 punti)",
+     "6° nel campionato (250 punti)",
      "Lusail 2025: 8°"
     ]
    },
    {
-    "numero": 63,
-    "nome": "George Russell",
-    "team": "Mercedes",
-    "indice": 52,
+    "numero": 81,
+    "nome": "Oscar Piastri",
+    "team": "McLaren",
+    "indice": 50,
     "motivi": [
-     "3° nel campionato (262 punti)",
-     "Lusail 2025: 6°"
+     "1 podio nelle ultime 5 gare",
+     "7° nel campionato (167 punti)",
+     "Lusail 2025: 2°"
     ]
    }
   ]

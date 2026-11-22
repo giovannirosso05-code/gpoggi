@@ -1,0 +1,385 @@
+{
+ "giri": 50,
+ "griglia": {
+  "3": 1,
+  "63": 2,
+  "1": 3,
+  "6": 4,
+  "41": 5,
+  "12": 6,
+  "30": 7,
+  "10": 8,
+  "43": 9,
+  "16": 10,
+  "44": 11,
+  "27": 12,
+  "5": 13,
+  "23": 14,
+  "51": 15,
+  "11": 16,
+  "81": 17,
+  "14": 18,
+  "77": 19,
+  "55": 20,
+  "18": 21,
+  "87": 22
+ },
+ "giro_veloce": 30,
+ "voci": [
+  {
+   "giro": 1,
+   "tipo": "via",
+   "testo": "Parte la gara alle 05:03 (ora italiana); rischio pioggia indicato al 0%."
+  },
+  {
+   "giro": 1,
+   "tipo": "sorpasso",
+   "testo": "Primo giro: Sainz risale dal 20° al 11° posto; Bearman risale dal 22° al 16° posto."
+  },
+  {
+   "giro": 2,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 4,
+   "tipo": "sorpasso",
+   "testo": "**Russell supera Hadjar** e sale al 2° posto."
+  },
+  {
+   "giro": 5,
+   "tipo": "sorpasso",
+   "testo": "**Russell supera Lindblad** e sale al 3° posto."
+  },
+  {
+   "giro": 6,
+   "tipo": "sorpasso",
+   "testo": "**Russell supera Hadjar** e sale al 2° posto."
+  },
+  {
+   "giro": 8,
+   "tipo": "comando",
+   "testo": "**Hadjar passa al comando.**"
+  },
+  {
+   "giro": 8,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 9,
+   "tipo": "comando",
+   "testo": "**Russell passa al comando.**"
+  },
+  {
+   "giro": 9,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 9,
+   "tipo": "sorpasso",
+   "testo": "**Russell supera Hadjar** e sale al 2° posto."
+  },
+  {
+   "giro": 10,
+   "tipo": "comando",
+   "testo": "**Russell passa al comando.**"
+  },
+  {
+   "giro": 10,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 11,
+   "tipo": "sorpasso",
+   "testo": "**Hadjar supera Gasly** e sale al 3° posto."
+  },
+  {
+   "giro": 13,
+   "tipo": "incidente",
+   "testo": "**Incidente tra Hamilton e Norris.**"
+  },
+  {
+   "giro": 13,
+   "tipo": "incidente",
+   "testo": "**Incidente tra Hamilton e Norris.**"
+  },
+  {
+   "giro": 14,
+   "tipo": "comando",
+   "testo": "**Russell passa al comando.**"
+  },
+  {
+   "giro": 14,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 16,
+   "tipo": "sorpasso",
+   "testo": "**Hadjar supera Gasly** e sale al 3° posto."
+  },
+  {
+   "giro": 17,
+   "tipo": "penalita",
+   "testo": "**Penalità di 10 secondi a Hamilton** per il contatto con Norris."
+  },
+  {
+   "giro": 17,
+   "tipo": "comando",
+   "testo": "**Russell passa al comando.**"
+  },
+  {
+   "giro": 17,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 17,
+   "tipo": "sorpasso",
+   "testo": "**Antonelli supera Gasly** e sale al 4° posto."
+  },
+  {
+   "giro": 17,
+   "tipo": "sorpasso",
+   "testo": "**Lindblad supera Gasly** e sale al 5° posto."
+  },
+  {
+   "giro": 18,
+   "tipo": "ritiro",
+   "testo": "**Sergio Perez si ritira** (17 giri completati su 50)."
+  },
+  {
+   "giro": 18,
+   "tipo": "comando",
+   "testo": "**Russell passa al comando.**"
+  },
+  {
+   "giro": 18,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 19,
+   "tipo": "safety",
+   "testo": "**Safety car in pista.**"
+  },
+  {
+   "giro": 19,
+   "tipo": "pit",
+   "testo": "Ai box: Verstappen, Gasly, Antonelli, Norris, Colapinto, Piastri."
+  },
+  {
+   "giro": 20,
+   "tipo": "incidente",
+   "testo": "**Incidente tra Perez e Camara.**"
+  },
+  {
+   "giro": 20,
+   "tipo": "ritiro",
+   "testo": "**Arvid Lindblad si ritira** (19 giri completati su 50)."
+  },
+  {
+   "giro": 20,
+   "tipo": "comando",
+   "testo": "**Hamilton passa al comando.**"
+  },
+  {
+   "giro": 20,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 25,
+   "tipo": "safety",
+   "testo": "La safety car rientra ai box: si riparte."
+  },
+  {
+   "giro": 27,
+   "tipo": "sorpasso",
+   "testo": "**Norris supera Gasly** e sale al 3° posto."
+  },
+  {
+   "giro": 28,
+   "tipo": "comando",
+   "testo": "**Russell passa al comando.**"
+  },
+  {
+   "giro": 28,
+   "tipo": "sorpasso",
+   "testo": "**Norris supera Antonelli** e sale al 4° posto."
+  },
+  {
+   "giro": 29,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 31,
+   "tipo": "incidente",
+   "testo": "**Incidente tra Hadjar e Russell.**"
+  },
+  {
+   "giro": 31,
+   "tipo": "comando",
+   "testo": "**Russell passa al comando.**"
+  },
+  {
+   "giro": 31,
+   "tipo": "sorpasso",
+   "testo": "**Norris supera Gasly** e sale al 3° posto."
+  },
+  {
+   "giro": 32,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 33,
+   "tipo": "sorpasso",
+   "testo": "**Antonelli supera Gasly** e sale al 4° posto."
+  },
+  {
+   "giro": 34,
+   "tipo": "comando",
+   "testo": "**Norris passa al comando.**"
+  },
+  {
+   "giro": 34,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 35,
+   "tipo": "sorpasso",
+   "testo": "**Russell supera Norris** e sale al 2° posto."
+  },
+  {
+   "giro": 35,
+   "tipo": "sorpasso",
+   "testo": "**Antonelli supera Piastri** e sale al 4° posto."
+  },
+  {
+   "giro": 36,
+   "tipo": "comando",
+   "testo": "**Russell passa al comando.**"
+  },
+  {
+   "giro": 37,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 37,
+   "tipo": "comando",
+   "testo": "**Russell passa al comando.**"
+  },
+  {
+   "giro": 38,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 38,
+   "tipo": "sorpasso",
+   "testo": "**Norris supera Piastri** e sale al 4° posto."
+  },
+  {
+   "giro": 39,
+   "tipo": "incidente",
+   "testo": "**Incidente tra Leclerc e Hamilton.**"
+  },
+  {
+   "giro": 39,
+   "tipo": "comando",
+   "testo": "**Antonelli passa al comando.**"
+  },
+  {
+   "giro": 39,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 41,
+   "tipo": "comando",
+   "testo": "**Antonelli passa al comando.**"
+  },
+  {
+   "giro": 41,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 42,
+   "tipo": "penalita",
+   "testo": "**Penalità di 10 secondi a Leclerc** per il contatto con Hamilton."
+  },
+  {
+   "giro": 43,
+   "tipo": "comando",
+   "testo": "**Antonelli passa al comando.**"
+  },
+  {
+   "giro": 44,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 44,
+   "tipo": "sorpasso",
+   "testo": "**Russell supera Norris** e sale al 3° posto."
+  },
+  {
+   "giro": 45,
+   "tipo": "comando",
+   "testo": "**Antonelli passa al comando.**"
+  },
+  {
+   "giro": 45,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 47,
+   "tipo": "comando",
+   "testo": "**Antonelli passa al comando.**"
+  },
+  {
+   "giro": 47,
+   "tipo": "comando",
+   "testo": "**Verstappen passa al comando.**"
+  },
+  {
+   "giro": 48,
+   "tipo": "sorpasso",
+   "testo": "**Russell supera Antonelli** e sale al 2° posto."
+  },
+  {
+   "giro": 49,
+   "tipo": "sorpasso",
+   "testo": "**Norris supera Piastri** e sale al 3° posto."
+  },
+  {
+   "giro": 49,
+   "tipo": "sorpasso",
+   "testo": "**Norris supera Antonelli** e sale al 2° posto."
+  },
+  {
+   "giro": 50,
+   "tipo": "ritiro",
+   "testo": "**Fernando Alonso si ritira** (49 giri completati su 50)."
+  },
+  {
+   "giro": 50,
+   "tipo": "sorpasso",
+   "testo": "**Antonelli supera Gasly** e sale al 4° posto."
+  },
+  {
+   "giro": 50,
+   "tipo": "arrivo",
+   "testo": "**Bandiera a scacchi: vince Max Verstappen** (Red Bull Racing), davanti a Lando Norris e Oscar Piastri."
+  }
+ ]
+}

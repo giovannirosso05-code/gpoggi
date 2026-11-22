@@ -322,7 +322,10 @@
     "stato": null
    },
    "sprint": null,
-   "gara": null
+   "gara": {
+    "pos": null,
+    "stato": "NP"
+   }
   }
  ],
  "vittorie": 0,

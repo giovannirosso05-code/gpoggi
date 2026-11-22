@@ -6,7 +6,7 @@
   "team": "Mercedes",
   "colore": "00D7B6",
   "posizione": 1,
-  "punti": 390.0,
+  "punti": 402.0,
   "foto": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Kimi_Antonelli_at_the_2025_US_Grand_Prix_in_Austin%2C_TX_%28cropped%29.jpg/500px-Kimi_Antonelli_at_the_2025_US_Grand_Prix_in_Austin%2C_TX_%28cropped%29.jpg",
    "grande": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Kimi_Antonelli_at_the_2025_US_Grand_Prix_in_Austin%2C_TX_%28cropped%29.jpg",
@@ -24,7 +24,7 @@
   "team": "Red Bull Racing",
   "colore": "4781D7",
   "posizione": 2,
-  "punti": 279.0,
+  "punti": 304.0,
   "foto": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg/500px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg",
    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg/1280px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg",
@@ -35,30 +35,13 @@
   }
  },
  {
-  "numero": 63,
-  "acronimo": "RUS",
-  "nome": "George Russell",
-  "team": "Mercedes",
-  "colore": "00D7B6",
-  "posizione": 3,
-  "punti": 262.0,
-  "foto": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/KingsLeonSilverstne040724_%2828_of_112%29_%2853838006028%29_%28cropped%29.jpg/500px-KingsLeonSilverstne040724_%2828_of_112%29_%2853838006028%29_%28cropped%29.jpg",
-   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/KingsLeonSilverstne040724_%2828_of_112%29_%2853838006028%29_%28cropped%29.jpg/1280px-KingsLeonSilverstne040724_%2828_of_112%29_%2853838006028%29_%28cropped%29.jpg",
-   "autore": "Raph_PH",
-   "licenza": "CC BY 2.0",
-   "pagina": "https://commons.wikimedia.org/wiki/File:KingsLeonSilverstne040724_(28_of_112)_(53838006028)_(cropped).jpg",
-   "file": "img/foto/575d2e7f38feced0.jpg"
-  }
- },
- {
   "numero": 44,
   "acronimo": "HAM",
   "nome": "Lewis Hamilton",
   "team": "Ferrari",
   "colore": "ED1131",
-  "posizione": 4,
-  "punti": 261.0,
+  "posizione": 3,
+  "punti": 267.0,
   "foto": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Prime_Minister_Keir_Starmer_meets_Sir_Lewis_Hamilton_%2854566928382%29_%28cropped%29.jpg/500px-Prime_Minister_Keir_Starmer_meets_Sir_Lewis_Hamilton_%2854566928382%29_%28cropped%29.jpg",
    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Prime_Minister_Keir_Starmer_meets_Sir_Lewis_Hamilton_%2854566928382%29_%28cropped%29.jpg/1280px-Prime_Minister_Keir_Starmer_meets_Sir_Lewis_Hamilton_%2854566928382%29_%28cropped%29.jpg",
@@ -69,20 +52,20 @@
   }
  },
  {
-  "numero": 16,
-  "acronimo": "LEC",
-  "nome": "Charles Leclerc",
-  "team": "Ferrari",
-  "colore": "ED1131",
-  "posizione": 5,
-  "punti": 249.0,
+  "numero": 63,
+  "acronimo": "RUS",
+  "nome": "George Russell",
+  "team": "Mercedes",
+  "colore": "00D7B6",
+  "posizione": 4,
+  "punti": 264.0,
   "foto": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg/500px-Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg",
-   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg/1280px-Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg",
-   "autore": "Gabriel Hutchinson",
-   "licenza": "CC BY-SA 4.0",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Charles_Leclerc_at_the_2026_Cannes_Film_Festival_(cropped).jpg",
-   "file": "img/foto/2c0b7bb24e6b5e92.jpg"
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/KingsLeonSilverstne040724_%2828_of_112%29_%2853838006028%29_%28cropped%29.jpg/500px-KingsLeonSilverstne040724_%2828_of_112%29_%2853838006028%29_%28cropped%29.jpg",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/KingsLeonSilverstne040724_%2828_of_112%29_%2853838006028%29_%28cropped%29.jpg/1280px-KingsLeonSilverstne040724_%2828_of_112%29_%2853838006028%29_%28cropped%29.jpg",
+   "autore": "Raph_PH",
+   "licenza": "CC BY 2.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:KingsLeonSilverstne040724_(28_of_112)_(53838006028)_(cropped).jpg",
+   "file": "img/foto/575d2e7f38feced0.jpg"
   }
  },
  {
@@ -91,8 +74,8 @@
   "nome": "Lando Norris",
   "team": "McLaren",
   "colore": "F47600",
-  "posizione": 6,
-  "punti": 246.0,
+  "posizione": 5,
+  "punti": 264.0,
   "foto": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_%28cropped2%29.jpg/500px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_%28cropped2%29.jpg",
    "grande": "https://upload.wikimedia.org/wikipedia/commons/9/90/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3968_by_Stepro_%28cropped2%29.jpg",
@@ -103,13 +86,30 @@
   }
  },
  {
+  "numero": 16,
+  "acronimo": "LEC",
+  "nome": "Charles Leclerc",
+  "team": "Ferrari",
+  "colore": "ED1131",
+  "posizione": 6,
+  "punti": 250.0,
+  "foto": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg/500px-Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg/1280px-Charles_Leclerc_at_the_2026_Cannes_Film_Festival_%28cropped%29.jpg",
+   "autore": "Gabriel Hutchinson",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Charles_Leclerc_at_the_2026_Cannes_Film_Festival_(cropped).jpg",
+   "file": "img/foto/2c0b7bb24e6b5e92.jpg"
+  }
+ },
+ {
   "numero": 81,
   "acronimo": "PIA",
   "nome": "Oscar Piastri",
   "team": "McLaren",
   "colore": "F47600",
   "posizione": 7,
-  "punti": 152.0,
+  "punti": 167.0,
   "foto": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/2026_Chinese_GP_-_Oscar_Piastri_%28cropped%29_%28cropped%29.jpg/500px-2026_Chinese_GP_-_Oscar_Piastri_%28cropped%29_%28cropped%29.jpg",
    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/2026_Chinese_GP_-_Oscar_Piastri_%28cropped%29_%28cropped%29.jpg/1280px-2026_Chinese_GP_-_Oscar_Piastri_%28cropped%29_%28cropped%29.jpg",
@@ -160,7 +160,7 @@
   "team": "Alpine",
   "colore": "00A1E8",
   "posizione": 10,
-  "punti": 42.0,
+  "punti": 52.0,
   "foto": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/2022_French_Grand_Prix_%2852279066548%29_%28cropped%29_%28cropped%29.png/500px-2022_French_Grand_Prix_%2852279066548%29_%28cropped%29_%28cropped%29.png",
    "grande": "https://upload.wikimedia.org/wikipedia/commons/6/61/2022_French_Grand_Prix_%2852279066548%29_%28cropped%29_%28cropped%29.png",
@@ -194,7 +194,7 @@
   "team": "Alpine",
   "colore": "00A1E8",
   "posizione": 12,
-  "punti": 27.0,
+  "punti": 35.0,
   "foto": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Franco_Colapinto_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8698%29_cropped.jpg/500px-Franco_Colapinto_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8698%29_cropped.jpg",
    "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Franco_Colapinto_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8698%29_cropped.jpg/1280px-Franco_Colapinto_at_the_Melbourne_Walk_during_the_2026_Australian_Grand_Prix_%28028A8698%29_cropped.jpg",
@@ -256,12 +256,29 @@
   }
  },
  {
+  "numero": 55,
+  "acronimo": "SAI",
+  "nome": "Carlos Sainz",
+  "team": "Williams",
+  "colore": "1868DB",
+  "posizione": 16,
+  "punti": 11.0,
+  "foto": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_%28cropped%29.jpg/500px-Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_%28cropped%29.jpg",
+   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_%28cropped%29.jpg/1280px-Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_%28cropped%29.jpg",
+   "autore": "LucaFazPhoto",
+   "licenza": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_(cropped).jpg",
+   "file": "img/foto/b2cc1f7cecb051dc.jpg"
+  }
+ },
+ {
   "numero": 31,
   "acronimo": "OCO",
   "nome": "Esteban Ocon",
   "team": "Haas F1 Team",
   "colore": "9C9FA2",
-  "posizione": 16,
+  "posizione": 17,
   "punti": 7.0,
   "foto": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Esteban_Ocon_2024_Suzuka_%28cropped%29.jpg/500px-Esteban_Ocon_2024_Suzuka_%28cropped%29.jpg",
@@ -278,7 +295,7 @@
   "nome": "Fernando Alonso",
   "team": "Aston Martin",
   "colore": "229971",
-  "posizione": 17,
+  "posizione": 18,
   "punti": 7.0,
   "foto": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Alonso-68_%2824710447098%29.jpg/500px-Alonso-68_%2824710447098%29.jpg",
@@ -287,23 +304,6 @@
    "licenza": "CC BY-SA 2.0",
    "pagina": "https://commons.wikimedia.org/wiki/File:Alonso-68_(24710447098).jpg",
    "file": "img/foto/c9492ba2d4b04572.jpg"
-  }
- },
- {
-  "numero": 55,
-  "acronimo": "SAI",
-  "nome": "Carlos Sainz",
-  "team": "Williams",
-  "colore": "1868DB",
-  "posizione": 18,
-  "punti": 7.0,
-  "foto": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_%28cropped%29.jpg/500px-Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_%28cropped%29.jpg",
-   "grande": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_%28cropped%29.jpg/1280px-Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_%28cropped%29.jpg",
-   "autore": "LucaFazPhoto",
-   "licenza": "CC BY-SA 4.0",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Carlos_Sainz_at_the_83rd_Venice_FILM_festival-9_(cropped).jpg",
-   "file": "img/foto/b2cc1f7cecb051dc.jpg"
   }
  },
  {

@@ -2758,143 +2758,6 @@
    "fonte": "https://en.wikipedia.org/wiki/Johann_Zarco"
   }
  },
- "moto:9a441928-d1af-452d-afce-fa028c044932": {
-  "nascita": "1997-09-01",
-  "luogo": "Palma de Mallorca, Spain",
-  "altezza": 181,
-  "peso": 69,
-  "debutto": 2016,
-  "carriera": [
-   {
-    "anno": 2016,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Leopard Racing",
-      "numero": 36
-     }
-    ]
-   },
-   {
-    "anno": 2017,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Leopard Racing",
-      "numero": 36
-     }
-    ]
-   },
-   {
-    "anno": 2018,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Team SUZUKI ECSTAR",
-      "numero": 0
-     }
-    ]
-   },
-   {
-    "anno": 2019,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Team SUZUKI ECSTAR",
-      "numero": 36
-     }
-    ]
-   },
-   {
-    "anno": 2020,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Team SUZUKI ECSTAR",
-      "numero": 36
-     }
-    ]
-   },
-   {
-    "anno": 2021,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Team SUZUKI ECSTAR",
-      "numero": 36
-     }
-    ]
-   },
-   {
-    "anno": 2022,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Team SUZUKI ECSTAR",
-      "numero": 36
-     }
-    ]
-   },
-   {
-    "anno": 2023,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Honda HRC Castrol",
-      "numero": 36
-     }
-    ]
-   },
-   {
-    "anno": 2024,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Honda HRC Castrol",
-      "numero": 36
-     }
-    ]
-   },
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Honda HRC Castrol",
-      "numero": 36
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "MotoGP",
-      "team": "Honda HRC Castrol",
-      "numero": 36
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 185,
-   "vittorie": 12,
-   "podi": 35,
-   "pole": 2,
-   "giri_veloci": 7,
-   "titoli": 2,
-   "motogp": {
-    "gare": 130,
-    "vittorie": 1,
-    "podi": 15,
-    "pole": 0,
-    "giri_veloci": 1,
-    "titoli": 1
-   },
-   "immagine": "Joan Mir at the 2025 Malaysian Grand Prix.jpg",
-   "fonte": "https://en.wikipedia.org/wiki/Joan_Mir"
-  }
- },
  "moto:6e940243-5167-4cc3-a343-a74337369b94": {
   "nascita": "1995-01-18",
   "luogo": "Townsville, Australia",
@@ -3070,6 +2933,143 @@
    },
    "immagine": "Jack Miller at the 2025 Malaysian Grand Prix.jpg",
    "fonte": "https://en.wikipedia.org/wiki/Jack_Miller_(motorcyclist)"
+  }
+ },
+ "moto:9a441928-d1af-452d-afce-fa028c044932": {
+  "nascita": "1997-09-01",
+  "luogo": "Palma de Mallorca, Spain",
+  "altezza": 181,
+  "peso": 69,
+  "debutto": 2016,
+  "carriera": [
+   {
+    "anno": 2016,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2017,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Leopard Racing",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Team SUZUKI ECSTAR",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 36
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "MotoGP",
+      "team": "Honda HRC Castrol",
+      "numero": 36
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 185,
+   "vittorie": 12,
+   "podi": 35,
+   "pole": 2,
+   "giri_veloci": 7,
+   "titoli": 2,
+   "motogp": {
+    "gare": 130,
+    "vittorie": 1,
+    "podi": 15,
+    "pole": 0,
+    "giri_veloci": 1,
+    "titoli": 1
+   },
+   "immagine": "Joan Mir at the 2025 Malaysian Grand Prix.jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Joan_Mir"
   }
  },
  "moto:56475aa3-f3d1-485a-b6db-ca1149e1b6fa": {
@@ -6079,6 +6079,123 @@
    "fonte": "https://en.wikipedia.org/wiki/Filip_Salac"
   }
  },
+ "moto:021761c5-a8a4-4749-8603-479ce2984722": {
+  "nascita": "2001-12-21",
+  "luogo": "Madrid, Spain",
+  "altezza": 181,
+  "peso": 70,
+  "debutto": 2018,
+  "carriera": [
+   {
+    "anno": 2018,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2019,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Estrella Galicia 0,0",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2020,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Sterilgarda Husqvarna Max",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2021,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "MB Conveyors Speed Up",
+      "numero": 2
+     }
+    ]
+   },
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Lightech Speed Up",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SpeedRS Team",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SpeedRS Team",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "SpeedRS Team",
+      "numero": 21
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "ITALJET Gresini Moto2",
+      "numero": 21
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 143,
+   "vittorie": 4,
+   "podi": 18,
+   "pole": 4,
+   "giri_veloci": 6,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": "Alonso López. Presentacion EG0,0 Moto3 (25763924007).jpg",
+   "fonte": "https://en.wikipedia.org/wiki/Alonso_L%C3%B3pez_(motorcyclist)"
+  }
+ },
  "moto:67e88ff7-6a0c-404c-ae79-7d9fdfdef986": {
   "nascita": "2001-10-13",
   "luogo": "Cirie, Italy",
@@ -6199,123 +6316,6 @@
    },
    "immagine": "Celestino Vietti 2019.jpg",
    "fonte": "https://en.wikipedia.org/wiki/Celestino_Vietti"
-  }
- },
- "moto:021761c5-a8a4-4749-8603-479ce2984722": {
-  "nascita": "2001-12-21",
-  "luogo": "Madrid, Spain",
-  "altezza": 181,
-  "peso": 70,
-  "debutto": 2018,
-  "carriera": [
-   {
-    "anno": 2018,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Estrella Galicia 0,0",
-      "numero": 21
-     }
-    ]
-   },
-   {
-    "anno": 2019,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Estrella Galicia 0,0",
-      "numero": 21
-     }
-    ]
-   },
-   {
-    "anno": 2020,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Sterilgarda Husqvarna Max",
-      "numero": 21
-     }
-    ]
-   },
-   {
-    "anno": 2021,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "MB Conveyors Speed Up",
-      "numero": 2
-     }
-    ]
-   },
-   {
-    "anno": 2022,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Lightech Speed Up",
-      "numero": 21
-     }
-    ]
-   },
-   {
-    "anno": 2023,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "SpeedRS Team",
-      "numero": 21
-     }
-    ]
-   },
-   {
-    "anno": 2024,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "SpeedRS Team",
-      "numero": 21
-     }
-    ]
-   },
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "SpeedRS Team",
-      "numero": 21
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "ITALJET Gresini Moto2",
-      "numero": 21
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 143,
-   "vittorie": 4,
-   "podi": 18,
-   "pole": 4,
-   "giri_veloci": 6,
-   "titoli": 0,
-   "motogp": {
-    "gare": 0,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": "Alonso López. Presentacion EG0,0 Moto3 (25763924007).jpg",
-   "fonte": "https://en.wikipedia.org/wiki/Alonso_L%C3%B3pez_(motorcyclist)"
   }
  },
  "moto:3fc01a22-75e3-4cb3-a19d-401386cf80cc": {
@@ -6648,6 +6648,53 @@
    "fonte": "https://en.wikipedia.org/wiki/Tony_Arbolino"
   }
  },
+ "moto:fb24c9f6-c2d0-40a5-b92b-1c362367cfcf": {
+  "nascita": "2003-08-21",
+  "luogo": "Madrid, Spain",
+  "altezza": 171,
+  "peso": 65,
+  "debutto": 2025,
+  "carriera": [
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 99
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Italtrans Racing Team",
+      "numero": 99
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 34,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Adrian_Huertas"
+  }
+ },
  "moto:5315c17f-fe2f-4478-8ad6-fac49d337c84": {
   "nascita": "2004-05-03",
   "luogo": "Namur, Belgium",
@@ -6748,53 +6795,6 @@
    },
    "immagine": "Barry Baltus (cropped).jpg",
    "fonte": "https://en.wikipedia.org/wiki/Barry_Baltus"
-  }
- },
- "moto:fb24c9f6-c2d0-40a5-b92b-1c362367cfcf": {
-  "nascita": "2003-08-21",
-  "luogo": "Madrid, Spain",
-  "altezza": 171,
-  "peso": 65,
-  "debutto": 2025,
-  "carriera": [
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Italtrans Racing Team",
-      "numero": 99
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Italtrans Racing Team",
-      "numero": 99
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 34,
-   "vittorie": 0,
-   "podi": 0,
-   "pole": 0,
-   "giri_veloci": 0,
-   "titoli": 0,
-   "motogp": {
-    "gare": 0,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": null,
-   "fonte": "https://en.wikipedia.org/wiki/Adrian_Huertas"
   }
  },
  "moto:f2afe40e-140a-4e76-a071-95e2b79c3273": {
@@ -7426,6 +7426,65 @@
    "fonte": "https://en.wikipedia.org/wiki/Alberto_Ferr%C3%A1ndez"
   }
  },
+ "moto:5002549c-2e5c-4aee-b106-b7c9830e328a": {
+  "nascita": "2005-12-01",
+  "luogo": "Breda, Netherlands",
+  "altezza": 182,
+  "peso": 65,
+  "debutto": 2022,
+  "carriera": [
+   {
+    "anno": 2022,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Momoven Idrofoglia RW Racing Team",
+      "numero": 84
+     }
+    ]
+   },
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Momoven Idrofoglia RW Racing Team",
+      "numero": 84
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Momoven Idrofoglia RW Racing Team",
+      "numero": 84
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Momoven Idrofoglia RW Racing Team",
+      "numero": 84
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Momoven Idrofoglia RW Racing Team",
+      "numero": 84
+     }
+    ]
+   }
+  ]
+ },
  "moto:3a5b3421-fb15-4254-8ab3-b90cdd59a293": {
   "nascita": "1999-09-30",
   "luogo": "Corbera, Spain",
@@ -7650,65 +7709,6 @@
    "fonte": "https://en.wikipedia.org/wiki/Taiyo_Furusato"
   }
  },
- "moto:5002549c-2e5c-4aee-b106-b7c9830e328a": {
-  "nascita": "2005-12-01",
-  "luogo": "Breda, Netherlands",
-  "altezza": 182,
-  "peso": 65,
-  "debutto": 2022,
-  "carriera": [
-   {
-    "anno": 2022,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Momoven Idrofoglia RW Racing Team",
-      "numero": 84
-     }
-    ]
-   },
-   {
-    "anno": 2023,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Momoven Idrofoglia RW Racing Team",
-      "numero": 84
-     }
-    ]
-   },
-   {
-    "anno": 2024,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Momoven Idrofoglia RW Racing Team",
-      "numero": 84
-     }
-    ]
-   },
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Momoven Idrofoglia RW Racing Team",
-      "numero": 84
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Momoven Idrofoglia RW Racing Team",
-      "numero": 84
-     }
-    ]
-   }
-  ]
- },
  "moto:bba55487-31c8-4129-a512-7e11bcb373a9": {
   "nascita": "2003-03-22",
   "luogo": "Burriana, Spain",
@@ -7918,6 +7918,73 @@
    "fonte": "https://en.wikipedia.org/wiki/Mario_Aji"
   }
  },
+ "moto:ec3cc0b6-0353-4dc1-92f5-78af41d3d3bb": {
+  "nascita": "2006-04-07",
+  "luogo": "Legazpi, Spain",
+  "altezza": 168,
+  "peso": 57,
+  "debutto": 2023,
+  "carriera": [
+   {
+    "anno": 2023,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 0
+     }
+    ]
+   },
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Ajo",
+      "numero": 85
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "OnlyFans American Racing Team",
+      "numero": 85
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "KLINT Racing Team",
+      "numero": 85
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 30,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Xabi_Zurutuza"
+  }
+ },
  "moto:be8956f3-85e2-4814-9930-a4e7ebecc520": {
   "nascita": "1997-12-16",
   "luogo": "Conil de la Frontera, Spain",
@@ -8068,73 +8135,6 @@
    },
    "immagine": "Marcos Ramirez 2016.jpg",
    "fonte": "https://en.wikipedia.org/wiki/Marcos_Ram%C3%ADrez_(motorcyclist)"
-  }
- },
- "moto:ec3cc0b6-0353-4dc1-92f5-78af41d3d3bb": {
-  "nascita": "2006-04-07",
-  "luogo": "Legazpi, Spain",
-  "altezza": 168,
-  "peso": 57,
-  "debutto": 2023,
-  "carriera": [
-   {
-    "anno": 2023,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Red Bull KTM Ajo",
-      "numero": 0
-     }
-    ]
-   },
-   {
-    "anno": 2024,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Red Bull KTM Ajo",
-      "numero": 85
-     }
-    ]
-   },
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "OnlyFans American Racing Team",
-      "numero": 85
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "KLINT Racing Team",
-      "numero": 85
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 30,
-   "vittorie": 0,
-   "podi": 0,
-   "pole": 0,
-   "giri_veloci": 0,
-   "titoli": 0,
-   "motogp": {
-    "gare": 0,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": null,
-   "fonte": "https://en.wikipedia.org/wiki/Xabi_Zurutuza"
   }
  },
  "moto:c897059e-2972-4b56-8891-cca6dd92b6e2": {
@@ -8470,63 +8470,6 @@
    "fonte": "https://en.wikipedia.org/wiki/Dennis_Foggia"
   }
  },
- "moto:05d25dbd-de45-4ae8-9aa1-cbcb40b4058c": {
-  "nascita": "2005-02-04",
-  "luogo": "Figtree NSW, Australia",
-  "altezza": 181,
-  "peso": 58,
-  "debutto": 2024,
-  "carriera": [
-   {
-    "anno": 2024,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Red Bull GASGAS Tech3",
-      "numero": 12
-     }
-    ]
-   },
-   {
-    "anno": 2025,
-    "classi": [
-     {
-      "categoria": "Moto3",
-      "team": "Red Bull KTM Tech3",
-      "numero": 12
-     }
-    ]
-   },
-   {
-    "anno": 2026,
-    "classi": [
-     {
-      "categoria": "Moto2",
-      "team": "Idemitsu Honda Team Asia",
-      "numero": 22
-     }
-    ]
-   }
-  ],
-  "totali": {
-   "gare": 40,
-   "vittorie": 0,
-   "podi": 0,
-   "pole": 0,
-   "giri_veloci": 0,
-   "titoli": 0,
-   "motogp": {
-    "gare": 0,
-    "vittorie": 0,
-    "podi": 0,
-    "pole": 0,
-    "giri_veloci": 0,
-    "titoli": 0
-   },
-   "immagine": null,
-   "fonte": "https://en.wikipedia.org/wiki/Jacob_Roulstone"
-  }
- },
  "moto:1ddf1165-e6da-4859-9a97-eac600efb431": {
   "nascita": "1997-02-12",
   "luogo": "Cesena, Italy",
@@ -8677,6 +8620,63 @@
    },
    "immagine": "MotoGP - Sachsenring 2015 - Matteo Ferrari (cropped).jpg",
    "fonte": "https://en.wikipedia.org/wiki/Matteo_Ferrari_(motorcyclist)"
+  }
+ },
+ "moto:05d25dbd-de45-4ae8-9aa1-cbcb40b4058c": {
+  "nascita": "2005-02-04",
+  "luogo": "Figtree NSW, Australia",
+  "altezza": 181,
+  "peso": 58,
+  "debutto": 2024,
+  "carriera": [
+   {
+    "anno": 2024,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull GASGAS Tech3",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2025,
+    "classi": [
+     {
+      "categoria": "Moto3",
+      "team": "Red Bull KTM Tech3",
+      "numero": 12
+     }
+    ]
+   },
+   {
+    "anno": 2026,
+    "classi": [
+     {
+      "categoria": "Moto2",
+      "team": "Idemitsu Honda Team Asia",
+      "numero": 22
+     }
+    ]
+   }
+  ],
+  "totali": {
+   "gare": 40,
+   "vittorie": 0,
+   "podi": 0,
+   "pole": 0,
+   "giri_veloci": 0,
+   "titoli": 0,
+   "motogp": {
+    "gare": 0,
+    "vittorie": 0,
+    "podi": 0,
+    "pole": 0,
+    "giri_veloci": 0,
+    "titoli": 0
+   },
+   "immagine": null,
+   "fonte": "https://en.wikipedia.org/wiki/Jacob_Roulstone"
   }
  },
  "moto:7f6957d2-b394-46d7-a5e6-9400a5844d61": {
@@ -10996,15 +10996,15 @@
   "descrizione": "pilota motociclistico francese",
   "pagina": "https://it.wikipedia.org/wiki/Johann_Zarco"
  },
- "nome:Joan Mir": {
-  "testo": "Joan Mir Mayrata è un pilota motociclistico spagnolo, campione del mondo Moto3 nel 2017 e MotoGP nel 2020.",
-  "descrizione": "pilota motociclistico spagnolo",
-  "pagina": "https://it.wikipedia.org/wiki/Joan_Mir"
- },
  "nome:Jack Miller": {
   "testo": "Jack Peter Miller è un pilota motociclistico australiano.",
   "descrizione": "pilota motociclistico australiano",
   "pagina": "https://it.wikipedia.org/wiki/Jack_Miller"
+ },
+ "nome:Joan Mir": {
+  "testo": "Joan Mir Mayrata è un pilota motociclistico spagnolo, campione del mondo Moto3 nel 2017 e MotoGP nel 2020.",
+  "descrizione": "pilota motociclistico spagnolo",
+  "pagina": "https://it.wikipedia.org/wiki/Joan_Mir"
  },
  "nome:Alex Rins": {
   "testo": "Alejandro Rins Navarro è un pilota motociclistico spagnolo.",

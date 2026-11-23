@@ -22,7 +22,7 @@ import build_motogp as bm
 ROOT = Path(__file__).parent
 DATA = ROOT / "docs" / "data"
 CACHE = ROOT / "schede_cache.json"
-H = {"User-Agent": "GPOggiBot/1.0 (+https://gpoggi.it; progetto non commerciale; giovannirosso05@gmail.com)"}
+H = {"User-Agent": "GPOggiBot/1.0 (+https://gpoggi.it; progetto non commerciale)"}
 norm = lambda s: unicodedata.normalize("NFD", s or "").encode("ascii", "ignore").decode().lower().strip()
 JOLPICA = "https://api.jolpi.ca/ergast/f1"
 SOLO_CACHE = "--solo-cache" in sys.argv  # scrive il file con quello che e' gia' nella cache, senza nuove richieste

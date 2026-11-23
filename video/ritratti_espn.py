@@ -11,7 +11,7 @@ from PIL import Image, ImageDraw, ImageFilter
 
 QUI = Path(__file__).parent
 CACHE = QUI / "_cache"
-HEADERS = {"User-Agent": "GPOggiBot/0.1 (sito non ufficiale; giovannirosso05@gmail.com)"}
+HEADERS = {"User-Agent": "GPOggiBot/0.1 (sito non ufficiale; +https://gpoggi.it)"}
 W, H = 1080, 1920
 
 

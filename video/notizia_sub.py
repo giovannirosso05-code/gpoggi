@@ -61,7 +61,7 @@ def foto_da_url(url, credito=f"{T['foto']}: ESPN"):
     cache = QUI / "_cache" / "url"; cache.mkdir(parents=True, exist_ok=True)
     f = cache / (hashlib.sha1(url.encode()).hexdigest()[:16] + ".jpg")
     if not f.exists():
-        r = requests.get(url, headers={"User-Agent": "GPOggiBot/0.1 (sito non ufficiale; giovannirosso05@gmail.com)"}, timeout=40,
+        r = requests.get(url, headers={"User-Agent": "GPOggiBot/0.1 (sito non ufficiale; +https://gpoggi.it)"}, timeout=40,
                          verify="/root/.ccr/ca-bundle.crt" if os.path.exists("/root/.ccr/ca-bundle.crt") else True)
         r.raise_for_status()
         f.write_bytes(r.content)

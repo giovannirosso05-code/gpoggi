@@ -1,0 +1,82 @@
+{
+ "serie": "MotoGP",
+ "titolo_breve": "Marquez campione",
+ "etichetta": "Mondiale",
+ "fonte": "MotoGP.com, calcolo GP Oggi",
+ "velocita": "+38%",
+ "scene": [
+  {
+   "foto": "Marc Marquez",
+   "foto_file": "video/spec/motogp-marquez-campione-sfondo.png",
+   "credito": "Grafica GP Oggi",
+   "hook": true,
+   "hook_titolo": "Marquez campione del mondo!",
+   "testo": "*Marc Marquez* è *campione del mondo* MotoGP!",
+   "fonte_alto": "MotoGP.com"
+  },
+  {
+   "foto": "Marc Marquez",
+   "testo": "Il titolo arriva a Portimão, anche se la sprint non l'ha finita e in gara chiude *ottavo*.",
+   "fonte_alto": "MotoGP.com"
+  },
+  {
+   "foto": "Marc Marquez",
+   "pista": true,
+   "classifica": {
+    "titolo": "Mondiale dopo Portimão",
+    "righe": [
+     {
+      "pos": 1,
+      "colore": "e1251b",
+      "nome": "M. Marquez",
+      "punti": 439,
+      "piu": 8
+     },
+     {
+      "pos": 2,
+      "colore": "7b2c8f",
+      "nome": "Martin",
+      "punti": 396,
+      "piu": 25
+     },
+     {
+      "pos": 3,
+      "colore": "4a5bd0",
+      "nome": "Bezzecchi",
+      "punti": 394,
+      "piu": 37
+     }
+    ]
+   },
+   "nome": "Margine: calcolo GP Oggi",
+   "sub_top": 1360,
+   "testo": "Ha *439 punti*, contro i *396* di Martin e i *394* di Bezzecchi: a Valencia ne restano al massimo *37*, e il vantaggio è di *43*.",
+   "fonte_alto": "MotoGP.com"
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "nome": "Gara Portimão",
+   "chips": [
+    [
+     "si",
+     "1. Bezzecchi"
+    ],
+    [
+     "info",
+     "2. Martin"
+    ],
+    [
+     "info",
+     "3. R. Fernandez"
+    ]
+   ],
+   "sub_top": 1650,
+   "testo": "La gara l'ha vinta *Bezzecchi*, davanti a *Martin* e *Raul Fernandez*.",
+   "fonte_alto": "MotoGP.com"
+  }
+ ],
+ "finale": {
+  "foto": "Marc Marquez",
+  "domanda": "Chi ti ha sorpreso di più quest'anno: Marquez, Bezzecchi o Martin?"
+ }
+}

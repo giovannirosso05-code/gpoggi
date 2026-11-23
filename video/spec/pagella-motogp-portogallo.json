@@ -1,0 +1,102 @@
+{
+ "serie": "MotoGP",
+ "titolo_breve": "Portogallo: la pagella",
+ "fonte": "risultati ufficiali, calcolo GP Oggi",
+ "velocita": "+31%",
+ "scene": [
+  {
+   "foto": "Augusto Fernandez",
+   "hook": true,
+   "hook_titolo": "Fernandez tra i peggiori",
+   "testo": "[Fernandez] tra i peggiori del weekend: è uscito nella sprint."
+  },
+  {
+   "foto": "Augusto Fernandez",
+   "testo": "[Fernandez]: sedicesimo in qualifica, fuori nella sprint e diciottesimo in gara. Voto *cinque*."
+  },
+  {
+   "foto": "Enea Bastianini",
+   "testo": "[Bastianini]: ventiduesimo in qualifica, undicesimo nella sprint e undicesimo in gara, partendo ventiduesimo. Per lui oggi *sei*."
+  },
+  {
+   "foto": "Marc Marquez",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Marc Marquez]: secondo in qualifica, fuori nella sprint e ottavo in gara, partendo secondo. Si prende *sei*."
+  },
+  {
+   "foto": "Jorge Martin",
+   "testo": "[Martin]: settimo in qualifica, quinto nella sprint e secondo in gara, partendo settimo. Gli diamo *otto*."
+  },
+  {
+   "foto": "Raul Fernandez",
+   "alt": "pista",
+   "pista": true,
+   "testo": "[Fernandez]: quarto in qualifica, secondo nella sprint e terzo in gara. Voto *otto*."
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "alt": "pista",
+   "pista": true,
+   "volto_alt": "sorriso",
+   "testo": "E poi il migliore: [Bezzecchi]. Pole, sprint e gara: una tripletta. Seconda vittoria di fila: una prova da applausi. Voto *dieci*."
+  },
+  {
+   "foto": "Marco Bezzecchi",
+   "pista": true,
+   "classifica": {
+    "titolo": "I nostri voti",
+    "righe": [
+     {
+      "pos": "",
+      "colore": "7b2c8f",
+      "nome": "Bezzecchi",
+      "voto": "10",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "7b2c8f",
+      "nome": "Fernandez",
+      "voto": "8",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "7b2c8f",
+      "nome": "Martin",
+      "voto": "8",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "e1251b",
+      "nome": "M. Marquez",
+      "voto": "6",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "f26a1b",
+      "nome": "Bastianini",
+      "voto": "6",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "1d4fa3",
+      "nome": "Fernandez",
+      "voto": "5",
+      "nota": " "
+     }
+    ]
+   },
+   "sub_top": 1360,
+   "testo": "Ecco la pagella completa."
+  }
+ ],
+ "finale": {
+  "foto": "Marco Bezzecchi",
+  "domanda": "Che voto dai tu a Portogallo?"
+ }
+}

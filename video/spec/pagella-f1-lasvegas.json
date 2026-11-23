@@ -1,0 +1,118 @@
+{
+ "serie": "F1",
+ "titolo_breve": "Las Vegas: la pagella",
+ "fonte": "risultati ufficiali, calcolo GP Oggi",
+ "velocita": "+31%",
+ "scene": [
+  {
+   "foto": "Fernando Alonso",
+   "hook": true,
+   "hook_titolo": "Alonso tra i peggiori",
+   "testo": "[Alonso] tra i peggiori del weekend."
+  },
+  {
+   "foto": "Fernando Alonso",
+   "testo": "[Alonso]: diciannovesimo in qualifica e diciannovesimo in gara. Voto *cinque*."
+  },
+  {
+   "foto": "Charles Leclerc",
+   "alt": "pista_cina",
+   "pista": true,
+   "testo": "[Leclerc]: undicesimo in qualifica e decimo in gara. Per lui oggi *cinque e mezzo*."
+  },
+  {
+   "foto": "Lewis Hamilton",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Hamilton]: dodicesimo in qualifica e settimo in gara, partendo undicesimo. Si prende *sei e mezzo*."
+  },
+  {
+   "foto": "Kimi Antonelli",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Antonelli]: primo in qualifica e quarto in gara. Ha fatto 4 sorpassi. Gli diamo *otto e mezzo*."
+  },
+  {
+   "foto": "Lando Norris",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Norris]: quarto in qualifica e secondo in gara. Ha fatto 6 sorpassi. Voto *otto e mezzo*."
+  },
+  {
+   "foto": "Oscar Piastri",
+   "alt": "pista_suzuka",
+   "pista": true,
+   "testo": "[Piastri]: settimo in qualifica e terzo in gara, partendo diciassettesimo. Per lui oggi *otto e mezzo*."
+  },
+  {
+   "foto": "Max Verstappen",
+   "alt": "pista_cina",
+   "pista": true,
+   "testo": "E poi il migliore: [Verstappen]. Secondo in qualifica e primo in gara. Una prova da applausi. Voto *nove e mezzo*."
+  },
+  {
+   "foto": "Max Verstappen",
+   "pista": true,
+   "classifica": {
+    "titolo": "I nostri voti",
+    "righe": [
+     {
+      "pos": "",
+      "colore": "4781D7",
+      "nome": "Verstappen",
+      "voto": "9,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "F47600",
+      "nome": "Piastri",
+      "voto": "8,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "F47600",
+      "nome": "Norris",
+      "voto": "8,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "00D7B6",
+      "nome": "Antonelli",
+      "voto": "8,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "ED1131",
+      "nome": "Hamilton",
+      "voto": "6,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "ED1131",
+      "nome": "Leclerc",
+      "voto": "5,5",
+      "nota": " "
+     },
+     {
+      "pos": "",
+      "colore": "229971",
+      "nome": "Alonso",
+      "voto": "5",
+      "nota": " "
+     }
+    ]
+   },
+   "sub_top": 1360,
+   "testo": "Ecco la pagella completa."
+  }
+ ],
+ "finale": {
+  "foto": "Max Verstappen",
+  "domanda": "Che voto dai tu a Las Vegas?"
+ }
+}

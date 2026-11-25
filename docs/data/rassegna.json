@@ -1,6 +1,66 @@
 {
- "generato_il": "2026-11-25T15:28:24+00:00",
+ "generato_il": "2026-11-25T16:42:09+00:00",
  "articoli": [
+  {
+   "titolo": "Ufficiale, Bagnaia salta Valencia: si chiude amaramente la storia con Ducati",
+   "estratto": "Francesco Bagnaia non correrà il GP di Valencia",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/ufficiale-bagnaia-salta-valencia-si-chiude-amaramente-la-storia-con-ducati",
+   "pubblicato": "2026-11-25T16:19:23+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 27.9,
+   "testate": 3
+  },
+  {
+   "titolo": "MotoGP | Bagnaia-Ducati, l'addio è più amaro: Pecco salta il GP di Valencia e lascia la Rossa senza l'ultimo ballo",
+   "estratto": "La notizia era nell'aria, ma ora è ufficiale ed è certamente un peccato per una storia che finisce nel peggiore dei modi, ovvero senza l'ultimo saluto in pista. Francesco Bagnaia non correrà al Gran…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-bagnaia-ducati-laddio-e-piu-amaro-pecco-salta-il-gp-di-valencia-e-lascia-la-rossa-senza-lult/10877703/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-25T16:14:50+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 27.9,
+   "testate": 3
+  },
+  {
+   "titolo": "MotoGP, niente Valencia per Bagnaia: l’addio alla Ducati sarà dal box",
+   "estratto": "Il sogno di salutare la Ducati in pista si infrange contro il verdetto dei medici. Francesco Bagnaia non prenderà parte al Gran Premio di Valencia, ultimo appuntamento del Mondiale MotoGP 2026 in…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-niente-valencia-per-bagnaia-laddio-alla-ducati-sara-dal-box/",
+   "pubblicato": "2026-11-25T16:09:33+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 27.9,
+   "testate": 3
+  },
+  {
+   "titolo": "Alonso, la motivazione è sempre a mille: “Nessuno è più veloce di me. Smetterò quando sarò lento”",
+   "estratto": "Fernando Alonso non pensa al ritiro dalla F1 e ha le motivazioni a mille per la prossima stagione malgrado un 2026 frustrante",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/alonso-la-motivazione-e-sempre-a-mille-nessuno-e-piu-veloce-di-me-smettero-quando-saro-lento",
+   "pubblicato": "2026-11-25T16:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 4.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Frederic Vasseur vuol dimenticare Las Vegas: “Pronti a reagire come squadra a Lusail”",
+   "estratto": "Dopo un weekend da dimenticare tra le luci di Las Vegas, la Ferrari arriva in Qatar (27-29 novembre) con un solo obiettivo: voltare pagina immediatamente. Negli Stati Uniti non hanno pesato soltanto…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/frederic-vasseur-vuol-dimenticare-las-vegas-pronti-a-reagire-come-squadra-a-lusail/",
+   "pubblicato": "2026-11-25T15:58:18+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 12.8,
+   "testate": 1
+  },
   {
    "titolo": "F1 | GP del Qatar: attenzione al graining. In gara ci saranno almeno 2 soste per macchina",
    "estratto": "Spazzati via dubbi e timori, la Formula 1 si appresta a prendere parte al Gran Premio del Qatar, che anche quest'anno si terrà sul tracciato di Lusail. Si tratta di una delle piste più impegnative…",
@@ -10,7 +70,7 @@
    "pubblicato": "2026-11-25T15:23:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.0,
+   "punteggio": -0.3,
    "testate": 1
   },
   {
@@ -22,7 +82,7 @@
    "pubblicato": "2026-11-25T15:05:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.9,
+   "punteggio": 12.6,
    "testate": 1
   },
   {
@@ -34,7 +94,7 @@
    "pubblicato": "2026-11-25T15:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.9,
+   "punteggio": 4.6,
    "testate": 1
   },
   {
@@ -46,7 +106,7 @@
    "pubblicato": "2026-11-25T14:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.7,
+   "punteggio": 12.4,
    "testate": 1
   },
   {
@@ -58,7 +118,7 @@
    "pubblicato": "2026-11-25T14:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.6,
+   "punteggio": 7.3,
    "testate": 1
   },
   {
@@ -70,7 +130,7 @@
    "pubblicato": "2026-11-25T13:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.6,
+   "punteggio": -0.9,
    "testate": 1
   },
   {
@@ -82,7 +142,7 @@
    "pubblicato": "2026-11-25T12:42:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 32.3,
+   "punteggio": 32.0,
    "testate": 3
   },
   {
@@ -94,7 +154,7 @@
    "pubblicato": "2026-11-25T12:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.3,
+   "punteggio": 3.9,
    "testate": 1
   },
   {
@@ -106,7 +166,7 @@
    "pubblicato": "2026-11-25T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.1,
+   "punteggio": 3.8,
    "testate": 1
   },
   {
@@ -118,7 +178,7 @@
    "pubblicato": "2026-11-25T11:17:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.0,
+   "punteggio": 6.6,
    "testate": 1
   },
   {
@@ -130,7 +190,7 @@
    "pubblicato": "2026-11-25T11:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.9,
+   "punteggio": 3.6,
    "testate": 1
   },
   {
@@ -142,7 +202,7 @@
    "pubblicato": "2026-11-25T10:55:02+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 13.9,
+   "punteggio": 13.6,
    "testate": 2
   },
   {
@@ -154,7 +214,7 @@
    "pubblicato": "2026-11-25T10:28:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.7,
+   "punteggio": 6.4,
    "testate": 1
   },
   {
@@ -166,7 +226,7 @@
    "pubblicato": "2026-11-25T10:00:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.6,
+   "punteggio": 8.3,
    "testate": 2
   },
   {
@@ -178,7 +238,7 @@
    "pubblicato": "2026-11-25T09:18:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.5,
+   "punteggio": 3.2,
    "testate": 1
   },
   {
@@ -190,7 +250,7 @@
    "pubblicato": "2026-11-25T09:00:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.6,
+   "punteggio": -1.9,
    "testate": 1
   },
   {
@@ -202,7 +262,7 @@
    "pubblicato": "2026-11-25T08:41:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -8.7,
+   "punteggio": -9.0,
    "testate": 1
   },
   {
@@ -214,7 +274,7 @@
    "pubblicato": "2026-11-25T07:00:33+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 30.9,
+   "punteggio": 30.6,
    "testate": 3
   },
   {
@@ -226,7 +286,7 @@
    "pubblicato": "2026-11-25T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.9,
+   "punteggio": 5.6,
    "testate": 3
   },
   {
@@ -238,7 +298,7 @@
    "pubblicato": "2026-11-25T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.9,
+   "punteggio": 2.6,
    "testate": 1
   },
   {
@@ -250,7 +310,7 @@
    "pubblicato": "2026-11-25T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.9,
+   "punteggio": 2.6,
    "testate": 1
   },
   {
@@ -262,31 +322,7 @@
    "pubblicato": "2026-11-25T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 20.9,
-   "testate": 2
-  },
-  {
-   "titolo": "Ancora 10 vittorie: il target di Marquez per l’ultimo sorpasso a Rossi",
-   "estratto": "Il campione di Tavullia ha nove successi in MotoGP in più dello spagnolo, ma nel prossimo biennio anche questo primato potrebbe cadere",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/ancora-10-vittorie-il-target-di-marquez-per-ultimo-sorpasso-a-rossi",
-   "pubblicato": "2026-11-25T07:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 5.9,
-   "testate": 1
-  },
-  {
-   "titolo": "Pernat: “Gestione sportiva Ducati fondamentale nel titolo di Marquez. Tardozzi e Dall’Igna meritano 10 e lode”",
-   "estratto": "Il manager genovese ha parlato in esclusiva a FormulaPassion.it del ruolo che il management Ducati ha avuto nella rinascita di Marquez",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/pernat-gestione-sportiva-ducati-fondamentale-nel-titolo-di-marquez-tardozzi-e-dalligna-meritano-10-e-lode",
-   "pubblicato": "2026-11-25T07:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 20.9,
+   "punteggio": 20.6,
    "testate": 2
   },
   {
@@ -298,7 +334,31 @@
    "pubblicato": "2026-11-25T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.1,
+   "punteggio": -4.4,
+   "testate": 2
+  },
+  {
+   "titolo": "Ancora 10 vittorie: il target di Marquez per l’ultimo sorpasso a Rossi",
+   "estratto": "Il campione di Tavullia ha nove successi in MotoGP in più dello spagnolo, ma nel prossimo biennio anche questo primato potrebbe cadere",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/ancora-10-vittorie-il-target-di-marquez-per-ultimo-sorpasso-a-rossi",
+   "pubblicato": "2026-11-25T07:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 5.6,
+   "testate": 1
+  },
+  {
+   "titolo": "Pernat: “Gestione sportiva Ducati fondamentale nel titolo di Marquez. Tardozzi e Dall’Igna meritano 10 e lode”",
+   "estratto": "Il manager genovese ha parlato in esclusiva a FormulaPassion.it del ruolo che il management Ducati ha avuto nella rinascita di Marquez",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/pernat-gestione-sportiva-ducati-fondamentale-nel-titolo-di-marquez-tardozzi-e-dalligna-meritano-10-e-lode",
+   "pubblicato": "2026-11-25T07:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 20.6,
    "testate": 2
   },
   {
@@ -310,7 +370,7 @@
    "pubblicato": "2026-11-25T05:15:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.4,
+   "punteggio": 15.1,
    "testate": 2
   },
   {
@@ -322,7 +382,7 @@
    "pubblicato": "2026-11-24T19:37:32+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 28.0,
+   "punteggio": 27.7,
    "testate": 3
   },
   {
@@ -334,7 +394,7 @@
    "pubblicato": "2026-11-24T18:25:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.7,
+   "punteggio": 14.4,
    "testate": 3
   },
   {
@@ -346,7 +406,7 @@
    "pubblicato": "2026-11-24T18:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.4,
+   "punteggio": -0.7,
    "testate": 1
   },
   {
@@ -358,7 +418,7 @@
    "pubblicato": "2026-11-24T17:01:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.4,
+   "punteggio": 2.1,
    "testate": 1
   },
   {
@@ -370,7 +430,7 @@
    "pubblicato": "2026-11-24T17:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.6,
+   "punteggio": -0.9,
    "testate": 1
   },
   {
@@ -382,7 +442,7 @@
    "pubblicato": "2026-11-24T16:15:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 27.2,
+   "punteggio": 26.9,
    "testate": 3
   },
   {
@@ -394,7 +454,7 @@
    "pubblicato": "2026-11-24T16:00:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.9,
+   "punteggio": -1.2,
    "testate": 1
   },
   {
@@ -406,7 +466,7 @@
    "pubblicato": "2026-11-24T15:58:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.9,
+   "punteggio": -1.2,
    "testate": 1
   },
   {
@@ -418,7 +478,7 @@
    "pubblicato": "2026-11-24T15:11:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.1,
+   "punteggio": -1.4,
    "testate": 1
   },
   {
@@ -430,7 +490,7 @@
    "pubblicato": "2026-11-24T15:11:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.9,
+   "punteggio": 16.6,
    "testate": 2
   },
   {
@@ -442,7 +502,7 @@
    "pubblicato": "2026-11-24T15:00:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.1,
+   "punteggio": -1.4,
    "testate": 1
   },
   {
@@ -454,7 +514,7 @@
    "pubblicato": "2026-11-24T14:52:47+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 7.9,
+   "punteggio": 7.5,
    "testate": 1
   },
   {
@@ -466,7 +526,7 @@
    "pubblicato": "2026-11-24T14:45:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.8,
+   "punteggio": 8.5,
    "testate": 2
   },
   {
@@ -478,7 +538,7 @@
    "pubblicato": "2026-11-24T14:08:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.7,
+   "punteggio": 13.4,
    "testate": 3
   },
   {
@@ -490,7 +550,7 @@
    "pubblicato": "2026-11-24T14:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.4,
+   "punteggio": -1.7,
    "testate": 1
   },
   {
@@ -502,7 +562,7 @@
    "pubblicato": "2026-11-24T13:53:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.6,
+   "punteggio": 13.3,
    "testate": 3
   },
   {
@@ -514,7 +574,7 @@
    "pubblicato": "2026-11-24T13:47:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.6,
+   "punteggio": 1.3,
    "testate": 1
   },
   {
@@ -526,7 +586,7 @@
    "pubblicato": "2026-11-24T13:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.6,
+   "punteggio": -1.9,
    "testate": 1
   },
   {
@@ -538,19 +598,7 @@
    "pubblicato": "2026-11-24T12:20:33+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.2,
-   "testate": 1
-  },
-  {
-   "titolo": "Impresa di Sainz a Las Vegas, da 20° in griglia a 8°: “Gara impeccabile”",
-   "estratto": "Grande rimonta dello spagnolo della Williams, che chiude in zona punti il suo 250° GP in carriera",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/impresa-sainz-las-vegas-da-20-a-8-gara-impeccabile-williams-beffato-russell-volata",
-   "pubblicato": "2026-11-24T12:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -1.9,
+   "punteggio": 5.9,
    "testate": 1
   },
   {
@@ -562,7 +610,7 @@
    "pubblicato": "2026-11-24T11:46:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.9,
+   "punteggio": -7.2,
    "testate": 1
   },
   {
@@ -574,7 +622,7 @@
    "pubblicato": "2026-11-24T11:29:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.0,
+   "punteggio": 25.7,
    "testate": 3
   },
   {
@@ -586,7 +634,7 @@
    "pubblicato": "2026-11-24T11:08:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.1,
+   "punteggio": -2.4,
    "testate": 1
   },
   {
@@ -598,7 +646,7 @@
    "pubblicato": "2026-11-24T10:00:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.6,
+   "punteggio": 5.3,
    "testate": 1
   },
   {
@@ -610,7 +658,7 @@
    "pubblicato": "2026-11-24T09:57:38+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.6,
+   "punteggio": 20.3,
    "testate": 3
   },
   {
@@ -622,7 +670,7 @@
    "pubblicato": "2026-11-24T09:42:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.6,
+   "punteggio": 5.3,
    "testate": 1
   },
   {
@@ -634,7 +682,7 @@
    "pubblicato": "2026-11-24T09:41:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.4,
+   "punteggio": -2.8,
    "testate": 1
   },
   {
@@ -646,7 +694,7 @@
    "pubblicato": "2026-11-24T09:16:49+00:00",
    "tipo": "social",
    "citazione": true,
-   "punteggio": 8.5,
+   "punteggio": 8.1,
    "testate": 1
   },
   {
@@ -658,7 +706,7 @@
    "pubblicato": "2026-11-24T09:00:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.4,
+   "punteggio": 0.1,
    "testate": 1
   },
   {
@@ -670,7 +718,7 @@
    "pubblicato": "2026-11-24T09:00:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.4,
+   "punteggio": 0.1,
    "testate": 1
   },
   {
@@ -682,7 +730,7 @@
    "pubblicato": "2026-11-24T08:38:21+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.3,
+   "punteggio": 5.0,
    "testate": 1
   },
   {
@@ -694,7 +742,7 @@
    "pubblicato": "2026-11-24T08:06:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.8,
+   "punteggio": -8.1,
    "testate": 1
   },
   {
@@ -706,7 +754,7 @@
    "pubblicato": "2026-11-24T07:40:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.1,
+   "punteggio": 24.7,
    "testate": 3
   },
   {
@@ -718,7 +766,7 @@
    "pubblicato": "2026-11-24T06:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.8,
+   "punteggio": 6.4,
    "testate": 2
   },
   {
@@ -730,7 +778,7 @@
    "pubblicato": "2026-11-24T06:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.6,
+   "punteggio": 4.3,
    "testate": 1
   },
   {
@@ -742,7 +790,7 @@
    "pubblicato": "2026-11-24T06:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.4,
+   "punteggio": -0.7,
    "testate": 1
   },
   {
@@ -754,7 +802,7 @@
    "pubblicato": "2026-11-24T05:58:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -3.4,
+   "punteggio": -3.7,
    "testate": 1
   },
   {
@@ -766,7 +814,7 @@
    "pubblicato": "2026-11-23T17:55:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.6,
+   "punteggio": 5.3,
    "testate": 1
   },
   {
@@ -778,7 +826,7 @@
    "pubblicato": "2026-11-23T17:50:50+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.4,
+   "punteggio": -2.7,
    "testate": 1
   },
   {
@@ -790,8 +838,8 @@
    "pubblicato": "2026-11-23T16:34:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.3,
-   "testate": 1
+   "punteggio": 25.0,
+   "testate": 3
   },
   {
    "titolo": "Marquez: “La Sprint un campanello d’allarme. Domenica ho detto ‘fan***o la gara’, voglio solo il titolo”",
@@ -802,7 +850,7 @@
    "pubblicato": "2026-11-23T16:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.1,
+   "punteggio": 4.8,
    "testate": 1
   },
   {
@@ -814,7 +862,7 @@
    "pubblicato": "2026-11-23T15:37:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 5.0,
+   "punteggio": 4.7,
    "testate": 1
   },
   {
@@ -826,7 +874,7 @@
    "pubblicato": "2026-11-23T14:34:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -3.2,
+   "punteggio": -3.5,
    "testate": 1
   },
   {
@@ -838,7 +886,7 @@
    "pubblicato": "2026-11-23T14:25:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.7,
+   "punteggio": 24.4,
    "testate": 3
   },
   {
@@ -850,7 +898,7 @@
    "pubblicato": "2026-11-23T14:11:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.3,
+   "punteggio": -8.6,
    "testate": 1
   },
   {
@@ -862,7 +910,7 @@
    "pubblicato": "2026-11-23T13:20:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.5,
+   "punteggio": 9.2,
    "testate": 2
   },
   {
@@ -874,7 +922,7 @@
    "pubblicato": "2026-11-23T13:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -3.6,
+   "punteggio": -3.9,
    "testate": 1
   },
   {
@@ -886,7 +934,7 @@
    "pubblicato": "2026-11-23T12:30:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.3,
+   "punteggio": 4.0,
    "testate": 1
   },
   {
@@ -898,7 +946,7 @@
    "pubblicato": "2026-11-23T12:19:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.8,
+   "punteggio": -9.1,
    "testate": 1
   },
   {
@@ -910,7 +958,7 @@
    "pubblicato": "2026-11-23T12:01:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -3.9,
+   "punteggio": -4.2,
    "testate": 1
   },
   {
@@ -922,7 +970,7 @@
    "pubblicato": "2026-11-23T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.1,
+   "punteggio": 13.8,
    "testate": 2
   },
   {
@@ -934,7 +982,7 @@
    "pubblicato": "2026-11-23T11:40:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.0,
+   "punteggio": -9.3,
    "testate": 1
   },
   {
@@ -946,7 +994,7 @@
    "pubblicato": "2026-11-23T11:01:54+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.9,
+   "punteggio": 8.6,
    "testate": 2
   },
   {
@@ -958,7 +1006,7 @@
    "pubblicato": "2026-11-23T10:52:59+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -4.1,
+   "punteggio": -4.5,
    "testate": 1
   },
   {
@@ -970,7 +1018,7 @@
    "pubblicato": "2026-11-23T09:59:52+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -11.4,
+   "punteggio": -11.7,
    "testate": 2
   },
   {
@@ -982,7 +1030,7 @@
    "pubblicato": "2026-11-23T09:52:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.6,
+   "punteggio": 18.3,
    "testate": 3
   },
   {
@@ -994,7 +1042,7 @@
    "pubblicato": "2026-11-23T09:29:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.5,
+   "punteggio": -9.8,
    "testate": 1
   },
   {
@@ -1006,7 +1054,7 @@
    "pubblicato": "2026-11-23T08:59:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.6,
+   "punteggio": -9.9,
    "testate": 1
   },
   {
@@ -1018,7 +1066,7 @@
    "pubblicato": "2026-11-23T08:35:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -4.7,
+   "punteggio": -5.0,
    "testate": 1
   },
   {
@@ -1030,7 +1078,7 @@
    "pubblicato": "2026-11-23T08:20:44+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.8,
+   "punteggio": -2.1,
    "testate": 3
   },
   {
@@ -1042,7 +1090,7 @@
    "pubblicato": "2026-11-23T08:00:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.1,
+   "punteggio": 14.8,
    "testate": 3
   },
   {
@@ -1054,7 +1102,7 @@
    "pubblicato": "2026-11-23T07:35:18+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": -4.0,
+   "punteggio": -4.3,
    "testate": 1
   },
   {
@@ -1066,7 +1114,7 @@
    "pubblicato": "2026-11-23T07:00:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.1,
+   "punteggio": -10.4,
    "testate": 1
   },
   {
@@ -1078,7 +1126,7 @@
    "pubblicato": "2026-11-23T06:00:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.4,
+   "punteggio": -0.7,
    "testate": 2
   },
   {
@@ -1090,7 +1138,7 @@
    "pubblicato": "2026-11-23T05:00:12+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.6,
+   "punteggio": -2.9,
    "testate": 1
   },
   {
@@ -1102,7 +1150,7 @@
    "pubblicato": "2026-11-23T04:10:45+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.8,
+   "punteggio": -3.1,
    "testate": 3
   },
   {
@@ -1114,20 +1162,8 @@
    "pubblicato": "2026-11-23T04:05:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.8,
+   "punteggio": -3.2,
    "testate": 3
-  },
-  {
-   "titolo": "Chi non riconosce la grandezza di Marquez non ama il motorsport",
-   "estratto": "Il decimo titolo mondiale di Marc Marquez e l'insegnamento di non mollare mai e di convivere con i propri limiti",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-commento/chi-non-riconosce-la-grandezza-di-marquez-non-ama-il-motorsport",
-   "pubblicato": "2026-11-22T18:32:42+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -13.2,
-   "testate": 1
   },
   {
    "titolo": "MotoGP | Marquez 10 e lode: quello del 2026 è il miglior Marc di sempre",
@@ -1138,7 +1174,7 @@
    "pubblicato": "2026-11-22T18:30:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.2,
+   "punteggio": -3.6,
    "testate": 2
   },
   {
@@ -1150,7 +1186,7 @@
    "pubblicato": "2026-11-22T17:58:14+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -8.4,
+   "punteggio": -8.7,
    "testate": 1
   },
   {
@@ -1162,7 +1198,7 @@
    "pubblicato": "2026-11-22T17:12:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.4,
+   "punteggio": 1.1,
    "testate": 2
   },
   {
@@ -1174,7 +1210,7 @@
    "pubblicato": "2026-11-22T16:55:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -8.6,
+   "punteggio": -8.9,
    "testate": 1
   },
   {
@@ -1186,7 +1222,7 @@
    "pubblicato": "2026-11-22T16:37:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.3,
+   "punteggio": 9.0,
    "testate": 2
   },
   {
@@ -1198,7 +1234,7 @@
    "pubblicato": "2026-11-22T16:32:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.7,
+   "punteggio": -1.0,
    "testate": 1
   },
   {
@@ -1210,7 +1246,7 @@
    "pubblicato": "2026-11-22T16:02:35+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.1,
+   "punteggio": 8.8,
    "testate": 2
   },
   {
@@ -1222,7 +1258,7 @@
    "pubblicato": "2026-11-22T15:24:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.0,
+   "punteggio": -6.3,
    "testate": 1
   },
   {
@@ -1234,7 +1270,7 @@
    "pubblicato": "2026-11-22T15:23:40+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -9.0,
+   "punteggio": -9.3,
    "testate": 1
   },
   {
@@ -1246,7 +1282,7 @@
    "pubblicato": "2026-11-22T14:54:32+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.1,
+   "punteggio": -1.4,
    "testate": 1
   },
   {
@@ -1258,7 +1294,7 @@
    "pubblicato": "2026-11-22T14:52:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.9,
+   "punteggio": 0.5,
    "testate": 2
   },
   {
@@ -1270,7 +1306,7 @@
    "pubblicato": "2026-11-22T14:41:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.8,
+   "punteggio": 1.5,
    "testate": 3
   },
   {
@@ -1282,7 +1318,7 @@
    "pubblicato": "2026-11-22T14:25:07+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.7,
+   "punteggio": 0.4,
    "testate": 2
   },
   {
@@ -1294,7 +1330,7 @@
    "pubblicato": "2026-11-22T14:19:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.7,
+   "punteggio": 13.4,
    "testate": 3
   },
   {
@@ -1306,7 +1342,7 @@
    "pubblicato": "2026-11-22T14:11:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -9.3,
+   "punteggio": -9.6,
    "testate": 1
   },
   {
@@ -1318,7 +1354,7 @@
    "pubblicato": "2026-11-22T14:10:08+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -8.3,
+   "punteggio": -8.6,
    "testate": 2
   },
   {
@@ -1330,7 +1366,7 @@
    "pubblicato": "2026-11-22T14:03:40+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.6,
+   "punteggio": 3.3,
    "testate": 2
   },
   {
@@ -1342,19 +1378,7 @@
    "pubblicato": "2026-11-22T14:03:25+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.4,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP, Bezzecchi concede il bis a Portimao, Marquez celebra il decimo Mondiale",
-   "estratto": "Marco Bezzecchi completa un weekend semplicemente perfetto a Portimao e, dopo il netto successo nella Sprint, vince in scioltezza anche la gara lunga firmando la doppietta nel Gran Premio del…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/motogp-bezzecchi-concede-il-bis-a-portimao-marquez-celebra-il-decimo-mondiale/",
-   "pubblicato": "2026-11-22T14:01:54+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 3.6,
+   "punteggio": -4.7,
    "testate": 2
   },
   {
@@ -1366,7 +1390,7 @@
    "pubblicato": "2026-11-22T12:30:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -14.7,
+   "punteggio": -15.1,
    "testate": 1
   },
   {
@@ -1378,7 +1402,7 @@
    "pubblicato": "2026-11-22T11:48:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -14.9,
+   "punteggio": -15.2,
    "testate": 1
   },
   {
@@ -1390,7 +1414,7 @@
    "pubblicato": "2026-11-22T11:10:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -10.1,
+   "punteggio": -10.4,
    "testate": 1
   },
   {
@@ -1402,7 +1426,7 @@
    "pubblicato": "2026-11-22T10:50:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.2,
+   "punteggio": -7.5,
    "testate": 1
   },
   {
@@ -1414,31 +1438,7 @@
    "pubblicato": "2026-11-22T10:10:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -10.3,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Ecco cosa serve a Marc Marquez per diventare campione del mondo oggi a Portimao",
-   "estratto": "Marc Marquez dovrà aspettare almeno la giornata di domenica per diventare campione del mondo della MotoGP 2026, conquistando quella che sarebbe la sua decima corona iridata e l'ottava nella classe…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-ecco-cosa-serve-a-marc-marquez-per-diventare-campione-del-mondo-oggi-a-portimao/10876598/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-22T09:50:56+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -5.4,
-   "testate": 2
-  },
-  {
-   "titolo": "MotoGP | Portimao, Warm-Up: tutti prudenti con la pista bagnata, svetta Aldeguer",
-   "estratto": "Splende il sole su Portimao, ma la pioggia caduta nel corso della notte ha reso praticamente inutile il Warm-Up del Gran Premio del Portogallo di MotoGP, perché con la pista bagnata i piloti hanno…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-portimao-warm-up-tutti-prudenti-con-la-pista-bagnata-svetta-aldeguer/10876834/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-22T09:30:16+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -7.5,
+   "punteggio": -10.6,
    "testate": 1
   }
  ]

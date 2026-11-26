@@ -1,6 +1,246 @@
 {
- "generato_il": "2026-11-26T16:14:31+00:00",
+ "generato_il": "2026-11-26T23:45:12+00:00",
  "articoli": [
+  {
+   "titolo": "Nico Rosberg boccia Russell: “Si è fatto dominare da Antonelli, non può essere tra i favoriti nel 2027”",
+   "estratto": "Senza troppi giri di parole. Quando si è seduto davanti ai microfoni di Sport Bild, Nico Rosberg non aveva intenzione di addolcire la pillola. Il campione del mondo 2016, oggi voce ascoltata del…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/nico-rosberg-boccia-russell-si-e-fatto-dominare-da-antonelli-non-puo-essere-tra-i-favoriti-nel-2027/",
+   "pubblicato": "2026-11-26T20:49:00+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 23.3,
+   "testate": 2
+  },
+  {
+   "titolo": "Marco Bezzecchi vuol chiudere in bellezza a Valencia: “Il secondo posto in campionato è un obiettivo”",
+   "estratto": "Marco Bezzecchi si presenta a Valencia con il vento in poppa. Dopo i successi di Qatar e Portogallo, il pilota riminese dell‘Aprilia ha centrato a Portimao la prima doppietta Sprint-GP della…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/marco-bezzecchi-vuol-chiudere-in-bellezza-a-valencia-il-secondo-posto-in-campionato-e-un-obiettivo/",
+   "pubblicato": "2026-11-26T20:04:34+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 12.1,
+   "testate": 1
+  },
+  {
+   "titolo": "Max Verstappen si lancia verso Lusail: “Voglio chiudere al meglio la stagione. Su George Russell…”",
+   "estratto": "Max Verstappen si è presentato carico e determinato in occasione della conferenza stampa che ha sancito il via ufficiale del fine settimana del Gran Premio del Qatar, ventiduesimo e penultimo…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/max-verstappen-si-lancia-verso-lusail-voglio-chiudere-al-meglio-la-stagione-su-george-russell/",
+   "pubblicato": "2026-11-26T19:07:11+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 14.8,
+   "testate": 2
+  },
+  {
+   "titolo": "Verstappen da un taglio alle polemiche: “Russell? Non c’è altro da aggiungere”",
+   "estratto": "L'olandese non ha voluto continuare ad alimentare le tensioni tra lui e il pilota inglese della Mercedes, con cui aveva battibeccato a Las Vegas",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/verstappen-da-un-taglio-alle-polemiche-russell-non-ce-altro-da-aggiungere",
+   "pubblicato": "2026-11-26T18:39:52+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 3.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Lewis Hamilton ribadisce: “Al centro ci deve essere la squadra”",
+   "estratto": "Il giorno dopo il confronto interno seguito al Gran Premio di Las Vegas, a Lusail tocca a Lewis Hamilton dare la sua versione. Il pilota Ferrari non si sottrae alle domande, ma sul contatto con…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/lewis-hamilton-ribadisce-al-centro-ci-deve-essere-la-squadra/",
+   "pubblicato": "2026-11-26T18:32:05+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 11.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Leclerc: “Non ho nessuna clausola da numero 1. Deluso da chi pensa che non ami la Ferrari”",
+   "estratto": "Il pilota monegasco ha voluto smentire una voce dei giorni scorsi",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/leclerc-non-ho-nessuna-clausola-da-numero-1-ferito-da-chi-pensa-che-non-ami-la-ferrari",
+   "pubblicato": "2026-11-26T18:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 11.6,
+   "testate": 1
+  },
+  {
+   "titolo": "Hamilton: “Ho parlato con Leclerc, siamo ancora liberi di gareggiare. Io in gara cerco di essere sempre responsabile”",
+   "estratto": "L'inglese della Ferrari ha commentato il suo rapporto con Charles Leclerc dopo il discussissimo incidente di Las Vegas tra le due rosse",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/hamilton-ho-parlato-con-leclerc-siamo-ancora-liberi-di-gareggiare-io-in-gara-cerco-di-essere-sempre-responsabile",
+   "pubblicato": "2026-11-26T17:46:54+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 11.5,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Incontro FIA-piloti: perché la penalità \"leggera\" a Leclerc in Messico ha spinto a chiedere sanzioni più severe",
+   "estratto": "Spesso il Qatar è stato un appuntamento molto importante per i piloti, non tanto per la corsa in sé, ma piuttosto per discutere di come modificare le linee guida sui sorpassi e le penalità in vista…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-incontro-fia-piloti-la-penalita-leggera-a-leclerc-in-messico-ha-spinto-a-chiedere-sanzioni-piu-s/10878000/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-26T17:41:29+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 3.5,
+   "testate": 1
+  },
+  {
+   "titolo": "Kimi Antonelli ambizioso: “Voglio chiudere la stagione con due pole position e altrettante vittorie”",
+   "estratto": "Archiviata la delusione per il blackout della batteria che gli ha negato il duello finale con Max Verstappen a Las Vegas, Kimi Antonelli si presenta nel paddock di Lusail con un obiettivo chiaro…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/kimi-antonelli-ambizioso-voglio-chiudere-la-stagione-con-due-pole-position-e-altrettante-vittorie/",
+   "pubblicato": "2026-11-26T17:27:44+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 11.4,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Dall'Igna: \"Bagnaia resterà sempre nel mio cuore, ha realizzato l'obiettivo con cui sono arrivato in Ducati\"",
+   "estratto": "Raramente è capitato di vedere Gigi Dall'Igna emozionato come oggi a Valencia, quando ha dovuto salutare Pecco Bagnaia, che purtroppo questo fine settimana non avrà l'occasione di regalarsi una \"last…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-dalligna-bagnaia-restera-sempre-nel-mio-cuore-ha-realizzato-lobiettivo-con-cui-sono-arrivato/10877970/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-26T17:25:26+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 31.4,
+   "testate": 3
+  },
+  {
+   "titolo": "Lando Norris: “A Las Vegas abbiamo fatto bene, sento di essere migliorato”",
+   "estratto": "Non tutte le stagioni sono facili. Parola di Lando Norris, intercettato in occasione del media day valido per il GP del Qatar, penultimo appuntamento del Mondiale 2026 di Formula 1 pianificato per…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/lando-norris-a-las-vegas-abbiamo-fatto-bene-sento-di-essere-migliorato/",
+   "pubblicato": "2026-11-26T17:13:58+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 3.4,
+   "testate": 1
+  },
+  {
+   "titolo": "F1 | Hamilton: “Momenti difficili per me, Charles e Fred. Ma ne usciremo più forti”",
+   "estratto": "A distanza di un’ora dalle dichiarazioni rilasciate da Charles Leclerc nella conferenza stampa FIA, nel paddock di Lusail è arrivato il momento di ascoltare la versione di Lewis Hamilton. Il…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-hamilton-momenti-difficili-per-me-charles-e-fred-ma-ne-usciremo-piu-forti/10877975/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-26T17:09:18+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 4.4,
+   "testate": 1
+  },
+  {
+   "titolo": "Scontro Verstappen-Russell, Gasly se la ride. Norris avverte George: “Bisogna confermare in pista quello che si dice fuori”",
+   "estratto": "Anche gli altri piloti del paddock sono rimasti colpiti dalle tensioni tra l'inglese della Mercedes e il campione olandese",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/scontro-verstappen-russell-gasly-se-la-ride-norris-avverte-george-bisogna-confermare-in-pista-quello-che-si-dice-fuori",
+   "pubblicato": "2026-11-26T17:06:38+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 13.3,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP | Martin: \"Il rapporto con Aprilia è stato difficile, ma sono migliorato come persona e pilota\"",
+   "estratto": "Quella di Jorge Martín e Aprilia è stata una storia breve ma intensa, una vera e propria montagna russa che si conclude questo fine settimana al Gran Premio di Valencia, dove lo spagnolo si gioca il…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-martin-il-rapporto-con-aprilia-e-stato-difficile-ma-sono-migliorato-come-persona-e-pilota/10877967/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-26T16:51:31+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 3.3,
+   "testate": 1
+  },
+  {
+   "titolo": "Oscar Piastri prima del Qatar: “Questa pista mi è sempre piaciuta. I 27 giri obbligatori? Non una novità”",
+   "estratto": "Il mantra è andare a caccia di un altro podio. Con la consapevolezza che non sarà semplice. Dopo la terza posizione ottenuta lo scorso weekend in quel di Las Vegas Oscar Piastri ci vuole riprovare…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/oscar-piastri-prima-del-qatar-questa-pista-mi-e-sempre-piaciuta-i-27-giri-obbligatori-non-una-novita/",
+   "pubblicato": "2026-11-26T16:50:49+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 3.3,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Bezzecchi: \"Il Costruttori è fattibile, con Martin sarà una sfida tosta per il 2° posto\"",
+   "estratto": "Ultima fermata, Valencia. Il titolo 2026 della MotoGP ormai è stato assegnato a Marc Marquez, ma l'atto conclusivo della stagione è molto importante in casa Aprilia. Da una parte, la Casa di Noale ha…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-bezzecchi-il-costruttori-e-fattibile-con-martin-sara-una-sfida-tosta-per-il-2-posto/10877950/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-26T16:33:30+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 21.2,
+   "testate": 2
+  },
+  {
+   "titolo": "Jorge Martin: “L’obiettivo è conquistare il titolo dei costruttori. Nel 2027 sarà un po’ tornare indietro”",
+   "estratto": "Jorge Martín si prepara a chiudere il suo capitolo con l’Aprilia, in vista del passaggio alla Yamaha nel 2027. Con il titolo piloti già assegnato a Marc Márquez, lo spagnolo arriva nella sua “seconda…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/jorge-martin-lobiettivo-e-conquistare-il-titolo-dei-costruttori-nel-2027-sara-un-po-tornare-indietro/",
+   "pubblicato": "2026-11-26T16:29:20+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 23.2,
+   "testate": 3
+  },
+  {
+   "titolo": "Bezzecchi: “Titolo Costruttori è importantissimo per Aprilia. Faremo il massimo per ottenerlo”",
+   "estratto": "Il riminese dell'Aprilia è pronto per affrontare l'ultimo weekend di gara del 2027",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/bezzecchi-titolo-costruttori-e-importantissimo-per-aprilia-faremo-il-massimo-per-ottenerlo",
+   "pubblicato": "2026-11-26T16:21:05+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 11.1,
+   "testate": 1
+  },
+  {
+   "titolo": "Marquez: “Costruttori, proverò ad aiutare Ducati. Ma il titolo più importante è già nostro”",
+   "estratto": "Le parole del campione del mondo nella conferenza stampa di Valencia, ultima tappa del Mondiale MotoGP",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/marquez-conferenza-stampa-valencia-titolo-costruttori-provo-aiutare-ducati",
+   "pubblicato": "2026-11-26T16:20:05+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 22.1,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 | Leclerc sincero: “Con Hamilton non funziona, serve una soluzione”. E smentisce il ruolo di prima guida",
+   "estratto": "Era ampiamente prevedibile che Charles Leclerc sarebbe stato il grande protagonista della conferenza stampa FIA del giovedì di Lusail. Il contatto con Lewis Hamilton nel Gran Premio di Las Vegas ha…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-leclerc-sincero-con-hamilton-non-funziona-serve-una-soluzione-e-smentisce-il-ruolo-di-prima-guida/10877941/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-26T16:14:47+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 14.1,
+   "testate": 2
+  },
   {
    "titolo": "Martin: “Weekend emozionante, voglio lasciare Aprilia con il titolo Costruttori”",
    "estratto": "Le parole di Jorge Martin nella conferenza stampa di Valencia: per lo spagnolo è l'ultimo weekend con Aprilia prima del passaggio in Yamaha",
@@ -10,8 +250,8 @@
    "pubblicato": "2026-11-26T16:08:35+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 6.0,
-   "testate": 1
+   "punteggio": 14.1,
+   "testate": 2
   },
   {
    "titolo": "MotoGP | Bagnaia, l'addio a Ducati è super emozionante: \"E' stato più di quello che avrei sognato da bambino\"",
@@ -22,7 +262,7 @@
    "pubblicato": "2026-11-26T16:00:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.9,
+   "punteggio": 21.1,
    "testate": 2
   },
   {
@@ -34,7 +274,7 @@
    "pubblicato": "2026-11-26T15:40:02+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.9,
+   "punteggio": 3.0,
    "testate": 1
   },
   {
@@ -46,7 +286,7 @@
    "pubblicato": "2026-11-26T15:37:15+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 5.8,
+   "punteggio": 4.0,
    "testate": 1
   },
   {
@@ -58,7 +298,7 @@
    "pubblicato": "2026-11-26T15:34:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.8,
+   "punteggio": 11.0,
    "testate": 1
   },
   {
@@ -70,7 +310,7 @@
    "pubblicato": "2026-11-26T15:28:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.8,
+   "punteggio": 2.9,
    "testate": 1
   },
   {
@@ -82,7 +322,7 @@
    "pubblicato": "2026-11-26T15:15:44+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 32.8,
+   "punteggio": 30.9,
    "testate": 3
   },
   {
@@ -94,7 +334,7 @@
    "pubblicato": "2026-11-26T15:04:41+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.7,
+   "punteggio": 10.8,
    "testate": 1
   },
   {
@@ -106,7 +346,7 @@
    "pubblicato": "2026-11-26T15:02:49+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 5.7,
+   "punteggio": 3.8,
    "testate": 1
   },
   {
@@ -118,7 +358,7 @@
    "pubblicato": "2026-11-26T15:02:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.7,
+   "punteggio": 25.8,
    "testate": 3
   },
   {
@@ -130,8 +370,8 @@
    "pubblicato": "2026-11-26T14:57:21+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 5.7,
-   "testate": 1
+   "punteggio": 13.8,
+   "testate": 2
   },
   {
    "titolo": "Bagnaia: “Il piede è relativamente ok. Sono fermo per un’emorragia cerebrale”",
@@ -142,7 +382,7 @@
    "pubblicato": "2026-11-26T14:45:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.6,
+   "punteggio": 10.8,
    "testate": 1
   },
   {
@@ -154,7 +394,7 @@
    "pubblicato": "2026-11-26T14:38:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.6,
+   "punteggio": 2.7,
    "testate": 1
   },
   {
@@ -166,7 +406,7 @@
    "pubblicato": "2026-11-26T14:35:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 27.6,
+   "punteggio": 25.7,
    "testate": 3
   },
   {
@@ -178,7 +418,7 @@
    "pubblicato": "2026-11-26T14:20:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.5,
+   "punteggio": 17.6,
    "testate": 3
   },
   {
@@ -190,7 +430,7 @@
    "pubblicato": "2026-11-26T14:16:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.5,
+   "punteggio": 10.6,
    "testate": 1
   },
   {
@@ -202,7 +442,7 @@
    "pubblicato": "2026-11-26T14:00:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.6,
+   "punteggio": -2.4,
    "testate": 1
   },
   {
@@ -214,7 +454,7 @@
    "pubblicato": "2026-11-26T14:00:14+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.4,
+   "punteggio": 10.6,
    "testate": 1
   },
   {
@@ -226,7 +466,7 @@
    "pubblicato": "2026-11-26T13:50:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.4,
+   "punteggio": 7.5,
    "testate": 2
   },
   {
@@ -238,7 +478,7 @@
    "pubblicato": "2026-11-26T13:00:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.8,
+   "punteggio": -2.7,
    "testate": 1
   },
   {
@@ -250,7 +490,7 @@
    "pubblicato": "2026-11-26T13:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.2,
+   "punteggio": 5.3,
    "testate": 1
   },
   {
@@ -262,7 +502,7 @@
    "pubblicato": "2026-11-26T11:45:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.1,
+   "punteggio": -3.0,
    "testate": 1
   },
   {
@@ -274,7 +514,7 @@
    "pubblicato": "2026-11-26T11:23:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.8,
+   "punteggio": 9.9,
    "testate": 1
   },
   {
@@ -286,7 +526,7 @@
    "pubblicato": "2026-11-26T10:30:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.4,
+   "punteggio": -3.3,
    "testate": 1
   },
   {
@@ -298,7 +538,7 @@
    "pubblicato": "2026-11-26T10:20:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.5,
+   "punteggio": 4.6,
    "testate": 1
   },
   {
@@ -310,7 +550,7 @@
    "pubblicato": "2026-11-26T10:00:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.4,
+   "punteggio": 14.6,
    "testate": 2
   },
   {
@@ -322,7 +562,7 @@
    "pubblicato": "2026-11-26T09:46:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.4,
+   "punteggio": 4.5,
    "testate": 1
   },
   {
@@ -334,7 +574,7 @@
    "pubblicato": "2026-11-26T09:21:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.3,
+   "punteggio": 21.4,
    "testate": 3
   },
   {
@@ -346,7 +586,7 @@
    "pubblicato": "2026-11-26T09:00:52+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.2,
+   "punteggio": 4.3,
    "testate": 1
   },
   {
@@ -358,7 +598,7 @@
    "pubblicato": "2026-11-26T09:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.2,
+   "punteggio": 16.3,
    "testate": 3
   },
   {
@@ -370,7 +610,7 @@
    "pubblicato": "2026-11-26T08:47:18+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.1,
+   "punteggio": 4.3,
    "testate": 1
   },
   {
@@ -382,7 +622,7 @@
    "pubblicato": "2026-11-26T08:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.1,
+   "punteggio": 9.2,
    "testate": 1
   },
   {
@@ -394,7 +634,7 @@
    "pubblicato": "2026-11-26T08:25:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.0,
+   "punteggio": 14.2,
    "testate": 2
   },
   {
@@ -406,7 +646,7 @@
    "pubblicato": "2026-11-26T08:01:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.1,
+   "punteggio": -3.9,
    "testate": 1
   },
   {
@@ -418,7 +658,7 @@
    "pubblicato": "2026-11-26T07:57:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.1,
+   "punteggio": -3.9,
    "testate": 1
   },
   {
@@ -430,8 +670,8 @@
    "pubblicato": "2026-11-26T07:55:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.9,
-   "testate": 1
+   "punteggio": 11.0,
+   "testate": 2
   },
   {
    "titolo": "MotoGP, GP Valencia 2026: gli orari del fine settimana dalle prove libere alla gara. Guida Sky e TV8",
@@ -442,7 +682,7 @@
    "pubblicato": "2026-11-26T07:35:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.8,
+   "punteggio": 4.0,
    "testate": 3
   },
   {
@@ -454,7 +694,7 @@
    "pubblicato": "2026-11-26T07:33:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.2,
+   "punteggio": -4.0,
    "testate": 1
   },
   {
@@ -466,7 +706,7 @@
    "pubblicato": "2026-11-26T07:30:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.2,
+   "punteggio": -6.1,
    "testate": 2
   },
   {
@@ -478,7 +718,7 @@
    "pubblicato": "2026-11-26T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.3,
+   "punteggio": -6.2,
    "testate": 2
   },
   {
@@ -490,7 +730,7 @@
    "pubblicato": "2026-11-26T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.3,
+   "punteggio": -4.2,
    "testate": 1
   },
   {
@@ -502,7 +742,7 @@
    "pubblicato": "2026-11-26T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.7,
+   "punteggio": 0.8,
    "testate": 1
   },
   {
@@ -514,7 +754,7 @@
    "pubblicato": "2026-11-26T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 30.7,
+   "punteggio": 28.8,
    "testate": 3
   },
   {
@@ -526,7 +766,7 @@
    "pubblicato": "2026-11-26T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.7,
+   "punteggio": 0.8,
    "testate": 1
   },
   {
@@ -538,7 +778,7 @@
    "pubblicato": "2026-11-26T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.3,
+   "punteggio": -6.2,
    "testate": 2
   },
   {
@@ -550,7 +790,7 @@
    "pubblicato": "2026-11-26T06:00:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 25.4,
+   "punteggio": 23.6,
    "testate": 3
   },
   {
@@ -562,7 +802,7 @@
    "pubblicato": "2026-11-26T05:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.3,
+   "punteggio": 8.4,
    "testate": 1
   },
   {
@@ -574,7 +814,7 @@
    "pubblicato": "2026-11-26T04:10:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.0,
+   "punteggio": 3.1,
    "testate": 3
   },
   {
@@ -586,7 +826,7 @@
    "pubblicato": "2026-11-26T04:05:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.0,
+   "punteggio": -6.9,
    "testate": 2
   },
   {
@@ -598,7 +838,7 @@
    "pubblicato": "2026-11-25T22:53:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 28.7,
+   "punteggio": 26.8,
    "testate": 3
   },
   {
@@ -610,8 +850,8 @@
    "pubblicato": "2026-11-25T22:24:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.5,
-   "testate": 2
+   "punteggio": 6.7,
+   "testate": 1
   },
   {
    "titolo": "Gunther Steiner lancia una provocazione sulla gestione Hamilton-Leclerc: “C’è una sola soluzione…”",
@@ -622,8 +862,8 @@
    "pubblicato": "2026-11-25T21:31:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.3,
-   "testate": 1
+   "punteggio": 16.4,
+   "testate": 2
   },
   {
    "titolo": "Paolo Simoncelli: “Marquez batte tutti con un braccio solo. Mi sarebbe piaciuto vederlo battagliare con Marco”",
@@ -634,7 +874,7 @@
    "pubblicato": "2026-11-25T18:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.6,
+   "punteggio": -2.4,
    "testate": 1
   },
   {
@@ -646,7 +886,7 @@
    "pubblicato": "2026-11-25T17:55:52+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.6,
+   "punteggio": -7.5,
    "testate": 1
   },
   {
@@ -658,7 +898,7 @@
    "pubblicato": "2026-11-25T17:30:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.7,
+   "punteggio": -7.6,
    "testate": 1
   },
   {
@@ -670,7 +910,7 @@
    "pubblicato": "2026-11-25T17:20:40+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.7,
+   "punteggio": -7.6,
    "testate": 1
   },
   {
@@ -682,7 +922,7 @@
    "pubblicato": "2026-11-25T17:07:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.2,
+   "punteggio": 2.3,
    "testate": 2
   },
   {
@@ -694,8 +934,8 @@
    "pubblicato": "2026-11-25T17:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.2,
-   "testate": 1
+   "punteggio": 15.3,
+   "testate": 2
   },
   {
    "titolo": "F1 | Budget Cap 2025: Williams supera il limite di 627.000 sterline. Penalità anche per Alpine",
@@ -706,7 +946,7 @@
    "pubblicato": "2026-11-25T16:48:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.1,
+   "punteggio": 2.3,
    "testate": 2
   },
   {
@@ -718,7 +958,7 @@
    "pubblicato": "2026-11-25T16:41:17+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.1,
+   "punteggio": 15.2,
    "testate": 2
   },
   {
@@ -730,7 +970,7 @@
    "pubblicato": "2026-11-25T16:39:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.1,
+   "punteggio": 10.2,
    "testate": 2
   },
   {
@@ -742,7 +982,7 @@
    "pubblicato": "2026-11-25T16:19:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.0,
+   "punteggio": 20.1,
    "testate": 3
   },
   {
@@ -754,7 +994,7 @@
    "pubblicato": "2026-11-25T16:14:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.0,
+   "punteggio": 20.1,
    "testate": 3
   },
   {
@@ -766,7 +1006,7 @@
    "pubblicato": "2026-11-25T16:09:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.0,
+   "punteggio": 20.1,
    "testate": 3
   },
   {
@@ -778,7 +1018,7 @@
    "pubblicato": "2026-11-25T16:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.1,
+   "punteggio": -2.9,
    "testate": 1
   },
   {
@@ -790,7 +1030,7 @@
    "pubblicato": "2026-11-25T15:58:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.9,
+   "punteggio": 5.1,
    "testate": 1
   },
   {
@@ -802,7 +1042,7 @@
    "pubblicato": "2026-11-25T15:23:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.2,
+   "punteggio": -8.1,
    "testate": 1
   },
   {
@@ -814,7 +1054,7 @@
    "pubblicato": "2026-11-25T15:05:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.7,
+   "punteggio": 4.8,
    "testate": 1
   },
   {
@@ -826,7 +1066,7 @@
    "pubblicato": "2026-11-25T15:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.3,
+   "punteggio": -3.2,
    "testate": 1
   },
   {
@@ -838,7 +1078,7 @@
    "pubblicato": "2026-11-25T14:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.5,
+   "punteggio": 4.6,
    "testate": 1
   },
   {
@@ -850,19 +1090,7 @@
    "pubblicato": "2026-11-25T14:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.4,
-   "testate": 1
-  },
-  {
-   "titolo": "Invenduta all’asta la Williams FW16B-01 di Ayrton Senna",
-   "estratto": "Le offerte non hanno raggiunto la soglia minima dell'attuale proprietario della vettura",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/invenduta-asta-williams-fw16b-01-di-senna",
-   "pubblicato": "2026-11-25T13:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -6.8,
+   "punteggio": -0.4,
    "testate": 1
   },
   {
@@ -874,32 +1102,8 @@
    "pubblicato": "2026-11-25T12:42:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.1,
+   "punteggio": 24.2,
    "testate": 3
-  },
-  {
-   "titolo": "Montoya: “Russell la prossima volta con Verstappen deve andare fino in fondo a costo di prendersi una gara di squalifica”",
-   "estratto": "Juancho apprezza particolarmente il coraggio del pilota Mercedes e lo show garantito dalla rivalità tra lui e il pilota olandese",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/montoya-spinge-russell-verstappen-osare-prendere-gara-di-squalifica",
-   "pubblicato": "2026-11-25T12:30:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -1.9,
-   "testate": 1
-  },
-  {
-   "titolo": "La “febbre GTA” contagia pure Verstappen: a Las Vegas ha giocato per 40 ore e poi… ha vinto il GP",
-   "estratto": "Max ha vinto un GP super teso subendo un sorpasso quasi a ogni giro. Ma era arrivato in pista molto rilassato...",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/febbre-gta-6-contagiato-verstappen-las-vegas-giocato-40-ore-poi-ha-vinto-gp",
-   "pubblicato": "2026-11-25T12:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -2.1,
-   "testate": 1
   },
   {
    "titolo": "F1 | Perché Leclerc ha la grande occasione di fare sua la Ferrari (e non ci sta riuscendo)",
@@ -910,20 +1114,8 @@
    "pubblicato": "2026-11-25T11:17:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.8,
+   "punteggio": -1.1,
    "testate": 1
-  },
-  {
-   "titolo": "Ralf Schumacher: “Hamilton non ha evitato il contatto con Leclerc intenzionalmente”",
-   "estratto": "Nel commentare il contatto avvenuto a Las Vegas, per l'ex pilota tedesco il sette volte iridato vuole inoltre \"distruggere psicologimente\" il suo compagno di squadra",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/ralf-schumacher-hamilton-non-ha-evitato-contatto-con-leclerc-intenzionalmente",
-   "pubblicato": "2026-11-25T11:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 7.7,
-   "testate": 2
   },
   {
    "titolo": "MotoGP | Taramasso: \"Per Marquez è il sesto titolo con le Michelin, è quello che ne ha vinti di più con noi\"",
@@ -934,7 +1126,7 @@
    "pubblicato": "2026-11-25T10:55:02+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.3,
+   "punteggio": -4.2,
    "testate": 1
   },
   {
@@ -946,7 +1138,7 @@
    "pubblicato": "2026-11-25T10:28:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.6,
+   "punteggio": -1.3,
    "testate": 1
   },
   {
@@ -958,7 +1150,7 @@
    "pubblicato": "2026-11-25T10:00:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.6,
+   "punteggio": -9.4,
    "testate": 1
   },
   {
@@ -970,7 +1162,7 @@
    "pubblicato": "2026-11-25T09:18:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.7,
+   "punteggio": -4.6,
    "testate": 1
   },
   {
@@ -982,7 +1174,7 @@
    "pubblicato": "2026-11-25T09:00:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.8,
+   "punteggio": -9.7,
    "testate": 1
   },
   {
@@ -994,7 +1186,7 @@
    "pubblicato": "2026-11-25T08:41:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -14.9,
+   "punteggio": -16.8,
    "testate": 1
   },
   {
@@ -1006,7 +1198,7 @@
    "pubblicato": "2026-11-25T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.3,
+   "punteggio": -2.2,
    "testate": 1
   },
   {
@@ -1018,8 +1210,8 @@
    "pubblicato": "2026-11-25T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 14.7,
-   "testate": 2
+   "punteggio": 22.8,
+   "testate": 3
   },
   {
    "titolo": "Verstappen contro Kimi Antonelli, la sfida per il titolo di campione 2027 è già iniziata",
@@ -1030,8 +1222,8 @@
    "pubblicato": "2026-11-25T05:15:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.3,
-   "testate": 2
+   "punteggio": -2.6,
+   "testate": 1
   },
   {
    "titolo": "Agostini: “Invito a cena Rossi e Marquez per chiudere questa storia”",
@@ -1042,7 +1234,7 @@
    "pubblicato": "2026-11-24T19:37:32+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 1.8,
+   "punteggio": -0.0,
    "testate": 1
   },
   {
@@ -1054,7 +1246,7 @@
    "pubblicato": "2026-11-24T18:25:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.5,
+   "punteggio": 6.7,
    "testate": 3
   },
   {
@@ -1066,7 +1258,7 @@
    "pubblicato": "2026-11-24T17:01:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.8,
+   "punteggio": -5.7,
    "testate": 1
   },
   {
@@ -1078,7 +1270,7 @@
    "pubblicato": "2026-11-24T16:15:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.0,
+   "punteggio": 19.1,
    "testate": 3
   },
   {
@@ -1090,7 +1282,7 @@
    "pubblicato": "2026-11-24T15:58:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -7.1,
+   "punteggio": -8.9,
    "testate": 1
   },
   {
@@ -1102,7 +1294,7 @@
    "pubblicato": "2026-11-24T15:11:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -7.3,
+   "punteggio": -9.1,
    "testate": 1
   },
   {
@@ -1114,7 +1306,7 @@
    "pubblicato": "2026-11-24T15:11:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.7,
+   "punteggio": 8.9,
    "testate": 2
   },
   {
@@ -1126,7 +1318,7 @@
    "pubblicato": "2026-11-24T14:08:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.5,
+   "punteggio": 5.6,
    "testate": 3
   },
   {
@@ -1138,7 +1330,7 @@
    "pubblicato": "2026-11-24T13:53:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.4,
+   "punteggio": 5.5,
    "testate": 3
   },
   {
@@ -1150,7 +1342,7 @@
    "pubblicato": "2026-11-24T13:47:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.4,
+   "punteggio": 3.5,
    "testate": 2
   },
   {
@@ -1162,7 +1354,7 @@
    "pubblicato": "2026-11-24T12:20:33+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.0,
+   "punteggio": -1.9,
    "testate": 1
   },
   {
@@ -1174,7 +1366,7 @@
    "pubblicato": "2026-11-24T11:46:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.1,
+   "punteggio": -15.0,
    "testate": 1
   },
   {
@@ -1186,7 +1378,7 @@
    "pubblicato": "2026-11-24T11:29:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.2,
+   "punteggio": -2.1,
    "testate": 1
   },
   {
@@ -1198,19 +1390,7 @@
    "pubblicato": "2026-11-24T11:08:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -8.3,
-   "testate": 1
-  },
-  {
-   "titolo": "Bezzecchi: “Voglio chiudere bene la stagione per pensare subito al 2027”",
-   "estratto": "Il riminese insegue l'ottava vittoria in stagione e il secondo posto nel Mondiale prima di provare martedì la nuova RS-GP27",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/bezzecchi-voglio-chiudere-bene-la-stagione-per-pensare-subito-al-2027",
-   "pubblicato": "2026-11-24T10:00:06+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -0.6,
+   "punteggio": -10.2,
    "testate": 1
   },
   {
@@ -1222,7 +1402,7 @@
    "pubblicato": "2026-11-24T09:57:38+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.4,
+   "punteggio": 12.6,
    "testate": 3
   },
   {
@@ -1234,19 +1414,7 @@
    "pubblicato": "2026-11-24T09:42:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.6,
-   "testate": 1
-  },
-  {
-   "titolo": "Martin, ballo d’addio con Aprilia: “Chiudiamo l’avventura con qualcosa di speciale”",
-   "estratto": "Lo spagnolo insegue un'ultima vittoria con la casa di Noale al termine di un rapporto vissuto tra alti e bassi ma che si chiude col sorriso",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/martin-ballo-daddio-con-aprilia-chiudiamo-lavventura-con-qualcosa-di-speciale",
-   "pubblicato": "2026-11-24T09:41:13+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -8.6,
+   "punteggio": -2.5,
    "testate": 1
   },
   {
@@ -1258,19 +1426,7 @@
    "pubblicato": "2026-11-24T09:16:49+00:00",
    "tipo": "social",
    "citazione": true,
-   "punteggio": 2.3,
-   "testate": 1
-  },
-  {
-   "titolo": "F1, i precedenti della Ferrari nel GP di Qatar. Un estemporaneo podio e nulla più",
-   "estratto": "La giornata del 29 novembre 2026 sarà dedicata alla quinta edizione del Gran Premio del Qatar di F1. L’emirato del Golfo Persico è uno dei Paesi in cui la Ferrari non si è mai imposta, almeno a…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/f1-i-precedenti-della-ferrari-nel-gp-di-qatar-un-estemporaneo-podio-e-nulla-piu/",
-   "pubblicato": "2026-11-24T09:00:36+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -5.8,
+   "punteggio": 0.4,
    "testate": 1
   },
   {
@@ -1282,163 +1438,7 @@
    "pubblicato": "2026-11-24T09:00:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.8,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Rivola: \"Certi errori si sono già trasformati in insegnamento per Bezzecchi\"",
-   "estratto": "Il weekend di Portimao resterà nella storia per il decimo titolo di Marc Marquez, ma in un certo senso resterà speciale anche per l'Aprilia. E' vero che la Casa di Noale ha visto sfumare il sogno di…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-rivola-certi-errori-si-sono-gia-trasformati-in-insegnamento-per-bezzecchi/10877290/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-24T08:38:21+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -0.9,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Motori 2030: un solo team cliente per ogni Costruttore e non si può andare al banco prima del 2028",
-   "estratto": "Il quadro politico della F1 del 2030, quando entreranno in vigore i motori V8, è destinato a cambiare molto. La FIA nel weekend di Las Vegas ha ufficializzato l’accordo unanime di team e Costruttori…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-motori-2030-un-solo-team-cliente-per-ogni-costruttore-e-non-si-puo-andare-al-banco-prima-del-2028/10877263/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-24T08:06:41+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -14.0,
-   "testate": 1
-  },
-  {
-   "titolo": "Piola: “Ordine di Vasseur non rispettato, Leclerc ha perso le certezze. Verstappen: una caduta di stile”",
-   "estratto": "Il GP di Las Vegas ha lasciato sicuramente tanti temi di cui parlare. Una gara dove non è mancato lo spettacolo dentro e fuori la pista, ma soprattutto all’interno del circuito con una serie infinita…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/piola-ordine-di-vasseur-non-rispettato-leclerc-ha-perso-le-certezze-verstappen-una-caduta-di-stile/",
-   "pubblicato": "2026-11-24T05:58:12+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -9.6,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Marquez: \"Non è arrivata alcuna congratulazione da Tavullia, né me l'aspetto\"",
-   "estratto": "Qualche ora dopo aver vinto il suo decimo titolo mondiale, l'ottavo in MotoGP, Marc Marquez ha parlato con stampa e tifosi in un evento a Madrid durante la mattinata di lunedì, e lì gli hanno chiesto…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-marquez-non-e-arrivata-alcuna-congratulazione-da-tavullia-ne-me-laspetto-/10877281/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-23T17:50:50+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -8.6,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Bagnaia \"spoilera\" il suo ritorno a Valencia con un messaggio d'amore per la sua Ducati",
-   "estratto": "Anche se al momento non ci sono annunci ufficiali, tutto lascia presagire che Pecco Bagnaia tornerà in pista a Valencia, per quella che sarà la sua ultima gara in sella alla Ducati, prima di passare…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-bagnaia-spoilera-il-suo-ritorno-a-valencia-con-un-messaggio-damore-per-la-sua-ducati/10877262/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-23T16:34:25+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 19.1,
-   "testate": 3
-  },
-  {
-   "titolo": "MotoGP | Domenicali: \"Siamo molto felici con Marquez e continueremo con lui\"",
-   "estratto": "Il folgorante avvio di stagione dell'Aprilia e l'infortunio di Marc Marquez facevano presagire, solo pochi mesi fa, che il 2026 sarebbe stata una stagione più che complicata per la Ducati. Tuttavia…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-domenicali-siamo-molto-felici-con-marquez-e-continueremo-con-lui/10877172/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-23T15:37:29+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -1.2,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Stella difende lo sfogo di Piastri via radio: \"A me in realtà è piaciuto. È il carattere che ti aspetti\"",
-   "estratto": "Se avessero detto a Oscar Paistri che, in uno dei weekend che per caratteristiche del tracciato era tra i meno adatti a far emergere le qualità della MCL40, dopo essere scattato dal 17° posto in…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-stella-difende-lo-sfogo-in-radio-di-piastri-a-me-in-realta-e-piaciuto-e-il-carattere-che-ti-aspe/10877239/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-23T14:34:11+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -9.4,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Ecco come Russell ha perso la possibilità di vincere e il podio a Las Vegas",
-   "estratto": "Las Vegas ha permesso di rivedere un George Russell più incisivo rispetto alla maggior parte delle gare che hanno composto la stagione 2026 di Formula 1. Il pilota della Mercedes, scattato in seconda…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-ecco-come-russell-ha-perso-la-possibilita-di-vincere-e-il-podio-a-las-vegas/10877190/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-23T14:11:30+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -14.5,
-   "testate": 1
-  },
-  {
-   "titolo": "Max Verstappen favorito per il Mondiale 2027? Kimi Antonelli dovrà fare un ulteriore step per giocarsela",
-   "estratto": "Il Mondiale 2026 di F1 ha già incoronato il suo re con largo anticipo: Kimi Antonelli ha conquistato in Messico uno storico titolo iridato al volante della Mercedes, diventando il più giovane…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/max-verstappen-favorito-per-il-mondiale-2027-kimi-antonelli-dovra-fare-un-ulteriore-step-per-giocarsela/",
-   "pubblicato": "2026-11-23T13:20:06+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 3.3,
-   "testate": 2
-  },
-  {
-   "titolo": "Piola: “La Williams di Keke Rosberg aveva uno stratagemma illegale. Alboreto perse il Mondiale per colpa del motore Ferrari”",
-   "estratto": "Il fine settimana del Gran Premio di Las Vegas, ventunesimo e terzultimo appuntamento del Mondiale di Formula Uno 2026, ha riportato i bolidi sulla Strip della capitale del gioco d’azzardo. Un evento…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/piola-la-williams-di-keke-rosberg-aveva-uno-stratagemma-illegale-alboreto-perse-il-mondiale-per-colpa-del-motore-ferrari/",
-   "pubblicato": "2026-11-23T12:30:57+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -1.9,
-   "testate": 1
-  },
-  {
-   "titolo": "F1, il GP di Las Vegas va in archivio con alcuni record davvero impressionanti…",
-   "estratto": "Forse a molti non è sembrato il massimo del motorsport. Forse per alcuni è assomigliato molto di più ad un videogame. Forse, invece, alle nuove generazioni è sembrato avvicinarsi alla perfezione. Il…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/f1-il-gp-di-las-vegas-va-in-archivio-con-alcuni-record-davvero-impressionanti/",
-   "pubblicato": "2026-11-23T12:19:57+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -15.0,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | \"Il grande cambiamento di Marquez è avvenuto ad Austin, lì ha deciso di dare priorità alla sua felicità\"",
-   "estratto": "Campione di Spagna di motocross nel 2011, lo sguardo di José Luis Martínez si illumina quando parla del momento in cui ha visto che il suo amico Marc Marquez era tornato quest'anno, ancora una volta…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/il-grande-cambiamento-di-marquez-e-avvenuto-ad-austin-li-ha-deciso-di-dare-priorita-alla-sua-felici/10877185/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-23T12:01:51+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -10.1,
-   "testate": 1
-  },
-  {
-   "titolo": "Haas: Camara resta in F1 e correrà anche in Qatar e Abu Dhabi rinunciando alla corsa al titolo in F2",
-   "estratto": "Rafael Camara concluderà la stagione di Formula 1 con la Haas correndo anche in Qatar e Abu Dhabi, rinunciando di fatto alla corsa per il titolo di Formula 2, dove attualmente è al comando della…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-haas-camara-correra-anche-in-qatar-e-abu-dhabi-rinunciando-alla-corsa-al-titolo-in-f2/10877125/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-23T11:40:13+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -15.1,
+   "punteggio": -7.7,
    "testate": 1
   }
  ]

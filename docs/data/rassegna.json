@@ -1,6 +1,126 @@
 {
- "generato_il": "2026-11-26T14:59:58+00:00",
+ "generato_il": "2026-11-26T16:14:31+00:00",
  "articoli": [
+  {
+   "titolo": "Martin: “Weekend emozionante, voglio lasciare Aprilia con il titolo Costruttori”",
+   "estratto": "Le parole di Jorge Martin nella conferenza stampa di Valencia: per lo spagnolo è l'ultimo weekend con Aprilia prima del passaggio in Yamaha",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/martin-weekend-emozionante-daro-il-massimo-per-il-costruttori",
+   "pubblicato": "2026-11-26T16:08:35+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 6.0,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Bagnaia, l'addio a Ducati è super emozionante: \"E' stato più di quello che avrei sognato da bambino\"",
+   "estratto": "Doveva essere il gran finale di una storia d'amore durata otto anni, ma Pecco Bagnaia non potrà avere la sua \"last dance\" in sella alla Ducati a Valencia. Lui stesso aveva anticipato il suo possibile…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-bagnaia-10877911/10877911/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-26T16:00:22+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 22.9,
+   "testate": 2
+  },
+  {
+   "titolo": "F1 | Hadjar spiega il cedimento dell’ala anteriore a Las Vegas: “Due decimi prima e non sarebbe successo”",
+   "estratto": "Tra le immagini più sorprendenti del Gran Premio di Las Vegas c’è stato l’improvviso cedimento dell’ala anteriore della Red Bull di Isack Hadjar. Senza alcun contatto con un avversario o un impatto…",
+   "fonte": "Motorsport.com",
+   "serie": "F1",
+   "url": "https://it.motorsport.com/f1/news/f1-hadjar-spiega-il-cedimento-dellala-anteriore-a-las-vegas-due-decimi-prima-e-non-sarebbe-successo/10877926/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-26T15:40:02+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 4.9,
+   "testate": 1
+  },
+  {
+   "titolo": "Leclerc: “L’atmosfera con Lewis non è buona, ma abbiamo bisogno entrambi di trovare una soluzione”",
+   "estratto": "Il pilota monegasco ha parlato in conferenza stampa del rapporto con Hamilton",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/leclerc-atmosfera-con-hamilton-non-buona-bisogno-entrambi-trovare-soluzione",
+   "pubblicato": "2026-11-26T15:37:15+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 5.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Bearman: “Correre per la Ferrari resta il mio sogno”",
+   "estratto": "L'inglese, fresco di rinnovo con la Haas, ha parlato anche del suo rapporto con il team di Maranello, che gestisce il suo contratto",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/bearman-correre-per-la-ferrari-resta-il-mio-sogno",
+   "pubblicato": "2026-11-26T15:34:06+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 12.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Charles Leclerc precisa: “Mi sono assunto le mie responsabilità, non voglio tornare sull’incidente di Las Vegas”",
+   "estratto": "Alla vigilia del Gran Premio del Qatar, penultima tappa del Mondiale di F1, Charles Leclerc sceglie la linea della sobrietà. Niente accuse e niente polemiche pubbliche: il monegasco prova a…",
+   "fonte": "OA Sport",
+   "serie": "F1",
+   "url": "https://www.oasport.it/2026/11/charles-leclerc-precisa-mi-sono-assunto-le-mie-responsabilita-non-voglio-tornare-sullincidente-di-las-vegas/",
+   "pubblicato": "2026-11-26T15:28:11+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 4.8,
+   "testate": 1
+  },
+  {
+   "titolo": "Bagnaia saluta la Ducati con emozione e spiega perchè non sarà in pista a Valencia. Anche il test di martedì a rischio",
+   "estratto": "Francesco “Pecco” Bagnaia non potrà prendere parte al fine settimana del Gran Premio della Comunitat Valenciana, ventiduesimo ed ultimo appuntamento del Mondiale di MotoGP 2026, ma ha comunque preso…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/bagnaia-saluta-la-ducati-con-emozione-e-spiega-perche-non-sara-in-pista-a-valencia-anche-il-test-di-martedi-a-rischio/",
+   "pubblicato": "2026-11-26T15:15:44+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 32.8,
+   "testate": 3
+  },
+  {
+   "titolo": "“From Rookie to Legend”: il saluto di Ducati a Bagnaia – VIDEO",
+   "estratto": "La Ducati ha salutato Francesco Bagnaia con un emozionante video. \"Pecco\" non potrà correre a Valencia per una lieve emorragia cerebrale",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-news/from-rookie-to-legend-il-saluto-di-ducati-a-bagnaia-video-domenicali-tardozzi-dalligna",
+   "pubblicato": "2026-11-26T15:04:41+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 12.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Russell: “Verstappen? Ha vinto, può dire quello che vuole. Io ho enorme rispetto per il suo talento”",
+   "estratto": "Il pilota inglese della Mercedes ha parlato in conferenza stampa in Qatar del suo rapporto con il campione olandese",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/russell-verstappen-ha-vinto-puo-dire-quello-che-vuole-io-ho-enorme-rispetto-per-il-suo-talento",
+   "pubblicato": "2026-11-26T15:02:49+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 5.7,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Valencia rimuove il dipinto in omaggio a Valentino Rossi e lo sostituisce con un maxischermo",
+   "estratto": "Il murales con il volto di Valentino Rossi non sarà più visibile al Circuito Ricardo Tormo di Valencia. La sede del Gran Premio della Comunitat Valenciana, che si disputerà questo fine settimana a…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-valencia-rimuove-il-murales-in-omaggio-a-valentino-rossi-e-lo-sostituisce-con-un-maxischermo/10877902/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-26T15:02:48+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 27.7,
+   "testate": 3
+  },
   {
    "titolo": "F1, George Russell: “Le dichiarazioni di Verstappen a Las Vegas mi hanno fatto ridere”",
    "estratto": "George Russell era indubbiamente uno degli osservati speciali nella conferenza stampa piloti del giovedì che precede il weekend del Gran Premio del Qatar 2026, valevole come penultimo appuntamento…",
@@ -10,7 +130,7 @@
    "pubblicato": "2026-11-26T14:57:21+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 6.0,
+   "punteggio": 5.7,
    "testate": 1
   },
   {
@@ -22,7 +142,7 @@
    "pubblicato": "2026-11-26T14:45:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.9,
+   "punteggio": 12.6,
    "testate": 1
   },
   {
@@ -34,7 +154,7 @@
    "pubblicato": "2026-11-26T14:38:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.9,
+   "punteggio": 4.6,
    "testate": 1
   },
   {
@@ -46,8 +166,8 @@
    "pubblicato": "2026-11-26T14:35:32+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 17.9,
-   "testate": 2
+   "punteggio": 27.6,
+   "testate": 3
   },
   {
    "titolo": "F1, arriva la fumata bianca tra Oliver Bearman e la Haas per il 2027: la griglia adesso è completa",
@@ -58,7 +178,7 @@
    "pubblicato": "2026-11-26T14:20:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.8,
+   "punteggio": 19.5,
    "testate": 3
   },
   {
@@ -70,7 +190,7 @@
    "pubblicato": "2026-11-26T14:16:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.8,
+   "punteggio": 12.5,
    "testate": 1
   },
   {
@@ -82,7 +202,7 @@
    "pubblicato": "2026-11-26T14:00:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.2,
+   "punteggio": -0.6,
    "testate": 1
   },
   {
@@ -94,7 +214,7 @@
    "pubblicato": "2026-11-26T14:00:14+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.8,
+   "punteggio": 12.4,
    "testate": 1
   },
   {
@@ -106,7 +226,7 @@
    "pubblicato": "2026-11-26T13:50:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.7,
+   "punteggio": 9.4,
    "testate": 2
   },
   {
@@ -118,7 +238,7 @@
    "pubblicato": "2026-11-26T13:00:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.5,
+   "punteggio": -0.8,
    "testate": 1
   },
   {
@@ -130,7 +250,7 @@
    "pubblicato": "2026-11-26T13:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.5,
+   "punteggio": 7.2,
    "testate": 1
   },
   {
@@ -142,7 +262,7 @@
    "pubblicato": "2026-11-26T11:45:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.8,
+   "punteggio": -1.1,
    "testate": 1
   },
   {
@@ -154,7 +274,7 @@
    "pubblicato": "2026-11-26T11:23:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.1,
+   "punteggio": 11.8,
    "testate": 1
   },
   {
@@ -166,7 +286,7 @@
    "pubblicato": "2026-11-26T10:30:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.1,
+   "punteggio": -1.4,
    "testate": 1
   },
   {
@@ -178,7 +298,7 @@
    "pubblicato": "2026-11-26T10:20:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.8,
+   "punteggio": 6.5,
    "testate": 1
   },
   {
@@ -190,7 +310,7 @@
    "pubblicato": "2026-11-26T10:00:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.8,
+   "punteggio": 16.4,
    "testate": 2
   },
   {
@@ -202,7 +322,7 @@
    "pubblicato": "2026-11-26T09:46:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.7,
+   "punteggio": 6.4,
    "testate": 1
   },
   {
@@ -214,7 +334,7 @@
    "pubblicato": "2026-11-26T09:21:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 23.6,
+   "punteggio": 23.3,
    "testate": 3
   },
   {
@@ -226,7 +346,7 @@
    "pubblicato": "2026-11-26T09:00:52+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.5,
+   "punteggio": 6.2,
    "testate": 1
   },
   {
@@ -238,7 +358,7 @@
    "pubblicato": "2026-11-26T09:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.5,
+   "punteggio": 18.2,
    "testate": 3
   },
   {
@@ -250,7 +370,7 @@
    "pubblicato": "2026-11-26T08:47:18+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.4,
+   "punteggio": 6.1,
    "testate": 1
   },
   {
@@ -262,7 +382,7 @@
    "pubblicato": "2026-11-26T08:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.4,
+   "punteggio": 11.1,
    "testate": 1
   },
   {
@@ -274,7 +394,7 @@
    "pubblicato": "2026-11-26T08:25:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 16.4,
+   "punteggio": 16.0,
    "testate": 2
   },
   {
@@ -286,7 +406,7 @@
    "pubblicato": "2026-11-26T08:01:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.7,
+   "punteggio": -2.1,
    "testate": 1
   },
   {
@@ -298,7 +418,7 @@
    "pubblicato": "2026-11-26T07:57:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.8,
+   "punteggio": -2.1,
    "testate": 1
   },
   {
@@ -310,7 +430,7 @@
    "pubblicato": "2026-11-26T07:55:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.2,
+   "punteggio": 2.9,
    "testate": 1
   },
   {
@@ -322,7 +442,7 @@
    "pubblicato": "2026-11-26T07:35:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 6.1,
+   "punteggio": 5.8,
    "testate": 3
   },
   {
@@ -334,7 +454,7 @@
    "pubblicato": "2026-11-26T07:33:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -1.9,
+   "punteggio": -2.2,
    "testate": 1
   },
   {
@@ -346,20 +466,8 @@
    "pubblicato": "2026-11-26T07:30:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.9,
+   "punteggio": -4.2,
    "testate": 2
-  },
-  {
-   "titolo": "Russell vs Verstappen, Steiner: “Tenere testa a Max? Auguri, io non stuzzicherei l’orso”",
-   "estratto": "L'ex team principal ritiene che il pilota Mercedes sbagli nella scelta delle sue battaglie",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/russell-vs-verstappen-steiner-tenere-testa-a-max-auguri-io-non-stuzzicherei-lorso",
-   "pubblicato": "2026-11-26T07:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 3.0,
-   "testate": 1
   },
   {
    "titolo": "GP Qatar 2026: orari Sky/Now e TV8",
@@ -370,7 +478,7 @@
    "pubblicato": "2026-11-26T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.0,
+   "punteggio": -4.3,
    "testate": 2
   },
   {
@@ -382,7 +490,19 @@
    "pubblicato": "2026-11-26T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -2.0,
+   "punteggio": -2.3,
+   "testate": 1
+  },
+  {
+   "titolo": "Russell vs Verstappen, Steiner: “Tenere testa a Max? Auguri, io non stuzzicherei l’orso”",
+   "estratto": "L'ex team principal ritiene che il pilota Mercedes sbagli nella scelta delle sue battaglie",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-news/russell-vs-verstappen-steiner-tenere-testa-a-max-auguri-io-non-stuzzicherei-lorso",
+   "pubblicato": "2026-11-26T07:00:00+00:00",
+   "tipo": "dichiarazione",
+   "citazione": true,
+   "punteggio": 2.7,
    "testate": 1
   },
   {
@@ -394,7 +514,7 @@
    "pubblicato": "2026-11-26T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 31.0,
+   "punteggio": 30.7,
    "testate": 3
   },
   {
@@ -406,7 +526,7 @@
    "pubblicato": "2026-11-26T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 3.0,
+   "punteggio": 2.7,
    "testate": 1
   },
   {
@@ -418,7 +538,7 @@
    "pubblicato": "2026-11-26T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.0,
+   "punteggio": -4.3,
    "testate": 2
   },
   {
@@ -430,8 +550,8 @@
    "pubblicato": "2026-11-26T06:00:46+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 15.8,
-   "testate": 2
+   "punteggio": 25.4,
+   "testate": 3
   },
   {
    "titolo": "Ferrari, l'ordine di Vasseur dopo le scintille in pista: \"Due auto per un doppio risultato\"",
@@ -442,7 +562,7 @@
    "pubblicato": "2026-11-26T05:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 10.6,
+   "punteggio": 10.3,
    "testate": 1
   },
   {
@@ -454,7 +574,7 @@
    "pubblicato": "2026-11-26T04:10:58+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.3,
+   "punteggio": 5.0,
    "testate": 3
   },
   {
@@ -466,7 +586,7 @@
    "pubblicato": "2026-11-26T04:05:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -4.7,
+   "punteggio": -5.0,
    "testate": 2
   },
   {
@@ -478,7 +598,7 @@
    "pubblicato": "2026-11-25T22:53:23+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 29.0,
+   "punteggio": 28.7,
    "testate": 3
   },
   {
@@ -490,7 +610,7 @@
    "pubblicato": "2026-11-25T22:24:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.9,
+   "punteggio": 18.5,
    "testate": 2
   },
   {
@@ -502,8 +622,8 @@
    "pubblicato": "2026-11-25T21:31:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 18.6,
-   "testate": 2
+   "punteggio": 8.3,
+   "testate": 1
   },
   {
    "titolo": "Paolo Simoncelli: “Marquez batte tutti con un braccio solo. Mi sarebbe piaciuto vederlo battagliare con Marco”",
@@ -514,7 +634,7 @@
    "pubblicato": "2026-11-25T18:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.2,
+   "punteggio": -0.6,
    "testate": 1
   },
   {
@@ -526,7 +646,7 @@
    "pubblicato": "2026-11-25T17:55:52+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.3,
+   "punteggio": -5.6,
    "testate": 1
   },
   {
@@ -538,7 +658,7 @@
    "pubblicato": "2026-11-25T17:30:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.4,
+   "punteggio": -5.7,
    "testate": 1
   },
   {
@@ -550,7 +670,7 @@
    "pubblicato": "2026-11-25T17:20:40+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.4,
+   "punteggio": -5.7,
    "testate": 1
   },
   {
@@ -562,7 +682,7 @@
    "pubblicato": "2026-11-25T17:07:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.5,
+   "punteggio": 4.2,
    "testate": 2
   },
   {
@@ -574,7 +694,7 @@
    "pubblicato": "2026-11-25T17:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.5,
+   "punteggio": 7.2,
    "testate": 1
   },
   {
@@ -586,7 +706,7 @@
    "pubblicato": "2026-11-25T16:48:19+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 4.5,
+   "punteggio": 4.1,
    "testate": 2
   },
   {
@@ -598,7 +718,7 @@
    "pubblicato": "2026-11-25T16:41:17+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.4,
+   "punteggio": 17.1,
    "testate": 2
   },
   {
@@ -610,7 +730,7 @@
    "pubblicato": "2026-11-25T16:39:42+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.4,
+   "punteggio": 12.1,
    "testate": 2
   },
   {
@@ -622,7 +742,7 @@
    "pubblicato": "2026-11-25T16:19:23+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.3,
+   "punteggio": 22.0,
    "testate": 3
   },
   {
@@ -634,7 +754,7 @@
    "pubblicato": "2026-11-25T16:14:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.3,
+   "punteggio": 22.0,
    "testate": 3
   },
   {
@@ -646,7 +766,7 @@
    "pubblicato": "2026-11-25T16:09:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.3,
+   "punteggio": 22.0,
    "testate": 3
   },
   {
@@ -658,7 +778,7 @@
    "pubblicato": "2026-11-25T16:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.7,
+   "punteggio": -1.1,
    "testate": 1
   },
   {
@@ -670,7 +790,7 @@
    "pubblicato": "2026-11-25T15:58:18+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.2,
+   "punteggio": 6.9,
    "testate": 1
   },
   {
@@ -682,7 +802,7 @@
    "pubblicato": "2026-11-25T15:23:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.9,
+   "punteggio": -6.2,
    "testate": 1
   },
   {
@@ -694,7 +814,7 @@
    "pubblicato": "2026-11-25T15:05:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.0,
+   "punteggio": 6.7,
    "testate": 1
   },
   {
@@ -706,7 +826,7 @@
    "pubblicato": "2026-11-25T15:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.0,
+   "punteggio": -1.3,
    "testate": 1
   },
   {
@@ -718,7 +838,7 @@
    "pubblicato": "2026-11-25T14:15:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.8,
+   "punteggio": 6.5,
    "testate": 1
   },
   {
@@ -730,7 +850,7 @@
    "pubblicato": "2026-11-25T14:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.8,
+   "punteggio": 1.4,
    "testate": 1
   },
   {
@@ -742,7 +862,7 @@
    "pubblicato": "2026-11-25T13:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.5,
+   "punteggio": -6.8,
    "testate": 1
   },
   {
@@ -754,7 +874,7 @@
    "pubblicato": "2026-11-25T12:42:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 26.4,
+   "punteggio": 26.1,
    "testate": 3
   },
   {
@@ -766,7 +886,7 @@
    "pubblicato": "2026-11-25T12:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.6,
+   "punteggio": -1.9,
    "testate": 1
   },
   {
@@ -778,7 +898,7 @@
    "pubblicato": "2026-11-25T12:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.7,
+   "punteggio": -2.1,
    "testate": 1
   },
   {
@@ -790,7 +910,7 @@
    "pubblicato": "2026-11-25T11:17:55+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.1,
+   "punteggio": 0.8,
    "testate": 1
   },
   {
@@ -802,7 +922,7 @@
    "pubblicato": "2026-11-25T11:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.0,
+   "punteggio": 7.7,
    "testate": 2
   },
   {
@@ -814,7 +934,7 @@
    "pubblicato": "2026-11-25T10:55:02+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.0,
+   "punteggio": -2.3,
    "testate": 1
   },
   {
@@ -826,7 +946,7 @@
    "pubblicato": "2026-11-25T10:28:17+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.9,
+   "punteggio": 0.6,
    "testate": 1
   },
   {
@@ -838,7 +958,7 @@
    "pubblicato": "2026-11-25T10:00:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.2,
+   "punteggio": -7.6,
    "testate": 1
   },
   {
@@ -850,7 +970,7 @@
    "pubblicato": "2026-11-25T09:18:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -2.4,
+   "punteggio": -2.7,
    "testate": 1
   },
   {
@@ -862,7 +982,7 @@
    "pubblicato": "2026-11-25T09:00:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.5,
+   "punteggio": -7.8,
    "testate": 1
   },
   {
@@ -874,43 +994,7 @@
    "pubblicato": "2026-11-25T08:41:56+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -14.6,
-   "testate": 1
-  },
-  {
-   "titolo": "Scontro Leclerc-Hamilton, Steiner critica Ferrari e lancia una provocazione: “Mettano Charles in Haas”",
-   "estratto": "Secondo l'ex boss della scuderia americana a Maranello hanno sottovaluto i possibili problemi di questa coabitazione",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/scontro-leclerc-hamilton-steiner-critica-ferrari-e-lancia-una-provocazione-mettano-charles-in-haas",
-   "pubblicato": "2026-11-25T07:00:33+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": 25.0,
-   "testate": 3
-  },
-  {
-   "titolo": "Montoya: “La Red Bull a Las Vegas ha pensato a un arrivo in volata, la Mercedes no”",
-   "estratto": "Il colombiano ha sottolineato l'ottima strategia della scuderia di Milton Keynes",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/montoya-unico-aveva-capito-come-battere-verstappen-las-vegas-volata-era-russell",
-   "pubblicato": "2026-11-25T07:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -3.0,
-   "testate": 1
-  },
-  {
-   "titolo": "Verstappen: “Qatar? Non sono a mio agio, preferirei stare a casa”",
-   "estratto": "Max Verstappen ammette che avrebbe preferito evitare i GP in Qatar e ad Abu Dhabi, in una zona che da mesi è afflitta dalla guerra",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/verstappen-gp-qatar-non-sono-a-mio-agio-preferirei-stare-a-casa-red-bull",
-   "pubblicato": "2026-11-25T07:00:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -3.0,
+   "punteggio": -14.9,
    "testate": 1
   },
   {
@@ -922,7 +1006,7 @@
    "pubblicato": "2026-11-25T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.0,
+   "punteggio": -0.3,
    "testate": 1
   },
   {
@@ -934,7 +1018,7 @@
    "pubblicato": "2026-11-25T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.0,
+   "punteggio": 14.7,
    "testate": 2
   },
   {
@@ -946,7 +1030,7 @@
    "pubblicato": "2026-11-25T05:15:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.6,
+   "punteggio": 9.3,
    "testate": 2
   },
   {
@@ -958,8 +1042,8 @@
    "pubblicato": "2026-11-24T19:37:32+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 12.2,
-   "testate": 2
+   "punteggio": 1.8,
+   "testate": 1
   },
   {
    "titolo": "MotoGP, niente Valencia per Maverick Viñales: in pista torna Pol Espargaró",
@@ -970,7 +1054,7 @@
    "pubblicato": "2026-11-24T18:25:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 8.9,
+   "punteggio": 8.5,
    "testate": 3
   },
   {
@@ -982,7 +1066,7 @@
    "pubblicato": "2026-11-24T17:01:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -3.5,
+   "punteggio": -3.8,
    "testate": 1
   },
   {
@@ -994,7 +1078,7 @@
    "pubblicato": "2026-11-24T16:15:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 21.3,
+   "punteggio": 21.0,
    "testate": 3
   },
   {
@@ -1006,7 +1090,7 @@
    "pubblicato": "2026-11-24T15:58:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -6.8,
+   "punteggio": -7.1,
    "testate": 1
   },
   {
@@ -1018,7 +1102,7 @@
    "pubblicato": "2026-11-24T15:11:10+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -7.0,
+   "punteggio": -7.3,
    "testate": 1
   },
   {
@@ -1030,7 +1114,7 @@
    "pubblicato": "2026-11-24T15:11:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 11.0,
+   "punteggio": 10.7,
    "testate": 2
   },
   {
@@ -1042,7 +1126,7 @@
    "pubblicato": "2026-11-24T14:08:20+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.8,
+   "punteggio": 7.5,
    "testate": 3
   },
   {
@@ -1054,7 +1138,7 @@
    "pubblicato": "2026-11-24T13:53:56+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 7.7,
+   "punteggio": 7.4,
    "testate": 3
   },
   {
@@ -1066,7 +1150,7 @@
    "pubblicato": "2026-11-24T13:47:02+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 5.7,
+   "punteggio": 5.4,
    "testate": 2
   },
   {
@@ -1078,7 +1162,7 @@
    "pubblicato": "2026-11-24T12:20:33+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.3,
+   "punteggio": 0.0,
    "testate": 1
   },
   {
@@ -1090,7 +1174,7 @@
    "pubblicato": "2026-11-24T11:46:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -12.8,
+   "punteggio": -13.1,
    "testate": 1
   },
   {
@@ -1102,7 +1186,7 @@
    "pubblicato": "2026-11-24T11:29:08+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 0.1,
+   "punteggio": -0.2,
    "testate": 1
   },
   {
@@ -1114,7 +1198,7 @@
    "pubblicato": "2026-11-24T11:08:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -8.0,
+   "punteggio": -8.3,
    "testate": 1
   },
   {
@@ -1126,7 +1210,7 @@
    "pubblicato": "2026-11-24T10:00:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.2,
+   "punteggio": -0.6,
    "testate": 1
   },
   {
@@ -1138,7 +1222,7 @@
    "pubblicato": "2026-11-24T09:57:38+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 14.7,
+   "punteggio": 14.4,
    "testate": 3
   },
   {
@@ -1150,7 +1234,7 @@
    "pubblicato": "2026-11-24T09:42:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.3,
+   "punteggio": -0.6,
    "testate": 1
   },
   {
@@ -1162,7 +1246,7 @@
    "pubblicato": "2026-11-24T09:41:13+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -8.3,
+   "punteggio": -8.6,
    "testate": 1
   },
   {
@@ -1174,7 +1258,7 @@
    "pubblicato": "2026-11-24T09:16:49+00:00",
    "tipo": "social",
    "citazione": true,
-   "punteggio": 2.6,
+   "punteggio": 2.3,
    "testate": 1
   },
   {
@@ -1186,7 +1270,7 @@
    "pubblicato": "2026-11-24T09:00:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.5,
+   "punteggio": -5.8,
    "testate": 1
   },
   {
@@ -1198,7 +1282,7 @@
    "pubblicato": "2026-11-24T09:00:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -5.5,
+   "punteggio": -5.8,
    "testate": 1
   },
   {
@@ -1210,7 +1294,7 @@
    "pubblicato": "2026-11-24T08:38:21+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.6,
+   "punteggio": -0.9,
    "testate": 1
   },
   {
@@ -1222,31 +1306,7 @@
    "pubblicato": "2026-11-24T08:06:41+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -13.7,
-   "testate": 1
-  },
-  {
-   "titolo": "Agostini: “Rossi o Marquez? Un titolo in più pesa. Ma se gestissi un team li vorrei entrambi”",
-   "estratto": "Il 15 volte iridato ha parlato dell'eterno confronto tra Marquez e Rossi, cercando di non sbilanciarsi ma lasciando intuire una preferenza",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/agostini-rossi-o-marquez-un-titolo-in-piu-pesa-ma-se-gestissi-un-team-li-vorrei-entrambi",
-   "pubblicato": "2026-11-24T07:40:49+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -0.8,
-   "testate": 1
-  },
-  {
-   "titolo": "Marc Marquez: “La persona che conta e ha contato di più nella mia carriera è mio fratello Alex”",
-   "estratto": "Il fratello per Marc è una 'spalla' vitale sia in pista che fuori",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/marc-marquez-devo-tutto-mio-fratello-alex-segreti-nessuno-conosce",
-   "pubblicato": "2026-11-24T06:30:00+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -9.1,
+   "punteggio": -14.0,
    "testate": 1
   },
   {
@@ -1258,7 +1318,7 @@
    "pubblicato": "2026-11-24T05:58:12+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -9.3,
+   "punteggio": -9.6,
    "testate": 1
   },
   {
@@ -1270,7 +1330,7 @@
    "pubblicato": "2026-11-23T17:50:50+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -8.3,
+   "punteggio": -8.6,
    "testate": 1
   },
   {
@@ -1282,7 +1342,7 @@
    "pubblicato": "2026-11-23T16:34:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.4,
+   "punteggio": 19.1,
    "testate": 3
   },
   {
@@ -1294,7 +1354,7 @@
    "pubblicato": "2026-11-23T15:37:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.8,
+   "punteggio": -1.2,
    "testate": 1
   },
   {
@@ -1306,7 +1366,7 @@
    "pubblicato": "2026-11-23T14:34:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -9.1,
+   "punteggio": -9.4,
    "testate": 1
   },
   {
@@ -1318,7 +1378,7 @@
    "pubblicato": "2026-11-23T14:11:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -14.2,
+   "punteggio": -14.5,
    "testate": 1
   },
   {
@@ -1330,7 +1390,7 @@
    "pubblicato": "2026-11-23T13:20:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.6,
+   "punteggio": 3.3,
    "testate": 2
   },
   {
@@ -1342,7 +1402,7 @@
    "pubblicato": "2026-11-23T12:30:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.6,
+   "punteggio": -1.9,
    "testate": 1
   },
   {
@@ -1354,7 +1414,7 @@
    "pubblicato": "2026-11-23T12:19:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -14.7,
+   "punteggio": -15.0,
    "testate": 1
   },
   {
@@ -1366,7 +1426,7 @@
    "pubblicato": "2026-11-23T12:01:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -9.7,
+   "punteggio": -10.1,
    "testate": 1
   },
   {
@@ -1378,67 +1438,7 @@
    "pubblicato": "2026-11-23T11:40:13+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -14.8,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Marquez fa la storia, Rossi continua a riviverla",
-   "estratto": "Per quei capricci del destino più bizzarro, Marc Marquez ha messo il sigillo al suo ottavo titolo MotoGP a Portimao, con Valentino Rossi in giro per tutta Italia, nel tour di presentazione della sua…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-marquez-fa-la-storia-rossi-continua-a-riviverla/10877148/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-23T11:01:54+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 3.0,
-   "testate": 2
-  },
-  {
-   "titolo": "F1, la FIA spiega la penalità di Lewis Hamilton a Las Vegas",
-   "estratto": "Nel post GP di Las Vegas, la FIA ha reso note le motivazioni ufficiali in merito ai 10 secondi di penalità comminati a Lewis Hamilton durante le fasi iniziali del gran premio svoltosi negli Stati…",
-   "fonte": "OA Sport",
-   "serie": "F1",
-   "url": "https://www.oasport.it/2026/11/f1-la-fia-su-hamilton-e-la-penalita-a-las-vegas-vantaggio-duraturo-avrebbe-dovuto-restituire-la-posizione/",
-   "pubblicato": "2026-11-23T10:52:59+00:00",
-   "tipo": "dichiarazione",
-   "citazione": true,
-   "punteggio": -10.0,
-   "testate": 1
-  },
-  {
-   "titolo": "MotoGP | Ecco gli orari TV di Sky, Now e TV8 del Gran Premio di Valencia",
-   "estratto": "Il titolo è assegnato, con Marc Marquez che a Portimao si è laureato campione del mondo per la decima volta, l'ottava nella classe regina, ma il weekend del Gran Premio di Valencia di MotoGP lascia…",
-   "fonte": "Motorsport.com",
-   "serie": "MotoGP",
-   "url": "https://it.motorsport.com/motogp/news/motogp-ecco-gli-orari-tv-di-sky-now-e-tv8-del-gran-premio-della-comunita-valenciana/10877123/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-23T09:59:52+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -17.3,
-   "testate": 2
-  },
-  {
-   "titolo": "Hamilton-Leclerc, uno in Ferrari è di troppo: l’ennesimo casino e il possibile ribaltone",
-   "estratto": "A Las Vegas altra rissa in pista tra i due piloti. Vasseur sbotta: “Sono ingestibili, prenderemo dei provvedimenti”",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/ferrari/2026/11/23-152780172/hamilton-leclerc_uno_in_ferrari_di_troppo_lennesimo_casino_e_il_possibile_ribaltone/",
-   "pubblicato": "2026-11-23T09:52:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 12.7,
-   "testate": 3
-  },
-  {
-   "titolo": "F1 | Las Vegas divide: 352 sorpassi tra spettacolo e artificio",
-   "estratto": "Trecentocinquantadue sorpassi e trentacinque cambi al comando. Numeri che raccontano una gara fuori dall'ordinario, destinata a rimanere un riferimento nella storia della Formula 1. Il Gran Premio di…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-las-vegas-divide-352-sorpassi-tra-spettacolo-e-artificio/10877122/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-23T09:29:21+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -15.4,
+   "punteggio": -15.1,
    "testate": 1
   }
  ]

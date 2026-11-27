@@ -20,7 +20,7 @@ on:
         description: 'solo le prime N battute (prova veloce; vuoto = tutto)'
         default: ''
       voce:
-        description: 'voce Microsoft da usare (vuoto = it-IT-DiegoNeural), es. it-IT-GiuseppeMultilingualNeural'
+        description: 'voce Microsoft da usare (vuoto = it-IT-IsabellaNeural), es. it-IT-GiuseppeMultilingualNeural'
         default: ''
 
 permissions:

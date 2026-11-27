@@ -12,7 +12,7 @@ import notizia_sub as NS  # noqa: E402
 
 QUI = Path(__file__).parent
 NS.RALLENTA = 1.0            # il -3% vale per i video del canale, non per le lezioni
-NS.VOCE = "it-IT-IsabellaNeural"   # voce piu' chiara per spiegare (solo lezioni)
+NS.VOCE = os.environ.get("VOCE_TTS") or "it-IT-IsabellaNeural"   # voce piu' chiara per spiegare (solo lezioni); VOCE_TTS per provarne altre
 VELOCITA = "+14%"
 AUDIO_KBPS = "80k"
 CORSO = os.environ.get("LEZIONE_CORSO", "")   # "cg" = Controllo di gestione e bilancio nelle imprese di trasporto (testi in lezione_testi_cg/)

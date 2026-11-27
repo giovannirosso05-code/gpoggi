@@ -1,7 +1,7 @@
 {
  "serie": "Formula 2",
  "anno": 2026,
- "aggiornato": "2026-11-27T01:30:19+00:00",
+ "aggiornato": "2026-11-27T16:03:17+00:00",
  "fonte": "https://en.wikipedia.org/wiki/2026_FIA_Formula_2_Championship",
  "licenza": "CC BY-SA 4.0",
  "piloti": [
@@ -142,6 +142,12 @@
    "nome": "Hiyu Yamakoshi",
    "team": null,
    "punti": 2.0
+  },
+  {
+   "pos": 24,
+   "nome": "Ugo Ugochukwu",
+   "team": null,
+   "punti": 2.0
   }
  ],
  "team": [
@@ -188,7 +194,7 @@
   {
    "pos": 9,
    "team": "Van Amersfoort Racing",
-   "punti": 59.0
+   "punti": 61.0
   },
   {
    "pos": 10,

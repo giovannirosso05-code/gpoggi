@@ -1,6 +1,114 @@
 {
- "generato_il": "2026-11-27T14:55:45+00:00",
+ "generato_il": "2026-11-27T16:00:34+00:00",
  "articoli": [
+  {
+   "titolo": "MotoGP | E ora la domanda è: chi sarà il sostituto di Marquez in Ducati?",
+   "estratto": "È la domanda da un milione di dollari. Una volta che Marc Marquez ha annunciato che non continuerà a correre in MotoGP il prossimo anno, la Ducati dovrà cercare un pilota che prenda il suo posto nel…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-e-ora-la-domanda-e-chi-sara-il-sostituto-di-marquez-in-ducati/10878246/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-27T15:45:05+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 11.9,
+   "testate": 1
+  },
+  {
+   "titolo": "MotoGP | Valencia, Prove: Marquez continua a non fare sconti e precede un tris di Aprilia",
+   "estratto": "Marc Marquez ha annunciato il suo ritiro, ma almeno fino a domenica non sembra avere intenzione di fare sconti a nessuno. Il pilota della Ducati è stato infatti il più veloce nella sessione del…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-valencia-prove-marquez-continua-a-non-fare-sconti-e-precede-un-tris-di-aprilia-/10878284/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-27T15:23:20+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 31.8,
+   "testate": 3
+  },
+  {
+   "titolo": "MotoGP, GP Valencia 2026: risultati e classifica pre-qualifiche. Marc Marquez precede Bezzecchi, anche Di Giannantonio in Q2",
+   "estratto": "Si sono chiuse le pre-qualifiche del GP di Valencia, andate in scena sul Circuit Ricardo Tormo, valide per il ventiduesimo ed ultimo atto del Mondiale 2026 della MotoGP: il migliore sulla pista…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-gp-valencia-2026-risultati-e-classifica-pre-qualifiche-marc-marquez-precede-bezzecchi-anche-di-giannantonio-in-q2/",
+   "pubblicato": "2026-11-27T15:19:25+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 19.8,
+   "testate": 3
+  },
+  {
+   "titolo": "MotoGP: Marc Marquez strappa il miglior tempo a Bezzecchi nelle pre-qualifiche di Valencia. Salvo Martin",
+   "estratto": "Il graffio del Campione. Quasi all’ultimo istante utile Marc Marquez ha conquistato la prima posizione in occasione delle pre-qualifiche valide per il GP di Valencia, appuntamento finale del…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/motogp-marc-marquez-strappa-il-miglior-tempo-a-bezzecchi-nelle-pre-qualifiche-di-valencia-salvo-martin/",
+   "pubblicato": "2026-11-27T15:18:26+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 31.8,
+   "testate": 3
+  },
+  {
+   "titolo": "GP Valencia 2026 – Classifica Prove: Marquez incontenibile, domina il venerdì e sfida da solo le Aprilia",
+   "estratto": "La classifica delle Prove di Valencia, ultima tappa del Mondiale: Marquez è davanti a Bezzecchi, Ogura e Fernandez. Solo 10° Martin",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-risultati/gp-valencia-2026-classifica-prove-ritiro-marquez-ducati-aprilia-bezzecchi-martin-costruttori",
+   "pubblicato": "2026-11-27T15:12:56+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 19.8,
+   "testate": 3
+  },
+  {
+   "titolo": "LIVE MotoGP, GP Valencia 2026 in DIRETTA: Marc Marquez svetta nelle pre-qualifiche. Bene Bezzecchi, Martin si salva",
+   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE MARC MARQUEZ ANNUNCIA IL RITIRO 16.07 Non ci rimane che ringraziarvi per la cortese attenzione e rimandarvi a domani. Buon proseguimento di giornata. 16.06…",
+   "fonte": "OA Sport",
+   "serie": "MotoGP",
+   "url": "https://www.oasport.it/2026/11/live-motogp-gp-valencia-2026-in-diretta-bezzecchi-e-laprilia-puntano-al-titolo-costruttori/",
+   "pubblicato": "2026-11-27T15:00:42+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 31.8,
+   "testate": 3
+  },
+  {
+   "titolo": "F1 GP Qatar 2026, FP2: a Lusail c’è attesa per le simulazioni qualifica e gara, via alle 18.00 – DIRETTA",
+   "estratto": "La cronaca live minuto per minuto della seconda sessione di prove del fine settimana a Lusail",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-qatar-2026-lusail-prove-libere-2-fp2-aggiornamenti-ferrari-leclerc-hamilton-antonelli",
+   "pubblicato": "2026-11-27T15:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 13.7,
+   "testate": 2
+  },
+  {
+   "titolo": "GP Valencia 2026: la cronaca delle Prove e delle FP1",
+   "estratto": "La cronaca minuto per minuto del venerdì di Valencia",
+   "fonte": "FormulaPassion",
+   "serie": "MotoGP",
+   "url": "https://www.formulapassion.it/motogp/motogp-live/diretta-motogp-gp-valencia-2026-live-prove-libere-pre-qualifiche-marquez-ducati-bezzecchi-aprilia",
+   "pubblicato": "2026-11-27T15:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 13.7,
+   "testate": 2
+  },
+  {
+   "titolo": "MotoGP | Tardozzi: \"Peccato sapere del ritiro di Marc a novembre, ma è la decisione migliore per lui\"",
+   "estratto": "La Ducati per ora è rimasta silente, quasi in disparte. La squadra era presente al completo alla conferenza stampa che ha seguito l'annuncio del ritiro di Marc Marquez a fine stagione, ma per il…",
+   "fonte": "Motorsport.com",
+   "serie": "MotoGP",
+   "url": "https://it.motorsport.com/motogp/news/motogp-tardozzi-peccato-sapere-del-ritiro-di-marc-a-novembre-ma-e-la-decisione-migliore-per-lui/10878272/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=it",
+   "pubblicato": "2026-11-27T14:57:04+00:00",
+   "tipo": "intervista",
+   "citazione": true,
+   "punteggio": 27.7,
+   "testate": 2
+  },
   {
    "titolo": "F1, GP Qatar 2026: risultati e classifica FP1. Antonelli domina, Leclerc 7° davanti ad Hamilton",
    "estratto": "Il Mondiale di F1 2026 è ripreso oggi, venerdì 27 novembre, con il GP del Qatar, valido come ventiduesima prova del calendario. Nel primo pomeriggio italiano si è disputata la prima sessione delle…",
@@ -10,7 +118,7 @@
    "pubblicato": "2026-11-27T14:46:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.0,
+   "punteggio": 9.7,
    "testate": 2
   },
   {
@@ -22,23 +130,11 @@
    "pubblicato": "2026-11-27T14:45:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 32.0,
+   "punteggio": 31.7,
    "testate": 3
   },
   {
-   "titolo": "LIVE MotoGP, GP Valencia 2026 in DIRETTA: Bezzecchi cambia marcia e precede Di Giannantonio, tra poco i time attack!",
-   "estratto": "CLICCA QUI PER AGGIORNARE LA DIRETTA LIVE MARC MARQUEZ ANNUNCIA IL RITIRO 15.55 Quartararo migliora in ogni settore e fa segnare un 1:29.324 e sale al decimo posto, Martin rimane 123°. Diggia invece…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/live-motogp-gp-valencia-2026-in-diretta-bezzecchi-e-laprilia-puntano-al-titolo-costruttori/",
-   "pubblicato": "2026-11-27T14:40:42+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 31.9,
-   "testate": 3
-  },
-  {
-   "titolo": "GP Qatar 2026 – Classifica FP1: Kimi vola, mezzo secondo a tutti con la gomma media! Ferrari a 1 secondo: Leclerc 7°, Hamilton 8°",
+   "titolo": "GP Qatar 2026 – Classifica FP1: Kimi vola, 5 decimi a tutti con la gomma media! Ferrari a 1 secondo: Leclerc 7°, Hamilton 8°",
    "estratto": "La classifica della 1ª sessione di prove libere in Qatar: Antonelli distrugge tutti con una mescola di svantaggio, Russell a mezzo secondo. Verstappen 6°, poi le Ferrari",
    "fonte": "FormulaPassion",
    "serie": "F1",
@@ -46,7 +142,7 @@
    "pubblicato": "2026-11-27T14:39:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 29.9,
+   "punteggio": 29.7,
    "testate": 4
   },
   {
@@ -58,7 +154,7 @@
    "pubblicato": "2026-11-27T14:38:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.9,
+   "punteggio": 31.7,
    "testate": 3
   },
   {
@@ -70,23 +166,11 @@
    "pubblicato": "2026-11-27T14:30:31+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.9,
+   "punteggio": 31.6,
    "testate": 3
   },
   {
-   "titolo": "GP Valencia 2026, Prove: Bezzecchi al top, poi Fernandez e Marc Marquez – DIRETTA",
-   "estratto": "La cronaca minuto per minuto del venerdì di Valencia",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-live/diretta-motogp-gp-valencia-2026-live-prove-libere-pre-qualifiche-marquez-ducati-bezzecchi-aprilia",
-   "pubblicato": "2026-11-27T14:30:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 31.9,
-   "testate": 3
-  },
-  {
-   "titolo": "Il ritiro di Marquez, le reazioni in DIRETTA: le parole (tra gli altri) di Agostini, Lorenzo e Pernat",
+   "titolo": "Il ritiro di Marquez, le reazioni in DIRETTA: le parole (tra gli altri) di Agostini, Dall’Igna, Tardozzi, Lorenzo e Pernat",
    "estratto": "Tante personalità del mondo del motociclismo hanno commentato il ritiro inaspettato di Marc Marquez",
    "fonte": "FormulaPassion",
    "serie": "MotoGP",
@@ -94,7 +178,7 @@
    "pubblicato": "2026-11-27T14:27:12+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.9,
+   "punteggio": 3.6,
    "testate": 1
   },
   {
@@ -106,7 +190,7 @@
    "pubblicato": "2026-11-27T14:10:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.8,
+   "punteggio": 3.5,
    "testate": 1
   },
   {
@@ -118,7 +202,7 @@
    "pubblicato": "2026-11-27T13:54:38+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.7,
+   "punteggio": 11.5,
    "testate": 1
   },
   {
@@ -130,7 +214,7 @@
    "pubblicato": "2026-11-27T13:41:52+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.7,
+   "punteggio": 3.4,
    "testate": 1
   },
   {
@@ -142,7 +226,7 @@
    "pubblicato": "2026-11-27T13:18:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.6,
+   "punteggio": 3.3,
    "testate": 1
   },
   {
@@ -154,7 +238,7 @@
    "pubblicato": "2026-11-27T13:13:27+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 24.6,
+   "punteggio": 24.3,
    "testate": 3
   },
   {
@@ -166,7 +250,7 @@
    "pubblicato": "2026-11-27T13:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.5,
+   "punteggio": 3.2,
    "testate": 1
   },
   {
@@ -178,7 +262,7 @@
    "pubblicato": "2026-11-27T13:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.5,
+   "punteggio": 13.2,
    "testate": 2
   },
   {
@@ -190,7 +274,7 @@
    "pubblicato": "2026-11-27T12:35:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.4,
+   "punteggio": 1.1,
    "testate": 2
   },
   {
@@ -202,7 +286,7 @@
    "pubblicato": "2026-11-27T12:17:55+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 17.3,
+   "punteggio": 17.1,
    "testate": 3
   },
   {
@@ -214,7 +298,7 @@
    "pubblicato": "2026-11-27T12:15:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 11.3,
+   "punteggio": 11.1,
    "testate": 1
   },
   {
@@ -226,7 +310,7 @@
    "pubblicato": "2026-11-27T12:14:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.3,
+   "punteggio": 8.1,
    "testate": 1
   },
   {
@@ -238,8 +322,8 @@
    "pubblicato": "2026-11-27T11:45:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 36.2,
-   "testate": 3
+   "punteggio": 25.9,
+   "testate": 2
   },
   {
    "titolo": "MotoGP | La Yamaha di Jack Miller a Valencia con la livrea ideata per il GP d'Australia",
@@ -250,7 +334,7 @@
    "pubblicato": "2026-11-27T11:43:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 3.2,
+   "punteggio": 2.9,
    "testate": 1
   },
   {
@@ -262,7 +346,7 @@
    "pubblicato": "2026-11-27T11:35:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 36.2,
+   "punteggio": 35.9,
    "testate": 3
   },
   {
@@ -274,7 +358,7 @@
    "pubblicato": "2026-11-27T11:15:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 28.1,
+   "punteggio": 27.8,
    "testate": 3
   },
   {
@@ -286,7 +370,7 @@
    "pubblicato": "2026-11-27T11:03:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 19.0,
+   "punteggio": 18.8,
    "testate": 3
   },
   {
@@ -298,7 +382,7 @@
    "pubblicato": "2026-11-27T10:52:10+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.0,
+   "punteggio": 30.7,
    "testate": 3
   },
   {
@@ -310,7 +394,7 @@
    "pubblicato": "2026-11-27T10:45:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 31.0,
+   "punteggio": 30.7,
    "testate": 3
   },
   {
@@ -322,7 +406,7 @@
    "pubblicato": "2026-11-27T10:40:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 18.9,
+   "punteggio": 18.7,
    "testate": 3
   },
   {
@@ -334,7 +418,7 @@
    "pubblicato": "2026-11-27T10:38:30+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.9,
+   "punteggio": 2.7,
    "testate": 1
   },
   {
@@ -346,7 +430,7 @@
    "pubblicato": "2026-11-27T10:30:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.9,
+   "punteggio": 7.6,
    "testate": 1
   },
   {
@@ -358,7 +442,7 @@
    "pubblicato": "2026-11-27T10:20:15+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.9,
+   "punteggio": 20.6,
    "testate": 2
   },
   {
@@ -370,7 +454,7 @@
    "pubblicato": "2026-11-27T10:17:32+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 28.8,
+   "punteggio": 28.6,
    "testate": 3
   },
   {
@@ -382,7 +466,7 @@
    "pubblicato": "2026-11-27T10:14:02+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.8,
+   "punteggio": 15.6,
    "testate": 1
   },
   {
@@ -394,7 +478,7 @@
    "pubblicato": "2026-11-27T09:55:21+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.7,
+   "punteggio": 2.5,
    "testate": 1
   },
   {
@@ -406,7 +490,7 @@
    "pubblicato": "2026-11-27T09:53:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.7,
+   "punteggio": 22.5,
    "testate": 3
   },
   {
@@ -418,7 +502,7 @@
    "pubblicato": "2026-11-27T09:52:43+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 22.7,
+   "punteggio": 22.5,
    "testate": 3
   },
   {
@@ -430,7 +514,7 @@
    "pubblicato": "2026-11-27T09:40:07+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.7,
+   "punteggio": 17.4,
    "testate": 2
   },
   {
@@ -442,7 +526,7 @@
    "pubblicato": "2026-11-27T09:32:28+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 25.7,
+   "punteggio": 25.4,
    "testate": 2
   },
   {
@@ -454,7 +538,7 @@
    "pubblicato": "2026-11-27T09:20:33+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.6,
+   "punteggio": 15.3,
    "testate": 1
   },
   {
@@ -466,7 +550,7 @@
    "pubblicato": "2026-11-27T09:18:19+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 45.6,
+   "punteggio": 45.3,
    "testate": 4
   },
   {
@@ -478,7 +562,7 @@
    "pubblicato": "2026-11-27T09:02:47+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 15.5,
+   "punteggio": 15.3,
    "testate": 1
   },
   {
@@ -490,7 +574,7 @@
    "pubblicato": "2026-11-27T09:00:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.5,
+   "punteggio": -9.8,
    "testate": 1
   },
   {
@@ -502,7 +586,7 @@
    "pubblicato": "2026-11-27T08:49:41+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.5,
+   "punteggio": 7.2,
    "testate": 1
   },
   {
@@ -514,7 +598,7 @@
    "pubblicato": "2026-11-27T08:41:47+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.4,
+   "punteggio": 2.2,
    "testate": 1
   },
   {
@@ -526,7 +610,7 @@
    "pubblicato": "2026-11-27T08:40:04+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.4,
+   "punteggio": 7.2,
    "testate": 1
   },
   {
@@ -538,7 +622,7 @@
    "pubblicato": "2026-11-27T08:35:14+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.4,
+   "punteggio": 20.1,
    "testate": 2
   },
   {
@@ -550,7 +634,7 @@
    "pubblicato": "2026-11-27T08:20:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 2.4,
+   "punteggio": 2.1,
    "testate": 1
   },
   {
@@ -562,7 +646,7 @@
    "pubblicato": "2026-11-27T07:58:19+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.3,
+   "punteggio": 7.0,
    "testate": 1
   },
   {
@@ -574,19 +658,7 @@
    "pubblicato": "2026-11-27T07:52:48+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.2,
-   "testate": 1
-  },
-  {
-   "titolo": "Gomme in pericolo e sorpassare diventa complicato",
-   "estratto": "Il rischio di 100% di usura delle gomme ha spinto la Pirelli a prendere delle contromisure che acuiranno le difficoltà di sorpasso",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/qatar-gomme-pericolo-sorpassare-diventa-complicato",
-   "pubblicato": "2026-11-27T07:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 2.0,
+   "punteggio": 7.0,
    "testate": 1
   },
   {
@@ -598,7 +670,19 @@
    "pubblicato": "2026-11-27T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.0,
+   "punteggio": 6.7,
+   "testate": 1
+  },
+  {
+   "titolo": "Gomme in pericolo e sorpassare diventa complicato",
+   "estratto": "Il rischio di 100% di usura delle gomme ha spinto la Pirelli a prendere delle contromisure che acuiranno le difficoltà di sorpasso",
+   "fonte": "FormulaPassion",
+   "serie": "F1",
+   "url": "https://www.formulapassion.it/f1/f1-analisi-tecnica/qatar-gomme-pericolo-sorpassare-diventa-complicato",
+   "pubblicato": "2026-11-27T07:00:00+00:00",
+   "tipo": null,
+   "citazione": false,
+   "punteggio": 1.7,
    "testate": 1
   },
   {
@@ -610,7 +694,7 @@
    "pubblicato": "2026-11-27T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.0,
+   "punteggio": 6.7,
    "testate": 1
   },
   {
@@ -622,7 +706,7 @@
    "pubblicato": "2026-11-27T07:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -5.0,
+   "punteggio": -5.3,
    "testate": 1
   },
   {
@@ -634,7 +718,7 @@
    "pubblicato": "2026-11-27T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.0,
+   "punteggio": -0.3,
    "testate": 2
   },
   {
@@ -646,7 +730,7 @@
    "pubblicato": "2026-11-27T07:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.0,
+   "punteggio": -0.3,
    "testate": 2
   },
   {
@@ -658,7 +742,7 @@
    "pubblicato": "2026-11-27T06:00:01+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.8,
+   "punteggio": 1.5,
    "testate": 1
   },
   {
@@ -670,7 +754,7 @@
    "pubblicato": "2026-11-27T05:51:11+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -0.3,
+   "punteggio": -0.5,
    "testate": 2
   },
   {
@@ -682,7 +766,7 @@
    "pubblicato": "2026-11-27T05:48:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.3,
+   "punteggio": -10.5,
    "testate": 1
   },
   {
@@ -694,7 +778,7 @@
    "pubblicato": "2026-11-27T05:48:36+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.3,
+   "punteggio": -10.5,
    "testate": 1
   },
   {
@@ -706,7 +790,7 @@
    "pubblicato": "2026-11-27T05:48:34+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.7,
+   "punteggio": 9.4,
    "testate": 3
   },
   {
@@ -718,7 +802,7 @@
    "pubblicato": "2026-11-27T05:00:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 9.5,
+   "punteggio": 9.3,
    "testate": 1
   },
   {
@@ -730,7 +814,7 @@
    "pubblicato": "2026-11-26T20:49:00+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 9.5,
+   "punteggio": 9.2,
    "testate": 1
   },
   {
@@ -742,7 +826,7 @@
    "pubblicato": "2026-11-26T20:04:34+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 8.3,
+   "punteggio": 8.0,
    "testate": 1
   },
   {
@@ -754,7 +838,7 @@
    "pubblicato": "2026-11-26T19:07:11+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 11.0,
+   "punteggio": 10.8,
    "testate": 2
   },
   {
@@ -766,7 +850,7 @@
    "pubblicato": "2026-11-26T18:39:52+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.1,
+   "punteggio": -0.3,
    "testate": 1
   },
   {
@@ -778,7 +862,7 @@
    "pubblicato": "2026-11-26T18:32:05+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.9,
+   "punteggio": 7.6,
    "testate": 1
   },
   {
@@ -790,7 +874,7 @@
    "pubblicato": "2026-11-26T18:00:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.8,
+   "punteggio": 7.5,
    "testate": 1
   },
   {
@@ -802,7 +886,7 @@
    "pubblicato": "2026-11-26T17:46:54+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.7,
+   "punteggio": 7.4,
    "testate": 1
   },
   {
@@ -814,7 +898,7 @@
    "pubblicato": "2026-11-26T17:41:29+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.7,
+   "punteggio": 9.4,
    "testate": 2
   },
   {
@@ -826,7 +910,7 @@
    "pubblicato": "2026-11-26T17:27:44+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.6,
+   "punteggio": 7.4,
    "testate": 1
   },
   {
@@ -838,7 +922,7 @@
    "pubblicato": "2026-11-26T17:25:26+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.6,
+   "punteggio": 17.4,
    "testate": 2
   },
   {
@@ -850,7 +934,7 @@
    "pubblicato": "2026-11-26T17:13:58+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.4,
+   "punteggio": -0.7,
    "testate": 1
   },
   {
@@ -862,7 +946,7 @@
    "pubblicato": "2026-11-26T17:09:18+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 0.6,
+   "punteggio": 0.3,
    "testate": 1
   },
   {
@@ -874,7 +958,7 @@
    "pubblicato": "2026-11-26T17:06:38+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 9.5,
+   "punteggio": 9.3,
    "testate": 2
   },
   {
@@ -886,7 +970,7 @@
    "pubblicato": "2026-11-26T16:51:31+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.5,
+   "punteggio": -0.8,
    "testate": 1
   },
   {
@@ -898,7 +982,7 @@
    "pubblicato": "2026-11-26T16:50:49+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.5,
+   "punteggio": -0.8,
    "testate": 1
   },
   {
@@ -910,7 +994,7 @@
    "pubblicato": "2026-11-26T16:33:30+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.4,
+   "punteggio": 17.1,
    "testate": 2
   },
   {
@@ -922,7 +1006,7 @@
    "pubblicato": "2026-11-26T16:29:20+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 19.4,
+   "punteggio": 19.1,
    "testate": 3
   },
   {
@@ -934,7 +1018,7 @@
    "pubblicato": "2026-11-26T16:21:05+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.4,
+   "punteggio": 7.1,
    "testate": 1
   },
   {
@@ -946,7 +1030,7 @@
    "pubblicato": "2026-11-26T16:20:05+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 8.4,
+   "punteggio": 8.1,
    "testate": 1
   },
   {
@@ -958,7 +1042,7 @@
    "pubblicato": "2026-11-26T16:14:47+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 20.3,
+   "punteggio": 20.1,
    "testate": 3
   },
   {
@@ -970,7 +1054,7 @@
    "pubblicato": "2026-11-26T16:08:35+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 10.3,
+   "punteggio": 10.0,
    "testate": 2
   },
   {
@@ -982,7 +1066,7 @@
    "pubblicato": "2026-11-26T16:00:22+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.3,
+   "punteggio": 7.0,
    "testate": 1
   },
   {
@@ -994,7 +1078,7 @@
    "pubblicato": "2026-11-26T15:40:02+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.8,
+   "punteggio": -1.1,
    "testate": 1
   },
   {
@@ -1006,7 +1090,7 @@
    "pubblicato": "2026-11-26T15:37:15+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 0.2,
+   "punteggio": -0.1,
    "testate": 1
   },
   {
@@ -1018,7 +1102,7 @@
    "pubblicato": "2026-11-26T15:34:06+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.2,
+   "punteggio": 6.9,
    "testate": 1
   },
   {
@@ -1030,7 +1114,7 @@
    "pubblicato": "2026-11-26T15:28:11+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -0.9,
+   "punteggio": -1.1,
    "testate": 1
   },
   {
@@ -1042,7 +1126,7 @@
    "pubblicato": "2026-11-26T15:15:44+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.1,
+   "punteggio": 16.8,
    "testate": 2
   },
   {
@@ -1054,7 +1138,7 @@
    "pubblicato": "2026-11-26T15:04:41+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.0,
+   "punteggio": 6.8,
    "testate": 1
   },
   {
@@ -1066,7 +1150,7 @@
    "pubblicato": "2026-11-26T15:02:49+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 0.0,
+   "punteggio": -0.2,
    "testate": 1
   },
   {
@@ -1078,8 +1162,8 @@
    "pubblicato": "2026-11-26T15:02:48+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 12.0,
-   "testate": 2
+   "punteggio": 1.8,
+   "testate": 1
   },
   {
    "titolo": "F1, George Russell: “Le dichiarazioni di Verstappen a Las Vegas mi hanno fatto ridere”",
@@ -1090,7 +1174,7 @@
    "pubblicato": "2026-11-26T14:57:21+00:00",
    "tipo": "intervista",
    "citazione": true,
-   "punteggio": 20.0,
+   "punteggio": 19.7,
    "testate": 3
   },
   {
@@ -1102,7 +1186,7 @@
    "pubblicato": "2026-11-26T14:45:36+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 7.0,
+   "punteggio": 6.7,
    "testate": 1
   },
   {
@@ -1114,20 +1198,8 @@
    "pubblicato": "2026-11-26T14:38:25+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": -1.1,
+   "punteggio": -1.3,
    "testate": 1
-  },
-  {
-   "titolo": "Valencia: rimosso il murale dedicato a Valentino Rossi",
-   "estratto": "Al suo posto vi sarà un maxischermo che continuerà a rendere omaggio alla carriera del 'Dottore', ma anche a quella di altri piloti come Marc Marquez",
-   "fonte": "FormulaPassion",
-   "serie": "MotoGP",
-   "url": "https://www.formulapassion.it/motogp/motogp-news/valencia-rimosso-murale-dedicato-a-valentino-rossi",
-   "pubblicato": "2026-11-26T14:35:32+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 11.9,
-   "testate": 2
   },
   {
    "titolo": "F1, arriva la fumata bianca tra Oliver Bearman e la Haas per il 2027: la griglia adesso è completa",
@@ -1138,8 +1210,8 @@
    "pubblicato": "2026-11-26T14:20:50+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.9,
-   "testate": 3
+   "punteggio": 3.6,
+   "testate": 2
   },
   {
    "titolo": "MotoGP | Marquez: \"Come compagno di squadra, Bagnaia è un vero gentiluomo\"",
@@ -1150,7 +1222,7 @@
    "pubblicato": "2026-11-26T14:16:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 16.8,
+   "punteggio": 16.6,
    "testate": 2
   },
   {
@@ -1162,7 +1234,7 @@
    "pubblicato": "2026-11-26T14:00:33+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.2,
+   "punteggio": -6.5,
    "testate": 1
   },
   {
@@ -1174,7 +1246,7 @@
    "pubblicato": "2026-11-26T14:00:14+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.8,
+   "punteggio": 6.5,
    "testate": 1
   },
   {
@@ -1186,20 +1258,8 @@
    "pubblicato": "2026-11-26T13:50:28+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 13.7,
+   "punteggio": 13.5,
    "testate": 3
-  },
-  {
-   "titolo": "Moto3, a Valencia si chiude la stagione. Quiles vuole nuovi record, l’Italia spera in Pini",
-   "estratto": "E così, siamo giunti al capitolo conclusivo della stagione. Stiamo parlando del fine settimana del Gran Premio della Comunitat Valenciana, ventiduesimo ed ultimo appuntamento del Mondiale di Moto 3…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/moto3-4/",
-   "pubblicato": "2026-11-26T13:00:36+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -6.5,
-   "testate": 1
   },
   {
    "titolo": "Ferrari: in Qatar l’ultima vera chance",
@@ -1210,7 +1270,7 @@
    "pubblicato": "2026-11-26T13:00:00+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 1.5,
+   "punteggio": 1.2,
    "testate": 1
   },
   {
@@ -1222,7 +1282,7 @@
    "pubblicato": "2026-11-26T11:45:59+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -6.8,
+   "punteggio": -7.1,
    "testate": 1
   },
   {
@@ -1234,7 +1294,7 @@
    "pubblicato": "2026-11-26T11:23:57+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 6.1,
+   "punteggio": 5.8,
    "testate": 1
   },
   {
@@ -1246,7 +1306,7 @@
    "pubblicato": "2026-11-26T10:30:06+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.1,
+   "punteggio": -7.4,
    "testate": 1
   },
   {
@@ -1258,20 +1318,8 @@
    "pubblicato": "2026-11-26T10:20:05+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.9,
+   "punteggio": 0.6,
    "testate": 1
-  },
-  {
-   "titolo": "MotoGP, GP Valencia 2026. Scontro finale tra Aprilia e Ducati. Marquez, da solo, non può bastare. Match point per Noale",
-   "estratto": "Il Gran Premio di Valencia porrà fine alla stagione 2026 della MotoGP. Domenica 29 novembre assisteremo alla festa finale di Marc Marquez e capiremo, se, festeggerà assieme alla Ducati la conquista…",
-   "fonte": "OA Sport",
-   "serie": "MotoGP",
-   "url": "https://www.oasport.it/2026/11/motogp-gp-valencia-2026-scontro-finale-tra-aprilia-e-ducati-marquez-da-solo-non-puo-bastare-match-point-per-noale/",
-   "pubblicato": "2026-11-26T10:00:51+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 20.8,
-   "testate": 3
   },
   {
    "titolo": "MotoGP | Aprilia: Martin e Bezzecchi pronti per l'ultima sfida dopo aver costruito un rapporto inatteso",
@@ -1282,8 +1330,8 @@
    "pubblicato": "2026-11-26T09:46:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 0.7,
-   "testate": 1
+   "punteggio": 10.4,
+   "testate": 2
   },
   {
    "titolo": "F1 | Haas, il \"caso\" Bearman ha un lieto fine: ufficiale il rinnovo anche per il 2027",
@@ -1294,8 +1342,8 @@
    "pubblicato": "2026-11-26T09:21:51+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 17.6,
-   "testate": 3
+   "punteggio": 7.3,
+   "testate": 2
   },
   {
    "titolo": "F1, GP Qatar 2026. Il riscatto della Ferrari e di George Russell sono i temi forti del finale di stagione",
@@ -1306,20 +1354,8 @@
    "pubblicato": "2026-11-26T09:00:52+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 10.5,
+   "punteggio": 10.3,
    "testate": 2
-  },
-  {
-   "titolo": "Ufficiale: Bearman rinnova con la Haas per il 2027",
-   "estratto": "Il pilota inglese per il terzo anno consecutivo sarà portacolori della Haas",
-   "fonte": "FormulaPassion",
-   "serie": "F1",
-   "url": "https://www.formulapassion.it/f1/f1-news/lamentele-bearman-segno-ufficiale-rinnovo-haas-2027-contratti-ferrari-hamilton-leclerc",
-   "pubblicato": "2026-11-26T09:00:00+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": 12.5,
-   "testate": 3
   },
   {
    "titolo": "MotoGP | Mir ha il via libera dei medici e vola a Valencia per la sua ultima gara in Honda e i test con Ducati",
@@ -1330,7 +1366,7 @@
    "pubblicato": "2026-11-26T08:25:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": 20.4,
+   "punteggio": 20.1,
    "testate": 3
   },
   {
@@ -1342,7 +1378,7 @@
    "pubblicato": "2026-11-26T08:01:57+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -7.7,
+   "punteggio": -8.0,
    "testate": 1
   },
   {
@@ -1354,7 +1390,7 @@
    "pubblicato": "2026-11-26T07:30:16+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -9.9,
+   "punteggio": -10.1,
    "testate": 2
   },
   {
@@ -1366,7 +1402,7 @@
    "pubblicato": "2026-11-26T05:30:00+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 4.6,
+   "punteggio": 4.4,
    "testate": 1
   },
   {
@@ -1378,7 +1414,7 @@
    "pubblicato": "2026-11-26T04:05:51+00:00",
    "tipo": null,
    "citazione": false,
-   "punteggio": -10.7,
+   "punteggio": -11.0,
    "testate": 2
   },
   {
@@ -1390,7 +1426,7 @@
    "pubblicato": "2026-11-25T22:24:16+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 2.9,
+   "punteggio": 2.6,
    "testate": 1
   },
   {
@@ -1402,44 +1438,8 @@
    "pubblicato": "2026-11-25T21:31:37+00:00",
    "tipo": "dichiarazione",
    "citazione": true,
-   "punteggio": 22.6,
+   "punteggio": 22.4,
    "testate": 3
-  },
-  {
-   "titolo": "F1 | La sfida nascosta di Qatar e Abu Dhabi: così la crisi geopolitica ha complicato la logistica dei team",
-   "estratto": "Dopo mesi di incertezze, alla fine la Formula 1 si recherà in Medio Oriente per le ultime due tappe della stagione, correndo sia in Qatar che ad Abu Dhabi. Una conferma che va ben oltre la semplice…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-la-sfida-nascosta-di-qatar-e-abu-dhabi-cosi-la-crisi-geopolitica-ha-complicato-la-logistica-dei-/10877525/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-25T17:55:52+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -11.2,
-   "testate": 1
-  },
-  {
-   "titolo": "F1 | Honda riparte dalle basi: la struttura della batteria sarà ridisegnata per il 2027",
-   "estratto": "Honda deve fare un concreto passo avanti su tre fronti per il 2027: potenza della Power Unit, guidabilità e, soprattutto, affidabilità, tanto che per il prossimo anno sarà rivista la struttura…",
-   "fonte": "Motorsport.com",
-   "serie": "F1",
-   "url": "https://it.motorsport.com/f1/news/f1-honda-riparte-dalle-fondamenta-per-il-2027-la-struttura-della-batteria-sara-ridisegnata-/10877494/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=it",
-   "pubblicato": "2026-11-25T17:30:23+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -11.4,
-   "testate": 1
-  },
-  {
-   "titolo": "Gp in Ruanda, dopo il danno la beffa: 3 anni per il nosocomio che rimpiazzi l'ospedale di Berlendis",
-   "estratto": "Il circuito di F1 sorgerà nell'area dove l'alpino bergamasco ha costruito il centro sanitario che sarà smantellato entro il 31 dicembre. Le rassicurazioni di Kigali sulla nuova struttura per ora sono…",
-   "fonte": "Tuttosport",
-   "serie": "F1",
-   "url": "https://www.tuttosport.com/news/formula-1/2026/11/25-152833627/gp_in_ruanda_dopo_il_danno_la_beffa_3_anni_per_il_nosocomio_che_rimpiazzi_l_ospedale_di_berlendis/",
-   "pubblicato": "2026-11-25T17:20:40+00:00",
-   "tipo": null,
-   "citazione": false,
-   "punteggio": -11.4,
-   "testate": 1
   }
  ]
 }

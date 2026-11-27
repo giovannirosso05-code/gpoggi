@@ -198,29 +198,43 @@ def rallenta(velocita):
     return f"{round((1 + pct / 100) * RALLENTA * 100 - 100):+d}%"
 
 
+_AZURE_KO = 0   # rifiuti di Azure in questo run
+
+
 async def voce(testo, velocita, uscita, grido=False):
     """Scrive l'audio e restituisce [(parola, inizio, fine)] in secondi.
     Con grido=True la voce è la stessa di sempre (stesso tono) ma molto più forte e più veloce, come un urlo di esultanza.
     Se la voce Microsoft (edge-tts) rifiuta la connessione, si usa la voce di riserva Piper."""
     parole, audio = [], b""
     velocita = rallenta(velocita)
-    if os.environ.get("AZURE_SPEECH_KEY") and os.environ.get("AZURE_SPEECH_REGION"):
+    global _AZURE_KO
+    if os.environ.get("AZURE_SPEECH_KEY") and os.environ.get("AZURE_SPEECH_REGION") and _AZURE_KO < 2:
         try:
             parole = voce_azure(testo, velocita, uscita, grido)
             if parole:
                 return _dopo_grido(uscita, grido, parole)
         except Exception as e:
+            _AZURE_KO += 1   # dopo due rifiuti di fila non si riprova più in questo run: ogni tentativo fa solo perdere tempo
             print("Azure non risponde (%s): provo le altre voci" % str(e)[:80], flush=True)
     extra = dict(rate="+55%", volume="+100%") if grido else dict(rate=velocita)
     try:
-        c = edge_tts.Communicate(testo, VOCE, boundary="WordBoundary", **extra)
-        async for ch in c.stream():
-            if ch["type"] == "audio":
-                audio += ch["data"]
-            elif ch["type"] == "WordBoundary":
-                parole.append((ch["text"], ch["offset"] / 1e7, (ch["offset"] + ch["duration"]) / 1e7))
-        if not audio:
-            raise RuntimeError("nessun audio")
+        for tentativo in range(3):   # Microsoft a volte non risponde al primo colpo: si riprova prima di passare alla voce di riserva
+            audio, parole = b"", []
+            try:
+                c = edge_tts.Communicate(testo, VOCE, boundary="WordBoundary", **extra)
+                async for ch in c.stream():
+                    if ch["type"] == "audio":
+                        audio += ch["data"]
+                    elif ch["type"] == "WordBoundary":
+                        parole.append((ch["text"], ch["offset"] / 1e7, (ch["offset"] + ch["duration"]) / 1e7))
+                if not audio:
+                    raise RuntimeError("nessun audio")
+                break
+            except Exception as e:
+                if tentativo == 2:
+                    raise
+                print("edge-tts, nuovo tentativo (%s)" % str(e)[:60], flush=True)
+                await asyncio.sleep(3 * (tentativo + 1))
         Path(uscita).write_bytes(audio)
     except Exception as e:
         print("edge-tts non risponde (%s): voce di riserva" % str(e)[:80], flush=True)

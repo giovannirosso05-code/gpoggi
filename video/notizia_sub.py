@@ -25,7 +25,7 @@ QUI = Path(__file__).parent; SITO = QUI.parent / "docs"; DATA = SITO / "data"; F
 W, H = 1080, 1920
 # Lingua del video: GPOGGI_LINGUA=en per la versione inglese (secondo account). Stesse grafiche, voce e scritte fisse in inglese.
 EN = os.environ.get("GPOGGI_LINGUA", "it") == "en"
-VOCE = "en-US-GuyNeural" if EN else "it-IT-DiegoNeural"
+VOCE = os.environ.get("VOCE_TTS") or ("en-US-GuyNeural" if EN else "it-IT-DiegoNeural")   # VOCE_TTS: prova di altre voci Microsoft (es. it-IT-GiuseppeMultilingualNeural)
 LANG = "en-US" if EN else "it-IT"
 T = ({"foto": "Photo", "fonte": "Source", "commenti": "Tell us in the comments", "segui": "*Follow* for more content like this.",
       "avviso": "Unofficial site, not affiliated with Formula 1, the FIA, MotoGP, Dorna or any team. Any grades are just for fun, no offence meant."} if EN else

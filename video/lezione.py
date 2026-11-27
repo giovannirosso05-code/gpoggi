@@ -28,8 +28,8 @@ SPAZIO = 0.35        # pausa tra le battute (s)
 SPAZIO_SLIDE = 0.9   # pausa a fine schermata
 SPAZIO_ARG = 1.4     # pausa dopo la chiusura di un argomento
 if CORSO == "cg":   # ritmo da professore: chi ascolta prende appunti (voce un po' più lenta, pause lunghe tra i punti e tra le slide)
-    VELOCITA = "-3%"
-    SPAZIO, SPAZIO_SLIDE, SPAZIO_ARG = 1.1, 2.6, 3.2
+    VELOCITA = "+16%"   # 20% più veloce di prima (era -3%), richiesta del 27 novembre 2026
+    SPAZIO, SPAZIO_SLIDE, SPAZIO_ARG = 0.9, 2.2, 2.7   # pause ridotte nella stessa misura
 
 # ---------------------------------------------------------------- testo parlato
 ABBR = [
@@ -87,15 +87,23 @@ def pagine(sl, per_pagina=None):
     if CORSO == "cg":   # slide chiare con riquadri a tutta larghezza: più testo per schermata, meno schermate con una sola riga
         per = per_pagina or {"lista": 4, "flusso": 4, "mappa": 6, "tabella": 6, "ricorda": 5}[sl["tipo"]]
         budget = {"lista": 800, "flusso": 700, "mappa": 640, "tabella": 1500, "ricorda": 800}[sl["tipo"]]
-    out, cur, n, ch = [], [], 0, 0
-    for v, p in sl["beats"]:
-        if v is not None:
-            L = len(v.replace("**", ""))
-            if n and (n >= per or ch + L > budget):
-                out.append(cur); cur, n, ch = [], 0, 0
-            n += 1; ch += L
-        cur.append((v, p))
-    out.append(cur)
+    def spezza(per):
+        out, cur, n, ch = [], [], 0, 0
+        for v, p in sl["beats"]:
+            if v is not None:
+                L = len(v.replace("**", ""))
+                if n and (n >= per or ch + L > budget):
+                    out.append(cur); cur, n, ch = [], 0, 0
+                n += 1; ch += L
+            cur.append((v, p))
+        out.append(cur)
+        return out
+    out = spezza(per)
+    if CORSO == "cg" and len(out) > 1:   # pagine bilanciate (5 voci = 3 + 2, non 4 + 1)
+        voci = sum(1 for v, _ in sl["beats"] if v is not None)
+        eq = spezza(-(-voci // len(out)))
+        if len(eq) <= len(out):
+            out = eq
     tot = len(out)
     return [dict(sl, beats=b, titolo=sl["titolo"] if tot == 1 else f"{sl['titolo']} ({i + 1}/{tot})") for i, b in enumerate(out)]
 

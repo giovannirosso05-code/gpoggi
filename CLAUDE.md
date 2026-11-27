@@ -93,3 +93,9 @@ Decise con il proprietario del canale (TikTok @gp.oggi, sito gpoggi.it). Valgono
 - Prima della copertina e del video, su Telegram arriva un foglio con tutte le foto usate, una per scena, col titolo ESPN o il nome del pilota: si controlla prima di postare.
 - Articolo corto o illeggibile: non si rinuncia. Si allunga con l'estratto del feed e con le altre testate che parlano della stessa storia (almeno 2 parole significative del titolo in comune). Solo se, anche così, restano meno di 350 caratteri il video non si fa.
 - Nessuna foto ESPN che parli della notizia: si usa la foto dell'articolo stesso (og:image della pagina, credito alla testata) e, per le foto, solo gli articoli di altre testate che condividono almeno 3 parole del titolo; alternata al ritratto del pilota più nominato. Il foglio di controllo su Telegram dice sempre da dove viene ogni foto.
+
+## Video lezioni universitarie (`video/lezione.py`, corso `cg`)
+- Un video per capitolo (workflow «Video lezione», input `corso` e `solo`), slide chiare (bianco, viola, giallo).
+- Lezioni articolate: oltre alla teoria, esempi svolti con i numeri, come si commenta il risultato all'esame, errori tipici (richiesta del 27 novembre 2026).
+- Velocità: voce `+16%` e pause ridotte (20% più veloci della prima versione).
+- Gli appunti non ripetono il parlato della lezione: sono un riassunto che rende l'idea (definizioni, formule, schemi), fondo bianco, stile classico. Le mappe concettuali idem.

@@ -84,6 +84,16 @@ SCHERMATE = [
         ("**Degli obiettivi**|feed-forward|revisione delle previsioni o nuove previsioni",
          """Aggiustamento degli obiettivi: è un feed-forward, cioè si cambia l'obiettivo stesso, perché con le nuove informazioni la previsione era sbagliata."""),
     ], colonne=["Cosa correggo", "Tipo", "Effetto"]),
+    S("tabella", "Esempio: feed-back e feed-forward in una linea di traghetti", [
+        ("**La situazione**|a giugno il carburante consumato è il 10% sopra il budget|serve capire perché",
+         """Facciamo un esempio concreto. Una compagnia di traghetti, a giugno, scopre che il carburante consumato è il 10 per cento sopra il budget. Prima di correggere, bisogna capire la causa."""),
+        ("**Causa interna**|le navi viaggiano più veloci del previsto|**feed-back**: si corregge l'azione, si riduce la velocità",
+         """Se la causa è interna, per esempio le navi viaggiano più veloci del previsto per recuperare ritardi, si corregge l'azione: si riporta la velocità al valore programmato. È un feed-back: l'obiettivo resta valido, è il comportamento che si era spostato."""),
+        ("**Causa esterna**|il prezzo del carburante è salito in modo stabile|**feed-forward**: si rivedono previsioni e obiettivi",
+         """Se invece il prezzo del carburante è salito e resterà alto, inseguire il vecchio budget non ha senso. Si rivedono le previsioni e gli obiettivi per il resto dell'anno: è un feed-forward."""),
+        ("**La lezione**|prima la causa, poi il tipo di aggiustamento|il controllo non cerca colpevoli",
+         """La lezione è questa: prima si cerca la causa, poi si sceglie il tipo di aggiustamento. Il controllo non serve a cercare colpevoli, serve a riportare l'azienda sulla strada giusta."""),
+    ], colonne=["Passo", "Cosa succede", "Risposta"]),
     S("lista", "Misurazione e reporting", [
         ("**Misurare**|attribuire un valore a un fenomeno difficile da misurare",
          """La misurazione serve ad attribuire un valore a un fenomeno difficile da misurare. Può essere di natura economico-finanziaria oppure fisico-tecnica, e serve a supportare le decisioni, i comportamenti delle persone e la valutazione dei risultati."""),
@@ -104,6 +114,16 @@ SCHERMATE = [
         ("Reporting **multidimensionale**|i fattori chiave resi misurabili da un sistema di indicatori",
          """I sistemi di reporting multidimensionali sono quelli che rendono misurabili i fattori chiave con un insieme di indicatori di prestazione."""),
     ]),
+    S("tabella", "Esempio: dai fattori critici ai KPI in un terminal container", [
+        ("**Rapidità**|il cliente vuole la nave in porto il meno possibile|tempo medio di sosta della nave, movimenti per ora delle gru",
+         """Vediamo come si passa dai fattori critici di successo agli indicatori, in un terminal container. Primo fattore: la rapidità. Il cliente, la compagnia di navigazione, vuole che la nave resti in porto il meno possibile. Indicatori: tempo medio di sosta della nave e movimenti per ora delle gru."""),
+        ("**Rotazione dei container**|un container fermo occupa piazzale|**dwell time** medio dei container",
+         """Secondo fattore: la rotazione dei container nel piazzale. Un container fermo occupa spazio che potrebbe servire ad altri. Indicatore: il dwell time, cioè il tempo medio di permanenza del container nel terminal."""),
+        ("**Affidabilità**|rispettare le finestre concordate|percentuale di navi lavorate nella finestra prevista",
+         """Terzo fattore: l'affidabilità. Indicatore: la percentuale di navi lavorate nella finestra di tempo concordata."""),
+        ("**Costo**|restare competitivi|costo per container movimentato",
+         """Quarto fattore: il costo. Indicatore: costo per container movimentato. Notate che solo l'ultimo è un indicatore monetario: gli altri sono quantitativi non monetari, ed è proprio questo il senso del reporting multidimensionale."""),
+    ], colonne=["Fattore critico", "Perché conta", "KPI"]),
     S("lista", "Struttura organizzativa e ruolo del controller", [
         ("**Organigramma**|diagramma gerarchico e funzionale: facile da leggere",
          """La struttura organizzativa si rappresenta con l'organigramma, un diagramma gerarchico e funzionale facile da leggere. Il controllo di gestione è in staff al direttore generale, mentre i responsabili messi sullo stesso livello hanno gli stessi poteri."""),

@@ -32,6 +32,14 @@ SCHERMATE = [
         ("A cosa serve|supporto al budget, decisioni operative, **simulare** l'effetto di prezzi, costi e volumi",
          """L'analisi serve come supporto al budget e alle decisioni operative, e per simulare l'effetto sul reddito di prezzi, costi e volumi. Questo modello vale per un solo prodotto o servizio."""),
     ]),
+    S("tabella", "Esempio svolto: pareggio e reddito obiettivo", [
+        ("**Dati**|costi fissi 90.000 · prezzo 50 · costo variabile 20|margine unitario 30",
+         """Facciamo un esempio. Costi fissi 90.000 euro, prezzo di un servizio 50 euro, costo variabile 20. Il margine di contribuzione unitario è 50 meno 20: 30 euro."""),
+        ("**Pareggio**|90.000 / 30|**3.000 servizi**",
+         """Il punto di pareggio è 90.000 diviso 30: 3.000 servizi. Sotto i 3.000 l'azienda perde, sopra guadagna. Verifica: 3.000 per 50 fa 150.000 di ricavi; i costi sono 90.000 più 3.000 per 20, cioè 60.000. Totale 150.000: pareggio."""),
+        ("**Reddito obiettivo 30.000**|(90.000 + 30.000) / 30|**4.000 servizi**",
+         """E se vogliamo un reddito di 30.000? Si somma il reddito ai costi fissi e si divide sempre per il margine unitario: 120.000 diviso 30, 4.000 servizi."""),
+    ], colonne=["Passo", "Calcolo", "Risultato"]),
     S("lista", "Il margine di contribuzione", [
         ("**mc = p − cv**|margine unitario: quanto ogni servizio venduto contribuisce a coprire i costi fissi",
          """Il margine di contribuzione unitario è prezzo meno costo variabile unitario. Ti dice quanto la vendita di ogni servizio contribuisce a coprire i costi fissi. Più è alto, più ogni servizio venduto contribuisce."""),
@@ -100,4 +108,14 @@ SCHERMATE = [
         ("**Grado di leva operativa**|margine di contribuzione totale / reddito operativo",
          """Il grado di leva operativa misura la leva in un punto preciso: è il margine di contribuzione totale diviso il reddito operativo."""),
     ]),
+    S("tabella", "Esempio svolto: sicurezza e leva operativa", [
+        ("**Margine di sicurezza**|quantità prevista 4.000 · pareggio 3.000|(4.000 − 3.000) / 4.000 = **25%**",
+         """Riprendiamo l'esempio: pareggio a 3.000 servizi, ne prevediamo 4.000. Il margine di sicurezza è 1.000 diviso 4.000: il 25 per cento. L'attività può calare di un quarto prima di andare in perdita."""),
+        ("**Grado di leva operativa**|margine totale 4.000 × 30 = 120.000 · reddito operativo 30.000|120.000 / 30.000 = **4**",
+         """Con 4.000 servizi il margine di contribuzione totale è 120.000 e il reddito operativo, tolti i fissi, è 30.000. Il grado di leva operativa è 120.000 diviso 30.000: 4."""),
+        ("**Cosa vuol dire**|ricavi +10% → reddito operativo circa +40%|e vale anche in discesa",
+         """Vuol dire che se i ricavi salgono del 10 per cento, il reddito operativo sale di circa il 40. Ma vale anche al contrario: un calo del 10 per cento dei ricavi taglia il reddito di circa il 40. Più i costi fissi pesano, più la leva è alta: ecco perché nel trasporto navale anche piccoli cali di traffico fanno male."""),
+        ("**Il legame**|grado di leva = 1 / margine di sicurezza|1 / 0,25 = 4",
+         """Un collegamento utile per l'esame: il grado di leva operativa è l'inverso del margine di sicurezza. Uno diviso 0,25 fa proprio 4. Vicino al pareggio, la leva esplode."""),
+    ], colonne=["Grandezza", "Calcolo", "Risultato"]),
 ]

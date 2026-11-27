@@ -48,6 +48,14 @@ SCHERMATE = [
         ("**Portata**|Lorda e netta|Lorda: differenza tra dislocamento a pieno carico e dislocamento leggero. Netta: misura il carico effettivo che può essere imbarcato",
          """Terza misura: la portata, in inglese deadweight, cioè la capacità di carico. La portata lorda è la differenza tra il dislocamento a pieno carico e il dislocamento della nave vuota: la somma dei pesi di tutto ciò che si può caricare a bordo. La portata netta misura il carico effettivo che si può imbarcare."""),
     ], colonne=["Misura", "Tipi", "Definizione"]),
+    S("tabella", "Esempio svolto: dalle misure ai numeri", [
+        ("**Portata lorda**|dislocamento a pieno carico 120.000 t − leggero 20.000 t|**100.000 t**",
+         """Facciamo un esempio. Una nave a pieno carico pesa 120.000 tonnellate, scarica ma armata 20.000. La portata lorda è la differenza: 100.000 tonnellate."""),
+        ("**Portata netta**|100.000 t − carburante, acqua, provviste, equipaggio (es. 4.000 t)|**96.000 t** di carico",
+         """Da queste 100.000 si tolgono carburante, acqua, provviste ed equipaggio, diciamo 4.000 tonnellate per quel viaggio. La portata netta è 96.000: è il carico che possiamo vendere. Su una rotta più lunga serve più carburante, e la portata netta scende."""),
+        ("**Stazza lorda**|volume chiuso 283.200 m³ / 2,832|**100.000 tonnellate di stazza**",
+         """La stazza invece è un volume. Se gli spazi chiusi misurano 283.200 metri cubi, si divide per 2,832, e si ottengono 100.000 tonnellate di stazza. Stesso numero per caso: una è un peso, l'altra un volume, e non vanno mai confuse."""),
+    ], colonne=["Misura", "Calcolo", "Risultato"]),
     S("lista", "Perché queste misure contano", [
         ("**Tasse**|alcuni Stati calcolano le tasse e l'accesso al porto in base alla **stazza**, non al reddito",
          """Perché servono? Alcuni Stati applicano le tasse in base alla stazza e non al reddito, e lo stesso vale per l'accesso al porto di alcuni Stati."""),
@@ -57,5 +65,13 @@ SCHERMATE = [
          """La portata netta varia in base al viaggio, mentre quella lorda resta invariata. Per questo, nel nostro corso, la portata rilevante è quella netta."""),
         ("**Economie di scala**|oggi la nave più efficiente stimata è da **18.000 TEU**; le crociere crescono; le tanker arrivano a circa 441.585 tonnellate di portata",
          """Un'ultima nota sulle dimensioni. Le stime, confermate dagli ordini di navi, indicano che la nave più efficiente nelle economie di scala è quella da diciottomila TEU, cioè contenitori da venti piedi. Le navi da crociera tendono a crescere. Le tanker si aggirano sulle quattrocentoquarantunomila tonnellate di portata, costruite nel duemiladue e duemilatre."""),
+    ]),
+    S("ricorda", "Collegare la nave ai conti", [
+        ("La nave è il **capitale fisso**|pesa sull'attivo e sugli ammortamenti",
+         """Chiudiamo collegando la nave ai capitoli precedenti. La nave è il grosso del capitale fisso: pesa sull'attivo, sugli ammortamenti e quindi sul punto di pareggio."""),
+        ("**25 anni** di vita utile|base per l'ammortamento, ma il valore di mercato può salire",
+         """La vita utile di circa 25 anni è la base per l'ammortamento. Ma il valore di mercato può salire, come abbiamo visto con l'asset play: il valore contabile e quello di mercato possono andare in direzioni diverse."""),
+        ("La **portata netta**|è il limite dei ricavi di ogni viaggio",
+         """La portata netta è il tetto dei ricavi di ogni viaggio, perché il nolo si calcola sulle tonnellate. Ed è proprio da qui che parte il prossimo capitolo, sul nolo."""),
     ]),
 ]

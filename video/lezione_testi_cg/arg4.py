@@ -64,6 +64,14 @@ SCHERMATE = [
         ("I **ricavi**|somma di prezzo per quantità; legati alla domanda, difficili da modificare",
          """Dal lato dei ricavi, ricorda che sono la somma di prezzo per quantità, e nei trasporti sono legati alla domanda, quindi difficili da cambiare. Per esempio la pubblicità può far crescere la domanda, ma è a sua volta un costo: va bilanciata."""),
     ]),
+    S("tabella", "Esempio svolto: stesso ROI, due strade", [
+        ("**Azienda A**|ROS 2% · V/K 5|ROI = 0,02 × 5 = **10%**",
+         """Vediamolo con i numeri. L'azienda A guadagna poco su ogni euro venduto, il 2 per cento, ma fa girare il capitale cinque volte l'anno. Il ROI è 0,02 per 5: il 10 per cento. È il modello della grande distribuzione."""),
+        ("**Azienda B**|ROS 20% · V/K 0,5|ROI = 0,20 × 0,5 = **10%**",
+         """L'azienda B guadagna molto su ogni euro venduto, il 20 per cento, ma il capitale gira solo mezza volta l'anno. Il ROI è 0,20 per 0,5: ancora il 10 per cento. È il modello tipico delle imprese di trasporto, con navi e mezzi che costano moltissimo."""),
+        ("**Cosa cambia**|A lavora sui volumi|B lavora sui margini e sull'uso del capitale",
+         """Stesso ROI, strategie opposte. A deve difendere i volumi. B deve difendere i margini e usare meglio il capitale, per esempio tenendo le navi sempre in servizio, perché una nave ferma abbassa la rotazione."""),
+    ], colonne=["Caso", "Componenti", "ROI"]),
     S("lista", "ROS e velocità di circolazione", [
         ("**ROS = Ro / V**|un reddito medio per ogni unità di ricavo; se scende, scende il risultato operativo",
          """Il ROS esprime il reddito medio per ogni unità di ricavo. Va tenuto sotto controllo: se scende, scende il risultato operativo. Siccome Ro è vendite meno costi caratteristici, un ROS positivo dice quanta parte dei ricavi resta dopo aver coperto tutti i costi."""),
@@ -120,6 +128,24 @@ SCHERMATE = [
         ("Il finanziamento è un'arma a doppio taglio|può far salire il rendimento, ma anche portare l'azienda a rischio",
          """Il finanziamento è un'azione fondamentale: può aumentare il rendimento ma può anche portare l'azienda in una situazione di rischio. Negli appunti c'è anche il caso dell'indifferenza economica: l'azionista, prima di cedere le azioni, chiede un aumento della remunerazione, e una cessione massiccia fa scendere il valore delle azioni."""),
     ]),
+    S("tabella", "Esempio svolto: la formula inversa", [
+        ("**Obiettivo**|ROE 24% · ROI 20% · i 10% · t 40%|che rapporto debiti / N serve?",
+         """Proviamo la formula inversa con gli stessi dati di prima. Il ROI resta al 20 per cento, il costo del debito al 10, l'aliquota al 40. Ma ora vogliamo un ROE del 24 per cento. Quanto dobbiamo indebitarci?"""),
+        ("**Passo 1**|ROE / (1 − t) = 0,24 / 0,6|0,40",
+         """Primo passo: si toglie l'effetto delle imposte. 0,24 diviso 0,6 fa 0,40. È il ROE che serve prima delle imposte."""),
+        ("**Passo 2**|0,40 − ROI = 0,40 − 0,20|0,20",
+         """Secondo passo: si toglie il ROI. 0,40 meno 0,20 fa 0,20. È la parte che deve arrivare dalla leva."""),
+        ("**Passo 3**|0,20 / (ROI − i) = 0,20 / 0,10|**2**",
+         """Terzo passo: si divide per lo spread, cioè ROI meno i, 0,10. Risultato: 2. Per ogni euro di capitale proprio servono due euro di debiti. Prima il rapporto era 1,2: per salire dal 19,2 al 24 per cento bisogna quasi raddoppiare il peso dei debiti, e con esso il rischio."""),
+    ], colonne=["Passo", "Calcolo", "Risultato"]),
+    S("ricorda", "Errori tipici sulla leva", [
+        ("Dimenticare **(1 − t)**|il ROE è netto: le imposte vanno tolte",
+         """L'errore più comune è dimenticare il fattore uno meno t. Il ROE è una redditività netta, quindi le imposte vanno tolte."""),
+        ("Mettere i **fondi** nei debiti onerosi|abbassano i e falsano la leva",
+         """Secondo errore: mettere i fondi tra i debiti onerosi quando si calcola i. I fondi non pagano interessi: abbassano il costo medio del debito e fanno sembrare la leva più conveniente di quanto sia."""),
+        ("Dire che indebitarsi conviene **sempre**|solo se ROI > i, e solo finché dura",
+         """Terzo errore: scrivere che indebitarsi conviene sempre. Conviene solo se il ROI supera il costo del debito, e solo finché questa condizione dura. Se i tassi salgono o il ROI scende, la stessa leva lavora contro."""),
+    ]),
     S("lista", "Indicatori di sviluppo", [
         ("**Sviluppo**|capire se l'azienda sta crescendo o si sta restringendo, e perché",
          """Passiamo all'analisi di sviluppo. Gli indicatori di sviluppo servono a capire se l'azienda cresce o si contrae, e per quali motivi. Il concetto di sviluppo è legato alla dimensione, non fisica, ma delle grandezze aziendali."""),
@@ -144,4 +170,12 @@ SCHERMATE = [
         ("Il legame con la redditività|se la produttività migliora, **a parità di condizioni** dovrebbe migliorare anche il reddito",
          """Il motivo per cui si studia la produttività è che, a parità di condizioni, un miglioramento della produttività dovrebbe riflettersi sulla redditività e spingere l'azienda verso l'economicità. Anche qui servono confronti nel tempo o nello spazio."""),
     ]),
+    S("tabella", "Esempio svolto: sviluppo e produttività", [
+        ("**Valore della produzione**|anno 1: 1.000 · anno 2: 1.100|sviluppo **+10%**",
+         """Un esempio per gli indicatori di sviluppo. Il valore della produzione passa da 1.000 a 1.100. La variazione è 100 su 1.000: più 10 per cento."""),
+        ("**Dipendenti**|anno 1: 20 · anno 2: 25|sviluppo **+25%**",
+         """I dipendenti passano da 20 a 25: più 25 per cento. Letto da solo sembra una buona notizia, l'azienda assume."""),
+        ("**Produttività del lavoro**|1.000 / 20 = 50 · 1.100 / 25 = 44|**cala del 12%**",
+         """Ma la produttività del lavoro passa da 50 a 44 per dipendente. Le persone crescono più in fretta della produzione. Ecco perché gli indicatori di sviluppo si leggono insieme: crescere non basta, bisogna crescere in modo coerente."""),
+    ], colonne=["Grandezza", "Valori", "Lettura"]),
 ]

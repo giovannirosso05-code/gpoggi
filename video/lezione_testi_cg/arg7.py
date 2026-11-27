@@ -21,6 +21,16 @@ SCHERMATE = [
         ("**4. Budget degli altri centri**|risorse umane, amministrazione, ricerca e sviluppo", """Quarto passo: tutti gli altri responsabili, come risorse umane, amministrazione, ricerca e sviluppo, redigono un budget sul proprio centro di costo."""),
         ("**5. Master budget**|il documento pilota: sostenibile e soddisfacente", """Infine il controller mette tutto insieme e forma un budget master, o preventivo, che deve essere sostenibile e soddisfacente."""),
     ]),
+    S("tabella", "Esempio: il budget di una piccola linea di traghetti", [
+        ("**Budget delle vendite**|40.000 passeggeri × 50 € + 8.000 auto × 120 €|ricavi 2.960.000 €",
+         """Costruiamo un budget semplificato per una piccola linea di traghetti. Il responsabile commerciale prevede 40.000 passeggeri a 50 euro e 8.000 auto a 120 euro. I ricavi attesi sono 2.000.000 più 960.000: 2.960.000 euro."""),
+        ("**Budget commerciale**|agenzie 5% dei ricavi + pubblicità 100.000|costi commerciali 248.000 €",
+         """Il budget commerciale aggiunge i costi per vendere: le commissioni delle agenzie, il 5 per cento dei ricavi, cioè 148.000, più 100.000 di pubblicità decisa dalla direzione. In tutto 248.000 euro."""),
+        ("**Budget dei servizi**|carburante, equipaggio, porti, manutenzione|dalle corse previste in calendario",
+         """Poi il budget di realizzazione del servizio: dal numero di corse in calendario si stimano carburante, equipaggio, tasse portuali e manutenzione. Qui il controller lavora con il responsabile delle operazioni."""),
+        ("**Master budget**|budget economico, finanziario, patrimoniale|il risultato è sostenibile?",
+         """Infine il master budget mette tutto insieme. Il budget economico dice se la linea fa utile; quello finanziario se ci sono i soldi nei mesi invernali, quando i ricavi calano ma le navi costano lo stesso; quello patrimoniale fotografa la situazione a fine anno."""),
+    ], colonne=["Budget", "Ipotesi", "Risultato"]),
     S("ricorda", "La regola d'oro: si parte dalle vendite", [
         ("Senza **vendite** non c'è budget|i dati iniziali sono quantità, prezzi e mix",
          """Regola d'oro: senza il budget delle vendite e del suo mix non si può costruire nessun altro budget. I dati di partenza devono essere quantità, prezzi e mix."""),
@@ -96,6 +106,14 @@ SCHERMATE = [
         ("**Il controller costruisce il budget**|capacità e saturazione, servizi da cessare, grado di profitto, vincoli tecnici e commerciali",
          """Il controller costruisce il budget delle vendite in quattro passi: considera tutte le capacità e il grado di saturazione, verifica la produzione da cessare, ne verifica il grado di profitto, e rispetta i vincoli tecnici, per esempio la sicurezza sul lavoro, e commerciali, per esempio quantità da non superare."""),
     ]),
+    S("tabella", "Esempio svolto: il margine per ora di risorsa scarsa", [
+        ("**Servizio X**|margine 40 per unità · 2 ore di nave|MCh = 40 / 2 = **20**",
+         """Un esempio di mix con una risorsa scarsa, le ore di nave disponibili. Il servizio X porta 40 euro di margine per unità ma occupa la nave per 2 ore. Il margine per ora è 20."""),
+        ("**Servizio Y**|margine 30 per unità · 1 ora di nave|MCh = 30 / 1 = **30**",
+         """Il servizio Y porta solo 30 euro di margine per unità, ma occupa la nave per un'ora. Il margine per ora è 30."""),
+        ("**Scelta**|si privilegia Y fino al limite della domanda|poi le ore rimaste vanno a X",
+         """Guardando il margine unitario sceglieremmo X. Ma la risorsa scarsa è il tempo della nave, e per ogni ora Y rende di più. Quindi si privilegia Y fino a quanto il mercato lo richiede, e le ore che avanzano vanno a X. È il classico tranello d'esame: con un vincolo, conta il margine per unità di vincolo."""),
+    ], colonne=["Servizio", "Dati", "Margine per ora"]),
     S("tabella", "Il budget dei costi commerciali", [
         ("**T · tecnico**|parametrizzato|rispetto al volume di vendita o al fatturato",
          """Ultima parte del capitolo: il budget dei costi commerciali. Le voci di costo si dividono in tre tipi. Tecnici: si parametrizzano rispetto al volume di vendita, cioè le quantità vendute, oppure ai ricavi di vendita."""),

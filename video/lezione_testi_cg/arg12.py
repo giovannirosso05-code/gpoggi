@@ -42,6 +42,16 @@ SCHERMATE = [
         ("**Assicuratori**|Premio|preferiscono bandiere che fanno ispezioni prima dell'iscrizione, amministrano direttamente il registro, hanno buoni risultati nei controlli PSC",
          """Gli assicuratori, sia dello scafo e dei macchinari sia della responsabilità verso terzi, quando accettano una nave e fissano il premio considerano anche la bandiera. Preferiscono quelle che fanno ispezioni di sicurezza prima dell'iscrizione e non rilasciano certificati provvisori senza aver visto la nave, quelle che amministrano direttamente il registro, come l'Isola di Man, e quelle con risultati migliori della media nei controlli del port state control."""),
     ], colonne=["Soggetto", "Cosa cerca", "Dettagli"]),
+    S("tabella", "Esempio: la scelta della bandiera per una nave nuova", [
+        ("**Armatore**|vuole costi bassi e libertà sull'equipaggio|guarderebbe un registro aperto",
+         """Proviamo a ragionare come un armatore che deve scegliere la bandiera per una nave nuova. Da solo guarderebbe ai costi: tasse basse, libertà nella scelta dell'equipaggio, pochi vincoli. Quindi un registro aperto."""),
+        ("**Banca**|finanzia la nave e vuole un'ipoteca sicura|chiede un registro con ipoteche affidabili",
+         """Ma la nave è finanziata da una banca, che vuole un'ipoteca registrata in modo sicuro e la possibilità di farla valere. Se il registro non dà queste garanzie, il finanziamento costa di più o non arriva."""),
+        ("**Assicuratore e porti**|bandiere con pochi controlli → premi più alti e più ispezioni|il risparmio si riduce",
+         """Poi ci sono assicuratori e porti. Una bandiera con pochi controlli significa premi più alti e più ispezioni dello Stato del porto, con il rischio di fermi della nave. Una parte del risparmio se ne va."""),
+        ("**Conclusione**|la scelta è un equilibrio tra costi, credito, sicurezza e reputazione|non solo tasse",
+         """La conclusione da scrivere all'esame: la bandiera non si sceglie solo per le tasse. È un equilibrio tra costi, accesso al credito, sicurezza e reputazione. Per questo molti Stati, Italia compresa, hanno creato regimi agevolati per trattenere le navi sotto la propria bandiera."""),
+    ], colonne=["Soggetto", "Cosa vuole", "Effetto sulla scelta"]),
     S("lista", "Seminario: la fiscalità nel settore marittimo", [
         ("Il fisco pesa **di più**|è semplice e legittimo spostare il centro amministrativo dell'azienda per ridurre il carico fiscale",
          """Passiamo al seminario sulla fiscalità. Nel settore marittimo il fisco ha un ruolo molto più forte che in altri settori, perché è estremamente semplice, oltre che legittimo, spostare il centro di attività amministrativo dell'azienda riducendo il peso fiscale."""),
@@ -53,6 +63,16 @@ SCHERMATE = [
          """L'imposizione indiretta riguarda le operazioni registrate nella contabilità generale, ed è necessaria una regolamentazione che ne definisca tutti i casi. L'imposizione diretta riguarda l'utile dell'impresa."""),
         ("**Nel marittimo**|detassazione diretta dell'**80%**, **tonnage tax**, esenzione IRAP nel registro italiano; stipendio lordo uguale al netto",
          """Nel settore marittimo l'imposizione diretta è molto agevolata: c'è una detassazione dell'ottanta per cento e una forma particolare, la tonnage tax. Con il registro italiano l'imposizione diretta permette l'esenzione dall'IRAP, come se il reddito fosse prodotto all'estero, anche in ambito europeo. Anche sul costo del personale le navi sono agevolate: si pagano meno tasse e contributi, e il lordo coincide con il netto."""),
+    ]),
+    S("lista", "La tonnage tax spiegata semplice", [
+        ("**Normale**|le imposte si calcolano sull'utile effettivo",
+         """Vediamo meglio la tonnage tax. Normalmente un'impresa paga le imposte sull'utile effettivo: più guadagna, più paga."""),
+        ("**Tonnage tax**|il reddito si determina in modo **forfettario** in base al tonnellaggio netto della nave",
+         """Con la tonnage tax, invece, il reddito imponibile non si calcola sull'utile vero, ma in modo forfettario in base al tonnellaggio netto delle navi. L'imposta dipende da quanto è grande la flotta, non da quanto guadagna."""),
+        ("**Vantaggio**|imposta bassa e prevedibile, anche negli anni buoni",
+         """Il vantaggio è un'imposta bassa e prevedibile: negli anni buoni l'armatore paga molto meno che con il sistema normale, e può programmare."""),
+        ("**Vincolo**|è un'opzione che vincola per **più anni**: negli anni di perdita si paga comunque",
+         """Il vincolo è che si tratta di un'opzione che lega l'impresa per diversi anni. Negli anni di perdita si paga comunque, perché l'imposta non guarda all'utile. Ecco perché è una scelta da pianificare in anticipo, come dice il seminario: il fisco va gestito prima, non dopo."""),
     ]),
     S("lista", "Il rischio fiscale e come gestirlo", [
         ("**In caso di accertamento**|se ci sono incongruenze il costo diventa molto più alto delle imposte stesse: le imposte diventano un costo di natura",

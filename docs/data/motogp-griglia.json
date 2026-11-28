@@ -1,1 +1,183 @@
-{}
+{
+ "gp": "GP Valencia",
+ "gara_inizio": "2026-11-22T14:00:00+00:00",
+ "aggiornato": "2026-11-28T14:56:23+00:00",
+ "righe": [
+  {
+   "pos": 1,
+   "nome": "Marco Bezzecchi",
+   "team": "Aprilia Racing",
+   "moto": "Aprilia",
+   "info": "1:27.844",
+   "da": "Q2"
+  },
+  {
+   "pos": 2,
+   "nome": "Marc Marquez",
+   "team": "Ducati Lenovo Team",
+   "moto": "Ducati",
+   "info": "1:28.307",
+   "da": "Q2"
+  },
+  {
+   "pos": 3,
+   "nome": "Raul Fernandez",
+   "team": "SuperFile Trackhouse MotoGP Team",
+   "moto": "Aprilia",
+   "info": "1:28.433",
+   "da": "Q2"
+  },
+  {
+   "pos": 4,
+   "nome": "Alex Marquez",
+   "team": "BK8 Gresini Racing MotoGP",
+   "moto": "Ducati",
+   "info": "1:28.580",
+   "da": "Q2"
+  },
+  {
+   "pos": 5,
+   "nome": "Jorge Martin",
+   "team": "Aprilia Racing",
+   "moto": "Aprilia",
+   "info": "1:28.639",
+   "da": "Q2"
+  },
+  {
+   "pos": 6,
+   "nome": "Fabio Di Giannantonio",
+   "team": "Pertamina Enduro VR46 Racing Team",
+   "moto": "Ducati",
+   "info": "1:28.695",
+   "da": "Q2"
+  },
+  {
+   "pos": 7,
+   "nome": "Enea Bastianini",
+   "team": "Red Bull KTM Tech3",
+   "moto": "KTM",
+   "info": "1:28.780",
+   "da": "Q2"
+  },
+  {
+   "pos": 8,
+   "nome": "Pol Espargaro",
+   "team": "Red Bull KTM Tech3",
+   "moto": "KTM",
+   "info": "1:28.853",
+   "da": "Q2"
+  },
+  {
+   "pos": 9,
+   "nome": "Fermin Aldeguer",
+   "team": "BK8 Gresini Racing MotoGP",
+   "moto": "Ducati",
+   "info": "1:28.870",
+   "da": "Q2"
+  },
+  {
+   "pos": 10,
+   "nome": "Pedro Acosta",
+   "team": "Red Bull KTM Factory Racing",
+   "moto": "KTM",
+   "info": "1:28.884",
+   "da": "Q2"
+  },
+  {
+   "pos": 11,
+   "nome": "Ai Ogura",
+   "team": "SuperFile Trackhouse MotoGP Team",
+   "moto": "Aprilia",
+   "info": "1:29.150",
+   "da": "Q2"
+  },
+  {
+   "pos": 12,
+   "nome": "Joan Mir",
+   "team": "Honda HRC Castrol",
+   "moto": "Honda",
+   "info": "1:29.416",
+   "da": "Q2"
+  },
+  {
+   "pos": 13,
+   "nome": "Brad Binder",
+   "team": "Red Bull KTM Factory Racing",
+   "moto": "KTM",
+   "info": "1:29.233",
+   "da": "Q1"
+  },
+  {
+   "pos": 14,
+   "nome": "Iker Lecuona",
+   "team": "Ducati Lenovo Team",
+   "moto": "Ducati",
+   "info": "1:29.260",
+   "da": "Q1"
+  },
+  {
+   "pos": 15,
+   "nome": "Johann Zarco",
+   "team": "Castrol Honda LCR",
+   "moto": "Honda",
+   "info": "1:29.286",
+   "da": "Q1"
+  },
+  {
+   "pos": 16,
+   "nome": "Fabio Quartararo",
+   "team": "Monster Energy Yamaha MotoGP Team",
+   "moto": "Yamaha",
+   "info": "1:29.407",
+   "da": "Q1"
+  },
+  {
+   "pos": 17,
+   "nome": "Franco Morbidelli",
+   "team": "Pertamina Enduro VR46 Racing Team",
+   "moto": "Ducati",
+   "info": "1:29.435",
+   "da": "Q1"
+  },
+  {
+   "pos": 18,
+   "nome": "Diogo Moreira",
+   "team": "Pro Honda LCR",
+   "moto": "Honda",
+   "info": "1:29.584",
+   "da": "Q1"
+  },
+  {
+   "pos": 19,
+   "nome": "Luca Marini",
+   "team": "Honda HRC Castrol",
+   "moto": "Honda",
+   "info": "1:29.623",
+   "da": "Q1"
+  },
+  {
+   "pos": 20,
+   "nome": "Jack Miller",
+   "team": "Prima Pramac Yamaha MotoGP",
+   "moto": "Yamaha",
+   "info": "1:29.640",
+   "da": "Q1"
+  },
+  {
+   "pos": 21,
+   "nome": "Augusto Fernandez",
+   "team": "Prima Pramac Yamaha MotoGP",
+   "moto": "Yamaha",
+   "info": "1:29.721",
+   "da": "Q1"
+  },
+  {
+   "pos": 22,
+   "nome": "Alex Rins",
+   "team": "Monster Energy Yamaha MotoGP Team",
+   "moto": "Yamaha",
+   "info": "1:30.148",
+   "da": "Q1"
+  }
+ ]
+}

@@ -130,7 +130,7 @@ SCHERMATE = [
         ("**− costo del lavoro = MOL**|margine operativo lordo", """Ma ora tolgo subito il costo del lavoro, e ottengo il margine operativo lordo. È un numero molto usato da banche e analisti, perché non dipende dalle politiche di ammortamento: misura quanta cassa genera, più o meno, la gestione tipica."""),
         ("**− ammortamenti e accantonamenti = Reddito operativo caratteristico**", """Togliendo poi ammortamenti e accantonamenti arrivo allo stesso reddito operativo caratteristico dell'altro schema. Cambia la strada, non la destinazione."""),
         ("**Infine il reddito netto**|dopo gestione finanziaria, straordinaria e imposte", """E in fondo, come prima, gestione finanziaria, straordinaria e imposte, fino al reddito netto."""),
-        ("Produttività|più dipendenti, minor reddito operativo caratteristico **a parità di valore aggiunto**", """Un collegamento utile con la produttività: a parità di valore aggiunto, più dipendenti ci sono, più costo del lavoro c'è e meno reddito operativo resta. Per questo il valore aggiunto per dipendente è uno degli indici di produttività più usati."""),
+        ("Produttività|più dipendenti, minor reddito operativo caratteristico **a parità di valore aggiunto**", """Un collegamento utile con la produttività: a parità di valore aggiunto, più dipendenti ci sono, più costo del lavoro c'è e meno reddito operativo resta. È il legame con gli indicatori di produttività, che vedremo nel capitolo quattro."""),
     ]),
     S("tabella", "Esempio svolto: dal valore della produzione al reddito operativo", [
         ("**Valore della produzione**|noli e ricavi del servizio|1.000",

@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-28T14:56:23+00:00",
+ "aggiornato": "2026-11-28T17:50:28+00:00",
  "metodo": "Indice da 0 a 100 calcolato da GP Oggi: 45% forma nelle ultime 5 gare, 35% classifica del campionato, 20% risultato sullo stesso circuito l'anno scorso. È un'opinione basata sui numeri, non una previsione ufficiale né una certezza.",
  "f1": {
   "gp": "Gran Premio del Qatar",
@@ -75,14 +75,14 @@
     "indice": 100,
     "motivi": [
      "2 vittorie nelle ultime 5 gare",
-     "3° nel campionato (394 punti)"
+     "2° nel campionato (406 punti)"
     ]
    },
    {
     "id": "f55b433d-38b8-4d1d-bb3a-a709c82a0260",
     "nome": "Marc Marquez",
     "team": "Ducati Lenovo Team",
-    "indice": 99,
+    "indice": 98,
     "motivi": [
      "1 vittoria nelle ultime 5 gare",
      "1° nel campionato (439 punti)"
@@ -92,19 +92,19 @@
     "id": "5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b",
     "nome": "Jorge Martin",
     "team": "Aprilia Racing",
-    "indice": 79,
+    "indice": 78,
     "motivi": [
      "1 podio nelle ultime 5 gare",
-     "2° nel campionato (396 punti)"
+     "3° nel campionato (405 punti)"
     ]
    },
    {
     "id": "eb47c439-e136-40ff-9534-5c612853f529",
     "nome": "Ai Ogura",
     "team": "SuperFile Trackhouse MotoGP Team",
-    "indice": 73,
+    "indice": 72,
     "motivi": [
-     "5° nel campionato (309 punti)"
+     "5° nel campionato (315 punti)"
     ]
    },
    {
@@ -114,7 +114,7 @@
     "indice": 68,
     "motivi": [
      "1 podio nelle ultime 5 gare",
-     "4° nel campionato (315 punti)"
+     "4° nel campionato (318 punti)"
     ]
    }
   ]
